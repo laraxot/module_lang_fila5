@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\Lang\Providers\Filament;
 
 use Filament\Panel;
-use LaraZeus\SpatieTranslatable\SpatieTranslatablePlugin;
+// use LaraZeus\SpatieTranslatable\SpatieTranslatablePlugin;
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 abstract class LangBasePanelProvider extends XotBasePanelProvider
@@ -24,10 +24,10 @@ abstract class LangBasePanelProvider extends XotBasePanelProvider
         //     'filament-navigation'
         // );
 
-        $spatieLaravelTranslatablePlugin = SpatieTranslatablePlugin::make()->defaultLocales(['en', 'it']);
-        $panel->plugins([
-            $spatieLaravelTranslatablePlugin,
-        ]);
+        // $spatieLaravelTranslatablePlugin = SpatieTranslatablePlugin::make()->defaultLocales(['en', 'it']);
+        // $panel->plugins([
+        //     $spatieLaravelTranslatablePlugin,
+        // ]);
 
         return $panel;
     }

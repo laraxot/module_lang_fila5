@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Filament\Resources\Pages;
 
-use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
-use LaraZeus\SpatieTranslatable\Resources\Pages\CreateRecord\Concerns\Translatable;
+// use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
+// use LaraZeus\SpatieTranslatable\Resources\Pages\CreateRecord\Concerns\Translatable;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
 /**
@@ -16,12 +16,12 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
  */
 abstract class LangBaseCreateRecord extends XotBaseCreateRecord
 {
-    use Translatable;
+    // use Translatable; // Temporarily disabled until lara-zeus package is working
 
     protected function getHeaderActions(): array
     {
         return [
-            LocaleSwitcher::make(),
+            // LocaleSwitcher::make(), // Temporarily disabled until lara-zeus package is working
             ...parent::getHeaderActions(),
         ];
     }
