@@ -38,11 +38,13 @@ use Sushi\Sushi;
  * @method static Builder<static>|TranslationFile whereName($value)
  * @method static Builder<static>|TranslationFile wherePath($value)
  *
-<<<<<<< HEAD
-=======
+ * <<<<<<< HEAD
+ * =======
+ *
  * @property ProfileContract|null $deleter
  *
->>>>>>> laraxot/develop
+ * >>>>>>> laraxot/develop
+ *
  * @mixin \Eloquent
  */
 class TranslationFile extends BaseModel
