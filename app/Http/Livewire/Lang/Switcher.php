@@ -22,7 +22,6 @@ class Switcher extends Component
 {
     public string $lang;
 
-    /** @var array<string, array<string, mixed>> */
     public array $langs;
 
     public string $url;
@@ -34,8 +33,9 @@ class Switcher extends Component
         unset($langs[$this->lang]);
         $this->url = Request::getRequestUri();
         $langs = Arr::map($langs, function (array $item, string $key) {
+            // @phpstan-ignore staticMethod.notFound
             $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
-            if (false !== $url) {
+            if ($url !== false) {
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
                 if (! is_string($url)) {
                     // Se non è una stringa, utilizziamo una URL di fallback
@@ -48,9 +48,7 @@ class Switcher extends Component
 
             return $item;
         });
-        /** @var array<string, array<string, mixed>> $mappedLangs */
-        $mappedLangs = $langs;
-        $this->langs = $mappedLangs;
+        $this->langs = $langs;
     }
 
     // public function switchLang(string $lang): Application|RedirectResponse|Redirector
@@ -62,7 +60,6 @@ class Switcher extends Component
 
     public function render(): View
     {
-        /** @phpstan-var view-string */
         $view = 'lang::livewire.lang.change';
         $viewParams = [
             'view' => $view,

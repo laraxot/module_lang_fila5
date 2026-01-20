@@ -1,14 +1,3 @@
----
-title: "PHPStan Mixed Type Casting Errors"
-module: "Lang"
-type: concept
-tags: [git, conflicts, resolution, sumy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git conflicts resolution sumy"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # PHPStan Mixed Type Casting Errors
 
 ## Problema
@@ -221,23 +210,16 @@ Dopo aver applicato le correzioni:
 ## Riferimenti
 
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
-- [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
-- [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
 - [PHP Type Casting](https://www.php.net/manual/en/language.types.type-juggling.php)
 - [PHPStan Mixed Type](https://phpstan.org/writing-php-code/phpdoc-types#mixed)
 
 ## Backlink
 
-- [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
-- [Lang Module Structure](./README.md)
-- [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
-
-*Ultimo aggiornamento: 2025-07-31*
 - [Root PHPStan Rules](../../../docs/phpstan_rules.md)
 - [Lang Module Structure](./README.md)
 - [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
 
-*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: 2025-07-31*
 # PHPStan Mixed Type Casting Errors
 
 ## Problema
@@ -450,21 +432,13 @@ Dopo aver applicato le correzioni:
 ## Riferimenti
 
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
-- [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
-- [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
 - [PHP Type Casting](https://www.php.net/manual/en/language.types.type-juggling.php)
 - [PHPStan Mixed Type](https://phpstan.org/writing-php-code/phpdoc-types#mixed)
 
 ## Backlink
 
-- [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
-- [Lang Module Structure](./README.md)
-- [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
-
-*Ultimo aggiornamento: 2025-07-31*
 - [Root PHPStan Rules](../../../docs/phpstan_rules.md)
 - [Lang Module Structure](./README.md)
 - [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
 
-*Ultimo aggiornamento: [DATE]*
 *Ultimo aggiornamento: 2025-07-31*

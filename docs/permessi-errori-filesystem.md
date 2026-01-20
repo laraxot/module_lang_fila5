@@ -1,19 +1,5 @@
----
-title: "Gestione Permessi e Errori Filesystem su File di Lingua (Lang)"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Gestione Permessi e Errori Filesystem su File di Lingua (Lang)
 
-> **Backlink:** [Indice e collegamenti root](../../../../docs/project/links.md)
-> **Backlink:** [Indice e collegamenti root](../../../project_docs/links.md)
-> **Backlink:** [Indice e collegamenti root](../../../project_docs/links.md)
 > **Backlink:** [Indice e collegamenti root](../../../project_docs/links.md)
 
 ## Problema
@@ -66,12 +52,6 @@ sudo chmod 664 Modules/Lang/lang/it/lang_service.php
 ```
 
 ## Collegamenti
-- [Indice e collegamenti root](../../../../docs/project/links.md)
-- [Documentazione MCP e gestione errori](../../../../docs/project/mcp_errors_and_lessons.md)
-- [Indice e collegamenti root](../../../project_docs/links.md)
-- [Documentazione MCP e gestione errori](../../../project_docs/mcp_errors_and_lessons.md)
-- [Indice e collegamenti root](../../../project_docs/links.md)
-- [Documentazione MCP e gestione errori](../../../project_docs/mcp_errors_and_lessons.md)
 - [Indice e collegamenti root](../../../project_docs/links.md)
 - [Documentazione MCP e gestione errori](../../../project_docs/mcp_errors_and_lessons.md)
 
@@ -80,9 +60,6 @@ sudo chmod 664 Modules/Lang/lang/it/lang_service.php
 **Nota:**
 # Gestione Permessi e Errori Filesystem su File di Lingua (Lang)
 
-> **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
-> **Backlink:** [Indice e collegamenti root](../../../docs/links.md)
-> **Backlink:** [Indice e collegamenti root](../../../docs/links.md)
 > **Backlink:** [Indice e collegamenti root](../../../docs/links.md)
 
 ## Problema
@@ -135,16 +112,9 @@ sudo chmod 664 Modules/Lang/lang/it/lang_service.php
 ```
 
 ## Collegamenti
-- [Indice e collegamenti root](../../../../docs/links.md)
-- [Documentazione MCP e gestione errori](../../../../docs/mcp_errors_and_lessons.md)
-
----
-
-**Nota:**
 - [Indice e collegamenti root](../../../docs/links.md)
 - [Documentazione MCP e gestione errori](../../../docs/mcp_errors_and_lessons.md)
 
 ---
 
-**Nota:**
 **Nota:**

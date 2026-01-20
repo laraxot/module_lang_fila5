@@ -1,14 +1,3 @@
----
-title: "Correzioni PHPStan per Modulo Lang"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Correzioni PHPStan per Modulo Lang
 
 ## Errori Risolti
@@ -96,11 +85,4 @@ related:
 
 ## Backlinks
 - [Lang Module Overview](../README.md)
-- [Lang Module Overview](README.md)
-- [Translation System Documentation](./translation-system.md)
-- [Translation System Documentation](./translation-system.md)
-- [Translation System Documentation](./translation-system.md)
-- [Translation System Documentation](./translation-system.md)
-- [Translation System Documentation](./translation-system.md)
-- [Lang Module Overview](README.md)
 - [Translation System Documentation](./translation-system.md)

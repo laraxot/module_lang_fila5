@@ -1,14 +1,3 @@
----
-title: "Errori comuni nei file di traduzione"
-module: "Lang"
-type: concept
-tags: [guida, migrazione, step, by]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "guida migrazione step by step"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Errori comuni nei file di traduzione
 
 ## Errori di sintassi critici identificati
@@ -149,12 +138,6 @@ Tutti i campi devono seguire la struttura espansa:
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
-
-*Ultimo aggiornamento: 6 Gennaio 2025*
-- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
-
-*Ultimo aggiornamento: 6 Gennaio 2025*
 # Errori comuni nei file di traduzione
 
 ## Errori di sintassi critici identificati
@@ -292,12 +275,6 @@ Tutti i campi devono seguire la struttura espansa:
 
 - [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
 - [Traduzioni Navigation Audit](traduzioni_navigation_2025.md)
-- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
-
-*Ultimo aggiornamento: 6 Gennaio 2025*
-- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
-
-*Ultimo aggiornamento: 6 Gennaio 2025*
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
