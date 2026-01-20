@@ -6,76 +6,89 @@ namespace Modules\Lang\Tests;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 use Modules\Lang\Providers\LangServiceProvider;
-use Modules\User\Models\User;
-use Modules\User\Providers\UserServiceProvider;
-use Modules\Xot\Tests\XotBaseTestCase;
+use Modules\Xot\Tests\CreatesApplication;
 
 /**
- * Base test case for Lang module.
+ * Base test case for Lang module tests.
  *
- * Uses MySQL from .env.testing.
- * All module connections are mapped by TenantServiceProvider.
- * Migrations must be run ONCE externally: php artisan migrate --env=testing
- * DatabaseTransactions handles rollback between tests.
+ * Uses SQLite shared memory database following Activity/TestCase.php pattern.
  */
-abstract class TestCase extends XotBaseTestCase
+abstract class TestCase extends BaseTestCase
 {
+    use CreatesApplication;
     use DatabaseTransactions;
 
-    /** @var list<string> */
-    protected $connectionsToTransact = ['sqlite', 'lang', 'user'];
-
+    /**
+     * Setup the test environment.
+     * Il sito funziona, quindi i test devono riflettere il comportamento reale.
+     */
     protected function setUp(): void
     {
         parent::setUp();
 
-        $database = database_path('fixcity_data.sqlite');
+        // Usiamo SQLite shared memory seguendo pattern Activity/TestCase.php
+        $dbName = 'file:memdb_lang_'.Str::random(10).'?mode=memory&cache=shared';
 
-        /** @var array<string, array<string, mixed>> $connections */
-        $connections = config('database.connections', []);
+        $connections = [
+            'sqlite',
+            'mysql',
+            'mariadb',
+            'pgsql',
+            'activity',
+            'cms',
+            'gdpr',
+            'geo',
+            'job',
+            'lang',
+            'media',
+            'meetup',
+            'notify',
+            'seo',
+            'tenant',
+            'ui',
+            'user',
+            'xot',
+        ];
 
-        foreach (array_keys($connections) as $connection) {
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
-                continue;
-            }
-
-            $this->app['config']->set("database.connections.{$connection}.database", $database);
-            DB::purge($connection);
+        foreach ($connections as $conn) {
+            $this->app['config']->set("database.connections.{$conn}.driver", 'sqlite');
+            $this->app['config']->set("database.connections.{$conn}.database", $dbName);
         }
 
-        config(['auth.providers.users.model' => User::class]);
+        foreach ($connections as $conn) {
+            DB::purge($conn);
+        }
+
+        foreach ($connections as $conn) {
+            try {
+                $pdo = DB::connection($conn)->getPdo();
+                if ($pdo instanceof \PDO && method_exists($pdo, 'sqliteCreateFunction')) {
+                    $pdo->sqliteCreateFunction('md5', static fn (?string $value): ?string => $value === null ? null : md5($value));
+                    $pdo->sqliteCreateFunction('unhex', static fn (?string $value): ?string => $value);
+                }
+            } catch (\Throwable) {
+            }
+        }
+
+        $this->artisan('module:migrate', ['module' => 'Xot', '--force' => true]);
+        $this->artisan('module:migrate', ['module' => 'User', '--force' => true]);
+        $this->artisan('module:migrate', ['module' => 'Lang', '--force' => true]);
     }
 
     /**
+     * Get package providers.
+     *
+     * @param  Application  $app
      * @return array<int, class-string>
      */
-    protected function getPackageProviders(Application $app): array
+    protected function getPackageProviders($app): array
     {
         return [
-            ...parent::getPackageProviders($app),
-            UserServiceProvider::class,
             LangServiceProvider::class,
         ];
-    }
-
-    /**
-     * @param array<string, mixed> $data
-     */
-    public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
-    {
-        $this->assertDatabaseHas($table, $data, $connection ?? 'lang');
-    }
-
-    /**
-     * @param class-string<\Throwable> $exceptionClass
-     */
-    public function expectApplicationException(string $exceptionClass, ?string $message = null): void
-    {
-        $this->expectException($exceptionClass);
-        if (null !== $message) {
-            $this->expectThrowableMessage($message);
-        }
     }
 }

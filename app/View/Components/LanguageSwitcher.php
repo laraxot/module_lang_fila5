@@ -25,7 +25,7 @@ class LanguageSwitcher extends Component
      */
     public function __construct()
     {
-        $this->widget = new LanguageSwitcherWidget();
+        $this->widget = new LanguageSwitcherWidget;
     }
 
     /**
@@ -47,9 +47,6 @@ class LanguageSwitcher extends Component
             'widget_id' => 'language-switcher-'.uniqid(),
         ];
 
-        /** @phpstan-var view-string */
-        $view = 'lang::components.language-switcher';
-
-        return \view($view, $viewData);
+        return \view('lang::components.language-switcher', $viewData);
     }
 }

@@ -9,15 +9,10 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Lang\Models\BaseModelLang;
 use Webmozart\Assert\Assert;
 
-/**
- * @implements CastsAttributes<mixed, array<string, mixed>>
- */
 class LangField implements CastsAttributes
 {
     /**
      * Cast the given value.
-     *
-     * @param array<string, mixed> $attributes
      */
     public function get(Model $model, string $key, mixed $value, array $attributes): mixed
     {
@@ -29,10 +24,6 @@ class LangField implements CastsAttributes
 
     /**
      * Prepare the given value for storage.
-     *
-     * @param array<string, mixed> $attributes
-     *
-     * @return array<string, mixed>
      */
     public function set(Model $model, string $key, mixed $value, array $attributes): array
     {

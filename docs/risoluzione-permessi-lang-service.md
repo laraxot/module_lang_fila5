@@ -1,14 +1,3 @@
----
-title: "Troubleshooting definitivo permessi file_put_contents su lang_service.php"
-module: "Lang"
-type: concept
-tags: [lang, service, helper, text]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text fix"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Troubleshooting definitivo permessi file_put_contents su lang_service.php
 
 ## Sintesi della soluzione robusta
@@ -55,12 +44,6 @@ Questa guida risolve in modo definitivo ogni errore di permessi su file lingua g
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../docs/lang_service_permessi.md)
-**Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
-
-[Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)
-**Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
-
-[Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)
 # Troubleshooting definitivo permessi file_put_contents su lang_service.php
 
 ## Sintesi della soluzione robusta
@@ -107,9 +90,3 @@ Questa guida risolve in modo definitivo ogni errore di permessi su file lingua g
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../docs/lang_service_permessi.md)
-**Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
-
-[Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)
-**Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
-
-[Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)

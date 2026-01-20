@@ -1,14 +1,3 @@
----
-title: "Traduzioni"
-module: "Lang"
-type: concept
-tags: [migration, filament, 4]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration filament 4"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Traduzioni
 
 ## Pacchetti Utilizzati
@@ -104,23 +93,6 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 ### Versione HEAD
 
 ## Collegamenti tra versioni di translations.md
-* [translations.md](../../../chart/docs/translations.md)
-* [translations.md](../../../reporting/docs/translations.md)
-* [translations.md](../../../gdpr/docs/translations.md)
-* [translations.md](../../../notify/docs/translations.md)
-* [translations.md](../../../xot/docs/roadmap/lang/translations.md)
-* [translations.md](../../../xot/docs/translations.md)
-* [translations.md](../../../dental/docs/translations.md)
-* [translations.md](../../../user/docs/translations.md)
-* [translations.md](../../../ui/docs/translations.md)
-* [translations.md](../../../lang/docs/packages/translations.md)
-* [translations.md](../../../lang/docs/translations.md)
-* [translations.md](../../../job/docs/translations.md)
-* [translations.md](../../../media/docs/translations.md)
-* [translations.md](../../../tenant/docs/translations.md)
-* [translations.md](../../../activity/docs/translations.md)
-* [translations.md](../../../patient/docs/translations.md)
-* [translations.md](../../../cms/docs/translations.md)
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
 * [translations.md](../../../Gdpr/docs/translations.md)

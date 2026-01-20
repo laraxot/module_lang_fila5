@@ -1,19 +1,5 @@
----
-title: "Analisi Metodi Duplicati - Modulo Lang"
-module: "Lang"
-type: concept
-tags: [lang, service, helper, text]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Analisi Metodi Duplicati - Modulo Lang
 
-**Data Generazione**: 2025-10-15 06:41:17
-**Data Generazione**: 2025-10-15 06:41:17
-**Data Generazione**: 2025-10-15 06:41:17
 **Data Generazione**: 2025-10-15 06:41:17
 **Totale Gruppi di Duplicati**:
 
@@ -488,8 +474,4 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **90-100%**: Altamente raccomandato
 - **70-89%**: Raccomandato
 - **50-69%**: Valutare caso per caso
-- **< 50%**: Richiede analisi dettagliata
-- **< 50%**: Richiede analisi dettagliata
-- **< 50%**: Richiede analisi dettagliata
-- **< 50%**: Richiede analisi dettagliata
 - **< 50%**: Richiede analisi dettagliata

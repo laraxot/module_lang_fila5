@@ -1,14 +1,3 @@
----
-title: "Registrazione Traduzioni Temi - Standard Laraxot"
-module: "Lang"
-type: concept
-tags: [lang, service, helper, text]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text fix"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Registrazione Traduzioni Temi - Standard Laraxot
 
 ## Principio Fondamentale
@@ -103,11 +92,6 @@ Time: Ora
 ## Moduli Correlati
 
 ### Temi Implementati
-- [Themes/One/docs/pub_theme_namespace_registration.md](../../themes/one/docs/pub_theme_namespace_registration.md)
-- [Themes/Two/docs/theme-translations.md](../../themes/two/docs/theme-translations.md)
-
-### Documentazione Base
-- [Modules/Xot/docs/theme-service-provider-rules.md](../../modules/xot/docs/theme-service-provider-rules.md)
 - [Themes/One/docs/pub_theme_namespace_registration.md](../../Themes/One/docs/pub_theme_namespace_registration.md)
 - [Themes/Two/docs/theme-translations.md](../../Themes/Two/docs/theme-translations.md)
 

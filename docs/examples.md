@@ -1,14 +1,3 @@
----
-title: "💡 **Esempi Pratici Modulo Lang - Laraxot**"
-module: "Lang"
-type: concept
-tags: [git, conflicts, resolution, summary]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git conflicts resolution summary"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # 💡 **Esempi Pratici Modulo Lang - Laraxot**
 
 ## 🎯 **Panoramica**
@@ -923,13 +912,9 @@ class UserResourceTest extends TestCase
 
 ### **1. Documentazione**
 - [README.md](README.md) - Documentazione principale
-- [BEST_PRACTICES.md](best_practices.md) - Best practices
-- [API_REFERENCE.md](api_reference.md) - Riferimento API
-- [TROUBLESHOOTING.md](troubleshooting.md) - Troubleshooting
-- [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices
 - [API_REFERENCE.md](API_REFERENCE.md) - Riferimento API
-- [TROUBLESHOOTING.md](troubleshooting.md) - Troubleshooting
+- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Troubleshooting
 
 ### **2. Configurazione**
 - [config/lang.php](../config/lang.php) - Configurazione centralizzata
@@ -939,8 +924,4 @@ class UserResourceTest extends TestCase
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 2.0.0
 **Autore**: Team Laraxot
-**Mantenuto da**: Community Laraxot
-**Mantenuto da**: Community Laraxot
-**Mantenuto da**: Community Laraxot
-**Mantenuto da**: Community Laraxot
 **Mantenuto da**: Community Laraxot

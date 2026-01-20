@@ -1,14 +1,3 @@
----
-title: "Integrazione tra mcamara/laravel-localization e Laravel Folio"
-module: "Lang"
-type: concept
-tags: [REDUNDANCY, ANALYSIS]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "redundancy analysis"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Integrazione tra mcamara/laravel-localization e Laravel Folio
 
 ## Obiettivo
@@ -150,10 +139,6 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Documentazione ufficiale mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 - [Documentazione Laravel Folio](https://laravel.com/project_docs/12.x/folio)
 - [Esempio di mapping rotte](https://github.com/mcamara/laravel-localization#translated-routes)
-- [FAQ e problemi comuni](Modules/Lang/project_docs/translations-faq.md)
-- [Guida language switcher](Modules/Lang/project_docs/README.md)
-- [FAQ e problemi comuni](Modules/Lang/project_docs/translations-faq.md)
-- [Guida language switcher](Modules/Lang/project_docs/README.md)
 - [FAQ e problemi comuni](Modules/Lang/project_docs/translations-faq.md)
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
 
@@ -301,18 +286,6 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Documentazione ufficiale mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 - [Documentazione Laravel Folio](https://laravel.com/docs/12.x/folio)
 - [Esempio di mapping rotte](https://github.com/mcamara/laravel-localization#translated-routes)
-- [FAQ e problemi comuni](Modules/Lang/docs/translations-faq.md)
-- [Guida language switcher](Modules/Lang/docs/README.md)
-- [FAQ e problemi comuni](Modules/Lang/docs/translations-faq.md)
-- [Guida language switcher](Modules/Lang/docs/README.md)
-
----
-
-**Se vuoi che aggiorni direttamente la documentazione o vuoi esempi pratici di override/mapping path Folio, chiedi pure!**
-
----
-
-**Se vuoi che aggiorni direttamente la documentazione o vuoi esempi pratici di override/mapping path Folio, chiedi pure!**
 - [FAQ e problemi comuni](Modules/Lang/docs/translations-faq.md)
 - [Guida language switcher](Modules/Lang/docs/README.md)
 

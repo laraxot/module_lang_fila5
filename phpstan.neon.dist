@@ -1,6 +1,6 @@
 includes:
     - phpstan-baseline.neon
-    - ../../vendor/larastan/larastan/extension.neon
+    - ./vendor/larastan/larastan/extension.neon
 
 parameters:
     level: max
@@ -11,9 +11,9 @@ parameters:
         - ./vendor/*
         - ./*/vendor/*
         - ./docs/*
-        - ./Tests/* (?)
-        - ./_ide_helper.php (?)
-        - ./Services/Trend.php (?)
+        - ./Tests/*
+        - ./_ide_helper.php
+        - ./Services/Trend.php
 
     bootstrapFiles:
         # - ./Services/vendor/autoload.php
@@ -21,7 +21,7 @@ parameters:
 
 
     scanFiles:
-        # - ./helpers/Helper.php
+        # - ./Helpers/Helper.php
         # - ./vendor/laraxot/module_xot/Helpers/Helper.php
 
     tmpDir: build/phpstan

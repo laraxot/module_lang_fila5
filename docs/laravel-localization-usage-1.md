@@ -1,19 +1,8 @@
----
-title: "Utilizzo di mcamara/laravel-localization"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Utilizzo di mcamara/laravel-localization
 
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
-- [Best Practices Chiavi di Traduzione](translation_keys_best_practices.md)
+- [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
