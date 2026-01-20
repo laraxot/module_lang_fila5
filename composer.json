@@ -15,9 +15,13 @@
         "rinvex/countries": "^9.1",
         "spatie/laravel-sluggable": "*"
     },
+<<<<<<< Updated upstream
     "require-comment": {
         
     },
+=======
+    "repositories_comment": "Local path package (lara-zeus/spatie-translatable) moved to root composer.json for proper priority. DO NOT add Packagist here.",
+>>>>>>> Stashed changes
     "repositories": [
         {
             "type": "path",
