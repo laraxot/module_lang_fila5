@@ -1,14 +1,3 @@
----
-title: "Analisi Bottlenecks Modulo Lang"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Analisi Bottlenecks Modulo Lang
 
 ## Performance
@@ -138,9 +127,7 @@ related:
 
 ### Collegamenti Interni
 - [Roadmap](roadmap.md)
-- [Best Practices](best-practices.md)
-- [Best Practices](best-practices.md)
-- [Best Practices](best-practices.md)
+- [Best Practices](BEST-PRACTICES.md)
 - [Testing](testing.md)
 - [Testing](testing.md)
 ## Collegamenti tra versioni di bottlenecks.md
@@ -163,8 +150,4 @@ related:
 * [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Activity/docs/bottlenecks.md)
 * [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
-* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
-* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
-* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)

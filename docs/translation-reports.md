@@ -1,14 +1,3 @@
----
-title: "Translation Module PDF Reports"
-module: "Lang"
-type: concept
-tags: [readme.es, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme.es 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Translation Module PDF Reports
 
 ## 📋 Overview
@@ -819,24 +808,12 @@ public function generateWithErrorHandling(array $options = []): string
 
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./README.md)
-- [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
-- [Lang Module README](./README.md)
-- [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
-- [Lang Module README](./README.md)
 - [Spatie Translatable Documentation](https://github.com/spatie/laravel-translatable)
 - [Laravel Localization](https://laravel.com/docs/localization)
 
 ---
 
 **Last Updated:** 2025-12-09
-**Last Updated:** 2025-12-09
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
-**PHPStan Level:** 10 ✅
-**
-**Last Updated:** 2025-12-09
-**Last Updated:** 2025-12-09
-**Version:** 1.0.0
-**HTML2PDF Version:** 5.2.x
-**PHPStan Level:** 10 ✅
 **PHPStan Level:** 10 ✅

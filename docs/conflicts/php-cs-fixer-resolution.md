@@ -1,14 +1,3 @@
----
-title: "Risoluzione Conflitto in .php-cs-fixer.php"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Risoluzione Conflitto in .php-cs-fixer.php
 
 ## Panoramica
@@ -93,4 +82,4 @@ La configurazione PHP-CS-Fixer verificata garantisce che:
 
 ## Collegamento con la Documentazione Principale
 
-Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
+Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../docs/logs/conflict_resolution_progress.md).

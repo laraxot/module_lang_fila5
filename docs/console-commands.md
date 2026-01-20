@@ -1,14 +1,3 @@
----
-title: "Console Commands - Lang Module"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Console Commands - Lang Module
 
 ## Panoramica
@@ -146,9 +135,6 @@ php artisan lang:find-missing it
 
 - [Translation System](./translation-system.md)
 - [Lang Module Architecture](./architecture.md)
-- [PHPStan Corrections](../../../../docs/phpstan-fixes.md)
-- [PHPStan Corrections](../../../docs/phpstan-fixes.md)
-- [PHPStan Corrections](../../../docs/phpstan-fixes.md)
 - [PHPStan Corrections](../../../docs/phpstan-fixes.md)
 
 ## Note di Sviluppo
@@ -163,8 +149,4 @@ php artisan lang:find-missing it
 - Comandi estendono `Illuminate\Console\Command`
 - Utilizzo di assertions per validazione
 - Separazione delle responsabilità per ogni comando
-- Gestione appropriata degli errori
-- Gestione appropriata degli errori
-- Gestione appropriata degli errori
-- Gestione appropriata degli errori
 - Gestione appropriata degli errori

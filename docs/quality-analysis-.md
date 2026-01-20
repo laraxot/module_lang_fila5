@@ -1,14 +1,3 @@
----
-title: "Quality Analysis Report - Lang Module"
-module: "Lang"
-type: concept
-tags: [lang, service, helper, text]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text fix"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Quality Analysis Report - Lang Module
 **Date**: 2025-11-11
 **Analyst**: Claude Code
@@ -310,7 +299,7 @@ public function view(User $user, Post $_post): bool
 ## Comparison with Other Modules
 
 Based on `PHPSTAN_JOURNEY.md`, the following modules have achieved Level 10:
-- Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, <nome progetto>
+- Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, Quaeris
 
 **Lang Module Status**:
 - ✅ PHPStan Level 10: **ACHIEVED**

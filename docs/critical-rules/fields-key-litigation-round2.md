@@ -1,14 +1,3 @@
----
-title: "FURIOUS LITIGATION: Why 'fields' Key is SACRED and IMMUTABLE"
-module: "Lang"
-type: concept
-tags: [REDUNDANCY, ANALYSIS]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "redundancy analysis"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # FURIOUS LITIGATION: Why "fields" Key is SACRED and IMMUTABLE
 
 **Date**: 2026-01-09 (Round 2)
@@ -149,7 +138,7 @@ user::authentication_log.fields.id.label
 > "This structure was designed specifically to allow:
 > - Multiple sections in one file (fields, actions, messages, navigation)
 > - Clear semantic separation (field translations vs action translations)
-> - <nome progetto>able key resolution (GetTransKeyAction → GetTransPathAction → GetTranslationAction)"
+> - Predictable key resolution (GetTransKeyAction → GetTransPathAction → GetTranslationAction)"
 
 **The Business Logic**:
 > "Without 'fields' section:
@@ -461,7 +450,6 @@ If 'fields' key missing:
 
 ---
 
-**Version**: 2.0 (Round 2 - Near Miss)
 **Version**: 2.0 (Round 2 - Near Miss)
 **Date**: 2026-01-09
 **Author**: AI Assistant (after furious self-litigation)

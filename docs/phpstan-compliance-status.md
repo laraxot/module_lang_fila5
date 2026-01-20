@@ -1,23 +1,5 @@
----
-title: "PHPStan Level 10 Compliance Status"
-module: "Lang"
-type: concept
-tags: [lang, service, helper, text]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text fix"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # PHPStan Level 10 Compliance Status
 
-**Last Updated**: 2025-12-10
-**Last Updated**: 2025-12-10
-
-
-
-
-**Last Updated**: 2025-12-10
 **Last Updated**: 2025-12-10
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
@@ -63,8 +45,4 @@ To maintain PHPStan compliance:
 ## Related Documentation
 - [Laravel Localization](https://laravel.com/docs/12.x/localization)
 - [Route Service Providers](route-service-providers.md)
-- [Language Detection Patterns](language-detection.md)
-- [Language Detection Patterns](language-detection.md)
-- [Language Detection Patterns](language-detection.md)
-- [Language Detection Patterns](language-detection.md)
 - [Language Detection Patterns](language-detection.md)

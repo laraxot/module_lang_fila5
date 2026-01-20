@@ -1,14 +1,3 @@
----
-title: "Lang Module Performance Bottlenecks"
-module: "Lang"
-type: concept
-tags: [migrazione, filament, 4]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migrazione filament 4"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Lang Module Performance Bottlenecks
 
 ## Translation Management
@@ -225,16 +214,6 @@ Implementare:
 ### Versione HEAD
 
 ## Collegamenti tra versioni di bottlenecks.md
-* [bottlenecks.md](../../../gdpr/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../xot/docs/bottlenecks.md)
-* [bottlenecks.md](../../../xot/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../xot/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../user/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../ui/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../lang/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../job/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../media/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../Xot/docs/performance/bottlenecks.md)

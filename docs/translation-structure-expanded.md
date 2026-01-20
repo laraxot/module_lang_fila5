@@ -1,14 +1,3 @@
----
-title: "Struttura Espansa per File di Traduzione - Progetto <nome progetto>"
-module: "Lang"
-type: concept
-tags: [lang, service, helper, text]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Struttura Espansa per File di Traduzione - Progetto <nome progetto>
 
 ## Scopo
@@ -208,17 +197,6 @@ Ogni campo deve avere la seguente struttura completa:
 ---
 
 **Versione**: 1.0
-**Data**: 2025-08-08
-**Data**: 2025-08-08
-**Stato**: Implementazione in corso
-**Responsabile**: Sistema automatico DRY/KISS
-**Stato**: Implementazione in corso
-**Responsabile**: Sistema automatico DRY/KISS
-**Stato**: Implementazione in corso
-**Responsabile**: Sistema automatico DRY/KISS
-**Stato**: Implementazione in corso
-**Responsabile**: Sistema automatico DRY/KISS
-**Data**: 2025-08-08
 **Data**: 2025-08-08
 **Stato**: Implementazione in corso
 **Responsabile**: Sistema automatico DRY/KISS

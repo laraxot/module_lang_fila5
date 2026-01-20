@@ -17,8 +17,6 @@ package-lock.json
 # Backup files
 *.backup
 *.backup.*
-*.backup-*
-*.backup_*
 *.bak
 *.old
 *.old1
@@ -44,7 +42,3 @@ package-lock.json
 # PHPStan documentation
 docs/phpstan/
 
-_docs/
-
-# Local generated documentation archives
-archive/agentdb.rvf
