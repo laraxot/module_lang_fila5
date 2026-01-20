@@ -1,14 +1,3 @@
----
-title: "Ottimizzazioni Approfondite Modulo Lang - DRY + KISS"
-module: "Lang"
-type: concept
-tags: [filament4, migration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament4 migration"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Ottimizzazioni Approfondite Modulo Lang - DRY + KISS
 
 ## Panoramica
@@ -294,11 +283,6 @@ php artisan test --testsuite=Lang
 
 ## 🔗 Collegamenti Sistema
 
-- [**Documentazione Core Sistema**](../../../docs/core/)
-- [**PHPStan Guide**](../../../docs/core/phpstan-guide.md)
-- [**Filament Best Practices**](../../../docs/core/filament-best-practices.md)
-- [**Convenzioni Sistema**](../../../docs/core/conventions.md)
-- [**Template Moduli**](../../../docs/templates/)
 - [**Documentazione Core Sistema**](../../docs/core/)
 - [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
@@ -311,8 +295,4 @@ php artisan test --testsuite=Lang
 **Impatto:** Team Lang e sviluppatori correlati
 **Stato:** In attesa implementazione
 **Responsabile:** Team Lang
-**Data:** 2025-01-XX
-**Data:** 2025-01-XX
-**Data:** 2025-01-XX
-**Data:** 2025-01-XX
 **Data:** 2025-01-XX

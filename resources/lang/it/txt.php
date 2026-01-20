@@ -9,21 +9,18 @@ return [
             'placeholder' => 'email',
             'helper_text' => 'email',
             'description' => 'email',
-            'tooltip' => '',
         ],
         'password' => [
             'label' => 'password',
             'placeholder' => 'password',
             'helper_text' => 'password',
             'description' => 'password',
-            'tooltip' => '',
         ],
         'remember' => [
             'label' => 'remember',
             'placeholder' => 'remember',
             'helper_text' => 'remember',
             'description' => 'remember',
-            'tooltip' => '',
         ],
     ],
     'actions' => [
@@ -43,13 +40,4 @@ return [
             'label' => 'authenticate',
         ],
     ],
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
 ];

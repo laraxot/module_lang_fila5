@@ -1,14 +1,3 @@
----
-title: "Traduzioni Automatiche con LangServiceProvider"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Traduzioni Automatiche con LangServiceProvider
 
 ## Regola Fondamentale
@@ -120,13 +109,6 @@ Per gli step dei wizard, la chiave di traduzione segue un formato leggermente di
 ```
 
 ## Collegamenti Bidirezionali
-- [LangServiceProvider](/var/www/html/base_<nome progetto>/laravel/Modules/Lang/app/Providers/LangServiceProvider.php)
-- [Convenzioni di Traduzione](/var/www/html/base_<nome progetto>/laravel/modules/lang/docs/translation-conventions.md)
-- [Best Practices Filament](/var/www/html/base_<nome progetto>/laravel/modules/xot/docs/filament-best-practices.md)
-
-## Collegamenti tra versioni di automatic-translations.md
-* [automatic-translations.md](../../ui/docs/filament/automatic-translations.md)
-
 - [LangServiceProvider](Modules/Lang/app/Providers/LangServiceProvider.php)
 - [Convenzioni di Traduzione](Modules/Lang/project_docs/translation-conventions.md)
 - [Best Practices Filament](Modules/Xot/project_docs/filament-best-practices.md)

@@ -1,14 +1,3 @@
----
-title: "English Translations Added for <nome progetto> Widgets"
-module: "Lang"
-type: concept
-tags: [REDUNDANCY, ANALYSIS]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "redundancy analysis"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # English Translations Added for <nome progetto> Widgets
 
 ## ✅ Problema Risolto
@@ -160,11 +149,4 @@ __('<nome progetto>::widgets.doctor_appointments.empty.description')
 - [File inglese aggiornato](../laravel/Modules/<nome progetto>/lang/en/widgets.php)
 - [Widget DoctorAppointments](../laravel/Modules/<nome progetto>/app/Filament/Widgets/DoctorAppointmentsWidget.php)
 
-*Risoluzione completata: 2025-01-21*
-*Risoluzione completata: 2025-01-21*
-*Risoluzione completata: [DATE]*
-*Risoluzione completata: [DATE]*
-*Risoluzione completata: [DATE]*
-*Risoluzione completata: [DATE]*
-*Risoluzione completata: 2025-01-21*
 *Risoluzione completata: 2025-01-21*

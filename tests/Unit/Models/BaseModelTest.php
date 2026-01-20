@@ -5,41 +5,36 @@ declare(strict_types=1);
 namespace Modules\Lang\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Modules\Lang\Models\BaseModel;
-use Modules\Lang\Tests\TestCase;
-use PHPUnit\Framework\Assert;
+use Tests\TestCase;
 
-uses(TestCase::class);
+uses(TestCase::class, DatabaseTransactions::class);
 
-function makeLangBaseModel(): BaseModel
-{
-    return new class extends BaseModel {
+beforeEach(function () {
+    $this->baseModel = new class extends BaseModel
+    {
         protected $table = 'test_lang_table';
     };
-}
-
-test('base model extends eloquent model', function (): void {
-    $baseModel = makeLangBaseModel();
-    Assert::assertInstanceOf(Model::class, $baseModel);
 });
 
-test('base model has correct table name', function (): void {
-    $baseModel = makeLangBaseModel();
-    Assert::assertSame('test_lang_table', $baseModel->getTable());
+test('base model extends eloquent model', function () {
+    expect($this->baseModel)->toBeInstanceOf(Model::class);
 });
 
-test('base model can be instantiated', function (): void {
-    $baseModel = makeLangBaseModel();
-    Assert::assertInstanceOf(BaseModel::class, $baseModel);
+test('base model has correct table name', function () {
+    expect($this->baseModel->getTable())->toBe('test_lang_table');
 });
 
-test('base model has proper inheritance chain', function (): void {
-    $baseModel = makeLangBaseModel();
-    Assert::assertInstanceOf(BaseModel::class, $baseModel);
-    Assert::assertInstanceOf(Model::class, $baseModel);
+test('base model can be instantiated', function () {
+    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
 });
 
-test('base model has timestamps enabled', function (): void {
-    $baseModel = makeLangBaseModel();
-    Assert::assertTrue($baseModel->usesTimestamps());
+test('base model has proper inheritance chain', function () {
+    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
+    expect($this->baseModel)->toBeInstanceOf(Model::class);
+});
+
+test('base model has timestamps enabled', function () {
+    expect($this->baseModel->usesTimestamps())->toBeTrue();
 });

@@ -16,7 +16,7 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Filters\BaseFilter;
 use Illuminate\Container\Container;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
-use Modules\Lang\Adapters\TranslatorAdapter;
+use Modules\Lang\Services\TranslatorService;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Webmozart\Assert\Assert;
 
@@ -54,11 +54,11 @@ class LangServiceProvider extends XotBaseServiceProvider
             return $component;
         });
         Field::configureUsing(function (Field $component) {
-            $component = app(AutoLabelAction::class)->execute($component, 'label');
+            $component = app(AutoLabelAction::class)->execute($component);
             Assert::isInstanceOf($component, Field::class);
 
             $validationMessages = __('user::validation');
-            if (is_array($validationMessages) && [] !== $validationMessages) {
+            if (is_array($validationMessages) && $validationMessages !== []) {
                 /** @var array<string, string> $typedMessages */
                 $typedMessages = [];
                 foreach ($validationMessages as $key => $value) {
@@ -67,7 +67,7 @@ class LangServiceProvider extends XotBaseServiceProvider
                     }
                 }
 
-                if ([] !== $typedMessages) {
+                if ($typedMessages !== []) {
                     $component->validationMessages($typedMessages);
                 }
             }
@@ -76,10 +76,6 @@ class LangServiceProvider extends XotBaseServiceProvider
             $component = app(AutoLabelAction::class)->execute($component, 'helperText');
 
             return app(AutoLabelAction::class)->execute($component, 'description');
-        });
-
-        Entry::configureUsing(function (Entry $component) {
-            return app(AutoLabelAction::class)->execute($component, 'label');
         });
 
         Section::configureUsing(function (Section $component) {
@@ -120,7 +116,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             'getRecord' => $component->getRecord(),
             ]);
             */
-            if (method_exists($component, 'getRecord') && null === $component->getRecord()) {
+            if (method_exists($component, 'getRecord') && $component->getRecord() === null) {
                 if (method_exists($component, 'button')) {
                     $component->button();
                 }
@@ -147,7 +143,7 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     public function registerTranslator(): void
     {
-        $this->app->singleton('translator', function (Container $app): TranslatorAdapter {
+        $this->app->singleton('translator', function (Container $app): TranslatorService {
             $loader = $app['translation.loader'];
 
             // When registering the translator component, we'll need to set the default
@@ -156,7 +152,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             Assert::string($locale = $app['config']['app.locale'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
             Assert::string($fallback_locale = $app['config']['app.fallback_locale'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
-            $translatorService = new TranslatorAdapter($loader, $locale);
+            $translatorService = new TranslatorService($loader, $locale);
 
             $translatorService->setFallback($fallback_locale);
 
@@ -174,9 +170,8 @@ class LangServiceProvider extends XotBaseServiceProvider
         $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
-                if (method_exists($translatable, 'translateLabel')) {
-                    $translatable->translateLabel();
-                }
+                /* @phpstan-ignore method.notFound */
+                $translatable->translateLabel();
             });
         }
     }

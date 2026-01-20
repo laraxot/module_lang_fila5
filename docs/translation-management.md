@@ -1,14 +1,3 @@
----
-title: "Gestione Traduzioni - Regole Critiche"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Gestione Traduzioni - Regole Critiche
 
 ## ⚠️ REGOLA CRITICA: MAI USARE ->label() ⚠️
@@ -99,16 +88,8 @@ Prima di ogni commit, verificare:
 ## Collegamenti
 
 - [Regole Traduzioni](../../laravel/Modules/Xot/docs/translation-standards.md)
-- [Regole Traduzioni](../../laravel/modules/xot/docs/translation-standards.md)
-- [Regole Traduzioni](../../laravel/modules/xot/docs/translation-standards.md)
 - [Best Practices Filament](filament-widget-best-practices.md)
 - [Enum Standards](enum_standards.md)
 
 ## Ultimo Aggiornamento
 2025-01-27 - Regola critica per evitare ->label()
-[DATE] - Regola critica per evitare ->label()
-[DATE] - Regola critica per evitare ->label()
-[DATE] - Regola critica per evitare ->label()
-[DATE] - Regola critica per evitare ->label()
-2025-01-27 - Regola critica per evitare ->label()
-[DATE] - Regola critica per evitare ->label()

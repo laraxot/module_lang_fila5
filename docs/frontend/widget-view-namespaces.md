@@ -1,14 +1,3 @@
----
-title: "Regole per i Namespace delle View nei Widget"
-module: "Lang"
-type: concept
-tags: [lang, service, helper, text]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text fix"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Regole per i Namespace delle View nei Widget
 
 ## Distinzione Critica: Widget Auth vs Widget Normali
@@ -171,5 +160,3 @@ protected static string $view = 'pub_theme::filament.widgets.doctor-appointments
 - [Implementazione Temi](../frontend/theme-implementation.md)
 
 *Ultimo aggiornamento: Dicembre 2024*
-- [Widget Autenticazione](../../laravel/modules/user/docs/auth-widgets.md)
-- [Implementazione Temi](../frontend/theme-implementation.md)

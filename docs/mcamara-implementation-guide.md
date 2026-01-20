@@ -1,14 +1,3 @@
----
-title: "Guida all'Implementazione di mcamara/laravel-localization"
-module: "Lang"
-type: how-to
-tags: [google, translate]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "google translate"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Guida all'Implementazione di mcamara/laravel-localization
 
 ## Indice

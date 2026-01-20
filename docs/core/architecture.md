@@ -1,14 +1,3 @@
----
-title: "Architettura Modulo Lang"
-module: "Lang"
-type: concept
-tags: [migration, filament, 4]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration filament 4"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Architettura Modulo Lang
 
 ## 🏗️ Panoramica Architetturale
@@ -324,9 +313,9 @@ return [
 
 ## 🔗 Collegamenti
 
-- [Best Practices Sistema](../../../../docs/core/best-practices.md)
-- [Convenzioni Sistema](../../../../docs/core/conventions.md)
-- [Template Modulo](../../../../docs/templates/module-template.md)
+- [Best Practices Sistema](../../../docs/core/best-practices.md)
+- [Convenzioni Sistema](../../../docs/core/conventions.md)
+- [Template Modulo](../../../docs/templates/module-template.md)
 - [PHPStan Guide](../development/phpstan-guide.md)
 
 ---
