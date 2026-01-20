@@ -7,7 +7,11 @@ All tests MUST use `.env.testing` configuration:
 ```env
 APP_ENV=testing
 DB_CONNECTION=sqlite
+<<<<<<< HEAD
 DB_DATABASE=saluteora_data_test
+=======
+DB_DATABASE=<nome progetto>_data_test
+>>>>>>> laraxot/develop
 APP_LOCALE=en
 APP_FALLBACK_LOCALE=en
 ```
@@ -47,7 +51,11 @@ describe('Translation Management Business Logic', function () {
     it('stores and retrieves translations for multiple languages', function () {
         $language_en = Language::factory()->create(['code' => 'en', 'name' => 'English']);
         $language_it = Language::factory()->create(['code' => 'it', 'name' => 'Italian']);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         $key = TranslationKey::factory()->create([
             'key' => 'appointment.confirmation.title'
         ]);
@@ -92,7 +100,11 @@ describe('Translation Management Business Logic', function () {
 
     it('implements fallback mechanism for missing translations', function () {
         $key = TranslationKey::factory()->create(['key' => 'test.message']);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         // Only English translation exists
         Translation::factory()->create([
             'translation_key_id' => $key->id,
@@ -103,7 +115,11 @@ describe('Translation Management Business Logic', function () {
 
         // Request Italian translation (doesn't exist)
         $translation = Translation::getTranslation('test.message', 'it', ['fallback' => true]);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         expect($translation)->toBe('English message'); // Falls back to English
     });
 });
@@ -115,7 +131,11 @@ describe('Translation Management Business Logic', function () {
 describe('Language Preference Business Logic', function () {
     it('sets and retrieves user language preferences', function () {
         $user = User::factory()->create();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         $user->setLanguagePreference('it-IT', [
             'medical_terms' => true,
             'notifications' => true,
@@ -123,7 +143,11 @@ describe('Language Preference Business Logic', function () {
         ]);
 
         $preference = $user->getLanguagePreference();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         expect($preference->language_code)->toBe('it-IT')
             ->and($preference->preferences['medical_terms'])->toBeTrue()
             ->and($preference->preferences['billing'])->toBeFalse();
@@ -132,21 +156,37 @@ describe('Language Preference Business Logic', function () {
     it('cascades language preferences from user to patient', function () {
         $user = User::factory()->create();
         $patient = Patient::factory()->create(['user_id' => $user->id]);
+<<<<<<< HEAD
         
         $user->setLanguagePreference('es-ES');
         
         $patientLanguage = $patient->getEffectiveLanguage();
         
+=======
+
+        $user->setLanguagePreference('es-ES');
+
+        $patientLanguage = $patient->getEffectiveLanguage();
+
+>>>>>>> laraxot/develop
         expect($patientLanguage)->toBe('es-ES');
     });
 
     it('detects language from browser and geographic data', function () {
         $detector = new LanguageDetector();
+<<<<<<< HEAD
         
         // Mock browser language
         $browserLanguage = $detector->detectFromBrowser(['it-IT', 'en-US']);
         expect($browserLanguage)->toBe('it-IT');
         
+=======
+
+        // Mock browser language
+        $browserLanguage = $detector->detectFromBrowser(['it-IT', 'en-US']);
+        expect($browserLanguage)->toBe('it-IT');
+
+>>>>>>> laraxot/develop
         // Mock geographic detection
         $geoLanguage = $detector->detectFromLocation('Italy', 'Rome');
         expect($geoLanguage)->toBe('it-IT');
@@ -155,10 +195,17 @@ describe('Language Preference Business Logic', function () {
     it('handles emergency language override', function () {
         $patient = Patient::factory()->create();
         $patient->setLanguagePreference('zh-CN');
+<<<<<<< HEAD
         
         // Emergency situation - should use practice default
         $emergencyLanguage = $patient->getLanguageForEmergency();
         
+=======
+
+        // Emergency situation - should use practice default
+        $emergencyLanguage = $patient->getLanguageForEmergency();
+
+>>>>>>> laraxot/develop
         expect($emergencyLanguage)->toBe(config('app.locale')); // Practice default
     });
 });
@@ -183,10 +230,17 @@ describe('Healthcare Content Localization', function () {
 
     it('validates medical terminology translations', function () {
         $validator = new MedicalTerminologyValidator();
+<<<<<<< HEAD
         
         $validTranslation = $validator->validate('hypertension', 'ipertensione', 'it');
         $invalidTranslation = $validator->validate('hypertension', 'wrong_term', 'it');
         
+=======
+
+        $validTranslation = $validator->validate('hypertension', 'ipertensione', 'it');
+        $invalidTranslation = $validator->validate('hypertension', 'wrong_term', 'it');
+
+>>>>>>> laraxot/develop
         expect($validTranslation->isValid())->toBeTrue()
             ->and($invalidTranslation->isValid())->toBeFalse()
             ->and($invalidTranslation->getErrors())->toContain('Invalid medical terminology');
@@ -195,9 +249,15 @@ describe('Healthcare Content Localization', function () {
     it('generates localized patient consent forms', function () {
         $patient = Patient::factory()->create();
         $patient->setLanguagePreference('fr-FR');
+<<<<<<< HEAD
         
         $consentForm = ConsentFormGenerator::generate('dental_procedure', $patient);
         
+=======
+
+        $consentForm = ConsentFormGenerator::generate('dental_procedure', $patient);
+
+>>>>>>> laraxot/develop
         expect($consentForm->language)->toBe('fr-FR')
             ->and($consentForm->content)->toContain('consentement')
             ->and($consentForm->isLegallyValid())->toBeTrue();
@@ -206,11 +266,19 @@ describe('Healthcare Content Localization', function () {
     it('localizes appointment notifications', function () {
         $patient = Patient::factory()->create();
         $patient->setLanguagePreference('de-DE');
+<<<<<<< HEAD
         
         $appointment = Appointment::factory()->create(['patient_id' => $patient->id]);
         
         $notification = AppointmentNotification::create($appointment);
         
+=======
+
+        $appointment = Appointment::factory()->create(['patient_id' => $patient->id]);
+
+        $notification = AppointmentNotification::create($appointment);
+
+>>>>>>> laraxot/develop
         expect($notification->language)->toBe('de-DE')
             ->and($notification->subject)->toContain('Termin')
             ->and($notification->body)->toContain('Zahnarzt');
@@ -224,12 +292,21 @@ describe('Healthcare Content Localization', function () {
 describe('Lang Integration Tests', function () {
     it('integrates with CMS for multilingual content', function () {
         $page = CmsPage::factory()->create(['title' => 'About Us']);
+<<<<<<< HEAD
         
         $page->setTranslation('title', 'it', 'Chi Siamo');
         $page->setTranslation('content', 'it', 'Contenuto della pagina in italiano');
         
         app()->setLocale('it');
         
+=======
+
+        $page->setTranslation('title', 'it', 'Chi Siamo');
+        $page->setTranslation('content', 'it', 'Contenuto della pagina in italiano');
+
+        app()->setLocale('it');
+
+>>>>>>> laraxot/develop
         expect($page->title)->toBe('Chi Siamo')
             ->and($page->content)->toContain('italiano');
     });
@@ -237,9 +314,15 @@ describe('Lang Integration Tests', function () {
     it('integrates with notification system for multilingual messages', function () {
         $patient = Patient::factory()->create();
         $patient->setLanguagePreference('es-ES');
+<<<<<<< HEAD
         
         $notification = new AppointmentReminderNotification($patient);
         
+=======
+
+        $notification = new AppointmentReminderNotification($patient);
+
+>>>>>>> laraxot/develop
         expect($notification->getLanguage())->toBe('es-ES')
             ->and($notification->getSubject())->toContain('Recordatorio')
             ->and($notification->getBody())->toContain('cita');
@@ -264,7 +347,11 @@ describe('Lang Integration Tests', function () {
 
         app()->setLocale('it');
         expect($service->name)->toBe('Consulto Generale');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         app()->setLocale('fr');
         expect($service->name)->toBe('Consultation Générale');
     });
@@ -272,11 +359,19 @@ describe('Lang Integration Tests', function () {
     it('generates multilingual PDF documents', function () {
         $patient = Patient::factory()->create();
         $patient->setLanguagePreference('pt-BR');
+<<<<<<< HEAD
         
         $invoice = Invoice::factory()->create(['patient_id' => $patient->id]);
         
         $pdf = InvoicePdfGenerator::generate($invoice);
         
+=======
+
+        $invoice = Invoice::factory()->create(['patient_id' => $patient->id]);
+
+        $pdf = InvoicePdfGenerator::generate($invoice);
+
+>>>>>>> laraxot/develop
         expect($pdf->getLanguage())->toBe('pt-BR')
             ->and($pdf->getContent())->toContain('Fatura')
             ->and($pdf->isValid())->toBeTrue();
@@ -292,7 +387,11 @@ describe('Lang Performance Tests', function () {
         // Create many translations
         $keys = TranslationKey::factory()->count(100)->create();
         $languages = Language::factory()->count(5)->create();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         foreach ($keys as $key) {
             foreach ($languages as $language) {
                 Translation::factory()->create([
@@ -301,43 +400,76 @@ describe('Lang Performance Tests', function () {
                 ]);
             }
         }
+<<<<<<< HEAD
         
         $startTime = microtime(true);
         
+=======
+
+        $startTime = microtime(true);
+
+>>>>>>> laraxot/develop
         // Retrieve translations (should be cached after first load)
         for ($i = 0; $i < 50; $i++) {
             Translation::getTranslation($keys->random()->key, $languages->random()->code);
         }
+<<<<<<< HEAD
         
         $duration = microtime(true) - $startTime;
         
+=======
+
+        $duration = microtime(true) - $startTime;
+
+>>>>>>> laraxot/develop
         expect($duration)->toBeLessThan(1.0); // Should complete in under 1 second
     });
 
     it('handles large translation datasets efficiently', function () {
         $startTime = microtime(true);
+<<<<<<< HEAD
         
         // Create large dataset
         TranslationKey::factory()->count(1000)->create();
         
         $creationTime = microtime(true) - $startTime;
         
+=======
+
+        // Create large dataset
+        TranslationKey::factory()->count(1000)->create();
+
+        $creationTime = microtime(true) - $startTime;
+
+>>>>>>> laraxot/develop
         expect($creationTime)->toBeLessThan(5.0); // Should complete in under 5 seconds
     });
 
     it('optimizes database queries for translation retrieval', function () {
         DB::enableQueryLog();
+<<<<<<< HEAD
         
         $keys = TranslationKey::factory()->count(10)->create();
         
+=======
+
+        $keys = TranslationKey::factory()->count(10)->create();
+
+>>>>>>> laraxot/develop
         // Retrieve multiple translations
         $translations = Translation::getMultipleTranslations(
             $keys->pluck('key')->toArray(),
             'en'
         );
+<<<<<<< HEAD
         
         $queries = DB::getQueryLog();
         
+=======
+
+        $queries = DB::getQueryLog();
+
+>>>>>>> laraxot/develop
         expect(count($queries))->toBeLessThanOrEqual(3); // Should use efficient queries
         expect($translations)->toHaveCount(10);
     });

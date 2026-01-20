@@ -261,7 +261,11 @@ class LanguageService
 public function boot(): void
 {
     parent::boot();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     // Configurazioni specifiche del modulo Lang
 }
 ```
@@ -320,5 +324,9 @@ return [
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento:** Gennaio 2025  
+=======
+**Ultimo aggiornamento:** Gennaio 2025
+>>>>>>> laraxot/develop
 **Versione:** 2.0 - Consolidata DRY + KISS

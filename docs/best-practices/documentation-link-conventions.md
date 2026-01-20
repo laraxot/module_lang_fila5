@@ -14,8 +14,13 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 
 ❌ **ERRATO**:
 ```markdown
+<<<<<<< HEAD
 [Regole Generali](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/translations.md)
 [Best Practices](/var/www/html/<nome progetto>/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+[Regole Generali](Modules/Xot/docs/translations.md)
+[Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+>>>>>>> laraxot/develop
 ```
 
 ### 2. Navigazione Tra Cartelle

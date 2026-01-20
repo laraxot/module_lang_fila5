@@ -129,7 +129,11 @@ Ogni campo di traduzione DEVE includere:
 
 ### 1. Helper Text Audit
 ```bash
+<<<<<<< HEAD
 cd /var/www/html/_bases/base_<nome progetto>/laravel
+=======
+cd laravel
+>>>>>>> laraxot/develop
 php docs/helper-text-audit-script.php
 ```
 
@@ -203,7 +207,11 @@ php docs/obbligatorio-audit-script.php
 
 ### File Corretti Durante il Progetto
 1. `/Modules/User/lang/de/registration.php` - Campi city e state
+<<<<<<< HEAD
 2. `/Modules/User/lang/en/registration.php` - Campi city e province  
+=======
+2. `/Modules/User/lang/en/registration.php` - Campi city e province
+>>>>>>> laraxot/develop
 3. `/Modules/User/lang/de/register_tenant.php` - Campo address
 4. `/Themes/One/lang/de/auth.php` - Sezione login completa
 5. `/Modules/Geo/lang/en/address.php` - Campi province e region
@@ -243,7 +251,13 @@ php docs/obbligatorio-audit-script.php
 
 ---
 
+<<<<<<< HEAD
 **Data Creazione**: 8 Agosto 2025  
 **Ultima Validazione**: 8 Agosto 2025  
 **Status**: ✅ TUTTI I CONTROLLI SUPERATI  
+=======
+**Data Creazione**: 8 Agosto 2025
+**Ultima Validazione**: 8 Agosto 2025
+**Status**: ✅ TUTTI I CONTROLLI SUPERATI
+>>>>>>> laraxot/develop
 **Conformità**: ✅ PROGETTO COMPLETAMENTE CONFORME

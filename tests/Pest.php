@@ -64,3 +64,19 @@ function makeLanguage(array $attributes = []): Language
 {
     return Language::factory()->make($attributes);
 }
+<<<<<<< HEAD
+=======
+
+function createTranslationFile(string $filePath, array $translations): void
+{
+    $phpContent = "<?php\n\nreturn ".var_export($translations, true).";\n";
+    file_put_contents($filePath, $phpContent);
+}
+
+function cleanupTranslationFile(string $filePath): void
+{
+    if (file_exists($filePath)) {
+        unlink($filePath);
+    }
+}
+>>>>>>> laraxot/develop

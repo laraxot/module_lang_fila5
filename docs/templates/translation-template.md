@@ -38,4 +38,8 @@ last_updated: "YYYY-MM-DD"
 - Tradurre il significato, non le parole
 - Mantenere la formattazione Markdown
 - Verificare i link e i riferimenti
+<<<<<<< HEAD
 - Controllare la coerenza con altre traduzioni 
+=======
+- Controllare la coerenza con altre traduzioni
+>>>>>>> laraxot/develop

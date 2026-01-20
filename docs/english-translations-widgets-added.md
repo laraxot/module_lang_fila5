@@ -24,12 +24,20 @@ Il file `laravel/Modules/<nome progetto>/lang/en/widgets.php` era **incompleto**
 ```php
 'doctor_appointments' => [
     'title' => 'Pending Appointments',
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'empty' => [
         'title' => 'No pending appointments',          // ← Richiesto
         'description' => 'You have no appointments to confirm at this time.',  // ← Richiesto
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'actions' => [
         'view_details' => ['label' => 'View Details', 'tooltip' => 'Show appointment details'],
         'confirm' => [
@@ -53,12 +61,20 @@ Il file `laravel/Modules/<nome progetto>/lang/en/widgets.php` era **incompleto**
             ],
         ],
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'messages' => [
         'appointment_confirmed' => 'Appointment confirmed successfully',
         'appointment_rejected' => 'Appointment rejected successfully',
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'errors' => [
         'cannot_confirm' => 'Cannot confirm this appointment',
         'cannot_reject' => 'Cannot reject this appointment',
@@ -66,7 +82,11 @@ Il file `laravel/Modules/<nome progetto>/lang/en/widgets.php` era **incompleto**
         'reject_failed' => 'Error rejecting the appointment',
         'appointment_not_found' => 'Appointment not found',
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'status' => [
         'pending' => 'Pending',
         'confirmed' => 'Confirmed',
@@ -103,7 +123,11 @@ return [
 ```
 **29 righe totali**
 
+<<<<<<< HEAD
 ### Dopo  
+=======
+### Dopo
+>>>>>>> laraxot/develop
 ```php
 // File: laravel/Modules/<nome progetto>/lang/en/widgets.php
 return [
@@ -132,7 +156,11 @@ Per testare le traduzioni aggiunte:
 __('<nome progetto>::widgets.doctor_appointments.empty.title')
 // Output: "No pending appointments"
 
+<<<<<<< HEAD
 __('<nome progetto>::widgets.doctor_appointments.empty.description') 
+=======
+__('<nome progetto>::widgets.doctor_appointments.empty.description')
+>>>>>>> laraxot/develop
 // Output: "You have no appointments to confirm at this time."
 ```
 
@@ -149,4 +177,8 @@ __('<nome progetto>::widgets.doctor_appointments.empty.description')
 - [File inglese aggiornato](../laravel/Modules/<nome progetto>/lang/en/widgets.php)
 - [Widget DoctorAppointments](../laravel/Modules/<nome progetto>/app/Filament/Widgets/DoctorAppointmentsWidget.php)
 
+<<<<<<< HEAD
 *Risoluzione completata: 2025-01-21* 
+=======
+*Risoluzione completata: 2025-01-21*
+>>>>>>> laraxot/develop

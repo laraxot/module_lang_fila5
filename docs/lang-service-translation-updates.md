@@ -147,7 +147,13 @@ La gestione delle traduzioni deve essere:
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-06  
 **Autore**: Sistema di gestione traduzioni Laraxot  
 **Versione**: 1.0  
+=======
+**Ultimo aggiornamento**: 2025-01-06
+**Autore**: Sistema di gestione traduzioni Laraxot
+**Versione**: 1.0
+>>>>>>> laraxot/develop
 **Stato**: Implementato e testato

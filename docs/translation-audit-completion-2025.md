@@ -3,6 +3,10 @@
 ## Riepilogo Lavoro Effettuato
 
 ### Problema Identificato
+<<<<<<< HEAD
+=======
+Durante l'audit delle traduzioni del progetto <main module>, sono state identificate numerose traduzioni italiane presenti in file di lingua tedesca e inglese, causando incoerenza nell'interfaccia utente.
+>>>>>>> laraxot/develop
 Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identificate numerose traduzioni italiane presenti in file di lingua tedesca e inglese, causando incoerenza nell'interfaccia utente.
 
 ### Pattern di Errore
@@ -23,6 +27,10 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 - **File inglesi**: 5 file corretti
 - **Pattern**: `'required' => 'Pflichtfeld'` (DE) / `'required' => 'Required field'` (EN)
 
+<<<<<<< HEAD
+=======
+#### ✅ Modulo <main module>
+>>>>>>> laraxot/develop
 #### ✅ Modulo <nome progetto>
 - **File tedeschi**: 4 file corretti
 - **File inglesi**: 4 file corretti
@@ -38,7 +46,11 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 - **File inglesi**: 4 file corretti
 - **Pattern**: `'required' => 'Pflichtfeld'` (DE) / `'required' => 'This field is required'` (EN)
 
+<<<<<<< HEAD
 #### ✅ Modulo <nome modulo>
+=======
+#### ✅ Modulo <nome progetto>
+>>>>>>> laraxot/develop
 - **File tedeschi**: 4 file corretti
 - **File inglesi**: 4 file corretti
 - **Pattern**: `'required' => 'Das Feld :attribute ist erforderlich'` (DE) / `'required' => 'The :attribute field is required'` (EN)
@@ -130,11 +142,19 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 
 ### Moduli con Documentazione Aggiornata
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
+<<<<<<< HEAD
+=======
+2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
+>>>>>>> laraxot/develop
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali Creati
 - [Root Docs: Translation Standards](translation_standards.md)
 - [Lang Module: Translation Best Practices](../laravel/Modules/Lang/docs/translation_best_practices.md)
+<<<<<<< HEAD
+=======
+- [<main module> Module: Translation Guidelines](../laravel/Modules/<main module>/docs/translation_guidelines.md)
+>>>>>>> laraxot/develop
 - [<nome progetto> Module: Translation Guidelines](../laravel/Modules/<nome progetto>/docs/translation_guidelines.md)
 
 ## Prevenzione Errori Futuri

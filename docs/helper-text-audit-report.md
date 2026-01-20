@@ -12,4 +12,7 @@
 ## Regola Applicata
 
 **Se il valore di `helper_text` è uguale alla chiave del campo padre, DEVE essere impostato a stringa vuota (`''`).**
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/develop

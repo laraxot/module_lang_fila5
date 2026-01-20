@@ -69,11 +69,18 @@ class EditTranslationFile extends XotBaseEditRecord
 
     protected function getHeaderActions(): array
     {
+<<<<<<< HEAD
         return [
             LocaleSwitcherRefresh::make('lang'),
             ...parent::getHeaderActions(),
             // ...
         ];
+=======
+        return array_merge(
+            ['locale-switcher' => LocaleSwitcherRefresh::make('lang')],
+            parent::getHeaderActions(),
+        );
+>>>>>>> laraxot/develop
     }
 
     protected function mutateFormDataBeforeSave(array $data): array

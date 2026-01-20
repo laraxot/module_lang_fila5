@@ -5,13 +5,22 @@ declare(strict_types=1);
 namespace Modules\Lang\Filament\Resources\Pages;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
 use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
 use LaraZeus\SpatieTranslatable\Resources\Pages\ListRecords\Concerns\Translatable;
+=======
+// use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
+// use LaraZeus\SpatieTranslatable\Resources\Pages\ListRecords\Concerns\Translatable;
+>>>>>>> laraxot/develop
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 abstract class LangBaseListRecords extends XotBaseListRecords
 {
+<<<<<<< HEAD
     use Translatable;
+=======
+    // use Translatable; // Temporarily disabled until lara-zeus package is working
+>>>>>>> laraxot/develop
 
     protected static string $resource; // = SectionResource::class;
 
@@ -25,7 +34,11 @@ abstract class LangBaseListRecords extends XotBaseListRecords
 
         // Assicurarsi che tutte le azioni abbiano chiavi stringa
         $actions = [
+<<<<<<< HEAD
             'locale_switcher' => LocaleSwitcher::make(),
+=======
+            // 'locale_switcher' => LocaleSwitcher::make(), // Temporarily disabled until lara-zeus package is working
+>>>>>>> laraxot/develop
         ];
 
         // Aggiungere le azioni parent con chiavi stringa

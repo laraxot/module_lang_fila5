@@ -100,11 +100,16 @@ class AutoTranslationService
             'target' => $to,
             'key' => config('lang.google_translate_api_key')
         ]);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         if ($response->successful()) {
             $data = $response->json();
             return $data['data']['translations'][0]['translatedText'] ?? null;
         }
+<<<<<<< HEAD
         
         return null;
     }
@@ -117,6 +122,20 @@ class AutoTranslationService
             $translations[$key] = $this->translate($text, $from, $to);
         }
         
+=======
+
+        return null;
+    }
+
+    public function translateBatch(array $texts, string $from, string $to): array
+    {
+        $translations = [];
+
+        foreach ($texts as $key => $text) {
+            $translations[$key] = $this->translate($text, $from, $to);
+        }
+
+>>>>>>> laraxot/develop
         return $translations;
     }
 }
@@ -137,18 +156,30 @@ class TranslationAnalyticsService
             'recent_activity' => $this->getRecentActivity(),
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     public function getMissingTranslations(): array
     {
         $languages = Language::enabled()->pluck('code');
         $missing = [];
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         foreach ($languages as $lang) {
             $missing[$lang] = TranslationKey::whereDoesntHave('translations', function ($query) use ($lang) {
                 $query->where('language_code', $lang);
             })->count();
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         return $missing;
     }
 }
@@ -218,7 +249,11 @@ $translated = $autoTranslate->translate('Hello world', 'en', 'it');
 class TranslationResource extends Resource
 {
     protected static ?string $model = TranslationKey::class;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
     {
         return $form
@@ -254,6 +289,7 @@ class TranslationSyncListener
     public function handle(TranslationUpdated $event): void
     {
         $translation = $event->translation;
+<<<<<<< HEAD
         
         // Sincronizza con altri moduli
         $this->syncWithModules($translation);
@@ -261,6 +297,15 @@ class TranslationSyncListener
         // Aggiorna cache
         Cache::forget("translation_{$translation->language_code}");
         
+=======
+
+        // Sincronizza con altri moduli
+        $this->syncWithModules($translation);
+
+        // Aggiorna cache
+        Cache::forget("translation_{$translation->language_code}");
+
+>>>>>>> laraxot/develop
         // Invia notifica se necessario
         if ($translation->is_missing) {
             $this->notifyMissingTranslation($translation);
@@ -277,25 +322,45 @@ class TranslationSyncListener
 class TranslationManager
 {
     private array $modules = ['<nome progetto>', 'user', 'geo', 'chart'];
+<<<<<<< HEAD
     
     public function syncTranslations(string $module): void
     {
         $keys = $this->getTranslationKeys($module);
         
+=======
+
+    public function syncTranslations(string $module): void
+    {
+        $keys = $this->getTranslationKeys($module);
+
+>>>>>>> laraxot/develop
         foreach ($keys as $key) {
             $this->ensureTranslationsExist($key);
         }
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     public function getTranslationKeys(string $module): Collection
     {
         return TranslationKey::where('module', $module)->get();
     }
+<<<<<<< HEAD
     
     public function ensureTranslationsExist(TranslationKey $key): void
     {
         $languages = Language::enabled()->pluck('code');
         
+=======
+
+    public function ensureTranslationsExist(TranslationKey $key): void
+    {
+        $languages = Language::enabled()->pluck('code');
+
+>>>>>>> laraxot/develop
         foreach ($languages as $lang) {
             if (!$key->translations()->where('language_code', $lang)->exists()) {
                 // Crea traduzione vuota per completamento
@@ -322,10 +387,17 @@ class TranslationMemory
             ->where('value', 'LIKE', "%{$text}%")
             ->orWhere('value', 'LIKE', "%" . substr($text, 0, 10) . "%")
             ->first();
+<<<<<<< HEAD
         
         return $similar?->value;
     }
     
+=======
+
+        return $similar?->value;
+    }
+
+>>>>>>> laraxot/develop
     public function store(string $original, string $translated, string $language): void
     {
         TranslationMemory::create([
@@ -346,6 +418,7 @@ class MissingKeysDetector
     public function detectMissingKeys(): array
     {
         $missing = [];
+<<<<<<< HEAD
         
         foreach ($this->getModules() as $module) {
             $moduleKeys = $this->getModuleKeys($module);
@@ -357,6 +430,19 @@ class MissingKeysDetector
         return $missing;
     }
     
+=======
+
+        foreach ($this->getModules() as $module) {
+            $moduleKeys = $this->getModuleKeys($module);
+            $translatedKeys = $this->getTranslatedKeys($module);
+
+            $missing[$module] = array_diff($moduleKeys, $translatedKeys);
+        }
+
+        return $missing;
+    }
+
+>>>>>>> laraxot/develop
     public function generateReport(): array
     {
         return [
@@ -547,4 +633,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <br>
   <em>Costruito con ❤️ per la comunità Laravel</em>
 </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/develop

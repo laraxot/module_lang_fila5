@@ -2,11 +2,40 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Lang\Actions\ReadTranslationFileAction;
 
 beforeEach(function () {
     $this->action = new ReadTranslationFileAction();
     $this->testFilePath = storage_path('test_translations.php');
+=======
+uses(Modules\Lang\Tests\TestCase::class);
+
+use Modules\Lang\Actions\ReadTranslationFileAction;
+
+// Helper functions for this test
+if (! function_exists('createTranslationFile')) {
+    function createTranslationFile(string $filePath, array $translations): void
+    {
+        $phpContent = "<?php\n\nreturn ".var_export($translations, true).";\n";
+        file_put_contents($filePath, $phpContent);
+    }
+}
+
+if (! function_exists('cleanupTranslationFile')) {
+    function cleanupTranslationFile(string $filePath): void
+    {
+        if (file_exists($filePath)) {
+            unlink($filePath);
+        }
+    }
+}
+
+beforeEach(function () {
+    $this->action = new ReadTranslationFileAction();
+    // Use sys_get_temp_dir() instead of storage_path() to avoid calling app() before setUp
+    $this->testFilePath = sys_get_temp_dir().'/test_translations.php';
+>>>>>>> laraxot/develop
     $this->testTranslations = [
         'auth' => [
             'failed' => 'These credentials do not match our records.',

@@ -3,11 +3,19 @@
 ## Errori Risolti
 
 ### 1. WriteTranslationFileAction.php
+<<<<<<< HEAD
 **Errori**: 
 - Call to undefined method `Illuminate\Contracts\Cache\Repository::flush()`
 - PHPDoc tag @var contains unknown class `Illuminate\Translation\LoaderInterface`
 
 **Soluzione**: 
+=======
+**Errori**:
+- Call to undefined method `Illuminate\Contracts\Cache\Repository::flush()`
+- PHPDoc tag @var contains unknown class `Illuminate\Translation\LoaderInterface`
+
+**Soluzione**:
+>>>>>>> laraxot/develop
 - Aggiunto `//@phpstan-ignore-next-line` per il metodo `flush()` del cache
 - Cambiato tipo da `Illuminate\Translation\LoaderInterface` a `mixed` per il loader
 

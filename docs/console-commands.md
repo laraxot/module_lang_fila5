@@ -24,11 +24,19 @@ Converte file di traduzione tra formato PHP e JSON.
 protected function flattenArray(array $array, string $prefix = ''): array
 {
     $result = [];
+<<<<<<< HEAD
     
     foreach ($array as $key => $value) {
         Assert::string($key, 'Le chiavi degli array devono essere stringhe');
         $newKey = $prefix ? "{$prefix}.{$key}" : $key;
         
+=======
+
+    foreach ($array as $key => $value) {
+        Assert::string($key, 'Le chiavi degli array devono essere stringhe');
+        $newKey = $prefix ? "{$prefix}.{$key}" : $key;
+
+>>>>>>> laraxot/develop
         if (is_array($value)) {
             /** @var array<string, mixed> $value */
             $result = array_merge($result, $this->flattenArray($value, $newKey));
@@ -37,7 +45,11 @@ protected function flattenArray(array $array, string $prefix = ''): array
             $result[$newKey] = $value;
         }
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     return $result;
 }
 ```
@@ -63,11 +75,19 @@ Trova traduzioni mancanti o vuote nel sistema.
 protected function checkArrayForMissing(array $array, string $namespace, string $file, string $parentKey = ''): array
 {
     $missing = [];
+<<<<<<< HEAD
     
     foreach ($array as $key => $value) {
         Assert::string($key, 'Le chiavi delle traduzioni devono essere stringhe');
         $currentKey = $parentKey ? "{$parentKey}.{$key}" : $key;
         
+=======
+
+    foreach ($array as $key => $value) {
+        Assert::string($key, 'Le chiavi delle traduzioni devono essere stringhe');
+        $currentKey = $parentKey ? "{$parentKey}.{$key}" : $key;
+
+>>>>>>> laraxot/develop
         if (is_array($value)) {
             /** @var array<string, mixed> $value */
             $missing = array_merge(
@@ -82,7 +102,11 @@ protected function checkArrayForMissing(array $array, string $namespace, string 
             ];
         }
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     return $missing;
 }
 ```

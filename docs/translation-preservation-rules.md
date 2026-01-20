@@ -8,7 +8,11 @@
 
 ### Regola Fondamentale: Traduzioni Appropriate
 - **Italiano**: "Referto" (NON "Report") - specialmente in ambito medico/odontoiatrico
+<<<<<<< HEAD
 - **Inglese**: "Report" 
+=======
+- **Inglese**: "Report"
+>>>>>>> laraxot/develop
 - **Tedesco**: "Bericht"
 
 ### Esempi di Terminologia Corretta
@@ -21,7 +25,11 @@
     'modal_description' => 'Il referto odontoiatrico è in attesa di compilazione',
 ],
 
+<<<<<<< HEAD
 // Modulo <nome modulo>
+=======
+// Modulo <nome progetto>
+>>>>>>> laraxot/develop
 'model' => [
     'label' => 'Referto Odontoiatrico',
     'plural' => 'Referti Odontoiatrici',
@@ -149,6 +157,12 @@ Ogni correzione terminologica deve essere documentata:
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: Gennaio 2025  
 **Regola Critica**: MAI rimuovere contenuto dalle traduzioni, SOLO aggiungere o migliorare  
 **Terminologia**: "Referto" in italiano, "Report" in inglese, "Bericht" in tedesco 
+=======
+**Ultimo aggiornamento**: Gennaio 2025
+**Regola Critica**: MAI rimuovere contenuto dalle traduzioni, SOLO aggiungere o migliorare
+**Terminologia**: "Referto" in italiano, "Report" in inglese, "Bericht" in tedesco
+>>>>>>> laraxot/develop

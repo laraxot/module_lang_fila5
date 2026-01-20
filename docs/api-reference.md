@@ -60,7 +60,11 @@ class TranslationService
  * @param array<string, mixed> $replace Parametri di sostituzione
  * @param string|null $locale Locale specifico
  * @param bool $fallback Abilita fallback
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return string|array<string, mixed> Traduzione o array di traduzioni
  */
 public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): string|array
@@ -92,7 +96,11 @@ $text = $service->get('buttons.save', [], 'en');
  * @param string|array<string, mixed> $value Valore traduzione
  * @param string $locale Locale
  * @param bool $persist Persiste su file
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return bool Successo operazione
  */
 public function set(string $key, string|array $value, string $locale, bool $persist = false): bool
@@ -122,7 +130,11 @@ $service->set('validation', [
  *
  * @param string $key Chiave di traduzione
  * @param string|null $locale Locale specifico
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return bool Esistenza traduzione
  */
 public function has(string $key, ?string $locale = null): bool
@@ -147,7 +159,11 @@ if ($service->has('fields.name.label')) {
  *
  * @param string $locale Locale specifico
  * @param array<string> $exclude Chiavi da escludere
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return array<string> Chiavi mancanti
  */
 public function missing(string $locale, array $exclude = []): array
@@ -193,7 +209,11 @@ class ValidationService
  * @param string $module Nome modulo
  * @param string $locale Locale
  * @param array<string, mixed> $options Opzioni validazione
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return array<string, mixed> Risultato validazione
  */
 public function validate(string $module, string $locale, array $options = []): array
@@ -227,7 +247,11 @@ $result = $service->validate('User', 'it', [
  *
  * @param string $filePath Percorso file
  * @param array<string, mixed> $options Opzioni validazione
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return array<string, mixed> Risultato validazione
  */
 public function validateFile(string $filePath, array $options = []): array
@@ -253,7 +277,11 @@ $result = $service->validateFile(
  *
  * @param string $filePath Percorso file
  * @param array<string, mixed> $options Opzioni correzione
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return array<string, mixed> Risultato correzione
  */
 public function fix(string $filePath, array $options = []): array
@@ -301,7 +329,11 @@ class CacheService
  *
  * @param string $key Chiave cache
  * @param string $locale Locale
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return array<string, mixed>|null Traduzioni o null
  */
 public function get(string $key, string $locale): ?array
@@ -329,7 +361,11 @@ if ($translations) {
  * @param string $locale Locale
  * @param array<string, mixed> $translations Traduzioni
  * @param int|null $ttl TTL specifico
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return bool Successo operazione
  */
 public function put(string $key, string $locale, array $translations, ?int $ttl = null): bool
@@ -355,7 +391,11 @@ $service->put('user_fields', 'it', [
  *
  * @param string|null $module Nome modulo (opzionale)
  * @param string|null $locale Locale (opzionale)
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return bool Successo operazione
  */
 public function clear(?string $module = null, ?string $locale = null): bool
@@ -554,7 +594,11 @@ $status = Lang::cache()->status();
  * @param string $key Chiave traduzione
  * @param array<string, mixed> $replace Parametri
  * @param string|null $locale Locale
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return string Traduzione
  */
 function __lang(string $key, array $replace = [], ?string $locale = null): string
@@ -582,7 +626,11 @@ $text = __lang('buttons.save', [], 'en');
  *
  * @param string $key Chiave traduzione
  * @param string|null $locale Locale
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return bool Esistenza
  */
 function lang_has(string $key, ?string $locale = null): bool
@@ -609,7 +657,11 @@ if (lang_has('fields.name.label')) {
  *
  * @param string $filePath Percorso file
  * @param array<string, mixed> $options Opzioni
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return array<string, mixed> Risultato
  */
 function validate_lang_file(string $filePath, array $options = []): array
@@ -633,7 +685,11 @@ $result = validate_lang_file('Modules/User/lang/it/fields.php', [
  *
  * @param string $filePath Percorso file
  * @param array<string, mixed> $options Opzioni
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> laraxot/develop
  * @return array<string, mixed> Risultato
  */
 function fix_lang_file(string $filePath, array $options = []): array
@@ -785,7 +841,11 @@ try {
         'key' => 'key',
         'locale' => app()->getLocale()
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     // Fallback
     $result = 'Fallback text';
 }
@@ -812,11 +872,19 @@ public function get(string $key, array $replace = [], ?string $locale = null): s
     if (empty($key)) {
         throw new InvalidArgumentException('Translation key cannot be empty');
     }
+<<<<<<< HEAD
     
     if ($locale && !in_array($locale, $this->config['available_locales'])) {
         throw new InvalidArgumentException("Invalid locale: {$locale}");
     }
     
+=======
+
+    if ($locale && !in_array($locale, $this->config['available_locales'])) {
+        throw new InvalidArgumentException("Invalid locale: {$locale}");
+    }
+
+>>>>>>> laraxot/develop
     // Implementazione...
 }
 ```
@@ -841,7 +909,13 @@ public function get(string $key, array $replace = [], ?string $locale = null): s
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: Gennaio 2025  
 **Versione**: 2.0.0  
 **Autore**: Team Laraxot  
+=======
+**Ultimo aggiornamento**: Gennaio 2025
+**Versione**: 2.0.0
+**Autore**: Team Laraxot
+>>>>>>> laraxot/develop
 **Mantenuto da**: Community Laraxot

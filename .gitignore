@@ -1,8 +1,13 @@
 # ==============================================
 # LARAXOT MODULE LANG - .GITIGNORE
+<<<<<<< HEAD
 # ==============================================
 # Modulo Lang Laraxot - Template standardizzato
 # Ultimo aggiornamento: 2025-01-06
+=======
+# Modulo Lang Laraxot - Template standardizzato
+# Ultimo aggiornamento: 2025-01-31
+>>>>>>> laraxot/develop
 # ==============================================
 
 # ==============================================
@@ -13,11 +18,19 @@ node_modules/
 package-lock.json
 yarn.lock
 composer.lock
+<<<<<<< HEAD
+=======
+yarn-error.log
+npm-debug.log
+>>>>>>> laraxot/develop
 
 # ==============================================
 # BUILD & COMPILED FILES
 # ==============================================
+<<<<<<< HEAD
 /build
+=======
+>>>>>>> laraxot/develop
 build/
 dist/
 docs/cache/
@@ -67,15 +80,23 @@ storage/*.key
 # ==============================================
 Homestead.yaml
 Homestead.json
+<<<<<<< HEAD
 /.vagrant
 /.idea
+=======
+.vagrant/
+.idea/
+>>>>>>> laraxot/develop
 .phpintel
 
 # ==============================================
 # GIT SPECIFIC
 # ==============================================
 .git-rewrite/
+<<<<<<< HEAD
 .git-rewrite
+=======
+>>>>>>> laraxot/develop
 .git-blame-ignore-revs
 
 # ==============================================
@@ -118,6 +139,7 @@ docs/cache/
 # OLD DIRECTORIES (LEGACY CLEANUP)
 # ==============================================
 resources/views/Components_old/
+<<<<<<< HEAD
 resources/views/Components_old
 database/Migrations_old/
 database/Migrations_old
@@ -128,11 +150,21 @@ database/Factories_old
 database/Factories_
 database_old/
 database_old
+=======
+database/Migrations_old/
+database/Seeders_old/
+database/Factories_old/
+database_old/
+>>>>>>> laraxot/develop
 
 # ==============================================
 # MODULE SPECIFIC - LANG
 # ==============================================
+<<<<<<< HEAD
 # File di configurazione locale
+=======
+# File configurazione locale
+>>>>>>> laraxot/develop
 config/local.php
 config/development.php
 
@@ -145,11 +177,16 @@ lang/temp/
 lang/drafts/
 lang/exports/
 
+<<<<<<< HEAD
 # File di test traduzioni
+=======
+# File test traduzioni
+>>>>>>> laraxot/develop
 lang_test_data.json
 test_translations.sql
 
 # ==============================================
+<<<<<<< HEAD
 # END OF LANG .GITIGNORE
 # ==============================================
 
@@ -158,3 +195,14 @@ test_translations.sql
 *.fila2
 laravel
 public_html
+=======
+# FILE SPECIFICI DEL PROGETTO
+# ==============================================
+*.fila2
+laravel
+public_html
+
+# ==============================================
+# END OF LANG .GITIGNORE
+# ==============================================
+>>>>>>> laraxot/develop

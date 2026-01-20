@@ -98,6 +98,7 @@ class AutoLabelAction
             $label_tkey = $trans_key.'.actions.'.$val.'';
         }
 
+<<<<<<< HEAD
         /*
          * $component_parent=get_parent_class($component);
          * if(in_array($component_parent,['Filament\Forms\Components\Component'])){
@@ -146,6 +147,10 @@ class AutoLabelAction
             ]);
         }
 
+=======
+        $label_key = $label_tkey.'.'.Str::snake($type);
+
+>>>>>>> laraxot/develop
         $label = trans($label_key);
         if (is_string($label) && $label_key === $label) { // se non esiste la traduzione, la salvo
             app(SaveTransAction::class)->execute($label_key, $val);
@@ -188,9 +193,16 @@ class AutoLabelAction
             if (method_exists($component, 'iconButton')) {
                 $component->iconButton();
             }
+<<<<<<< HEAD
             // $component->label('FIX:'.$label_key);
             // $component->tooltip('FIX:'.$label_key);
             $component->{$type}('heroicon-o-question-mark-circle');
+=======
+
+            // $component->label('FIX:'.$label_key);
+            // $component->tooltip('FIX:'.$label_key);
+            // $component->{$type}('heroicon-o-question-mark-circle');
+>>>>>>> laraxot/develop
 
             // $component->{$type}(null);
             return $component;

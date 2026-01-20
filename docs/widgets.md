@@ -40,7 +40,11 @@ The widget requires no configuration and can be used directly in themes:
 The widget supports the following languages by default:
 
 - **Italian** (it) 🇮🇹
+<<<<<<< HEAD
 - **English** (en) 🇬🇧  
+=======
+- **English** (en) 🇬🇧
+>>>>>>> laraxot/develop
 - **German** (de) 🇩🇪
 
 Additional languages can be added through the Language model or by extending the `getDefaultLanguages()` method.

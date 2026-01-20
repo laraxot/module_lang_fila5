@@ -7,6 +7,7 @@ section: content
 
 # Introducendo Lang {#introducendo-lang}
 
+<<<<<<< HEAD
 
 Il module_lang in Laravel è un pacchetto che serve a gestire le traduzioni in lingua. 
 
@@ -15,12 +16,24 @@ In Laravel, le traduzioni servono a consentire all'applicazione di mostrare test
 Ad esempio, se si sta costruendo un'applicazione che dovrà essere utilizzata in Italia, Francia e Germania, si potrebbero creare file di lingua per ognuna di queste lingue che contengono le traduzioni del testo utilizzato nell'applicazione. 
 
 In questo modo, quando l'applicazione viene utilizzata in Italia, verrà visualizzato il testo tradotto in italiano; 
+=======
+Il module_lang in Laravel è un pacchetto che serve a gestire le traduzioni in lingua.
+
+In Laravel, le traduzioni servono a consentire all'applicazione di mostrare testo in diverse lingue.
+
+Ad esempio, se si sta costruendo un'applicazione che dovrà essere utilizzata in Italia, Francia e Germania, si potrebbero creare file di lingua per ognuna di queste lingue che contengono le traduzioni del testo utilizzato nell'applicazione.
+
+In questo modo, quando l'applicazione viene utilizzata in Italia, verrà visualizzato il testo tradotto in italiano;
+>>>>>>> laraxot/develop
 
 quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in francese, e così via.
 
 ### Versione HEAD
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/develop
 ## Collegamenti tra versioni di introduction.md
 * [introduction.md](laravel/vendor/spatie/laravel-event-sourcing/docs/getting-familiar-with-event-sourcing/introduction.md)
 * [introduction.md](laravel/vendor/spatie/laravel-event-sourcing/docs/introduction.md)
@@ -29,9 +42,15 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 * [introduction.md](../../../Lang/docs/introduction.md)
 * [introduction.md](../../../Cms/docs/introduction.md)
 
+<<<<<<< HEAD
 
 ### Versione Incoming
 
 
 ---
 
+=======
+### Versione Incoming
+
+---
+>>>>>>> laraxot/develop

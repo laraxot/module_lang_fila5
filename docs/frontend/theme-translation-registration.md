@@ -13,10 +13,17 @@
 public function boot(): void
 {
     parent::boot();
+<<<<<<< HEAD
     
     // Registra il namespace pub_theme per le traduzioni
     $this->loadTranslationsFrom($this->module_dir.'/../lang', 'pub_theme');
     
+=======
+
+    // Registra il namespace pub_theme per le traduzioni
+    $this->loadTranslationsFrom($this->module_dir.'/../lang', 'pub_theme');
+
+>>>>>>> laraxot/develop
     // Registra anche le view con il namespace pub_theme
     $this->loadViewsFrom($this->module_dir.'/../resources/views', 'pub_theme');
 }

@@ -20,9 +20,20 @@ class Flag extends Component
 
     public function render(): Renderable
     {
+<<<<<<< HEAD
         $view = app(GetViewAction::class)->execute();
         $viewParams = [
             'view' => $view,
+=======
+        /**
+         * @phpstan-var view-string $view
+         */
+        $view = app(GetViewAction::class)->execute();
+
+        $viewParams = [
+            'view' => $view,
+            'name' => $this->name,
+>>>>>>> laraxot/develop
         ];
 
         return view($view, $viewParams);

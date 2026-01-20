@@ -4,7 +4,11 @@
 **File**: `laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php`
 **Linee**: 32-95
 
+<<<<<<< HEAD
 **Problema**: 
+=======
+**Problema**:
+>>>>>>> laraxot/develop
 - Lookup ripetitivo del backtrace per ogni componente
 - Chiamate multiple a GetTransKeyAction
 - Nessun caching delle traduzioni
@@ -43,6 +47,7 @@ final class AutoLabelAction
     public function execute($component)
     {
         Assert::isInstanceOf($component, Field::class);
+<<<<<<< HEAD
         
         $object_class = $this->getObjectClass();
         $trans_key = $this->getTransKey($object_class);
@@ -50,12 +55,22 @@ final class AutoLabelAction
         $label_key = $this->getLabelKey($component, $trans_key);
         $label = $this->getLabel($label_key);
         
+=======
+
+        $object_class = $this->getObjectClass();
+        $trans_key = $this->getTransKey($object_class);
+
+        $label_key = $this->getLabelKey($component, $trans_key);
+        $label = $this->getLabel($label_key);
+
+>>>>>>> laraxot/develop
         return $this->applyLabel($component, $label, $label_key);
     }
 
     private function getObjectClass(): string
     {
         $cacheKey = md5(serialize(debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 3)));
+<<<<<<< HEAD
         
         if (!isset($this->classCache[$cacheKey])) {
             $backtrace_slice = array_slice(debug_backtrace(), 2);
@@ -71,6 +86,23 @@ final class AutoLabelAction
     }
 
     private function getTransKey(string $object_class): string 
+=======
+
+        if (!isset($this->classCache[$cacheKey])) {
+            $backtrace_slice = array_slice(debug_backtrace(), 2);
+            $class = Arr::first($backtrace_slice, function (array $item): bool {
+                return isset($item['object']) &&
+                       Str::startsWith($item['object']::class, 'Modules\\');
+            });
+
+            $this->classCache[$cacheKey] = $class['object']::class ?? '';
+        }
+
+        return $this->classCache[$cacheKey];
+    }
+
+    private function getTransKey(string $object_class): string
+>>>>>>> laraxot/develop
     {
         if (empty($object_class)) {
             return 'lang::txt';
@@ -85,16 +117,28 @@ final class AutoLabelAction
     private function getLabelKey($component, string $trans_key): string
     {
         Assert::string($name = $component->getName());
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         if ($component instanceof Step) {
             Assert::string($label = $component->getLabel());
             return "{$trans_key}.steps.{$label}.label";
         }
+<<<<<<< HEAD
         
         if ($component instanceof Action) {
             return "{$trans_key}.actions.{$name}.label";
         }
         
+=======
+
+        if ($component instanceof Action) {
+            return "{$trans_key}.actions.{$name}.label";
+        }
+
+>>>>>>> laraxot/develop
         return "{$trans_key}.fields.{$name}.label";
     }
 
@@ -104,16 +148,28 @@ final class AutoLabelAction
             $this->translationCache[$label_key] = Cache::tags(['translations'])
                 ->remember($label_key, now()->addHour(), function() use ($label_key): string {
                     $label = trans($label_key);
+<<<<<<< HEAD
                     
+=======
+
+>>>>>>> laraxot/develop
                     if ($label === $label_key) {
                         $this->saveNewTranslation($label_key);
                         return $label_key;
                     }
+<<<<<<< HEAD
                     
                     return $label;
                 });
         }
         
+=======
+
+                    return $label;
+                });
+        }
+
+>>>>>>> laraxot/develop
         return $this->translationCache[$label_key];
     }
 
@@ -121,7 +177,11 @@ final class AutoLabelAction
     {
         $parts = explode('.', $label_key);
         $value = end($parts);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         app(SaveTransAction::class)->execute($label_key, $value);
     }
 
@@ -139,7 +199,11 @@ final class AutoLabelAction
         }
 
         $component->label($label);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         if (method_exists($component, 'tooltip')) {
             $component->tooltip($label);
         }
@@ -187,7 +251,11 @@ final class LangServiceProvider extends XotBaseServiceProvider
     public string $name = 'Lang';
     protected string $module_dir = __DIR__;
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     private array $componentConfigs = [];
 
     public function register(): void
@@ -305,7 +373,11 @@ final class SaveTransAction
     use QueueableAction;
 
     private array $pendingTranslations = [];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /**
      * @param string $key
      * @param int|string|array|Htmlable|null $data
@@ -313,24 +385,39 @@ final class SaveTransAction
     public function execute(string $key, $data): void
     {
         Assert::notEmpty($key);
+<<<<<<< HEAD
         
         $this->pendingTranslations[$key] = $data;
         
+=======
+
+        $this->pendingTranslations[$key] = $data;
+
+>>>>>>> laraxot/develop
         if (count($this->pendingTranslations) >= 50) {
             $this->flush();
         }
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     public function __destruct()
     {
         $this->flush();
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     private function flush(): void
     {
         if (empty($this->pendingTranslations)) {
             return;
         }
+<<<<<<< HEAD
         
         Cache::tags(['translations'])->flush();
         
@@ -341,12 +428,28 @@ final class SaveTransAction
                 mkdir(dirname($path), 0755, true);
             }
             
+=======
+
+        Cache::tags(['translations'])->flush();
+
+        foreach ($this->pendingTranslations as $key => $data) {
+            $path = app(GetTransPathAction::class)->execute($key);
+
+            if (!is_dir(dirname($path))) {
+                mkdir(dirname($path), 0755, true);
+            }
+
+>>>>>>> laraxot/develop
             file_put_contents(
                 $path,
                 "<?php\n\nreturn " . var_export($data, true) . ";\n"
             );
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         $this->pendingTranslations = [];
     }
 }

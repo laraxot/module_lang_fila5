@@ -9,7 +9,11 @@
 
 ### Factory Presenti
 - ✅ **PostFactory** - Presente
+<<<<<<< HEAD
 - ✅ **TranslationFactory** - Presente  
+=======
+- ✅ **TranslationFactory** - Presente
+>>>>>>> laraxot/develop
 - ✅ **TranslationFileFactory** - Presente
 
 ### Seeder Presenti
@@ -32,4 +36,7 @@
 
 ---
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/develop

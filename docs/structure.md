@@ -9,7 +9,11 @@ Modules\\Lang\\Database\\Factories
 Modules\\Lang\\Database\\Seeders
 - **Pacchetto Composer**: laraxot/module_lang_fila3
 Marco Sottana
+<<<<<<< HEAD
 - **Dipendenze**: mcamara/laravel-localization ^2.2 spatie/laravel-sluggable * repositories type path url ../Xot type path url ../Tenant type path url ../UI autoload psr-4 
+=======
+- **Dipendenze**: mcamara/laravel-localization ^2.2 spatie/laravel-sluggable * repositories type path url ../Xot type path url ../Tenant type path url ../UI autoload psr-4
+>>>>>>> laraxot/develop
 - **Totale file PHP**: 103
 - **Totale classi/interfacce**: 50
 
@@ -472,7 +476,10 @@ tests/Unit
 - [Analisi strutturale complessiva](/project_docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/project_docs/phpstan/)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/develop
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/project_docs/structure.md)
 * [structure.md](../../../Gdpr/project_docs/structure.md)
@@ -496,4 +503,7 @@ tests/Unit
 - Tutti i comandi console sono autoregistrati tramite la struttura di XotBaseServiceProvider.
 - Non aggiungere mai manualmente $this->commands([...]) nei provider.
 - Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/develop

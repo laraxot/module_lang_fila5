@@ -81,7 +81,11 @@ use Spatie\Sluggable\SlugOptions;
  */
 class Post extends Model
 {
+<<<<<<< HEAD
     use \Modules\Xot\Models\Traits\HasXotFactory;
+=======
+    use HasFactory;
+>>>>>>> laraxot/develop
     use HasSlug;
     use Updater;
     // use Searchable;

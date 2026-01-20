@@ -22,7 +22,11 @@ L'audit iniziale aveva identificato 43 occorrenze problematiche nel file `edit_t
 // ✅ STRUTTURA CORRETTA ESISTENTE
 'plural' => [
     'label' => 'Navigation Plural',
+<<<<<<< HEAD
     'placeholder' => 'Enter plural form', 
+=======
+    'placeholder' => 'Enter plural form',
+>>>>>>> laraxot/develop
     'helper_text' => 'Plural form of navigation name',
     'description' => 'Navigation plural form',
 ],

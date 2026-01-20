@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/develop
 # Dependencies and packages
 /node_modules/
 /vendor/
@@ -26,7 +29,10 @@ package-lock.json
 docs/phpstan/
 
 # Other
+<<<<<<< HEAD
 -e
+=======
+>>>>>>> laraxot/develop
 /build_*/
 /node_modules/
 /vendor/
@@ -40,6 +46,13 @@ package-lock.json
 
 # Backup files
 *.bak
+<<<<<<< HEAD
 -e 
 # PHPStan documentation
 docs/phpstan/
+=======
+
+# PHPStan documentation
+docs/phpstan/
+
+>>>>>>> laraxot/develop

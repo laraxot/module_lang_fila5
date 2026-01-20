@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione Conflitti Git e Standardizzazione Documentazione
 
 ## Data: 2025-01-27
@@ -143,3 +144,6 @@ Questo documento riepiloga tutti i conflitti Git risolti e le regole implementat
 
 *Ultimo aggiornamento: 2025-01-27*
 *Stato: COMPLETATO* 
+=======
+
+>>>>>>> laraxot/develop

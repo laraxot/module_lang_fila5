@@ -1,6 +1,10 @@
 # Cyclomatic Complexity Report - Module: Lang
 
+<<<<<<< HEAD
 **Generated:** 2025-10-01 19:44:11  
+=======
+**Generated:** 2025-10-01 19:44:11
+>>>>>>> laraxot/develop
 **Analyzer:** Super Mucca 🐮
 
 ---
@@ -21,7 +25,11 @@
 
 ### What is Cyclomatic Complexity?
 
+<<<<<<< HEAD
 La complessità ciclomatica è una metrica del software che misura la complessità di un programma. 
+=======
+La complessità ciclomatica è una metrica del software che misura la complessità di un programma.
+>>>>>>> laraxot/develop
 Viene calcolata contando il numero di percorsi di esecuzione indipendenti attraverso il codice sorgente.
 
 ### Interpretation Guidelines

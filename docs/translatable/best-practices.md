@@ -10,7 +10,11 @@ Questo documento raccoglie le migliori pratiche per l'utilizzo del pacchetto `sp
 class Page extends Model
 {
     use HasTranslations;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /**
      * Gli attributi che sono traducibili.
      *
@@ -29,7 +33,11 @@ class Page extends Model
 class Page extends Model
 {
     use HasTranslations;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     public $translatable = ['title', 'content', 'meta_description'];
 }
 ```
@@ -70,7 +78,11 @@ Per modelli con esigenze specifiche di fallback:
 class MailTemplate extends Model
 {
     use HasTranslations;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /**
      * Determina la locale di fallback per questo modello.
      */
@@ -91,12 +103,20 @@ class MailTemplate extends Model
 public function rules()
 {
     $rules = [];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     foreach (config('app.supported_locales') as $locale) {
         $rules["title.{$locale}"] = 'required|string|max:255';
         $rules["content.{$locale}"] = 'required|string';
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     return $rules;
 }
 ```
@@ -108,7 +128,11 @@ public function rules()
 trait HasStrictTranslations
 {
     use HasTranslations;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /**
      * Imposta una traduzione con validazione.
      */
@@ -118,7 +142,11 @@ trait HasStrictTranslations
         if ($key === 'email_subject' && strlen($value) > 100) {
             throw new \InvalidArgumentException("L'oggetto email non può superare 100 caratteri");
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         return parent::setTranslation($key, $locale, $value);
     }
 }
@@ -139,8 +167,13 @@ $translation = $model->field_name;
 $translation = $model->getTranslation('field_name', 'en');
 
 // Ottieni con fallback garantito
+<<<<<<< HEAD
 $translation = $model->getTranslation('field_name', 'fr') 
     ?? $model->getTranslation('field_name', app()->getFallbackLocale()) 
+=======
+$translation = $model->getTranslation('field_name', 'fr')
+    ?? $model->getTranslation('field_name', app()->getFallbackLocale())
+>>>>>>> laraxot/develop
     ?? '';
 ```
 
@@ -166,8 +199,13 @@ $translation = $model->getTranslation('field_name', 'fr')
     @foreach(config('app.available_locales') as $locale)
         <div class="tab" data-locale="{{ $locale }}">
             <label>{{ $title }} ({{ $locale }})</label>
+<<<<<<< HEAD
             <input type="text" 
                    name="title[{{ $locale }}]" 
+=======
+            <input type="text"
+                   name="title[{{ $locale }}]"
+>>>>>>> laraxot/develop
                    value="{{ $model->getTranslation('title', $locale, false) }}">
         </div>
     @endforeach
@@ -182,7 +220,11 @@ use Filament\Forms\Components\Tabs;
 use Filament\Forms\Components\Tabs\Tab;
 use Filament\Forms\Components\TextInput;
 
+<<<<<<< HEAD
 public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
+=======
+public static function form(Form $form): Form
+>>>>>>> laraxot/develop
 {
     return $form
         ->schema([
@@ -253,15 +295,26 @@ $hasTranslation = $model->hasTranslation('field_name', 'en');
 public function testTranslations()
 {
     $model = Model::factory()->create();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     $model->setTranslations('title', [
         'it' => 'Titolo italiano',
         'en' => 'English title',
     ]);
+<<<<<<< HEAD
     
     $this->assertEquals('Titolo italiano', $model->getTranslation('title', 'it'));
     $this->assertEquals('English title', $model->getTranslation('title', 'en'));
     
+=======
+
+    $this->assertEquals('Titolo italiano', $model->getTranslation('title', 'it'));
+    $this->assertEquals('English title', $model->getTranslation('title', 'en'));
+
+>>>>>>> laraxot/develop
     // Test fallback
     $this->assertEquals('Titolo italiano', $model->getTranslation('title', 'fr'));
 }

@@ -155,7 +155,11 @@ Ogni campo deve avere la seguente struttura completa:
 - [ ] <nome progetto> (patient, doctor, studio)
 
 ### Fase 2: Moduli Secondari
+<<<<<<< HEAD
 - [ ] <nome modulo>
+=======
+- [ ] <nome progetto>
+>>>>>>> laraxot/develop
 - [ ] Job
 - [ ] Notify
 
@@ -196,7 +200,13 @@ Ogni campo deve avere la seguente struttura completa:
 
 ---
 
+<<<<<<< HEAD
 **Versione**: 1.0  
 **Data**: 2025-08-08  
 **Stato**: Implementazione in corso  
+=======
+**Versione**: 1.0
+**Data**: 2025-08-08
+**Stato**: Implementazione in corso
+>>>>>>> laraxot/develop
 **Responsabile**: Sistema automatico DRY/KISS

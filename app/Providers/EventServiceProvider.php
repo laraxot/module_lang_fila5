@@ -22,10 +22,16 @@ class EventServiceProvider extends BaseEventServiceProvider
      */
     protected static $shouldDiscoverEvents = true;
 
+<<<<<<< HEAD
     /**
      * Configure the proper event listeners for email verification.
      */
     protected function configureEmailVerification(): void
     {
     }
+=======
+    /*
+     * Configure the proper event listeners for email verification.
+     */
+>>>>>>> laraxot/develop
 }

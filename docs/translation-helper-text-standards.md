@@ -173,4 +173,8 @@ Il file `Modules/<nome progetto>/lang/it/profile_widget.php` conteneva:
 - [Best Practices Filament](../../laravel/Modules/Xot/docs/filament/)
 - [Standard di Qualità <nome progetto>](../../laravel/Modules/<nome progetto>/docs/translation_quality_standards.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025* 
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> laraxot/develop

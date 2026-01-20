@@ -23,7 +23,11 @@ use Modules\Xot\Filament\Traits\TransTrait;
 enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 {
     use TransTrait;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     case LIST = 'list';
     case GRID = 'grid';
 
@@ -159,7 +163,11 @@ return [
 enum StatusEnum: string implements HasColor, HasIcon, HasLabel
 {
     use TransTrait;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     case ACTIVE = 'active';
     case INACTIVE = 'inactive';
     case PENDING = 'pending';
@@ -227,4 +235,8 @@ Prima di ogni commit, verificare:
 - [TableLayoutEnum Guide](../laravel/Modules/UI/docs/table-layout-enum-complete-guide.md)
 
 ## Ultimo Aggiornamento
+<<<<<<< HEAD
 2025-01-27 - Regola critica per enum translation pattern 
+=======
+2025-01-27 - Regola critica per enum translation pattern
+>>>>>>> laraxot/develop

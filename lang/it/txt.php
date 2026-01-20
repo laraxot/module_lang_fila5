@@ -424,6 +424,21 @@ return [
             'helper_text' => 'test',
             'description' => 'test',
         ],
+<<<<<<< HEAD
+=======
+        'view' => [
+            'label' => 'view',
+            'placeholder' => 'view',
+            'helper_text' => 'view',
+            'description' => 'view',
+        ],
+        'address' => [
+            'label' => 'address',
+            'placeholder' => 'address',
+            'helper_text' => 'address',
+            'description' => 'address',
+        ],
+>>>>>>> laraxot/develop
     ],
     'actions' => [
         'authenticate' => [
@@ -471,5 +486,29 @@ return [
             'label' => 'showPassword',
             'tooltip' => 'showPassword',
         ],
+<<<<<<< HEAD
+=======
+        'list_log_activities' => [
+            'label' => 'list_log_activities',
+            'icon' => 'list_log_activities',
+            'tooltip' => 'list_log_activities',
+        ],
+        'table_layout_toggle' => [
+            'label' => 'table_layout_toggle',
+            'icon' => 'table_layout_toggle',
+            'tooltip' => 'table_layout_toggle',
+        ],
+        'update_coordinates' => [
+            'label' => 'update_coordinates',
+            'icon' => 'update_coordinates',
+            'tooltip' => 'update_coordinates',
+        ],
+    ],
+    'sections' => [
+        'address' => [
+            'label' => 'address',
+            'heading' => 'address',
+        ],
+>>>>>>> laraxot/develop
     ],
 ];

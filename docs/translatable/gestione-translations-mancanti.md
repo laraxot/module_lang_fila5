@@ -47,7 +47,11 @@ class TranslatableServiceProvider extends ServiceProvider
                     'model_id' => $model->getKey(),
                     'model_class' => get_class($model),
                 ]);
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> laraxot/develop
                 return $fallbackTranslation; // Usa la traduzione di fallback
             }
         );
@@ -84,7 +88,11 @@ class MailTemplate extends Model
     use HasTranslations;
 
     public $translatable = ['subject', 'html_template', 'text_template'];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     public function getFallbackLocale(): string
     {
         return $this->fallback_locale ?? config('app.fallback_locale', 'it');
@@ -121,7 +129,11 @@ Translatable::fallback(
             'locale' => $locale,
             'model_class' => get_class($model),
         ]);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         // Se la callback restituisce una stringa, questa verrà usata come traduzione di fallback
         // return "Traduzione alternativa";
     }
@@ -149,13 +161,21 @@ Translatable::fallback(
             $fallbackLocale,
             $locale
         );
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         // Opzionale: salva la traduzione generata nel modello
         $translations = $model->getTranslations($translationKey);
         $translations[$locale] = $translation;
         $model->setTranslations($translationKey, $translations);
         $model->save();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         return $translation;
     }
 );
@@ -217,12 +237,20 @@ public function testMissingTranslations()
         fallbackLocale: 'en',
         fallbackAny: false
     );
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     // Ripristino della configurazione dopo il test
     $this->afterApplicationCreated(function () {
         // Ripristina la configurazione originale
     });
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     // Test...
 }
 ```

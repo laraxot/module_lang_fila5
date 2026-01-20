@@ -10,6 +10,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
+=======
+use Modules\Lang\Database\Factories\PostFactory;
+>>>>>>> laraxot/develop
 // --- traits ---
 use Modules\Xot\Contracts\ProfileContract;
 // use Laravel\Scout\Searchable;
@@ -91,12 +95,24 @@ use Spatie\Sluggable\SlugOptions;
  * @method static Builder<static>|Post whereUserId($value)
  * @method static Builder<static>|Post whereViewsCount($value)
  *
+<<<<<<< HEAD
+=======
+ * @property ProfileContract|null $deleter
+ *
+ * @method static PostFactory factory($count = null, $state = [])
+ *
+>>>>>>> laraxot/develop
  * @mixin Eloquent
  */
 class Post extends BaseModel
 {
+<<<<<<< HEAD
     use HasXotFactory;
     use HasSlug;
+=======
+    use HasSlug;
+    use HasXotFactory;
+>>>>>>> laraxot/develop
 
     // use Cachable;
     use Updater;

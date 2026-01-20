@@ -8,7 +8,11 @@ Un errore comune nei file di traduzione è la mancanza di parentesi chiuse negli
 
 **Esempio di errore**:
 ```php
+<<<<<<< HEAD
 'azione_esempio' => 
+=======
+'azione_esempio' =>
+>>>>>>> laraxot/develop
 array (
   'label' => 'Etichetta azione',
 'altra_azione' => // Manca la parentesi chiusa e la virgola dell'array precedente
@@ -16,7 +20,11 @@ array (
 
 **Correzione**:
 ```php
+<<<<<<< HEAD
 'azione_esempio' => 
+=======
+'azione_esempio' =>
+>>>>>>> laraxot/develop
 array (
   'label' => 'Etichetta azione',
 ), // Aggiunta parentesi chiusa e virgola
@@ -74,7 +82,11 @@ Le virgole mancanti tra gli elementi di un array o le virgole in eccesso alla fi
    ```php
    // NO: Etichetta hardcoded nel codice
    ->label('Crea nuovo')
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> laraxot/develop
    // SI: Riferimento alla traduzione
    ->label(__('lang_service.actions.create.label'))
    ```
@@ -87,7 +99,11 @@ Le virgole mancanti tra gli elementi di un array o le virgole in eccesso alla fi
            'label' => 'Crea',
        ],
    ),
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> laraxot/develop
    // SI: Mantenere lo stesso stile
    'azioni' => array(
        'crea' => array(
@@ -102,7 +118,11 @@ Le virgole mancanti tra gli elementi di un array o le virgole in eccesso alla fi
    'import_valutatori_' => [
        'label' => 'import_valutatori_',
    ],
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> laraxot/develop
    // SI: Tradurre tutte le etichette
    'import_valutatori' => [
        'label' => 'Importa valutatori',
@@ -126,4 +146,8 @@ Per evitare errori nei file di traduzione:
 - [Regole generali per i file di traduzione](/laravel/Modules/Xot/docs/translation_rules.md)
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 3 Giugno 2025*
+=======
+*Ultimo aggiornamento: 3 Giugno 2025*
+>>>>>>> laraxot/develop

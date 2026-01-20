@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+uses(Modules\Lang\Tests\TestCase::class);
+
+>>>>>>> laraxot/develop
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;

@@ -133,4 +133,8 @@ Components/ → components/
 ---
 
 *Ultimo aggiornamento: 2025-01-27*
+<<<<<<< HEAD
 *Stato: ATTIVO - REGOLA CRITICA* 
+=======
+*Stato: ATTIVO - REGOLA CRITICA*
+>>>>>>> laraxot/develop

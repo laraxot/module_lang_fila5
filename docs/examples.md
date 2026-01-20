@@ -33,7 +33,11 @@ return [
             'max' => 'Il nome non può superare :max caratteri'
         ]
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'email' => [
         'label' => 'Indirizzo Email',
         'placeholder' => 'esempio@dominio.com',
@@ -45,7 +49,11 @@ return [
             'max' => 'L\'email non può superare :max caratteri'
         ]
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'role' => [
         'label' => 'Ruolo',
         'placeholder' => 'Seleziona un ruolo',
@@ -61,7 +69,11 @@ return [
             'in' => 'Il ruolo selezionato non è valido'
         ]
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'password' => [
         'label' => 'Password',
         'placeholder' => 'Inserisci la password',
@@ -72,7 +84,11 @@ return [
             'confirmed' => 'La conferma password non corrisponde'
         ]
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'password_confirmation' => [
         'label' => 'Conferma Password',
         'placeholder' => 'Conferma la password inserita',
@@ -97,12 +113,20 @@ return [
         'label' => 'ID',
         'help' => 'Identificativo univoco'
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'created_at' => [
         'label' => 'Data Creazione',
         'help' => 'Data e ora di creazione del record'
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'updated_at' => [
         'label' => 'Data Aggiornamento',
         'help' => 'Data e ora dell\'ultimo aggiornamento'
@@ -142,7 +166,11 @@ return [
             'error' => 'Si è verificato un errore durante la creazione dell\'utente'
         ]
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'edit' => [
         'label' => 'Modifica',
         'icon' => 'heroicon-o-pencil',
@@ -159,7 +187,11 @@ return [
             'error' => 'Si è verificato un errore durante la modifica dell\'utente'
         ]
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'delete' => [
         'label' => 'Elimina',
         'icon' => 'heroicon-o-trash',
@@ -176,7 +208,11 @@ return [
             'error' => 'Si è verificato un errore durante l\'eliminazione dell\'utente'
         ]
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'view' => [
         'label' => 'Visualizza',
         'icon' => 'heroicon-o-eye',
@@ -218,7 +254,11 @@ return [
             'error' => 'Si è verificato un errore durante l\'approvazione'
         ]
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'suspend' => [
         'label' => 'Sospendi Utente',
         'icon' => 'heroicon-o-pause-circle',
@@ -253,7 +293,11 @@ return [
             'error' => 'Si è verificato un errore durante la sospensione'
         ]
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'export' => [
         'label' => 'Esporta Utenti',
         'icon' => 'heroicon-o-document-download',
@@ -304,7 +348,11 @@ declare(strict_types=1);
  */
 return [
     'welcome' => 'Benvenuto nel sistema di gestione utenti',
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'errors' => [
         'general' => 'Si è verificato un errore. Riprova più tardi.',
         'not_found' => 'L\'utente richiesto non è stato trovato.',
@@ -313,21 +361,33 @@ return [
         'database' => 'Errore di connessione al database.',
         'permission' => 'Non hai i permessi necessari per eseguire questa azione.'
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'notifications' => [
         'success' => 'Operazione completata con successo',
         'info' => 'Informazione importante',
         'warning' => 'Attenzione',
         'error' => 'Errore'
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'confirmations' => [
         'delete' => 'Sei sicuro di voler eliminare questo elemento?',
         'cancel' => 'Sei sicuro di voler annullare? Le modifiche non salvate andranno perse.',
         'discard' => 'Le modifiche non salvate andranno perse. Continuare?',
         'logout' => 'Sei sicuro di voler uscire dal sistema?'
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'empty_states' => [
         'default' => 'Nessun elemento trovato',
         'users' => 'Nessun utente trovato',
@@ -335,7 +395,11 @@ return [
         'filtered' => 'Nessun elemento corrisponde ai filtri applicati',
         'no_permissions' => 'Non hai i permessi per visualizzare questi elementi'
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'counts' => [
         'users' => '{0} Nessun utente|{1} Un utente|[2,*] :count utenti',
         'active_users' => '{0} Nessun utente attivo|{1} Un utente attivo|[2,*] :count utenti attivi',
@@ -368,7 +432,11 @@ return [
         'role' => 'ruolo',
         'status' => 'stato'
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'custom' => [
         'email' => [
             'unique' => 'Questa email è già registrata nel sistema.',
@@ -381,7 +449,11 @@ return [
             'valid_role' => 'Il ruolo selezionato non è valido per il tuo account.'
         ]
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     'values' => [
         'accepted' => 'deve essere accettato',
         'accepted_if' => 'deve essere accettato quando :other è :value',
@@ -548,6 +620,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class UserResource extends XotBaseResource
 {
     protected static ?string $model = \Modules\User\Models\User::class;
+<<<<<<< HEAD
     
     protected static ?string $navigationIcon = 'heroicon-o-users';
     
@@ -555,6 +628,15 @@ class UserResource extends XotBaseResource
     
     protected static ?int $navigationSort = 1;
     
+=======
+
+    protected static ?string $navigationIcon = 'heroicon-o-users';
+
+    protected static ?string $navigationGroup = 'Gestione Utenti';
+
+    protected static ?int $navigationSort = 1;
+
+>>>>>>> laraxot/develop
     /**
      * @return array<int, \Filament\Forms\Components\Component>
      */
@@ -566,13 +648,21 @@ class UserResource extends XotBaseResource
                     Forms\Components\TextInput::make('name')
                         ->required()
                         ->maxLength(255),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> laraxot/develop
                     Forms\Components\TextInput::make('email')
                         ->email()
                         ->required()
                         ->maxLength(255)
                         ->unique(ignoreRecord: true),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> laraxot/develop
                     Forms\Components\Select::make('role')
                         ->options([
                             'admin' => __('fields.role.options.admin'),
@@ -581,20 +671,32 @@ class UserResource extends XotBaseResource
                             'guest' => __('fields.role.options.guest')
                         ])
                         ->required(),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> laraxot/develop
                     Forms\Components\TextInput::make('password')
                         ->password()
                         ->required(fn (string $context): bool => $context === 'create')
                         ->minLength(8)
                         ->confirmed(),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> laraxot/develop
                     Forms\Components\TextInput::make('password_confirmation')
                         ->password()
                         ->required(fn (string $context): bool => $context === 'create')
                 ])
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /**
      * @return array<int, \Filament\Tables\Columns\Column>
      */
@@ -604,6 +706,7 @@ class UserResource extends XotBaseResource
             Tables\Columns\TextColumn::make('name')
                 ->searchable()
                 ->sortable(),
+<<<<<<< HEAD
                 
             Tables\Columns\TextColumn::make('email')
                 ->searchable()
@@ -617,13 +720,32 @@ class UserResource extends XotBaseResource
                 ->boolean()
                 ->sortable(),
                 
+=======
+
+            Tables\Columns\TextColumn::make('email')
+                ->searchable()
+                ->sortable(),
+
+            Tables\Columns\TextColumn::make('role')
+                ->formatStateUsing(fn (string $state): string => __("fields.role.options.{$state}"))
+                ->sortable(),
+
+            Tables\Columns\IconColumn::make('email_verified_at')
+                ->boolean()
+                ->sortable(),
+
+>>>>>>> laraxot/develop
             Tables\Columns\TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /**
      * @return array<string, \Filament\Tables\Actions\Action>
      */
@@ -635,7 +757,11 @@ class UserResource extends XotBaseResource
             Tables\Actions\DeleteAction::make(),
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /**
      * @return array<string, \Filament\Tables\Actions\BulkAction>
      */
@@ -668,7 +794,11 @@ class ApproveUserAction extends Action
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         $this->label(__('actions.approve.label'))
             ->icon(__('actions.approve.icon'))
             ->color(Color::from(__('actions.approve.color')))
@@ -679,7 +809,11 @@ class ApproveUserAction extends Action
             ->modalCancelActionLabel(__('actions.approve.modal.cancel'))
             ->action(function ($record): void {
                 $record->update(['status' => 'approved']);
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> laraxot/develop
                 // Notifica successo
                 $this->successNotificationTitle(__('actions.approve.messages.success'));
             });
@@ -711,21 +845,33 @@ class UserController extends Controller
     public function __construct(
         private UserService $userService
     ) {}
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /**
      * Display a listing of the resource.
      */
     public function index(Request $request): JsonResponse
     {
         $users = $this->userService->getPaginatedUsers($request);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         return response()->json([
             'success' => true,
             'data' => $users,
             'message' => __('messages.success.retrieved', ['resource' => __('messages.counts.users', ['count' => $users->count()])])
         ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /**
      * Store a newly created resource in storage.
      */
@@ -737,16 +883,26 @@ class UserController extends Controller
             'password' => 'required|string|min:8|confirmed',
             'role' => 'required|in:admin,manager,user,guest'
         ]);
+<<<<<<< HEAD
         
         $user = $this->userService->createUser($validated);
         
+=======
+
+        $user = $this->userService->createUser($validated);
+
+>>>>>>> laraxot/develop
         return response()->json([
             'success' => true,
             'data' => $user,
             'message' => __('messages.success.created', ['resource' => __('fields.name.label')])
         ], 201);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /**
      * Display the specified resource.
      */
@@ -758,7 +914,11 @@ class UserController extends Controller
             'message' => __('messages.success.retrieved', ['resource' => __('fields.name.label')])
         ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /**
      * Update the specified resource in storage.
      */
@@ -769,23 +929,37 @@ class UserController extends Controller
             'email' => 'sometimes|email|unique:users,email,' . $user->id,
             'role' => 'sometimes|in:admin,manager,user,guest'
         ]);
+<<<<<<< HEAD
         
         $user = $this->userService->updateUser($user, $validated);
         
+=======
+
+        $user = $this->userService->updateUser($user, $validated);
+
+>>>>>>> laraxot/develop
         return response()->json([
             'success' => true,
             'data' => $user,
             'message' => __('messages.success.updated', ['resource' => __('fields.name.label')])
         ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(User $user): JsonResponse
     {
         $this->userService->deleteUser($user);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         return response()->json([
             'success' => true,
             'message' => __('messages.success.deleted', ['resource' => __('fields.name.label')])
@@ -814,41 +988,73 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class UserTranslationTest extends TestCase
 {
     use RefreshDatabase;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /** @test */
     public function it_loads_user_field_translations(): void
     {
         $this->app->setLocale('it');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         $this->assertEquals('Nome', __('fields.name.label'));
         $this->assertEquals('Inserisci il nome completo', __('fields.name.placeholder'));
         $this->assertEquals('Il nome verrà utilizzato per identificare l\'utente nel sistema', __('fields.name.help'));
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /** @test */
     public function it_loads_user_action_translations(): void
     {
         $this->app->setLocale('it');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         $this->assertEquals('Nuovo Utente', __('actions.create.label'));
         $this->assertEquals('Crea Nuovo Utente', __('actions.create.modal.heading'));
         $this->assertEquals('Utente creato con successo', __('actions.create.messages.success'));
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /** @test */
     public function it_loads_user_validation_translations(): void
     {
         $this->app->setLocale('it');
+<<<<<<< HEAD
         
         $this->assertEquals('Il nome è obbligatorio', __('validation.custom.name.required'));
         $this->assertEquals('L\'email deve essere valida', __('validation.custom.email.email'));
     }
     
+=======
+
+        $this->assertEquals('Il nome è obbligatorio', __('validation.custom.name.required'));
+        $this->assertEquals('L\'email deve essere valida', __('validation.custom.email.email'));
+    }
+
+>>>>>>> laraxot/develop
     /** @test */
     public function it_handles_pluralization_correctly(): void
     {
         $this->app->setLocale('it');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         $this->assertEquals('Nessun utente', trans_choice('messages.counts.users', 0));
         $this->assertEquals('Un utente', trans_choice('messages.counts.users', 1));
         $this->assertEquals('5 utenti', trans_choice('messages.counts.users', 5, ['count' => 5]));
@@ -873,6 +1079,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class UserResourceTest extends TestCase
 {
     use RefreshDatabase;
+<<<<<<< HEAD
     
     protected function setUp(): void
     {
@@ -881,22 +1088,44 @@ class UserResourceTest extends TestCase
         $this->actingAs(User::factory()->create(['role' => 'admin']));
     }
     
+=======
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->actingAs(User::factory()->create(['role' => 'admin']));
+    }
+
+>>>>>>> laraxot/develop
     /** @test */
     public function it_displays_user_list_with_correct_translations(): void
     {
         $response = $this->get('/admin/users');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         $response->assertStatus(200);
         $response->assertSee(__('actions.create.label'));
         $response->assertSee(__('fields.name.label'));
         $response->assertSee(__('fields.email.label'));
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     /** @test */
     public function it_creates_user_with_correct_validation_messages(): void
     {
         $response = $this->post('/admin/users', []);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         $response->assertSessionHasErrors([
             'name' => __('validation.custom.name.required'),
             'email' => __('validation.custom.email.required'),
@@ -921,7 +1150,13 @@ class UserResourceTest extends TestCase
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: Gennaio 2025  
 **Versione**: 2.0.0  
 **Autore**: Team Laraxot  
+=======
+**Ultimo aggiornamento**: Gennaio 2025
+**Versione**: 2.0.0
+**Autore**: Team Laraxot
+>>>>>>> laraxot/develop
 **Mantenuto da**: Community Laraxot

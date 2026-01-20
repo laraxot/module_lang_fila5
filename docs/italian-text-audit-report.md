@@ -6,7 +6,11 @@
 
 ### File: `auth.php` (English)
 
+<<<<<<< HEAD
 **Path completo**: `/var/www/html/_bases/base_<nome progetto>/laravel/resources/lang/en/auth.php`
+=======
+**Path completo**: `resources/lang/en/auth.php`
+>>>>>>> laraxot/develop
 
 - **Linea 8**: Pattern italiano `email` trovato
   ```php
@@ -103,4 +107,7 @@
 **I file di traduzione non italiani NON devono contenere testi in italiano.**
 
 Ogni testo deve essere tradotto nella lingua appropriata del file.
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/develop

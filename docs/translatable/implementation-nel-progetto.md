@@ -15,12 +15,21 @@ use Filament\SpatieLaravelTranslatablePlugin;
 public function panel(Panel $panel): Panel
 {
     $panel = parent::panel($panel);
+<<<<<<< HEAD
     
     $spatieLaravelTranslatablePlugin = SpatieLaravelTranslatablePlugin::make()
         ->defaultLocales([config('app.locale')]);
     
     $panel->plugins([$spatieLaravelTranslatablePlugin]);
     
+=======
+
+    $spatieLaravelTranslatablePlugin = SpatieLaravelTranslatablePlugin::make()
+        ->defaultLocales([config('app.locale')]);
+
+    $panel->plugins([$spatieLaravelTranslatablePlugin]);
+
+>>>>>>> laraxot/develop
     return $panel;
 }
 ```
@@ -105,9 +114,15 @@ use Spatie\Translatable\HasTranslations;
 class MailTemplate extends SpatieMailTemplate
 {
     use HasTranslations;
+<<<<<<< HEAD
     
     public $translatable = ['subject', 'html_template', 'text_template'];
     
+=======
+
+    public $translatable = ['subject', 'html_template', 'text_template'];
+
+>>>>>>> laraxot/develop
     // ...
 }
 ```
@@ -211,12 +226,20 @@ Abbiamo esteso le funzionalità base con:
 trait HasStrictTranslations
 {
     use HasTranslations;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     public function setTranslation($key, $locale, $value)
     {
         // Validazione personalizzata
         // ...
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/develop
         return parent::setTranslation($key, $locale, $value);
     }
 }
@@ -275,15 +298,26 @@ Per testare correttamente le traduzioni, utilizzare:
 public function testTranslations()
 {
     $model = ModelWithTranslations::create();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/develop
     $model->setTranslations('name', [
         'it' => 'Nome in italiano',
         'en' => 'English name',
     ]);
+<<<<<<< HEAD
     
     $this->assertEquals('Nome in italiano', $model->getTranslation('name', 'it'));
     $this->assertEquals('English name', $model->getTranslation('name', 'en'));
     
+=======
+
+    $this->assertEquals('Nome in italiano', $model->getTranslation('name', 'it'));
+    $this->assertEquals('English name', $model->getTranslation('name', 'en'));
+
+>>>>>>> laraxot/develop
     // Test fallback
     app()->setLocale('fr');
     $this->assertEquals('Nome in italiano', $model->name); // Usa il fallback

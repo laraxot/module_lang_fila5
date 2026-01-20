@@ -23,11 +23,19 @@ class Post extends Model
     public function toArray()
     {
         $attributes = parent::toArray();
+<<<<<<< HEAD
         
         foreach ($this->getTranslatableAttributes() as $field) {
             $attributes[$field] = $this->getTranslation($field, app()->getLocale());
         }
         
+=======
+
+        foreach ($this->getTranslatableAttributes() as $field) {
+            $attributes[$field] = $this->getTranslation($field, app()->getLocale());
+        }
+
+>>>>>>> laraxot/develop
         return $attributes;
     }
 }
@@ -89,10 +97,16 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 
 - [Torna a packages.md](../packages.md)
 - [Localizzazione](localization.md)
+<<<<<<< HEAD
 - [Performance](performance.md) 
 ### Versione HEAD
 
 
+=======
+- [Performance](performance.md)
+### Versione HEAD
+
+>>>>>>> laraxot/develop
 ## Collegamenti tra versioni di translations.md
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
@@ -112,9 +126,15 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 * [translations.md](../../../Patient/docs/translations.md)
 * [translations.md](../../../Cms/docs/translations.md)
 
+<<<<<<< HEAD
 
 ### Versione Incoming
 
 
 ---
 
+=======
+### Versione Incoming
+
+---
+>>>>>>> laraxot/develop

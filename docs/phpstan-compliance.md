@@ -9,7 +9,11 @@
 
 ## Compliance Summary
 
+<<<<<<< HEAD
 The Lang module is fully compliant with PHPStan level 10 analysis, demonstrating:
+=======
+The Lang module is fully compliant with PHPStan level 9 analysis, demonstrating:
+>>>>>>> laraxot/develop
 
 - ✅ Rigorous type hints implementation
 - ✅ Proper null handling
@@ -43,4 +47,8 @@ The module maintains:
 - Strict type declarations
 - Comprehensive type hints
 - Internationalization best practices
+<<<<<<< HEAD
 - Modern PHP 8.2+ feature utilization
+=======
+- Modern PHP 8.2+ feature utilization
+>>>>>>> laraxot/develop
