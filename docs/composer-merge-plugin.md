@@ -25,6 +25,7 @@ Il modulo Lang gestisce localizzazione e traduzioni; i pacchetti locali consento
 - Tenere le dipendenze del pacchetto interne al modulo, senza introdurre conflitti trasversali.
  - Usare `path` repository per forzare l'uso del pacchetto locale rispetto a Packagist.
  - Allineare i vincoli di `filament/filament` del pacchetto locale con quelli del root.
+- Se Packagist resta dominante, impostare `canonical: false` nel repository Packagist del root.
 
 ## Configurazione locale consigliata
 - `composer.json` root:
