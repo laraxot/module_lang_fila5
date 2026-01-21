@@ -31,6 +31,18 @@ php artisan module_lang:install
 
 ```
 
+## Versionamento e Changelog
+
+Il modulo utilizza workflow GitHub Actions standardizzati per:
+- tag semantici automatici,
+- aggiornamento del `CHANGELOG.md` sulle release,
+- controllo della presenza della roadmap del modulo.
+
+Riferimenti:
+- `../.github/workflows/tag-version.yml`
+- `../.github/workflows/update-changelog.yml`
+- `../.github/workflows/roadmap-check.yml`
+
 ## Documentazione collegata
 - [Composer merge plugin](composer-merge-plugin.md)
 
