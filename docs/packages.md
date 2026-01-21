@@ -59,6 +59,7 @@
 - [SEO](packages/seo.md)
 - [Performance](packages/performance.md)
 - [Composer merge plugin](composer-merge-plugin.md)
+- [Composer merge plugin](composer-merge-plugin.md)
 ### Versione HEAD
 
 ## Collegamenti tra versioni di packages.md
