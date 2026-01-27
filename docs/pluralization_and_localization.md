@@ -1,14 +1,3 @@
----
-title: "Plurale/Singolare e Localizzazione Date/Valute"
-module: "Lang"
-type: concept
-tags: [lang, service, helper, text]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text fix"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Plurale/Singolare e Localizzazione Date/Valute
 
 ## Pluralizzazione
@@ -43,13 +32,13 @@ related:
 - **File JSON**: Evitare l'uso per le stringhe plurali, salvo casi di necessità per traduttori non-dev.
 
 ### 1.5 Esempio Completo
-- `/var/www/html/saluteora/laravel/lang/en/messages.php`:
+- `/var/www/html/<nome progetto>/laravel/lang/en/messages.php`:
   ```php
   return [
       'newMessageIndicator' => '{0} You have no new messages|{1} You have 1 new message|[2,*] You have :count new messages',
   ];
   ```
-- `/var/www/html/saluteora/laravel/lang/it/messages.php`:
+- `/var/www/html/<nome progetto>/laravel/lang/it/messages.php`:
   ```php
   return [
       'newMessageIndicator' => '{0} Non hai nuovi messaggi|{1} Hai 1 nuovo messaggio|[2,*] Hai :count nuovi messaggi',
@@ -190,7 +179,7 @@ related:
 ## 4. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
-- [TRANSLATION_KEYS_BEST_PRACTICES.md](translation_keys_best_practices.md)
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md) 

@@ -1,21 +1,10 @@
----
-title: "Regole per le Chiavi di Traduzione "
-module: "Lang"
-type: rule
-tags: [ottimizzazioni, correzioni]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ottimizzazioni correzioni"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Regole per le Chiavi di Traduzione 
 
 ## Collegamenti correlati
 - [Documentazione centrale](./README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Regole Traduzioni User](translation_keys_rules.md)
+- [Implementazione Auth Pages](../../User/docs/AUTH_PAGES_IMPLEMENTATION.md)
+- [Regole Traduzioni User](../../User/docs/TRANSLATION_KEYS_RULES.md)
 - [Documentazione Lang](./README.md)
 
 ## Regole Fondamentali per le Traduzioni
@@ -195,7 +184,7 @@ protected function getFormActions(): array
 
 ### 1. Estrazione Automatica delle Chiavi
 
-<main module> include strumenti per l'estrazione automatica delle chiavi di traduzione:
+<nome progetto> include strumenti per l'estrazione automatica delle chiavi di traduzione:
 
 ```bash
 php artisan lang:extract
@@ -219,7 +208,7 @@ php artisan lang:sync
 
 ## Conclusione
 
-Seguire queste regole per le chiavi di traduzione è fondamentale per garantire la coerenza, la manutenibilità e l'internazionalizzazione dell'applicazione <main module>. L'utilizzo di chiavi standardizzate e strutturate gerarchicamente facilita la gestione delle traduzioni e migliora la qualità complessiva del codice.
+Seguire queste regole per le chiavi di traduzione è fondamentale per garantire la coerenza, la manutenibilità e l'internazionalizzazione dell'applicazione <nome progetto>. L'utilizzo di chiavi standardizzate e strutturate gerarchicamente facilita la gestione delle traduzioni e migliora la qualità complessiva del codice.
 
 ## [2024-07-07] Nota storica: correzione massiva Notify
 

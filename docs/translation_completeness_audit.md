@@ -1,24 +1,13 @@
----
-title: "Translation Completeness Audit"
-module: "Lang"
-type: concept
-tags: [REDUNDANCY, ANALYSIS]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "redundancy analysis"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Translation Completeness Audit
 
 ## Overview
-This document tracks the completeness and quality of translation files across the <main module> system, ensuring all user-facing text is properly localized in Italian, English, and German.
+This document tracks the completeness and quality of translation files across the <nome progetto> system, ensuring all user-facing text is properly localized in Italian, English, and German.
 
 ## Recent Updates
 
 ### 2025-01-06: Complete PDF Template Internationalization
 
-**Issue**: PDF template `/var/www/html/_bases/<directory progetto>/laravel/Themes/One/resources/views/appointment/report_pdf.blade.php` contained hardcoded Italian text, making it non-multilingual.
+**Issue**: PDF template `/var/www/html/_bases/base_<nome progetto>/laravel/Themes/One/resources/views/appointment/report_pdf.blade.php` contained hardcoded Italian text, making it non-multilingual.
 
 **Files Updated**:
 - `laravel/Themes/One/resources/views/appointment/report_pdf.blade.php` (completely internationalized)
@@ -228,7 +217,7 @@ This document tracks the completeness and quality of translation files across th
 **Files Updated**:
 - `laravel/Modules/Notify/lang/en/opening_hours.php`
 - `laravel/Modules/Notify/lang/en/send_email.php` 
-- `laravel/Modules/<main module>/lang/en/find_doctor_widget.php`
+- `laravel/Modules/<nome progetto>/lang/en/find_doctor_widget.php`
 
 **Process**:
 - Translated all Italian content to proper English
@@ -260,7 +249,7 @@ This document tracks the completeness and quality of translation files across th
 ### Completed ✅
 - ✅ Notify module Italian translations (modernized and expanded)
 - ✅ Notify module English translations (completed)
-- ✅ <main module> module English translations (completed)
+- ✅ <nome progetto> module English translations (completed)
 - ✅ Theme opening hours translations (improved across all languages)
 - ✅ Theme doctor translations (fixed English and German)
 - ✅ Theme appointment translations (enhanced with complete fields)
@@ -295,7 +284,7 @@ This document tracks the completeness and quality of translation files across th
 
 - [Theme Translation Files](../laravel/Themes/One/lang/)
 - [Notify Module Translations](../laravel/Modules/Notify/lang/)
-- [<main module> Module Translations](../laravel/Modules/<main module>/lang/)
+- [<nome progetto> Module Translations](../laravel/Modules/<nome progetto>/lang/)
 - [PDF Template](../laravel/Themes/One/resources/views/appointment/report_pdf.blade.php)
 
 ---

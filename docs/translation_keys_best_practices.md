@@ -1,14 +1,3 @@
----
-title: "Best Practices per le Chiavi di Traduzione"
-module: "Lang"
-type: concept
-tags: [links01]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "links01"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Best Practices per le Chiavi di Traduzione
 
 ## Collegamenti correlati
@@ -292,9 +281,9 @@ Per blocchi di testo lunghi, valuta se usare chiavi dedicate in PHP (es. `onboar
 
 ## [AGGIORNAMENTO 2024-06-XX] - Correzione appointment.php
 
-La traduzione appointment.php del modulo <main module> è stata riscritta secondo le regole di centralizzazione, DRY, KISS, nessun lock-in, e struttura gerarchica inglese. Tutte le chiavi sono ora coerenti con enums, actions, messages, filters, calendar, notifications. La motivazione è filosofica (un solo punto di verità), logica (manutenzione semplice), religiosa (nessuna duplicazione), politica (nessun lock-in tra moduli), zen (serenità del codice).
+La traduzione appointment.php del modulo <nome progetto> è stata riscritta secondo le regole di centralizzazione, DRY, KISS, nessun lock-in, e struttura gerarchica inglese. Tutte le chiavi sono ora coerenti con enums, actions, messages, filters, calendar, notifications. La motivazione è filosofica (un solo punto di verità), logica (manutenzione semplice), religiosa (nessuna duplicazione), politica (nessun lock-in tra moduli), zen (serenità del codice).
 
-Vedi esempio e motivazione in [<main module>/docs/appointment-management.md](../../<main module>/docs/appointment-management.md) e [translation-standards.md](./translation-standards.md).
+Vedi esempio e motivazione in [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md) e [translation-standards.md](./translation-standards.md).
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
