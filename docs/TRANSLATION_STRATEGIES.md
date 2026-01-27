@@ -1,14 +1,3 @@
----
-title: "Strategie di Gestione delle Traduzioni in Laravel"
-module: "Lang"
-type: concept
-tags: [migration, filament]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration filament"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Strategie di Gestione delle Traduzioni in Laravel
 
 ## Indice

@@ -7,275 +7,293 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\ServiceProvider;
 use Modules\Lang\Providers\LangServiceProvider;
-use Modules\Lang\Tests\TestCase;
-use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
-function makeLangServiceProvider(): LangServiceProvider
-{
-    return new LangServiceProvider(app());
-}
+beforeEach(function () {
+    $this->provider = new LangServiceProvider(app());
+});
 
 describe('LangServiceProvider Basic Functionality', function () {
     it('extends ServiceProvider', function () {
-        $provider = makeLangServiceProvider();
-        Assert::assertInstanceOf(ServiceProvider::class, $provider);
+        expect($this->provider)->toBeInstanceOf(ServiceProvider::class);
     });
 
     it('can be instantiated', function () {
-        $provider = makeLangServiceProvider();
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        expect($this->provider)->toBeInstanceOf(LangServiceProvider::class);
     });
 
     it('has correct module name', function () {
-        $provider = makeLangServiceProvider();
-        $reflection = new ReflectionClass($provider);
-        $property = $reflection->getProperty('name');
+        $reflection = new ReflectionClass($this->provider);
+        $property = $reflection->getProperty('module_name');
         $property->setAccessible(true);
 
-        Assert::assertSame('Lang', $property->getValue($provider));
+        expect($property->getValue($this->provider))->toBe('Lang');
     });
 });
 
 describe('LangServiceProvider Registration', function () {
     it('can register services', function () {
-        $provider = makeLangServiceProvider();
-        $provider->register();
+        $this->provider->register();
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        // Verifica che il provider sia registrato
+        expect($this->provider)->toBeInstanceOf(LangServiceProvider::class);
     });
 
     it('can boot services', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        // Verifica che il provider sia avviato
+        expect($this->provider)->toBeInstanceOf(LangServiceProvider::class);
     });
 });
 
 describe('LangServiceProvider Translation Loading', function () {
     it('loads translations from correct path', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        Assert::assertTrue(Lang::has('lang::auth.failed'));
+        // Verifica che le traduzioni siano caricate
+        expect(Lang::has('lang::common.welcome'))->toBeTrue();
     });
 
     it('loads translations with correct namespace', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        $translation = __('lang::auth.failed');
-        Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::auth.failed', $translation);
+        // Verifica il namespace delle traduzioni
+        $translation = __('lang::common.welcome');
+        expect($translation)->toBeString();
+        expect($translation)->not->toBe('lang::common.welcome'); // Non dovrebbe essere la chiave
     });
 
     it('handles missing translation keys gracefully', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
+        // Verifica gestione chiavi mancanti
         $missingTranslation = __('lang::nonexistent.key');
-        Assert::assertSame('lang::nonexistent.key', $missingTranslation);
+        expect($missingTranslation)->toBe('lang::nonexistent.key'); // Dovrebbe restituire la chiave se non trovata
     });
 });
 
 describe('LangServiceProvider Translation Structure', function () {
-    it('provides auth translations', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+    it('provides common translations', function () {
+        $this->provider->boot();
 
-        $authKeys = [
-            'failed',
-            'password',
-            'throttle',
-            'login.title',
-            'login.submit',
-            'register.title',
+        $commonKeys = [
+            'welcome',
+            'loading',
+            'error',
+            'success',
+            'cancel',
+            'save',
+            'delete',
+            'edit',
+            'create',
         ];
 
-        foreach ($authKeys as $key) {
-            $translation = __("lang::auth.{$key}");
-            Assert::assertIsString($translation);
-            Assert::assertNotSame("lang::auth.{$key}", $translation);
+        foreach ($commonKeys as $key) {
+            $translation = __("lang::common.{$key}");
+            expect($translation)->toBeString();
+            expect($translation)->not->toBe("lang::common.{$key}");
         }
     });
 
-    it('provides nested login translations', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+    it('provides validation translations', function () {
+        $this->provider->boot();
 
-        $loginKeys = ['title', 'email', 'password', 'submit', 'forgot_password'];
+        $validationKeys = [
+            'required',
+            'email',
+            'min',
+            'max',
+            'unique',
+            'confirmed',
+        ];
 
-        foreach ($loginKeys as $key) {
-            $translation = __("lang::auth.login.{$key}");
-            Assert::assertIsString($translation);
-            Assert::assertNotSame("lang::auth.login.{$key}", $translation);
+        foreach ($validationKeys as $key) {
+            $translation = __("lang::validation.{$key}");
+            expect($translation)->toBeString();
+            expect($translation)->not->toBe("lang::validation.{$key}");
         }
     });
 
-    it('provides translation module strings', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+    it('provides error translations', function () {
+        $this->provider->boot();
 
-        $translation = __('lang::translation.navigation.name');
-        Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::translation.navigation.name', $translation);
+        $errorKeys = [
+            'general',
+            'not_found',
+            'unauthorized',
+            'validation',
+            'server_error',
+        ];
+
+        foreach ($errorKeys as $key) {
+            $translation = __("lang::errors.{$key}");
+            expect($translation)->toBeString();
+            expect($translation)->not->toBe("lang::errors.{$key}");
+        }
     });
 });
 
 describe('LangServiceProvider Language Support', function () {
     it('supports Italian language', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
+        // Cambia lingua a italiano
         app()->setLocale('it');
 
-        $translation = __('lang::auth.failed');
-        Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::auth.failed', $translation);
+        $translation = __('lang::common.welcome');
+        expect($translation)->toBeString();
+        expect($translation)->not->toBe('lang::common.welcome');
     });
 
     it('supports English language', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
+        // Cambia lingua a inglese
         app()->setLocale('en');
 
-        $translation = __('lang::auth.failed');
-        Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::auth.failed', $translation);
+        $translation = __('lang::common.welcome');
+        expect($translation)->toBeString();
+        expect($translation)->not->toBe('lang::common.welcome');
     });
 
     it('supports German language', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
+        // Cambia lingua a tedesco
         app()->setLocale('de');
 
-        $translation = __('lang::auth.failed');
-        Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::auth.failed', $translation);
+        $translation = __('lang::common.welcome');
+        expect($translation)->toBeString();
+        expect($translation)->not->toBe('lang::common.welcome');
     });
 
     it('falls back to default language when translation missing', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
+        // Cambia lingua a una non supportata
         app()->setLocale('fr');
 
-        $translation = __('lang::auth.failed');
-        Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::auth.failed', $translation);
+        $translation = __('lang::common.welcome');
+        expect($translation)->toBeString();
+        expect($translation)->not->toBe('lang::common.welcome');
     });
 });
 
 describe('LangServiceProvider Translation Files', function () {
-    it('loads auth translation file', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+    it('loads common translation file', function () {
+        $this->provider->boot();
 
-        $authPath = module_path('Lang', 'lang/it/auth.php');
-        Assert::assertTrue(File::exists($authPath));
-        $translations = require $authPath;
-        Assert::assertIsArray($translations);
-        Assert::assertArrayHasKey('failed', $translations);
+        $commonPath = module_path('Lang', 'lang/it/common.php');
+        expect(File::exists($commonPath))->toBeTrue();
+
+        $translations = require $commonPath;
+        expect($translations)->toBeArray();
+        expect($translations)->toHaveKey('welcome');
     });
 
-    it('loads translation module file', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+    it('loads validation translation file', function () {
+        $this->provider->boot();
 
-        $translationPath = module_path('Lang', 'lang/it/translation.php');
-        Assert::assertTrue(File::exists($translationPath));
-        $translations = require $translationPath;
-        Assert::assertIsArray($translations);
-        Assert::assertArrayHasKey('navigation', $translations);
+        $validationPath = module_path('Lang', 'lang/it/validation.php');
+        expect(File::exists($validationPath))->toBeTrue();
+
+        $translations = require $validationPath;
+        expect($translations)->toBeArray();
+        expect($translations)->toHaveKey('required');
     });
 
-    it('loads auth translation file for english', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+    it('loads error translation file', function () {
+        $this->provider->boot();
 
-        $authPath = module_path('Lang', 'lang/en/auth.php');
-        Assert::assertTrue(File::exists($authPath));
-        $translations = require $authPath;
-        Assert::assertIsArray($translations);
-        Assert::assertArrayHasKey('failed', $translations);
+        $errorPath = module_path('Lang', 'lang/it/errors.php');
+        expect(File::exists($errorPath))->toBeTrue();
+
+        $translations = require $errorPath;
+        expect($translations)->toBeArray();
+        expect($translations)->toHaveKey('general');
     });
 
     it('loads all required translation files', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        $requiredFiles = ['auth', 'translation', 'header'];
+        $requiredFiles = ['common', 'validation', 'errors'];
         $langPath = module_path('Lang', 'lang/it');
 
         foreach ($requiredFiles as $file) {
             $filePath = "{$langPath}/{$file}.php";
-            Assert::assertTrue(File::exists($filePath));
+            expect(File::exists($filePath))->toBeTrue();
+
             $translations = require $filePath;
-            Assert::assertIsArray($translations);
-            Assert::assertNotEmpty($translations);
+            expect($translations)->toBeArray();
+            expect($translations)->not->toBeEmpty();
         }
     });
 });
 
 describe('LangServiceProvider Translation Quality', function () {
-    it('provides complete auth translation coverage', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+    it('provides complete translation coverage', function () {
+        $this->provider->boot();
 
-        $authKeys = [
-            'failed',
-            'password',
-            'throttle',
-            'login.title',
-            'login.email',
-            'login.submit',
-            'register.title',
-            'register.name',
+        $commonKeys = [
+            'welcome',
+            'loading',
+            'error',
+            'success',
+            'cancel',
+            'save',
+            'delete',
+            'edit',
+            'create',
+            'update',
+            'back',
+            'next',
+            'previous',
+            'search',
+            'filter',
+            'sort',
+            'refresh',
+            'export',
+            'import',
         ];
 
-        foreach ($authKeys as $key) {
-            $translation = __("lang::auth.{$key}");
-            Assert::assertIsString($translation);
-            Assert::assertNotSame("lang::auth.{$key}", $translation);
-            Assert::assertGreaterThan(0, strlen($translation));
+        foreach ($commonKeys as $key) {
+            $translation = __("lang::common.{$key}");
+            expect($translation)->toBeString();
+            expect($translation)->not->toBe("lang::common.{$key}");
+            expect(strlen($translation))->toBeGreaterThan(0);
         }
     });
 
     it('provides consistent translation style', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
         $translations = [
-            __('lang::auth.failed'),
-            __('lang::auth.password'),
-            __('lang::auth.login.title'),
+            __('lang::common.welcome'),
+            __('lang::common.loading'),
+            __('lang::common.success'),
         ];
 
+        // Verifica che tutte le traduzioni abbiano uno stile coerente
         foreach ($translations as $translation) {
-            Assert::assertIsString($translation);
-            Assert::assertGreaterThan(0, strlen($translation));
+            expect($translation)->toBeString();
+            expect(strlen($translation))->toBeGreaterThan(0);
+            expect($translation)->not->toMatch('/[A-Z]{2,}/'); // Non dovrebbe contenere sigle in maiuscolo
         }
     });
 
-    it('provides contextually appropriate italian translations', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
-
-        app()->setLocale('it');
+    it('provides contextually appropriate translations', function () {
+        $this->provider->boot();
 
         $contextualPairs = [
-            'auth.failed' => 'Credenziali non valide.',
-            'auth.login.submit' => 'Accedi',
-            'auth.register.title' => 'Registati',
+            'save' => 'Salva',
+            'delete' => 'Elimina',
+            'edit' => 'Modifica',
+            'create' => 'Crea',
         ];
 
         foreach ($contextualPairs as $key => $expected) {
-            $translation = __("lang::{$key}");
-            Assert::assertSame($expected, $translation);
+            $translation = __("lang::common.{$key}");
+            expect($translation)->toBe($expected);
         }
     });
 });
@@ -284,157 +302,162 @@ describe('LangServiceProvider Performance', function () {
     it('loads translations efficiently', function () {
         $startTime = microtime(true);
 
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        $executionTime = microtime(true) - $startTime;
+        $endTime = microtime(true);
+        $executionTime = $endTime - $startTime;
 
-        Assert::assertLessThan(1.0, $executionTime);
+        expect($executionTime)->toBeLessThan(1.0); // Dovrebbe essere veloce
     });
 
     it('caches translations for performance', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
+        // Prima chiamata
         $startTime = microtime(true);
-        $translation1 = __('lang::auth.failed');
-        $firstCallTime = microtime(true) - $startTime;
+        $translation1 = __('lang::common.welcome');
+        $endTime = microtime(true);
+        $firstCallTime = $endTime - $startTime;
 
+        // Seconda chiamata (dovrebbe essere più veloce)
         $startTime = microtime(true);
-        $translation2 = __('lang::auth.failed');
-        $secondCallTime = microtime(true) - $startTime;
+        $translation2 = __('lang::common.welcome');
+        $endTime = microtime(true);
+        $secondCallTime = $endTime - $startTime;
 
-        Assert::assertSame($translation2, $translation1);
-        Assert::assertLessThanOrEqual($firstCallTime, $secondCallTime);
+        expect($translation1)->toBe($translation2);
+        expect($secondCallTime)->toBeLessThanOrEqual($firstCallTime);
     });
 
     it('handles multiple language switches efficiently', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        $languages = ['it', 'en', 'de', 'it'];
+        $languages = ['it', 'en', 'de', 'it']; // Torna a italiano
 
         $startTime = microtime(true);
 
         foreach ($languages as $locale) {
             app()->setLocale($locale);
-            $translation = __('lang::auth.failed');
-            Assert::assertIsString($translation);
+            $translation = __('lang::common.welcome');
+            expect($translation)->toBeString();
         }
 
-        $executionTime = microtime(true) - $startTime;
+        $endTime = microtime(true);
+        $executionTime = $endTime - $startTime;
 
-        Assert::assertLessThan(1.0, $executionTime);
+        expect($executionTime)->toBeLessThan(1.0); // Dovrebbe essere veloce
     });
 });
 
 describe('LangServiceProvider Error Handling', function () {
     it('handles missing translation files gracefully', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        // Simula file di traduzione mancanti
+        $this->provider->boot();
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        // Dovrebbe gestire graziosamente i file mancanti
+        expect($this->provider)->toBeInstanceOf(LangServiceProvider::class);
     });
 
     it('handles malformed translation files gracefully', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        // Dovrebbe gestire graziosamente i file malformati
+        expect($this->provider)->toBeInstanceOf(LangServiceProvider::class);
     });
 
     it('handles empty translation files gracefully', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        // Dovrebbe gestire graziosamente i file vuoti
+        expect($this->provider)->toBeInstanceOf(LangServiceProvider::class);
     });
 });
 
 describe('LangServiceProvider Integration', function () {
     it('works with Laravel translation system', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        Assert::assertTrue(Lang::has('lang::auth.failed'));
-        Assert::assertIsString(__('lang::auth.failed'));
+        // Verifica integrazione con il sistema di traduzione di Laravel
+        expect(Lang::has('lang::common.welcome'))->toBeTrue();
+        expect(__('lang::common.welcome'))->toBeString();
     });
 
     it('works with Filament components', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        $translation = __('lang::auth.login.submit');
-        Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::auth.login.submit', $translation);
+        // Verifica che le traduzioni siano disponibili per i componenti Filament
+        $translation = __('lang::common.save');
+        expect($translation)->toBeString();
+        expect($translation)->not->toBe('lang::common.save');
     });
 
     it('works with Blade templates', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        $translation = __('lang::auth.failed');
-        Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::auth.failed', $translation);
+        // Verifica che le traduzioni siano disponibili nei template Blade
+        $translation = lang('lang::common.welcome');
+        expect($translation)->toBeString();
+        expect($translation)->not->toBe('lang::common.welcome');
     });
 });
 
 describe('LangServiceProvider Configuration', function () {
     it('respects Laravel configuration', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
+        // Verifica che rispetti la configurazione di Laravel
         $defaultLocale = config('app.locale');
-        Assert::assertIsString($defaultLocale);
-        Assert::assertGreaterThan(0, strlen($defaultLocale));
+        expect($defaultLocale)->toBeString();
+        expect(strlen($defaultLocale))->toBeGreaterThan(0);
     });
 
     it('can be configured via config files', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        Assert::assertIsString(config('app.fallback_locale'));
+        // Verifica che possa essere configurato tramite file di configurazione
+        expect(config('app.fallback_locale'))->toBeString();
     });
 
     it('integrates with other service providers', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        Assert::assertInstanceOf(Application::class, app());
+        // Verifica integrazione con altri service provider
+        expect(app())->toBeInstanceOf(Application::class);
     });
 });
 
 describe('LangServiceProvider Maintenance', function () {
     it('can be refreshed without errors', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
-        $provider->boot();
+        $this->provider->boot();
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        // Verifica che possa essere riavviato senza errori
+        $this->provider->boot();
+
+        expect($this->provider)->toBeInstanceOf(LangServiceProvider::class);
     });
 
     it('maintains state consistency', function () {
-        $provider = makeLangServiceProvider();
-        $provider->boot();
+        $this->provider->boot();
 
-        $translation1 = __('lang::auth.failed');
+        $translation1 = __('lang::common.welcome');
 
-        $provider->boot();
+        $this->provider->boot();
 
-        $translation2 = __('lang::auth.failed');
+        $translation2 = __('lang::common.welcome');
 
-        Assert::assertSame($translation2, $translation1);
+        expect($translation1)->toBe($translation2);
     });
 
     it('can be unregistered and re-registered', function () {
-        $provider = makeLangServiceProvider();
-        $provider->register();
-        $provider->boot();
+        $this->provider->register();
+        $this->provider->boot();
 
-        $provider = makeLangServiceProvider();
-        $provider->register();
-        $provider->boot();
+        // Simula unregister
+        $this->provider = new LangServiceProvider(app());
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        $this->provider->register();
+        $this->provider->boot();
+
+        expect($this->provider)->toBeInstanceOf(LangServiceProvider::class);
     });
 });
