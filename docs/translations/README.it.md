@@ -1,14 +1,3 @@
----
-title: "🚀 Benvenuto in Laraxot PTVX"
-module: "Lang"
-type: concept
-tags: [git, conflicts, resolution, summary]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git conflicts resolution summary"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>
   
@@ -78,7 +67,7 @@ related:
 - [Indice del Progetto](../INDEX.md)
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
-- [Architettura](architecture.md)
+- [Architettura](../ARCHITECTURE.md)
 
 ---
 

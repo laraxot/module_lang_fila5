@@ -1,14 +1,3 @@
----
-title: "Implementazione della Localizzazione "
-module: "Lang"
-type: concept
-tags: [test]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "test"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Implementazione della Localizzazione 
 
 ## Collegamenti correlati
@@ -20,7 +9,7 @@ related:
 
 ## Panoramica
 
-<main module> utilizza il pacchetto `mcamara/laravel-localization` per gestire la localizzazione dell'applicazione. Questo documento descrive come implementare correttamente il selettore di lingue e come utilizzare le funzioni del pacchetto.
+<nome progetto> utilizza il pacchetto `mcamara/laravel-localization` per gestire la localizzazione dell'applicazione. Questo documento descrive come implementare correttamente il selettore di lingue e come utilizzare le funzioni del pacchetto.
 
 ## Regole Fondamentali
 
@@ -167,4 +156,4 @@ Il pacchetto `mcamara/laravel-localization` fornisce diversi middleware per gest
 
 ## Conclusione
 
-Seguendo queste linee guida, è possibile implementare correttamente la localizzazione  utilizzando il pacchetto `mcamara/laravel-localization` senza creare rotte o controller personalizzati. Questo approccio è coerente con la filosofia di <main module> di utilizzare Filament e Folio per gestire la maggior parte delle funzionalità dell'applicazione.
+Seguendo queste linee guida, è possibile implementare correttamente la localizzazione  utilizzando il pacchetto `mcamara/laravel-localization` senza creare rotte o controller personalizzati. Questo approccio è coerente con la filosofia di <nome progetto> di utilizzare Filament e Folio per gestire la maggior parte delle funzionalità dell'applicazione.

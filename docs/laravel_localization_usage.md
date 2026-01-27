@@ -1,19 +1,8 @@
----
-title: "Utilizzo di mcamara/laravel-localization "
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Utilizzo di mcamara/laravel-localization 
 
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
-- [Best Practices Chiavi di Traduzione](translation_keys_best_practices.md)
+- [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -39,7 +28,7 @@ Questo documento descrive come utilizzare correttamente il pacchetto `mcamara/la
 ## Configurazione
 
 Il pacchetto `mcamara/laravel-localization` è già configurato . La configurazione si trova in:
-- `/var/www/html/<directory progetto>/laravel/config/laravellocalization.php`
+- `/var/www/html/<nome progetto>/laravel/config/laravellocalization.php`
 
 Le lingue supportate sono definite nella chiave `supportedLocales` di questo file.
 
@@ -108,7 +97,7 @@ $currentLocale = app()->getLocale();
 
 ## Utilizzo delle Bandiere SVG
 
-Le bandiere SVG sono disponibili in `/var/www/html/<directory progetto>/laravel/Modules/UI/resources/svg/flags` e sono autoregistrate come componenti Blade con il prefisso `ui-flags`.
+Le bandiere SVG sono disponibili in `/var/www/html/<nome progetto>/laravel/Modules/UI/resources/svg/flags` e sono autoregistrate come componenti Blade con il prefisso `ui-flags`.
 
 ### Utilizzo Corretto
 
