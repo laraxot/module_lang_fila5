@@ -1,14 +1,3 @@
----
-title: "Lang Module - Comprehensive Analysis"
-module: "Lang"
-type: concept
-tags: [links]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "links"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Lang Module - Comprehensive Analysis
 
 ## Module Overview
