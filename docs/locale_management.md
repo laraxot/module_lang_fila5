@@ -1,14 +1,3 @@
----
-title: "Gestione delle Lingue in Laravel"
-module: "Lang"
-type: concept
-tags: [ottimizzazioni, correzioni]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ottimizzazioni correzioni"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Gestione delle Lingue in Laravel
 
 ## Indice
@@ -270,4 +259,4 @@ php artisan config:clear
 </php>
 ```
 
-Questo documento fornisce una panoramica completa sulla gestione delle lingue in Laravel, con particolare attenzione alle esigenze del progetto SaluteOra.
+Questo documento fornisce una panoramica completa sulla gestione delle lingue in Laravel, con particolare attenzione alle esigenze del progetto <nome progetto>.
