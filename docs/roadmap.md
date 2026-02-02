@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Lang Module Roadmap
 
 "Abbattiamo le barriere: la lingua come servizio universale."
@@ -31,7 +30,6 @@ Trasformare il modulo Lang in un sistema di gestione linguistica intelligente ch
 
 ---
 **Ultimo aggiornamento**: 31 Gennaio 2026
-=======
 # Lang Module - Complete Roadmap
 
 ## Module Overview
@@ -231,4 +229,3 @@ Lang/
 **Last Updated**: 2026-01-02
 **Maintainer**: Team Laraxot
 **Status**: Active Development
->>>>>>> e246ed3 (Check & fix styling)
