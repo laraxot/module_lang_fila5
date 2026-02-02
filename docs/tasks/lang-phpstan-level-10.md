@@ -1,14 +1,3 @@
----
-title: "Task: Lang PHPStan Level 10"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Task: Lang PHPStan Level 10
 
 ## 📋 Obiettivo
@@ -28,4 +17,4 @@ Portare il modulo Lang dal Livello 9 al Livello 10 di PHPStan, eliminando ogni i
 
 ## 🔗 Riferimenti
 - [Roadmap Lang](../roadmap.md)
-- [PHPStan Journey](../../../../docs/phpstan_journey.md)
+- [PHPStan Journey](../../../docs/PHPSTAN_JOURNEY.md)
