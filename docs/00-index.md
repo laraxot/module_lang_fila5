@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📚 **Indice Documentazione Modulo Lang**
 
 **Last Update**: 31 Gennaio 2026
@@ -38,6 +37,4 @@
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-=======
 # Documentation Index
->>>>>>> e246ed3 (Check & fix styling)
