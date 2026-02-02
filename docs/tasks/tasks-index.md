@@ -1,14 +1,3 @@
----
-title: "Indice task - Modulo Lang"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Indice task - Modulo Lang
 
 Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`. Fasi dalla [roadmap](../roadmap.md).
@@ -30,4 +19,4 @@ Lista dei task del modulo con link ai file .md separati. Ogni task è un file ne
 ## Collegamenti
 
 - [Roadmap Lang](../roadmap.md)
-- [Scopo moduli progetto](../../../../../docs/moduli-scopo.md)
+- [Scopo moduli progetto](../../../../docs/moduli-scopo.md)
