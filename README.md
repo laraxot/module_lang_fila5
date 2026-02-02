@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Lang Module
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -170,7 +169,6 @@ php artisan lang:publish
 **Quality**: PHPStan Level 10
 
 *Traduzioni automatiche per tutto l'ecosistema: 3 lingue, auto-risoluzione, editor visuale in Filament.*
-=======
 # 🌍 Lang - Il SISTEMA di TRADUZIONI più POTENTE! 🗣️
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
@@ -720,4 +718,3 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <br>
   <em>Costruito con ❤️ per la comunità Laravel</em>
 </div>
->>>>>>> e246ed3 (Check & fix styling)
