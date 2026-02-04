@@ -29,7 +29,7 @@ jobs:
           npm install --prefer-offline
           npm run build:share-card -- --module "Lang" --version "${{ steps.release_info.outputs.version }}"
       - name: Archive marketing kit
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v4
         with:
           name: "Lang-marketing-kit"
           path: |
@@ -52,7 +52,7 @@ jobs:
             -H 'Content-Type: application/json' \
             -d @kit/hero.md
       - name: Open GitHub Discussion highlight
-        uses: actions/github-script@v9
+        uses: actions/github-script@v7
         env:
           MODULE_NAME: "Lang"
         with:
