@@ -1,14 +1,3 @@
----
-title: "Riepilogo Correzioni Traduzioni - Gennaio 2025"
-module: "Lang"
-type: concept
-tags: [migration, filament, 4]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration filament 4"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Riepilogo Correzioni Traduzioni - Gennaio 2025
 
 ## Problemi Risolti
@@ -138,6 +127,7 @@ php artisan tinker
 - [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
 
 ### Documentazione Tema:
-- [Traduzioni Mancanti Appointment 2025](../../../themes/one/docs/traduzioni_mancanti_appointment_2025.md)
-- [Translation Updates 2024](../../../themes/one/docs/translation_updates_20240721.md)
+- [Traduzioni Mancanti Appointment 2025](../../../Themes/One/docs/traduzioni_mancanti_appointment_2025.md)
+- [Translation Updates 2024](../../../Themes/One/docs/translation_updates_20240721.md)
 
+*Ultimo aggiornamento: 6 Gennaio 2025 - TUTTI I PROBLEMI RISOLTI*
