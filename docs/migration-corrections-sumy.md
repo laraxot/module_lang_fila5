@@ -1,14 +1,3 @@
----
-title: "Correzioni Migrazione - Modulo Lang"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Correzioni Migrazione - Modulo Lang
 
 ## Problema Identificato
@@ -153,9 +142,9 @@ La migrazione ora segue completamente gli standard del progetto:
 
 ## Riferimenti
 
-- [Standard Migrazioni](../../xot/docs/migration_standards.md)
+- [Standard Migrazioni](../../Xot/docs/migration_standards.md)
 - [Best Practices Migrazioni Lang](migration_best_practices.md)
-- [Documentazione Generale](../../xot/docs/migration_guidelines.md)
+- [Documentazione Generale](../../Xot/docs/migration_guidelines.md)
 
 ## Lezioni Apprese
 
@@ -310,9 +299,9 @@ La migrazione ora segue completamente gli standard del progetto:
 
 ## Riferimenti
 
-- [Standard Migrazioni](../../xot/docs/migration_standards.md)
+- [Standard Migrazioni](../../Xot/docs/migration_standards.md)
 - [Best Practices Migrazioni Lang](migration_best_practices.md)
-- [Documentazione Generale](../../xot/docs/migration_guidelines.md)
+- [Documentazione Generale](../../Xot/docs/migration_guidelines.md)
 
 ## Lezioni Apprese
 

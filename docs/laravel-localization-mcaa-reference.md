@@ -1,14 +1,3 @@
----
-title: "mcamara/laravel-localization — Riferimento per moduli e temi"
-module: "Lang"
-type: concept
-tags: [migrazione, filament, 4]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migrazione filament 4"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # mcamara/laravel-localization — Riferimento per moduli e temi
 
 ## Scopo
@@ -95,5 +84,5 @@ Vedi README del package per PHPUnit e Pest.
 - [Regola progetto](../../../../.cursor/rules/laravel-localization-mcamara.mdc)
 - [Memoria](../../../../.cursor/memories/laravel-localization-mcamara.md)
 - [README mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
-- [Meetup localization standard](../../meetup/docs/localization-standard.md)
-- [Themes/Meetup localization standard](../../../themes/meetup/docs/localization-standard.md)
+- [Meetup localization standard](../../Meetup/docs/localization-standard.md)
+- [Themes/Meetup localization standard](../../../Themes/Meetup/docs/localization-standard.md)

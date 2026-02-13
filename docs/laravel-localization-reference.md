@@ -1,19 +1,8 @@
----
-title: "Laravel Localization Reference"
-module: "Lang"
-type: concept
-tags: [lang, service, helper, text]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text fix"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Laravel Localization Reference
 
 ## Overview
 
-This document provides the complete reference for `mcamara/laravel-localization` package (v2.x) used in the <nome progetto> project.
+This document provides the complete reference for `mcamara/laravel-localization` package (v2.x) used in the LaravelPizza project.
 
 ## Installation
 
