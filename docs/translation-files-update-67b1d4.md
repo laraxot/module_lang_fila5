@@ -1,14 +1,3 @@
----
-title: "Aggiornamento File di Traduzione - Gennaio 2025"
-module: "Lang"
-type: concept
-tags: [guida, migrazione, step, by]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "guida migrazione step by step"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Aggiornamento File di Traduzione - Gennaio 2025
 
 ## Data Aggiornamento
@@ -130,9 +119,9 @@ return [
 
 ## Collegamenti
 
-- [Translation Rules](../xot/docs/translation_rules.md)
+- [Translation Rules](../Xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
-- [Best Practices](../xot/docs/translations-best-practices.md)
+- [Best Practices](../Xot/docs/translations-best-practices.md)
 
 ## Prossimi Passi
 
