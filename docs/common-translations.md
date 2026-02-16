@@ -1,14 +1,3 @@
----
-title: "Errori comuni nei file di traduzione"
-module: "Lang"
-type: concept
-tags: [REDUNDANCY, ANALYSIS]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "redundancy analysis"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Errori comuni nei file di traduzione
 
 ## Errori di sintassi
@@ -134,6 +123,7 @@ Per evitare errori nei file di traduzione:
 
 ## Collegamenti alla documentazione correlata
 
-- [Regole generali per i file di traduzione](/laravel/modules/xot/docs/translation_rules.md)
+- [Regole generali per i file di traduzione](/laravel/Modules/Xot/docs/translation_rules.md)
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 
+*Ultimo aggiornamento: 3 Giugno 2025*

@@ -1,14 +1,3 @@
----
-title: "Lang Module - PHPStan Level 7 Fixes - Gennaio 2025"
-module: "Lang"
-type: concept
-tags: [readme.es, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme.es 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Lang Module - PHPStan Level 7 Fixes - Gennaio 2025
 
 ## ✅ **Stato Completato**
@@ -99,4 +88,5 @@ private function castWithAction(mixed $value): string
 - **Method Signatures**: Allineate tutte le signature con le classi base
 
 ---
+*Ultimo aggiornamento: Gennaio 2025*
 *Stato: ✅ Completato - 0 errori PHPStan*

@@ -1,14 +1,3 @@
----
-title: "Report PHPStan - Modulo Lang"
-module: "Lang"
-type: concept
-tags: [guida, migrazione, step, by]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "guida migrazione step by step"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Report PHPStan - Modulo Lang
 
 ## Stato Attuale
@@ -48,8 +37,8 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è
 
    - Verificare il comportamento con lingue diverse
 ## Collegamenti tra versioni di phpstan_report.md
-* [phpstan_report.md](../../../lang/project_docs/phpstan_report.md)
-* [phpstan_report.md](../../../media/project_docs/phpstan_report.md)
+* [phpstan_report.md](../../../Lang/project_docs/phpstan_report.md)
+* [phpstan_report.md](../../../Media/project_docs/phpstan_report.md)
 
 ### Versione Incoming
 

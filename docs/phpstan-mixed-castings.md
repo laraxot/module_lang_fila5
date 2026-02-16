@@ -1,14 +1,3 @@
----
-title: "PHPStan Mixed Type Casting Errors"
-module: "Lang"
-type: concept
-tags: [migration, filament]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration filament"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # PHPStan Mixed Type Casting Errors
 
 ## Problema
@@ -220,16 +209,17 @@ Dopo aver applicato le correzioni:
 
 ## Riferimenti
 
-- [SafeFloatCastAction Documentation](../../xot/docs/safe-casting-actions.md)
+- [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
 - [PHP Type Casting](https://www.php.net/manual/en/language.types.type-juggling.php)
 - [PHPStan Mixed Type](https://phpstan.org/writing-php-code/phpdoc-types#mixed)
 
 ## Backlink
 
-- [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
-- [Lang Module Structure](README.md)
-- [Xot Safe Casting Actions](../../xot/docs/safe-casting-actions.md)
+- [Root PHPStan Rules](../../../docs/phpstan_rules.md)
+- [Lang Module Structure](./README.md)
+- [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
 
+*Ultimo aggiornamento: [DATE]*
 # PHPStan Mixed Type Casting Errors
 
 ## Problema
@@ -441,12 +431,14 @@ Dopo aver applicato le correzioni:
 
 ## Riferimenti
 
-- [SafeFloatCastAction Documentation](../../xot/docs/safe-casting-actions.md)
+- [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
 - [PHP Type Casting](https://www.php.net/manual/en/language.types.type-juggling.php)
 - [PHPStan Mixed Type](https://phpstan.org/writing-php-code/phpdoc-types#mixed)
 
 ## Backlink
 
-- [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
-- [Lang Module Structure](README.md)
-- [Xot Safe Casting Actions](../../xot/docs/safe-casting-actions.md)
+- [Root PHPStan Rules](../../../docs/phpstan_rules.md)
+- [Lang Module Structure](./README.md)
+- [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
+
+*Ultimo aggiornamento: [DATE]*

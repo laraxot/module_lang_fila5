@@ -1,14 +1,3 @@
----
-title: "Enum Translation Pattern - Regola Critica"
-module: "Lang"
-type: concept
-tags: [ottimizzazioni, correzioni]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ottimizzazioni correzioni"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Enum Translation Pattern - Regola Critica
 
 ## ⚠️ REGOLA CRITICA: SEMPRE USARE transClass() NEGLI ENUM ⚠️
@@ -235,7 +224,7 @@ Prima di ogni commit, verificare:
 
 - [Enum Standards](enum_standards.md)
 - [Translation Management](translation-management.md)
-- [TableLayoutEnum Guide](../laravel/modules/ui/docs/table-layout-enum-complete-guide.md)
+- [TableLayoutEnum Guide](../laravel/Modules/UI/docs/table-layout-enum-complete-guide.md)
 
 ## Ultimo Aggiornamento
 [DATE] - Regola critica per enum translation pattern

@@ -1,14 +1,3 @@
----
-title: "Laravel Localization Metadata"
-module: "Lang"
-type: concept
-tags: [REDUNDANCY, ANALYSIS]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "redundancy analysis"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Laravel Localization Metadata
 
 ## Context
@@ -17,18 +6,18 @@ This document provides metadata about the integration of `mcamara/laravel-locali
 # Laravel Localization Metadata for Windsurf
 
 ## Context
-This document provides metadata for Windsurf about the integration of `mcamara/laravel-localization` into the `<nome progetto>ion market platform` project.
+This document provides metadata for Windsurf about the integration of `mcamara/laravel-localization` into the `prediction market platform` project.
 
 ## Key Points
 
 - **Package**: `mcamara/laravel-localization`
-- **Purpose**: Enhance localization capabilities in Laravel applications for <nome progetto>ion market platforms.
+- **Purpose**: Enhance localization capabilities in Laravel applications for prediction market platforms.
 - **Suggested Actions**:
   - Add package to `composer.json`.
   - Configure supported languages for international trading.
   - Register middleware for language redirects.
   - Implement language selector UI component for traders.
-- **Benefits**: Improved user experience with localized URLs and translated routes for global <nome progetto>ion markets.
+- **Benefits**: Improved user experience with localized URLs and translated routes for global prediction markets.
 
 ## Implementation Notes
 
