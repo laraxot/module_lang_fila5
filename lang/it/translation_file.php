@@ -83,4 +83,6 @@ return [
         'placeholder' => 'Seleziona file traduzione',
         'helper_text' => 'File di traduzione per la gestione delle lingue',
     ],
+    'label' => 'Translation File',
+    'plural_label' => 'Translation File (Plurale)',
 ];
