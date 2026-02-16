@@ -1,14 +1,3 @@
----
-title: "Audit Traduzioni Completato - 2025"
-module: "Lang"
-type: concept
-tags: [readme.es, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme.es 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Audit Traduzioni Completato - 2025
 
 ## Riepilogo Lavoro Effettuato
@@ -145,8 +134,8 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 
 ### Collegamenti Bidirezionali Creati
 - [Root Docs: Translation Standards](translation_standards.md)
-- [Lang Module: Translation Best Practices](../laravel/modules/lang/docs/translation_best_practices.md)
-- [<nome progetto> Module: Translation Guidelines](../laravel/modules/<nome progetto>/docs/translation_guidelines.md)
+- [Lang Module: Translation Best Practices](../laravel/Modules/Lang/docs/translation_best_practices.md)
+- [<nome progetto> Module: Translation Guidelines](../laravel/Modules/<nome progetto>/docs/translation_guidelines.md)
 
 ## Prevenzione Errori Futuri
 

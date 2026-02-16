@@ -1,14 +1,3 @@
----
-title: "Refactor Completo File di Traduzione - Riepilogo Finale"
-module: "Lang"
-type: concept
-tags: [ottimizzazioni, correzioni]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ottimizzazioni correzioni"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Refactor Completo File di Traduzione - Riepilogo Finale
 
 ## Panoramica del Progetto
@@ -154,8 +143,8 @@ Tutti i campi di traduzione ora includono la struttura completa a 7 elementi:
 ## Collegamenti alla Documentazione
 
 - [Struttura Campi Traduzione Completa](translation-field-structure-complete.md)
-- [Refactor Modulo User](../modules/user/docs/translation-city-field-refactor-[date].md)
-- [Status Modulo <nome progetto>](../modules/<nome progetto>/docs/translation-refactor-summary-[date].md)
+- [Refactor Modulo User](../Modules/User/docs/translation-city-field-refactor-[DATE].md)
+- [Status Modulo <nome progetto>](../Modules/<nome progetto>/docs/translation-refactor-summary-[DATE].md)
 
 ---
 

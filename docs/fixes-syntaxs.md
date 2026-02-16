@@ -1,14 +1,3 @@
----
-title: "Correzioni Errori Sintassi File Traduzione - Gennaio 2025"
-module: "Lang"
-type: concept
-tags: [filament4, migration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament4 migration"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 
 ## Riepilogo Problemi Risolti
@@ -177,3 +166,4 @@ grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php"
 - [Regole sintassi array breve](/.cursor/rules/translation_files_array_syntax.mdc)
 - [Best practices traduzioni](./translation_rules.md)
 
+*Ultimo aggiornamento: 6 Gennaio 2025*

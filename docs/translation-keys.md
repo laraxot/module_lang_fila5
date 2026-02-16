@@ -1,22 +1,11 @@
----
-title: "Regole per le Chiavi di Traduzione"
-module: "Lang"
-type: concept
-tags: [readme.es, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme.es 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
-- [Documentazione centrale](README.md)
+- [Documentazione centrale](./README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
-- [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
-- [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-- [Documentazione Lang](README.md)
+- [Implementazione Auth Pages](../../User/docs/AUTH_PAGES_IMPLEMENTATION.md)
+- [Regole Traduzioni User](../../User/docs/TRANSLATION_KEYS_RULES.md)
+- [Documentazione Lang](./README.md)
 
 ## Regole Fondamentali per le Traduzioni
 
@@ -224,16 +213,16 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 ## [[DATE]] Nota storica: correzione massiva Notify
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
-- Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
+- Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../Notify/docs/TRANSLATION_KEYS_RULES.md) per dettagli, esempi e best practice specifiche.
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
-- [Documentazione centrale](README.md)
+- [Documentazione centrale](./README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
-- [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
-- [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-- [Documentazione Lang](README.md)
+- [Implementazione Auth Pages](../../User/docs/AUTH_PAGES_IMPLEMENTATION.md)
+- [Regole Traduzioni User](../../User/docs/TRANSLATION_KEYS_RULES.md)
+- [Documentazione Lang](./README.md)
 
 ## Regole Fondamentali per le Traduzioni
 
@@ -441,5 +430,5 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 ## [[DATE]] Nota storica: correzione massiva Notify
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
-- Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
+- Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../Notify/docs/TRANSLATION_KEYS_RULES.md) per dettagli, esempi e best practice specifiche.
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
