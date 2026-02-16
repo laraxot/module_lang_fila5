@@ -37,13 +37,27 @@ return [
         ],
     ],
     'fields' => [
-        'id' => ['label' => 'ID'],
-        'lang' => ['label' => 'Lingua'],
-        'value' => ['label' => 'Valore'],
-        'key' => ['label' => 'Chiave'],
-        'namespace' => ['label' => 'Namespace'],
-        'group' => ['label' => 'Gruppo'],
-        'item' => ['label' => 'Elemento'],
+        'id' => [
+            'label' => 'ID',
+        ],
+        'lang' => [
+            'label' => 'Lingua',
+        ],
+        'value' => [
+            'label' => 'Valore',
+        ],
+        'key' => [
+            'label' => 'Chiave',
+        ],
+        'namespace' => [
+            'label' => 'Namespace',
+        ],
+        'group' => [
+            'label' => 'Gruppo',
+        ],
+        'item' => [
+            'label' => 'Elemento',
+        ],
         'name' => 'Nome Utente',
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
@@ -79,4 +93,6 @@ return [
     'act' => [
         'publish_item_trans' => 'pubblica modifiche riga',
     ],
+    'label' => 'Translation',
+    'plural_label' => 'Translation (Plurale)',
 ];

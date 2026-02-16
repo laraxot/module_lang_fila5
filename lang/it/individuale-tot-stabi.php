@@ -71,4 +71,17 @@ return [
             'error' => 'Errore durante l\'aggiornamento',
         ],
     ],
+    'label' => 'Individuale Tot Stabi',
+    'plural_label' => 'Individuale Tot Stabi (Plurale)',
+    'navigation' => [
+        'name' => 'Individuale Tot Stabi',
+        'plural' => 'Individuale Tot Stabi',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Individuale Tot Stabi',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
 ];
