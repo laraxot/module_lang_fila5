@@ -409,4 +409,17 @@ return [
             'label' => 'lang',
         ],
     ],
+    'label' => 'Edit Translation File',
+    'plural_label' => 'Edit Translation File (Plurale)',
+    'navigation' => [
+        'name' => 'Edit Translation File',
+        'plural' => 'Edit Translation File',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Edit Translation File',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
 ];

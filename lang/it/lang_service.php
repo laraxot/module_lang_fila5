@@ -27,7 +27,7 @@ return [
         'locale' => [
             'label' => 'Locale',
             'placeholder' => 'Seleziona il locale',
-            'helper_text' => 'Codice locale della lingua (es. it, en, de)',
+            'helper_text' => 'Codice locale della lingua (es. it, en, de]',
         ],
     ],
     'actions' => [
@@ -95,4 +95,6 @@ return [
         'heading' => 'Servizio Lingue',
         'description' => 'Gestisci le traduzioni e le lingue disponibili nel sistema',
     ],
+    'label' => 'Lang Service',
+    'plural_label' => 'Lang Service (Plurale)',
 ];
