@@ -1,14 +1,3 @@
----
-title: "Laravel Localization (mcamara) — Consolidated Reference"
-module: "Lang"
-type: concept
-tags: [filament4, migration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament4 migration"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Laravel Localization (mcamara) — Consolidated Reference
 
 ## Overview
@@ -138,6 +127,6 @@ php artisan route:trans:list it # List routes for locale
 
 ## Related Docs
 
-- [Skill: laravel-localization](../../../../.agent/skills/laravel-localization/skill.md)
+- [Skill: laravel-localization](../../../../.agent/skills/laravel-localization/SKILL.md)
 - [Filament Integration](./filament-integration.md)
 - [Philosophy](./philosophy.md)
