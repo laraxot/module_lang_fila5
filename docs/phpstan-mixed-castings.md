@@ -219,7 +219,6 @@ Dopo aver applicato le correzioni:
 - [Lang Module Structure](./readme.md)
 - [Xot Safe Casting Actions](../../xot/docs/safe-casting-actions.md)
 
-*Ultimo aggiornamento: [DATE]*
 # PHPStan Mixed Type Casting Errors
 
 ## Problema
@@ -441,4 +440,3 @@ Dopo aver applicato le correzioni:
 - [Lang Module Structure](./readme.md)
 - [Xot Safe Casting Actions](../../xot/docs/safe-casting-actions.md)
 
-*Ultimo aggiornamento: [DATE]*
