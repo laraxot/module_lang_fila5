@@ -93,4 +93,3 @@
 - [Index Documentation](./index.md)
 - [Best Practices](./best_practices.md)
 
-*Ultimo aggiornamento: [DATE]*
