@@ -137,7 +137,6 @@ Tutti i campi devono seguire la struttura espansa:
 - [Traduzioni Navigation Audit](traduzioni_navigation_2025.md)
 - [Best Practices Traduzioni](../../xot/docs/translation_rules.md)
 
-*Ultimo aggiornamento: 6 Gennaio 2025*
 # Errori comuni nei file di traduzione
 
 ## Errori di sintassi critici identificati
@@ -277,4 +276,3 @@ Tutti i campi devono seguire la struttura espansa:
 - [Traduzioni Navigation Audit](traduzioni_navigation_2025.md)
 - [Best Practices Traduzioni](../../xot/docs/translation_rules.md)
 
-*Ultimo aggiornamento: 6 Gennaio 2025*
