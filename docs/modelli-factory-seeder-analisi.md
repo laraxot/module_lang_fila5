@@ -104,5 +104,4 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 - [Cms Module](../../cms/docs/modelli_factory_seeder_analisi.md) - Contenuti multilingua
 - [Notify Module](../../notify/docs/modelli_factory_seeder_analisi.md) - Notifiche multilingua
 
-*Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 6 modelli, sistema traduzioni completo*
