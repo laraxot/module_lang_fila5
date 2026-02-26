@@ -204,11 +204,10 @@ class ConvertTranslations extends Command
             $code = '['.implode(', ', $toImplode)."\n]";
 
             return $code;
-        } else {
-            $export = var_export($var, true);
-            Assert::string($export, 'var_export deve restituire una stringa');
-
-            return $export;
         }
+        $export = var_export($var, true);
+        Assert::string($export, 'var_export deve restituire una stringa');
+
+        return $export;
     }
 }
