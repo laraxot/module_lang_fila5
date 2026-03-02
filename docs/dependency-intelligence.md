@@ -1,14 +1,3 @@
----
-title: "Dependency Intelligence - Module Lang"
-module: "Lang"
-type: concept
-tags: [REDUNDANCY, ANALYSIS]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "redundancy analysis"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Dependency Intelligence - Module Lang
 
 Aggiornato da `composer show` il 2026-03-02.
@@ -53,5 +42,5 @@ Aggiornato da `composer show` il 2026-03-02.
 
 ## Deep Study References
 
-- [Composer packages study](../../../../docs/architecture/composer-packages-study.md)
-- [Composer packages full inventory](../../../../docs/architecture/composer-packages-full-inventory.md)
+- [Composer packages study](../../../../../../docs/architecture/composer-packages-study.md)
+- [Composer packages full inventory](../../../../../../docs/architecture/composer-packages-full-inventory.md)
