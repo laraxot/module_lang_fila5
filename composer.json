@@ -40,6 +40,15 @@
         {
             "type": "path",
             "url": "../UI"
+        },
+        {
+            "type": "path",
+            "url": "./packages/lara-zeus/spatie-translatable"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.org",
+            "canonical": false
         }
     ],
     "repositories-comment": [
