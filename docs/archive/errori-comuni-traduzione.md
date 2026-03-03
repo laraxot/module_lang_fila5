@@ -137,4 +137,4 @@ Tutti i campi devono seguire la struttura espansa:
 - [Traduzioni Navigation Audit](traduzioni_navigation_2025.md)
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
-*Ultimo aggiornamento: 6 Gennaio 2025*
+*
