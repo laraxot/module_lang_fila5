@@ -41,7 +41,10 @@
         {
             "type": "path",
             "url": "../UI"
-        },
+        }
+        
+    ],
+    "repositories-comment": [
         {
             "type": "path",
             "url": "./packages/lara-zeus/spatie-translatable"
