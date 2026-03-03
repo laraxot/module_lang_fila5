@@ -1,14 +1,3 @@
----
-title: "Product Requirements Document (PRD)"
-module: "Lang"
-type: concept
-tags: [ottimizzazioni, correzioni]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ottimizzazioni correzioni"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Product Requirements Document (PRD)
 
 ## Metadata
@@ -17,7 +6,7 @@ related:
 |-------|--------|
 | **Version** | 1.0.0 |
 | **Status** | Approved |
-| **
+| **Last Updated** | 2026-03-03 |
 | **Owner** | Core Team |
 | **Module** | Lang |
 | **Repository** | laraxot/module_lang_fila5 |
