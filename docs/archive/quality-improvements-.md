@@ -60,5 +60,5 @@ Migliorare la qualità del codice del modulo Lang utilizzando PHPStan livello 10
 - [Best Practices](./BEST_PRACTICES.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
 
-*Ultimo aggiornamento: 2025-01-06*
+*
 
