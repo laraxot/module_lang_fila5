@@ -527,6 +527,15 @@ return [
                 'description' => 'file1.jpg',
             ],
         ],
+        'id' => [
+            'label' => 'id',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
+        'updated_at' => [
+            'label' => 'updated_at',
+        ],
     ],
     'actions' => [
         'authenticate' => [
@@ -588,6 +597,16 @@ return [
             'label' => 'update_coordinates',
             'icon' => 'update_coordinates',
             'tooltip' => 'update_coordinates',
+        ],
+        'edit' => [
+            'label' => 'edit',
+            'icon' => 'edit',
+            'tooltip' => 'edit',
+        ],
+        'delete' => [
+            'label' => 'delete',
+            'icon' => 'delete',
+            'tooltip' => 'delete',
         ],
     ],
     'sections' => [
