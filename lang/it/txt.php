@@ -527,6 +527,15 @@ return [
                 'description' => 'file1.jpg',
             ],
         ],
+        'id' => [
+            'label' => 'id',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
+        'updated_at' => [
+            'label' => 'updated_at',
+        ],
     ],
     'actions' => [
         'authenticate' => [
@@ -598,11 +607,6 @@ return [
             'label' => 'delete',
             'icon' => 'delete',
             'tooltip' => 'delete',
-        ],
-        'SendRecordsNotificationBulkAction' => [
-            'label' => 'SendRecordsNotificationBulkAction',
-            'icon' => 'SendRecordsNotificationBulkAction',
-            'tooltip' => 'SendRecordsNotificationBulkAction',
         ],
     ],
     'sections' => [
