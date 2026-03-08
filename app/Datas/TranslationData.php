@@ -27,11 +27,26 @@ class TranslationData extends Data
 
     public function getFilename(): string
     {
+<<<<<<< HEAD
+        if (null !== $this->filename) {
+            return $this->filename;
+||||||| 6161e129d
+        if ($this->filename !== null) {
+            return $this->filename;
+=======
         if (null !== $filename
             return $filename;
+>>>>>>> feature/ralph-loop-implementation
         }
         $hints = app('translator')->getLoader()->namespaces();
+<<<<<<< HEAD
+        $path = collect($hints)->get($this->namespace);
+||||||| 6161e129d
+        $path = collect($hints)->get($this->namespace);
+        if ($path === null) {
+=======
         $path = collect($hints)->get($namespace);
+>>>>>>> feature/ralph-loop-implementation
         if (null === $path) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
