@@ -16,26 +16,12 @@ class EditTranslationFile extends XotBaseEditRecord
 {
     public static string $resource = TranslationFileResource::class;
 
-    /**
-     * @return array<string>
-     */
-    public function getTranslatableLocales(): array
-    {
-        return ['it', 'en'];
-    }
-
-    #[\Override]
     public function getFormSchema(): array
     {
         return [
             Section::make('content')->schema(function ($record): array {
-                if (is_object($record) && isset($record->content)) {
-                    $content = is_array($record->content) ? $record->content : [];
-                } else {
-                    $content = [];
-                }
-
-                return // @var mixed makeFromArray($content, 'content';
+                $content = (is_object($record) && isset($record->content)) ? (array) $record->content : [];
+                return $this->makeFromArray($content, 'content');
             }),
         ];
     }
@@ -43,27 +29,16 @@ class EditTranslationFile extends XotBaseEditRecord
     public function makeFromArray(array $array, string $prefix = ''): array
     {
         $fields = [];
-
         foreach ($array as $key => $value) {
             $fullKey = '' === $prefix ? $key : ($prefix.'.'.$key);
-
             if (is_array($value)) {
-                /** @var array<string, mixed> $childArray */
-                $childArray = $value;
-                /** @var array<Htmlable|string> $childSchema */
-                $childSchema = self::makeFromArray($childArray, $fullKey);
                 $fields[] = Section::make($key)
-                    ->label($fullKey)
-                    ->schema($childSchema)
+                    ->schema($this->makeFromArray($value, $fullKey))
                     ->columns(2);
             } else {
-                $fields[] = TextInput::make($fullKey)
-                    // ->label($fullKey)
-                    ->label($key)
-                    ->default($value);
+                $fields[] = TextInput::make($fullKey)->label($key)->default((string) $value);
             }
         }
-
         return $fields;
     }
 
@@ -77,44 +52,11 @@ class EditTranslationFile extends XotBaseEditRecord
 
     protected function mutateFormDataBeforeSave(array $data): array
     {
-        /*
-         * // Salva le traduzioni nel file
-         * try {
-         * // @var mixed record->saveTranslations($data['content'];
-         *
-         * Notification::make()
-         * ->title('Traduzioni salvate con successo')
-         * ->success()
-         * ->send();
-         *
-         * } catch (\Exception $e) {
-         * Notification::make()
-         * ->title('Errore durante il salvataggio')
-         * ->body($e->getMessage())
-         * ->danger()
-         * ->send();
-         *
-         * // Previeni il salvataggio se c'è un errore
-         * // @var mixed halt(;
-         * }
-         */
-        $record = // @var mixed record;
+        $record = $this->getRecord();
         if (is_object($record) && isset($record->key)) {
-            $key = is_string($record->key) ? $record->key : (string) $record->key;
-            /** @var array<string, mixed>|Htmlable|int|string|null $content */
-            $content = $data['content'] ?? null;
-            app(SaveTransAction::class)->execute($key, $content);
+            $key = (string) $record->key;
+            app(SaveTransAction::class)->execute($key, $data['content'] ?? []);
         }
-
-        // dddx(['record'=>// @var mixed record,'data'=>$data];
         return $data;
-    }
-
-    protected function afterSave(): void
-    {
-        // Ricarica il record per aggiornare i dati
-        if (is_object(// @var mixed record
-            // @var mixed record->refresh(;
-        }
     }
 }
