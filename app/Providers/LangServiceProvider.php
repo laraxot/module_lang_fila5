@@ -39,6 +39,7 @@ class LangServiceProvider extends XotBaseServiceProvider
     {
         Select::configureUsing(function (Select $component) {
             $component->placeholder(__('filament-forms::components.select.placeholder'));
+
             return $component;
         });
 
@@ -61,6 +62,7 @@ class LangServiceProvider extends XotBaseServiceProvider
 
             $component = app(AutoLabelAction::class)->execute($component, 'placeholder');
             $component = app(AutoLabelAction::class)->execute($component, 'helperText');
+
             return app(AutoLabelAction::class)->execute($component, 'description');
         });
 
@@ -70,6 +72,7 @@ class LangServiceProvider extends XotBaseServiceProvider
 
         Section::configureUsing(function (Section $component) {
             $component = app(AutoLabelAction::class)->execute($component);
+
             return app(AutoLabelAction::class)->execute($component, 'heading');
         });
 
@@ -80,6 +83,7 @@ class LangServiceProvider extends XotBaseServiceProvider
         Column::configureUsing(function (Column $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             Assert::isInstanceOf($component, Column::class);
+
             return $component->wrapHeader()->verticallyAlignStart()->grow();
         });
 
@@ -97,6 +101,7 @@ class LangServiceProvider extends XotBaseServiceProvider
                     $component->button();
                 }
             }
+
             return $component;
         });
     }
