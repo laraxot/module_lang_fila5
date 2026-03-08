@@ -6,7 +6,6 @@ namespace Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
-use Illuminate\Contracts\Support\Htmlable;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Resources\TranslationFileResource;
@@ -21,6 +20,7 @@ class EditTranslationFile extends XotBaseEditRecord
         return [
             Section::make('content')->schema(function ($record): array {
                 $content = (is_object($record) && isset($record->content)) ? (array) $record->content : [];
+
                 return $this->makeFromArray($content, 'content');
             }),
         ];
@@ -39,6 +39,7 @@ class EditTranslationFile extends XotBaseEditRecord
                 $fields[] = TextInput::make($fullKey)->label($key)->default((string) $value);
             }
         }
+
         return $fields;
     }
 
@@ -57,6 +58,7 @@ class EditTranslationFile extends XotBaseEditRecord
             $key = (string) $record->key;
             app(SaveTransAction::class)->execute($key, $data['content'] ?? []);
         }
+
         return $data;
     }
 }

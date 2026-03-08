@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Filament\Widgets;
 
-use Filament\Schemas\Components\Component;
 use Illuminate\Support\Collection;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
