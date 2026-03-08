@@ -18,7 +18,7 @@ class TranslationEditor extends XotBaseField
     {
         parent::setUp();
 
-        $this->afterStateHydrated(function (TranslationEditor $component, $state
+        // @var mixed afterStateHydrated(function (TranslationEditor $component, $state
             $component->state($state ?? []);
         });
     }
@@ -26,7 +26,7 @@ class TranslationEditor extends XotBaseField
     public function getDefaultChildComponents(?string $key = null): array
     {
         $components = [];
-        $state = $this->getState();
+        $state = // @var mixed getState(;
         if (! is_iterable($state)) {
             return $components;
         }

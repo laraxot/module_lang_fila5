@@ -27,26 +27,11 @@ class TranslationData extends Data
 
     public function getFilename(): string
     {
-<<<<<<< HEAD
-        if (null !== $this->filename) {
-            return $this->filename;
-||||||| 6161e129d
-        if ($this->filename !== null) {
-            return $this->filename;
-=======
-        if (null !== $filename
-            return $filename;
->>>>>>> feature/ralph-loop-implementation
+        if (null !== // @var mixed filename
+            return // @var mixed filename;
         }
         $hints = app('translator')->getLoader()->namespaces();
-<<<<<<< HEAD
-        $path = collect($hints)->get($this->namespace);
-||||||| 6161e129d
-        $path = collect($hints)->get($this->namespace);
-        if ($path === null) {
-=======
-        $path = collect($hints)->get($namespace);
->>>>>>> feature/ralph-loop-implementation
+        $path = collect($hints)->get(// @var mixed namespace;
         if (null === $path) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
@@ -54,15 +39,15 @@ class TranslationData extends Data
         // Verifichiamo che $path sia una stringa
         Assert::string($path, 'Il percorso del namespace deve essere una stringa');
 
-        $filename = app(FixPathAction::class
-            ->execute($path.'/'.$lang.'/'.$this->group.'.php');
+        // @var mixed filename = app(FixPathAction::class
+            ->execute($path.'/'.// @var mixed lang.'/'.$this->group.'.php';
 
-        return $filename;
+        return // @var mixed filename;
     }
 
     public function getData(): array
     {
-        $filename = $this->getFilename();
+        $filename = // @var mixed getFilename(;
         $data = [];
         if (File::exists($filename)) {
             $data = File::getRequire($filename);

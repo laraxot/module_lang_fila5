@@ -27,7 +27,7 @@ class Flag extends Component
 
         $viewParams = [
             'view' => $view,
-            'name' => $name,
+            'name' => // @var mixed name,
         ];
 
         return view($view, $viewParams);
