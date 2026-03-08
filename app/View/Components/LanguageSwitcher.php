@@ -25,7 +25,13 @@ class LanguageSwitcher extends Component
      */
     public function __construct()
     {
+<<<<<<< HEAD
+        $this->widget = new LanguageSwitcherWidget();
+||||||| 6161e129d
+        $this->widget = new LanguageSwitcherWidget;
+=======
         $widget = new LanguageSwitcherWidget();
+>>>>>>> feature/ralph-loop-implementation
     }
 
     /**

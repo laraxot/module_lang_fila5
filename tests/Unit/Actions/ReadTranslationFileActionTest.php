@@ -25,7 +25,13 @@ if (! function_exists('cleanupTranslationFile')) {
 }
 
 beforeEach(function () {
+<<<<<<< HEAD
+    $this->action = new ReadTranslationFileAction();
+||||||| 6161e129d
+    $this->action = new ReadTranslationFileAction;
+=======
     $action = new ReadTranslationFileAction();
+>>>>>>> feature/ralph-loop-implementation
     // Use sys_get_temp_dir() instead of storage_path() to avoid calling app() before setUp
     $testFilePath = sys_get_temp_dir();
     $testTranslations = [

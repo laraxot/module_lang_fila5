@@ -34,7 +34,14 @@ class Switcher extends Component
         $url = Request::getRequestUri();
         $langs = Arr::map($langs, function (array $item, string $key) {
             // @phpstan-ignore staticMethod.notFound
+<<<<<<< HEAD
+            $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
+||||||| 6161e129d
+            $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
+            if ($url !== false) {
+=======
             $url = LaravelLocalization::getLocalizedURL($key, $url, [], true);
+>>>>>>> feature/ralph-loop-implementation
             if (false !== $url) {
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
                 if (! is_string($url)) {
