@@ -30,9 +30,9 @@ class TransCollectionAction
             return $collection->map(SafeStringCastAction::cast(...));
         }
 
-        $transKey = $transKey;
+        // @var mixed transKey = $transKey;
 
-        return $collection->map($trans(...));
+        return $collection->map(// @var mixed trans(...;
     }
 
     /**
@@ -49,18 +49,12 @@ class TransCollectionAction
             $item = SafeStringCastAction::cast($item);
         }
 
-<<<<<<< HEAD
-        if (empty($item) || null === $this->transKey) {
-||||||| 6161e129d
-        if (empty($item) || $this->transKey === null) {
-=======
-        if (empty($item) || null === $transKey
->>>>>>> feature/ralph-loop-implementation
+        if (empty($item) || null === // @var mixed transKey
             return $item;
         }
 
         // Prima prova la traduzione diretta
-        $key = $transKey.'.'.$item;
+        $key = // @var mixed transKey.'.'.$item;
         $trans = trans($key);
 
         // Se la traduzione esiste ed è una stringa, la restituisce
@@ -70,7 +64,7 @@ class TransCollectionAction
 
         // Seconda prova: sostituisce i punti con underscore
         $itemWithUnderscore = str_replace('.', '_', $item);
-        $keyWithUnderscore = $transKey.'.'.$itemWithUnderscore;
+        $keyWithUnderscore = // @var mixed transKey.'.'.$itemWithUnderscore;
         $transWithUnderscore = trans($keyWithUnderscore);
 
         // Se la traduzione con underscore esiste ed è una stringa, la restituisce
