@@ -10,13 +10,13 @@ use Modules\Lang\Actions\GetTransPathAction;
 use Modules\Lang\Tests\TestCase;
 
 beforeEach(function () {
-    // @var mixed action = new GetTransPathAction(;
+    $action = new GetTransPathAction();
 });
 
 describe('GetTransPathAction Business Logic', function () {
     test('returns correct path for valid translation key', function () {
         $key = 'meetup::messages.welcome';
-        $result = // @var mixed action->execute($key;
+        $result = $action->execute($key);
 
         expect(strtolower($result))->toContain('meetup');
         expect($result)->toContain('lang');
@@ -25,7 +25,7 @@ describe('GetTransPathAction Business Logic', function () {
 
     test('extracts namespace and file from key', function () {
         $key = 'cms::validation.required';
-        $result = // @var mixed action->execute($key;
+        $result = $action->execute($key);
 
         expect(strtolower($result))->toContain('cms');
         expect($result)->toContain('validation.php');
@@ -33,20 +33,20 @@ describe('GetTransPathAction Business Logic', function () {
 
     test('handles simple key without namespace', function () {
         // This will use the default fallback path
-        $result = // @var mixed action->execute('test';
+        $result = $action->execute('test');
         expect($result)->toBeString();
     });
 
     test('extracts language from app locale', function () {
         $key = 'user::auth.login';
-        $result = // @var mixed action->execute($key;
+        $result = $action->execute($key);
 
         expect($result)->toContain('lang/');
     });
 
     test('handles keys with multiple dots', function () {
         $key = 'module::file.nested.deep.value';
-        $result = // @var mixed action->execute($key;
+        $result = $action->execute($key);
 
         expect($result)->toContain('file.php');
     });
