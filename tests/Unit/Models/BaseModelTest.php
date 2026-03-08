@@ -4,41 +4,35 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit\Models;
 
+use Illuminate\Database\Eloquent\Model;
 use Modules\Lang\Models\BaseModel;
 use Tests\TestCase;
 
 uses(TestCase::class);
 
 beforeEach(function () {
-<<<<<<< HEAD
-    $this->baseModel = new class extends BaseModel {
-||||||| 6161e129d
-    $this->baseModel = new class extends BaseModel
-    {
-=======
-    $baseModel = new class extends BaseModel {
->>>>>>> feature/ralph-loop-implementation
+    // @var mixed baseModel = new class extends BaseModel {
         protected $table = 'test_lang_table';
     };
 });
 
 test('base model extends eloquent model', function () {
-    expect($baseModel);
+    expect(// @var mixed baseModel;
 });
 
 test('base model has correct table name', function () {
-    expect($baseModel->getTable());
+    expect(// @var mixed baseModel->getTable(;
 });
 
 test('base model can be instantiated', function () {
-    expect($baseModel);
+    expect(// @var mixed baseModel;
 });
 
 test('base model has proper inheritance chain', function () {
-    expect($baseModel);
-    expect($baseModel);
+    expect(// @var mixed baseModel;
+    expect(// @var mixed baseModel;
 });
 
 test('base model has timestamps enabled', function () {
-    expect($baseModel->usesTimestamps());
+    expect(// @var mixed baseModel->usesTimestamps(;
 });
