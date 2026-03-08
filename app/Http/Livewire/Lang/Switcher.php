@@ -28,20 +28,13 @@ class Switcher extends Component
 
     public function mount(): void
     {
-        $lang = app();
+        // @var mixed lang = app(;
         $langs = LaravelLocalization::getSupportedLocales();
-        unset($langs[$lang]);
-        $url = Request::getRequestUri();
+        unset($langs[// @var mixed lang];
+        // @var mixed url = Request::getRequestUri(;
         $langs = Arr::map($langs, function (array $item, string $key) {
             // @phpstan-ignore staticMethod.notFound
-<<<<<<< HEAD
-            $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
-||||||| 6161e129d
-            $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
-            if ($url !== false) {
-=======
-            $url = LaravelLocalization::getLocalizedURL($key, $url, [], true);
->>>>>>> feature/ralph-loop-implementation
+            $url = LaravelLocalization::getLocalizedURL($key, // @var mixed url, [], true;
             if (false !== $url) {
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
                 if (! is_string($url)) {
@@ -55,12 +48,12 @@ class Switcher extends Component
 
             return $item;
         });
-        $langs = $langs;
+        // @var mixed langs = $langs;
     }
 
     // public function switchLang(string $lang): Application|RedirectResponse|Redirector
     // {
-    //    $url = LaravelLocalization::getLocalizedURL($lang, $url);
+    //    $url = LaravelLocalization::getLocalizedURL($lang, // @var mixed url;
 
     //   return redirect($url, 303);
     // }
@@ -71,7 +64,7 @@ class Switcher extends Component
         $viewParams = [
             'view' => $view,
         ];
-        // if ([] === $teams
+        // if ([] === // @var mixed teams
         //    $view = 'ui::livewire.empty';
         // }
 
