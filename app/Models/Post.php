@@ -53,7 +53,20 @@ use Spatie\Sluggable\SlugOptions;
  * @property string|null                  $linkable_type
  * @property int|null                     $views_count
  * @property ProfileContract|null         $creator
+<<<<<<< HEAD
+ * @property Model|\Eloquent|null         $linkable
+||||||| 6161e129d
+ * @property string|null $linked_count
+ * @property string|null $related_count
+ * @property string|null $relatedrev_count
+ * @property string|null $linkable_type
+ * @property int|null $views_count
+ * @property ProfileContract|null $creator
+ * @property Model|\Eloquent|null $linkable
+ * @property ProfileContract|null $updater
+=======
  * @property Model|null                   $linkable
+>>>>>>> feature/ralph-loop-implementation
  * @property ProfileContract|null         $updater
  *
  * @method static Builder<static>|Post newModelQuery()
@@ -259,7 +272,15 @@ class Post extends BaseModel
 
         $title = $value;
 
+<<<<<<< HEAD
+        if (null !== $this->getKey()) {
+            $this->update([
+||||||| 6161e129d
+        if ($this->getKey() !== null) {
+            $this->update([
+=======
         if (null !== $this->getKey($update([
+>>>>>>> feature/ralph-loop-implementation
                 'title' => $value,
             ]);
         }
@@ -275,7 +296,14 @@ class Post extends BaseModel
         if (\is_string($value) && '' !== $value && ! str_contains($value, ' ')) {
             return $value;
         }
+<<<<<<< HEAD
+        $value = $this->title;
+||||||| 6161e129d
+        $value = $this->title;
+        if ($value === '') {
+=======
         $value = $title;
+>>>>>>> feature/ralph-loop-implementation
         if ('' === $value) {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($attributes['post_type']
@@ -292,7 +320,15 @@ class Post extends BaseModel
         $value = Str::slug($value);
         $guid = $value;
 
+<<<<<<< HEAD
+        if (null !== $this->getKey()) {
+            $this->update([
+||||||| 6161e129d
+        if ($this->getKey() !== null) {
+            $this->update([
+=======
         if (null !== $this->getKey($update([
+>>>>>>> feature/ralph-loop-implementation
                 'guid' => $value,
             ]);
         }
