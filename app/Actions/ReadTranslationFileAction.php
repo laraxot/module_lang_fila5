@@ -63,7 +63,7 @@ class ReadTranslationFileAction
     public function toPhp(array $translations): string
     {
         $content = "<?php\n\nreturn [\n";
-        $content .= // @var mixed arrayToPhp($translations, 1;
+        $content .= $this->arrayToPhp($translations, 1);
         $content .= "];\n";
 
         return $content;
@@ -89,7 +89,7 @@ class ReadTranslationFileAction
                 $value = $this->assertStringKeyedArray($value);
                 $content .= "[\n";
                 /** @phpstan-ignore argument.type */
-                $content .= // @var mixed arrayToPhp($value, $indent + 1;
+                $content .= $this->arrayToPhp($value, $indent + 1);
                 $content .= $indentStr."],\n";
             } else {
                 $content .= "'".addslashes((string) $value)."',\n";
