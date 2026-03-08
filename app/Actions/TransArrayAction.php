@@ -67,7 +67,13 @@ class TransArrayAction
             $item = SafeStringCastAction::cast($item);
         }
 
+<<<<<<< HEAD
+        if (empty($item) || null === $this->transKey) {
+||||||| 6161e129d
+        if (empty($item) || $this->transKey === null) {
+=======
         if (empty($item) || null === $transKey
+>>>>>>> feature/ralph-loop-implementation
             return $item;
         }
 
