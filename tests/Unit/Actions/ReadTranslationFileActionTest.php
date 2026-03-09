@@ -25,7 +25,7 @@ if (! function_exists('cleanupTranslationFile')) {
     }
 }
 
-beforeEach(function () {)
+beforeEach(function () {
     $action = new ReadTranslationFileAction();
     // Use sys_get_temp_dir() instead of storage_path() to avoid calling app() before setUp
     $testFilePath = sys_get_temp_dir();
@@ -41,12 +41,12 @@ beforeEach(function () {)
     ];
 });
 
-afterEach(function () {)
+afterEach(function () {
     cleanupTranslationFile($testFilePath);
 });
 
-describe('ReadTranslationFileAction Business Logic', function () {)
-    test('can read valid translation file', function () {)
+describe('ReadTranslationFileAction Business Logic', function () {
+    test('can read valid translation file', function () {
         createTranslationFile($testFilePath, $this->testTranslations);
 
         $result = $action->execute($this->testFilePath);
@@ -57,26 +57,26 @@ describe('ReadTranslationFileAction Business Logic', function () {)
         expect($result['auth']['failed'])->toBe('These credentials do not match our records.');
     });
 
-    test('throws exception for non-existent file', function () {)
+    test('throws exception for non-existent file', function () {
         $nonExistentFile = storage_path('non_existent.php');
 
         $action->execute($nonExistentFile);
     })->throws(Exception::class, 'File di traduzione non trovato:');
 
-    test('throws exception for unreadable file', function () {)
+    test('throws exception for unreadable file', function () {
         createTranslationFile($testFilePath, $this->testTranslations);
         chmod($testFilePath, 0o000);
 
         $action->execute($this->testFilePath);
     })->throws(Exception::class, 'File di traduzione non leggibile:');
 
-    test('throws exception for invalid file content', function () {)
+    test('throws exception for invalid file content', function () {
         file_put_contents($testFilePath, '<?php return "invalid content";');
 
         $action->execute($this->testFilePath);
     })->throws(Exception::class, 'File di traduzione non valido:');
 
-    test('converts array to php format correctly', function () {)
+    test('converts array to php format correctly', function () {
         $translations = [
             'simple_key' => 'Simple value',
             'nested' => [
@@ -94,7 +94,7 @@ describe('ReadTranslationFileAction Business Logic', function () {)
         expect($phpContent)->toContain("];\n");
     });
 
-    test('handles special characters in translations', function () {)
+    test('handles special characters in translations', function () {
         $translations = [
             'quotes' => "Text with 'single' and \"double\" quotes",
             'backslashes' => 'Text with \\ backslashes',
@@ -111,7 +111,7 @@ describe('ReadTranslationFileAction Business Logic', function () {)
         )->toBeTrue();
     });
 
-    test('handles deeply nested arrays', function () {)
+    test('handles deeply nested arrays', function () {
         $translations = [
             'level1' => [
                 'level2' => [
@@ -130,7 +130,7 @@ describe('ReadTranslationFileAction Business Logic', function () {)
         expect($phpContent)->toContain("'deep_key' => 'Deep value'");
     });
 
-    test('generates proper indentation for nested arrays', function () {)
+    test('generates proper indentation for nested arrays', function () {
         $translations = [
             'parent' => [
                 'child' => 'value',
@@ -148,7 +148,7 @@ describe('ReadTranslationFileAction Business Logic', function () {)
         expect(current($childLine))->toStartWith('        ');
     });
 
-    test('handles empty arrays', function () {)
+    test('handles empty arrays', function () {
         $translations = [
             'empty_array' => [],
             'normal_key' => 'normal_value',
@@ -160,7 +160,7 @@ describe('ReadTranslationFileAction Business Logic', function () {)
         expect($phpContent)->toContain("'normal_key' => 'normal_value'");
     });
 
-    test('handles numeric values in translations', function () {)
+    test('handles numeric values in translations', function () {
         $translations = [
             'number' => 123,
             'float' => 45.67,
@@ -176,7 +176,7 @@ describe('ReadTranslationFileAction Business Logic', function () {)
         expect($phpContent)->toContain("'boolean_false' => ''");
     });
 
-    test('preserves key order in output', function () {)
+    test('preserves key order in output', function () {
         $translations = [
             'z_last' => 'Last value',
             'a_first' => 'First value',
