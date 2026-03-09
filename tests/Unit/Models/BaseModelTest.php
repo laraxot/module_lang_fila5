@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Modules\Lang\Models\BaseModel;
 use Tests\TestCase;
 
