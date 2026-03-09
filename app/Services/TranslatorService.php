@@ -24,7 +24,7 @@ class TranslatorService extends LaravelTranslator
         // Get without fallback
         $result = parent::get($key, $replace, $locale, $fallback);
         if ($result === $key) {
-            // @var mixed notifyMissingKey($key;
+            $this->notifyMissingKey($key);
 
             // Reget with fallback
             $result = parent::get($key, $replace, $locale, $fallback);
@@ -36,7 +36,7 @@ class TranslatorService extends LaravelTranslator
     /*
      * public function setTranslationManager(Manager $manager)
      * {
-     * // @var mixed manager = $manager;
+     * $manager = $manager;
      * }
      */
     /**
@@ -45,7 +45,7 @@ class TranslatorService extends LaravelTranslator
     protected function notifyMissingKey(string $key): void
     {
         $lang = app()->getLocale();
-        [$namespace, $group, $item] = // @var mixed parseKey($key;
+        [$namespace, $group, $item] = $this->parseKey($key);
         $data = [
             'lang' => $lang,
             'namespace' => $namespace,
