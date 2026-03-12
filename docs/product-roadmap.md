@@ -1,14 +1,3 @@
----
-title: "Lang - Product Roadmap"
-module: "Lang"
-type: concept
-tags: [migration, filament]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration filament"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Lang - Product Roadmap
 
 > Documento vivente. Modulo.
@@ -54,4 +43,4 @@ Questo roadmap traduce il PRD in sequenza di rilascio per **Lang**, che nel prog
 - [PRD](prd.md)
 - [Product Strategy](product-strategy.md)
 - [Sprint Planning Meeting](sprint-planning-meeting.md)
-- [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
+- [Indice centrale](../../../project_docs/PRODUCT_DOCS_INDEX_2026_03_12.md)
