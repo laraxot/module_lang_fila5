@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-uses(Modules\Lang\Tests\TestCase::class);
+namespace Modules\Lang\Tests\Feature;
+
+uses(\Modules\Lang\Tests\TestCase::class);
 
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
@@ -166,7 +168,7 @@ describe('Lang Business Logic', function () {
             'user_id' => $user->id,
             'filename' => 'welcome.php',
             'locale' => 'en',
-            'content' => '<?php return ["welcome" => "Welcome"];',
+            'content' => 'return ["welcome" => "Welcome"];',
         ]);
 
         expect($translationFile)

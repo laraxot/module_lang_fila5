@@ -1,28 +1,20 @@
-# Roadmap Modulo Lang
+# Product Roadmap - Lang Module
 
-## 🎯 Visione
-Trasformare la gestione linguistica in un servizio intelligente e universale, capace non solo di fornire traduzioni statiche ma di generare e gestire contenuti multilingue on-the-fly tramite AI, mantenendo la coerenza del brand.
+## 🎯 Vision & Strategy
+Make the Laraxot ecosystem fully multilingual with zero developer effort for common translation patterns.
 
-## 🏗️ Fasi di Sviluppo
+## 🗓️ Timeline
+### Q1 2026: Discovery (Current)
+- **Automatic Translation Discovery** - *Status: Shipped*
+- **Multilingual Routing** - *Status: In Progress*
+- **Google Translate API Integration** - *Status: Planned*
 
-### Fase 1: Stabilità e Pulizia (In Corso)
-- [x] PHPStan Level 10 Compliance.
-- [ ] Rimozione sistematica di file obsoleti e ridondanti.
-- [ ] Centralizzazione della gestione dei file di lingua dei moduli.
-- [ ] Automazione completa della pubblicazione delle traduzioni (`lang:publish`).
+## 🚦 Status Overview
+| Feature | Status | Owner | Target Date |
+| :--- | :--- | :--- | :--- |
+| Core Localization | ✅ Stable | @CoreTeam | Jan 2026 |
+| Translation Manager | 🏗️ In Dev | @CoreTeam | Mar 2026 |
 
-### Fase 2: Developer Experience (Pianificato)
-- [ ] CLI interattiva per la gestione rapida delle chiavi di traduzione.
-- [ ] Sistema di warning durante la build per chiavi mancanti.
-- [ ] Integrazione con i Cluster di Filament per la gestione dei permessi lingua.
-
-### Fase 3: Ottimizzazione e AI (Futuro)
-- [ ] **AI-AutoTranslate**: Traduzione basata su contesto tramite LLM preservando le chiavi.
-- [ ] **Translation Memory**: Database condiviso delle traduzioni approvate per uniformità terminologica.
-- [ ] Supporto avanzato per la pluralizzazione in lingue complesse.
-
-## ✅ Checklist Qualità
-- [x] PHPStan Level 10.
-- [ ] Assenza di hardcoded strings nei layout Blade.
-- [ ] Test di risoluzione delle chiavi multilingue per ogni modulo.
-- [ ] Documentazione centralizzata in `docs/`.
+## 📂 Backlog / Future Ideas
+- AI-assisted translation for technical terms.
+- Support for RTL (Right-to-Left) languages.
