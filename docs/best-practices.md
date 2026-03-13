@@ -277,7 +277,6 @@ $text = $allTranslations[$locale]['key'] ?? 'key';
 ]
 
 // ❌ ERRATO - Contesto generico
-'update_success' => 'Aggiornato con successo',
 'update_error' => 'Errore nell\'aggiornamento'
 ```
 
