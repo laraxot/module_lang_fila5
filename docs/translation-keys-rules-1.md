@@ -1,4 +1,4 @@
-# Regole per le Chiavi di Traduzione
+# Regole per le Chiavi di Traduzione 
 
 ## Collegamenti correlati
 - [Documentazione centrale](./README.md)
@@ -134,10 +134,10 @@ return [
 <form>
     <label>{{ __('auth.login.fields.email.label') }}</label>
     <input type="email" placeholder="{{ __('auth.login.fields.email.placeholder') }}">
-
+    
     <label>{{ __('auth.login.fields.password.label') }}</label>
     <input type="password" placeholder="{{ __('auth.login.fields.password.placeholder') }}">
-
+    
     <button type="submit">{{ __('auth.login.button.label') }}</button>
 </form>
 ```
@@ -184,7 +184,11 @@ protected function getFormActions(): array
 
 ### 1. Estrazione Automatica delle Chiavi
 
-<nome progetto> include strumenti per l'estrazione automatica delle chiavi di traduzione:
+<<<<<<< HEAD
+<main module> include strumenti per l'estrazione automatica delle chiavi di traduzione:
+=======
+SaluteOra include strumenti per l'estrazione automatica delle chiavi di traduzione:
+>>>>>>> laraxot/develop
 
 ```bash
 php artisan lang:extract
@@ -208,7 +212,11 @@ php artisan lang:sync
 
 ## Conclusione
 
-Seguire queste regole per le chiavi di traduzione è fondamentale per garantire la coerenza, la manutenibilità e l'internazionalizzazione dell'applicazione <nome progetto>. L'utilizzo di chiavi standardizzate e strutturate gerarchicamente facilita la gestione delle traduzioni e migliora la qualità complessiva del codice.
+<<<<<<< HEAD
+Seguire queste regole per le chiavi di traduzione è fondamentale per garantire la coerenza, la manutenibilità e l'internazionalizzazione dell'applicazione <main module>. L'utilizzo di chiavi standardizzate e strutturate gerarchicamente facilita la gestione delle traduzioni e migliora la qualità complessiva del codice.
+=======
+Seguire queste regole per le chiavi di traduzione è fondamentale per garantire la coerenza, la manutenibilità e l'internazionalizzazione dell'applicazione SaluteOra. L'utilizzo di chiavi standardizzate e strutturate gerarchicamente facilita la gestione delle traduzioni e migliora la qualità complessiva del codice.
+>>>>>>> laraxot/develop
 
 ## [2024-07-07] Nota storica: correzione massiva Notify
 
