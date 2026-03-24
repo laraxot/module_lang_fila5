@@ -44,7 +44,7 @@ return [
    ```php
    // ❌ Errato
    TextInput::make('first_name')->label('Nome')
-
+   
    // ✅ Corretto
    TextInput::make('first_name') // Label da file traduzione
    ```
@@ -65,3 +65,10 @@ return [
    - Facilita il supporto multilingua
 
 ## Collegamenti
+- [Form Components](../Patient/docs/filament-form-components.md)
+- [Wizard Structure](../Patient/docs/filament-wizard-structure.md)
+- [Best Practices](../Xot/docs/filament-best-practices.md)
+
+## Vedi Anche
+- [Laravel Translations](https://laravel.com/docs/localization)
+- [Filament i18n](https://filamentphp.com/docs/internationalization) 
