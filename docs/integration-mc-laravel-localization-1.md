@@ -1,6 +1,10 @@
 # Integrazione di mcamara/laravel-localization
 
-Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto <nome progetto>.
+<<<<<<< HEAD
+Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto <main module>.
+=======
+Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto SaluteOra.
+>>>>>>> laraxot/develop
 
 ## Panoramica
 
@@ -64,12 +68,12 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 public function boot()
 {
     // ...
-
+    
     // Aggiungere middleware per la gestione delle lingue
     $this->app->singleton('localization.redirect', function ($app) {
         return new \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter($app['router']);
     });
-
+    
     $this->app->singleton('localization.view-path', function ($app) {
         return new \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationViewPath($app['router']);
     });

@@ -159,6 +159,7 @@ $current = app()->getLocale();
 
 ## 7. Collegamenti utili
 
+
 - [mcamara/laravel-localization - GitHub](https://github.com/mcamara/laravel-localization)
 - [Traduzione route con mcamara](https://github.com/mcamara/laravel-localization#translated-routes)
 
@@ -172,4 +173,4 @@ $current = app()->getLocale();
 - [ ] I componenti Volt accedono e gestiscono la lingua corrente correttamente
 - [ ] La documentazione è aggiornata e linkata nei README
 
-</rewritten_file>
+</rewritten_file> 
