@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Lang\Tests\TestCase::class);
+uses(Modules\Lang\Tests\TestCase::class);
 
 use Modules\Lang\Actions\ReadTranslationFileAction;
 
