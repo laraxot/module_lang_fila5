@@ -57,3 +57,6 @@ Lang/
 - [ ] Documentare modelli principali
 - [ ] Documentare risorse Filament
 - [ ] Aggiungere esempi codice
+
+## AI Workflows
+- [AI Methodologies](./ai-methodologies.md)
