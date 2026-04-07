@@ -10,13 +10,13 @@ use Modules\Lang\Models\TranslationFile;
 
 describe('TranslationFile Model', function () {
     test('uses Sushi trait', function () {
-        $model = new TranslationFile;
+        $model = new TranslationFile();
 
         expect(class_uses($model))->toHaveKey('Sushi\Sushi');
     });
 
     test('has correct fillable attributes', function () {
-        $model = new TranslationFile;
+        $model = new TranslationFile();
         $fillable = $model->getFillable();
 
         expect($fillable)->toContain('id');
@@ -26,7 +26,7 @@ describe('TranslationFile Model', function () {
     });
 
     test('has form property accessible via reflection', function () {
-        $model = new TranslationFile;
+        $model = new TranslationFile();
         $reflection = new ReflectionClass($model);
         $property = $reflection->getProperty('form');
         $property->setAccessible(true);
@@ -39,14 +39,14 @@ describe('TranslationFile Model', function () {
     });
 
     test('casts content as array', function () {
-        $model = new TranslationFile;
+        $model = new TranslationFile();
         $casts = $model->getCasts();
 
         expect($casts['content'])->toBe('array');
     });
 
     test('has getRows method', function () {
-        $model = new TranslationFile;
+        $model = new TranslationFile();
 
         expect(method_exists($model, 'getRows'))->toBeTrue();
     });
