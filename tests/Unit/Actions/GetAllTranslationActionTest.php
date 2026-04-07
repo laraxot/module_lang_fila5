@@ -9,7 +9,7 @@ uses(\Modules\Lang\Tests\TestCase::class);
 use Modules\Lang\Actions\GetAllTranslationAction;
 
 beforeEach(function () {
-    $action = new GetAllTranslationAction();
+    $action = new GetAllTranslationAction;
 });
 
 describe('GetAllTranslationAction Business Logic', function () {
