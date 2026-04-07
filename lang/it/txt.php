@@ -566,15 +566,6 @@ return [
             'icon' => 'update_coordinates',
             'tooltip' => 'update_coordinates',
         ],
-        'logout' => [
-            'tooltip' => 'logout',
-            'icon' => 'logout',
-            'label' => 'logout',
-        ],
-        'profile' => [
-            'tooltip' => 'profile',
-            'icon' => 'profile',
-        ],
     ],
     'sections' => [
         'address' => [
