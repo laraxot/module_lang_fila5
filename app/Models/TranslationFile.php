@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\File;
 use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
 use Modules\Xot\Contracts\ProfileContract;
-use Sushi\Sushi as SushiFromDisk;
+use Sushi\Sushi;
 
 use function Safe\json_encode;
 
@@ -43,7 +43,7 @@ use function Safe\json_encode;
  */
 class TranslationFile extends BaseModel
 {
-    use SushiFromDisk;
+    use Sushi;
 
     protected $fillable = [
         'id',

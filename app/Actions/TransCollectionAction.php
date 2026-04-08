@@ -21,7 +21,6 @@ class TransCollectionAction
      * Esegue la traduzione di una collezione.
      *
      * @param  Collection<int|string, mixed>  $collection
-     * @param  Collection<int|string, mixed>  $collection
      * @return Collection<int|string, string>
      */
     public function execute(Collection $collection, ?string $transKey): Collection
@@ -38,7 +37,6 @@ class TransCollectionAction
     /**
      * Traduce un singolo elemento.
      *
-     * @param  mixed  $item  L'elemento da tradurre
      * @param  mixed  $item  L'elemento da tradurre
      * @return string L'elemento tradotto o l'elemento originale se la traduzione non esiste
      */
