@@ -4,13 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit\Actions;
 
-uses(TestCase::class);
+uses(\Modules\Lang\Tests\TestCase::class);
 
 use Modules\Lang\Actions\GetAllTranslationAction;
-use Modules\Lang\Tests\TestCase;
 
 beforeEach(function () {
-    $action = new GetAllTranslationAction;
     $action = new GetAllTranslationAction;
 });
 
