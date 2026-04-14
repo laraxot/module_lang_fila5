@@ -48,13 +48,14 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     public function registerFilamentLabel(): void
     {
+
         Select::configureUsing(function (Select $component) {
             $component->placeholder(__('filament-forms::components.select.placeholder'));
 
             return $component;
         });
         Field::configureUsing(function (Field $component) {
-            $component = app(AutoLabelAction::class)->execute($component);
+            $component = app(AutoLabelAction::class)->execute($component, 'label');
             Assert::isInstanceOf($component, Field::class);
 
             $validationMessages = __('user::validation');
@@ -76,6 +77,12 @@ class LangServiceProvider extends XotBaseServiceProvider
             $component = app(AutoLabelAction::class)->execute($component, 'helperText');
 
             return app(AutoLabelAction::class)->execute($component, 'description');
+        });
+
+        Entry::configureUsing(function (Entry $component) {
+            $component = app(AutoLabelAction::class)->execute($component, 'label');
+
+            return $component;
         });
 
         Section::configureUsing(function (Section $component) {
