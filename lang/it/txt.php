@@ -498,11 +498,14 @@ return [
             'tooltip' => '',
         ],
         'address' => [
-            'label' => 'address',
+            'label' => 'address2',
             'placeholder' => 'address',
             'helper_text' => 'address',
             'description' => 'address',
             'tooltip' => '',
+        ],
+        'display_name' => [
+            'label' => 'display_name',
         ],
     ],
     'actions' => [
@@ -585,5 +588,10 @@ return [
         'label' => 'Txt',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
+    ],
+    'steps' => [
+        'test' => [
+            'label' => 'test',
+        ],
     ],
 ];
