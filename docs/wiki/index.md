@@ -1,33 +1,24 @@
-# Wiki Locale - Module Lang
+# Wiki Locale Index
 
-## Schema di Riferimento
+## Karpathy LLM Wiki Standard
 
-Vedi [[../../../../docs/.schema/WIKI_SCHEMA.md|Schema Wiki Globale]]
+- [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Strict structural constraints.
+- [llm-wiki-standard](../../../../docs/wiki/concepts/karpathy-wiki.md): Repository mapping and knowledge lifecycle.
 
-## Struttura Locale
+## Sacred Hierarchy
 
-```
-wiki/
-├── concepts/       # Pattern e metodologie
-├── entities/       # Classi e componenti
-├── summaries/      # Sommari documenti
-├── comparisons/    # Confronti
-└── overviews/     # Panoramiche
-```
+- [concepts/](./concepts/): Architectural patterns and methodologies.
+- [entities/](./entities/): Key models and components.
+- [sources/](./sources/): Research data and external links.
+- [comparisons/](./comparisons/): Alternative implementations.
+- [decisions/](./decisions/): ADL (Architectural Decision Log).
+- [troubleshooting/](./troubleshooting/): Known issues and solutions.
+- [_archive/](./_archive/): Legacy documentation.
+- [_templates/](./_templates/): Standard templates.
 
-## Pagine Compilate
+## Compiled Pages
 
-- [lang-module](./overviews/lang-module.md) — overview: auto-discovery i18n, mcamara routing, LangBase classes
-- [laravel12-lang-path-rule](./concepts/laravel12-lang-path-rule.md) — concept: percorsi traduzioni correnti (`lang/`)
-
-## Raw Sources
-
-Vedi [[../raw/index|Lista Sorgenti Grezzi]]
-
-## Index Globale
-
-Vedi [[../../../../docs/wiki/index|Index Globale Wiki]]
-
----
-
-*Ultimo aggiornamento: 2026-04-21*
+| Page | Type | Source | Updated |
+|------|------|--------|---------|
+| [.gitkeep](./concepts/.gitkeep) | Concept | - | 2026-04-21 |
+| [laravel12-lang-path-rule](./concepts/laravel12-lang-path-rule.md) | Concept | - | 2026-04-21 |
