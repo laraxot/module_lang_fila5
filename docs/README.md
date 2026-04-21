@@ -2,7 +2,7 @@
 
 ## Overview
 
-Il modulo **Lang** fa parte dell'ecosistema Laraxot PTVX.
+Il modulo **Lang** fa parte dell'ecosistema [PROJECT_NAME] platform.
 
 ## Scopo
 
@@ -42,3 +42,10 @@ Lang/
 - [ ] Documentare modelli principali
 - [ ] Documentare risorse Filament
 - [ ] Aggiungere esempi codice
+
+
+## Standard Rules & Workflow
+
+- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
