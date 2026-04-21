@@ -513,12 +513,21 @@ return [
             'helper_text' => 'location',
             'description' => 'location',
         ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> aa95f36ca (.)
         'coordinates' => [
             'label' => 'coordinates',
             'placeholder' => 'coordinates',
             'helper_text' => 'coordinates',
             'description' => 'coordinates',
         ],
+<<<<<<< HEAD
+=======
+>>>>>>> be3306a6e (.)
+=======
+>>>>>>> aa95f36ca (.)
     ],
     'actions' => [
         'authenticate' => [
