@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit\Actions;
 
-uses(\Modules\Lang\Tests\TestCase::class);
+uses(TestCase::class);
 
 use Modules\Lang\Actions\GetTransPathAction;
+use Modules\Lang\Tests\TestCase;
 
 beforeEach(function () {
-    $this->action = new GetTransPathAction();
+    $this->action = new GetTransPathAction;
 });
 
 describe('GetTransPathAction Business Logic', function () {
