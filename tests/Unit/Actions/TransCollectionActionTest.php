@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit\Actions;
 
-uses(\Modules\Lang\Tests\TestCase::class);
+uses(TestCase::class);
 
 use Illuminate\Support\Collection;
 use Modules\Lang\Actions\TransCollectionAction;
+use Modules\Lang\Tests\TestCase;
 
 beforeEach(function () {
-    $this->action = new TransCollectionAction();
+    $this->action = new TransCollectionAction;
 });
 
 describe('TransCollectionAction Business Logic', function () {
