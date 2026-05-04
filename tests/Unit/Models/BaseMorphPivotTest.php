@@ -11,8 +11,7 @@ use Modules\Lang\Tests\TestCase;
 
 describe('BaseMorphPivot Model', function () {
     test('extends MorphPivot', function () {
-        $model = new class extends BaseMorphPivot
-        {
+        $model = new class extends BaseMorphPivot {
             protected $table = 'test';
         };
 
@@ -20,8 +19,7 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has correct connection', function () {
-        $model = new class extends BaseMorphPivot
-        {
+        $model = new class extends BaseMorphPivot {
             protected $table = 'test';
         };
 
@@ -33,8 +31,7 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has timestamps enabled', function () {
-        $model = new class extends BaseMorphPivot
-        {
+        $model = new class extends BaseMorphPivot {
             protected $table = 'test';
         };
 
@@ -42,8 +39,7 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has incrementing enabled', function () {
-        $model = new class extends BaseMorphPivot
-        {
+        $model = new class extends BaseMorphPivot {
             protected $table = 'test';
         };
 
@@ -51,8 +47,7 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has default perPage', function () {
-        $model = new class extends BaseMorphPivot
-        {
+        $model = new class extends BaseMorphPivot {
             protected $table = 'test';
         };
 
@@ -60,8 +55,7 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has correct fillable attributes', function () {
-        $model = new class extends BaseMorphPivot
-        {
+        $model = new class extends BaseMorphPivot {
             protected $table = 'test';
         };
         $fillable = $model->getFillable();
@@ -75,8 +69,7 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('casts id as string', function () {
-        $model = new class extends BaseMorphPivot
-        {
+        $model = new class extends BaseMorphPivot {
             protected $table = 'test';
         };
 
@@ -85,8 +78,7 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('casts datetime fields', function () {
-        $model = new class extends BaseMorphPivot
-        {
+        $model = new class extends BaseMorphPivot {
             protected $table = 'test';
         };
 
