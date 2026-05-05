@@ -58,7 +58,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             Assert::isInstanceOf($component, Field::class);
 
             $validationMessages = __('user::validation');
-            if (is_array($validationMessages) && [] !== $validationMessages) {
+            if (is_array($validationMessages) && $validationMessages !== []) {
                 /** @var array<string, string> $typedMessages */
                 $typedMessages = [];
                 foreach ($validationMessages as $key => $value) {
@@ -67,7 +67,7 @@ class LangServiceProvider extends XotBaseServiceProvider
                     }
                 }
 
-                if ([] !== $typedMessages) {
+                if ($typedMessages !== []) {
                     $component->validationMessages($typedMessages);
                 }
             }
@@ -79,9 +79,7 @@ class LangServiceProvider extends XotBaseServiceProvider
         });
 
         Entry::configureUsing(function (Entry $component) {
-            $component = app(AutoLabelAction::class)->execute($component, 'label');
-
-            return $component;
+            return app(AutoLabelAction::class)->execute($component, 'label');
         });
 
         Section::configureUsing(function (Section $component) {
@@ -122,7 +120,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             'getRecord' => $component->getRecord(),
             ]);
             */
-            if (method_exists($component, 'getRecord') && null === $component->getRecord()) {
+            if (method_exists($component, 'getRecord') && $component->getRecord() === null) {
                 if (method_exists($component, 'button')) {
                     $component->button();
                 }
