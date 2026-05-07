@@ -12,14 +12,15 @@ class ReadTranslationFileAction
     use QueueableAction;
 
     /**
-     * @param  array<mixed, mixed>  $value
+     * @param array<mixed, mixed> $value
+     *
      * @return array<string, mixed>
      */
     private function assertStringKeyedArray(array $value): array
     {
         Assert::allString(array_keys($value), 'Translation array must have string keys.');
 
-        /** @var array<string, mixed> $value */
+        /* @var array<string, mixed> $value */
         return $value;
     }
 
