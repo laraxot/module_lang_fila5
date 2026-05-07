@@ -10,16 +10,16 @@ use Modules\Lang\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('Lang Actions Coverage', function (): void {
-    test('PublishTranslationAction is accessible', function (): void {
+describe('Lang Actions Coverage', function(): void {
+    test('PublishTranslationAction is accessible', function(): void {
         expect(app(PublishTranslationAction::class))->toBeInstanceOf(PublishTranslationAction::class);
     });
 
-    test('SyncTranslationsAction is accessible', function (): void {
+    test('SyncTranslationsAction is accessible', function(): void {
         expect(app(SyncTranslationsAction::class))->toBeInstanceOf(SyncTranslationsAction::class);
     });
 
-    test('SyncTranslationsAction has correct signature', function (): void {
+    test('SyncTranslationsAction has correct signature', function(): void {
         $action = app(SyncTranslationsAction::class);
 
         $reflection = new \ReflectionMethod($action, 'execute');
@@ -31,7 +31,7 @@ describe('Lang Actions Coverage', function (): void {
             ->and($params[2]->getName())->toBe('specificModule');
     });
 
-    test('SyncTranslationsAction has default parameters', function (): void {
+    test('SyncTranslationsAction has default parameters', function(): void {
         $action = app(SyncTranslationsAction::class);
 
         $reflection = new \ReflectionMethod($action, 'execute');
