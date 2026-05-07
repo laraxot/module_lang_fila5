@@ -56,8 +56,7 @@ class TransArrayAction
     /**
      * Traduce un singolo elemento.
      *
-     * @param mixed $item L'elemento da tradurre
-     *
+     * @param  mixed  $item  L'elemento da tradurre
      * @return string L'elemento tradotto o l'elemento originale se la traduzione non esiste
      */
     public function trans(mixed $item): string
