@@ -30,6 +30,7 @@ Gestione traduzioni, localizzazione, fallback e integrazione mcamara/laravel-loc
 |--------|------|-----------|------|
 | [.gitkeep](./concepts/.gitkeep) | Concept | - | 2026-04-21 |
 | [laravel12-lang-path-rule](./concepts/laravel12-lang-path-rule.md) | Concept | Path Laravel 12 | 2026-04-21 |
+| [xotbase-table-columns-enforcement](./concepts/xotbase-table-columns-enforcement.md) | Concept | 1 Table file — TranslationFilesTable populated | 2026-05-07 |
 
 ## Best Practices
 
