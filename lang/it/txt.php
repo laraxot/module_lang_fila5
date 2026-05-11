@@ -581,37 +581,6 @@ return [
             'icon' => 'update_coordinates',
             'tooltip' => 'update_coordinates',
         ],
-<<<<<<< HEAD
-        'logout' => [
-            'tooltip' => 'logout',
-            'icon' => 'logout',
-            'label' => 'logout',
-        ],
-        'profile' => [
-            'tooltip' => 'profile',
-            'icon' => 'profile',
-=======
-        'register' => [
-            'label' => 'register',
-            'icon' => 'register',
-            'tooltip' => 'register',
-        ],
-        'resendNotification' => [
-            'label' => 'resendNotification',
-            'icon' => 'resendNotification',
-            'tooltip' => 'resendNotification',
-        ],
-        'profile' => [
-            'label' => 'profile',
-            'icon' => 'profile',
-            'tooltip' => 'profile',
-        ],
-        'logout' => [
-            'label' => 'logout',
-            'icon' => 'logout',
-            'tooltip' => 'logout',
->>>>>>> 187f86e2a (.)
-        ],
     ],
     'sections' => [
         'address' => [
