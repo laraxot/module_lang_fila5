@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Lang\Filament\Resources\TranslationFileResource\Tables;
+namespace Modules\base_quaeris_fila5\var\www\_bases\base_quaeris_fila5\laravel\Modules\Lang\app\Filament\Resources\TranslationFileResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
@@ -16,12 +16,9 @@ class TranslationFilesTable extends XotBaseResourceTable
     public static function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')->searchable()->sortable(),
-            'name' => TextColumn::make('name')->searchable()->sortable(),
-            'path' => TextColumn::make('path')->searchable()->sortable(),
-            'key' => TextColumn::make('key')->searchable(),
+            'id' => TextColumn::make('id')->sortable(),
+            'name' => TextColumn::make('name')->searchable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
-            'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
         ];
     }
 }
