@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lang Module LLM Wiki
 
 Indice operativo del wiki Lang.
@@ -30,7 +31,6 @@ Gestione traduzioni, localizzazione, fallback e integrazione mcamara/laravel-loc
 |--------|------|-----------|------|
 | [.gitkeep](./concepts/.gitkeep) | Concept | - | 2026-04-21 |
 | [laravel12-lang-path-rule](./concepts/laravel12-lang-path-rule.md) | Concept | Path Laravel 12 | 2026-04-21 |
-| [xotbase-table-columns-enforcement](./concepts/xotbase-table-columns-enforcement.md) | Concept | 1 Table file — TranslationFilesTable populated | 2026-05-07 |
 
 ## Best Practices
 
@@ -56,3 +56,29 @@ Gestione traduzioni, localizzazione, fallback e integrazione mcamara/laravel-loc
 | [laravel12-lang-path-rule](./concepts/laravel12-lang-path-rule.md) | Concept | Path Laravel 12 corrette |
 
 Aggiornato: 2026-04-28
+=======
+# Wiki Locale Index
+
+## Karpathy LLM Wiki Standard
+
+- [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Strict structural constraints.
+- [llm-wiki-standard](../../../../docs/wiki/concepts/karpathy-wiki.md): Repository mapping and knowledge lifecycle.
+
+## Sacred Hierarchy
+
+- [concepts/](./concepts/): Architectural patterns and methodologies.
+- [entities/](./entities/): Key models and components.
+- [sources/](./sources/): Research data and external links.
+- [comparisons/](./comparisons/): Alternative implementations.
+- [decisions/](./decisions/): ADL (Architectural Decision Log).
+- [troubleshooting/](./troubleshooting/): Known issues and solutions.
+- [_archive/](./_archive/): Legacy documentation.
+- [_templates/](./_templates/): Standard templates.
+
+## Compiled Pages
+
+| Page | Type | Source | Updated |
+|------|------|--------|---------|
+| [.gitkeep](./concepts/.gitkeep) | Concept | - | 2026-04-21 |
+| [laravel12-lang-path-rule](./concepts/laravel12-lang-path-rule.md) | Concept | - | 2026-04-21 |
+>>>>>>> c3b9b5924 (.)
