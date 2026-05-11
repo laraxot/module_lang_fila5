@@ -1,12 +1,12 @@
-# Lang Module - skills Index
+# Lang Module - concepts Index
 
 ## Purpose
-Index for Lang module skills.
+Index for Lang module concepts.
 
 ## On-Demand Loading
 
 ```bash
-qmd search "Lang skills" --limit 5
+qmd search "Lang concepts" --limit 5
 ```
 
 ## See Also
