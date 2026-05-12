@@ -10,6 +10,8 @@ use function Safe\glob;
 
 use Spatie\QueueableAction\QueueableAction as QueueableActionFromSpatie;
 
+use function Safe\glob;
+
 class GetAllModuleTranslationAction
 {
     use QueueableActionFromSpatie;
