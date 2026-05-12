@@ -1,17 +1,25 @@
-# Lang Module - skills Index
+---
+title: "Skills Index"
+type: "index"
+tags: [skills, lang, translations, localization]
+module: "Lang"
+updated: 2026-05-12
+---
 
-## Purpose
-Index for Lang module skills.
+# Skills — Lang Module Wiki
 
-## On-Demand Loading
+> Skill operative del modulo Lang. Load on-demand.
+
+## Available Skills
+
+- [translation-key-audit](./translation-key-audit.md) — audit di chiavi, path e ownership delle traduzioni modulo/tema/Filament
+
+## Usage
 
 ```bash
-qmd search "Lang skills" --limit 5
+qmd search "Lang module skill translation audit" --limit 5
 ```
 
-## See Also
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-- [Root Wiki](../../../docs/wiki/)
-
 ---
-*Updated: 2026-05-11*
+
+**Upstream:** [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
