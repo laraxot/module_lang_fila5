@@ -11,6 +11,7 @@ updated: 2026-05-12
 > Regole ricorrenti del modulo Lang. Load on-demand.
 
 ## Available Rules
+- [context-overflow-prevention](../../../../../docs/wiki/rules/context-overflow-prevention.md) — prevenzione 262K token overflow; file vietati; tool output compression
 
 - [translation-key-governance](./translation-key-governance.md) — ownership delle chiavi, struttura semantica e divieto di `->label()`/stringhe inline
 - [laravel12-lang-path-rule](../concepts/laravel12-lang-path-rule.md) — il path canonico resta `lang/` e non `resources/lang/`
