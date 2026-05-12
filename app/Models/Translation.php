@@ -17,17 +17,17 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\Lang\Models\Translation.
  *
- * @property string               $id
- * @property string|null          $lang
- * @property string|null          $key
- * @property string|null          $value
- * @property string|null          $created_by
- * @property string|null          $updated_by
- * @property Carbon|null          $created_at
- * @property Carbon|null          $updated_at
- * @property string               $namespace
- * @property string               $group
- * @property string|null          $item
+ * @property string $id
+ * @property string|null $lang
+ * @property string|null $key
+ * @property string|null $value
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string $namespace
+ * @property string $group
+ * @property string|null $item
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
