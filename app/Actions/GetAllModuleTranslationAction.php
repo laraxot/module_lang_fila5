@@ -6,19 +6,16 @@ namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
+use Spatie\QueueableAction\QueueableAction as QueueableActionFromSpatie;
 
 use function Safe\glob;
 
-use Spatie\QueueableAction\QueueableAction;
-
 class GetAllModuleTranslationAction
 {
-    use QueueableAction;
+    use QueueableActionFromSpatie;
 
     /**
      * Restituisce il path completo del file di traduzione dato un key.
-     *
-     * @return array<int, array<string, mixed>>
      */
     public function execute(): array
     {
@@ -31,9 +28,8 @@ class GetAllModuleTranslationAction
         $path = base_path('Modules/*/lang/'.$lang.'/*.php');
         $files = glob($path);
 
-        /** @var array<int, array<string, mixed>> $result */
-        $result = Arr::map($files, function (string $file) {
-            $fileStr = $file;
+        return Arr::map($files, function ($file) {
+            $fileStr = is_string($file) ? $file : (string) $file;
             $moduleLower = Str::of($fileStr)
                 ->between('Modules/', '/lang/')
                 ->lower()
@@ -44,7 +40,5 @@ class GetAllModuleTranslationAction
                 'path' => $fileStr,
             ];
         });
-
-        return $result;
     }
 }

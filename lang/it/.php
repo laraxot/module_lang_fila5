@@ -7,8 +7,8 @@ return array (
   array (
     'empty' => 
     array (
-      'label' => 'empty11',
-      'heading' => 'empty12',
+      'label' => 'empty',
+      'heading' => 'empty',
     ),
   ),
   'actions' => 
@@ -36,7 +36,7 @@ return array (
   ),
   'label' => 'Missing Label',
   'plural_label' => 'Missing Plural label',
-  'fields' =>
+  'fields' => 
   array (
   ),
 );

@@ -1,6 +1,5 @@
 # Correzione conflitto e miglioramento PHPStan livello 9 in Models/Post.php
 
-**Data:** 2025-04-16
 **Data:** [DATE]
 
 ## Problema
@@ -25,6 +24,5 @@ Durante un controllo di routine sono stati rilevati diversi conflitti Git non ri
 ---
 
 **Vedi anche:**
-- [PHPStan Level 10 Fixes](PHPSTAN_LEVEL10_FIXES.md)
 - [PHPStan Level 10 Fixes](phpstan_level10_fixes.md)
 - [module_lang.md](module_lang.md)

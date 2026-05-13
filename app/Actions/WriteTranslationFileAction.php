@@ -5,13 +5,12 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
+use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\exec;
 use function Safe\file_put_contents;
 use function Safe\tempnam;
 use function Safe\unlink;
-
-use Spatie\QueueableAction\QueueableAction;
 
 class WriteTranslationFileAction
 {
@@ -20,10 +19,12 @@ class WriteTranslationFileAction
     /**
      * Scrive il contenuto in un file di traduzione con backup automatico.
      *
-     * @param string               $filePath     Percorso del file di traduzione
-     * @param array<string, mixed> $translations Traduzioni da scrivere
-     *
+     * @param  string  $filePath  Percorso del file di traduzione
+     * @param  array<string, mixed>  $translations  Traduzioni da scrivere
      * @return bool True se il file è stato scritto con successo
+     * @return bool True se il file è stato scritto con successo
+     *
+     * @throws \Exception Se il file non può essere scritto
      */
     public function execute(string $filePath, array $translations): bool
     {
@@ -40,7 +41,7 @@ class WriteTranslationFileAction
         // Scrivi il file
         $result = File::put($filePath, $phpContent);
 
-        if (false === $result) {
+        if ($result === false) {
             throw new \Exception("Impossibile scrivere il file: {$filePath}");
         }
 
@@ -53,7 +54,7 @@ class WriteTranslationFileAction
     /**
      * Crea un backup del file di traduzione.
      *
-     * @param string $filePath Percorso del file
+     * @param  string  $filePath  Percorso del file
      */
     private function createBackup(string $filePath): void
     {
@@ -76,32 +77,32 @@ class WriteTranslationFileAction
     /**
      * Valida la sintassi PHP del contenuto.
      *
-     * @param string $phpContent Contenuto PHP da validare
+     * @param  string  $phpContent  Contenuto PHP da validare
      *
      * @throws \Exception Se la sintassi PHP non è valida
      */
     private function validatePhpSyntax(string $phpContent): void
     {
         // Crea un file temporaneo per la validazione
-        $tempFile = tempnam(storage_path('framework/cache'), 'translation_');
+        $tempFile = tempnam(sys_get_temp_dir(), 'translation_');
         file_put_contents($tempFile, $phpContent);
 
         // Esegue php -l per validare la sintassi
-        $rawOutput = [];
+        /** @var array<int, string> $output */
+        $output = [];
         $returnCode = 0;
-        exec("php -l {$tempFile} 2>&1", $rawOutput, $returnCode);
-        $output = is_array($rawOutput) ? $rawOutput : [];
+        exec("php -l {$tempFile} 2>&1", $output, $returnCode);
 
+        // Rimuove il file temporaneo
         unlink($tempFile);
 
-        if (0 !== $returnCode) {
-            $lines = [];
-            foreach ($output as $line) {
-                if (is_string($line)) {
-                    $lines[] = $line;
-                }
-            }
-            $error = implode("\n", $lines);
+        if ($returnCode !== 0) {
+            $errorOutput = \is_array($output) ? $output : [];
+            $errorLines = array_map(
+                static fn (mixed $line): string => (string) $line,
+                $errorOutput,
+            );
+            $error = implode("\n", $errorLines);
             throw new \Exception("Sintassi PHP non valida: {$error}");
         }
     }
@@ -118,10 +119,8 @@ class WriteTranslationFileAction
 
         // Pulisce la cache delle traduzioni
         if (app()->bound('translation.loader')) {
-            $loader = app('translation.loader');
-            if (method_exists($loader, 'flush')) {
-                $loader->flush();
-            }
+            /* @phpstan-ignore method.notFound */
+            app('translation.loader')->flush();
         }
     }
 }
