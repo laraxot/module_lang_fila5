@@ -11,6 +11,7 @@ use Modules\Lang\Tests\TestCase;
 
 beforeEach(function () {
     $this->action = new GetTransPathAction();
+    $this->action = new GetTransPathAction();
 });
 
 describe('GetTransPathAction Business Logic', function () {
