@@ -58,14 +58,12 @@ $this->loadTranslationsFrom($path, 'pub_theme');
 ### Comando di Test
 ```bash
 php artisan tinker --execute="
-echo 'Date: ' . trans('pub_theme::appointment.fields.date.label') . PHP_EOL;
 echo 'Time: ' . trans('pub_theme::appointment.fields.time.label') . PHP_EOL;
 "
 ```
 
 ### Output Atteso
 ```
-Date: Data
 Time: Ora
 ```
 
@@ -97,11 +95,6 @@ Time: Ora
 
 ### Documentazione Base
 - [Modules/Xot/docs/theme-service-provider-rules.md](../../modules/xot/docs/theme-service-provider-rules.md)
-- [Themes/One/docs/pub_theme_namespace_registration.md](../../Themes/One/docs/pub_theme_namespace_registration.md)
-- [Themes/Two/docs/theme-translations.md](../../Themes/Two/docs/theme-translations.md)
-
-### Documentazione Base
-- [Modules/Xot/docs/theme-service-provider-rules.md](../../Modules/Xot/docs/theme-service-provider-rules.md)
 - [docs/frontend/widget-view-namespaces.md](widget-view-namespaces.md)
 
 ## Risoluzione Problemi
@@ -117,4 +110,3 @@ Time: Ora
 2. Verificare ServiceProvider registrato
 3. Pulire cache traduzioni: `php artisan config:clear`
 
-*Standard Laraxot - Ultimo aggiornamento: 2025-08-07*

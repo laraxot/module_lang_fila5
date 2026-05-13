@@ -87,7 +87,6 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 - [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
-*Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../../docs/)
 
 *Ultimo aggiornamento: 29 luglio 2025*
@@ -180,7 +179,6 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 - [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
-*Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../../docs/)
 
 *Ultimo aggiornamento: 29 luglio 2025*

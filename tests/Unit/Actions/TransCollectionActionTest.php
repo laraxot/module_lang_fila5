@@ -4,75 +4,68 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit\Actions;
 
+uses(TestCase::class);
+
 use Illuminate\Support\Collection;
 use Modules\Lang\Actions\TransCollectionAction;
 use Modules\Lang\Tests\TestCase;
-use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
-function makeTransCollectionAction(): TransCollectionAction
-{
-    return new TransCollectionAction();
-}
+beforeEach(function () {
+    $this->action = new TransCollectionAction;
+    $this->action = new TransCollectionAction;
+});
 
 describe('TransCollectionAction Business Logic', function () {
     test('converts collection elements to strings without transKey', function () {
-        /** @var Collection<int|string, mixed> $input */
         $input = new Collection([1, 2, 3]);
-        $result = makeTransCollectionAction()->execute($input, null);
+        $result = $this->action->execute($input, null);
 
-        Assert::assertInstanceOf(Collection::class, $result);
-        Assert::assertSame(['1', '2', '3'], $result->toArray());
+        expect($result)->toBeInstanceOf(Collection::class);
+        // TransArrayAction converts numbers to strings via SafeStringCastAction
+        expect($result->toArray())->toBe(['1', '2', '3']);
     });
 
     test('handles collection with string items', function () {
-        /** @var Collection<int|string, mixed> $input */
         $input = new Collection(['a', 'b', 'c']);
-        $result = makeTransCollectionAction()->execute($input, null);
+        $result = $this->action->execute($input, null);
 
-        Assert::assertInstanceOf(Collection::class, $result);
+        expect($result)->toBeInstanceOf(Collection::class);
     });
 
     test('handles empty collection', function () {
-        /** @var Collection<int|string, mixed> $input */
         $input = new Collection([]);
-        $result = makeTransCollectionAction()->execute($input, null);
+        $result = $this->action->execute($input, null);
 
-        Assert::assertInstanceOf(Collection::class, $result);
-        Assert::assertEmpty($result);
+        expect($result)->toBeInstanceOf(Collection::class);
+        expect($result)->toBeEmpty();
     });
 
     test('translates collection elements with transKey when translation exists', function () {
-        /** @var Collection<int|string, mixed> $input */
         $input = new Collection(['test_key']);
-        $result = makeTransCollectionAction()->execute($input, 'test');
+        $result = $this->action->execute($input, 'test');
 
-        Assert::assertInstanceOf(Collection::class, $result);
-        Assert::assertCount(1, $result);
+        expect($result)->toBeInstanceOf(Collection::class);
+        expect($result)->toHaveCount(1);
     });
 
     test('returns original value when translation does not exist', function () {
-        /** @var Collection<int|string, mixed> $input */
         $input = new Collection(['nonexistent_key']);
-        $result = makeTransCollectionAction()->execute($input, 'nonexistent');
+        $result = $this->action->execute($input, 'nonexistent');
 
-        Assert::assertInstanceOf(Collection::class, $result);
+        expect($result)->toBeInstanceOf(Collection::class);
     });
 
     test('handles numeric collection elements', function () {
-        /** @var Collection<int|string, mixed> $input */
         $input = new Collection([100, 200, 300]);
-        $result = makeTransCollectionAction()->execute($input, null);
+        $result = $this->action->execute($input, null);
 
-        Assert::assertInstanceOf(Collection::class, $result);
+        expect($result)->toBeInstanceOf(Collection::class);
     });
 
     test('handles associative collection', function () {
-        /** @var Collection<int|string, mixed> $input */
         $input = new Collection(['key1' => 'value1', 'key2' => 'value2']);
-        $result = makeTransCollectionAction()->execute($input, null);
+        $result = $this->action->execute($input, null);
 
-        Assert::assertInstanceOf(Collection::class, $result);
+        expect($result)->toBeInstanceOf(Collection::class);
     });
 });

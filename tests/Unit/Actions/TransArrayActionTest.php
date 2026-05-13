@@ -4,65 +4,71 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit\Actions;
 
-use Modules\Lang\Actions\TransArrayAction;
-use Modules\Lang\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
 uses(TestCase::class);
 
-function makeTransArrayAction(): TransArrayAction
-{
-    return new TransArrayAction();
-}
+use Modules\Lang\Actions\TransArrayAction;
+use Modules\Lang\Tests\TestCase;
+
+beforeEach(function () {
+    $this->action = new TransArrayAction;
+    $this->action = new TransArrayAction;
+});
 
 describe('TransArrayAction Business Logic', function () {
     test('converts array elements to strings without transKey', function () {
         $input = [1, 2, 3];
-        $result = makeTransArrayAction()->execute($input, null);
+        $result = $this->action->execute($input, null);
 
-        Assert::assertCount(3, $result);
+        expect($result)->toBeArray();
+        expect($result)->toHaveCount(3);
     });
 
     test('handles array with string keys', function () {
         $input = ['a' => 'value1', 'b' => 'value2'];
-        $result = makeTransArrayAction()->execute($input, null);
+        $result = $this->action->execute($input, null);
 
-        Assert::assertSame('value1', $result['a']);
-        Assert::assertSame('value2', $result['b']);
+        expect($result)->toBeArray();
+        expect($result['a'])->toBe('value1');
+        expect($result['b'])->toBe('value2');
     });
 
     test('handles empty array', function () {
         $input = [];
-        $result = makeTransArrayAction()->execute($input, null);
+        $result = $this->action->execute($input, null);
 
-        Assert::assertEmpty($result);
+        expect($result)->toBeArray();
+        expect($result)->toBeEmpty();
     });
 
     test('translates array elements with transKey when translation exists', function () {
+        // Setup: add a translation for testing
         $input = ['test_key'];
-        $result = makeTransArrayAction()->execute($input, 'test');
+        $result = $this->action->execute($input, 'test');
 
-        Assert::assertCount(1, $result);
+        expect($result)->toBeArray();
+        expect($result)->toHaveCount(1);
     });
 
     test('returns original value when translation does not exist', function () {
         $input = ['nonexistent_key'];
-        $result = makeTransArrayAction()->execute($input, 'nonexistent');
+        $result = $this->action->execute($input, 'nonexistent');
 
-        Assert::assertSame(['nonexistent_key'], $result);
+        expect($result)->toBeArray();
     });
 
     test('handles numeric array elements', function () {
         $input = [100, 200, 300];
-        $result = makeTransArrayAction()->execute($input, null);
+        $result = $this->action->execute($input, null);
 
-        Assert::assertSame('100', $result[0]);
+        expect($result)->toBeArray();
+        expect($result[0])->toBe('100');
     });
 
     test('handles array with mixed types', function () {
         $input = ['string', 123, true, null];
-        $result = makeTransArrayAction()->execute($input, null);
+        $result = $this->action->execute($input, null);
 
-        Assert::assertCount(4, $result);
+        expect($result)->toBeArray();
+        expect($result)->toHaveCount(4);
     });
 });
