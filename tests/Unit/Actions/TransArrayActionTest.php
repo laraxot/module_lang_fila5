@@ -11,6 +11,7 @@ use Modules\Lang\Tests\TestCase;
 
 beforeEach(function () {
     $this->action = new TransArrayAction();
+    $this->action = new TransArrayAction();
 });
 
 describe('TransArrayAction Business Logic', function () {

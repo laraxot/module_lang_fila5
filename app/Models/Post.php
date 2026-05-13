@@ -47,6 +47,40 @@ use Spatie\Sluggable\SlugOptions;
  * @property string|null                  $url
  * @property array<array-key, mixed>|null $url_lang
  * @property array<array-key, mixed>|null $image_resize_src
+ * @property string                       $id
+ * @property int|null                     $user_id
+ * @property string|null                  $post_type
+ * @property int|null                     $post_id
+ * @property string|null                  $lang
+ * @property string|null                  $title
+ * @property string|null                  $subtitle
+ * @property string|null                  $guid
+ * @property string|null                  $txt
+ * @property string|null                  $image_src
+ * @property string|null                  $image_alt
+ * @property string|null                  $image_title
+ * @property string|null                  $meta_description
+ * @property string|null                  $meta_keywords
+ * @property int|null                     $author_id
+ * @property Carbon|null                  $created_at
+ * @property Carbon|null                  $updated_at
+ * @property int|null                     $category_id
+ * @property string|null                  $image
+ * @property string|null                  $content
+ * @property int|null                     $published
+ * @property string|null                  $created_by
+ * @property string|null                  $updated_by
+ * @property string|null                  $url
+ * @property array<array-key, mixed>|null $url_lang
+ * @property array<array-key, mixed>|null $image_resize_src
+ * @property string|null                  $linked_count
+ * @property string|null                  $related_count
+ * @property string|null                  $relatedrev_count
+ * @property string|null                  $linkable_type
+ * @property int|null                     $views_count
+ * @property ProfileContract|null         $creator
+ * @property Model|null                   $linkable
+ * @property ProfileContract|null         $updater
  * @property string|null                  $linked_count
  * @property string|null                  $related_count
  * @property string|null                  $relatedrev_count
