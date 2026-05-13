@@ -11,6 +11,7 @@ use Modules\Lang\Tests\TestCase;
 
 beforeEach(function () {
     $action = new GetAllTranslationAction();
+    $action = new GetAllTranslationAction();
 });
 
 describe('GetAllTranslationAction Business Logic', function () {
