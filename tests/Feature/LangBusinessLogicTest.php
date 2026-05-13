@@ -2,36 +2,37 @@
 
 declare(strict_types=1);
 
-use Modules\Lang\Database\Factories\PostFactory;
-use Modules\Lang\Database\Factories\TranslationFactory;
-use Modules\Lang\Database\Factories\TranslationFileFactory;
+namespace Modules\Lang\Tests\Feature;
+
+uses(TestCase::class);
+
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Tests\TestCase;
-use Modules\User\Database\Factories\UserFactory;
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
+use Modules\User\Models\User;
 
 describe('Lang Business Logic', function () {
     it('can create and manage posts', function () {
-        /** @var TestCase $this */
-        $user = UserFactory::new()->createOne();
+        $user = User::factory()->create();
 
-        $post = PostFactory::new()->createOne([
+        $post = Post::factory()->create([
             'user_id' => $user->id,
             'title' => 'Test Post',
             'content' => 'This is a test post content',
             'status' => 'draft',
         ]);
 
-        Assert::assertInstanceOf(Post::class, $post);
-        Assert::assertSame($user->id, $post->user_id);
-        Assert::assertSame('Test Post', $post->title);
-        Assert::assertSame('draft', $post->status);
+        expect($post)
+            ->toBeInstanceOf(Post::class)
+            ->and($post->user_id)
+            ->toBe($user->id)
+            ->and($post->title)
+            ->toBe('Test Post')
+            ->and($post->status)
+            ->toBe('draft');
 
-        $this->assertDatabaseHasRow('posts', [
+        $this->assertDatabaseHas('posts', [
             'id' => $post->id,
             'user_id' => $user->id,
             'title' => 'Test Post',
@@ -40,71 +41,72 @@ describe('Lang Business Logic', function () {
     });
 
     it('can publish posts', function () {
-        /** @var TestCase $this */
-        $user = UserFactory::new()->createOne();
-        $post = PostFactory::new()->createOne([
+        $user = User::factory()->create();
+        $post = Post::factory()->create([
             'user_id' => $user->id,
             'status' => 'draft',
         ]);
 
         $post->update(['status' => 'published']);
 
-        $freshPost = $post->fresh();
-        Assert::assertNotNull($freshPost);
-        Assert::assertSame('published', $freshPost->status);
-        $this->assertDatabaseHasRow('posts', [
+        expect($post->fresh()->status)->toBe('published');
+
+        $this->assertDatabaseHas('posts', [
             'id' => $post->id,
             'status' => 'published',
         ]);
     });
 
     it('can manage post categories', function () {
-        /** @var TestCase $this */
-        $user = UserFactory::new()->createOne();
+        $user = User::factory()->create();
 
-        $newsPost = PostFactory::new()->createOne([
+        $newsPost = Post::factory()->create([
             'user_id' => $user->id,
             'category' => 'news',
             'title' => 'News Post',
         ]);
 
-        $tutorialPost = PostFactory::new()->createOne([
+        $tutorialPost = Post::factory()->create([
             'user_id' => $user->id,
             'category' => 'tutorial',
             'title' => 'Tutorial Post',
         ]);
 
-        Assert::assertSame('news', $newsPost->category);
-        Assert::assertSame('tutorial', $tutorialPost->category);
-        $this->assertDatabaseHasRow('posts', [
+        expect($newsPost->category)->toBe('news')->and($tutorialPost->category)->toBe('tutorial');
+
+        $this->assertDatabaseHas('posts', [
             'id' => $newsPost->id,
             'category' => 'news',
         ]);
 
-        $this->assertDatabaseHasRow('posts', [
+        $this->assertDatabaseHas('posts', [
             'id' => $tutorialPost->id,
             'category' => 'tutorial',
         ]);
     });
 
     it('can create and manage translations', function () {
-        /** @var TestCase $this */
-        $user = UserFactory::new()->createOne();
+        $user = User::factory()->create();
 
-        $translation = TranslationFactory::new()->createOne([
+        $translation = Translation::factory()->create([
             'user_id' => $user->id,
             'key' => 'welcome.message',
             'value' => 'Welcome to our application',
             'locale' => 'en',
         ]);
 
-        Assert::assertInstanceOf(Translation::class, $translation);
-        Assert::assertSame($user->id, $translation->user_id);
-        Assert::assertSame('welcome.message', $translation->key);
-        Assert::assertSame('Welcome to our application', $translation->value);
-        Assert::assertSame('en', $translation->locale);
+        expect($translation)
+            ->toBeInstanceOf(Translation::class)
+            ->and($translation->user_id)
+            ->toBe($user->id)
+            ->and($translation->key)
+            ->toBe('welcome.message')
+            ->and($translation->value)
+            ->toBe('Welcome to our application')
+            ->and($translation->locale)
+            ->toBe('en');
 
-        $this->assertDatabaseHasRow('translations', [
+        $this->assertDatabaseHas('translations', [
             'id' => $translation->id,
             'user_id' => $user->id,
             'key' => 'welcome.message',
@@ -114,113 +116,124 @@ describe('Lang Business Logic', function () {
     });
 
     it('can manage multilingual content', function () {
-        /** @var TestCase $this */
-        $user = UserFactory::new()->createOne();
+        $user = User::factory()->create();
 
-        $englishTranslation = TranslationFactory::new()->createOne([
+        $englishTranslation = Translation::factory()->create([
             'user_id' => $user->id,
             'key' => 'welcome.message',
             'value' => 'Welcome to our application',
             'locale' => 'en',
         ]);
 
-        $italianTranslation = TranslationFactory::new()->createOne([
+        $italianTranslation = Translation::factory()->create([
             'user_id' => $user->id,
             'key' => 'welcome.message',
             'value' => 'Benvenuto nella nostra applicazione',
             'locale' => 'it',
         ]);
 
-        $germanTranslation = TranslationFactory::new()->createOne([
+        $germanTranslation = Translation::factory()->create([
             'user_id' => $user->id,
             'key' => 'welcome.message',
             'value' => 'Willkommen in unserer Anwendung',
             'locale' => 'de',
         ]);
 
-        Assert::assertSame('Welcome to our application', $englishTranslation->value);
-        Assert::assertSame('Benvenuto nella nostra applicazione', $italianTranslation->value);
-        Assert::assertSame('Willkommen in unserer Anwendung', $germanTranslation->value);
+        expect($englishTranslation->value)
+            ->toBe('Welcome to our application')
+            ->and($italianTranslation->value)
+            ->toBe('Benvenuto nella nostra applicazione')
+            ->and($germanTranslation->value)
+            ->toBe('Willkommen in unserer Anwendung');
 
-        $this->assertDatabaseHasRow('translations', [
+        $this->assertDatabaseHas('translations', [
             'key' => 'welcome.message',
             'locale' => 'en',
         ]);
 
-        $this->assertDatabaseHasRow('translations', [
+        $this->assertDatabaseHas('translations', [
             'key' => 'welcome.message',
             'locale' => 'it',
         ]);
 
-        $this->assertDatabaseHasRow('translations', [
+        $this->assertDatabaseHas('translations', [
             'key' => 'welcome.message',
             'locale' => 'de',
         ]);
     });
 
     it('can manage translation files', function () {
-        $translationFile = TranslationFileFactory::new()->createOne([
-            'name' => 'welcome.php',
-            'path' => module_path('Lang', 'lang/en/welcome.php'),
+        $user = User::factory()->create();
+
+        $translationFile = TranslationFile::factory()->create([
+            'user_id' => $user->id,
+            'filename' => 'welcome.php',
+            'locale' => 'en',
+            'content' => 'return ["welcome" => "Welcome"];',
         ]);
 
-        Assert::assertInstanceOf(TranslationFile::class, $translationFile);
-        Assert::assertSame('welcome.php', $translationFile->name);
-        Assert::assertSame(module_path('Lang', 'lang/en/welcome.php'), $translationFile->path);
+        expect($translationFile)
+            ->toBeInstanceOf(TranslationFile::class)
+            ->and($translationFile->user_id)
+            ->toBe($user->id)
+            ->and($translationFile->filename)
+            ->toBe('welcome.php')
+            ->and($translationFile->locale)
+            ->toBe('en');
+
+        $this->assertDatabaseHas('translation_files', [
+            'id' => $translationFile->id,
+            'user_id' => $user->id,
+            'filename' => 'welcome.php',
+            'locale' => 'en',
+        ]);
     });
 
     it('can validate translation keys', function () {
-        $user = UserFactory::new()->createOne();
+        $user = User::factory()->create();
 
-        $validTranslation = TranslationFactory::new()->createOne([
+        $validTranslation = Translation::factory()->create([
             'user_id' => $user->id,
             'key' => 'user.profile.name',
             'value' => 'User Name',
             'locale' => 'en',
         ]);
 
-        Assert::assertNotNull($validTranslation->key);
-        Assert::assertStringContainsString('.', $validTranslation->key);
-        Assert::assertStringStartsWith('user', $validTranslation->key);
+        expect($validTranslation->key)->toContain('.')->and($validTranslation->key)->toStartWith('user');
 
-        $invalidTranslation = TranslationFactory::new()->createOne([
+        $invalidTranslation = Translation::factory()->create([
             'user_id' => $user->id,
             'key' => 'invalid_key_format',
             'value' => 'Invalid Key',
             'locale' => 'en',
         ]);
 
-        Assert::assertNotNull($invalidTranslation->key);
-        Assert::assertStringNotContainsString('.', $invalidTranslation->key);
+        expect($invalidTranslation->key)->not->toContain('.');
     });
 
     it('can manage post workflow', function () {
-        $user = UserFactory::new()->createOne();
-        $post = PostFactory::new()->createOne([
+        $user = User::factory()->create();
+        $post = Post::factory()->create([
             'user_id' => $user->id,
             'status' => 'draft',
         ]);
 
+        // Draft to Review
         $post->update(['status' => 'review']);
-        $reviewPost = $post->fresh();
-        Assert::assertNotNull($reviewPost);
-        Assert::assertSame('review', $reviewPost->status);
+        expect($post->fresh()->status)->toBe('review');
 
+        // Review to Published
         $post->update(['status' => 'published']);
-        $publishedPost = $post->fresh();
-        Assert::assertNotNull($publishedPost);
-        Assert::assertSame('published', $publishedPost->status);
+        expect($post->fresh()->status)->toBe('published');
 
+        // Published to Archived
         $post->update(['status' => 'archived']);
-        $archivedPost = $post->fresh();
-        Assert::assertNotNull($archivedPost);
-        Assert::assertSame('archived', $archivedPost->status);
+        expect($post->fresh()->status)->toBe('archived');
     });
 
     it('can track translation changes', function () {
-        /** @var TestCase $this */
-        $user = UserFactory::new()->createOne();
-        $translation = TranslationFactory::new()->createOne([
+        $user = User::factory()->create();
+        $translation = Translation::factory()->create([
             'user_id' => $user->id,
             'key' => 'welcome.message',
             'value' => 'Original message',
@@ -229,20 +242,18 @@ describe('Lang Business Logic', function () {
 
         $translation->update(['value' => 'Updated message']);
 
-        $freshTranslation = $translation->fresh();
-        Assert::assertNotNull($freshTranslation);
-        Assert::assertSame('Updated message', $freshTranslation->value);
-        $this->assertDatabaseHasRow('translations', [
+        expect($translation->fresh()->value)->toBe('Updated message');
+
+        $this->assertDatabaseHas('translations', [
             'id' => $translation->id,
             'value' => 'Updated message',
         ]);
     });
 
     it('can manage post metadata', function () {
-        /** @var TestCase $this */
-        $user = UserFactory::new()->createOne();
+        $user = User::factory()->create();
 
-        $post = PostFactory::new()->createOne([
+        $post = Post::factory()->create([
             'user_id' => $user->id,
             'title' => 'SEO Optimized Post',
             'meta_title' => 'SEO Meta Title',
@@ -250,11 +261,14 @@ describe('Lang Business Logic', function () {
             'meta_keywords' => 'seo, optimization, meta',
         ]);
 
-        Assert::assertSame('SEO Meta Title', $post->meta_title);
-        Assert::assertSame('SEO Meta Description', $post->meta_description);
-        Assert::assertSame('seo, optimization, meta', $post->meta_keywords);
+        expect($post->meta_title)
+            ->toBe('SEO Meta Title')
+            ->and($post->meta_description)
+            ->toBe('SEO Meta Description')
+            ->and($post->meta_keywords)
+            ->toBe('seo, optimization, meta');
 
-        $this->assertDatabaseHasRow('posts', [
+        $this->assertDatabaseHas('posts', [
             'id' => $post->id,
             'meta_title' => 'SEO Meta Title',
             'meta_description' => 'SEO Meta Description',
@@ -263,10 +277,9 @@ describe('Lang Business Logic', function () {
     });
 
     it('can manage translation namespaces', function () {
-        /** @var TestCase $this */
-        $user = UserFactory::new()->createOne();
+        $user = User::factory()->create();
 
-        $adminTranslation = TranslationFactory::new()->createOne([
+        $adminTranslation = Translation::factory()->create([
             'user_id' => $user->id,
             'key' => 'admin.dashboard.title',
             'value' => 'Admin Dashboard',
@@ -274,7 +287,7 @@ describe('Lang Business Logic', function () {
             'namespace' => 'admin',
         ]);
 
-        $frontendTranslation = TranslationFactory::new()->createOne([
+        $frontendTranslation = Translation::factory()->create([
             'user_id' => $user->id,
             'key' => 'frontend.home.title',
             'value' => 'Home Page',
@@ -282,35 +295,35 @@ describe('Lang Business Logic', function () {
             'namespace' => 'frontend',
         ]);
 
-        Assert::assertSame('admin', $adminTranslation->namespace);
-        Assert::assertSame('frontend', $frontendTranslation->namespace);
-        $this->assertDatabaseHasRow('translations', [
+        expect($adminTranslation->namespace)->toBe('admin')->and($frontendTranslation->namespace)->toBe('frontend');
+
+        $this->assertDatabaseHas('translations', [
             'id' => $adminTranslation->id,
             'namespace' => 'admin',
         ]);
 
-        $this->assertDatabaseHasRow('translations', [
+        $this->assertDatabaseHas('translations', [
             'id' => $frontendTranslation->id,
             'namespace' => 'frontend',
         ]);
     });
 
     it('can validate locale formats', function () {
-        /** @var TestCase $this */
-        $user = UserFactory::new()->createOne();
+        $user = User::factory()->create();
 
         $validLocales = ['en', 'it', 'de', 'fr', 'es'];
 
         foreach ($validLocales as $locale) {
-            $translation = TranslationFactory::new()->createOne([
+            $translation = Translation::factory()->create([
                 'user_id' => $user->id,
                 'key' => "test.{$locale}",
                 'value' => "Test in {$locale}",
                 'locale' => $locale,
             ]);
 
-            Assert::assertSame($locale, $translation->locale);
-            $this->assertDatabaseHasRow('translations', [
+            expect($translation->locale)->toBe($locale);
+
+            $this->assertDatabaseHas('translations', [
                 'id' => $translation->id,
                 'locale' => $locale,
             ]);
@@ -318,55 +331,61 @@ describe('Lang Business Logic', function () {
     });
 
     it('can manage post scheduling', function () {
-        /** @var TestCase $this */
-        $user = UserFactory::new()->createOne();
+        $user = User::factory()->create();
         $futureDate = now()->addDays(7);
 
-        $scheduledPost = PostFactory::new()->createOne([
+        $scheduledPost = Post::factory()->create([
             'user_id' => $user->id,
             'title' => 'Scheduled Post',
             'status' => 'scheduled',
             'published_at' => $futureDate,
         ]);
 
-        Assert::assertSame('scheduled', $scheduledPost->status);
-        Assert::assertNotNull($scheduledPost->published_at);
-        Assert::assertSame(
-            $futureDate->format('Y-m-d H:i:s'),
-            $scheduledPost->published_at->format('Y-m-d H:i:s'),
-        );
-        $this->assertDatabaseHasRow('posts', [
+        expect($scheduledPost->status)->toBe('scheduled')->and($scheduledPost->published_at)->toEqual($futureDate);
+
+        $this->assertDatabaseHas('posts', [
             'id' => $scheduledPost->id,
             'status' => 'scheduled',
+            'published_at' => $futureDate,
         ]);
     });
 
     it('can track translation statistics', function () {
-        $user = UserFactory::new()->createOne();
+        $user = User::factory()->create();
 
-        TranslationFactory::new()->count(5)->create([
-            'user_id' => $user->id,
-            'locale' => 'en',
-        ]);
+        Translation::factory()
+            ->count(5)
+            ->create([
+                'user_id' => $user->id,
+                'locale' => 'en',
+            ]);
 
-        TranslationFactory::new()->count(3)->create([
-            'user_id' => $user->id,
-            'locale' => 'it',
-        ]);
+        Translation::factory()
+            ->count(3)
+            ->create([
+                'user_id' => $user->id,
+                'locale' => 'it',
+            ]);
 
-        TranslationFactory::new()->count(2)->create([
-            'user_id' => $user->id,
-            'locale' => 'de',
-        ]);
+        Translation::factory()
+            ->count(2)
+            ->create([
+                'user_id' => $user->id,
+                'locale' => 'de',
+            ]);
 
         $totalTranslations = Translation::where('user_id', $user->id)->count();
         $englishCount = Translation::where('user_id', $user->id)->where('locale', 'en')->count();
         $italianCount = Translation::where('user_id', $user->id)->where('locale', 'it')->count();
         $germanCount = Translation::where('user_id', $user->id)->where('locale', 'de')->count();
 
-        Assert::assertSame(10, $totalTranslations);
-        Assert::assertSame(5, $englishCount);
-        Assert::assertSame(3, $italianCount);
-        Assert::assertSame(2, $germanCount);
+        expect($totalTranslations)
+            ->toBe(10)
+            ->and($englishCount)
+            ->toBe(5)
+            ->and($italianCount)
+            ->toBe(3)
+            ->and($germanCount)
+            ->toBe(2);
     });
 });

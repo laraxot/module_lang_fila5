@@ -79,9 +79,7 @@ class LangServiceProvider extends XotBaseServiceProvider
         });
 
         Entry::configureUsing(function (Entry $component) {
-            $component = app(AutoLabelAction::class)->execute($component, 'label');
-
-            return $component;
+            return app(AutoLabelAction::class)->execute($component, 'label');
         });
 
         Section::configureUsing(function (Section $component) {
@@ -176,9 +174,8 @@ class LangServiceProvider extends XotBaseServiceProvider
         $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
-                if (method_exists($translatable, 'translateLabel')) {
-                    $translatable->translateLabel();
-                }
+                /* @phpstan-ignore method.notFound */
+                $translatable->translateLabel();
             });
         }
     }

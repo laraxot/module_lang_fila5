@@ -29,11 +29,9 @@ class EditTranslationFile extends XotBaseEditRecord
     {
         return [
             Section::make('content')->schema(function ($record): array {
-                if (is_object($record) && isset($record->content) && is_array($record->content)) {
-                    /** @var array<string, mixed> $content */
-                    $content = $record->content;
+                if (is_object($record) && isset($record->content)) {
+                    $content = is_array($record->content) ? $record->content : [];
                 } else {
-                    /** @var array<string, mixed> $content */
                     $content = [];
                 }
 
@@ -42,32 +40,26 @@ class EditTranslationFile extends XotBaseEditRecord
         ];
     }
 
-    /**
-     * @param array<string, mixed> $array
-     *
-     * @return array<int, Section|TextInput>
-     */
     public function makeFromArray(array $array, string $prefix = ''): array
     {
         $fields = [];
 
         foreach ($array as $key => $value) {
-            $keyStr = (string) $key;
-            $fullKey = '' === $prefix ? $keyStr : ($prefix.'.'.$keyStr);
+            $fullKey = '' === $prefix ? $key : ($prefix.'.'.$key);
 
             if (is_array($value)) {
                 /** @var array<string, mixed> $childArray */
                 $childArray = $value;
                 /** @var array<Htmlable|string> $childSchema */
                 $childSchema = self::makeFromArray($childArray, $fullKey);
-                $fields[] = Section::make($keyStr)
+                $fields[] = Section::make($key)
                     ->label($fullKey)
                     ->schema($childSchema)
                     ->columns(2);
             } else {
                 $fields[] = TextInput::make($fullKey)
                     // ->label($fullKey)
-                    ->label($keyStr)
+                    ->label($key)
                     ->default($value);
             }
         }

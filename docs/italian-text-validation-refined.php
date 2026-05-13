@@ -220,6 +220,8 @@ function auditRealItalianText(string $basePath): array
             foreach ($lines as $line) {
                 ++$lineNumber;
                 if (false !== stripos($line, $pattern)) {
+                $lineNumber++;
+                if (stripos($line, $pattern) !== false) {
                     // Verifica che non sia un falso positivo
                     $isExcluded = false;
                     foreach ($excludePatterns as $exclude) {

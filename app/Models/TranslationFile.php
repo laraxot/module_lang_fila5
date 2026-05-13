@@ -14,21 +14,20 @@ use Illuminate\Support\Facades\File;
 use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
 use Modules\Xot\Contracts\ProfileContract;
+use Sushi\Sushi as SushiFromDisk;
 
 use function Safe\json_encode;
 
-use Sushi\Sushi;
-
 /**
- * @property string|null                  $key
- * @property string|null                  $path
- * @property string|null                  $id
- * @property string|null                  $name
+ * @property string|null $key
+ * @property string|null $path
+ * @property string|null $id
+ * @property string|null $name
  * @property array<array-key, mixed>|null $content
- * @property ProfileContract|null         $creator
- * @property ProfileContract|null         $updater
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
  *
- * @method static TranslationFileFactory          factory($count = null, $state = [])
+ * @method static TranslationFileFactory factory($count = null, $state = [])
  * @method static Builder<static>|TranslationFile newModelQuery()
  * @method static Builder<static>|TranslationFile newQuery()
  * @method static Builder<static>|TranslationFile query()
@@ -44,7 +43,7 @@ use Sushi\Sushi;
  */
 class TranslationFile extends BaseModel
 {
-    use Sushi;
+    use SushiFromDisk;
 
     protected $fillable = [
         'id',
@@ -53,7 +52,6 @@ class TranslationFile extends BaseModel
         'content',
     ];
 
-    /** @var array<string, string> */
     protected array $form = [
         'key' => 'string',
         'path' => 'string',
@@ -62,29 +60,20 @@ class TranslationFile extends BaseModel
         'content' => 'json',
     ];
 
-    /**
-     * @return array<int, array<string, mixed>>
-     */
     public function getRows(): array
     {
         $files = app(GetAllTranslationAction::class)->execute();
 
-        /** @var array<int, array<string, mixed>> $result */
-        $result = Arr::map($files, function ($item) {
+        return Arr::map($files, function ($item) {
             if (! is_array($item)) {
                 return [];
             }
 
-            $key = $item['key'] ?? null;
-            $keyStr = is_string($key) ? $key : (string) $key;
-            $item['id'] = isset($item['key']) ? $keyStr : '';
-
-            $pathValue = $item['path'] ?? null;
-            $pathStr = is_string($pathValue) ? $pathValue : (string) $pathValue;
-            $item['name'] = isset($item['path']) ? basename($pathStr, '.php') : '';
+            $item['id'] = isset($item['key']) ? (string) $item['key'] : '';
+            $item['name'] = isset($item['path']) ? basename((string) $item['path'], '.php') : '';
 
             if (isset($item['path'])) {
-                $path = $pathStr;
+                $path = (string) $item['path'];
                 if (File::exists($path)) {
                     try {
                         $content = File::getRequire($path);
@@ -111,8 +100,6 @@ class TranslationFile extends BaseModel
             // dddx($item);
             return $item;
         });
-
-        return $result;
     }
 
     /**

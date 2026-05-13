@@ -25,7 +25,8 @@ class LanguageSwitcher extends Component
      */
     public function __construct()
     {
-        $this->widget = new LanguageSwitcherWidget();
+        $this->widget = new LanguageSwitcherWidget;
+        $this->widget = new LanguageSwitcherWidget;
     }
 
     /**

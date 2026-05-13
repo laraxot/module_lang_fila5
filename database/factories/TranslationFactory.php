@@ -23,11 +23,12 @@ class TranslationFactory extends Factory
     /**
      * Define the model's default state.
      *
-     * @return array<string, mixed>
+     * @return array
      */
-    public function definition(): array
+    public function definition()
     {
         return [
+            'id' => fake()->randomNumber(5),
             'lang' => fake()->word,
             'value' => fake()->text,
             'created_at' => fake()->dateTime,
