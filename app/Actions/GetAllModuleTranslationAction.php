@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 
 use function Safe\glob;
 
-use Spatie\QueueableAction\QueueableAction;
+use Spatie\QueueableAction\QueueableAction as QueueableActionFromSpatie;
 
 class GetAllModuleTranslationAction
 {

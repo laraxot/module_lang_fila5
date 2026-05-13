@@ -26,6 +26,7 @@ class WriteTranslationFileAction
      * @throws \Exception Se il file non può essere scritto
      *
      * @return bool True se il file è stato scritto con successo
+     * @return bool True se il file è stato scritto con successo
      */
     public function execute(string $filePath, array $translations): bool
     {
