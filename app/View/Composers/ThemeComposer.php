@@ -57,7 +57,7 @@ class ThemeComposer
             $regionalParts = explode('_', $regional);
             $regionalCode = $regionalParts[0] ?? 'en';
 
-            if ($regionalCode === 'en') {
+            if ('en' === $regionalCode) {
                 $regionalCode = 'gb';
             }
 
@@ -124,7 +124,7 @@ class ThemeComposer
         // Verifichiamo che il valore del campo sia una stringa o lo convertiamo in modo sicuro
         $value = $lang->{$field};
         if (! is_string($value)) {
-            return $field === 'id' ? $currentLocale : '';
+            return 'id' === $field ? $currentLocale : '';
         }
 
         return $value;
