@@ -24,7 +24,7 @@ class TransArrayAction
      */
     public function execute(array $array, ?string $transKey): array
     {
-        if ($transKey === null) {
+        if (null === $transKey) {
             $result = Arr::map($array, SafeStringCastAction::cast(...));
             if (is_array($result)) {
                 $stringResult = [];
@@ -68,7 +68,7 @@ class TransArrayAction
             $item = SafeStringCastAction::cast($item);
         }
 
-        if (empty($item) || $this->transKey === null) {
+        if (empty($item) || null === $this->transKey) {
             return $item;
         }
 
