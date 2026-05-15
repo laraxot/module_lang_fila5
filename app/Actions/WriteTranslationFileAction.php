@@ -5,13 +5,12 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
+use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\exec;
 use function Safe\file_put_contents;
 use function Safe\tempnam;
 use function Safe\unlink;
-
-use Spatie\QueueableAction\QueueableAction;
 
 class WriteTranslationFileAction
 {
@@ -20,13 +19,12 @@ class WriteTranslationFileAction
     /**
      * Scrive il contenuto in un file di traduzione con backup automatico.
      *
-     * @param string               $filePath     Percorso del file di traduzione
-     * @param array<string, mixed> $translations Traduzioni da scrivere
+     * @param  string  $filePath  Percorso del file di traduzione
+     * @param  array<string, mixed>  $translations  Traduzioni da scrivere
+     * @return bool True se il file è stato scritto con successo
+     * @return bool True se il file è stato scritto con successo
      *
      * @throws \Exception Se il file non può essere scritto
-     *
-     * @return bool True se il file è stato scritto con successo
-     * @return bool True se il file è stato scritto con successo
      */
     public function execute(string $filePath, array $translations): bool
     {
@@ -43,7 +41,7 @@ class WriteTranslationFileAction
         // Scrivi il file
         $result = File::put($filePath, $phpContent);
 
-        if (false === $result) {
+        if ($result === false) {
             throw new \Exception("Impossibile scrivere il file: {$filePath}");
         }
 
@@ -56,7 +54,7 @@ class WriteTranslationFileAction
     /**
      * Crea un backup del file di traduzione.
      *
-     * @param string $filePath Percorso del file
+     * @param  string  $filePath  Percorso del file
      */
     private function createBackup(string $filePath): void
     {
@@ -79,7 +77,7 @@ class WriteTranslationFileAction
     /**
      * Valida la sintassi PHP del contenuto.
      *
-     * @param string $phpContent Contenuto PHP da validare
+     * @param  string  $phpContent  Contenuto PHP da validare
      *
      * @throws \Exception Se la sintassi PHP non è valida
      */
@@ -97,7 +95,7 @@ class WriteTranslationFileAction
         // Rimuove il file temporaneo
         unlink($tempFile);
 
-        if (0 !== $returnCode) {
+        if ($returnCode !== 0) {
             $errorOutput = \is_array($output) ? $output : [];
             $errorLines = array_map(
                 static fn (mixed $line): string => (string) $line,
