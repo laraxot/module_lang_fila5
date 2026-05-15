@@ -17,12 +17,11 @@ class ThemeComposer
     /**
      * Get all supported languages as a DataCollection.
      *
+     * @throws \Exception if supportedLocales config is not an array
+     * @throws \Exception if supportedLocales config is not an array
      *
      * @return DataCollection<LangData>
      * @return DataCollection<LangData>
-     *
-     * @throws \Exception if supportedLocales config is not an array
-     * @throws \Exception if supportedLocales config is not an array
      */
     public function languages(): DataCollection
     {
@@ -58,7 +57,7 @@ class ThemeComposer
             $regionalParts = explode('_', $regional);
             $regionalCode = $regionalParts[0] ?? 'en';
 
-            if ($regionalCode === 'en') {
+            if ('en' === $regionalCode) {
                 $regionalCode = 'gb';
             }
 
@@ -125,7 +124,7 @@ class ThemeComposer
         // Verifichiamo che il valore del campo sia una stringa o lo convertiamo in modo sicuro
         $value = $lang->{$field};
         if (! is_string($value)) {
-            return $field === 'id' ? $currentLocale : '';
+            return 'id' === $field ? $currentLocale : '';
         }
 
         return $value;
@@ -134,8 +133,9 @@ class ThemeComposer
     /**
      * Build the URL for the admin panel based on the current route and parameters.
      *
-     * @param  string  $locale  The locale code to build URL for
-     * @param  string  $locale  The locale code to build URL for
+     * @param string $locale The locale code to build URL for
+     * @param string $locale The locale code to build URL for
+     *
      * @return string The generated URL
      */
     private function buildAdminLanguageUrl(string $locale): string
@@ -155,8 +155,9 @@ class ThemeComposer
     /**
      * Build the HTML for the language flag.
      *
-     * @param  string  $regionalCode  The regional code for the flag
-     * @param  string  $regionalCode  The regional code for the flag
+     * @param string $regionalCode The regional code for the flag
+     * @param string $regionalCode The regional code for the flag
+     *
      * @return string The HTML for the flag
      */
     private function buildFlagHtml(string $regionalCode): string
