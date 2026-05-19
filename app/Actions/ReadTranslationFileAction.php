@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Spatie\QueueableAction\QueueableAction;
-
 class ReadTranslationFileAction
 {
     use QueueableAction;
@@ -17,10 +16,18 @@ class ReadTranslationFileAction
      */
     private function assertStringKeyedArray(array $value): array
     {
-        Assert::allString(array_keys($value), 'Translation array must have string keys.');
+        /** @var array<string, mixed> $stringKeyed */
+        $stringKeyed = [];
 
-        /* @var array<string, mixed> $value */
-        return $value;
+        foreach ($value as $key => $item) {
+            if (! is_string($key)) {
+                throw new \UnexpectedValueException('Translation array must have string keys.');
+            }
+
+            $stringKeyed[$key] = $item;
+        }
+
+        return $stringKeyed;
     }
 
     /**
