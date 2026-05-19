@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Spatie\QueueableAction\QueueableAction;
+
 class ReadTranslationFileAction
 {
     use QueueableAction;
