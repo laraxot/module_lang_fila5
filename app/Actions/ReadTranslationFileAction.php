@@ -48,8 +48,7 @@ class ReadTranslationFileAction
             throw new \Exception("File di traduzione non valido: {$filePath}");
         }
 
-        /* @phpstan-ignore return.type */
-        return $translations;
+        return $this->assertStringKeyedArray($translations);
     }
 
     /**
@@ -80,15 +79,14 @@ class ReadTranslationFileAction
         $indentStr = str_repeat('    ', $indent);
 
         foreach ($array as $key => $value) {
-            $content .= $indentStr."'".addslashes($key)."' => ";
+            $content .= $indentStr."'".addslashes((string) $key)."' => ";
 
             if (is_array($value)) {
+                $value = $this->assertStringKeyedArray($value);
                 $content .= "[\n";
-                /** @phpstan-ignore argument.type */
                 $content .= $this->arrayToPhp($value, $indent + 1);
                 $content .= $indentStr."],\n";
             } else {
-                /** @phpstan-ignore-next-line */
                 $content .= "'".addslashes((string) $value)."',\n";
             }
         }

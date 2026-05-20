@@ -13,7 +13,7 @@ use Spatie\QueueableAction\QueueableAction as QueueableActionFromSpatie;
 
 class GetAllModuleTranslationAction
 {
-    use QueueableAction;
+    use QueueableActionFromSpatie;
 
     /**
      * Restituisce il path completo del file di traduzione dato un key.
