@@ -44,7 +44,7 @@ use Sushi\Sushi as SushiFromDisk;
  */
 class TranslationFile extends BaseModel
 {
-    use Sushi;
+    use SushiFromDisk;
 
     protected $fillable = [
         'id',
