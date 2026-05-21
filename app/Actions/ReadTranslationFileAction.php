@@ -5,40 +5,31 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
 
 class ReadTranslationFileAction
 {
     use QueueableAction;
 
     /**
-     * @param array<mixed, mixed> $value
-     *
+     * @param  array<mixed, mixed>  $value
      * @return array<string, mixed>
      */
     private function assertStringKeyedArray(array $value): array
     {
-        /** @var array<string, mixed> $stringKeyed */
-        $stringKeyed = [];
+        Assert::allString(array_keys($value), 'Translation array must have string keys.');
 
-        foreach ($value as $key => $item) {
-            if (! is_string($key)) {
-                throw new \UnexpectedValueException('Translation array must have string keys.');
-            }
-
-            $stringKeyed[$key] = $item;
-        }
-
-        return $stringKeyed;
+        /** @var array<string, mixed> $value */
+        return $value;
     }
 
     /**
      * Legge il contenuto di un file di traduzione.
      *
-     * @param string $filePath Percorso del file di traduzione
+     * @param  string  $filePath  Percorso del file di traduzione
+     * @return array<string, mixed> Contenuto del file di traduzione
      *
      * @throws \Exception Se il file non esiste o non è leggibile
-     *
-     * @return array<string, mixed> Contenuto del file di traduzione
      */
     public function execute(string $filePath): array
     {
@@ -64,8 +55,7 @@ class ReadTranslationFileAction
     /**
      * Converte un array di traduzioni in formato PHP.
      *
-     * @param array<string, mixed> $translations Traduzioni da convertire
-     *
+     * @param  array<string, mixed>  $translations  Traduzioni da convertire
      * @return string Codice PHP del file di traduzione
      */
     public function toPhp(array $translations): string
@@ -80,9 +70,8 @@ class ReadTranslationFileAction
     /**
      * Converte un array in formato PHP con indentazione.
      *
-     * @param array<string, mixed> $array  Array da convertire
-     * @param int                  $indent Livello di indentazione
-     *
+     * @param  array<string, mixed>  $array  Array da convertire
+     * @param  int  $indent  Livello di indentazione
      * @return string Codice PHP dell'array
      */
     private function arrayToPhp(array $array, int $indent = 0): string
