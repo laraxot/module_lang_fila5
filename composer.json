@@ -53,17 +53,6 @@
             "canonical": false
         }
     ],
-    "repositories-comment": [
-        {
-            "type": "path",
-            "url": "./packages/lara-zeus/spatie-translatable"
-        },
-        {
-            "type": "composer",
-            "url": "https://packagist.org",
-            "canonical": false
-        }
-    ],
     "autoload": {
         "psr-4": {
             "Modules\\Lang\\": "app/",
