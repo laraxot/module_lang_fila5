@@ -14,7 +14,7 @@ abstract class LangBaseListRecords extends XotBaseListRecords
 {
     use Translatable;
 
-    protected static string $resource; // = SectionResource::class;
+    public static string $resource; // = SectionResource::class;
 
     /**
      * @return array<string, Action|ActionGroup>
