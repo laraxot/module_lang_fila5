@@ -12,11 +12,13 @@ use Modules\Lang\Tests\TestCase;
 describe('Post Model', function () {
     test('extends BaseModel', function () {
         $model = new Post();
+        $model = new Post();
 
         expect($model)->toBeInstanceOf(Modules\Lang\Models\BaseModel::class);
     });
 
     test('uses HasSlug trait', function () {
+        $model = new Post();
         $model = new Post();
 
         expect(class_uses($model))->toHaveKey('Spatie\Sluggable\HasSlug');
@@ -24,17 +26,20 @@ describe('Post Model', function () {
 
     test('uses HasXotFactory trait', function () {
         $model = new Post();
+        $model = new Post();
 
         expect(class_uses($model))->toHaveKey('Modules\Xot\Models\Traits\HasXotFactory');
     });
 
     test('uses Updater trait', function () {
         $model = new Post();
+        $model = new Post();
 
         expect(class_uses($model))->toHaveKey('Modules\Xot\Traits\Updater');
     });
 
     test('has correct connection', function () {
+        $model = new Post();
         $model = new Post();
 
         expect($model->getConnectionName())->toBe('lang');
@@ -50,17 +55,20 @@ describe('Post Model', function () {
 
     test('has incrementing enabled', function () {
         $model = new Post();
+        $model = new Post();
 
         expect($model->incrementing)->toBeTrue();
     });
 
     test('has default perPage', function () {
         $model = new Post();
+        $model = new Post();
 
         expect($model->getPerPage())->toBe(30);
     });
 
     test('has correct fillable attributes', function () {
+        $model = new Post();
         $model = new Post();
         $fillable = $model->getFillable();
 
@@ -73,11 +81,13 @@ describe('Post Model', function () {
 
     test('has getSlugOptions method', function () {
         $model = new Post();
+        $model = new Post();
 
         expect(method_exists($model, 'getSlugOptions'))->toBeTrue();
     });
 
     test('has linkable relationship', function () {
+        $model = new Post();
         $model = new Post();
 
         expect(method_exists($model, 'linkable'))->toBeTrue();
@@ -85,11 +95,13 @@ describe('Post Model', function () {
 
     test('has toSearchableArray method', function () {
         $model = new Post();
+        $model = new Post();
 
         expect(method_exists($model, 'toSearchableArray'))->toBeTrue();
     });
 
     test('casts datetime fields', function () {
+        $model = new Post();
         $model = new Post();
         $casts = $model->getCasts();
 
@@ -100,6 +112,7 @@ describe('Post Model', function () {
     });
 
     test('casts array fields', function () {
+        $model = new Post();
         $model = new Post();
         $casts = $model->getCasts();
 
