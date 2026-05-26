@@ -6,17 +6,14 @@ namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use function Safe\glob;
-
-use Spatie\QueueableAction\QueueableAction as QueueableActionFromSpatie;
 
 use function Safe\glob;
 
-use Spatie\QueueableAction\QueueableAction as QueueableActionFromSpatie;
+use Spatie\QueueableAction\QueueableAction;
 
 class GetAllModuleTranslationAction
 {
-    use QueueableActionFromSpatie;
+    use QueueableAction;
 
     /**
      * Restituisce il path completo del file di traduzione dato un key.
