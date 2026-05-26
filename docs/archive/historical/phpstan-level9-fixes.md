@@ -14,6 +14,7 @@ Durante un controllo di routine sono stati rilevati diversi conflitti Git non ri
 
 ## Soluzione Applicata
 - Risolto il conflitto scegliendo la versione con i controlli di tipo espliciti.
+- Aggiornato il codice per rispettare le regole PHPStan livello 9.
 - Aggiunto commento in codice e in questa documentazione.
 - Validato il file con PHPStan livello 9.
 
