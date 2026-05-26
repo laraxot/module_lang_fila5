@@ -1,40 +1,37 @@
-# 🚀 Lang - The Ultimate Module for Laravel
+# Lang: il modulo che trasforma complessita in vantaggio operativo
 
-## Why Lang?
+Internationalization and localization module for the Laraxot ecosystem: translations, languages, and locale management.
 
-- **Blazing Fast** ⚡ - Optimized for performance.
-- **Seamless Integration** 🔗 - Works out of the box with your Laravel app.
-- **Beautiful & Modern** 🎨 - Clean code and modern design.
-- **Production Ready** 🏢 - Used by thousands of developers.
+## Perche guardarlo adesso
 
-### Key Features
+- Riduce attrito operativo con convenzioni Laraxot gia pronte.
+- Porta documentazione, release e changelog nello stesso flusso verificabile.
+- Aiuta team e agenti AI a capire subito scopo, confini e prossime mosse.
+- E pensato per crescere: semantic versioning, auto release e changelog automatico sono gia configurati.
 
-- Feature 1: High performance and low memory usage.
-- Feature 2: Easy to integrate with existing codebases.
-- Feature 3: Comprehensive documentation and support.
+## Cosa promette
 
-### Quick Start
+Questo modulo non e solo codice: e una vetrina operativa. Mostra dove intervenire, cosa leggere, come rilasciare e come mantenere alta la confidenza tecnica.
 
-1. **Install** via Composer: `composer require vendor/Lang`
-2. **Publish** assets: `php artisan vendor:publish --provider="Vendor\\Lang\\ServiceProvider"`
-3. **Enjoy**! 🎉
+## Release automation
 
-### Documentation
+- Workflow: [Semantic Release](./.github/workflows/semantic-release.yml)
+- Config: [.releaserc.json](./.releaserc.json)
+- Changelog: [CHANGELOG.md](./CHANGELOG.md)
 
-- [Installation](docs/installation.md)
-- [Configuration](docs/configuration.md)
-- [API Reference](docs/api.md)
-- [Changelog](docs/changelog.md)
+## Documentazione essenziale
 
-### Support
+- [Second brain locale](./docs/wiki/index.md)
+- [Audit ridondanza](./docs/code-redundancy-audit.md)
+- [Protocollo confidenza](./docs/agent-confidence-protocol.md)
+- [Disciplina agenti](./docs/agent-edit-discipline.md)
+- [00 Index](./docs/00-INDEX.md)
+- [00 Index](./docs/00-index.md)
+- [Changelog](./docs/CHANGELOG.md)
+- [Index](./docs/INDEX.md)
+- [Locale Management](./docs/LOCALE_MANAGEMENT.md)
+- [Mcamara Implementation Guide](./docs/MCAMARA_IMPLEMENTATION_GUIDE.md)
 
-- [FAQ](docs/faq.md)
-- [Troubleshooting](docs/troubleshooting.md)
+## Filosofia
 
-### Contributing
-
-We welcome contributions! Please read [CONTRIBUTING](docs/contributing.md) first.
-
----
-
-Crafted with ❤️ by the development team.
+Scopo prima del codice. DRY prima dell'orgoglio. KISS prima dell'astrazione. La release automatica non sostituisce il giudizio: lo rende tracciabile.
