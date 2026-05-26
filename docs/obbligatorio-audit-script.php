@@ -66,8 +66,6 @@ function auditObbligatorioInNonItalianFiles(string $basePath): array
             foreach ($lines as $line) {
                 ++$lineNumber;
                 if (false !== stripos($line, $pattern)) {
-                $lineNumber++;
-                if (stripos($line, $pattern) !== false) {
                     $fileIssues[] = [
                         'pattern' => $pattern,
                         'line' => $lineNumber,

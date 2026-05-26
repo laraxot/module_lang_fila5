@@ -53,7 +53,7 @@ class LanguageSwitcherWidget extends XotBaseWidget
     /**
      * Ottiene le lingue disponibili nel sistema.
      *
-     * @return Collection Collection of available locales with keys: code, name, native_name, flag
+     * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
      */
     public function getAvailableLocales(): Collection
     {
@@ -67,8 +67,6 @@ class LanguageSwitcherWidget extends XotBaseWidget
     /**
      * Cambia la lingua corrente.
      *
-     * @param string $locale Codice della lingua
-     * @param string $locale Codice della lingua
      * @param string $locale Codice della lingua
      * @param string $locale Codice della lingua
      *
@@ -88,8 +86,6 @@ class LanguageSwitcherWidget extends XotBaseWidget
     /**
      * Genera l'URL per una specifica lingua.
      *
-     * @param string $locale Codice della lingua     *
-     * @param string $locale Codice della lingua
      * @param string $locale Codice della lingua     *
      * @param string $locale Codice della lingua
      *
