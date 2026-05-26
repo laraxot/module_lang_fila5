@@ -34,11 +34,7 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 - `txt.php`: `'title_required' => 'The title is required'`
 - `edit_section.php`: `'required' => 'This field is required'`
 
-<<<<<<<< HEAD:docs/legacy/translation_errors_correction_2025.md
 #### ✅ Modulo <nome progetto>
-========
-#### ✅ Modulo <main module>
->>>>>>>> 38d2a3b (.):docs/translation_errors_correction.md
 **File Tedeschi (DE):**
 - `doctor_availability_calendar.php`: `'required' => 'Dieses Feld ist erforderlich'`
 - `appointment.php`: `'required' => 'Das Feld :attribute ist erforderlich'`
@@ -184,20 +180,12 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 
 ### Moduli con Documentazione Aggiornata
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
-<<<<<<<< HEAD:docs/legacy/translation_errors_correction_2025.md
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
-========
-2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
->>>>>>>> 38d2a3b (.):docs/translation_errors_correction.md
 
 ### Collegamenti Bidirezionali
-- [Root Docs: Translation Standards](../../docs/translation_standards.md)
+- [Root Docs: Translation Standards](../../../docs/translation_standards.md)
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
-<<<<<<<< HEAD:docs/legacy/translation_errors_correction_2025.md
 - [<nome progetto> Module: Translation Guidelines](../<nome progetto>/docs/translation_guidelines.md)
-========
-- [<main module> Module: Translation Guidelines](../<main module>/docs/translation_guidelines.md)
->>>>>>>> 38d2a3b (.):docs/translation_errors_correction.md
 
 ## Riepilogo Statistiche
 
@@ -209,11 +197,7 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 ### Moduli Interessati
 1. Lang Module ✅
 2. DbForge Module ✅
-<<<<<<<< HEAD:docs/legacy/translation_errors_correction_2025.md
 3. <nome progetto> Module ✅
-========
-3. <main module> Module ✅
->>>>>>>> 38d2a3b (.):docs/translation_errors_correction.md
 4. Notify Module ✅
 5. FormBuilder Module ✅
 6. <nome modulo> Module ✅
@@ -263,6 +247,6 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 
 ---
 
-**Ultimo aggiornamento**: Gennaio 2025
+**
 **Autore**: Sistema di Correzione Automatica
 **Versione**: 1.0

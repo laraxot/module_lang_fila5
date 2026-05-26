@@ -96,6 +96,8 @@ Thumbs.db
 *.old2
 *.backup
 *.backup.*
+*.backup-*
+*.backup_*
 *.bak
 *.bakcup
 *.new
@@ -157,3 +159,4 @@ public_html
 lang/lang/
 _docs/
 _docs/
+packages/lara-zeus/
