@@ -10,7 +10,8 @@ use Tests\TestCase;
 uses(TestCase::class);
 
 beforeEach(function () {
-    $baseModel = new class extends BaseModel {
+    $baseModel = new class extends BaseModel
+    {
         protected $table = 'test_lang_table';
     };
 });
