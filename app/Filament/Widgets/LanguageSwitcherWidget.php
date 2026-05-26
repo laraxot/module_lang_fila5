@@ -69,6 +69,8 @@ class LanguageSwitcherWidget extends XotBaseWidget
      *
      * @param string $locale Codice della lingua
      * @param string $locale Codice della lingua
+     * @param string $locale Codice della lingua
+     * @param string $locale Codice della lingua
      *
      * @return void *
      */
@@ -86,6 +88,8 @@ class LanguageSwitcherWidget extends XotBaseWidget
     /**
      * Genera l'URL per una specifica lingua.
      *
+     * @param string $locale Codice della lingua     *
+     * @param string $locale Codice della lingua
      * @param string $locale Codice della lingua     *
      * @param string $locale Codice della lingua
      *
