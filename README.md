@@ -1,140 +1,40 @@
----
-title: Lang
-module: lang
-related: Xot
-status: production
----
+# 🚀 Lang - The Ultimate Module for Laravel
 
-# Lang Module
+## Why Lang?
 
-**Module**: `lang`
-**Namespace**: `Modules\Lang\`
-**Status**: ✅ Production
-
----
-
-## Overview
-
-Il modulo Lang gestisce il sistema di localizzazione dell'intera applicazione: sincronizza i file di traduzione tra moduli, fornisce un editor visuale in Filament per modificare le traduzioni senza toccare i file, valida la completezza delle traduzioni tramite comandi Artisan, e integra Spatie/Astrotomic Translatable per modelli multilingua.
+- **Blazing Fast** ⚡ - Optimized for performance.
+- **Seamless Integration** 🔗 - Works out of the box with your Laravel app.
+- **Beautiful & Modern** 🎨 - Clean code and modern design.
+- **Production Ready** 🏢 - Used by thousands of developers.
 
 ### Key Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Feature 1: High performance and low memory usage.
+- Feature 2: Easy to integrate with existing codebases.
+- Feature 3: Comprehensive documentation and support.
 
-### Module Dependencies
+### Quick Start
 
-- [Xot](../Xot/README.md) (required)
+1. **Install** via Composer: `composer require vendor/Lang`
+2. **Publish** assets: `php artisan vendor:publish --provider="Vendor\\Lang\\ServiceProvider"`
+3. **Enjoy**! 🎉
 
----
+### Documentation
 
-## Quick Start
+- [Installation](docs/installation.md)
+- [Configuration](docs/configuration.md)
+- [API Reference](docs/api.md)
+- [Changelog](docs/changelog.md)
 
-### Installation
+### Support
 
-```bash
-# Already included in main project
-# No additional setup required
-```
+- [FAQ](docs/faq.md)
+- [Troubleshooting](docs/troubleshooting.md)
 
-### Basic Usage
+### Contributing
 
-```php
-use Modules\Lang\Models\YourModel;
-
-$item = YourModel::first();
-```
-
-### Configuration
-
-Configuration file: `config/lang.php`
-
-Key settings:
-- `setting1` - Description
-- `setting2` - Description
+We welcome contributions! Please read [CONTRIBUTING](docs/contributing.md) first.
 
 ---
 
-## Architecture
-
-### Directory Structure
-
-```
-Lang/
-├── src/
-│   ├── Models/
-│   ├── Controllers/
-│   ├── Resources/
-│   ├── Actions/
-│   └── Traits/
-├── routes/
-│   ├── api.php
-│   └── web.php
-├── database/
-│   ├── migrations/
-│   └── seeders/
-├── tests/
-│   ├── Unit/
-│   └── Feature/
-├── config/
-│   └── lang.php
-├── docs/
-│   └── README.md
-└── composer.json
-```
-
-### Key Components
-
-
-
----
-
-## API Reference
-
-Reference
-
----
-
-## Usage Examples
-
-### Common Tasks
-
-#### Task 1: Description
-
-```php
-// Code example
-```
-
----
-
-## Testing
-
-### Running Tests
-
-```bash
-# Run all module tests
-composer test -- Modules/Lang
-```
-
----
-
-## Troubleshooting
-
-### Common Issues
-
-#### Issue: Problem description
-
-**Solution**: How to fix this issue
-
----
-
-## Related Modules
-
-### Dependencies
-
-- [Xot](../Xot/README.md) - Required module
-
----
-
-Navigation: [Project Home](../../docs/INDEX.md) | [Modules](../../docs/modules/README.md)
+Crafted with ❤️ by the development team.
