@@ -18,10 +18,9 @@ trait HasStrictTranslations
     /**
      * Ottiene la traduzione di un attributo in una specifica lingua.
      *
-     * @param string $key               Il nome dell'attributo da tradurre
-     * @param string $locale            Il codice della lingua richiesta
-     * @param bool   $useFallbackLocale Se utilizzare o meno la lingua di fallback
-     *
+     * @param  string  $key  Il nome dell'attributo da tradurre
+     * @param  string  $locale  Il codice della lingua richiesta
+     * @param  bool  $useFallbackLocale  Se utilizzare o meno la lingua di fallback
      * @return string|array|int|null Il valore tradotto dell'attributo
      */
     public function getTranslation(string $key, string $locale, bool $useFallbackLocale = true): string|array|int|null
