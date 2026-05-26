@@ -1,34 +1,7 @@
-# Analisi Modelli, Factory e Seeder - Modulo Lang
-
-## Riepilogo Modelli
-
-### Modelli Presenti
-1. **Post** - Post multilingua
-2. **Translation** - Traduzioni
-3. **TranslationFile** - File di traduzione
-
-### Factory Presenti
-- ✅ **PostFactory** - Presente
-- ✅ **TranslationFactory** - Presente
-- ✅ **TranslationFileFactory** - Presente
-
-### Seeder Presenti
-- ✅ **LangDatabaseSeeder** - Seeder principale del modulo
-
-## Stato di Completezza
-
-| Modello | Factory | Utilizzo Business Logic |
-|---------|---------|------------------------|
-| Post | ✅ | ✅ Alto |
-| Translation | ✅ | ✅ Alto |
-| TranslationFile | ✅ | ✅ Alto |
-
-## Analisi Utilizzo
-- **Tutti i modelli sono CRITICI** per il sistema multilingua
-- **Translation/TranslationFile**: Gestione traduzioni dinamiche
-- **Post**: Contenuti multilingua
-
-## Stato Generale: ✅ COMPLETO
-
 ---
-*Ultimo aggiornamento: 2025-01-06*
+module: theme
+topic: models-factory-seeder-analysis
+canonical: ../../../Themes/docs/shared-components/models-factory-seeder-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/models-factory-seeder-analysis.md
