@@ -23,6 +23,7 @@
 **Soluzione**:
 - Cambiato return type da `void` a `MorphTo` per `linkable()`
 - Cambiato return type da `void` a `array` per `toSearchableArray()`
+- Aggiornato PHPDoc per `toSearchableArray()`: `array<string, string|null>`
 
 ### 4. TranslatorService.php
 **Errori**:
@@ -33,6 +34,7 @@
 **Soluzione**:
 - Aggiunto parametri mancanti: `get($key, $replace = [], $locale = null, $fallback = true)`
 - Cambiato return type da `void` a `string|array`
+- Aggiornato PHPDoc per includere parametro `$replace`
 
 ### 5. Flag.php
 **Errore**: Constructor has a return type
@@ -54,6 +56,7 @@
 
 **Soluzione**:
 - Cambiato return type da `void` a `array`
+- Aggiornato PHPDoc: `array<string, mixed>`
 
 ### 8. ListTranslationFiles.php
 **Errore**: PHPDoc tag @var not subtype of native type
