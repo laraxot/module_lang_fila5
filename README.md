@@ -7,7 +7,9 @@
 - **Beautiful & Modern** 🎨 - Clean code and modern design.
 - **Production Ready** 🏢 - Used by thousands of developers.
 
-## Release automation
+1. **Install** via Composer: `composer require vendor/Lang`
+2. **Publish** assets: `php artisan vendor:publish --provider="Vendor\\Lang\\ServiceProvider"`
+3. **Enjoy**! 🎉
 
 - Feature 1: High performance and low memory usage.
 - Feature 2: Easy to integrate with existing codebases.
@@ -35,6 +37,7 @@
 
 We welcome contributions! Please read [CONTRIBUTING](docs/contributing.md) first.
 
-## Filosofia
+- [FAQ](docs/faq.md)
+- [Troubleshooting](docs/troubleshooting.md)
 
 Crafted with ❤️ by the development team.
