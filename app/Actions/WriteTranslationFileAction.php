@@ -97,6 +97,7 @@ class WriteTranslationFileAction
         unlink($tempFile);
 
         if (0 !== $returnCode) {
+<<<<<<< HEAD
             $lines = [];
             foreach ($output as $line) {
                 if (is_string($line)) {
@@ -104,6 +105,9 @@ class WriteTranslationFileAction
                 }
             }
             $error = implode("\n", $lines);
+=======
+            $error = implode("\n", $output ?? []);
+>>>>>>> 0ca50a9 (Check & fix styling)
             throw new \Exception("Sintassi PHP non valida: {$error}");
         }
     }
