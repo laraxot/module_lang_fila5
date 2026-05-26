@@ -519,6 +519,14 @@ return [
             'helper_text' => 'coordinates',
             'description' => 'coordinates',
         ],
+        'file1' => [
+            'jpg' => [
+                'label' => 'file1.jpg',
+                'placeholder' => 'file1.jpg',
+                'helper_text' => 'file1.jpg',
+                'description' => 'file1.jpg',
+            ],
+        ],
     ],
     'actions' => [
         'authenticate' => [
