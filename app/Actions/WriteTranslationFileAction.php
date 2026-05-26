@@ -20,11 +20,8 @@ class WriteTranslationFileAction
     /**
      * Scrive il contenuto in un file di traduzione con backup automatico.
      *
-     * @param string               $filePath     Percorso del file di traduzione
-     * @param array<string, mixed> $translations Traduzioni da scrivere
-     *
-     * @throws \Exception Se il file non può essere scritto
-     *
+     * @param  string  $filePath  Percorso del file di traduzione
+     * @param  array<string, mixed>  $translations  Traduzioni da scrivere
      * @return bool True se il file è stato scritto con successo
      * @return bool True se il file è stato scritto con successo
      */
@@ -86,24 +83,25 @@ class WriteTranslationFileAction
     private function validatePhpSyntax(string $phpContent): void
     {
         // Crea un file temporaneo per la validazione
-        $tempFile = tempnam(sys_get_temp_dir(), 'translation_');
+        $tempFile = tempnam(storage_path('framework/cache'), 'translation_');
         file_put_contents($tempFile, $phpContent);
 
         // Esegue php -l per validare la sintassi
-        $output = [];
+        $rawOutput = [];
         $returnCode = 0;
-        exec("php -l {$tempFile} 2>&1", $output, $returnCode);
+        exec("php -l {$tempFile} 2>&1", $rawOutput, $returnCode);
+        $output = is_array($rawOutput) ? $rawOutput : [];
 
-        // Rimuove il file temporaneo
         unlink($tempFile);
 
         if (0 !== $returnCode) {
-            $errorOutput = \is_array($output) ? $output : [];
-            $errorLines = array_map(
-                static fn (mixed $line): string => (string) $line,
-                $errorOutput,
-            );
-            $error = implode("\n", $errorLines);
+            $lines = [];
+            foreach ($output as $line) {
+                if (is_string($line)) {
+                    $lines[] = $line;
+                }
+            }
+            $error = implode("\n", $lines);
             throw new \Exception("Sintassi PHP non valida: {$error}");
         }
     }
