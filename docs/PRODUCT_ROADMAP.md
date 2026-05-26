@@ -2,7 +2,6 @@
 
 **Module:** Lang  
 **Version:** 1.0.0  
-**Last Updated:** March 12, 2026  
 **Owner:** Product Team  
 **Status:** In Development
 
@@ -100,4 +99,3 @@ To provide **comprehensive internationalization (i18n) and localization (l10n) c
 
 ---
 
-*Last Updated: March 12, 2026*
