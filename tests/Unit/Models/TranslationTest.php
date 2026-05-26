@@ -12,6 +12,7 @@ use Modules\Lang\Tests\TestCase;
 describe('Translation Model', function () {
     test('has correct fillable attributes', function () {
         $model = new Translation();
+        $model = new Translation();
         $fillable = $model->getFillable();
 
         expect($fillable)->toContain('id');
@@ -46,6 +47,7 @@ describe('Translation Model', function () {
     });
 
     test('casts datetime fields', function () {
+        $model = new Translation();
         $model = new Translation();
         $casts = $model->getCasts();
 
