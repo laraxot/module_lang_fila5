@@ -36,7 +36,7 @@ class TranslatorService extends LaravelTranslator
     /*
      * public function setTranslationManager(Manager $manager)
      * {
-     * $manager = $manager;
+     * $this->manager = $manager;
      * }
      */
     /**
