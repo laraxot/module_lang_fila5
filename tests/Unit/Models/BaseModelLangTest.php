@@ -12,6 +12,8 @@ use Modules\Lang\Tests\TestCase;
 describe('BaseModelLang', function () {
     test('has correct connection', function () {
         $model = new class extends BaseModelLang {
+        $model = new class extends BaseModelLang
+        {
             protected $table = 'test';
         };
 
@@ -34,6 +36,8 @@ describe('BaseModelLang', function () {
 
     test('has timestamps enabled', function () {
         $model = new class extends BaseModelLang {
+        $model = new class extends BaseModelLang
+        {
             protected $table = 'test';
         };
 
@@ -42,6 +46,8 @@ describe('BaseModelLang', function () {
 
     test('has incrementing set from property', function () {
         $model = new class extends BaseModelLang {
+        $model = new class extends BaseModelLang
+        {
             protected $table = 'test';
         };
 
@@ -50,6 +56,8 @@ describe('BaseModelLang', function () {
 
     test('has default perPage', function () {
         $model = new class extends BaseModelLang {
+        $model = new class extends BaseModelLang
+        {
             protected $table = 'test';
         };
 
@@ -58,6 +66,8 @@ describe('BaseModelLang', function () {
 
     test('casts id as string', function () {
         $model = new class extends BaseModelLang {
+        $model = new class extends BaseModelLang
+        {
             protected $table = 'test';
         };
 
@@ -67,6 +77,8 @@ describe('BaseModelLang', function () {
 
     test('casts datetime fields', function () {
         $model = new class extends BaseModelLang {
+        $model = new class extends BaseModelLang
+        {
             protected $table = 'test';
         };
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Lang\app\Filament\Resources\TranslationFileResource\Tables;
+namespace Modules\Lang\Filament\Resources\TranslationFileResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
@@ -16,7 +16,7 @@ class TranslationFilesTable extends XotBaseResourceTable
     public function getTableColumns(): array
     {
         /*
-         * @return array<int\|string, \Filament\Tables\Columns\Column>
+         * @return array<int|string, \Filament\Tables\Columns\Column>
          */
         return [
             'id' => TextColumn::make('id')->sortable(),
