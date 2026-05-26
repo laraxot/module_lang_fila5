@@ -14,7 +14,6 @@ Stub **DRY**. Documentazione canonica nel modulo **Media** (issue [#124](https:/
 → [index.md](../../../Media/docs/html2pdf/index.md)
 =======
 **Repository:** https://github.com/spipu/html2pdf
-**Versione utilizzata:** ^5.2 → **Aggiornato a 5.3.3** (Giugno 2025)
 **Licenza:** OSL-3.0
 
 ---
