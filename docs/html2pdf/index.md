@@ -10,4 +10,89 @@ related:
 
 Stub **DRY**. Documentazione canonica nel modulo **Media** (issue [#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
 
+<<<<<<< HEAD
 → [index.md](../../../Media/docs/html2pdf/index.md)
+=======
+**Repository:** https://github.com/spipu/html2pdf
+**Licenza:** OSL-3.0
+
+---
+
+## 🆕 **Novità Versione 5.3.x (2025)**
+
+### 🔒 **Security Service Avanzato**
+Html2Pdf 5.3+ include un [servizio di sicurezza](./security.md) configurabile per proteggere da accessi non autorizzati.
+
+### 📝 **Supporto Readonly Attributes**
+Nuovo supporto per attributi `readonly` negli elementi input e textarea.
+
+### 📄 **Classe html2pdf-same-page**
+Previene la divisione di tabelle tra pagine multiple.
+
+### 🎨 **CSS con Variabili di Pagina**
+Utilizzo di `[[page_cu]]` nei nomi delle classi CSS.
+
+### 🏷️ **Nuovi Tag HTML Supportati**
+- `<strike>` - Testo barrato
+- `<figure>` - Contenitori di figure
+
+### 🔧 **Miglioramenti Tecnici**
+- **PHP 8.4 Full Support**
+- **TCPDF Updated**
+- **Performance e Memory Usage migliorati**
+
+---
+
+## 🚀 Installazione e Configurazione
+
+### Composer Installation
+```bash
+composer require spipu/html2pdf
+```
+
+### Dipendenze Richieste
+```json
+{
+    "require": {
+        "php": ">=7.2",
+        "spipu/html2pdf": "^5.2",
+        "tecnickcom/tcpdf": "^6.6"
+    }
+}
+```
+
+### Estensioni PHP Necessarie
+```ini
+extension=gd
+extension=mbstring
+```
+
+---
+
+## 🏗️ Architettura nel Progetto
+
+### Struttura di Integrazione
+```
+Modules/Xot/
+├── app/
+│   ├── Actions/
+│   │   ├── Pdf/
+│   │   │   ├── GetPdfContentByRecordAction.php    # PDF da record
+│   │   │   ├── ContentPdfAction.php               # PDF da HTML/view
+│   │   │   ├── StreamDownloadPdfAction.php        # Download diretto
+│   │   │   └── Engine/
+│   │   │       ├── SpipuPdfByHtmlAction.php       # Engine spipu
+│   │   │       └── SpatiePdfByHtmlAction.php      # Engine spatie
+│   └── Datas/
+│       └── PdfData.php                            # DTO PDF
+```
+
+### Engine Supportati
+```php
+enum PdfEngineEnum
+{
+    case SPIPU;    // spipu/html2pdf (default)
+    case SPATIE;   // spatie/laravel-pdf (alternative)
+}
+```
+>>>>>>> 7218a66 (.)
