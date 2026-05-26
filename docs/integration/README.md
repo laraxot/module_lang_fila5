@@ -1,11 +1,7 @@
-# readme
+---
+module: theme
+topic: README
+canonical: ../../../../Themes/docs/shared-components/README-Modules.md
+---
 
-<!-- Contenuto migrato da _docs/readme.txt -->
-
-https://github.com/dimsav/laravel-translatable
-
-https://github.com/Astrotomic/laravel-translatable !!
-
-https://github.com/spatie/laravel-translatable
-
-https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-translations/
+See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md
