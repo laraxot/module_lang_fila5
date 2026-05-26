@@ -1,7 +1,7 @@
-# filament
+---
+module: theme
+topic: filament
+canonical: ../../../../Themes/docs/shared-components/filament-Modules.md
+---
 
-<!-- Contenuto migrato da _docs/filament.txt -->
-
-https://github.com/statikbe/laravel-filament-chained-translation-manager
-
-https://filamentphp.com/plugins/34ml-translatable-field
+See canonical documentation: ../../../../Themes/docs/shared-components/filament-Modules.md
