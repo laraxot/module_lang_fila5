@@ -1,7 +1,6 @@
 # Conflict Resolution — Module Lang
 
 ## Summary
-<<<<<<< HEAD
 - **Files resolved**: 14
 - **Strategy**: Keep HEAD/local (ours) side
 - **Root cause**: Nested stash-on-merge conflicts
@@ -10,16 +9,6 @@
 - database/Migrations_old/2024_03_20_000001_create_language_lines_table.php
 
 ## Documentation Files
-=======
-- **Files resolved**: 13
-- **Strategy**: Keep HEAD/local (ours) side
-- **Root cause**: Nested stash-on-merge conflicts
-
-## PHP Files Resolved
-None
-
-## Documentation Files Resolved
->>>>>>> 38d2a3b (.)
 - docs/documentation_link_conventions.md
 - docs/english_translation_audit.md
 - docs/integration_mc_laravel_localization.md
@@ -34,14 +23,5 @@ None
 - docs/translation_keys_rules.md
 - docs/translation_notify_conversion.md
 
-<<<<<<< HEAD
-=======
-## Config Files Resolved
-None
-
-## Translation Files Resolved
-None
-
->>>>>>> 38d2a3b (.)
 ## Backlinks
 - [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)

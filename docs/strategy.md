@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Product Strategy: Lang Module
 
 ## 🌍 Market Context
@@ -14,7 +13,3 @@ Public Administration tools must be accessible and localized to the highest stan
 
 ## 🗺️ Strategic Roadmap (1-2 Years)
 Integration with external Translation Management Systems (TMS) like Crowdin or Lokalise.
-=======
-# Product Strategy Doc - Lang Module
-Focus su riusabilità e agnosticismo architetturale.
->>>>>>> 7218a66 (.)
