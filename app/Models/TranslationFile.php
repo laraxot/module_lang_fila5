@@ -17,7 +17,7 @@ use Modules\Xot\Contracts\ProfileContract;
 
 use function Safe\json_encode;
 
-use Sushi\Sushi;
+use Sushi\Sushi as SushiFromDisk;
 
 /**
  * @property string|null                  $key
@@ -44,7 +44,7 @@ use Sushi\Sushi;
  */
 class TranslationFile extends BaseModel
 {
-    use Sushi;
+    use SushiFromDisk;
 
     protected $fillable = [
         'id',
