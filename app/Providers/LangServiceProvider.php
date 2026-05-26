@@ -48,7 +48,6 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     public function registerFilamentLabel(): void
     {
-        
         Select::configureUsing(function (Select $component) {
             $component->placeholder(__('filament-forms::components.select.placeholder'));
 
