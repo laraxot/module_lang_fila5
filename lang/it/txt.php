@@ -527,24 +527,6 @@ return [
                 'description' => 'file1.jpg',
             ],
         ],
-        'id' => [
-            'label' => 'id',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'updated_at' => [
-            'label' => 'updated_at',
-        ],
-        'appointment_date' => [
-            'label' => 'appointment_date',
-            'placeholder' => 'appointment_date',
-            'helper_text' => 'appointment_date',
-            'description' => 'appointment_date',
-        ],
-        'contact' => [
-            'label' => 'contact',
-        ],
     ],
     'actions' => [
         'authenticate' => [
