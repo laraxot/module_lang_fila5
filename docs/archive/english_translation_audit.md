@@ -31,14 +31,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Risolto: 2025-01-06
 
 2. **Modules/UI/lang/en/opening_hours_field.php** ✅ CORRETTO
-   - Status: Aggiornato completamente
    - Problemi: Mancavano molte voci presenti in italiano + sintassi array() invece di []
    - Risolto: 2025-01-06
    - Aggiunte: Tutte le voci mancanti (morning, afternoon, morning_label, afternoon_label, etc.)
    - Convertito: Sintassi short array []
 
 3. **Modules/<nome progetto>/lang/en/doctor.php** ✅ CORRETTO
-   - Status: Aggiornato completamente
    - Problemi: Sintassi array() invece di [] + molte voci mancanti dalla versione italiana
    - Risolto: 2025-01-06
    - Aggiunte: Tutte le voci mancanti (steps, fields, filters, actions, messages, sections, validation, empty_state, specialties)
@@ -46,7 +44,6 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Struttura: Allineata completamente con la versione italiana
 
 4. **Modules/<nome progetto>/lang/de/doctor.php** ✅ CORRETTO
-   - Status: Aggiornato completamente
    - Problemi: Era completamente in italiano invece che in tedesco + sintassi array() invece di []
    - Risolto: 2025-01-06
    - Tradotto: Tutto il contenuto in tedesco appropriato
@@ -54,14 +51,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Convertito: Sintassi short array []
 
 5. **Modules/<nome progetto>/lang/en/user_type_enum.php** ✅ CORRETTO
-   - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
    - Risolto: 2025-01-06
    - Traduzioni: Complete in inglese (Doctor, Patient, Administrator)
    - Convertito: Sintassi short array [] + declare(strict_types=1)
 
 6. **Modules/<nome progetto>/lang/de/user_type_enum.php** ✅ CORRETTO
-   - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
    - Risolto: 2025-01-06
    - Traduzioni: Complete in tedesco (Arzt, Patient, Administrator)
