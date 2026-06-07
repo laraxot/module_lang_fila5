@@ -35,6 +35,7 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 - `edit_section.php`: `'required' => 'This field is required'`
 
 #### ✅ Modulo <nome progetto>
+#### ✅ Modulo <main module>
 **File Tedeschi (DE):**
 - `doctor_availability_calendar.php`: `'required' => 'Dieses Feld ist erforderlich'`
 - `appointment.php`: `'required' => 'Das Feld :attribute ist erforderlich'`
@@ -181,11 +182,13 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 ### Moduli con Documentazione Aggiornata
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
+2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali
 - [Root Docs: Translation Standards](../../docs/translation_standards.md)
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
 - [<nome progetto> Module: Translation Guidelines](../<nome progetto>/docs/translation_guidelines.md)
+- [<main module> Module: Translation Guidelines](../<main module>/docs/translation_guidelines.md)
 
 ## Riepilogo Statistiche
 
@@ -198,6 +201,7 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 1. Lang Module ✅
 2. DbForge Module ✅
 3. <nome progetto> Module ✅
+3. <main module> Module ✅
 4. Notify Module ✅
 5. FormBuilder Module ✅
 6. <nome modulo> Module ✅
