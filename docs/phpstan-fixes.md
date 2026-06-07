@@ -1,7 +1,4 @@
 ---
-module: theme
-topic: phpstan-fixes
-canonical: ../../../Themes/docs/shared-components/phpstan-fixes.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes.md
+*Ultimo aggiornamento: Gennaio 2025*
+*Ultimo aggiornamento: Gennaio 2025*
+*Stato: ✅ Completato - 0 errori PHPStan*
