@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 // Helper functions for this test
 if (! function_exists('createTranslationFile')) {
     function createTranslationFile(string $filePath, array $translations): void
