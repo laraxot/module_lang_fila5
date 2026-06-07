@@ -1,13 +1,13 @@
 # Modulo Lang
 
-Data: 2025-04-23 19:09:56
+Data: [DATE] 19:09:56
 
 ## Informazioni generali
 
 - **Namespace principale**: Modules\\Lang
 Modules\\Lang\\Database\\Factories
 Modules\\Lang\\Database\\Seeders
-- **Pacchetto Composer**: laraxot/module_lang_fila3
+- **Pacchetto Composer**: laraxot/module_lang_fila5
 Marco Sottana
 - **Dipendenze**: mcamara/laravel-localization ^2.2 spatie/laravel-sluggable * repositories type path url ../Xot type path url ../Tenant type path url ../UI autoload psr-4
 - **Totale file PHP**: 103
@@ -474,24 +474,24 @@ tests/Unit
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/project_docs/structure.md)
-* [structure.md](../../../Gdpr/project_docs/structure.md)
-* [structure.md](../../../Notify/project_docs/structure.md)
-* [structure.md](../../../Xot/project_docs/structure.md)
-* [structure.md](../../../Xot/project_docs/base/structure.md)
-* [structure.md](../../../Xot/project_docs/config/structure.md)
-* [structure.md](../../../User/project_docs/structure.md)
-* [structure.md](../../../UI/project_docs/structure.md)
-* [structure.md](../../../Lang/project_docs/structure.md)
-* [structure.md](../../../Job/project_docs/structure.md)
-* [structure.md](../../../Media/project_docs/structure.md)
-* [structure.md](../../../Tenant/project_docs/structure.md)
-* [structure.md](../../../Activity/project_docs/structure.md)
-* [structure.md](../../../Cms/project_docs/structure.md)
-* [structure.md](../../../Cms/project_docs/themes/structure.md)
-* [structure.md](../../../Cms/project_docs/components/structure.md)
+* [structure.md](../../../gdpr/project_docs/structure.md)
+* [structure.md](../../../notify/project_docs/structure.md)
+* [structure.md](../../../xot/project_docs/structure.md)
+* [structure.md](../../../xot/project_docs/base/structure.md)
+* [structure.md](../../../xot/project_docs/config/structure.md)
+* [structure.md](../../../user/project_docs/structure.md)
+* [structure.md](../../../ui/project_docs/structure.md)
+* [structure.md](../../../lang/project_docs/structure.md)
+* [structure.md](../../../job/project_docs/structure.md)
+* [structure.md](../../../media/project_docs/structure.md)
+* [structure.md](../../../tenant/project_docs/structure.md)
+* [structure.md](../../../activity/project_docs/structure.md)
+* [structure.md](../../../cms/project_docs/structure.md)
+* [structure.md](../../../cms/project_docs/themes/structure.md)
+* [structure.md](../../../cms/project_docs/components/structure.md)
 
 ## Struttura della Registrazione dei Console Commands
 
 - Tutti i comandi console sono autoregistrati tramite la struttura di XotBaseServiceProvider.
 - Non aggiungere mai manualmente $this->commands([...]) nei provider.
-- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
+- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./philosophy.md)
