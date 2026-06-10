@@ -43,7 +43,8 @@ class EditTranslationFile extends XotBaseEditRecord
     }
 
     /**
-     * @param  array<string, mixed>  $array
+     * @param array<string, mixed> $array
+     *
      * @return array<int, Section|TextInput>
      */
     public function makeFromArray(array $array, string $prefix = ''): array
