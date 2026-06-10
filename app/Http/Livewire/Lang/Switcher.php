@@ -22,6 +22,7 @@ class Switcher extends Component
 {
     public string $lang;
 
+    /** @var array<string, array<string, mixed>> */
     public array $langs;
 
     public string $url;
@@ -47,7 +48,9 @@ class Switcher extends Component
 
             return $item;
         });
-        $this->langs = $langs;
+        /** @var array<string, array<string, mixed>> $mappedLangs */
+        $mappedLangs = $langs;
+        $this->langs = $mappedLangs;
     }
 
     // public function switchLang(string $lang): Application|RedirectResponse|Redirector
