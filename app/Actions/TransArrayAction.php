@@ -20,6 +20,7 @@ class TransArrayAction
     /**
      * Esegue la traduzione di una collezione.
      *
+     * @param  array<int|string, mixed>  $array
      * @return array<int|string, string>
      */
     public function execute(array $array, ?string $transKey): array
