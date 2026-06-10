@@ -118,6 +118,7 @@ use Spatie\Sluggable\SlugOptions;
 class Post extends BaseModel
 {
     use HasSlug;
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
     use HasXotFactory;
 
     // use Cachable;
@@ -199,6 +200,10 @@ class Post extends BaseModel
     }
 
     // -------- relationship ------
+
+    /**
+     * @return MorphTo<Model, $this>
+     */
     public function linkable(): MorphTo
     {
         return $this->morphTo('post');
@@ -307,6 +312,9 @@ class Post extends BaseModel
         return $value ?? '';
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function toSearchableArray(): array
     {
         return $this->only(self::SEARCHABLE_FIELDS);
