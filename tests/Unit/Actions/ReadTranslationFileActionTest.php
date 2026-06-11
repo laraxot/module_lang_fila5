@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Modules\Lang\Tests\Unit\Actions;
+require_once dirname(__DIR__, 2).'/Pest.php';
 
 use Modules\Lang\Actions\ReadTranslationFileAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
 use function Safe\chmod;
 use function Safe\file_put_contents;
 use function Safe\unlink;
@@ -48,9 +47,8 @@ afterEach(function (): void {
     }
 });
 
-describe('Read Translation File Action', function (): void {
-    test('can read valid translation file', function (): void {
-        /** @var TestCase $this */
+describe('ReadTranslationFileAction Business Logic', function () {
+    test('can read valid translation file', function () {
         $filePath = readTranslationTestFilePath();
         $translations = defaultReadTranslationTestData();
         createTranslationFile($filePath, $translations);
@@ -63,35 +61,35 @@ describe('Read Translation File Action', function (): void {
         Assert::assertSame('These credentials do not match our records.', $result['auth']['failed']);
     });
 
-    test('throws exception for non existent file', function (): void {
-        /* @var TestCase $this */
-        $this->expectApplicationException(\Exception::class, 'File di traduzione non trovato:');
+    test('throws exception for non-existent file', function () {
+        /** @var TestCase $this */
+        $this->expectApplicationException(Exception::class, 'File di traduzione non trovato:');
 
         makeReadTranslationFileAction()->execute(storage_path('non_existent.php'));
     });
 
-    test('throws exception for unreadable file', function (): void {
+    test('throws exception for unreadable file', function () {
         /** @var TestCase $this */
         $filePath = readTranslationTestFilePath();
         createTranslationFile($filePath, defaultReadTranslationTestData());
         chmod($filePath, 0o000);
 
-        $this->expectApplicationException(\Exception::class, 'File di traduzione non leggibile:');
+        $this->expectApplicationException(Exception::class, 'File di traduzione non leggibile:');
 
         makeReadTranslationFileAction()->execute($filePath);
     });
 
-    test('throws exception for invalid file content', function (): void {
+    test('throws exception for invalid file content', function () {
         /** @var TestCase $this */
         $filePath = readTranslationTestFilePath();
         file_put_contents($filePath, ' return "invalid content";');
 
-        $this->expectApplicationException(\Exception::class, 'File di traduzione non valido:');
+        $this->expectApplicationException(Exception::class, 'File di traduzione non valido:');
 
         makeReadTranslationFileAction()->execute($filePath);
     });
 
-    test('converts array to php format correctly', function (): void {
+    test('converts array to php format correctly', function () {
         $action = makeReadTranslationFileAction();
         $translations = [
             'simple_key' => 'Simple value',
@@ -110,7 +108,7 @@ describe('Read Translation File Action', function (): void {
         Assert::assertStringContainsString("];\n", $phpContent);
     });
 
-    test('handles special characters in translations', function (): void {
+    test('handles special characters in translations', function () {
         $action = makeReadTranslationFileAction();
         $translations = [
             'quotes' => "Text with 'single' and \"double\" quotes",
@@ -125,7 +123,7 @@ describe('Read Translation File Action', function (): void {
         Assert::assertStringContainsString("Text with\nnewlines", $phpContent);
     });
 
-    test('handles deeply nested arrays', function (): void {
+    test('handles deeply nested arrays', function () {
         $action = makeReadTranslationFileAction();
         $translations = [
             'level1' => [
@@ -145,7 +143,7 @@ describe('Read Translation File Action', function (): void {
         Assert::assertStringContainsString("'deep_key' => 'Deep value'", $phpContent);
     });
 
-    test('generates proper indentation for nested arrays', function (): void {
+    test('generates proper indentation for nested arrays', function () {
         $action = makeReadTranslationFileAction();
         $translations = [
             'parent' => [
@@ -163,7 +161,7 @@ describe('Read Translation File Action', function (): void {
         Assert::assertStringStartsWith('        ', (string) current($childLine));
     });
 
-    test('handles empty arrays', function (): void {
+    test('handles empty arrays', function () {
         $action = makeReadTranslationFileAction();
         $translations = [
             'empty_array' => [],
@@ -176,7 +174,7 @@ describe('Read Translation File Action', function (): void {
         Assert::assertStringContainsString("'normal_key' => 'normal_value'", $phpContent);
     });
 
-    test('handles numeric values in translations', function (): void {
+    test('handles numeric values in translations', function () {
         $action = makeReadTranslationFileAction();
         $translations = [
             'number' => 123,
@@ -193,7 +191,7 @@ describe('Read Translation File Action', function (): void {
         Assert::assertStringContainsString("'boolean_false' => ''", $phpContent);
     });
 
-    test('preserves key order in output', function (): void {
+    test('preserves key order in output', function () {
         $action = makeReadTranslationFileAction();
         $translations = [
             'z_last' => 'Last value',
