@@ -78,7 +78,8 @@ class Translation extends BaseModel
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
     /**
-     * @param  EloquentBuilder<Translation>  $query
+     * @param EloquentBuilder<Translation> $query
+     *
      * @return EloquentBuilder<Translation>|QueryBuilder
      */
     public function scopeOfTranslatedGroup(EloquentBuilder $query, string $group): QueryBuilder|EloquentBuilder
@@ -87,7 +88,8 @@ class Translation extends BaseModel
     }
 
     /**
-     * @param  EloquentBuilder<Translation>  $query
+     * @param EloquentBuilder<Translation> $query
+     *
      * @return EloquentBuilder<Translation>
      */
     public function scopeOrderByGroupKeys(EloquentBuilder $query, bool $ordered): EloquentBuilder
@@ -100,7 +102,8 @@ class Translation extends BaseModel
     }
 
     /**
-     * @param  EloquentBuilder<Translation>  $query
+     * @param EloquentBuilder<Translation> $query
+     *
      * @return EloquentBuilder<Translation>|QueryBuilder
      */
     public function scopeSelectDistinctGroup(EloquentBuilder $query): EloquentBuilder|QueryBuilder

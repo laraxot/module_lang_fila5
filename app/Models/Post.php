@@ -142,7 +142,7 @@ class Post extends BaseModel
     public static $snakeAttributes = true;
 
     /** @var bool */
-    public $incrementing = true;
+    public $incrementing = false;
 
     /** @var int */
     protected $perPage = 30;
@@ -162,6 +162,13 @@ class Post extends BaseModel
         'subtitle',
         'post_type',
         'txt',
+        'content',
+        'excerpt',
+        'slug',
+        'status',
+        'published_at',
+        'locale',
+        'category',
         // ------ IMAGE ---------
         'image_src',
         'image_alt',
