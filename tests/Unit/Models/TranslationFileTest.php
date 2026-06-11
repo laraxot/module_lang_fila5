@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit\Models;
 
+use function Safe\class_uses;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-use function Safe\class_uses;
+use ReflectionClass;
 
 uses(TestCase::class);
 
