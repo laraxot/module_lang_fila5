@@ -9,6 +9,7 @@ use Illuminate\Support\ServiceProvider;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use ReflectionClass;
 
 uses(TestCase::class);
 

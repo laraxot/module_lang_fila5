@@ -37,7 +37,7 @@ abstract class TestCase extends XotBaseTestCase
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
                 continue;
             }
 
@@ -61,21 +61,21 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
-    public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
+    public function assertDatabaseHasRow(string $table, array $data): void
     {
-        $this->assertDatabaseHas($table, $data, $connection ?? 'lang');
+        $this->assertDatabaseHas($table, $data, 'lang');
     }
 
     /**
-     * @param class-string<\Throwable> $exceptionClass
+     * @param  class-string<\Throwable>  $exceptionClass
      */
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
         $this->expectException($exceptionClass);
-        if (null !== $message) {
-            $this->expectThrowableMessage($message);
+        if ($message !== null) {
+            $this->expectExceptionMessage($message);
         }
     }
 }
