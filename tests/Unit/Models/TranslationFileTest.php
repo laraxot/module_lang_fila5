@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit\Models;
 
-use function Safe\class_uses;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
+
+use function Safe\class_uses;
 
 uses(TestCase::class);
 
@@ -31,7 +31,7 @@ describe('TranslationFile Model', function () {
 
     test('has form property accessible via reflection', function () {
         $model = new TranslationFile();
-        $reflection = new ReflectionClass($model);
+        $reflection = new \ReflectionClass($model);
         $property = $reflection->getProperty('form');
         $property->setAccessible(true);
         $form = $property->getValue($model);
