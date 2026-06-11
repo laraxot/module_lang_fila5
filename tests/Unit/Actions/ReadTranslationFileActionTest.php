@@ -7,6 +7,7 @@ require_once dirname(__DIR__, 2).'/Pest.php';
 use Modules\Lang\Actions\ReadTranslationFileAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
 use function Safe\chmod;
 use function Safe\file_put_contents;
 use function Safe\unlink;
@@ -62,7 +63,7 @@ describe('ReadTranslationFileAction Business Logic', function () {
     });
 
     test('throws exception for non-existent file', function () {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         $this->expectApplicationException(Exception::class, 'File di traduzione non trovato:');
 
         makeReadTranslationFileAction()->execute(storage_path('non_existent.php'));
