@@ -8,7 +8,6 @@ use Modules\Lang\Actions\PublishTranslationAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionMethod;
 
 uses(TestCase::class);
 
@@ -24,7 +23,7 @@ describe('Lang Actions Coverage', function (): void {
     test('SyncTranslationsAction has correct signature', function (): void {
         $action = app(SyncTranslationsAction::class);
 
-        $reflection = new ReflectionMethod($action, 'execute');
+        $reflection = new \ReflectionMethod($action, 'execute');
         $params = $reflection->getParameters();
 
         Assert::assertCount(3, $params);
@@ -36,7 +35,7 @@ describe('Lang Actions Coverage', function (): void {
     test('SyncTranslationsAction has default parameters', function (): void {
         $action = app(SyncTranslationsAction::class);
 
-        $reflection = new ReflectionMethod($action, 'execute');
+        $reflection = new \ReflectionMethod($action, 'execute');
         $params = $reflection->getParameters();
 
         Assert::assertTrue($params[0]->isDefaultValueAvailable());
