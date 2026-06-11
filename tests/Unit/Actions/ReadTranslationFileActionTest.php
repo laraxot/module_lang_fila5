@@ -9,7 +9,7 @@ require_once dirname(__DIR__, 2).'/Pest.php';
 use Modules\Lang\Actions\ReadTranslationFileAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\Attributes\Test;
+
 use function Safe\chmod;
 use function Safe\file_put_contents;
 use function Safe\unlink;
@@ -66,11 +66,9 @@ class ReadTranslationFileActionTest extends TestCase
         Assert::assertSame('These credentials do not match our records.', $result['auth']['failed']);
     }
 
-    #[Test]
-    public function throws_exception_for_non_existent_file(): void
-    {
-        $this->expectException(\Exception::class);
-        $this->expectExceptionMessage('File di traduzione non trovato:');
+    test('throws exception for non-existent file', function () {
+        /* @var TestCase $this */
+        $this->expectApplicationException(Exception::class, 'File di traduzione non trovato:');
 
         makeReadTranslationFileAction()->execute(storage_path('non_existent.php'));
     }
