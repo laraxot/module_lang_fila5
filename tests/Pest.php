@@ -29,7 +29,7 @@ function makeTranslation(array $attributes = []): Translation
 {
     $translation = TranslationFactory::new()->make($attributes);
     if (! $translation instanceof Translation) {
-        throw new \InvalidArgumentException('Expected Translation model from factory make().');
+        throw new InvalidArgumentException('Expected Translation model from factory make().');
     }
 
     return $translation;
