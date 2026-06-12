@@ -28,7 +28,6 @@ class TranslationFactory extends Factory
     public function definition(): array
     {
         return [
-            'id' => fake()->randomNumber(5),
             'lang' => fake()->word,
             'value' => fake()->text,
             'created_at' => fake()->dateTime,
