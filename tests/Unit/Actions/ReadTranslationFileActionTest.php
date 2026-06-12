@@ -10,6 +10,7 @@ use Modules\Lang\Actions\ReadTranslationFileAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\Attributes\Test;
+
 use function Safe\chmod;
 use function Safe\file_put_contents;
 use function Safe\unlink;
@@ -52,7 +53,7 @@ class ReadTranslationFileActionTest extends TestCase
     }
 
     #[Test]
-    public function can_read_valid_translation_file(): void
+    public function canReadValidTranslationFile(): void
     {
         $filePath = readTranslationTestFilePath();
         $translations = defaultReadTranslationTestData();
@@ -67,7 +68,7 @@ class ReadTranslationFileActionTest extends TestCase
     }
 
     #[Test]
-    public function throws_exception_for_non_existent_file(): void
+    public function throwsExceptionForNonExistentFile(): void
     {
         $this->expectException(\Exception::class);
         $this->expectExceptionMessage('File di traduzione non trovato:');
@@ -76,7 +77,7 @@ class ReadTranslationFileActionTest extends TestCase
     }
 
     #[Test]
-    public function throws_exception_for_unreadable_file(): void
+    public function throwsExceptionForUnreadableFile(): void
     {
         $filePath = readTranslationTestFilePath();
         createTranslationFile($filePath, defaultReadTranslationTestData());
@@ -89,7 +90,7 @@ class ReadTranslationFileActionTest extends TestCase
     }
 
     #[Test]
-    public function throws_exception_for_invalid_file_content(): void
+    public function throwsExceptionForInvalidFileContent(): void
     {
         $filePath = readTranslationTestFilePath();
         file_put_contents($filePath, ' return "invalid content";');
@@ -101,7 +102,7 @@ class ReadTranslationFileActionTest extends TestCase
     }
 
     #[Test]
-    public function converts_array_to_php_format_correctly(): void
+    public function convertsArrayToPhpFormatCorrectly(): void
     {
         $action = makeReadTranslationFileAction();
         $translations = [
@@ -122,7 +123,7 @@ class ReadTranslationFileActionTest extends TestCase
     }
 
     #[Test]
-    public function handles_special_characters_in_translations(): void
+    public function handlesSpecialCharactersInTranslations(): void
     {
         $action = makeReadTranslationFileAction();
         $translations = [
@@ -139,7 +140,7 @@ class ReadTranslationFileActionTest extends TestCase
     }
 
     #[Test]
-    public function handles_deeply_nested_arrays(): void
+    public function handlesDeeplyNestedArrays(): void
     {
         $action = makeReadTranslationFileAction();
         $translations = [
@@ -161,7 +162,7 @@ class ReadTranslationFileActionTest extends TestCase
     }
 
     #[Test]
-    public function generates_proper_indentation_for_nested_arrays(): void
+    public function generatesProperIndentationForNestedArrays(): void
     {
         $action = makeReadTranslationFileAction();
         $translations = [
@@ -181,7 +182,7 @@ class ReadTranslationFileActionTest extends TestCase
     }
 
     #[Test]
-    public function handles_empty_arrays(): void
+    public function handlesEmptyArrays(): void
     {
         $action = makeReadTranslationFileAction();
         $translations = [
@@ -196,7 +197,7 @@ class ReadTranslationFileActionTest extends TestCase
     }
 
     #[Test]
-    public function handles_numeric_values_in_translations(): void
+    public function handlesNumericValuesInTranslations(): void
     {
         $action = makeReadTranslationFileAction();
         $translations = [
@@ -215,7 +216,7 @@ class ReadTranslationFileActionTest extends TestCase
     }
 
     #[Test]
-    public function preserves_key_order_in_output(): void
+    public function preservesKeyOrderInOutput(): void
     {
         $action = makeReadTranslationFileAction();
         $translations = [
