@@ -63,9 +63,9 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @param array<string, mixed> $data
      */
-    public function assertDatabaseHasRow(string $table, array $data): void
+    public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {
-        $this->assertDatabaseHas($table, $data, 'lang');
+        $this->assertDatabaseHas($table, $data, $connection ?? 'lang');
     }
 
     /**
@@ -75,7 +75,7 @@ abstract class TestCase extends XotBaseTestCase
     {
         $this->expectException($exceptionClass);
         if (null !== $message) {
-            $this->expectExceptionMessage($message);
+            $this->expectThrowableMessage($message);
         }
     }
 }
