@@ -185,7 +185,7 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali
-- [Root Docs: Translation Standards](../../../docs/translation_standards.md)
+- [Root Docs: Translation Standards](../../docs/translation_standards.md)
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
 - [<main module> Module: Translation Guidelines](../<main module>/docs/translation_guidelines.md)
 - [<nome progetto> Module: Translation Guidelines](../<nome progetto>/docs/translation_guidelines.md)
@@ -251,6 +251,4 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 
 ---
 
-**Ultimo aggiornamento**: Gennaio 2025
-**Autore**: Sistema di Correzione Automatica
-**Versione**: 1.0
+See canonical documentation: ../../../Themes/docs/shared-components/translation-errors-correction-2025.md
