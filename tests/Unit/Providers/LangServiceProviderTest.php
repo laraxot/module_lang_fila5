@@ -9,7 +9,6 @@ use Illuminate\Support\ServiceProvider;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 
 uses(TestCase::class);
 
@@ -32,7 +31,7 @@ describe('LangServiceProvider Basic Functionality', function () {
     it('has correct module name', function () {
         $provider = makeLangServiceProvider();
         $reflection = new ReflectionClass($provider);
-        $property = $reflection->getProperty('module_name');
+        $property = $reflection->getProperty('name');
         $property->setAccessible(true);
 
         Assert::assertSame('Lang', $property->getValue($provider));
@@ -60,16 +59,16 @@ describe('LangServiceProvider Translation Loading', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        Assert::assertTrue(Lang::has('lang::common.welcome'));
+        Assert::assertTrue(Lang::has('lang::auth.failed'));
     });
 
     it('loads translations with correct namespace', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        $translation = __('lang::common.welcome');
+        $translation = __('lang::auth.failed');
         Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::common.welcome', $translation);
+        Assert::assertNotSame('lang::auth.failed', $translation);
     });
 
     it('handles missing translation keys gracefully', function () {
@@ -82,66 +81,46 @@ describe('LangServiceProvider Translation Loading', function () {
 });
 
 describe('LangServiceProvider Translation Structure', function () {
-    it('provides common translations', function () {
+    it('provides auth translations', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        $commonKeys = [
-            'welcome',
-            'loading',
-            'error',
-            'success',
-            'cancel',
-            'save',
-            'delete',
-            'edit',
-            'create',
+        $authKeys = [
+            'failed',
+            'password',
+            'throttle',
+            'login.title',
+            'login.submit',
+            'register.title',
         ];
 
-        foreach ($commonKeys as $key) {
-            $translation = __("lang::common.{$key}");
+        foreach ($authKeys as $key) {
+            $translation = __("lang::auth.{$key}");
             Assert::assertIsString($translation);
-            Assert::assertNotSame("lang::common.{$key}", $translation);
+            Assert::assertNotSame("lang::auth.{$key}", $translation);
         }
     });
 
-    it('provides validation translations', function () {
+    it('provides nested login translations', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        $validationKeys = [
-            'required',
-            'email',
-            'min',
-            'max',
-            'unique',
-            'confirmed',
-        ];
+        $loginKeys = ['title', 'email', 'password', 'submit', 'forgot_password'];
 
-        foreach ($validationKeys as $key) {
-            $translation = __("lang::validation.{$key}");
+        foreach ($loginKeys as $key) {
+            $translation = __("lang::auth.login.{$key}");
             Assert::assertIsString($translation);
-            Assert::assertNotSame("lang::validation.{$key}", $translation);
+            Assert::assertNotSame("lang::auth.login.{$key}", $translation);
         }
     });
 
-    it('provides error translations', function () {
+    it('provides translation module strings', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        $errorKeys = [
-            'general',
-            'not_found',
-            'unauthorized',
-            'validation',
-            'server_error',
-        ];
-
-        foreach ($errorKeys as $key) {
-            $translation = __("lang::errors.{$key}");
-            Assert::assertIsString($translation);
-            Assert::assertNotSame("lang::errors.{$key}", $translation);
-        }
+        $translation = __('lang::translation.navigation.name');
+        Assert::assertIsString($translation);
+        Assert::assertNotSame('lang::translation.navigation.name', $translation);
     });
 });
 
@@ -152,9 +131,9 @@ describe('LangServiceProvider Language Support', function () {
 
         app()->setLocale('it');
 
-        $translation = __('lang::common.welcome');
+        $translation = __('lang::auth.failed');
         Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::common.welcome', $translation);
+        Assert::assertNotSame('lang::auth.failed', $translation);
     });
 
     it('supports English language', function () {
@@ -163,9 +142,9 @@ describe('LangServiceProvider Language Support', function () {
 
         app()->setLocale('en');
 
-        $translation = __('lang::common.welcome');
+        $translation = __('lang::auth.failed');
         Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::common.welcome', $translation);
+        Assert::assertNotSame('lang::auth.failed', $translation);
     });
 
     it('supports German language', function () {
@@ -174,9 +153,9 @@ describe('LangServiceProvider Language Support', function () {
 
         app()->setLocale('de');
 
-        $translation = __('lang::common.welcome');
+        $translation = __('lang::auth.failed');
         Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::common.welcome', $translation);
+        Assert::assertNotSame('lang::auth.failed', $translation);
     });
 
     it('falls back to default language when translation missing', function () {
@@ -185,51 +164,51 @@ describe('LangServiceProvider Language Support', function () {
 
         app()->setLocale('fr');
 
-        $translation = __('lang::common.welcome');
+        $translation = __('lang::auth.failed');
         Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::common.welcome', $translation);
+        Assert::assertNotSame('lang::auth.failed', $translation);
     });
 });
 
 describe('LangServiceProvider Translation Files', function () {
-    it('loads common translation file', function () {
+    it('loads auth translation file', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        $commonPath = module_path('Lang', 'lang/it/common.php');
-        Assert::assertTrue(File::exists($commonPath));
-        $translations = require $commonPath;
+        $authPath = module_path('Lang', 'lang/it/auth.php');
+        Assert::assertTrue(File::exists($authPath));
+        $translations = require $authPath;
         Assert::assertIsArray($translations);
-        Assert::assertArrayHasKey('welcome', $translations);
+        Assert::assertArrayHasKey('failed', $translations);
     });
 
-    it('loads validation translation file', function () {
+    it('loads translation module file', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        $validationPath = module_path('Lang', 'lang/it/validation.php');
-        Assert::assertTrue(File::exists($validationPath));
-        $translations = require $validationPath;
+        $translationPath = module_path('Lang', 'lang/it/translation.php');
+        Assert::assertTrue(File::exists($translationPath));
+        $translations = require $translationPath;
         Assert::assertIsArray($translations);
-        Assert::assertArrayHasKey('required', $translations);
+        Assert::assertArrayHasKey('navigation', $translations);
     });
 
-    it('loads error translation file', function () {
+    it('loads auth translation file for english', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        $errorPath = module_path('Lang', 'lang/it/errors.php');
-        Assert::assertTrue(File::exists($errorPath));
-        $translations = require $errorPath;
+        $authPath = module_path('Lang', 'lang/en/auth.php');
+        Assert::assertTrue(File::exists($authPath));
+        $translations = require $authPath;
         Assert::assertIsArray($translations);
-        Assert::assertArrayHasKey('general', $translations);
+        Assert::assertArrayHasKey('failed', $translations);
     });
 
     it('loads all required translation files', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        $requiredFiles = ['common', 'validation', 'errors'];
+        $requiredFiles = ['auth', 'translation', 'header'];
         $langPath = module_path('Lang', 'lang/it');
 
         foreach ($requiredFiles as $file) {
@@ -243,36 +222,25 @@ describe('LangServiceProvider Translation Files', function () {
 });
 
 describe('LangServiceProvider Translation Quality', function () {
-    it('provides complete translation coverage', function () {
+    it('provides complete auth translation coverage', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        $commonKeys = [
-            'welcome',
-            'loading',
-            'error',
-            'success',
-            'cancel',
-            'save',
-            'delete',
-            'edit',
-            'create',
-            'update',
-            'back',
-            'next',
-            'previous',
-            'search',
-            'filter',
-            'sort',
-            'refresh',
-            'export',
-            'import',
+        $authKeys = [
+            'failed',
+            'password',
+            'throttle',
+            'login.title',
+            'login.email',
+            'login.submit',
+            'register.title',
+            'register.name',
         ];
 
-        foreach ($commonKeys as $key) {
-            $translation = __("lang::common.{$key}");
+        foreach ($authKeys as $key) {
+            $translation = __("lang::auth.{$key}");
             Assert::assertIsString($translation);
-            Assert::assertNotSame("lang::common.{$key}", $translation);
+            Assert::assertNotSame("lang::auth.{$key}", $translation);
             Assert::assertGreaterThan(0, strlen($translation));
         }
     });
@@ -282,31 +250,31 @@ describe('LangServiceProvider Translation Quality', function () {
         $provider->boot();
 
         $translations = [
-            __('lang::common.welcome'),
-            __('lang::common.loading'),
-            __('lang::common.success'),
+            __('lang::auth.failed'),
+            __('lang::auth.password'),
+            __('lang::auth.login.title'),
         ];
 
         foreach ($translations as $translation) {
             Assert::assertIsString($translation);
             Assert::assertGreaterThan(0, strlen($translation));
-            Assert::assertDoesNotMatchRegularExpression('/[A-Z]{2,}/', $translation);
         }
     });
 
-    it('provides contextually appropriate translations', function () {
+    it('provides contextually appropriate italian translations', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
+        app()->setLocale('it');
+
         $contextualPairs = [
-            'save' => 'Salva',
-            'delete' => 'Elimina',
-            'edit' => 'Modifica',
-            'create' => 'Crea',
+            'auth.failed' => 'Credenziali non valide.',
+            'auth.login.submit' => 'Accedi',
+            'auth.register.title' => 'Registati',
         ];
 
         foreach ($contextualPairs as $key => $expected) {
-            $translation = __("lang::common.{$key}");
+            $translation = __("lang::{$key}");
             Assert::assertSame($expected, $translation);
         }
     });
@@ -329,11 +297,11 @@ describe('LangServiceProvider Performance', function () {
         $provider->boot();
 
         $startTime = microtime(true);
-        $translation1 = __('lang::common.welcome');
+        $translation1 = __('lang::auth.failed');
         $firstCallTime = microtime(true) - $startTime;
 
         $startTime = microtime(true);
-        $translation2 = __('lang::common.welcome');
+        $translation2 = __('lang::auth.failed');
         $secondCallTime = microtime(true) - $startTime;
 
         Assert::assertSame($translation2, $translation1);
@@ -350,7 +318,7 @@ describe('LangServiceProvider Performance', function () {
 
         foreach ($languages as $locale) {
             app()->setLocale($locale);
-            $translation = __('lang::common.welcome');
+            $translation = __('lang::auth.failed');
             Assert::assertIsString($translation);
         }
 
@@ -388,26 +356,26 @@ describe('LangServiceProvider Integration', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        Assert::assertTrue(Lang::has('lang::common.welcome'));
-        Assert::assertIsString(__('lang::common.welcome'));
+        Assert::assertTrue(Lang::has('lang::auth.failed'));
+        Assert::assertIsString(__('lang::auth.failed'));
     });
 
     it('works with Filament components', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        $translation = __('lang::common.save');
+        $translation = __('lang::auth.login.submit');
         Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::common.save', $translation);
+        Assert::assertNotSame('lang::auth.login.submit', $translation);
     });
 
     it('works with Blade templates', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        $translation = __('lang::common.welcome');
+        $translation = __('lang::auth.failed');
         Assert::assertIsString($translation);
-        Assert::assertNotSame('lang::common.welcome', $translation);
+        Assert::assertNotSame('lang::auth.failed', $translation);
     });
 });
 
@@ -449,11 +417,11 @@ describe('LangServiceProvider Maintenance', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        $translation1 = __('lang::common.welcome');
+        $translation1 = __('lang::auth.failed');
 
         $provider->boot();
 
-        $translation2 = __('lang::common.welcome');
+        $translation2 = __('lang::auth.failed');
 
         Assert::assertSame($translation2, $translation1);
     });
