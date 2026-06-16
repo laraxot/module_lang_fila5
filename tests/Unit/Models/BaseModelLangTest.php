@@ -7,14 +7,12 @@ namespace Modules\Lang\Tests\Unit\Models;
 use Modules\Lang\Models\BaseModelLang;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 
 uses(TestCase::class);
 
 describe('BaseModelLang', function () {
     test('has correct connection', function () {
-        $model = new class extends BaseModelLang
-        {
+        $model = new class extends BaseModelLang {
             protected $table = 'test';
         };
 
@@ -22,7 +20,7 @@ describe('BaseModelLang', function () {
     });
 
     test('has LinkedTrait in traits list', function () {
-        $reflection = new ReflectionClass(BaseModelLang::class);
+        $reflection = new \ReflectionClass(BaseModelLang::class);
         $traits = $reflection->getTraitNames();
 
         $hasLinked = count(array_filter($traits, fn ($t) => str_contains($t, 'Linked'))) > 0;
@@ -34,8 +32,7 @@ describe('BaseModelLang', function () {
     });
 
     test('has timestamps enabled', function () {
-        $model = new class extends BaseModelLang
-        {
+        $model = new class extends BaseModelLang {
             protected $table = 'test';
         };
 
@@ -43,8 +40,7 @@ describe('BaseModelLang', function () {
     });
 
     test('has incrementing set from property', function () {
-        $model = new class extends BaseModelLang
-        {
+        $model = new class extends BaseModelLang {
             protected $table = 'test';
         };
 
@@ -52,8 +48,7 @@ describe('BaseModelLang', function () {
     });
 
     test('has default perPage', function () {
-        $model = new class extends BaseModelLang
-        {
+        $model = new class extends BaseModelLang {
             protected $table = 'test';
         };
 
@@ -61,8 +56,7 @@ describe('BaseModelLang', function () {
     });
 
     test('casts id as string', function () {
-        $model = new class extends BaseModelLang
-        {
+        $model = new class extends BaseModelLang {
             protected $table = 'test';
         };
 
@@ -71,8 +65,7 @@ describe('BaseModelLang', function () {
     });
 
     test('casts datetime fields', function () {
-        $model = new class extends BaseModelLang
-        {
+        $model = new class extends BaseModelLang {
             protected $table = 'test';
         };
 
