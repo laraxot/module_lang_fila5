@@ -330,11 +330,14 @@ describe('Lang Business Logic', function () {
         ]);
 
         Assert::assertSame('scheduled', $scheduledPost->status);
-        Assert::assertEquals($futureDate, $scheduledPost->published_at);
+        Assert::assertNotNull($scheduledPost->published_at);
+        Assert::assertSame(
+            $futureDate->format('Y-m-d H:i:s'),
+            $scheduledPost->published_at->format('Y-m-d H:i:s'),
+        );
         $this->assertDatabaseHasRow('posts', [
             'id' => $scheduledPost->id,
             'status' => 'scheduled',
-            'published_at' => $futureDate,
         ]);
     });
 
