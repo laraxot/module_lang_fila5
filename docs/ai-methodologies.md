@@ -1,14 +1,3 @@
----
-title: "AI Methodologies Handbook"
-module: "Lang"
-type: concept
-tags: [ottimizzazioni, correzioni]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ottimizzazioni correzioni"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # AI Methodologies Handbook
 
 This file is a DRY local index for AI workflows in this module or theme.
