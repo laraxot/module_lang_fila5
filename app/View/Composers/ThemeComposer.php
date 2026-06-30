@@ -19,7 +19,7 @@ class ThemeComposer
      *
      * @throws \Exception if supportedLocales config is not an array
      *
-     * @return DataCollection<LangData>
+     * @return DataCollection<int, LangData>
      */
     public function languages(): DataCollection
     {
@@ -87,7 +87,7 @@ class ThemeComposer
     /**
      * Get all languages except the current one.
      *
-     * @return DataCollection<LangData>
+     * @return DataCollection<int, LangData>
      */
     public function otherLanguages(): DataCollection
     {
@@ -141,7 +141,7 @@ class ThemeComposer
         if (! is_string($routeName)) {
             return '#';
         }
-        $routeParameters = array_merge(getRouteParameters(), ['lang' => $locale]);
+        $routeParameters = array_merge(Route::current()?->parameters() ?? [], ['lang' => $locale]);
         $queryParameters = request()->all();
 
         $url = route($routeName, $routeParameters);
