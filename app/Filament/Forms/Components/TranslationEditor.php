@@ -6,11 +6,11 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Filament\Forms\Components;
 
-use Filament\Forms\Components\Field;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
+use Modules\Xot\Filament\Forms\Components\XotBaseField;
 
-class TranslationEditor extends Field
+class TranslationEditor extends XotBaseField
 {
     protected string $view = 'lang::filament.forms.components.translation-editor';
 
@@ -32,6 +32,9 @@ class TranslationEditor extends Field
         }
 
         foreach ($state as $key => $value) {
+            if (! is_string($key) && ! is_int($key)) {
+                continue;
+            }
             $keyStr = (string) $key;
             if (is_array($value)) {
                 $components[] = Section::make($keyStr)->schema([
