@@ -23,8 +23,6 @@ class WriteTranslationFileAction
      * @param string               $filePath     Percorso del file di traduzione
      * @param array<string, mixed> $translations Traduzioni da scrivere
      *
-     * @throws \Exception Se il file non può essere scritto
-     *
      * @return bool True se il file è stato scritto con successo
      */
     public function execute(string $filePath, array $translations): bool
@@ -89,15 +87,21 @@ class WriteTranslationFileAction
         file_put_contents($tempFile, $phpContent);
 
         // Esegue php -l per validare la sintassi
-        $output = [];
+        $rawOutput = [];
         $returnCode = 0;
-        exec("php -l {$tempFile} 2>&1", $output, $returnCode);
+        exec("php -l {$tempFile} 2>&1", $rawOutput, $returnCode);
+        $output = is_array($rawOutput) ? $rawOutput : [];
 
-        // Rimuove il file temporaneo
         unlink($tempFile);
 
         if (0 !== $returnCode) {
-            $error = implode("\n", $output ?? []);
+            $lines = [];
+            foreach ($output as $line) {
+                if (is_string($line)) {
+                    $lines[] = $line;
+                }
+            }
+            $error = implode("\n", $lines);
             throw new \Exception("Sintassi PHP non valida: {$error}");
         }
     }
@@ -114,8 +118,10 @@ class WriteTranslationFileAction
 
         // Pulisce la cache delle traduzioni
         if (app()->bound('translation.loader')) {
-            /* @phpstan-ignore method.notFound */
-            app('translation.loader')->flush();
+            $loader = app('translation.loader');
+            if (method_exists($loader, 'flush')) {
+                $loader->flush();
+            }
         }
     }
 }
