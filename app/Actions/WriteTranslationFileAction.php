@@ -20,8 +20,9 @@ class WriteTranslationFileAction
     /**
      * Scrive il contenuto in un file di traduzione con backup automatico.
      *
-     * @param  string  $filePath  Percorso del file di traduzione
-     * @param  array<string, mixed>  $translations  Traduzioni da scrivere
+     * @param string               $filePath     Percorso del file di traduzione
+     * @param array<string, mixed> $translations Traduzioni da scrivere
+     *
      * @return bool True se il file è stato scritto con successo
      */
     public function execute(string $filePath, array $translations): bool
@@ -117,8 +118,10 @@ class WriteTranslationFileAction
 
         // Pulisce la cache delle traduzioni
         if (app()->bound('translation.loader')) {
-            /* @phpstan-ignore method.notFound */
-            app('translation.loader')->flush();
+            $loader = app('translation.loader');
+            if (method_exists($loader, 'flush')) {
+                $loader->flush();
+            }
         }
     }
 }
