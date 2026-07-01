@@ -17,17 +17,8 @@ use Modules\Lang\Tests\TestCase;
  * |
  */
 
-pest()->extend(TestCase::class)->in('Feature', 'Unit');
-
-/*
- * |--------------------------------------------------------------------------
- * | Expectations
- * |--------------------------------------------------------------------------
- * |
- * | When you're writing tests, you often need to check that values meet certain conditions. The
- * | "expect()" function gives you access to a set of "expectations" methods that you can use
- * | to assert different things. Of course, you may extend the Expectation API at any time.
- * |
+/**
+ * @param array<string, mixed> $attributes
  */
 
 expect()->extend('toBeTranslation', fn () => $this->toBeInstanceOf(Translation::class));
@@ -50,6 +41,9 @@ function createTranslation(array $attributes = []): Translation
     return Translation::factory()->create($attributes);
 }
 
+/**
+ * @param array<string, mixed> $attributes
+ */
 function makeTranslation(array $attributes = []): Translation
 {
     return Translation::factory()->make($attributes);
@@ -65,6 +59,9 @@ function makeLanguage(array $attributes = []): Language
     return Language::factory()->make($attributes);
 }
 
+/**
+ * @param array<string, mixed> $translations
+ */
 function createTranslationFile(string $filePath, array $translations): void
 {
     $phpContent = "<?php\n\nreturn ".var_export($translations, true).";\n";
@@ -76,4 +73,18 @@ function cleanupTranslationFile(string $filePath): void
     if (file_exists($filePath)) {
         unlink($filePath);
     }
+}
+
+/**
+ * @param array<string, mixed> $data
+ */
+function langAssertDatabaseHasRow(string $table, array $data, ?string $connection = 'lang'): void
+{
+    $query = DB::connection($connection)->table($table);
+
+    foreach ($data as $column => $value) {
+        $query->where((string) $column, $value);
+    }
+
+    Assert::assertTrue($query->exists());
 }

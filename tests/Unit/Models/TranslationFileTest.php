@@ -28,7 +28,7 @@ describe('TranslationFile Model', function () {
 
     test('has form property accessible via reflection', function () {
         $model = new TranslationFile();
-        $reflection = new ReflectionClass($model);
+        $reflection = new \ReflectionClass($model);
         $property = $reflection->getProperty('form');
         $property->setAccessible(true);
         $form = $property->getValue($model);

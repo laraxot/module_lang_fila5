@@ -24,12 +24,58 @@ abstract class TestCase extends BaseTestCase
     use CreatesApplication;
     use DatabaseTransactions;
 
-    protected function getPackageProviders($app): array
+    /** @var list<string> */
+    protected $connectionsToTransact = ['sqlite', 'lang', 'user'];
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $database = database_path('fixcity_data.sqlite');
+
+        /** @var array<string, array<string, mixed>> $connections */
+        $connections = config('database.connections', []);
+
+        foreach (array_keys($connections) as $connection) {
+            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
+                continue;
+            }
+
+            $this->app['config']->set("database.connections.{$connection}.database", $database);
+            DB::purge($connection);
+        }
+
+        config(['auth.providers.users.model' => User::class]);
+    }
+
+    /**
+     * @return array<int, class-string>
+     */
+    protected function getPackageProviders(Application $app): array
     {
         return [
             XotServiceProvider::class,
             UserServiceProvider::class,
             LangServiceProvider::class,
         ];
+    }
+
+    /**
+     * @param array<string, mixed> $data
+     */
+    public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
+    {
+        $this->assertDatabaseHas($table, $data, $connection ?? 'lang');
+    }
+
+    /**
+     * @param class-string<\Throwable> $exceptionClass
+     */
+    public function expectApplicationException(string $exceptionClass, ?string $message = null): void
+    {
+        $this->expectException($exceptionClass);
+        if (null !== $message) {
+            $this->expectThrowableMessage($message);
+        }
     }
 }
