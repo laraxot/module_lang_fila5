@@ -132,7 +132,6 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 
 ### Moduli con Documentazione Aggiornata
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation-errors-correction-archive-1.md`
-2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali Creati
@@ -182,7 +181,4 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 
 ---
 
-**Ultimo aggiornamento**: Gennaio 2025
-**Autore**: Sistema di Correzione Automatica
-**Versione**: 1.0
-**Status**: ✅ COMPLETATO
+See canonical documentation: ../../../Themes/docs/shared-components/translation-audit-completion-2025.md
