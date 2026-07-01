@@ -165,6 +165,9 @@ Per ogni risorsa, le traduzioni navigation seguono questo pattern:
 - [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [Translation Standards](../../Xot/docs/translation-standards.md)
+- [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-2026-01-09.md)
+- [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-2026-01-09.md)
+- [Translation Standards](../../Xot/docs/translation-standards.md)
 - [Navigation Translations Fixes](./navigation-translations-fixes.md)
 
 ---

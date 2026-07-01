@@ -36,4 +36,4 @@ Laravel usa la convenzione `database/migrations/` (lowercase) per:
 ## Update Log
 
 - **2025-11-04**: Removed `database/Migrations/` uppercase directory
-- **2026-07-01**: Removed nested `database/migrations/Migrations/` (reintroduced per errore automazione in `f840e0cc0`; fix `247054abb`)
+- **[DATE]**: Removed `database/Migrations/` uppercase directory
