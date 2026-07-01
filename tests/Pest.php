@@ -2,8 +2,10 @@
 
 declare(strict_types=1);
 
+use Illuminate\Support\Facades\DB;
 use Modules\Lang\Database\Factories\TranslationFactory;
 use Modules\Lang\Models\Translation;
+use PHPUnit\Framework\Assert;
 
 use function Safe\file_put_contents;
 use function Safe\unlink;
@@ -15,7 +17,7 @@ use function Safe\unlink;
  */
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createTranslation(array $attributes = []): Translation
 {
@@ -23,7 +25,7 @@ function createTranslation(array $attributes = []): Translation
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function makeTranslation(array $attributes = []): Translation
 {
@@ -36,7 +38,7 @@ function makeTranslation(array $attributes = []): Translation
 }
 
 /**
- * @param array<string, mixed> $translations
+ * @param  array<string, mixed>  $translations
  */
 function createTranslationFile(string $filePath, array $translations): void
 {
@@ -49,4 +51,18 @@ function cleanupTranslationFile(string $filePath): void
     if (file_exists($filePath)) {
         unlink($filePath);
     }
+}
+
+/**
+ * @param  array<string, mixed>  $data
+ */
+function langAssertDatabaseHasRow(string $table, array $data, ?string $connection = 'lang'): void
+{
+    $query = DB::connection($connection)->table($table);
+
+    foreach ($data as $column => $value) {
+        $query->where((string) $column, $value);
+    }
+
+    Assert::assertTrue($query->exists());
 }
