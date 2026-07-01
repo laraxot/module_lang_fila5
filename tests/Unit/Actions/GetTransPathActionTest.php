@@ -6,12 +6,10 @@ namespace Modules\Lang\Tests\Unit\Actions;
 
 uses(TestCase::class);
 
-use Modules\Lang\Actions\GetTransPathAction;
-use Modules\Lang\Tests\TestCase;
-
-beforeEach(function () {
-    $this->action = new GetTransPathAction();
-});
+function makeGetTransPathAction(): GetTransPathAction
+{
+    return new GetTransPathAction();
+}
 
 describe('GetTransPathAction Business Logic', function () {
     test('returns correct path for valid translation key', function () {

@@ -10,6 +10,10 @@ class TranslationFileSeeder extends Seeder
 {
     public function run(): void
     {
-        // Stub per parità modulo — i dati sono sacri, mai migrate:fresh.
+        $count = TranslationFile::query()->count();
+
+        if (null !== $this->command) {
+            $this->command->info("TranslationFileSeeder: {$count} file lang indicizzati via Sushi.");
+        }
     }
 }

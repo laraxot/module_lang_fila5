@@ -6,12 +6,10 @@ namespace Modules\Lang\Tests\Unit\Actions;
 
 uses(TestCase::class);
 
-use Modules\Lang\Actions\GetAllTranslationAction;
-use Modules\Lang\Tests\TestCase;
-
-beforeEach(function () {
-    $action = new GetAllTranslationAction();
-});
+function makeGetAllTranslationAction(): GetAllTranslationAction
+{
+    return new GetAllTranslationAction();
+}
 
 describe('GetAllTranslationAction Business Logic', function () {
     test('returns array of translation files', function () {

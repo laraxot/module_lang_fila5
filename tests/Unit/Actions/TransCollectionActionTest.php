@@ -10,9 +10,12 @@ use Illuminate\Support\Collection;
 use Modules\Lang\Actions\TransCollectionAction;
 use Modules\Lang\Tests\TestCase;
 
-beforeEach(function () {
-    $this->action = new TransCollectionAction();
-});
+uses(TestCase::class);
+
+function makeTransCollectionAction(): TransCollectionAction
+{
+    return new TransCollectionAction();
+}
 
 describe('TransCollectionAction Business Logic', function () {
     test('converts collection elements to strings without transKey', function () {

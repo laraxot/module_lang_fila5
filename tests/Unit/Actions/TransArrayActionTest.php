@@ -6,12 +6,10 @@ namespace Modules\Lang\Tests\Unit\Actions;
 
 uses(TestCase::class);
 
-use Modules\Lang\Actions\TransArrayAction;
-use Modules\Lang\Tests\TestCase;
-
-beforeEach(function () {
-    $this->action = new TransArrayAction();
-});
+function makeTransArrayAction(): TransArrayAction
+{
+    return new TransArrayAction();
+}
 
 describe('TransArrayAction Business Logic', function () {
     test('converts array elements to strings without transKey', function () {

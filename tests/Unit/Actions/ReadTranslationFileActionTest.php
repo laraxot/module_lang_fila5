@@ -35,6 +35,23 @@ beforeEach(function () {
             'next' => 'Next &raquo;',
         ],
     ];
+}
+
+function readTranslationTestFilePath(): string
+{
+    return sys_get_temp_dir().'/test_translations.php';
+}
+
+function makeReadTranslationFileAction(): ReadTranslationFileAction
+{
+    return new ReadTranslationFileAction();
+}
+
+afterEach(function (): void {
+    $path = readTranslationTestFilePath();
+    if (file_exists($path)) {
+        unlink($path);
+    }
 });
 
 afterEach(function () {
