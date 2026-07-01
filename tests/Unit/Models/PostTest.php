@@ -48,7 +48,7 @@ describe('Post Model', function () {
         expect(Post::$snakeAttributes)->toBeTrue();
     });
 
-    test('has incrementing enabled', function () {
+    test('uses string primary key without auto increment', function () {
         $model = new Post();
 
         expect($model->incrementing)->toBeTrue();
