@@ -547,81 +547,25 @@ return [
         ],
     ],
     'actions' => [
-        'authenticate' => [
-            'label' => 'Autentica',
-            'tooltip' => 'Effettua il login nel sistema',
-            'icon' => 'ui-login',
-            'color' => 'primary',
-        ],
-        'login' => [
-            'label' => 'Accedi',
-            'tooltip' => 'Accedi con le tue credenziali',
-            'icon' => 'heroicon-o-key',
-            'color' => 'success',
-        ],
-        'request' => [
-            'label' => 'request',
-            'tooltip' => 'request',
-            'icon' => 'request',
-        ],
-        'cancel' => [
-            'label' => 'cancel',
-        ],
-        'save' => [
-            'label' => 'save',
-        ],
-        'activeLocale' => [
-            'label' => 'activeLocale',
-        ],
-        'open' => [
-            'label' => 'open',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'createAnother' => [
-            'label' => 'createAnother',
-        ],
-        'hidePassword' => [
-            'icon' => 'hidePassword',
-            'label' => 'hidePassword',
-            'tooltip' => 'hidePassword',
-        ],
-        'showPassword' => [
-            'icon' => 'ui-showPassword',
-            'label' => 'showPassword',
-            'tooltip' => 'showPassword',
-        ],
-        'list_log_activities' => [
-            'label' => 'list_log_activities',
-            'icon' => 'list_log_activities',
-            'tooltip' => 'list_log_activities',
-        ],
-        'table_layout_toggle' => [
-            'label' => 'table_layout_toggle',
-            'icon' => 'table_layout_toggle',
-            'tooltip' => 'table_layout_toggle',
-        ],
-        'update_coordinates' => [
-            'label' => 'update_coordinates',
-            'icon' => 'update_coordinates',
-            'tooltip' => 'update_coordinates',
-        ],
-        'edit' => [
-            'label' => 'edit',
-            'icon' => 'edit',
-            'tooltip' => 'edit',
-        ],
-        'delete' => [
-            'label' => 'delete',
-            'icon' => 'delete',
-            'tooltip' => 'delete',
-        ],
-        'SendRecordsNotificationBulkAction' => [
-            'label' => 'SendRecordsNotificationBulkAction',
-            'icon' => 'SendRecordsNotificationBulkAction',
-            'tooltip' => 'SendRecordsNotificationBulkAction',
-        ],
+        'authenticate' => ['label' => 'Autentica', 'tooltip' => 'Effettua il login nel sistema', 'icon' => 'ui-login', 'color' => 'primary'],
+        'login' => ['label' => 'Accedi', 'tooltip' => 'Accedi con le tue credenziali', 'icon' => 'heroicon-o-key', 'color' => 'success'],
+        'request' => ['label' => 'request', 'tooltip' => 'request', 'icon' => 'request'],
+        'cancel' => ['label' => 'cancel'],
+        'save' => ['label' => 'save'],
+        'activeLocale' => ['label' => 'activeLocale'],
+        'open' => ['label' => 'open'],
+        'create' => ['label' => 'create'],
+        'createAnother' => ['label' => 'createAnother'],
+        'hidePassword' => ['icon' => 'hidePassword', 'label' => 'hidePassword', 'tooltip' => 'hidePassword'],
+        'showPassword' => ['icon' => 'ui-showPassword', 'label' => 'showPassword', 'tooltip' => 'showPassword'],
+        'list_log_activities' => ['label' => 'list_log_activities', 'icon' => 'list_log_activities', 'tooltip' => 'list_log_activities'],
+        'table_layout_toggle' => ['label' => 'table_layout_toggle', 'icon' => 'table_layout_toggle', 'tooltip' => 'table_layout_toggle'],
+        'update_coordinates' => ['label' => 'update_coordinates', 'icon' => 'update_coordinates', 'tooltip' => 'update_coordinates'],
+        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'SendRecordsNotificationBulkAction' => ['label' => 'SendRecordsNotificationBulkAction', 'icon' => 'SendRecordsNotificationBulkAction', 'tooltip' => 'SendRecordsNotificationBulkAction'],
+        'changePassword' => ['label' => 'changePassword', 'icon' => 'changePassword', 'tooltip' => 'changePassword'],
+        'logout' => ['tooltip' => 'logout', 'icon' => 'logout', 'label' => 'logout'],
     ],
     'sections' => [
         'address' => [
