@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-use Modules\Lang\Database\Factories\PostFactory;
-use Modules\Lang\Database\Factories\TranslationFactory;
-use Modules\Lang\Database\Factories\TranslationFileFactory;
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
