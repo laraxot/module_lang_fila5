@@ -8,7 +8,6 @@ namespace Modules\Lang\Providers\Traits;
 use Illuminate\Translation\Translator;
 use Modules\Lang\Services\TranslatorService;
 
-/** @phpstan-ignore trait.unused */
 trait TranslatorTrait
 {
     public function registerTranslator(): void
