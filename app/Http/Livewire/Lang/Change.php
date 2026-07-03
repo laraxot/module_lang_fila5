@@ -22,7 +22,6 @@ class Change extends Component
 {
     public string $lang;
 
-    /** @var array<string, array<string, mixed>> */
     public array $langs;
 
     public string $url;
@@ -51,9 +50,7 @@ class Change extends Component
 
             return $item;
         });
-        /** @var array<string, array<string, mixed>> $mappedLangs */
-        $mappedLangs = $langs;
-        $this->langs = $mappedLangs;
+        $this->langs = $langs;
     }
 
     // public function switchLang(string $lang): Application|RedirectResponse|Redirector
