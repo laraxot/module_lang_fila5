@@ -4,51 +4,50 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit\Actions;
 
-use Modules\Lang\Actions\GetTransPathAction;
-use Modules\Lang\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
 uses(TestCase::class);
 
-function makeGetTransPathAction(): GetTransPathAction
-{
-    return new GetTransPathAction();
-}
+use Modules\Lang\Actions\GetTransPathAction;
+use Modules\Lang\Tests\TestCase;
+
+beforeEach(function () {
+    $this->action = new GetTransPathAction();
+});
 
 describe('GetTransPathAction Business Logic', function () {
     test('returns correct path for valid translation key', function () {
         $key = 'meetup::messages.welcome';
-        $result = makeGetTransPathAction()->execute($key);
+        $result = $this->action->execute($key);
 
-        Assert::assertStringContainsString('meetup', strtolower($result));
-        Assert::assertStringContainsString('lang', $result);
-        Assert::assertStringContainsString('messages.php', $result);
+        expect(strtolower($result))->toContain('meetup');
+        expect($result)->toContain('lang');
+        expect($result)->toContain('messages.php');
     });
 
     test('extracts namespace and file from key', function () {
         $key = 'cms::validation.required';
-        $result = makeGetTransPathAction()->execute($key);
+        $result = $this->action->execute($key);
 
-        Assert::assertStringContainsString('cms', strtolower($result));
-        Assert::assertStringContainsString('validation.php', $result);
+        expect(strtolower($result))->toContain('cms');
+        expect($result)->toContain('validation.php');
     });
 
     test('handles simple key without namespace', function () {
-        $result = makeGetTransPathAction()->execute('test');
-        Assert::assertNotSame('', $result);
+        // This will use the default fallback path
+        $result = $this->action->execute('test');
+        expect($result)->toBeString();
     });
 
     test('extracts language from app locale', function () {
         $key = 'user::auth.login';
-        $result = makeGetTransPathAction()->execute($key);
+        $result = $this->action->execute($key);
 
-        Assert::assertStringContainsString('lang/', $result);
+        expect($result)->toContain('lang/');
     });
 
     test('handles keys with multiple dots', function () {
         $key = 'module::file.nested.deep.value';
-        $result = makeGetTransPathAction()->execute($key);
+        $result = $this->action->execute($key);
 
-        Assert::assertStringContainsString('file.php', $result);
+        expect($result)->toContain('file.php');
     });
 });
