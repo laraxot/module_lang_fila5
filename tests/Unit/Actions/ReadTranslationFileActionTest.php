@@ -2,11 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Modules\Lang\Tests\Unit\Actions;
-
-use Modules\Lang\Actions\ReadTranslationFileAction;
-use Modules\Lang\Tests\TestCase;
-use PHPUnit\Framework\Assert;
+// Helper functions for this test
+if (! function_exists('createTranslationFile')) {
+    function createTranslationFile(string $filePath, array $translations): void
+    {
+        $phpContent = "<?php\n\nreturn ".var_export($translations, true).";\n";
+        file_put_contents($filePath, $phpContent);
+    }
+}
 
 use function Safe\chmod;
 use function Safe\file_put_contents;
