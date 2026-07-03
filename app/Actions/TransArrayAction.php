@@ -20,8 +20,6 @@ class TransArrayAction
     /**
      * Esegue la traduzione di una collezione.
      *
-     * @param array<int|string, mixed> $array
-     *
      * @return array<int|string, string>
      */
     public function execute(array $array, ?string $transKey): array
@@ -31,7 +29,7 @@ class TransArrayAction
             if (is_array($result)) {
                 $stringResult = [];
                 foreach ($result as $key => $value) {
-                    $stringResult[$key] = is_string($value) ? $value : '';
+                    $stringResult[$key] = (string) $value;
                 }
 
                 return $stringResult;
@@ -46,7 +44,7 @@ class TransArrayAction
         if (is_array($result)) {
             $stringResult = [];
             foreach ($result as $key => $value) {
-                $stringResult[$key] = is_string($value) ? $value : '';
+                $stringResult[$key] = (string) $value;
             }
 
             return $stringResult;
