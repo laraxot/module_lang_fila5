@@ -1,7 +1,60 @@
----
-module: theme
-topic: pluralization-and-localization
-canonical: ../../../Themes/docs/shared-components/pluralization-and-localization.md
+# Plurale/Singolare e Localizzazione Date/Valute
+
+## Pluralizzazione
+
+### Uso di `trans_choice()` e `@choice()`
+- Per messaggi che variano in base al conteggio, usa `trans_choice()` o la direttiva Blade `@choice()`.
+- Sintassi tipica in PHP:
+  ```php
+  // lang/en/messages.php
+  return [
+      'newMessageIndicator' => '{0} You have no new messages|{1} You have 1 new message|[2,*] You have :count new messages',
+  ];
+  ```
+- In Blade:
+  ```blade
+  @choice('messages.newMessageIndicator', $messagesCount)
+  ```
+- Sintassi delle regole plurali:
+  - `{0}`: caso zero
+  - `{1}`: caso singolare
+  - `[2,*]`: da 2 in poi
+  - Usa `:count` per il numero
+- Plurale in JSON: supportato ma meno leggibile, preferire i file PHP.
+- Modifiche proposte:
+  - Inserire tutte le stringhe plurali in `/lang/{locale}/messages.php`.
+  - Nei Blade, sostituire blocchi condizionali con `trans_choice()` o `@choice()`.
+  - Evitare l'uso del JSON per le stringhe plurali.
+
+### 1.4 Modifiche Proposte ai File
+- **File PHP**: Inserire tutte le stringhe plurali in file dedicati (es. `lang/en/messages.php` e `lang/it/messages.php`).
+- **Blade**: Sostituire blocchi condizionali con `trans_choice()` o `@choice()`.
+- **File JSON**: Evitare l'uso per le stringhe plurali, salvo casi di necessità per traduttori non-dev.
+
+### 1.5 Esempio Completo
+- `lang/en/messages.php`:
+  ```php
+  return [
+      'newMessageIndicator' => '{0} You have no new messages|{1} You have 1 new message|[2,*] You have :count new messages',
+  ];
+  ```
+- `lang/it/messages.php`:
+  ```php
+  return [
+      'newMessageIndicator' => '{0} Non hai nuovi messaggi|{1} Hai 1 nuovo messaggio|[2,*] Hai :count nuovi messaggi',
+  ];
+  ```
+- In Blade:
+  ```blade
+  @choice('messages.newMessageIndicator', $messagesCount)
+  ```
+
+### 1.6 Checklist
+- [ ] Tutte le stringhe plurali sono in file PHP dedicati
+- [ ] Si usano chiavi descrittive e strutturate
+- [ ] Si documenta la presenza di stringhe plurali nei file PHP
+- [ ] Si versionano i file di traduzione dopo ogni modifica
+
 ---
 
 ## Localizzazione Date con Carbon
@@ -314,12 +367,4 @@ canonical: ../../../Themes/docs/shared-components/pluralization-and-localization
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [README.md](./README.md)
-=======
-- [README.md](./README.md)
->>>>>>> laraxot/dev
-=======
-- [README.md](./README.md)
->>>>>>> laraxot/dev

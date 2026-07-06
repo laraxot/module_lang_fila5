@@ -1,20 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06
 
 ## Data
 2025-01-06
-=======
-=======
->>>>>>> laraxot/dev
-# Miglioramenti Qualità Codice - Modulo Lang - [DATE]
-
-## Data
-[DATE]
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ## Obiettivo
 Migliorare la qualità del codice del modulo Lang utilizzando PHPStan livello 10, PHPMD, PHPInsights e Rector.
@@ -73,12 +60,4 @@ Migliorare la qualità del codice del modulo Lang utilizzando PHPStan livello 10
 - [Best Practices](./BEST_PRACTICES.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: [DATE]*
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: [DATE]*
->>>>>>> laraxot/dev

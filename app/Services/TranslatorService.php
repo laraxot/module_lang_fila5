@@ -11,12 +11,9 @@ namespace Modules\Lang\Services;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Translation\Translator as LaravelTranslator;
 use Modules\Lang\Models\Translation;
-use Spatie\QueueableAction\QueueableAction;
 
 class TranslatorService extends LaravelTranslator
 {
-    use QueueableAction;
-
     /** @var Dispatcher */
     protected $events;
 
@@ -68,9 +65,5 @@ class TranslatorService extends LaravelTranslator
             'item' => $item,
         ];
         Translation::firstOrCreate($data);
-    }
-
-    public function execute(): void
-    {
     }
 }

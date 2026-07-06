@@ -1,8 +1,4 @@
----
-module: theme
-topic: navigation-translationses
-canonical: ../../../Themes/docs/shared-components/navigation-translations-fixes.md
----
+# Correzioni Traduzioni Navigation - Modulo Lang
 
 ## Data Intervento
 **[DATE]** - Sistemazione traduzioni secondo regole DRY + KISS

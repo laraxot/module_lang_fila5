@@ -1,8 +1,3 @@
----
-module: theme
-topic: modelli-factory-seeder-analisi
-canonical: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-Modules.md
----
 
 # Analisi Modelli, Factory e Seeder - Modulo Lang
 
@@ -110,12 +105,4 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 - [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md) - Notifiche multilingua
 
 *Ultimo aggiornamento: Gennaio 2025*
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Analisi completa di 6 modelli, sistema traduzioni completo*
-=======
-*Analisi completa di 6 modelli, sistema traduzioni completo*
->>>>>>> laraxot/dev
-=======
-*Analisi completa di 6 modelli, sistema traduzioni completo*
->>>>>>> laraxot/dev
