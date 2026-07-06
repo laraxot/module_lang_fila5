@@ -168,4 +168,6 @@ packages/lara-zeus/
 *~REMOTE
 *.orig
 *.rej
-*~head
+*~headagentdb.rvf
+database/Migrations/
+database/migrations/Migrations/
