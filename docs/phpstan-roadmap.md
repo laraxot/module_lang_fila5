@@ -1,19 +1,7 @@
----
-module: theme
-topic: phpstan-roadmap
-canonical: ../../../Themes/docs/shared-components/phpstan-roadmap.md
----
+# PHPStan Roadmap - Lang Module
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 > **Date**: 2026-01-14
 > **Date**: 2026-01-14
-=======
-> **Date**: [DATE]
->>>>>>> laraxot/dev
-=======
-> **Date**: [DATE]
->>>>>>> laraxot/dev
 > **Status**: ✅ Fully Compliant (Level 10)
 > **Errors**: 0
 
@@ -27,12 +15,4 @@ The **Lang** module is fully compliant with PHPStan Level 10. No errors were rep
 
 ## Future Goals
 - Maintain 0 errors.
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
-=======
-- Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
->>>>>>> laraxot/dev
-=======
-- Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
->>>>>>> laraxot/dev

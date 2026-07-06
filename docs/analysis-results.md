@@ -1,20 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Risultati Analisi Modulo Lang - 2025-01-06
 
 ## Data
 2025-01-06
-=======
-=======
->>>>>>> laraxot/dev
-# Risultati Analisi Modulo Lang - [DATE]
-
-## Data
-[DATE]
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ## Strumenti Utilizzati
 - PHPStan Livello 10
@@ -102,22 +89,8 @@
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Quality Improvements](./quality-improvements-2025-01-06.md)
 - [Index Documentation](./index.md)
 - [Best Practices](./BEST_PRACTICES.md)
 
 *Ultimo aggiornamento: 2025-01-06*
-=======
-=======
->>>>>>> laraxot/dev
-- [Quality Improvements](./quality-improvements-[DATE].md)
-- [Index Documentation](./index.md)
-- [Best Practices](./BEST_PRACTICES.md)
-
-*Ultimo aggiornamento: [DATE]*
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

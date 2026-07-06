@@ -1,8 +1,4 @@
----
-module: theme
-topic: navigation-corrections
-canonical: ../../../Themes/docs/shared-components/correzioni-navigation-pattern.md
----
+# Correzioni Pattern ".navigation" - Gennaio 2025
 
 ## Data Intervento
 **[DATE]** - Sistemazione traduzioni secondo regole DRY + KISS
@@ -239,7 +235,7 @@ Ogni sezione `navigation` deve includere:
 ## Collegamenti
 
 - [Errori Comuni Traduzione](errori-comuni-traduzione.md)
-- [Traduzioni Navigation Audit](traduzioni-navigation.md)
+- [Traduzioni Navigation Audit](traduzioni-navigation-2025.md)
 - [Best Practices Traduzioni](../../xot/docs/translation-standards.md)
 - [NavigationLabelTrait Explained](../../xot/docs/filament/navigation-label-trait-explained.md)
 

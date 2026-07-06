@@ -1,7 +1,9 @@
 ---
-module: theme
-topic: usage
-canonical: ../../../../Themes/docs/shared-components/usage-Modules.md
+title: "html2pdf usage — puntatore"
+type: reference
+updated: 2026-05-21
+related:
+  - "../../../Media/docs/html2pdf/usage.md"
 ---
 
 # Html2Pdf — usage

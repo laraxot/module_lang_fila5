@@ -1,8 +1,4 @@
----
-module: theme
-topic: fixes-syntax-errors
-canonical: ../../../Themes/docs/shared-components/correzioni-errori-sintassi.md
----
+# Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 
 ## Riepilogo Problemi Risolti
 
@@ -171,10 +167,4 @@ grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php"
 - [Best practices traduzioni](./translation_rules.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 6 Gennaio 2025*
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

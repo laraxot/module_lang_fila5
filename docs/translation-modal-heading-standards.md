@@ -1,8 +1,4 @@
----
-module: theme
-topic: translation-modal-heading-standards
-canonical: ../../../Themes/docs/shared-components/translation-modal-heading-standards.md
----
+# Standard per Modal Heading e Description nelle Traduzioni <nome progetto>
 
 ## Regola: Stringhe Dirette per Modal Properties
 
@@ -116,13 +112,5 @@ Questa regola si applica a:
 - [Standard Helper Text](translation-helper-text-standards.md)
 - [Convenzioni Filament](filament-best-practices.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
 *Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: [DATE]*
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: [DATE]*
->>>>>>> laraxot/dev

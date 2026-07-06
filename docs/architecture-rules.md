@@ -7,15 +7,9 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 -   [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)
 -   [PHP Quality Guide](../../Xot/docs/php_quality_guide.md)
 -   [Filament Extension Rules](../../Xot/docs/filament_extension_rules.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 -   [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)
 -   [PHP Quality Guide](../../Xot/docs/php_quality_guide.md)
 -   [Filament Extension Rules](../../Xot/docs/filament_extension_rules.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 **Key Principles:**
 1.  **DRY & KISS**: Don't repeat yourself, keep it simple.
@@ -24,12 +18,4 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Composer merge plugin](composer-merge-plugin.md)
-=======
-- [Composer merge plugin](composer-merge-plugin.md)
->>>>>>> laraxot/dev
-=======
-- [Composer merge plugin](composer-merge-plugin.md)
->>>>>>> laraxot/dev

@@ -128,13 +128,7 @@
 ### Collegamenti Interni
 - [Roadmap](roadmap.md)
 - [Best Practices](BEST-PRACTICES.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Best Practices](BEST-PRACTICES.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 - [Testing](testing.md)
 - [Testing](testing.md)
 ## Collegamenti tra versioni di bottlenecks.md
@@ -157,12 +151,4 @@
 * [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Activity/docs/bottlenecks.md)
 * [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
-=======
-* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
->>>>>>> laraxot/dev
-=======
-* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
->>>>>>> laraxot/dev

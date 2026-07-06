@@ -210,37 +210,17 @@ Dopo aver applicato le correzioni:
 ## Riferimenti
 
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 - [PHP Type Casting](https://www.php.net/manual/en/language.types.type-juggling.php)
 - [PHPStan Mixed Type](https://phpstan.org/writing-php-code/phpdoc-types#mixed)
 
 ## Backlink
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
 - [Lang Module Structure](./README.md)
 - [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
 
 *Ultimo aggiornamento: 2025-07-31*
-=======
-=======
->>>>>>> laraxot/dev
-- [Root PHPStan Rules](../../../docs/phpstan_rules.md)
-- [Lang Module Structure](./README.md)
-- [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
-
-*Ultimo aggiornamento: [DATE]*
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # PHPStan Mixed Type Casting Errors
 
 ## Problema
@@ -453,34 +433,14 @@ Dopo aver applicato le correzioni:
 ## Riferimenti
 
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 - [PHP Type Casting](https://www.php.net/manual/en/language.types.type-juggling.php)
 - [PHPStan Mixed Type](https://phpstan.org/writing-php-code/phpdoc-types#mixed)
 
 ## Backlink
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
 - [Lang Module Structure](./README.md)
 - [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
 
 *Ultimo aggiornamento: 2025-07-31*
-=======
-=======
->>>>>>> laraxot/dev
-- [Root PHPStan Rules](../../../docs/phpstan_rules.md)
-- [Lang Module Structure](./README.md)
-- [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
-
-*Ultimo aggiornamento: [DATE]*
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

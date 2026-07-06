@@ -46,7 +46,7 @@ This file contains a comprehensive list of files with merge conflict markers (`<
 ### Notify Module (3 files)
 - ./laravel/Modules/Notify/docs/wiki/index.md
 - ./laravel/Modules/Notify/docs/wiki/log.md
-- ./laravel/Modules/Notify/docs/project_docs/riepilogo-risoluzione-conflitti.md
+- ./laravel/Modules/Notify/docs/project_docs/riepilogo-risoluzione-conflitti-2025-09-30.md
 
 ### Other Files (62 files)
 - Various agent session files, todo files, and system files
@@ -77,9 +77,6 @@ This file contains a comprehensive list of files with merge conflict markers (`<
 - **Automated Testing**: Run tests after resolution to ensure functionality
 
 ---
-module: theme
-topic: merge-conflict-files-list
-canonical: ../../../Themes/docs/shared-components/merge-conflict-files-list.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/merge-conflict-files-list.md
+*Generated on: $(date)
+*Total files: 96
+*Status: Pending resolution*

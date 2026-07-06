@@ -1,12 +1,6 @@
 # Helper Text Audit Report
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Data**: 2025-08-08 09:15:22
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ## Problemi Identificati
 

@@ -1,36 +1,16 @@
----
-module: theme
-topic: phpstan-corrections
-canonical: ../../../Themes/docs/shared-components/phpstan-corrections-Modules.md
----
+# PHPStan Corrections - Lang Module
 
 ## Panoramica
 Questo documento registra le correzioni PHPStan implementate nel modulo Lang.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-27
 **Ultimo aggiornamento**: 2025-01-27
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> laraxot/dev
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> laraxot/dev
 **Status PHPStan Level 10**: ✅ **PASSED** - 0 errori
 
 ## Correzioni Implementate
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ### Post.php - Doppio Import PostFactory (2025-01-27)
 ### Post.php - Doppio Import PostFactory (2025-01-27)
-=======
-### Post.php - Doppio Import PostFactory ([DATE])
->>>>>>> laraxot/dev
-=======
-### Post.php - Doppio Import PostFactory ([DATE])
->>>>>>> laraxot/dev
 
 **Problema**: Doppio import di `PostFactory` causava conflitto di namespace
 ```php
@@ -113,25 +93,11 @@ if (is_array($value)) {
 - [Console Commands](./console-commands.md)
 - [Translation System](./translation-system.md)
 - [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ## Note per Sviluppo Futuro
 
 1. **Type Hints**: Utilizzare sempre type hints espliciti
 2. **Mixed Types**: Gestire sempre i tipi `mixed` con type casting
 3. **Assertions**: Validare i tipi con assertions appropriate
-<<<<<<< HEAD
-<<<<<<< HEAD
 4. **Documentation**: Documentare sempre i parametri e return types
-=======
-4. **Documentation**: Documentare sempre i parametri e return types
->>>>>>> laraxot/dev
-=======
-4. **Documentation**: Documentare sempre i parametri e return types
->>>>>>> laraxot/dev
