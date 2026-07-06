@@ -1,7 +1,9 @@
----
-module: theme
-topic: pdf-translation-guide
-canonical: ../../../Themes/docs/shared-components/pdf-translation-guide.md
+# PDF Translation Guide - HTML2PDF Integration
+
+## 📋 Overview
+
+Guida completa per generare documenti PDF multilingua utilizzando HTML2PDF con il sistema di traduzione del modulo Lang.
+
 ---
 
 ## 🎯 Funzionalità PDF Multilingua
@@ -749,34 +751,15 @@ class BatchPdfGenerator
 
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./README.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./README.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 - [Filament Internationalization](https://filamentphp.com/docs/3.x/panels/translations)
 - [Laravel Localization](https://laravel.com/docs/localization)
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Last Updated:** 2025-12-09
 **Last Updated:** 2025-12-09
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
-=======
-=======
->>>>>>> laraxot/dev
-**
-**Version:** 1.0.0
-**HTML2PDF Version:** 5.2.x
-**PHPStan Level:** 10 ✅
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

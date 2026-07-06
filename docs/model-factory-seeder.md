@@ -1,7 +1,22 @@
----
-module: theme
-topic: model-factory-seeder
-canonical: ../../../Themes/docs/shared-components/model-factory-seeder-audit.md
----
+# Model/Factory/Seeder Audit
 
-See canonical documentation: ../../../Themes/docs/shared-components/model-factory-seeder-audit.md
+Generated: [DATE] 16:29
+
+## Coverage
+| Model | Factory | Seeded |
+|---|---|---|
+| Translation | yes | no |
+| TranslationFile | yes | no |
+| Post | yes | no |
+| LinkedTrait | n/a | n/a |
+| HasStrictTranslations | n/a | n/a |
+| HasTranslationsContract | n/a | n/a |
+
+Seeder: `database/seeders/LangDatabaseSeeder.php`
+
+## Missing / Actions
+- Add exemplar seeding for `Translation`/`TranslationFile`/`Post` if needed for demos/tests.
+- Traits/contracts are infra; exclude from factories/seeders.
+
+## Likely non-business-critical
+- All trait/contract entries (infra-only).

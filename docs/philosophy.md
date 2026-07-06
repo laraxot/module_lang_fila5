@@ -1,12 +1,6 @@
 # Lang Module: Philosophy, Purpose, and Design Principles
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Date:** December 23, 2025
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ## 🎯 Purpose and Core Responsibilities
 

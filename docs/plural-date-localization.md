@@ -1,8 +1,4 @@
----
-module: theme
-topic: plural-date-localization
-canonical: ../../../Themes/docs/shared-components/plural-date-localization.md
----
+# Gestione di Forme Plurali e Localizzazione di Date/Valute in Laravel
 
 ## Indice
 1. [Introduzione](#introduzione)
@@ -110,16 +106,8 @@ $formatted = $date->translatedFormat('j F Y');
 
 ```php
 // Differenza in formato leggibile
-<<<<<<< HEAD
-<<<<<<< HEAD
 $postDate = Carbon::parse('2023-01-15');
 $postDate = Carbon::parse('2023-01-15');
-=======
-$postDate = Carbon::parse('[DATE]');
->>>>>>> laraxot/dev
-=======
-$postDate = Carbon::parse('[DATE]');
->>>>>>> laraxot/dev
 $diff = $postDate->diffForHumans();
 // Output: "2 mesi fa"
 
@@ -427,16 +415,8 @@ $formatted = $date->translatedFormat('j F Y');
 
 ```php
 // Differenza in formato leggibile
-<<<<<<< HEAD
-<<<<<<< HEAD
 $postDate = Carbon::parse('2023-01-15');
 $postDate = Carbon::parse('2023-01-15');
-=======
-$postDate = Carbon::parse('[DATE]');
->>>>>>> laraxot/dev
-=======
-$postDate = Carbon::parse('[DATE]');
->>>>>>> laraxot/dev
 $diff = $postDate->diffForHumans();
 // Output: "2 mesi fa"
 
@@ -635,12 +615,4 @@ if (!function_exists('trans_choice_with_count')) {
 ### Problemi con le valute
 - Verifica che il codice valuta sia valido (es: 'EUR', 'USD')
 - Controlla che la localizzazione supporti la valuta specificata
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Assicurati che il server abbia i dati di localizzazione installati
-=======
-- Assicurati che il server abbia i dati di localizzazione installati
->>>>>>> laraxot/dev
-=======
-- Assicurati che il server abbia i dati di localizzazione installati
->>>>>>> laraxot/dev

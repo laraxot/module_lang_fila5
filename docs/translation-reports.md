@@ -1,7 +1,9 @@
----
-module: theme
-topic: translation-reports
-canonical: ../../../Themes/docs/shared-components/translation-reports.md
+# Translation Module PDF Reports
+
+## 📋 Overview
+
+Guida completa per generare report PDF delle traduzioni utilizzando HTML2PDF con integrazione nativa nel modulo Lang.
+
 ---
 
 ## 🎯 Tipi di Report Disponibili
@@ -806,34 +808,15 @@ public function generateWithErrorHandling(array $options = []): string
 
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./README.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./README.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 - [Spatie Translatable Documentation](https://github.com/spatie/laravel-translatable)
 - [Laravel Localization](https://laravel.com/docs/localization)
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Last Updated:** 2025-12-09
 **Last Updated:** 2025-12-09
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
-=======
-=======
->>>>>>> laraxot/dev
-**
-**Version:** 1.0.0
-**HTML2PDF Version:** 5.2.x
-**PHPStan Level:** 10 ✅
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

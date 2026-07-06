@@ -1,7 +1,7 @@
----
-module: theme
-topic: now
-canonical: ../../../../Themes/docs/shared-components/01-now.md
----
+# Now (Module Lang)
 
-See canonical documentation: ../../../../Themes/docs/shared-components/01-now.md
+## Stabilization
+
+## Bugfixes
+
+## Quality gates

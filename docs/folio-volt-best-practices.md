@@ -100,13 +100,5 @@ middleware(['auth', 'verified']);
 - Genesis Starter Kit: https://github.com/thedevdojo/genesis
 
 ## Date
-<<<<<<< HEAD
-<<<<<<< HEAD
 2025-11-29
 2025-11-29
-=======
-[DATE]
->>>>>>> laraxot/dev
-=======
-[DATE]
->>>>>>> laraxot/dev

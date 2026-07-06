@@ -1,7 +1,12 @@
----
-module: theme
-topic: validation-messages
-canonical: ../../../Themes/docs/shared-components/validation-messages.md
+# Gestione delle Traduzioni dei Messaggi di Validazione
+
+## Obiettivo
+Fornire una guida completa per:
+- Tradurre i messaggi di validazione standard e personalizzati
+- Gestire la corrispondenza tra label e nome campo nei messaggi di errore
+- Gestire array di campi e placeholder dinamici
+- Scrivere messaggi di validazione user-friendly e localizzati
+
 ---
 
 ## 1. Messaggi di Validazione Standard
@@ -304,12 +309,4 @@ class StoreOrderRequest extends FormRequest
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [README.md](./README.md)
-=======
-- [README.md](./README.md)
->>>>>>> laraxot/dev
-=======
-- [README.md](./README.md)
->>>>>>> laraxot/dev

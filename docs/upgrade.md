@@ -1,7 +1,8 @@
 ---
-module: theme
-topic: upgrade
-canonical: ../../../Themes/docs/shared-components/upgrade.md
+title: Aggiornamenti
+description: Aggiornamenti
+extends: _layouts.documentation
+section: content
 ---
 
 # Aggiornamenti {#aggiornamenti}
@@ -32,25 +33,11 @@ php artisan module_lang:show-versions
 ## Collegamenti tra versioni di upgrade.md
 * [upgrade.md](../../../Lang/docs/upgrade.md)
 * [upgrade.md](../../../Cms/docs/upgrade.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 * [upgrade.md](../../../Lang/docs/upgrade.md)
 * [upgrade.md](../../../Cms/docs/upgrade.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ### Versione Incoming
 
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> laraxot/dev
-=======
----
->>>>>>> laraxot/dev

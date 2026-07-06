@@ -1,8 +1,4 @@
----
-module: theme
-topic: testing
-canonical: ../../../Themes/docs/shared-components/testing-rules-Modules.md
----
+# Testing Rules Summary
 
 ## Regole Fondamentali dei Test
 
@@ -468,12 +464,4 @@ Remember: Good tests are the foundation of reliable software development.
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Last updated: January 2025*
-=======
-*
->>>>>>> laraxot/dev
-=======
-*
->>>>>>> laraxot/dev

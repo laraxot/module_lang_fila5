@@ -1,11 +1,5 @@
----
-module: theme
-topic: CHANGELOG
-canonical: ../../../Themes/docs/shared-components/CHANGELOG.md
----
+# Changelog
 
-All notable changes to `:package_name` will be documented in this file.
+All notable changes to this project will be documented in this file.
 
-## 1.0.0 - 202X-XX-XX
-
-- initial release
+## [Unreleased]

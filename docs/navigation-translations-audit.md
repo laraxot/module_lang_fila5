@@ -114,37 +114,19 @@ Questo file contiene molteplici occorrenze problematiche:
 - **File corrotto rimosso**: `/lang/it/.php` eliminato completamente
 - **Struttura corretta**: Confermata in `geo.php` con navigazione appropriata
 - **Documentazione**: [Correzioni Geo](../Modules/Geo/docs/navigation-translations-fixes.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Documentazione**: [Correzioni Geo](../modules/geo/docs/navigation-translations-fixes.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ### ✅ Modulo User - RISOLTO
 - **device.php**: Traduzioni corrette (Dispositivi → Sicurezza)
 - **permission.php**: Traduzioni corrette (Permessi → Sicurezza)
 - **Documentazione**: [Correzioni User](../Modules/User/docs/navigation-translations-fixes.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Documentazione**: [Correzioni User](../modules/user/docs/navigation-translations-fixes.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ### ✅ Modulo Lang - CONFORME
 - **edit_translation_file.php**: Verificato già conforme agli standard
 - **Nessuna correzione necessaria**: File già strutturato correttamente
 - **Documentazione**: [Verifica Lang](../Modules/Lang/docs/navigation-translations-fixes.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Documentazione**: [Verifica Lang](../modules/lang/docs/navigation-translations-fixes.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ## Note
 - Ogni file deve essere studiato nel contesto del modulo
@@ -153,8 +135,6 @@ Questo file contiene molteplici occorrenze problematiche:
 - Mantenere la struttura espansa (label, placeholder, helper_text, description)
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Regole Traduzioni](../modules/xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../modules/<nome progetto>/docs/translation-quality-standards.md)
 
@@ -165,15 +145,3 @@ Questo file contiene molteplici occorrenze problematiche:
 *Audit creato il: 2025-08-07*
 *Ultimo aggiornamento: 2025-08-07*
 *Ultimo aggiornamento: [DATE]*
-=======
-=======
->>>>>>> laraxot/dev
-- [Regole Traduzioni](../Modules/Xot/docs/translation-rules.md)
-- [Standard Qualità Traduzioni](../Modules/<nome progetto>/docs/translation-quality-standards.md)
-
-*Audit creato il: [DATE]*
-*Ultimo aggiornamento: [DATE]*
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
