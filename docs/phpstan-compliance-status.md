@@ -47,3 +47,9 @@ To maintain PHPStan compliance:
 - [Laravel Localization](https://laravel.com/docs/12.x/localization)
 - [Route Service Providers](route-service-providers.md)
 - [Language Detection Patterns](language-detection.md)
+## Aggiornamento 2026-07-06
+
+`app/Providers/TranslatorTraitPhpstanProbe.php` eliminato: probe PHPStan
+morto (nessuna registry lo referenzia, vedi
+`Modules/Xot/docs/wiki/concepts/phpstan-trait-probes.md`). Ri-verificato a
+zero errori.
