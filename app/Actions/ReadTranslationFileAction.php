@@ -43,8 +43,10 @@ class ReadTranslationFileAction
             Assert::string($translationKey);
         }
 
-        /** @var array<string, mixed> $translations */
-        return $translations;
+        /** @var array<string, mixed> $result */
+        $result = $translations;
+
+        return $result;
     }
 
     /**

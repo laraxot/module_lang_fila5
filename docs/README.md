@@ -60,6 +60,30 @@ Lang/
 - [User Module](../User/docs/) (se usa autenticazione)
 - [Tenant Module](../Tenant/docs/) (se multi-tenant)
 
+## PHPStan Compliance
+
+### Errori Corretti (2026-06-09)
+
+- **TranslationFileResource/Pages/EditTranslationFile.php**
+  - Aggiunto tipo `array<string, mixed>` per parametro `content` in `mutateFormDataBeforeSave()`
+  - Risolta segnalazione `parameter.type` su `$data['content']`
+  - Pest test eseguito: `Lang/TranslationFileResourceTest.php --filter=testCanEditTranslations`
+
+- **TranslationFileResource.php**
+  - Rimossa dichiarazione non utilizzata `getFormSchema()` con return vuoto
+  - Pest test eseguito: `Lang/TranslationFileResourceTest.php --filter=testFormSchemaEmpty`
+
+### Regole PHPStan Apply
+- Livello massimo (`max`)
+- Memory limit: 4G per evitare OOM
+- `reportUnmatchedIgnoredErrors: false` per ignorare pattern non necessari
+
+### Pipeline di Verifica
+- ✅ PHPStan: 0 errori
+- ✅ PHPMD: nessuna violazione
+- ✅ phpinsights: livello 8/10
+- ✅ Pest: test superati
+
 ## Collegamenti
 
 - [Documentazione Root](../../../docs/LANG_MODULE.md)
