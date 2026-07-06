@@ -197,12 +197,6 @@ Ogni campo deve avere la seguente struttura completa:
 ---
 
 **Versione**: 1.0
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Data**: 2025-08-08
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 **Stato**: Implementazione in corso
 **Responsabile**: Sistema automatico DRY/KISS

@@ -1,7 +1,9 @@
 ---
-module: theme
-topic: laravel
-canonical: ../../../../Themes/docs/shared-components/laravel-Modules.md
+title: "html2pdf laravel — puntatore"
+type: reference
+updated: 2026-05-21
+related:
+  - "../../../Media/docs/html2pdf/laravel.md"
 ---
 
 # Html2Pdf — laravel

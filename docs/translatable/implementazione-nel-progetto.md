@@ -1,8 +1,4 @@
----
-module: theme
-topic: implementazione-nel-progetto
-canonical: ../../../../Themes/docs/shared-components/implementation-nel-progetto.md
----
+# Implementazione di Spatie Laravel Translatable nel Progetto
 
 Questo documento descrive come è implementato e configurato il pacchetto `spatie/laravel-translatable` nel nostro progetto, con particolare attenzione all'integrazione con i moduli esistenti e il plugin Filament.
 

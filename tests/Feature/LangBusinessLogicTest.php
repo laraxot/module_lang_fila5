@@ -16,6 +16,7 @@ uses(TestCase::class);
 
 describe('Lang Business Logic', function () {
     it('can create and manage posts', function () {
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
 
         $post = PostFactory::new()->createOne([
@@ -30,7 +31,7 @@ describe('Lang Business Logic', function () {
         Assert::assertSame('Test Post', $post->title);
         Assert::assertSame('draft', $post->status);
 
-        langAssertDatabaseHasRow('posts', [
+        $this->assertDatabaseHasRow('posts', [
             'id' => $post->id,
             'user_id' => $user->id,
             'title' => 'Test Post',
@@ -39,6 +40,7 @@ describe('Lang Business Logic', function () {
     });
 
     it('can publish posts', function () {
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
         $post = PostFactory::new()->createOne([
             'user_id' => $user->id,
@@ -50,13 +52,14 @@ describe('Lang Business Logic', function () {
         $freshPost = $post->fresh();
         Assert::assertNotNull($freshPost);
         Assert::assertSame('published', $freshPost->status);
-        langAssertDatabaseHasRow('posts', [
+        $this->assertDatabaseHasRow('posts', [
             'id' => $post->id,
             'status' => 'published',
         ]);
     });
 
     it('can manage post categories', function () {
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
 
         $newsPost = PostFactory::new()->createOne([
@@ -73,18 +76,19 @@ describe('Lang Business Logic', function () {
 
         Assert::assertSame('news', $newsPost->category);
         Assert::assertSame('tutorial', $tutorialPost->category);
-        langAssertDatabaseHasRow('posts', [
+        $this->assertDatabaseHasRow('posts', [
             'id' => $newsPost->id,
             'category' => 'news',
         ]);
 
-        langAssertDatabaseHasRow('posts', [
+        $this->assertDatabaseHasRow('posts', [
             'id' => $tutorialPost->id,
             'category' => 'tutorial',
         ]);
     });
 
     it('can create and manage translations', function () {
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
 
         $translation = TranslationFactory::new()->createOne([
@@ -100,7 +104,7 @@ describe('Lang Business Logic', function () {
         Assert::assertSame('Welcome to our application', $translation->value);
         Assert::assertSame('en', $translation->locale);
 
-        langAssertDatabaseHasRow('translations', [
+        $this->assertDatabaseHasRow('translations', [
             'id' => $translation->id,
             'user_id' => $user->id,
             'key' => 'welcome.message',
@@ -110,6 +114,7 @@ describe('Lang Business Logic', function () {
     });
 
     it('can manage multilingual content', function () {
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
 
         $englishTranslation = TranslationFactory::new()->createOne([
@@ -137,17 +142,17 @@ describe('Lang Business Logic', function () {
         Assert::assertSame('Benvenuto nella nostra applicazione', $italianTranslation->value);
         Assert::assertSame('Willkommen in unserer Anwendung', $germanTranslation->value);
 
-        langAssertDatabaseHasRow('translations', [
+        $this->assertDatabaseHasRow('translations', [
             'key' => 'welcome.message',
             'locale' => 'en',
         ]);
 
-        langAssertDatabaseHasRow('translations', [
+        $this->assertDatabaseHasRow('translations', [
             'key' => 'welcome.message',
             'locale' => 'it',
         ]);
 
-        langAssertDatabaseHasRow('translations', [
+        $this->assertDatabaseHasRow('translations', [
             'key' => 'welcome.message',
             'locale' => 'de',
         ]);
@@ -213,6 +218,7 @@ describe('Lang Business Logic', function () {
     });
 
     it('can track translation changes', function () {
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
         $translation = TranslationFactory::new()->createOne([
             'user_id' => $user->id,
@@ -226,13 +232,14 @@ describe('Lang Business Logic', function () {
         $freshTranslation = $translation->fresh();
         Assert::assertNotNull($freshTranslation);
         Assert::assertSame('Updated message', $freshTranslation->value);
-        langAssertDatabaseHasRow('translations', [
+        $this->assertDatabaseHasRow('translations', [
             'id' => $translation->id,
             'value' => 'Updated message',
         ]);
     });
 
     it('can manage post metadata', function () {
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
 
         $post = PostFactory::new()->createOne([
@@ -247,7 +254,7 @@ describe('Lang Business Logic', function () {
         Assert::assertSame('SEO Meta Description', $post->meta_description);
         Assert::assertSame('seo, optimization, meta', $post->meta_keywords);
 
-        langAssertDatabaseHasRow('posts', [
+        $this->assertDatabaseHasRow('posts', [
             'id' => $post->id,
             'meta_title' => 'SEO Meta Title',
             'meta_description' => 'SEO Meta Description',
@@ -256,6 +263,7 @@ describe('Lang Business Logic', function () {
     });
 
     it('can manage translation namespaces', function () {
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
 
         $adminTranslation = TranslationFactory::new()->createOne([
@@ -276,18 +284,19 @@ describe('Lang Business Logic', function () {
 
         Assert::assertSame('admin', $adminTranslation->namespace);
         Assert::assertSame('frontend', $frontendTranslation->namespace);
-        langAssertDatabaseHasRow('translations', [
+        $this->assertDatabaseHasRow('translations', [
             'id' => $adminTranslation->id,
             'namespace' => 'admin',
         ]);
 
-        langAssertDatabaseHasRow('translations', [
+        $this->assertDatabaseHasRow('translations', [
             'id' => $frontendTranslation->id,
             'namespace' => 'frontend',
         ]);
     });
 
     it('can validate locale formats', function () {
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
 
         $validLocales = ['en', 'it', 'de', 'fr', 'es'];
@@ -301,7 +310,7 @@ describe('Lang Business Logic', function () {
             ]);
 
             Assert::assertSame($locale, $translation->locale);
-            langAssertDatabaseHasRow('translations', [
+            $this->assertDatabaseHasRow('translations', [
                 'id' => $translation->id,
                 'locale' => $locale,
             ]);
@@ -309,6 +318,7 @@ describe('Lang Business Logic', function () {
     });
 
     it('can manage post scheduling', function () {
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
         $futureDate = now()->addDays(7);
 
@@ -325,7 +335,7 @@ describe('Lang Business Logic', function () {
             $futureDate->format('Y-m-d H:i:s'),
             $scheduledPost->published_at->format('Y-m-d H:i:s'),
         );
-        langAssertDatabaseHasRow('posts', [
+        $this->assertDatabaseHasRow('posts', [
             'id' => $scheduledPost->id,
             'status' => 'scheduled',
         ]);

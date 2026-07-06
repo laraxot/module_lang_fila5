@@ -1,8 +1,4 @@
----
-module: theme
-topic: translations-faq
-canonical: ../../../Themes/docs/shared-components/translations-faq.md
----
+# FAQ e Problemi Comuni sulle Traduzioni
 
 ## 1. Perché il POST non funziona su rotte localizzate?
 Se non usi URL localizzati anche nei form/action, il middleware può fare redirect e cambiare il metodo in GET. Usa sempre gli helper per generare URL localizzati nei form.
@@ -54,13 +50,7 @@ Aggiorna sempre la documentazione in `/Modules/Lang/docs` e spiega la strategia 
 ### Devo registrare manualmente i comandi console?
 
 **No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 **No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # FAQ e Problemi Comuni sulle Traduzioni
 
 ## 1. Perché il POST non funziona su rotte localizzate?
@@ -113,10 +103,4 @@ Aggiorna sempre la documentazione in `/Modules/Lang/docs` e spiega la strategia 
 ### Devo registrare manualmente i comandi console?
 
 **No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 **No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

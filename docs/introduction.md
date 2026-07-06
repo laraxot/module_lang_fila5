@@ -26,22 +26,9 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 * [introduction.md](laravel/vendor/spatie/laravel-data/docs/validation/introduction.md)
 * [introduction.md](../../../Lang/docs/introduction.md)
 * [introduction.md](../../../Cms/docs/introduction.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 * [introduction.md](../../../Lang/docs/introduction.md)
 * [introduction.md](../../../Cms/docs/introduction.md)
-=======
->>>>>>> laraxot/dev
 
 ### Versione Incoming
 
 ---
-<<<<<<< HEAD
-=======
-
-### Versione Incoming
-
----
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
