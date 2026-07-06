@@ -72,7 +72,7 @@ describe('Read Translation File Action', function (): void {
 
     test('throws exception for non existent file', function (): void {
         /* @var TestCase $this */
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         $this->expectApplicationException(\Exception::class, 'File di traduzione non trovato:');
 
         makeReadTranslationFileAction()->execute(storage_path('non_existent.php'));
