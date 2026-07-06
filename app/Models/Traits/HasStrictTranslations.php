@@ -16,21 +16,23 @@ trait HasStrictTranslations
     }
 
     /**
-     * @param string $key               Il nome dell'attributo da tradurre
-     * @param string $locale            Il codice della lingua richiesta
-     * @param bool   $useFallbackLocale Se utilizzare o meno la lingua di fallback
-     *
+     * @param  string  $key  Il nome dell'attributo da tradurre
+     * @param  string  $locale  Il codice della lingua richiesta
+     * @param  bool  $useFallbackLocale  Se utilizzare o meno la lingua di fallback
      * @return string|array<string, mixed>|int|null Il valore tradotto dell'attributo
      */
     public function getTranslation(string $key, string $locale, bool $useFallbackLocale = true): string|array|int|null
     {
         $value = $this->spatieGetTranslation($key, $locale, $useFallbackLocale);
 
-        if (is_string($value) || is_int($value) || null === $value) {
+        if (is_string($value) || is_int($value) || $value === null) {
             return $value;
         }
 
-        // Se il valore non è del tipo atteso, lo convertiamo
+        if (is_array($value)) {
+            return self::normalizeTranslationArray($value);
+        }
+
         if (is_bool($value)) {
             return (int) $value;
         }
@@ -47,8 +49,7 @@ trait HasStrictTranslations
     }
 
     /**
-     * @param array<mixed, mixed> $value
-     *
+     * @param  array<mixed, mixed>  $value
      * @return array<string, mixed>
      */
     private static function normalizeTranslationArray(array $value): array
