@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Lang\Tests\Unit\Actions;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(TestCase::class);
 
 use Illuminate\Support\Collection;
@@ -15,6 +16,8 @@ beforeEach(function () {
     $this->action = new TransCollectionAction();
 });
 =======
+=======
+>>>>>>> origin/dev
 use Illuminate\Support\Collection;
 use Modules\Lang\Actions\TransCollectionAction;
 use Modules\Lang\Tests\TestCase;
@@ -26,17 +29,24 @@ function makeTransCollectionAction(): TransCollectionAction
 {
     return new TransCollectionAction();
 }
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 
 describe('TransCollectionAction Business Logic', function () {
     test('converts collection elements to strings without transKey', function () {
         /** @var Collection<int|string, mixed> $input */
         $input = new Collection([1, 2, 3]);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $result = $this->action->execute($input, null);
 =======
         $result = makeTransCollectionAction()->execute($input, null);
 >>>>>>> 40b96bcd6 (.)
+=======
+        $result = makeTransCollectionAction()->execute($input, null);
+>>>>>>> origin/dev
 
         Assert::assertInstanceOf(Collection::class, $result);
         Assert::assertSame(['1', '2', '3'], $result->toArray());
@@ -46,10 +56,14 @@ describe('TransCollectionAction Business Logic', function () {
         /** @var Collection<int|string, mixed> $input */
         $input = new Collection(['a', 'b', 'c']);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $result = $this->action->execute($input, null);
 =======
         $result = makeTransCollectionAction()->execute($input, null);
 >>>>>>> 40b96bcd6 (.)
+=======
+        $result = makeTransCollectionAction()->execute($input, null);
+>>>>>>> origin/dev
 
         Assert::assertInstanceOf(Collection::class, $result);
     });
@@ -58,10 +72,14 @@ describe('TransCollectionAction Business Logic', function () {
         /** @var Collection<int|string, mixed> $input */
         $input = new Collection([]);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $result = $this->action->execute($input, null);
 =======
         $result = makeTransCollectionAction()->execute($input, null);
 >>>>>>> 40b96bcd6 (.)
+=======
+        $result = makeTransCollectionAction()->execute($input, null);
+>>>>>>> origin/dev
 
         Assert::assertInstanceOf(Collection::class, $result);
         Assert::assertEmpty($result);
@@ -71,10 +89,14 @@ describe('TransCollectionAction Business Logic', function () {
         /** @var Collection<int|string, mixed> $input */
         $input = new Collection(['test_key']);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $result = $this->action->execute($input, 'test');
 =======
         $result = makeTransCollectionAction()->execute($input, 'test');
 >>>>>>> 40b96bcd6 (.)
+=======
+        $result = makeTransCollectionAction()->execute($input, 'test');
+>>>>>>> origin/dev
 
         Assert::assertInstanceOf(Collection::class, $result);
         Assert::assertCount(1, $result);
@@ -84,10 +106,14 @@ describe('TransCollectionAction Business Logic', function () {
         /** @var Collection<int|string, mixed> $input */
         $input = new Collection(['nonexistent_key']);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $result = $this->action->execute($input, 'nonexistent');
 =======
         $result = makeTransCollectionAction()->execute($input, 'nonexistent');
 >>>>>>> 40b96bcd6 (.)
+=======
+        $result = makeTransCollectionAction()->execute($input, 'nonexistent');
+>>>>>>> origin/dev
 
         Assert::assertInstanceOf(Collection::class, $result);
     });
@@ -96,10 +122,14 @@ describe('TransCollectionAction Business Logic', function () {
         /** @var Collection<int|string, mixed> $input */
         $input = new Collection([100, 200, 300]);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $result = $this->action->execute($input, null);
 =======
         $result = makeTransCollectionAction()->execute($input, null);
 >>>>>>> 40b96bcd6 (.)
+=======
+        $result = makeTransCollectionAction()->execute($input, null);
+>>>>>>> origin/dev
 
         Assert::assertInstanceOf(Collection::class, $result);
     });
@@ -108,10 +138,14 @@ describe('TransCollectionAction Business Logic', function () {
         /** @var Collection<int|string, mixed> $input */
         $input = new Collection(['key1' => 'value1', 'key2' => 'value2']);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $result = $this->action->execute($input, null);
 =======
         $result = makeTransCollectionAction()->execute($input, null);
 >>>>>>> 40b96bcd6 (.)
+=======
+        $result = makeTransCollectionAction()->execute($input, null);
+>>>>>>> origin/dev
 
         Assert::assertInstanceOf(Collection::class, $result);
     });

@@ -136,19 +136,34 @@ class Post extends BaseModel
      * Indicates whether attributes are snake cased on arrays.
      *
      * @see  https://laravel-news.com/6-eloquent-secrets
+<<<<<<< HEAD
      */
 <<<<<<< HEAD
     public $incrementing = true;
 =======
+=======
+     *
+     * @var bool
+     */
+>>>>>>> origin/dev
     public static $snakeAttributes = true;
 
     /** @var bool */
     public $incrementing = false;
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
 
     protected $perPage = 30;
 
     // use Searchable;
+=======
+
+    /** @var int */
+    protected $perPage = 30;
+
+    // use Searchable;
+    /** @var string */
+>>>>>>> origin/dev
     protected $connection = 'lang';
 
     /** @var list<string> */
@@ -186,8 +201,15 @@ class Post extends BaseModel
     /** @var list<string> */
     protected $appends = [];
 
+<<<<<<< HEAD
     protected $primaryKey = 'id';
 
+=======
+    /** @var string */
+    protected $primaryKey = 'id';
+
+    /** @var string */
+>>>>>>> origin/dev
     protected $keyType = 'string';
 
     /*

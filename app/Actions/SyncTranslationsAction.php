@@ -272,6 +272,10 @@ class SyncTranslationsAction
                 $content .= $this->arrayToPhp($this->filterStringKeyArray($value), $indent + 1);
                 $content .= $indentStr."],\n";
             } else {
+<<<<<<< HEAD
+=======
+                /** @phpstan-ignore-next-line */
+>>>>>>> origin/dev
                 $content .= "'".addslashes((string) $value)."',\n";
             }
         }
