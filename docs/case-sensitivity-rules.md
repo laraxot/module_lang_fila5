@@ -13,18 +13,15 @@ I seguenti file/directory sono stati eliminati perché violavano le regole:
 
 ```
 ✗ Removed: database/Migrations/ (entire directory)
-✗ Removed: database/migrations/Migrations/ (nested anti-pattern — 2026-07-01)
-✓ Kept:    database/migrations/ (flat, solo file .php)
+✓ Kept:    database/migrations/
 ```
-
-Dettaglio incidente e verifica: [wiki/concepts/migration-path-canonical.md](wiki/concepts/migration-path-canonical.md).
 
 ## Convenzioni
 
 ### Directory Structure
 - **Formato**: lowercase
 - **Esempio**: `database/migrations/`
-- ❌ **Errato**: `database/Migrations/`, `Database/Migrations/`, `database/migrations/Migrations/`
+- ❌ **Errato**: `database/Migrations/`, `Database/Migrations/`
 
 ### Motivazione
 
@@ -36,4 +33,4 @@ Laravel usa la convenzione `database/migrations/` (lowercase) per:
 ## Update Log
 
 - **2025-11-04**: Removed `database/Migrations/` uppercase directory
-- **2026-07-01**: Removed nested `database/migrations/Migrations/` (reintroduced per errore automazione in `f840e0cc0`; fix `247054abb`)
+- **[DATE]**: Removed `database/Migrations/` uppercase directory
