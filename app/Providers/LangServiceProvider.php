@@ -80,12 +80,18 @@ class LangServiceProvider extends XotBaseServiceProvider
 
         Entry::configureUsing(function (Entry $component) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return app(AutoLabelAction::class)->execute($component, 'label');
 =======
             $component = app(AutoLabelAction::class)->execute($component, 'label');
 
             return $component;
 >>>>>>> 40b96bcd6 (.)
+=======
+            $component = app(AutoLabelAction::class)->execute($component, 'label');
+
+            return $component;
+>>>>>>> origin/dev
         });
 
         Section::configureUsing(function (Section $component) {

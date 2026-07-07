@@ -12,6 +12,7 @@ class ReadTranslationFileAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * @param array<mixed, mixed> $value
      *
      * @return array<string, mixed>
@@ -25,6 +26,8 @@ class ReadTranslationFileAction
     }
 
     /**
+=======
+>>>>>>> origin/dev
      * Legge il contenuto di un file di traduzione.
      *
      * @param string $filePath Percorso del file di traduzione
@@ -51,8 +54,11 @@ class ReadTranslationFileAction
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->assertStringKeyedArray($translations);
 =======
+=======
+>>>>>>> origin/dev
         Assert::isArray($translations);
 
         foreach (array_keys($translations) as $translationKey) {
@@ -63,7 +69,10 @@ class ReadTranslationFileAction
         $result = $translations;
 
         return $result;
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
     }
 
     /**
@@ -96,6 +105,7 @@ class ReadTranslationFileAction
         $indentStr = str_repeat('    ', $indent);
 
         foreach ($array as $key => $value) {
+<<<<<<< HEAD
             $content .= $indentStr."'".addslashes((string) $key)."' => ";
 
             if (is_array($value)) {
@@ -104,6 +114,17 @@ class ReadTranslationFileAction
                 $content .= $this->arrayToPhp($value, $indent + 1);
                 $content .= $indentStr."],\n";
             } else {
+=======
+            $content .= $indentStr."'".addslashes($key)."' => ";
+
+            if (is_array($value)) {
+                $content .= "[\n";
+                /** @phpstan-ignore argument.type */
+                $content .= $this->arrayToPhp($value, $indent + 1);
+                $content .= $indentStr."],\n";
+            } else {
+                /** @phpstan-ignore-next-line */
+>>>>>>> origin/dev
                 $content .= "'".addslashes((string) $value)."',\n";
             }
         }

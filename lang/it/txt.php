@@ -92,6 +92,7 @@ return [
             'description' => '',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         'test_date' => [
             'label' => 'test_date',
             'placeholder' => 'test_date',
@@ -136,6 +137,8 @@ return [
             'description' => 'coordinates',
         ],
 =======
+=======
+>>>>>>> origin/dev
         'test_date' => ['label' => 'test_date', 'placeholder' => 'test_date', 'helper_text' => 'test_date', 'description' => 'test_date', 'tooltip' => ''],
         'test' => ['label' => 'test', 'placeholder' => 'test', 'helper_text' => 'test', 'description' => 'test', 'tooltip' => ''],
         'view' => ['label' => 'view', 'placeholder' => 'view', 'helper_text' => 'view', 'description' => 'view', 'tooltip' => ''],
@@ -151,7 +154,10 @@ return [
         'updated_at' => ['label' => 'updated_at'],
         'appointment_date' => ['label' => 'appointment_date', 'placeholder' => 'appointment_date', 'helper_text' => 'appointment_date', 'description' => 'appointment_date'],
         'contact' => ['label' => 'contact'],
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
     ],
     'actions' => [
         'authenticate' => ['label' => 'Autentica', 'tooltip' => 'Effettua il login nel sistema', 'icon' => 'ui-login', 'color' => 'primary'],
@@ -188,11 +194,15 @@ return [
     ],
     'steps' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'test' => [
             'label' => 'test',
         ],
 =======
         'test' => ['label' => 'test'],
 >>>>>>> 40b96bcd6 (.)
+=======
+        'test' => ['label' => 'test'],
+>>>>>>> origin/dev
     ],
 ];
