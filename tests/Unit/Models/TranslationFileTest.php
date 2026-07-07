@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace Modules\Lang\Tests\Unit\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(TestCase::class);
 
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Tests\TestCase;
 =======
+=======
+>>>>>>> origin/dev
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -17,7 +20,10 @@ use PHPUnit\Framework\Assert;
 use function Safe\class_uses;
 
 uses(TestCase::class);
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 
 describe('TranslationFile Model', function () {
     test('uses Sushi trait', function () {

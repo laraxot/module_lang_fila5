@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Lang\Tests\Feature;
 
 uses(TestCase::class);
@@ -12,18 +13,29 @@ use Modules\Lang\Database\Factories\PostFactory;
 use Modules\Lang\Database\Factories\TranslationFactory;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
 >>>>>>> 40b96bcd6 (.)
+=======
+use Modules\Lang\Database\Factories\PostFactory;
+use Modules\Lang\Database\Factories\TranslationFactory;
+use Modules\Lang\Database\Factories\TranslationFileFactory;
+>>>>>>> origin/dev
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Tests\TestCase;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 =======
+=======
+>>>>>>> origin/dev
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 
 describe('Lang Business Logic', function () {
     it('can create and manage posts', function () {

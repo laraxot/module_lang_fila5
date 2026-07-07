@@ -4,29 +4,29 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Models;
 
-use Illuminate\Database\Eloquent\Relations\MorphPivot;
+// use GeneaLabs\LaravelModelCaching\Traits\Cachable;
+// use Laravel\Scout\Searchable;
+// ---------- traits
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Traits\Updater;
 
 /**
- * Class BaseMorphPivot.
+ * Class BaseModel.
+ *
  */
-abstract class BaseMorphPivot extends MorphPivot
+abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 {
+    use \Modules\Xot\Models\Traits\HasXotFactory;
+
+    // use Searchable;
+    // use Cachable;
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
      * @see  https://laravel-news.com/6-eloquent-secrets
-<<<<<<< HEAD
-     */
-    public static $snakeAttributes = true;
-
-    public $incrementing = true;
-
-    public $timestamps = true;
-
-=======
      *
      * @var bool
      */
@@ -39,43 +39,35 @@ abstract class BaseMorphPivot extends MorphPivot
     public $timestamps = true;
 
     /** @var int */
->>>>>>> origin/dev
     protected $perPage = 30;
 
+    /** @var string */
     protected $connection = 'lang';
 
     /** @var list<string> */
-    protected $appends = [];
+    protected $fillable = ['id'];
 
-<<<<<<< HEAD
-    protected $primaryKey = 'id';
-
-=======
     /** @var string */
     protected $primaryKey = 'id';
 
     /** @var string */
->>>>>>> origin/dev
     protected $keyType = 'string';
 
     /** @var list<string> */
-    protected $fillable = [
-        'id',
-        'post_id',
-        'post_type',
-        'related_type',
-        'user_id',
-        'note',
+    protected $hidden = [
+        // 'password'
     ];
 
+    /**
+     * @return array<string, string> */
     protected function casts(): array
     {
         return [
             'id' => 'string',
             'uuid' => 'string',
+            'published_at' => 'datetime',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
         ];
     }
 }
