@@ -87,7 +87,12 @@ class WriteTranslationFileAction
         file_put_contents($tempFile, $phpContent);
 
         // Esegue php -l per validare la sintassi
+<<<<<<< HEAD
+        /** @var array<int, string> $output */
+        $output = [];
+=======
         $rawOutput = [];
+>>>>>>> 40b96bcd6 (.)
         $returnCode = 0;
         exec("php -l {$tempFile} 2>&1", $rawOutput, $returnCode);
         $output = is_array($rawOutput) ? $rawOutput : [];
@@ -95,6 +100,14 @@ class WriteTranslationFileAction
         unlink($tempFile);
 
         if (0 !== $returnCode) {
+<<<<<<< HEAD
+            $errorOutput = \is_array($output) ? $output : [];
+            $errorLines = array_map(
+                static fn (mixed $line): string => (string) $line,
+                $errorOutput,
+            );
+            $error = implode("\n", $errorLines);
+=======
             $lines = [];
             foreach ($output as $line) {
                 if (is_string($line)) {
@@ -102,6 +115,7 @@ class WriteTranslationFileAction
                 }
             }
             $error = implode("\n", $lines);
+>>>>>>> 40b96bcd6 (.)
             throw new \Exception("Sintassi PHP non valida: {$error}");
         }
     }
