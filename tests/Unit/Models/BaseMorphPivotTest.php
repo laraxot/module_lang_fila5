@@ -5,18 +5,24 @@ declare(strict_types=1);
 namespace Modules\Lang\Tests\Unit\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(TestCase::class);
 
 use Modules\Lang\Models\BaseMorphPivot;
 use Modules\Lang\Tests\TestCase;
 =======
+=======
+>>>>>>> origin/dev
 use Illuminate\Database\Eloquent\Relations\MorphPivot;
 use Modules\Lang\Models\BaseMorphPivot;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 
 describe('BaseMorphPivot Model', function () {
     test('extends MorphPivot', function () {
