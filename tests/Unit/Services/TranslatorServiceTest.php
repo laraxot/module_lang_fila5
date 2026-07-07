@@ -30,6 +30,6 @@ describe('TranslatorService Business Logic', function () {
     test('get returns a string or an array', function () {
         $result = makeTranslatorService()->get('lang::missing.another_key_'.uniqid());
 
-        Assert::assertContains(gettype($result), ['string', 'array']);
+        Assert::assertTrue(is_string($result) || is_array($result));
     });
 });
