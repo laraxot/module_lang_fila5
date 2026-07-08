@@ -73,6 +73,7 @@ Questo documento è collegato bidirezionalmente con [lang-link.md](../../User/do
 
 ## Collegamenti tra versioni di user-link.md
 * [user-link.md](../../../Lang/docs/user-link.md)
+<<<<<<< HEAD
 * [user-link.md](../../../Cms/docs/user-link.md)
 * [user-link.md](../../../Cms/docs/user-link.md)
 
@@ -83,3 +84,6 @@ Questo documento è collegato bidirezionalmente con [lang-link.md](../../User/do
 * [user-link.md](../../../Cms/docs/user-link.md)
 
 * [user-link.md](../../../Cms/docs/user-link.md)
+=======
+* [user-link.md](../../../Cms/docs/user-link.md)
+>>>>>>> 11c7c7d (.)

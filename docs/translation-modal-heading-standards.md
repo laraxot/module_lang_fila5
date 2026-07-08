@@ -113,6 +113,7 @@ Questa regola si applica a:
 - [Convenzioni Filament](filament-best-practices.md)
 
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
 *Ultimo aggiornamento: [DATE]*
 *Ultimo aggiornamento: [DATE]*
@@ -120,3 +121,6 @@ Questa regola si applica a:
 *Ultimo aggiornamento: [DATE]*
 *Ultimo aggiornamento: 2025-01-06*
 *Ultimo aggiornamento: 2025-01-06*
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 11c7c7d (.)
