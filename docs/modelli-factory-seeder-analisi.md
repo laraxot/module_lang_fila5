@@ -111,7 +111,11 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 
 *Ultimo aggiornamento: Gennaio 2025*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Analisi completa di 6 modelli, sistema traduzioni completo*
+=======
+*Analisi completa di 6 modelli, sistema traduzioni completo*
+>>>>>>> laraxot/dev
 =======
 *Analisi completa di 6 modelli, sistema traduzioni completo*
 >>>>>>> laraxot/dev

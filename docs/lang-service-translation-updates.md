@@ -1,6 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
+=======
+# Aggiornamento File di Traduzione Lang Service - [DATE]
+>>>>>>> laraxot/dev
 =======
 # Aggiornamento File di Traduzione Lang Service - [DATE]
 >>>>>>> laraxot/dev
@@ -153,6 +157,7 @@ La gestione delle traduzioni deve essere:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di gestione traduzioni Laraxot
 **Versione**: 1.0
@@ -161,8 +166,13 @@ La gestione delle traduzioni deve essere:
 **Versione**: 1.0  
 **Stato**: Implementato e testato
 =======
+=======
+>>>>>>> laraxot/dev
 **Ultimo aggiornamento**: [DATE]
 **Autore**: Sistema di gestione traduzioni Laraxot
 **Versione**: 1.0
 **Stato**: Implementato e testato
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

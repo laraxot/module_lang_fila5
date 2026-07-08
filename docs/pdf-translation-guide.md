@@ -750,8 +750,11 @@ class BatchPdfGenerator
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./README.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 - [Filament Internationalization](https://filamentphp.com/docs/3.x/panels/translations)
@@ -760,14 +763,20 @@ class BatchPdfGenerator
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Last Updated:** 2025-12-09
 **Last Updated:** 2025-12-09
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
 =======
+=======
+>>>>>>> laraxot/dev
 **
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

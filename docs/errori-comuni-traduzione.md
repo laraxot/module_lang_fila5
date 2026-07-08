@@ -139,9 +139,12 @@ Tutti i campi devono seguire la struttura espansa:
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # Errori comuni nei file di traduzione
@@ -285,8 +288,11 @@ Tutti i campi devono seguire la struttura espansa:
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
