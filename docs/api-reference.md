@@ -829,6 +829,12 @@ public function get(string $key, array $replace = [], ?string $locale = null): s
 - [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices
 - [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Troubleshooting
+<<<<<<< HEAD
+=======
+- [README.md](readme.md) - Documentazione principale
+- [BEST_PRACTICES.md](best_practices.md) - Best practices
+- [TROUBLESHOOTING.md](troubleshooting.md) - Troubleshooting
+>>>>>>> bebd548 (.)
 - [config/lang.php](../config/lang.php) - Configurazione
 
 ### **2. Esempi**

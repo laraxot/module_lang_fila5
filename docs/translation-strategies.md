@@ -67,6 +67,10 @@ lang/
   - Restituisce `null` se chiamato senza parametri
   - Sintassi: `__('chiave.traduzione')`
   
+<<<<<<< HEAD
+=======
+
+>>>>>>> bebd548 (.)
 - `trans()`: Versione più flessibile
   - Restituisce l'istanza del Translator se chiamato senza parametri
   - Utile per metodi concatenati: `trans()->getLocale()`

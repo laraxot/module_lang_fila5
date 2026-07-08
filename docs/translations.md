@@ -305,6 +305,7 @@ class TranslationUsageReportService
         $files = $this->findPhpFiles(base_path('modules'));
         $fieldUsage = [];
 
+<<<<<<< HEAD
         foreach ($files as $file) {
             $content = file_get_contents($file);
 
@@ -817,3 +818,8 @@ public function generateWithErrorHandling(array $options = []): string
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
+=======
+- [Filament Translations](/.cursor/rules/filament-translations.rule)
+- [Laravel Localization](https://laravel.com/docs/10.x/localization)
+- [Best Practices](/.cursor/rules/translations.rule)
+>>>>>>> bebd548 (.)
