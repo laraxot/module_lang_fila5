@@ -912,10 +912,13 @@ class UserResourceTest extends TestCase
 
 ### **1. Documentazione**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md](readme.md) - Documentazione principale
 - [BEST_PRACTICES.md](best_practices.md) - Best practices
 - [API_REFERENCE.md](api_reference.md) - Riferimento API
 - [TROUBLESHOOTING.md](troubleshooting.md) - Troubleshooting
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 - [README.md](README.md) - Documentazione principale
@@ -932,7 +935,11 @@ class UserResourceTest extends TestCase
 **Versione**: 2.0.0
 **Autore**: Team Laraxot
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Mantenuto da**: Community Laraxot
+=======
+**Mantenuto da**: Community Laraxot
+>>>>>>> laraxot/dev
 =======
 **Mantenuto da**: Community Laraxot
 >>>>>>> laraxot/dev

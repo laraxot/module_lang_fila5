@@ -128,9 +128,12 @@ Per evitare errori nei file di traduzione:
 
 *Ultimo aggiornamento: 3 Giugno 2025*
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole generali per i file di traduzione](/laravel/modules/xot/docs/translation_rules.md)
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 
 *Ultimo aggiornamento: 3 Giugno 2025*
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

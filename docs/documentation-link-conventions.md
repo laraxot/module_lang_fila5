@@ -14,8 +14,11 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 [Regole Generali](../../Xot/project_docs/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Regole Generali](../../Xot/project_docs/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ```
@@ -25,8 +28,11 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 [Regole Generali](Modules/Xot/project_docs/translations.md)
 [Best Practices](Modules/Lang/project_docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Regole Generali](Modules/Xot/project_docs/translations.md)
 [Best Practices](Modules/Lang/project_docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ```
@@ -42,7 +48,10 @@ Esempi:
 - Per collegare a un file nello stesso modulo: `[File](./altro_file.md)` o `[File](altro_file.md)`
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/project_docs/file.md)`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/project_docs/file.md)`
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -74,10 +83,13 @@ Per collegare documenti tra moduli diversi:
 <!-- Da Modules/ModuloA/project_docs/file.md a docs/file.md nella root -->
 [Link a docs root](../../../project_docs/file.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Link a ModuloB](../../ModuloB/project_docs/file.md)
 
 <!-- Da Modules/ModuloA/project_docs/file.md a docs/file.md nella root -->
 [Link a docs root](../../../../docs/project/file.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ```
@@ -95,7 +107,10 @@ Prima di fare commit dei documenti:
 ```markdown
 [Convenzioni Notify](../../Notify/project_docs/TRANSLATION_CONVENTIONS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Convenzioni Notify](../../Notify/project_docs/TRANSLATION_CONVENTIONS.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ```
@@ -104,7 +119,10 @@ Prima di fare commit dei documenti:
 ```markdown
 [Documentazione Principale](../../../project_docs/README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documentazione Principale](../../../../docs/project/README.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ```
@@ -113,7 +131,10 @@ Prima di fare commit dei documenti:
 ```markdown
 [Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ```
@@ -137,8 +158,11 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 [Regole Generali](../../Xot/docs/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Regole Generali](../../Xot/docs/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ```
@@ -148,8 +172,11 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 [Regole Generali](Modules/Xot/docs/translations.md)
 [Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Regole Generali](Modules/Xot/docs/translations.md)
 [Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ```
@@ -165,7 +192,10 @@ Esempi:
 - Per collegare a un file nello stesso modulo: `[File](./altro_file.md)` o `[File](altro_file.md)`
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/docs/file.md)`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/docs/file.md)`
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -197,10 +227,13 @@ Per collegare documenti tra moduli diversi:
 <!-- Da Modules/ModuloA/docs/file.md a docs/file.md nella root -->
 [Link a docs root](../../../docs/file.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Link a ModuloB](../../ModuloB/docs/file.md)
 
 <!-- Da Modules/ModuloA/docs/file.md a docs/file.md nella root -->
 [Link a docs root](../../../../docs/file.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ```
@@ -218,7 +251,10 @@ Prima di fare commit dei documenti:
 ```markdown
 [Convenzioni Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Convenzioni Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ```
@@ -227,7 +263,10 @@ Prima di fare commit dei documenti:
 ```markdown
 [Documentazione Principale](../../../docs/README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documentazione Principale](../../../../docs/README.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ```
@@ -236,7 +275,10 @@ Prima di fare commit dei documenti:
 ```markdown
 [Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ```
@@ -247,7 +289,11 @@ Prima di fare commit dei documenti:
 2. **Manutenibilità**: Se la struttura cambia, sono necessarie meno modifiche
 3. **Collaborazione**: Facilita il lavoro di più sviluppatori
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
+=======
+4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
+>>>>>>> laraxot/dev
 =======
 4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
 >>>>>>> laraxot/dev

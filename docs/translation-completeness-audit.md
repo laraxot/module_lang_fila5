@@ -6,8 +6,12 @@ This document tracks the completeness and quality of translation files across th
 ## Recent Updates
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Complete PDF Template Internationalization
 ### 2025-01-06: Complete PDF Template Internationalization
+=======
+### [DATE]: Complete PDF Template Internationalization
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Complete PDF Template Internationalization
 >>>>>>> laraxot/dev
@@ -69,8 +73,12 @@ This document tracks the completeness and quality of translation files across th
 - Proper Html2Pdf page break syntax maintained
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys
 ### 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys
+=======
+### [DATE]: Added Missing 'minutes' and 'page' Translation Keys
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Added Missing 'minutes' and 'page' Translation Keys
 >>>>>>> laraxot/dev
@@ -89,8 +97,12 @@ This document tracks the completeness and quality of translation files across th
 - `page` used in PDF footer for page numbering
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: PDF Template Redesign Following Designers Italia Principles
 ### 2025-01-06: PDF Template Redesign Following Designers Italia Principles
+=======
+### [DATE]: PDF Template Redesign Following Designers Italia Principles
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: PDF Template Redesign Following Designers Italia Principles
 >>>>>>> laraxot/dev
@@ -124,8 +136,12 @@ This document tracks the completeness and quality of translation files across th
 - Professional document structure
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Fixed Hardcoded Italian Text in Theme Views
 ### 2025-01-06: Fixed Hardcoded Italian Text in Theme Views
+=======
+### [DATE]: Fixed Hardcoded Italian Text in Theme Views
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Fixed Hardcoded Italian Text in Theme Views
 >>>>>>> laraxot/dev
@@ -151,8 +167,12 @@ This document tracks the completeness and quality of translation files across th
 - `theme.my_profile` - "Il mio profilo" / "My Profile" / "Mein Profil"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Report PDF Template Improvements
 ### 2025-01-06: Report PDF Template Improvements
+=======
+### [DATE]: Report PDF Template Improvements
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Report PDF Template Improvements
 >>>>>>> laraxot/dev
@@ -183,8 +203,12 @@ This document tracks the completeness and quality of translation files across th
 - Additional notes
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Appointment Translation Files Enhancement
 ### 2025-01-06: Appointment Translation Files Enhancement
+=======
+### [DATE]: Appointment Translation Files Enhancement
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Appointment Translation Files Enhancement
 >>>>>>> laraxot/dev
@@ -207,8 +231,12 @@ This document tracks the completeness and quality of translation files across th
 - Professional medical vocabulary
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Doctor Translation Files Audit and Fix
 ### 2025-01-06: Doctor Translation Files Audit and Fix
+=======
+### [DATE]: Doctor Translation Files Audit and Fix
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Doctor Translation Files Audit and Fix
 >>>>>>> laraxot/dev
@@ -230,8 +258,12 @@ This document tracks the completeness and quality of translation files across th
 - Maintained consistent structure across all language files
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Opening Hours Translation Improvements
 ### 2025-01-06: Opening Hours Translation Improvements
+=======
+### [DATE]: Opening Hours Translation Improvements
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Opening Hours Translation Improvements
 >>>>>>> laraxot/dev
@@ -253,8 +285,12 @@ This document tracks the completeness and quality of translation files across th
 - Professional tone suitable for medical appointment scheduling
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: English Translation Files Completion
 ### 2025-01-06: English Translation Files Completion
+=======
+### [DATE]: English Translation Files Completion
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: English Translation Files Completion
 >>>>>>> laraxot/dev
@@ -271,8 +307,12 @@ This document tracks the completeness and quality of translation files across th
 - Verified syntax correctness and array structure
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Translation Structure Modernization
 ### 2025-01-06: Translation Structure Modernization
+=======
+### [DATE]: Translation Structure Modernization
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Translation Structure Modernization
 >>>>>>> laraxot/dev
@@ -339,8 +379,12 @@ This document tracks the completeness and quality of translation files across th
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Last updated: 2025-01-06 - PDF template completely internationalized with full multilingual support*
 *Last updated: 2025-01-06 - PDF template completely internationalized with full multilingual support*
+=======
+*
+>>>>>>> laraxot/dev
 =======
 *
 >>>>>>> laraxot/dev
@@ -352,8 +396,12 @@ This document tracks the completeness and quality of translation files across th
 ## Recent Updates
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Complete PDF Template Internationalization
 ### 2025-01-06: Complete PDF Template Internationalization
+=======
+### [DATE]: Complete PDF Template Internationalization
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Complete PDF Template Internationalization
 >>>>>>> laraxot/dev
@@ -415,8 +463,12 @@ This document tracks the completeness and quality of translation files across th
 - Proper Html2Pdf page break syntax maintained
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys
 ### 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys
+=======
+### [DATE]: Added Missing 'minutes' and 'page' Translation Keys
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Added Missing 'minutes' and 'page' Translation Keys
 >>>>>>> laraxot/dev
@@ -435,8 +487,12 @@ This document tracks the completeness and quality of translation files across th
 - `page` used in PDF footer for page numbering
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: PDF Template Redesign Following Designers Italia Principles
 ### 2025-01-06: PDF Template Redesign Following Designers Italia Principles
+=======
+### [DATE]: PDF Template Redesign Following Designers Italia Principles
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: PDF Template Redesign Following Designers Italia Principles
 >>>>>>> laraxot/dev
@@ -470,8 +526,12 @@ This document tracks the completeness and quality of translation files across th
 - Professional document structure
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Fixed Hardcoded Italian Text in Theme Views
 ### 2025-01-06: Fixed Hardcoded Italian Text in Theme Views
+=======
+### [DATE]: Fixed Hardcoded Italian Text in Theme Views
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Fixed Hardcoded Italian Text in Theme Views
 >>>>>>> laraxot/dev
@@ -497,8 +557,12 @@ This document tracks the completeness and quality of translation files across th
 - `theme.my_profile` - "Il mio profilo" / "My Profile" / "Mein Profil"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Report PDF Template Improvements
 ### 2025-01-06: Report PDF Template Improvements
+=======
+### [DATE]: Report PDF Template Improvements
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Report PDF Template Improvements
 >>>>>>> laraxot/dev
@@ -529,8 +593,12 @@ This document tracks the completeness and quality of translation files across th
 - Additional notes
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Appointment Translation Files Enhancement
 ### 2025-01-06: Appointment Translation Files Enhancement
+=======
+### [DATE]: Appointment Translation Files Enhancement
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Appointment Translation Files Enhancement
 >>>>>>> laraxot/dev
@@ -553,8 +621,12 @@ This document tracks the completeness and quality of translation files across th
 - Professional medical vocabulary
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Doctor Translation Files Audit and Fix
 ### 2025-01-06: Doctor Translation Files Audit and Fix
+=======
+### [DATE]: Doctor Translation Files Audit and Fix
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Doctor Translation Files Audit and Fix
 >>>>>>> laraxot/dev
@@ -576,8 +648,12 @@ This document tracks the completeness and quality of translation files across th
 - Maintained consistent structure across all language files
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Opening Hours Translation Improvements
 ### 2025-01-06: Opening Hours Translation Improvements
+=======
+### [DATE]: Opening Hours Translation Improvements
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Opening Hours Translation Improvements
 >>>>>>> laraxot/dev
@@ -599,8 +675,12 @@ This document tracks the completeness and quality of translation files across th
 - Professional tone suitable for medical appointment scheduling
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: English Translation Files Completion
 ### 2025-01-06: English Translation Files Completion
+=======
+### [DATE]: English Translation Files Completion
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: English Translation Files Completion
 >>>>>>> laraxot/dev
@@ -617,8 +697,12 @@ This document tracks the completeness and quality of translation files across th
 - Verified syntax correctness and array structure
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2025-01-06: Translation Structure Modernization
 ### 2025-01-06: Translation Structure Modernization
+=======
+### [DATE]: Translation Structure Modernization
+>>>>>>> laraxot/dev
 =======
 ### [DATE]: Translation Structure Modernization
 >>>>>>> laraxot/dev
@@ -685,8 +769,12 @@ This document tracks the completeness and quality of translation files across th
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Last updated: 2025-01-06 - PDF template completely internationalized with full multilingual support*
 *Last updated: 2025-01-06 - PDF template completely internationalized with full multilingual support*
+=======
+*
+>>>>>>> laraxot/dev
 =======
 *
 >>>>>>> laraxot/dev

@@ -1,7 +1,10 @@
 # AutoLabel Flow - Analisi Completa del Flusso
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2026-01-09
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 **Tipo**: Documentazione Tecnica Approfondita
@@ -857,7 +860,10 @@ Il sistema AutoLabel è un **meccanismo sofisticato ma elegante** che:
 
 **Versione**: 1.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2026-01-09
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 **Autore**: System Architect

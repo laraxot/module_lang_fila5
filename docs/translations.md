@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Traduzioni nel Progetto
 
 ## Regole Fondamentali
@@ -125,6 +126,8 @@ Prima di committare:
 - [Laravel Localization](https://laravel.com/docs/10.x/localization)
 - [Best Practices](/.cursor/rules/translations.rule)
 =======
+=======
+>>>>>>> laraxot/dev
 # Translation Module PDF Reports
 
 ## 📋 Overview
@@ -944,4 +947,7 @@ public function generateWithErrorHandling(array $options = []): string
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

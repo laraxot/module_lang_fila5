@@ -73,9 +73,12 @@ return [
 - [Wizard Structure](../Patient/project_docs/filament-wizard-structure.md)
 - [Best Practices](../Xot/project_docs/filament-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Form Components](../Patient/project_docs/filament-form-components.md)
 - [Wizard Structure](../Patient/project_docs/filament-wizard-structure.md)
 - [Best Practices](../Xot/project_docs/filament-best-practices.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -153,16 +156,22 @@ return [
 - [Wizard Structure](../Patient/docs/filament-wizard-structure.md)
 - [Best Practices](../Xot/docs/filament-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Form Components](../Patient/docs/filament-form-components.md)
 - [Wizard Structure](../Patient/docs/filament-wizard-structure.md)
 - [Best Practices](../Xot/docs/filament-best-practices.md)
+=======
+>>>>>>> laraxot/dev
 
 ## Vedi Anche
 - [Laravel Translations](https://laravel.com/docs/localization)
 - [Filament i18n](https://filamentphp.com/docs/internationalization)
+<<<<<<< HEAD
 =======
 
 ## Vedi Anche
 - [Laravel Translations](https://laravel.com/docs/localization)
 - [Filament i18n](https://filamentphp.com/docs/internationalization)
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

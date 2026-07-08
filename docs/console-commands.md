@@ -136,7 +136,11 @@ php artisan lang:find-missing it
 - [Translation System](./translation-system.md)
 - [Lang Module Architecture](./architecture.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PHPStan Corrections](../../../../docs/phpstan-fixes.md)
+=======
+- [PHPStan Corrections](../../../docs/phpstan-fixes.md)
+>>>>>>> laraxot/dev
 =======
 - [PHPStan Corrections](../../../docs/phpstan-fixes.md)
 >>>>>>> laraxot/dev
@@ -154,7 +158,11 @@ php artisan lang:find-missing it
 - Utilizzo di assertions per validazione
 - Separazione delle responsabilità per ogni comando
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Gestione appropriata degli errori
+=======
+- Gestione appropriata degli errori
+>>>>>>> laraxot/dev
 =======
 - Gestione appropriata degli errori
 >>>>>>> laraxot/dev
