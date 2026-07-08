@@ -175,7 +175,6 @@ return [
     ],
     'sections' => [
         'address' => ['label' => 'address', 'heading' => 'address'],
-<<<<<<< HEAD
     ],
     'label' => 'Txt',
     'plural_label' => 'Txt (Plurale)',
@@ -194,8 +193,6 @@ return [
         ],
 =======
         'test' => ['label' => 'test'],
-=======
->>>>>>> bebd548 (.)
     ],
     'label' => 'Txt',
     'plural_label' => 'Txt (Plurale)',
@@ -207,10 +204,7 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-<<<<<<< HEAD
-=======
     'steps' => [
         'test' => ['label' => 'test'],
     ],
->>>>>>> bebd548 (.)
 ];
