@@ -36,6 +36,7 @@ return [
             'label' => 'Elimina Locale Switcher Refresh',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Locale Switcher Refresh',
     'plural_label' => 'Locale Switcher Refresh (Plurale)',
     'navigation' => [
@@ -60,4 +61,6 @@ return [
             'label' => 'Elimina Locale Switcher Refresh',
         ],
     ],
+=======
+>>>>>>> 11c7c7d (.)
 ];

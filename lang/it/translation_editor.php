@@ -36,6 +36,7 @@ return [
             'label' => 'Elimina Translation Editor',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Translation Editor',
     'plural_label' => 'Translation Editor (Plurale)',
     'navigation' => [
@@ -60,4 +61,6 @@ return [
             'label' => 'Elimina Translation Editor',
         ],
     ],
+=======
+>>>>>>> 11c7c7d (.)
 ];
