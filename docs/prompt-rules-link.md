@@ -1,7 +1,10 @@
 # Regola prompt condivisi
 
 Per la regola universale sui prompt condivisi (bashscripts/prompts), vedi [Modules/Xot/docs/PROMPT_RULES.md](../../Xot/docs/PROMPT_RULES.md)
+<<<<<<< HEAD
 Per la regola universale sui prompt condivisi (bashscripts/prompts), vedi [Modules/Xot/docs/PROMPT_RULES.md](../../Xot/docs/PROMPT_RULES.md)
+=======
+>>>>>>> laraxot/dev
 ### Versione HEAD
 
 ### Versione Incoming
@@ -15,4 +18,8 @@ Per la regola universale sui prompt condivisi (bashscripts/prompts), vedi [Modul
 * [prompt_rules_link.md](../../UI/docs/prompt_rules_link.md)
 * [prompt_rules_link.md](../../Cms/docs/prompt_rules_link.md)
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> laraxot/dev

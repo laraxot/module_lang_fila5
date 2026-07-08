@@ -137,7 +137,11 @@ php -l laravel/Modules/Chart/lang/it/chart.php
 php -l laravel/Modules/Chart/lang/it/mixed_chart.php
 # ... per tutti i file corretti
 
+<<<<<<< HEAD
 # Verifica assenza array() 
+=======
+# Verifica assenza array()
+>>>>>>> laraxot/dev
 grep -r "array(" laravel/Modules/*/lang/ --include="*.php"
 ```
 
@@ -167,4 +171,7 @@ grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php"
 - [Best practices traduzioni](./translation_rules.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
+<<<<<<< HEAD
 *Ultimo aggiornamento: 6 Gennaio 2025*
+=======
+>>>>>>> laraxot/dev

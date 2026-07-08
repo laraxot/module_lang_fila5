@@ -7,6 +7,9 @@ canonical: ../../../Themes/docs/shared-components/resolution-permessi-lang-servi
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../docs/lang_service_permessi.md)
+<<<<<<< HEAD
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)
+=======
+>>>>>>> laraxot/dev

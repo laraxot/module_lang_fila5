@@ -143,4 +143,17 @@ return [
     'steps' => [
         'test' => ['label' => 'test'],
     ],
+    'label' => 'Txt',
+    'plural_label' => 'Txt (Plurale)',
+    'navigation' => [
+        'name' => 'Txt',
+        'plural' => 'Txt',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Txt',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
 ];
