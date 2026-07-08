@@ -9,6 +9,8 @@
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Header](/laravel/Modules/User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
+<<<<<<< HEAD
+=======
 
 ## Panoramica
 
@@ -318,6 +320,7 @@ Seguire queste best practices per le chiavi di traduzione garantirà un'applicaz
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Header](/laravel/Modules/User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
+>>>>>>> bebd548 (.)
 
 ## Panoramica
 
