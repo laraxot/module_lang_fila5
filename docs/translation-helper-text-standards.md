@@ -175,8 +175,11 @@ Il file `Modules/<nome progetto>/lang/it/profile_widget.php` conteneva:
 
 *Ultimo aggiornamento: Gennaio 2025*
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Standard di Qualità <nome progetto>](../../laravel/modules/<nome progetto>/docs/translation_quality_standards.md)
 
 *Ultimo aggiornamento: Gennaio 2025*
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

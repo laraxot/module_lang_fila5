@@ -81,8 +81,11 @@ I file di traduzione nel modulo Lang devono seguire una struttura precisa dei pe
 - [Regole generali per i file di traduzione](/laravel/Modules/Xot/docs/translation_rules.md)
 - [Errori comuni nei file di traduzione](/laravel/Modules/Lang/docs/errori_comuni_traduzione.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole generali per i file di traduzione](/laravel/Modules/Xot/docs/translation_rules.md)
 - [Errori comuni nei file di traduzione](/laravel/Modules/Lang/docs/errori_comuni_traduzione.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
@@ -171,7 +174,11 @@ I file di traduzione nel modulo Lang devono seguire una struttura precisa dei pe
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 3 Giugno 2025*
+=======
+*Ultimo aggiornamento: 3 Giugno 2025*
+>>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: 3 Giugno 2025*
 >>>>>>> laraxot/dev

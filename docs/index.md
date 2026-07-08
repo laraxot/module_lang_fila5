@@ -10,6 +10,7 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 
 ### **Per Sviluppatori**
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. [README.md](readme.md) - Documentazione principale e panoramica
 2. [config/lang.php](../config/lang.php) - Configurazione centralizzata
 3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
@@ -23,6 +24,8 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 1. [API_REFERENCE.md](api_reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
 3. [BEST_PRACTICES.md](best_practices.md) - Pattern di implementazione
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 1. [README.md](README.md) - Documentazione principale e panoramica
@@ -54,7 +57,10 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Utilizzo Base**: [README.md](README.md#utilizzo)
 - **Esempi Pratici**: [EXAMPLES.md](EXAMPLES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Esempi Pratici**: [EXAMPLES.md](examples.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -93,8 +99,11 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Rollback**: [BEST_PRACTICES.md](BEST_PRACTICES.md#rollback-e-recovery)
 - **Backup**: [TROUBLESHOOTING.md](TROUBLESHOOTING.md#emergenze-e-rollback)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -112,8 +121,11 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 1. [README.md](README.md) - Sezioni: Panoramica, Installazione, Utilizzo
 2. [EXAMPLES.md](EXAMPLES.md) - Sezioni: Struttura File Base
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. [README.md](readme.md) - Sezioni: Panoramica, Installazione, Utilizzo
 2. [EXAMPLES.md](examples.md) - Sezioni: Struttura File Base
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 3. [config/lang.php](../config/lang.php) - Configurazioni base
@@ -134,9 +146,12 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 2. [EXAMPLES.md](EXAMPLES.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Problemi comuni
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. [BEST_PRACTICES.md](best_practices.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -156,9 +171,12 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 2. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Problemi complessi
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. [API_REFERENCE.md](api_reference.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](best_practices.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -315,7 +333,10 @@ php artisan lang:debug [--log-missing] [--log-performance]
 **Autore**: Team Laraxot
 **Mantenuto da**: Community Laraxot
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 - [Conflict Resolution](conflict-resolution.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

@@ -130,7 +130,10 @@ Poi modificare i file in `lang/vendor/{package}/{locale}/`.
 ## Console Commands
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # Guida Rapida alle Traduzioni
@@ -265,7 +268,10 @@ Poi modificare i file in `lang/vendor/{package}/{locale}/`.
 ## Console Commands
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # Guida Rapida alle Traduzioni
@@ -400,6 +406,9 @@ Poi modificare i file in `lang/vendor/{package}/{locale}/`.
 ## Console Commands
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
