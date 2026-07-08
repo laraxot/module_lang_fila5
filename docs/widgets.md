@@ -197,6 +197,7 @@ The widget includes robust error handling:
 - [Internationalization Best Practices](./i18n-best-practices.md)
 - [Widget vs Livewire Components](../../../project_docs/widget_vs_livewire_components.md)
 
+<<<<<<< HEAD
 *Last updated: January 2025*
 - [Lang Module Documentation](../readme.md)
 - [Translation Management](./translations.md)
@@ -204,3 +205,6 @@ The widget includes robust error handling:
 - [Widget vs Livewire Components](../../../../docs/project/widget_vs_livewire_components.md)
 
 *
+=======
+*
+>>>>>>> laraxot/dev

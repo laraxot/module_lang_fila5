@@ -1,6 +1,9 @@
 # Regola Critica: fields.php è OBBLIGATORIO
 
+<<<<<<< HEAD
 **Data**: 2026-01-09
+=======
+>>>>>>> laraxot/dev
 **Severità**: 🔴 **CRITICAL**
 **Status**: ✅ **REGOLA ASSOLUTA**
 
@@ -317,6 +320,9 @@ Prima di considerare un modulo "completo":
 ---
 
 **Versione**: 1.0
+<<<<<<< HEAD
 **Data**: 2026-01-09
+=======
+>>>>>>> laraxot/dev
 **Autore**: System Architect (dopo litigata interna)
 **Status**: ✅ **REGOLA DEFINITIVA**
