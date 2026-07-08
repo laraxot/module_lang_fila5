@@ -817,8 +817,12 @@ public function generateWithErrorHandling(array $options = []): string
 
 ---
 
+<<<<<<< HEAD
+**
+=======
 **Last Updated:** 2025-12-09
 **Last Updated:** 2025-12-09
+>>>>>>> bebd548 (.)
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
