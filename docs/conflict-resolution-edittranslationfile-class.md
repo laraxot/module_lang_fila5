@@ -87,12 +87,14 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 - [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
-<<<<<<< HEAD
-- [Modules/Lang/docs/](../docs/)
-=======
 *Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../../docs/)
->>>>>>> bebd548 (.)
+- [Modules/Lang/docs/](../docs/)
+- [Modules/Lang/docs/](../docs/)
+- [Modules/Lang/docs/](../docs/)
+- [Modules/Lang/docs/](../docs/)
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../../docs/)
 
 *Ultimo aggiornamento: 29 luglio 2025*
 # Risoluzione Conflitto EditTranslationFile.php (Classe)
@@ -184,11 +186,18 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 - [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
-<<<<<<< HEAD
-- [Modules/Lang/docs/](../docs/)
-=======
 *Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../../docs/)
->>>>>>> bebd548 (.)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../docs/)
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../docs/)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../docs/)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../../docs/)
 
 *Ultimo aggiornamento: 29 luglio 2025*
