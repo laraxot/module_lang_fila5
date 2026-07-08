@@ -1,6 +1,5 @@
 # Navigation Translations Completion - Global Roadmap
 
-**Data**: 2026-01-09  
 **Modulo**: Lang (Coordinamento Globale)  
 **Status**: 📝 **ROADMAP CREATA**
 
