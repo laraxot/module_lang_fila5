@@ -8,11 +8,11 @@ use Spatie\Translatable\HasTranslations;
 
 /**
  * Trait che estende HasTranslations con tipi di ritorno più stretti.
-<<<<<<< HEAD
+ * <<<<<<< HEAD.
  *
  * @phpstan-ignore trait.unused
-=======
->>>>>>> 11c7c7d (.)
+ * =======
+ * >>>>>>> 11c7c7d (.)
  */
 trait HasStrictTranslations
 {
