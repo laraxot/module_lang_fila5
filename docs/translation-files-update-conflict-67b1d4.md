@@ -1,7 +1,10 @@
 # Aggiornamento File di Traduzione - Gennaio 2025
 
 ## Data Aggiornamento
+<<<<<<< HEAD
 2025-01-27
+=======
+>>>>>>> laraxot/dev
 [DATE]
 
 ## File Modificati
@@ -123,12 +126,19 @@ return [
 - [Translation Rules](../Xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
+<<<<<<< HEAD
 - [Translation Rules](../xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../xot/docs/translations-best-practices.md)
+=======
+>>>>>>> laraxot/dev
 
 ## Prossimi Passi
 
 1. **Test**: Verificare il funzionamento in ambiente di sviluppo
 2. **Documentazione**: Aggiornare la documentazione dei moduli Notify e Lang
+<<<<<<< HEAD
 3. **Review**: Code review per confermare le modifiche
+=======
+3. **Review**: Code review per confermare le modifiche
+>>>>>>> laraxot/dev

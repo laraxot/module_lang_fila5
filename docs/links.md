@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gestione delle Traduzioni in Laravel
 
 ## Pacchetti Raccomandati
@@ -131,3 +132,7 @@ php artisan translations:clean     # Pulisce le traduzioni non utilizzate
 
 - [Gestione console commands: filosofia e tecnica](./lang-service-provider.md)
 - [Filosofia Xot: zen e automazione](./PHILOSOPHY.md)
+=======
+https://gist.github.com/milon/5173255b58564a0e50548cfbe879181e
+
+>>>>>>> laraxot/dev
