@@ -5,7 +5,10 @@
 ### Problema Identificato
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Durante l'audit delle traduzioni del progetto <main module>, sono state identificate numerose traduzioni italiane presenti in file di lingua tedesca e inglese, causando incoerenza nell'interfaccia utente.
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -32,7 +35,10 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### ✅ Modulo <main module>
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -146,7 +152,10 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -159,9 +168,12 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 - [<nome progetto> Module: Translation Guidelines](../laravel/Modules/<nome progetto>/docs/translation_guidelines.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Lang Module: Translation Best Practices](../laravel/Modules/Lang/docs/translation_best_practices.md)
 - [<main module> Module: Translation Guidelines](../laravel/Modules/<main module>/docs/translation_guidelines.md)
 - [<nome progetto> Module: Translation Guidelines](../laravel/Modules/<nome progetto>/docs/translation_guidelines.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -213,7 +225,11 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 **Versione**: 1.0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ✅ COMPLETATO
+=======
+**Status**: ✅ COMPLETATO
+>>>>>>> laraxot/dev
 =======
 **Status**: ✅ COMPLETATO
 >>>>>>> laraxot/dev

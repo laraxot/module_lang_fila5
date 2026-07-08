@@ -3,8 +3,11 @@
 **Powered by**: Super Mucca AI 🐄✨
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 15 Ottobre 2025
 **Data**: 15 Ottobre 2025
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -544,7 +547,11 @@ public function getTableFilters(): array
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
+=======
+**Domande?** Chiedi alla Super Mucca! 🐄⚡
+>>>>>>> laraxot/dev
 =======
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 >>>>>>> laraxot/dev

@@ -753,8 +753,11 @@ class BatchPdfGenerator
 - [Lang Module README](./README.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./README.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -766,6 +769,7 @@ class BatchPdfGenerator
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Last Updated:** 2025-12-09
 **Last Updated:** 2025-12-09
 **Version:** 1.0.0
@@ -774,11 +778,16 @@ class BatchPdfGenerator
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 **
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

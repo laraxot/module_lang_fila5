@@ -13,8 +13,12 @@ I file PHP sono stati il metodo predefinito per lungo tempo. Le traduzioni sono 
 **Esempio**:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 In un file Blade come `resources/views/auth/register.blade.php`, potremmo avere:
 In un file Blade come `resources/views/auth/register.blade.php`, potremmo avere:
+=======
+In un file Blade come `/var/www/html/<nome progetto>/laravel/resources/views/auth/register.blade.php`, potremmo avere:
+>>>>>>> laraxot/dev
 =======
 In un file Blade come `/var/www/html/<nome progetto>/laravel/resources/views/auth/register.blade.php`, potremmo avere:
 >>>>>>> laraxot/dev
@@ -32,8 +36,12 @@ In un file Blade come `/var/www/html/<nome progetto>/laravel/resources/views/aut
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 La traduzione corrispondente sarebbe in `lang/it/auth.php`:
 La traduzione corrispondente sarebbe in `lang/it/auth.php`:
+=======
+La traduzione corrispondente sarebbe in `/var/www/html/<nome progetto>/laravel/lang/it/auth.php`:
+>>>>>>> laraxot/dev
 =======
 La traduzione corrispondente sarebbe in `/var/www/html/<nome progetto>/laravel/lang/it/auth.php`:
 >>>>>>> laraxot/dev
@@ -75,8 +83,12 @@ I file JSON contengono un elenco unico di traduzioni per ogni lingua, con chiavi
 **Esempio**:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 In un file Blade come `resources/views/auth/register.blade.php`, potremmo avere:
 In un file Blade come `resources/views/auth/register.blade.php`, potremmo avere:
+=======
+In un file Blade come `/var/www/html/<nome progetto>/laravel/resources/views/auth/register.blade.php`, potremmo avere:
+>>>>>>> laraxot/dev
 =======
 In un file Blade come `/var/www/html/<nome progetto>/laravel/resources/views/auth/register.blade.php`, potremmo avere:
 >>>>>>> laraxot/dev
@@ -94,8 +106,12 @@ In un file Blade come `/var/www/html/<nome progetto>/laravel/resources/views/aut
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 La traduzione corrispondente sarebbe in `lang/it.json`:
 La traduzione corrispondente sarebbe in `lang/it.json`:
+=======
+La traduzione corrispondente sarebbe in `/var/www/html/<nome progetto>/laravel/lang/it.json`:
+>>>>>>> laraxot/dev
 =======
 La traduzione corrispondente sarebbe in `/var/www/html/<nome progetto>/laravel/lang/it.json`:
 >>>>>>> laraxot/dev
@@ -123,8 +139,12 @@ La traduzione corrispondente sarebbe in `/var/www/html/<nome progetto>/laravel/l
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Mescolare i due approcci può causare problemi se una chiave JSON corrisponde al nome di un file PHP. Ad esempio, se esiste un file `lang/it/auth.php` e una chiave `"Auth": "Autenticazione"` in `lang/it.json`, chiamare `__('Auth')` restituirà il contenuto di `auth.php` invece della traduzione attesa.
 Mescolare i due approcci può causare problemi se una chiave JSON corrisponde al nome di un file PHP. Ad esempio, se esiste un file `lang/it/auth.php` e una chiave `"Auth": "Autenticazione"` in `lang/it.json`, chiamare `__('Auth')` restituirà il contenuto di `auth.php` invece della traduzione attesa.
+=======
+Mescolare i due approcci può causare problemi se una chiave JSON corrisponde al nome di un file PHP. Ad esempio, se esiste un file `/var/www/html/<nome progetto>/laravel/lang/it/auth.php` e una chiave `"Auth": "Autenticazione"` in `/var/www/html/<nome progetto>/laravel/lang/it.json`, chiamare `__('Auth')` restituirà il contenuto di `auth.php` invece della traduzione attesa.
+>>>>>>> laraxot/dev
 =======
 Mescolare i due approcci può causare problemi se una chiave JSON corrisponde al nome di un file PHP. Ad esempio, se esiste un file `/var/www/html/<nome progetto>/laravel/lang/it/auth.php` e una chiave `"Auth": "Autenticazione"` in `/var/www/html/<nome progetto>/laravel/lang/it.json`, chiamare `__('Auth')` restituirà il contenuto di `auth.php` invece della traduzione attesa.
 >>>>>>> laraxot/dev
@@ -158,6 +178,7 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
      ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Questo creerà la cartella `lang/` con le sottocartelle per le lingue supportate (es. `en`, `it`).
 
 2. **Struttura dei File di Traduzione PHP**:
@@ -166,12 +187,17 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
    - Questo creerà la cartella `/var/www/html/<nome progetto>/laravel/lang/` con le sottocartelle per le lingue supportate (es. `en`, `it`).
 
 2. **Struttura dei File di Traduzione PHP**:
    - Creare file di traduzione per ogni modulo in `/var/www/html/<nome progetto>/laravel/lang/it/` e `/var/www/html/<nome progetto>/laravel/lang/en/`.
    - Esempio per il modulo di autenticazione in `/var/www/html/<nome progetto>/laravel/lang/it/auth.php`:
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -203,10 +229,15 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
 3. **File JSON per Testi Lunghi**:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Creare file JSON per testi lunghi o frasi complete in `lang/it.json` e `lang/en.json`.
    - Esempio per `lang/it.json`:
    - Creare file JSON per testi lunghi o frasi complete in `lang/it.json` e `lang/en.json`.
    - Esempio per `lang/it.json`:
+=======
+   - Creare file JSON per testi lunghi o frasi complete in `/var/www/html/<nome progetto>/laravel/lang/it.json` e `/var/www/html/<nome progetto>/laravel/lang/en.json`.
+   - Esempio per `/var/www/html/<nome progetto>/laravel/lang/it.json`:
+>>>>>>> laraxot/dev
 =======
    - Creare file JSON per testi lunghi o frasi complete in `/var/www/html/<nome progetto>/laravel/lang/it.json` e `/var/www/html/<nome progetto>/laravel/lang/en.json`.
    - Esempio per `/var/www/html/<nome progetto>/laravel/lang/it.json`:
@@ -226,8 +257,12 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
    - Modificare i file Blade per utilizzare la funzione `__()` con chiavi appropriate.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Esempio per `resources/views/auth/login.blade.php`:
    - Esempio per `resources/views/auth/login.blade.php`:
+=======
+   - Esempio per `/var/www/html/<nome progetto>/laravel/resources/views/auth/login.blade.php`:
+>>>>>>> laraxot/dev
 =======
    - Esempio per `/var/www/html/<nome progetto>/laravel/resources/views/auth/login.blade.php`:
 >>>>>>> laraxot/dev
@@ -274,10 +309,15 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
 5. **Integrazione con `mcamara/laravel-localization`**:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Assicurarsi che il pacchetto `mcamara/laravel-localization` sia installato e configurato come descritto nella documentazione `Modules/Lang/project_docs/laravel-localization-complete.md`.
    - Modificare il file `routes/web.php` per aggiungere il prefisso della lingua:
    - Assicurarsi che il pacchetto `mcamara/laravel-localization` sia installato e configurato come descritto nella documentazione `Modules/Lang/project_docs/laravel-localization-complete.md`.
    - Modificare il file `routes/web.php` per aggiungere il prefisso della lingua:
+=======
+   - Assicurarsi che il pacchetto `mcamara/laravel-localization` sia installato e configurato come descritto nella documentazione `/var/www/html/<nome progetto>/laravel/Modules/Lang/docs/laravel-localization-complete.md`.
+   - Modificare il file `/var/www/html/<nome progetto>/laravel/routes/web.php` per aggiungere il prefisso della lingua:
+>>>>>>> laraxot/dev
 =======
    - Assicurarsi che il pacchetto `mcamara/laravel-localization` sia installato e configurato come descritto nella documentazione `/var/www/html/<nome progetto>/laravel/Modules/Lang/docs/laravel-localization-complete.md`.
    - Modificare il file `/var/www/html/<nome progetto>/laravel/routes/web.php` per aggiungere il prefisso della lingua:
@@ -302,7 +342,11 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
 6. **Creazione di un Selettore di Lingua**:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Modificare il file `resources/views/layouts/navigation.blade.php` per aggiungere un selettore di lingua:
+=======
+   - Modificare il file `/var/www/html/<nome progetto>/laravel/resources/views/layouts/navigation.blade.php` per aggiungere un selettore di lingua:
+>>>>>>> laraxot/dev
 =======
    - Modificare il file `/var/www/html/<nome progetto>/laravel/resources/views/layouts/navigation.blade.php` per aggiungere un selettore di lingua:
 >>>>>>> laraxot/dev
@@ -380,6 +424,7 @@ Implementare un sistema di traduzione per testi statici nel progetto `<nome prog
 ## Risorse
 
 - Corso Laravel Daily: [Multi-Language Laravel 11: All You Need to Know](https://laraveldaily.com/course/multi-language-laravel)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Traduzione di Testi Statici in Laravel
@@ -664,6 +709,8 @@ Implementare un sistema di traduzione per testi statici nel progetto `<nome prog
 ## Risorse
 
 - Corso Laravel Daily: [Multi-Language Laravel 11: All You Need to Know](https://laraveldaily.com/course/multi-language-laravel)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======

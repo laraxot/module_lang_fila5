@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Laravel Localization
 
 ## Introduzione
@@ -71,6 +72,8 @@ L'implementazione di `mcamara/laravel-localization` nel progetto `<nome progetto
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 # Laravel Localization Metadata for Cursor
 
 ## Context
@@ -110,6 +113,9 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
   - [filament-translations.md](../filament-translations.md)
   - [docs <nome progetto>](../../../<nome progetto>/docs/translations.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

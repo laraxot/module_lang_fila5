@@ -130,7 +130,10 @@
 - [Best Practices](BEST-PRACTICES.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices](BEST-PRACTICES.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -159,7 +162,11 @@
 * [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
+=======
+* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
+>>>>>>> laraxot/dev
 =======
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
 >>>>>>> laraxot/dev

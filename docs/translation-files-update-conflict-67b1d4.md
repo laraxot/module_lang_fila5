@@ -3,7 +3,10 @@
 ## Data Aggiornamento
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-01-27
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -131,9 +134,12 @@ return [
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Translation Rules](../xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../xot/docs/translations-best-practices.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -145,7 +151,11 @@ return [
 2. **Documentazione**: Aggiornare la documentazione dei moduli Notify e Lang
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Review**: Code review per confermare le modifiche
+=======
+3. **Review**: Code review per confermare le modifiche
+>>>>>>> laraxot/dev
 =======
 3. **Review**: Code review per confermare le modifiche
 >>>>>>> laraxot/dev

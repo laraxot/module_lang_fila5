@@ -2,7 +2,10 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2025-08-08 11:20:44
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -40,7 +43,11 @@ Si concentra su:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Ogni testo deve essere tradotto nella lingua appropriata del file, escludendo termini internazionali standard.
+=======
+Ogni testo deve essere tradotto nella lingua appropriata del file, escludendo termini internazionali standard.
+>>>>>>> laraxot/dev
 =======
 Ogni testo deve essere tradotto nella lingua appropriata del file, escludendo termini internazionali standard.
 >>>>>>> laraxot/dev

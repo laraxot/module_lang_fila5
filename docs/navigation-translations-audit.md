@@ -116,7 +116,10 @@ Questo file contiene molteplici occorrenze problematiche:
 - **Documentazione**: [Correzioni Geo](../Modules/Geo/docs/navigation-translations-fixes.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione**: [Correzioni Geo](../modules/geo/docs/navigation-translations-fixes.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -128,7 +131,10 @@ Questo file contiene molteplici occorrenze problematiche:
 - **Documentazione**: [Correzioni User](../Modules/User/docs/navigation-translations-fixes.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione**: [Correzioni User](../modules/user/docs/navigation-translations-fixes.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -140,7 +146,10 @@ Questo file contiene molteplici occorrenze problematiche:
 - **Documentazione**: [Verifica Lang](../Modules/Lang/docs/navigation-translations-fixes.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione**: [Verifica Lang](../modules/lang/docs/navigation-translations-fixes.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -153,6 +162,7 @@ Questo file contiene molteplici occorrenze problematiche:
 - Mantenere la struttura espansa (label, placeholder, helper_text, description)
 
 ## Collegamenti
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Regole Traduzioni](../modules/xot/docs/translation-rules.md)
@@ -168,12 +178,17 @@ Questo file contiene molteplici occorrenze problematiche:
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - [Regole Traduzioni](../Modules/Xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../Modules/<nome progetto>/docs/translation-quality-standards.md)
 
 *Audit creato il: [DATE]*
 *Ultimo aggiornamento: [DATE]*
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

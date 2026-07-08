@@ -5,7 +5,10 @@
 **Analysis Date:** September 22, 2025
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Analysis Date:** September 22, 2025
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -52,7 +55,11 @@ The module maintains:
 - Internationalization best practices
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Modern PHP 8.2+ feature utilization
+=======
+- Modern PHP 8.2+ feature utilization
+>>>>>>> laraxot/dev
 =======
 - Modern PHP 8.2+ feature utilization
 >>>>>>> laraxot/dev

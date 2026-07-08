@@ -229,7 +229,11 @@ Prima di ogni commit, verificare:
 ## Ultimo Aggiornamento
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-01-27 - Regola critica per enum translation pattern
+=======
+[DATE] - Regola critica per enum translation pattern
+>>>>>>> laraxot/dev
 =======
 [DATE] - Regola critica per enum translation pattern
 >>>>>>> laraxot/dev

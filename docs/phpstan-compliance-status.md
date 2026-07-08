@@ -2,8 +2,12 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Last Updated**: 2025-12-10
 **Last Updated**: 2025-12-10
+=======
+
+>>>>>>> laraxot/dev
 =======
 
 >>>>>>> laraxot/dev
@@ -56,7 +60,11 @@ To maintain PHPStan compliance:
 - [Route Service Providers](route-service-providers.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Language Detection Patterns](language-detection.md)
+=======
+- [Language Detection Patterns](language-detection.md)
+>>>>>>> laraxot/dev
 =======
 - [Language Detection Patterns](language-detection.md)
 >>>>>>> laraxot/dev

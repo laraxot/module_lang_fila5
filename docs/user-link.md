@@ -15,6 +15,7 @@ Il modulo User utilizza le traduzioni fornite dal modulo Lang per:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Traduzioni del Modulo User](../../User/project_docs/translations.md) - Documentazione specifica sulle traduzioni nel modulo User
 - [Gestione Utenti](../../User/project_docs/README.md) - Panoramica del modulo User
 - [Modelli Utente](../../User/project_docs/user_profile_models.md) - Documentazione sui modelli utente e profili
@@ -59,6 +60,8 @@ Il modulo User utilizza le traduzioni fornite dal modulo Lang per:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - [Traduzioni del Modulo User](../../User/docs/translations.md) - Documentazione specifica sulle traduzioni nel modulo User
 - [Gestione Utenti](../../User/docs/README.md) - Panoramica del modulo User
 - [Modelli Utente](../../User/docs/user_profile_models.md) - Documentazione sui modelli utente e profili
@@ -81,7 +84,12 @@ Questo documento è collegato bidirezionalmente con [lang-link.md](../../User/do
 * [user-link.md](../../../Lang/docs/user-link.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [user-link.md](../../../Cms/docs/user-link.md)
+=======
+* [user-link.md](../../../Cms/docs/user-link.md)
+
+>>>>>>> laraxot/dev
 =======
 * [user-link.md](../../../Cms/docs/user-link.md)
 
