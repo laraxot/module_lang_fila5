@@ -39,7 +39,11 @@ Il file o la cartella di destinazione non è scrivibile dall’utente che esegue
 
 ## Collegamenti
 - [Documentazione ufficiale PHP file_put_contents](https://www.php.net/manual/en/function.file-put-contents.php)
+<<<<<<< HEAD
 - [Documentazione Laraxot gestione permessi](../../../../../docs/links.md)
+=======
+- [Documentazione Laraxot gestione permessi](../../../../docs/links.md)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -85,8 +89,16 @@ Il file o la cartella di destinazione non è scrivibile dall’utente che esegue
 
 ## Collegamenti
 - [Documentazione ufficiale PHP file_put_contents](https://www.php.net/manual/en/function.file-put-contents.php)
+<<<<<<< HEAD
 - [Documentazione Laraxot gestione permessi](../../../../../docs/links.md)
 
 ---
 
 _Questa guida è valida per tutti i moduli Laraxot che prevedono scrittura runtime di file di lingua._
+=======
+- [Documentazione Laraxot gestione permessi](../../../../docs/links.md)
+
+---
+
+_Questa guida è valida per tutti i moduli Laraxot che prevedono scrittura runtime di file di lingua._
+>>>>>>> laraxot/dev

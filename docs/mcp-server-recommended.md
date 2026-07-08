@@ -23,6 +23,7 @@ Gestione traduzioni, localizzazione e internazionalizzazione.
 
 ## Note
 - Estendi la configurazione per supportare traduzioni dinamiche o servizi esterni.
+<<<<<<< HEAD
 # MCP Server Consigliati per il Modulo Lang
 
 ## Scopo del Modulo
@@ -44,3 +45,5 @@ Gestione traduzioni, localizzazione e internazionalizzazione.
 
 ## Note
 - Estendi la configurazione per supportare traduzioni dinamiche o servizi esterni.
+=======
+>>>>>>> laraxot/dev
