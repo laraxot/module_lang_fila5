@@ -3,7 +3,10 @@
 ## Data Intervento
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **2025-01-22** - Sistemazione traduzioni secondo regole DRY + KISS
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -247,8 +250,11 @@ Ogni sezione `navigation` deve includere:
 - [NavigationLabelTrait Explained](../../Xot/docs/filament/navigation-label-trait-explained.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Traduzioni](../../xot/docs/translation-standards.md)
 - [NavigationLabelTrait Explained](../../xot/docs/filament/navigation-label-trait-explained.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -264,9 +270,14 @@ Ogni sezione `navigation` deve includere:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Intervento completato il: 2025-01-22*
 *Intervento completato il: [DATE]*
 *Conforme alle regole DRY + KISS*
+=======
+*Intervento completato il: [DATE]*
+*Conforme alle regole DRY + KISS*
+>>>>>>> laraxot/dev
 =======
 *Intervento completato il: [DATE]*
 *Conforme alle regole DRY + KISS*

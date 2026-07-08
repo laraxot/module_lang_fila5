@@ -28,8 +28,11 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 * [introduction.md](../../../Cms/docs/introduction.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [introduction.md](../../../Lang/docs/introduction.md)
 * [introduction.md](../../../Cms/docs/introduction.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -37,11 +40,14 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 ### Versione Incoming
 
 ---
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

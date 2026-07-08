@@ -2,7 +2,10 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2025-08-08 11:19:40
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -110,7 +113,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Ogni testo deve essere tradotto nella lingua appropriata del file.
+=======
+Ogni testo deve essere tradotto nella lingua appropriata del file.
+>>>>>>> laraxot/dev
 =======
 Ogni testo deve essere tradotto nella lingua appropriata del file.
 >>>>>>> laraxot/dev

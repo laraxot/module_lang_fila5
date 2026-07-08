@@ -5,8 +5,12 @@ Questo documento registra le correzioni PHPStan implementate nel modulo Lang.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-27
 **Ultimo aggiornamento**: 2025-01-27
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> laraxot/dev
@@ -19,8 +23,12 @@ Questo documento registra le correzioni PHPStan implementate nel modulo Lang.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Post.php - Doppio Import PostFactory (2025-01-27)
 ### Post.php - Doppio Import PostFactory (2025-01-27)
+=======
+### Post.php - Doppio Import PostFactory ([DATE])
+>>>>>>> laraxot/dev
 =======
 ### Post.php - Doppio Import PostFactory ([DATE])
 >>>>>>> laraxot/dev
@@ -111,7 +119,10 @@ if (is_array($value)) {
 - [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -124,7 +135,11 @@ if (is_array($value)) {
 3. **Assertions**: Validare i tipi con assertions appropriate
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. **Documentation**: Documentare sempre i parametri e return types
+=======
+4. **Documentation**: Documentare sempre i parametri e return types
+>>>>>>> laraxot/dev
 =======
 4. **Documentation**: Documentare sempre i parametri e return types
 >>>>>>> laraxot/dev

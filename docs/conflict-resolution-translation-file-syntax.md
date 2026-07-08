@@ -199,7 +199,10 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -420,7 +423,10 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -440,7 +446,11 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 - **File**: `docs/translation-file-syntax.md`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Tipo Conflitto**: Documentazione best practice
+=======
+- **Tipo Conflitto**: Documentazione best practice
+>>>>>>> laraxot/dev
 =======
 - **Tipo Conflitto**: Documentazione best practice
 >>>>>>> laraxot/dev

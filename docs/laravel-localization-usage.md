@@ -6,9 +6,12 @@
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -249,9 +252,12 @@ Questi middleware sono già configurati  e non è necessario modificarli.
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -485,7 +491,11 @@ Questi middleware sono già configurati  e non è necessario modificarli.
 - [Documentazione Laravel Localization](https://laravel.com/docs/10.x/localization)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Blade Components Documentation](https://laravel.com/docs/10.x/blade#components)
+=======
+- [Blade Components Documentation](https://laravel.com/docs/10.x/blade#components)
+>>>>>>> laraxot/dev
 =======
 - [Blade Components Documentation](https://laravel.com/docs/10.x/blade#components)
 >>>>>>> laraxot/dev

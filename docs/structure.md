@@ -2,8 +2,12 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Data: 2025-04-23 19:09:56
 Data: 2025-04-23 19:09:56
+=======
+Data: [DATE] 19:09:56
+>>>>>>> laraxot/dev
 =======
 Data: [DATE] 19:09:56
 >>>>>>> laraxot/dev
@@ -18,7 +22,11 @@ Modules\\Lang\\Database\\Factories
 Modules\\Lang\\Database\\Seeders
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_lang_fila5
+=======
+- **Pacchetto Composer**: laraxot/module_lang_fila3
+>>>>>>> laraxot/dev
 =======
 - **Pacchetto Composer**: laraxot/module_lang_fila3
 >>>>>>> laraxot/dev
@@ -514,7 +522,10 @@ tests/Unit
 - Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======

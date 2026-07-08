@@ -102,8 +102,12 @@ middleware(['auth', 'verified']);
 ## Date
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-11-29
 2025-11-29
+=======
+[DATE]
+>>>>>>> laraxot/dev
 =======
 [DATE]
 >>>>>>> laraxot/dev

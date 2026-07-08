@@ -108,8 +108,12 @@ $formatted = $date->translatedFormat('j F Y');
 // Differenza in formato leggibile
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 $postDate = Carbon::parse('2023-01-15');
 $postDate = Carbon::parse('2023-01-15');
+=======
+$postDate = Carbon::parse('[DATE]');
+>>>>>>> laraxot/dev
 =======
 $postDate = Carbon::parse('[DATE]');
 >>>>>>> laraxot/dev
@@ -425,8 +429,12 @@ $formatted = $date->translatedFormat('j F Y');
 // Differenza in formato leggibile
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 $postDate = Carbon::parse('2023-01-15');
 $postDate = Carbon::parse('2023-01-15');
+=======
+$postDate = Carbon::parse('[DATE]');
+>>>>>>> laraxot/dev
 =======
 $postDate = Carbon::parse('[DATE]');
 >>>>>>> laraxot/dev
@@ -633,7 +641,11 @@ if (!function_exists('trans_choice_with_count')) {
 - Controlla che la localizzazione supporti la valuta specificata
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Assicurati che il server abbia i dati di localizzazione installati
+=======
+- Assicurati che il server abbia i dati di localizzazione installati
+>>>>>>> laraxot/dev
 =======
 - Assicurati che il server abbia i dati di localizzazione installati
 >>>>>>> laraxot/dev

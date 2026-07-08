@@ -151,8 +151,12 @@ __('<nome progetto>::widgets.doctor_appointments.empty.description')
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Risoluzione completata: 2025-01-21*
 *Risoluzione completata: 2025-01-21*
+=======
+*Risoluzione completata: [DATE]*
+>>>>>>> laraxot/dev
 =======
 *Risoluzione completata: [DATE]*
 >>>>>>> laraxot/dev

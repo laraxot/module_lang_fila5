@@ -831,9 +831,12 @@ public function get(string $key, array $replace = [], ?string $locale = null): s
 - [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Troubleshooting
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md](readme.md) - Documentazione principale
 - [BEST_PRACTICES.md](best_practices.md) - Best practices
 - [TROUBLESHOOTING.md](troubleshooting.md) - Troubleshooting
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -855,7 +858,11 @@ public function get(string $key, array $replace = [], ?string $locale = null): s
 **Autore**: Team Laraxot
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Mantenuto da**: Community Laraxot
+=======
+**Mantenuto da**: Community Laraxot
+>>>>>>> laraxot/dev
 =======
 **Mantenuto da**: Community Laraxot
 >>>>>>> laraxot/dev

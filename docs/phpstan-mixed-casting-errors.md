@@ -212,7 +212,10 @@ Dopo aver applicato le correzioni:
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -224,6 +227,7 @@ Dopo aver applicato le correzioni:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
 - [Lang Module Structure](./README.md)
 - [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
@@ -232,12 +236,17 @@ Dopo aver applicato le correzioni:
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - [Root PHPStan Rules](../../../docs/phpstan_rules.md)
 - [Lang Module Structure](./README.md)
 - [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
 
 *Ultimo aggiornamento: [DATE]*
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -455,7 +464,10 @@ Dopo aver applicato le correzioni:
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -467,6 +479,7 @@ Dopo aver applicato le correzioni:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
 - [Lang Module Structure](./README.md)
 - [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
@@ -475,12 +488,17 @@ Dopo aver applicato le correzioni:
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - [Root PHPStan Rules](../../../docs/phpstan_rules.md)
 - [Lang Module Structure](./README.md)
 - [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
 
 *Ultimo aggiornamento: [DATE]*
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

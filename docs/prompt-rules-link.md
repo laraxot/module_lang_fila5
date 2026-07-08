@@ -3,7 +3,10 @@
 Per la regola universale sui prompt condivisi (bashscripts/prompts), vedi [Modules/Xot/docs/PROMPT_RULES.md](../../Xot/docs/PROMPT_RULES.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per la regola universale sui prompt condivisi (bashscripts/prompts), vedi [Modules/Xot/docs/PROMPT_RULES.md](../../Xot/docs/PROMPT_RULES.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -23,7 +26,11 @@ Per la regola universale sui prompt condivisi (bashscripts/prompts), vedi [Modul
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> laraxot/dev
 =======
 ---
 >>>>>>> laraxot/dev

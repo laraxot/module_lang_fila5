@@ -337,7 +337,10 @@ php artisan lang:benchmark         # Test performance
 'version' => '2.0.0',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 'last_updated' => '2025-01-27',
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -426,7 +429,10 @@ return [
 - [README.md](README.md) - Documentazione principale modulo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md](readme.md) - Documentazione principale modulo
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -442,7 +448,11 @@ return [
 **Autore**: Team Laraxot
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Mantenuto da**: Community Laraxot
+=======
+**Mantenuto da**: Community Laraxot
+>>>>>>> laraxot/dev
 =======
 **Mantenuto da**: Community Laraxot
 >>>>>>> laraxot/dev

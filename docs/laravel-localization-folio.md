@@ -143,8 +143,11 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [FAQ e problemi comuni](Modules/Lang/project_docs/translations-faq.md)
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -298,8 +301,11 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Guida language switcher](Modules/Lang/docs/README.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [FAQ e problemi comuni](Modules/Lang/docs/translations-faq.md)
 - [Guida language switcher](Modules/Lang/docs/README.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -307,11 +313,14 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 
 **Se vuoi che aggiorni direttamente la documentazione o vuoi esempi pratici di override/mapping path Folio, chiedi pure!**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 ---
 
 **Se vuoi che aggiorni direttamente la documentazione o vuoi esempi pratici di override/mapping path Folio, chiedi pure!**
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

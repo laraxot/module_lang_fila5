@@ -139,7 +139,11 @@ php -l laravel/Modules/Chart/lang/it/mixed_chart.php
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Verifica assenza array() 
+=======
+# Verifica assenza array()
+>>>>>>> laraxot/dev
 =======
 # Verifica assenza array()
 >>>>>>> laraxot/dev
@@ -177,7 +181,10 @@ grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php"
 *Ultimo aggiornamento: 6 Gennaio 2025*
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 6 Gennaio 2025*
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
