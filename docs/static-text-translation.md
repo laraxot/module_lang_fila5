@@ -11,7 +11,12 @@ La traduzione di testi statici in Laravel può essere gestita utilizzando due ap
 I file PHP sono stati il metodo predefinito per lungo tempo. Le traduzioni sono organizzate in file separati per lingua e funzionalità.
 
 **Esempio**:
+<<<<<<< HEAD
 In un file Blade come `/var/www/html/<nome progetto>/laravel/resources/views/auth/register.blade.php`, potremmo avere:
+=======
+In un file Blade come `resources/views/auth/register.blade.php`, potremmo avere:
+In un file Blade come `resources/views/auth/register.blade.php`, potremmo avere:
+>>>>>>> bebd548 (.)
 ```php
 <!-- Nome -->
 <div>
@@ -21,7 +26,12 @@ In un file Blade come `/var/www/html/<nome progetto>/laravel/resources/views/aut
 </div>
 ```
 
+<<<<<<< HEAD
 La traduzione corrispondente sarebbe in `/var/www/html/<nome progetto>/laravel/lang/it/auth.php`:
+=======
+La traduzione corrispondente sarebbe in `lang/it/auth.php`:
+La traduzione corrispondente sarebbe in `lang/it/auth.php`:
+>>>>>>> bebd548 (.)
 ```php
 return [
     'register' => [
@@ -55,7 +65,12 @@ php artisan lang:publish
 I file JSON contengono un elenco unico di traduzioni per ogni lingua, con chiavi leggibili dall'uomo.
 
 **Esempio**:
+<<<<<<< HEAD
 In un file Blade come `/var/www/html/<nome progetto>/laravel/resources/views/auth/register.blade.php`, potremmo avere:
+=======
+In un file Blade come `resources/views/auth/register.blade.php`, potremmo avere:
+In un file Blade come `resources/views/auth/register.blade.php`, potremmo avere:
+>>>>>>> bebd548 (.)
 ```php
 <!-- Nome -->
 <div>
@@ -65,7 +80,12 @@ In un file Blade come `/var/www/html/<nome progetto>/laravel/resources/views/aut
 </div>
 ```
 
+<<<<<<< HEAD
 La traduzione corrispondente sarebbe in `/var/www/html/<nome progetto>/laravel/lang/it.json`:
+=======
+La traduzione corrispondente sarebbe in `lang/it.json`:
+La traduzione corrispondente sarebbe in `lang/it.json`:
+>>>>>>> bebd548 (.)
 ```json
 {
     "Nome": "Il Tuo Nome"
@@ -85,7 +105,12 @@ La traduzione corrispondente sarebbe in `/var/www/html/<nome progetto>/laravel/l
 
 ## Problemi nel Mescolare File PHP e JSON
 
+<<<<<<< HEAD
 Mescolare i due approcci può causare problemi se una chiave JSON corrisponde al nome di un file PHP. Ad esempio, se esiste un file `/var/www/html/<nome progetto>/laravel/lang/it/auth.php` e una chiave `"Auth": "Autenticazione"` in `/var/www/html/<nome progetto>/laravel/lang/it.json`, chiamare `__('Auth')` restituirà il contenuto di `auth.php` invece della traduzione attesa.
+=======
+Mescolare i due approcci può causare problemi se una chiave JSON corrisponde al nome di un file PHP. Ad esempio, se esiste un file `lang/it/auth.php` e una chiave `"Auth": "Autenticazione"` in `lang/it.json`, chiamare `__('Auth')` restituirà il contenuto di `auth.php` invece della traduzione attesa.
+Mescolare i due approcci può causare problemi se una chiave JSON corrisponde al nome di un file PHP. Ad esempio, se esiste un file `lang/it/auth.php` e una chiave `"Auth": "Autenticazione"` in `lang/it.json`, chiamare `__('Auth')` restituirà il contenuto di `auth.php` invece della traduzione attesa.
+>>>>>>> bebd548 (.)
 
 ## `trans()` vs `__()`: Quale Usare?
 
@@ -142,8 +167,15 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
    - Creare file simili per altri moduli come `patient.php`, `dental.php`, ecc.
 
 3. **File JSON per Testi Lunghi**:
+<<<<<<< HEAD
    - Creare file JSON per testi lunghi o frasi complete in `/var/www/html/<nome progetto>/laravel/lang/it.json` e `/var/www/html/<nome progetto>/laravel/lang/en.json`.
    - Esempio per `/var/www/html/<nome progetto>/laravel/lang/it.json`:
+=======
+   - Creare file JSON per testi lunghi o frasi complete in `lang/it.json` e `lang/en.json`.
+   - Esempio per `lang/it.json`:
+   - Creare file JSON per testi lunghi o frasi complete in `lang/it.json` e `lang/en.json`.
+   - Esempio per `lang/it.json`:
+>>>>>>> bebd548 (.)
      ```json
      {
          "Benvenuto nel sistema di gestione sanitaria": "Benvenuto nel sistema di gestione sanitaria",
@@ -153,7 +185,12 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
 
 4. **Modifica dei File Blade per Utilizzare le Traduzioni**:
    - Modificare i file Blade per utilizzare la funzione `__()` con chiavi appropriate.
+<<<<<<< HEAD
    - Esempio per `/var/www/html/<nome progetto>/laravel/resources/views/auth/login.blade.php`:
+=======
+   - Esempio per `resources/views/auth/login.blade.php`:
+   - Esempio per `resources/views/auth/login.blade.php`:
+>>>>>>> bebd548 (.)
      ```php
      <!-- Email -->
      <div>
@@ -192,8 +229,15 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
    - Applicare modifiche simili a tutti i file Blade rilevanti nel progetto.
 
 5. **Integrazione con `mcamara/laravel-localization`**:
+<<<<<<< HEAD
    - Assicurarsi che il pacchetto `mcamara/laravel-localization` sia installato e configurato come descritto nella documentazione `/var/www/html/<nome progetto>/laravel/Modules/Lang/docs/laravel-localization-complete.md`.
    - Modificare il file `/var/www/html/<nome progetto>/laravel/routes/web.php` per aggiungere il prefisso della lingua:
+=======
+   - Assicurarsi che il pacchetto `mcamara/laravel-localization` sia installato e configurato come descritto nella documentazione `Modules/Lang/project_docs/laravel-localization-complete.md`.
+   - Modificare il file `routes/web.php` per aggiungere il prefisso della lingua:
+   - Assicurarsi che il pacchetto `mcamara/laravel-localization` sia installato e configurato come descritto nella documentazione `Modules/Lang/project_docs/laravel-localization-complete.md`.
+   - Modificare il file `routes/web.php` per aggiungere il prefisso della lingua:
+>>>>>>> bebd548 (.)
      ```php
      Route::group([
          'prefix' => LaravelLocalization::setLocale(),
