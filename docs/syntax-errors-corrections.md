@@ -167,17 +167,5 @@ grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php"
 - [Best practices traduzioni](./translation_rules.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 6 Gennaio 2025*
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
 *Ultimo aggiornamento: 6 Gennaio 2025*
->>>>>>> laraxot/dev

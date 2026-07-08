@@ -5,22 +5,8 @@
 **NON possono esistere file con lo stesso nome che differiscono solo per maiuscole/minuscole nella stessa directory.**
 
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 
 ## File/Directory Rimossi da Lang Module
 
@@ -50,22 +36,10 @@ Laravel usa la convenzione `database/migrations/` (lowercase) per:
 
 ## Update Log
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **2025-11-04**: Removed `database/Migrations/` uppercase directory
 - **[DATE]**: Removed `database/Migrations/` uppercase directory
-=======
 - **[DATE]**: Removed `database/Migrations/` uppercase directory
->>>>>>> laraxot/dev
-=======
 - **[DATE]**: Removed `database/Migrations/` uppercase directory
->>>>>>> laraxot/dev
-=======
 - **[DATE]**: Removed `database/Migrations/` uppercase directory
->>>>>>> laraxot/dev
-=======
 - **2025-11-04**: Removed `database/Migrations/` uppercase directory
 - **2026-07-01**: Removed nested `database/migrations/Migrations/` (reintroduced per errore automazione in `f840e0cc0`; fix `247054abb`)
->>>>>>> laraxot/dev

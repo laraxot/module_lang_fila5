@@ -751,59 +751,24 @@ class BatchPdfGenerator
 
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./README.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./README.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./README.md)
->>>>>>> laraxot/dev
 - [Filament Internationalization](https://filamentphp.com/docs/3.x/panels/translations)
 - [Laravel Localization](https://laravel.com/docs/localization)
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Last Updated:** 2025-12-09
 **Last Updated:** 2025-12-09
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 **
-=======
 **Last Updated:** 2025-12-09
 **Last Updated:** 2025-12-09
->>>>>>> bebd548 (.)
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
-<<<<<<< HEAD
 **PHPStan Level:** 10 ✅
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
 **PHPStan Level:** 10 ✅
->>>>>>> laraxot/dev

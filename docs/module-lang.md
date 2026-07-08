@@ -1,29 +1,14 @@
 # Modulo Lang
 
 ## Informazioni Generali
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Nome**: `laraxot/module_lang_fila5`
 - **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
 - **Namespace**: `Modules\Lang`
 - **Repository**: https://github.com/laraxot/module_lang_fila5.git
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 - **Nome**: `laraxot/module_lang_fila3`
 - **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
 - **Namespace**: `Modules\Lang`
 - **Repository**: https://github.com/laraxot/module_lang_fila3.git
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ### Versione HEAD
 
@@ -307,22 +292,10 @@ public function testTranslations()
 
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
->>>>>>> laraxot/dev
 
 ## Esempi
 
@@ -335,20 +308,8 @@ $translation = Lang::get('patient.registration.label');
 
 Le modifiche vengono tracciate nel repository GitHub.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-=======
 ---
->>>>>>> laraxot/dev
-=======
 ---
->>>>>>> laraxot/dev
-=======
 ---
->>>>>>> laraxot/dev
-=======
 ---
->>>>>>> laraxot/dev

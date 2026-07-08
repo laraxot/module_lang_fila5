@@ -335,20 +335,8 @@ php artisan lang:benchmark         # Test performance
 ```php
 // Metadati versione
 'version' => '2.0.0',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 'last_updated' => '2025-01-27',
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
 'last_updated' => '2025-01-27',
->>>>>>> laraxot/dev
 'last_updated' => '[DATE]',
 'compatibility' => [
     'laravel' => '^12.0',
@@ -431,22 +419,8 @@ return [
 ## 🔗 **Riferimenti e Collegamenti**
 
 - [README.md](README.md) - Documentazione principale modulo
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [README.md](readme.md) - Documentazione principale modulo
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
 - [README.md](readme.md) - Documentazione principale modulo
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 - [config/lang.php](../config/lang.php) - Configurazione centralizzata
 - [Laraxot Framework](https://github.com/laraxot/laraxot) - Framework principale
 - [Laravel Localization](https://laravel.com/project_docs/localization) - Documentazione ufficiale
@@ -456,20 +430,8 @@ return [
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 2.0.0
 **Autore**: Team Laraxot
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Mantenuto da**: Community Laraxot
-=======
 **Mantenuto da**: Community Laraxot
->>>>>>> laraxot/dev
-=======
 **Mantenuto da**: Community Laraxot
->>>>>>> laraxot/dev
-=======
 **Mantenuto da**: Community Laraxot
->>>>>>> laraxot/dev
-=======
 **Mantenuto da**: Community Laraxot
->>>>>>> laraxot/dev
