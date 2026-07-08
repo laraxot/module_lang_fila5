@@ -32,11 +32,18 @@ php artisan module_lang:show-versions
 ## Collegamenti tra versioni di upgrade.md
 * [upgrade.md](../../../Lang/docs/upgrade.md)
 * [upgrade.md](../../../Cms/docs/upgrade.md)
+<<<<<<< HEAD
 * [upgrade.md](../../../Lang/docs/upgrade.md)
 * [upgrade.md](../../../Cms/docs/upgrade.md)
+=======
+>>>>>>> laraxot/dev
 
 ### Versione Incoming
 
 ```
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> laraxot/dev

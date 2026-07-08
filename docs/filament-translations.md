@@ -91,8 +91,11 @@ TextInput::make('title')
 
 - [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../Xot/project_docs/README.md) - Best practice e linee guida generali
+<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../Xot/project_docs/README.md) - Best practice e linee guida generali
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -105,8 +108,11 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 - Consulta anche:
   - [docs Modulo Generico](../../<nome modulo>/docs/README.md)
   - [docs Xot](../../Xot/docs/README.md)
+<<<<<<< HEAD
   - [docs Modulo Generico](../../<nome modulo>/docs/README.md)
   - [docs Xot](../../Xot/docs/README.md)
+=======
+>>>>>>> laraxot/dev
 
 ## Policy DRY sulle Traduzioni di Disponibilità/Appuntamenti
 
@@ -209,8 +215,11 @@ TextInput::make('title')
 
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../Xot/docs/README.md) - Best practice e linee guida generali
+<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../Xot/docs/README.md) - Best practice e linee guida generali
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -223,8 +232,11 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 - Consulta anche:
   - [docs <nome progetto>](../../<nome progetto>/docs/README.md)
   - [docs Xot](../../Xot/docs/README.md)
+<<<<<<< HEAD
   - [docs <nome progetto>](../../<nome progetto>/docs/README.md)
   - [docs Xot](../../Xot/docs/README.md)
+=======
+>>>>>>> laraxot/dev
 
 ## Policy DRY sulle Traduzioni di Disponibilità/Appuntamenti
 
@@ -233,4 +245,8 @@ Tutte le label, placeholder, messaggi e azioni relativi a disponibilità e appun
 ### Motivazione filosofica, politica, zen
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
+<<<<<<< HEAD
 - Refactoring sicuro, massima estendibilità
+=======
+- Refactoring sicuro, massima estendibilità
+>>>>>>> laraxot/dev

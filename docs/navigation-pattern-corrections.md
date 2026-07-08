@@ -5,7 +5,10 @@ canonical: ../../../Themes/docs/shared-components/correzioni-navigation-pattern.
 ---
 
 ## Data Intervento
+<<<<<<< HEAD
 **2025-01-22** - Sistemazione traduzioni secondo regole DRY + KISS
+=======
+>>>>>>> laraxot/dev
 **[DATE]** - Sistemazione traduzioni secondo regole DRY + KISS
 
 ## Problema Identificato
@@ -243,8 +246,11 @@ Ogni sezione `navigation` deve includere:
 - [Traduzioni Navigation Audit](traduzioni-navigation-2025.md)
 - [Best Practices Traduzioni](../../Xot/docs/translation-standards.md)
 - [NavigationLabelTrait Explained](../../Xot/docs/filament/navigation-label-trait-explained.md)
+<<<<<<< HEAD
 - [Best Practices Traduzioni](../../xot/docs/translation-standards.md)
 - [NavigationLabelTrait Explained](../../xot/docs/filament/navigation-label-trait-explained.md)
+=======
+>>>>>>> laraxot/dev
 
 ## Note Tecniche
 
@@ -254,6 +260,11 @@ Ogni sezione `navigation` deve includere:
 - Icone scelte per semantica appropriata
 - Gruppi organizzati per dominio logico
 
+<<<<<<< HEAD
 *Intervento completato il: 2025-01-22*
 *Intervento completato il: [DATE]*
 *Conforme alle regole DRY + KISS*
+=======
+*Intervento completato il: [DATE]*
+*Conforme alle regole DRY + KISS*
+>>>>>>> laraxot/dev

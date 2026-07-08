@@ -5,7 +5,12 @@ canonical: ../../../Themes/docs/shared-components/translation-structure-expanded
 ---
 
 **Versione**: 1.0
+<<<<<<< HEAD
 **Data**: 2025-08-08
 **Data**: 2025-08-08
 **Stato**: Implementazione in corso
 **Responsabile**: Sistema automatico DRY/KISS
+=======
+**Stato**: Implementazione in corso
+**Responsabile**: Sistema automatico DRY/KISS
+>>>>>>> laraxot/dev
