@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Date**: 2025-11-11
 **Date**: 2025-11-11
 =======
@@ -12,6 +13,10 @@
 >>>>>>> laraxot/dev
 =======
 **Date**: [DATE]
+>>>>>>> laraxot/dev
+=======
+**Date**: 2025-11-11
+**Date**: 2025-11-11
 >>>>>>> laraxot/dev
 **Analyst**: Claude Code
 **Tools**: PHPStan Level 10, PHPInsights, PHPMD
@@ -21,6 +26,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ## Aggiornamento verifica 2026-07-01
 
 - **PHPStan** (`level: max`): **0 errori** confermati.
@@ -31,6 +39,9 @@
 
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -334,6 +345,7 @@ Based on `PHPSTAN_JOURNEY.md`, the following modules have achieved Level 10:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, Quaeris
 =======
 - Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, <nome progetto>
@@ -343,6 +355,9 @@ Based on `PHPSTAN_JOURNEY.md`, the following modules have achieved Level 10:
 >>>>>>> laraxot/dev
 =======
 - Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, <nome progetto>
+>>>>>>> laraxot/dev
+=======
+- Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, Quaeris
 >>>>>>> laraxot/dev
 
 **Lang Module Status**:
@@ -380,6 +395,7 @@ The module is **production-ready** but would benefit from targeted refactoring t
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Next Review**: After high-priority refactoring completed
 **Next Review**: After high-priority refactoring completed
 =======
@@ -387,4 +403,8 @@ The module is **production-ready** but would benefit from targeted refactoring t
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+**Next Review**: After high-priority refactoring completed
+**Next Review**: After high-priority refactoring completed
 >>>>>>> laraxot/dev

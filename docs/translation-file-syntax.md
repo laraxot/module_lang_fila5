@@ -39,6 +39,10 @@ Questo errore indica generalmente che il parser PHP si aspettava di chiudere una
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
     -   Vedere anche le linee guida generali in [Gestione Best Practice per File di Configurazione PHP basati su Array](../../xot/docs/php_array_configuration_best_practices.md).
 
 -   **Anti-Pattern (Cattive Pratiche)**:
@@ -90,11 +94,15 @@ Questo errore indica generalmente che il parser PHP si aspettava di chiudere una
     -   Mantenere una formattazione chiara e indentata per gli array complessi.
     -   Vedere anche le linee guida generali in [Gestione Best Practice per File di Configurazione PHP basati su Array](../../Xot/docs/php_array_configuration_best_practices.md).
     -   Vedere anche le linee guida generali in [Gestione Best Practice per File di Configurazione PHP basati su Array](../../xot/docs/php_array_configuration_best_practices.md).
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 -   **Anti-Pattern (Cattive Pratiche)**:
@@ -158,7 +166,11 @@ Questo errore indica generalmente che il parser PHP si aspettava di chiudere una
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -   In caso di errori di parsing difficili da diagnosticare, provare a commentare sezioni dell'array per isolare la parte problematica.
+=======
+-   In caso di errori di parsing difficili da diagnosticare, provare a commentare sezioni dell'array per isolare la parte problematica.
+>>>>>>> laraxot/dev
 =======
 -   In caso di errori di parsing difficili da diagnosticare, provare a commentare sezioni dell'array per isolare la parte problematica.
 >>>>>>> laraxot/dev

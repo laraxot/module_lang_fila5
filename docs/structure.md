@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Data: 2025-04-23 19:09:56
 Data: 2025-04-23 19:09:56
 =======
@@ -13,6 +14,13 @@ Data: [DATE] 19:09:56
 >>>>>>> laraxot/dev
 =======
 Data: [DATE] 19:09:56
+>>>>>>> laraxot/dev
+=======
+Data: [DATE] 19:09:56
+=======
+Data: 2025-04-23 19:09:56
+Data: 2025-04-23 19:09:56
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 ## Informazioni generali
@@ -523,10 +531,14 @@ tests/Unit
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
 >>>>>>> laraxot/dev

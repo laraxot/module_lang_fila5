@@ -3,12 +3,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data:** 2025-04-16
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+**Data:** 2025-04-16
 >>>>>>> laraxot/dev
 **Data:** [DATE]
 
@@ -50,6 +54,7 @@ Durante un controllo di routine sono stati rilevati diversi conflitti Git non ri
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](phpstan_level10_fixes.md)
 - [module_lang.md](module_lang.md)
 =======
@@ -60,4 +65,11 @@ Durante un controllo di routine sono stati rilevati diversi conflitti Git non ri
 >>>>>>> laraxot/dev
 =======
 - [module_lang.md](module_lang.md)
+>>>>>>> laraxot/dev
+=======
+- [module_lang.md](module_lang.md)
+=======
+- [PHPStan Level 10 Fixes](phpstan_level10_fixes.md)
+- [module_lang.md](module_lang.md)
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev

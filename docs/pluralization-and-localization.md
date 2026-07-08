@@ -370,7 +370,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md](./README.md)
+=======
+- [README.md](./README.md)
+>>>>>>> laraxot/dev
 =======
 - [README.md](./README.md)
 >>>>>>> laraxot/dev

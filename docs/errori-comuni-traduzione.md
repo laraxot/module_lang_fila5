@@ -141,6 +141,7 @@ Tutti i campi devono seguire la struttura espansa:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
@@ -149,6 +150,11 @@ Tutti i campi devono seguire la struttura espansa:
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
+
+*Ultimo aggiornamento: 6 Gennaio 2025*
 >>>>>>> laraxot/dev
 # Errori comuni nei file di traduzione
 
@@ -293,6 +299,7 @@ Tutti i campi devono seguire la struttura espansa:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
@@ -301,4 +308,9 @@ Tutti i campi devono seguire la struttura espansa:
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
+
+*Ultimo aggiornamento: 6 Gennaio 2025*
 >>>>>>> laraxot/dev

@@ -310,6 +310,7 @@ public function testTranslations()
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
 =======
@@ -317,6 +318,10 @@ public function testTranslations()
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
+- [Regole Generali Traduzioni](../../Xot/docs/translations.md)
 >>>>>>> laraxot/dev
 
 ## Esempi
@@ -333,7 +338,11 @@ Le modifiche vengono tracciate nel repository GitHub.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> laraxot/dev
 =======
 ---
 >>>>>>> laraxot/dev

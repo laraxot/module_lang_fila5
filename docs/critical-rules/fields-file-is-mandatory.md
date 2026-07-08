@@ -3,12 +3,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2026-01-09
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+**Data**: 2026-01-09
 >>>>>>> laraxot/dev
 **Severità**: 🔴 **CRITICAL**
 **Status**: ✅ **REGOLA ASSOLUTA**
@@ -329,12 +333,16 @@ Prima di considerare un modulo "completo":
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2026-01-09
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+**Data**: 2026-01-09
 >>>>>>> laraxot/dev
 **Autore**: System Architect (dopo litigata interna)
 **Status**: ✅ **REGOLA DEFINITIVA**

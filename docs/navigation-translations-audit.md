@@ -117,6 +117,7 @@ Questo file contiene molteplici occorrenze problematiche:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione**: [Correzioni Geo](../modules/geo/docs/navigation-translations-fixes.md)
 =======
 >>>>>>> laraxot/dev
@@ -124,11 +125,17 @@ Questo file contiene molteplici occorrenze problematiche:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+- **Documentazione**: [Correzioni Geo](../modules/geo/docs/navigation-translations-fixes.md)
+>>>>>>> bebd548 (.)
+>>>>>>> laraxot/dev
 
 ### ✅ Modulo User - RISOLTO
 - **device.php**: Traduzioni corrette (Dispositivi → Sicurezza)
 - **permission.php**: Traduzioni corrette (Permessi → Sicurezza)
 - **Documentazione**: [Correzioni User](../Modules/User/docs/navigation-translations-fixes.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -139,11 +146,17 @@ Questo file contiene molteplici occorrenze problematiche:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+- **Documentazione**: [Correzioni User](../modules/user/docs/navigation-translations-fixes.md)
+>>>>>>> bebd548 (.)
+>>>>>>> laraxot/dev
 
 ### ✅ Modulo Lang - CONFORME
 - **edit_translation_file.php**: Verificato già conforme agli standard
 - **Nessuna correzione necessaria**: File già strutturato correttamente
 - **Documentazione**: [Verifica Lang](../Modules/Lang/docs/navigation-translations-fixes.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -153,6 +166,11 @@ Questo file contiene molteplici occorrenze problematiche:
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+=======
+- **Documentazione**: [Verifica Lang](../modules/lang/docs/navigation-translations-fixes.md)
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 ## Note
@@ -184,6 +202,7 @@ Questo file contiene molteplici occorrenze problematiche:
 - [Standard Qualità Traduzioni](../Modules/<nome progetto>/docs/translation-quality-standards.md)
 
 *Audit creato il: [DATE]*
+<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -191,4 +210,12 @@ Questo file contiene molteplici occorrenze problematiche:
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Regole Traduzioni](../Modules/Xot/docs/translation-rules.md)
+- [Standard Qualità Traduzioni](../Modules/<nome progetto>/docs/translation-quality-standards.md)
+
+*Audit creato il: 2025-08-07*
+*Ultimo aggiornamento: 2025-08-07*
+*Ultimo aggiornamento: [DATE]*
 >>>>>>> laraxot/dev

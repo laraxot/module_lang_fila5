@@ -123,12 +123,16 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 >>>>>>> laraxot/dev
 - [Translation Best Practices](translation-best-practices.md)
 - [PHPStan Configuration](phpstan-configuration.md)
@@ -165,12 +169,16 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Chart Module Documentation](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Chart Module Documentation](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 >>>>>>> laraxot/dev
 - [FormBuilder Module Documentation](../../laravel/Modules/FormBuilder/project_docs/)
 - [Job Module Documentation](../../laravel/Modules/Job/project_docs/)
@@ -182,6 +190,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 =======
@@ -192,6 +201,13 @@ return [
 >>>>>>> laraxot/dev
 =======
 [DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+>>>>>>> laraxot/dev
+=======
+[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+=======
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 # Correzione Errori di Sintassi nei File di Traduzione
 
@@ -318,12 +334,16 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 >>>>>>> laraxot/dev
 - [Translation Best Practices](translation-best-practices.md)
 - [PHPStan Configuration](phpstan-configuration.md)
@@ -360,12 +380,16 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 >>>>>>> laraxot/dev
 - [FormBuilder Module Documentation](../../laravel/Modules/FormBuilder/docs/)
 - [Job Module Documentation](../../laravel/Modules/Job/docs/)
@@ -377,6 +401,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 =======
@@ -387,4 +412,11 @@ return [
 >>>>>>> laraxot/dev
 =======
 [DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+>>>>>>> laraxot/dev
+=======
+[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+=======
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev

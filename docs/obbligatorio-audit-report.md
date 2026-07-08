@@ -3,12 +3,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2025-08-08 12:29:30
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+**Data**: 2025-08-08 12:29:30
 >>>>>>> laraxot/dev
 **Scope**: Identificazione della parola "obbligatorio" e varianti in file di traduzione non italiani
 
@@ -38,7 +42,11 @@ Tutti i file di traduzione sono conformi e non contengono la parola "obbligatori
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Ogni occorrenza deve essere tradotta nella lingua appropriata del file.
+=======
+Ogni occorrenza deve essere tradotta nella lingua appropriata del file.
+>>>>>>> laraxot/dev
 =======
 Ogni occorrenza deve essere tradotta nella lingua appropriata del file.
 >>>>>>> laraxot/dev

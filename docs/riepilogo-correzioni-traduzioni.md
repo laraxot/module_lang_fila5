@@ -133,7 +133,11 @@ php artisan tinker
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 6 Gennaio 2025 - TUTTI I PROBLEMI RISOLTI*
+=======
+*Ultimo aggiornamento: 6 Gennaio 2025 - TUTTI I PROBLEMI RISOLTI*
+>>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: 6 Gennaio 2025 - TUTTI I PROBLEMI RISOLTI*
 >>>>>>> laraxot/dev

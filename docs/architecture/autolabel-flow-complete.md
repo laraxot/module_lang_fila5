@@ -3,12 +3,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2026-01-09
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+**Data**: 2026-01-09
 >>>>>>> laraxot/dev
 **Tipo**: Documentazione Tecnica Approfondita
 **Audience**: Sviluppatori che devono comprendere il meccanismo interno
@@ -865,12 +869,16 @@ Il sistema AutoLabel è un **meccanismo sofisticato ma elegante** che:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2026-01-09
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+**Data**: 2026-01-09
 >>>>>>> laraxot/dev
 **Autore**: System Architect
 **Ultima Revisione**: 2026-01-09

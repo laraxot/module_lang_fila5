@@ -366,6 +366,7 @@ php artisan lang:reset --force
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md](readme.md) - Documentazione principale
 - [BEST_PRACTICES.md](best_practices.md) - Best practices
 =======
@@ -373,6 +374,12 @@ php artisan lang:reset --force
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+=======
+- [README.md](readme.md) - Documentazione principale
+- [BEST_PRACTICES.md](best_practices.md) - Best practices
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 - [config/lang.php](../config/lang.php) - Configurazione
 
@@ -433,7 +440,11 @@ php artisan config:show lang
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Mantenuto da**: Community Laraxot
+=======
+**Mantenuto da**: Community Laraxot
+>>>>>>> laraxot/dev
 =======
 **Mantenuto da**: Community Laraxot
 >>>>>>> laraxot/dev

@@ -318,7 +318,11 @@ php artisan test --testsuite=Lang
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data:** 2025-01-XX
+=======
+**Data:** 2025-01-XX
+>>>>>>> laraxot/dev
 =======
 **Data:** 2025-01-XX
 >>>>>>> laraxot/dev
