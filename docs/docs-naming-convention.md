@@ -1,27 +1,13 @@
 # Convenzioni di Naming per Documentazione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## Data: 2025-01-27
 ## Data: 2025-01-27
-=======
 ## Data: [DATE]
->>>>>>> laraxot/dev
-=======
 ## Data: [DATE]
->>>>>>> laraxot/dev
-=======
 ## Data: [DATE]
->>>>>>> laraxot/dev
-=======
 ## Data: [DATE]
-=======
 ## Data: 2025-01-27
 ## Data: 2025-01-27
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 
 ## REGOLA CRITICA: SEMPRE MINUSCOLO IN DOCS
 
@@ -153,31 +139,17 @@ Components/ → components/
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
 *Ultimo aggiornamento: 2025-01-27*
 *Stato: ATTIVO - REGOLA CRITICA*
-=======
 *Ultimo aggiornamento: [DATE]*
 *Stato: ATTIVO - REGOLA CRITICA*
->>>>>>> laraxot/dev
-=======
 *Ultimo aggiornamento: [DATE]*
 *Stato: ATTIVO - REGOLA CRITICA*
->>>>>>> laraxot/dev
-=======
 *Ultimo aggiornamento: [DATE]*
 *Stato: ATTIVO - REGOLA CRITICA*
->>>>>>> laraxot/dev
-=======
 *Ultimo aggiornamento: [DATE]*
 *Stato: ATTIVO - REGOLA CRITICA*
-=======
 *Ultimo aggiornamento: 2025-01-27*
 *Ultimo aggiornamento: 2025-01-27*
 *Stato: ATTIVO - REGOLA CRITICA*
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev

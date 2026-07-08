@@ -226,26 +226,12 @@ Lang/
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Last Updated**: 2026-01-02
-=======
 
->>>>>>> laraxot/dev
-=======
 
->>>>>>> laraxot/dev
-=======
 
->>>>>>> laraxot/dev
-=======
 
-=======
 **Last Updated**: 2026-01-02
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 **Maintainer**: Team Laraxot
 **Status**: Active Development
 # Product Roadmap - Lang Module

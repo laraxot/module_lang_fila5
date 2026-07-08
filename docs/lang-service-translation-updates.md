@@ -1,25 +1,11 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
-=======
 # Aggiornamento File di Traduzione Lang Service - [DATE]
->>>>>>> laraxot/dev
-=======
 # Aggiornamento File di Traduzione Lang Service - [DATE]
->>>>>>> laraxot/dev
-=======
 # Aggiornamento File di Traduzione Lang Service - [DATE]
->>>>>>> laraxot/dev
-=======
 # Aggiornamento File di Traduzione Lang Service - [DATE]
-=======
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 
 ## Panoramica
 Aggiornamento completo dei file di traduzione per il servizio lingue del modulo Lang, applicando la regola critica per `helper_text` e implementando la struttura espansa completa.
@@ -168,9 +154,6 @@ La gestione delle traduzioni deve essere:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di gestione traduzioni Laraxot
 **Versione**: 1.0
@@ -178,26 +161,11 @@ La gestione delle traduzioni deve essere:
 **Autore**: Sistema di gestione traduzioni Laraxot  
 **Versione**: 1.0  
 **Stato**: Implementato e testato
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: [DATE]
 **Autore**: Sistema di gestione traduzioni Laraxot
 **Versione**: 1.0
-<<<<<<< HEAD
 **Stato**: Implementato e testato
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
 **Ultimo aggiornamento**: 2025-01-06  
 **Autore**: Sistema di gestione traduzioni Laraxot  
 **Versione**: 1.0  
 **Stato**: Implementato e testato
->>>>>>> laraxot/dev

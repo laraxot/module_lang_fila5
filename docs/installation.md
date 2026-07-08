@@ -34,20 +34,8 @@ php artisan module_lang:install
 ## Documentazione collegata
 - [Composer merge plugin](composer-merge-plugin.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-=======
 ---
->>>>>>> laraxot/dev
-=======
 ---
->>>>>>> laraxot/dev
-=======
 ---
->>>>>>> laraxot/dev
-=======
 ---
->>>>>>> laraxot/dev

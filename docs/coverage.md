@@ -1,23 +1,9 @@
 # Code Coverage: Lang
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Date:** 2026-01-17
 **Date:** 2026-01-17
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
 **Date:** 2026-01-17
 **Date:** 2026-01-17
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 **Lines Coverage:** N/A (Failed to parse)
 **Test Exit Code:** 2
 
@@ -63,32 +49,18 @@
   ──────────────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\Lang\tests\Unit\Actions\ReadTranslationFileActionTest > `ReadTransl…   
   Failed asserting that exception of type "Error" matches expected exception "Exception". Message was: "Call to undefined method Illuminate\Container\Container::storagePath()" at
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 . progetto>_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
 . progetto>_fila5_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
-=======
 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
 /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
->>>>>>> laraxot/dev
-=======
 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
 /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
->>>>>>> laraxot/dev
-=======
 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
 /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
->>>>>>> laraxot/dev
-=======
 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
 /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
-=======
 . progetto>_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
 . progetto>_fila5_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 .
 
   ──────────────────────────────────────────────────────────────────────────────────────  
@@ -118,20 +90,8 @@
   Duration: 1.44s
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 ```
-=======
 ```
->>>>>>> laraxot/dev
-=======
 ```
->>>>>>> laraxot/dev
-=======
 ```
->>>>>>> laraxot/dev
-=======
 ```
->>>>>>> laraxot/dev

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 
 ## Panoramica
@@ -154,11 +151,6 @@ La gestione delle traduzioni deve essere:
 **Autore**: Sistema di gestione traduzioni Laraxot  
 **Versione**: 1.0  
 **Stato**: Implementato e testato
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: lang-service-translation-updates
@@ -166,10 +158,3 @@ canonical: ../../../../Themes/docs/shared-components/lang-service-translation-up
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/lang-service-translation-updates-2025-01-06.md
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
