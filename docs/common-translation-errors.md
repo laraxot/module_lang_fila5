@@ -130,6 +130,7 @@ Per evitare errori nei file di traduzione:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole generali per i file di traduzione](/laravel/modules/xot/docs/translation_rules.md)
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 
@@ -139,4 +140,10 @@ Per evitare errori nei file di traduzione:
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Regole generali per i file di traduzione](/laravel/modules/xot/docs/translation_rules.md)
+- [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
+
+*Ultimo aggiornamento: 3 Giugno 2025*
 >>>>>>> laraxot/dev

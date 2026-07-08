@@ -6,6 +6,7 @@ Questo documento registra le correzioni PHPStan implementate nel modulo Lang.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-27
 **Ultimo aggiornamento**: 2025-01-27
 =======
@@ -16,6 +17,13 @@ Questo documento registra le correzioni PHPStan implementate nel modulo Lang.
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
+>>>>>>> laraxot/dev
+=======
+**Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2025-01-27
+**Ultimo aggiornamento**: 2025-01-27
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 **Status PHPStan Level 10**: ✅ **PASSED** - 0 errori
 
@@ -24,6 +32,7 @@ Questo documento registra le correzioni PHPStan implementate nel modulo Lang.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Post.php - Doppio Import PostFactory (2025-01-27)
 ### Post.php - Doppio Import PostFactory (2025-01-27)
 =======
@@ -34,6 +43,13 @@ Questo documento registra le correzioni PHPStan implementate nel modulo Lang.
 >>>>>>> laraxot/dev
 =======
 ### Post.php - Doppio Import PostFactory ([DATE])
+>>>>>>> laraxot/dev
+=======
+### Post.php - Doppio Import PostFactory ([DATE])
+=======
+### Post.php - Doppio Import PostFactory (2025-01-27)
+### Post.php - Doppio Import PostFactory (2025-01-27)
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 **Problema**: Doppio import di `PostFactory` causava conflitto di namespace
@@ -120,12 +136,16 @@ if (is_array($value)) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
 >>>>>>> laraxot/dev
 
 ## Note per Sviluppo Futuro
@@ -136,7 +156,11 @@ if (is_array($value)) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. **Documentation**: Documentare sempre i parametri e return types
+=======
+4. **Documentation**: Documentare sempre i parametri e return types
+>>>>>>> laraxot/dev
 =======
 4. **Documentation**: Documentare sempre i parametri e return types
 >>>>>>> laraxot/dev

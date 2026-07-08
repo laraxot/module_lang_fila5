@@ -42,6 +42,9 @@ https://filamentphp.com/plugins/34ml-translatable-field
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 # Filament nel modulo Lang
 
 ## Scopo
@@ -152,10 +155,14 @@ Per dettagli completi, vedere: `laravel/docs/composer-merge-plugin.md`
 - https://filamentphp.com/docs/5.x/upgrade-guide
 
 ---
+<<<<<<< HEAD
 **Ultimo aggiornamento:** Gennaio 2026
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+**Ultimo aggiornamento:** Gennaio 2026
 >>>>>>> laraxot/dev

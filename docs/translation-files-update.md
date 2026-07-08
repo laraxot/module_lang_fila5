@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-01-27
 2025-01-27
 =======
@@ -14,6 +15,10 @@
 >>>>>>> laraxot/dev
 =======
 [DATE]
+>>>>>>> laraxot/dev
+=======
+2025-01-27
+2025-01-27
 >>>>>>> laraxot/dev
 
 ## File Modificati
@@ -37,6 +42,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Risolti**: Tutti i conflitti di merge non risolti 
 =======
 - **Risolti**: Tutti i conflitti di merge non risolti
@@ -46,6 +52,9 @@
 >>>>>>> laraxot/dev
 =======
 - **Risolti**: Tutti i conflitti di merge non risolti
+>>>>>>> laraxot/dev
+=======
+- **Risolti**: Tutti i conflitti di merge non risolti 
 >>>>>>> laraxot/dev
 - **Migliorato**: Struttura coerente e pulita
 
@@ -88,6 +97,7 @@ Tutti i file sono stati validati con `php -l`:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ `send_email.php` - Nessun errore di sintassi  
 =======
 - ✅ `send_email.php` - Nessun errore di sintassi
@@ -97,6 +107,9 @@ Tutti i file sono stati validati con `php -l`:
 >>>>>>> laraxot/dev
 =======
 - ✅ `send_email.php` - Nessun errore di sintassi
+>>>>>>> laraxot/dev
+=======
+- ✅ `send_email.php` - Nessun errore di sintassi  
 >>>>>>> laraxot/dev
 - ✅ `lang_service.php` - Nessun errore di sintassi
 
@@ -162,6 +175,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Translation Rules](../Xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
@@ -170,6 +184,13 @@ return [
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+=======
+- [Translation Rules](../Xot/docs/translation_rules.md)
+- [Translation Standards](./translation-standards.md)
+- [Best Practices](../Xot/docs/translations-best-practices.md)
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 ## Prossimi Passi
@@ -180,7 +201,11 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. **Deploy**: Deploy in ambiente di staging per test completi
+=======
+4. **Deploy**: Deploy in ambiente di staging per test completi
+>>>>>>> laraxot/dev
 =======
 4. **Deploy**: Deploy in ambiente di staging per test completi
 >>>>>>> laraxot/dev

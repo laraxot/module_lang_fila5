@@ -164,7 +164,11 @@ php artisan lang:find-missing it
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Gestione appropriata degli errori
+=======
+- Gestione appropriata degli errori
+>>>>>>> laraxot/dev
 =======
 - Gestione appropriata degli errori
 >>>>>>> laraxot/dev

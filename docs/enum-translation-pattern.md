@@ -230,6 +230,7 @@ Prima di ogni commit, verificare:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-01-27 - Regola critica per enum translation pattern
 =======
 [DATE] - Regola critica per enum translation pattern
@@ -239,4 +240,10 @@ Prima di ogni commit, verificare:
 >>>>>>> laraxot/dev
 =======
 [DATE] - Regola critica per enum translation pattern
+>>>>>>> laraxot/dev
+=======
+[DATE] - Regola critica per enum translation pattern
+=======
+2025-01-27 - Regola critica per enum translation pattern
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev

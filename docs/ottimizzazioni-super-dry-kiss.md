@@ -338,7 +338,11 @@ class Language extends Model
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Priorità:** ALTA
+=======
+**Priorità:** ALTA
+>>>>>>> laraxot/dev
 =======
 **Priorità:** ALTA
 >>>>>>> laraxot/dev

@@ -94,6 +94,7 @@ TextInput::make('title')
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../Xot/project_docs/README.md) - Best practice e linee guida generali
 =======
@@ -101,6 +102,10 @@ TextInput::make('title')
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
+- [Regole Generali](../../Xot/project_docs/README.md) - Best practice e linee guida generali
 >>>>>>> laraxot/dev
 
 ---
@@ -117,6 +122,7 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - [docs Modulo Generico](../../<nome modulo>/docs/README.md)
   - [docs Xot](../../Xot/docs/README.md)
 =======
@@ -124,6 +130,10 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+  - [docs Modulo Generico](../../<nome modulo>/docs/README.md)
+  - [docs Xot](../../Xot/docs/README.md)
 >>>>>>> laraxot/dev
 
 ## Policy DRY sulle Traduzioni di Disponibilità/Appuntamenti
@@ -230,6 +240,7 @@ TextInput::make('title')
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../Xot/docs/README.md) - Best practice e linee guida generali
 =======
@@ -237,6 +248,10 @@ TextInput::make('title')
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
+- [Regole Generali](../../Xot/docs/README.md) - Best practice e linee guida generali
 >>>>>>> laraxot/dev
 
 ---
@@ -253,6 +268,7 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - [docs <nome progetto>](../../<nome progetto>/docs/README.md)
   - [docs Xot](../../Xot/docs/README.md)
 =======
@@ -260,6 +276,10 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+  - [docs <nome progetto>](../../<nome progetto>/docs/README.md)
+  - [docs Xot](../../Xot/docs/README.md)
 >>>>>>> laraxot/dev
 
 ## Policy DRY sulle Traduzioni di Disponibilità/Appuntamenti
@@ -272,7 +292,11 @@ Tutte le label, placeholder, messaggi e azioni relativi a disponibilità e appun
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Refactoring sicuro, massima estendibilità
+=======
+- Refactoring sicuro, massima estendibilità
+>>>>>>> laraxot/dev
 =======
 - Refactoring sicuro, massima estendibilità
 >>>>>>> laraxot/dev

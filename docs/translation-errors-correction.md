@@ -37,12 +37,16 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### ✅ Modulo <main module>
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+#### ✅ Modulo <main module>
 >>>>>>> laraxot/dev
 #### ✅ Modulo <nome progetto>
 **File Tedeschi (DE):**
@@ -62,6 +66,7 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `send_email.php`: 
 =======
 - `send_email.php`:
@@ -71,6 +76,9 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 >>>>>>> laraxot/dev
 =======
 - `send_email.php`:
+>>>>>>> laraxot/dev
+=======
+- `send_email.php`: 
 >>>>>>> laraxot/dev
   - `'subject_required' => 'Der Betreff ist erforderlich'`
   - `'to_required' => 'Der Empfänger ist erforderlich'`
@@ -133,6 +141,7 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `env.php`: 
 =======
 - `env.php`:
@@ -142,6 +151,9 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 >>>>>>> laraxot/dev
 =======
 - `env.php`:
+>>>>>>> laraxot/dev
+=======
+- `env.php`: 
 >>>>>>> laraxot/dev
   - `'required' => 'Der Wert ist erforderlich'`
   - `'required' => 'Die Umgebung ist erforderlich'`
@@ -217,12 +229,16 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
 >>>>>>> laraxot/dev
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
@@ -232,12 +248,16 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [<main module> Module: Translation Guidelines](../<main module>/docs/translation_guidelines.md)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [<main module> Module: Translation Guidelines](../<main module>/docs/translation_guidelines.md)
 >>>>>>> laraxot/dev
 - [<nome progetto> Module: Translation Guidelines](../<nome progetto>/docs/translation_guidelines.md)
 
@@ -254,12 +274,16 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. <main module> Module ✅
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+3. <main module> Module ✅
 >>>>>>> laraxot/dev
 3. <nome progetto> Module ✅
 4. Notify Module ✅
@@ -316,7 +340,11 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Versione**: 1.0
+=======
+**Versione**: 1.0
+>>>>>>> laraxot/dev
 =======
 **Versione**: 1.0
 >>>>>>> laraxot/dev

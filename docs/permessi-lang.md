@@ -114,6 +114,7 @@ _Questa guida è valida per tutti i moduli Laraxot che prevedono scrittura runti
 
 ---
 
+<<<<<<< HEAD
 _Questa guida è valida per tutti i moduli Laraxot che prevedono scrittura runtime di file di lingua._
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -121,4 +122,7 @@ _Questa guida è valida per tutti i moduli Laraxot che prevedono scrittura runti
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+_Questa guida è valida per tutti i moduli Laraxot che prevedono scrittura runtime di file di lingua._
 >>>>>>> laraxot/dev

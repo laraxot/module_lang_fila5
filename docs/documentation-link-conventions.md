@@ -16,6 +16,7 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Regole Generali](../../Xot/project_docs/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
 =======
@@ -23,6 +24,10 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+[Regole Generali](../../Xot/project_docs/translations.md)
+[Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> laraxot/dev
 ```
 
@@ -33,6 +38,7 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Regole Generali](Modules/Xot/project_docs/translations.md)
 [Best Practices](Modules/Lang/project_docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 =======
@@ -40,6 +46,10 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+[Regole Generali](Modules/Xot/project_docs/translations.md)
+[Best Practices](Modules/Lang/project_docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> laraxot/dev
 ```
 
@@ -56,12 +66,16 @@ Esempi:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/project_docs/file.md)`
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- Per collegare a un file in un altro modulo: `[File](../../AltroModulo/project_docs/file.md)`
 >>>>>>> laraxot/dev
 
 ### 3. Struttura della Documentazione
@@ -94,15 +108,23 @@ Per collegare documenti tra moduli diversi:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 [Link a ModuloB](../../ModuloB/project_docs/file.md)
 
 <!-- Da Modules/ModuloA/project_docs/file.md a docs/file.md nella root -->
 [Link a docs root](../../../../docs/project/file.md)
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 ```
 
@@ -121,6 +143,7 @@ Prima di fare commit dei documenti:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Convenzioni Notify](../../Notify/project_docs/TRANSLATION_CONVENTIONS.md)
 =======
 >>>>>>> laraxot/dev
@@ -128,11 +151,15 @@ Prima di fare commit dei documenti:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+[Convenzioni Notify](../../Notify/project_docs/TRANSLATION_CONVENTIONS.md)
+>>>>>>> laraxot/dev
 ```
 
 ### Da Modules/Lang/project_docs/ a docs/ nella root
 ```markdown
 [Documentazione Principale](../../../project_docs/README.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -143,6 +170,11 @@ Prima di fare commit dei documenti:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+[Documentazione Principale](../../../../docs/project/README.md)
+>>>>>>> bebd548 (.)
+>>>>>>> laraxot/dev
 ```
 
 ### Da Modules/Lang/project_docs/ a un altro file nella stessa cartella
@@ -151,12 +183,16 @@ Prima di fare commit dei documenti:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+[Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> laraxot/dev
 ```
 
@@ -181,6 +217,7 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Regole Generali](../../Xot/docs/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
 =======
@@ -188,6 +225,10 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+[Regole Generali](../../Xot/docs/translations.md)
+[Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> laraxot/dev
 ```
 
@@ -198,6 +239,7 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Regole Generali](Modules/Xot/docs/translations.md)
 [Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 =======
@@ -205,6 +247,10 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+[Regole Generali](Modules/Xot/docs/translations.md)
+[Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> laraxot/dev
 ```
 
@@ -221,12 +267,16 @@ Esempi:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/docs/file.md)`
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- Per collegare a un file in un altro modulo: `[File](../../AltroModulo/docs/file.md)`
 >>>>>>> laraxot/dev
 
 ### 3. Struttura della Documentazione
@@ -259,15 +309,23 @@ Per collegare documenti tra moduli diversi:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 [Link a ModuloB](../../ModuloB/docs/file.md)
 
 <!-- Da Modules/ModuloA/docs/file.md a docs/file.md nella root -->
 [Link a docs root](../../../../docs/file.md)
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 ```
 
@@ -286,6 +344,7 @@ Prima di fare commit dei documenti:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Convenzioni Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
 =======
 >>>>>>> laraxot/dev
@@ -293,11 +352,15 @@ Prima di fare commit dei documenti:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+[Convenzioni Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
+>>>>>>> laraxot/dev
 ```
 
 ### Da Modules/Lang/docs/ a docs/ nella root
 ```markdown
 [Documentazione Principale](../../../docs/README.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -308,6 +371,11 @@ Prima di fare commit dei documenti:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+[Documentazione Principale](../../../../docs/README.md)
+>>>>>>> bebd548 (.)
+>>>>>>> laraxot/dev
 ```
 
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella
@@ -316,12 +384,16 @@ Prima di fare commit dei documenti:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+[Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> laraxot/dev
 ```
 
@@ -333,7 +405,11 @@ Prima di fare commit dei documenti:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
+=======
+4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
+>>>>>>> laraxot/dev
 =======
 4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
 >>>>>>> laraxot/dev
