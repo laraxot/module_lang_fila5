@@ -1,5 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data:** 2025-10-15 | **Status:** ✅
+=======
+# 🐄 DRY & KISS Analysis - Lang
+
+**Data:** [DATE] | **Status:** ✅
+>>>>>>> laraxot/dev
 =======
 # 🐄 DRY & KISS Analysis - Lang
 
@@ -28,6 +34,7 @@ DRY: 7/10 🟢 | KISS: 6/10 🟡 | **Overall: 6.5/10 🟡**
 
 **Status:** 🟡 Codice OK, troppi docs
 <<<<<<< HEAD
+<<<<<<< HEAD
 # DRY & KISS Analysis - Modulo Lang
 
 **Data:** 15 Ottobre 2025  
@@ -54,5 +61,7 @@ abstract class BaseModel extends XotBaseModel
 
 ---
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

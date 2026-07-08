@@ -8,7 +8,10 @@ canonical: ../../../Themes/docs/shared-components/phpstan-compliance.md
 
 **Analysis Date:** September 22, 2025
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Analysis Date:** September 22, 2025
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 **PHPStan Level:** 9 (Maximum)
@@ -52,7 +55,11 @@ The module maintains:
 - Comprehensive type hints
 - Internationalization best practices
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Modern PHP 8.2+ feature utilization
+=======
+- Modern PHP 8.2+ feature utilization
+>>>>>>> laraxot/dev
 =======
 - Modern PHP 8.2+ feature utilization
 >>>>>>> laraxot/dev

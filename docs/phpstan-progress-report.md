@@ -1,7 +1,10 @@
 # 🌍 PHPStan Progress Report - Modulo Lang
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Data: 2025-01-22
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ## Data: [DATE]
@@ -31,7 +34,10 @@ Il modulo Lang è il **guardiano delle lingue**, colui che permette alla conosce
 ## 📊 PROGRESSO DELLA PURIFICAZIONE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Aggiornamento 2025-11-17 – ciclo PHPStan lvl 10, PHPMD, PHPInsights
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ### Aggiornamento [DATE] – ciclo PHPStan lvl 10, PHPMD, PHPInsights
@@ -305,7 +311,11 @@ Noi abbiamo fatto i primi 345 li. Ne restano 655.
 **Status**: 🟡 IN PROGRESS
 **Next Session**: Completare SyncTranslationsAction e TranslationFile
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Estimated Completion**: 2-3 sessioni aggiuntive
+=======
+**Estimated Completion**: 2-3 sessioni aggiuntive
+>>>>>>> laraxot/dev
 =======
 **Estimated Completion**: 2-3 sessioni aggiuntive
 >>>>>>> laraxot/dev

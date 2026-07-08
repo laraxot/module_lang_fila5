@@ -5,7 +5,10 @@
 - [Modulo <nome progetto> - Implementazione Appointment Report](../../<nome progetto>/docs/appointment_report_translations_implementation.md)
 - [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -202,9 +205,14 @@ return [
 
 *Ultimo aggiornamento: Gennaio 2025*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 2.0*
 *Compatibilità: Laravel 12.x, Filament 4.x*
+=======
+*Versione: 2.0*
+*Compatibilità: Laravel 12.x, Filament 4.x*
+>>>>>>> laraxot/dev
 =======
 *Versione: 2.0*
 *Compatibilità: Laravel 12.x, Filament 4.x*

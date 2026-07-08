@@ -373,10 +373,16 @@ describe('Lang Performance Tests', function () {
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Last Updated**: 2025-08-28
 
 **Testing Framework**: Pest
 **Environment**: .env.testing
+=======
+
+**Testing Framework**: Pest
+**Environment**: .env.testing
+>>>>>>> laraxot/dev
 =======
 
 **Testing Framework**: Pest

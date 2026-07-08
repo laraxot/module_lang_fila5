@@ -1,8 +1,11 @@
 # Navigation Translations Completion - Global Roadmap
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2026-01-09  
 **Data**: 2026-01-09  
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 **Modulo**: Lang (Coordinamento Globale)  
@@ -163,11 +166,16 @@ Per ogni risorsa, le traduzioni navigation seguono questo pattern:
 ## 📚 Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [Translation Standards](../../Xot/docs/translation-standards.md)
 - [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-2026-01-09.md)
+=======
+- [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-[DATE].md)
+- [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-[DATE].md)
+>>>>>>> laraxot/dev
 =======
 - [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-[DATE].md)
 - [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-[DATE].md)
@@ -180,8 +188,12 @@ Per ogni risorsa, le traduzioni navigation seguono questo pattern:
 **Status**: 📝 **ROADMAP CREATA - PRONTA PER IMPLEMENTAZIONE**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2026-01-09
 **Ultimo aggiornamento**: 2026-01-09
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> laraxot/dev
