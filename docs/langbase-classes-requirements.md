@@ -187,6 +187,10 @@ LogicException: Plugin [spatie-translatable] is not registered for panel [xxx::a
 **Fix**: Registrare plugin nel panel provider
 
 **Documentazione**: [Notify - Plugin Not Registered](../../Notify/docs/errori/plugin-spatie-translatable-not-registered.md)
+<<<<<<< HEAD
+=======
+**Documentazione**: [Notify - Plugin Not Registered](../../notify/docs/errori/plugin-spatie-translatable-not-registered.md)
+>>>>>>> bebd548 (.)
 
 ### Errore: Undefined Method getTranslation()
 
@@ -322,6 +326,11 @@ $value = $model->field;  // Ritorna traduzione 'en' se esiste, altrimenti fallba
 ### Documentazione Interna
 - [Notify Integration](../../Notify/docs/spatie-translatable-integration.md)
 - [Xot Filament Best Practices](../../Xot/docs/filament-best-practices.md)
+<<<<<<< HEAD
+=======
+- [Notify Integration](../../notify/docs/spatie-translatable-integration.md)
+- [Xot Filament Best Practices](../../xot/docs/filament-best-practices.md)
+>>>>>>> bebd548 (.)
 
 ---
 

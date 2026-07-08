@@ -335,6 +335,7 @@ php artisan lang:benchmark         # Test performance
 ```php
 // Metadati versione
 'version' => '2.0.0',
+'last_updated' => '2025-01-27',
 'last_updated' => '[DATE]',
 'compatibility' => [
     'laravel' => '^12.0',
@@ -417,6 +418,10 @@ return [
 ## 🔗 **Riferimenti e Collegamenti**
 
 - [README.md](README.md) - Documentazione principale modulo
+<<<<<<< HEAD
+=======
+- [README.md](readme.md) - Documentazione principale modulo
+>>>>>>> bebd548 (.)
 - [config/lang.php](../config/lang.php) - Configurazione centralizzata
 - [Laraxot Framework](https://github.com/laraxot/laraxot) - Framework principale
 - [Laravel Localization](https://laravel.com/project_docs/localization) - Documentazione ufficiale
