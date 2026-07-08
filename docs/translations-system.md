@@ -7,12 +7,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
 >>>>>>> laraxot/dev
 
 ## Panoramica
@@ -210,6 +214,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 2.0*
 *Compatibilità: Laravel 12.x, Filament 4.x*
@@ -222,6 +227,11 @@ return [
 *Compatibilità: Laravel 12.x, Filament 4.x*
 >>>>>>> laraxot/dev
 =======
+*Versione: 2.0*
+*Compatibilità: Laravel 12.x, Filament 4.x*
+>>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: Gennaio 2025*
 *Versione: 2.0*
 *Compatibilità: Laravel 12.x, Filament 4.x*
 >>>>>>> laraxot/dev

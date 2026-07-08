@@ -170,10 +170,14 @@ grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 6 Gennaio 2025*
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 6 Gennaio 2025*
 >>>>>>> laraxot/dev

@@ -90,6 +90,7 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../../docs/)
 =======
@@ -100,6 +101,13 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 >>>>>>> laraxot/dev
 =======
 - [Modules/Lang/docs/](../docs/)
+>>>>>>> laraxot/dev
+=======
+- [Modules/Lang/docs/](../docs/)
+=======
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../../docs/)
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 *Ultimo aggiornamento: 29 luglio 2025*
@@ -195,14 +203,18 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../../docs/)
 
 *Ultimo aggiornamento: 29 luglio 2025*
 =======
+=======
+>>>>>>> laraxot/dev
 - [Modules/Lang/docs/](../docs/)
-
+=======
 *Ultimo aggiornamento: 29 luglio 2025*
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Modules/Lang/docs/](../docs/)
@@ -211,6 +223,12 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 >>>>>>> laraxot/dev
 =======
 - [Modules/Lang/docs/](../docs/)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+>>>>>>> laraxot/dev
+=======
+- [Modules/Lang/docs/](../../docs/)
+>>>>>>> bebd548 (.)
 
 *Ultimo aggiornamento: 29 luglio 2025*
 >>>>>>> laraxot/dev

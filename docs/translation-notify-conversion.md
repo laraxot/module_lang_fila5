@@ -29,6 +29,7 @@ Durante l'analisi del codice è emerso che numerosi file di traduzione nel modul
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
 - [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
 - [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
@@ -37,6 +38,11 @@ Durante l'analisi del codice è emerso che numerosi file di traduzione nel modul
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
+- [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
+- [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
 >>>>>>> laraxot/dev
 
 ### Struttura Standard Richiesta
@@ -118,6 +124,7 @@ La corretta implementazione degli standard di traduzione garantisce:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole Generali per le Traduzioni](./TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Traduzioni](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
@@ -126,6 +133,11 @@ La corretta implementazione degli standard di traduzione garantisce:
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Regole Generali per le Traduzioni](./TRANSLATION_KEYS_RULES.md)
+- [Best Practices per le Traduzioni](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+- [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
 >>>>>>> laraxot/dev
 # Standardizzazione Traduzioni Modulo Notify
 
@@ -158,6 +170,7 @@ Durante l'analisi del codice è emerso che numerosi file di traduzione nel modul
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
 - [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
 - [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
@@ -166,6 +179,11 @@ Durante l'analisi del codice è emerso che numerosi file di traduzione nel modul
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
+- [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
+- [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
 >>>>>>> laraxot/dev
 
 ### Struttura Standard Richiesta
@@ -247,6 +265,7 @@ La corretta implementazione degli standard di traduzione garantisce:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole Generali per le Traduzioni](./TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Traduzioni](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
@@ -255,4 +274,9 @@ La corretta implementazione degli standard di traduzione garantisce:
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Regole Generali per le Traduzioni](./TRANSLATION_KEYS_RULES.md)
+- [Best Practices per le Traduzioni](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+- [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
 >>>>>>> laraxot/dev

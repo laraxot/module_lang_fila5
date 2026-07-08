@@ -14,6 +14,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -24,6 +25,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 2. **Modules/Notify/lang/en/test_smtp.php** ✅ CORRETTO
@@ -32,6 +40,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -42,6 +51,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 3. **Modules/Notify/lang/en/send_email.php** ✅ CORRETTO
@@ -50,6 +66,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -60,6 +77,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 ### File con Mix Italiano/Inglese
@@ -70,6 +94,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -80,6 +105,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 2. **Modules/UI/lang/en/opening_hours_field.php** ✅ CORRETTO
@@ -88,6 +120,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -98,6 +131,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
    - Aggiunte: Tutte le voci mancanti (morning, afternoon, morning_label, afternoon_label, etc.)
    - Convertito: Sintassi short array []
@@ -108,6 +148,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -118,6 +159,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
    - Aggiunte: Tutte le voci mancanti (steps, fields, filters, actions, messages, sections, validation, empty_state, specialties)
    - Convertito: Sintassi short array []
@@ -129,6 +177,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -139,6 +188,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
    - Tradotto: Tutto il contenuto in tedesco appropriato
    - Aggiunte: Tutte le voci mancanti dalla versione italiana
@@ -150,6 +206,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -160,6 +217,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
    - Traduzioni: Complete in inglese (Doctor, Patient, Administrator)
    - Convertito: Sintassi short array [] + declare(strict_types=1)
@@ -170,6 +234,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -180,6 +245,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
    - Traduzioni: Complete in tedesco (Arzt, Patient, Administrator)
    - Convertito: Sintassi short array [] + declare(strict_types=1)
@@ -412,7 +484,10 @@ return array(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 - [Regole Traduzioni](../../docs/translation-standards.md)
 >>>>>>> laraxot/dev
 =======
@@ -423,6 +498,17 @@ return array(
 >>>>>>> laraxot/dev
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
+=======
+- [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
+- [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
+
+---
+
+**Ultimo aggiornamento**: 2025-01-06
+- [Regole Traduzioni](../../../docs/translation-standards.md)
+- [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
+- [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
+>>>>>>> bebd548 (.)
 
 ---
 
@@ -463,6 +549,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -473,6 +560,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 2. **Modules/Notify/lang/en/test_smtp.php** ✅ CORRETTO
@@ -481,6 +575,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -491,6 +586,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 3. **Modules/Notify/lang/en/send_email.php** ✅ CORRETTO
@@ -499,6 +601,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -509,6 +612,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 ### File con Mix Italiano/Inglese
@@ -519,6 +629,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -529,6 +640,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 2. **Modules/UI/lang/en/opening_hours_field.php** ✅ CORRETTO
@@ -537,6 +655,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -547,6 +666,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
    - Aggiunte: Tutte le voci mancanti (morning, afternoon, morning_label, afternoon_label, etc.)
    - Convertito: Sintassi short array []
@@ -557,6 +683,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -567,6 +694,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
    - Aggiunte: Tutte le voci mancanti (steps, fields, filters, actions, messages, sections, validation, empty_state, specialties)
    - Convertito: Sintassi short array []
@@ -578,6 +712,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -588,6 +723,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
    - Tradotto: Tutto il contenuto in tedesco appropriato
    - Aggiunte: Tutte le voci mancanti dalla versione italiana
@@ -599,6 +741,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -609,6 +752,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
    - Traduzioni: Complete in inglese (Doctor, Patient, Administrator)
    - Convertito: Sintassi short array [] + declare(strict_types=1)
@@ -619,6 +769,7 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 =======
@@ -629,6 +780,13 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 >>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
+>>>>>>> laraxot/dev
+=======
+   - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
    - Traduzioni: Complete in tedesco (Arzt, Patient, Administrator)
    - Convertito: Sintassi short array [] + declare(strict_types=1)
@@ -861,7 +1019,10 @@ return array(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 - [Regole Traduzioni](../../docs/translation-standards.md)
 >>>>>>> laraxot/dev
 =======
@@ -890,6 +1051,7 @@ return array(
 =======
 **Ultimo aggiornamento**: [DATE]
 **Status**: In corso
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
@@ -898,4 +1060,22 @@ return array(
 =======
 **Ultimo aggiornamento**: [DATE]
 **Status**: In corso
+>>>>>>> laraxot/dev
+=======
+=======
+- [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
+- [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
+
+---
+
+**Ultimo aggiornamento**: 2025-01-06
+- [Regole Traduzioni](../../../docs/translation-standards.md)
+- [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
+- [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
+
+---
+
+**Ultimo aggiornamento**: 2025-01-06
+**Status**: In corso
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev

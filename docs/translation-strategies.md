@@ -80,12 +80,18 @@ lang/
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+=======
+
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 - `trans()`: Versione più flessibile
   - Restituisce l'istanza del Translator se chiamato senza parametri
@@ -285,6 +291,7 @@ La scelta tra file PHP e JSON dipende dalle esigenze del progetto:
 - **PHP**: migliore per progetti grandi con molte traduzioni
 - **JSON**: ideale per progetti più piccoli o con contenuti più fluidi
 
+<<<<<<< HEAD
 Per questo progetto, si consiglia di utilizzare i file PHP per le traduzioni di sistema e i moduli, mantenendo una struttura organizzata e scalabile.
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -549,4 +556,7 @@ Per questo progetto, si consiglia di utilizzare i file PHP per le traduzioni di 
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+Per questo progetto, si consiglia di utilizzare i file PHP per le traduzioni di sistema e i moduli, mantenendo una struttura organizzata e scalabile.
 >>>>>>> laraxot/dev

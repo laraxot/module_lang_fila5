@@ -438,6 +438,7 @@ class TranslationUsageReportService
         $files = $this->findPhpFiles(base_path('modules'));
         $fieldUsage = [];
 
+<<<<<<< HEAD
         foreach ($files as $file) {
             $content = file_get_contents($file);
 
@@ -952,8 +953,16 @@ public function generateWithErrorHandling(array $options = []): string
 **PHPStan Level:** 10 ✅
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+=======
+- [Filament Translations](/.cursor/rules/filament-translations.rule)
+- [Laravel Localization](https://laravel.com/docs/10.x/localization)
+- [Best Practices](/.cursor/rules/translations.rule)
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev

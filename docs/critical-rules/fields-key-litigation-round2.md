@@ -453,12 +453,16 @@ If 'fields' key missing:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Version**: 2.0 (Round 2 - Near Miss)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+**Version**: 2.0 (Round 2 - Near Miss)
 >>>>>>> laraxot/dev
 **Date**: 2026-01-09
 **Author**: AI Assistant (after furious self-litigation)

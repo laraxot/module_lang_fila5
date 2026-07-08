@@ -3,12 +3,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2025-08-08 11:20:44
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+**Data**: 2025-08-08 11:20:44
 >>>>>>> laraxot/dev
 **Scope**: Identificazione di VERI testi italiani in file non italiani (escludendo falsi positivi)
 
@@ -44,7 +48,11 @@ Si concentra su:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Ogni testo deve essere tradotto nella lingua appropriata del file, escludendo termini internazionali standard.
+=======
+Ogni testo deve essere tradotto nella lingua appropriata del file, escludendo termini internazionali standard.
+>>>>>>> laraxot/dev
 =======
 Ogni testo deve essere tradotto nella lingua appropriata del file, escludendo termini internazionali standard.
 >>>>>>> laraxot/dev
