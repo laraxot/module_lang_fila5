@@ -1,3 +1,7 @@
+# Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06
+
+## Data
+2025-01-06
 # Miglioramenti Qualità Codice - Modulo Lang - [DATE]
 
 ## Data
@@ -60,8 +64,9 @@ Migliorare la qualità del codice del modulo Lang utilizzando PHPStan livello 10
 - [Best Practices](./BEST_PRACTICES.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: [DATE]*
-=======
 *Ultimo aggiornamento: 2025-01-06*
->>>>>>> bebd548 (.)
+*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: 2025-01-06*

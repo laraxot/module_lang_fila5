@@ -363,11 +363,10 @@ php artisan lang:reset --force
 ### **1. Documentazione**
 - [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices
-<<<<<<< HEAD
-=======
 - [README.md](readme.md) - Documentazione principale
 - [BEST_PRACTICES.md](best_practices.md) - Best practices
->>>>>>> bebd548 (.)
+- [README.md](readme.md) - Documentazione principale
+- [BEST_PRACTICES.md](best_practices.md) - Best practices
 - [config/lang.php](../config/lang.php) - Configurazione
 
 ### **2. Comandi Utili**
@@ -424,4 +423,8 @@ php artisan config:show lang
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 2.0.0
 **Autore**: Team Laraxot
+**Mantenuto da**: Community Laraxot
+**Mantenuto da**: Community Laraxot
+**Mantenuto da**: Community Laraxot
+**Mantenuto da**: Community Laraxot
 **Mantenuto da**: Community Laraxot

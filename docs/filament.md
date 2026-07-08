@@ -4,6 +4,14 @@ https://filamentphp.com/plugins/34ml-translatable-field
 
 ## Collegamenti tra versioni di filament.md
 * [filament.md](docs/tecnico/filament/filament.md)
+* [filament.md](../../../chart/docs/filament.md)
+* [filament.md](../../../gdpr/docs/filament.md)
+* [filament.md](../../../xot/docs/technical/filament.md)
+* [filament.md](../../../xot/docs/roadmap/integration/filament.md)
+* [filament.md](../../../lang/docs/filament.md)
+* [filament.md](../../../job/docs/filament.md)
+* [filament.md](../../../activity/docs/filament.md)
+* [filament.md](../../../cms/docs/filament.md)
 * [filament.md](../../../Chart/docs/filament.md)
 * [filament.md](../../../Gdpr/docs/filament.md)
 * [filament.md](../../../Xot/docs/technical/filament.md)
@@ -126,4 +134,5 @@ Per dettagli completi, vedere: `laravel/docs/composer-merge-plugin.md`
 - https://filamentphp.com/docs/5.x/upgrade-guide
 
 ---
+**Ultimo aggiornamento:** Gennaio 2026
 **Ultimo aggiornamento:** Gennaio 2026
