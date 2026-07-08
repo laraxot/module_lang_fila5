@@ -12,8 +12,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -22,8 +26,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -32,8 +40,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -44,8 +56,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Tradotto completamente
    - Conteneva: Placeholder in italiano
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -54,8 +70,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Aggiornato completamente
    - Problemi: Mancavano molte voci presenti in italiano + sintassi array() invece di []
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -66,8 +86,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Aggiornato completamente
    - Problemi: Sintassi array() invece di [] + molte voci mancanti dalla versione italiana
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -79,8 +103,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Aggiornato completamente
    - Problemi: Era completamente in italiano invece che in tedesco + sintassi array() invece di []
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -92,8 +120,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -104,8 +136,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -338,6 +374,10 @@ return array(
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+- [Regole Traduzioni](../../docs/translation-standards.md)
+>>>>>>> laraxot/dev
 =======
 - [Regole Traduzioni](../../docs/translation-standards.md)
 >>>>>>> laraxot/dev
@@ -347,6 +387,7 @@ return array(
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-06
 - [Regole Traduzioni](../../../docs/translation-standards.md)
 - [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
@@ -355,6 +396,9 @@ return array(
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> laraxot/dev
@@ -373,8 +417,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -383,8 +431,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -393,8 +445,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -405,8 +461,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Tradotto completamente
    - Conteneva: Placeholder in italiano
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -415,8 +475,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Aggiornato completamente
    - Problemi: Mancavano molte voci presenti in italiano + sintassi array() invece di []
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -427,8 +491,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Aggiornato completamente
    - Problemi: Sintassi array() invece di [] + molte voci mancanti dalla versione italiana
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -440,8 +508,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Aggiornato completamente
    - Problemi: Era completamente in italiano invece che in tedesco + sintassi array() invece di []
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -453,8 +525,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -465,8 +541,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
+=======
+   - Risolto: [DATE]
+>>>>>>> laraxot/dev
 =======
    - Risolto: [DATE]
 >>>>>>> laraxot/dev
@@ -699,6 +779,10 @@ return array(
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+- [Regole Traduzioni](../../docs/translation-standards.md)
+>>>>>>> laraxot/dev
 =======
 - [Regole Traduzioni](../../docs/translation-standards.md)
 >>>>>>> laraxot/dev
@@ -707,6 +791,7 @@ return array(
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-06
 - [Regole Traduzioni](../../../docs/translation-standards.md)
@@ -717,6 +802,10 @@ return array(
 
 **Ultimo aggiornamento**: 2025-01-06
 **Status**: In corso
+=======
+**Ultimo aggiornamento**: [DATE]
+**Status**: In corso
+>>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
 **Status**: In corso

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # Strategie di Gestione delle Traduzioni in Laravel
@@ -72,7 +75,10 @@ lang/
   - Sintassi: `__('chiave.traduzione')`
   
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 - `trans()`: Versione più flessibile
@@ -166,7 +172,11 @@ public function handle($request, Closure $next)
         app()->setLocale(session('locale'));
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
 =======
     
 >>>>>>> laraxot/dev
@@ -267,6 +277,7 @@ La scelta tra file PHP e JSON dipende dalle esigenze del progetto:
 
 Per questo progetto, si consiglia di utilizzare i file PHP per le traduzioni di sistema e i moduli, mantenendo una struttura organizzata e scalabile.
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Strategie di Gestione delle Traduzioni in Laravel
 
 ## Indice
@@ -522,5 +533,7 @@ La scelta tra file PHP e JSON dipende dalle esigenze del progetto:
 - **JSON**: ideale per progetti più piccoli o con contenuti più fluidi
 
 Per questo progetto, si consiglia di utilizzare i file PHP per le traduzioni di sistema e i moduli, mantenendo una struttura organizzata e scalabile.
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

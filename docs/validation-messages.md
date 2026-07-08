@@ -305,7 +305,11 @@ class StoreOrderRequest extends FormRequest
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md](./README.md)
+=======
+- [README.md](./README.md)
+>>>>>>> laraxot/dev
 =======
 - [README.md](./README.md)
 >>>>>>> laraxot/dev

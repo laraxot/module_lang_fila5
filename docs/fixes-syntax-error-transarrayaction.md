@@ -1,7 +1,10 @@
 # Fix Errore Sintassi TransArrayAction
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Data: 2025-01-27
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ## Data: [DATE]
@@ -71,7 +74,11 @@ public function execute(
 - Evitare trailing comma nei parametri di funzione PHP
 - Verificare sempre la sintassi prima del commit
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Utilizzare PHPStan per validazione continua
+=======
+- Utilizzare PHPStan per validazione continua
+>>>>>>> laraxot/dev
 =======
 - Utilizzare PHPStan per validazione continua
 >>>>>>> laraxot/dev

@@ -1,8 +1,11 @@
 # Analisi Metodi Duplicati - Modulo Lang
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Generazione**: 2025-10-15 06:41:17
 **Data Generazione**: 2025-10-15 06:41:17
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 **Totale Gruppi di Duplicati**:
@@ -479,7 +482,11 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **70-89%**: Raccomandato
 - **50-69%**: Valutare caso per caso
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **< 50%**: Richiede analisi dettagliata
+=======
+- **< 50%**: Richiede analisi dettagliata
+>>>>>>> laraxot/dev
 =======
 - **< 50%**: Richiede analisi dettagliata
 >>>>>>> laraxot/dev

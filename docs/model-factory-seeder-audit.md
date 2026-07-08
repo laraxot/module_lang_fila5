@@ -1,7 +1,10 @@
 # Model/Factory/Seeder Audit
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Generated: 2025-08-22 16:29
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 Generated: [DATE] 16:29
@@ -24,7 +27,11 @@ Seeder: `database/seeders/LangDatabaseSeeder.php`
 
 ## Likely non-business-critical
 <<<<<<< HEAD
+<<<<<<< HEAD
 - All trait/contract entries (infra-only).
+=======
+- All trait/contract entries (infra-only).
+>>>>>>> laraxot/dev
 =======
 - All trait/contract entries (infra-only).
 >>>>>>> laraxot/dev

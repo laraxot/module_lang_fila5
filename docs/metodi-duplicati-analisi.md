@@ -2,8 +2,11 @@
 
 **Powered by**: Super Mucca AI 🐄✨
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 15 Ottobre 2025
 **Data**: 15 Ottobre 2025
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 **Versione**: 2.0 ULTIMATE
@@ -540,7 +543,11 @@ public function getTableFilters(): array
 4. Implementazione ColumnBuilder
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
+=======
+**Domande?** Chiedi alla Super Mucca! 🐄⚡
+>>>>>>> laraxot/dev
 =======
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 >>>>>>> laraxot/dev

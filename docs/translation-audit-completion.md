@@ -4,7 +4,10 @@
 
 ### Problema Identificato
 <<<<<<< HEAD
+<<<<<<< HEAD
 Durante l'audit delle traduzioni del progetto <main module>, sono state identificate numerose traduzioni italiane presenti in file di lingua tedesca e inglese, causando incoerenza nell'interfaccia utente.
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identificate numerose traduzioni italiane presenti in file di lingua tedesca e inglese, causando incoerenza nell'interfaccia utente.
@@ -28,7 +31,10 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 - **Pattern**: `'required' => 'Pflichtfeld'` (DE) / `'required' => 'Required field'` (EN)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### ✅ Modulo <main module>
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 #### ✅ Modulo <nome progetto>
@@ -139,7 +145,10 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 ### Moduli con Documentazione Aggiornata
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
@@ -149,9 +158,12 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 - [Lang Module: Translation Best Practices](../laravel/Modules/Lang/docs/translation_best_practices.md)
 - [<nome progetto> Module: Translation Guidelines](../laravel/Modules/<nome progetto>/docs/translation_guidelines.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Lang Module: Translation Best Practices](../laravel/Modules/Lang/docs/translation_best_practices.md)
 - [<main module> Module: Translation Guidelines](../laravel/Modules/<main module>/docs/translation_guidelines.md)
 - [<nome progetto> Module: Translation Guidelines](../laravel/Modules/<nome progetto>/docs/translation_guidelines.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -200,7 +212,11 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 **Autore**: Sistema di Correzione Automatica
 **Versione**: 1.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ✅ COMPLETATO
+=======
+**Status**: ✅ COMPLETATO
+>>>>>>> laraxot/dev
 =======
 **Status**: ✅ COMPLETATO
 >>>>>>> laraxot/dev
