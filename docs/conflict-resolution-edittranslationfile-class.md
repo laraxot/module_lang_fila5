@@ -89,12 +89,15 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 - [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
 *Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../../docs/)
+<<<<<<< HEAD
 - [Modules/Lang/docs/](../docs/)
 - [Modules/Lang/docs/](../docs/)
 - [Modules/Lang/docs/](../docs/)
 - [Modules/Lang/docs/](../docs/)
 *Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../../docs/)
+=======
+>>>>>>> 11c7c7d (.)
 
 *Ultimo aggiornamento: 29 luglio 2025*
 # Risoluzione Conflitto EditTranslationFile.php (Classe)
@@ -189,6 +192,7 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 *Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../../docs/)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../docs/)
 *Ultimo aggiornamento: 29 luglio 2025*
@@ -201,3 +205,6 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 - [Modules/Lang/docs/](../../docs/)
 
 *Ultimo aggiornamento: 29 luglio 2025*
+=======
+*Ultimo aggiornamento: 29 luglio 2025*
+>>>>>>> 11c7c7d (.)
