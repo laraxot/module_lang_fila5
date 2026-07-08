@@ -2,7 +2,10 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data:** 2025-04-16
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -28,7 +31,11 @@ Durante un controllo di routine sono stati rilevati diversi conflitti Git non ri
 ## Collegamenti
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione globale correzioni](../../../../docs/actual_analysis.md)
+=======
+- [Documentazione globale correzioni](../../../docs/actual_analysis.md)
+>>>>>>> laraxot/dev
 =======
 - [Documentazione globale correzioni](../../../docs/actual_analysis.md)
 >>>>>>> laraxot/dev
@@ -42,8 +49,12 @@ Durante un controllo di routine sono stati rilevati diversi conflitti Git non ri
 - [PHPStan Level 10 Fixes](PHPSTAN_LEVEL10_FIXES.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](phpstan_level10_fixes.md)
 - [module_lang.md](module_lang.md)
+=======
+- [module_lang.md](module_lang.md)
+>>>>>>> laraxot/dev
 =======
 - [module_lang.md](module_lang.md)
 >>>>>>> laraxot/dev

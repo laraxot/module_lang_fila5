@@ -3,7 +3,10 @@
 ## Data Intervento
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **2025-08-07** - Sistemazione traduzioni secondo regole DRY + KISS
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -88,6 +91,7 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
@@ -98,11 +102,16 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - [Audit Generale Traduzioni Navigation](../../docs/navigation-translations-audit.md)
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -123,9 +132,14 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Verifica completata il: 2025-08-07*
 *Verifica completata il: [DATE]*
 *Status: CONFORME agli standard*
+=======
+*Verifica completata il: [DATE]*
+*Status: CONFORME agli standard*
+>>>>>>> laraxot/dev
 =======
 *Verifica completata il: [DATE]*
 *Status: CONFORME agli standard*

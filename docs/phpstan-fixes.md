@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Lang Module — PHPStan
 
 ## 2026-06-10 — STORY-305 · Level 10 · 0 errori
@@ -23,12 +24,17 @@ Il modulo Lang era a 0 errori Level 7.
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 # Lang Module - PHPStan Level 7 Fixes - Gennaio 2025
 
 ## ✅ **Stato Completato**
 
 Il modulo Lang è stato completamente risolto per PHPStan Level 7 con 0 errori rimanenti.
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -120,8 +126,12 @@ private function castWithAction(mixed $value): string
 *Ultimo aggiornamento: Gennaio 2025*
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
 *Stato: ✅ Completato - 0 errori PHPStan*
+=======
+*Stato: ✅ Completato - 0 errori PHPStan*
+>>>>>>> laraxot/dev
 =======
 *Stato: ✅ Completato - 0 errori PHPStan*
 >>>>>>> laraxot/dev

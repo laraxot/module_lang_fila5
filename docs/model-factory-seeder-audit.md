@@ -2,7 +2,10 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Generated: 2025-08-22 16:29
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -28,7 +31,11 @@ Seeder: `database/seeders/LangDatabaseSeeder.php`
 ## Likely non-business-critical
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - All trait/contract entries (infra-only).
+=======
+- All trait/contract entries (infra-only).
+>>>>>>> laraxot/dev
 =======
 - All trait/contract entries (infra-only).
 >>>>>>> laraxot/dev

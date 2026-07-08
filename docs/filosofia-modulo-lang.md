@@ -2,8 +2,12 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Generato**: 2025-12-24
 > **Generato**: 2025-12-24
+=======
+> **Generato**: [DATE]
+>>>>>>> laraxot/dev
 =======
 > **Generato**: [DATE]
 >>>>>>> laraxot/dev
@@ -157,7 +161,11 @@ $post->getTranslation('title', 'it')  // 'Titolo'
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **CONCLUSIONE**: Il modulo Lang è il **cuore invisibile** del sistema multilingua, fornendo auto-discovery, Spatie integration e LangBase classes per moduli multilingua.
+=======
+**CONCLUSIONE**: Il modulo Lang è il **cuore invisibile** del sistema multilingua, fornendo auto-discovery, Spatie integration e LangBase classes per moduli multilingua.
+>>>>>>> laraxot/dev
 =======
 **CONCLUSIONE**: Il modulo Lang è il **cuore invisibile** del sistema multilingua, fornendo auto-discovery, Spatie integration e LangBase classes per moduli multilingua.
 >>>>>>> laraxot/dev

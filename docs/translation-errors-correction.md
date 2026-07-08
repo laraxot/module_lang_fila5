@@ -36,7 +36,10 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### ✅ Modulo <main module>
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -58,7 +61,11 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 **File Tedeschi (DE):**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `send_email.php`: 
+=======
+- `send_email.php`:
+>>>>>>> laraxot/dev
 =======
 - `send_email.php`:
 >>>>>>> laraxot/dev
@@ -125,7 +132,11 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 **File Tedeschi (DE):**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `env.php`: 
+=======
+- `env.php`:
+>>>>>>> laraxot/dev
 =======
 - `env.php`:
 >>>>>>> laraxot/dev
@@ -205,7 +216,10 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -217,7 +231,10 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [<main module> Module: Translation Guidelines](../<main module>/docs/translation_guidelines.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -236,7 +253,10 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 2. DbForge Module ✅
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. <main module> Module ✅
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -295,7 +315,11 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 **Autore**: Sistema di Correzione Automatica
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Versione**: 1.0
+=======
+**Versione**: 1.0
+>>>>>>> laraxot/dev
 =======
 **Versione**: 1.0
 >>>>>>> laraxot/dev

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Risultati Analisi Modulo Lang - 2025-01-06
 
 ## Data
@@ -7,11 +8,16 @@
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 # Risultati Analisi Modulo Lang - [DATE]
 
 ## Data
 [DATE]
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -104,6 +110,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Quality Improvements](./quality-improvements-2025-01-06.md)
 - [Index Documentation](./index.md)
 - [Best Practices](./BEST_PRACTICES.md)
@@ -112,12 +119,17 @@
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - [Quality Improvements](./quality-improvements-[DATE].md)
 - [Index Documentation](./index.md)
 - [Best Practices](./BEST_PRACTICES.md)
 
 *Ultimo aggiornamento: [DATE]*
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

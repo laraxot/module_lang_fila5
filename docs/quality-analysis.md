@@ -1,8 +1,12 @@
 # Quality Analysis Report - Lang Module
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Date**: 2025-11-11
 **Date**: 2025-11-11
+=======
+**Date**: [DATE]
+>>>>>>> laraxot/dev
 =======
 **Date**: [DATE]
 >>>>>>> laraxot/dev
@@ -16,6 +20,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Aggiornamento verifica 2026-07-01
 
 - **PHPStan** (`level: max`): **0 errori** confermati.
@@ -26,6 +31,8 @@
 
 ---
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -326,7 +333,11 @@ public function view(User $user, Post $_post): bool
 Based on `PHPSTAN_JOURNEY.md`, the following modules have achieved Level 10:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, Quaeris
+=======
+- Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, <nome progetto>
+>>>>>>> laraxot/dev
 =======
 - Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, <nome progetto>
 >>>>>>> laraxot/dev
@@ -368,8 +379,11 @@ The module is **production-ready** but would benefit from targeted refactoring t
 **Analysis Tools**: PHPStan 2.x, PHPInsights 2.13.3, PHPMD 2.15.x
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Next Review**: After high-priority refactoring completed
 **Next Review**: After high-priority refactoring completed
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
