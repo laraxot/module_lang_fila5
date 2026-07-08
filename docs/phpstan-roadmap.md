@@ -1,11 +1,13 @@
 # PHPStan Roadmap - Lang Module
 
-<<<<<<< HEAD
+> **Date**: 2026-01-14
+> **Date**: 2026-01-14
 > **Date**: [DATE]
-=======
+> **Date**: [DATE]
+> **Date**: [DATE]
+> **Date**: [DATE]
 > **Date**: 2026-01-14
 > **Date**: 2026-01-14
->>>>>>> bebd548 (.)
 > **Status**: ✅ Fully Compliant (Level 10)
 > **Errors**: 0
 
@@ -19,4 +21,8 @@ The **Lang** module is fully compliant with PHPStan Level 10. No errors were rep
 
 ## Future Goals
 - Maintain 0 errors.
+- Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
+- Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
+- Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
+- Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
 - Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).

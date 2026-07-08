@@ -1,11 +1,13 @@
 # Convenzioni di Naming per Documentazione
 
-<<<<<<< HEAD
+## Data: 2025-01-27
+## Data: 2025-01-27
 ## Data: [DATE]
-=======
+## Data: [DATE]
+## Data: [DATE]
+## Data: [DATE]
 ## Data: 2025-01-27
 ## Data: 2025-01-27
->>>>>>> bebd548 (.)
 
 ## REGOLA CRITICA: SEMPRE MINUSCOLO IN DOCS
 
@@ -137,11 +139,17 @@ Components/ → components/
 
 ---
 
-<<<<<<< HEAD
+*Ultimo aggiornamento: 2025-01-27*
+*Ultimo aggiornamento: 2025-01-27*
+*Stato: ATTIVO - REGOLA CRITICA*
 *Ultimo aggiornamento: [DATE]*
 *Stato: ATTIVO - REGOLA CRITICA*
-=======
+*Ultimo aggiornamento: [DATE]*
+*Stato: ATTIVO - REGOLA CRITICA*
+*Ultimo aggiornamento: [DATE]*
+*Stato: ATTIVO - REGOLA CRITICA*
+*Ultimo aggiornamento: [DATE]*
+*Stato: ATTIVO - REGOLA CRITICA*
 *Ultimo aggiornamento: 2025-01-27*
 *Ultimo aggiornamento: 2025-01-27*
 *Stato: ATTIVO - REGOLA CRITICA*
->>>>>>> bebd548 (.)

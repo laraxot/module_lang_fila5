@@ -85,9 +85,11 @@
 
 ## Backlinks
 - [Lang Module Overview](../README.md)
-<<<<<<< HEAD
-- [Translation System Documentation](./translation-system.md)
-=======
 - [Lang Module Overview](../readme.md)
 - [Translation System Documentation](./translation-system.md)
->>>>>>> bebd548 (.)
+- [Translation System Documentation](./translation-system.md)
+- [Translation System Documentation](./translation-system.md)
+- [Translation System Documentation](./translation-system.md)
+- [Translation System Documentation](./translation-system.md)
+- [Lang Module Overview](../readme.md)
+- [Translation System Documentation](./translation-system.md)
