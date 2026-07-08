@@ -71,9 +71,8 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     /**
      * Cambia la lingua corrente.
      *
-     * @param string $locale Codice della lingua
-     * @param string $locale Codice della lingua
-     *
+     * @param  string  $locale  Codice della lingua
+     * @param  string  $locale  Codice della lingua
      * @return void *
      */
     public function changeLanguage(string $locale): void
@@ -90,9 +89,8 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     /**
      * Genera l'URL per una specifica lingua.
      *
-     * @param string $locale Codice della lingua     *
-     * @param string $locale Codice della lingua
-     *
+     * @param  string  $locale  Codice della lingua     *
+     * @param  string  $locale  Codice della lingua
      * @return string URL con la lingua specificata
      */
     public function getLanguageUrl(string $locale): string
@@ -110,7 +108,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
         // Aggiunge la lingua all'URL
         $path = request()->getPathInfo();
 
-        return url($locale.('/' === $path ? '' : $path));
+        return url($locale.($path === '/' ? '' : $path));
     }
 
     /**
