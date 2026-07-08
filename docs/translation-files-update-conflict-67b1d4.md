@@ -1,6 +1,7 @@
 # Aggiornamento File di Traduzione - Gennaio 2025
 
 ## Data Aggiornamento
+2025-01-27
 [DATE]
 
 ## File Modificati
@@ -120,6 +121,12 @@ return [
 ## Collegamenti
 
 - [Translation Rules](../Xot/docs/translation_rules.md)
+<<<<<<< HEAD
+=======
+- [Translation Standards](./translation-standards.md)
+- [Best Practices](../Xot/docs/translations-best-practices.md)
+- [Translation Rules](../xot/docs/translation_rules.md)
+>>>>>>> bebd548 (.)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 

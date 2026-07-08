@@ -93,4 +93,8 @@
 - [Index Documentation](./index.md)
 - [Best Practices](./BEST_PRACTICES.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> bebd548 (.)

@@ -1,6 +1,11 @@
 # Analisi Approfondita del Modulo Lang
 
+<<<<<<< HEAD
 > **Generato**: [DATE]
+=======
+> **Generato**: 2025-12-24
+> **Generato**: 2025-12-24
+>>>>>>> bebd548 (.)
 > **Scopo**: Documentare la filosofia, logica e architettura del modulo Lang
 
 ---
