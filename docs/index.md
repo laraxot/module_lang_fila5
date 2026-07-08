@@ -9,9 +9,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 ## 🚀 **Inizio Rapido**
 
 ### **Per Sviluppatori**
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 1. [README.md](readme.md) - Documentazione principale e panoramica
 2. [config/lang.php](../config/lang.php) - Configurazione centralizzata
 3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
@@ -25,12 +22,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 1. [API_REFERENCE.md](api_reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
 3. [BEST_PRACTICES.md](best_practices.md) - Pattern di implementazione
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 1. [README.md](README.md) - Documentazione principale e panoramica
 2. [config/lang.php](../config/lang.php) - Configurazione centralizzata
 3. [EXAMPLES.md](EXAMPLES.md) - Esempi pratici e casi d'uso
@@ -41,8 +32,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 3. [config/lang.php](../config/lang.php) - Configurazione e ottimizzazioni
 
 ### **Per Integratori**
-<<<<<<< HEAD
-=======
 1. [API_REFERENCE.md](api_reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
 3. [BEST_PRACTICES.md](best_practices.md) - Pattern di implementazione
@@ -56,7 +45,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 3. [config/lang.php](../config/lang.php) - Configurazione e ottimizzazioni
 
 ### **Per Integratori**
->>>>>>> bebd548 (.)
 1. [API_REFERENCE.md](API_REFERENCE.md) - Riferimento API completo
 2. [EXAMPLES.md](EXAMPLES.md) - Esempi di integrazione
 3. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Pattern di implementazione
@@ -75,22 +63,8 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Configurazione**: [README.md](README.md#configurazione)
 - **Utilizzo Base**: [README.md](README.md#utilizzo)
 - **Esempi Pratici**: [EXAMPLES.md](EXAMPLES.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Esempi Pratici**: [EXAMPLES.md](examples.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
 - **Esempi Pratici**: [EXAMPLES.md](examples.md)
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 
 ### **🎨 Integrazione Filament**
 - **Componenti Automatici**: [EXAMPLES.md](EXAMPLES.md#integrazione-filament)
@@ -126,24 +100,10 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Migrazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#migrazione-versioni)
 - **Rollback**: [BEST_PRACTICES.md](BEST_PRACTICES.md#rollback-e-recovery)
 - **Backup**: [TROUBLESHOOTING.md](TROUBLESHOOTING.md#emergenze-e-rollback)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 
 ---
 
@@ -158,24 +118,10 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 **Documenti da Leggere**
 1. [README.md](README.md) - Sezioni: Panoramica, Installazione, Utilizzo
 2. [EXAMPLES.md](EXAMPLES.md) - Sezioni: Struttura File Base
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 1. [README.md](readme.md) - Sezioni: Panoramica, Installazione, Utilizzo
 2. [EXAMPLES.md](examples.md) - Sezioni: Struttura File Base
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
 1. [README.md](readme.md) - Sezioni: Panoramica, Installazione, Utilizzo
 2. [EXAMPLES.md](examples.md) - Sezioni: Struttura File Base
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 3. [config/lang.php](../config/lang.php) - Configurazioni base
 
 **Obiettivi**
@@ -193,26 +139,12 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Tutte le sezioni
 2. [EXAMPLES.md](EXAMPLES.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Problemi comuni
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 1. [BEST_PRACTICES.md](best_practices.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
 1. [BEST_PRACTICES.md](best_practices.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 
 **Obiettivi**
 - Implementare best practices
@@ -229,26 +161,12 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 1. [API_REFERENCE.md](API_REFERENCE.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Problemi complessi
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 1. [API_REFERENCE.md](api_reference.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](best_practices.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
 1. [API_REFERENCE.md](api_reference.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](best_practices.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 
 **Obiettivi**
 - Estendere funzionalità
@@ -402,19 +320,7 @@ php artisan lang:debug [--log-missing] [--log-performance]
 **Versione**: 2.0.0
 **Autore**: Team Laraxot
 **Mantenuto da**: Community Laraxot
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 - [Conflict Resolution](conflict-resolution.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
 
 - [Conflict Resolution](conflict-resolution.md)
->>>>>>> laraxot/dev

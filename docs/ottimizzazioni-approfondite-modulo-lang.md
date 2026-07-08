@@ -283,31 +283,16 @@ php artisan test --testsuite=Lang
 
 ## 🔗 Collegamenti Sistema
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [**Documentazione Core Sistema**](../../../docs/core/)
 - [**PHPStan Guide**](../../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../../docs/core/conventions.md)
 - [**Template Moduli**](../../../docs/templates/)
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 - [**Documentazione Core Sistema**](../../docs/core/)
 - [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../docs/core/conventions.md)
 - [**Template Moduli**](../../docs/templates/)
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ---
 
@@ -315,20 +300,8 @@ php artisan test --testsuite=Lang
 **Impatto:** Team Lang e sviluppatori correlati
 **Stato:** In attesa implementazione
 **Responsabile:** Team Lang
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Data:** 2025-01-XX
-=======
 **Data:** 2025-01-XX
->>>>>>> laraxot/dev
-=======
 **Data:** 2025-01-XX
->>>>>>> laraxot/dev
-=======
 **Data:** 2025-01-XX
->>>>>>> laraxot/dev
-=======
 **Data:** 2025-01-XX
->>>>>>> laraxot/dev

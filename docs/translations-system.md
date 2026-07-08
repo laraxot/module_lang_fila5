@@ -4,20 +4,8 @@
 - [Modulo <nome progetto> - Regole Consolidate Traduzioni](../../<nome progetto>/docs/translation-rules-consolidated.md)
 - [Modulo <nome progetto> - Implementazione Appointment Report](../../<nome progetto>/docs/appointment_report_translations_implementation.md)
 - [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
 - [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
->>>>>>> laraxot/dev
 
 ## Panoramica
 Il sistema di traduzioni utilizza `LangServiceProvider` per gestire le traduzioni in modo centralizzato e efficiente.
@@ -211,27 +199,15 @@ return [
 ---
 
 *Ultimo aggiornamento: Gennaio 2025*
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 2.0*
 *Compatibilità: Laravel 12.x, Filament 4.x*
-=======
 *Versione: 2.0*
 *Compatibilità: Laravel 12.x, Filament 4.x*
->>>>>>> laraxot/dev
-=======
 *Versione: 2.0*
 *Compatibilità: Laravel 12.x, Filament 4.x*
->>>>>>> laraxot/dev
-=======
 *Versione: 2.0*
 *Compatibilità: Laravel 12.x, Filament 4.x*
->>>>>>> laraxot/dev
-=======
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 2.0*
 *Compatibilità: Laravel 12.x, Filament 4.x*
->>>>>>> laraxot/dev

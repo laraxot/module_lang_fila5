@@ -149,25 +149,11 @@ __('<nome progetto>::widgets.doctor_appointments.empty.description')
 - [File inglese aggiornato](../laravel/Modules/<nome progetto>/lang/en/widgets.php)
 - [Widget DoctorAppointments](../laravel/Modules/<nome progetto>/app/Filament/Widgets/DoctorAppointmentsWidget.php)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Risoluzione completata: 2025-01-21*
 *Risoluzione completata: 2025-01-21*
-=======
 *Risoluzione completata: [DATE]*
->>>>>>> laraxot/dev
-=======
 *Risoluzione completata: [DATE]*
->>>>>>> laraxot/dev
-=======
 *Risoluzione completata: [DATE]*
->>>>>>> laraxot/dev
-=======
 *Risoluzione completata: [DATE]*
-=======
 *Risoluzione completata: 2025-01-21*
 *Risoluzione completata: 2025-01-21*
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev

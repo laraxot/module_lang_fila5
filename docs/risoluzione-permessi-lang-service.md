@@ -44,26 +44,12 @@ Questa guida risolve in modo definitivo ogni errore di permessi su file lingua g
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../docs/lang_service_permessi.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 # Troubleshooting definitivo permessi file_put_contents su lang_service.php
 
 ## Sintesi della soluzione robusta
@@ -110,23 +96,9 @@ Questa guida risolve in modo definitivo ogni errore di permessi su file lingua g
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../docs/lang_service_permessi.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev

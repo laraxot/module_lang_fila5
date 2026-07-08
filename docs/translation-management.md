@@ -88,42 +88,16 @@ Prima di ogni commit, verificare:
 ## Collegamenti
 
 - [Regole Traduzioni](../../laravel/Modules/Xot/docs/translation-standards.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Regole Traduzioni](../../laravel/modules/xot/docs/translation-standards.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
 - [Regole Traduzioni](../../laravel/modules/xot/docs/translation-standards.md)
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 - [Best Practices Filament](filament-widget-best-practices.md)
 - [Enum Standards](enum_standards.md)
 
 ## Ultimo Aggiornamento
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 2025-01-27 - Regola critica per evitare ->label()
 [DATE] - Regola critica per evitare ->label()
-=======
 [DATE] - Regola critica per evitare ->label()
->>>>>>> laraxot/dev
-=======
 [DATE] - Regola critica per evitare ->label()
->>>>>>> laraxot/dev
-=======
 [DATE] - Regola critica per evitare ->label()
->>>>>>> laraxot/dev
-=======
 2025-01-27 - Regola critica per evitare ->label()
 [DATE] - Regola critica per evitare ->label()
->>>>>>> laraxot/dev
