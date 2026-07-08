@@ -1,6 +1,5 @@
 # Regola Critica: Sezione "fields" Obbligatoria nelle Traduzioni
 
-**Data**: 2026-01-09  
 **Modulo**: Lang  
 **Status**: 🔴 **REGOLA CRITICA DOCUMENTATA**
 
