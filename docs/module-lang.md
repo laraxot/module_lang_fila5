@@ -3,6 +3,7 @@
 ## Informazioni Generali
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Nome**: `laraxot/module_lang_fila5`
 - **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
 - **Namespace**: `Modules\Lang`
@@ -10,11 +11,16 @@
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - **Nome**: `laraxot/module_lang_fila3`
 - **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
 - **Namespace**: `Modules\Lang`
 - **Repository**: https://github.com/laraxot/module_lang_fila3.git
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -303,8 +309,11 @@ public function testTranslations()
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -323,7 +332,11 @@ Le modifiche vengono tracciate nel repository GitHub.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> laraxot/dev
 =======
 ---
 >>>>>>> laraxot/dev

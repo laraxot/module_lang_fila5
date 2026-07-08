@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Collegamenti agli Standard di Traduzione
 
 ## Documentazione Principale
@@ -44,6 +45,8 @@
 - [PHPStan Fixes](phpstan_fixes.md)
 
 *Ultimo aggiornamento: gennaio 2025*
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -94,8 +97,12 @@ Stiamo standardizzando i file di traduzione nel modulo Notify che presentano pro
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Nota**: Questo lavoro è in corso e verrà continuato nei prossimi giorni per garantire la conformità di tutti i file di traduzione agli standard di <nome progetto>.
 **Nota**: Questo lavoro è in corso e verrà continuato nei prossimi giorni per garantire la conformità di tutti i file di traduzione agli standard di <nome progetto>.
+=======
+**Nota**: Questo lavoro è in corso e verrà continuato nei prossimi giorni per garantire la conformità di tutti i file di traduzione agli standard di <nome progetto>. 
+>>>>>>> laraxot/dev
 =======
 **Nota**: Questo lavoro è in corso e verrà continuato nei prossimi giorni per garantire la conformità di tutti i file di traduzione agli standard di <nome progetto>. 
 >>>>>>> laraxot/dev

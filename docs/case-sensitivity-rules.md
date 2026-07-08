@@ -7,7 +7,10 @@
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -40,8 +43,12 @@ Laravel usa la convenzione `database/migrations/` (lowercase) per:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **2025-11-04**: Removed `database/Migrations/` uppercase directory
 - **[DATE]**: Removed `database/Migrations/` uppercase directory
+=======
+- **[DATE]**: Removed `database/Migrations/` uppercase directory
+>>>>>>> laraxot/dev
 =======
 - **[DATE]**: Removed `database/Migrations/` uppercase directory
 >>>>>>> laraxot/dev

@@ -199,6 +199,7 @@ The widget includes robust error handling:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Last updated: January 2025*
 - [Lang Module Documentation](../readme.md)
 - [Translation Management](./translations.md)
@@ -206,6 +207,9 @@ The widget includes robust error handling:
 - [Widget vs Livewire Components](../../../../docs/project/widget_vs_livewire_components.md)
 
 *
+=======
+*
+>>>>>>> laraxot/dev
 =======
 *
 >>>>>>> laraxot/dev

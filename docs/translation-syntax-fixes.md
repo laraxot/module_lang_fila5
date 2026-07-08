@@ -122,7 +122,10 @@ return [
 - [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -161,7 +164,10 @@ return [
 - [Chart Module Documentation](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Chart Module Documentation](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -175,8 +181,12 @@ return [
 ## Ultimo Aggiornamento
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+=======
+[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+>>>>>>> laraxot/dev
 =======
 [DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 >>>>>>> laraxot/dev
@@ -307,7 +317,10 @@ return [
 - [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -346,7 +359,10 @@ return [
 - [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -360,8 +376,12 @@ return [
 ## Ultimo Aggiornamento
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+=======
+[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+>>>>>>> laraxot/dev
 =======
 [DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 >>>>>>> laraxot/dev

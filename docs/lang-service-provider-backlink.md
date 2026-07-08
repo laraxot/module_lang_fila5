@@ -11,7 +11,10 @@ La documentazione completa del LangServiceProvider è disponibile nel modulo Lan
 - [Analisi e Proposte di Miglioramento](../laravel/Modules/Lang/docs/lang-service-provider.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi e Proposte di Miglioramento](../laravel/modules/lang/docs/lang-service-provider.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -46,7 +49,11 @@ TextInput::make('name')
 - **Passi wizard**: `modulo::risorsa.steps.nome_passo.label`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Altri attributi**: `.placeholder`, `.helperText`, `.description`
+=======
+- **Altri attributi**: `.placeholder`, `.helperText`, `.description`
+>>>>>>> laraxot/dev
 =======
 - **Altri attributi**: `.placeholder`, `.helperText`, `.description`
 >>>>>>> laraxot/dev

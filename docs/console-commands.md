@@ -137,7 +137,11 @@ php artisan lang:find-missing it
 - [Lang Module Architecture](./architecture.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PHPStan Corrections](../../../../docs/phpstan-fixes.md)
+=======
+- [PHPStan Corrections](../../../docs/phpstan-fixes.md)
+>>>>>>> laraxot/dev
 =======
 - [PHPStan Corrections](../../../docs/phpstan-fixes.md)
 >>>>>>> laraxot/dev
@@ -159,7 +163,11 @@ php artisan lang:find-missing it
 - Separazione delle responsabilità per ogni comando
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Gestione appropriata degli errori
+=======
+- Gestione appropriata degli errori
+>>>>>>> laraxot/dev
 =======
 - Gestione appropriata degli errori
 >>>>>>> laraxot/dev

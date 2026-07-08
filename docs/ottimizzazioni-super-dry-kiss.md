@@ -308,6 +308,7 @@ class Language extends Model
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Core](../../../../docs/core/)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
@@ -315,11 +316,16 @@ class Language extends Model
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - [Documentazione Core](../../../docs/core/)
 - [Best Practices Filament](../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../docs/core/conventions.md)
 - [Template Modulo](../../../docs/templates/module-template.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -331,7 +337,11 @@ class Language extends Model
 **Stato:** In Analisi
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Priorità:** ALTA
+=======
+**Priorità:** ALTA
+>>>>>>> laraxot/dev
 =======
 **Priorità:** ALTA
 >>>>>>> laraxot/dev

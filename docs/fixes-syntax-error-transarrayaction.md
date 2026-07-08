@@ -2,7 +2,10 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Data: 2025-01-27
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
@@ -75,7 +78,11 @@ public function execute(
 - Verificare sempre la sintassi prima del commit
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Utilizzare PHPStan per validazione continua
+=======
+- Utilizzare PHPStan per validazione continua
+>>>>>>> laraxot/dev
 =======
 - Utilizzare PHPStan per validazione continua
 >>>>>>> laraxot/dev

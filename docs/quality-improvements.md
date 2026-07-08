@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06
 
 ## Data
@@ -7,11 +8,16 @@
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 # Miglioramenti Qualità Codice - Modulo Lang - [DATE]
 
 ## Data
 [DATE]
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -75,7 +81,11 @@ Migliorare la qualità del codice del modulo Lang utilizzando PHPStan livello 10
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
+=======
+*Ultimo aggiornamento: [DATE]*
+>>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: [DATE]*
 >>>>>>> laraxot/dev

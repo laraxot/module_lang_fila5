@@ -87,8 +87,12 @@
 - [Lang Module Overview](../README.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Lang Module Overview](../readme.md)
 - [Translation System Documentation](./translation-system.md)
+=======
+- [Translation System Documentation](./translation-system.md)
+>>>>>>> laraxot/dev
 =======
 - [Translation System Documentation](./translation-system.md)
 >>>>>>> laraxot/dev
