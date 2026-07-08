@@ -367,4 +367,8 @@
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
+<<<<<<< HEAD
 - [README.md](./README.md)
+=======
+- [README.md](./README.md)
+>>>>>>> laraxot/dev

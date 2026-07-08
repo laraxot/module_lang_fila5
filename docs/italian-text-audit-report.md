@@ -1,6 +1,9 @@
 # Italian Text in Non-Italian Translation Files - Audit Report
 
+<<<<<<< HEAD
 **Data**: 2025-08-08 11:19:40
+=======
+>>>>>>> laraxot/dev
 
 ## Problemi Identificati
 
@@ -102,4 +105,8 @@
 
 **I file di traduzione non italiani NON devono contenere testi in italiano.**
 
+<<<<<<< HEAD
 Ogni testo deve essere tradotto nella lingua appropriata del file.
+=======
+Ogni testo deve essere tradotto nella lingua appropriata del file.
+>>>>>>> laraxot/dev

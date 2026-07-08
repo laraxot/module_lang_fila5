@@ -85,5 +85,9 @@
 
 ## Backlinks
 - [Lang Module Overview](../README.md)
+<<<<<<< HEAD
 - [Lang Module Overview](../readme.md)
 - [Translation System Documentation](./translation-system.md)
+=======
+- [Translation System Documentation](./translation-system.md)
+>>>>>>> laraxot/dev
