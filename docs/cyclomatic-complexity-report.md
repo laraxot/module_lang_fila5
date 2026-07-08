@@ -1,5 +1,10 @@
 # Cyclomatic Complexity Report - Module: Lang
 
+<<<<<<< HEAD
+=======
+**Generated:** 2025-10-01 19:44:11
+**Generated:** 2025-10-01 19:44:11
+>>>>>>> bebd548 (.)
 **Analyzer:** Super Mucca 🐮
 
 ---
