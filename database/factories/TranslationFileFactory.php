@@ -21,11 +21,11 @@ class TranslationFileFactory extends Factory
 
     /**
      * Define the model's default state.
-<<<<<<< HEAD
+     * <<<<<<< HEAD.
      *
      * @return array<string, mixed>
-=======
->>>>>>> 11c7c7d (.)
+     *                              =======
+     *                              >>>>>>> 11c7c7d (.)
      */
     public function definition(): array
     {
