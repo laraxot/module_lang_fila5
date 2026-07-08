@@ -3,12 +3,22 @@
 ## Panoramica
 Questo documento registra le correzioni PHPStan implementate nel modulo Lang.
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2025-01-27
+**Ultimo aggiornamento**: 2025-01-27
+>>>>>>> bebd548 (.)
 **Status PHPStan Level 10**: ✅ **PASSED** - 0 errori
 
 ## Correzioni Implementate
 
+<<<<<<< HEAD
 ### Post.php - Doppio Import PostFactory ([DATE])
+=======
+### Post.php - Doppio Import PostFactory (2025-01-27)
+### Post.php - Doppio Import PostFactory (2025-01-27)
+>>>>>>> bebd548 (.)
 
 **Problema**: Doppio import di `PostFactory` causava conflitto di namespace
 ```php
@@ -90,6 +100,7 @@ if (is_array($value)) {
 
 - [Console Commands](./console-commands.md)
 - [Translation System](./translation-system.md)
+- [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
 - [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
 
 ## Note per Sviluppo Futuro

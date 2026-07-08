@@ -1,5 +1,10 @@
 # Analisi Metodi Duplicati - Modulo Lang
 
+<<<<<<< HEAD
+=======
+**Data Generazione**: 2025-10-15 06:41:17
+**Data Generazione**: 2025-10-15 06:41:17
+>>>>>>> bebd548 (.)
 **Totale Gruppi di Duplicati**:
 
 ## Sommario Esecutivo

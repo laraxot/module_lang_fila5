@@ -1,5 +1,10 @@
 # Regola Critica: Sezione "fields" Obbligatoria nelle Traduzioni
 
+<<<<<<< HEAD
+=======
+**Data**: 2026-01-09  
+**Data**: 2026-01-09  
+>>>>>>> bebd548 (.)
 **Modulo**: Lang  
 **Status**: 🔴 **REGOLA CRITICA DOCUMENTATA**
 
@@ -107,10 +112,21 @@ return [
 ## 📚 Documentazione Correlata
 
 - [Translation Standards](../../Xot/docs/translation-standards.md)
+<<<<<<< HEAD
 - [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-[DATE].md)
+=======
+- [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-2026-01-09.md)
+- [Translation Standards](../../Xot/docs/translation-standards.md)
+- [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-2026-01-09.md)
+>>>>>>> bebd548 (.)
 
 ---
 
 **Status**: 🔴 **REGOLA CRITICA - MAI VIOLARE**
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> bebd548 (.)

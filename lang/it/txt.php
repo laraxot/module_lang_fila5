@@ -129,6 +129,7 @@ return [
     ],
     'sections' => [
         'address' => ['label' => 'address', 'heading' => 'address'],
+<<<<<<< HEAD
     ],
     'label' => 'Txt',
     'plural_label' => 'Txt (Plurale)',
@@ -142,18 +143,23 @@ return [
     ],
     'steps' => [
         'test' => ['label' => 'test'],
+=======
+>>>>>>> bebd548 (.)
     ],
     'label' => 'Txt',
     'plural_label' => 'Txt (Plurale)',
     'navigation' => [
         'name' => 'Txt',
         'plural' => 'Txt',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
+        'group' => ['name' => 'General', 'description' => 'General Settings'],
         'label' => 'Txt',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+<<<<<<< HEAD
+=======
+    'steps' => [
+        'test' => ['label' => 'test'],
+    ],
+>>>>>>> bebd548 (.)
 ];
