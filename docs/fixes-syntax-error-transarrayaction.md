@@ -3,12 +3,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Data: 2025-01-27
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+## Data: 2025-01-27
 >>>>>>> laraxot/dev
 ## Data: [DATE]
 
@@ -79,7 +83,11 @@ public function execute(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Utilizzare PHPStan per validazione continua
+=======
+- Utilizzare PHPStan per validazione continua
+>>>>>>> laraxot/dev
 =======
 - Utilizzare PHPStan per validazione continua
 >>>>>>> laraxot/dev

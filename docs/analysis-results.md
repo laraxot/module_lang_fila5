@@ -125,11 +125,18 @@
 - [Index Documentation](./index.md)
 - [Best Practices](./BEST_PRACTICES.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev

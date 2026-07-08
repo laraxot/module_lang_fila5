@@ -4,12 +4,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **2025-01-22** - Sistemazione traduzioni secondo regole DRY + KISS
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+**2025-01-22** - Sistemazione traduzioni secondo regole DRY + KISS
 >>>>>>> laraxot/dev
 **[DATE]** - Sistemazione traduzioni secondo regole DRY + KISS
 
@@ -251,6 +255,7 @@ Ogni sezione `navigation` deve includere:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Traduzioni](../../xot/docs/translation-standards.md)
 - [NavigationLabelTrait Explained](../../xot/docs/filament/navigation-label-trait-explained.md)
 =======
@@ -258,6 +263,12 @@ Ogni sezione `navigation` deve includere:
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+=======
+- [Best Practices Traduzioni](../../xot/docs/translation-standards.md)
+- [NavigationLabelTrait Explained](../../xot/docs/filament/navigation-label-trait-explained.md)
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 ## Note Tecniche
@@ -268,6 +279,7 @@ Ogni sezione `navigation` deve includere:
 - Icone scelte per semantica appropriata
 - Gruppi organizzati per dominio logico
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -283,6 +295,11 @@ Ogni sezione `navigation` deve includere:
 *Conforme alle regole DRY + KISS*
 >>>>>>> laraxot/dev
 =======
+*Intervento completato il: [DATE]*
+*Conforme alle regole DRY + KISS*
+>>>>>>> laraxot/dev
+=======
+*Intervento completato il: 2025-01-22*
 *Intervento completato il: [DATE]*
 *Conforme alle regole DRY + KISS*
 >>>>>>> laraxot/dev

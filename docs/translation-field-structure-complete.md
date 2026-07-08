@@ -315,6 +315,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
 =======
@@ -322,6 +323,12 @@ return [
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+=======
+- [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
+- [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 - [Translation Syntax Fixes](translation_syntax_fixes.md)
 - [Windsurf Translation Rules](../.windsurf/rules/translation-complete-structure.mdc)
@@ -342,6 +349,7 @@ cd laravel && ./vendor/bin/phpstan analyze Modules/*/lang/ --level=9
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-08-08 - Struttura completa standardizzata*
 *Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*
 =======
@@ -351,5 +359,9 @@ cd laravel && ./vendor/bin/phpstan analyze Modules/*/lang/ --level=9
 *Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*
 >>>>>>> laraxot/dev
 =======
+*Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*
+>>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 2025-08-08 - Struttura completa standardizzata*
 *Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*
 >>>>>>> laraxot/dev

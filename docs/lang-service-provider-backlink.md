@@ -12,12 +12,18 @@ La documentazione completa del LangServiceProvider è disponibile nel modulo Lan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi e Proposte di Miglioramento](../laravel/modules/lang/docs/lang-service-provider.md)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+=======
+- [Analisi e Proposte di Miglioramento](../laravel/modules/lang/docs/lang-service-provider.md)
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 ## Caratteristiche Principali
@@ -50,7 +56,11 @@ TextInput::make('name')
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Altri attributi**: `.placeholder`, `.helperText`, `.description`
+=======
+- **Altri attributi**: `.placeholder`, `.helperText`, `.description`
+>>>>>>> laraxot/dev
 =======
 - **Altri attributi**: `.placeholder`, `.helperText`, `.description`
 >>>>>>> laraxot/dev

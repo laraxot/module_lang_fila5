@@ -82,6 +82,7 @@ Migliorare la qualità del codice del modulo Lang utilizzando PHPStan livello 10
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
 =======
 *Ultimo aggiornamento: [DATE]*
@@ -91,4 +92,10 @@ Migliorare la qualità del codice del modulo Lang utilizzando PHPStan livello 10
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: [DATE]*
+>>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: [DATE]*
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev

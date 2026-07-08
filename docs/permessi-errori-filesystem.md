@@ -170,6 +170,7 @@ sudo chmod 664 Modules/Lang/lang/it/lang_service.php
 
 ---
 
+<<<<<<< HEAD
 **Nota:**
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -177,4 +178,7 @@ sudo chmod 664 Modules/Lang/lang/it/lang_service.php
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+**Nota:**
 >>>>>>> laraxot/dev

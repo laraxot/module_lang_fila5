@@ -200,6 +200,7 @@ Ogni campo deve avere la seguente struttura completa:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2025-08-08
 **Data**: 2025-08-08
 **Stato**: Implementazione in corso
@@ -213,6 +214,14 @@ Ogni campo deve avere la seguente struttura completa:
 **Responsabile**: Sistema automatico DRY/KISS
 >>>>>>> laraxot/dev
 =======
+**Stato**: Implementazione in corso
+**Responsabile**: Sistema automatico DRY/KISS
+>>>>>>> laraxot/dev
+=======
+=======
+**Data**: 2025-08-08
+**Data**: 2025-08-08
+>>>>>>> bebd548 (.)
 **Stato**: Implementazione in corso
 **Responsabile**: Sistema automatico DRY/KISS
 >>>>>>> laraxot/dev

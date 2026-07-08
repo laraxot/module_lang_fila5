@@ -9,6 +9,7 @@ Consulta la documentazione delle traduzioni:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
@@ -17,6 +18,11 @@ Consulta la documentazione delle traduzioni:
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+- [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 >>>>>>> laraxot/dev
 
 ## Collegamento Bidirezionale
@@ -51,6 +57,7 @@ Consulta la documentazione delle traduzioni:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
@@ -59,6 +66,11 @@ Consulta la documentazione delle traduzioni:
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+- [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 >>>>>>> laraxot/dev
 
 ## Collegamento Bidirezionale
@@ -84,7 +96,11 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
+=======
+* [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
+>>>>>>> laraxot/dev
 =======
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
 >>>>>>> laraxot/dev

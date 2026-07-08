@@ -47,6 +47,7 @@ Questa guida risolve in modo definitivo ogni errore di permessi su file lingua g
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)
@@ -55,4 +56,11 @@ Questa guida risolve in modo definitivo ogni errore di permessi su file lingua g
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+=======
+**Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
+
+[Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev

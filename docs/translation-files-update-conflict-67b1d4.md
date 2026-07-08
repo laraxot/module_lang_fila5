@@ -4,12 +4,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-01-27
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+2025-01-27
 >>>>>>> laraxot/dev
 [DATE]
 
@@ -130,6 +134,12 @@ return [
 ## Collegamenti
 
 - [Translation Rules](../Xot/docs/translation_rules.md)
+<<<<<<< HEAD
+=======
+- [Translation Standards](./translation-standards.md)
+- [Best Practices](../Xot/docs/translations-best-practices.md)
+- [Translation Rules](../xot/docs/translation_rules.md)
+>>>>>>> bebd548 (.)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 <<<<<<< HEAD
@@ -152,7 +162,11 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Review**: Code review per confermare le modifiche
+=======
+3. **Review**: Code review per confermare le modifiche
+>>>>>>> laraxot/dev
 =======
 3. **Review**: Code review per confermare le modifiche
 >>>>>>> laraxot/dev

@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2026-01-09  
 **Data**: 2026-01-09  
 =======
@@ -10,6 +11,12 @@
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+=======
+**Data**: 2026-01-09  
+**Data**: 2026-01-09  
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 **Modulo**: Lang  
 **Status**: 🔴 **REGOLA CRITICA DOCUMENTATA**
@@ -121,6 +128,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-2026-01-09.md)
 - [Translation Standards](../../Xot/docs/translation-standards.md)
 - [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-2026-01-09.md)
@@ -133,6 +141,14 @@ return [
 =======
 - [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-[DATE].md)
 >>>>>>> laraxot/dev
+=======
+- [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-[DATE].md)
+=======
+- [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-2026-01-09.md)
+- [Translation Standards](../../Xot/docs/translation-standards.md)
+- [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-2026-01-09.md)
+>>>>>>> bebd548 (.)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -141,6 +157,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2026-01-09
 **Ultimo aggiornamento**: 2026-01-09
 =======
@@ -151,4 +168,11 @@ return [
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
+>>>>>>> laraxot/dev
+=======
+**Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev

@@ -187,6 +187,7 @@ $localizedContent = Translation::getForKey(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Last Updated**: 2025-08-28
 
 **Module Version**: Latest
@@ -202,6 +203,12 @@ $localizedContent = Translation::getForKey(
 **Business Logic Status**: Core functionality implemented
 >>>>>>> laraxot/dev
 =======
+
+**Module Version**: Latest
+**Business Logic Status**: Core functionality implemented
+>>>>>>> laraxot/dev
+=======
+**Last Updated**: 2025-08-28
 
 **Module Version**: Latest
 **Business Logic Status**: Core functionality implemented

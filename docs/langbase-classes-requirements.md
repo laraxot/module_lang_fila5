@@ -190,12 +190,18 @@ LogicException: Plugin [spatie-translatable] is not registered for panel [xxx::a
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Documentazione**: [Notify - Plugin Not Registered](../../notify/docs/errori/plugin-spatie-translatable-not-registered.md)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+=======
+**Documentazione**: [Notify - Plugin Not Registered](../../notify/docs/errori/plugin-spatie-translatable-not-registered.md)
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 ### Errore: Undefined Method getTranslation()
@@ -335,6 +341,7 @@ $value = $model->field;  // Ritorna traduzione 'en' se esiste, altrimenti fallba
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Notify Integration](../../notify/docs/spatie-translatable-integration.md)
 - [Xot Filament Best Practices](../../xot/docs/filament-best-practices.md)
 =======
@@ -342,6 +349,12 @@ $value = $model->field;  // Ritorna traduzione 'en' se esiste, altrimenti fallba
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+=======
+- [Notify Integration](../../notify/docs/spatie-translatable-integration.md)
+- [Xot Filament Best Practices](../../xot/docs/filament-best-practices.md)
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
 
 ---
@@ -351,7 +364,11 @@ $value = $model->field;  // Ritorna traduzione 'en' se esiste, altrimenti fallba
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Compatibilità**: Filament 4.x, Laravel 12.x
+=======
+**Compatibilità**: Filament 4.x, Laravel 12.x
+>>>>>>> laraxot/dev
 =======
 **Compatibilità**: Filament 4.x, Laravel 12.x
 >>>>>>> laraxot/dev

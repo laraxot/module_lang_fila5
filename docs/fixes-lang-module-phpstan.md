@@ -88,6 +88,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Lang Module Overview](../readme.md)
 - [Translation System Documentation](./translation-system.md)
 =======
@@ -98,4 +99,11 @@
 >>>>>>> laraxot/dev
 =======
 - [Translation System Documentation](./translation-system.md)
+>>>>>>> laraxot/dev
+=======
+- [Translation System Documentation](./translation-system.md)
+=======
+- [Lang Module Overview](../readme.md)
+- [Translation System Documentation](./translation-system.md)
+>>>>>>> bebd548 (.)
 >>>>>>> laraxot/dev
