@@ -284,17 +284,23 @@ php artisan test --testsuite=Lang
 ## 🔗 Collegamenti Sistema
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [**Documentazione Core Sistema**](../../../docs/core/)
 - [**PHPStan Guide**](../../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../../docs/core/conventions.md)
 - [**Template Moduli**](../../../docs/templates/)
 =======
+=======
+>>>>>>> laraxot/dev
 - [**Documentazione Core Sistema**](../../docs/core/)
 - [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../docs/core/conventions.md)
 - [**Template Moduli**](../../docs/templates/)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ---
@@ -304,7 +310,11 @@ php artisan test --testsuite=Lang
 **Stato:** In attesa implementazione
 **Responsabile:** Team Lang
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data:** 2025-01-XX
+=======
+**Data:** 2025-01-XX
+>>>>>>> laraxot/dev
 =======
 **Data:** 2025-01-XX
 >>>>>>> laraxot/dev

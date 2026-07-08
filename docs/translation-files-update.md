@@ -2,8 +2,12 @@
 
 ## Data Aggiornamento
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-01-27
 2025-01-27
+=======
+[DATE]
+>>>>>>> laraxot/dev
 =======
 [DATE]
 >>>>>>> laraxot/dev
@@ -27,7 +31,11 @@
 
 ### 3. Risoluzione Conflitti di Merge
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Risolti**: Tutti i conflitti di merge non risolti 
+=======
+- **Risolti**: Tutti i conflitti di merge non risolti
+>>>>>>> laraxot/dev
 =======
 - **Risolti**: Tutti i conflitti di merge non risolti
 >>>>>>> laraxot/dev
@@ -70,7 +78,11 @@
 Tutti i file sono stati validati con `php -l`:
 - ✅ `test_smtp.php` - Nessun errore di sintassi
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ `send_email.php` - Nessun errore di sintassi  
+=======
+- ✅ `send_email.php` - Nessun errore di sintassi
+>>>>>>> laraxot/dev
 =======
 - ✅ `send_email.php` - Nessun errore di sintassi
 >>>>>>> laraxot/dev
@@ -136,9 +148,12 @@ return [
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Translation Rules](../Xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -148,7 +163,11 @@ return [
 2. **Documentazione**: Aggiornare la documentazione dei moduli Notify e Lang
 3. **Review**: Code review per confermare le modifiche
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. **Deploy**: Deploy in ambiente di staging per test completi
+=======
+4. **Deploy**: Deploy in ambiente di staging per test completi
+>>>>>>> laraxot/dev
 =======
 4. **Deploy**: Deploy in ambiente di staging per test completi
 >>>>>>> laraxot/dev

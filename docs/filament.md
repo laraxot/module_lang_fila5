@@ -5,6 +5,7 @@ https://filamentphp.com/plugins/34ml-translatable-field
 ## Collegamenti tra versioni di filament.md
 * [filament.md](docs/tecnico/filament/filament.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [filament.md](../../../chart/docs/filament.md)
 * [filament.md](../../../gdpr/docs/filament.md)
 * [filament.md](../../../xot/docs/technical/filament.md)
@@ -14,6 +15,8 @@ https://filamentphp.com/plugins/34ml-translatable-field
 * [filament.md](../../../activity/docs/filament.md)
 * [filament.md](../../../cms/docs/filament.md)
 =======
+=======
+>>>>>>> laraxot/dev
 * [filament.md](../../../Chart/docs/filament.md)
 * [filament.md](../../../Gdpr/docs/filament.md)
 * [filament.md](../../../Xot/docs/technical/filament.md)
@@ -22,11 +25,15 @@ https://filamentphp.com/plugins/34ml-translatable-field
 * [filament.md](../../../Job/docs/filament.md)
 * [filament.md](../../../Activity/docs/filament.md)
 * [filament.md](../../../Cms/docs/filament.md)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Extra risorse da _docs
 
 (Nessun nuovo link da aggiungere: i link di _docs/filament.txt sono già presenti in questo file)
+<<<<<<< HEAD
 <<<<<<< HEAD
 # Filament nel modulo Lang
 
@@ -139,5 +146,7 @@ Per dettagli completi, vedere: `laravel/docs/composer-merge-plugin.md`
 
 ---
 **Ultimo aggiornamento:** Gennaio 2026
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

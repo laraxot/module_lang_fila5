@@ -7,9 +7,12 @@ Consulta la documentazione delle traduzioni:
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -43,9 +46,12 @@ Consulta la documentazione delle traduzioni:
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -70,7 +76,11 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Activity/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Patient/docs/lang-link.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
+=======
+* [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
+>>>>>>> laraxot/dev
 =======
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
 >>>>>>> laraxot/dev
