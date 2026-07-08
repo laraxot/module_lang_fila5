@@ -9,22 +9,8 @@ Il LangServiceProvider è un componente fondamentale di <nome progetto> che gest
 La documentazione completa del LangServiceProvider è disponibile nel modulo Lang:
 
 - [Analisi e Proposte di Miglioramento](../laravel/Modules/Lang/docs/lang-service-provider.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Analisi e Proposte di Miglioramento](../laravel/modules/lang/docs/lang-service-provider.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
 - [Analisi e Proposte di Miglioramento](../laravel/modules/lang/docs/lang-service-provider.md)
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev
 
 ## Caratteristiche Principali
 
@@ -53,20 +39,8 @@ TextInput::make('name')
 - **Campi form**: `modulo::risorsa.fields.nome_campo.label`
 - **Azioni**: `modulo::risorsa.actions.nome_azione.label`
 - **Passi wizard**: `modulo::risorsa.steps.nome_passo.label`
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Altri attributi**: `.placeholder`, `.helperText`, `.description`
-=======
 - **Altri attributi**: `.placeholder`, `.helperText`, `.description`
->>>>>>> laraxot/dev
-=======
 - **Altri attributi**: `.placeholder`, `.helperText`, `.description`
->>>>>>> laraxot/dev
-=======
 - **Altri attributi**: `.placeholder`, `.helperText`, `.description`
->>>>>>> laraxot/dev
-=======
 - **Altri attributi**: `.placeholder`, `.helperText`, `.description`
->>>>>>> laraxot/dev

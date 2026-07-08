@@ -101,21 +101,9 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Best Practices Traduzioni](../../xot/docs/translation_rules.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
 - [Best Practices Traduzioni](../../xot/docs/translation_rules.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
->>>>>>> laraxot/dev

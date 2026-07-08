@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Laravel Localization
 
 ## Introduzione
@@ -69,11 +66,6 @@ Dopo aver analizzato il progetto, ho notato che la localizzazione degli URL è g
 ## Conclusione
 
 L'implementazione di `mcamara/laravel-localization` nel progetto `<nome progetto>` migliorerebbe la gestione della localizzazione, rendendo l'applicazione più accessibile e user-friendly per utenti di diverse lingue. Le modifiche suggerite non richiedono cambiamenti significativi al codice esistente, ma offrono un notevole miglioramento in termini di funzionalità e esperienza utente.
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Laravel Localization Metadata for Cursor
 
 ## Context
@@ -98,7 +90,6 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
 
 # Regola: Vietato usare chiavi che terminano con `.navigation` nei file di traduzione
 
-<<<<<<< HEAD
 - Usa sempre la struttura array per navigation:
   ```php
   'navigation' => [
@@ -113,16 +104,6 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [filament-translations.md](../filament-translations.md)
   - [docs <nome progetto>](../../../<nome progetto>/docs/translations.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
 ## Modifiche Suggerite
 
 - **Configurazione del Pacchetto**: Aggiungere `mcamara/laravel-localization` come dipendenza nel `composer.json` e configurare i file di configurazione per supportare le lingue desiderate (es. italiano e inglese).
@@ -168,5 +149,3 @@ Dopo aver analizzato il progetto, ho notato che la localizzazione degli URL è g
 ## Conclusione
 
 L'implementazione di `mcamara/laravel-localization` nel progetto `<nome progetto>` migliorerebbe la gestione della localizzazione, rendendo l'applicazione più accessibile e user-friendly per utenti di diverse lingue. Le modifiche suggerite non richiedono cambiamenti significativi al codice esistente, ma offrono un notevole miglioramento in termini di funzionalità e esperienza utente.
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev

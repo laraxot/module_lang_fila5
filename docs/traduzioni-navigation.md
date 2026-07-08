@@ -29,23 +29,11 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 
 ### Fase 1: Correzione Errori Sintassi UI ✅ COMPLETATO
 1. **UI/lang/it/collection_lang.php** ✅ - Corretto errore linea 55
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 2. **UI/lang/it/field.php** ✅ - Corretto errore linea 51  
-=======
 2. **UI/lang/it/field.php** ✅ - Corretto errore linea 51
->>>>>>> laraxot/dev
-=======
 2. **UI/lang/it/field.php** ✅ - Corretto errore linea 51
->>>>>>> laraxot/dev
-=======
 2. **UI/lang/it/field.php** ✅ - Corretto errore linea 51
->>>>>>> laraxot/dev
-=======
 2. **UI/lang/it/field.php** ✅ - Corretto errore linea 51  
->>>>>>> laraxot/dev
 3. **UI/lang/it/field_option.php** ✅ - Corretto errore linea 72
 
 ### Fase 2: Correzione Traduzioni Navigation ✅ COMPLETATO
@@ -83,23 +71,11 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 
 ### Errori Sintassi UI ✅
 - [x] collection_lang.php - Corretto parentesi mancanti
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [x] field.php - Corretto parentesi mancanti  
-=======
 - [x] field.php - Corretto parentesi mancanti
->>>>>>> laraxot/dev
-=======
 - [x] field.php - Corretto parentesi mancanti
->>>>>>> laraxot/dev
-=======
 - [x] field.php - Corretto parentesi mancanti
->>>>>>> laraxot/dev
-=======
 - [x] field.php - Corretto parentesi mancanti  
->>>>>>> laraxot/dev
 - [x] field_option.php - Corretto parentesi mancanti
 
 ### Traduzioni Navigation ✅
@@ -133,21 +109,9 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
->>>>>>> laraxot/dev

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Report PHPStan - Modulo Lang
 
 ## Stato Attuale
@@ -48,25 +45,15 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è
    - Verificare il comportamento con lingue diverse
 
 ---
-=======
 
  [OK] No errors        
 
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
 
  [OK] No errors        
 
->>>>>>> laraxot/dev
-=======
 
  [OK] No errors        
 
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
 L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è un ottimo risultato che indica una buona qualità del codice per quanto riguarda:
 - Type safety
 - Gestione delle variabili
@@ -110,5 +97,3 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è
    - Verificare il comportamento con lingue diverse
 
 ---
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev

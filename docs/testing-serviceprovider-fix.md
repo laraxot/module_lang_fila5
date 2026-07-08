@@ -141,34 +141,19 @@ The module's functionality is already covered by:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Date:** 2026-01-09
 **Status:** Documented - Ready for deletion
 **Relates to:** Test failures analysis in `docs/test-failures-analysis-2026-01-09.md`
 **Date:** 2026-01-09
 **Status:** Documented - Ready for deletion
 **Relates to:** Test failures analysis in `docs/test-failures-analysis-2026-01-09.md`
-=======
-**Status:** Documented - Ready for deletion
-<<<<<<< HEAD
-**Relates to:** Test failures analysis in `docs/test-failures-analysis-[DATE].md`
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
 **Status:** Documented - Ready for deletion
 **Relates to:** Test failures analysis in `docs/test-failures-analysis-[DATE].md`
->>>>>>> laraxot/dev
-=======
 **Status:** Documented - Ready for deletion
 **Relates to:** Test failures analysis in `docs/test-failures-analysis-[DATE].md`
->>>>>>> laraxot/dev
-=======
-=======
+**Status:** Documented - Ready for deletion
+**Relates to:** Test failures analysis in `docs/test-failures-analysis-[DATE].md`
 **Relates to:** Test failures analysis in `docs/test-failures-analysis-2026-01-09.md`
 **Date:** 2026-01-09
 **Status:** Documented - Ready for deletion
 **Relates to:** Test failures analysis in `docs/test-failures-analysis-2026-01-09.md`
->>>>>>> bebd548 (.)
->>>>>>> laraxot/dev

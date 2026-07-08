@@ -315,20 +315,8 @@ Il pacchetto `mcamara/laravel-localization` fornisce diversi middleware per gest
 
 ## Conclusione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 Seguendo queste linee guida, è possibile implementare correttamente la localizzazione  utilizzando il pacchetto `mcamara/laravel-localization` senza creare rotte o controller personalizzati. Questo approccio è coerente con la filosofia di <nome progetto> di utilizzare Filament e Folio per gestire la maggior parte delle funzionalità dell'applicazione.
-=======
 Seguendo queste linee guida, è possibile implementare correttamente la localizzazione  utilizzando il pacchetto `mcamara/laravel-localization` senza creare rotte o controller personalizzati. Questo approccio è coerente con la filosofia di <nome progetto> di utilizzare Filament e Folio per gestire la maggior parte delle funzionalità dell'applicazione.
->>>>>>> laraxot/dev
-=======
 Seguendo queste linee guida, è possibile implementare correttamente la localizzazione  utilizzando il pacchetto `mcamara/laravel-localization` senza creare rotte o controller personalizzati. Questo approccio è coerente con la filosofia di <nome progetto> di utilizzare Filament e Folio per gestire la maggior parte delle funzionalità dell'applicazione.
->>>>>>> laraxot/dev
-=======
 Seguendo queste linee guida, è possibile implementare correttamente la localizzazione  utilizzando il pacchetto `mcamara/laravel-localization` senza creare rotte o controller personalizzati. Questo approccio è coerente con la filosofia di <nome progetto> di utilizzare Filament e Folio per gestire la maggior parte delle funzionalità dell'applicazione.
->>>>>>> laraxot/dev
-=======
 Seguendo queste linee guida, è possibile implementare correttamente la localizzazione  utilizzando il pacchetto `mcamara/laravel-localization` senza creare rotte o controller personalizzati. Questo approccio è coerente con la filosofia di <nome progetto> di utilizzare Filament e Folio per gestire la maggior parte delle funzionalità dell'applicazione.
->>>>>>> laraxot/dev
