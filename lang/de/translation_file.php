@@ -2,7 +2,13 @@
 
 declare(strict_types=1);
 
+// Lang translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/Lang/docs/wiki — domain i18n only.
+// File: lang/de/translation_file.php
 return [
+// Lang — translation keys (no business logic).
+// Lang — translation keys (no business logic).
     'actions' => [
         'create' => [
             'label' => 'create',
