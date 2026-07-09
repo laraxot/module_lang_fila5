@@ -8,8 +8,6 @@ use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\Filter;
-use Illuminate\Database\Eloquent\Builder;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Webmozart\Assert\Assert;
