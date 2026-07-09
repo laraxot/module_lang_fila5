@@ -1,6 +1,6 @@
 {
   "version": "0.2.2",
-  "timestamp": "2026-07-09T17:07:01.815Z",
+  "timestamp": "2026-07-09T19:26:10.936Z",
   "project": {
     "name": "Lang",
     "path": "/var/www/_bases/base_fixcity_fila5/laravel/Modules/Lang",
@@ -18,8 +18,8 @@
     "frameworks": [
       "TailwindCSS"
     ],
-    "totalFiles": 1052,
-    "totalLines": 144020,
+    "totalFiles": 1235,
+    "totalLines": 166798,
     "hasTests": true,
     "hasDependencyFile": true,
     "dependencyFile": "package.json",
@@ -101,5 +101,5 @@
   "mediumCount": 0,
   "lowCount": 0,
   "aiPowered": false,
-  "durationMs": 357
+  "durationMs": 222
 }
