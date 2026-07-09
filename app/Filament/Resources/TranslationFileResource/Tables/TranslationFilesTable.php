@@ -12,8 +12,6 @@ use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\Filter;
-use Illuminate\Database\Eloquent\Builder;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 >>>>>>> 40b96bcd6 (.)
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
