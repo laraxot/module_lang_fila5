@@ -92,7 +92,7 @@ class TranslationFile extends BaseModel
 
     private function loadTranslationFileContent(string $path): string
     {
-        if ('' === $path || ! File::exists($path)) {
+        if ($path === '' || ! File::exists($path)) {
             return '';
         }
 

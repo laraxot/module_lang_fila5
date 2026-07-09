@@ -11,6 +11,7 @@ namespace Modules\Lang\Adapters;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Translation\Translator as LaravelTranslator;
 use Modules\Lang\Models\Translation;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * ponytail: framework adapter — extends Laravel's Translator and is bound
@@ -19,6 +20,8 @@ use Modules\Lang\Models\Translation;
  */
 class TranslatorAdapter extends LaravelTranslator
 {
+    use QueueableAction;
+
     /** @var Dispatcher */
     protected $events;
 >>>>>>> 40b96bcd6 (.)
@@ -60,5 +63,9 @@ class TranslatorAdapter extends LaravelTranslator
             'item' => $item,
         ];
         Translation::firstOrCreate($data);
+    }
+
+    public function execute(): void
+    {
     }
 }
