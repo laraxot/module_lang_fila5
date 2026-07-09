@@ -171,7 +171,3 @@ packages/lara-zeus/
 *~headagentdb.rvf
 .claude-audit/
 packages/lara-zeus/
-
-# claude-audit bridge (non committare)
-audit-coverage/
-tests/AuditCoverage/*
