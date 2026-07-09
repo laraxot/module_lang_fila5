@@ -1,6 +1,6 @@
 {
   "version": "0.2.2",
-  "timestamp": "2026-07-09T18:23:37.885Z",
+  "timestamp": "2026-07-09T19:26:10.936Z",
   "project": {
     "name": "Lang",
     "path": "/var/www/_bases/base_fixcity_fila5/laravel/Modules/Lang",
@@ -19,7 +19,7 @@
       "TailwindCSS"
     ],
     "totalFiles": 1235,
-    "totalLines": 166800,
+    "totalLines": 166798,
     "hasTests": true,
     "hasDependencyFile": true,
     "dependencyFile": "package.json",
@@ -101,5 +101,5 @@
   "mediumCount": 0,
   "lowCount": 0,
   "aiPowered": false,
-  "durationMs": 463
+  "durationMs": 222
 }
