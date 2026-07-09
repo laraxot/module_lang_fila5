@@ -170,3 +170,4 @@ packages/lara-zeus/
 *.rej
 *~headagentdb.rvf
 .claude-audit/
+packages/lara-zeus/
