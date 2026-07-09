@@ -56,22 +56,7 @@ class LangServiceProvider extends XotBaseServiceProvider
         Field::configureUsing(function (Field $component) {
             $component = app(AutoLabelAction::class)->execute($component, 'label');
             Assert::isInstanceOf($component, Field::class);
-
-            $validationMessages = __('user::validation');
-            if (is_array($validationMessages) && [] !== $validationMessages) {
-                /** @var array<string, string> $typedMessages */
-                $typedMessages = [];
-                foreach ($validationMessages as $key => $value) {
-                    if (is_string($key) && is_string($value)) {
-                        $typedMessages[$key] = $value;
-                    }
-                }
-
-                if ([] !== $typedMessages) {
-                    $component->validationMessages($typedMessages);
-                }
-            }
-
+            $this->applyUserValidationMessages($component);
             $component = app(AutoLabelAction::class)->execute($component, 'placeholder');
             $component = app(AutoLabelAction::class)->execute($component, 'helperText');
 
@@ -108,32 +93,18 @@ class LangServiceProvider extends XotBaseServiceProvider
             // ->translateLabel()
         });
 
-        Action::configureUsing(function (Action $component) {
-            $component = app(AutoLabelAction::class)->execute($component);
-            $component = app(AutoLabelAction::class)->execute($component, 'icon');
-            $component = app(AutoLabelAction::class)->execute($component, 'tooltip');
+        Action::configureUsing(function (Action $component): Action {
+            $labeled = app(AutoLabelAction::class)->execute($component);
+            Assert::isInstanceOf($labeled, Action::class);
+            $component = $labeled;
+            $labeled = app(AutoLabelAction::class)->execute($component, 'icon');
+            Assert::isInstanceOf($labeled, Action::class);
+            $component = $labeled;
+            $labeled = app(AutoLabelAction::class)->execute($component, 'tooltip');
+            Assert::isInstanceOf($labeled, Action::class);
+            $component = $labeled;
 
-            // if (method_exists($component, 'iconButton')) {
-            //    // $component->iconButton();
-            // }
-            /*
-            dddx([
-            'methods' => get_class_methods($component),
-            'getRecord' => $component->getRecord(),
-            ]);
-            */
-            if (method_exists($component, 'getRecord') && null === $component->getRecord()) {
-                if (method_exists($component, 'button')) {
-                    $component->button();
-                }
-            }
-
-            // if (method_exists($component, 'icon')) {
-            // $component->icon('heroicon-o-plus');
-            // }
-
-            // ->translateLabel()
-            return $component;
+            return $this->configureActionAsButtonWhenNoRecord($component);
         });
 
         // Method Filament\Widgets\StatsOverviewWidget\Stat::configureUsing does not exist.
@@ -181,5 +152,37 @@ class LangServiceProvider extends XotBaseServiceProvider
                 }
             });
         }
+    }
+
+    private function applyUserValidationMessages(Field $component): void
+    {
+        $validationMessages = __('user::validation');
+        if (! is_array($validationMessages) || [] === $validationMessages) {
+            return;
+        }
+
+        /** @var array<string, string> $typedMessages */
+        $typedMessages = array_filter(
+            $validationMessages,
+            static fn (mixed $value, mixed $key): bool => is_string($key) && is_string($value),
+            ARRAY_FILTER_USE_BOTH,
+        );
+
+        if ([] === $typedMessages) {
+            return;
+        }
+
+        $component->validationMessages($typedMessages);
+    }
+
+    private function configureActionAsButtonWhenNoRecord(Action $component): Action
+    {
+        if (null !== $component->getRecord()) {
+            return $component;
+        }
+
+        $component->button();
+
+        return $component;
     }
 }

@@ -15,6 +15,9 @@ class ListTranslationFiles extends XotBaseListRecords
 {
     protected static string $resource = TranslationFileResource::class;
 
+    /**
+     * @return array<string, TextColumn>
+     */
     #[\Override]
     public function getTableColumns(): array
     {
