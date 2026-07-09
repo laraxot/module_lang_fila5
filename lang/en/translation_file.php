@@ -7,8 +7,8 @@ declare(strict_types=1);
 // Canon: Modules/Lang/docs/wiki — domain i18n only.
 // File: lang/en/translation_file.php
 return [
-    // Lang — translation keys (no business logic).
-    // Lang — translation keys (no business logic).
+// Lang — translation keys (no business logic).
+// Lang — translation keys (no business logic).
     'model' => [
         'label' => 'translation file.model',
     ],
