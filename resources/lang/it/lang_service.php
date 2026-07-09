@@ -7,22 +7,22 @@ declare(strict_types=1);
 // Canon: Modules/Lang/docs/wiki — domain i18n only.
 // File: resources/lang/it/lang_service.php
 return [
-// Laraxot — see module docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot — see module docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
     'fields' => [
         'created_at' => [
             'fields' => 'created_at',
