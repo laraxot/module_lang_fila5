@@ -22,12 +22,22 @@ class GetAllTranslationAction
      */
     public function execute(): array
     {
+        /** @var list<string> $allowedLocales */
+        $allowedLocales = config('lang.available_locales', ['it', 'en']);
+        if (! is_array($allowedLocales)) {
+            $allowedLocales = ['it', 'en'];
+        }
+
         $lang = session()->get('locale');
-        if (is_string($lang) && in_array($lang, ['it', 'en'], strict: true)) {
+        if (is_string($lang) && in_array($lang, $allowedLocales, strict: true)) {
             app()->setLocale($lang);
         }
 
         $lang = app()->getLocale();
+        if (! in_array($lang, $allowedLocales, strict: true)) {
+            $lang = (string) config('app.locale', 'it');
+        }
+
         $path = base_path('Modules/*/lang/'.$lang.'/*.php');
         $files = glob($path);
 
