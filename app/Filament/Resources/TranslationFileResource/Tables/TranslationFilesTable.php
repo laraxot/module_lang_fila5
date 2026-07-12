@@ -15,6 +15,7 @@ use Filament\Tables\Columns\TextColumn;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 >>>>>>> 40b96bcd6 (.)
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
+use Webmozart\Assert\Assert;
 
 class TranslationFilesTable extends XotBaseResourceTable
 {
@@ -46,6 +47,7 @@ class TranslationFilesTable extends XotBaseResourceTable
 
         // Aggiungere le azioni parent con chiavi stringa
         foreach ($parentActions as $key => $action) {
+            Assert::true($action instanceof Action || $action instanceof ActionGroup);
             $actions['parent_'.(is_string($key) ? $key : ((string) $key))] = $action;
         }
 

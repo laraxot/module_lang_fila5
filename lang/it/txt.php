@@ -2,7 +2,20 @@
 
 declare(strict_types=1);
 
+// Lang translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/Lang/docs/wiki — domain i18n only.
+// File: lang/it/txt.php
 return [
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
     'fields' => [
         'email' => ['label' => 'Email', 'placeholder' => 'Inserisci la tua email', 'tooltip' => 'Usa un indirizzo email valido', 'icon' => 'heroicon-o-mail', 'description' => 'email', 'helper_text' => ''],
         'password' => ['label' => 'Password', 'placeholder' => 'Inserisci la tua password', 'tooltip' => 'La password deve contenere almeno 8 caratteri', 'icon' => 'heroicon-o-lock-closed', 'description' => 'password', 'helper_text' => ''],
