@@ -267,13 +267,7 @@ class Post extends BaseModel
             $value = $postType.' '.$postId;
         }
 
-        $this->title = $value;
-
-        if (null !== $this->getKey()) {
-            $this->update([
-                'title' => $value,
-            ]);
-        }
+        $this->attributes['title'] = $value;
 
         return $value;
     }
@@ -301,13 +295,7 @@ class Post extends BaseModel
             $value = 'u-'.random_int(1, 1000);
         }
         $value = Str::slug($value);
-        $this->guid = $value;
-
-        if (null !== $this->getKey()) {
-            $this->update([
-                'guid' => $value,
-            ]);
-        }
+        $this->attributes['guid'] = $value;
 
         return $value;
     }
