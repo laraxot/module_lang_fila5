@@ -1,3 +1,11 @@
+@php
+// Lang Blade view — see Modules/Lang/docs/wiki.
+@endphp
+
+@php
+// Lang Blade view — see Modules/Lang/docs/wiki.
+@endphp
+
 <?php
 
 declare(strict_types=1);

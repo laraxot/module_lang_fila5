@@ -170,19 +170,7 @@ class SyncTranslationsAction
         try {
             $translations = require $filePath;
 
-            // Ensure we return an array with string keys
-            if (is_array($translations)) {
-                $result = [];
-                foreach ($translations as $key => $value) {
-                    if (is_string($key)) {
-                        $result[$key] = $value;
-                    }
-                }
-
-                return $result;
-            }
-
-            return [];
+            return is_array($translations) ? $this->filterStringKeyArray($translations) : [];
         } catch (\Exception $e) {
             return [];
         }
