@@ -10,60 +10,55 @@ namespace Modules\Lang\Adapters;
 
 use Illuminate\Events\Dispatcher;
 use Illuminate\Translation\Translator as LaravelTranslator;
-use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
+use Modules\Lang\Models\Translation;
 
 /**
- * Translator Laravel esteso: registra chiavi mancanti nel DB delegando
- * la business logic a RecordMissingTranslationAction.
- *
- * Eccezione architetturale: estende Illuminate\Translator (non è una
- * QueueableAction di dominio) ed è bindato come singleton `translator`.
+ * ponytail: framework adapter — extends Laravel's Translator and is bound
+ * as the container's `translator` singleton. Not a business-logic Action:
+ * it must remain a Translator subclass to satisfy the framework contract.
  */
 class TranslatorAdapter extends LaravelTranslator
 {
     /** @var Dispatcher */
     protected $events;
+>>>>>>> 40b96bcd6 (.)
 
     /**
      * Get the translation for the given key.
      *
      * @param array<string, mixed> $replace
      *
-     * @return string|array<array-key, mixed>
+     * @return string|array<string, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
     {
-        // Get without fallback
         $result = parent::get($key, $replace, $locale, $fallback);
         if ($result === $key) {
             $this->notifyMissingKey($key);
 
-            // Reget with fallback
             $result = parent::get($key, $replace, $locale, $fallback);
         }
 
         if (is_array($result)) {
-            return $result;
-        }
+            /** @var array<string, mixed> $arrayResult */
+            $arrayResult = $result;
 
-        if (! is_string($result)) {
-            return (string) $key;
+            return $arrayResult;
         }
 
         return $result;
     }
 
-    /*
-     * public function setTranslationManager(Manager $manager)
-     * {
-     * $this->manager = $manager;
-     * }
-     */
-    /**
-     * Undocumented function.
-     */
     protected function notifyMissingKey(string $key): void
     {
-        app(RecordMissingTranslationAction::class)->execute($key, (string) app()->getLocale());
+        $lang = app()->getLocale();
+        [$namespace, $group, $item] = $this->parseKey($key);
+        $data = [
+            'lang' => $lang,
+            'namespace' => $namespace,
+            'group' => $group,
+            'item' => $item,
+        ];
+        Translation::firstOrCreate($data);
     }
 }

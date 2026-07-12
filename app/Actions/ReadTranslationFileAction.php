@@ -7,6 +7,8 @@ namespace Modules\Lang\Actions;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+use function Safe\realpath;
+
 class ReadTranslationFileAction
 {
     use QueueableAction;
@@ -35,6 +37,8 @@ class ReadTranslationFileAction
      */
     public function execute(string $filePath): array
     {
+        $this->assertAllowedTranslationPath($filePath);
+
         if (! file_exists($filePath)) {
             throw new \Exception("File di traduzione non trovato: {$filePath}");
         }
@@ -109,5 +113,19 @@ class ReadTranslationFileAction
         }
 
         return $content;
+    }
+
+    private function assertAllowedTranslationPath(string $filePath): void
+    {
+        try {
+            $realPath = realpath($filePath);
+            $modulesBase = realpath(base_path('Modules'));
+        } catch (\Throwable) {
+            throw new \Exception("Percorso traduzione non valido: {$filePath}");
+        }
+
+        if (! str_starts_with($realPath, $modulesBase.DIRECTORY_SEPARATOR) || ! str_ends_with($realPath, '.php')) {
+            throw new \Exception("Percorso traduzione fuori scope consentito: {$filePath}");
+        }
     }
 }
