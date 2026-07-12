@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions;
 
+use function Safe\realpath;
+
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-
-use function Safe\realpath;
 
 class ReadTranslationFileAction
 {
