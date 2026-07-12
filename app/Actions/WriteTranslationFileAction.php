@@ -83,7 +83,7 @@ class WriteTranslationFileAction
     {
         try {
             $tokens = token_get_all($phpContent, TOKEN_PARSE);
-            if ($tokens === []) {
+            if ([] === $tokens) {
                 throw new \ParseError('Contenuto PHP vuoto');
             }
         } catch (\ParseError $parseError) {
