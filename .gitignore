@@ -169,3 +169,5 @@ packages/lara-zeus/
 *.orig
 *.rej
 *~headagentdb.rvf
+database/Migrations/
+database/migrations/Migrations/
