@@ -129,6 +129,7 @@ return [
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'SendRecordsNotificationBulkAction' => ['label' => 'SendRecordsNotificationBulkAction', 'icon' => 'SendRecordsNotificationBulkAction', 'tooltip' => 'SendRecordsNotificationBulkAction'],
         'changePassword' => ['label' => 'changePassword', 'icon' => 'changePassword', 'tooltip' => 'changePassword'],
+        'test' => ['label' => 'test', 'icon' => 'test', 'tooltip' => 'test'],
     ],
     'sections' => [
         'address' => ['label' => 'address', 'heading' => 'address'],
