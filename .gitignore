@@ -169,5 +169,6 @@ packages/lara-zeus/
 *.orig
 *.rej
 *~headagentdb.rvf
-.claude-audit/
-packages/lara-zeus/
+database/Migrations/
+database/migrations/Migrations/
+audit-coverage/
