@@ -171,3 +171,4 @@ packages/lara-zeus/
 *~headagentdb.rvf
 database/Migrations/
 database/migrations/Migrations/
+audit-coverage/
