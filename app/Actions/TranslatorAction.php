@@ -25,7 +25,7 @@ class TranslatorAction extends LaravelTranslator
      *
      * @param array<string, mixed> $replace
      *
-     * @return string|array<array-key, mixed>
+     * @return string|array<string, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
     {
@@ -61,5 +61,9 @@ class TranslatorAction extends LaravelTranslator
             'item' => $item,
         ];
         Translation::firstOrCreate($data);
+    }
+
+    public function execute(): void
+    {
     }
 }
