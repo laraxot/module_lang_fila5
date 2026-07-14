@@ -21,14 +21,9 @@ class TranslatorAction extends LaravelTranslator
     protected $events;
 
     /**
-     * <<<<<<< HEAD:app/Services/TranslatorService.php
      * Get the translation for the given key.
      *
      * @param array<string, mixed> $replace
-     *
-     * =======
-     * @param array<string, mixed> $replace
-     *                                      >>>>>>> 09f4f11 (Ignore audit-coverage/):app/Actions/TranslatorAction.php
      *
      * @return string|array<string, mixed>
      */
