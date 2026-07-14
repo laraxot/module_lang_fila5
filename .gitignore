@@ -172,9 +172,7 @@ packages/lara-zeus/
 database/Migrations/
 database/migrations/Migrations/
 audit-coverage/
-<<<<<<< HEAD
-=======
 .vscode/
 .devcontainer/
 app/Phpstan/
->>>>>>> d3e5c57 (delete app/Phpstan/)
+.claude-audit
