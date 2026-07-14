@@ -1,3 +1,14 @@
+---
+title: "Standardizzazione Traduzioni Modulo Notify"
+module: "Lang"
+type: concept
+tags: [migrazione, filament]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migrazione filament"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Standardizzazione Traduzioni Modulo Notify
 
 ## Panoramica delle Problematiche

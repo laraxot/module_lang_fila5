@@ -1,3 +1,14 @@
+---
+title: "Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06
 
 ## Data
