@@ -1,3 +1,14 @@
+---
+title: "Correzione conflitto e miglioramento PHPStan livello 9 in Models/Post.php"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Correzione conflitto e miglioramento PHPStan livello 9 in Models/Post.php
 
 **Data:** 2025-04-16

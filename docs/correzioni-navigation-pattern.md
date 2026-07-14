@@ -1,3 +1,14 @@
+---
+title: "Correzioni Pattern '.navigation' - Gennaio 2025"
+module: "Lang"
+type: pattern
+tags: [test, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "test 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Correzioni Pattern ".navigation" - Gennaio 2025
 
 ## Data Intervento

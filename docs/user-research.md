@@ -1,3 +1,14 @@
+---
+title: "User Research: Lang Module"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # User Research: Lang Module
 
 ## 🔬 Research Goals
