@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
-
 use function Safe\exec;
 use function Safe\file_put_contents;
 use function Safe\tempnam;
 use function Safe\unlink;
-
 use Spatie\QueueableAction\QueueableAction;
 
 class WriteTranslationFileAction
