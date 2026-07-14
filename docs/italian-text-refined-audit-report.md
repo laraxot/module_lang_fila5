@@ -1,3 +1,14 @@
+---
+title: "Refined Italian Text Audit Report"
+module: "Lang"
+type: concept
+tags: [italian, text, refined, audit]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "italian text refined audit report"
+related:
+  - "./automatic-translations-1.md"
+---
 # Refined Italian Text Audit Report
 
 **Data**: 2025-08-08 11:20:44

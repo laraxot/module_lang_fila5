@@ -1,3 +1,14 @@
+---
+title: "🌐 Lang — English presentation"
+module: "Lang"
+type: concept
+tags: [ottimizzazioni, correzioni]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ottimizzazioni correzioni"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # 🌐 Lang — English presentation
 
 [![Domain-i18n](https://img.shields.io/badge/Domain-i18n-5E35B1.svg)](#)
