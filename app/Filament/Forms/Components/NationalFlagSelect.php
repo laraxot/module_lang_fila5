@@ -81,7 +81,7 @@ class NationalFlagSelect extends Select
      */
     protected function getFilteredCountryOptions(string $search): array
     {
-        if (empty(trim($search))) {
+        if ('' === trim($search)) {
             return $this->getCountryOptions();
         }
 

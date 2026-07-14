@@ -1,3 +1,14 @@
+---
+title: "Implementazione di Spatie Laravel Translatable nel Progetto"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Implementazione di Spatie Laravel Translatable nel Progetto
 
 Questo documento descrive come è implementato e configurato il pacchetto `spatie/laravel-translatable` nel nostro progetto, con particolare attenzione all'integrazione con i moduli esistenti e il plugin Filament.

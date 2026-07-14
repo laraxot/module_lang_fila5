@@ -36,14 +36,15 @@ class TranslatorAction extends LaravelTranslator
         }
 
         if (is_array($result)) {
+            /** @var array<string, mixed> $result */
             return $result;
         }
 
-        if (! is_string($result)) {
-            return (string) $key;
-        }
-
         return $result;
+    }
+
+    public function execute(): void
+    {
     }
 
     protected function notifyMissingKey(string $key): void
@@ -57,9 +58,5 @@ class TranslatorAction extends LaravelTranslator
             'item' => $item,
         ];
         Translation::firstOrCreate($data);
-    }
-
-    public function execute(): void
-    {
     }
 }

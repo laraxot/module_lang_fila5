@@ -1,4 +1,14 @@
-<<<<<<< HEAD
+---
+title: "Aggiornamento File di Traduzione Lang Service - 2025-01-06"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 
 ## Panoramica

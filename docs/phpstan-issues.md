@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 Issues - Detailed Analysis"
+module: "Lang"
+type: concept
+tags: [google, translate]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "google translate"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # PHPStan Level 10 Issues - Detailed Analysis
 
 **Data Analisi**: [DATE]  

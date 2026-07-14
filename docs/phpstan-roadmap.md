@@ -1,3 +1,14 @@
+---
+title: "PHPStan Roadmap - Lang Module"
+module: "Lang"
+type: concept
+tags: [migration, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # PHPStan Roadmap - Lang Module
 
 > **Date**: 2026-01-14
