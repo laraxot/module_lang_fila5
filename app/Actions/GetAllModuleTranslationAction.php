@@ -6,7 +6,9 @@ namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
+
 use function Safe\glob;
+
 use Spatie\QueueableAction\QueueableAction;
 
 class GetAllModuleTranslationAction
@@ -29,7 +31,7 @@ class GetAllModuleTranslationAction
         $path = base_path('Modules/*/lang/'.$lang.'/*.php');
         $files = glob($path);
 
-        /** @var array<int, array<string, mixed>> */
+        /* @var array<int, array<string, mixed>> */
         return Arr::map($files, function (string $file) {
             $fileStr = $file;
             $moduleLower = Str::of($fileStr)
