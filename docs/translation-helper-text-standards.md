@@ -1,3 +1,14 @@
+---
+title: "Standard per helper_text nelle Traduzioni <nome progetto>"
+module: "Lang"
+type: rule
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Standard per helper_text nelle Traduzioni <nome progetto>
 
 ## Regola Critica: Gestione helper_text
