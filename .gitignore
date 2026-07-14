@@ -176,3 +176,4 @@ audit-coverage/
 .devcontainer/
 app/Phpstan/
 .claude-audit
+packages/lara-zeus/
