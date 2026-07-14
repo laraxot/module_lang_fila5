@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 Compliance Status"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2025-12-10

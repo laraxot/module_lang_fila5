@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Conflitto EditTranslationFile.php (Classe)"
+module: "Lang"
+type: concept
+tags: [links01]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links01"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Risoluzione Conflitto EditTranslationFile.php (Classe)
 
 ## Problema Identificato
