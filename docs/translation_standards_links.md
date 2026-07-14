@@ -1,3 +1,14 @@
+---
+title: "Collegamenti alla Documentazione sugli Standard di Traduzione"
+module: "Lang"
+type: rule
+tags: [phpstan, level10, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Collegamenti alla Documentazione sugli Standard di Traduzione
 
 ## Problemi Identificati e Correzioni in Corso

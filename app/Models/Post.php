@@ -251,7 +251,7 @@ class Post extends BaseModel
             return $value;
         }
 
-        if (! empty($this->attributes['post_type'])) {
+        if (isset($this->attributes['post_type']) && '' !== $this->attributes['post_type'] && '0' !== $this->attributes['post_type']) {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
