@@ -60,9 +60,9 @@ Aggiorna sempre la documentazione in `/Modules/Lang/docs` e spiega la strategia 
 
 ### Devo registrare manualmente i comandi console?
 
-**No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
-**No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
-**No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
+**No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)
+**No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)
+**No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)
 # FAQ e Problemi Comuni sulle Traduzioni
 
 ## 1. Perché il POST non funziona su rotte localizzate?
@@ -114,6 +114,6 @@ Aggiorna sempre la documentazione in `/Modules/Lang/docs` e spiega la strategia 
 
 ### Devo registrare manualmente i comandi console?
 
-**No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
-**No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
-**No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
+**No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)
+**No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)
+**No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)
