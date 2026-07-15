@@ -227,7 +227,7 @@ Dopo aver applicato le correzioni:
 ## Backlink
 
 - [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
-- [Lang Module Structure](./readme.md)
+- [Lang Module Structure](README.md)
 - [Xot Safe Casting Actions](../../xot/docs/safe-casting-actions.md)
 
 # PHPStan Mixed Type Casting Errors
@@ -448,5 +448,5 @@ Dopo aver applicato le correzioni:
 ## Backlink
 
 - [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
-- [Lang Module Structure](./readme.md)
+- [Lang Module Structure](README.md)
 - [Xot Safe Casting Actions](../../xot/docs/safe-casting-actions.md)

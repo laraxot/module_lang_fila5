@@ -374,9 +374,9 @@ php artisan lang:reset --force
 ### **1. Documentazione**
 - [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices
-- [README.md](readme.md) - Documentazione principale
+- [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](best_practices.md) - Best practices
-- [README.md](readme.md) - Documentazione principale
+- [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](best_practices.md) - Best practices
 - [config/lang.php](../config/lang.php) - Configurazione
 

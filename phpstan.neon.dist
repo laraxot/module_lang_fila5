@@ -22,7 +22,7 @@ parameters:
 
     scanFiles:
         # - ./helpers/Helper.php
-        # - ./vendor/laraxot/module_xot/helpers/Helper.php
+        # - ./vendor/laraxot/module_xot/Helpers/Helper.php
 
     tmpDir: build/phpstan
     reportUnmatchedIgnoredErrors: false

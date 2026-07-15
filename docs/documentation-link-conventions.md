@@ -111,9 +111,9 @@ Prima di fare commit dei documenti:
 
 ### Da Modules/Lang/project_docs/ a un altro file nella stessa cartella
 ```markdown
-[Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
-[Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
-[Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
+[Best Practices](translation_keys_best_practices.md)
+[Best Practices](translation_keys_best_practices.md)
+[Best Practices](translation_keys_best_practices.md)
 ```
 
 ## Vantaggi dei Percorsi Relativi
@@ -207,9 +207,9 @@ Prima di fare commit dei documenti:
 
 ### Da Modules/Lang/docs/ a Modules/Notify/docs/
 ```markdown
-[Convenzioni Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
-[Convenzioni Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
-[Convenzioni Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
+[Convenzioni Notify](translation_conventions.md)
+[Convenzioni Notify](translation_conventions.md)
+[Convenzioni Notify](translation_conventions.md)
 ```
 
 ### Da Modules/Lang/docs/ a docs/ nella root
@@ -221,9 +221,9 @@ Prima di fare commit dei documenti:
 
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella
 ```markdown
-[Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
-[Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
-[Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
+[Best Practices](translation_keys_best_practices.md)
+[Best Practices](translation_keys_best_practices.md)
+[Best Practices](translation_keys_best_practices.md)
 ```
 
 ## Vantaggi dei Percorsi Relativi

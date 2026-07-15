@@ -1,32 +1,16 @@
 ---
-title: "Git Conflict Inventory"
-module: "Lang"
+title: "Git Merge Conflict Inventory"
 type: concept
-tags: [migration, filament]
+status: deprecated
+module: "Lang"
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migration filament"
+qmd: "deprecated git-merge-conflict-inventory"
 related:
-  - "./italian-text-refined-audit-report.md"
+  - "./git-merge-conflict-inventory.md"
 ---
-# Git Conflict Inventory
+# Git Merge Conflict Inventory
 
-- Date: 2026-04-28
-- Owner: Modules/Lang
-- Files with conflict markers: 4
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
-## Files
-
-- docs/module-analysis.md
-- docs/module.md
-- docs/translatable/json-content-translation.md
-- docs/wiki/README.md
-
-## Notes
-
-- Inventory generated from `rg -l "^(<<<<<<<|=======|>>>>>>>)"`.
-<<<<<<< HEAD
-- Use this list as a volatile coordination map; re-open each file before editing because other agents may resolve items in parallel.
-=======
-- Use this list as a volatile coordination map; re-open each file before editing because other agents may resolve items in parallel.
->>>>>>> 40b96bcd6 (.)
+Vedi il file canonico: [git-merge-conflict-inventory.md](./git-merge-conflict-inventory.md)
