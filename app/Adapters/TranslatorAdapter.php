@@ -46,8 +46,11 @@ class TranslatorAdapter extends LaravelTranslator
         }
 
         if (is_array($result)) {
-            /* @var array<string, mixed> $result */
             return $result;
+        }
+
+        if (! is_string($result)) {
+            return (string) $key;
         }
 
         return $result;
