@@ -7,7 +7,6 @@ namespace Modules\Lang\Actions;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -34,12 +33,12 @@ class SaveTransAction
         try {
             $cont = File::getRequire($filename);
         } catch (\Exception $e) {
-            Log::error('SaveTransAction: unable to load translation file', [
+            dddx([
                 'key' => $key,
+                'data' => $data,
                 'filename' => $filename,
                 'message' => $e->getMessage(),
             ]);
-            $cont = [];
         }
 
         if (! is_array($cont)) {

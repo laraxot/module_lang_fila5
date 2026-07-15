@@ -2,30 +2,17 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(TestCase::class);
-
-use Modules\Lang\Actions\ReadTranslationFileAction;
-use Modules\Lang\Tests\TestCase;
-=======
 namespace Modules\Lang\Tests\Unit\Actions;
 
 use Modules\Lang\Actions\ReadTranslationFileAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
->>>>>>> 40b96bcd6 (.)
 
 use function Safe\chmod;
 use function Safe\file_put_contents;
 use function Safe\unlink;
 
 uses(TestCase::class);
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
 
 /**
  * @return array<string, mixed>
@@ -77,7 +64,6 @@ describe('Read Translation File Action', function (): void {
     });
 
     test('throws exception for non existent file', function (): void {
-        /* @var TestCase $this */
         /* @var TestCase $this */
         $this->expectApplicationException(\Exception::class, 'File di traduzione non trovato:');
 

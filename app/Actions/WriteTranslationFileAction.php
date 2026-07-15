@@ -27,8 +27,6 @@ class WriteTranslationFileAction
      */
     public function execute(string $filePath, array $translations): bool
     {
-        $this->assertSafeTranslationPath($filePath);
-
         // Crea backup del file esistente
         $this->createBackup($filePath);
 
@@ -84,34 +82,27 @@ class WriteTranslationFileAction
      */
     private function validatePhpSyntax(string $phpContent): void
     {
-        try {
-            $tokens = token_get_all($phpContent, TOKEN_PARSE);
-            if ([] === $tokens) {
-                throw new \ParseError('Contenuto PHP vuoto');
+        // Crea un file temporaneo per la validazione
+        $tempFile = tempnam(storage_path('framework/cache'), 'translation_');
+        file_put_contents($tempFile, $phpContent);
+
+        // Esegue php -l per validare la sintassi
+        $rawOutput = [];
+        $returnCode = 0;
+        exec("php -l {$tempFile} 2>&1", $rawOutput, $returnCode);
+        $output = is_array($rawOutput) ? $rawOutput : [];
+
+        unlink($tempFile);
+
+        if (0 !== $returnCode) {
+            $lines = [];
+            foreach ($output as $line) {
+                if (is_string($line)) {
+                    $lines[] = $line;
+                }
             }
-        } catch (\ParseError $parseError) {
-            throw new \Exception('Sintassi PHP non valida: '.$parseError->getMessage(), 0, $parseError);
-        }
-    }
-
-    private function assertSafeTranslationPath(string $filePath): void
-    {
-        $normalized = str_replace('\\', '/', $filePath);
-        if (! str_contains($normalized, '/Modules/') || ! str_contains($normalized, '/lang/')) {
-            throw new \InvalidArgumentException("Path traduzione non consentito: {$filePath}");
-        }
-
-        $directory = dirname($filePath);
-
-        try {
-            $modulesRoot = realpath(base_path('Modules'));
-            $resolvedDirectory = realpath($directory);
-        } catch (\Throwable) {
-            throw new \InvalidArgumentException("Path traduzione non consentito: {$filePath}");
-        }
-
-        if (! str_starts_with($resolvedDirectory, $modulesRoot)) {
-            throw new \InvalidArgumentException("Path traduzione non consentito: {$filePath}");
+            $error = implode("\n", $lines);
+            throw new \Exception("Sintassi PHP non valida: {$error}");
         }
     }
 
@@ -120,6 +111,17 @@ class WriteTranslationFileAction
      */
     private function clearTranslationCache(): void
     {
-        app('translator')->setLoaded([]);
+        // Pulisce la cache di Laravel
+        if (app()->bound('cache')) {
+            app('cache')->flush();
+        }
+
+        // Pulisce la cache delle traduzioni
+        if (app()->bound('translation.loader')) {
+            $loader = app('translation.loader');
+            if (method_exists($loader, 'flush')) {
+                $loader->flush();
+            }
+        }
     }
 }

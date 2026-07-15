@@ -22,16 +22,6 @@ related:
 
 ---
 
-## Aggiornamento verifica 2026-07-01
-
-- **PHPStan** (`level: max`): **0 errori** confermati.
-- **PHPMD**: nessuna violazione critica nuova; restano `StaticAccess` (idiomatico Laravel) e complessità di `AutoLabelAction::execute()`/`LangServiceProvider::registerFilamentLabel()` — non toccati (refactoring architetturale fuori scope).
-- **PHPInsights**: Style 96.4% → 97.6% dopo fix mirati (import ordinati, yoda comparison, spacing use-statement). Nessun `--fix` automatico blanket: nel test iniziale ha causato regressioni PHPStan (return type narrowing perso, native type hint su property che sovrascrivono property non tipizzate della classe padre), poi corrette a mano.
-- **Fix**: `Services/TranslatorService.php::get()` — tipo di ritorno allineato a `string|array<array-key, mixed>` (provabile da PHPStan dopo `is_array()`); aggiunto test `tests/Unit/Services/TranslatorServiceTest.php`.
-- **Test**: esecuzione `pest` bloccata in questo sandbox da un problema di infrastruttura pre-esistente (manca `database/database.sqlite`), non imputabile al codice.
-
----
-
 ## Executive Summary
 
 The Lang module has been analyzed using three quality assurance tools:

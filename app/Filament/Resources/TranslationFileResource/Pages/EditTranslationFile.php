@@ -114,6 +114,7 @@ class EditTranslationFile extends XotBaseEditRecord
             app(SaveTransAction::class)->execute($key, $content);
         }
 
+        // dddx(['record'=>$this->record,'data'=>$data]);
         return $data;
     }
 
