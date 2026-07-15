@@ -12,11 +12,11 @@ related:
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
-- [Documentazione centrale](./readme.md)
+- [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-- [Documentazione Lang](./readme.md)
+- [Documentazione Lang](README.md)
 
 ## Regole Fondamentali per le Traduzioni
 
@@ -229,11 +229,11 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
-- [Documentazione centrale](./readme.md)
+- [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-- [Documentazione Lang](./readme.md)
+- [Documentazione Lang](README.md)
 
 ## Regole Fondamentali per le Traduzioni
 
