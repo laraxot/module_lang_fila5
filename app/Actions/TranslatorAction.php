@@ -36,7 +36,7 @@ class TranslatorAction extends LaravelTranslator
         }
 
         if (is_array($result)) {
-            /** @var array<string, mixed> $result */
+            /* @var array<string, mixed> $result */
             return $result;
         }
 
