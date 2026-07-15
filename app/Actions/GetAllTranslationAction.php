@@ -41,18 +41,16 @@ class GetAllTranslationAction
         $path = base_path('Modules/*/lang/'.$lang.'/*.php');
         $files = glob($path);
 
-        /* @var array<int, array<string, mixed>> */
-        return Arr::map($files, function (string $file) {
-            $fileStr = $file;
-            $moduleLower = Str::of($fileStr)
+        return array_values(Arr::map($files, static function (string $file): array {
+            $moduleLower = Str::of($file)
                 ->between('Modules/', '/lang/')
                 ->lower()
                 ->toString();
 
             return [
-                'key' => $moduleLower.'::'.basename($fileStr, '.php'),
-                'path' => $fileStr,
+                'key' => $moduleLower.'::'.basename($file, '.php'),
+                'path' => $file,
             ];
-        });
+        }));
     }
 }
