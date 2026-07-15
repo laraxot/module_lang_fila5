@@ -108,7 +108,6 @@ class TranslationFile extends BaseModel
             $pathValue = $item['path'] ?? null;
             $pathStr = is_string($pathValue) ? $pathValue : (string) $pathValue;
             $item['name'] = isset($item['path']) ? basename($pathStr, '.php') : '';
-            $item['content'] = $this->loadTranslationFileContent($pathStr);
 
             if (isset($item['path'])) {
                 $path = $pathStr;
@@ -125,21 +124,6 @@ class TranslationFile extends BaseModel
         });
 
         return $result;
-    }
-
-    private function loadTranslationFileContent(string $path): string
-    {
-        if ('' === $path || ! File::exists($path)) {
-            return '';
-        }
-
-        try {
-            $content = File::getRequire($path);
-
-            return json_encode($content);
-        } catch (\Exception) {
-            return '';
-        }
     }
 
     /**

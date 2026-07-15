@@ -12,6 +12,9 @@
         "translations",
         "localization"
     ],
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://github.com/laraxot/module_lang_fila3.git",
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_lang_fila5.git",
     "authors": [
@@ -43,6 +46,17 @@
             "url": "../UI"
         }
         
+    ],
+    "repositories-comment": [
+        {
+            "type": "path",
+            "url": "./packages/lara-zeus/spatie-translatable"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.org",
+            "canonical": false
+        }
     ],
     "repositories-comment": [
         {

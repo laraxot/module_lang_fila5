@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-// Lang translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Lang/docs/wiki — domain i18n only.
-// File: lang/en/auth.php
 return [
     'failed' => 'These credentials do not match our records.',
     'password' => 'The provided password is incorrect.',
