@@ -29,18 +29,27 @@ class GetAllModuleTranslationAction
         $lang = app()->getLocale();
         $path = base_path('Modules/*/lang/'.$lang.'/*.php');
         $files = glob($path);
+        if ($files === false) {
+            return [];
+        }
 
-        return array_map(static function (mixed $file): array {
-            $file = (string) $file;
+        $result = [];
+        foreach ($files as $file) {
+            if (! is_string($file)) {
+                continue;
+            }
+
             $moduleLower = Str::of($file)
                 ->between('Modules/', '/lang/')
                 ->lower()
                 ->toString();
 
-            return [
+            $result[] = [
                 'key' => $moduleLower.'::'.basename($file, '.php'),
                 'path' => $file,
             ];
-        }, $files);
+        }
+
+        return $result;
     }
 }
