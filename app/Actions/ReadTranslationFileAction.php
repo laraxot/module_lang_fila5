@@ -68,8 +68,8 @@ class ReadTranslationFileAction
     /**
      * Converte un array in formato PHP con indentazione.
      *
-     * @param array<string, mixed> $array  Array da convertire
-     * @param int                  $indent Livello di indentazione
+     * @param array<array-key, mixed> $array  Array da convertire
+     * @param int                     $indent Livello di indentazione
      *
      * @return string Codice PHP dell'array
      */
@@ -79,11 +79,18 @@ class ReadTranslationFileAction
         $indentStr = str_repeat('    ', $indent);
 
         foreach ($array as $key => $value) {
-            $content .= $indentStr."'".addslashes($key)."' => ";
+            $content .= $indentStr."'".addslashes((string) $key)."' => ";
 
             if (is_array($value)) {
+                foreach (array_keys($value) as $nestedKey) {
+                    Assert::string($nestedKey);
+                }
+
+                /** @var array<string, mixed> $nestedValue */
+                $nestedValue = $value;
+
                 $content .= "[\n";
-                $content .= $this->arrayToPhp($value, $indent + 1);
+                $content .= $this->arrayToPhp($nestedValue, $indent + 1);
                 $content .= $indentStr."],\n";
             } else {
                 $content .= "'".addslashes((string) $value)."',\n";
