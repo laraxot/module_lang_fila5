@@ -1,3 +1,9 @@
+## [1.0.0-dev.5](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.4...v1.0.0-dev.5) (2026-07-15)
+
+### Bug Fixes
+
+* **Lang:** resolve PHPStan array type in ReadTranslationFileAction ([f7fc3fb](https://github.com/laraxot/module_lang_fila5/commit/f7fc3fb7f87bf7aa94bbb05ecbec6fc76ad503b7))
+
 ## [1.0.0-dev.4](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.3...v1.0.0-dev.4) (2026-07-15)
 
 ### Bug Fixes
