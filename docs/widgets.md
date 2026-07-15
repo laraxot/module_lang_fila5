@@ -211,8 +211,7 @@ The widget includes robust error handling:
 - [Widget vs Livewire Components](../../../project_docs/widget_vs_livewire_components.md)
 
 *Last updated: January 2025*
-- [Lang Module Documentation](../readme.md)
->>>>>>> bebd548 (.)
+- [Lang Module Documentation](README.md)
 - [Translation Management](./translations.md)
 - [Internationalization Best Practices](./i18n-best-practices.md)
 - [Widget vs Livewire Components](../../../project_docs/widget_vs_livewire_components.md)
@@ -222,7 +221,7 @@ The widget includes robust error handling:
 *
 *
 *Last updated: January 2025*
-- [Lang Module Documentation](../readme.md)
+- [Lang Module Documentation](README.md)
 - [Translation Management](./translations.md)
 - [Internationalization Best Practices](./i18n-best-practices.md)
 - [Widget vs Livewire Components](../../../project_docs/widget_vs_livewire_components.md)
