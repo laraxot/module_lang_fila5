@@ -138,9 +138,9 @@ related:
 
 ### Collegamenti Interni
 - [Roadmap](roadmap.md)
-- [Best Practices](BEST-PRACTICES.md)
-- [Best Practices](BEST-PRACTICES.md)
-- [Best Practices](BEST-PRACTICES.md)
+- [Best Practices](best-practices.md)
+- [Best Practices](best-practices.md)
+- [Best Practices](best-practices.md)
 - [Testing](testing.md)
 - [Testing](testing.md)
 ## Collegamenti tra versioni di bottlenecks.md
