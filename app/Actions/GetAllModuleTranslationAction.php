@@ -29,9 +29,6 @@ class GetAllModuleTranslationAction
         $lang = app()->getLocale();
         $path = base_path('Modules/*/lang/'.$lang.'/*.php');
         $files = glob($path);
-        if ($files === false) {
-            return [];
-        }
 
         $result = [];
         foreach ($files as $file) {
