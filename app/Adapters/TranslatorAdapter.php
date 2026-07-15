@@ -29,7 +29,7 @@ class TranslatorAdapter extends LaravelTranslator
      *
      * @param array<string, mixed> $replace
      *
-     * @return string|array<string, mixed>
+     * @return string|array<array-key, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
     {
