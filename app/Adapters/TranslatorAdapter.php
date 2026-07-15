@@ -21,11 +21,8 @@ use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
  */
 class TranslatorAdapter extends LaravelTranslator
 {
-    use QueueableAction;
-
     /** @var Dispatcher */
     protected $events;
->>>>>>> 40b96bcd6 (.)
 
     /**
      * Get the translation for the given key.
@@ -68,9 +65,5 @@ class TranslatorAdapter extends LaravelTranslator
     protected function notifyMissingKey(string $key): void
     {
         app(RecordMissingTranslationAction::class)->execute($key, (string) app()->getLocale());
-    }
-
-    public function execute(): void
-    {
     }
 }

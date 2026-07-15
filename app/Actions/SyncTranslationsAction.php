@@ -168,7 +168,19 @@ class SyncTranslationsAction
         try {
             $translations = require $filePath;
 
-            return is_array($translations) ? $this->filterStringKeyArray($translations) : [];
+            // Ensure we return an array with string keys
+            if (is_array($translations)) {
+                $result = [];
+                foreach ($translations as $key => $value) {
+                    if (is_string($key)) {
+                        $result[$key] = $value;
+                    }
+                }
+
+                return $result;
+            }
+
+            return [];
         } catch (\Exception $e) {
             return [];
         }
@@ -258,6 +270,7 @@ class SyncTranslationsAction
                 $content .= $this->arrayToPhp($this->filterStringKeyArray($value), $indent + 1);
                 $content .= $indentStr."],\n";
             } else {
+                /** @phpstan-ignore-next-line */
                 $content .= "'".addslashes((string) $value)."',\n";
             }
         }
