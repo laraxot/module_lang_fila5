@@ -2,20 +2,7 @@
 
 declare(strict_types=1);
 
-// Lang translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Lang/docs/wiki — domain i18n only.
-// File: lang/it/txt.php
 return [
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
     'fields' => [
         'email' => ['label' => 'Email', 'placeholder' => 'Inserisci la tua email', 'tooltip' => 'Usa un indirizzo email valido', 'icon' => 'heroicon-o-mail', 'description' => 'email', 'helper_text' => ''],
         'password' => ['label' => 'Password', 'placeholder' => 'Inserisci la tua password', 'tooltip' => 'La password deve contenere almeno 8 caratteri', 'icon' => 'heroicon-o-lock-closed', 'description' => 'password', 'helper_text' => ''],
@@ -104,51 +91,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-        'test_date' => [
-            'label' => 'test_date',
-            'placeholder' => 'test_date',
-            'helper_text' => 'test_date',
-            'description' => 'test_date',
-            'tooltip' => '',
-        ],
-        'test' => [
-            'label' => 'test',
-            'placeholder' => 'test',
-            'helper_text' => 'test',
-            'description' => 'test',
-            'tooltip' => '',
-        ],
-        'view' => [
-            'label' => 'view',
-            'placeholder' => 'view',
-            'helper_text' => 'view',
-            'description' => 'view',
-            'tooltip' => '',
-        ],
-        'address' => [
-            'label' => 'address2',
-            'placeholder' => 'address',
-            'helper_text' => 'address',
-            'description' => 'address',
-            'tooltip' => '',
-        ],
-        'display_name' => [
-            'label' => 'display_name',
-        ],
-        'location' => [
-            'label' => 'location',
-            'placeholder' => 'location',
-            'helper_text' => 'location',
-            'description' => 'location',
-        ],
-        'coordinates' => [
-            'label' => 'coordinates',
-            'placeholder' => 'coordinates',
-            'helper_text' => 'coordinates',
-            'description' => 'coordinates',
-        ],
-=======
         'test_date' => ['label' => 'test_date', 'placeholder' => 'test_date', 'helper_text' => 'test_date', 'description' => 'test_date', 'tooltip' => ''],
         'test' => ['label' => 'test', 'placeholder' => 'test', 'helper_text' => 'test', 'description' => 'test', 'tooltip' => ''],
         'view' => ['label' => 'view', 'placeholder' => 'view', 'helper_text' => 'view', 'description' => 'view', 'tooltip' => ''],
@@ -203,11 +145,6 @@ return [
         'icon' => 'heroicon-o-collection',
     ],
     'steps' => [
-<<<<<<< HEAD
-        'test' => [
-            'label' => 'test',
-        ],
-=======
         'test' => ['label' => 'test'],
     ],
 ];
