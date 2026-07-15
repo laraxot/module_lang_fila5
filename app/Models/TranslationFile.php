@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\File;
 use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
 use Modules\Xot\Contracts\ProfileContract;
+
 use function Safe\json_encode;
+
 use Sushi\Sushi;
 
 /**
@@ -77,6 +79,7 @@ class TranslationFile extends BaseModel
                 'file' => $e->getFile(),
                 'line' => $e->getLine(),
             ]);
+
             return [];
         }
     }
@@ -84,9 +87,9 @@ class TranslationFile extends BaseModel
     /**
      * Carica i dati di traduzione con error handling robusto.
      *
-     * @return array<int, array<string, mixed>>
-     *
      * @throws \Throwable
+     *
+     * @return array<int, array<string, mixed>>
      */
     private function loadTranslationDataWithErrorHandling(): array
     {
@@ -125,21 +128,19 @@ class TranslationFile extends BaseModel
 
     /**
      * Carica il contenuto di un file di traduzione con fallback.
-     *
-     * @param string $path
-     *
-     * @return string
      */
     private function loadFileContent(string $path): string
     {
         try {
             $content = File::getRequire($path);
+
             return json_encode($content) ?: '';
         } catch (\Throwable $e) {
             \Illuminate\Support\Facades\Log::debug('Failed to load translation file', [
                 'path' => $path,
                 'error' => $e->getMessage(),
             ]);
+
             return '';
         }
     }
