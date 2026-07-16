@@ -1,12 +1,27 @@
+# Auto-generated forbidden paths — do not edit manually
+# Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
+
+bashscripts
+_bmad-output
+.circleci
+.claude-audit
+.devcontainer
+_docs
+docs/archive
+docs/archived
+docs/legacy
+docs/workbench
+.kilocode
+.kiro
+.ralph
+scripts
+test-results
+tests/.claude-audit
 # ==============================================
 # LARAXOT MODULE LANG - .GITIGNORE
 # Modulo Lang Laraxot - Template standardizzato
 # Ultimo aggiornamento: 2025-01-31
-# ==============================================
-
-# ==============================================
 # DEPENDENCIES & PACKAGES
-# ==============================================
 vendor/
 node_modules/
 package-lock.json
@@ -14,18 +29,12 @@ yarn.lock
 composer.lock
 yarn-error.log
 npm-debug.log
-
-# ==============================================
 # BUILD & COMPILED FILES
-# ==============================================
 build/
 dist/
 docs/cache/
 cache/
-
-# ==============================================
 # CACHE & TEMPORARY FILES
-# ==============================================
 *.cache
 *.lock
 *.phar
@@ -38,19 +47,13 @@ cache/
 v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
-
-# ==============================================
 # LOG FILES
-# ==============================================
 *.log
 error_log
 npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
-
-# ==============================================
 # LARAVEL SPECIFIC
-# ==============================================
 bootstrap/compiled.php
 app/storage/
 public/storage
@@ -61,25 +64,16 @@ storage/*.key
 .env
 .env.*
 !.env.example
-
-# ==============================================
 # ENVIRONMENT & CONFIGURATION
-# ==============================================
 Homestead.yaml
 Homestead.json
 .vagrant/
 .idea/
 .phpintel
-
-# ==============================================
 # GIT SPECIFIC
-# ==============================================
 .git-rewrite/
 .git-blame-ignore-revs
-
-# ==============================================
 # SYSTEM FILES
-# ==============================================
 .DS_Store
 .DS_Store?
 ._*
@@ -87,10 +81,7 @@ Homestead.json
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# ==============================================
 # BACKUP FILES
-# ==============================================
 *.old
 *.old1
 *.old2
@@ -101,64 +92,39 @@ Thumbs.db
 *.bak
 *.bakcup
 *.new
-
-# ==============================================
 # DEVELOPMENT TOOLS
-# ==============================================
 .windsurf/
 .cursor/
 .phpstorm.meta.php
-
-# ==============================================
 # DOCUMENTATION CACHE
-# ==============================================
 docs/phpstan/
-docs/archive/
-docs/archive/**
-
-# ==============================================
 # OLD DIRECTORIES (LEGACY CLEANUP)
-# ==============================================
 resources/views/Components_old/
 database/Migrations_old/
 database/Seeders_old/
 database/Factories_old/
 database_old/
-
-# ==============================================
 # MODULE SPECIFIC - LANG
-# ==============================================
 # File configurazione locale
 config/local.php
 config/development.php
-
 # Cache traduzioni
 storage/lang/
 storage/translations/
-
 # File temporanei di traduzione
 lang/temp/
 lang/drafts/
 lang/exports/
-
 # File test traduzioni
 lang_test_data.json
 test_translations.sql
-
-# ==============================================
 # FILE SPECIFICI DEL PROGETTO
-# ==============================================
 *.fila2
 laravel
 public_html
-
-# ==============================================
 # END OF LANG .GITIGNORE
-# ==============================================
 lang/lang/
-_docs/
 packages/lara-zeus/
-
 # Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
 *~HEAD
 *~BASE
@@ -171,21 +137,6 @@ database/Migrations/
 database/migrations/Migrations/
 audit-coverage/
 .vscode/
-.devcontainer/
 app/Phpstan/
-.claude-audit
 tests/AuditCoverage
-
 # AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
-scripts/
-bashscripts/
-docs/archived/
-docs/legacy/
-docs/workbench/
-.circleci/
-tests/.claude-audit/
-_bmad-output/
-test-results/
-.kilocode/
-.kiro/
-.ralph/
