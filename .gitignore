@@ -113,7 +113,6 @@ Thumbs.db
 # DOCUMENTATION CACHE
 # ==============================================
 docs/phpstan/
-docs/cache/
 docs/archive/
 docs/archive/**
 
@@ -158,7 +157,6 @@ public_html
 # ==============================================
 lang/lang/
 _docs/
-_docs/
 packages/lara-zeus/
 
 # Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
@@ -176,5 +174,18 @@ audit-coverage/
 .devcontainer/
 app/Phpstan/
 .claude-audit
-packages/lara-zeus/
 tests/AuditCoverage
+
+# AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
+scripts/
+bashscripts/
+docs/archived/
+docs/legacy/
+docs/workbench/
+.circleci/
+tests/.claude-audit/
+_bmad-output/
+test-results/
+.kilocode/
+.kiro/
+.ralph/
