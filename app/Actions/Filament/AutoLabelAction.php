@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions\Filament;
 
-use Exception;
 use Filament\Actions\Action;
 use Filament\Forms\Components\Field;
 use Filament\Infolists\Components\Entry;
@@ -19,7 +18,6 @@ use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Actions\GetTransKeyAction;
-use ReflectionClass;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -49,7 +47,7 @@ class AutoLabelAction
             }
 
             if (isset($item['class']) && Str::startsWith($item['class'], 'Modules\\')) {
-                $reflection_class = new ReflectionClass($item['class']);
+                $reflection_class = new \ReflectionClass($item['class']);
                 if (! $reflection_class->isAbstract()) {
                     return true;
                 }
@@ -67,7 +65,7 @@ class AutoLabelAction
                 $object_class = $class['class'];
             }
             if (is_null($object_class)) {
-                throw new Exception('No object class found');
+                throw new \Exception('No object class found');
             }
             $trans_key = app(GetTransKeyAction::class)->execute($object_class);
         } else {

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions;
 
-use Exception;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
@@ -54,7 +53,7 @@ class SaveTransAction
         }
 
         if (! is_array($cont)) {
-            throw new Exception('Error in SaveTransAction');
+            throw new \Exception('Error in SaveTransAction');
         }
 
         /** @var array<string, mixed> $saveData */
