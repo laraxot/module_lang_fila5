@@ -1,3 +1,14 @@
+## [1.0.0-dev.6](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.5...v1.0.0-dev.6) (2026-07-20)
+
+### Bug Fixes
+
+* **Lang:** PHPStan L10 after git sync ([11681bd](https://github.com/laraxot/module_lang_fila5/commit/11681bd56fc247ddad48a46a5a4778de211aba0a))
+* **Lang:** PHPStan list return for translation path actions ([b7e5cca](https://github.com/laraxot/module_lang_fila5/commit/b7e5ccaae293c3964f5e22eef240e45f21324b7a))
+* **Lang:** precise return/param types for translation actions (mixed->array-key, array_map generic-safe) ([d2ab574](https://github.com/laraxot/module_lang_fila5/commit/d2ab57474f56b7e454afaddf0b1443e3439b1cca))
+* **Lang:** remove always-false === false check after Safe\glob (throws instead of returning false) ([261c453](https://github.com/laraxot/module_lang_fila5/commit/261c45358a7528058c53e32ac4ae5d802a67e85c))
+* **Lang:** resolve PHPStan array type in ReadTranslationFileAction ([e3dfd9b](https://github.com/laraxot/module_lang_fila5/commit/e3dfd9bfc56b4afa913167552cf55fb7fd006a08))
+* **security:** bump vite to ^6.4.3 (Dependabot GHSA-v6wh/fx2h/4w7w) ([ed56132](https://github.com/laraxot/module_lang_fila5/commit/ed561325e990002030f0620ee09f07f456cf239c))
+
 ## [1.0.0-dev.4](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.3...v1.0.0-dev.4) (2026-07-15)
 
 ### Bug Fixes
