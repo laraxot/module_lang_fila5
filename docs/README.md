@@ -3,7 +3,10 @@ title: "Lang Module Documentation"
 type: documentation
 tags: [module, documentation, localization, translations]
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-07-20
+related:
+  - "./00-INDEX.md"
+  - "./lang-service-provider-improvements.md"
 ---
 
 # Modulo Lang
@@ -33,6 +36,13 @@ Il modulo **Lang** gestisce il sistema di localizzazione e traduzioni multi-ling
 
 ## Struttura del Modulo
 
+Nota: il modulo **non ha una cartella `app/Services/`** — segue la
+convenzione del progetto (vedi `queueable-action-trait` skill): ogni
+operazione è una `*Action` in `app/Actions/` con `use QueueableAction;` e
+un unico entrypoint `execute()`, invocata sempre via
+`app(XAction::class)->execute(...)`, mai istanziata direttamente. Non
+esiste alcun `TranslationService.php`.
+
 ```
 Modules/Lang/
 ├── app/
@@ -42,9 +52,15 @@ Modules/Lang/
 │   │   ├── SyncTranslationsAction.php
 │   │   ├── PublishTranslationAction.php
 │   │   ├── TranslatorAction.php
-│   │   └── GetAllTranslationAction.php
-│   ├── Services/
-│   │   └── TranslationService.php
+│   │   ├── GetAllTranslationAction.php
+│   │   ├── GetAllModuleTranslationAction.php
+│   │   ├── GetTransPathAction.php
+│   │   ├── MergeTranslationsAction.php
+│   │   ├── SaveTransAction.php
+│   │   ├── TransArrayAction.php
+│   │   ├── TransCollectionAction.php
+│   │   ├── Filament/AutoLabelAction.php
+│   │   └── Translation/RecordMissingTranslationAction.php
 │   ├── Adapters/
 │   │   └── TranslatorAdapter.php
 │   ├── Datas/
@@ -53,11 +69,16 @@ Modules/Lang/
 │   ├── Casts/
 │   │   └── LangField.php
 │   ├── Filament/
-│   │   └── Resources/
-│   │       ├── TranslationFileResource.php
-│   │       └── Pages/
+│   │   ├── Resources/
+│   │   │   ├── TranslationFileResource.php
+│   │   │   └── Pages/
+│   │   ├── Forms/Components/TranslationEditor.php
+│   │   └── Widgets/LanguageSwitcherWidget.php
 │   └── Models/
-│       └── BaseModelLang.php
+│       ├── BaseModelLang.php
+│       ├── LanguageLine.php
+│       ├── Translation.php
+│       └── TranslationFile.php
 ├── database/
 │   ├── migrations/
 │   ├── factories/
