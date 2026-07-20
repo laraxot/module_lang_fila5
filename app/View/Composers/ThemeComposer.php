@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Lang\View\Composers;
 
-use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use InvalidArgumentException;
 use Modules\Lang\Datas\LangData;
 use Spatie\LaravelData\DataCollection;
 
@@ -19,7 +17,7 @@ class ThemeComposer
     /**
      * Get all supported languages as a DataCollection.
      *
-     * @throws Exception if supportedLocales config is not an array
+     * @throws \Exception if supportedLocales config is not an array
      *
      * @return DataCollection<int, LangData>
      */
@@ -34,18 +32,18 @@ class ThemeComposer
             ];
 
         if (! is_array($langs)) {
-            throw new Exception(sprintf('Invalid config for supportedLocales on line %d in %s', __LINE__, class_basename($this)));
+            throw new \Exception(sprintf('Invalid config for supportedLocales on line %d in %s', __LINE__, class_basename($this)));
         }
 
         $languages = collect($langs)->map(function (mixed $item, string $locale): array {
             // Ensure $item is an array
             if (! is_array($item)) {
-                throw new InvalidArgumentException(sprintf('Expected array at locale %s, got %s', $locale, gettype($item)));
+                throw new \InvalidArgumentException(sprintf('Expected array at locale %s, got %s', $locale, gettype($item)));
             }
 
             // Ensure $item has the required keys
             if (! isset($item['regional'], $item['name'])) {
-                throw new InvalidArgumentException(sprintf('Expected array with "regional" and "name" keys at locale %s', $locale));
+                throw new \InvalidArgumentException(sprintf('Expected array with "regional" and "name" keys at locale %s', $locale));
             }
 
             // Extract regional code and handle 'en' to 'gb' mapping.
@@ -103,7 +101,7 @@ class ThemeComposer
     /**
      * Get a specific field of the current language.
      *
-     * @throws Exception if the current language is not found
+     * @throws \Exception if the current language is not found
      */
     public function currentLang(string $field): string
     {
@@ -113,7 +111,7 @@ class ThemeComposer
         $lang = $this->languages()->toCollection()->firstWhere('id', $currentLocale);
 
         if (! $lang instanceof LangData) {
-            throw new Exception(sprintf('Current language not found on line %d in %s', __LINE__, class_basename($this)));
+            throw new \Exception(sprintf('Current language not found on line %d in %s', __LINE__, class_basename($this)));
         }
 
         // Verifichiamo che il valore del campo sia una stringa o lo convertiamo in modo sicuro
