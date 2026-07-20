@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions\Filament;
 
+use Exception;
 use Filament\Actions\Action;
 use Filament\Forms\Components\Field;
 use Filament\Infolists\Components\Entry;
@@ -17,7 +18,6 @@ use Illuminate\Support\Str;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\File\SvgExistsAction;
-use Exception;
 use Modules\Xot\Actions\GetTransKeyAction;
 use ReflectionClass;
 use Spatie\QueueableAction\QueueableAction;
