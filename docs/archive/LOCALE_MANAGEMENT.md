@@ -99,26 +99,26 @@ class SetLocale
         if (Session::has('locale')) {
             App::setLocale(Session::get('locale'));
         }
-        
+
         // 2. Verifica la lingua nell'URL (se usi mcamara/laravel-localization)
         $locale = $request->segment(1);
         if (in_array($locale, config('laravellocalization.supportedLocales'))) {
             App::setLocale($locale);
             Session::put('locale', $locale);
         }
-        
+
         // 3. Verifica l'header Accept-Language
         if (!$request->hasHeader('X-Language')) {
             $preferredLanguage = $request->getPreferredLanguage(
                 array_keys(config('laravellocalization.supportedLocales'))
             );
-            
+
             if ($preferredLanguage) {
                 App::setLocale($preferredLanguage);
                 Session::put('locale', $preferredLanguage);
             }
         }
-        
+
         return $next($request);
     }
 }
@@ -164,7 +164,7 @@ try {
     if (App::isLocale('it')) {
         return response()->view('errors.custom', ['message' => 'Si è verificato un errore'], 500);
     }
-    
+
     return response()->view('errors.custom', ['message' => 'An error occurred'], 500);
 }
 ```
@@ -178,10 +178,10 @@ try {
 public function boot()
 {
     parent::boot();
-    
+
     // Imposta la lingua all'avvio
     $this->app->setLocale(config('app.locale'));
-    
+
     // Altri boot...
 }
 ```
@@ -221,11 +221,11 @@ if (! function_exists('get_locale_name')) {
 function translate_with_fallback($key, $replace = [], $locale = null)
 {
     $translation = __($key, $replace, $locale);
-    
+
     if ($translation === $key && App::getLocale() !== config('app.fallback_locale')) {
         $translation = __($key, $replace, config('app.fallback_locale'));
     }
-    
+
     return $translation;
 }
 ```
