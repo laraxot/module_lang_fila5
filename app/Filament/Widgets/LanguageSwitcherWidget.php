@@ -16,9 +16,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class LanguageSwitcherWidget extends XotBaseSchemaWidget
 {
-    /**
-     * Vista del widget.
-     */
+    /** @var view-string */
     protected string $view = 'lang::filament.widgets.language-switcher';
 
     /**

@@ -1,3 +1,14 @@
+---
+title: "Migration Patterns for Lang Module"
+module: "Lang"
+type: pattern
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Migration Patterns for Lang Module
 
 ## Overview

@@ -106,6 +106,9 @@ return [
         'updated_at' => ['label' => 'updated_at'],
         'appointment_date' => ['label' => 'appointment_date', 'placeholder' => 'appointment_date', 'helper_text' => 'appointment_date', 'description' => 'appointment_date'],
         'contact' => ['label' => 'contact'],
+        'invoice' => ['label' => 'invoice', 'placeholder' => 'invoice', 'helper_text' => 'invoice', 'description' => 'invoice'],
+        'contract' => ['label' => 'contract', 'placeholder' => 'contract', 'helper_text' => 'contract', 'description' => 'contract'],
+        'receipt' => ['label' => 'receipt', 'placeholder' => 'receipt', 'helper_text' => 'receipt', 'description' => 'receipt'],
     ],
     'actions' => [
         'authenticate' => ['label' => 'Autentica', 'tooltip' => 'Effettua il login nel sistema', 'icon' => 'ui-login', 'color' => 'primary'],
@@ -126,6 +129,7 @@ return [
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'SendRecordsNotificationBulkAction' => ['label' => 'SendRecordsNotificationBulkAction', 'icon' => 'SendRecordsNotificationBulkAction', 'tooltip' => 'SendRecordsNotificationBulkAction'],
         'changePassword' => ['label' => 'changePassword', 'icon' => 'changePassword', 'tooltip' => 'changePassword'],
+        'test' => ['label' => 'test', 'icon' => 'test', 'tooltip' => 'test'],
     ],
     'sections' => [
         'address' => ['label' => 'address', 'heading' => 'address'],
