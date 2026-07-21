@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Lang\Database\Factories;
 
-	use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<\Modules\Lang\Models\LanguageLine>
@@ -22,4 +24,3 @@ class LanguageLineFactory extends Factory
         return [];
     }
 }
-
