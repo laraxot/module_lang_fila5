@@ -1,3 +1,14 @@
+---
+title: "Correzione conflitto e miglioramento PHPStan livello 9 in Models/Post.php"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Correzione conflitto e miglioramento PHPStan livello 9 in Models/Post.php
 
 **Data:** 2025-04-16
@@ -29,7 +40,7 @@ Durante un controllo di routine sono stati rilevati diversi conflitti Git non ri
 ---
 
 **Vedi anche:**
-- [PHPStan Level 10 Fixes](PHPSTAN_LEVEL10_FIXES.md)
+- [PHPStan Level 10 Fixes](phpstan_level10_fixes.md)
 - [PHPStan Level 10 Fixes](phpstan_level10_fixes.md)
 - [module_lang.md](module_lang.md)
 - [module_lang.md](module_lang.md)

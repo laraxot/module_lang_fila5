@@ -1,3 +1,14 @@
+---
+title: "PHPStan Mixed Type Casting Errors"
+module: "Lang"
+type: concept
+tags: [migration, filament]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # PHPStan Mixed Type Casting Errors
 
 ## Problema
@@ -216,7 +227,7 @@ Dopo aver applicato le correzioni:
 ## Backlink
 
 - [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
-- [Lang Module Structure](./readme.md)
+- [Lang Module Structure](README.md)
 - [Xot Safe Casting Actions](../../xot/docs/safe-casting-actions.md)
 
 # PHPStan Mixed Type Casting Errors
@@ -437,5 +448,5 @@ Dopo aver applicato le correzioni:
 ## Backlink
 
 - [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
-- [Lang Module Structure](./readme.md)
+- [Lang Module Structure](README.md)
 - [Xot Safe Casting Actions](../../xot/docs/safe-casting-actions.md)
