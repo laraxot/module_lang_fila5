@@ -77,7 +77,7 @@ __('patient.profile.title')
    ```php
    // Sbagliato
    echo __('Nome: ') . $user->name;
-   
+
    // Corretto
    echo __('Nome: :name', ['name' => $user->name]);
    ```
@@ -86,7 +86,7 @@ __('patient.profile.title')
    ```php
    // Sconsigliato
    __('nome_campo_obbligatorio')
-   
+
    // Consigliato
    __('validation.required')
    ```

@@ -77,7 +77,7 @@ lang/
 - `__()`: Helper per stringhe di traduzione
   - Restituisce `null` se chiamato senza parametri
   - Sintassi: `__('chiave.traduzione')`
-  
+
 - `trans()`: Versione più flessibile
   - Restituisce l'istanza del Translator se chiamato senza parametri
   - Utile per metodi concatenati: `trans()->getLocale()`
@@ -168,7 +168,7 @@ public function handle($request, Closure $next)
     if (session()->has('locale')) {
         app()->setLocale(session('locale'));
     }
-    
+
     return $next($request);
 }
 ```
