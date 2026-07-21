@@ -9,4 +9,3 @@ qmd: "git conflicts resolution sumy"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
-
