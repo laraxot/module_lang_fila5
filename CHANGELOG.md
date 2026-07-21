@@ -1,3 +1,9 @@
+## [1.0.0-dev.7](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.6...v1.0.0-dev.7) (2026-07-21)
+
+### Bug Fixes
+
+* resolve merge conflict markers and sync working tree ([8f7a456](https://github.com/laraxot/module_lang_fila5/commit/8f7a456ae7825fc2901b40ad0fe3870883e3f951))
+
 ## [1.0.0-dev.4](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.3...v1.0.0-dev.4) (2026-07-15)
 
 ### Bug Fixes
