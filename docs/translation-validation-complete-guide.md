@@ -1,3 +1,14 @@
+---
+title: "Guida Completa alla Validazione delle Traduzioni - <nome progetto>"
+module: "Lang"
+type: how-to
+tags: [readme.es, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "readme.es 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Guida Completa alla Validazione delle Traduzioni - <nome progetto>
 
 ## Panoramica
