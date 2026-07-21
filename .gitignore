@@ -177,4 +177,3 @@ audit-coverage/
 app/Phpstan/
 .claude-audit
 packages/lara-zeus/
-app/Services
