@@ -169,3 +169,11 @@ packages/lara-zeus/
 *.orig
 *.rej
 *~headagentdb.rvf
+database/Migrations/
+database/migrations/Migrations/
+audit-coverage/
+.vscode/
+.devcontainer/
+app/Phpstan/
+.claude-audit
+packages/lara-zeus/
