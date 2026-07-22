@@ -177,3 +177,6 @@ audit-coverage/
 app/Phpstan/
 .claude-audit
 packages/lara-zeus/
+
+# Local vector DB (agent tooling)
+ruvector.db
