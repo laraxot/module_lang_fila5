@@ -1,3 +1,9 @@
+## [1.0.0-dev.9](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.8...v1.0.0-dev.9) (2026-07-22)
+
+### Bug Fixes
+
+* **tests:** re-remove forbidden AuditCoverage padding dir ([c958703](https://github.com/laraxot/module_lang_fila5/commit/c958703e3cd4f1643ae6ef8cc1c1a8e1d4789c4c))
+
 ## [1.0.0-dev.6](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.5...v1.0.0-dev.6) (2026-07-20)
 
 ### Bug Fixes
