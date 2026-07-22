@@ -4,18 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit\Services;
 
-use Modules\Lang\Services\TranslatorService;
+use Illuminate\Contracts\Translation\Translator;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-function makeTranslatorService(): TranslatorService
+function makeTranslatorService(): Translator
 {
-    /** @var TranslatorService $translator */
-    $translator = app('translator');
-
-    return $translator;
+    return app('translator');
 }
 
 describe('TranslatorService Business Logic', function () {
