@@ -1,3 +1,9 @@
+## [1.0.0-dev.8](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.7...v1.0.0-dev.8) (2026-07-22)
+
+### Bug Fixes
+
+* **tests:** remove forbidden AuditCoverage padding dir, fix TranslatorServiceTest typing ([347dc1e](https://github.com/laraxot/module_lang_fila5/commit/347dc1e6d96b8ffcc23a85b88984be29cbb08f81))
+
 ## [1.0.0-dev.6](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.5...v1.0.0-dev.6) (2026-07-20)
 
 ### Bug Fixes
