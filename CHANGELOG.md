@@ -1,3 +1,9 @@
+## [1.0.0-dev.10](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.9...v1.0.0-dev.10) (2026-07-23)
+
+### Bug Fixes
+
+* remove dead duplicate migration dirs (case-variant Migrations/, nested migrations/Migrations/, stray .old3) ([8ac1d90](https://github.com/laraxot/module_lang_fila5/commit/8ac1d90eaaad875b767e2bc5e8f46297a7a9dde6))
+
 ## [1.0.0-dev.9](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.8...v1.0.0-dev.9) (2026-07-22)
 
 ### Bug Fixes
