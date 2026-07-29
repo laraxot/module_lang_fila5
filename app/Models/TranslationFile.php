@@ -102,11 +102,15 @@ class TranslationFile extends BaseModel
             }
 
             $key = $item['key'] ?? null;
-            $keyStr = is_string($key) ? $key : (string) $key;
+            /** @var string|int|float|bool|null $keyNarrowed */
+            $keyNarrowed = $key;
+            $keyStr = is_string($keyNarrowed) ? $keyNarrowed : (string) $keyNarrowed;
             $item['id'] = isset($item['key']) ? $keyStr : '';
 
             $pathValue = $item['path'] ?? null;
-            $pathStr = is_string($pathValue) ? $pathValue : (string) $pathValue;
+            /** @var string|int|float|bool|null $pathValueNarrowed */
+            $pathValueNarrowed = $pathValue;
+            $pathStr = is_string($pathValueNarrowed) ? $pathValueNarrowed : (string) $pathValueNarrowed;
             $item['name'] = isset($item['path']) ? basename($pathStr, '.php') : '';
 
             if (isset($item['path'])) {
