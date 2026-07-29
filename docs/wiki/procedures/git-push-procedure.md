@@ -62,23 +62,15 @@ git rev-list --left-right --count HEAD...laraxot/dev  # Only if remote branch ex
 # For each remote:
 git rev-list HEAD...<remote>/dev   # Should output: 0 0
 git status --short --branch        # Should be clean
-git lfs fsck --pointers            # If repo uses LFS, should be OK
 ```
 
-## LFS Error Handling
 
-If push fails with Git LFS error:
 
-1. **Read the exact OID** from the Git LFS error message
 2. **Try fetching** from remote sibling:
    ```bash
-   git lfs fetch <remote-sibling> --all
    ```
-3. **If insufficient**: Search monorepo root `.git/lfs/objects/` for the OID
-4. **Copy matching objects** to module LFS cache (only SHA/OID match)
 5. **Retry push**:
    ```bash
-   git lfs push <remote> dev
    git push <remote> dev
    ```
 
@@ -107,8 +99,6 @@ Merge: laraxot/dev integrated (commit 0ba629c)
 **Sync History:**
 - ✅ Fetch all remotes: laraxot/dev reachable (28 commits behind)
 - ✅ Merge forward-only: laraxot/dev integrated into HEAD
-- ✅ LFS objects: copied from monorepo root cache
-- ✅ Push LFS: OK to provtv (663 KB, 2 objects)
 - ✅ Push git: OK to provtv (commit 7eae7708, achieved 0 0 sync)
 - ❌ Push git: FAILED to laraxot (error: "did not receive expected object" — laraxot repository corrupted)
 
@@ -125,7 +115,6 @@ Merge: laraxot/dev integrated (commit 0ba629c)
 
 ## Lessons Learned
 
-1. **LFS on Merge**: When integrating a remote with LFS files, pointers are copied but actual objects are not. Solution: verify cache in `.git/lfs/objects` and copy to module before push.
 
 2. **Unrelated Histories**: Diverged branches require `--allow-unrelated-histories` with manual conflict resolution.
 
