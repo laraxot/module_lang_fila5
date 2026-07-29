@@ -22,11 +22,8 @@ interface HasTranslationsContract
      * @return self L'istanza corrente del modello, per supportare method chaining
      */
     /**
-<<<<<<< HEAD
      * @param  array<string, mixed>|int|string|null  $value
-=======
-     * @param array<string, mixed>|int|string|null $value
->>>>>>> provtv/dev
+     * @param  array<string, mixed>|int|string|null  $value
      */
     public function setTranslation(string $key, string $locale, int|array|string|null $value): self;
 }
