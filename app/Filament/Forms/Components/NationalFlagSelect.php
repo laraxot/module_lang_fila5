@@ -75,21 +75,12 @@ class NationalFlagSelect extends Select
     /**
      * Get filtered country options based on search query.
      *
-<<<<<<< HEAD
      * @param  string  $search  The search query
-=======
-     * @param string $search The search query
-     *
->>>>>>> provtv/dev
      * @return array<string, string>
      */
     protected function getFilteredCountryOptions(string $search): array
     {
-<<<<<<< HEAD
         if (trim($search) === '') {
-=======
-        if ('' === trim($search)) {
->>>>>>> provtv/dev
             return $this->getCountryOptions();
         }
 
