@@ -7,8 +7,5 @@ CHANGELOG.md export-ignore
 *.jpeg !text !filter !merge !diff
 *.gif !text !filter !merge !diff
 *.webp !text !filter !merge !diff
-<<<<<<< HEAD
-=======
 *.png !text !filter !merge !diff
 *.svg !text !filter !merge !diff
->>>>>>> 23bff5d (chore: remove obsolete symlinks and documentation files; update .gitattributes and .gitignore for improved file handling; refactor parameter annotations and type hinting in various model files)
