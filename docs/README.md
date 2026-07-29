@@ -100,7 +100,7 @@ use Modules\Lang\Traits\HasTranslator;
 class User extends Model
 {
     use HasTranslator;
-
+    
     public function greetingMessage(): string
     {
         return $this->trans('user.greeting', ['name' => $this->name]);
@@ -188,19 +188,19 @@ Configurare lingue in `laravel/config/local/lang/config.php`:
 ```php
 return [
     'default_language' => 'en',
-
+    
     'supported_languages' => [
         'en' => 'English',
         'it' => 'Italiano',
         'de' => 'Deutsch',
         'fr' => 'Français',
     ],
-
+    
     'paths' => [
         'resources' => resource_path('lang'),
         'modules' => base_path('Modules/*/resources/lang'),
     ],
-
+    
     'cache_translations' => true,
     'cache_ttl' => 3600, // 1 hour
 ];
@@ -333,16 +333,13 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse --level=max Modules/Lang
 
 ## Dipendenze / Moduli Correlati
 
-- [Xot - Framework Base](../Xot/docs/README.md) — Always dependency
-- [User - Authentication](../User/docs/README.md) — For user-facing strings
-- [Cms - Content](../Cms/docs/README.md) — For content translations
-- [Notify - Notifications](../Notify/docs/README.md) — For email translations
+- [Xot - Framework Base](../../Xot/docs/README.md) — Always dependency
+- [User - Authentication](../../User/docs/README.md) — For user-facing strings
+- [Cms - Content](../../Cms/docs/README.md) — For content translations
+- [Notify - Notifications](../../Notify/docs/README.md) — For email translations
 
 ## Documenti Correlati
 
-- [Translation Best Practices](../../../docs/wiki/standards/translations.md)
-- [Translation File Merge Pattern](../../../docs/wiki/standards/translation-merge-pattern.md)
-- [Module Translation Structure](../../../docs/wiki/standards/module-translations.md)
 - [PHPStan Configuration](../../../phpstan.neon)
 
 ## Regole Critiche
@@ -357,13 +354,13 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse --level=max Modules/Lang
 
 ## Standard Rules & Workflow
 
-- [[BMAD Method](../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../docs/wiki/concepts/context-engineering.md)]
-- [[LLM Wiki Governance](../../../docs/wiki/concepts/llm-wiki-governance.md)]
+- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
 
 ---
 
-**Status**: ✅ Production
-**Last Updated**: 2026-07-14
-**Requirements**: PHP 8.3+, Laravel 12
+**Status**: ✅ Production  
+**Last Updated**: 2026-07-14  
+**Requirements**: PHP 8.3+, Laravel 12  
 **PHPStan Level**: 10 (Compliant)
