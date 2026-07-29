@@ -141,3 +141,6 @@ workbench
 yarn-error.log
 yarn-error.log*
 yarn.lock
+
+# Root quality tool configs forbidden in module root
+phpmd*
