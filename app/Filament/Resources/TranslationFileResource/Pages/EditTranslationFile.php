@@ -43,7 +43,12 @@ class EditTranslationFile extends XotBaseEditRecord
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $array
+=======
+     * @param array<string, mixed> $array
+     *
+>>>>>>> provtv/dev
      * @return array<int, Section|TextInput>
      */
     public function makeFromArray(array $array, string $prefix = ''): array
@@ -52,7 +57,11 @@ class EditTranslationFile extends XotBaseEditRecord
 
         foreach ($array as $key => $value) {
             $keyStr = (string) $key;
+<<<<<<< HEAD
             $fullKey = $prefix === '' ? $keyStr : ($prefix.'.'.$keyStr);
+=======
+            $fullKey = '' === $prefix ? $keyStr : ($prefix.'.'.$keyStr);
+>>>>>>> provtv/dev
 
             if (is_array($value)) {
                 /** @var array<string, mixed> $childArray */

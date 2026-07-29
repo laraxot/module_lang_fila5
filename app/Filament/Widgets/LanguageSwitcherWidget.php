@@ -64,8 +64,14 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     /**
      * Cambia la lingua corrente.
      *
+<<<<<<< HEAD
      * @param  string  $locale  Codice della lingua
      * @param  string  $locale  Codice della lingua
+=======
+     * @param string $locale Codice della lingua
+     * @param string $locale Codice della lingua
+     *
+>>>>>>> provtv/dev
      * @return void *
      */
     public function changeLanguage(string $locale): void
@@ -82,8 +88,14 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     /**
      * Genera l'URL per una specifica lingua.
      *
+<<<<<<< HEAD
      * @param  string  $locale  Codice della lingua     *
      * @param  string  $locale  Codice della lingua
+=======
+     * @param string $locale Codice della lingua     *
+     * @param string $locale Codice della lingua
+     *
+>>>>>>> provtv/dev
      * @return string URL con la lingua specificata
      */
     public function getLanguageUrl(string $locale): string
@@ -101,7 +113,11 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
         // Aggiunge la lingua all'URL
         $path = request()->getPathInfo();
 
+<<<<<<< HEAD
         return url($locale.($path === '/' ? '' : $path));
+=======
+        return url($locale.('/' === $path ? '' : $path));
+>>>>>>> provtv/dev
     }
 
     /**

@@ -5,15 +5,25 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
+=======
+>>>>>>> provtv/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 // --- traits ---
 use Modules\Lang\Database\Factories\PostFactory;
 // use Laravel\Scout\Searchable;
 use Modules\Xot\Contracts\ProfileContract;
+=======
+use Modules\Lang\Database\Factories\PostFactory;
+// --- traits ---
+use Modules\Xot\Contracts\ProfileContract;
+// use Laravel\Scout\Searchable;
+>>>>>>> provtv/dev
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;
@@ -22,6 +32,7 @@ use Spatie\Sluggable\SlugOptions;
 /**
  * Modules\Lang\Models\Post.
  *
+<<<<<<< HEAD
  * @property string $id
  * @property int|null $user_id
  * @property string|null $post_type
@@ -56,6 +67,42 @@ use Spatie\Sluggable\SlugOptions;
  * @property ProfileContract|null $creator
  * @property Model|null $linkable
  * @property ProfileContract|null $updater
+=======
+ * @property string                       $id
+ * @property int|null                     $user_id
+ * @property string|null                  $post_type
+ * @property int|null                     $post_id
+ * @property string|null                  $lang
+ * @property string|null                  $title
+ * @property string|null                  $subtitle
+ * @property string|null                  $guid
+ * @property string|null                  $txt
+ * @property string|null                  $image_src
+ * @property string|null                  $image_alt
+ * @property string|null                  $image_title
+ * @property string|null                  $meta_description
+ * @property string|null                  $meta_keywords
+ * @property int|null                     $author_id
+ * @property Carbon|null                  $created_at
+ * @property Carbon|null                  $updated_at
+ * @property int|null                     $category_id
+ * @property string|null                  $image
+ * @property string|null                  $content
+ * @property int|null                     $published
+ * @property string|null                  $created_by
+ * @property string|null                  $updated_by
+ * @property string|null                  $url
+ * @property array<array-key, mixed>|null $url_lang
+ * @property array<array-key, mixed>|null $image_resize_src
+ * @property string|null                  $linked_count
+ * @property string|null                  $related_count
+ * @property string|null                  $relatedrev_count
+ * @property string|null                  $linkable_type
+ * @property int|null                     $views_count
+ * @property ProfileContract|null         $creator
+ * @property Model|null                   $linkable
+ * @property ProfileContract|null         $updater
+>>>>>>> provtv/dev
  *
  * @method static Builder<static>|Post newModelQuery()
  * @method static Builder<static>|Post newQuery()
@@ -119,8 +166,12 @@ use Spatie\Sluggable\SlugOptions;
 class Post extends BaseModel
 {
     use HasSlug;
+<<<<<<< HEAD
 
     /** @phpstan-use HasXotFactory<Factory<static>> */
+=======
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+>>>>>>> provtv/dev
     use HasXotFactory;
 
     // use Cachable;
@@ -251,11 +302,19 @@ class Post extends BaseModel
      */
     public function getTitleAttribute(?string $value): ?string
     {
+<<<<<<< HEAD
         if ($value !== null) {
             return $value;
         }
 
         if (isset($this->attributes['post_type']) && $this->attributes['post_type'] !== '' && $this->attributes['post_type'] !== '0') {
+=======
+        if (null !== $value) {
+            return $value;
+        }
+
+        if (isset($this->attributes['post_type']) && '' !== $this->attributes['post_type'] && '0' !== $this->attributes['post_type']) {
+>>>>>>> provtv/dev
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
@@ -273,7 +332,11 @@ class Post extends BaseModel
 
         $this->title = $value;
 
+<<<<<<< HEAD
         if ($this->getKey() !== null) {
+=======
+        if (null !== $this->getKey()) {
+>>>>>>> provtv/dev
             $this->update([
                 'title' => $value,
             ]);
@@ -287,11 +350,19 @@ class Post extends BaseModel
      */
     public function getGuidAttribute(?string $value): ?string
     {
+<<<<<<< HEAD
         if (\is_string($value) && $value !== '' && ! str_contains($value, ' ')) {
             return $value;
         }
         $value = $this->title;
         if ($value === '') {
+=======
+        if (\is_string($value) && '' !== $value && ! str_contains($value, ' ')) {
+            return $value;
+        }
+        $value = $this->title;
+        if ('' === $value) {
+>>>>>>> provtv/dev
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
@@ -301,13 +372,21 @@ class Post extends BaseModel
                 : '';
             $value = $postType.' '.$postId;
         }
+<<<<<<< HEAD
         if ($value === null) {
+=======
+        if (null === $value) {
+>>>>>>> provtv/dev
             $value = 'u-'.random_int(1, 1000);
         }
         $value = Str::slug($value);
         $this->guid = $value;
 
+<<<<<<< HEAD
         if ($this->getKey() !== null) {
+=======
+        if (null !== $this->getKey()) {
+>>>>>>> provtv/dev
             $this->update([
                 'guid' => $value,
             ]);
