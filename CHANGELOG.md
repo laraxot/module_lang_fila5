@@ -1,3 +1,24 @@
+## [1.0.0-dev.11](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.10...v1.0.0-dev.11) (2026-07-31)
+
+### Bug Fixes
+
+* **Lang:** PHPStan L10 after git sync ([c55d6b4](https://github.com/laraxot/module_lang_fila5/commit/c55d6b449ba5743a73b8eea6445186e618844390))
+* **Lang:** PHPStan L10 after git sync ([d8cc253](https://github.com/laraxot/module_lang_fila5/commit/d8cc253387518fd0ee36fc6edee08912868c9c8b))
+* **Lang:** PHPStan list return for translation path actions ([fd5ac2c](https://github.com/laraxot/module_lang_fila5/commit/fd5ac2c7f52f1358c9483ae68c2a634a1fdeeda1))
+* **Lang:** PHPStan list return for translation path actions ([2efe0c5](https://github.com/laraxot/module_lang_fila5/commit/2efe0c59278709e40bba50ae13cb16c02e51e971))
+* **Lang:** precise return/param types for translation actions (mixed->array-key, array_map generic-safe) ([6af907f](https://github.com/laraxot/module_lang_fila5/commit/6af907f438e769cd1d13d151e7a47c187f589b0b))
+* **Lang:** precise return/param types for translation actions (mixed->array-key, array_map generic-safe) ([5f61fa0](https://github.com/laraxot/module_lang_fila5/commit/5f61fa0d9c1891e8df4ab5f1aaf07425fc524137))
+* **Lang:** remove always-false === false check after Safe\glob (throws instead of returning false) ([8cbb983](https://github.com/laraxot/module_lang_fila5/commit/8cbb983dd33236bbf7fd28d8c6a00e9674b7e2f5))
+* **Lang:** remove always-false === false check after Safe\glob (throws instead of returning false) ([21f8866](https://github.com/laraxot/module_lang_fila5/commit/21f8866c41db3a7cdb544bf2fc28f4dcde432647))
+* **Lang:** resolve PHPStan array type in ReadTranslationFileAction ([8402767](https://github.com/laraxot/module_lang_fila5/commit/840276758e3c94ea6bb1b090c53e7d13cc4b99c5))
+* **Lang:** resolve PHPStan array type in ReadTranslationFileAction ([6a20a75](https://github.com/laraxot/module_lang_fila5/commit/6a20a75549a69f4025db70a1f67497c86f6d816c))
+* remove dead duplicate migration dirs (case-variant Migrations/, nested migrations/Migrations/, stray .old3) ([d4c28b9](https://github.com/laraxot/module_lang_fila5/commit/d4c28b98516c1102035fd1042034d83d34c2e9fc))
+* resolve merge conflict markers and sync working tree ([aa85717](https://github.com/laraxot/module_lang_fila5/commit/aa85717cfbc64d09fb3273bf1177168af0bee403))
+* **security:** bump vite to ^6.4.3 (Dependabot GHSA-v6wh/fx2h/4w7w) ([7c4489d](https://github.com/laraxot/module_lang_fila5/commit/7c4489dc7bfaeabd46d73c2fc9649619ee381c7f))
+* **security:** bump vite to ^6.4.3 (Dependabot GHSA-v6wh/fx2h/4w7w) ([5ffa2cc](https://github.com/laraxot/module_lang_fila5/commit/5ffa2cc74e6a9106f8efbae3bebb2fa418c1bd39))
+* **tests:** re-remove forbidden AuditCoverage padding dir ([66d2023](https://github.com/laraxot/module_lang_fila5/commit/66d20232d0f8bd2922494cc5a1522c9e9c298b52))
+* **tests:** remove forbidden AuditCoverage padding dir, fix TranslatorServiceTest typing ([4c6a5e1](https://github.com/laraxot/module_lang_fila5/commit/4c6a5e11f68022d6c46876933e6aa88d0cee5200))
+
 ## [1.0.0-dev.10](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.9...v1.0.0-dev.10) (2026-07-23)
 
 ### Bug Fixes
