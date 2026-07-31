@@ -1,5 +1,4 @@
 * text=auto
-<<<<<<< HEAD
 
 *.css linguist-vendored
 *.scss linguist-vendored
@@ -7,7 +6,7 @@
 
 CHANGELOG.md export-ignore
 
-*.psd !text !filter !merge !diff
+*.psd filter=lfs diff=lfs merge=lfs -text
 *.png !text !filter !merge !diff
 *.svg !text !filter !merge !diff
 *.jpg !text !filter !merge !diff
@@ -22,10 +21,3 @@ CHANGELOG.md export-ignore
 *.ttf !text !filter !merge !diff
 *.eot !text !filter !merge !diff
 *.otf !text !filter !merge !diff
-=======
-*.css linguist-vendored
-*.scss linguist-vendored
-*.js linguist-vendored
-CHANGELOG.md export-ignore
-*.psd filter=lfs diff=lfs merge=lfs -text
->>>>>>> laraxot/dev
