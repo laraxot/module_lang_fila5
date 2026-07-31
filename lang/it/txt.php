@@ -1,3 +1,9 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'fields' => [
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci la tua email',
@@ -224,6 +230,11 @@
                 'helper_text' => 'options.prefix',
                 'description' => 'options.prefix',
             ],
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
         'resetFilters' => [
             'label' => 'resetFilters',
             'tooltip' => '',
@@ -460,6 +471,11 @@
                 'description' => 'category.name',
                 'helper_text' => '',
             ],
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
         'test_date' => [
             'label' => 'test_date',
             'placeholder' => 'test_date',
@@ -648,10 +664,23 @@
             'label' => 'address',
             'heading' => 'address',
         ],
+    ],
+    'label' => 'Txt',
+    'plural_label' => 'Txt (Plurale)',
+    'navigation' => [
+        'name' => 'Txt',
+        'plural' => 'Txt',
         'group' => [
             'name' => 'General',
             'description' => 'General Settings',
         ],
+        'label' => 'Txt',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'steps' => [
         'test' => [
             'label' => 'test',
         ],
+    ],
+];
