@@ -1,6 +1,18 @@
+---
+title: "Correzioni Pattern '.navigation' - Gennaio 2025"
+module: "Lang"
+type: pattern
+tags: [guida, migrazione, step, by]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "guida migrazione step by step"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Correzioni Pattern ".navigation" - Gennaio 2025
 
 ## Data Intervento
+**2025-01-22** - Sistemazione traduzioni secondo regole DRY + KISS
 **2025-01-22** - Sistemazione traduzioni secondo regole DRY + KISS
 **[DATE]** - Sistemazione traduzioni secondo regole DRY + KISS
 
@@ -241,6 +253,8 @@ Ogni sezione `navigation` deve includere:
 - [NavigationLabelTrait Explained](../../Xot/docs/filament/navigation-label-trait-explained.md)
 - [Best Practices Traduzioni](../../xot/docs/translation-standards.md)
 - [NavigationLabelTrait Explained](../../xot/docs/filament/navigation-label-trait-explained.md)
+- [Best Practices Traduzioni](../../xot/docs/translation-standards.md)
+- [NavigationLabelTrait Explained](../../xot/docs/filament/navigation-label-trait-explained.md)
 
 ## Note Tecniche
 
@@ -250,6 +264,15 @@ Ogni sezione `navigation` deve includere:
 - Icone scelte per semantica appropriata
 - Gruppi organizzati per dominio logico
 
+*Intervento completato il: 2025-01-22*
+*Intervento completato il: [DATE]*
+*Conforme alle regole DRY + KISS*
+*Intervento completato il: [DATE]*
+*Conforme alle regole DRY + KISS*
+*Intervento completato il: [DATE]*
+*Conforme alle regole DRY + KISS*
+*Intervento completato il: [DATE]*
+*Conforme alle regole DRY + KISS*
 *Intervento completato il: 2025-01-22*
 *Intervento completato il: [DATE]*
 *Conforme alle regole DRY + KISS*
