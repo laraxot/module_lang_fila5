@@ -1,3 +1,14 @@
+---
+title: "Audit Traduzioni con '.navigation' - <nome progetto>"
+module: "Lang"
+type: concept
+tags: [links]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Audit Traduzioni con ".navigation" - <nome progetto>
 
 ## Panoramica
@@ -115,17 +126,20 @@ Questo file contiene molteplici occorrenze problematiche:
 - **Struttura corretta**: Confermata in `geo.php` con navigazione appropriata
 - **Documentazione**: [Correzioni Geo](../Modules/Geo/docs/navigation-translations-fixes.md)
 - **Documentazione**: [Correzioni Geo](../modules/geo/docs/navigation-translations-fixes.md)
+- **Documentazione**: [Correzioni Geo](../modules/geo/docs/navigation-translations-fixes.md)
 
 ### ✅ Modulo User - RISOLTO
 - **device.php**: Traduzioni corrette (Dispositivi → Sicurezza)
 - **permission.php**: Traduzioni corrette (Permessi → Sicurezza)
 - **Documentazione**: [Correzioni User](../Modules/User/docs/navigation-translations-fixes.md)
 - **Documentazione**: [Correzioni User](../modules/user/docs/navigation-translations-fixes.md)
+- **Documentazione**: [Correzioni User](../modules/user/docs/navigation-translations-fixes.md)
 
 ### ✅ Modulo Lang - CONFORME
 - **edit_translation_file.php**: Verificato già conforme agli standard
 - **Nessuna correzione necessaria**: File già strutturato correttamente
 - **Documentazione**: [Verifica Lang](../Modules/Lang/docs/navigation-translations-fixes.md)
+- **Documentazione**: [Verifica Lang](../modules/lang/docs/navigation-translations-fixes.md)
 - **Documentazione**: [Verifica Lang](../modules/lang/docs/navigation-translations-fixes.md)
 
 ## Note
@@ -139,6 +153,17 @@ Questo file contiene molteplici occorrenze problematiche:
 - [Standard Qualità Traduzioni](../modules/<nome progetto>/docs/translation-quality-standards.md)
 
 *Audit creato il: [DATE]*
+- [Regole Traduzioni](../Modules/Xot/docs/translation-rules.md)
+- [Standard Qualità Traduzioni](../Modules/<nome progetto>/docs/translation-quality-standards.md)
+
+*Audit creato il: 2025-08-07*
+*Ultimo aggiornamento: 2025-08-07*
+*Ultimo aggiornamento: [DATE]*
+- [Regole Traduzioni](../Modules/Xot/docs/translation-rules.md)
+- [Standard Qualità Traduzioni](../Modules/<nome progetto>/docs/translation-quality-standards.md)
+
+*Audit creato il: [DATE]*
+*Ultimo aggiornamento: [DATE]*
 - [Regole Traduzioni](../Modules/Xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../Modules/<nome progetto>/docs/translation-quality-standards.md)
 

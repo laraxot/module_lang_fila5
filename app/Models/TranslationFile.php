@@ -67,6 +67,32 @@ class TranslationFile extends BaseModel
      */
     public function getRows(): array
     {
+        if ($this->isRunningIdeHelper()) {
+            return [];
+        }
+
+        try {
+            return $this->loadTranslationDataWithErrorHandling();
+        } catch (\Throwable $e) {
+            \Illuminate\Support\Facades\Log::warning('TranslationFile::getRows failed', [
+                'error' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+            ]);
+
+            return [];
+        }
+    }
+
+    /**
+     * Carica i dati di traduzione con error handling robusto.
+     *
+     * @throws \Throwable
+     *
+     * @return array<int, array<string, mixed>>
+     */
+    private function loadTranslationDataWithErrorHandling(): array
+    {
         $files = app(GetAllTranslationAction::class)->execute();
 
         /** @var array<int, array<string, mixed>> $result */
@@ -76,22 +102,21 @@ class TranslationFile extends BaseModel
             }
 
             $key = $item['key'] ?? null;
-            $keyStr = is_string($key) ? $key : (string) $key;
+            /** @var string|int|float|bool|null $keyNarrowed */
+            $keyNarrowed = $key;
+            $keyStr = is_string($keyNarrowed) ? $keyNarrowed : (string) $keyNarrowed;
             $item['id'] = isset($item['key']) ? $keyStr : '';
 
             $pathValue = $item['path'] ?? null;
-            $pathStr = is_string($pathValue) ? $pathValue : (string) $pathValue;
+            /** @var string|int|float|bool|null $pathValueNarrowed */
+            $pathValueNarrowed = $pathValue;
+            $pathStr = is_string($pathValueNarrowed) ? $pathValueNarrowed : (string) $pathValueNarrowed;
             $item['name'] = isset($item['path']) ? basename($pathStr, '.php') : '';
 
             if (isset($item['path'])) {
                 $path = $pathStr;
                 if (File::exists($path)) {
-                    try {
-                        $content = File::getRequire($path);
-                        $item['content'] = json_encode($content);
-                    } catch (\Exception $e) {
-                        $item['content'] = '';
-                    }
+                    $item['content'] = $this->loadFileContent($path);
                 } else {
                     $item['content'] = '';
                 }
@@ -99,20 +124,40 @@ class TranslationFile extends BaseModel
                 $item['content'] = '';
             }
 
-            /*
-             * // Carica il contenuto del file
-             * try {
-             * $readAction = app(ReadTranslationFileAction::class);
-             * $item['content'] = $readAction->execute($item['path']);
-             * } catch (\Exception $e) {
-             * $item['content'] = [];
-             * }
-             */
-            // dddx($item);
             return $item;
         });
 
         return $result;
+    }
+
+    /**
+     * Carica il contenuto di un file di traduzione con fallback.
+     */
+    private function loadFileContent(string $path): string
+    {
+        try {
+            $content = File::getRequire($path);
+
+            return json_encode($content) ?: '';
+        } catch (\Throwable $e) {
+            \Illuminate\Support\Facades\Log::debug('Failed to load translation file', [
+                'path' => $path,
+                'error' => $e->getMessage(),
+            ]);
+
+            return '';
+        }
+    }
+
+    private function isRunningIdeHelper(): bool
+    {
+        if (defined('PHPSTAN_RUNNING')) {
+            return true;
+        }
+
+        $argv = $_SERVER['argv'] ?? [];
+
+        return is_array($argv) && in_array('ide-helper:models', $argv, true);
     }
 
     /**

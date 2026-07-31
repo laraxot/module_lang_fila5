@@ -1,3 +1,14 @@
+---
+title: "Task: Ridurre Suppressioni PHPStan Inline - Lang"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Task: Ridurre Suppressioni PHPStan Inline - Lang
 
 **Modulo**: Lang

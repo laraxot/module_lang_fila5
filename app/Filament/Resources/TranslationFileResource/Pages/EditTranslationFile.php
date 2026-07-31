@@ -43,8 +43,7 @@ class EditTranslationFile extends XotBaseEditRecord
     }
 
     /**
-     * @param array<string, mixed> $array
-     *
+     * @param  array<string, mixed>  $array
      * @return array<int, Section|TextInput>
      */
     public function makeFromArray(array $array, string $prefix = ''): array
@@ -53,7 +52,7 @@ class EditTranslationFile extends XotBaseEditRecord
 
         foreach ($array as $key => $value) {
             $keyStr = (string) $key;
-            $fullKey = '' === $prefix ? $keyStr : ($prefix.'.'.$keyStr);
+            $fullKey = $prefix === '' ? $keyStr : ($prefix.'.'.$keyStr);
 
             if (is_array($value)) {
                 /** @var array<string, mixed> $childArray */
@@ -108,10 +107,12 @@ class EditTranslationFile extends XotBaseEditRecord
          */
         $record = $this->record;
         if (is_object($record) && isset($record->key)) {
-            $key = is_string($record->key) ? $record->key : (string) $record->key;
-            /** @var array<string, mixed>|Htmlable|int|string|null $content */
-            $content = $data['content'] ?? null;
-            app(SaveTransAction::class)->execute($key, $content);
+            /** @var string|int|float|bool|null $recordKeyNarrowed */
+            $recordKeyNarrowed = $record->key;
+            $key = is_string($recordKeyNarrowed) ? $recordKeyNarrowed : (string) $recordKeyNarrowed;
+            /** @var array<string, mixed>|string|int|Htmlable|null $contentNarrowed */
+            $contentNarrowed = $data['content'] ?? null;
+            app(SaveTransAction::class)->execute($key, $contentNarrowed);
         }
 
         // dddx(['record'=>$this->record,'data'=>$data]);

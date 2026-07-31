@@ -1,3 +1,14 @@
+---
+title: "Testing Rules Summary"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test
@@ -464,4 +475,9 @@ Remember: Good tests are the foundation of reliable software development.
 
 ---
 
+*Last updated: January 2025*
+*
+*
+*
+*
 *Last updated: January 2025*

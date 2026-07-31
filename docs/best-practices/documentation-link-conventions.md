@@ -1,3 +1,14 @@
+---
+title: "Convenzioni per i Link nella Documentazione"
+module: "Lang"
+type: concept
+tags: [links01]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links01"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Convenzioni per i Link nella Documentazione
 
 ## Regole Fondamentali per i Link Markdown
@@ -9,7 +20,7 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 ✅ **CORRETTO**:
 ```markdown
 [Regole Generali](../../Xot/docs/translations.md)
-[Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
+[Best Practices](translation_keys_best_practices.md)
 [Regole Generali](../../xot/docs/translations.md)
 [Best Practices](../translation_keys_best_practices.md)
 ```
