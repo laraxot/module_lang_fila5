@@ -1,10 +1,6 @@
 {
     "name": "Lang",
-<<<<<<< HEAD
     "alias": "Lang",
-=======
-    "alias": "lang",
->>>>>>> laraxot/dev
     "description": "label language",
     "keywords": [],
     "active": 1,
