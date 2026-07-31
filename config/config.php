@@ -5,7 +5,11 @@ declare(strict_types=1);
 return [
     'name' => 'Lang',
     'description' => 'Modulo per la gestione delle traduzioni e localizzazioni',
+<<<<<<< HEAD
     'icon' => 'heroicon-o-language',
+=======
+    'icon' => 'lang-icon',
+>>>>>>> laraxot/dev
     'navigation' => [
         'enabled' => true,
         'sort' => 50,
