@@ -4,6 +4,7 @@ type: report
 tags: [code-quality, phpstan, pest, maintainability]
 module: "Lang"
 created: 2026-07-17
+<<<<<<< HEAD
 updated: 2026-07-17
 qmd: "code quality baseline PHPStan Pest strict types Laraxot Lang"
 story: STORY-001
@@ -13,12 +14,37 @@ discussions:
   - "https://github.com/laraxot/base_workorder_fila5/discussions/47"
 related:
   - "../../../../docs/stories/STORY-001-code-quality-moduli-temi.md"
+=======
+updated: 2026-07-27
+qmd: "code quality baseline PHPStan Pest strict types Laraxot Lang git remote"
+story: STORY-001
+# GRAVE: issue/discussion del modulo — mai base_techplanner / base_workorder / mono.
+# Resolve: cd laravel/Modules/Lang && git remote -v → laraxot/module_lang_fila5
+issues: []
+discussions: []
+related:
+  - "../../../../docs/stories/STORY-001-code-quality-moduli-temi.md"
+  - "../../../../docs/wiki/memories/module-github-remote-discipline.md"
+>>>>>>> laraxot/dev
 ---
 
 # Code Quality Improvement Report — Lang
 
 > Baseline statica riproducibile per orientare il miglioramento. I conteggi sono segnali, non sostituiscono PHPStan, Pest o la review del flusso reale.
 
+<<<<<<< HEAD
+=======
+
+## GitHub (repo del componente)
+
+```bash
+cd laravel/Modules/Lang && git remote -v
+# atteso: laraxot/module_lang_fila5
+```
+
+**Lezione grave:** in un conflitto Git, *entrambe* le parti possono essere sbagliate (`base_techplanner_*` vs `base_workorder_*`). Non scegliere a caso: `git remote -v` nella cartella del modulo/tema.
+
+>>>>>>> laraxot/dev
 ## Baseline
 
 | Indicatore | Valore |
@@ -73,7 +99,11 @@ Rilevazione del 17 luglio 2026 sul working tree locale; esclusi vendor e dipende
 2. **app/Filament/Widgets/LanguageSwitcherWidget.php:57:        // TODO: Implementare modello Language se necessario — debito eseguibile.** Verificare il caller e scegliere una sola uscita: implementare il comportamento con un test che fallisce prima della patch, oppure eliminare ramo e marker se non raggiungibili. Non lasciare il TODO come documentazione.
 
 
+<<<<<<< HEAD
 - [ ] PHPStan L10 scoped senza errori non giustificati.
+=======
+- [x] PHPStan L10 scoped senza errori non giustificati. (Modules 2026-07-27)
+>>>>>>> laraxot/dev
 - [ ] Pest scoped verde sui flussi critici.
 - [ ] Nessuna nuova estensione Filament diretta o controller FO.
 - [ ] Nessuna nuova business logic in Services/Support.
@@ -82,6 +112,14 @@ Rilevazione del 17 luglio 2026 sul working tree locale; esclusi vendor e dipende
 
 ## Criteri di uscita
 
+<<<<<<< HEAD
+=======
+## Gate PHPStan (2026-07-27)
+
+- `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` → **0 errori**.
+- Themes: solo insieme a Modules — [phpstan-stale-ignore-pattern](../../../../docs/wiki/troubleshooting/phpstan-stale-ignore-pattern.md).
+
+>>>>>>> laraxot/dev
 ## Verifica
 
 Dalla cartella laravel/:
