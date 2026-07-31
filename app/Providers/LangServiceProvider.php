@@ -16,7 +16,7 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Filters\BaseFilter;
 use Illuminate\Container\Container;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
-use Modules\Lang\Services\TranslatorService;
+use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Webmozart\Assert\Assert;
 
@@ -79,9 +79,7 @@ class LangServiceProvider extends XotBaseServiceProvider
         });
 
         Entry::configureUsing(function (Entry $component) {
-            $component = app(AutoLabelAction::class)->execute($component, 'label');
-
-            return $component;
+            return app(AutoLabelAction::class)->execute($component, 'label');
         });
 
         Section::configureUsing(function (Section $component) {
@@ -149,7 +147,7 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     public function registerTranslator(): void
     {
-        $this->app->singleton('translator', function (Container $app): TranslatorService {
+        $this->app->singleton('translator', function (Container $app): TranslatorAdapter {
             $loader = $app['translation.loader'];
 
             // When registering the translator component, we'll need to set the default
@@ -158,7 +156,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             Assert::string($locale = $app['config']['app.locale'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
             Assert::string($fallback_locale = $app['config']['app.fallback_locale'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
-            $translatorService = new TranslatorService($loader, $locale);
+            $translatorService = new TranslatorAdapter($loader, $locale);
 
             $translatorService->setFallback($fallback_locale);
 
