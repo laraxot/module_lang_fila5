@@ -19,109 +19,12 @@ use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
-/**
- * Modules\Lang\Models\Post.
- *
- * @property string $id
- * @property int|null $user_id
- * @property string|null $post_type
- * @property int|null $post_id
- * @property string|null $lang
- * @property string|null $title
- * @property string|null $subtitle
- * @property string|null $guid
- * @property string|null $txt
- * @property string|null $image_src
- * @property string|null $image_alt
- * @property string|null $image_title
- * @property string|null $meta_description
- * @property string|null $meta_keywords
- * @property int|null $author_id
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property int|null $category_id
- * @property string|null $image
- * @property string|null $content
- * @property int|null $published
- * @property string|null $created_by
- * @property string|null $updated_by
- * @property string|null $url
- * @property array<array-key, mixed>|null $url_lang
- * @property array<array-key, mixed>|null $image_resize_src
- * @property string|null $linked_count
- * @property string|null $related_count
- * @property string|null $relatedrev_count
- * @property string|null $linkable_type
- * @property int|null $views_count
- * @property ProfileContract|null $creator
- * @property Model|null $linkable
- * @property ProfileContract|null $updater
- *
- * @method static Builder<static>|Post newModelQuery()
- * @method static Builder<static>|Post newQuery()
- * @method static Builder<static>|Post query()
- * @method static Builder<static>|Post whereAuthorId($value)
- * @method static Builder<static>|Post whereCategoryId($value)
- * @method static Builder<static>|Post whereContent($value)
- * @method static Builder<static>|Post whereCreatedAt($value)
- * @method static Builder<static>|Post whereCreatedBy($value)
- * @method static Builder<static>|Post whereGuid($value)
- * @method static Builder<static>|Post whereId($value)
- * @method static Builder<static>|Post whereImage($value)
- * @method static Builder<static>|Post whereImageAlt($value)
- * @method static Builder<static>|Post whereImageResizeSrc($value)
- * @method static Builder<static>|Post whereImageSrc($value)
- * @method static Builder<static>|Post whereImageTitle($value)
- * @method static Builder<static>|Post whereLang($value)
- * @method static Builder<static>|Post whereLinkableType($value)
- * @method static Builder<static>|Post whereLinkedCount($value)
- * @method static Builder<static>|Post whereMetaDescription($value)
- * @method static Builder<static>|Post whereMetaKeywords($value)
- * @method static Builder<static>|Post wherePostId($value)
- * @method static Builder<static>|Post wherePostType($value)
- * @method static Builder<static>|Post wherePublished($value)
- * @method static Builder<static>|Post whereRelatedCount($value)
- * @method static Builder<static>|Post whereRelatedrevCount($value)
- * @method static Builder<static>|Post whereSubtitle($value)
- * @method static Builder<static>|Post whereTitle($value)
- * @method static Builder<static>|Post whereTxt($value)
- * @method static Builder<static>|Post whereUpdatedAt($value)
- * @method static Builder<static>|Post whereUpdatedBy($value)
- * @method static Builder<static>|Post whereUrl($value)
- * @method static Builder<static>|Post whereUrlLang($value)
- * @method static Builder<static>|Post whereUserId($value)
- * @method static Builder<static>|Post whereViewsCount($value)
- *
- * @property ProfileContract|null $deleter
- *
- * @method static PostFactory factory($count = null, $state = [])
- *
- * @mixin Model
- *
- * @property string|null $excerpt
- * @property string|null $slug
- * @property string|null $status
- * @property Carbon|null $published_at
- * @property string|null $locale
- * @property string|null $category
- * @property string|null $meta_title
- *
- * @method static Builder<static>|Post whereCategory($value)
- * @method static Builder<static>|Post whereExcerpt($value)
- * @method static Builder<static>|Post whereLocale($value)
- * @method static Builder<static>|Post whereMetaTitle($value)
- * @method static Builder<static>|Post wherePublishedAt($value)
- * @method static Builder<static>|Post whereSlug($value)
- * @method static Builder<static>|Post whereStatus($value)
- *
- * @mixin \Eloquent
- */
 class Post extends BaseModel
 {
-    use HasSlug;
-
-    /** @phpstan-use HasXotFactory<PostFactory, Post> */
-    use HasXotFactory;
+    use HasSlug;/**
+ * @phpstan-use HasXotFactory<\Modules\Lang\Database\Factories\PostFactory, Post>
+ */
+use HasXotFactory;
 
     // use Cachable;
     use Updater;
@@ -134,13 +37,6 @@ class Post extends BaseModel
 
     final public const SEARCHABLE_FIELDS = ['title', 'guid', 'txt'];
 
-    /**
-     * Indicates whether attributes are snake cased on arrays.
-     *
-     * @see  https://laravel-news.com/6-eloquent-secrets
-     *
-     * @var bool
-     */
     public static $snakeAttributes = true;
 
     /** @var bool */
@@ -200,9 +96,6 @@ class Post extends BaseModel
      * }
      */
 
-    /**
-     * Get the options for generating the slug.
-     */
     public function getSlugOptions(): SlugOptions
     {
         return SlugOptions::create()->generateSlugsFrom('title')->saveSlugsTo('guid');
@@ -210,9 +103,6 @@ class Post extends BaseModel
 
     // -------- relationship ------
 
-    /**
-     * @return MorphTo<Model, $this>
-     */
     public function linkable(): MorphTo
     {
         return $this->morphTo('post');
@@ -246,9 +136,6 @@ class Post extends BaseModel
         $this->attributes['guid'] = Str::slug($value);
     }
 
-    /**
-     * Undocumented function.
-     */
     public function getTitleAttribute(?string $value): ?string
     {
         if ($value !== null) {
@@ -282,9 +169,6 @@ class Post extends BaseModel
         return $value;
     }
 
-    /**
-     * ---.
-     */
     public function getGuidAttribute(?string $value): ?string
     {
         if (\is_string($value) && $value !== '' && ! str_contains($value, ' ')) {
@@ -321,29 +205,8 @@ class Post extends BaseModel
         return $value ?? '';
     }
 
-    /**
-     * @return array<string, mixed>
-     */
     public function toSearchableArray(): array
     {
         return $this->only(self::SEARCHABLE_FIELDS);
     }
-
-    /**
-     * @return array<string, string> */
-    protected function casts(): array
-    {
-        return [
-            'id' => 'string',
-            'uuid' => 'string',
-            'image_resize_src' => 'array',
-            'url_lang' => 'array',
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-            'published_at' => 'datetime',
-        ];
-    }
 }
-
-// end class
