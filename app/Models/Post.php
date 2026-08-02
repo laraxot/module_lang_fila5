@@ -120,7 +120,6 @@ class Post extends BaseModel
 {
     use HasSlug;
 
-    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     // use Cachable;
