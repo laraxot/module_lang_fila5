@@ -22,7 +22,7 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/Lang
 - `tests/Pest.php` minimal (no `pest()->extend`)
 - `TestCase::assertDatabaseHasRow()` per DB in Pest
 - Tooling: `laravel/scripts/phpstan/fix-pest-tests.php`
-- Issue [#332](https://github.com/laraxot/base_fixcity_fila5/issues/332) · base D[#333](https://github.com/laraxot/base_fixcity_fila5/discussions/333)
+- Issue [#332](https://github.com/laraxot/platform/issues/332) · base D[#333](https://github.com/laraxot/platform/discussions/333)
 
 ---
 
@@ -44,7 +44,7 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/Lang
 - `tests/Pest.php` minimal (no `pest()->extend`)
 - `TestCase::assertDatabaseHasRow()` per DB in Pest
 - Tooling: `laravel/scripts/phpstan/fix-pest-tests.php`
-- Issue [#332](https://github.com/laraxot/base_fixcity_fila5/issues/332) · base D[#333](https://github.com/laraxot/base_fixcity_fila5/discussions/333)
+- Issue [#332](https://github.com/laraxot/platform/issues/332) · base D[#333](https://github.com/laraxot/platform/discussions/333)
 
 ---
 
