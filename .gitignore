@@ -148,3 +148,7 @@ docs/archive
 docs/legacy
 /.ai*
 /_bmad
+/bashscripts
+/_docs
+/docs/archive
+/docs/legacy
