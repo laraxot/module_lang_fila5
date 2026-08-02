@@ -31,7 +31,7 @@ abstract class TestCase extends XotBaseTestCase
     {
         parent::setUp();
 
-        $database = database_path('fixcity_data.sqlite');
+        $database = database_path('database.sqlite');
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
