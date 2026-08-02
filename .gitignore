@@ -145,3 +145,4 @@ yarn.lock
 # Root quality tool configs forbidden in module root
 phpmd*
 docs/archive
+docs/legacy
