@@ -4,27 +4,32 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Models;
 
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 // --- traits ---
 use Modules\Lang\Database\Factories\PostFactory;
 // use Laravel\Scout\Searchable;
-use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
+/**
+ * @property string $id
+ * @property string|null $post_type
+ * @property string|int|null $post_id
+ * @property string $lang
+ * @property string $guid
+ * @property string|null $title
+ * @property string|null $subtitle
+ */
 class Post extends BaseModel
 {
-    use HasSlug;/**
- * @phpstan-use HasXotFactory<\Modules\Lang\Database\Factories\PostFactory, Post>
- */
-use HasXotFactory;
+    use HasSlug;
+
+    /** @phpstan-use HasXotFactory<PostFactory, Post> */
+    use HasXotFactory;
 
     // use Cachable;
     use Updater;
@@ -103,6 +108,9 @@ use HasXotFactory;
 
     // -------- relationship ------
 
+    /**
+     * @return MorphTo<Model, $this>
+     */
     public function linkable(): MorphTo
     {
         return $this->morphTo('post');
@@ -205,6 +213,9 @@ use HasXotFactory;
         return $value ?? '';
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function toSearchableArray(): array
     {
         return $this->only(self::SEARCHABLE_FIELDS);
