@@ -28,7 +28,11 @@ class Post extends BaseModel
 {
     use HasSlug;
 
+<<<<<<< HEAD
     /** @phpstan-use HasXotFactory<PostFactory> */
+=======
+    /** @phpstan-use HasXotFactory<PostFactory, Post> */
+>>>>>>> laraxot/dev
     use HasXotFactory;
 
     // use Cachable;
