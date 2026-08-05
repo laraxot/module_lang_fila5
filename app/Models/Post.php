@@ -16,13 +16,13 @@ use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
 /**
- * @property string $id
- * @property string|null $post_type
+ * @property string          $id
+ * @property string|null     $post_type
  * @property string|int|null $post_id
- * @property string $lang
- * @property string $guid
- * @property string|null $title
- * @property string|null $subtitle
+ * @property string          $lang
+ * @property string          $guid
+ * @property string|null     $title
+ * @property string|null     $subtitle
  */
 class Post extends BaseModel
 {
@@ -146,11 +146,11 @@ class Post extends BaseModel
 
     public function getTitleAttribute(?string $value): ?string
     {
-        if ($value !== null) {
+        if (null !== $value) {
             return $value;
         }
 
-        if (isset($this->attributes['post_type']) && $this->attributes['post_type'] !== '' && $this->attributes['post_type'] !== '0') {
+        if (isset($this->attributes['post_type']) && '' !== $this->attributes['post_type'] && '0' !== $this->attributes['post_type']) {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
@@ -168,7 +168,7 @@ class Post extends BaseModel
 
         $this->title = $value;
 
-        if ($this->getKey() !== null) {
+        if (null !== $this->getKey()) {
             $this->update([
                 'title' => $value,
             ]);
@@ -179,11 +179,11 @@ class Post extends BaseModel
 
     public function getGuidAttribute(?string $value): ?string
     {
-        if (\is_string($value) && $value !== '' && ! str_contains($value, ' ')) {
+        if (\is_string($value) && '' !== $value && ! str_contains($value, ' ')) {
             return $value;
         }
         $value = $this->title;
-        if ($value === '') {
+        if ('' === $value) {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
@@ -193,13 +193,13 @@ class Post extends BaseModel
                 : '';
             $value = $postType.' '.$postId;
         }
-        if ($value === null) {
+        if (null === $value) {
             $value = 'u-'.random_int(1, 1000);
         }
         $value = Str::slug($value);
         $this->guid = $value;
 
-        if ($this->getKey() !== null) {
+        if (null !== $this->getKey()) {
             $this->update([
                 'guid' => $value,
             ]);
