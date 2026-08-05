@@ -14,11 +14,7 @@ class TranslationFileForm extends XotBaseResourceForm
     /**
      * @return array<string, Component>
      */
-<<<<<<< HEAD
     public static function getFormSchema(): array
-=======
-    public static function getFormSchemaOld(): array
->>>>>>> laraxot/dev
     {
         return [
             'name' => Section::make([
