@@ -75,7 +75,7 @@ related:
 
 ## 📚 Documentación
 
-- [Índice del Proyecto](../INDEX.md)
+- [Índice del Proyecto](../index.md)
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panorama de los Módulos](../MODULES.md)
 - [Arquitectura](architecture.md)
