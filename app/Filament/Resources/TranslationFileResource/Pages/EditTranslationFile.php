@@ -25,7 +25,7 @@ class EditTranslationFile extends XotBaseEditRecord
     }
 
     #[\Override]
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [
             Section::make('content')->schema(function ($record): array {
