@@ -1,4 +1,4 @@
-# Standard per le Traduzioni nel Progetto <nome progetto>
+# Standard per le Traduzioni
 
 ## Struttura delle Cartelle
 
@@ -164,12 +164,8 @@ return [
 - Serenità zen: codice e traduzioni sempre coerenti
 
 ### Collegamenti
-- [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md)
-<<<<<<< HEAD
+- `docs/appointment-management.md` nel modulo applicativo che implementa la gestione appuntamenti
 - [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
-=======
-- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
->>>>>>> laraxot/dev
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
