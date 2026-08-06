@@ -13,12 +13,8 @@ uses(TestCase::class);
 
 describe('BaseMorphPivot Model', function () {
     test('extends MorphPivot', function () {
-<<<<<<< HEAD
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> laraxot/dev
             protected $table = 'test';
         };
 
@@ -26,12 +22,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has correct connection', function () {
-<<<<<<< HEAD
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> laraxot/dev
             protected $table = 'test';
         };
 
@@ -43,12 +35,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has timestamps enabled', function () {
-<<<<<<< HEAD
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> laraxot/dev
             protected $table = 'test';
         };
 
@@ -56,12 +44,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has incrementing enabled', function () {
-<<<<<<< HEAD
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> laraxot/dev
             protected $table = 'test';
         };
 
@@ -69,12 +53,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has default perPage', function () {
-<<<<<<< HEAD
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> laraxot/dev
             protected $table = 'test';
         };
 
@@ -82,12 +62,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has correct fillable attributes', function () {
-<<<<<<< HEAD
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> laraxot/dev
             protected $table = 'test';
         };
         $fillable = $model->getFillable();
@@ -101,12 +77,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('casts id as string', function () {
-<<<<<<< HEAD
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> laraxot/dev
             protected $table = 'test';
         };
 
@@ -115,12 +87,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('casts datetime fields', function () {
-<<<<<<< HEAD
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> laraxot/dev
             protected $table = 'test';
         };
 
