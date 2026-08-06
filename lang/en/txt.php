@@ -8,11 +8,7 @@ return [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'tooltip' => 'Use a valid email address',
-<<<<<<< HEAD
             'icon' => 'heroicon-o-envelope',
-=======
-            'icon' => 'heroicon-o-mail',
->>>>>>> laraxot/dev
             'description' => 'email',
             'helper_text' => '',
         ],
