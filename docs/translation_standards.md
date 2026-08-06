@@ -176,7 +176,15 @@ return [
 
 ### Collegamenti
 - [<nome progetto>corrente/docs/appointment-management.md<nome progetto>rogetto corrente/docs/appointment-management.md)
+<<<<<<< HEAD
 - [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
+=======
+<<<<<<< HEAD
+- [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
+=======
+- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
