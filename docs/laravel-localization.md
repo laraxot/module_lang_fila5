@@ -111,7 +111,15 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
   ],
   ```
 - Consulta anche:
+<<<<<<< HEAD
   - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
+=======
+<<<<<<< HEAD
+  - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
+=======
+  - [translation_keys_best_practices.md](../translation_keys_best_practices.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [filament-translations.md](../filament-translations.md)
   - [docs <nome progetto>](../../../<nome progetto>/docs/translations.md)

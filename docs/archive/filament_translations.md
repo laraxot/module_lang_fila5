@@ -2,7 +2,11 @@
 
 > **Regola fondamentale:** MAI utilizzare il metodo `->label()` nei componenti Filament, specialmente nei Blocks. Le etichette sono gestite automaticamente dal LangServiceProvider.
 
+<<<<<<< HEAD
 # Regola fondamentale: MAI usare chiavi che terminano con `.navigation` nei file di traduzione
+=======
+# ⚠️ Regola fondamentale: MAI usare chiavi che terminano con `.navigation` nei file di traduzione
+>>>>>>> laraxot/dev
 
 - Usa sempre la struttura array per navigation:
   ```php
@@ -19,9 +23,19 @@
   'label' => 'patient.navigation',
   ```
 - Consulta anche:
+<<<<<<< HEAD
   - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
   - [translation-keys-rules.md](../translation-keys-rules.md)
   - [Traduzioni del modulo](../translations.md)
+=======
+<<<<<<< HEAD
+  - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
+=======
+  - [translation_keys_best_practices.md](../translation_keys_best_practices.md)
+>>>>>>> laraxot/dev
+  - [translation_keys_rules.md](../translation_keys_rules.md)
+  - [docs <nome progetto>](../../<nome progetto>/docs/translations.md)
+>>>>>>> laraxot/dev
 
 ## Struttura Corretta per le Traduzioni
 
@@ -63,7 +77,11 @@ $component = app(AutoLabelAction::class)->execute($component);
 
 ## Esempi Corretti e Incorretti
 
+<<<<<<< HEAD
 ### ERRATO
+=======
+### ❌ ERRATO
+>>>>>>> laraxot/dev
 ```php
 // NON fare questo
 TextInput::make('title')
@@ -71,7 +89,11 @@ TextInput::make('title')
     ->required();
 ```
 
+<<<<<<< HEAD
 ### CORRETTO
+=======
+### ✅ CORRETTO
+>>>>>>> laraxot/dev
 ```php
 // Fai questo
 TextInput::make('title')
@@ -97,11 +119,19 @@ TextInput::make('title')
 ### Link Bidirezionale
 Questo documento è linkato anche dalla documentazione del modulo Cms per garantire coerenza tra i moduli.
 
+<<<<<<< HEAD
 # Regola vincolante: MAI usare ->label() nei componenti Filament
 
 - Tutte le label sono gestite tramite i file di traduzione del modulo.
 - Consulta anche:
   - [docs del modulo](../README.md)
+=======
+# ⚠️ Regola vincolante: MAI usare ->label() nei componenti Filament
+
+- Tutte le label sono gestite tramite i file di traduzione del modulo.
+- Consulta anche:
+  - [docs <nome progetto>](../../<nome progetto>/docs/README.md)
+>>>>>>> laraxot/dev
   - [docs Xot](../../Xot/docs/README.md)
 
 ## Policy DRY sulle Traduzioni di Disponibilità/Appuntamenti

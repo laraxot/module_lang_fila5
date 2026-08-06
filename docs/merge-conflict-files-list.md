@@ -43,9 +43,23 @@ This file contains a comprehensive list of files with merge conflict markers (`<
 
 ### Geo Module (5 files)
 - ./laravel/Modules/Geo/resources/js/components/coordinate-picker-styles.js
+<<<<<<< HEAD
 - ./laravel/Modules/Geo/docs/wiki/AGENTS.md
 - ./laravel/Modules/Geo/docs/wiki/index.md
 - ./laravel/Modules/Geo/docs/wiki/log.md
+=======
+<<<<<<< HEAD
+- ./laravel/Modules/Geo/docs/wiki/agents.md
+- ./laravel/Modules/Geo/docs/wiki/index.md
+- ./laravel/Modules/Geo/docs/wiki/log.md
+- ./laravel/Modules/Geo/docs/wiki/agents.md
+=======
+- ./laravel/Modules/Geo/docs/wiki/AGENTS.md
+- ./laravel/Modules/Geo/docs/wiki/index.md
+- ./laravel/Modules/Geo/docs/wiki/log.md
+- ./laravel/Modules/Geo/docs/wiki/AGENTS.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### progetto corrente Module (4 files)
 - ./laravel/Modules/Project/docs/wiki/index.md

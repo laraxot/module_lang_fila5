@@ -77,7 +77,15 @@ related:
 ## 🔗 **Moduli Correlati**
 - [Xot](../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
+<<<<<<< HEAD
 - [AGENTS.md](../../../../AGENTS.md) - Project guidelines
+=======
+<<<<<<< HEAD
+- [agents.md](../../../../agents.md) - Project guidelines
+=======
+- [AGENTS.md](../../../../AGENTS.md) - Project guidelines
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

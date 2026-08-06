@@ -16,6 +16,7 @@ use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
 /**
+<<<<<<< HEAD
  * Colonne allineate a `2026_01_21_211814_create_posts_table`.
  *
  * @property string                          $id
@@ -46,12 +47,25 @@ use Spatie\Sluggable\SlugOptions;
  * @property string|null                     $image_resize_src
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+=======
+ * @property string          $id
+ * @property string|null     $post_type
+ * @property string|int|null $post_id
+ * @property string          $lang
+ * @property string          $guid
+ * @property string|null     $title
+ * @property string|null     $subtitle
+>>>>>>> laraxot/dev
  */
 class Post extends BaseModel
 {
     use HasSlug;
 
+<<<<<<< HEAD
     /** @phpstan-use HasXotFactory<PostFactory> */
+=======
+    /** @phpstan-use HasXotFactory<PostFactory, Post> */
+>>>>>>> laraxot/dev
     use HasXotFactory;
 
     // use Cachable;
@@ -100,7 +114,10 @@ class Post extends BaseModel
         'image_alt',
         'image_title',
         // ------ SEO FIELDS -----
+<<<<<<< HEAD
         'meta_title',
+=======
+>>>>>>> laraxot/dev
         'meta_description',
         'meta_keywords', // seo
         'author_id',

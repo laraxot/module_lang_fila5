@@ -29,11 +29,25 @@ related:
 
 ## Indices
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 - [Rules](rules/index.md)
 - [Skills](skills/index.md)
 - [Commands](commands/index.md)
 - [Memories](memories/index.md)
 - [Concepts](concepts/index.md)
+<<<<<<< HEAD
+=======
+=======
+- [Rules](rules/INDEX.md)
+- [Skills](skills/INDEX.md)
+- [Commands](commands/INDEX.md)
+- [Memories](memories/INDEX.md)
+- [Concepts](concepts/INDEX.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## On-Demand Focus
 
