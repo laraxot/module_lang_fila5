@@ -79,7 +79,15 @@ related:
 - [Workflow PHPStan](../phpstan_workflow.md)
 - [Panoramica dei Moduli](../modules.md)
 - [Architettura](../architecture.md)
+<<<<<<< HEAD
 - [Indice del Progetto](../INDEX.md)
+=======
+<<<<<<< HEAD
+- [Indice del Progetto](../index.md)
+=======
+- [Indice del Progetto](../INDEX.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
 - [Architettura](architecture.md)
@@ -169,7 +177,15 @@ Questo progetto è open-source e disponibile sotto la [Licenza MIT](../../LICENS
 - [Workflow PHPStan](../phpstan_workflow.md)
 - [Panoramica dei Moduli](../modules.md)
 - [Architettura](../architecture.md)
+<<<<<<< HEAD
 - [Indice del Progetto](../INDEX.md)
+=======
+<<<<<<< HEAD
+- [Indice del Progetto](../index.md)
+=======
+- [Indice del Progetto](../INDEX.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
 - [Architettura](architecture.md)

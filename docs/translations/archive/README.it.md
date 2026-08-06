@@ -64,10 +64,23 @@
 
 ## 📚 Documentazione
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 - [Indice del Progetto](../index.md)
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
 - [Architettura](../architecture.md)
+<<<<<<< HEAD
+=======
+=======
+- [Indice del Progetto](../INDEX.md)
+- [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
+- [Panoramica dei Moduli](../MODULES.md)
+- [Architettura](../ARCHITECTURE.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 

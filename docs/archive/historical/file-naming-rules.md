@@ -1,13 +1,21 @@
 # Regole di Naming per File
 
+<<<<<<< HEAD
 ## Regola Fondamentale: NO Duplicati Case-Insensitive
+=======
+## 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive
+>>>>>>> laraxot/dev
 
 ### Problema
 
 Su filesystem case-insensitive (Windows, macOS default), file con nomi che differiscono solo per maiuscole/minuscole causano conflitti:
 
 ```
+<<<<<<< HEAD
 ERRATO - Duplicati case-insensitive:
+=======
+❌ ERRATO - Duplicati case-insensitive:
+>>>>>>> laraxot/dev
 - readme.md e README.md
 - Activity.php e activity.php
 - ListRecords.md e listrecords.md
@@ -17,12 +25,20 @@ ERRATO - Duplicati case-insensitive:
 
 **Mantenere SOLO la versione con naming corretto secondo le convenzioni:**
 
+<<<<<<< HEAD
 ## Convenzioni di Naming
+=======
+## 📋 Convenzioni di Naming
+>>>>>>> laraxot/dev
 
 ### File PHP
 
 ```
+<<<<<<< HEAD
 CORRETTO:
+=======
+✅ CORRETTO:
+>>>>>>> laraxot/dev
 - Models: PascalCase → Activity.php, User.php
 - Controllers: PascalCase → ActivityController.php
 - Tests: PascalCase → ActivityTest.php, ActivityTest.pest.php
@@ -33,10 +49,21 @@ CORRETTO:
 ### File Markdown
 
 ```
+<<<<<<< HEAD
 CORRETTO:
 - README.md (maiuscolo - convenzione universale)
 - ROADMAP.md (maiuscolo - convenzione universale)
 - CHANGELOG.md (maiuscolo - convenzione universale)
+=======
+✅ CORRETTO:
+- README.md (maiuscolo - convenzione universale)
+- ROADMAP.md (maiuscolo - convenzione universale)
+<<<<<<< HEAD
+- changelog.md (maiuscolo - convenzione universale)
+=======
+- CHANGELOG.md (maiuscolo - convenzione universale)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - LICENSE.md (maiuscolo - convenzione universale)
 - CONTRIBUTING.md (maiuscolo - convenzione universale)
 - SECURITY.md (maiuscolo - convenzione universale)
@@ -50,7 +77,11 @@ CORRETTO:
 ### File Blade
 
 ```
+<<<<<<< HEAD
 CORRETTO:
+=======
+✅ CORRETTO:
+>>>>>>> laraxot/dev
 - Views: kebab-case minuscolo
   → content-start.blade.php
   → wide-image.blade.php
@@ -60,14 +91,22 @@ CORRETTO:
 ### File Config
 
 ```
+<<<<<<< HEAD
 CORRETTO:
+=======
+✅ CORRETTO:
+>>>>>>> laraxot/dev
 - Config: kebab-case minuscolo
   → database.php
   → filesystems.php
   → app-config.php
 ```
 
+<<<<<<< HEAD
 ## Come Identificare Duplicati
+=======
+## 🔧 Come Identificare Duplicati
+>>>>>>> laraxot/dev
 
 ```bash
 # Script per trovare duplicati case-insensitive
@@ -78,7 +117,11 @@ find Modules -type f \( -name "*.php" -o -name "*.md" \) -exec bash -c '
 ' \; | grep -v "^$"
 ```
 
+<<<<<<< HEAD
 ## Quale File Eliminare
+=======
+## 🗑️ Quale File Eliminare
+>>>>>>> laraxot/dev
 
 ### Regola Generale
 
@@ -96,7 +139,11 @@ Se entrambi i file contengono contenuto diverso:
 2. Elimina il duplicato
 3. Committa con messaggio chiaro
 
+<<<<<<< HEAD
 ## Checklist Pre-Commit
+=======
+## ✅ Checklist Pre-Commit
+>>>>>>> laraxot/dev
 
 - [ ] Nessun file con nome duplicato case-insensitive
 - [ ] File PHP in PascalCase (tranne migrations)
@@ -105,14 +152,22 @@ Se entrambi i file contengono contenuto diverso:
 - [ ] File blade in kebab-case minuscolo
 - [ ] Nessun carattere speciale nei nomi file (solo a-z, 0-9, -, _)
 
+<<<<<<< HEAD
 ## Script di Pulizia
+=======
+## 🚀 Script di Pulizia
+>>>>>>> laraxot/dev
 
 ```bash
 # Rimuovi duplicati automaticamente (ATTENZIONE: verifica prima!)
 ./bashscripts/cleanup-duplicate-files.sh --dry-run
 ```
 
+<<<<<<< HEAD
 ## Riferimenti
+=======
+## 📚 Riferimenti
+>>>>>>> laraxot/dev
 
 - PSR-4: Autoloading Standard
 - Laravel Naming Conventions

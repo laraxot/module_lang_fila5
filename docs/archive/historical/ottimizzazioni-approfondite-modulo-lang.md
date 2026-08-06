@@ -160,7 +160,15 @@ if [ -d "_docs" ]; then
 fi
 
 # Eliminare file duplicati
+<<<<<<< HEAD
 rm -f CHANGELOG.md
+=======
+<<<<<<< HEAD
+rm -f changelog.md
+=======
+rm -f CHANGELOG.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### Fase 2: Standardizzazione Cartelle (Priorità ALTA)
@@ -283,11 +291,19 @@ php artisan test --testsuite=Lang
 
 ## 🔗 Collegamenti Sistema
 
+<<<<<<< HEAD
 - [**Documentazione Core Sistema**](../../../docs/core/)
 - [**PHPStan Guide**](../../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../../docs/core/conventions.md)
 - [**Template Moduli**](../../../docs/templates/)
+=======
+- [**Documentazione Core Sistema**](../../docs/core/)
+- [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
+- [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
+- [**Convenzioni Sistema**](../../docs/core/conventions.md)
+- [**Template Moduli**](../../docs/templates/)
+>>>>>>> laraxot/dev
 
 ---
 
