@@ -30,11 +30,7 @@ related:
   'label' => 'patient.navigation',
   ```
 - Consulta anche:
-<<<<<<< HEAD
   - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
-=======
-  - [translation_keys_best_practices.md](../translation_keys_best_practices.md)
->>>>>>> laraxot/dev
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [docs Modulo Generico](../../<nome modulo>/docs/translations.md)
 
@@ -156,11 +152,7 @@ Tutte le label, placeholder, messaggi e azioni relativi a disponibilità e appun
   'label' => 'patient.navigation',
   ```
 - Consulta anche:
-<<<<<<< HEAD
   - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
-=======
-  - [translation_keys_best_practices.md](../translation_keys_best_practices.md)
->>>>>>> laraxot/dev
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [docs <nome progetto>](../../<nome progetto>/docs/translations.md)
 

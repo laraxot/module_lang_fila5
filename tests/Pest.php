@@ -16,6 +16,8 @@ use function Safe\unlink;
  * Vietato pest()->extend() / expect()->extend() qui (PHPStan method.internalClass).
  */
 
+require_once __DIR__.'/../../Xot/tests/XotBasePest.php';
+
 /**
  * @param array<string, mixed> $attributes
  */

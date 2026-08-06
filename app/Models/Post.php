@@ -16,19 +16,42 @@ use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
 /**
- * @property string          $id
- * @property string|null     $post_type
- * @property string|int|null $post_id
- * @property string          $lang
- * @property string          $guid
- * @property string|null     $title
- * @property string|null     $subtitle
+ * Colonne allineate a `2026_01_21_211814_create_posts_table`.
+ *
+ * @property string                          $id
+ * @property int|null                        $user_id
+ * @property string|int|null                 $post_id
+ * @property string|null                     $lang
+ * @property string|null                     $guid
+ * @property string|null                     $title
+ * @property string|null                     $subtitle
+ * @property string|null                     $post_type
+ * @property string|null                     $txt
+ * @property string|null                     $content
+ * @property string|null                     $excerpt
+ * @property string|null                     $slug
+ * @property string|null                     $status
+ * @property \Illuminate\Support\Carbon|null $published_at
+ * @property string|null                     $locale
+ * @property string|null                     $category
+ * @property string|null                     $image_src
+ * @property string|null                     $image_alt
+ * @property string|null                     $image_title
+ * @property string|null                     $meta_title
+ * @property string|null                     $meta_description
+ * @property string|null                     $meta_keywords
+ * @property int|null                        $author_id
+ * @property string|null                     $url
+ * @property array<string, string>|null      $url_lang
+ * @property string|null                     $image_resize_src
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  */
 class Post extends BaseModel
 {
     use HasSlug;
 
-    /** @phpstan-use HasXotFactory<PostFactory, Post> */
+    /** @phpstan-use HasXotFactory<PostFactory> */
     use HasXotFactory;
 
     // use Cachable;
@@ -77,6 +100,7 @@ class Post extends BaseModel
         'image_alt',
         'image_title',
         // ------ SEO FIELDS -----
+        'meta_title',
         'meta_description',
         'meta_keywords', // seo
         'author_id',
