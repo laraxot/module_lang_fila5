@@ -4,9 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Filament\Forms\Components;
 
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
+=======
+use Filament\Forms\Components\Select;
+use Illuminate\Support\Arr;
+use Modules\Xot\Actions\File\AssetAction;
+>>>>>>> laraxot/dev
 
 /**
  * National Flag Select Component.
@@ -14,7 +20,11 @@ use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
  * A Filament Select component that displays countries with their flags
  * and supports searching by country name using localized translations.
  */
+<<<<<<< HEAD
 class NationalFlagSelect extends XotBaseSelect
+=======
+class NationalFlagSelect extends Select
+>>>>>>> laraxot/dev
 {
     /**
      * Set up the component configuration.
@@ -75,12 +85,21 @@ class NationalFlagSelect extends XotBaseSelect
     /**
      * Get filtered country options based on search query.
      *
+<<<<<<< HEAD
      * @param  string  $search  The search query
+=======
+     * @param string $search The search query
+     *
+>>>>>>> laraxot/dev
      * @return array<string, string>
      */
     protected function getFilteredCountryOptions(string $search): array
     {
+<<<<<<< HEAD
         if (trim($search) === '') {
+=======
+        if ('' === trim($search)) {
+>>>>>>> laraxot/dev
             return $this->getCountryOptions();
         }
 
