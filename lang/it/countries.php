@@ -267,11 +267,7 @@ return [
         ],
         'label' => 'Countries',
         'sort' => 1,
-<<<<<<< HEAD
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
     ],
     'fields' => [
         'id' => [

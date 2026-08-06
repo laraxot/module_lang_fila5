@@ -4,19 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Filament\Actions;
 
-<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Illuminate\Support\Facades\App;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 
 class LocaleSwitcherRefresh extends XotBaseAction
-=======
-use Filament\Actions\Action;
-use Filament\Forms\Components\Select;
-use Illuminate\Support\Facades\App;
-
-class LocaleSwitcherRefresh extends Action
->>>>>>> laraxot/dev
 {
     public string $fullUrl = '#';
 

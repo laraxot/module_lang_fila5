@@ -34,11 +34,7 @@ class AutoLabelAction
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);
         $class = Arr::first($backtrace_slice, function ($item) use ($component) {
-<<<<<<< HEAD
-            if ($item['function'] === 'execute') {
-=======
             if ('execute' === $item['function']) {
->>>>>>> laraxot/dev
                 return false;
             }
 
@@ -65,11 +61,7 @@ class AutoLabelAction
             if (isset($class['object'])) {
                 $object_class = $class['object']::class;
             }
-<<<<<<< HEAD
-            if (isset($class['class']) && $object_class === null) {
-=======
             if (isset($class['class']) && null === $object_class) {
->>>>>>> laraxot/dev
                 $object_class = $class['class'];
             }
             if (is_null($object_class)) {
@@ -82,18 +74,14 @@ class AutoLabelAction
 
         $label_tkey = null;
         $val = 'no-set-val';
-<<<<<<< HEAD
         // Valore da persistere quando la traduzione non esiste ancora. Di norma coincide
         // con il segmento di chiave, ma non sempre: vedi le sezioni senza titolo.
         $default_val = null;
-=======
->>>>>>> laraxot/dev
 
         if ($component instanceof Step) {
             Assert::string($val = $component->getLabel());
             $label_tkey = $trans_key.'.steps.'.$val.'';
         }
-<<<<<<< HEAD
         if ($label_tkey === null && $component instanceof Section) {
             $val = $component->getHeading();
             if ($val === null) {
@@ -104,23 +92,13 @@ class AutoLabelAction
                 // parola come intestazione.
                 $val = 'empty';
                 $default_val = '';
-=======
-        if (null === $label_tkey && $component instanceof Section) {
-            $val = $component->getHeading();
-            if (null === $val) {
-                $val = 'empty';
->>>>>>> laraxot/dev
             }
             if (! is_string($val)) {
                 $val = app(SafeStringCastAction::class)->execute($val);
             }
             $label_tkey = $trans_key.'.sections.'.$val.'';
         }
-<<<<<<< HEAD
         if ($label_tkey === null && method_exists($component, 'getName')) {
-=======
-        if (null === $label_tkey && method_exists($component, 'getName')) {
->>>>>>> laraxot/dev
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.fields.'.$val.'';
         }
@@ -134,11 +112,7 @@ class AutoLabelAction
 
         $label = trans($label_key);
         if (is_string($label) && $label_key === $label) { // se non esiste la traduzione, la salvo
-<<<<<<< HEAD
             app(SaveTransAction::class)->execute($label_key, $default_val ?? $val);
-=======
-            app(SaveTransAction::class)->execute($label_key, $val);
->>>>>>> laraxot/dev
         }
         if (! is_string($label)) {
             $component->label('FIX:'.$label_key);
@@ -164,11 +138,7 @@ class AutoLabelAction
 
         }
         */
-<<<<<<< HEAD
         if ($type === 'icon' && app(SvgExistsAction::class)->execute($label)) {
-=======
-        if ('icon' === $type && app(SvgExistsAction::class)->execute($label)) {
->>>>>>> laraxot/dev
             if (method_exists($component, 'iconButton')) {
                 $component->iconButton();
             }
@@ -177,11 +147,7 @@ class AutoLabelAction
             // $component->label('FIX:'.$label_key);
             return $component;
         }
-<<<<<<< HEAD
         if ($type === 'icon' && ! app(SvgExistsAction::class)->execute($label)) {
-=======
-        if ('icon' === $type && ! app(SvgExistsAction::class)->execute($label)) {
->>>>>>> laraxot/dev
             // $component->{$type}($label);
             if (method_exists($component, 'iconButton')) {
                 $component->iconButton();
