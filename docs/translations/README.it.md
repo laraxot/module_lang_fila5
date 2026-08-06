@@ -75,11 +75,7 @@ related:
 
 ## 📚 Documentazione
 
-<<<<<<< HEAD
 - [Indice del Progetto](../index.md)
-=======
-- [Indice del Progetto](../INDEX.md)
->>>>>>> laraxot/dev
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
 - [Architettura](architecture.md)

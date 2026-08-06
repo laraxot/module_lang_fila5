@@ -1,13 +1,13 @@
 # Regole di Naming per File
 
-## 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive
+## Regola Fondamentale: NO Duplicati Case-Insensitive
 
 ### Problema
 
 Su filesystem case-insensitive (Windows, macOS default), file con nomi che differiscono solo per maiuscole/minuscole causano conflitti:
 
 ```
-❌ ERRATO - Duplicati case-insensitive:
+ERRATO - Duplicati case-insensitive:
 - readme.md e README.md
 - Activity.php e activity.php
 - ListRecords.md e listrecords.md
@@ -17,12 +17,12 @@ Su filesystem case-insensitive (Windows, macOS default), file con nomi che diffe
 
 **Mantenere SOLO la versione con naming corretto secondo le convenzioni:**
 
-## 📋 Convenzioni di Naming
+## Convenzioni di Naming
 
 ### File PHP
 
 ```
-✅ CORRETTO:
+CORRETTO:
 - Models: PascalCase → Activity.php, User.php
 - Controllers: PascalCase → ActivityController.php
 - Tests: PascalCase → ActivityTest.php, ActivityTest.pest.php
@@ -33,14 +33,10 @@ Su filesystem case-insensitive (Windows, macOS default), file con nomi che diffe
 ### File Markdown
 
 ```
-✅ CORRETTO:
+CORRETTO:
 - README.md (maiuscolo - convenzione universale)
 - ROADMAP.md (maiuscolo - convenzione universale)
-<<<<<<< HEAD
-- changelog.md (maiuscolo - convenzione universale)
-=======
 - CHANGELOG.md (maiuscolo - convenzione universale)
->>>>>>> laraxot/dev
 - LICENSE.md (maiuscolo - convenzione universale)
 - CONTRIBUTING.md (maiuscolo - convenzione universale)
 - SECURITY.md (maiuscolo - convenzione universale)
@@ -54,7 +50,7 @@ Su filesystem case-insensitive (Windows, macOS default), file con nomi che diffe
 ### File Blade
 
 ```
-✅ CORRETTO:
+CORRETTO:
 - Views: kebab-case minuscolo
   → content-start.blade.php
   → wide-image.blade.php
@@ -64,14 +60,14 @@ Su filesystem case-insensitive (Windows, macOS default), file con nomi che diffe
 ### File Config
 
 ```
-✅ CORRETTO:
+CORRETTO:
 - Config: kebab-case minuscolo
   → database.php
   → filesystems.php
   → app-config.php
 ```
 
-## 🔧 Come Identificare Duplicati
+## Come Identificare Duplicati
 
 ```bash
 # Script per trovare duplicati case-insensitive
@@ -82,7 +78,7 @@ find Modules -type f \( -name "*.php" -o -name "*.md" \) -exec bash -c '
 ' \; | grep -v "^$"
 ```
 
-## 🗑️ Quale File Eliminare
+## Quale File Eliminare
 
 ### Regola Generale
 
@@ -100,7 +96,7 @@ Se entrambi i file contengono contenuto diverso:
 2. Elimina il duplicato
 3. Committa con messaggio chiaro
 
-## ✅ Checklist Pre-Commit
+## Checklist Pre-Commit
 
 - [ ] Nessun file con nome duplicato case-insensitive
 - [ ] File PHP in PascalCase (tranne migrations)
@@ -109,14 +105,14 @@ Se entrambi i file contengono contenuto diverso:
 - [ ] File blade in kebab-case minuscolo
 - [ ] Nessun carattere speciale nei nomi file (solo a-z, 0-9, -, _)
 
-## 🚀 Script di Pulizia
+## Script di Pulizia
 
 ```bash
 # Rimuovi duplicati automaticamente (ATTENZIONE: verifica prima!)
 ./bashscripts/cleanup-duplicate-files.sh --dry-run
 ```
 
-## 📚 Riferimenti
+## Riferimenti
 
 - PSR-4: Autoloading Standard
 - Laravel Naming Conventions

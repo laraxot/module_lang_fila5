@@ -34,7 +34,6 @@ Durante l'analisi del codice è emerso che numerosi file di traduzione nel modul
 ## Standardizzazione Implementata
 
 ### Documenti di Riferimento
-<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](translation-file-structure-guide.md)
 - [Progresso della Standardizzazione](translation_standards_progress.md)
@@ -43,16 +42,6 @@ Durante l'analisi del codice è emerso che numerosi file di traduzione nel modul
 - [Progresso della Standardizzazione](translation_standards_progress.md)
 - [Regole di Naming per i File di Traduzione](translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](translation-file-structure-guide.md)
-=======
-- [Regole di Naming per i File di Traduzione](translation_file_naming_rules.md)
-- [Guida alla Struttura dei File di Traduzione](translation_file_structure_guide.md)
-- [Progresso della Standardizzazione](translation_standards_progress.md)
-- [Regole di Naming per i File di Traduzione](translation_file_naming_rules.md)
-- [Guida alla Struttura dei File di Traduzione](translation_file_structure_guide.md)
-- [Progresso della Standardizzazione](translation_standards_progress.md)
-- [Regole di Naming per i File di Traduzione](translation_file_naming_rules.md)
-- [Guida alla Struttura dei File di Traduzione](translation_file_structure_guide.md)
->>>>>>> laraxot/dev
 - [Progresso della Standardizzazione](translation_standards_progress.md)
 
 ### Struttura Standard Richiesta
@@ -129,7 +118,6 @@ La corretta implementazione degli standard di traduzione garantisce:
 ## Collegamenti alla Documentazione
 
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
-<<<<<<< HEAD
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
@@ -137,15 +125,6 @@ La corretta implementazione degli standard di traduzione garantisce:
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
-=======
-- [Best Practices per le Traduzioni](translation_keys_best_practices.md)
-- [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
-- [Regole Generali per le Traduzioni](translation_keys_rules.md)
-- [Best Practices per le Traduzioni](translation_keys_best_practices.md)
-- [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
-- [Regole Generali per le Traduzioni](translation_keys_rules.md)
-- [Best Practices per le Traduzioni](translation_keys_best_practices.md)
->>>>>>> laraxot/dev
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 # Standardizzazione Traduzioni Modulo Notify
 
@@ -172,7 +151,6 @@ Durante l'analisi del codice è emerso che numerosi file di traduzione nel modul
 ## Standardizzazione Implementata
 
 ### Documenti di Riferimento
-<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](translation-file-structure-guide.md)
 - [Progresso della Standardizzazione](translation_standards_progress.md)
@@ -181,16 +159,6 @@ Durante l'analisi del codice è emerso che numerosi file di traduzione nel modul
 - [Progresso della Standardizzazione](translation_standards_progress.md)
 - [Regole di Naming per i File di Traduzione](translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](translation-file-structure-guide.md)
-=======
-- [Regole di Naming per i File di Traduzione](translation_file_naming_rules.md)
-- [Guida alla Struttura dei File di Traduzione](translation_file_structure_guide.md)
-- [Progresso della Standardizzazione](translation_standards_progress.md)
-- [Regole di Naming per i File di Traduzione](translation_file_naming_rules.md)
-- [Guida alla Struttura dei File di Traduzione](translation_file_structure_guide.md)
-- [Progresso della Standardizzazione](translation_standards_progress.md)
-- [Regole di Naming per i File di Traduzione](translation_file_naming_rules.md)
-- [Guida alla Struttura dei File di Traduzione](translation_file_structure_guide.md)
->>>>>>> laraxot/dev
 - [Progresso della Standardizzazione](translation_standards_progress.md)
 
 ### Struttura Standard Richiesta
@@ -267,7 +235,6 @@ La corretta implementazione degli standard di traduzione garantisce:
 ## Collegamenti alla Documentazione
 
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
-<<<<<<< HEAD
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
@@ -275,13 +242,4 @@ La corretta implementazione degli standard di traduzione garantisce:
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
-=======
-- [Best Practices per le Traduzioni](translation_keys_best_practices.md)
-- [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
-- [Regole Generali per le Traduzioni](translation_keys_rules.md)
-- [Best Practices per le Traduzioni](translation_keys_best_practices.md)
-- [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
-- [Regole Generali per le Traduzioni](translation_keys_rules.md)
-- [Best Practices per le Traduzioni](translation_keys_best_practices.md)
->>>>>>> laraxot/dev
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
