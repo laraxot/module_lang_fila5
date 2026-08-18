@@ -7,7 +7,7 @@ created: 2026-07-17
 updated: 2026-07-27
 qmd: "code quality baseline PHPStan Pest strict types Laraxot Lang git remote"
 story: STORY-001
-# GRAVE: issue/discussion del modulo — mai base_project / base_workorder / mono.
+# GRAVE: issue/discussion del modulo — mai base_techplanner / base_workorder / mono.
 # Resolve: cd laravel/Modules/Lang && git remote -v → laraxot/module_lang_fila5
 issues: []
 discussions: []
@@ -28,7 +28,7 @@ cd laravel/Modules/Lang && git remote -v
 # atteso: laraxot/module_lang_fila5
 ```
 
-**Lezione grave:** in un conflitto Git, *entrambe* le parti possono essere sbagliate (`base_project_*` vs `base_workorder_*`). Non scegliere a caso: `git remote -v` nella cartella del modulo/tema.
+**Lezione grave:** in un conflitto Git, *entrambe* le parti possono essere sbagliate (`base_techplanner_*` vs `base_workorder_*`). Non scegliere a caso: `git remote -v` nella cartella del modulo/tema.
 
 ## Baseline
 
