@@ -75,11 +75,7 @@ related:
 
 ## 📚 Documentazione
 
-<<<<<<< HEAD
-- [Indice del Progetto](../index.md)
-=======
 - [Indice del Progetto](../INDEX.md)
->>>>>>> laraxot/dev
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
 - [Architettura](architecture.md)
@@ -97,5 +93,5 @@ Questo progetto è open-source e disponibile sotto la [Licenza MIT](../../LICENS
 ---
 
 <div align="center">
-  <sub>Costruito con ❤️ dal team Base forecast Fila3 Mono</sub>
+  <sub>Costruito con ❤️ dal team Base Predict Fila3 Mono</sub>
 </div>

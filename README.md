@@ -22,7 +22,7 @@ TextInput::make('name');
 // -> Risolve automaticamente da: {locale}/{module}::field.name.label
 
 // Sincronizzazione traduzioni
-app(SyncTranslationsAction::class)->execute('modulo questionari', ['it', 'en', 'de']);
+app(SyncTranslationsAction::class)->execute('Quaeris', ['it', 'en', 'de']);
 
 // Modelli traducibili
 $survey->setTranslation('title', 'it', 'Questionario Soddisfazione');
@@ -127,7 +127,7 @@ Il modulo include un package locale (`Modules/Lang/packages/lara-zeus/spatie-tra
 
 ```
 Lang ──> Tutti i moduli (auto-risoluzione traduzioni)
-Lang ──> modulo questionari    (titoli survey, etichette chart)
+Lang ──> Quaeris    (titoli survey, etichette chart)
 Lang ──> Limesurvey (traduzioni domande/risposte)
 Lang ──> Cms        (contenuto pagine multilingua)
 Lang ──> Meetup     (eventi multilingua)
@@ -728,7 +728,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![Current Platform](https://img.shields.io/badge/Platform-progetto corrente-008758.svg)](#)
+[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
 
 > **Italiano in UI, inglese nel codice.** Chiavi strutturate, zero `->label()` hardcoded — i18n che scala su 20 moduli.
 
@@ -773,4 +773,4 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
-**Modulo** `lang` · **Laraxot** · **Current Platform** · PHPStan 10 · Filament 5
+**Modulo** `lang` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

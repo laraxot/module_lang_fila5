@@ -135,8 +135,8 @@ parameters:
 - [Pest Testing Framework](https://pestphp.com)
 
 ### GitHub Issues
-- [Issue #1923](https://github.com/laraxot/platform/issues/1923) - PHPStan Type Safety
-- [Issue #1924](https://github.com/laraxot/platform/issues/1924) - Memory Optimization
+- [Issue #1923](https://github.com/laraxot/base_fixcity_fila5/issues/1923) - PHPStan Type Safety
+- [Issue #1924](https://github.com/laraxot/base_fixcity_fila5/issues/1924) - Memory Optimization
 
 ## TODO
 
@@ -148,5 +148,5 @@ parameters:
 ---
 
 *Ultimo aggiornamento: 2026-06-09*  
-*Autore: Team progetto corrente*  
+*Autore: Team FixCity*  
 *Versione: 1.0.0*

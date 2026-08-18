@@ -1,5 +1,5 @@
 ---
-title: "Standard per le Traduzioni nel Progetto <nome progetto>corrente"
+title: "Standard per le Traduzioni nel Progetto SaluteOra"
 module: "Lang"
 type: rule
 tags: [google, translate]
@@ -9,7 +9,7 @@ qmd: "google translate"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
-# Standard per le Traduzioni nel Progetto <nome progetto>corrente
+# Standard per le Traduzioni nel Progetto SaluteOra
 
 ## Struttura delle Cartelle
 
@@ -175,12 +175,8 @@ return [
 - Serenità zen: codice e traduzioni sempre coerenti
 
 ### Collegamenti
-- [<nome progetto>corrente/docs/appointment-management.md<nome progetto>rogetto corrente/docs/appointment-management.md)
-<<<<<<< HEAD
-- [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
-=======
+- [SaluteOra/docs/appointment-management.md](../../SaluteOra/docs/appointment-management.md)
 - [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
->>>>>>> laraxot/dev
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
