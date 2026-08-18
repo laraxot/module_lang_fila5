@@ -13,7 +13,7 @@ related:
 
 ## Overview
 
-This document outlines the correct migration patterns to follow when creating database migrations for the Lang module and all other modules in the modulo operativo project.
+This document outlines the correct migration patterns to follow when creating database migrations for the Lang module and all other modules in the TechPlanner project.
 
 ## Critical Rule: Use XotBaseMigration
 

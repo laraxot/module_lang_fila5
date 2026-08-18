@@ -144,12 +144,3 @@ yarn.lock
 
 # Root quality tool configs forbidden in module root
 phpmd*
-docs/archive
-docs/legacy
-/.ai*
-/_bmad
-/bashscripts
-/_docs
-/docs/archive
-/docs/legacy
-rector.php
