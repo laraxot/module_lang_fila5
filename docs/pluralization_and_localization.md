@@ -43,13 +43,13 @@ related:
 - **File JSON**: Evitare l'uso per le stringhe plurali, salvo casi di necessità per traduttori non-dev.
 
 ### 1.5 Esempio Completo
-- `[project-root]/laravel/lang/en/messages.php`:
+- `/var/www/html/saluteora/laravel/lang/en/messages.php`:
   ```php
   return [
       'newMessageIndicator' => '{0} You have no new messages|{1} You have 1 new message|[2,*] You have :count new messages',
   ];
   ```
-- `[project-root]/laravel/lang/it/messages.php`:
+- `/var/www/html/saluteora/laravel/lang/it/messages.php`:
   ```php
   return [
       'newMessageIndicator' => '{0} Non hai nuovi messaggi|{1} Hai 1 nuovo messaggio|[2,*] Hai :count nuovi messaggi',
@@ -190,11 +190,7 @@ related:
 ## 4. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
-<<<<<<< HEAD
-- [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
-=======
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](translation_keys_best_practices.md)
->>>>>>> laraxot/dev
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md) 

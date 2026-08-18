@@ -289,7 +289,7 @@ protected function createApplication()
     $app = parent::createApplication();
     
     $app['config']->set([
-        'database.connections.lang.database' => 'modulo questionari_data_test',
+        'database.connections.lang.database' => 'quaeris_data_test',
     ]);
     
     return $app;
