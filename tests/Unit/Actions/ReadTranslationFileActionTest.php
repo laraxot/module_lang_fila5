@@ -38,7 +38,7 @@ function readTranslationTestFilePath(): string
 
 function makeReadTranslationFileAction(): ReadTranslationFileAction
 {
-    return new ReadTranslationFileAction();
+    return new ReadTranslationFileAction;
 }
 
 afterEach(function (): void {
@@ -156,8 +156,8 @@ describe('Read Translation File Action', function (): void {
         $phpContent = $action->toPhp($translations);
         $lines = explode("\n", $phpContent);
 
-        $parentLine = array_filter($lines, fn ($line) => str_contains($line, "'parent'"));
-        $childLine = array_filter($lines, fn ($line) => str_contains($line, "'child'"));
+        $parentLine = array_filter($lines, static fn (string $line): bool => str_contains($line, "'parent'"));
+        $childLine = array_filter($lines, static fn (string $line): bool => str_contains($line, "'child'"));
 
         Assert::assertStringStartsWith('    ', (string) current($parentLine));
         Assert::assertStringStartsWith('        ', (string) current($childLine));
