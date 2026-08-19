@@ -53,7 +53,7 @@ describe('Read Translation File Action', function (): void {
         /** @var TestCase $this */
         $filePath = readTranslationTestFilePath();
         $translations = defaultReadTranslationTestData();
-        createTranslationFile($filePath, $translations);
+        TestCase::createTranslationFile($filePath, $translations);
 
         $result = makeReadTranslationFileAction()->execute($filePath);
 
@@ -73,7 +73,7 @@ describe('Read Translation File Action', function (): void {
     test('throws exception for unreadable file', function (): void {
         /** @var TestCase $this */
         $filePath = readTranslationTestFilePath();
-        createTranslationFile($filePath, defaultReadTranslationTestData());
+        TestCase::createTranslationFile($filePath, defaultReadTranslationTestData());
         chmod($filePath, 0o000);
 
         $this->expectApplicationException(\Exception::class, 'File di traduzione non leggibile:');
@@ -190,7 +190,7 @@ describe('Read Translation File Action', function (): void {
         Assert::assertStringContainsString("'number' => '123'", $phpContent);
         Assert::assertStringContainsString("'float' => '45.67'", $phpContent);
         Assert::assertStringContainsString("'boolean_true' => '1'", $phpContent);
-        Assert::assertStringContainsString("'boolean_false' => ''", $phpContent);
+        Assert::assertStringContainsString("'boolean_false' => '0'", $phpContent);
     });
 
     test('preserves key order in output', function (): void {

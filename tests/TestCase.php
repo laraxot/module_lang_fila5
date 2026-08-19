@@ -12,6 +12,8 @@ use Modules\User\Models\User;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
 
+use function Safe\file_put_contents;
+
 /**
  * Base test case for Lang module.
  *
@@ -49,6 +51,22 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+     * Lo sqlite condiviso non contiene per forza le tabelle del modulo Lang:
+     * le migration non vengono lanciate dai test. I test DB vanno saltati, non falliti.
+     */
+    public static function langDbUnavailable(): bool
+    {
+        try {
+            DB::connection('lang')->getPdo();
+            $schema = DB::connection('lang')->getSchemaBuilder();
+
+            return ! $schema->hasTable('posts') || ! $schema->hasTable('translations');
+        } catch (\Throwable) {
+            return true;
+        }
+    }
+
+    /**
      * @return array<int, class-string>
      */
     protected function getPackageProviders(Application $app): array
@@ -63,6 +81,16 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @param array<string, mixed> $data
      */
+    /**
+     * Scrive un file di traduzione PHP nel percorso indicato.
+     *
+     * @param  array<string, mixed>  $translations
+     */
+    public static function createTranslationFile(string $filePath, array $translations): void
+    {
+        file_put_contents($filePath, "<?php\n\nreturn ".var_export($translations, true).";\n");
+    }
+
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {
         $this->assertDatabaseHas($table, $data, $connection ?? 'lang');

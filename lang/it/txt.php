@@ -144,6 +144,7 @@ return [
         'test' => ['label' => 'test', 'icon' => 'test', 'tooltip' => 'test'],
         'register' => ['tooltip' => 'register', 'icon' => 'register', 'label' => 'register'],
         'my-profile' => ['label' => 'my-profile', 'icon' => 'my-profile', 'tooltip' => 'my-profile'],
+        'bet_action' => ['label' => 'bet_action', 'icon' => 'bet_action', 'tooltip' => 'bet_action'],
     ],
     'sections' => [
         'address' => ['label' => 'address', 'heading' => 'address'],
