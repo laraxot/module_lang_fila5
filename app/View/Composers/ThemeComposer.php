@@ -90,9 +90,12 @@ class ThemeComposer
     {
         $currentLocale = app()->getLocale();
 
-        return $this->languages()->filter(function (LangData $item) use ($currentLocale): bool {
-            return $item->id !== $currentLocale;
-        });
+        return LangData::collection(
+            $this->languages()->toCollection()
+                ->filter(fn (LangData $item): bool => $item->id !== $currentLocale)
+                ->values()
+                ->all(),
+        );
     }
 
     /**
