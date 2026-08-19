@@ -70,8 +70,8 @@ public function execute(
 ## Collegamenti
 
 - [TransArrayAction.php](../../app/Actions/TransArrayAction.php)
+- [Canonico mixed narrowing](./fixes-syntax-error-transarrayaction.md)
 - [PHPStan Fixes](./phpstan-fixes.md)
-- [Translation Actions](./translation-actions.md)
 
 ## Note per il Futuro
 

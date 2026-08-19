@@ -271,3 +271,15 @@ php artisan config:clear
 ```
 
 Questo documento fornisce una panoramica completa sulla gestione delle lingue in Laravel, con particolare attenzione alle esigenze del progetto SaluteOra.
+
+---
+
+<!-- Merged from LOCALE_MANAGEMENT.md, which collided with this file on case-insensitive filesystems. -->
+
+---
+module: theme
+topic: LOCALE_MANAGEMENT
+canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules

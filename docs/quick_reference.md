@@ -140,3 +140,15 @@ Poi modificare i file in `lang/vendor/{package}/{locale}/`.
 
 ## Console Commands
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](philosophy.md))
+
+---
+
+<!-- Merged from QUICK_REFERENCE.md, which collided with this file on case-insensitive filesystems. -->
+
+---
+module: theme
+topic: QUICK_REFERENCE
+canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules

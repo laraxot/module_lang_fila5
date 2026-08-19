@@ -4,12 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions;
 
-use Illuminate\Support\Arr;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
- * Action per la traduzione di elementi di una collezione.
+ * Action per la traduzione di elementi di un array.
  */
 class TransArrayAction
 {
@@ -18,64 +17,38 @@ class TransArrayAction
     public ?string $transKey;
 
     /**
-     * Esegue la traduzione di una collezione.
+     * Esegue la traduzione di un array.
      *
-     * @param array<int|string, mixed> $array
+     * @param  array<int|string, mixed>  $array
      *
      * @return array<int|string, string>
      */
     public function execute(array $array, ?string $transKey): array
     {
-        if (null === $transKey) {
-            $result = Arr::map($array, SafeStringCastAction::cast(...));
-            if (is_array($result)) {
-                $stringResult = [];
-                foreach ($result as $key => $value) {
-                    $stringResult[$key] = is_string($value) ? $value : '';
-                }
-
-                return $stringResult;
-            }
-
-            return [];
+        $asStrings = array_map(
+            static fn (mixed $item): string => SafeStringCastAction::cast($item),
+            $array,
+        );
+        if ($transKey === null) {
+            return $asStrings;
         }
 
         $this->transKey = $transKey;
 
-        $result = Arr::map($array, $this->trans(...));
-        if (is_array($result)) {
-            $stringResult = [];
-            foreach ($result as $key => $value) {
-                $stringResult[$key] = is_string($value) ? $value : '';
-            }
-
-            return $stringResult;
-        }
-
-        return [];
+        return array_map($this->trans(...), $asStrings);
     }
 
     /**
-     * Traduce un singolo elemento.
-     *
-     * @param mixed $item L'elemento da tradurre
-     *
-     * @return string L'elemento tradotto o l'elemento originale se la traduzione non esiste
+     * Traduce una chiave già resa stringa (dopo SafeStringCast).
      */
-    public function trans(mixed $item): string
+    public function trans(string $item): string
     {
-        // Converte l'item in stringa se non lo è già
-        if (! \is_string($item)) {
-            $item = SafeStringCastAction::cast($item);
-        }
-
-        if ('' === $item || '0' === $item || null === $this->transKey) {
+        if ($item === '' || $item === '0' || $this->transKey === null) {
             return $item;
         }
 
-        // Prima prova la traduzione diretta
+        // Prima prova la traduzione diretta (array: suffisso .label)
         $key = $this->transKey.'.'.$item.'.label';
-
         $trans = trans($key);
 
         // Se la traduzione esiste ed è una stringa, la restituisce
