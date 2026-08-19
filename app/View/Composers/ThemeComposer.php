@@ -35,19 +35,20 @@ class ThemeComposer
             throw new \Exception(sprintf('Invalid config for supportedLocales on line %d in %s', __LINE__, class_basename($this)));
         }
 
-        $languages = collect($langs)->map(function (mixed $item, string $locale): array {
-            // Ensure $item is an array
+        $languagesArray = [];
+        foreach ($langs as $locale => $item) {
+            if (! is_string($locale)) {
+                continue;
+            }
+
             if (! is_array($item)) {
                 throw new \InvalidArgumentException(sprintf('Expected array at locale %s, got %s', $locale, gettype($item)));
             }
 
-            // Ensure $item has the required keys
             if (! isset($item['regional'], $item['name'])) {
                 throw new \InvalidArgumentException(sprintf('Expected array with "regional" and "name" keys at locale %s', $locale));
             }
 
-            // Extract regional code and handle 'en' to 'gb' mapping.
-            // Verifichiamo che regional sia una stringa o lo convertiamo in modo sicuro
             $regional = $item['regional'];
             if (! is_string($regional)) {
                 $regional = '';
@@ -59,27 +60,23 @@ class ThemeComposer
                 $regionalCode = 'gb';
             }
 
-            $url = '#'; // Placeholder URL for frontend.
+            $url = '#';
             if (inAdmin()) {
                 $url = $this->buildAdminLanguageUrl($locale);
             }
 
-            // Verifichiamo che name sia una stringa o lo convertiamo in modo sicuro
             $name = $item['name'];
             if (! is_string($name)) {
-                $name = $locale; // Fallback al codice locale
+                $name = $locale;
             }
 
-            return [
+            $languagesArray[] = [
                 'id' => $locale,
                 'name' => $name,
                 'flag' => $this->buildFlagHtml($regionalCode),
                 'url' => $url,
             ];
-        });
-
-        // Convertiamo esplicitamente a array<int, mixed> per soddisfare il tipo richiesto
-        $languagesArray = $languages->values()->all();
+        }
 
         return LangData::collection($languagesArray);
     }

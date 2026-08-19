@@ -337,3 +337,15 @@ php artisan lang:debug [--log-missing] [--log-performance]
 - [Conflict Resolution](conflict-resolution.md)
 
 - [Conflict Resolution](conflict-resolution.md)
+
+---
+
+<!-- Merged from INDEX.md, which collided with this file on case-insensitive filesystems. -->
+
+# Documentation Index
+
+Modulo: Lang
+
+## File disponibili
+
+<!-- auto-generato: elencare i file .md presenti -->

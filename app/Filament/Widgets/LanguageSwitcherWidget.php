@@ -27,14 +27,18 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
         return true;
     }
 
-    /**
-     * Schema del form per la configurazione del widget.
+/**
+     * Ottiene le lingue disponibili nel sistema.
      *
-     * @return array<int, Component>
+     * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
      */
-    public function getFormSchema(): array
+    public function getAvailableLocales(): Collection
     {
-        return [];
+        // TODO: Implementare modello Language se necessario
+        // Per ora usa fallback con lingue configurate
+
+        // Fallback alle lingue configurate staticamente
+        return Collection::make($this->getDefaultLanguages());
     }
 
     /**
@@ -48,26 +52,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     }
 
     /**
-     * Ottiene le lingue disponibili nel sistema.
-     *
-     * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
-     * @phpstan-return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
-     */
-    public function getAvailableLocales(): Collection
-    {
-        // TODO: Implementare modello Language se necessario
-        // Per ora usa fallback con lingue configurate
-
-        // Fallback alle lingue configurate staticamente
-        return collect($this->getDefaultLanguages());
-    }
-
-    /**
      * Cambia la lingua corrente.
-     *
-     * @param  string  $locale  Codice della lingua
-     * @param  string  $locale  Codice della lingua
-     * @return void *
      */
     public function changeLanguage(string $locale): void
     {
