@@ -11,8 +11,16 @@ use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
+use Modules\Xot\Tests\XotBasePest;
 
 uses(TestCase::class);
+
+beforeEach(function (): void {
+    /** @var TestCase $this */
+    if (TestCase::langDbUnavailable()) {
+        $this->skipTest('DB `lang` non raggiungibile: blocco di ambiente.');
+    }
+});
 
 describe('Lang Business Logic', function () {
     it('can create and manage posts', function () {
@@ -30,7 +38,7 @@ describe('Lang Business Logic', function () {
         Assert::assertSame('Test Post', $post->title);
         Assert::assertSame('draft', $post->status);
 
-        langAssertDatabaseHasRow('posts', [
+        XotBasePest::assertTableHas('lang', 'posts', [
             'id' => $post->id,
             'user_id' => $user->id,
             'title' => 'Test Post',
@@ -50,7 +58,7 @@ describe('Lang Business Logic', function () {
         $freshPost = $post->fresh();
         Assert::assertNotNull($freshPost);
         Assert::assertSame('published', $freshPost->status);
-        langAssertDatabaseHasRow('posts', [
+        XotBasePest::assertTableHas('lang', 'posts', [
             'id' => $post->id,
             'status' => 'published',
         ]);
@@ -73,12 +81,12 @@ describe('Lang Business Logic', function () {
 
         Assert::assertSame('news', $newsPost->category);
         Assert::assertSame('tutorial', $tutorialPost->category);
-        langAssertDatabaseHasRow('posts', [
+        XotBasePest::assertTableHas('lang', 'posts', [
             'id' => $newsPost->id,
             'category' => 'news',
         ]);
 
-        langAssertDatabaseHasRow('posts', [
+        XotBasePest::assertTableHas('lang', 'posts', [
             'id' => $tutorialPost->id,
             'category' => 'tutorial',
         ]);
@@ -100,7 +108,7 @@ describe('Lang Business Logic', function () {
         Assert::assertSame('Welcome to our application', $translation->value);
         Assert::assertSame('en', $translation->locale);
 
-        langAssertDatabaseHasRow('translations', [
+        XotBasePest::assertTableHas('lang', 'translations', [
             'id' => $translation->id,
             'user_id' => $user->id,
             'key' => 'welcome.message',
@@ -137,17 +145,17 @@ describe('Lang Business Logic', function () {
         Assert::assertSame('Benvenuto nella nostra applicazione', $italianTranslation->value);
         Assert::assertSame('Willkommen in unserer Anwendung', $germanTranslation->value);
 
-        langAssertDatabaseHasRow('translations', [
+        XotBasePest::assertTableHas('lang', 'translations', [
             'key' => 'welcome.message',
             'locale' => 'en',
         ]);
 
-        langAssertDatabaseHasRow('translations', [
+        XotBasePest::assertTableHas('lang', 'translations', [
             'key' => 'welcome.message',
             'locale' => 'it',
         ]);
 
-        langAssertDatabaseHasRow('translations', [
+        XotBasePest::assertTableHas('lang', 'translations', [
             'key' => 'welcome.message',
             'locale' => 'de',
         ]);
@@ -226,7 +234,7 @@ describe('Lang Business Logic', function () {
         $freshTranslation = $translation->fresh();
         Assert::assertNotNull($freshTranslation);
         Assert::assertSame('Updated message', $freshTranslation->value);
-        langAssertDatabaseHasRow('translations', [
+        XotBasePest::assertTableHas('lang', 'translations', [
             'id' => $translation->id,
             'value' => 'Updated message',
         ]);
@@ -247,7 +255,7 @@ describe('Lang Business Logic', function () {
         Assert::assertSame('SEO Meta Description', $post->meta_description);
         Assert::assertSame('seo, optimization, meta', $post->meta_keywords);
 
-        langAssertDatabaseHasRow('posts', [
+        XotBasePest::assertTableHas('lang', 'posts', [
             'id' => $post->id,
             'meta_title' => 'SEO Meta Title',
             'meta_description' => 'SEO Meta Description',
@@ -276,12 +284,12 @@ describe('Lang Business Logic', function () {
 
         Assert::assertSame('admin', $adminTranslation->namespace);
         Assert::assertSame('frontend', $frontendTranslation->namespace);
-        langAssertDatabaseHasRow('translations', [
+        XotBasePest::assertTableHas('lang', 'translations', [
             'id' => $adminTranslation->id,
             'namespace' => 'admin',
         ]);
 
-        langAssertDatabaseHasRow('translations', [
+        XotBasePest::assertTableHas('lang', 'translations', [
             'id' => $frontendTranslation->id,
             'namespace' => 'frontend',
         ]);
@@ -301,7 +309,7 @@ describe('Lang Business Logic', function () {
             ]);
 
             Assert::assertSame($locale, $translation->locale);
-            langAssertDatabaseHasRow('translations', [
+            XotBasePest::assertTableHas('lang', 'translations', [
                 'id' => $translation->id,
                 'locale' => $locale,
             ]);
@@ -325,7 +333,7 @@ describe('Lang Business Logic', function () {
             $futureDate->format('Y-m-d H:i:s'),
             $scheduledPost->published_at->format('Y-m-d H:i:s'),
         );
-        langAssertDatabaseHasRow('posts', [
+        XotBasePest::assertTableHas('lang', 'posts', [
             'id' => $scheduledPost->id,
             'status' => 'scheduled',
         ]);
