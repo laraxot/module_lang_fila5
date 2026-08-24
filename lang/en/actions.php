@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_UDJdYy
-=======
 declare(strict_types=1);
 
->>>>>>> .merge_file_UDCYE0
 return [
     'delete' => [
         'label' => 'Elimina',

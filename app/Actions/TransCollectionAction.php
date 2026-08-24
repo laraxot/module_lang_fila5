@@ -26,11 +26,7 @@ class TransCollectionAction
     public function execute(Collection $collection, ?string $transKey): Collection
     {
         $asStrings = $collection->map(SafeStringCastAction::cast(...));
-<<<<<<< .merge_file_SVC5N0
         if ($transKey === null) {
-=======
-        if (null === $transKey) {
->>>>>>> .merge_file_qfe9FF
             return $asStrings;
         }
 
@@ -44,11 +40,7 @@ class TransCollectionAction
      */
     public function trans(string $item): string
     {
-<<<<<<< .merge_file_SVC5N0
         if ($item === '' || $item === '0' || $this->transKey === null) {
-=======
-        if ('' === $item || '0' === $item || null === $this->transKey) {
->>>>>>> .merge_file_qfe9FF
             return $item;
         }
 

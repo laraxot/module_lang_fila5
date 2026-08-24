@@ -13,12 +13,8 @@ uses(TestCase::class);
 
 describe('BaseMorphPivot Model', function () {
     test('extends MorphPivot', function () {
-<<<<<<< .merge_file_aUw8G8
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> .merge_file_yjUBuh
             protected $table = 'test';
         };
 
@@ -26,12 +22,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has correct connection', function () {
-<<<<<<< .merge_file_aUw8G8
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> .merge_file_yjUBuh
             protected $table = 'test';
         };
 
@@ -43,12 +35,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has timestamps enabled', function () {
-<<<<<<< .merge_file_aUw8G8
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> .merge_file_yjUBuh
             protected $table = 'test';
         };
 
@@ -56,12 +44,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has incrementing enabled', function () {
-<<<<<<< .merge_file_aUw8G8
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> .merge_file_yjUBuh
             protected $table = 'test';
         };
 
@@ -69,12 +53,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has default perPage', function () {
-<<<<<<< .merge_file_aUw8G8
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> .merge_file_yjUBuh
             protected $table = 'test';
         };
 
@@ -82,12 +62,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('has correct fillable attributes', function () {
-<<<<<<< .merge_file_aUw8G8
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> .merge_file_yjUBuh
             protected $table = 'test';
         };
         $fillable = $model->getFillable();
@@ -101,12 +77,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('casts id as string', function () {
-<<<<<<< .merge_file_aUw8G8
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> .merge_file_yjUBuh
             protected $table = 'test';
         };
 
@@ -115,12 +87,8 @@ describe('BaseMorphPivot Model', function () {
     });
 
     test('casts datetime fields', function () {
-<<<<<<< .merge_file_aUw8G8
         $model = new class() extends BaseMorphPivot
         {
-=======
-        $model = new class extends BaseMorphPivot {
->>>>>>> .merge_file_yjUBuh
             protected $table = 'test';
         };
 

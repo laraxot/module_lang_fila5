@@ -12,13 +12,9 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
-<<<<<<< .merge_file_lwEvpO
 use Illuminate\Support\HtmlString;
 use Illuminate\Translation\ArrayLoader;
 use Mockery;
-=======
-use Illuminate\Translation\ArrayLoader;
->>>>>>> .merge_file_VoMCBH
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Actions\SaveTransAction;
@@ -45,11 +41,8 @@ use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_lwEvpO
 use ReflectionMethod;
 use ReflectionProperty;
-=======
->>>>>>> .merge_file_VoMCBH
 
 use function Safe\file_put_contents;
 use function Safe\getmypid;
@@ -71,11 +64,7 @@ final class NationalFlagSelectStub extends NationalFlagSelect
 }
 
 afterEach(function (): void {
-<<<<<<< .merge_file_lwEvpO
     Mockery::close();
-=======
-    \Mockery::close();
->>>>>>> .merge_file_VoMCBH
     $sqlite = $GLOBALS['__lang_gaps_sqlite'] ?? null;
     if (is_string($sqlite)) {
         \Illuminate\Support\Facades\DB::purge('lang');
@@ -178,16 +167,9 @@ describe('Lang coverage gaps closeout', function (): void {
     test('WriteTranslationFileAction backs up existing file', function (): void {
         $path = sys_get_temp_dir().'/write_cov_'.uniqid().'.php';
         TestCase::createTranslationFile($path, ['a' => '1']);
-<<<<<<< .merge_file_lwEvpO
         app()->instance('cache', new class()
         {
             public function flush(): void {}
-=======
-        app()->instance('cache', new class {
-            public function flush(): void
-            {
-            }
->>>>>>> .merge_file_VoMCBH
         });
 
         Assert::assertTrue(app(WriteTranslationFileAction::class)->execute($path, ['a' => '2']));
@@ -240,21 +222,13 @@ describe('Lang coverage gaps closeout', function (): void {
             ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
             ['iso_3166_1_alpha2' => 'XX', 'name' => 99],
         ];
-<<<<<<< .merge_file_lwEvpO
         $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
-=======
-        $m = new \ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
->>>>>>> .merge_file_VoMCBH
         $m->setAccessible(true);
         $options = $m->invoke($select);
         Assert::assertIsArray($options);
         Assert::assertArrayHasKey('IT', $options);
 
-<<<<<<< .merge_file_lwEvpO
         $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
-=======
-        $f = new \ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
->>>>>>> .merge_file_VoMCBH
         $f->setAccessible(true);
         $byName = $f->invoke($select, 'ital');
         $byCode = $f->invoke($select, 'IT');
@@ -266,11 +240,7 @@ describe('Lang coverage gaps closeout', function (): void {
 
     test('TranslationEditor afterStateHydrated and EditTranslationFile schema paths', function (): void {
         $editor = TranslationEditor::make('c');
-<<<<<<< .merge_file_lwEvpO
         $setUp = new ReflectionMethod($editor, 'setUp');
-=======
-        $setUp = new \ReflectionMethod($editor, 'setUp');
->>>>>>> .merge_file_VoMCBH
         $setUp->setAccessible(true);
         $setUp->invoke($editor);
         Assert::assertInstanceOf(TranslationEditor::class, $editor);
@@ -322,22 +292,14 @@ describe('Lang coverage gaps closeout', function (): void {
         ], true);
         // Avoid real update by mocking
         /** @var Post&MockInterface $post */
-<<<<<<< .merge_file_lwEvpO
         $post = Mockery::mock(Post::class)->makePartial();
-=======
-        $post = \Mockery::mock(Post::class)->makePartial();
->>>>>>> .merge_file_VoMCBH
         $post->shouldReceive('getKey')->andReturn('abc');
         $post->shouldReceive('update')->andReturnTrue();
         $post->setRawAttributes(['post_type' => 'article', 'post_id' => '1'], true);
         Assert::assertSame('article 1', $post->getTitleAttribute(null));
 
         /** @var Post&MockInterface $post2 */
-<<<<<<< .merge_file_lwEvpO
         $post2 = Mockery::mock(Post::class)->makePartial();
-=======
-        $post2 = \Mockery::mock(Post::class)->makePartial();
->>>>>>> .merge_file_VoMCBH
         $post2->shouldReceive('getKey')->andReturn('abc');
         $post2->shouldReceive('update')->andReturnTrue();
         $post2->setRawAttributes(['title' => ''], true);
