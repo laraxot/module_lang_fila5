@@ -18,6 +18,7 @@ use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
  * @property string|null                     $updated_by
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ *
  * @method static EloquentBuilder<static>|LanguageLine newModelQuery()
  * @method static EloquentBuilder<static>|LanguageLine newQuery()
  * @method static EloquentBuilder<static>|LanguageLine query()
@@ -30,10 +31,13 @@ use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedAt($value)
  * @method static EloquentBuilder<static>|LanguageLine whereCreatedBy($value)
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedBy($value)
- * @property-read \Modules\Ptv\Models\Profile|null $creator
- * @property-read \Modules\Ptv\Models\Profile|null $deleter
- * @property-read \Modules\Ptv\Models\Profile|null $updater
+ *
+ * @property \Modules\Ptv\Models\Profile|null $creator
+ * @property \Modules\Ptv\Models\Profile|null $deleter
+ * @property \Modules\Ptv\Models\Profile|null $updater
+ *
  * @method static \Modules\Lang\Database\Factories\LanguageLineFactory factory($count = null, $state = [])
+ *
  * @mixin \Eloquent
  */
 class LanguageLine extends BaseModel

@@ -52,9 +52,6 @@ class WriteTranslationFileAction
         return true;
     }
 
-    /**
-     * @return int|false
-     */
     protected function putTranslationFile(string $filePath, string $phpContent): int|false
     {
         $directory = dirname($filePath);
@@ -63,7 +60,7 @@ class WriteTranslationFileAction
         // Atomic rename: readers non vedono file a metà scrittura (suite parallele).
         $tempFile = $this->makeLangTempPath($directory);
         $bytes = $this->writeLangTempContents($tempFile, $phpContent);
-        if ($bytes === false) {
+        if (false === $bytes) {
             return false;
         }
 
