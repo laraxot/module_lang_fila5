@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
+use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\date;
 use function Safe\exec;
@@ -13,8 +14,6 @@ use function Safe\rename;
 use function Safe\tempnam;
 use function Safe\unlink;
 
-use Spatie\QueueableAction\QueueableAction;
-
 class WriteTranslationFileAction
 {
     use QueueableAction;
@@ -22,9 +21,8 @@ class WriteTranslationFileAction
     /**
      * Scrive il contenuto in un file di traduzione con backup automatico.
      *
-     * @param string               $filePath     Percorso del file di traduzione
-     * @param array<string, mixed> $translations Traduzioni da scrivere
-     *
+     * @param  string  $filePath  Percorso del file di traduzione
+     * @param  array<string, mixed>  $translations  Traduzioni da scrivere
      * @return bool True se il file è stato scritto con successo
      */
     public function execute(string $filePath, array $translations): bool
@@ -42,7 +40,7 @@ class WriteTranslationFileAction
         // Scrivi il file
         $result = $this->putTranslationFile($filePath, $phpContent);
 
-        if (false === $result) {
+        if ($result === false) {
             throw new \Exception("Impossibile scrivere il file: {$filePath}");
         }
 
@@ -52,39 +50,22 @@ class WriteTranslationFileAction
         return true;
     }
 
-protected function putTranslationFile(string $filePath, string $phpContent): int|false
-     {
-         $directory = dirname($filePath);
-         File::ensureDirectoryExists($directory);
+    protected function putTranslationFile(string $filePath, string $phpContent): int|false
+    {
+        $directory = dirname($filePath);
+        File::ensureDirectoryExists($directory);
 
-         // Atomic rename: readers non vedono file a metà scrittura (suite parallele).
-         $tempFile = $this->makeLangTempPath($directory);
-         $bytes = $this->writeLangTempContents($tempFile, $phpContent);
-         if (false === $bytes) {
-             return false;
-         }
+        // Atomic rename: readers non vedono file a metà scrittura (suite parallele).
+        $tempFile = $this->makeLangTempPath($directory);
+        $bytes = $this->writeLangTempContents($tempFile, $phpContent);
+        if ($bytes === false) {
+            return false;
+        }
 
-         $this->moveLangTempToTarget($tempFile, $filePath);
+        $this->moveLangTempToTarget($tempFile, $filePath);
 
-         return $bytes;
-     }
-
-     protected function makeLangTempPath(string $directory): string
-     {
-         return $directory.'/'.uniqid('lang_put_', true).'.tmp';
-     }
-
-     protected function writeLangTempContents(string $tempFile, string $phpContent): int|false
-     {
-         return file_put_contents($tempFile, $phpContent);
-     }
-
-     protected function moveLangTempToTarget(string $tempFile, string $filePath): bool
-     {
-         rename($tempFile, $filePath);
-
-         return true;
-     }
+        return $bytes;
+    }
 
     protected function makeLangTempPath(string $directory): string
     {
@@ -106,7 +87,7 @@ protected function putTranslationFile(string $filePath, string $phpContent): int
     /**
      * Crea un backup del file di traduzione.
      *
-     * @param string $filePath Percorso del file
+     * @param  string  $filePath  Percorso del file
      */
     private function createBackup(string $filePath): void
     {
@@ -129,7 +110,7 @@ protected function putTranslationFile(string $filePath, string $phpContent): int
     /**
      * Valida la sintassi PHP del contenuto.
      *
-     * @param string $phpContent Contenuto PHP da validare
+     * @param  string  $phpContent  Contenuto PHP da validare
      *
      * @throws \Exception Se la sintassi PHP non è valida
      */
@@ -147,7 +128,7 @@ protected function putTranslationFile(string $filePath, string $phpContent): int
 
         unlink($tempFile);
 
-        if (0 !== $returnCode) {
+        if ($returnCode !== 0) {
             $lines = [];
             foreach ($output as $line) {
                 if (is_string($line)) {
