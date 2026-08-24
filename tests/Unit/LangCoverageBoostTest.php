@@ -4,22 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit;
 
-use Mockery;
+use Illuminate\Translation\ArrayLoader;
+use Illuminate\View\View;
 use Mockery\MockInterface;
-use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Lang\Actions\MergeTranslationsAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
-use Modules\Lang\Actions\WriteTranslationFileAction;
 use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
+use Modules\Lang\Actions\WriteTranslationFileAction;
+use Modules\Lang\Adapters\TranslatorAdapter;
+use Modules\Lang\Datas\LangData;
+use Modules\Lang\Datas\TranslationData;
+use Modules\Lang\Filament\Resources\TranslationFileResource;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\ListTranslationFiles;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Schemas\TranslationFileForm;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Schemas\TranslationFileInfolist;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Tables\TranslationFilesTable;
 use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
-use Modules\Lang\Filament\Resources\TranslationFileResource;
-use Modules\Lang\Datas\LangData;
-use Modules\Lang\Datas\TranslationData;
 use Modules\Lang\Models\Policies\PostPolicy;
 use Modules\Lang\Models\Policies\TranslationFilePolicy;
 use Modules\Lang\Models\Policies\TranslationPolicy;
@@ -27,29 +28,28 @@ use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\RouteServiceProvider;
+use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Components\Flag;
 use Modules\Lang\View\Components\LanguageSwitcher;
 use Modules\Lang\View\Composers\ThemeComposer;
-use Modules\Lang\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
-use Illuminate\Translation\ArrayLoader;
-use Illuminate\View\View;
 
-use function Safe\unlink;
 use function Safe\mkdir;
 use function Safe\rmdir;
+use function Safe\unlink;
 
 uses(TestCase::class);
 
 /**
- * @param  list<string>  $permissions
- * @return Mockery\MockInterface&UserContract
+ * @param list<string> $permissions
+ *
+ * @return MockInterface&UserContract
  */
 function langFakeUser(array $permissions = [], bool $superAdmin = false): UserContract
 {
-    /** @var Mockery\MockInterface&UserContract $user */
-    $user = Mockery::mock(UserContract::class);
+    /** @var MockInterface&UserContract $user */
+    $user = \Mockery::mock(UserContract::class);
     $user->shouldReceive('hasRole')
         ->with('super-admin')
         ->andReturn($superAdmin);
@@ -62,7 +62,7 @@ function langFakeUser(array $permissions = [], bool $superAdmin = false): UserCo
 }
 
 afterEach(function (): void {
-    Mockery::close();
+    \Mockery::close();
 });
 
 describe('Lang coverage boost — Actions', function (): void {
@@ -80,9 +80,10 @@ describe('Lang coverage boost — Actions', function (): void {
         $path = sys_get_temp_dir().'/lang_write_test_'.uniqid().'.php';
 
         try {
-            app()->instance('cache', new class()
-            {
-                public function flush(): void {}
+            app()->instance('cache', new class {
+                public function flush(): void
+                {
+                }
             });
 
             $result = app(WriteTranslationFileAction::class)->execute($path, [
@@ -239,15 +240,17 @@ describe('Lang coverage boost — UI and data', function (): void {
         mkdir(dirname($filePath), 0o755, true);
         TestCase::createTranslationFile($filePath, ['welcome' => 'Ciao']);
 
-        app()->instance('translator', new class($langDir)
-        {
-            public function __construct(private readonly string $path) {}
+        app()->instance('translator', new class($langDir) {
+            public function __construct(private readonly string $path)
+            {
+            }
 
             public function getLoader(): object
             {
-                return new class($this->path)
-                {
-                    public function __construct(private readonly string $path) {}
+                return new class($this->path) {
+                    public function __construct(private readonly string $path)
+                    {
+                    }
 
                     /** @return array<string, string> */
                     public function namespaces(): array

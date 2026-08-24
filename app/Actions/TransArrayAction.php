@@ -19,7 +19,7 @@ class TransArrayAction
     /**
      * Esegue la traduzione di un array.
      *
-     * @param  array<int|string, mixed>  $array
+     * @param array<int|string, mixed> $array
      *
      * @return array<int|string, string>
      */
@@ -29,7 +29,7 @@ class TransArrayAction
             static fn (mixed $item): string => SafeStringCastAction::cast($item),
             $array,
         );
-        if ($transKey === null) {
+        if (null === $transKey) {
             return $asStrings;
         }
 
@@ -43,7 +43,7 @@ class TransArrayAction
      */
     public function trans(string $item): string
     {
-        if ($item === '' || $item === '0' || $this->transKey === null) {
+        if ('' === $item || '0' === $item || null === $this->transKey) {
             return $item;
         }
 

@@ -9,18 +9,16 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Section;
-use Filament\Schemas\Components\Wizard\Step;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
-use Illuminate\Http\Request;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
 use Livewire\Livewire;
-use Mockery;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Actions\GetAllModuleTranslationAction;
@@ -75,10 +73,9 @@ use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
-use ReflectionMethod;
 
-use function Safe\file_put_contents;
 use function Safe\fclose;
+use function Safe\file_put_contents;
 use function Safe\fopen;
 use function Safe\getmypid;
 use function Safe\mkdir;
@@ -118,7 +115,9 @@ final class LangBaseViewRecordStub extends LangBaseViewRecord
     }
 }
 
-final class LangBasePolicyStub extends LangBasePolicy {}
+final class LangBasePolicyStub extends LangBasePolicy
+{
+}
 
 final class LangFieldHostModel extends BaseModelLang
 {
@@ -159,13 +158,14 @@ final class StrictTranslationsHost extends BaseModel
 }
 
 /**
- * @param  list<string>  $permissions
- * @return Mockery\MockInterface&UserContract
+ * @param list<string> $permissions
+ *
+ * @return MockInterface&UserContract
  */
 function langHundredFakeUser(array $permissions = [], bool $superAdmin = false): UserContract
 {
-    /** @var Mockery\MockInterface&UserContract $user */
-    $user = Mockery::mock(UserContract::class);
+    /** @var MockInterface&UserContract $user */
+    $user = \Mockery::mock(UserContract::class);
     $user->shouldReceive('hasRole')->with('super-admin')->andReturn($superAdmin);
     $user->shouldReceive('hasPermissionTo')
         ->andReturnUsing(static fn (string $permission): bool => in_array($permission, $permissions, true));
@@ -174,7 +174,6 @@ function langHundredFakeUser(array $permissions = [], bool $superAdmin = false):
 }
 
 /**
- * @param mixed ...$values
  * @return Collection<int|string, mixed>
  */
 function langMixedCollection(mixed ...$values): Collection
@@ -217,7 +216,7 @@ function langForceSqliteTranslations(): void
 }
 
 afterEach(function (): void {
-    Mockery::close();
+    \Mockery::close();
     config(['lang.language_switcher.enabled' => true]);
 
     $sqlite = $GLOBALS['__lang_cov_sqlite'] ?? null;
@@ -384,12 +383,12 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $path = sys_get_temp_dir().'/lang_write_cov_'.uniqid().'.php';
         TestCase::createTranslationFile($path, ['old' => '1']);
 
-        app()->instance('cache', new class()
-        {
-            public function flush(): void {}
+        app()->instance('cache', new class {
+            public function flush(): void
+            {
+            }
         });
-        $translationLoader = new class()
-        {
+        $translationLoader = new class {
             public bool $flushed = false;
 
             public function flush(): void
@@ -417,7 +416,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $path = sys_get_temp_dir().'/lang_bad_'.uniqid().'.php';
         $action = app(WriteTranslationFileAction::class);
 
-        $read = Mockery::mock(\Modules\Lang\Actions\ReadTranslationFileAction::class);
+        $read = \Mockery::mock(\Modules\Lang\Actions\ReadTranslationFileAction::class);
         $read->shouldReceive('toPhp')->andReturn('<?php return [;');
         app()->instance(\Modules\Lang\Actions\ReadTranslationFileAction::class, $read);
 
@@ -453,7 +452,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             Assert::assertSame('completed', $synced['modules'][$tmpModule]['status']);
             Assert::assertFileExists($base.'/lang/en/nested.php');
 
-            $getModules = new ReflectionMethod($action, 'getModules');
+            $getModules = new \ReflectionMethod($action, 'getModules');
             $getModules->setAccessible(true);
             /** @var list<string> $modules */
             $modules = $getModules->invoke($action, base_path('Modules'));
@@ -462,7 +461,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             File::deleteDirectory($base);
         }
 
-        $load = new ReflectionMethod($action, 'loadTranslations');
+        $load = new \ReflectionMethod($action, 'loadTranslations');
         $load->setAccessible(true);
         Assert::assertSame([], $load->invoke($action, '/no/such/file.php'));
 
@@ -509,7 +508,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             $mock->allows('execute');
         });
         $this->mockService(SvgExistsAction::class, static function (MockInterface $mock): void {
-            $mock->allows('execute')->andReturnUsing(static fn (string $label): bool => $label === 'heroicon-o-check');
+            $mock->allows('execute')->andReturnUsing(static fn (string $label): bool => 'heroicon-o-check' === $label);
         });
 
         app('translator')->addLines([
@@ -551,23 +550,23 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
     });
 
     test('LangBase page stubs expose header actions with locale switcher', function (): void {
-        $create = new ReflectionMethod(LangBaseCreateRecordStub::class, 'getHeaderActions');
+        $create = new \ReflectionMethod(LangBaseCreateRecordStub::class, 'getHeaderActions');
         $create->setAccessible(true);
         Assert::assertNotEmpty($create->invoke(new LangBaseCreateRecordStub()));
 
-        $edit = new ReflectionMethod(LangBaseEditRecordStub::class, 'getHeaderActions');
+        $edit = new \ReflectionMethod(LangBaseEditRecordStub::class, 'getHeaderActions');
         $edit->setAccessible(true);
         $editActions = $edit->invoke(new LangBaseEditRecordStub());
         Assert::assertIsArray($editActions);
         Assert::assertArrayHasKey('locale-switcher', $editActions);
 
-        $list = new ReflectionMethod(LangBaseListRecordsStub::class, 'getHeaderActions');
+        $list = new \ReflectionMethod(LangBaseListRecordsStub::class, 'getHeaderActions');
         $list->setAccessible(true);
         $listActions = $list->invoke(new LangBaseListRecordsStub());
         Assert::assertIsArray($listActions);
         Assert::assertArrayHasKey('locale_switcher', $listActions);
 
-        $view = new ReflectionMethod(LangBaseViewRecordStub::class, 'getHeaderActions');
+        $view = new \ReflectionMethod(LangBaseViewRecordStub::class, 'getHeaderActions');
         $view->setAccessible(true);
         $viewActions = $view->invoke(new LangBaseViewRecordStub());
         Assert::assertIsArray($viewActions);
@@ -593,13 +592,13 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         });
 
         $select = NationalFlagSelect::make('country');
-        $optionsMethod = new ReflectionMethod($select, 'getCountryOptions');
+        $optionsMethod = new \ReflectionMethod($select, 'getCountryOptions');
         $optionsMethod->setAccessible(true);
         /** @var array<string, string> $options */
         $options = $optionsMethod->invoke($select);
         Assert::assertNotEmpty($options);
 
-        $filterMethod = new ReflectionMethod($select, 'getFilteredCountryOptions');
+        $filterMethod = new \ReflectionMethod($select, 'getFilteredCountryOptions');
         $filterMethod->setAccessible(true);
         Assert::assertNotEmpty($filterMethod->invoke($select, ''));
         Assert::assertIsArray($filterMethod->invoke($select, 'ital'));
@@ -628,16 +627,15 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $schema = $edit->getFormSchema();
         Assert::assertNotEmpty($schema);
 
-        $header = new ReflectionMethod($edit, 'getHeaderActions');
+        $header = new \ReflectionMethod($edit, 'getHeaderActions');
         $header->setAccessible(true);
         $headerActions = $header->invoke($edit);
         Assert::assertIsArray($headerActions);
         Assert::assertArrayHasKey('locale-switcher', $headerActions);
 
-        $mutate = new ReflectionMethod($edit, 'mutateFormDataBeforeSave');
+        $mutate = new \ReflectionMethod($edit, 'mutateFormDataBeforeSave');
         $mutate->setAccessible(true);
-        $record = new class() extends \Illuminate\Database\Eloquent\Model
-        {
+        $record = new class extends \Illuminate\Database\Eloquent\Model {
             protected $guarded = [];
         };
         $record->forceFill(['key' => 'lang::messages']);
@@ -646,16 +644,14 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         Assert::assertSame(['content' => null], $mutate->invoke($edit, ['content' => null]));
 
         $editNoKey = new EditTranslationFile();
-        $editNoKey->record = new class() extends \Illuminate\Database\Eloquent\Model
-        {
+        $editNoKey->record = new class extends \Illuminate\Database\Eloquent\Model {
             protected $guarded = [];
         };
         Assert::assertSame(['x' => 1], $mutate->invoke($editNoKey, ['x' => 1]));
 
-        $after = new ReflectionMethod($edit, 'afterSave');
+        $after = new \ReflectionMethod($edit, 'afterSave');
         $after->setAccessible(true);
-        $refreshable = new class() extends \Illuminate\Database\Eloquent\Model
-        {
+        $refreshable = new class extends \Illuminate\Database\Eloquent\Model {
             public bool $refreshed = false;
 
             public function refresh(): static
@@ -673,7 +669,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $after->invoke($edit);
 
         $list = new ListTranslationFiles();
-        $listHeader = new ReflectionMethod($list, 'getHeaderActions');
+        $listHeader = new \ReflectionMethod($list, 'getHeaderActions');
         $listHeader->setAccessible(true);
         $listHeaderActions = $listHeader->invoke($list);
         Assert::assertIsArray($listHeaderActions);
@@ -740,9 +736,9 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 
     test('LangField cast get and set via host model', function (): void {
         $cast = new LangField();
-        $host = new \Modules\Lang\Tests\Unit\LangFieldHostModel();
+        $host = new LangFieldHostModel();
         /** @var Post&MockInterface $post */
-        $post = Mockery::mock(Post::class)->makePartial();
+        $post = \Mockery::mock(Post::class)->makePartial();
         $initialTitle = ['it' => 'Hello'];
         $post->setAttribute('custom_field', $initialTitle);
         $post->shouldReceive('save')->once()->andReturnTrue();
@@ -759,7 +755,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
     test('LanguageLine fillable and casts', function (): void {
         $line = new LanguageLine();
         Assert::assertSame(['group', 'key', 'text', 'locale'], $line->getFillable());
-        $casts = new ReflectionMethod($line, 'casts');
+        $casts = new \ReflectionMethod($line, 'casts');
         $casts->setAccessible(true);
         Assert::assertSame(['text' => 'json'], $casts->invoke($line));
     });
@@ -785,8 +781,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
         $model->forcedTranslation = 1.5;
         Assert::assertSame(1, $model->getTranslation('title', 'fr'));
 
-        $model->forcedTranslation = new class()
-        {
+        $model->forcedTranslation = new class {
             public function __toString(): string
             {
                 return 'obj';
@@ -890,12 +885,10 @@ describe('Lang 100% — Models policies providers views', function (): void {
     });
 
     test('TranslationData throws when namespace missing or file not array', function (): void {
-        app()->instance('translator', new class()
-        {
+        app()->instance('translator', new class {
             public function getLoader(): object
             {
-                return new class()
-                {
+                return new class {
                     /** @return array<string, string> */
                     public function namespaces(): array
                     {

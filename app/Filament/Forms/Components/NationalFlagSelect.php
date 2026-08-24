@@ -86,7 +86,8 @@ class NationalFlagSelect extends Select
     /**
      * Hook for tests: allow injecting defensive/non-array rows after filtering.
      *
-     * @param  array<array-key, mixed>  $filteredCountries
+     * @param array<array-key, mixed> $filteredCountries
+     *
      * @return array<array-key, mixed>
      */
     protected function finalizeFilteredCountries(array $filteredCountries): array
@@ -97,12 +98,13 @@ class NationalFlagSelect extends Select
     /**
      * Get filtered country options based on search query.
      *
-     * @param  string  $search  The search query
+     * @param string $search The search query
+     *
      * @return array<string, string>
      */
     protected function getFilteredCountryOptions(string $search): array
     {
-        if (trim($search) === '') {
+        if ('' === trim($search)) {
             return $this->getCountryOptions();
         }
 

@@ -22,7 +22,7 @@ function makeTranslatorAdapter(): TranslatorAdapter
 
 describe('TranslatorAdapter business logic', function () {
     test('returns the key itself when translation is missing', function () {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         if (TestCase::langDbUnavailable()) {
             $this->skipTest('DB `lang` non raggiungibile: blocco di ambiente.');
         }
@@ -39,7 +39,7 @@ describe('TranslatorAdapter business logic', function () {
     });
 
     test('get returns the key for a missing string key', function () {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         if (TestCase::langDbUnavailable()) {
             $this->skipTest('DB `lang` non raggiungibile: blocco di ambiente.');
         }

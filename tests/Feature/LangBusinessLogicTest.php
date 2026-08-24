@@ -10,13 +10,13 @@ use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
-use PHPUnit\Framework\Assert;
 use Modules\Xot\Tests\XotBasePest;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
+    /* @var TestCase $this */
     if (TestCase::langDbUnavailable()) {
         $this->skipTest('DB `lang` non raggiungibile: blocco di ambiente.');
     }

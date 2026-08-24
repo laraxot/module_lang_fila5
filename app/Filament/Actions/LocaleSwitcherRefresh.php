@@ -38,7 +38,7 @@ class LocaleSwitcherRefresh extends Action
                     ->required(),
             ])
             ->action(function (array $data): mixed {
-                /** @var array<string, mixed> $data */
+                /* @var array<string, mixed> $data */
                 return $this->applyLocale($data);
             })
             ->modalHeading('Cambia lingua')
@@ -47,7 +47,7 @@ class LocaleSwitcherRefresh extends Action
     }
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function applyLocale(array $data): mixed
     {
