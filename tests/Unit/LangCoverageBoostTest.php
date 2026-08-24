@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit;
 
-<<<<<<< .merge_file_otwAN2
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Lang\Adapters\TranslatorAdapter;
@@ -12,31 +11,15 @@ use Modules\Lang\Actions\MergeTranslationsAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
 use Modules\Lang\Actions\WriteTranslationFileAction;
 use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
-=======
-use Illuminate\Translation\ArrayLoader;
-use Illuminate\View\View;
-use Mockery\MockInterface;
-use Modules\Lang\Actions\MergeTranslationsAction;
-use Modules\Lang\Actions\SyncTranslationsAction;
-use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
-use Modules\Lang\Actions\WriteTranslationFileAction;
-use Modules\Lang\Adapters\TranslatorAdapter;
-use Modules\Lang\Datas\LangData;
-use Modules\Lang\Datas\TranslationData;
-use Modules\Lang\Filament\Resources\TranslationFileResource;
->>>>>>> .merge_file_IoY8h7
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\ListTranslationFiles;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Schemas\TranslationFileForm;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Schemas\TranslationFileInfolist;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Tables\TranslationFilesTable;
 use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
-<<<<<<< .merge_file_otwAN2
 use Modules\Lang\Filament\Resources\TranslationFileResource;
 use Modules\Lang\Datas\LangData;
 use Modules\Lang\Datas\TranslationData;
-=======
->>>>>>> .merge_file_IoY8h7
 use Modules\Lang\Models\Policies\PostPolicy;
 use Modules\Lang\Models\Policies\TranslationFilePolicy;
 use Modules\Lang\Models\Policies\TranslationPolicy;
@@ -44,7 +27,6 @@ use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\RouteServiceProvider;
-<<<<<<< .merge_file_otwAN2
 use Modules\Lang\View\Components\Flag;
 use Modules\Lang\View\Components\LanguageSwitcher;
 use Modules\Lang\View\Composers\ThemeComposer;
@@ -57,23 +39,10 @@ use Illuminate\View\View;
 use function Safe\unlink;
 use function Safe\mkdir;
 use function Safe\rmdir;
-=======
-use Modules\Lang\Tests\TestCase;
-use Modules\Lang\View\Components\Flag;
-use Modules\Lang\View\Components\LanguageSwitcher;
-use Modules\Lang\View\Composers\ThemeComposer;
-use Modules\Xot\Contracts\UserContract;
-use PHPUnit\Framework\Assert;
-
-use function Safe\mkdir;
-use function Safe\rmdir;
-use function Safe\unlink;
->>>>>>> .merge_file_IoY8h7
 
 uses(TestCase::class);
 
 /**
-<<<<<<< .merge_file_otwAN2
  * @param  list<string>  $permissions
  * @return Mockery\MockInterface&UserContract
  */
@@ -81,16 +50,6 @@ function langFakeUser(array $permissions = [], bool $superAdmin = false): UserCo
 {
     /** @var Mockery\MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
-=======
- * @param list<string> $permissions
- *
- * @return MockInterface&UserContract
- */
-function langFakeUser(array $permissions = [], bool $superAdmin = false): UserContract
-{
-    /** @var MockInterface&UserContract $user */
-    $user = \Mockery::mock(UserContract::class);
->>>>>>> .merge_file_IoY8h7
     $user->shouldReceive('hasRole')
         ->with('super-admin')
         ->andReturn($superAdmin);
@@ -103,11 +62,7 @@ function langFakeUser(array $permissions = [], bool $superAdmin = false): UserCo
 }
 
 afterEach(function (): void {
-<<<<<<< .merge_file_otwAN2
     Mockery::close();
-=======
-    \Mockery::close();
->>>>>>> .merge_file_IoY8h7
 });
 
 describe('Lang coverage boost — Actions', function (): void {
@@ -125,16 +80,9 @@ describe('Lang coverage boost — Actions', function (): void {
         $path = sys_get_temp_dir().'/lang_write_test_'.uniqid().'.php';
 
         try {
-<<<<<<< .merge_file_otwAN2
             app()->instance('cache', new class()
             {
                 public function flush(): void {}
-=======
-            app()->instance('cache', new class {
-                public function flush(): void
-                {
-                }
->>>>>>> .merge_file_IoY8h7
             });
 
             $result = app(WriteTranslationFileAction::class)->execute($path, [
@@ -291,7 +239,6 @@ describe('Lang coverage boost — UI and data', function (): void {
         mkdir(dirname($filePath), 0o755, true);
         TestCase::createTranslationFile($filePath, ['welcome' => 'Ciao']);
 
-<<<<<<< .merge_file_otwAN2
         app()->instance('translator', new class($langDir)
         {
             public function __construct(private readonly string $path) {}
@@ -301,19 +248,6 @@ describe('Lang coverage boost — UI and data', function (): void {
                 return new class($this->path)
                 {
                     public function __construct(private readonly string $path) {}
-=======
-        app()->instance('translator', new class($langDir) {
-            public function __construct(private readonly string $path)
-            {
-            }
-
-            public function getLoader(): object
-            {
-                return new class($this->path) {
-                    public function __construct(private readonly string $path)
-                    {
-                    }
->>>>>>> .merge_file_IoY8h7
 
                     /** @return array<string, string> */
                     public function namespaces(): array
