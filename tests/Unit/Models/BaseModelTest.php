@@ -13,12 +13,8 @@ uses(TestCase::class);
 
 function makeLangBaseModel(): BaseModel
 {
-<<<<<<< .merge_file_sCmrZr
     return new class() extends BaseModel
     {
-=======
-    return new class extends BaseModel {
->>>>>>> .merge_file_jReg6x
         protected $table = 'test_lang_table';
     };
 }

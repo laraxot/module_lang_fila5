@@ -12,16 +12,11 @@ use Modules\Lang\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
-use Modules\Xot\Tests\XotBasePest;
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
-<<<<<<< .merge_file_M3XhFP
     /** @var TestCase $this */
-=======
-    /* @var TestCase $this */
->>>>>>> .merge_file_BkZ9me
     if (TestCase::langDbUnavailable()) {
         $this->skipTest('DB `lang` non raggiungibile: blocco di ambiente.');
     }

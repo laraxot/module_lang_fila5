@@ -23,12 +23,7 @@ class TranslatorService extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
-<<<<<<< .merge_file_3aMQQu
      * @param  array<string, mixed>  $replace
-=======
-     * @param array<string, mixed> $replace
-     *
->>>>>>> .merge_file_4Qz661
      * @return string|array<string, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
@@ -74,11 +69,5 @@ class TranslatorService extends LaravelTranslator
         Translation::firstOrCreate($data);
     }
 
-<<<<<<< .merge_file_3aMQQu
     public function execute(): void {}
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> .merge_file_4Qz661
 }

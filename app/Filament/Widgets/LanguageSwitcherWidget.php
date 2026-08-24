@@ -26,11 +26,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
         return (bool) config('lang.language_switcher.enabled', true);
     }
 
-<<<<<<< .merge_file_gbjfsL
 /**
-=======
-    /**
->>>>>>> .merge_file_yR1R6c
      * Ottiene le lingue disponibili nel sistema.
      *
      * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
