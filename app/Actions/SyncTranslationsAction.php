@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 class SyncTranslationsAction
@@ -86,7 +86,7 @@ class SyncTranslationsAction
 
         foreach ($sourceFiles as $sourceFile) {
             $sourceFile = is_string($sourceFile) ? $sourceFile : '';
-            if ($sourceFile === '') {
+            if ('' === $sourceFile) {
                 continue;
             }
             $fileName = basename($sourceFile);
