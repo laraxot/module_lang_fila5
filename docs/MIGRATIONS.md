@@ -1,3 +1,12 @@
+---
+title: "Migrations — Lang Module"
+module: lang
+type: integration
+tags: [integrations, modules, lang]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Migrations — Lang Module
 
 Questo documento descrive le migrazioni nel modulo Lang e come mantengono la conformità con il pattern XotBaseMigration.
