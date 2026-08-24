@@ -290,7 +290,7 @@ class Post extends BaseModel
         if (\is_string($value) && $value !== '' && ! str_contains($value, ' ')) {
             return $value;
         }
-        $value = $this->title;
+        $value = $this->titleForGuid();
         if ($value === '') {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
@@ -314,6 +314,11 @@ class Post extends BaseModel
         }
 
         return $value;
+    }
+
+    protected function titleForGuid(): ?string
+    {
+        return $this->title;
     }
 
     public function getTxtAttribute(?string $value): ?string

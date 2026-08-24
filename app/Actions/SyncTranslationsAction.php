@@ -6,6 +6,7 @@ namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 class SyncTranslationsAction
@@ -39,12 +40,8 @@ class SyncTranslationsAction
         foreach ($modules as $module) {
             $moduleResults = $this->syncModule($module, $sourceLang, $targetLangs);
             $results['modules'][$module] = $moduleResults;
-            $results['total_files'] += is_numeric($moduleResults['files_processed'] ?? null)
-                ? ((int) $moduleResults['files_processed'])
-                : 0;
-            $results['total_translations'] += is_numeric($moduleResults['translations_added'] ?? null)
-                ? ((int) $moduleResults['translations_added'])
-                : 0;
+            $results['total_files'] += SafeIntCastAction::cast($moduleResults['files_processed'] ?? 0);
+            $results['total_translations'] += SafeIntCastAction::cast($moduleResults['translations_added'] ?? 0);
             ++$results['total_modules'];
         }
 
@@ -88,7 +85,8 @@ class SyncTranslationsAction
         $translationsAdded = 0;
 
         foreach ($sourceFiles as $sourceFile) {
-            if (! is_string($sourceFile)) {
+            $sourceFile = is_string($sourceFile) ? $sourceFile : '';
+            if ($sourceFile === '') {
                 continue;
             }
             $fileName = basename($sourceFile);

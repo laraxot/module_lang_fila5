@@ -17,10 +17,6 @@ class TranslationEditor extends XotBaseField
     protected function setUp(): void
     {
         parent::setUp();
-
-        $this->afterStateHydrated(static function (TranslationEditor $component, mixed $state): void {
-            $component->state($state ?? []);
-        });
     }
 
     public function getDefaultChildComponents(?string $key = null): array
@@ -35,7 +31,7 @@ class TranslationEditor extends XotBaseField
             $keyStr = (string) $key;
             if (is_array($value)) {
                 $components[] = Section::make($keyStr)->schema([
-                    TranslationEditor::make($keyStr)->label('')->state($value),
+                    TranslationEditor::make($keyStr)->label(''),
                 ]);
             } else {
                 /** @var string|int|float|bool|null $valueNarrowed */
