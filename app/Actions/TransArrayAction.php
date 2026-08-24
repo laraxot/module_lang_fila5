@@ -29,11 +29,7 @@ class TransArrayAction
             static fn (mixed $item): string => SafeStringCastAction::cast($item),
             $array,
         );
-<<<<<<< .merge_file_zcXTpR
         if ($transKey === null) {
-=======
-        if (null === $transKey) {
->>>>>>> .merge_file_HAKobr
             return $asStrings;
         }
 
@@ -47,11 +43,7 @@ class TransArrayAction
      */
     public function trans(string $item): string
     {
-<<<<<<< .merge_file_zcXTpR
         if ($item === '' || $item === '0' || $this->transKey === null) {
-=======
-        if ('' === $item || '0' === $item || null === $this->transKey) {
->>>>>>> .merge_file_HAKobr
             return $item;
         }
 

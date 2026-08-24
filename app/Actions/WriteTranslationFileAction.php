@@ -52,59 +52,39 @@ class WriteTranslationFileAction
         return true;
     }
 
-    protected function putTranslationFile(string $filePath, string $phpContent): int|false
-    {
-        $directory = dirname($filePath);
-        File::ensureDirectoryExists($directory);
+protected function putTranslationFile(string $filePath, string $phpContent): int|false
+     {
+         $directory = dirname($filePath);
+         File::ensureDirectoryExists($directory);
 
-        // Atomic rename: readers non vedono file a metà scrittura (suite parallele).
-        $tempFile = $this->makeLangTempPath($directory);
-        $bytes = $this->writeLangTempContents($tempFile, $phpContent);
-        if (false === $bytes) {
-            return false;
-        }
+         // Atomic rename: readers non vedono file a metà scrittura (suite parallele).
+         $tempFile = $this->makeLangTempPath($directory);
+         $bytes = $this->writeLangTempContents($tempFile, $phpContent);
+         if (false === $bytes) {
+             return false;
+         }
 
-        $this->moveLangTempToTarget($tempFile, $filePath);
+         $this->moveLangTempToTarget($tempFile, $filePath);
 
-        return $bytes;
-    }
+         return $bytes;
+     }
 
-    protected function makeLangTempPath(string $directory): string
-    {
-        return $directory.'/'.uniqid('lang_put_', true).'.tmp';
-    }
+     protected function makeLangTempPath(string $directory): string
+     {
+         return $directory.'/'.uniqid('lang_put_', true).'.tmp';
+     }
 
-    protected function writeLangTempContents(string $tempFile, string $phpContent): int|false
-    {
-        return file_put_contents($tempFile, $phpContent);
-    }
+     protected function writeLangTempContents(string $tempFile, string $phpContent): int|false
+     {
+         return file_put_contents($tempFile, $phpContent);
+     }
 
-    protected function moveLangTempToTarget(string $tempFile, string $filePath): bool
-    {
-        rename($tempFile, $filePath);
+     protected function moveLangTempToTarget(string $tempFile, string $filePath): bool
+     {
+         rename($tempFile, $filePath);
 
-        return true;
-    }
-
-    /**
-     * @return int|false
-     */
-    protected function putTranslationFile(string $filePath, string $phpContent): int|false
-    {
-        $directory = dirname($filePath);
-        File::ensureDirectoryExists($directory);
-
-        // Atomic rename: readers non vedono file a metà scrittura (suite parallele).
-        $tempFile = $this->makeLangTempPath($directory);
-        $bytes = $this->writeLangTempContents($tempFile, $phpContent);
-        if ($bytes === false) {
-            return false;
-        }
-
-        $this->moveLangTempToTarget($tempFile, $filePath);
-
-        return $bytes;
-    }
+         return true;
+     }
 
     protected function makeLangTempPath(string $directory): string
     {
