@@ -85,6 +85,21 @@ class NationalFlagSelect extends Select
 
     /**
      * Hook for tests: allow injecting defensive/non-array rows after filtering.
+<<<<<<< .merge_file_qEkpAQ
+=======
+     *
+     * @param array<array-key, mixed> $filteredCountries
+     *
+     * @return array<array-key, mixed>
+     */
+    protected function finalizeFilteredCountries(array $filteredCountries): array
+    {
+        return $filteredCountries;
+    }
+
+    /**
+     * Get filtered country options based on search query.
+>>>>>>> .merge_file_0r122n
      *
      * @param  array<array-key, mixed>  $filteredCountries
      * @return array<array-key, mixed>

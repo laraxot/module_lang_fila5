@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< .merge_file_RsBs4m
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_HBQbX6
 return [
     'value' => [
         'label' => 'Valore',

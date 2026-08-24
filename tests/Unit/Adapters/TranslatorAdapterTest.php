@@ -22,7 +22,11 @@ function makeTranslatorAdapter(): TranslatorAdapter
 
 describe('TranslatorAdapter business logic', function () {
     test('returns the key itself when translation is missing', function () {
+<<<<<<< .merge_file_fqs2nS
         /** @var TestCase $this */
+=======
+        /* @var TestCase $this */
+>>>>>>> .merge_file_AR30FZ
         if (TestCase::langDbUnavailable()) {
             $this->skipTest('DB `lang` non raggiungibile: blocco di ambiente.');
         }
@@ -39,7 +43,11 @@ describe('TranslatorAdapter business logic', function () {
     });
 
     test('get returns the key for a missing string key', function () {
+<<<<<<< .merge_file_fqs2nS
         /** @var TestCase $this */
+=======
+        /* @var TestCase $this */
+>>>>>>> .merge_file_AR30FZ
         if (TestCase::langDbUnavailable()) {
             $this->skipTest('DB `lang` non raggiungibile: blocco di ambiente.');
         }
