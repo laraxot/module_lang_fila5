@@ -1,3 +1,12 @@
+---
+title: "Asset binari"
+module: lang
+type: integration
+tags: [integrations, modules, lang]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Asset binari
 
 Gli asset binari sono file normali del repository.
