@@ -167,7 +167,11 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * Scrive un file di traduzione PHP nel percorso indicato.
      *
+<<<<<<< .merge_file_Rx3Gd1
      * @param  array<string, mixed>  $translations
+=======
+     * @param array<string, mixed> $translations
+>>>>>>> .merge_file_vvGRcD
      */
     public static function createTranslationFile(string $filePath, array $translations): void
     {
@@ -175,7 +179,11 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+<<<<<<< .merge_file_Rx3Gd1
      * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> .merge_file_vvGRcD
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {

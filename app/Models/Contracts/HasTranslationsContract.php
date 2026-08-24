@@ -22,8 +22,13 @@ interface HasTranslationsContract
      * @return self L'istanza corrente del modello, per supportare method chaining
      */
     /**
+<<<<<<< .merge_file_Auj2OL
      * @param  array<string, mixed>|int|string|null  $value
      * @param  array<string, mixed>|int|string|null  $value
+=======
+     * @param array<string, mixed>|int|string|null $value
+     * @param array<string, mixed>|int|string|null $value
+>>>>>>> .merge_file_Gn0cFB
      */
     public function setTranslation(string $key, string $locale, int|array|string|null $value): self;
 }

@@ -28,7 +28,11 @@ class TranslationFileResource extends XotBaseResource
         return ['it', 'en'];
     }
 
+<<<<<<< .merge_file_0ipkUv
 public static function getFormSchemaOld(): array
+=======
+    public static function getFormSchemaOld(): array
+>>>>>>> .merge_file_x01MgB
     {
         return [];
     }

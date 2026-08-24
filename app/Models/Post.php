@@ -291,7 +291,11 @@ class Post extends BaseModel
             return $value;
         }
         $value = $this->titleForGuid();
+<<<<<<< .merge_file_QqHFhZ
         if ($value === '') {
+=======
+        if ('' === $value) {
+>>>>>>> .merge_file_EtXPPj
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']

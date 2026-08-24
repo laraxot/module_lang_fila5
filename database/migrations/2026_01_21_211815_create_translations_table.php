@@ -6,8 +6,12 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Lang\Models\Translation;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< .merge_file_cryLN3
 return new class extends XotBaseMigration
 {
+=======
+return new class extends XotBaseMigration {
+>>>>>>> .merge_file_wxggSi
     protected ?string $model_class = Translation::class;
 
     public function up(): void
