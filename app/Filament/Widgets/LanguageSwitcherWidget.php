@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Filament\Widgets;
 
-use Filament\Schemas\Components\Component;
 use Illuminate\Support\Collection;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
@@ -27,7 +26,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
         return (bool) config('lang.language_switcher.enabled', true);
     }
 
-/**
+    /**
      * Ottiene le lingue disponibili nel sistema.
      *
      * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
@@ -68,8 +67,9 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     /**
      * Genera l'URL per una specifica lingua.
      *
-     * @param  string  $locale  Codice della lingua     *
-     * @param  string  $locale  Codice della lingua
+     * @param string $locale Codice della lingua     *
+     * @param string $locale Codice della lingua
+     *
      * @return string URL con la lingua specificata
      */
     public function getLanguageUrl(string $locale): string
@@ -87,7 +87,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
         // Aggiunge la lingua all'URL
         $path = request()->getPathInfo();
 
-        return url($locale.($path === '/' ? '' : $path));
+        return url($locale.('/' === $path ? '' : $path));
     }
 
     /**

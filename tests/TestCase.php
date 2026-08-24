@@ -167,7 +167,7 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * Scrive un file di traduzione PHP nel percorso indicato.
      *
-     * @param  array<string, mixed>  $translations
+     * @param array<string, mixed> $translations
      */
     public static function createTranslationFile(string $filePath, array $translations): void
     {
@@ -175,7 +175,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {
