@@ -114,10 +114,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             //    // $component->iconButton();
             // }
             /*
-            dddx([
-            'methods' => get_class_methods($component),
-            'getRecord' => $component->getRecord(),
-            ]);
+            throw new \RuntimeException('Removed debug dddx');
             */
             if (method_exists($component, 'getRecord') && null === $component->getRecord()) {
                 if (method_exists($component, 'button')) {

@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions;
 
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-
-use function Safe\glob;
-
 use Spatie\QueueableAction\QueueableAction;
 
 class GetAllTranslationAction
@@ -28,7 +26,7 @@ class GetAllTranslationAction
 
         $lang = app()->getLocale();
         $path = base_path('Modules/*/lang/'.$lang.'/*.php');
-        $files = glob($path);
+        $files = File::glob($path) ?: [];
 
         $result = [];
         foreach ($files as $file) {

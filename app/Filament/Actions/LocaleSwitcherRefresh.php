@@ -37,18 +37,26 @@ class LocaleSwitcherRefresh extends Action
                     ->reactive()
                     ->required(),
             ])
-            ->action(function (array $data) {
-                $locale = $data['locale'] ?? 'en';
-                $locale = is_string($locale) ? $locale : 'en';
-
-                session()->put('locale', $locale);
-                App::setLocale($locale);
-                // Filament::setLocale($locale);
-
-                return redirect(request()->header('Referer'));
+            ->action(function (array $data): mixed {
+                /** @var array<string, mixed> $data */
+                return $this->applyLocale($data);
             })
             ->modalHeading('Cambia lingua')
             // ->icon('heroicon-o-language')
             ->color('gray');
+    }
+
+    /**
+     * @param  array<string, mixed>  $data
+     */
+    public function applyLocale(array $data): mixed
+    {
+        $locale = $data['locale'] ?? 'en';
+        $locale = is_string($locale) ? $locale : 'en';
+
+        session()->put('locale', $locale);
+        App::setLocale($locale);
+
+        return redirect(request()->header('Referer'));
     }
 }

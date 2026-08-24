@@ -152,13 +152,8 @@ class TranslationFile extends BaseModel
 
     private function isRunningIdeHelper(): bool
     {
-        if (defined('PHPSTAN_RUNNING')) {
-            return true;
-        }
-
-        $argv = $_SERVER['argv'] ?? [];
-
-        return is_array($argv) && in_array('ide-helper:models', $argv, true);
+        return filter_var(config('app.phpstan_running', false), FILTER_VALIDATE_BOOLEAN)
+            || (is_array($_SERVER['argv'] ?? null) && in_array('ide-helper:models', $_SERVER['argv'], true));
     }
 
     /**

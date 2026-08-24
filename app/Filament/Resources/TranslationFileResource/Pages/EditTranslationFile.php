@@ -27,18 +27,24 @@ class EditTranslationFile extends XotBaseEditRecord
     public function getFormSchema(): array
     {
         return [
-            Section::make('content')->schema(function (mixed $record): array {
-                if (is_object($record) && isset($record->content) && is_array($record->content)) {
-                    /** @var array<string, mixed> $content */
-                    $content = $record->content;
-                } else {
-                    /** @var array<string, mixed> $content */
-                    $content = [];
-                }
-
-                return $this->makeFromArray($content, 'content');
-            }),
+            Section::make('content')->schema(fn (mixed $record): array => $this->schemaFromRecord($record)),
         ];
+    }
+
+    /**
+     * @return array<int, Section|TextInput>
+     */
+    public function schemaFromRecord(mixed $record): array
+    {
+        if (is_object($record) && isset($record->content) && is_array($record->content)) {
+            /** @var array<string, mixed> $content */
+            $content = $record->content;
+        } else {
+            /** @var array<string, mixed> $content */
+            $content = [];
+        }
+
+        return $this->makeFromArray($content, 'content');
     }
 
     /**

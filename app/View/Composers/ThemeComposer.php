@@ -115,12 +115,17 @@ class ThemeComposer
         }
 
         // Verifichiamo che il valore del campo sia una stringa o lo convertiamo in modo sicuro
-        $value = $lang->{$field};
+        $value = $this->langFieldValue($lang, $field);
         if (! is_string($value)) {
             return 'id' === $field ? $currentLocale : '';
         }
 
         return $value;
+    }
+
+    protected function langFieldValue(LangData $lang, string $field): mixed
+    {
+        return $lang->{$field};
     }
 
     /**
@@ -130,7 +135,7 @@ class ThemeComposer
      *
      * @return string The generated URL
      */
-    private function buildAdminLanguageUrl(string $locale): string
+    public function buildAdminLanguageUrl(string $locale): string
     {
         $routeName = Route::currentRouteName();
         if (! is_string($routeName)) {
