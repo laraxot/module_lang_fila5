@@ -19,15 +19,25 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\HtmlString;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator as LaravelTranslator;
+<<<<<<< .merge_file_aIFWRp
 use Mockery;
+=======
+>>>>>>> .merge_file_jrZJu7
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
+<<<<<<< .merge_file_aIFWRp
 use Modules\Lang\Actions\TranslatorAction;
 use Modules\Lang\Actions\WriteTranslationFileAction;
 use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
+=======
+use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
+use Modules\Lang\Actions\TranslatorAction;
+use Modules\Lang\Actions\WriteTranslationFileAction;
+use Modules\Lang\Adapters\TranslatorAdapter;
+>>>>>>> .merge_file_jrZJu7
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Modules\Lang\Filament\Forms\Components\TranslationEditor;
@@ -42,12 +52,18 @@ use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_aIFWRp
 use ReflectionMethod;
 use ReflectionProperty;
 
 use function Safe\file_put_contents;
 use function Safe\mkdir;
 use function Safe\putenv;
+=======
+
+use function Safe\file_put_contents;
+use function Safe\mkdir;
+>>>>>>> .merge_file_jrZJu7
 use function Safe\rename;
 use function Safe\rmdir;
 use function Safe\unlink;
@@ -138,7 +154,11 @@ final class ThemeComposerNonStringFieldStub extends ThemeComposer
 }
 
 afterEach(function (): void {
+<<<<<<< .merge_file_aIFWRp
     Mockery::close();
+=======
+    \Mockery::close();
+>>>>>>> .merge_file_jrZJu7
 });
 
 test('EditTranslationFile schemaFromRecord covers both branches', function (): void {
@@ -167,7 +187,11 @@ test('TranslatorAction and Adapter coerce non-string loaded values', function ()
 
     $loader = new ArrayLoader();
     $action = new TranslatorAction($loader, 'it');
+<<<<<<< .merge_file_aIFWRp
     $loaded = new ReflectionProperty(LaravelTranslator::class, 'loaded');
+=======
+    $loaded = new \ReflectionProperty(LaravelTranslator::class, 'loaded');
+>>>>>>> .merge_file_jrZJu7
     $loaded->setAccessible(true);
     // JSON translation path returns non-string/non-array values without notifyMissingKey/DB
     $loaded->setValue($action, ['*' => ['*' => ['it' => ['json.int.key' => 42]]]]);
@@ -237,9 +261,15 @@ test('SyncTranslationsAction skips empty casted glob entries', function (): void
         Assert::assertIsArray($result['modules'][$tmpModule]);
         Assert::assertSame('completed', $result['modules'][$tmpModule]['status']);
     } finally {
+<<<<<<< .merge_file_aIFWRp
         Mockery::close();
         if (is_dir($base)) {
             \Illuminate\Support\Facades\File::deleteDirectory($base);
+=======
+        \Mockery::close();
+        if (is_dir($base)) {
+            File::deleteDirectory($base);
+>>>>>>> .merge_file_jrZJu7
         }
     }
 });
@@ -256,9 +286,16 @@ test('WriteTranslationFileAction createBackup makes directory', function (): voi
 
     $path = sys_get_temp_dir().'/wfa_'.uniqid().'.php';
     TestCase::createTranslationFile($path, ['x' => '1']);
+<<<<<<< .merge_file_aIFWRp
     app()->instance('cache', new class()
     {
         public function flush(): void {}
+=======
+    app()->instance('cache', new class {
+        public function flush(): void
+        {
+        }
+>>>>>>> .merge_file_jrZJu7
     });
 
     try {
@@ -270,7 +307,11 @@ test('WriteTranslationFileAction createBackup makes directory', function (): voi
         }
         if (isset($moved) && is_dir($moved)) {
             if (is_dir($backupDir)) {
+<<<<<<< .merge_file_aIFWRp
                 \Illuminate\Support\Facades\File::deleteDirectory($backupDir);
+=======
+                File::deleteDirectory($backupDir);
+>>>>>>> .merge_file_jrZJu7
             }
             rename($moved, $backupDir);
         }
@@ -321,7 +362,11 @@ test('NationalFlagSelect array localized name and bad code in filter', function 
         ['iso_3166_1_alpha2' => 9, 'name' => 'Bad'],
         'nope',
     ];
+<<<<<<< .merge_file_aIFWRp
     $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+=======
+    $f = new \ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+>>>>>>> .merge_file_jrZJu7
     $f->setAccessible(true);
     Assert::assertIsArray($f->invoke($select, 'ital'));
     Assert::assertIsArray($f->invoke($select, 'IT'));
@@ -335,9 +380,16 @@ test('TranslationEditor make preserves the field name', function (): void {
 test('WriteTranslationFileAction throws when put fails', function (): void {
     $path = sys_get_temp_dir().'/wfail_'.uniqid().'.php';
     TestCase::createTranslationFile($path, ['a' => '1']);
+<<<<<<< .merge_file_aIFWRp
     app()->instance('cache', new class()
     {
         public function flush(): void {}
+=======
+    app()->instance('cache', new class {
+        public function flush(): void
+        {
+        }
+>>>>>>> .merge_file_jrZJu7
     });
     $action = new WriteTranslationFileActionFailStub();
     expect(fn () => $action->execute($path, ['a' => '2']))->toThrow(\Exception::class);
@@ -389,7 +441,11 @@ test('NationalFlagSelect hits array localized translation branch', function (): 
     $select->forcedCountries = [
         ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
     ];
+<<<<<<< .merge_file_aIFWRp
     $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+=======
+    $f = new \ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+>>>>>>> .merge_file_jrZJu7
     $f->setAccessible(true);
     $options = $f->invoke($select, 'ital');
     Assert::assertIsArray($options);
@@ -482,7 +538,11 @@ test('NationalFlagSelect casts non-array non-string localized label', function (
         $mock->allows(['execute' => '/f.svg']);
     });
     $translator = app('translator');
+<<<<<<< .merge_file_aIFWRp
     $mock = Mockery::mock($translator)->makePartial();
+=======
+    $mock = \Mockery::mock($translator)->makePartial();
+>>>>>>> .merge_file_jrZJu7
     $mock->shouldReceive('get')
         ->andReturnUsing(static function (string $key, array $replace = [], ?string $locale = null) use ($translator): mixed {
             if (str_contains($key, 'countries.it')) {
@@ -498,7 +558,11 @@ test('NationalFlagSelect casts non-array non-string localized label', function (
     $select->forcedCountries = [
         ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
     ];
+<<<<<<< .merge_file_aIFWRp
     $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+=======
+    $m = new \ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+>>>>>>> .merge_file_jrZJu7
     $m->setAccessible(true);
     $options = $m->invoke($select);
     Assert::assertIsArray($options);
@@ -518,7 +582,11 @@ test('NationalFlagSelect finalizeFilteredCountries defensive continue', function
         ['iso_3166_1_alpha2' => null],
         ['name' => 'NoCode'],
     ];
+<<<<<<< .merge_file_aIFWRp
     $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+=======
+    $f = new \ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+>>>>>>> .merge_file_jrZJu7
     $f->setAccessible(true);
     $options = $f->invoke($select, 'ital');
     Assert::assertIsArray($options);
@@ -551,7 +619,14 @@ test('NationalFlagSelect getCountryOptions casts int localized label', function 
     $real = app('translator');
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
     app()->instance('translator', new class($real) {
+<<<<<<< .merge_file_aIFWRp
         public function __construct(private LaravelTranslator $inner) {}
+=======
+        public function __construct(private LaravelTranslator $inner)
+        {
+        }
+
+>>>>>>> .merge_file_jrZJu7
         /** @param array<string, mixed> $replace */
         public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
         {
@@ -561,6 +636,10 @@ test('NationalFlagSelect getCountryOptions casts int localized label', function 
 
             return $this->inner->get($key, $replace, $locale, $fallback);
         }
+<<<<<<< .merge_file_aIFWRp
+=======
+
+>>>>>>> .merge_file_jrZJu7
         /** @param list<mixed> $arguments */
         public function __call(string $name, array $arguments): mixed
         {
@@ -572,7 +651,11 @@ test('NationalFlagSelect getCountryOptions casts int localized label', function 
     $select->forcedCountries = [
         ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
     ];
+<<<<<<< .merge_file_aIFWRp
     $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+=======
+    $m = new \ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+>>>>>>> .merge_file_jrZJu7
     $m->setAccessible(true);
     $options = $m->invoke($select);
     Assert::assertIsArray($options);
@@ -587,7 +670,14 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
     $real = app('translator');
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
     app()->instance('translator', new class($real) {
+<<<<<<< .merge_file_aIFWRp
         public function __construct(private LaravelTranslator $inner) {}
+=======
+        public function __construct(private LaravelTranslator $inner)
+        {
+        }
+
+>>>>>>> .merge_file_jrZJu7
         /** @param array<string, mixed> $replace */
         public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
         {
@@ -597,6 +687,10 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
 
             return $this->inner->get($key, $replace, $locale, $fallback);
         }
+<<<<<<< .merge_file_aIFWRp
+=======
+
+>>>>>>> .merge_file_jrZJu7
         /** @param list<mixed> $arguments */
         public function __call(string $name, array $arguments): mixed
         {
@@ -608,7 +702,11 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
     $select->forcedCountries = [
         ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
     ];
+<<<<<<< .merge_file_aIFWRp
     $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+=======
+    $m = new \ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+>>>>>>> .merge_file_jrZJu7
     $m->setAccessible(true);
     $options = $m->invoke($select);
     Assert::assertIsArray($options);
@@ -617,7 +715,11 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
 
 test('WriteTranslationFileAction putTranslationFile returns false when write fails', function (): void {
     $action = new WriteTranslationFileActionWriteFailStub();
+<<<<<<< .merge_file_aIFWRp
     $m = new ReflectionMethod(WriteTranslationFileAction::class, 'putTranslationFile');
+=======
+    $m = new \ReflectionMethod(WriteTranslationFileAction::class, 'putTranslationFile');
+>>>>>>> .merge_file_jrZJu7
     $m->setAccessible(true);
     $dir = sys_get_temp_dir().'/lang_put_false_'.uniqid();
     $path = $dir.'/x.php';
@@ -625,9 +727,16 @@ test('WriteTranslationFileAction putTranslationFile returns false when write fai
 });
 
 test('WriteTranslationFileAction putTranslationFile edge paths', function (): void {
+<<<<<<< .merge_file_aIFWRp
     app()->instance('cache', new class()
     {
         public function flush(): void {}
+=======
+    app()->instance('cache', new class {
+        public function flush(): void
+        {
+        }
+>>>>>>> .merge_file_jrZJu7
     });
 
     $missingDir = sys_get_temp_dir().'/lang_wfa_dir_'.uniqid();

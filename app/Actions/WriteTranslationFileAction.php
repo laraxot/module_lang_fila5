@@ -52,6 +52,40 @@ class WriteTranslationFileAction
         return true;
     }
 
+    protected function putTranslationFile(string $filePath, string $phpContent): int|false
+    {
+        $directory = dirname($filePath);
+        File::ensureDirectoryExists($directory);
+
+        // Atomic rename: readers non vedono file a metà scrittura (suite parallele).
+        $tempFile = $this->makeLangTempPath($directory);
+        $bytes = $this->writeLangTempContents($tempFile, $phpContent);
+        if (false === $bytes) {
+            return false;
+        }
+
+        $this->moveLangTempToTarget($tempFile, $filePath);
+
+        return $bytes;
+    }
+
+    protected function makeLangTempPath(string $directory): string
+    {
+        return $directory.'/'.uniqid('lang_put_', true).'.tmp';
+    }
+
+    protected function writeLangTempContents(string $tempFile, string $phpContent): int|false
+    {
+        return file_put_contents($tempFile, $phpContent);
+    }
+
+    protected function moveLangTempToTarget(string $tempFile, string $filePath): bool
+    {
+        rename($tempFile, $filePath);
+
+        return true;
+    }
+
     /**
      * @return int|false
      */

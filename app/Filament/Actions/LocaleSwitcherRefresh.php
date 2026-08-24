@@ -38,7 +38,11 @@ class LocaleSwitcherRefresh extends Action
                     ->required(),
             ])
             ->action(function (array $data): mixed {
+<<<<<<< .merge_file_wPatfz
                 /** @var array<string, mixed> $data */
+=======
+                /* @var array<string, mixed> $data */
+>>>>>>> .merge_file_FpsO5F
                 return $this->applyLocale($data);
             })
             ->modalHeading('Cambia lingua')
@@ -47,7 +51,11 @@ class LocaleSwitcherRefresh extends Action
     }
 
     /**
+<<<<<<< .merge_file_wPatfz
      * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> .merge_file_FpsO5F
      */
     public function applyLocale(array $data): mixed
     {
