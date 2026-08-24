@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\File;
 use function Safe\date;
 use function Safe\exec;
 use function Safe\file_put_contents;
+use function Safe\rename;
 use function Safe\tempnam;
 use function Safe\unlink;
 
@@ -39,7 +40,7 @@ class WriteTranslationFileAction
         $this->validatePhpSyntax($phpContent);
 
         // Scrivi il file
-        $result = File::put($filePath, $phpContent);
+        $result = $this->putTranslationFile($filePath, $phpContent);
 
         if (false === $result) {
             throw new \Exception("Impossibile scrivere il file: {$filePath}");
@@ -47,6 +48,43 @@ class WriteTranslationFileAction
 
         // Pulisci la cache delle traduzioni
         $this->clearTranslationCache();
+
+        return true;
+    }
+
+    /**
+     * @return int|false
+     */
+    protected function putTranslationFile(string $filePath, string $phpContent): int|false
+    {
+        $directory = dirname($filePath);
+        File::ensureDirectoryExists($directory);
+
+        // Atomic rename: readers non vedono file a metà scrittura (suite parallele).
+        $tempFile = $this->makeLangTempPath($directory);
+        $bytes = $this->writeLangTempContents($tempFile, $phpContent);
+        if ($bytes === false) {
+            return false;
+        }
+
+        $this->moveLangTempToTarget($tempFile, $filePath);
+
+        return $bytes;
+    }
+
+    protected function makeLangTempPath(string $directory): string
+    {
+        return $directory.'/'.uniqid('lang_put_', true).'.tmp';
+    }
+
+    protected function writeLangTempContents(string $tempFile, string $phpContent): int|false
+    {
+        return file_put_contents($tempFile, $phpContent);
+    }
+
+    protected function moveLangTempToTarget(string $tempFile, string $filePath): bool
+    {
+        rename($tempFile, $filePath);
 
         return true;
     }
