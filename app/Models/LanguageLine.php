@@ -30,10 +30,20 @@ use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedAt($value)
  * @method static EloquentBuilder<static>|LanguageLine whereCreatedBy($value)
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedBy($value)
+<<<<<<< .merge_file_e3bi3W
  * @property-read \Modules\Ptv\Models\Profile|null $creator
  * @property-read \Modules\Ptv\Models\Profile|null $deleter
  * @property-read \Modules\Ptv\Models\Profile|null $updater
  * @method static \Modules\Lang\Database\Factories\LanguageLineFactory factory($count = null, $state = [])
+=======
+ *
+ * @property \Modules\Ptv\Models\Profile|null $creator
+ * @property \Modules\Ptv\Models\Profile|null $deleter
+ * @property \Modules\Ptv\Models\Profile|null $updater
+ *
+ * @method static \Modules\Lang\Database\Factories\LanguageLineFactory factory($count = null, $state = [])
+ *
+>>>>>>> .merge_file_uM2TlZ
  * @mixin \Eloquent
  */
 class LanguageLine extends BaseModel

@@ -84,7 +84,11 @@ class AutoLabelAction
         if ($label_key === $label || ! method_exists($component, $type)) {
             return $component;
         }
+<<<<<<< .merge_file_OuFEu8
         if ($type === 'icon') {
+=======
+        if ('icon' === $type) {
+>>>>>>> .merge_file_feOf5G
             $exists = app(SvgExistsAction::class)->execute($label);
             if ($exists && method_exists($component, 'iconButton')) {
                 $component->iconButton();
@@ -96,7 +100,11 @@ class AutoLabelAction
             return $component;
         }
 
+<<<<<<< .merge_file_OuFEu8
         if (strip_tags($label) !== $label && $type === 'helperText') {
+=======
+        if (strip_tags($label) !== $label && 'helperText' === $type) {
+>>>>>>> .merge_file_feOf5G
             $component->{$type}(new HtmlString($label));
 
             return $component;
@@ -115,7 +123,11 @@ class AutoLabelAction
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);
         $class = Arr::first($backtrace_slice, function (array $item) use ($component) {
+<<<<<<< .merge_file_OuFEu8
             if ($item['function'] === 'execute') {
+=======
+            if ('execute' === $item['function']) {
+>>>>>>> .merge_file_feOf5G
                 return false;
             }
 
@@ -142,7 +154,11 @@ class AutoLabelAction
     }
 
     /**
+<<<<<<< .merge_file_OuFEu8
      * @param  array<string, mixed>  $class
+=======
+     * @param array<string, mixed> $class
+>>>>>>> .merge_file_feOf5G
      */
     protected function objectClassFromFrame(array $class): ?string
     {
@@ -150,7 +166,11 @@ class AutoLabelAction
         if (isset($class['object']) && is_object($class['object'])) {
             $object_class = $class['object']::class;
         }
+<<<<<<< .merge_file_OuFEu8
         if (isset($class['class']) && $object_class === null) {
+=======
+        if (isset($class['class']) && null === $object_class) {
+>>>>>>> .merge_file_feOf5G
             $object_class = $class['class'];
         }
 

@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< .merge_file_fPsKBw
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_ynOF2y
 return [
     'filters' => [
         'apply' => [
