@@ -6,20 +6,39 @@ namespace Modules\Lang\Tests\Unit;
 
 use Mockery;
 use Mockery\MockInterface;
+use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Lang\Actions\MergeTranslationsAction;
+use Modules\Lang\Actions\SyncTranslationsAction;
 use Modules\Lang\Actions\WriteTranslationFileAction;
+use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
+use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
+use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\ListTranslationFiles;
+use Modules\Lang\Filament\Resources\TranslationFileResource\Schemas\TranslationFileForm;
+use Modules\Lang\Filament\Resources\TranslationFileResource\Schemas\TranslationFileInfolist;
+use Modules\Lang\Filament\Resources\TranslationFileResource\Tables\TranslationFilesTable;
+use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 use Modules\Lang\Filament\Resources\TranslationFileResource;
+use Modules\Lang\Datas\LangData;
+use Modules\Lang\Datas\TranslationData;
 use Modules\Lang\Models\Policies\PostPolicy;
 use Modules\Lang\Models\Policies\TranslationFilePolicy;
 use Modules\Lang\Models\Policies\TranslationPolicy;
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
+use Modules\Lang\Providers\RouteServiceProvider;
+use Modules\Lang\View\Components\Flag;
+use Modules\Lang\View\Components\LanguageSwitcher;
+use Modules\Lang\View\Composers\ThemeComposer;
 use Modules\Lang\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+use Illuminate\Translation\ArrayLoader;
+use Illuminate\View\View;
 
 use function Safe\unlink;
+use function Safe\mkdir;
+use function Safe\rmdir;
 
 uses(TestCase::class);
 
@@ -129,6 +148,143 @@ describe('Lang coverage boost — Filament static', function (): void {
     });
 });
 
+describe('Lang coverage boost — UI and data', function (): void {
+    test('translation file schemas and pages build executable structures', function (): void {
+        $formSchema = TranslationFileForm::getFormSchema();
+        $infolistSchema = TranslationFileInfolist::getInfolistSchema();
+        $tableColumns = (new TranslationFilesTable())->getTableColumns();
+
+        Assert::assertArrayHasKey('name', $formSchema);
+        Assert::assertArrayHasKey('id', $infolistSchema);
+        Assert::assertArrayHasKey('created_at', $tableColumns);
+
+        $listPage = new ListTranslationFiles();
+        $editPage = new EditTranslationFile();
+
+        $builtFields = $editPage->makeFromArray([
+            'title' => 'Hello',
+            'meta' => ['description' => 'World'],
+        ]);
+
+        $listHeader = new \ReflectionMethod($listPage, 'getHeaderActions');
+        $listHeader->setAccessible(true);
+        $listHeaderActions = $listHeader->invoke($listPage);
+        Assert::assertIsArray($listHeaderActions);
+        Assert::assertArrayHasKey('locale_switcher', $listHeaderActions);
+        Assert::assertCount(2, $builtFields);
+        Assert::assertSame(['it', 'en'], $editPage->getTranslatableLocales());
+    });
+
+    test('language widget and blade components expose runtime data', function (): void {
+        $widget = new LanguageSwitcherWidget();
+
+        Assert::assertTrue(LanguageSwitcherWidget::canView());
+        Assert::assertCount(3, $widget->getAvailableLocales());
+        $firstLocale = $widget->getAvailableLocales()->first();
+        Assert::assertNotNull($firstLocale);
+        Assert::assertSame('it', $firstLocale['code']);
+
+        app('request')->server->set('REQUEST_URI', '/it/example');
+        app('request')->server->set('PATH_INFO', '/it/example');
+        app()->setLocale('it');
+
+        Assert::assertSame(url('en'), $widget->getLanguageUrl('en'));
+
+        $component = new LanguageSwitcher();
+        $rendered = $component->render();
+
+        Assert::assertInstanceOf(View::class, $rendered);
+        Assert::assertSame('lang::components.language-switcher', $rendered->name());
+    });
+
+    test('flag component, theme composer and data objects resolve language metadata', function (): void {
+        $this->mockService(\Modules\Xot\Actions\GetViewAction::class, static function (MockInterface $mock): void {
+            $mock->allows(['execute' => 'lang::components.empty']);
+        });
+
+        $flag = new Flag('it');
+        $flagView = $flag->render();
+
+        Assert::assertInstanceOf(View::class, $flagView);
+        Assert::assertSame('lang::components.empty', $flagView->name());
+
+        config([
+            'laravellocalization.supportedLocales' => [
+                'it' => ['name' => 'Italiano', 'regional' => 'it_IT'],
+                'en' => ['name' => 'English', 'regional' => 'en_US'],
+            ],
+        ]);
+        app()->setLocale('it');
+
+        $composer = new ThemeComposer();
+        $languages = $composer->languages();
+        $others = $composer->otherLanguages();
+
+        Assert::assertCount(2, $languages);
+        Assert::assertCount(1, $others);
+        Assert::assertSame('Italiano', $composer->currentLang('name'));
+        Assert::assertSame('it', $composer->currentLang('id'));
+
+        $collection = LangData::collection([
+            ['id' => 'it', 'name' => 'Italiano', 'flag' => '<i></i>', 'url' => '/it'],
+        ]);
+
+        Assert::assertCount(1, $collection);
+    });
+
+    test('translation data resolves filenames and translator adapter records misses', function (): void {
+        $langDir = sys_get_temp_dir().'/lang_data_'.uniqid();
+        mkdir($langDir, 0o755, true);
+        $filePath = $langDir.'/it/messages.php';
+        mkdir(dirname($filePath), 0o755, true);
+        TestCase::createTranslationFile($filePath, ['welcome' => 'Ciao']);
+
+        app()->instance('translator', new class($langDir)
+        {
+            public function __construct(private readonly string $path) {}
+
+            public function getLoader(): object
+            {
+                return new class($this->path)
+                {
+                    public function __construct(private readonly string $path) {}
+
+                    /** @return array<string, string> */
+                    public function namespaces(): array
+                    {
+                        return ['tenant' => $this->path];
+                    }
+                };
+            }
+        });
+
+        $translationData = TranslationData::from([
+            'lang' => 'it',
+            'namespace' => 'tenant',
+            'group' => 'messages',
+            'item' => 'welcome',
+        ]);
+
+        Assert::assertSame($filePath, $translationData->getFilename());
+        Assert::assertSame(['welcome' => 'Ciao'], $translationData->getData());
+
+        $loader = new ArrayLoader();
+        $loader->addMessages('it', 'messages', ['known' => 'Valore']);
+        $adapter = new TranslatorAdapter($loader, 'it');
+
+        $this->mockService(RecordMissingTranslationAction::class, static function (MockInterface $mock): void {
+            $mock->expects('execute')->once()->with('messages.missing', 'it');
+        });
+
+        Assert::assertSame('messages.missing', $adapter->get('messages.missing'));
+        Assert::assertSame('Valore', $adapter->get('messages.known'));
+
+        unlink($filePath);
+        rmdir(dirname($filePath));
+        rmdir($langDir);
+    });
+});
+
 describe('Lang coverage boost — Post accessors', function (): void {
     test('Post mutators and accessors work without persisting', function (): void {
         $post = new Post();
@@ -153,5 +309,29 @@ describe('Lang coverage boost — Post accessors', function (): void {
         $post->setRawAttributes(['title' => 'Hello World']);
 
         Assert::assertSame('hello-world', $post->getGuidAttribute(null));
+    });
+});
+
+describe('Lang coverage boost — Sync and routes', function (): void {
+    test('SyncTranslationsAction processes Lang module lang files', function (): void {
+        $result = app(SyncTranslationsAction::class)->execute('it', ['en'], 'Lang');
+
+        Assert::assertIsArray($result);
+        Assert::assertSame(1, $result['total_modules']);
+        Assert::assertIsArray($result['modules']);
+        Assert::assertArrayHasKey('Lang', $result['modules']);
+        $langResult = $result['modules']['Lang'];
+        Assert::assertIsArray($langResult);
+        Assert::assertArrayHasKey('status', $langResult);
+    });
+
+    test('RouteServiceProvider registerLang runs with fallback locales', function (): void {
+        config(['laravellocalization.supportedLocales' => null]);
+
+        $provider = new RouteServiceProvider(app());
+        Assert::assertSame('Lang', $provider->name);
+        $provider->registerLang();
+
+        Assert::assertContains(app()->getLocale(), ['it', 'en']);
     });
 });

@@ -24,7 +24,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
      */
     public static function canView(): bool
     {
-        return true;
+        return (bool) config('lang.language_switcher.enabled', true);
     }
 
 /**

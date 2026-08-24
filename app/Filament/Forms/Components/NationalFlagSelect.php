@@ -38,7 +38,7 @@ class NationalFlagSelect extends Select
      */
     protected function getCountryOptions(): array
     {
-        $countries = countries();
+        $countries = $this->resolveCountries();
         // PHPStan L10: Type narrowing for array offset access
         $countries = Arr::sort($countries, static function (mixed $c): string {
             return is_array($c) && isset($c['name']) && is_string($c['name']) ? $c['name'] : '';
@@ -60,6 +60,9 @@ class NationalFlagSelect extends Select
 
             $flagName = strtolower($code);
             $localizedLabel = __('lang::countries.'.$flagName);
+            if (! is_string($localizedLabel)) {
+                $localizedLabel = is_array($localizedLabel) ? $code : (string) $localizedLabel;
+            }
 
             $flagSrc = app(AssetAction::class)->execute('lang::svg/flag/'.$flagName.'.svg');
             $flag = '<img src="'.$flagSrc.'" class="h-4 w-6 mr-2" inline-block />';
@@ -70,6 +73,25 @@ class NationalFlagSelect extends Select
         }
 
         return $options;
+    }
+
+    /**
+     * @return array<array-key, mixed>
+     */
+    protected function resolveCountries(): array
+    {
+        return countries();
+    }
+
+    /**
+     * Hook for tests: allow injecting defensive/non-array rows after filtering.
+     *
+     * @param  array<array-key, mixed>  $filteredCountries
+     * @return array<array-key, mixed>
+     */
+    protected function finalizeFilteredCountries(array $filteredCountries): array
+    {
+        return $filteredCountries;
     }
 
     /**
@@ -84,7 +106,7 @@ class NationalFlagSelect extends Select
             return $this->getCountryOptions();
         }
 
-        $countries = countries();
+        $countries = $this->resolveCountries();
         $searchLower = strtolower($search);
 
         // Filter countries by search term
@@ -124,23 +146,23 @@ class NationalFlagSelect extends Select
             return is_array($c) && isset($c['name']) && is_string($c['name']) ? $c['name'] : '';
         });
 
+        $filteredCountries = $this->finalizeFilteredCountries($filteredCountries);
+
         // Map to options format with flags
         /** @var array<string, string> $options */
         $options = [];
 
         foreach ($filteredCountries as $c) {
-            // PHPStan L10: Type narrowing for country array
-            if (! is_array($c) || ! isset($c['iso_3166_1_alpha2'])) {
+            if (! is_array($c) || ! isset($c['iso_3166_1_alpha2']) || ! is_string($c['iso_3166_1_alpha2'])) {
                 continue;
             }
 
             $code = $c['iso_3166_1_alpha2'];
-            if (! is_string($code)) {
-                continue;
-            }
-
             $flagName = strtolower($code);
             $localizedLabel = __('lang::countries.'.$flagName);
+            if (! is_string($localizedLabel)) {
+                $localizedLabel = is_array($localizedLabel) ? $code : (string) $localizedLabel;
+            }
 
             $flagSrc = app(AssetAction::class)->execute('lang::svg/flag/'.$flagName.'.svg');
             $flag = '<img src="'.$flagSrc.'" class="h-4 w-6 mr-2" inline-block />';

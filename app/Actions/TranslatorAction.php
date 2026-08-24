@@ -39,11 +39,7 @@ class TranslatorAction extends LaravelTranslator
             return $result;
         }
 
-        if (! is_string($result)) {
-            return (string) $key;
-        }
-
-        return $result;
+        return is_string($result) ? $result : (string) $result;
     }
 
     public function execute(): void
