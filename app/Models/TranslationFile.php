@@ -96,7 +96,7 @@ class TranslationFile extends BaseModel
         $files = app(GetAllTranslationAction::class)->execute();
 
         /** @var array<int, array<string, mixed>> $result */
-        $result = Arr::map($files, function ($item) {
+        $result = Arr::map($files, function (mixed $item) {
             if (! is_array($item)) {
                 return [];
             }
