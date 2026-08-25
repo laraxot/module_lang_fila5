@@ -10,12 +10,4 @@ related:
 
 Stub **DRY**. Documentazione canonica nel modulo **Media** (issue [#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
 
-<<<<<<< HEAD
 → [advanced.md](../../../Media/docs/html2pdf/advanced.md)
-=======
-<<<<<<< HEAD
-→ [advanced.md](../../../Media/docs/html2pdf/advanced.md)
-=======
-→ [advanced.md](../../../Media/docs/html2pdf/advanced.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
