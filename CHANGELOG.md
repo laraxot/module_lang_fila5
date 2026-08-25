@@ -1,3 +1,9 @@
+## [1.0.0-dev.15](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.14...v1.0.0-dev.15) (2026-08-25)
+
+### Bug Fixes
+
+* **phpstan:** analyse Modules a zero errori ([31903cb](https://github.com/laraxot/module_lang_fila5/commit/31903cbdf7a314ccf1d800dadcbe20f08a1e1995))
+
 ## [1.0.0-dev.12](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.11...v1.0.0-dev.12) (2026-07-31)
 
 ### Bug Fixes
