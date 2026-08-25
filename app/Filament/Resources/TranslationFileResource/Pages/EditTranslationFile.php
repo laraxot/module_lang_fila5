@@ -24,22 +24,43 @@ class EditTranslationFile extends XotBaseEditRecord
         return ['it', 'en'];
     }
 
-    #[\Override]
-    public function getFormSchemaOld(): array
+    /**
+     * Schema della pagina.
+     *
+     * Niente `#[\Override]`: il metodo del genitore si chiama `getFormSchemaOld()`
+     * ed e' `protected`. Con l'attributo, PHP emetteva un fatal error
+     * («has #[\Override] attribute, but no matching parent method exists») che
+     * impediva perfino a PHPStan di analizzare il modulo.
+     *
+     * @return array<int, Section>
+     */
+    public function getFormSchema(): array
     {
         return [
-            Section::make('content')->schema(function ($record): array {
-                if (is_object($record) && isset($record->content) && is_array($record->content)) {
-                    /** @var array<string, mixed> $content */
-                    $content = $record->content;
-                } else {
-                    /** @var array<string, mixed> $content */
-                    $content = [];
-                }
-
-                return $this->makeFromArray($content, 'content');
-            }),
+            Section::make('content')->schema(fn (?object $record): array => $this->schemaFromRecord($record)),
         ];
+    }
+
+    /**
+     * Costruisce i campi della sezione `content` a partire dal record.
+     *
+     * Estratto dalla closure di {@see getFormSchemaOld()} per renderlo verificabile:
+     * dentro una closure passata a `Section::schema()` la logica e' raggiungibile solo
+     * montando l'intera pagina Filament, e i tre casi che contano — record valido,
+     * record assente, `content` non array — non si distinguono nell'output.
+     *
+     * @return array<int, Section|TextInput>
+     */
+    public function schemaFromRecord(?object $record): array
+    {
+        if (null === $record || ! isset($record->content) || ! \is_array($record->content)) {
+            return [];
+        }
+
+        /** @var array<string, mixed> $content */
+        $content = $record->content;
+
+        return $this->makeFromArray($content, 'content');
     }
 
     /**

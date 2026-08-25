@@ -56,7 +56,11 @@ uses(TestCase::class);
 
 final class WriteTranslationFileActionFailStub extends WriteTranslationFileAction
 {
-    protected function putTranslationFile(string $filePath, string $phpContent): int|false
+    /**
+     * Simula il fallimento della scrittura: ritorna sempre `false`, mai un conteggio
+     * di byte, quindi il tipo di ritorno e' `false` e non `int|false`.
+     */
+    protected function putTranslationFile(string $filePath, string $phpContent): false
     {
         return false;
     }
@@ -64,7 +68,10 @@ final class WriteTranslationFileActionFailStub extends WriteTranslationFileActio
 
 final class WriteTranslationFileActionWriteFailStub extends WriteTranslationFileAction
 {
-    protected function writeLangTempContents(string $tempFile, string $phpContent): int|false
+    /**
+     * Come sopra: solo il ramo di fallimento, quindi `false`.
+     */
+    protected function writeLangTempContents(string $tempFile, string $phpContent): false
     {
         return false;
     }
@@ -78,11 +85,24 @@ final class NationalFlagSelectFinalStub extends NationalFlagSelect
     /** @var array<int, mixed> */
     public array $extraFilteredRows = [];
 
+    /**
+     * `mixed` e' il tipo vero, non una scorciatoia: i test alimentano di proposito righe
+     * non conformi — array associativi validi, interi al posto di stringhe e stringhe nude —
+     * per verificare che il filtro regga input sporco. Un tipo piu' stretto renderebbe
+     * impossibile scrivere proprio il caso in esame.
+     *
+     * @return array<int, mixed>
+     */
     protected function resolveCountries(): array
     {
         return $this->forcedCountries;
     }
 
+    /**
+     * @param array<int, mixed> $filteredCountries
+     *
+     * @return array<int, mixed>
+     */
     protected function finalizeFilteredCountries(array $filteredCountries): array
     {
         return array_merge(array_values($filteredCountries), $this->extraFilteredRows);
@@ -91,6 +111,9 @@ final class NationalFlagSelectFinalStub extends NationalFlagSelect
 
 final class AutoLabelForcedKeyStub extends AutoLabelAction
 {
+    /**
+     * @return array<string, string>
+     */
     protected function findCallerFrame(Field|Entry|BaseFilter|Column|Step|Action|Section $component): array
     {
         return ['class' => self::class];
@@ -99,6 +122,9 @@ final class AutoLabelForcedKeyStub extends AutoLabelAction
 
 final class AutoLabelNullCallerStub extends AutoLabelAction
 {
+    /**
+     * @return array<string, string>
+     */
     protected function findCallerFrame(Field|Entry|BaseFilter|Column|Step|Action|Section $component): array
     {
         return ['function' => 'foo'];
@@ -123,7 +149,10 @@ final class AutoLabelStaticCaller
 
 final class PostNullTitleForGuidStub extends Post
 {
-    protected function titleForGuid(): ?string
+    /**
+     * Copre il solo ramo «titolo assente»: non restituisce mai una stringa.
+     */
+    protected function titleForGuid(): null
     {
         return null;
     }
@@ -163,8 +192,14 @@ test('LocaleSwitcherRefresh applyLocale covers string and non-string locale', fu
 });
 
 test('TranslatorAction and Adapter coerce non-string loaded values', function (): void {
-    TestCase::forceSqliteTranslations();
-
+    // Qui c'era `TestCase::forceSqliteTranslations()`, un helper invocato e mai
+    // scritto. Non e' stato scritto ma rimosso: il test non tocca il database.
+    // Carica le traduzioni da un `ArrayLoader`, scrive la property `loaded` per
+    // reflection e mocka `RecordMissingTranslationAction`, che e' l'unico punto
+    // che avrebbe interrogato una connessione. Un helper che forzasse la
+    // connessione a SQLite avrebbe dato l'impressione di proteggere qualcosa
+    // che non e' in pericolo, e avrebbe contraddetto la regola per cui i test
+    // girano sulle repliche MySQL. Story LANG-17.4.
     $loader = new ArrayLoader();
     $action = new TranslatorAction($loader, 'it');
     $loaded = new ReflectionProperty(LaravelTranslator::class, 'loaded');
@@ -530,7 +565,7 @@ test('SaveTransAction early return when persist disabled in unit tests', functio
     app()->instance(SaveTransAction::class, new SaveTransAction());
     app(SaveTransAction::class)->execute('lang::should_not_write.nested', 'x');
     Assert::assertFileDoesNotExist(base_path('Modules/Lang/lang/'.app()->getLocale().'/should_not_write.php'));
-    TestCase::restoreSaveTransActionNoOp();
+    TestCase::forgetSaveTransActionOverride();
 });
 
 test('AutoLabelAction static caller covers class-only frame', function (): void {

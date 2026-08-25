@@ -197,6 +197,7 @@ return [
         'repar' => ['label' => 'repar', 'icon' => 'repar', 'tooltip' => 'repar'],
         'nome_stabi' => ['label' => 'nome_stabi', 'icon' => 'nome_stabi', 'tooltip' => 'nome_stabi'],
         'logout' => ['tooltip' => 'logout'],
+        'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
     ],
     'sections' => [
         'address' => ['label' => 'address', 'heading' => 'address'],
