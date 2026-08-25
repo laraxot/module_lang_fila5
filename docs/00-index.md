@@ -1,3 +1,14 @@
+---
+title: "📚 **Indice Documentazione Modulo Lang**"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # 📚 **Indice Documentazione Modulo Lang**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -31,6 +42,13 @@
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
 
+## 🔗 **Moduli Correlati**
+- [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
+- [UI](../../ui/docs/readme.md) - Componenti Blade e Filament che consumano le traduzioni.
+
+---
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+# Documentation Index
 ## 📋 **Documenti Prodotto & Sviluppo**
 
 ### Product
@@ -49,7 +67,7 @@
 | USER_RESEARCH.md | User Research |
 
 ## 📦 **Pacchetti Composer**
-- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
+- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
 - [Package Dependency Chaos Map](./package-dependency-chaos-map.md)
 - `mcamara/laravel-localization` - URL localizzati
 - `lara-zeus/spatie-translatable` - Campi Filament tradotti

@@ -1,5 +1,18 @@
+---
+title: "🌍 PHPStan Progress Report - Modulo Lang"
+module: "Lang"
+type: concept
+tags: [migrazione, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migrazione filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # 🌍 PHPStan Progress Report - Modulo Lang
 
+## Data: 2025-01-22
+## Data: 2025-01-22
 ## Data: [DATE]
 ## Status: 🔄 IN PROGRESS (38 errori rimanenti, da 58)
 
@@ -26,6 +39,8 @@ Il modulo Lang è il **guardiano delle lingue**, colui che permette alla conosce
 
 ## 📊 PROGRESSO DELLA PURIFICAZIONE
 
+### Aggiornamento 2025-11-17 – ciclo PHPStan lvl 10, PHPMD, PHPInsights
+### Aggiornamento 2025-11-17 – ciclo PHPStan lvl 10, PHPMD, PHPInsights
 ### Aggiornamento [DATE] – ciclo PHPStan lvl 10, PHPMD, PHPInsights
 
 - ✅ **LangField** ora usa type-hint `Model` + `Assert::isInstanceOf` per accedere a `post` in sicurezza. Eliminati gli ultimi 2 errori PHPStan sul cast e sul `@property` di `Post`.
@@ -296,4 +311,8 @@ Noi abbiamo fatto i primi 345 li. Ne restano 655.
 
 **Status**: 🟡 IN PROGRESS
 **Next Session**: Completare SyncTranslationsAction e TranslationFile
+**Estimated Completion**: 2-3 sessioni aggiuntive
+**Estimated Completion**: 2-3 sessioni aggiuntive
+**Estimated Completion**: 2-3 sessioni aggiuntive
+**Estimated Completion**: 2-3 sessioni aggiuntive
 **Estimated Completion**: 2-3 sessioni aggiuntive

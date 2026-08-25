@@ -1,13 +1,38 @@
+---
+title: "PHPStan Corrections - Lang Module"
+module: "Lang"
+type: concept
+tags: [phpstan, level10, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # PHPStan Corrections - Lang Module
 
 ## Panoramica
 Questo documento registra le correzioni PHPStan implementate nel modulo Lang.
 
 **Ultimo aggiornamento**: 2025-01-27
+**Ultimo aggiornamento**: 2025-01-27
+**Ultimo aggiornamento**: [DATE]
+**Ultimo aggiornamento**: [DATE]
+**Ultimo aggiornamento**: [DATE]
+**Ultimo aggiornamento**: [DATE]
+**Ultimo aggiornamento**: 2025-01-27
+**Ultimo aggiornamento**: 2025-01-27
 **Status PHPStan Level 10**: ✅ **PASSED** - 0 errori
 
 ## Correzioni Implementate
 
+### Post.php - Doppio Import PostFactory (2025-01-27)
+### Post.php - Doppio Import PostFactory (2025-01-27)
+### Post.php - Doppio Import PostFactory ([DATE])
+### Post.php - Doppio Import PostFactory ([DATE])
+### Post.php - Doppio Import PostFactory ([DATE])
+### Post.php - Doppio Import PostFactory ([DATE])
+### Post.php - Doppio Import PostFactory (2025-01-27)
 ### Post.php - Doppio Import PostFactory (2025-01-27)
 
 **Problema**: Doppio import di `PostFactory` causava conflitto di namespace
@@ -91,10 +116,16 @@ if (is_array($value)) {
 - [Console Commands](./console-commands.md)
 - [Translation System](./translation-system.md)
 - [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
+- [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
+- [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
 
 ## Note per Sviluppo Futuro
 
 1. **Type Hints**: Utilizzare sempre type hints espliciti
 2. **Mixed Types**: Gestire sempre i tipi `mixed` con type casting
 3. **Assertions**: Validare i tipi con assertions appropriate
+4. **Documentation**: Documentare sempre i parametri e return types
+4. **Documentation**: Documentare sempre i parametri e return types
+4. **Documentation**: Documentare sempre i parametri e return types
+4. **Documentation**: Documentare sempre i parametri e return types
 4. **Documentation**: Documentare sempre i parametri e return types

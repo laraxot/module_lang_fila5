@@ -1,3 +1,14 @@
+---
+title: "Sistema di Traduzione in il progetto"
+module: "Lang"
+type: concept
+tags: [links01]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links01"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Sistema di Traduzione in il progetto
 
 ## LangServiceProvider
@@ -65,6 +76,12 @@ return [
    - Facilita il supporto multilingua
 
 ## Collegamenti
+- [Form Components](../Patient/project_docs/filament-form-components.md)
+- [Wizard Structure](../Patient/project_docs/filament-wizard-structure.md)
+- [Best Practices](../Xot/project_docs/filament-best-practices.md)
+- [Form Components](../Patient/project_docs/filament-form-components.md)
+- [Wizard Structure](../Patient/project_docs/filament-wizard-structure.md)
+- [Best Practices](../Xot/project_docs/filament-best-practices.md)
 - [Form Components](../Patient/project_docs/filament-form-components.md)
 - [Wizard Structure](../Patient/project_docs/filament-wizard-structure.md)
 - [Best Practices](../Xot/project_docs/filament-best-practices.md)
@@ -139,6 +156,20 @@ return [
    - Facilita il supporto multilingua
 
 ## Collegamenti
+- [Form Components](../Patient/docs/filament-form-components.md)
+- [Wizard Structure](../Patient/docs/filament-wizard-structure.md)
+- [Best Practices](../Xot/docs/filament-best-practices.md)
+- [Form Components](../Patient/docs/filament-form-components.md)
+- [Wizard Structure](../Patient/docs/filament-wizard-structure.md)
+- [Best Practices](../Xot/docs/filament-best-practices.md)
+
+## Vedi Anche
+- [Laravel Translations](https://laravel.com/docs/localization)
+- [Filament i18n](https://filamentphp.com/docs/internationalization)
+
+## Vedi Anche
+- [Laravel Translations](https://laravel.com/docs/localization)
+- [Filament i18n](https://filamentphp.com/docs/internationalization)
 - [Form Components](../Patient/docs/filament-form-components.md)
 - [Wizard Structure](../Patient/docs/filament-wizard-structure.md)
 - [Best Practices](../Xot/docs/filament-best-practices.md)

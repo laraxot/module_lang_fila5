@@ -20,13 +20,19 @@ class TranslationFileResource extends XotBaseResource
         return Config::string('app.locale', 'it');
     }
 
+   /**
+     * @return array<int, string>
+     */
     public static function getTranslatableLocales(): array
     {
         return ['it', 'en'];
     }
 
-    #[\Override]
-    public static function getFormSchema(): array
+   // #[\Override]
+    /**
+     * @return array<string, mixed>
+     */
+    public static function getFormSchemaOld(): array
     {
         return [];
 

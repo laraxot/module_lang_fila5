@@ -1,3 +1,21 @@
+---
+title: "Aggiornamento File di Traduzione Lang Service - 2025-01-06"
+module: "Lang"
+type: concept
+tags: [test, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "test 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+# Aggiornamento File di Traduzione Lang Service - 2025-01-06
+# Aggiornamento File di Traduzione Lang Service - 2025-01-06
+# Aggiornamento File di Traduzione Lang Service - [DATE]
+# Aggiornamento File di Traduzione Lang Service - [DATE]
+# Aggiornamento File di Traduzione Lang Service - [DATE]
+# Aggiornamento File di Traduzione Lang Service - [DATE]
+# Aggiornamento File di Traduzione Lang Service - 2025-01-06
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 
 ## Panoramica
@@ -123,9 +141,9 @@ Nel campo `value`, il valore di `helper_text` era uguale alla chiave del padre (
 - [Lang Service Provider](lang-service-provider.md)
 
 ### Regole Applicate
-- [Regola Helper Text Critica](../../../docs/translation-helper-text-critical-rule.md)
+- [Regola Helper Text Critica](../../docs/translation-helper-text-critical-rule.md)
 - [Struttura Espansa Traduzioni](struttura-traduzioni.md)
-- [Convenzioni Multi-Lingua](../../../../docs/multi-language-conventions.md)
+- [Convenzioni Multi-Lingua](../../../docs/multi-language-conventions.md)
 
 ## Note Implementative
 
@@ -150,4 +168,15 @@ La gestione delle traduzioni deve essere:
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di gestione traduzioni Laraxot
 **Versione**: 1.0
+**Ultimo aggiornamento**: 2025-01-06  
+**Autore**: Sistema di gestione traduzioni Laraxot  
+**Versione**: 1.0  
+**Stato**: Implementato e testato
+**Ultimo aggiornamento**: [DATE]
+**Autore**: Sistema di gestione traduzioni Laraxot
+**Versione**: 1.0
+**Stato**: Implementato e testato
+**Ultimo aggiornamento**: 2025-01-06  
+**Autore**: Sistema di gestione traduzioni Laraxot  
+**Versione**: 1.0  
 **Stato**: Implementato e testato

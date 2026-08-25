@@ -1,5 +1,23 @@
+---
+title: "PHPStan Roadmap - Lang Module"
+module: "Lang"
+type: concept
+tags: [migration, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # PHPStan Roadmap - Lang Module
 
+> **Date**: 2026-01-14
+> **Date**: 2026-01-14
+> **Date**: [DATE]
+> **Date**: [DATE]
+> **Date**: [DATE]
+> **Date**: [DATE]
+> **Date**: 2026-01-14
 > **Date**: 2026-01-14
 > **Status**: ✅ Fully Compliant (Level 10)
 > **Errors**: 0
@@ -14,4 +32,8 @@ The **Lang** module is fully compliant with PHPStan Level 10. No errors were rep
 
 ## Future Goals
 - Maintain 0 errors.
+- Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
+- Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
+- Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
+- Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
 - Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).

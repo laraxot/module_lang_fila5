@@ -1,3 +1,14 @@
+---
+title: "Guida Rapida alle Traduzioni"
+module: "Lang"
+type: concept
+tags: [readme.es, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "readme.es 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Guida Rapida alle Traduzioni
 
 ## Struttura Base
@@ -128,7 +139,9 @@ php artisan vendor:publish --tag=laravel-translations
 Poi modificare i file in `lang/vendor/{package}/{locale}/`.
 
 ## Console Commands
-- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
+- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](philosophy.md))
+- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](philosophy.md))
+- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](philosophy.md))
 # Guida Rapida alle Traduzioni
 
 ## Struttura Base
@@ -259,7 +272,9 @@ php artisan vendor:publish --tag=laravel-translations
 Poi modificare i file in `lang/vendor/{package}/{locale}/`.
 
 ## Console Commands
-- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
+- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](philosophy.md))
+- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](philosophy.md))
+- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](philosophy.md))
 # Guida Rapida alle Traduzioni
 
 ## Struttura Base
@@ -390,4 +405,6 @@ php artisan vendor:publish --tag=laravel-translations
 Poi modificare i file in `lang/vendor/{package}/{locale}/`.
 
 ## Console Commands
-- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
+- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](philosophy.md))
+- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](philosophy.md))
+- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](philosophy.md))

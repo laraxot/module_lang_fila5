@@ -1,3 +1,14 @@
+---
+title: "Enum Translation Pattern - Implementazione Regola Critica"
+module: "Lang"
+type: pattern
+tags: [readme.es, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "readme.es 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Enum Translation Pattern - Implementazione Regola Critica
 
 ## Data: 27 Gennaio 2025
@@ -216,3 +227,8 @@ return [
 
 ## Ultimo Aggiornamento
 [DATE] - Implementazione completa regola critica enum translation pattern
+- [TableLayoutEnum Guide](../laravel/Modules/UI/docs/table-layout-enum-complete-guide.md)
+- [Translation Management](translation-management.md)
+
+## Ultimo Aggiornamento
+2025-01-27 - Implementazione completa regola critica enum translation pattern

@@ -1,7 +1,18 @@
+---
+title: "Translation Management Packages"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Translation Management Packages
 
 ## Overview
-Managing translations effectively is vital for a healthcare application like `saluteora` to ensure accurate communication with users across different languages. This document explores various Laravel packages for translation management, helping choose the right tools for our needs.
+Managing translations effectively is vital for a healthcare application like `<nome progetto>corrente` to ensure accurate communication with users across different languages. This document explores various Laravel packages for translation management, helping choose the right tools for our needs.
 
 ## Evaluated Packages
 
@@ -76,8 +87,8 @@ Managing translations effectively is vital for a healthcare application like `sa
   ```
   Access UI at `your-app.com/translations`.
 
-## Recommendation for `saluteora`
-Given the healthcare context of `saluteora` where precision in translations is critical, I recommend a combination approach:
+## Recommendation for `<nome progetto>corrente`
+Given the healthcare context of `<nome progetto>corrente` where precision in translations is critical, I recommend a combination approach:
 
 - **Primary**: Use **Spatie Laravel Translation Loader** for database-driven translations. This allows for a custom UI tailored to healthcare-specific needs, ensuring sensitive terms are translated accurately.
 - **Secondary**: Implement **Mcamara Laravel Localization** for route translations and URL management, maintaining SEO benefits with language-specific URLs.
