@@ -34,7 +34,11 @@ describe('GetAllTranslationAction Business Logic', function () {
     test('handles session locale setting', function () {
         session()->put('locale', 'it');
 
+<<<<<<< HEAD
        $result = makeGetAllTranslationAction()->execute();
+=======
+        $result = makeGetAllTranslationAction()->execute();
+>>>>>>> laraxot/dev
 
         Assert::assertGreaterThanOrEqual(0, count($result));
     });
@@ -42,7 +46,11 @@ describe('GetAllTranslationAction Business Logic', function () {
     test('handles invalid session locale gracefully', function () {
         session()->put('locale', 'invalid_locale');
 
+<<<<<<< HEAD
        $result = makeGetAllTranslationAction()->execute();
+=======
+        $result = makeGetAllTranslationAction()->execute();
+>>>>>>> laraxot/dev
 
         Assert::assertGreaterThanOrEqual(0, count($result));
     });

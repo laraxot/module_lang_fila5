@@ -45,7 +45,11 @@ class TranslationData extends Data
         return $this->filename;
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public function getData(): array
@@ -59,7 +63,11 @@ class TranslationData extends Data
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
 
+<<<<<<< HEAD
        /** @var array<string, mixed> $result */
+=======
+        /** @var array<string, mixed> $result */
+>>>>>>> laraxot/dev
         $result = $data;
 
         return $result;

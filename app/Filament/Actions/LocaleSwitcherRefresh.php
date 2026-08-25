@@ -38,7 +38,11 @@ class LocaleSwitcherRefresh extends XotBaseAction
                     ->required(),
             ])
             ->action(function (array $data) {
+<<<<<<< HEAD
                /** @var array<string, mixed> $data */
+=======
+                /** @var array<string, mixed> $data */
+>>>>>>> laraxot/dev
                 $this->applyLocale($data);
 
                 return redirect(request()->header('Referer'));
@@ -47,6 +51,10 @@ class LocaleSwitcherRefresh extends XotBaseAction
             // ->icon('heroicon-o-language')
             ->color('gray');
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     /**
      * Applica la lingua scelta a sessione e applicazione.
      *

@@ -75,12 +75,20 @@ class NationalFlagSelect extends XotBaseSelect
     /**
      * Get filtered country options based on search query.
      *
+<<<<<<< HEAD
     * @param  string  $search  The search query
+=======
+     * @param  string  $search  The search query
+>>>>>>> laraxot/dev
      * @return array<string, string>
      */
     protected function getFilteredCountryOptions(string $search): array
     {
+<<<<<<< HEAD
        if (trim($search) === '') {
+=======
+        if (trim($search) === '') {
+>>>>>>> laraxot/dev
             return $this->getCountryOptions();
         }
 

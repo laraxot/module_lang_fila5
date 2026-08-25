@@ -14,7 +14,11 @@ trait TranslatorTrait
     public function registerTranslator(): void
     {
         // Override the JSON Translator
+<<<<<<< HEAD
        $this->app->extend('translator', static function (Translator $translator): TranslatorAdapter {
+=======
+        $this->app->extend('translator', static function (Translator $translator): TranslatorAdapter {
+>>>>>>> laraxot/dev
             $translatorService = new TranslatorAdapter($translator->getLoader(), $translator->getLocale());
             $translatorService->setFallback($translator->getFallback());
 

@@ -40,7 +40,11 @@ describe('LangServiceProvider Basic Functionality', function () {
 
 describe('LangServiceProvider Registration', function () {
     it('can register services', function () {
+<<<<<<< HEAD
        $provider = makeLangServiceProvider();
+=======
+        $provider = makeLangServiceProvider();
+>>>>>>> laraxot/dev
         $provider->register();
 
         Assert::assertInstanceOf(LangServiceProvider::class, $provider);
@@ -56,7 +60,11 @@ describe('LangServiceProvider Registration', function () {
 
 describe('LangServiceProvider Translation Loading', function () {
     it('loads translations from correct path', function () {
+<<<<<<< HEAD
        $provider = makeLangServiceProvider();
+=======
+        $provider = makeLangServiceProvider();
+>>>>>>> laraxot/dev
         $provider->boot();
 
         Assert::assertTrue(Lang::has('lang::auth.failed'));
@@ -81,7 +89,11 @@ describe('LangServiceProvider Translation Loading', function () {
 });
 
 describe('LangServiceProvider Translation Structure', function () {
+<<<<<<< HEAD
    it('provides auth translations', function () {
+=======
+    it('provides auth translations', function () {
+>>>>>>> laraxot/dev
         $provider = makeLangServiceProvider();
         $provider->boot();
 
@@ -126,7 +138,11 @@ describe('LangServiceProvider Translation Structure', function () {
 
 describe('LangServiceProvider Language Support', function () {
     it('supports Italian language', function () {
+<<<<<<< HEAD
        $provider = makeLangServiceProvider();
+=======
+        $provider = makeLangServiceProvider();
+>>>>>>> laraxot/dev
         $provider->boot();
 
         app()->setLocale('it');
@@ -171,7 +187,11 @@ describe('LangServiceProvider Language Support', function () {
 });
 
 describe('LangServiceProvider Translation Files', function () {
+<<<<<<< HEAD
    it('loads auth translation file', function () {
+=======
+    it('loads auth translation file', function () {
+>>>>>>> laraxot/dev
         $provider = makeLangServiceProvider();
         $provider->boot();
 
@@ -213,7 +233,11 @@ describe('LangServiceProvider Translation Files', function () {
 
         foreach ($requiredFiles as $file) {
             $filePath = "{$langPath}/{$file}.php";
+<<<<<<< HEAD
            Assert::assertTrue(File::exists($filePath));
+=======
+            Assert::assertTrue(File::exists($filePath));
+>>>>>>> laraxot/dev
             $translations = require $filePath;
             Assert::assertIsArray($translations);
             Assert::assertNotEmpty($translations);
@@ -222,7 +246,11 @@ describe('LangServiceProvider Translation Files', function () {
 });
 
 describe('LangServiceProvider Translation Quality', function () {
+<<<<<<< HEAD
    it('provides complete auth translation coverage', function () {
+=======
+    it('provides complete auth translation coverage', function () {
+>>>>>>> laraxot/dev
         $provider = makeLangServiceProvider();
         $provider->boot();
 
@@ -246,7 +274,11 @@ describe('LangServiceProvider Translation Quality', function () {
     });
 
     it('provides consistent translation style', function () {
+<<<<<<< HEAD
        $provider = makeLangServiceProvider();
+=======
+        $provider = makeLangServiceProvider();
+>>>>>>> laraxot/dev
         $provider->boot();
 
         $translations = [
@@ -284,7 +316,11 @@ describe('LangServiceProvider Performance', function () {
     it('loads translations efficiently', function () {
         $startTime = microtime(true);
 
+<<<<<<< HEAD
        $provider = makeLangServiceProvider();
+=======
+        $provider = makeLangServiceProvider();
+>>>>>>> laraxot/dev
         $provider->boot();
 
         $executionTime = microtime(true) - $startTime;
@@ -318,7 +354,11 @@ describe('LangServiceProvider Performance', function () {
 
         foreach ($languages as $locale) {
             app()->setLocale($locale);
+<<<<<<< HEAD
            $translation = __('lang::auth.failed');
+=======
+            $translation = __('lang::auth.failed');
+>>>>>>> laraxot/dev
             Assert::assertIsString($translation);
         }
 
@@ -330,7 +370,11 @@ describe('LangServiceProvider Performance', function () {
 
 describe('LangServiceProvider Error Handling', function () {
     it('handles missing translation files gracefully', function () {
+<<<<<<< HEAD
        $provider = makeLangServiceProvider();
+=======
+        $provider = makeLangServiceProvider();
+>>>>>>> laraxot/dev
         $provider->boot();
 
         Assert::assertInstanceOf(LangServiceProvider::class, $provider);
@@ -353,7 +397,11 @@ describe('LangServiceProvider Error Handling', function () {
 
 describe('LangServiceProvider Integration', function () {
     it('works with Laravel translation system', function () {
+<<<<<<< HEAD
        $provider = makeLangServiceProvider();
+=======
+        $provider = makeLangServiceProvider();
+>>>>>>> laraxot/dev
         $provider->boot();
 
         Assert::assertTrue(Lang::has('lang::auth.failed'));
@@ -381,7 +429,11 @@ describe('LangServiceProvider Integration', function () {
 
 describe('LangServiceProvider Configuration', function () {
     it('respects Laravel configuration', function () {
+<<<<<<< HEAD
        $provider = makeLangServiceProvider();
+=======
+        $provider = makeLangServiceProvider();
+>>>>>>> laraxot/dev
         $provider->boot();
 
         $defaultLocale = config('app.locale');
@@ -406,7 +458,11 @@ describe('LangServiceProvider Configuration', function () {
 
 describe('LangServiceProvider Maintenance', function () {
     it('can be refreshed without errors', function () {
+<<<<<<< HEAD
        $provider = makeLangServiceProvider();
+=======
+        $provider = makeLangServiceProvider();
+>>>>>>> laraxot/dev
         $provider->boot();
         $provider->boot();
 

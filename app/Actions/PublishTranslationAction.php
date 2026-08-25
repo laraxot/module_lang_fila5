@@ -37,7 +37,11 @@ class PublishTranslationAction
         $updatedData = $data;
         Arr::set($updatedData, $translationData->item, $translationData->value);
         if ($data !== $updatedData) {
+<<<<<<< HEAD
            /** @var array<string, mixed> $saveData */
+=======
+            /** @var array<string, mixed> $saveData */
+>>>>>>> laraxot/dev
             $saveData = $updatedData;
 
             app(SaveArrayAction::class)->execute(

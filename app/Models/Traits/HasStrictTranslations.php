@@ -8,7 +8,11 @@ use Spatie\Translatable\HasTranslations;
 
 /**
  * Trait che estende HasTranslations con tipi di ritorno più stretti.
+<<<<<<< HEAD
 *
+=======
+ *
+>>>>>>> laraxot/dev
  * @phpstan-ignore trait.unused
  */
 trait HasStrictTranslations
@@ -22,13 +26,21 @@ trait HasStrictTranslations
      * @param string $locale            Il codice della lingua richiesta
      * @param bool   $useFallbackLocale Se utilizzare o meno la lingua di fallback
      *
+<<<<<<< HEAD
     * @return string|array<string, mixed>|int|null Il valore tradotto dell'attributo
+=======
+     * @return string|array<string, mixed>|int|null Il valore tradotto dell'attributo
+>>>>>>> laraxot/dev
      */
     public function getTranslation(string $key, string $locale, bool $useFallbackLocale = true): string|array|int|null
     {
         $value = $this->spatieGetTranslation($key, $locale, $useFallbackLocale);
 
+<<<<<<< HEAD
        if (is_string($value) || is_int($value) || null === $value) {
+=======
+        if (is_string($value) || is_int($value) || null === $value) {
+>>>>>>> laraxot/dev
             return $value;
         }
 
@@ -50,6 +62,10 @@ trait HasStrictTranslations
 
         return null;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     /**
      * @param array<mixed, mixed> $value
      *

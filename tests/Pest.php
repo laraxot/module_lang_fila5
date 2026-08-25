@@ -59,6 +59,10 @@ function cleanupTranslationFile(string $filePath): void
         unlink($filePath);
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 /**
  * @param array<string, mixed> $data
  */

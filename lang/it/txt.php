@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
        'email' => ['label' => 'Email', 'placeholder' => 'Inserisci la tua email', 'tooltip' => 'Usa un indirizzo email valido', 'icon' => 'heroicon-o-envelope', 'description' => 'email', 'helper_text' => ''],
+=======
+        'email' => ['label' => 'Email', 'placeholder' => 'Inserisci la tua email', 'tooltip' => 'Usa un indirizzo email valido', 'icon' => 'heroicon-o-envelope', 'description' => 'email', 'helper_text' => ''],
+>>>>>>> laraxot/dev
         'password' => ['label' => 'Password', 'placeholder' => 'Inserisci la tua password', 'tooltip' => 'La password deve contenere almeno 8 caratteri', 'icon' => 'heroicon-o-lock-closed', 'description' => 'password', 'helper_text' => ''],
         'remember' => ['label' => 'Ricordami', 'tooltip' => 'Mantieni l\'accesso attivo su questo dispositivo', 'description' => 'remember', 'helper_text' => '', 'placeholder' => 'remember'],
         'applyFilters' => ['label' => 'applyFilters', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -50,7 +54,11 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
        'resetFilters' => ['label' => 'resetFilters', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+=======
+        'resetFilters' => ['label' => 'resetFilters', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+>>>>>>> laraxot/dev
         'openFilters' => ['label' => 'openFilters', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'value' => ['description' => 'value', 'helper_text' => '', 'placeholder' => 'value', 'label' => 'value', 'tooltip' => ''],
         'values-list' => ['description' => 'values-list', 'helper_text' => '', 'placeholder' => 'values-list', 'label' => 'values-list', 'tooltip' => ''],
@@ -91,7 +99,11 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
        'test_date' => ['label' => 'test_date', 'placeholder' => 'test_date', 'helper_text' => 'test_date', 'description' => 'test_date', 'tooltip' => ''],
+=======
+        'test_date' => ['label' => 'test_date', 'placeholder' => 'test_date', 'helper_text' => 'test_date', 'description' => 'test_date', 'tooltip' => ''],
+>>>>>>> laraxot/dev
         'test' => ['label' => 'test', 'placeholder' => 'test', 'helper_text' => 'test', 'description' => 'test', 'tooltip' => ''],
         'view' => ['label' => 'view', 'placeholder' => 'view', 'helper_text' => 'view', 'description' => 'view', 'tooltip' => ''],
         'address' => ['label' => 'address2', 'placeholder' => 'address', 'helper_text' => 'address', 'description' => 'address', 'tooltip' => ''],
@@ -215,7 +227,11 @@ return [
     'navigation' => [
         'name' => 'Txt',
         'plural' => 'Txt',
+<<<<<<< HEAD
        'group' => ['name' => 'General', 'description' => 'General Settings'],
+=======
+        'group' => ['name' => 'General', 'description' => 'General Settings'],
+>>>>>>> laraxot/dev
         'label' => 'Txt',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',

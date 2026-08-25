@@ -18,7 +18,11 @@ function makeGetTransPathAction(): GetTransPathAction
 describe('GetTransPathAction Business Logic', function () {
     test('returns correct path for valid translation key', function () {
         $key = 'meetup::messages.welcome';
+<<<<<<< HEAD
        $result = makeGetTransPathAction()->execute($key);
+=======
+        $result = makeGetTransPathAction()->execute($key);
+>>>>>>> laraxot/dev
 
         Assert::assertStringContainsString('meetup', strtolower($result));
         Assert::assertStringContainsString('lang', $result);
@@ -27,7 +31,11 @@ describe('GetTransPathAction Business Logic', function () {
 
     test('extracts namespace and file from key', function () {
         $key = 'cms::validation.required';
+<<<<<<< HEAD
        $result = makeGetTransPathAction()->execute($key);
+=======
+        $result = makeGetTransPathAction()->execute($key);
+>>>>>>> laraxot/dev
 
         Assert::assertStringContainsString('cms', strtolower($result));
         Assert::assertStringContainsString('validation.php', $result);
@@ -40,14 +48,22 @@ describe('GetTransPathAction Business Logic', function () {
 
     test('extracts language from app locale', function () {
         $key = 'user::auth.login';
+<<<<<<< HEAD
        $result = makeGetTransPathAction()->execute($key);
+=======
+        $result = makeGetTransPathAction()->execute($key);
+>>>>>>> laraxot/dev
 
         Assert::assertStringContainsString('lang/', $result);
     });
 
     test('handles keys with multiple dots', function () {
         $key = 'module::file.nested.deep.value';
+<<<<<<< HEAD
        $result = makeGetTransPathAction()->execute($key);
+=======
+        $result = makeGetTransPathAction()->execute($key);
+>>>>>>> laraxot/dev
 
         Assert::assertStringContainsString('file.php', $result);
     });
