@@ -59,7 +59,6 @@ function cleanupTranslationFile(string $filePath): void
         unlink($filePath);
     }
 }
-
 /**
  * @param array<string, mixed> $data
  */

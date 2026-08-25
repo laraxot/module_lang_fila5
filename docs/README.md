@@ -363,4 +363,12 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse --level=max Modules/Lang
 **Status**: ✅ Production  
 **Last Updated**: 2026-07-14  
 **Requirements**: PHP 8.3+, Laravel 12  
+<<<<<<< HEAD
 **PHPStan Level**: 10 (Compliant)
+=======
+<<<<<<< HEAD
+**PHPStan Level**: 10 (Compliant)
+=======
+**PHPStan Level**: 10 (Compliant)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

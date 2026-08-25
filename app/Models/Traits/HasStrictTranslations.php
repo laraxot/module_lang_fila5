@@ -50,7 +50,6 @@ trait HasStrictTranslations
 
         return null;
     }
-
     /**
      * @param array<mixed, mixed> $value
      *
