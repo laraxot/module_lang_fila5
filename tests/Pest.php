@@ -13,10 +13,15 @@ use function Safe\unlink;
 /*
  * Bootstrap Pest — modulo Lang.
  * Ogni file test dichiara uses(\Modules\Lang\Tests\TestCase::class) se serve binding.
- * Vietato pest()->extend() / expect()->extend() qui (PHPStan method.internalClass).
+ * Per estendere si usa l'API idiomatica di Pest — `pest()->extend(...)`, in fondo
+ * a questo file — senza nessuna annotazione di soppressione: con
+ * `pestphp/pest-plugin-phpstan 5.2.0` installato, `method.internalClass` non
+ * viene piu' segnalato. Misurato il 2026-08-25 su tutti i bootstrap dei moduli:
+ * `phpstan analyse Modules/<Modulo>/tests/Pest.php` = 0 errori.
+ * Se ricomparisse, verificare che il plugin sia ancora caricato da
+ * `phpstan/extension-installer`, non reintrodurre il divieto.
+ * Vedi story XOT-5.41 e ROOT-17.6.
  */
-
-require_once __DIR__.'/../../Xot/tests/XotBasePest.php';
 
 /**
  * @param array<string, mixed> $attributes
@@ -68,3 +73,5 @@ function langAssertDatabaseHasRow(string $table, array $data, ?string $connectio
 
     Assert::assertTrue($query->exists());
 }
+
+pest()->extend(\Modules\Lang\Tests\TestCase::class)->in(__DIR__.'/Unit', __DIR__.'/Feature');
