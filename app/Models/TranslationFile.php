@@ -53,7 +53,11 @@ class TranslationFile extends BaseModel
         'content',
     ];
 
+<<<<<<< HEAD
    /** @var array<string, string> */
+=======
+    /** @var array<string, string> */
+>>>>>>> laraxot/dev
     protected array $form = [
         'key' => 'string',
         'path' => 'string',
@@ -62,7 +66,11 @@ class TranslationFile extends BaseModel
         'content' => 'json',
     ];
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return array<int, array<string, mixed>>
      */
     public function getRows(): array
@@ -101,7 +109,11 @@ class TranslationFile extends BaseModel
                 return [];
             }
 
+<<<<<<< HEAD
            $key = $item['key'] ?? null;
+=======
+            $key = $item['key'] ?? null;
+>>>>>>> laraxot/dev
             /** @var string|int|float|bool|null $keyNarrowed */
             $keyNarrowed = $key;
             $keyStr = is_string($keyNarrowed) ? $keyNarrowed : (string) $keyNarrowed;
@@ -124,7 +136,11 @@ class TranslationFile extends BaseModel
                 $item['content'] = '';
             }
 
+<<<<<<< HEAD
            return $item;
+=======
+            return $item;
+>>>>>>> laraxot/dev
         });
 
         return $result;

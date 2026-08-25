@@ -18,7 +18,11 @@ abstract class LangBaseResource extends XotBaseResource
         return Config::string('app.locale', 'it');
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return array<int, string>
      */
     public static function getTranslatableLocales(): array

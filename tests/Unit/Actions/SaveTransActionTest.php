@@ -12,7 +12,11 @@ uses(TestCase::class);
 
 describe('SaveTransAction', function (): void {
     test('it has execute method', function (): void {
+<<<<<<< HEAD
        $action = app(SaveTransAction::class);
+=======
+        $action = app(SaveTransAction::class);
+>>>>>>> laraxot/dev
 
         Assert::assertTrue(is_callable([$action, 'execute']));
     });

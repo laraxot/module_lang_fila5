@@ -66,7 +66,11 @@ describe('BaseModelLang', function () {
         };
 
         $casts = $model->getCasts();
+<<<<<<< HEAD
        Assert::assertSame('string', $casts['id']);
+=======
+        Assert::assertSame('string', $casts['id']);
+>>>>>>> laraxot/dev
     });
 
     test('casts datetime fields', function () {
@@ -76,7 +80,11 @@ describe('BaseModelLang', function () {
         };
 
         $casts = $model->getCasts();
+<<<<<<< HEAD
        Assert::assertSame('datetime', $casts['published_at']);
+=======
+        Assert::assertSame('datetime', $casts['published_at']);
+>>>>>>> laraxot/dev
         Assert::assertSame('datetime', $casts['created_at']);
         Assert::assertSame('datetime', $casts['updated_at']);
     });

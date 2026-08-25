@@ -12,7 +12,10 @@
         "translations",
         "localization"
     ],
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
     "description": "",
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_lang_fila3.git",
@@ -24,13 +27,19 @@
             "email": "marco.sottana@gmail.com"
         }
     ],
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
     "repositories_comment": "Local path package (lara-zeus/spatie-translatable) moved to root composer.json for proper priority. DO NOT add Packagist here.",
     "require": {
         "mcamara/laravel-localization": "*",
         "lara-zeus/spatie-translatable": "*",
         "rinvex/countries": "^9.1",
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
         "spatie/laravel-sluggable": "*",
         "php": "^8.3"
     },
@@ -61,7 +70,10 @@
             "canonical": false
         }
     ],
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
     "repositories-comment": [
         {
             "type": "path",
@@ -111,5 +123,9 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true
+<<<<<<< HEAD
 
 }
+=======
+}
+>>>>>>> laraxot/dev

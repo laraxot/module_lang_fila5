@@ -13,7 +13,11 @@ return [
      * |
      */
 
+<<<<<<< HEAD
    'default_locale' => 'it',
+=======
+    'default_locale' => 'it',
+>>>>>>> laraxot/dev
     'fallback_locale' => 'en',
     'available_locales' => ['it', 'en', 'de'],
     /*
@@ -26,7 +30,11 @@ return [
      */
 
     'cache' => [
+<<<<<<< HEAD
        'enabled' => true,
+=======
+        'enabled' => true,
+>>>>>>> laraxot/dev
         'ttl' => 3600, // 1 ora
         'prefix' => 'lang_translations',
         'compression' => true,
@@ -41,7 +49,11 @@ return [
      */
 
     'validation' => [
+<<<<<<< HEAD
        'enabled' => true,
+=======
+        'enabled' => true,
+>>>>>>> laraxot/dev
         'strict_mode' => false,
         'auto_fix' => false,
         'report_missing_keys' => true,
@@ -57,7 +69,11 @@ return [
      */
 
     'auto_translate' => [
+<<<<<<< HEAD
        'enabled' => false,
+=======
+        'enabled' => false,
+>>>>>>> laraxot/dev
         'provider' => 'google',
         'api_key' => null,
         'fallback_chain' => [
@@ -65,7 +81,11 @@ return [
             'de' => ['en', 'it'],
             'en' => ['it', 'de'],
         ],
+<<<<<<< HEAD
        'quality_check' => true,
+=======
+        'quality_check' => true,
+>>>>>>> laraxot/dev
     ],
     /*
      * |--------------------------------------------------------------------------
@@ -77,7 +97,11 @@ return [
      */
 
     'filament' => [
+<<<<<<< HEAD
        'auto_labels' => true,
+=======
+        'auto_labels' => true,
+>>>>>>> laraxot/dev
         'auto_placeholders' => true,
         'auto_help_text' => true,
         'component_prefix' => '',
@@ -119,7 +143,11 @@ return [
      */
 
     'debug' => [
+<<<<<<< HEAD
        'enabled' => false,
+=======
+        'enabled' => false,
+>>>>>>> laraxot/dev
         'log_missing_keys' => true,
         'log_performance' => false,
         'log_channel' => 'translations',
@@ -135,7 +163,11 @@ return [
      */
 
     'performance' => [
+<<<<<<< HEAD
        'lazy_loading' => true,
+=======
+        'lazy_loading' => true,
+>>>>>>> laraxot/dev
         'memory_optimization' => true,
         'batch_loading' => true,
         'preload_common_keys' => true,
@@ -151,7 +183,11 @@ return [
      */
 
     'security' => [
+<<<<<<< HEAD
        'validate_file_integrity' => true,
+=======
+        'validate_file_integrity' => true,
+>>>>>>> laraxot/dev
         'max_file_size' => 1024 * 1024, // 1MB
         'allowed_extensions' => ['php'],
         'scan_for_malicious_code' => true,

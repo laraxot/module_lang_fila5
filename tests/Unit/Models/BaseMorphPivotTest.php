@@ -68,7 +68,11 @@ describe('BaseMorphPivot Model', function () {
         };
         $fillable = $model->getFillable();
 
+<<<<<<< HEAD
        Assert::assertContains('id', $fillable);
+=======
+        Assert::assertContains('id', $fillable);
+>>>>>>> laraxot/dev
         Assert::assertContains('post_id', $fillable);
         Assert::assertContains('post_type', $fillable);
         Assert::assertContains('related_type', $fillable);
@@ -83,7 +87,11 @@ describe('BaseMorphPivot Model', function () {
         };
 
         $casts = $model->getCasts();
+<<<<<<< HEAD
        Assert::assertSame('string', $casts['id']);
+=======
+        Assert::assertSame('string', $casts['id']);
+>>>>>>> laraxot/dev
     });
 
     test('casts datetime fields', function () {
@@ -93,7 +101,11 @@ describe('BaseMorphPivot Model', function () {
         };
 
         $casts = $model->getCasts();
+<<<<<<< HEAD
        Assert::assertSame('datetime', $casts['created_at']);
+=======
+        Assert::assertSame('datetime', $casts['created_at']);
+>>>>>>> laraxot/dev
         Assert::assertSame('datetime', $casts['updated_at']);
         Assert::assertSame('datetime', $casts['deleted_at']);
     });

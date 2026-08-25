@@ -27,7 +27,11 @@ class TranslationEditor extends XotBaseField
     {
         $components = [];
         $state = $this->getState() ?? [];
+<<<<<<< HEAD
        if (! is_array($state)) {
+=======
+        if (! is_array($state)) {
+>>>>>>> laraxot/dev
             return $components;
         }
 
@@ -38,7 +42,11 @@ class TranslationEditor extends XotBaseField
                     TranslationEditor::make($keyStr)->label('')->state($value),
                 ]);
             } else {
+<<<<<<< HEAD
                /** @var string|int|float|bool|null $valueNarrowed */
+=======
+                /** @var string|int|float|bool|null $valueNarrowed */
+>>>>>>> laraxot/dev
                 $valueNarrowed = $value;
                 $valueStr = is_string($valueNarrowed) ? $valueNarrowed : (string) $valueNarrowed;
                 $label = str_replace('_', ' ', $keyStr);

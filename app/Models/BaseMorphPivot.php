@@ -53,7 +53,11 @@ abstract class BaseMorphPivot extends MorphPivot
         'note',
     ];
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return array<string, string>
      */
     protected function casts(): array

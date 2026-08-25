@@ -20,7 +20,11 @@ class TransArrayAction
     /**
      * Esegue la traduzione di una collezione.
      *
+<<<<<<< HEAD
     * @param array<int|string, mixed> $array
+=======
+     * @param array<int|string, mixed> $array
+>>>>>>> laraxot/dev
      *
      * @return array<int|string, string>
      */
@@ -31,7 +35,11 @@ class TransArrayAction
             if (is_array($result)) {
                 $stringResult = [];
                 foreach ($result as $key => $value) {
+<<<<<<< HEAD
                    $stringResult[$key] = is_string($value) ? $value : '';
+=======
+                    $stringResult[$key] = is_string($value) ? $value : '';
+>>>>>>> laraxot/dev
                 }
 
                 return $stringResult;
@@ -46,7 +54,11 @@ class TransArrayAction
         if (is_array($result)) {
             $stringResult = [];
             foreach ($result as $key => $value) {
+<<<<<<< HEAD
                $stringResult[$key] = is_string($value) ? $value : '';
+=======
+                $stringResult[$key] = is_string($value) ? $value : '';
+>>>>>>> laraxot/dev
             }
 
             return $stringResult;
@@ -69,7 +81,11 @@ class TransArrayAction
             $item = SafeStringCastAction::cast($item);
         }
 
+<<<<<<< HEAD
        if ('' === $item || '0' === $item || null === $this->transKey) {
+=======
+        if ('' === $item || '0' === $item || null === $this->transKey) {
+>>>>>>> laraxot/dev
             return $item;
         }
 

@@ -16,7 +16,11 @@ class PostFactory extends Factory
 {
     protected $model = Post::class;
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public function definition(): array

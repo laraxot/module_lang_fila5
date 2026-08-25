@@ -22,7 +22,11 @@ class Switcher extends Component
 {
     public string $lang;
 
+<<<<<<< HEAD
    /** @var array<string, array<string, mixed>> */
+=======
+    /** @var array<string, array<string, mixed>> */
+>>>>>>> laraxot/dev
     public array $langs;
 
     public string $url;
@@ -48,7 +52,11 @@ class Switcher extends Component
 
             return $item;
         });
+<<<<<<< HEAD
        /** @var array<string, array<string, mixed>> $mappedLangs */
+=======
+        /** @var array<string, array<string, mixed>> $mappedLangs */
+>>>>>>> laraxot/dev
         $mappedLangs = $langs;
         $this->langs = $mappedLangs;
     }
@@ -62,7 +70,11 @@ class Switcher extends Component
 
     public function render(): View
     {
+<<<<<<< HEAD
        /** @phpstan-var view-string */
+=======
+        /** @phpstan-var view-string */
+>>>>>>> laraxot/dev
         $view = 'lang::livewire.lang.change';
         $viewParams = [
             'view' => $view,

@@ -17,11 +17,20 @@ return new class extends XotBaseMigration {
             $table->string('key');
             $table->json('text');
             $table->string('locale')->index();
+<<<<<<< HEAD
            $table->unique(['group', 'key', 'locale']);
         });
 
         $this->tableUpdate(function (Blueprint $table): void {
             $this->updateTimestamps($table, false);
         });
+=======
+            $table->unique(['group', 'key', 'locale']);
+        });
+
+        $this->tableUpdate(function (Blueprint $table): void {
+            $this->updateTimestamps($table, false);
+        });
+>>>>>>> laraxot/dev
     }
 };

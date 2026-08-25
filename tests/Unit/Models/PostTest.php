@@ -17,31 +17,51 @@ describe('Post Model', function () {
     test('extends BaseModel', function () {
         $model = new Post();
 
+<<<<<<< HEAD
        Assert::assertInstanceOf(BaseModel::class, $model);
+=======
+        Assert::assertInstanceOf(BaseModel::class, $model);
+>>>>>>> laraxot/dev
     });
 
     test('uses HasSlug trait', function () {
         $model = new Post();
 
+<<<<<<< HEAD
        Assert::assertArrayHasKey('Spatie\Sluggable\HasSlug', class_uses($model));
+=======
+        Assert::assertArrayHasKey('Spatie\Sluggable\HasSlug', class_uses($model));
+>>>>>>> laraxot/dev
     });
 
     test('uses HasXotFactory trait', function () {
         $model = new Post();
 
+<<<<<<< HEAD
        Assert::assertArrayHasKey('Modules\Xot\Models\Traits\HasXotFactory', class_uses($model));
+=======
+        Assert::assertArrayHasKey('Modules\Xot\Models\Traits\HasXotFactory', class_uses($model));
+>>>>>>> laraxot/dev
     });
 
     test('uses Updater trait', function () {
         $model = new Post();
 
+<<<<<<< HEAD
        Assert::assertArrayHasKey('Modules\Xot\Traits\Updater', class_uses($model));
+=======
+        Assert::assertArrayHasKey('Modules\Xot\Traits\Updater', class_uses($model));
+>>>>>>> laraxot/dev
     });
 
     test('has correct connection', function () {
         $model = new Post();
 
+<<<<<<< HEAD
        Assert::assertSame('lang', $model->getConnectionName());
+=======
+        Assert::assertSame('lang', $model->getConnectionName());
+>>>>>>> laraxot/dev
     });
 
     test('has correct searchable fields', function () {
@@ -62,14 +82,22 @@ describe('Post Model', function () {
     test('has default perPage', function () {
         $model = new Post();
 
+<<<<<<< HEAD
        Assert::assertSame(30, $model->getPerPage());
+=======
+        Assert::assertSame(30, $model->getPerPage());
+>>>>>>> laraxot/dev
     });
 
     test('has correct fillable attributes', function () {
         $model = new Post();
         $fillable = $model->getFillable();
 
+<<<<<<< HEAD
        Assert::assertContains('id', $fillable);
+=======
+        Assert::assertContains('id', $fillable);
+>>>>>>> laraxot/dev
         Assert::assertContains('user_id', $fillable);
         Assert::assertContains('post_id', $fillable);
         Assert::assertContains('lang', $fillable);
@@ -79,26 +107,42 @@ describe('Post Model', function () {
     test('has getSlugOptions method', function () {
         $model = new Post();
 
+<<<<<<< HEAD
        Assert::assertTrue(is_callable([$model, 'getSlugOptions']));
+=======
+        Assert::assertTrue(is_callable([$model, 'getSlugOptions']));
+>>>>>>> laraxot/dev
     });
 
     test('has linkable relationship', function () {
         $model = new Post();
 
+<<<<<<< HEAD
        Assert::assertTrue(is_callable([$model, 'linkable']));
+=======
+        Assert::assertTrue(is_callable([$model, 'linkable']));
+>>>>>>> laraxot/dev
     });
 
     test('has toSearchableArray method', function () {
         $model = new Post();
 
+<<<<<<< HEAD
        Assert::assertTrue(is_callable([$model, 'toSearchableArray']));
+=======
+        Assert::assertTrue(is_callable([$model, 'toSearchableArray']));
+>>>>>>> laraxot/dev
     });
 
     test('casts datetime fields', function () {
         $model = new Post();
         $casts = $model->getCasts();
 
+<<<<<<< HEAD
        Assert::assertSame('datetime', $casts['created_at']);
+=======
+        Assert::assertSame('datetime', $casts['created_at']);
+>>>>>>> laraxot/dev
         Assert::assertSame('datetime', $casts['updated_at']);
         Assert::assertSame('datetime', $casts['deleted_at']);
         Assert::assertSame('datetime', $casts['published_at']);
@@ -108,7 +152,11 @@ describe('Post Model', function () {
         $model = new Post();
         $casts = $model->getCasts();
 
+<<<<<<< HEAD
        Assert::assertSame('array', $casts['image_resize_src']);
+=======
+        Assert::assertSame('array', $casts['image_resize_src']);
+>>>>>>> laraxot/dev
         Assert::assertSame('array', $casts['url_lang']);
     });
 });

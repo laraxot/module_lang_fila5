@@ -24,7 +24,11 @@ class EditTranslationFile extends XotBaseEditRecord
         return ['it', 'en'];
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * Schema della pagina.
      *
      * Niente `#[\Override]`: il metodo del genitore si chiama `getFormSchemaOld()`
@@ -73,7 +77,11 @@ class EditTranslationFile extends XotBaseEditRecord
         $fields = [];
 
         foreach ($array as $key => $value) {
+<<<<<<< HEAD
            $keyStr = (string) $key;
+=======
+            $keyStr = (string) $key;
+>>>>>>> laraxot/dev
             $fullKey = '' === $prefix ? $keyStr : ($prefix.'.'.$keyStr);
 
             if (is_array($value)) {
@@ -81,14 +89,22 @@ class EditTranslationFile extends XotBaseEditRecord
                 $childArray = $value;
                 /** @var array<Htmlable|string> $childSchema */
                 $childSchema = self::makeFromArray($childArray, $fullKey);
+<<<<<<< HEAD
                $fields[] = Section::make($keyStr)
+=======
+                $fields[] = Section::make($keyStr)
+>>>>>>> laraxot/dev
                     ->label($fullKey)
                     ->schema($childSchema)
                     ->columns(2);
             } else {
                 $fields[] = TextInput::make($fullKey)
                     // ->label($fullKey)
+<<<<<<< HEAD
                    ->label($keyStr)
+=======
+                    ->label($keyStr)
+>>>>>>> laraxot/dev
                     ->default($value);
             }
         }
@@ -129,7 +145,11 @@ class EditTranslationFile extends XotBaseEditRecord
          */
         $record = $this->record;
         if (is_object($record) && isset($record->key)) {
+<<<<<<< HEAD
            /** @var string|int|float|bool|null $recordKeyNarrowed */
+=======
+            /** @var string|int|float|bool|null $recordKeyNarrowed */
+>>>>>>> laraxot/dev
             $recordKeyNarrowed = $record->key;
             $key = is_string($recordKeyNarrowed) ? $recordKeyNarrowed : (string) $recordKeyNarrowed;
             /** @var array<string, mixed>|string|int|Htmlable|null $contentNarrowed */

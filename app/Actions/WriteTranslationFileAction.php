@@ -84,7 +84,11 @@ class WriteTranslationFileAction
     private function validatePhpSyntax(string $phpContent): void
     {
         // Crea un file temporaneo per la validazione
+<<<<<<< HEAD
        $tempFile = tempnam(storage_path('framework/cache'), 'translation_');
+=======
+        $tempFile = tempnam(storage_path('framework/cache'), 'translation_');
+>>>>>>> laraxot/dev
         file_put_contents($tempFile, $phpContent);
 
         // Esegue php -l per validare la sintassi
@@ -119,7 +123,11 @@ class WriteTranslationFileAction
 
         // Pulisce la cache delle traduzioni
         if (app()->bound('translation.loader')) {
+<<<<<<< HEAD
            $loader = app('translation.loader');
+=======
+            $loader = app('translation.loader');
+>>>>>>> laraxot/dev
             if (method_exists($loader, 'flush')) {
                 $loader->flush();
             }

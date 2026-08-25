@@ -16,7 +16,11 @@ describe('Translation Model', function () {
         $model = new Translation();
         $fillable = $model->getFillable();
 
+<<<<<<< HEAD
        Assert::assertContains('id', $fillable);
+=======
+        Assert::assertContains('id', $fillable);
+>>>>>>> laraxot/dev
         Assert::assertContains('lang', $fillable);
         Assert::assertContains('value', $fillable);
         Assert::assertContains('namespace', $fillable);
@@ -32,26 +36,42 @@ describe('Translation Model', function () {
     test('scopeOfTranslatedGroup filters by group', function () {
         $result = Translation::ofTranslatedGroup('test');
 
+<<<<<<< HEAD
        Assert::assertInstanceOf(Builder::class, $result);
+=======
+        Assert::assertInstanceOf(Builder::class, $result);
+>>>>>>> laraxot/dev
     });
 
     test('scopeOrderByGroupKeys orders by group and key', function () {
         $result = Translation::orderByGroupKeys(true);
 
+<<<<<<< HEAD
        Assert::assertInstanceOf(Builder::class, $result);
+=======
+        Assert::assertInstanceOf(Builder::class, $result);
+>>>>>>> laraxot/dev
     });
 
     test('scopeSelectDistinctGroup selects distinct groups', function () {
         $result = Translation::selectDistinctGroup();
 
+<<<<<<< HEAD
        Assert::assertInstanceOf(Builder::class, $result);
+=======
+        Assert::assertInstanceOf(Builder::class, $result);
+>>>>>>> laraxot/dev
     });
 
     test('casts datetime fields', function () {
         $model = new Translation();
         $casts = $model->getCasts();
 
+<<<<<<< HEAD
        Assert::assertArrayHasKey('created_at', $casts);
+=======
+        Assert::assertArrayHasKey('created_at', $casts);
+>>>>>>> laraxot/dev
         Assert::assertArrayHasKey('updated_at', $casts);
     });
 });
