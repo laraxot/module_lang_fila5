@@ -16,7 +16,11 @@ class GetAllTranslationAction
 
     /**
      * Restituisce il path completo del file di traduzione dato un key.
+<<<<<<< HEAD
     *
+=======
+     *
+>>>>>>> laraxot/dev
      * @return list<array{key: string, path: string}>
      */
     public function execute(): array
@@ -30,7 +34,11 @@ class GetAllTranslationAction
         $path = base_path('Modules/*/lang/'.$lang.'/*.php');
         $files = glob($path);
 
+<<<<<<< HEAD
        $result = [];
+=======
+        $result = [];
+>>>>>>> laraxot/dev
         foreach ($files as $file) {
             if (! is_string($file)) {
                 continue;
@@ -41,7 +49,11 @@ class GetAllTranslationAction
                 ->lower()
                 ->toString();
 
+<<<<<<< HEAD
            $result[] = [
+=======
+            $result[] = [
+>>>>>>> laraxot/dev
                 'key' => $moduleLower.'::'.basename($file, '.php'),
                 'path' => $file,
             ];

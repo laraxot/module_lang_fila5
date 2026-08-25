@@ -16,7 +16,11 @@ class LangDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
+<<<<<<< HEAD
        $this->call([
+=======
+        $this->call([
+>>>>>>> laraxot/dev
             LanguageLineSeeder::class,
             TranslationSeeder::class,
             PostSeeder::class,

@@ -78,7 +78,11 @@ class LangServiceProvider extends XotBaseServiceProvider
         });
 
         Entry::configureUsing(function (Entry $component) {
+<<<<<<< HEAD
            return app(AutoLabelAction::class)->execute($component, 'label');
+=======
+            return app(AutoLabelAction::class)->execute($component, 'label');
+>>>>>>> laraxot/dev
         });
 
         Section::configureUsing(function (Section $component) {
@@ -146,7 +150,11 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     public function registerTranslator(): void
     {
+<<<<<<< HEAD
        $this->app->singleton('translator', function (Container $app): TranslatorAdapter {
+=======
+        $this->app->singleton('translator', function (Container $app): TranslatorAdapter {
+>>>>>>> laraxot/dev
             $loader = $app['translation.loader'];
 
             // When registering the translator component, we'll need to set the default
@@ -155,7 +163,11 @@ class LangServiceProvider extends XotBaseServiceProvider
             Assert::string($locale = $app['config']['app.locale'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
             Assert::string($fallback_locale = $app['config']['app.fallback_locale'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
+<<<<<<< HEAD
            $translatorService = new TranslatorAdapter($loader, $locale);
+=======
+            $translatorService = new TranslatorAdapter($loader, $locale);
+>>>>>>> laraxot/dev
 
             $translatorService->setFallback($fallback_locale);
 
@@ -170,7 +182,11 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     protected function translatableComponents(): void
     {
+<<<<<<< HEAD
        // `Placeholder` e' deprecata in favore di `TextEntry`, che estende `Entry`:
+=======
+        // `Placeholder` e' deprecata in favore di `TextEntry`, che estende `Entry`:
+>>>>>>> laraxot/dev
         // la voce era anche ridondante, non solo deprecata.
         $components = [Field::class, BaseFilter::class, Column::class, Entry::class];
         foreach ($components as $component) {

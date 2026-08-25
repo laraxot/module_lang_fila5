@@ -49,7 +49,11 @@ class TransCollectionAction
             $item = SafeStringCastAction::cast($item);
         }
 
+<<<<<<< HEAD
        if ('' === $item || '0' === $item || null === $this->transKey) {
+=======
+        if ('' === $item || '0' === $item || null === $this->transKey) {
+>>>>>>> laraxot/dev
             return $item;
         }
 

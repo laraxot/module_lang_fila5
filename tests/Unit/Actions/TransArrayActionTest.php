@@ -18,14 +18,22 @@ function makeTransArrayAction(): TransArrayAction
 describe('TransArrayAction Business Logic', function () {
     test('converts array elements to strings without transKey', function () {
         $input = [1, 2, 3];
+<<<<<<< HEAD
        $result = makeTransArrayAction()->execute($input, null);
+=======
+        $result = makeTransArrayAction()->execute($input, null);
+>>>>>>> laraxot/dev
 
         Assert::assertCount(3, $result);
     });
 
     test('handles array with string keys', function () {
         $input = ['a' => 'value1', 'b' => 'value2'];
+<<<<<<< HEAD
        $result = makeTransArrayAction()->execute($input, null);
+=======
+        $result = makeTransArrayAction()->execute($input, null);
+>>>>>>> laraxot/dev
 
         Assert::assertSame('value1', $result['a']);
         Assert::assertSame('value2', $result['b']);
@@ -33,7 +41,11 @@ describe('TransArrayAction Business Logic', function () {
 
     test('handles empty array', function () {
         $input = [];
+<<<<<<< HEAD
        $result = makeTransArrayAction()->execute($input, null);
+=======
+        $result = makeTransArrayAction()->execute($input, null);
+>>>>>>> laraxot/dev
 
         Assert::assertEmpty($result);
     });
@@ -47,21 +59,33 @@ describe('TransArrayAction Business Logic', function () {
 
     test('returns original value when translation does not exist', function () {
         $input = ['nonexistent_key'];
+<<<<<<< HEAD
        $result = makeTransArrayAction()->execute($input, 'nonexistent');
+=======
+        $result = makeTransArrayAction()->execute($input, 'nonexistent');
+>>>>>>> laraxot/dev
 
         Assert::assertSame(['nonexistent_key'], $result);
     });
 
     test('handles numeric array elements', function () {
         $input = [100, 200, 300];
+<<<<<<< HEAD
        $result = makeTransArrayAction()->execute($input, null);
+=======
+        $result = makeTransArrayAction()->execute($input, null);
+>>>>>>> laraxot/dev
 
         Assert::assertSame('100', $result[0]);
     });
 
     test('handles array with mixed types', function () {
         $input = ['string', 123, true, null];
+<<<<<<< HEAD
        $result = makeTransArrayAction()->execute($input, null);
+=======
+        $result = makeTransArrayAction()->execute($input, null);
+>>>>>>> laraxot/dev
 
         Assert::assertCount(4, $result);
     });

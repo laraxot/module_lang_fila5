@@ -22,7 +22,11 @@ class TranslatorService extends LaravelTranslator
 
     /**
      * Get the translation for the given key.
+<<<<<<< HEAD
     *
+=======
+     *
+>>>>>>> laraxot/dev
      * @param array<string, mixed> $replace
      *
      * @return string|array<string, mixed>
@@ -38,7 +42,11 @@ class TranslatorService extends LaravelTranslator
             $result = parent::get($key, $replace, $locale, $fallback);
         }
 
+<<<<<<< HEAD
        if (is_array($result)) {
+=======
+        if (is_array($result)) {
+>>>>>>> laraxot/dev
             /** @var array<string, mixed> $arrayResult */
             $arrayResult = $result;
 
@@ -69,6 +77,10 @@ class TranslatorService extends LaravelTranslator
         ];
         Translation::firstOrCreate($data);
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     public function execute(): void
     {
     }

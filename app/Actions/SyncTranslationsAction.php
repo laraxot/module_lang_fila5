@@ -88,7 +88,11 @@ class SyncTranslationsAction
         $translationsAdded = 0;
 
         foreach ($sourceFiles as $sourceFile) {
+<<<<<<< HEAD
            if (! is_string($sourceFile)) {
+=======
+            if (! is_string($sourceFile)) {
+>>>>>>> laraxot/dev
                 continue;
             }
             $fileName = basename($sourceFile);
@@ -143,7 +147,11 @@ class SyncTranslationsAction
         $directories = File::directories($modulesPath);
 
         foreach ($directories as $directory) {
+<<<<<<< HEAD
            $directoryStr = is_string($directory) ? $directory : '';
+=======
+            $directoryStr = is_string($directory) ? $directory : '';
+>>>>>>> laraxot/dev
             $moduleName = basename($directoryStr);
             if (File::exists("{$directoryStr}/lang")) {
                 $modules[] = $moduleName;
@@ -271,7 +279,11 @@ class SyncTranslationsAction
                 $content .= $this->arrayToPhp($this->filterStringKeyArray($value), $indent + 1);
                 $content .= $indentStr."],\n";
             } else {
+<<<<<<< HEAD
                $content .= "'".addslashes(SafeStringCastAction::cast($value))."',\n";
+=======
+                $content .= "'".addslashes(SafeStringCastAction::cast($value))."',\n";
+>>>>>>> laraxot/dev
             }
         }
 

@@ -16,7 +16,11 @@ use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
 /**
+<<<<<<< HEAD
 * Colonne allineate a `2026_01_21_211814_create_posts_table`.
+=======
+ * Colonne allineate a `2026_01_21_211814_create_posts_table`.
+>>>>>>> laraxot/dev
  *
  * @property string                          $id
  * @property int|null                        $user_id
@@ -50,6 +54,10 @@ use Spatie\Sluggable\SlugOptions;
 class Post extends BaseModel
 {
     use HasSlug;
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     /** @phpstan-use HasXotFactory<PostFactory> */
     use HasXotFactory;
 
@@ -64,7 +72,11 @@ class Post extends BaseModel
 
     final public const SEARCHABLE_FIELDS = ['title', 'guid', 'txt'];
 
+<<<<<<< HEAD
    public static $snakeAttributes = true;
+=======
+    public static $snakeAttributes = true;
+>>>>>>> laraxot/dev
 
     /** @var bool */
     public $incrementing = false;
@@ -87,7 +99,11 @@ class Post extends BaseModel
         'subtitle',
         'post_type',
         'txt',
+<<<<<<< HEAD
        'content',
+=======
+        'content',
+>>>>>>> laraxot/dev
         'excerpt',
         'slug',
         'status',
@@ -99,7 +115,11 @@ class Post extends BaseModel
         'image_alt',
         'image_title',
         // ------ SEO FIELDS -----
+<<<<<<< HEAD
        'meta_title',
+=======
+        'meta_title',
+>>>>>>> laraxot/dev
         'meta_description',
         'meta_keywords', // seo
         'author_id',
@@ -130,6 +150,10 @@ class Post extends BaseModel
     }
 
     // -------- relationship ------
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     /**
      * @return MorphTo<Model, $this>
      */
@@ -172,7 +196,11 @@ class Post extends BaseModel
             return $value;
         }
 
+<<<<<<< HEAD
        if (isset($this->attributes['post_type']) && '' !== $this->attributes['post_type'] && '0' !== $this->attributes['post_type']) {
+=======
+        if (isset($this->attributes['post_type']) && '' !== $this->attributes['post_type'] && '0' !== $this->attributes['post_type']) {
+>>>>>>> laraxot/dev
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
@@ -235,7 +263,11 @@ class Post extends BaseModel
         return $value ?? '';
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public function toSearchableArray(): array

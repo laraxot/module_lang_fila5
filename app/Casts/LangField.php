@@ -16,7 +16,11 @@ class LangField implements CastsAttributes
 {
     /**
      * Cast the given value.
+<<<<<<< HEAD
     *
+=======
+     *
+>>>>>>> laraxot/dev
      * @param array<string, mixed> $attributes
      */
     public function get(Model $model, string $key, mixed $value, array $attributes): mixed
@@ -29,7 +33,11 @@ class LangField implements CastsAttributes
 
     /**
      * Prepare the given value for storage.
+<<<<<<< HEAD
     *
+=======
+     *
+>>>>>>> laraxot/dev
      * @param array<string, mixed> $attributes
      *
      * @return array<string, mixed>

@@ -101,7 +101,11 @@ describe('Read Translation File Action', function (): void {
             ],
         ];
 
+<<<<<<< HEAD
        $phpContent = $action->toPhp($translations);
+=======
+        $phpContent = $action->toPhp($translations);
+>>>>>>> laraxot/dev
 
         Assert::assertStringContainsString("\n\nreturn [", $phpContent);
         Assert::assertStringContainsString("'simple_key' => 'Simple value'", $phpContent);
@@ -118,7 +122,11 @@ describe('Read Translation File Action', function (): void {
             'newlines' => "Text with\nnewlines",
         ];
 
+<<<<<<< HEAD
        $phpContent = $action->toPhp($translations);
+=======
+        $phpContent = $action->toPhp($translations);
+>>>>>>> laraxot/dev
 
         Assert::assertStringContainsString("Text with \\'single\\' and \\\"double\\\" quotes", $phpContent);
         Assert::assertStringContainsString('Text with \\\\ backslashes', $phpContent);
@@ -137,7 +145,11 @@ describe('Read Translation File Action', function (): void {
             ],
         ];
 
+<<<<<<< HEAD
        $phpContent = $action->toPhp($translations);
+=======
+        $phpContent = $action->toPhp($translations);
+>>>>>>> laraxot/dev
 
         Assert::assertStringContainsString("'level1' => [", $phpContent);
         Assert::assertStringContainsString("'level2' => [", $phpContent);
@@ -153,7 +165,11 @@ describe('Read Translation File Action', function (): void {
             ],
         ];
 
+<<<<<<< HEAD
        $phpContent = $action->toPhp($translations);
+=======
+        $phpContent = $action->toPhp($translations);
+>>>>>>> laraxot/dev
         $lines = explode("\n", $phpContent);
 
         $parentLine = array_filter($lines, fn ($line) => str_contains($line, "'parent'"));
@@ -170,7 +186,11 @@ describe('Read Translation File Action', function (): void {
             'normal_key' => 'normal_value',
         ];
 
+<<<<<<< HEAD
        $phpContent = $action->toPhp($translations);
+=======
+        $phpContent = $action->toPhp($translations);
+>>>>>>> laraxot/dev
 
         Assert::assertStringContainsString("'empty_array' => [", $phpContent);
         Assert::assertStringContainsString("'normal_key' => 'normal_value'", $phpContent);
@@ -185,7 +205,11 @@ describe('Read Translation File Action', function (): void {
             'boolean_false' => false,
         ];
 
+<<<<<<< HEAD
        $phpContent = $action->toPhp($translations);
+=======
+        $phpContent = $action->toPhp($translations);
+>>>>>>> laraxot/dev
 
         Assert::assertStringContainsString("'number' => '123'", $phpContent);
         Assert::assertStringContainsString("'float' => '45.67'", $phpContent);
@@ -201,7 +225,11 @@ describe('Read Translation File Action', function (): void {
             'm_middle' => 'Middle value',
         ];
 
+<<<<<<< HEAD
        $phpContent = $action->toPhp($translations);
+=======
+        $phpContent = $action->toPhp($translations);
+>>>>>>> laraxot/dev
         $lines = explode("\n", $phpContent);
 
         $zPos = -1;
@@ -220,7 +248,11 @@ describe('Read Translation File Action', function (): void {
             }
         }
 
+<<<<<<< HEAD
        Assert::assertLessThan($aPos, $zPos);
+=======
+        Assert::assertLessThan($aPos, $zPos);
+>>>>>>> laraxot/dev
         Assert::assertLessThan($mPos, $aPos);
     });
 });

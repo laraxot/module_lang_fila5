@@ -19,7 +19,11 @@ class ThemeComposer
      *
      * @throws \Exception if supportedLocales config is not an array
      *
+<<<<<<< HEAD
     * @return DataCollection<int, LangData>
+=======
+     * @return DataCollection<int, LangData>
+>>>>>>> laraxot/dev
      */
     public function languages(): DataCollection
     {
@@ -87,13 +91,21 @@ class ThemeComposer
     /**
      * Get all languages except the current one.
      *
+<<<<<<< HEAD
     * @return DataCollection<int, LangData>
+=======
+     * @return DataCollection<int, LangData>
+>>>>>>> laraxot/dev
      */
     public function otherLanguages(): DataCollection
     {
         $currentLocale = app()->getLocale();
 
+<<<<<<< HEAD
        // `DataCollection::filter()` e' deprecata in spatie/laravel-data v5 («use a
+=======
+        // `DataCollection::filter()` e' deprecata in spatie/laravel-data v5 («use a
+>>>>>>> laraxot/dev
         // regular Laravel collection instead»). Il filtro passa quindi da
         // `toCollection()`, e il risultato viene ricomposto in DataCollection perche'
         // e' quello che il tipo di ritorno e i chiamanti dichiarano.
@@ -141,7 +153,11 @@ class ThemeComposer
      *
      * @return string The generated URL
      */
+<<<<<<< HEAD
    public function buildAdminLanguageUrl(string $locale): string
+=======
+    public function buildAdminLanguageUrl(string $locale): string
+>>>>>>> laraxot/dev
     {
         $routeName = Route::currentRouteName();
         if (! is_string($routeName)) {
