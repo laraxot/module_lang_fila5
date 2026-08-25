@@ -773,12 +773,4 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
-<<<<<<< HEAD
 **Modulo** `lang` · **Laraxot** · **Current Platform** · PHPStan 10 · Filament 5
-=======
-<<<<<<< HEAD
-**Modulo** `lang` · **Laraxot** · **Current Platform** · PHPStan 10 · Filament 5
-=======
-**Modulo** `lang` · **Laraxot** · **Current Platform** · PHPStan 10 · Filament 5
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
