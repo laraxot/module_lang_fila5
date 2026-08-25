@@ -139,7 +139,7 @@ describe('Lang coverage boost — Filament static', function (): void {
 
         Assert::assertSame('it', TranslationFileResource::getDefaultTranslatableLocale());
         Assert::assertSame(['it', 'en'], TranslationFileResource::getTranslatableLocales());
-        Assert::assertSame([], TranslationFileResource::getFormSchemaOld());
+        Assert::assertSame([], TranslationFileResource::getFormSchema());
 
         $pages = TranslationFileResource::getPages();
         Assert::assertArrayHasKey('index', $pages);

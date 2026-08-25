@@ -57,6 +57,12 @@ final class NationalFlagSelectStub extends NationalFlagSelect
     /** @var array<int, mixed> */
     public array $forcedCountries = [];
 
+    /**
+     * Vedi la nota in LangFinalGapsTest: `mixed` e' il tipo reale dei dati che i test
+     * iniettano di proposito per verificare la robustezza del filtro.
+     *
+     * @return array<int, mixed>
+     */
     protected function resolveCountries(): array
     {
         return $this->forcedCountries;
@@ -161,7 +167,7 @@ describe('Lang coverage gaps closeout', function (): void {
         $loaded = require $file;
         Assert::assertSame('v', $loaded['y']);
         unlink($file);
-        TestCase::restoreSaveTransActionNoOp();
+        TestCase::forgetSaveTransActionOverride();
     });
 
     test('WriteTranslationFileAction backs up existing file', function (): void {

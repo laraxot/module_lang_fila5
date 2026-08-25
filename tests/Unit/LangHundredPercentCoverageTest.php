@@ -319,7 +319,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             if (file_exists($file)) {
                 unlink($file);
             }
-            TestCase::restoreSaveTransActionNoOp();
+            TestCase::forgetSaveTransActionOverride();
         }
     });
 
@@ -338,7 +338,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             if (file_exists($file)) {
                 unlink($file);
             }
-            TestCase::restoreSaveTransActionNoOp();
+            TestCase::forgetSaveTransActionOverride();
         }
     });
 
