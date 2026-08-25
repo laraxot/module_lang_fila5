@@ -69,7 +69,6 @@ class TranslatorService extends LaravelTranslator
         ];
         Translation::firstOrCreate($data);
     }
-
     public function execute(): void
     {
     }

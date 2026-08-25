@@ -63,7 +63,6 @@ abstract class TestCase extends XotBaseTestCase
             LangServiceProvider::class,
         ];
     }
-
     /**
      * @param array<string, mixed> $data
      */
