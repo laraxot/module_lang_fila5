@@ -75,7 +75,11 @@ class Translation extends BaseModel
     ];
 
     // protected $table = 'ltm_translations';
+<<<<<<< HEAD
    /** @var list<string> */
+=======
+    /** @var list<string> */
+>>>>>>> laraxot/dev
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
     /**
@@ -88,7 +92,11 @@ class Translation extends BaseModel
         return $query->where('group', $group)->whereNotNull('value');
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @param EloquentBuilder<Translation> $query
      *
      * @return EloquentBuilder<Translation>
@@ -102,7 +110,11 @@ class Translation extends BaseModel
         return $query;
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @param EloquentBuilder<Translation> $query
      *
      * @return EloquentBuilder<Translation>|QueryBuilder

@@ -21,7 +21,11 @@ interface HasTranslationsContract
      *
      * @return self L'istanza corrente del modello, per supportare method chaining
      */
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * Imposta la traduzione di un attributo in una specifica lingua.
      *
      * @param string                               $key    Chiave dell'attributo da tradurre

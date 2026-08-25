@@ -38,7 +38,11 @@ class ReadTranslationFileAction
             throw new \Exception("File di traduzione non valido: {$filePath}");
         }
 
+<<<<<<< HEAD
        Assert::isArray($translations);
+=======
+        Assert::isArray($translations);
+>>>>>>> laraxot/dev
 
         foreach (array_keys($translations) as $translationKey) {
             Assert::string($translationKey);
@@ -69,7 +73,11 @@ class ReadTranslationFileAction
     /**
      * Converte un array in formato PHP con indentazione.
      *
+<<<<<<< HEAD
     * @param array<array-key, mixed> $array  Array da convertire
+=======
+     * @param array<array-key, mixed> $array  Array da convertire
+>>>>>>> laraxot/dev
      * @param int                     $indent Livello di indentazione
      *
      * @return string Codice PHP dell'array
@@ -80,7 +88,11 @@ class ReadTranslationFileAction
         $indentStr = str_repeat('    ', $indent);
 
         foreach ($array as $key => $value) {
+<<<<<<< HEAD
            $content .= $indentStr."'".addslashes((string) $key)."' => ";
+=======
+            $content .= $indentStr."'".addslashes((string) $key)."' => ";
+>>>>>>> laraxot/dev
 
             if (is_array($value)) {
                 foreach (array_keys($value) as $nestedKey) {

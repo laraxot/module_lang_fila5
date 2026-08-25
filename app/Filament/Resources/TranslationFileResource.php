@@ -20,7 +20,11 @@ class TranslationFileResource extends XotBaseResource
         return Config::string('app.locale', 'it');
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return array<int, string>
      */
     public static function getTranslatableLocales(): array
@@ -28,7 +32,11 @@ class TranslationFileResource extends XotBaseResource
         return ['it', 'en'];
     }
 
+<<<<<<< HEAD
    // #[\Override]
+=======
+    // #[\Override]
+>>>>>>> laraxot/dev
     /**
      * @return array<string, mixed>
      */

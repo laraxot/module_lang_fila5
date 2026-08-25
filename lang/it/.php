@@ -7,7 +7,11 @@ return array (
   array (
     'empty' => 
     array (
+<<<<<<< HEAD
      'label' => 'empty11',
+=======
+      'label' => 'empty11',
+>>>>>>> laraxot/dev
       'heading' => 'empty12',
     ),
   ),
@@ -36,7 +40,11 @@ return array (
   ),
   'label' => 'Missing Label',
   'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
  'fields' =>
+=======
+  'fields' =>
+>>>>>>> laraxot/dev
   array (
   ),
 );

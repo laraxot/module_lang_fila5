@@ -74,7 +74,11 @@ class AutoLabelAction
 
         $label_tkey = null;
         $val = 'no-set-val';
+<<<<<<< HEAD
        // Valore da persistere quando la traduzione non esiste ancora. Di norma coincide
+=======
+        // Valore da persistere quando la traduzione non esiste ancora. Di norma coincide
+>>>>>>> laraxot/dev
         // con il segmento di chiave, ma non sempre: vedi le sezioni senza titolo.
         $default_val = null;
 
@@ -82,7 +86,11 @@ class AutoLabelAction
             Assert::string($val = $component->getLabel());
             $label_tkey = $trans_key.'.steps.'.$val.'';
         }
+<<<<<<< HEAD
        if ($label_tkey === null && $component instanceof Section) {
+=======
+        if ($label_tkey === null && $component instanceof Section) {
+>>>>>>> laraxot/dev
             $val = $component->getHeading();
             if ($val === null) {
                 // Una sezione senza titolo e' una scelta: raggruppa i campi senza
@@ -98,7 +106,11 @@ class AutoLabelAction
             }
             $label_tkey = $trans_key.'.sections.'.$val.'';
         }
+<<<<<<< HEAD
        if ($label_tkey === null && method_exists($component, 'getName')) {
+=======
+        if ($label_tkey === null && method_exists($component, 'getName')) {
+>>>>>>> laraxot/dev
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.fields.'.$val.'';
         }
@@ -112,7 +124,11 @@ class AutoLabelAction
 
         $label = trans($label_key);
         if (is_string($label) && $label_key === $label) { // se non esiste la traduzione, la salvo
+<<<<<<< HEAD
            app(SaveTransAction::class)->execute($label_key, $default_val ?? $val);
+=======
+            app(SaveTransAction::class)->execute($label_key, $default_val ?? $val);
+>>>>>>> laraxot/dev
         }
         if (! is_string($label)) {
             $component->label('FIX:'.$label_key);
@@ -138,7 +154,11 @@ class AutoLabelAction
 
         }
         */
+<<<<<<< HEAD
        if ($type === 'icon' && app(SvgExistsAction::class)->execute($label)) {
+=======
+        if ($type === 'icon' && app(SvgExistsAction::class)->execute($label)) {
+>>>>>>> laraxot/dev
             if (method_exists($component, 'iconButton')) {
                 $component->iconButton();
             }
@@ -147,7 +167,11 @@ class AutoLabelAction
             // $component->label('FIX:'.$label_key);
             return $component;
         }
+<<<<<<< HEAD
        if ($type === 'icon' && ! app(SvgExistsAction::class)->execute($label)) {
+=======
+        if ($type === 'icon' && ! app(SvgExistsAction::class)->execute($label)) {
+>>>>>>> laraxot/dev
             // $component->{$type}($label);
             if (method_exists($component, 'iconButton')) {
                 $component->iconButton();

@@ -47,7 +47,11 @@ class LanguageSwitcher extends Component
             'widget_id' => 'language-switcher-'.uniqid(),
         ];
 
+<<<<<<< HEAD
        /** @phpstan-var view-string */
+=======
+        /** @phpstan-var view-string */
+>>>>>>> laraxot/dev
         $view = 'lang::components.language-switcher';
 
         return \view($view, $viewData);
