@@ -63,7 +63,7 @@ class Post extends BaseModel
      * }
      */
 
-    final public const SEARCHABLE_FIELDS = ['title', 'guid', 'txt'];
+    final public const array SEARCHABLE_FIELDS = ['title', 'guid', 'txt'];
 
     public static $snakeAttributes = true;
 

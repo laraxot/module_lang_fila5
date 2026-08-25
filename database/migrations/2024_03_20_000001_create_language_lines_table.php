@@ -17,7 +17,7 @@ return new class extends XotBaseMigration {
             $table->string('key');
             $table->json('text');
             $table->string('locale')->index();
-            $table->unique(['group', 'key', 'locale']);
+$table->unique(['group', 'key', 'locale']);
         });
 
         $this->tableUpdate(function (Blueprint $table): void {
