@@ -1,3 +1,14 @@
+---
+title: "Regole per le Traduzioni in Filament"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Regole per le Traduzioni in Filament
 
 > **Regola fondamentale:** MAI utilizzare il metodo `->label()` nei componenti Filament, specialmente nei Blocks. Le etichette sono gestite automaticamente dal LangServiceProvider.
@@ -19,9 +30,9 @@
   'label' => 'patient.navigation',
   ```
 - Consulta anche:
-  - [translation_keys_best_practices.md](../translation_keys_best_practices.md)
+  - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
   - [translation_keys_rules.md](../translation_keys_rules.md)
-  - [docs SaluteOra](../../SaluteOra/docs/translations.md)
+  - [docs <nome progetto>corrente<nome progetto>rogetto corrente/docs/translations.md)
 
 ## Struttura Corretta per le Traduzioni
 
@@ -101,7 +112,7 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 
 - Tutte le label sono gestite tramite i file di traduzione del modulo.
 - Consulta anche:
-  - [docs SaluteOra](../../SaluteOra/docs/README.md)
+  - [docs <nome progetto>corrente<nome progetto>rogetto corrente/docs/README.md)
   - [docs Xot](../../Xot/docs/README.md)
 
 ## Policy DRY sulle Traduzioni di Disponibilità/Appuntamenti

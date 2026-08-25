@@ -1,3 +1,14 @@
+---
+title: "Collegamenti al Modulo User"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Collegamenti al Modulo User
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo Lang e il modulo User.
@@ -16,6 +27,9 @@ Il modulo User utilizza le traduzioni fornite dal modulo Lang per:
 - [Traduzioni del Modulo User](../../User/project_docs/translations.md) - Documentazione specifica sulle traduzioni nel modulo User
 - [Gestione Utenti](../../User/project_docs/README.md) - Panoramica del modulo User
 - [Modelli Utente](../../User/project_docs/user_profile_models.md) - Documentazione sui modelli utente e profili
+- [Traduzioni del Modulo User](../../User/project_docs/translations.md) - Documentazione specifica sulle traduzioni nel modulo User
+- [Gestione Utenti](../../User/project_docs/README.md) - Panoramica del modulo User
+- [Modelli Utente](../../User/project_docs/user_profile_models.md) - Documentazione sui modelli utente e profili
 
 ## Integrazione con Lang
 
@@ -27,6 +41,7 @@ Il modulo User integra il modulo Lang attraverso:
 
 ## Collegamento Bidirezionale
 
+Questo documento è collegato bidirezionalmente con [lang-link.md](../../User/project_docs/lang-link.md) nel modulo User.
 Questo documento è collegato bidirezionalmente con [lang-link.md](../../User/project_docs/lang-link.md) nel modulo User.
 
 > Aggiorna entrambi i riferimenti se modifichi la struttura delle traduzioni o aggiungi nuove funzionalità che richiedono traduzioni.
@@ -69,4 +84,13 @@ Questo documento è collegato bidirezionalmente con [lang-link.md](../../User/do
 
 ## Collegamenti tra versioni di user-link.md
 * [user-link.md](../../../Lang/docs/user-link.md)
+* [user-link.md](../../../Cms/docs/user-link.md)
+* [user-link.md](../../../Cms/docs/user-link.md)
+
+* [user-link.md](../../../Cms/docs/user-link.md)
+
+* [user-link.md](../../../Cms/docs/user-link.md)
+
+* [user-link.md](../../../Cms/docs/user-link.md)
+
 * [user-link.md](../../../Cms/docs/user-link.md)

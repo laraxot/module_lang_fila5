@@ -24,42 +24,71 @@ class EditTranslationFile extends XotBaseEditRecord
         return ['it', 'en'];
     }
 
-    #[\Override]
+   /**
+     * Schema della pagina.
+     *
+     * Niente `#[\Override]`: il metodo del genitore si chiama `getFormSchemaOld()`
+     * ed e' `protected`. Con l'attributo, PHP emetteva un fatal error
+     * («has #[\Override] attribute, but no matching parent method exists») che
+     * impediva perfino a PHPStan di analizzare il modulo.
+     *
+     * @return array<int, Section>
+     */
     public function getFormSchema(): array
     {
         return [
-            Section::make('content')->schema(function ($record): array {
-                if (is_object($record) && isset($record->content)) {
-                    $content = is_array($record->content) ? $record->content : [];
-                } else {
-                    $content = [];
-                }
-
-                return $this->makeFromArray($content, 'content');
-            }),
+            Section::make('content')->schema(fn (?object $record): array => $this->schemaFromRecord($record)),
         ];
     }
 
+    /**
+     * Costruisce i campi della sezione `content` a partire dal record.
+     *
+     * Estratto dalla closure di {@see getFormSchemaOld()} per renderlo verificabile:
+     * dentro una closure passata a `Section::schema()` la logica e' raggiungibile solo
+     * montando l'intera pagina Filament, e i tre casi che contano — record valido,
+     * record assente, `content` non array — non si distinguono nell'output.
+     *
+     * @return array<int, Section|TextInput>
+     */
+    public function schemaFromRecord(?object $record): array
+    {
+        if (null === $record || ! isset($record->content) || ! \is_array($record->content)) {
+            return [];
+        }
+
+        /** @var array<string, mixed> $content */
+        $content = $record->content;
+
+        return $this->makeFromArray($content, 'content');
+    }
+
+    /**
+     * @param array<string, mixed> $array
+     *
+     * @return array<int, Section|TextInput>
+     */
     public function makeFromArray(array $array, string $prefix = ''): array
     {
         $fields = [];
 
         foreach ($array as $key => $value) {
-            $fullKey = '' === $prefix ? $key : ($prefix.'.'.$key);
+           $keyStr = (string) $key;
+            $fullKey = '' === $prefix ? $keyStr : ($prefix.'.'.$keyStr);
 
             if (is_array($value)) {
                 /** @var array<string, mixed> $childArray */
                 $childArray = $value;
                 /** @var array<Htmlable|string> $childSchema */
                 $childSchema = self::makeFromArray($childArray, $fullKey);
-                $fields[] = Section::make($key)
+               $fields[] = Section::make($keyStr)
                     ->label($fullKey)
                     ->schema($childSchema)
                     ->columns(2);
             } else {
                 $fields[] = TextInput::make($fullKey)
                     // ->label($fullKey)
-                    ->label($key)
+                   ->label($keyStr)
                     ->default($value);
             }
         }
@@ -100,10 +129,12 @@ class EditTranslationFile extends XotBaseEditRecord
          */
         $record = $this->record;
         if (is_object($record) && isset($record->key)) {
-            $key = is_string($record->key) ? $record->key : (string) $record->key;
-            /** @var array<string, mixed>|Htmlable|int|string|null $content */
-            $content = $data['content'] ?? null;
-            app(SaveTransAction::class)->execute($key, $content);
+           /** @var string|int|float|bool|null $recordKeyNarrowed */
+            $recordKeyNarrowed = $record->key;
+            $key = is_string($recordKeyNarrowed) ? $recordKeyNarrowed : (string) $recordKeyNarrowed;
+            /** @var array<string, mixed>|string|int|Htmlable|null $contentNarrowed */
+            $contentNarrowed = $data['content'] ?? null;
+            app(SaveTransAction::class)->execute($key, $contentNarrowed);
         }
 
         // dddx(['record'=>$this->record,'data'=>$data]);

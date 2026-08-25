@@ -1,3 +1,14 @@
+---
+title: "Lang Module - Comprehensive Analysis"
+module: "Lang"
+type: concept
+tags: [migration, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Lang Module - Comprehensive Analysis
 
 ## Module Overview
@@ -59,15 +70,8 @@ The Lang module provides comprehensive localization and translation management:
 ## Integration with Other Modules
 - **User**: User language preferences
 - **Cms**: Multi-language content
-<<<<<<< .merge_file_7y9OzI
 - **healthcare_app**: Survey translation
-=======
-<<<<<<< HEAD
 - **ExternalProject**: Survey translation
-=======
-- **ModuloEsempio**: Survey translation
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_Z858ew
 - **Limesurvey**: Question translation
 - **Xot**: Base localization infrastructure
 - **Filament**: Translation management interface

@@ -6,7 +6,7 @@ namespace Modules\Lang\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
 use Illuminate\Support\Collection;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
  * Widget per il cambio di lingua.
@@ -14,11 +14,9 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  * Fornisce un selettore dropdown per cambiare la lingua dell'interfaccia.
  * Utilizza il sistema di localizzazione di Laravel per gestire le traduzioni.
  */
-class LanguageSwitcherWidget extends XotBaseWidget
+class LanguageSwitcherWidget extends XotBaseSchemaWidget
 {
-    /**
-     * Vista del widget.
-     */
+    /** @var view-string */
     protected string $view = 'lang::filament.widgets.language-switcher';
 
     /**
@@ -34,8 +32,7 @@ class LanguageSwitcherWidget extends XotBaseWidget
      *
      * @return array<int, Component>
      */
-    #[\Override]
-    public function getFormSchema(): array
+   public function getFormSchemaOld(): array
     {
         return [];
     }
@@ -54,6 +51,8 @@ class LanguageSwitcherWidget extends XotBaseWidget
      * Ottiene le lingue disponibili nel sistema.
      *
      * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
+    *
+     * @phpstan-return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
      */
     public function getAvailableLocales(): Collection
     {

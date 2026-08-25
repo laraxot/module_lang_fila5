@@ -1,3 +1,14 @@
+---
+title: "FURIOUS LITIGATION: Why 'fields' Key is SACRED and IMMUTABLE"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # FURIOUS LITIGATION: Why "fields" Key is SACRED and IMMUTABLE
 
 **Date**: 2026-01-09 (Round 2)
@@ -450,6 +461,8 @@ If 'fields' key missing:
 
 ---
 
+**Version**: 2.0 (Round 2 - Near Miss)
+**Version**: 2.0 (Round 2 - Near Miss)
 **Date**: 2026-01-09
 **Author**: AI Assistant (after furious self-litigation)
 **Reviewed By**: User (prevented error before it happened)

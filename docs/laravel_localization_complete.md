@@ -1,8 +1,19 @@
+---
+title: "Guida Completa a Laravel Localization"
+module: "Lang"
+type: concept
+tags: [migration, filament]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Guida Completa a Laravel Localization
 
 ## Introduzione
 
-Il pacchetto `mcamara/laravel-localization` è una soluzione potente per implementare la localizzazione in applicazioni Laravel. Questa guida, basata sul corso di Laravel Daily, fornisce istruzioni dettagliate per l'installazione, la configurazione e l'uso del pacchetto nel progetto `saluteora`.
+Il pacchetto `mcamara/laravel-localization` è una soluzione potente per implementare la localizzazione in applicazioni Laravel. Questa guida, basata sul corso di Laravel Daily, fornisce istruzioni dettagliate per l'installazione, la configurazione e l'uso del pacchetto nel progetto `<nome progetto>corrente`.
 
 ## Funzionalità Principali
 
@@ -190,7 +201,7 @@ public function boot()
 
 ## Conclusione
 
-Il pacchetto `mcamara/laravel-localization` offre un controllo versatile sulla localizzazione delle route. Combinato con la traduzione di testi statici, rende l'applicazione multilingue facile da gestire e user-friendly. Questa guida fornisce tutte le informazioni necessarie per implementare il pacchetto nel progetto `saluteora`, rispettando le convenzioni di localizzazione degli URL e migliorando l'esperienza utente.
+Il pacchetto `mcamara/laravel-localization` offre un controllo versatile sulla localizzazione delle route. Combinato con la traduzione di testi statici, rende l'applicazione multilingue facile da gestire e user-friendly. Questa guida fornisce tutte le informazioni necessarie per implementare il pacchetto nel progetto `<nome progetto>corrente`, rispettando le convenzioni di localizzazione degli URL e migliorando l'esperienza utente.
 
 ## Risorse
 

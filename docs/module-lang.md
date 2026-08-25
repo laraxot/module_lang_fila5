@@ -1,3 +1,14 @@
+---
+title: "Modulo Lang"
+module: "Lang"
+type: concept
+tags: [phpstan, level10, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Modulo Lang
 
 ## Informazioni Generali
@@ -5,6 +16,10 @@
 - **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
 - **Namespace**: `Modules\Lang`
 - **Repository**: https://github.com/laraxot/module_lang_fila5.git
+- **Nome**: `laraxot/module_lang_fila3`
+- **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
+- **Namespace**: `Modules\Lang`
+- **Repository**: https://github.com/laraxot/module_lang_fila3.git
 
 ### Versione HEAD
 
@@ -288,6 +303,10 @@ public function testTranslations()
 
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+- [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
+- [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+- [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
+- [Regole Generali Traduzioni](../../Xot/docs/translations.md)
 
 ## Esempi
 
@@ -300,4 +319,8 @@ $translation = Lang::get('patient.registration.label');
 
 Le modifiche vengono tracciate nel repository GitHub.
 
+---
+---
+---
+---
 ---

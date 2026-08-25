@@ -1,3 +1,14 @@
+---
+title: "Collegamenti alla Documentazione sugli Standard di Traduzione"
+module: "Lang"
+type: rule
+tags: [phpstan, level10, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Collegamenti alla Documentazione sugli Standard di Traduzione
 
 ## Problemi Identificati e Correzioni in Corso
@@ -6,17 +17,17 @@ Stiamo standardizzando i file di traduzione nel modulo Notify che presentano pro
 
 ## Documentazione nel Modulo Notify
 
-- [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
-- [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
-- [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
-- [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
-- [Guida alla Correzione dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_CORRECTION_GUIDE.md)
+- [Progresso della Standardizzazione](translation_standards_progress.md)
+- [Regole di Naming per i File di Traduzione](translation-file-naming-rules.md)
+- [Guida alla Struttura dei File di Traduzione](translation-file-structure-guide.md)
+- [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
+- [Guida alla Correzione dei File di Traduzione](translation_file_correction_guide.md)
 
 ## Documentazione nel Modulo Lang
 
-- [Regole Generali per le Traduzioni](TRANSLATION_KEYS_RULES.md)
-- [Best Practices per le Traduzioni](TRANSLATION_KEYS_BEST_PRACTICES.md)
-- [Standardizzazione Traduzioni Modulo Notify](TRANSLATION_NOTIFY_CONVERSION.md)
+- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Standardizzazione Traduzioni Modulo Notify](translation_notify_conversion.md)
 
 ## Riepilogo dei Problemi
 

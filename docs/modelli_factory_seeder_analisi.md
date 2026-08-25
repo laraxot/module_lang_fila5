@@ -1,3 +1,14 @@
+---
+title: "Analisi Modelli, Factory e Seeder - Modulo Lang"
+module: "Lang"
+type: concept
+tags: [guida, migrazione, step, by]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "guida migrazione step by step"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Analisi Modelli, Factory e Seeder - Modulo Lang
 
 ## Panoramica
@@ -38,7 +49,7 @@ Questo documento analizza tutti i modelli del modulo Lang verificando la presenz
 - **Hot Reload**: Ricaricamento traduzioni senza restart
 - **Namespace Support**: Supporto namespace moduli
 
-**Business Logic SaluteOra**:
+**Business Logic <nome progetto>corrente**:
 - **Medical Terms**: Traduzioni terminologia medica
 - **UI Elements**: Elementi interfaccia multilingua
 - **Error Messages**: Messaggi errore localizzati
@@ -98,7 +109,7 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 - [Localization Best Practices](./localization_best_practices.md)
 
 ### Moduli Collegati
-- [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Traduzioni mediche
+- [<nome progetto>corrente Module<nome progetto>rogetto corrente/docs/modelli_factory_seeder_analisi.md) - Traduzioni mediche
 - [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Traduzioni utente
 - [Cms Module](../../Cms/docs/modelli_factory_seeder_analisi.md) - Contenuti multilingua
 - [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md) - Notifiche multilingua

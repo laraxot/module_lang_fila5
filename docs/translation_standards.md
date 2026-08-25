@@ -1,4 +1,15 @@
-# Standard per le Traduzioni nel Progetto SaluteOra
+---
+title: "Standard per le Traduzioni nel Progetto <nome progetto>corrente"
+module: "Lang"
+type: rule
+tags: [google, translate]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "google translate"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+# Standard per le Traduzioni nel Progetto <nome progetto>corrente
 
 ## Struttura delle Cartelle
 
@@ -164,8 +175,8 @@ return [
 - Serenità zen: codice e traduzioni sempre coerenti
 
 ### Collegamenti
-- [SaluteOra/docs/appointment-management.md](../../SaluteOra/docs/appointment-management.md)
-- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
+- [<nome progetto>corrente/docs/appointment-management.md<nome progetto>rogetto corrente/docs/appointment-management.md)
+- [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica

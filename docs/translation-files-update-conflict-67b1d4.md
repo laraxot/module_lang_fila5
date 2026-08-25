@@ -1,6 +1,19 @@
+---
+title: "Aggiornamento File di Traduzione - Gennaio 2025"
+module: "Lang"
+type: concept
+tags: [phpstan, level10, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Aggiornamento File di Traduzione - Gennaio 2025
 
 ## Data Aggiornamento
+2025-01-27
+2025-01-27
 [DATE]
 
 ## File Modificati
@@ -119,6 +132,12 @@ return [
 
 ## Collegamenti
 
+- [Translation Rules](../Xot/docs/translation_rules.md)
+- [Translation Standards](./translation-standards.md)
+- [Best Practices](../Xot/docs/translations-best-practices.md)
+- [Translation Rules](../xot/docs/translation_rules.md)
+- [Translation Standards](./translation-standards.md)
+- [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../xot/docs/translations-best-practices.md)
@@ -127,4 +146,8 @@ return [
 
 1. **Test**: Verificare il funzionamento in ambiente di sviluppo
 2. **Documentazione**: Aggiornare la documentazione dei moduli Notify e Lang
+3. **Review**: Code review per confermare le modifiche
+3. **Review**: Code review per confermare le modifiche
+3. **Review**: Code review per confermare le modifiche
+3. **Review**: Code review per confermare le modifiche
 3. **Review**: Code review per confermare le modifiche
