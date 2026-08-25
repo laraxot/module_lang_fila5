@@ -61,9 +61,9 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class Translation extends BaseModel
 {
-    final public const STATUS_SAVED = 0;
+    final public const int STATUS_SAVED = 0;
 
-    final public const STATUS_CHANGED = 1;
+    final public const int STATUS_CHANGED = 1;
 
     protected $fillable = [
         'id',
