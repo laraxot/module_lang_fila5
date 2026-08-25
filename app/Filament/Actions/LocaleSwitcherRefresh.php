@@ -47,7 +47,6 @@ class LocaleSwitcherRefresh extends XotBaseAction
             // ->icon('heroicon-o-language')
             ->color('gray');
     }
-
     /**
      * Applica la lingua scelta a sessione e applicazione.
      *

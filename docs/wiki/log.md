@@ -36,4 +36,12 @@ discussions:
 
 - riscritti `rules/index.md` e `skills/index.md` per esporre regole e skill realmente caricabili on-demand.
 - aggiunte `rules/translation-key-governance.md` e `skills/translation-key-audit.md`.
+<<<<<<< HEAD
 - aggiornato `index.md` con focus operativo su chiavi, path e ownership delle traduzioni.
+=======
+<<<<<<< HEAD
+- aggiornato `index.md` con focus operativo su chiavi, path e ownership delle traduzioni.
+=======
+- aggiornato `index.md` con focus operativo su chiavi, path e ownership delle traduzioni.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
