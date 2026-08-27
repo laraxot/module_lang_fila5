@@ -38,12 +38,6 @@ use Modules\Lang\Casts\LangField;
 use Modules\Lang\Datas\TranslationData;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
-use Modules\Lang\Filament\Forms\Components\TranslationEditor;
-use Modules\Lang\Filament\Resources\LangBaseResource;
-use Modules\Lang\Filament\Resources\Pages\LangBaseCreateRecord;
-use Modules\Lang\Filament\Resources\Pages\LangBaseEditRecord;
-use Modules\Lang\Filament\Resources\Pages\LangBaseListRecords;
-use Modules\Lang\Filament\Resources\Pages\LangBaseViewRecord;
 use Modules\Lang\Filament\Resources\TranslationFileResource;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\ListTranslationFiles;
@@ -51,21 +45,26 @@ use Modules\Lang\Filament\Resources\TranslationFileResource\Tables\TranslationFi
 use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
 use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
-use Modules\Lang\Models\BaseModel;
-use Modules\Lang\Models\BaseModelLang;
 use Modules\Lang\Models\LanguageLine;
-use Modules\Lang\Models\Policies\LangBasePolicy;
 use Modules\Lang\Models\Policies\PostPolicy;
 use Modules\Lang\Models\Policies\TranslationFilePolicy;
 use Modules\Lang\Models\Policies\TranslationPolicy;
 use Modules\Lang\Models\Post;
-use Modules\Lang\Models\Traits\HasStrictTranslations;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Lang\Providers\RouteServiceProvider;
 use Modules\Lang\Providers\TranslatorTraitPhpstanProbe;
 use Modules\Lang\Services\TranslatorService;
+use Modules\Lang\Tests\Fixtures\LangBaseCreateRecordStub;
+use Modules\Lang\Tests\Fixtures\LangBaseEditRecordStub;
+use Modules\Lang\Tests\Fixtures\LangBaseListRecordsStub;
+use Modules\Lang\Tests\Fixtures\LangBasePolicyStub;
+use Modules\Lang\Tests\Fixtures\LangBaseResourceStub;
+use Modules\Lang\Tests\Fixtures\LangBaseViewRecordStub;
+use Modules\Lang\Tests\Fixtures\LangFieldHostModel;
+use Modules\Lang\Tests\Fixtures\StrictTranslationsHost;
+use Modules\Lang\Tests\Fixtures\TranslationEditorStub;
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Components\LanguageSwitcher;
 use Modules\Lang\View\Composers\ThemeComposer;
@@ -87,76 +86,6 @@ use function Safe\touch;
 use function Safe\unlink;
 
 uses(TestCase::class);
-
-final class LangBaseResourceStub extends LangBaseResource
-{
-    protected static ?string $model = TranslationFile::class;
-}
-
-final class LangBaseCreateRecordStub extends LangBaseCreateRecord
-{
-    protected static string $resource = TranslationFileResource::class;
-}
-
-final class LangBaseEditRecordStub extends LangBaseEditRecord
-{
-    protected static string $resource = TranslationFileResource::class;
-}
-
-final class LangBaseListRecordsStub extends LangBaseListRecords
-{
-    protected static string $resource = TranslationFileResource::class;
-}
-
-final class LangBaseViewRecordStub extends LangBaseViewRecord
-{
-    protected static string $resource = TranslationFileResource::class;
-
-    protected function getInfolistSchema(): array
-    {
-        return [];
-    }
-}
-
-final class LangBasePolicyStub extends LangBasePolicy {}
-
-final class LangFieldHostModel extends BaseModelLang
-{
-    public $timestamps = false;
-}
-
-final class TranslationEditorStub extends TranslationEditor
-{
-    public mixed $forcedState = [];
-
-    public function getState(): mixed
-    {
-        return $this->forcedState;
-    }
-}
-
-final class StrictTranslationsHost extends BaseModel
-{
-    use HasStrictTranslations;
-
-    /** @var list<string> */
-    public array $translatable = ['title'];
-
-    public $timestamps = false;
-
-    protected $guarded = [];
-
-    protected $table = 'translations';
-
-    public mixed $forcedTranslation = null;
-
-    protected function spatieGetTranslation(string $key, string $locale, bool $useFallbackLocale = true): mixed
-    {
-        unset($key, $locale, $useFallbackLocale);
-
-        return $this->forcedTranslation;
-    }
-}
 
 /**
  * @param  list<string>  $permissions
@@ -740,7 +669,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 
     test('LangField cast get and set via host model', function (): void {
         $cast = new LangField();
-        $host = new \Modules\Lang\Tests\Unit\LangFieldHostModel();
+        $host = new LangFieldHostModel();
         /** @var Post&MockInterface $post */
         $post = Mockery::mock(Post::class)->makePartial();
         $initialTitle = ['it' => 'Hello'];
