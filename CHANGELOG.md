@@ -1,3 +1,9 @@
+## [1.0.0-dev.17](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.16...v1.0.0-dev.17) (2026-08-27)
+
+### Bug Fixes
+
+* **git:** resolve committed merge markers in .gitattributes ([e5b7144](https://github.com/laraxot/module_lang_fila5/commit/e5b7144e4f47f1597b07f7fe993210b90c27eb28))
+
 <<<<<<< .merge_file_5DX8UV
 ## [1.0.0-dev.14](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.13...v1.0.0-dev.14) (2026-08-24)
 
