@@ -18,8 +18,6 @@ use Illuminate\Support\Str;
 use Illuminate\Translation\ArrayLoader;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Mockery;
-use Mockery\Expectation;
-use Mockery\LegacyMockInterface;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Actions\GetAllTranslationAction;
@@ -50,41 +48,6 @@ use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
-
-/**
- * Narrows Mockery's shouldReceive() union return type for PHPStan.
- *
- * @param  LegacyMockInterface|MockInterface  $mock
- */
-function expectMethod($mock, string $method): Expectation
-{
-    /** @var Expectation $expectation */
-    $expectation = $mock->shouldReceive($method);
-
-    return $expectation;
-}
-
-/**
- * @param  LegacyMockInterface|MockInterface  $mock
- */
-function expectMethodExpects($mock, string $method): Expectation
-{
-    /** @var Expectation $expectation */
-    $expectation = $mock->expects($method);
-
-    return $expectation;
-}
-
-/**
- * @param  LegacyMockInterface|MockInterface  $mock
- */
-function expectMethodAllows($mock, string $method): Expectation
-{
-    /** @var Expectation $expectation */
-    $expectation = $mock->allows($method);
-
-    return $expectation;
-}
 
 use function Safe\file_put_contents;
 use function Safe\getmypid;

@@ -17,8 +17,6 @@ use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator as LaravelTranslator;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Mockery;
-use Mockery\Expectation;
-use Mockery\LegacyMockInterface;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
@@ -51,19 +49,6 @@ use Modules\Xot\Actions\GetTransKeyAction;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 use ReflectionProperty;
-
-/**
- * Narrows Mockery's shouldReceive() union return type for PHPStan.
- *
- * @param  LegacyMockInterface|MockInterface  $mock
- */
-function expectMethod($mock, string $method): Expectation
-{
-    /** @var Expectation $expectation */
-    $expectation = $mock->shouldReceive($method);
-
-    return $expectation;
-}
 
 use function Safe\file_put_contents;
 use function Safe\mkdir;
