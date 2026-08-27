@@ -91,11 +91,7 @@ related:
 
 ## 📚 Documentación
 
-<<<<<<< .merge_file_100s8q
 - [Índice del Proyecto](../index.md)
-=======
-- [Índice del Proyecto](../INDEX.md)
->>>>>>> .merge_file_DTaLuM
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panorama de los Módulos](../MODULES.md)
 - [Arquitectura](architecture.md)
