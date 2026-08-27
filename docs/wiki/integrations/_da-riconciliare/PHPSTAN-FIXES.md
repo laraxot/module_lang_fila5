@@ -138,8 +138,8 @@ $content = $data['content'] ?? null;
 - [Pest Testing Framework](https://pestphp.com)
 
 ### GitHub Issues
-- [Issue #1923](https://github.com/laraxot/base_fixcity_fila5/issues/1923) - PHPStan Type Safety
-- [Issue #1924](https://github.com/laraxot/base_fixcity_fila5/issues/1924) - Memory Optimization
+- [Issue #1923](https://github.com/laraxot/base_ptv_fila5/issues/1923) - PHPStan Type Safety
+- [Issue #1924](https://github.com/laraxot/base_ptv_fila5/issues/1924) - Memory Optimization
 - [Issue #1923](https://github.com/laraxot/platform/issues/1923) - PHPStan Type Safety
 - [Issue #1924](https://github.com/laraxot/platform/issues/1924) - Memory Optimization
 
