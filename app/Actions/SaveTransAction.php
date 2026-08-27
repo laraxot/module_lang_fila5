@@ -15,7 +15,7 @@ class SaveTransAction
     use QueueableAction;
 
     /**
-     * @param array<string, mixed>|int|string|Htmlable|null $data
+     * @param  array<string, mixed>|int|string|Htmlable|null  $data
      */
     public function execute(string $key, int|string|array|Htmlable|null $data): void
     {
@@ -54,7 +54,7 @@ class SaveTransAction
         }
 
         $piece = implode('.', array_slice(explode('.', $key), 1));
-        if ('' !== $piece) {
+        if ($piece !== '') {
             Arr::set($cont, $piece, $data);
         } else {
             $cont = $data;

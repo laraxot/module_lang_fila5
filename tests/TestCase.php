@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests;
 
+use Illuminate\Contracts\Support\Htmlable;
+use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\User\Models\User;
@@ -24,9 +27,7 @@ use function Safe\unlink;
  */
 final class SaveTransActionNoOpStub extends SaveTransAction
 {
-    public function execute(string $key, int|string|array|\Illuminate\Contracts\Support\Htmlable|null $data): void
-    {
-    }
+    public function execute(string $key, int|string|array|Htmlable|null $data): void {}
 }
 
 /**
@@ -57,7 +58,7 @@ abstract class TestCase extends XotBaseTestCase
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
                 continue;
             }
 
@@ -140,8 +141,8 @@ abstract class TestCase extends XotBaseTestCase
         DB::purge('lang');
         DB::reconnect('lang');
 
-        \Illuminate\Support\Facades\Schema::connection('lang')->dropIfExists('translations');
-        \Illuminate\Support\Facades\Schema::connection('lang')->create('translations', static function (\Illuminate\Database\Schema\Blueprint $table): void {
+        Schema::connection('lang')->dropIfExists('translations');
+        Schema::connection('lang')->create('translations', static function (Blueprint $table): void {
             $table->id();
             $table->string('lang')->nullable();
             $table->string('namespace')->nullable();
@@ -183,12 +184,12 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param class-string<\Throwable> $exceptionClass
+     * @param  class-string<\Throwable>  $exceptionClass
      */
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
         $this->expectException($exceptionClass);
-        if (null !== $message) {
+        if ($message !== null) {
             $this->expectThrowableMessage($message);
         }
     }

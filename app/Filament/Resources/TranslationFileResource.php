@@ -28,7 +28,7 @@ class TranslationFileResource extends XotBaseResource
         return ['it', 'en'];
     }
 
-public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         return [];
     }

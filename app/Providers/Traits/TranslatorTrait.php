@@ -8,7 +8,6 @@ namespace Modules\Lang\Providers\Traits;
 use Illuminate\Translation\Translator;
 use Modules\Lang\Adapters\TranslatorAdapter;
 
-
 trait TranslatorTrait
 {
     public function registerTranslator(): void
