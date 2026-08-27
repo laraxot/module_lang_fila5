@@ -271,7 +271,11 @@ related:
 
 ## 📚 Documentazione
 
+<<<<<<< .merge_file_lTjIfT
 - [Indice del Progetto](../index.md)
+=======
+- [Indice del Progetto](../INDEX.md)
+>>>>>>> .merge_file_PCjrhc
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
 - [Architettura](architecture.md)

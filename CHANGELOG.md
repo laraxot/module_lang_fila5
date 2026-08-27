@@ -1,7 +1,24 @@
+<<<<<<< .merge_file_5DX8UV
 ## [1.0.0-dev.14](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.13...v1.0.0-dev.14) (2026-08-24)
 
 ### Bug Fixes
 
+=======
+## [1.0.0-dev.16](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.15...v1.0.0-dev.16) (2026-08-27)
+
+### Bug Fixes
+
+* **docs:** rimuove marker di merge residui in README, changelog e wiki ([dbd641d](https://github.com/laraxot/module_lang_fila5/commit/dbd641d8e35cd84264886d9501d909a21e891740))
+* **git:** resolve committed merge markers in .gitattributes ([4ab6ef4](https://github.com/laraxot/module_lang_fila5/commit/4ab6ef4e3ba334426f1f26fc8fc2a6420720b0a8))
+* **phpstan:** analyse Modules a zero errori ([b4f50ca](https://github.com/laraxot/module_lang_fila5/commit/b4f50ca00818b17715d26982da5fb76454809b8a))
+* **phpstan:** analyse Modules torna a zero dopo 73 ricadute (ROOT-17.10) ([7300723](https://github.com/laraxot/module_lang_fila5/commit/7300723f3894a1f6056b08639eb283719e3b0886)), closes [laraxot/base_quaeris_fila5#172](https://github.com/laraxot/base_quaeris_fila5/issues/172)
+* **phpstan:** analyse Modules torna a zero dopo 73 ricadute (ROOT-17.10) ([32db70a](https://github.com/laraxot/module_lang_fila5/commit/32db70ae5962ea9d0765c9ec02aa7f21bec26ee9)), closes [laraxot/base_quaeris_fila5#172](https://github.com/laraxot/base_quaeris_fila5/issues/172)
+
+## [1.0.0-dev.14](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.13...v1.0.0-dev.14) (2026-08-24)
+
+### Bug Fixes
+
+>>>>>>> .merge_file_xhpS0Z
 * **phpstan:** type closure and method params to close typeCoverage.paramTypeCoverage ([353ec6a](https://github.com/laraxot/module_lang_fila5/commit/353ec6af8a604639588c750b2ff069ef8d89520c))
 * **phpstan:** type closure and method params to close typeCoverage.paramTypeCoverage ([c5fa0b9](https://github.com/laraxot/module_lang_fila5/commit/c5fa0b9290ace44ae28ec4c0442b20741b34df18))
 
