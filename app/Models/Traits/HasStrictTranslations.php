@@ -8,6 +8,10 @@ use Spatie\Translatable\HasTranslations;
 
 /**
  * Trait che estende HasTranslations con tipi di ritorno più stretti.
+<<<<<<< .merge_file_lLsKOk
+=======
+ *
+>>>>>>> .merge_file_hWWdm3
  */
 trait HasStrictTranslations
 {
