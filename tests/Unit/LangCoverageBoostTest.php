@@ -7,7 +7,7 @@ namespace Modules\Lang\Tests\Unit;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
 use Mockery;
-use Mockery\Expectation;
+use Mockery\CompositeExpectation;
 use Mockery\LegacyMockInterface;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\MergeTranslationsAction;
@@ -44,31 +44,31 @@ use PHPUnit\Framework\Assert;
  *
  * @param  LegacyMockInterface|MockInterface  $mock
  */
-function expectMethod($mock, string $method): Expectation
+function expectMethod($mock, string $method): CompositeExpectation
 {
-    /** @var Expectation $expectation */
+    /** @var CompositeExpectation $expectation */
     $expectation = $mock->shouldReceive($method);
 
     return $expectation;
 }
 
 /**
- * @param  LegacyMockInterface|MockInterface  $mock
+ * @param  MockInterface  $mock
  */
-function expectMethodExpects($mock, string $method): Expectation
+function expectMethodExpects($mock, string $method): CompositeExpectation
 {
-    /** @var Expectation $expectation */
+    /** @var CompositeExpectation $expectation */
     $expectation = $mock->expects($method);
 
     return $expectation;
 }
 
 /**
- * @param  LegacyMockInterface|MockInterface  $mock
+ * @param  MockInterface  $mock
  */
-function expectMethodAllows($mock, string $method): Expectation
+function expectMethodAllows($mock, string $method): CompositeExpectation
 {
-    /** @var Expectation $expectation */
+    /** @var CompositeExpectation $expectation */
     $expectation = $mock->allows($method);
 
     return $expectation;
