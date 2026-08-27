@@ -5,13 +5,8 @@ declare(strict_types=1);
 namespace Modules\Lang\Tests\Unit;
 
 use Filament\Actions\Action;
-use Filament\Forms\Components\Field;
 use Filament\Forms\Components\TextInput;
-use Filament\Infolists\Components\Entry;
 use Filament\Schemas\Components\Section;
-use Filament\Schemas\Components\Wizard\Step;
-use Filament\Tables\Columns\Column;
-use Filament\Tables\Filters\BaseFilter;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
@@ -36,6 +31,15 @@ use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\RouteServiceProvider;
+use Modules\Lang\Tests\Fixtures\AutoLabelExecuteNestedCaller;
+use Modules\Lang\Tests\Fixtures\AutoLabelForcedKeyStub;
+use Modules\Lang\Tests\Fixtures\AutoLabelNullCallerStub;
+use Modules\Lang\Tests\Fixtures\AutoLabelStaticCaller;
+use Modules\Lang\Tests\Fixtures\NationalFlagSelectFinalStub;
+use Modules\Lang\Tests\Fixtures\PostNullTitleForGuidStub;
+use Modules\Lang\Tests\Fixtures\ThemeComposerNonStringFieldStub;
+use Modules\Lang\Tests\Fixtures\WriteTranslationFileActionFailStub;
+use Modules\Lang\Tests\Fixtures\WriteTranslationFileActionWriteFailStub;
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Composers\ThemeComposer;
 use Modules\Xot\Actions\File\AssetAction;
@@ -53,89 +57,6 @@ use function Safe\rmdir;
 use function Safe\unlink;
 
 uses(TestCase::class);
-
-final class WriteTranslationFileActionFailStub extends WriteTranslationFileAction
-{
-    protected function putTranslationFile(string $filePath, string $phpContent): int|false
-    {
-        return false;
-    }
-}
-
-final class WriteTranslationFileActionWriteFailStub extends WriteTranslationFileAction
-{
-    protected function writeLangTempContents(string $tempFile, string $phpContent): int|false
-    {
-        return false;
-    }
-}
-
-final class NationalFlagSelectFinalStub extends NationalFlagSelect
-{
-    /** @var array<int, mixed> */
-    public array $forcedCountries = [];
-
-    /** @var array<int, mixed> */
-    public array $extraFilteredRows = [];
-
-    protected function resolveCountries(): array
-    {
-        return $this->forcedCountries;
-    }
-
-    protected function finalizeFilteredCountries(array $filteredCountries): array
-    {
-        return array_merge(array_values($filteredCountries), $this->extraFilteredRows);
-    }
-}
-
-final class AutoLabelForcedKeyStub extends AutoLabelAction
-{
-    protected function findCallerFrame(Field|Entry|BaseFilter|Column|Step|Action|Section $component): array
-    {
-        return ['class' => self::class];
-    }
-}
-
-final class AutoLabelNullCallerStub extends AutoLabelAction
-{
-    protected function findCallerFrame(Field|Entry|BaseFilter|Column|Step|Action|Section $component): array
-    {
-        return ['function' => 'foo'];
-    }
-}
-
-final class AutoLabelExecuteNestedCaller
-{
-    public function execute(Field|Entry|BaseFilter|Column|Step|Action|Section $component, string $type = 'label'): Field|Entry|BaseFilter|Column|Step|Action|Section
-    {
-        return app(AutoLabelAction::class)->execute($component, $type);
-    }
-}
-
-final class AutoLabelStaticCaller
-{
-    public static function run(Field|Entry|BaseFilter|Column|Step|Action|Section $component, string $type = 'label'): Field|Entry|BaseFilter|Column|Step|Action|Section
-    {
-        return app(AutoLabelAction::class)->execute($component, $type);
-    }
-}
-
-final class PostNullTitleForGuidStub extends Post
-{
-    protected function titleForGuid(): ?string
-    {
-        return null;
-    }
-}
-
-final class ThemeComposerNonStringFieldStub extends ThemeComposer
-{
-    protected function langFieldValue(\Modules\Lang\Datas\LangData $lang, string $field): mixed
-    {
-        return 42;
-    }
-}
 
 afterEach(function (): void {
     Mockery::close();
