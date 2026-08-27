@@ -8,7 +8,6 @@ use Spatie\Translatable\HasTranslations;
 
 /**
  * Trait che estende HasTranslations con tipi di ritorno più stretti.
- *
  */
 trait HasStrictTranslations
 {

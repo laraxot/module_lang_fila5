@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Lang\Tests\Unit\Actions;
 
 use Illuminate\Contracts\Translation\Loader;
+use Illuminate\Database\QueryException;
 use Illuminate\Translation\Translator;
 use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Lang\Tests\TestCase;
@@ -31,7 +32,7 @@ describe('TranslatorAdapter business logic', function () {
 
         try {
             $result = makeTranslatorAdapter()->get($key);
-        } catch (\Illuminate\Database\QueryException $exception) {
+        } catch (QueryException $exception) {
             $this->skipTest('DB `lang` write lock (sqlite condiviso): '.$exception->getMessage());
         }
 
@@ -46,7 +47,7 @@ describe('TranslatorAdapter business logic', function () {
 
         try {
             $result = makeTranslatorAdapter()->get('lang::missing.another_key_'.uniqid());
-        } catch (\Illuminate\Database\QueryException $exception) {
+        } catch (QueryException $exception) {
             $this->skipTest('DB `lang` write lock (sqlite condiviso): '.$exception->getMessage());
         }
 

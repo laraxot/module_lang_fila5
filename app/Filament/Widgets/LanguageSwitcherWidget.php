@@ -26,7 +26,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
         return (bool) config('lang.language_switcher.enabled', true);
     }
 
-/**
+    /**
      * Ottiene le lingue disponibili nel sistema.
      *
      * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
