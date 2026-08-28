@@ -10,6 +10,9 @@ use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
+use Mockery\Expectation;
+use Mockery\LegacyMockInterface;
+use Mockery\MockInterface;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\User\Models\User;
@@ -192,5 +195,33 @@ abstract class TestCase extends XotBaseTestCase
         if ($message !== null) {
             $this->expectThrowableMessage($message);
         }
+    }
+
+    /**
+     * Mockery::shouldReceive() con un singolo metodo restituisce Expectation a runtime;
+     * la firma nativa dichiara un'unione che PHPStan non restringe da solo.
+     */
+    public static function mockExpectation(LegacyMockInterface|MockInterface $mock, string $method): Expectation
+    {
+        /** @var Expectation $expectation */
+        $expectation = $mock->shouldReceive($method);
+
+        return $expectation;
+    }
+
+    public static function mockAllows(MockInterface $mock, string $method): Expectation
+    {
+        /** @var Expectation $expectation */
+        $expectation = $mock->allows($method);
+
+        return $expectation;
+    }
+
+    public static function mockExpects(MockInterface $mock, string $method): Expectation
+    {
+        /** @var Expectation $expectation */
+        $expectation = $mock->expects($method);
+
+        return $expectation;
     }
 }

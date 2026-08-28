@@ -144,7 +144,7 @@ test('SyncTranslationsAction skips empty casted glob entries', function (): void
     mkdir($base.'/lang/it', 0o755, true);
     file_put_contents($base.'/lang/it/ok.php', "<?php\nreturn ['a' => 'b'];\n");
 
-    expectMethod(File::partialMock(), 'glob')
+    TestCase::mockExpectation(File::partialMock(), 'glob')
         ->andReturn([null, '', $base.'/lang/it/ok.php']);
     File::shouldReceive('exists')->andReturnUsing(static fn (string $p): bool => file_exists($p) || is_dir($p));
     File::shouldReceive('makeDirectory')->andReturn(true);
@@ -403,7 +403,7 @@ test('NationalFlagSelect casts non-array non-string localized label', function (
     });
     $translator = app('translator');
     $mock = Mockery::mock($translator)->makePartial();
-    expectMethod($mock, 'get')
+    TestCase::mockExpectation($mock, 'get')
         ->andReturnUsing(static function (string $key, array $replace = [], ?string $locale = null) use ($translator): mixed {
             if (str_contains($key, 'countries.it')) {
                 return 99;
