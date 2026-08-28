@@ -6,39 +6,37 @@ namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Support\Carbon;
-use Modules\User\Models\Profile;
+use Modules\TechPlanner\Models\Profile;
 
 /**
  * Modules\Lang\Models\LanguageLine.
+ *
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
+ *
+ * @method static EloquentBuilder<static>|LanguageLine newModelQuery()
+ * @method static EloquentBuilder<static>|LanguageLine newQuery()
+ * @method static EloquentBuilder<static>|LanguageLine query()
  *
  * @property int $id
  * @property string $group
  * @property string $key
  * @property array<array-key, mixed> $text
  * @property string $locale
- * @property string|null $created_by
- * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
  *
- * @method static EloquentBuilder<static>|LanguageLine newModelQuery()
- * @method static EloquentBuilder<static>|LanguageLine newQuery()
- * @method static EloquentBuilder<static>|LanguageLine query()
- * @method static EloquentBuilder<static>|LanguageLine whereId($value)
- * @method static EloquentBuilder<static>|LanguageLine whereGroup($value)
- * @method static EloquentBuilder<static>|LanguageLine whereKey($value)
- * @method static EloquentBuilder<static>|LanguageLine whereText($value)
- * @method static EloquentBuilder<static>|LanguageLine whereLocale($value)
  * @method static EloquentBuilder<static>|LanguageLine whereCreatedAt($value)
- * @method static EloquentBuilder<static>|LanguageLine whereUpdatedAt($value)
  * @method static EloquentBuilder<static>|LanguageLine whereCreatedBy($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereGroup($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereId($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereKey($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereLocale($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereText($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereUpdatedAt($value)
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedBy($value)
- *
- * @property-read Profile|null $creator
- * @property-read Profile|null $deleter
- * @property-read Profile|null $updater
- *
- * @method static \Modules\Lang\Database\Factories\LanguageLineFactory factory($count = null, $state = [])
  *
  * @mixin \Eloquent
  */

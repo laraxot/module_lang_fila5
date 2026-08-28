@@ -287,22 +287,22 @@ describe('Lang coverage gaps closeout', function (): void {
         // Avoid real update by mocking
         /** @var Post&MockInterface $post */
         $post = Mockery::mock(Post::class)->makePartial();
-        expectMethod($post, 'getKey')->andReturn('abc');
-        expectMethod($post, 'update')->andReturnTrue();
+        TestCase::mockExpectation($post, 'getKey')->andReturn('abc');
+        TestCase::mockExpectation($post, 'update')->andReturnTrue();
         $post->setRawAttributes(['post_type' => 'article', 'post_id' => '1'], true);
         Assert::assertSame('article 1', $post->getTitleAttribute(null));
 
         /** @var Post&MockInterface $post2 */
         $post2 = Mockery::mock(Post::class)->makePartial();
-        expectMethod($post2, 'getKey')->andReturn('abc');
-        expectMethod($post2, 'update')->andReturnTrue();
+        TestCase::mockExpectation($post2, 'getKey')->andReturn('abc');
+        TestCase::mockExpectation($post2, 'update')->andReturnTrue();
         $post2->setRawAttributes(['title' => ''], true);
         Assert::assertIsString($post2->getGuidAttribute(null));
     });
 
     test('TranslationFile empty content when path key missing', function (): void {
         $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock): void {
-            expectMethod($mock, 'execute')->andReturn([
+            TestCase::mockExpectation($mock, 'execute')->andReturn([
                 ['key' => 'lang::only'],
             ]);
         });
@@ -386,7 +386,7 @@ describe('Lang coverage gaps closeout', function (): void {
             $mock->allows('execute');
         });
         $this->mockService(SvgExistsAction::class, static function (MockInterface $mock): void {
-            expectMethodAllows($mock, 'execute')->andReturn(true);
+            TestCase::mockAllows($mock, 'execute')->andReturn(true);
         });
 
         app('translator')->addLines([
