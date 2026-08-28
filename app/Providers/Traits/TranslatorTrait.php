@@ -8,10 +8,6 @@ namespace Modules\Lang\Providers\Traits;
 use Illuminate\Translation\Translator;
 use Modules\Lang\Adapters\TranslatorAdapter;
 
-<<<<<<< .merge_file_Z8MV9h
-=======
-
->>>>>>> .merge_file_Hfprkw
 trait TranslatorTrait
 {
     public function registerTranslator(): void
