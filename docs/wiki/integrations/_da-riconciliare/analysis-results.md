@@ -1,3 +1,12 @@
+---
+title: "Risultati Analisi Modulo Lang"
+type: concept
+module: "Lang"
+created: 2025-01-06
+updated: 2025-01-06
+status: "da-riconciliare"
+---
+
 # Risultati Analisi Modulo Lang - 2025-01-06
 
 ## Data
@@ -89,7 +98,7 @@
 
 ## Collegamenti
 
-- [Quality Improvements](./quality-improvements-2025-01-06.md)
+- [Quality Improvements](./quality-improvements.md)
 - [Index Documentation](./index.md)
 - [Best Practices](./BEST_PRACTICES.md)
 

@@ -1,3 +1,12 @@
+---
+title: "Enum Translation Pattern - Implementazione Regola Critica"
+type: concept
+module: "Lang"
+created: 2025-01-27
+updated: 2025-01-27
+status: "da-riconciliare"
+---
+
 # Enum Translation Pattern - Implementazione Regola Critica
 
 ## Data: 27 Gennaio 2025

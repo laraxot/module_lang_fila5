@@ -1,3 +1,12 @@
+---
+title: "Refactor Completo File di Traduzione - Riepilogo Finale"
+type: concept
+module: "Lang"
+created: 2025-08-08
+updated: 2025-08-08
+status: "da-riconciliare"
+---
+
 # Refactor Completo File di Traduzione - Riepilogo Finale
 
 ## Panoramica del Progetto
