@@ -56,18 +56,17 @@ use function Safe\rename;
 use function Safe\rmdir;
 use function Safe\unlink;
 
-uses(TestCase::class);
+uses(\Modules\Lang\Tests\TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();
 });
 
-test('EditTranslationFile schemaFromRecord covers both branches', function (): void {
+test('EditTranslationFile makeFromArray covers content branches', function (): void {
     $edit = new EditTranslationFile();
-    Assert::assertNotEmpty($edit->schemaFromRecord((object) ['content' => ['hello' => 'world']]));
-    Assert::assertSame([], $edit->schemaFromRecord(null));
-    Assert::assertSame([], $edit->schemaFromRecord((object) ['content' => 'scalar']));
-    Assert::assertSame([], $edit->schemaFromRecord((object) []));
+    Assert::assertNotEmpty($edit->makeFromArray(['hello' => 'world'], 'content'));
+    Assert::assertSame([], $edit->makeFromArray([]));
+    Assert::assertNotEmpty($edit->makeFromArray(['nested' => ['x' => '1']], 'content'));
 });
 
 test('LocaleSwitcherRefresh applyLocale covers string and non-string locale', function (): void {
@@ -107,7 +106,9 @@ test('ThemeComposer fallback locales and buildAdminLanguageUrl', function (): vo
     $composer = new ThemeComposer();
     Assert::assertGreaterThan(0, $composer->languages()->count());
 
-    Assert::assertSame('#', $composer->buildAdminLanguageUrl('it'));
+    $method = new ReflectionMethod(ThemeComposer::class, 'buildAdminLanguageUrl');
+    $method->setAccessible(true);
+    Assert::assertSame('#', $method->invoke($composer, 'it'));
 
     config([
         'laravellocalization.supportedLocales' => [
@@ -118,7 +119,7 @@ test('ThemeComposer fallback locales and buildAdminLanguageUrl', function (): vo
     Route::shouldReceive('currentRouteName')->andReturn('home');
     Route::shouldReceive('current')->andReturn(null);
     Route::shouldReceive('has')->andReturn(true);
-    $url = $composer->buildAdminLanguageUrl('en');
+    $url = $method->invoke($composer, 'en');
     Assert::assertNotSame('', $url);
 });
 
