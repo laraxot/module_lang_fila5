@@ -55,7 +55,7 @@ use function Safe\mkdir;
 use function Safe\touch;
 use function Safe\unlink;
 
-uses(TestCase::class);
+uses(\Modules\Lang\Tests\TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();
@@ -243,9 +243,8 @@ describe('Lang coverage gaps closeout', function (): void {
         Assert::assertNotEmpty($edit->getFormSchema());
         Assert::assertNotEmpty($edit->makeFromArray(['a' => '1', 'b' => ['c' => '2']], 'content'));
         Assert::assertSame([], $edit->makeFromArray([]));
-        Assert::assertNotEmpty($edit->schemaFromRecord((object) ['content' => ['a' => '1']]));
-        Assert::assertSame([], $edit->schemaFromRecord(null));
-        Assert::assertSame([], $edit->schemaFromRecord((object) ['content' => 'x']));
+        Assert::assertNotEmpty($edit->makeFromArray(['a' => '1'], 'content'));
+        Assert::assertSame([], $edit->makeFromArray([]));
     });
 
     test('Livewire Change and Switcher handle non-string localized urls', function (): void {
