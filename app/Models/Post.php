@@ -12,7 +12,7 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 // --- traits ---
 // use Laravel\Scout\Searchable;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;
@@ -21,12 +21,12 @@ use Spatie\Sluggable\SlugOptions;
 /**
  * Modules\Lang\Models\Post.
  *
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read string|null $guid
  * @property string|null $title
  * @property-read string|null $txt
  * @property-read Model $linkable
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @property string|null $id
  * @property int|string|null $user_id
  * @property int|string|null $post_id

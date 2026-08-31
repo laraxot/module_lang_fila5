@@ -13,7 +13,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Modules\Lang\Actions\GetAllTranslationAction;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Xot\Contracts\ProfileContract;
 use Sushi\Sushi;
 
 use function Safe\json_encode;
@@ -23,8 +23,8 @@ use function Safe\json_encode;
  * @property string|null $name
  * @property string|null $path
  * @property array<array-key, mixed>|string|null $content
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
  *
  * @method static Builder<static>|TranslationFile newModelQuery()
  * @method static Builder<static>|TranslationFile newQuery()
