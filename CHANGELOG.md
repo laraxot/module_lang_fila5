@@ -1,3 +1,13 @@
+## [1.0.0-dev.18](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.17...v1.0.0-dev.18) (2026-08-31)
+
+### Bug Fixes
+
+* **git:** resolve committed merge markers in .gitattributes ([15c46ee](https://github.com/laraxot/module_lang_fila5/commit/15c46ee6fea0e9ca7124d7d7e12548332b3ea9a8))
+* **git:** resolve nested conflict markers left by re-merging conflicted files ([9ee2185](https://github.com/laraxot/module_lang_fila5/commit/9ee218588c468ed237167729b94e34783eb0a89c))
+* **git:** resolve nested conflict markers left by re-merging conflicted files ([9669dde](https://github.com/laraxot/module_lang_fila5/commit/9669dde2d20a57886b669e387015e716cad071f8))
+* **lang:** merge database/Migrations into database/migrations, homepage to _fila5 ([fe7e31a](https://github.com/laraxot/module_lang_fila5/commit/fe7e31a09aa6cb4d741580d3db3dd2d50ac22e80))
+* **lang:** merge database/Migrations into database/migrations, homepage to _fila5 ([c28dfa7](https://github.com/laraxot/module_lang_fila5/commit/c28dfa737b041efb2e423f222b71ddb674659d96))
+
 ## [1.0.0-dev.17](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.16...v1.0.0-dev.17) (2026-08-27)
 
 ### Bug Fixes
