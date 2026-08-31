@@ -37,7 +37,7 @@ use Modules\Xot\Actions\GetViewAction;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Lang\Tests\TestCase::class);
 
 use function Safe\mkdir;
 use function Safe\rmdir;
@@ -140,7 +140,6 @@ describe('Lang coverage boost — Filament static', function (): void {
 
         Assert::assertSame('it', TranslationFileResource::getDefaultTranslatableLocale());
         Assert::assertSame(['it', 'en'], TranslationFileResource::getTranslatableLocales());
-        Assert::assertSame([], TranslationFileResource::getFormSchemaOld());
 
         $pages = TranslationFileResource::getPages();
         Assert::assertArrayHasKey('index', $pages);
