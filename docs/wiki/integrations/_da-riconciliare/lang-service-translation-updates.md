@@ -1,3 +1,12 @@
+---
+title: "Aggiornamento File di Traduzione Lang Service"
+type: concept
+module: "Lang"
+created: 2025-01-06
+updated: 2025-01-06
+status: "da-riconciliare"
+---
+
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 
 ## Panoramica
