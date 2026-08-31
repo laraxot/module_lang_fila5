@@ -1,3 +1,9 @@
+## [1.0.0-dev.19](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.18...v1.0.0-dev.19) (2026-08-31)
+
+### Bug Fixes
+
+* **tests:** drop the case-colliding duplicate test dirs, document coverage ([3c4603d](https://github.com/laraxot/module_lang_fila5/commit/3c4603d5975238ce9d7e1d61b499c1dd6c048352))
+
 ## [1.0.0-dev.17](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.16...v1.0.0-dev.17) (2026-08-27)
 
 ### Bug Fixes
