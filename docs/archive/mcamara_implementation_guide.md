@@ -1,3 +1,14 @@
+---
+title: "Guida all'Implementazione di mcamara/laravel-localization"
+module: "Lang"
+type: how-to
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Guida all'Implementazione di mcamara/laravel-localization
 
 ## Indice
