@@ -903,6 +903,12 @@ return [
         'ends_at' => ['label' => 'ends_at', 'placeholder' => 'ends_at', 'helper_text' => 'ends_at', 'description' => 'ends_at'],
         'field' => ['label' => 'field', 'placeholder' => 'field', 'helper_text' => 'field', 'description' => 'field'],
         'a' => ['label' => 'a'],
+        'is_compiled' => ['label' => 'is_compiled'],
+        'sent_email_list' => ['label' => 'sent_email_list'],
+        'record-pdf1' => ['label' => 'record-pdf1'],
+        'record-pdf' => ['label' => 'record-pdf'],
+        'activities' => ['label' => 'activities'],
+        'downloadXls' => ['label' => 'downloadXls'],
     ],
     'actions' => [
         'change_language' => ['label' => 'Cambia Lingua', 'tooltip' => 'Cambia la lingua dell\'interfaccia', 'success' => 'Lingua cambiata con successo', 'error' => 'Errore durante il cambio lingua', 'confirmation' => 'Sei sicuro di voler cambiare la lingua?'],
