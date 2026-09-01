@@ -9,13 +9,29 @@ use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 /**
  * Modules\Lang\Models\LanguageLine.
  *
- * @property-read \Modules\WorkOrder\Models\Profile|null $creator
- * @property-read \Modules\WorkOrder\Models\Profile|null $deleter
- * @property-read \Modules\WorkOrder\Models\Profile|null $updater
- * @method static \Modules\Lang\Database\Factories\LanguageLineFactory factory($count = null, $state = [])
+ * @property int                             $id
+ * @property string                          $group
+ * @property string                          $key
+ * @property array<array-key, mixed>         $text
+ * @property string                          $locale
+ * @property string|null                     $created_by
+ * @property string|null                     $updated_by
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ *
  * @method static EloquentBuilder<static>|LanguageLine newModelQuery()
  * @method static EloquentBuilder<static>|LanguageLine newQuery()
  * @method static EloquentBuilder<static>|LanguageLine query()
+ * @method static EloquentBuilder<static>|LanguageLine whereId($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereGroup($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereKey($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereText($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereLocale($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereCreatedAt($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereUpdatedAt($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereCreatedBy($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class LanguageLine extends BaseModel
