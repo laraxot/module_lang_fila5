@@ -27,10 +27,10 @@ rifare e contestare.
 | PHPInsights — Complexity | 100.0 % |
 | PHPInsights — Architecture | 92.9 % |
 | PHPInsights — Style | 85.2 % |
-| File `.md` sotto `docs/` | 1143 |
+| File `.md` sotto `docs/` | 1144 |
 | `TODO`/`FIXME`/`HACK` | 1 |
 | Test con casi che non girano (senza suffisso `Test.php`) | 0 |
-| Collisioni di case nel codice | 4 |
+| Collisioni di case nel codice | 2 |
 | Collisioni di case nei docs | 25 |
 | Marker di conflitto | 0 |
 | File `.lock` committati | 0 |
@@ -56,7 +56,7 @@ Finche' non e' chiusa, dopo ogni run va fatto `git checkout -- lang/`.
 `tests/Unit/LangHundredPercentCoverageTest.php:635` fallisce in isolamento; Pest stampa
 la tabella di coverage solo su suite verde, quindi il numero non e' ottenibile.
 
-### 4 collisioni di case nel codice
+### 2 collisioni di case nel codice
 
 Due percorsi che differiscono solo per maiuscole convivono su Linux e si
 fondono su macOS e Windows. Quando sono file di test, uno dei due non viene
@@ -66,8 +66,6 @@ Percorsi coinvolti:
 
 - `.github/SECURITY.md`
 - `.github/contributing.md`
-- `.github/issue_template`
-- `app/Models/post.php.fixed`
 
 ### 25 collisioni di case nei docs
 
