@@ -1,3 +1,9 @@
+## [1.0.0-dev.20](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.19...v1.0.0-dev.20) (2026-09-01)
+
+### Bug Fixes
+
+* **lang:** remove dead .fixed backup files (case-collision pair) ([03cb1b4](https://github.com/laraxot/module_lang_fila5/commit/03cb1b459abb36d92bc4f4a45da93bbc7040e136))
+
 ## [1.0.0-dev.19](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.18...v1.0.0-dev.19) (2026-08-31)
 
 ### Bug Fixes
