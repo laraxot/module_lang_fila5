@@ -1,5 +1,11 @@
 # Lang — cosa migliorerei se questo modulo fosse mio per un mese
 
+> I numeri misurati sono in [`docs/cosa-migliorare.md`](cosa-migliorare.md),
+> rilevati da un'altra sessione il 2026-09-01: PHPStan 0, PHPMD `app/` **60**,
+> Code 94.1 — **il più alto dei cinque moduli qui analizzati**, Arch 92.9,
+> 251 casi test. Questo file non rimisura: legge quei numeri e ci mette
+> sopra la lente.
+
 62 file in `app/`, quattro dipendenze runtime (`mcamara/laravel-localization`,
 `lara-zeus/spatie-translatable`, `rinvex/countries`,
 `spatie/laravel-sluggable`), `require-dev` vuoto, un `phpstan.neon.dist` che
