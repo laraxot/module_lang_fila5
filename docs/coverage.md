@@ -11,6 +11,22 @@ related:
 ---
 # Code Coverage: Lang
 
+## PHPStan — 2 settembre 2026 (swarm long-tail, sessione 6748f176)
+
+14 errori `typeCoverage.paramTypeCoverage`/`typeCoverage.constantTypeCoverage`
+chiusi: tipo `array`/`mixed`/`string` su closure param privi di tipo
+(`Arr::first/sort/map`, `array_filter`, `afterStateHydrated` in
+`AutoLabelAction`, `NationalFlagSelect`, `TranslationEditor`,
+`TranslationFile`, e due test unitari), const PHP 8.3 typed su
+`Post::SEARCHABLE_FIELDS`, `Translation::STATUS_SAVED`/`STATUS_CHANGED`,
+`LanguageLineSeeder::ENTRIES`, `TranslationSeeder::ENTRIES`. Verifica isolata
+(`phpstan analyse -c <tmpDir dedicata> Modules/Lang`): 0 errori. Commit
+`7470af41`, push OK su laraxot, rejected su provtv (behind).
+
+Test Pest non eseguibile in questa sessione: DB di test (10.100.200.53:3306)
+irraggiungibile (`nc -z` in timeout) — nessuna misura di coverage aggiornata
+di conseguenza.
+
 **Date:** 2026-01-17
 **Date:** 2026-01-17
 **Date:** 2026-01-17
