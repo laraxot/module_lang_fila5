@@ -55,7 +55,7 @@ use function Safe\mkdir;
 use function Safe\touch;
 use function Safe\unlink;
 
-uses(\Modules\Lang\Tests\TestCase::class);
+uses(TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();
@@ -107,7 +107,7 @@ function langGapsSqlite(): void
 describe('Lang coverage gaps closeout', function (): void {
     test('TranslatorService notifyMissingKey and TranslatorAction non-string branch', function (): void {
         langGapsSqlite();
-        $loader = new ArrayLoader();
+        $loader = new ArrayLoader;
         $loader->addMessages('it', 'g', ['n' => 9]);
 
         $service = new TranslatorService($loader, 'it');
@@ -120,7 +120,7 @@ describe('Lang coverage gaps closeout', function (): void {
     });
 
     test('TranslatorAdapter non-string result coerces to key', function (): void {
-        $loader = new ArrayLoader();
+        $loader = new ArrayLoader;
         $loader->addMessages('it', 'g', ['n' => 9]);
         $adapter = new TranslatorAdapter($loader, 'it');
         $this->mockService(RecordMissingTranslationAction::class, static function (MockInterface $mock): void {
@@ -161,7 +161,7 @@ describe('Lang coverage gaps closeout', function (): void {
     test('WriteTranslationFileAction backs up existing file', function (): void {
         $path = sys_get_temp_dir().'/write_cov_'.uniqid().'.php';
         TestCase::createTranslationFile($path, ['a' => '1']);
-        app()->instance('cache', new class()
+        app()->instance('cache', new class
         {
             public function flush(): void {}
         });
@@ -239,7 +239,7 @@ describe('Lang coverage gaps closeout', function (): void {
         $setUp->invoke($editor);
         Assert::assertInstanceOf(TranslationEditor::class, $editor);
 
-        $edit = new EditTranslationFile();
+        $edit = new EditTranslationFile;
         Assert::assertNotEmpty($edit->getFormSchema());
         Assert::assertNotEmpty($edit->makeFromArray(['a' => '1', 'b' => ['c' => '2']], 'content'));
         Assert::assertSame([], $edit->makeFromArray([]));
@@ -264,18 +264,18 @@ describe('Lang coverage gaps closeout', function (): void {
         LaravelLocalization::shouldReceive('getLocalizedURL')
             ->andReturn(false);
 
-        $change = new LangChange();
+        $change = new LangChange;
         $change->mount();
         Assert::assertSame('/en', $change->langs['en']['url']);
 
-        $switcher = new LangSwitcher();
+        $switcher = new LangSwitcher;
         $switcher->mount();
         Assert::assertFalse($switcher->langs['en']['url']);
     });
 
     test('Post accessors persist when model has key', function (): void {
         langGapsSqlite();
-        $post = new Post();
+        $post = new Post;
         $post->id = (string) Str::uuid();
         $post->exists = true;
         $post->setRawAttributes([
@@ -305,7 +305,7 @@ describe('Lang coverage gaps closeout', function (): void {
                 ['key' => 'lang::only'],
             ]);
         });
-        $rows = (new TranslationFile())->getRows();
+        $rows = (new TranslationFile)->getRows();
         Assert::assertNotEmpty($rows);
         Assert::assertSame('', $rows[0]['content'] ?? null);
     });
@@ -350,7 +350,7 @@ describe('Lang coverage gaps closeout', function (): void {
                 'en' => ['name' => 'English', 'regional' => 'en_US'],
             ],
         ]);
-        $composer = new ThemeComposer();
+        $composer = new ThemeComposer;
         Assert::assertGreaterThan(0, $composer->languages()->count());
 
         config(['laravellocalization.supportedLocales' => 'invalid']);
