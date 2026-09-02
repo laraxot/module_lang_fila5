@@ -56,14 +56,14 @@ use function Safe\rename;
 use function Safe\rmdir;
 use function Safe\unlink;
 
-uses(\Modules\Lang\Tests\TestCase::class);
+uses(TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();
 });
 
 test('EditTranslationFile makeFromArray covers content branches', function (): void {
-    $edit = new EditTranslationFile();
+    $edit = new EditTranslationFile;
     Assert::assertNotEmpty($edit->makeFromArray(['hello' => 'world'], 'content'));
     Assert::assertSame([], $edit->makeFromArray([]));
     Assert::assertNotEmpty($edit->makeFromArray(['nested' => ['x' => '1']], 'content'));
@@ -85,7 +85,7 @@ test('LocaleSwitcherRefresh applyLocale covers string and non-string locale', fu
 test('TranslatorAction and Adapter coerce non-string loaded values', function (): void {
     TestCase::forceSqliteTranslations();
 
-    $loader = new ArrayLoader();
+    $loader = new ArrayLoader;
     $action = new TranslatorAction($loader, 'it');
     $loaded = new ReflectionProperty(LaravelTranslator::class, 'loaded');
     $loaded->setAccessible(true);
@@ -103,7 +103,7 @@ test('TranslatorAction and Adapter coerce non-string loaded values', function ()
 
 test('ThemeComposer fallback locales and buildAdminLanguageUrl', function (): void {
     Config::set('laravellocalization', []);
-    $composer = new ThemeComposer();
+    $composer = new ThemeComposer;
     Assert::assertGreaterThan(0, $composer->languages()->count());
 
     $method = new ReflectionMethod(ThemeComposer::class, 'buildAdminLanguageUrl');
@@ -134,7 +134,7 @@ test('RouteServiceProvider covers fallback locales and admin segment index', fun
 
 test('TranslationFile respects configured PHPStan runtime boundary', function (): void {
     config(['app.phpstan_running' => true]);
-    Assert::assertSame([], (new TranslationFile())->getRows());
+    Assert::assertSame([], (new TranslationFile)->getRows());
     config(['app.phpstan_running' => false]);
 });
 
@@ -177,7 +177,7 @@ test('WriteTranslationFileAction createBackup makes directory', function (): voi
 
     $path = sys_get_temp_dir().'/wfa_'.uniqid().'.php';
     TestCase::createTranslationFile($path, ['x' => '1']);
-    app()->instance('cache', new class()
+    app()->instance('cache', new class
     {
         public function flush(): void {}
     });
@@ -211,19 +211,19 @@ test('Switcher covers non-string localized url branch', function (): void {
     LaravelLocalization::shouldReceive('getLocalizedURL')
         ->andReturn(true);
 
-    $switcher = new LangSwitcher();
+    $switcher = new LangSwitcher;
     $switcher->mount();
     Assert::assertSame('/en', $switcher->langs['en']['url']);
 });
 
 test('Post linkable and accessor edge branches', function (): void {
-    $post = new Post();
+    $post = new Post;
     Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
     $post->setRawAttributes(['post_type' => 123, 'post_id' => ['x']], true);
     Assert::assertIsString($post->getTitleAttribute(null));
 
-    $post2 = new Post();
+    $post2 = new Post;
     $post2->setRawAttributes(['title' => null], true);
     // guid with null title falls through
     Assert::assertIsString($post2->getGuidAttribute(' '));
@@ -256,17 +256,17 @@ test('TranslationEditor make preserves the field name', function (): void {
 test('WriteTranslationFileAction throws when put fails', function (): void {
     $path = sys_get_temp_dir().'/wfail_'.uniqid().'.php';
     TestCase::createTranslationFile($path, ['a' => '1']);
-    app()->instance('cache', new class()
+    app()->instance('cache', new class
     {
         public function flush(): void {}
     });
-    $action = new WriteTranslationFileActionFailStub();
+    $action = new WriteTranslationFileActionFailStub;
     expect(fn () => $action->execute($path, ['a' => '2']))->toThrow(\Exception::class);
     unlink($path);
 });
 
 test('Post guid null title uses random fallback', function (): void {
-    $post = new Post();
+    $post = new Post;
     $post->setRawAttributes([], true);
     // force title accessor path to null then guid
     $guid = $post->getGuidAttribute(null);
@@ -274,7 +274,7 @@ test('Post guid null title uses random fallback', function (): void {
 });
 
 test('RouteServiceProvider non-array locales and admin n=3', function (): void {
-    config(['laravellocalization.supportedLocales' => new \stdClass()]);
+    config(['laravellocalization.supportedLocales' => new \stdClass]);
     $request = Request::create('http://localhost/it/admin/pages', 'GET');
     app()->instance('request', $request);
     \Illuminate\Support\Facades\Request::swap($request);
@@ -294,7 +294,7 @@ test('ThemeComposer inAdmin language urls and non-string currentLang field', fun
     app()->instance('request', $request);
     \Illuminate\Support\Facades\Request::swap($request);
     app()->setLocale('it');
-    $composer = new ThemeComposer();
+    $composer = new ThemeComposer;
     Assert::assertGreaterThan(0, $composer->languages()->count());
     // flag field is HTML string; asking a missing dynamic property via currentLang on 'flag' works as string
     Assert::assertStringContainsString('<', $composer->currentLang('flag'));
@@ -336,7 +336,7 @@ test('AutoLabelAction covers FIX label for array translation', function (): void
     ], 'it', 'lang');
     app()->setLocale('it');
 
-    $action = new AutoLabelForcedKeyStub();
+    $action = new AutoLabelForcedKeyStub;
     $section = Section::make()->heading(null);
     Assert::assertSame($section, $action->execute($section, 'heading'));
 
@@ -355,7 +355,7 @@ test('AutoLabelAction covers FIX label for array translation', function (): void
 
 test('AutoLabelAction null caller frame returns component early', function (): void {
     $field = TextInput::make('x');
-    Assert::assertSame($field, (new AutoLabelNullCallerStub())->execute($field, 'label'));
+    Assert::assertSame($field, (new AutoLabelNullCallerStub)->execute($field, 'label'));
 });
 
 test('AutoLabelAction nested execute caller covers execute skip frame', function (): void {
@@ -368,11 +368,11 @@ test('AutoLabelAction nested execute caller covers execute skip frame', function
     app('translator')->addLines(['form.fields.nested.label' => 'N'], 'it', 'lang');
     app()->setLocale('it');
     $field = TextInput::make('nested');
-    Assert::assertSame($field, (new AutoLabelExecuteNestedCaller())->execute($field, 'label'));
+    Assert::assertSame($field, (new AutoLabelExecuteNestedCaller)->execute($field, 'label'));
 });
 
 test('Post guid null titleForGuid uses random fallback', function (): void {
-    $post = new PostNullTitleForGuidStub();
+    $post = new PostNullTitleForGuidStub;
     $guid = $post->getGuidAttribute(null);
     Assert::assertIsString($guid);
     Assert::assertNotSame('', $guid);
@@ -393,7 +393,7 @@ test('ThemeComposer non-string lang field returns empty string', function (): vo
         ],
     ]);
     app()->setLocale('it');
-    $composer = new ThemeComposerNonStringFieldStub();
+    $composer = new ThemeComposerNonStringFieldStub;
     Assert::assertSame('', $composer->currentLang('name'));
     Assert::assertSame('it', $composer->currentLang('id'));
 });
@@ -448,7 +448,7 @@ test('NationalFlagSelect finalizeFilteredCountries defensive continue', function
 
 test('SaveTransAction early return when persist disabled in unit tests', function (): void {
     config(['lang.persist_trans_in_tests' => false]);
-    app()->instance(SaveTransAction::class, new SaveTransAction());
+    app()->instance(SaveTransAction::class, new SaveTransAction);
     app(SaveTransAction::class)->execute('lang::should_not_write.nested', 'x');
     Assert::assertFileDoesNotExist(base_path('Modules/Lang/lang/'.app()->getLocale().'/should_not_write.php'));
     TestCase::restoreSaveTransActionNoOp();
@@ -543,7 +543,7 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
 });
 
 test('WriteTranslationFileAction putTranslationFile returns false when write fails', function (): void {
-    $action = new WriteTranslationFileActionWriteFailStub();
+    $action = new WriteTranslationFileActionWriteFailStub;
     $m = new ReflectionMethod(WriteTranslationFileAction::class, 'putTranslationFile');
     $m->setAccessible(true);
     $dir = sys_get_temp_dir().'/lang_put_false_'.uniqid();
@@ -552,19 +552,19 @@ test('WriteTranslationFileAction putTranslationFile returns false when write fai
 });
 
 test('WriteTranslationFileAction putTranslationFile edge paths', function (): void {
-    app()->instance('cache', new class()
+    app()->instance('cache', new class
     {
         public function flush(): void {}
     });
 
     $missingDir = sys_get_temp_dir().'/lang_wfa_dir_'.uniqid();
     $path = $missingDir.'/out.php';
-    Assert::assertTrue((new WriteTranslationFileAction())->execute($path, ['a' => '1']));
+    Assert::assertTrue((new WriteTranslationFileAction)->execute($path, ['a' => '1']));
     Assert::assertFileExists($path);
 
     $path3 = sys_get_temp_dir().'/lang_wfa_wf_'.uniqid().'.php';
     TestCase::createTranslationFile($path3, ['c' => '1']);
-    expect(fn () => (new WriteTranslationFileActionWriteFailStub())->execute($path3, ['c' => '2']))
+    expect(fn () => (new WriteTranslationFileActionWriteFailStub)->execute($path3, ['c' => '2']))
         ->toThrow(\Exception::class);
 
     foreach ([$path, $path3] as $f) {

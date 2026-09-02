@@ -8,11 +8,11 @@ use Modules\Lang\Actions\TransArrayAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Lang\Tests\TestCase::class);
+uses(TestCase::class);
 
 function makeTransArrayAction(): TransArrayAction
 {
-    return new TransArrayAction();
+    return new TransArrayAction;
 }
 
 describe('TransArrayAction Business Logic', function () {
