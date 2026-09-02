@@ -31,12 +31,41 @@ class AutoLabelAction
      */
     public function execute(Field|Entry|BaseFilter|Column|Step|Action|Section $component, string $type = 'label'): Field|Entry|BaseFilter|Column|Step|Action|Section
     {
-        $class = $this->findCallerFrame($component);
+        $backtrace = debug_backtrace();
+        $backtrace_slice = array_slice($backtrace, 2);
+        $class = Arr::first($backtrace_slice, function ($item) use ($component) {
+            if ('execute' === $item['function']) {
+                return false;
+            }
+
+            if (
+                isset($item['object'])
+                    && Str::startsWith($item['object']::class, 'Modules\\')
+                    && $item['object'] !== $component
+            ) {
+                return true;
+            }
+
+            if (isset($item['class']) && Str::startsWith($item['class'], 'Modules\\')) {
+                $reflection_class = new \ReflectionClass($item['class']);
+                if (! $reflection_class->isAbstract()) {
+                    return true;
+                }
+            }
+
+            return false;
+        });
 
         if (is_array($class)) {
-            $object_class = $this->objectClassFromFrame($class);
+            $object_class = null;
+            if (isset($class['object'])) {
+                $object_class = $class['object']::class;
+            }
+            if (isset($class['class']) && null === $object_class) {
+                $object_class = $class['class'];
+            }
             if (is_null($object_class)) {
-                return $component;
+                throw new \Exception('No object class found');
             }
             $trans_key = app(GetTransKeyAction::class)->execute($object_class);
         } else {
@@ -50,9 +79,9 @@ class AutoLabelAction
             Assert::string($val = $component->getLabel());
             $label_tkey = $trans_key.'.steps.'.$val.'';
         }
-        if ($label_tkey === null && $component instanceof Section) {
+        if (null === $label_tkey && $component instanceof Section) {
             $val = $component->getHeading();
-            if ($val === null) {
+            if (null === $val) {
                 $val = 'empty';
             }
             if (! is_string($val)) {
@@ -60,7 +89,7 @@ class AutoLabelAction
             }
             $label_tkey = $trans_key.'.sections.'.$val.'';
         }
-        if ($label_tkey === null && method_exists($component, 'getName')) {
+        if (null === $label_tkey && method_exists($component, 'getName')) {
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.fields.'.$val.'';
         }
@@ -84,19 +113,46 @@ class AutoLabelAction
         if ($label_key === $label || ! method_exists($component, $type)) {
             return $component;
         }
-        if ($type === 'icon') {
-            $exists = app(SvgExistsAction::class)->execute($label);
-            if ($exists && method_exists($component, 'iconButton')) {
+        /*
+        if (is_string($label) && $label_key !== $label && method_exists($component, $type)) {
+
+                if ($type === 'icon' && !app(SvgExistsAction::class)->execute($label)) {
+
+                    $component->{$type}('heroicon-o-question-mark-circle');
+                    return $component;
+                }
+                if (strip_tags($label) !== $label && in_array($type, ['helperText'], strict: true)) {
+                    $component->{$type}(new HtmlString($label));
+                } else {
+                    $component->{$type}($label);
+                }
+
+        }
+        */
+        if ('icon' === $type && app(SvgExistsAction::class)->execute($label)) {
+            if (method_exists($component, 'iconButton')) {
                 $component->iconButton();
             }
-            if ($exists) {
-                $component->{$type}($label);
+            $component->{$type}($label);
+
+            // $component->label('FIX:'.$label_key);
+            return $component;
+        }
+        if ('icon' === $type && ! app(SvgExistsAction::class)->execute($label)) {
+            // $component->{$type}($label);
+            if (method_exists($component, 'iconButton')) {
+                $component->iconButton();
             }
 
+            // $component->label('FIX:'.$label_key);
+            // $component->tooltip('FIX:'.$label_key);
+            // $component->{$type}('heroicon-o-question-mark-circle');
+
+            // $component->{$type}(null);
             return $component;
         }
 
-        if (strip_tags($label) !== $label && $type === 'helperText') {
+        if (strip_tags($label) !== $label && in_array($type, ['helperText'], strict: true)) {
             $component->{$type}(new HtmlString($label));
 
             return $component;
@@ -105,55 +161,5 @@ class AutoLabelAction
         $component->{$type}($label);
 
         return $component;
-    }
-
-    /**
-     * @return array<string, mixed>|null
-     */
-    protected function findCallerFrame(Field|Entry|BaseFilter|Column|Step|Action|Section $component): ?array
-    {
-        $backtrace = debug_backtrace();
-        $backtrace_slice = array_slice($backtrace, 2);
-        $class = Arr::first($backtrace_slice, function (array $item) use ($component) {
-            if ($item['function'] === 'execute') {
-                return false;
-            }
-
-            if (
-                isset($item['object'])
-                    && is_object($item['object'])
-                    && Str::startsWith($item['object']::class, 'Modules\\')
-                    && $item['object'] !== $component
-            ) {
-                return true;
-            }
-
-            if (isset($item['class']) && Str::startsWith($item['class'], 'Modules\\')) {
-                $reflection_class = new \ReflectionClass($item['class']);
-                if (! $reflection_class->isAbstract()) {
-                    return true;
-                }
-            }
-
-            return false;
-        });
-
-        return is_array($class) ? $class : null;
-    }
-
-    /**
-     * @param  array<string, mixed>  $class
-     */
-    protected function objectClassFromFrame(array $class): ?string
-    {
-        $object_class = null;
-        if (isset($class['object']) && is_object($class['object'])) {
-            $object_class = $class['object']::class;
-        }
-        if (isset($class['class']) && $object_class === null) {
-            $object_class = $class['class'];
-        }
-
-        return is_string($object_class) ? $object_class : null;
     }
 }

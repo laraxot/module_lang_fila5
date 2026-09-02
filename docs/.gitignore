@@ -48,9 +48,3 @@ _docs/
 
 # Local generated documentation archives
 archive/agentdb.rvf
-
-# Version-suffixed markdown (AI artifacts)
-*-[0-9]*.md
-translation-errors-correction-2025.md
-translation-audit-completion-2025.md
-redundancy-audit-2026-05-21.md

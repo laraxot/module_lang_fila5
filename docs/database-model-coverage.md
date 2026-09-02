@@ -1,12 +1,3 @@
----
-title: "Lang — Copertura Model / Migration / Seeder / Factory"
-module: lang
-type: integration
-tags: [integrations, modules, lang]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # Lang — Copertura Model / Migration / Seeder / Factory
 
 Stato: colmato il gap su `LanguageLine` (mancavano factory e seeder). Documentati gli skip su

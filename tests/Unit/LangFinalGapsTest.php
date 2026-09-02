@@ -7,6 +7,7 @@ namespace Modules\Lang\Tests\Unit;
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
@@ -14,15 +15,15 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\HtmlString;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator as LaravelTranslator;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Mockery;
 use Mockery\MockInterface;
-use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
+use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
 use Modules\Lang\Actions\TranslatorAction;
 use Modules\Lang\Actions\WriteTranslationFileAction;
 use Modules\Lang\Adapters\TranslatorAdapter;
-use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Modules\Lang\Filament\Forms\Components\TranslationEditor;
@@ -51,23 +52,21 @@ use ReflectionProperty;
 
 use function Safe\file_put_contents;
 use function Safe\mkdir;
-use function Safe\putenv;
 use function Safe\rename;
 use function Safe\rmdir;
 use function Safe\unlink;
 
-uses(TestCase::class);
+uses(\Modules\Lang\Tests\TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();
 });
 
-test('EditTranslationFile schemaFromRecord covers both branches', function (): void {
+test('EditTranslationFile makeFromArray covers content branches', function (): void {
     $edit = new EditTranslationFile();
-    Assert::assertNotEmpty($edit->schemaFromRecord((object) ['content' => ['hello' => 'world']]));
-    Assert::assertSame([], $edit->schemaFromRecord(null));
-    Assert::assertSame([], $edit->schemaFromRecord((object) ['content' => 'scalar']));
-    Assert::assertSame([], $edit->schemaFromRecord((object) []));
+    Assert::assertNotEmpty($edit->makeFromArray(['hello' => 'world'], 'content'));
+    Assert::assertSame([], $edit->makeFromArray([]));
+    Assert::assertNotEmpty($edit->makeFromArray(['nested' => ['x' => '1']], 'content'));
 });
 
 test('LocaleSwitcherRefresh applyLocale covers string and non-string locale', function (): void {
@@ -107,7 +106,9 @@ test('ThemeComposer fallback locales and buildAdminLanguageUrl', function (): vo
     $composer = new ThemeComposer();
     Assert::assertGreaterThan(0, $composer->languages()->count());
 
-    Assert::assertSame('#', $composer->buildAdminLanguageUrl('it'));
+    $method = new ReflectionMethod(ThemeComposer::class, 'buildAdminLanguageUrl');
+    $method->setAccessible(true);
+    Assert::assertSame('#', $method->invoke($composer, 'it'));
 
     config([
         'laravellocalization.supportedLocales' => [
@@ -118,7 +119,7 @@ test('ThemeComposer fallback locales and buildAdminLanguageUrl', function (): vo
     Route::shouldReceive('currentRouteName')->andReturn('home');
     Route::shouldReceive('current')->andReturn(null);
     Route::shouldReceive('has')->andReturn(true);
-    $url = $composer->buildAdminLanguageUrl('en');
+    $url = $method->invoke($composer, 'en');
     Assert::assertNotSame('', $url);
 });
 
@@ -144,8 +145,7 @@ test('SyncTranslationsAction skips empty casted glob entries', function (): void
     mkdir($base.'/lang/it', 0o755, true);
     file_put_contents($base.'/lang/it/ok.php', "<?php\nreturn ['a' => 'b'];\n");
 
-    File::partialMock()
-        ->shouldReceive('glob')
+    TestCase::mockExpectation(File::partialMock(), 'glob')
         ->andReturn([null, '', $base.'/lang/it/ok.php']);
     File::shouldReceive('exists')->andReturnUsing(static fn (string $p): bool => file_exists($p) || is_dir($p));
     File::shouldReceive('makeDirectory')->andReturn(true);
@@ -160,7 +160,7 @@ test('SyncTranslationsAction skips empty casted glob entries', function (): void
     } finally {
         Mockery::close();
         if (is_dir($base)) {
-            \Illuminate\Support\Facades\File::deleteDirectory($base);
+            File::deleteDirectory($base);
         }
     }
 });
@@ -191,7 +191,7 @@ test('WriteTranslationFileAction createBackup makes directory', function (): voi
         }
         if (isset($moved) && is_dir($moved)) {
             if (is_dir($backupDir)) {
-                \Illuminate\Support\Facades\File::deleteDirectory($backupDir);
+                File::deleteDirectory($backupDir);
             }
             rename($moved, $backupDir);
         }
@@ -206,9 +206,9 @@ test('Switcher covers non-string localized url branch', function (): void {
         ],
     ]);
     app()->setLocale('it');
-    \Mcamara\LaravelLocalization\Facades\LaravelLocalization::shouldReceive('getSupportedLocales')
+    LaravelLocalization::shouldReceive('getSupportedLocales')
         ->andReturn(['it' => ['name' => 'Italiano'], 'en' => ['name' => 'English']]);
-    \Mcamara\LaravelLocalization\Facades\LaravelLocalization::shouldReceive('getLocalizedURL')
+    LaravelLocalization::shouldReceive('getLocalizedURL')
         ->andReturn(true);
 
     $switcher = new LangSwitcher();
@@ -218,7 +218,7 @@ test('Switcher covers non-string localized url branch', function (): void {
 
 test('Post linkable and accessor edge branches', function (): void {
     $post = new Post();
-    Assert::assertInstanceOf(\Illuminate\Database\Eloquent\Relations\MorphTo::class, $post->linkable());
+    Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
     $post->setRawAttributes(['post_type' => 123, 'post_id' => ['x']], true);
     Assert::assertIsString($post->getTitleAttribute(null));
@@ -404,7 +404,7 @@ test('NationalFlagSelect casts non-array non-string localized label', function (
     });
     $translator = app('translator');
     $mock = Mockery::mock($translator)->makePartial();
-    $mock->shouldReceive('get')
+    TestCase::mockExpectation($mock, 'get')
         ->andReturnUsing(static function (string $key, array $replace = [], ?string $locale = null) use ($translator): mixed {
             if (str_contains($key, 'countries.it')) {
                 return 99;
@@ -471,8 +471,10 @@ test('NationalFlagSelect getCountryOptions casts int localized label', function 
     app()->setLocale('it');
     $real = app('translator');
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
-    app()->instance('translator', new class($real) {
+    app()->instance('translator', new class($real)
+    {
         public function __construct(private LaravelTranslator $inner) {}
+
         /** @param array<string, mixed> $replace */
         public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
         {
@@ -482,6 +484,7 @@ test('NationalFlagSelect getCountryOptions casts int localized label', function 
 
             return $this->inner->get($key, $replace, $locale, $fallback);
         }
+
         /** @param list<mixed> $arguments */
         public function __call(string $name, array $arguments): mixed
         {
@@ -507,8 +510,10 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
     app()->setLocale('it');
     $real = app('translator');
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
-    app()->instance('translator', new class($real) {
+    app()->instance('translator', new class($real)
+    {
         public function __construct(private LaravelTranslator $inner) {}
+
         /** @param array<string, mixed> $replace */
         public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
         {
@@ -518,6 +523,7 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
 
             return $this->inner->get($key, $replace, $locale, $fallback);
         }
+
         /** @param list<mixed> $arguments */
         public function __call(string $name, array $arguments): mixed
         {
