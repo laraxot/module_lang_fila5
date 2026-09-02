@@ -1,20 +1,4 @@
 ---
-title: "Readme.Es"
-module: "Lang"
-type: concept
-tags: [readme.es]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme.es"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-
----
-
-<!-- Merged from README.es.md, which collided with this file on case-insensitive filesystems. -->
-
----
 title: "🚀 Bienvenido a Laraxot PTVX"
 module: "Lang"
 type: concept
@@ -91,7 +75,7 @@ related:
 
 ## 📚 Documentación
 
-- [Índice del Proyecto](../index.md)
+- [Índice del Proyecto](../INDEX.md)
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panorama de los Módulos](../MODULES.md)
 - [Arquitectura](architecture.md)
