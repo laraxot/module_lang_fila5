@@ -18,7 +18,7 @@ class TranslationEditor extends XotBaseField
     {
         parent::setUp();
 
-        $this->afterStateHydrated(function (TranslationEditor $component, $state): void {
+        $this->afterStateHydrated(function (TranslationEditor $component, mixed $state): void {
             $component->state($state ?? []);
         });
     }
@@ -41,7 +41,7 @@ class TranslationEditor extends XotBaseField
                     TranslationEditor::make($keyStr)->label('')->state($value),
                 ]);
             } else {
-                $valueStr = is_string($value) ? $value : (string) $value;
+                $valueStr = is_scalar($value) ? (string) $value : '';
                 $label = str_replace('_', ' ', $keyStr);
                 $components[] = TextInput::make($keyStr)->label($label)->default($valueStr);
             }
