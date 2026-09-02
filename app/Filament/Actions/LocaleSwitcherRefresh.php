@@ -6,6 +6,8 @@ namespace Modules\Lang\Filament\Actions;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\Select;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\App;
 
 class LocaleSwitcherRefresh extends Action
@@ -37,19 +39,16 @@ class LocaleSwitcherRefresh extends Action
                     ->reactive()
                     ->required(),
             ])
-            ->action(function (array $data): mixed {
-                /** @var array<string, mixed> $data */
-                return $this->applyLocale($data);
-            })
+            ->action(fn (array $data): RedirectResponse|Redirector => $this->applyLocale($data))
             ->modalHeading('Cambia lingua')
             // ->icon('heroicon-o-language')
             ->color('gray');
     }
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param  array<array-key, mixed>  $data
      */
-    public function applyLocale(array $data): mixed
+    public function applyLocale(array $data): RedirectResponse|Redirector
     {
         $locale = $data['locale'] ?? 'en';
         $locale = is_string($locale) ? $locale : 'en';
@@ -57,6 +56,9 @@ class LocaleSwitcherRefresh extends Action
         session()->put('locale', $locale);
         App::setLocale($locale);
 
-        return redirect(request()->header('Referer'));
+        $referer = request()->header('Referer');
+        $target = is_string($referer) && $referer !== '' ? $referer : url()->current();
+
+        return redirect()->to($target);
     }
 }

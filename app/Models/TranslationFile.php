@@ -11,24 +11,24 @@ namespace Modules\Lang\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Log;
 use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
 use Modules\Xot\Contracts\ProfileContract;
-use Sushi\Sushi;
 
 use function Safe\json_encode;
 
+use Sushi\Sushi;
+
 /**
- * @property string|null $key
- * @property string|null $path
- * @property string|null $id
- * @property string|null $name
+ * @property string|null                  $key
+ * @property string|null                  $path
+ * @property string|null                  $id
+ * @property string|null                  $name
  * @property array<array-key, mixed>|null $content
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
+ * @property ProfileContract|null         $creator
+ * @property ProfileContract|null         $updater
  *
- * @method static TranslationFileFactory factory($count = null, $state = [])
+ * @method static TranslationFileFactory          factory($count = null, $state = [])
  * @method static Builder<static>|TranslationFile newModelQuery()
  * @method static Builder<static>|TranslationFile newQuery()
  * @method static Builder<static>|TranslationFile query()
@@ -74,7 +74,7 @@ class TranslationFile extends BaseModel
         try {
             return $this->loadTranslationDataWithErrorHandling();
         } catch (\Throwable $e) {
-            Log::warning('TranslationFile::getRows failed', [
+            \Illuminate\Support\Facades\Log::warning('TranslationFile::getRows failed', [
                 'error' => $e->getMessage(),
                 'file' => $e->getFile(),
                 'line' => $e->getLine(),
@@ -87,31 +87,26 @@ class TranslationFile extends BaseModel
     /**
      * Carica i dati di traduzione con error handling robusto.
      *
+     * @throws \Throwable
      *
      * @return array<int, array<string, mixed>>
-     *
-     * @throws \Throwable
      */
     private function loadTranslationDataWithErrorHandling(): array
     {
         $files = app(GetAllTranslationAction::class)->execute();
 
         /** @var array<int, array<string, mixed>> $result */
-        $result = Arr::map($files, function (mixed $item): array {
+        $result = Arr::map($files, function ($item) {
             if (! is_array($item)) {
                 return [];
             }
 
             $key = $item['key'] ?? null;
-            /** @var string|int|float|bool|null $keyNarrowed */
-            $keyNarrowed = $key;
-            $keyStr = is_string($keyNarrowed) ? $keyNarrowed : (string) $keyNarrowed;
+            $keyStr = is_string($key) ? $key : (string) $key;
             $item['id'] = isset($item['key']) ? $keyStr : '';
 
             $pathValue = $item['path'] ?? null;
-            /** @var string|int|float|bool|null $pathValueNarrowed */
-            $pathValueNarrowed = $pathValue;
-            $pathStr = is_string($pathValueNarrowed) ? $pathValueNarrowed : (string) $pathValueNarrowed;
+            $pathStr = is_string($pathValue) ? $pathValue : (string) $pathValue;
             $item['name'] = isset($item['path']) ? basename($pathStr, '.php') : '';
 
             if (isset($item['path'])) {
@@ -141,7 +136,7 @@ class TranslationFile extends BaseModel
 
             return json_encode($content) ?: '';
         } catch (\Throwable $e) {
-            Log::debug('Failed to load translation file', [
+            \Illuminate\Support\Facades\Log::debug('Failed to load translation file', [
                 'path' => $path,
                 'error' => $e->getMessage(),
             ]);
@@ -152,8 +147,13 @@ class TranslationFile extends BaseModel
 
     private function isRunningIdeHelper(): bool
     {
-        return filter_var(config('app.phpstan_running', false), FILTER_VALIDATE_BOOLEAN)
-            || (is_array($_SERVER['argv'] ?? null) && in_array('ide-helper:models', $_SERVER['argv'], true));
+        if (defined('PHPSTAN_RUNNING')) {
+            return true;
+        }
+
+        $argv = $_SERVER['argv'] ?? [];
+
+        return is_array($argv) && in_array('ide-helper:models', $argv, true);
     }
 
     /**
