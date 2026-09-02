@@ -39,5 +39,3 @@ php artisan module_lang:install
 ---
 ---
 ---
-
-```

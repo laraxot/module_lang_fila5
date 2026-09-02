@@ -10,7 +10,7 @@ use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Lang\Tests\TestCase::class);
 
 function makeTranslatorAdapter(): TranslatorAdapter
 {
@@ -22,33 +22,15 @@ function makeTranslatorAdapter(): TranslatorAdapter
 
 describe('TranslatorAdapter business logic', function () {
     test('returns the key itself when translation is missing', function () {
-        /** @var TestCase $this */
-        if (TestCase::langDbUnavailable()) {
-            $this->skipTest('DB `lang` non raggiungibile: blocco di ambiente.');
-        }
-
         $key = 'lang::missing.unknown_key_'.uniqid();
 
-        try {
-            $result = makeTranslatorAdapter()->get($key);
-        } catch (\Illuminate\Database\QueryException $exception) {
-            $this->skipTest('DB `lang` write lock (sqlite condiviso): '.$exception->getMessage());
-        }
+        $result = makeTranslatorAdapter()->get($key);
 
         Assert::assertSame($key, $result);
     });
 
     test('get returns the key for a missing string key', function () {
-        /** @var TestCase $this */
-        if (TestCase::langDbUnavailable()) {
-            $this->skipTest('DB `lang` non raggiungibile: blocco di ambiente.');
-        }
-
-        try {
-            $result = makeTranslatorAdapter()->get('lang::missing.another_key_'.uniqid());
-        } catch (\Illuminate\Database\QueryException $exception) {
-            $this->skipTest('DB `lang` write lock (sqlite condiviso): '.$exception->getMessage());
-        }
+        $result = makeTranslatorAdapter()->get('lang::missing.another_key_'.uniqid());
 
         Assert::assertIsString($result);
     });

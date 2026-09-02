@@ -473,39 +473,11 @@ Following these guidelines will ensure your Lang module tests are:
 
 Remember: Good tests are the foundation of reliable software development.
 
-## Coverage — story 5.24 (floor 50%)
-
-| Perimetro | Coverage | Gate `--min=50` | Suite |
-|-----------|---------:|:---------------:|-------|
-| `./app` completo, nessun exclude | **51,2 %** | ✅ PASS | 144 pass, 16 skip |
-
-```bash
-cd laravel
-XDEBUG_MODE=coverage ./vendor/bin/pest -c Modules/Lang/phpunit.xml --coverage --min=50
-```
-
-Nota: il valore sopra e' stato ricalcolato dopo il ripristino del perimetro completo `./app`, senza esclusioni di `Filament`, `Http` o `View`.
-
-Riferimenti: [Xot coverage.md](../../Xot/docs/coverage.md),
-[5.24 floor 50%](../../Xot/docs/stories/5.24.module-coverage-fifty-percent-floor.story.md).
-
-## Coverage — story 5.26 (100%)
-
-| Perimetro | Coverage | Gate `--min=100` | Suite |
-|-----------|---------:|:----------------:|-------|
-| `./app` completo, nessun exclude | **100 %** | ✅ PASS | 235 pass, 16 skip |
-
-```bash
-cd laravel
-XDEBUG_MODE=coverage ./vendor/bin/pest -c Modules/Lang/phpunit.xml --coverage --min=100
-```
-
-Note operative (5.26):
-- `langDbUnavailable()` resta `true` (niente write DB su sqlite condiviso).
-- `SaveTransAction` in unit test è no-op di default (`SaveTransActionNoOpStub` + guard `lang.persist_trans_in_tests`); i test che devono scrivere usano `TestCase::bindRealSaveTransAction()` e ripristinano con `restoreSaveTransActionNoOp()`.
-
-Riferimenti: [Xot coverage.md](../../Xot/docs/coverage.md).
-
 ---
 
-*Last updated: August 2026*
+*Last updated: January 2025*
+*
+*
+*
+*
+*Last updated: January 2025*
