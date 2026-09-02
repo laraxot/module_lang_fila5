@@ -13,13 +13,14 @@ use Modules\Lang\Models\Translation;
 class TranslationSeeder extends Seeder
 {
     /** @var list<array{namespace: string, group: string, item: string, lang: string, value: string}> */
-    private const array ENTRIES = [[
-        'namespace' => 'predict',
-        'group' => 'fields',
-        'item' => 'title.label',
-        'lang' => 'it',
-        'value' => 'Titolo',
-    ],
+    private const ENTRIES = [
+        [
+            'namespace' => 'predict',
+            'group' => 'fields',
+            'item' => 'title.label',
+            'lang' => 'it',
+            'value' => 'Titolo',
+        ],
         [
             'namespace' => 'predict',
             'group' => 'fields',

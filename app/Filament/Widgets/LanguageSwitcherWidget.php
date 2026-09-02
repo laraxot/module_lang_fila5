@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Filament\Widgets;
 
+use Filament\Schemas\Components\Component;
 use Illuminate\Support\Collection;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
@@ -23,21 +24,17 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
      */
     public static function canView(): bool
     {
-        return (bool) config('lang.language_switcher.enabled', true);
+        return true;
     }
 
-/**
-     * Ottiene le lingue disponibili nel sistema.
+    /**
+     * Schema del form per la configurazione del widget.
      *
-     * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
+     * @return array<int, Component>
      */
-    public function getAvailableLocales(): Collection
+    public function getFormSchema(): array
     {
-        // TODO: Implementare modello Language se necessario
-        // Per ora usa fallback con lingue configurate
-
-        // Fallback alle lingue configurate staticamente
-        return Collection::make($this->getDefaultLanguages());
+        return [];
     }
 
     /**
@@ -51,7 +48,26 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     }
 
     /**
+     * Ottiene le lingue disponibili nel sistema.
+     *
+     * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
+     */
+    public function getAvailableLocales(): Collection
+    {
+        // TODO: Implementare modello Language se necessario
+        // Per ora usa fallback con lingue configurate
+
+        // Fallback alle lingue configurate staticamente
+        return collect($this->getDefaultLanguages());
+    }
+
+    /**
      * Cambia la lingua corrente.
+     *
+     * @param string $locale Codice della lingua
+     * @param string $locale Codice della lingua
+     *
+     * @return void *
      */
     public function changeLanguage(string $locale): void
     {
@@ -67,8 +83,9 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     /**
      * Genera l'URL per una specifica lingua.
      *
-     * @param  string  $locale  Codice della lingua     *
-     * @param  string  $locale  Codice della lingua
+     * @param string $locale Codice della lingua     *
+     * @param string $locale Codice della lingua
+     *
      * @return string URL con la lingua specificata
      */
     public function getLanguageUrl(string $locale): string
@@ -86,7 +103,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
         // Aggiunge la lingua all'URL
         $path = request()->getPathInfo();
 
-        return url($locale.($path === '/' ? '' : $path));
+        return url($locale.('/' === $path ? '' : $path));
     }
 
     /**

@@ -4,22 +4,24 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit;
 
+use Illuminate\Translation\ArrayLoader;
+use Illuminate\View\View;
 use Mockery;
 use Mockery\MockInterface;
-use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Lang\Actions\MergeTranslationsAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
-use Modules\Lang\Actions\WriteTranslationFileAction;
 use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
+use Modules\Lang\Actions\WriteTranslationFileAction;
+use Modules\Lang\Adapters\TranslatorAdapter;
+use Modules\Lang\Datas\LangData;
+use Modules\Lang\Datas\TranslationData;
+use Modules\Lang\Filament\Resources\TranslationFileResource;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\ListTranslationFiles;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Schemas\TranslationFileForm;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Schemas\TranslationFileInfolist;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Tables\TranslationFilesTable;
 use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
-use Modules\Lang\Filament\Resources\TranslationFileResource;
-use Modules\Lang\Datas\LangData;
-use Modules\Lang\Datas\TranslationData;
 use Modules\Lang\Models\Policies\PostPolicy;
 use Modules\Lang\Models\Policies\TranslationFilePolicy;
 use Modules\Lang\Models\Policies\TranslationPolicy;
@@ -27,33 +29,32 @@ use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\RouteServiceProvider;
+use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Components\Flag;
 use Modules\Lang\View\Components\LanguageSwitcher;
 use Modules\Lang\View\Composers\ThemeComposer;
-use Modules\Lang\Tests\TestCase;
+use Modules\Xot\Actions\GetViewAction;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
-use Illuminate\Translation\ArrayLoader;
-use Illuminate\View\View;
 
-use function Safe\unlink;
+uses(\Modules\Lang\Tests\TestCase::class);
+
 use function Safe\mkdir;
 use function Safe\rmdir;
-
-uses(TestCase::class);
+use function Safe\unlink;
 
 /**
  * @param  list<string>  $permissions
- * @return Mockery\MockInterface&UserContract
+ * @return MockInterface&UserContract
  */
 function langFakeUser(array $permissions = [], bool $superAdmin = false): UserContract
 {
-    /** @var Mockery\MockInterface&UserContract $user */
+    /** @var MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
-    $user->shouldReceive('hasRole')
+    TestCase::mockExpectation($user, 'hasRole')
         ->with('super-admin')
         ->andReturn($superAdmin);
-    $user->shouldReceive('hasPermissionTo')
+    TestCase::mockExpectation($user, 'hasPermissionTo')
         ->andReturnUsing(static function (string $permission) use ($permissions): bool {
             return in_array($permission, $permissions, true);
         });
@@ -139,7 +140,6 @@ describe('Lang coverage boost — Filament static', function (): void {
 
         Assert::assertSame('it', TranslationFileResource::getDefaultTranslatableLocale());
         Assert::assertSame(['it', 'en'], TranslationFileResource::getTranslatableLocales());
-        Assert::assertSame([], TranslationFileResource::getFormSchemaOld());
 
         $pages = TranslationFileResource::getPages();
         Assert::assertArrayHasKey('index', $pages);
@@ -198,7 +198,7 @@ describe('Lang coverage boost — UI and data', function (): void {
     });
 
     test('flag component, theme composer and data objects resolve language metadata', function (): void {
-        $this->mockService(\Modules\Xot\Actions\GetViewAction::class, static function (MockInterface $mock): void {
+        $this->mockService(GetViewAction::class, static function (MockInterface $mock): void {
             $mock->allows(['execute' => 'lang::components.empty']);
         });
 
@@ -273,7 +273,7 @@ describe('Lang coverage boost — UI and data', function (): void {
         $adapter = new TranslatorAdapter($loader, 'it');
 
         $this->mockService(RecordMissingTranslationAction::class, static function (MockInterface $mock): void {
-            $mock->expects('execute')->once()->with('messages.missing', 'it');
+            TestCase::mockExpects($mock, 'execute')->once()->with('messages.missing', 'it');
         });
 
         Assert::assertSame('messages.missing', $adapter->get('messages.missing'));

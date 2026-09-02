@@ -7,6 +7,7 @@ namespace Modules\Lang\Actions;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -15,23 +16,10 @@ class SaveTransAction
     use QueueableAction;
 
     /**
-     * @param array<string, mixed>|int|string|Htmlable|null $data
+     * @param  array<string, mixed>|int|string|Htmlable|null  $data
      */
     public function execute(string $key, int|string|array|Htmlable|null $data): void
     {
-        // In Pest/PHPUnit AutoLabel (Filament configureUsing) chiama SaveTrans su chiavi
-        // mancanti: senza guard i file Modules/*/lang/*.php vengono corrotti a metà suite.
-        // I test che devono esercitare la scrittura usano TestCase::bindRealSaveTransAction().
-        if (app()->runningUnitTests()) {
-            $allow = filter_var(
-                config('lang.persist_trans_in_tests', $_ENV['LANG_PERSIST_TRANS_IN_TESTS'] ?? false),
-                FILTER_VALIDATE_BOOLEAN,
-            );
-            if (! $allow) {
-                return;
-            }
-        }
-
         $cont = [];
 
         $filename = app(GetTransPathAction::class)->execute($key);
@@ -46,7 +34,16 @@ class SaveTransAction
         try {
             $cont = File::getRequire($filename);
         } catch (\Exception $e) {
-            throw new \RuntimeException('Removed debug dddx');
+            // Il file di traduzione esiste ma non e' leggibile o non restituisce
+            // un array. Qui c'era un dddx(), cioe' un dd(): un file corrotto
+            // uccideva la richiesta invece di far ripartire il contenuto da zero.
+            Log::warning('File di traduzione non leggibile, riparto da vuoto', [
+                'filename' => $filename,
+                'key' => $key,
+                'error' => $e->getMessage(),
+            ]);
+
+            $cont = [];
         }
 
         if (! is_array($cont)) {
@@ -54,7 +51,7 @@ class SaveTransAction
         }
 
         $piece = implode('.', array_slice(explode('.', $key), 1));
-        if ('' !== $piece) {
+        if ($piece !== '') {
             Arr::set($cont, $piece, $data);
         } else {
             $cont = $data;

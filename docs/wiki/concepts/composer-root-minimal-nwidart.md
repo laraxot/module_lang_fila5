@@ -19,7 +19,7 @@ related:
 
 ## Regola
 
-Dipendenze del dominio **Lang** in `Modules/Lang/composer.json`. Il root `laravel/composer.json` resta skeleton come [base_ptv_fila5](https://github.com/laraxot/base_ptv_fila5/blob/dev/laravel/composer.json).
+Dipendenze del dominio **Lang** in `Modules/Lang/composer.json`. Il root `laravel/composer.json` resta skeleton come [base_fixcity_fila5](https://github.com/laraxot/base_fixcity_fila5/blob/dev/laravel/composer.json).
 
 
 
