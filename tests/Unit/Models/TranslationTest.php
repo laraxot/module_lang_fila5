@@ -9,11 +9,11 @@ use Modules\Lang\Models\Translation;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Lang\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Translation Model', function () {
     test('has correct fillable attributes', function () {
-        $model = new Translation();
+        $model = new Translation;
         $fillable = $model->getFillable();
 
         Assert::assertContains('id', $fillable);
@@ -48,7 +48,7 @@ describe('Translation Model', function () {
     });
 
     test('casts datetime fields', function () {
-        $model = new Translation();
+        $model = new Translation;
         $casts = $model->getCasts();
 
         Assert::assertArrayHasKey('created_at', $casts);
