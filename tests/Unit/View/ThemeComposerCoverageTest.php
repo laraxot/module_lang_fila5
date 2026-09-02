@@ -8,12 +8,12 @@ use Modules\Lang\View\Composers\ThemeComposer;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\DataCollection;
 
-uses(\Modules\Lang\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('ThemeComposer languages usa fallback quando manca config', function (): void {
     config(['laravellocalization' => []]);
 
-    $composer = new ThemeComposer();
+    $composer = new ThemeComposer;
     $langs = $composer->languages();
 
     Assert::assertInstanceOf(DataCollection::class, $langs);
@@ -24,7 +24,7 @@ test('ThemeComposer languages rifiuta config non array', function (): void {
     config(['laravellocalization.supportedLocales' => 'invalid']);
 
     try {
-        (new ThemeComposer())->languages();
+        (new ThemeComposer)->languages();
         Assert::fail('Expected Exception');
     } catch (Exception $e) {
         Assert::assertStringContainsString('Invalid config', $e->getMessage());
@@ -35,7 +35,7 @@ test('ThemeComposer languages rifiuta item non array', function (): void {
     config(['laravellocalization.supportedLocales' => ['it' => 'bad']]);
 
     try {
-        (new ThemeComposer())->languages();
+        (new ThemeComposer)->languages();
         Assert::fail('Expected InvalidArgumentException');
     } catch (InvalidArgumentException $e) {
         Assert::assertStringContainsString('Expected array at locale', $e->getMessage());
@@ -46,7 +46,7 @@ test('ThemeComposer languages rifiuta item senza name/regional', function (): vo
     config(['laravellocalization.supportedLocales' => ['it' => ['foo' => 'bar']]]);
 
     try {
-        (new ThemeComposer())->languages();
+        (new ThemeComposer)->languages();
         Assert::fail('Expected InvalidArgumentException');
     } catch (InvalidArgumentException $e) {
         Assert::assertStringContainsString('regional', $e->getMessage());
@@ -62,7 +62,7 @@ test('ThemeComposer otherLanguages esclude locale corrente', function (): void {
     ]);
     app()->setLocale('it');
 
-    $others = (new ThemeComposer())->otherLanguages();
+    $others = (new ThemeComposer)->otherLanguages();
     $ids = $others->toCollection()->map(fn (LangData $d): string => $d->id)->all();
 
     Assert::assertNotContains('it', $ids);
@@ -77,14 +77,14 @@ test('ThemeComposer currentLang restituisce name e gestisce campo non stringa', 
     ]);
     app()->setLocale('it');
 
-    $composer = new ThemeComposer();
+    $composer = new ThemeComposer;
     Assert::assertSame('Italiano', $composer->currentLang('name'));
     Assert::assertSame('it', $composer->currentLang('id'));
 });
 
 test('ThemeComposer buildAdminLanguageUrl senza route corrente torna hash', function (): void {
-    $composer = new ThemeComposer();
-    $method = new \ReflectionMethod(ThemeComposer::class, 'buildAdminLanguageUrl');
+    $composer = new ThemeComposer;
+    $method = new ReflectionMethod(ThemeComposer::class, 'buildAdminLanguageUrl');
     $method->setAccessible(true);
     Assert::assertSame('#', $method->invoke($composer, 'en'));
 });
@@ -96,7 +96,7 @@ test('ThemeComposer languages mappa en regional a flag gb', function (): void {
         ],
     ]);
 
-    $lang = (new ThemeComposer())->languages()->toCollection()->first();
+    $lang = (new ThemeComposer)->languages()->toCollection()->first();
     Assert::assertInstanceOf(LangData::class, $lang);
     Assert::assertStringContainsString('iti__gb', $lang->flag);
 });

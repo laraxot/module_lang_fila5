@@ -8,11 +8,11 @@ use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Lang\Tests\TestCase::class);
+uses(TestCase::class);
 
 function makeGetAllTranslationAction(): GetAllTranslationAction
 {
-    return new GetAllTranslationAction();
+    return new GetAllTranslationAction;
 }
 
 describe('GetAllTranslationAction Business Logic', function () {
