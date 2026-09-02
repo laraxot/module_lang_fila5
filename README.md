@@ -16,6 +16,26 @@ il 1 settembre 2026, dopo il ripristino di `vendor/` allo stato corretto
 
 ---
 
+## Scopo e confini
+
+Lang è il modulo più piccolo del progetto — 62 file PHP, 4.545 righe — con la superficie
+più estesa: governa i **2.920 file `lang/*.php`** di tutti i moduli e temi. Il potere sta
+in un metodo, `LangServiceProvider::registerFilamentLabel()`, che registra 8
+`configureUsing()` sui tipi base Filament: la label di ogni campo del progetto arriva da
+lì. La fonte di verità sono i file PHP versionati, non il database (`TranslationFile` è
+`Sushi`).
+
+Il confine da non superare: **quando la chiave manca, Lang la scrive**. `SaveTransAction`
+modifica sorgenti tracciati da git, e la guardia che dovrebbe fermarlo nei test legge una
+chiave (`lang.persist_trans_in_tests`) che `config/lang.php` non dichiara — tanto che
+4 moduli si sono scritti a mano lo stesso stub no-op. Da guardare anche:
+`WriteTranslationFileAction` chiama `app('cache')->flush()`, e `TranslatorAdapter` /
+`TranslatorService` sono morti in produzione ma coperti al 100% dai test.
+
+Scopo esteso, misure e mosse: [docs/scopo.md](docs/scopo.md).
+
+---
+
 ## Perché
 
 Un progetto a 20 moduli, ognuno con le proprie form Filament, non può permettersi
@@ -127,3 +147,10 @@ cd laravel
 ---
 
 **Modulo** `lang` · **Laraxot / FixCity Platform** · licenza MIT
+
+---
+
+## Scopo del modulo
+
+Perche' esiste, come raggiungere meglio il suo scopo e cosa **non** gli appartiene:
+[`docs/purpose.md`](./docs/purpose.md).
