@@ -120,7 +120,6 @@ class Post extends BaseModel
 {
     use HasSlug;
 
-    /** @use HasXotFactory<Post> */
     use HasXotFactory;
 
     // use Cachable;

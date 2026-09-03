@@ -150,6 +150,7 @@ return [
         'x' => ['label' => 'x', 'icon' => 'x', 'tooltip' => 'x'],
         'locale' => ['label' => 'locale', 'icon' => 'locale', 'tooltip' => 'locale'],
         'locale2' => ['label' => 'locale2', 'icon' => 'locale2', 'tooltip' => 'locale2'],
+        'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
     ],
     'sections' => [
         'address' => ['label' => 'address', 'heading' => 'address'],
