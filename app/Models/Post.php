@@ -50,7 +50,6 @@ use Spatie\Sluggable\SlugOptions;
 class Post extends BaseModel
 {
     use HasSlug;
-    /** @phpstan-use HasXotFactory<PostFactory> */
     use HasXotFactory;
 
     // use Cachable;
