@@ -7,9 +7,11 @@ namespace Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
 use Illuminate\Contracts\Support\Htmlable;
+use Illuminate\Database\Eloquent\Model;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Resources\TranslationFileResource;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 
 class EditTranslationFile extends XotBaseEditRecord
@@ -28,7 +30,7 @@ class EditTranslationFile extends XotBaseEditRecord
     public function getFormSchema(): array
     {
         return [
-            Section::make('content')->schema(function ($record): array {
+            Section::make('content')->schema(function (Model|array|null $record): array {
                 if (is_object($record) && isset($record->content) && is_array($record->content)) {
                     /** @var array<string, mixed> $content */
                     $content = $record->content;
@@ -43,8 +45,7 @@ class EditTranslationFile extends XotBaseEditRecord
     }
 
     /**
-     * @param array<string, mixed> $array
-     *
+     * @param  array<string, mixed>  $array
      * @return array<int, Section|TextInput>
      */
     public function makeFromArray(array $array, string $prefix = ''): array
@@ -53,7 +54,7 @@ class EditTranslationFile extends XotBaseEditRecord
 
         foreach ($array as $key => $value) {
             $keyStr = (string) $key;
-            $fullKey = '' === $prefix ? $keyStr : ($prefix.'.'.$keyStr);
+            $fullKey = $prefix === '' ? $keyStr : ($prefix.'.'.$keyStr);
 
             if (is_array($value)) {
                 /** @var array<string, mixed> $childArray */
@@ -108,7 +109,7 @@ class EditTranslationFile extends XotBaseEditRecord
          */
         $record = $this->record;
         if (is_object($record) && isset($record->key)) {
-            $key = is_string($record->key) ? $record->key : (string) $record->key;
+            $key = app(SafeStringCastAction::class)->execute($record->key);
             /** @var array<string, mixed>|Htmlable|int|string|null $content */
             $content = $data['content'] ?? null;
             app(SaveTransAction::class)->execute($key, $content);

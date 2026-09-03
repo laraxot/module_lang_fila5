@@ -8,6 +8,7 @@ namespace Modules\Lang\Filament\Forms\Components;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Forms\Components\XotBaseField;
 
 class TranslationEditor extends XotBaseField
@@ -18,7 +19,7 @@ class TranslationEditor extends XotBaseField
     {
         parent::setUp();
 
-        $this->afterStateHydrated(function (TranslationEditor $component, $state): void {
+        $this->afterStateHydrated(function (TranslationEditor $component, mixed $state): void {
             $component->state($state ?? []);
         });
     }
@@ -41,7 +42,7 @@ class TranslationEditor extends XotBaseField
                     TranslationEditor::make($keyStr)->label('')->state($value),
                 ]);
             } else {
-                $valueStr = is_string($value) ? $value : (string) $value;
+                $valueStr = SafeStringCastAction::cast($value);
                 $label = str_replace('_', ' ', $keyStr);
                 $components[] = TextInput::make($keyStr)->label($label)->default($valueStr);
             }
