@@ -1,7 +1,683 @@
-# Documentation Index
+# Documentation index — modulo Lang
 
 Modulo: Lang
 
-## File disponibili
+Questo indice copre `docs/` del modulo Lang: 1235 file `.md` totali, di cui 540 direttamente sotto `docs/` e il resto distribuito in sottocartelle tematiche (`wiki/`, `archive/`, `roadmap/`, ecc.). Nessun file e' stato cancellato, rinominato o spostato per produrre questo indice.
 
-<!-- auto-generato: elencare i file .md presenti -->
+Il modulo ha accumulato negli anni molte varianti quasi-duplicate dello stesso argomento (stesso nome con `-1`, `_underscore`, `MAIUSCOLO`, `-sumy`/`-summary`, o anno). Per ogni argomento questo indice linka **un solo file canonico** nelle sezioni tematiche; tutte le varianti storiche sono elencate senza essere toccate nella sezione [Storico / da consolidare](#storico--da-consolidare) in fondo.
+
+## Come leggere questo indice
+
+- Le sezioni "File di primo livello per argomento" coprono i file `.md` che stanno direttamente in `docs/` (540 file, raggruppati in 354 argomenti unici + varianti storiche).
+- La sezione "Cartelle tematiche" copre le sottocartelle di `docs/` (695 file), linkando l'indice/`README` locale dove esiste e altrimenti l'elenco diretto dei file.
+- La sezione finale "Storico / da consolidare" raggruppa tutte le varianti duplicate/quasi-duplicate rilevate, con il file canonico corrispondente linkato sopra.
+
+## File di primo livello per argomento
+
+### Panoramica e riferimento modulo
+
+- [analysis-results](analysis-results.md)
+- [api-reference](api-reference.md)
+- [autoregistration-commands](autoregistration-commands.md)
+- [best-practices](best-practices.md)
+- [binary-assets](binary-assets.md)
+- [build-publish.yml](build-publish.yml.md)
+- [CHANGELOG](CHANGELOG.md)
+- [CONSOLIDATION_PLAN](CONSOLIDATION_PLAN.md)
+- [examples](examples.md)
+- [frameworks](frameworks.md)
+- [installation](installation.md)
+- [introduction](introduction.md)
+- [packages](packages.md)
+- [philosophy](philosophy.md)
+- [publish.yml](publish.yml.md)
+- [purpose](purpose.md)
+- [quick-reference](quick-reference.md)
+- [README](README.md)
+- [readme-en](readme-en.md)
+- [scopo](scopo.md)
+- [test](test.md)
+- [troubleshooting](troubleshooting.md)
+
+### Traduzioni: concetti generali e FAQ
+
+- [advanced-language-switching](advanced-language-switching.md)
+- [automatic-translations](automatic-translations.md)
+- [confidence_guidelines](confidence_guidelines.md)
+- [correzionii-sintassi](correzionii-sintassi.md)
+- [fixes-lang-module-phpstan](fixes-lang-module-phpstan.md)
+- [guida-migrazione-step-by-step](guida-migrazione-step-by-step.md)
+- [helper-text-audit-report](helper-text-audit-report.md)
+- [metodiuplicati-analisi](metodiuplicati-analisi.md)
+- [ponytail-audit-over-engineering](ponytail-audit-over-engineering.md)
+- [static-text-translation](static-text-translation.md)
+- [traduzioni](traduzioni.md)
+- [translation-strategies](translation-strategies.md)
+- [translationes](translationes.md)
+- [translationness](translationness.md)
+- [translations](translations.md)
+- [translations-faq](translations-faq.md)
+- [translations-system](translations-system.md)
+
+### Traduzioni: gestione file e chiavi
+
+- [struttura-traduzioni](struttura-traduzioni.md)
+- [struttura-translations](struttura-translations.md)
+- [translation-field-structure](translation-field-structure.md)
+- [translation-field-structure-complete](translation-field-structure-complete.md)
+- [translation-fields-mandatory-rule](translation-fields-mandatory-rule.md)
+- [translation-file-editor](translation-file-editor.md)
+- [translation-file-management](translation-file-management.md)
+- [translation_file_merge_function](translation_file_merge_function.md)
+- [translation-file-syntax](translation-file-syntax.md)
+- [translation-files-update](translation-files-update.md)
+- [translation-files-update-67b1d4](translation-files-update-67b1d4.md)
+- [translation-files-update-conflict-67b1d4](translation-files-update-conflict-67b1d4.md)
+- [translation-fixes-summary](translation-fixes-summary.md)
+- [translation-helper-text-standards](translation-helper-text-standards.md)
+- [translation-keys](translation-keys.md)
+- [translation-keys-best-practices](translation-keys-best-practices.md)
+- [translation-keys-rules](translation-keys-rules.md)
+- [translation-management](translation-management.md)
+- [translation-management-packages](translation-management-packages.md)
+- [translation-modal-heading-standards](translation-modal-heading-standards.md)
+- [translation-notify-conversion](translation-notify-conversion.md)
+- [translation-preservation](translation-preservation.md)
+- [translation-preservation-rules](translation-preservation-rules.md)
+- [translation-process](translation-process.md)
+- [translation-refactor](translation-refactor.md)
+- [translation-refactor-complete-sumy](translation-refactor-complete-sumy.md)
+- [translation-refactor-complete-summary](translation-refactor-complete-summary.md)
+- [translation-reports](translation-reports.md)
+- [translation-standards](translation-standards.md)
+- [translation-standards-links](translation-standards-links.md)
+- [translation-structure-expanded](translation-structure-expanded.md)
+- [translation-syntax-fixes](translation-syntax-fixes.md)
+- [translation-syntaxes](translation-syntaxes.md)
+- [translation-system](translation-system.md)
+- [translations-storage](translations-storage.md)
+
+### Traduzioni: qualita, audit e correzioni
+
+- [case-conflicts](case-conflicts.md)
+- [case-sensitivity](case-sensitivity.md)
+- [case-sensitivity-rules](case-sensitivity-rules.md)
+- [case-variant-collisions](case-variant-collisions.md)
+- [cases](cases.md)
+- [chaos-monkey-translation-fallbacks](chaos-monkey-translation-fallbacks.md)
+- [common-translation-errors](common-translation-errors.md)
+- [common-translations](common-translations.md)
+- [correzioni-errori-sintassi](correzioni-errori-sintassi.md)
+- [correzioni-navigation](correzioni-navigation.md)
+- [correzioni-navigation-pattern](correzioni-navigation-pattern.md)
+- [english-translation](english-translation.md)
+- [english-translation-audit](english-translation-audit.md)
+- [english-translations-widgets-added](english-translations-widgets-added.md)
+- [errori-comuni-traduzione](errori-comuni-traduzione.md)
+- [fixes-errori-sintassi](fixes-errori-sintassi.md)
+- [fixes-syntax-error-transarrayaction](fixes-syntax-error-transarrayaction.md)
+- [fixes-syntax-errors](fixes-syntax-errors.md)
+- [fixes-syntax-transarrayaction](fixes-syntax-transarrayaction.md)
+- [fixes-syntaxs](fixes-syntaxs.md)
+- [fixesi-sintassi](fixesi-sintassi.md)
+- [italian-text](italian-text.md)
+- [italian-text-audit-report](italian-text-audit-report.md)
+- [italian-text-refined](italian-text-refined.md)
+- [italian-text-refined-audit-report](italian-text-refined-audit-report.md)
+- [navigation-corrections](navigation-corrections.md)
+- [navigation-pattern-corrections](navigation-pattern-corrections.md)
+- [navigation-translations](navigation-translations.md)
+- [navigation-translations-audit](navigation-translations-audit.md)
+- [navigation-translations-completion](navigation-translations-completion.md)
+- [navigation-translations-fixes](navigation-translations-fixes.md)
+- [navigation-translationses](navigation-translationses.md)
+- [riepilogo-correzioni-traduzioni](riepilogo-correzioni-traduzioni.md)
+- [syntax-errors-corrections](syntax-errors-corrections.md)
+- [syntaxs-corrections](syntaxs-corrections.md)
+- [traduzioni-navigation](traduzioni-navigation.md)
+- [translating-validation-messages](translating-validation-messages.md)
+- [translation-audit-completion](translation-audit-completion.md)
+- [translation-audit-completion-archive-1](translation-audit-completion-archive-1.md)
+- [translation-completeness-audit](translation-completeness-audit.md)
+- [translation-completion](translation-completion.md)
+- [translation-errors-correction](translation-errors-correction.md)
+- [translation-errors-correction-archive-1](translation-errors-correction-archive-1.md)
+- [translation-fixes-sumy](translation-fixes-sumy.md)
+- [translation-validation](translation-validation.md)
+- [translation-validation-complete-guide](translation-validation-complete-guide.md)
+- [translations-correction](translations-correction.md)
+- [translations-corrections](translations-corrections.md)
+- [translations-corrections-summary](translations-corrections-summary.md)
+- [validation-messages](validation-messages.md)
+- [validation-translations](validation-translations.md)
+
+### Localizzazione: date, plurali, locale
+
+- [google-translate](google-translate.md)
+- [locale-management](locale-management.md)
+- [localizing-dates-and-currencies](localizing-dates-and-currencies.md)
+- [localizing-dates-currencies](localizing-dates-currencies.md)
+- [localizingates-and-currencies](localizingates-and-currencies.md)
+- [localizingates-currencies](localizingates-currencies.md)
+- [pdf-translation](pdf-translation.md)
+- [pdf-translation-guide](pdf-translation-guide.md)
+- [plural-date-localization](plural-date-localization.md)
+- [pluralate-localization](pluralate-localization.md)
+- [pluralization-and-localization](pluralization-and-localization.md)
+- [translating-plural-singular-forms](translating-plural-singular-forms.md)
+- [working-with-locales](working-with-locales.md)
+
+### Laravel localization / mcamara package
+
+- [integration-mc-laravel-localization](integration-mc-laravel-localization.md)
+- [laravel-localization](laravel-localization.md)
+- [laravel-localization-best-practices](laravel-localization-best-practices.md)
+- [laravel-localization-complete](laravel-localization-complete.md)
+- [laravel-localization-complete-guide](laravel-localization-complete-guide.md)
+- [laravel-localization-consolidated](laravel-localization-consolidated.md)
+- [laravel-localization-folio](laravel-localization-folio.md)
+- [laravel-localization-folio-integration](laravel-localization-folio-integration.md)
+- [laravel-localization-implementation](laravel-localization-implementation.md)
+- [laravel-localization-integration](laravel-localization-integration.md)
+- [laravel-localization-livewire-volt](laravel-localization-livewire-volt.md)
+- [laravel-localization-mcaa-reference](laravel-localization-mcaa-reference.md)
+- [laravel-localization-mcamara-reference](laravel-localization-mcamara-reference.md)
+- [laravel-localization-reference](laravel-localization-reference.md)
+- [laravel-localization-usage](laravel-localization-usage.md)
+- [mcaa-implementation](mcaa-implementation.md)
+- [mcaa-implementation-guide](mcaa-implementation-guide.md)
+- [mcamara-implementation-guide](mcamara-implementation-guide.md)
+- [mcamara-laravel-localization-deep-dive](mcamara-laravel-localization-deep-dive.md)
+- [mcamara-laravel-localization-governance](mcamara-laravel-localization-governance.md)
+- [rinvex-countries-usage](rinvex-countries-usage.md)
+
+### Filament e frontend (Livewire/Volt/Folio)
+
+- [enum-translation](enum-translation.md)
+- [enum-translation-implementation](enum-translation-implementation.md)
+- [enum-translation-pattern](enum-translation-pattern.md)
+- [enum-translation-pattern-implementation](enum-translation-pattern-implementation.md)
+- [filament](filament.md)
+- [filament-5x-compatibility](filament-5x-compatibility.md)
+- [filament-integration](filament-integration.md)
+- [filament-label](filament-label.md)
+- [filament-table-architecture](filament-table-architecture.md)
+- [filament-translations](filament-translations.md)
+- [filament-version](filament-version.md)
+- [filament-widgets-integration](filament-widgets-integration.md)
+- [filament4-migration](filament4-migration.md)
+- [filament5-migration](filament5-migration.md)
+- [folio-volt-best-practices](folio-volt-best-practices.md)
+- [livewire-integration](livewire-integration.md)
+- [volt-integration](volt-integration.md)
+- [volt-localization-integration](volt-localization-integration.md)
+- [widgets](widgets.md)
+
+### PHPStan e qualita del codice
+
+- [code-quality-improvement-report](code-quality-improvement-report.md)
+- [code-quality-report](code-quality-report.md)
+- [code-redundancy-audit](code-redundancy-audit.md)
+- [coverage](coverage.md)
+- [cyclomatic-complexity](cyclomatic-complexity.md)
+- [cyclomatic-complexity-report](cyclomatic-complexity-report.md)
+- [database-model-coverage](database-model-coverage.md)
+- [dry-kiss](dry-kiss.md)
+- [dry-kiss-analysis](dry-kiss-analysis.md)
+- [duplicate-methods](duplicate-methods.md)
+- [duplicate-methods-analysis](duplicate-methods-analysis.md)
+- [duplicate_methods_report](duplicate_methods_report.md)
+- [metodi-duplicati-analisi](metodi-duplicati-analisi.md)
+- [no-phpstan-probe-policy](no-phpstan-probe-policy.md)
+- [phpstan](phpstan.md)
+- [phpstan-analysis-lang](phpstan-analysis-lang.md)
+- [phpstan-compliance](phpstan-compliance.md)
+- [phpstan-compliance-status](phpstan-compliance-status.md)
+- [phpstan-corrections](phpstan-corrections.md)
+- [phpstan-errors-resolution-roadmap](phpstan-errors-resolution-roadmap.md)
+- [phpstan-fixes](phpstan-fixes.md)
+- [phpstan-issues](phpstan-issues.md)
+- [phpstan-level10-fixes](phpstan-level10-fixes.md)
+- [phpstan-level10es](phpstan-level10es.md)
+- [phpstan-level9-fixes](phpstan-level9-fixes.md)
+- [phpstan-level9es](phpstan-level9es.md)
+- [phpstan-mixed-casting-errors](phpstan-mixed-casting-errors.md)
+- [phpstan-mixed-castings](phpstan-mixed-castings.md)
+- [phpstan-progress](phpstan-progress.md)
+- [phpstan-progress-report](phpstan-progress-report.md)
+- [phpstan-report](phpstan-report.md)
+- [phpstan-roadmap](phpstan-roadmap.md)
+- [phpstanes](phpstanes.md)
+- [quality](quality.md)
+- [quality-analysis](quality-analysis.md)
+- [quality-audit](quality-audit.md)
+- [quality-improvements](quality-improvements.md)
+- [QUALITY_REPORT](QUALITY_REPORT.md)
+- [REDUNDANCY_ANALYSIS](REDUNDANCY_ANALYSIS.md)
+- [redundancy-audit](redundancy-audit.md)
+- [redundancy-audit-2026-05-21](redundancy-audit-2026-05-21.md)
+- [redundancy-report](redundancy-report.md)
+
+### Conflitti git e risoluzioni
+
+- [conflict-resolution](conflict-resolution.md)
+- [conflict-resolution-autolabelaction](conflict-resolution-autolabelaction.md)
+- [conflict-resolution-edit-translation-file](conflict-resolution-edit-translation-file.md)
+- [conflict-resolution-edittranslationfile-class](conflict-resolution-edittranslationfile-class.md)
+- [conflict-resolution-langserviceprovider](conflict-resolution-langserviceprovider.md)
+- [conflict-resolution-readtranslationfileaction](conflict-resolution-readtranslationfileaction.md)
+- [conflict-resolution-translation-file-syntax](conflict-resolution-translation-file-syntax.md)
+- [conflict-resolution-writetranslationfileaction](conflict-resolution-writetranslationfileaction.md)
+- [conflicts](conflicts.md)
+- [conflicts-analysis](conflicts-analysis.md)
+- [git-conflict-resolution](git-conflict-resolution.md)
+- [git-conflict-resolution-2026-07-31](git-conflict-resolution-2026-07-31.md)
+- [git-conflicts-resolution-sumy](git-conflicts-resolution-sumy.md)
+- [git-conflicts-resolution-summary](git-conflicts-resolution-summary.md)
+- [merge-conflict-files-list](merge-conflict-files-list.md)
+- [merge-conflicts-list](merge-conflicts-list.md)
+
+### Modelli, migrazioni, factory/seeder
+
+- [laravel-13-upgrade](laravel-13-upgrade.md)
+- [migration-best-practices](migration-best-practices.md)
+- [migration-corrections](migration-corrections.md)
+- [migration-corrections-summary](migration-corrections-summary.md)
+- [migration-filament](migration-filament.md)
+- [migration-patterns](migration-patterns.md)
+- [migrations](migrations.md)
+- [migrazione-filament](migrazione-filament.md)
+- [model-factory-seeder](model-factory-seeder.md)
+- [model-factory-seeder-audit](model-factory-seeder-audit.md)
+- [model-translations](model-translations.md)
+- [modelli-factory-seeder-analisi](modelli-factory-seeder-analisi.md)
+- [models-factory-seeder](models-factory-seeder.md)
+- [models-factory-seeder-analysis](models-factory-seeder-analysis.md)
+- [nestedset-migration-best-practices](nestedset-migration-best-practices.md)
+- [upgrade](upgrade.md)
+
+### Prodotto, roadmap e strategia
+
+- [cosa-migliorare](cosa-migliorare.md)
+- [launch-plan](launch-plan.md)
+- [obbligatorio](obbligatorio.md)
+- [obbligatorio-audit-report](obbligatorio-audit-report.md)
+- [prd](prd.md)
+- [product-launch-plan](product-launch-plan.md)
+- [product-requirements](product-requirements.md)
+- [product-roadmap](product-roadmap.md)
+- [product-strategy](product-strategy.md)
+- [release-marketing-standard](release-marketing-standard.md)
+- [roadmap](roadmap.md)
+- [roadmap-miglioramenti](roadmap-miglioramenti.md)
+- [second-brain](second-brain.md)
+- [sprint-planning](sprint-planning.md)
+- [sprint-planning-meeting](sprint-planning-meeting.md)
+- [strategy](strategy.md)
+- [TECH_SPEC](TECH_SPEC.md)
+- [user-research](user-research.md)
+
+### Architettura e struttura modulo
+
+- [architecture](architecture.md)
+- [architecture-rules](architecture-rules.md)
+- [business-logic-overview](business-logic-overview.md)
+- [filosofia-modulo-lang](filosofia-modulo-lang.md)
+- [langbase-classes-requirements](langbase-classes-requirements.md)
+- [module](module.md)
+- [module-analysis](module-analysis.md)
+- [module-lang](module-lang.md)
+- [project-structure](project-structure.md)
+- [schema](schema.md)
+- [structure](structure.md)
+- [valori](valori.md)
+
+### Ottimizzazione e performance
+
+- [bottlenecks](bottlenecks.md)
+- [codex-error-fix](codex-error-fix.md)
+- [ide-helper-sushi-pattern](ide-helper-sushi-pattern.md)
+- [optimization](optimization.md)
+- [optimization-analysis](optimization-analysis.md)
+- [ottimizzazioni-approfondite-modulo-lang](ottimizzazioni-approfondite-modulo-lang.md)
+- [ottimizzazioni-correzioni](ottimizzazioni-correzioni.md)
+- [ottimizzazioni-lang](ottimizzazioni-lang.md)
+- [ottimizzazioni-super-dry-kiss](ottimizzazioni-super-dry-kiss.md)
+- [ottimizzazioni-superry-kiss](ottimizzazioni-superry-kiss.md)
+- [package-dependency-chaos-map](package-dependency-chaos-map.md)
+- [performance-optimization](performance-optimization.md)
+
+### Permessi e filesystem
+
+- [permessi-e-errori-filesystem](permessi-e-errori-filesystem.md)
+- [permessi-ei-filesystem](permessi-ei-filesystem.md)
+- [permessi-errori-filesystem](permessi-errori-filesystem.md)
+- [permessi-lang](permessi-lang.md)
+- [permessii-filesystem](permessii-filesystem.md)
+- [resolution-permessi-lang-service](resolution-permessi-lang-service.md)
+- [resolution-permissions-lang-service](resolution-permissions-lang-service.md)
+- [risoluzione-permessi-lang-service](risoluzione-permessi-lang-service.md)
+
+### Link e cross-reference moduli
+
+- [cms-link](cms-link.md)
+- [lang-link](lang-link.md)
+- [lang-service-helper-text](lang-service-helper-text.md)
+- [lang-service-helper-text-fix](lang-service-helper-text-fix.md)
+- [lang-service-provider](lang-service-provider.md)
+- [lang-service-provider-backlink](lang-service-provider-backlink.md)
+- [lang-service-provider-improvements](lang-service-provider-improvements.md)
+- [lang-service-translation-updates](lang-service-translation-updates.md)
+- [links](links.md)
+- [links01](links01.md)
+- [modules-link](modules-link.md)
+- [prompt-link](prompt-link.md)
+- [prompt-rules-link](prompt-rules-link.md)
+- [user-link](user-link.md)
+
+### Regole agenti, processo e naming docs
+
+- [agent-confidence-discipline](agent-confidence-discipline.md)
+- [agent-confidence-protocol](agent-confidence-protocol.md)
+- [agent-edit-discipline](agent-edit-discipline.md)
+- [ai-methodologies](ai-methodologies.md)
+- [composer-merge-plugin](composer-merge-plugin.md)
+- [dependencies](dependencies.md)
+- [dependency-intelligence](dependency-intelligence.md)
+- [docs-archive-policy](docs-archive-policy.md)
+- [docs-health](docs-health.md)
+- [docs-naming-convention](docs-naming-convention.md)
+- [docs-naming-convention-fix](docs-naming-convention-fix.md)
+- [documentation-link-conventions](documentation-link-conventions.md)
+- [file-naming](file-naming.md)
+- [file-naming-rules](file-naming-rules.md)
+- [mcp-configuration](mcp-configuration.md)
+- [mcp-server-recommended](mcp-server-recommended.md)
+- [no-git-lfs](no-git-lfs.md)
+- [on-demand-pattern](on-demand-pattern.md)
+- [qmd-setup](qmd-setup.md)
+- [root-file-policy](root-file-policy.md)
+- [root-files-hygiene](root-files-hygiene.md)
+- [rules-index](rules-index.md)
+- [rules-testing-no-migrate-fresh](rules-testing-no-migrate-fresh.md)
+
+### Testing
+
+- [console-commands](console-commands.md)
+- [queueable-actions](queueable-actions.md)
+- [task-aumentare-copertura-test](task-aumentare-copertura-test.md)
+- [testing](testing.md)
+- [testing-guidelines](testing-guidelines.md)
+- [testing-rules](testing-rules.md)
+- [testing-serviceprovider](testing-serviceprovider.md)
+- [testing-serviceprovider-fix](testing-serviceprovider-fix.md)
+- [testinglines](testinglines.md)
+
+### Git multi-org e sync
+
+- [git-multi-org-sync-handoff](git-multi-org-sync-handoff.md)
+- [multi-org-sync-laraxot-provtv](multi-org-sync-laraxot-provtv.md)
+
+### Task interni
+
+- [task-consolidare-documentazione](task-consolidare-documentazione.md)
+- [task-ridurre-phpstan-suppressioni](task-ridurre-phpstan-suppressioni.md)
+## Cartelle tematiche (docs/<cartella>/)
+
+### wiki/ (212 file)
+
+Wiki interno del modulo (second brain / LLM). Ha un proprio indice, non ri-elencato qui:
+
+- [wiki/index](wiki/index.md)
+- [wiki/README](wiki/README.md)
+
+Nota: `wiki/integrations/` contiene 158 file piatti (incl. varianti maiuscole/minuscole duplicate come `phpstan_l10.md`/`PHPSTAN_L10.md`) senza un proprio sotto-indice — candidato per un audit dedicato futuro, fuori scope per questo intervento.
+
+### roadmap/ (27 file)
+
+Roadmap del modulo, con proprio indice:
+
+- [roadmap/index](roadmap/index.md)
+- [roadmap/README](roadmap/README.md)
+
+Nota: la cartella contiene doppioni interni (`00-index.md`/`00-INDEX.md`, coppie numerate `01-now.md`/`now.md`, `02-goals.md`/`goals.md`, ecc.) da consolidare in un intervento dedicato alla cartella.
+
+### archive/ (340 file)
+
+Archivio storico gia' isolato dal modulo stesso (`archive/en/`, `archive/historical/`, piu' file underscore-variant alla radice). Contiene versioni precedenti di molti dei documenti linkati sopra. Non enumerato singolarmente qui: e' gia' storico per definizione. Vedi [Storico / da consolidare](#storico--da-consolidare).
+
+### raw/ (15 file)
+
+- [raw/index](raw/index.md)
+- [raw/README](raw/README.md)
+- `raw/root-import/` (13 file: `changelog.md`, `changelog-1.md`…`changelog-10.md`, `test.md`, `test-1.md`) — dump storico di import dalla root, da consolidare.
+
+### translatable/ (7 file)
+
+- [translatable/index](translatable/index.md)
+- [translatable/best-practices](translatable/best-practices.md)
+- [translatable/gestione-traduzioni-mancanti](translatable/gestione-traduzioni-mancanti.md) (variante storica: [gestione-translations-mancanti](translatable/gestione-translations-mancanti.md))
+- [translatable/implementazione-nel-progetto](translatable/implementazione-nel-progetto.md) (variante storica: [implementation-nel-progetto](translatable/implementation-nel-progetto.md))
+- [translatable/json-content-translation](translatable/json-content-translation.md)
+
+### llm-wiki/ (7 file)
+
+- [llm-wiki/index](llm-wiki/index.md)
+- [llm-wiki/agents](llm-wiki/agents.md) (variante storica: [AGENTS.md](llm-wiki/AGENTS.md))
+- [llm-wiki/log](llm-wiki/log.md)
+- `llm-wiki/_templates/`: [concept](llm-wiki/_templates/concept.md), [entity](llm-wiki/_templates/entity.md), [source](llm-wiki/_templates/source.md)
+
+### translations/ (13 file)
+
+Traduzioni del README in altre lingue, con forte duplicazione interna (root + `archive/` + `legacy/`, ciascuna con `readme.es.md`/`README.es.md`/`readme.it.md`/`README.it.md` quasi identici):
+
+- [translations/README.es](translations/README.es.md) (varianti: [readme.es.md](translations/readme.es.md), [readme.es-1.md](translations/readme.es-1.md))
+- [translations/README.it](translations/README.it.md) (variante: [readme.it.md](translations/readme.it.md))
+- `translations/archive/` e `translations/legacy/`: stessi 4 file (`readme.es.md`, `README.es.md`, `readme.it.md`, `README.it.md`) duplicati — storico, da consolidare.
+
+### integration/ e _integration/ (5 + 7 file)
+
+Due cartelle praticamente parallele con contenuto sovrapposto (`filament.md`, `google-translate.md`, `links.md`, `links01.md`, `README.md`), con testo che differisce tra le due copie. Da consolidare in una sola cartella canonica (`integration/`) in un intervento dedicato.
+
+- [integration/README](integration/README.md), [integration/filament](integration/filament.md), [integration/google-translate](integration/google-translate.md), [integration/links](integration/links.md), [integration/links01](integration/links01.md)
+- `_integration/` (variante storica parallela): [_integration/README](_integration/README.md), [_integration/filament](_integration/filament.md), [_integration/google-translate](_integration/google-translate.md), [_integration/links](_integration/links.md), [_integration/links01](_integration/links01.md), piu' `_integration/archive/` (2 file storici aggiuntivi).
+
+### html2pdf/ (6 file)
+
+- [html2pdf/index](html2pdf/index.md)
+- [html2pdf/advanced](html2pdf/advanced.md)
+- [html2pdf/laravel](html2pdf/laravel.md)
+- [html2pdf/security](html2pdf/security.md)
+- [html2pdf/styling](html2pdf/styling.md)
+- [html2pdf/usage](html2pdf/usage.md)
+
+### stories/ (6 file, BMAD)
+
+- [stories/lang-duplicate-array-keys.story](stories/lang-duplicate-array-keys.story.md)
+- [stories/7.1.phpstan-translation-contracts.story](stories/7.1.phpstan-translation-contracts.story.md)
+- [stories/7.2.phpstan-test-harness-contracts.story](stories/7.2.phpstan-test-harness-contracts.story.md)
+- [stories/7.3.phpstan-paramtype-coverage.story](stories/7.3.phpstan-paramtype-coverage.story.md)
+- [stories/17.4.helper-testcase-dichiarati-mai-scritti.story](stories/17.4.helper-testcase-dichiarati-mai-scritti.story.md)
+- [stories/docs-index-audit.story](stories/docs-index-audit.story.md) (questo intervento)
+
+### tasks/ (8 file)
+
+- [tasks/tasks-index](tasks/tasks-index.md)
+- [tasks/cleanup-lang-docs](tasks/cleanup-lang-docs.md) (variante storica: [lang-cleanup-docs](tasks/lang-cleanup-docs.md))
+- [tasks/folio-volt-localization](tasks/folio-volt-localization.md)
+- [tasks/lang-filament-v5](tasks/lang-filament-v5.md)
+- [tasks/lang-phpstan-level-10](tasks/lang-phpstan-level-10.md) (variante storica: [lang-phpstan-level.md](tasks/lang-phpstan-level.md))
+- [tasks/translation-management-interface](tasks/translation-management-interface.md)
+
+### root-md-files/ (4 file, storico)
+
+File `.md` gia' spostati fuori dalla root del modulo, tutti storici/duplicati: [changelog.md](root-md-files/changelog.md), [changelog-1.md](root-md-files/changelog-1.md), [changelog-duplicate.md](root-md-files/changelog-duplicate.md), [test.md](root-md-files/test.md).
+
+### packages/ (4 file)
+
+- [packages/localization](packages/localization.md)
+- [packages/performance](packages/performance.md)
+- [packages/seo](packages/seo.md)
+- [packages/translations](packages/translations.md)
+
+### conflicts/ (4 file)
+
+- [conflicts/php-cs-fixer-resolution](conflicts/php-cs-fixer-resolution.md) (variante: [php-cs-fixer-dist-resolution](conflicts/php-cs-fixer-dist-resolution.md), [vscode-php-cs-fixer-resolution](conflicts/vscode-php-cs-fixer-resolution.md))
+- [conflicts/translation-model-resolution](conflicts/translation-model-resolution.md)
+
+### architecture/ (4 file)
+
+- [architecture/structure](architecture/structure.md)
+- [architecture/autolabel-flow-complete](architecture/autolabel-flow-complete.md)
+- [architecture/translation-field-structure-complete](architecture/translation-field-structure-complete.md)
+- [architecture/translation-structure-expanded](architecture/translation-structure-expanded.md)
+
+### Cartelle piccole (1-2 file ciascuna)
+
+- `prompts/`: [01](prompts/01.md), [push](prompts/push.md)
+- `performance/`: [bottlenecks](performance/bottlenecks.md), [lang-optimizations](performance/lang-optimizations.md)
+- `legacy/`: [documentation-link-conventions](legacy/documentation-link-conventions.md), [lang-service-translation-updates](legacy/lang-service-translation-updates.md)
+- `github/`: [links](github/links.md) — variante storica in `.github/`: [links](.github/links.md)
+- `frontend/`: [theme-translation-registration](frontend/theme-translation-registration.md), [widget-view-namespaces](frontend/widget-view-namespaces.md)
+- `critical-rules/`: [fields-file-is-mandatory](critical-rules/fields-file-is-mandatory.md), [fields-key-litigation-round2](critical-rules/fields-key-litigation-round2.md)
+- `windsurf/`: [laravel-localization](windsurf/laravel-localization.md)
+- `cursor/`: [laravel-localization](cursor/laravel-localization.md)
+- `templates/`: [translation-template](templates/translation-template.md)
+- `outputs/`: [README](outputs/README.md)
+- `lessons-learned/`: [widget-namespaces-error](lessons-learned/widget-namespaces-error.md)
+- `graphify/`: [README](graphify/README.md)
+- `fixes/`: [lang-service-helper-text-fix](fixes/lang-service-helper-text-fix.md)
+- `filament/`: [langbasecreaterecord](filament/langbasecreaterecord.md)
+- `epics/`: [lang-epics-and-stories](epics/lang-epics-and-stories.md)
+- `development/`: [roadmap](development/roadmap.md)
+- `core/`: [architecture](core/architecture.md)
+- `concepts/`: [xotbase-never-extend-filament](concepts/xotbase-never-extend-filament.md)
+- `bugfix/`: [duplicate-widget-instantiation](bugfix/duplicate-widget-instantiation.md)
+- `best-practices/`: [documentation-link-conventions](best-practices/documentation-link-conventions.md)
+
+### Cartelle senza file .md
+
+`screenshots/`, `schema/`, `root-code-workspace-files/`, `logs/` esistono sotto `docs/` ma non contengono file `.md` (asset binari/altro tipo o vuote): non pertinenti a questo indice.
+
+
+## Storico / da consolidare
+
+Le varianti elencate sotto (suffissi `-1`, `_underscore`, `MAIUSCOLO`, `-sumy`, doppioni numerici) sono contenuti storici duplicati o quasi-duplicati del file canonico linkato nelle sezioni sopra. Non sono stati cancellati ne' rinominati: vanno confrontati e consolidati nel file canonico in un intervento successivo.
+
+- **index.md (questo file)** — vecchi tentativi di indice, superati da questo file: [00-index.md](00-index.md), [00-INDEX.md](00-INDEX.md), [INDEX.md](INDEX.md)
+- **CHANGELOG.md** — varianti storiche: [changelog.md](changelog.md)
+- **CONSOLIDATION_PLAN.md** — varianti storiche: [consolidation_plan.md](consolidation_plan.md)
+- **frameworks.md** — varianti storiche: [FRAMEWORKS.md](FRAMEWORKS.md)
+- **quick-reference.md** — varianti storiche: [QUICK_REFERENCE.md](QUICK_REFERENCE.md), [quick_reference.md](quick_reference.md)
+- **advanced-language-switching.md** — varianti storiche: [advanced-language-switching-1.md](advanced-language-switching-1.md), [advanced_language_switching.md](advanced_language_switching.md)
+- **automatic-translations.md** — varianti storiche: [automatic-translations-1.md](automatic-translations-1.md), [automatic_translations.md](automatic_translations.md)
+- **static-text-translation.md** — varianti storiche: [static-text-translation-1.md](static-text-translation-1.md), [static_text_translation.md](static_text_translation.md)
+- **translation-strategies.md** — varianti storiche: [TRANSLATION_STRATEGIES.md](TRANSLATION_STRATEGIES.md), [translation_strategies.md](translation_strategies.md)
+- **translations-faq.md** — varianti storiche: [translations-faq-1.md](translations-faq-1.md), [translations_faq.md](translations_faq.md)
+- **struttura-traduzioni.md** — varianti storiche: [struttura_traduzioni.md](struttura_traduzioni.md)
+- **translation-file-editor.md** — varianti storiche: [translation_file_editor.md](translation_file_editor.md)
+- **translation-file-management.md** — varianti storiche: [translation-file-management-1.md](translation-file-management-1.md), [translation_file_management.md](translation_file_management.md)
+- **translation-file-syntax.md** — varianti storiche: [translation_file_syntax.md](translation_file_syntax.md)
+- **translation-files-update.md** — varianti storiche: [translation-files-update-.md](translation-files-update-.md), [translation-files-update-1.md](translation-files-update-1.md), [translation_files_update.md](translation_files_update.md)
+- **translation-keys-best-practices.md** — varianti storiche: [translation-keys-best-practices-1.md](translation-keys-best-practices-1.md), [translation_keys_best_practices.md](translation_keys_best_practices.md)
+- **translation-keys-rules.md** — varianti storiche: [translation-keys-rules-1.md](translation-keys-rules-1.md), [translation_keys_rules.md](translation_keys_rules.md)
+- **translation-management-packages.md** — varianti storiche: [translation-management-packages-1.md](translation-management-packages-1.md), [translation_management_packages.md](translation_management_packages.md)
+- **translation-notify-conversion.md** — varianti storiche: [translation-notify-conversion-1.md](translation-notify-conversion-1.md), [translation_notify_conversion.md](translation_notify_conversion.md)
+- **translation-process.md** — varianti storiche: [TRANSLATION_PROCESS.md](TRANSLATION_PROCESS.md), [translation-process-1.md](translation-process-1.md), [translation-process-2.md](translation-process-2.md), [translation_process.md](translation_process.md)
+- **translation-refactor-complete-summary.md** — varianti storiche: [translation-refactor-complete-summary-.md](translation-refactor-complete-summary-.md)
+- **translation-standards.md** — varianti storiche: [translation-standards-1.md](translation-standards-1.md), [translation_standards.md](translation_standards.md)
+- **translation-standards-links.md** — varianti storiche: [translation_standards_links.md](translation_standards_links.md)
+- **translation-syntax-fixes.md** — varianti storiche: [translation_syntax_fixes.md](translation_syntax_fixes.md)
+- **translation-system.md** — varianti storiche: [translation-system-1.md](translation-system-1.md), [translation_system.md](translation_system.md)
+- **translations-storage.md** — varianti storiche: [translations-storage-1.md](translations-storage-1.md), [translations_storage.md](translations_storage.md)
+- **correzioni-errori-sintassi.md** — varianti storiche: [correzioni-errori-sintassi-.md](correzioni-errori-sintassi-.md), [correzioni_errori_sintassi.md](correzioni_errori_sintassi.md)
+- **english-translation-audit.md** — varianti storiche: [english_translation_audit.md](english_translation_audit.md)
+- **errori-comuni-traduzione.md** — varianti storiche: [errori-comuni-traduzione-1.md](errori-comuni-traduzione-1.md), [errori_comuni_traduzione.md](errori_comuni_traduzione.md)
+- **riepilogo-correzioni-traduzioni.md** — varianti storiche: [riepilogo-correzioni-traduzioni-.md](riepilogo-correzioni-traduzioni-.md), [riepilogo_correzioni_traduzioni.md](riepilogo_correzioni_traduzioni.md)
+- **traduzioni-navigation.md** — varianti storiche: [traduzioni-navigation-.md](traduzioni-navigation-.md), [traduzioni-navigation-1.md](traduzioni-navigation-1.md), [traduzioni_navigation.md](traduzioni_navigation.md)
+- **translating-validation-messages.md** — varianti storiche: [translating-validation-messages-1.md](translating-validation-messages-1.md), [translating_validation_messages.md](translating_validation_messages.md)
+- **translation-audit-completion.md** — varianti storiche: [translation-audit-completion-.md](translation-audit-completion-.md), [translation-audit-completion-2025.md](translation-audit-completion-2025.md), [translation_audit_completion.md](translation_audit_completion.md)
+- **translation-completeness-audit.md** — varianti storiche: [translation_completeness_audit.md](translation_completeness_audit.md)
+- **translation-errors-correction.md** — varianti storiche: [translation-errors-correction-.md](translation-errors-correction-.md), [translation-errors-correction-2025.md](translation-errors-correction-2025.md), [translation_errors_correction.md](translation_errors_correction.md)
+- **translations-corrections.md** — varianti storiche: [translations-corrections-sumy.md](translations-corrections-sumy.md)
+- **validation-messages.md** — varianti storiche: [validation-messages-1.md](validation-messages-1.md), [validation_messages.md](validation_messages.md)
+- **validation-translations.md** — varianti storiche: [validation_translations.md](validation_translations.md)
+- **locale-management.md** — varianti storiche: [LOCALE_MANAGEMENT.md](LOCALE_MANAGEMENT.md), [locale-management-2.md](locale-management-2.md), [locale_management.md](locale_management.md)
+- **localizing-dates-and-currencies.md** — varianti storiche: [localizing-dates-and-currencies-1.md](localizing-dates-and-currencies-1.md), [localizing_dates_and_currencies.md](localizing_dates_and_currencies.md)
+- **localizing-dates-currencies.md** — varianti storiche: [localizing-dates-currencies-1.md](localizing-dates-currencies-1.md), [localizing_dates_currencies.md](localizing_dates_currencies.md)
+- **plural-date-localization.md** — varianti storiche: [plural_date_localization.md](plural_date_localization.md)
+- **pluralization-and-localization.md** — varianti storiche: [pluralization-and-localization-1.md](pluralization-and-localization-1.md), [pluralization_and_localization.md](pluralization_and_localization.md)
+- **translating-plural-singular-forms.md** — varianti storiche: [translating-plural-singular-forms-1.md](translating-plural-singular-forms-1.md), [translating_plural_singular_forms.md](translating_plural_singular_forms.md)
+- **working-with-locales.md** — varianti storiche: [working-with-locales-1.md](working-with-locales-1.md), [working_with_locales.md](working_with_locales.md)
+- **integration-mc-laravel-localization.md** — varianti storiche: [integration-mc-laravel-localization-1.md](integration-mc-laravel-localization-1.md), [integration_mc_laravel_localization.md](integration_mc_laravel_localization.md)
+- **laravel-localization.md** — varianti storiche: [laravel-localization-1.md](laravel-localization-1.md), [laravel_localization.md](laravel_localization.md)
+- **laravel-localization-complete.md** — varianti storiche: [laravel-localization-complete-1.md](laravel-localization-complete-1.md), [laravel_localization_complete.md](laravel_localization_complete.md)
+- **laravel-localization-folio.md** — varianti storiche: [laravel-localization-folio-1.md](laravel-localization-folio-1.md), [laravel_localization_folio.md](laravel_localization_folio.md)
+- **laravel-localization-folio-integration.md** — varianti storiche: [laravel-localization-folio-integration-1.md](laravel-localization-folio-integration-1.md), [laravel_localization_folio_integration.md](laravel_localization_folio_integration.md)
+- **laravel-localization-implementation.md** — varianti storiche: [laravel-localization-implementation-1.md](laravel-localization-implementation-1.md), [laravel_localization_implementation.md](laravel_localization_implementation.md)
+- **laravel-localization-integration.md** — varianti storiche: [laravel-localization-integration-1.md](laravel-localization-integration-1.md), [laravel_localization_integration.md](laravel_localization_integration.md)
+- **laravel-localization-livewire-volt.md** — varianti storiche: [laravel-localization-livewire-volt-1.md](laravel-localization-livewire-volt-1.md), [laravel_localization_livewire_volt.md](laravel_localization_livewire_volt.md)
+- **laravel-localization-usage.md** — varianti storiche: [laravel-localization-usage-1.md](laravel-localization-usage-1.md), [laravel_localization_usage.md](laravel_localization_usage.md)
+- **mcamara-implementation-guide.md** — varianti storiche: [MCAMARA_IMPLEMENTATION_GUIDE.md](MCAMARA_IMPLEMENTATION_GUIDE.md), [mcamara_implementation_guide.md](mcamara_implementation_guide.md)
+- **rinvex-countries-usage.md** — varianti storiche: [rinvex-countries-usage-1.md](rinvex-countries-usage-1.md), [rinvex_countries_usage.md](rinvex_countries_usage.md)
+- **enum-translation-pattern-implementation.md** — varianti storiche: [enum-translation-pattern-implementation-.md](enum-translation-pattern-implementation-.md)
+- **filament-integration.md** — varianti storiche: [filament_integration.md](filament_integration.md)
+- **filament-label.md** — varianti storiche: [filament-label-1.md](filament-label-1.md), [filament_label.md](filament_label.md)
+- **filament-translations.md** — varianti storiche: [filament-translations-1.md](filament-translations-1.md), [filament_translations.md](filament_translations.md)
+- **livewire-integration.md** — varianti storiche: [livewire_integration.md](livewire_integration.md)
+- **volt-integration.md** — varianti storiche: [volt_integration.md](volt_integration.md)
+- **volt-localization-integration.md** — varianti storiche: [volt-localization-integration-1.md](volt-localization-integration-1.md), [volt_localization_integration.md](volt_localization_integration.md)
+- **dry-kiss-analysis.md** — varianti storiche: [dry-kiss-analysis-.md](dry-kiss-analysis-.md)
+- **duplicate-methods.md** — varianti storiche: [duplicate_methods.md](duplicate_methods.md)
+- **metodi-duplicati-analisi.md** — varianti storiche: [METODI_DUPLICATI_ANALISI.md](METODI_DUPLICATI_ANALISI.md), [metodi_duplicati_analisi.md](metodi_duplicati_analisi.md)
+- **phpstan-fixes.md** — varianti storiche: [PHPSTAN-FIXES.md](PHPSTAN-FIXES.md)
+- **phpstan-level10-fixes.md** — varianti storiche: [phpstan-level10-fixes-1.md](phpstan-level10-fixes-1.md), [phpstan_level10_fixes.md](phpstan_level10_fixes.md)
+- **phpstan-report.md** — varianti storiche: [phpstan-report-1.md](phpstan-report-1.md)
+- **quality-analysis.md** — varianti storiche: [quality-analysis-.md](quality-analysis-.md)
+- **QUALITY_REPORT.md** — varianti storiche: [quality_report.md](quality_report.md)
+- **REDUNDANCY_ANALYSIS.md** — varianti storiche: [redundancy_analysis.md](redundancy_analysis.md)
+- **conflict-resolution-autolabelaction.md** — varianti storiche: [conflict_resolution_autolabelaction.md](conflict_resolution_autolabelaction.md)
+- **conflict-resolution-edit-translation-file.md** — varianti storiche: [conflict_resolution_edit_translation_file.md](conflict_resolution_edit_translation_file.md)
+- **conflict-resolution-edittranslationfile-class.md** — varianti storiche: [conflict-resolution-edittranslationfile-class-1.md](conflict-resolution-edittranslationfile-class-1.md), [conflict_resolution_edittranslationfile_class.md](conflict_resolution_edittranslationfile_class.md)
+- **conflict-resolution-langserviceprovider.md** — varianti storiche: [conflict_resolution_langserviceprovider.md](conflict_resolution_langserviceprovider.md)
+- **conflict-resolution-readtranslationfileaction.md** — varianti storiche: [conflict_resolution_readtranslationfileaction.md](conflict_resolution_readtranslationfileaction.md)
+- **conflict-resolution-translation-file-syntax.md** — varianti storiche: [conflict-resolution-translation-file-syntax-1.md](conflict-resolution-translation-file-syntax-1.md), [conflict_resolution_translation_file_syntax.md](conflict_resolution_translation_file_syntax.md)
+- **conflict-resolution-writetranslationfileaction.md** — varianti storiche: [conflict_resolution_writetranslationfileaction.md](conflict_resolution_writetranslationfileaction.md)
+- **migration-best-practices.md** — varianti storiche: [migration-best-practices-1.md](migration-best-practices-1.md), [migration_best_practices.md](migration_best_practices.md)
+- **migration-corrections.md** — varianti storiche: [migration-corrections-sumy.md](migration-corrections-sumy.md)
+- **migration-corrections-summary.md** — varianti storiche: [migration-corrections-summary-1.md](migration-corrections-summary-1.md), [migration_corrections_summary.md](migration_corrections_summary.md)
+- **migration-filament.md** — varianti storiche: [migration-filament-4.md](migration-filament-4.md)
+- **migration-patterns.md** — varianti storiche: [migration_patterns.md](migration_patterns.md)
+- **migrations.md** — varianti storiche: [MIGRATIONS.md](MIGRATIONS.md)
+- **migrazione-filament.md** — varianti storiche: [migrazione-filament-4.md](migrazione-filament-4.md)
+- **model-translations.md** — varianti storiche: [model-translations-1.md](model-translations-1.md), [model_translations.md](model_translations.md)
+- **modelli-factory-seeder-analisi.md** — varianti storiche: [modelli-factory-seeder-analisi-1.md](modelli-factory-seeder-analisi-1.md), [modelli_factory_seeder_analisi.md](modelli_factory_seeder_analisi.md)
+- **product-launch-plan.md** — varianti storiche: [PRODUCT_LAUNCH_PLAN.md](PRODUCT_LAUNCH_PLAN.md), [product_launch_plan.md](product_launch_plan.md)
+- **product-roadmap.md** — varianti storiche: [PRODUCT_ROADMAP.md](PRODUCT_ROADMAP.md), [product_roadmap.md](product_roadmap.md)
+- **product-strategy.md** — varianti storiche: [PRODUCT_STRATEGY.md](PRODUCT_STRATEGY.md), [product_strategy.md](product_strategy.md)
+- **sprint-planning.md** — varianti storiche: [SPRINT_PLANNING.md](SPRINT_PLANNING.md), [sprint_planning.md](sprint_planning.md)
+- **TECH_SPEC.md** — varianti storiche: [tech_spec.md](tech_spec.md)
+- **user-research.md** — varianti storiche: [USER_RESEARCH.md](USER_RESEARCH.md), [user_research.md](user_research.md)
+- **project-structure.md** — varianti storiche: [PROJECT-STRUCTURE.md](PROJECT-STRUCTURE.md)
+- **performance-optimization.md** — varianti storiche: [PERFORMANCE-OPTIMIZATION.md](PERFORMANCE-OPTIMIZATION.md)
+- **permessi-e-errori-filesystem.md** — varianti storiche: [permessi_e_errori_filesystem.md](permessi_e_errori_filesystem.md)
+- **permessi-errori-filesystem.md** — varianti storiche: [permessi-errori-filesystem-1.md](permessi-errori-filesystem-1.md), [permessi_errori_filesystem.md](permessi_errori_filesystem.md)
+- **permessi-lang.md** — varianti storiche: [permessi_lang.md](permessi_lang.md)
+- **risoluzione-permessi-lang-service.md** — varianti storiche: [risoluzione_permessi_lang_service.md](risoluzione_permessi_lang_service.md)
+- **cms-link.md** — varianti storiche: [cms-link-1.md](cms-link-1.md), [cms_link.md](cms_link.md)
+- **lang-link.md** — varianti storiche: [lang_link.md](lang_link.md)
+- **lang-service-helper-text-fix.md** — varianti storiche: [lang_service_helper_text_fix.md](lang_service_helper_text_fix.md)
+- **lang-service-provider.md** — varianti storiche: [lang-service-provider-1.md](lang-service-provider-1.md), [lang_service_provider.md](lang_service_provider.md)
+- **lang-service-provider-improvements.md** — varianti storiche: [lang_service_provider_improvements.md](lang_service_provider_improvements.md)
+- **lang-service-translation-updates.md** — varianti storiche: [lang-service-translation-updates-.md](lang-service-translation-updates-.md)
+- **modules-link.md** — varianti storiche: [modules-link-1.md](modules-link-1.md), [modules_link.md](modules_link.md)
+- **user-link.md** — varianti storiche: [user-link-1.md](user-link-1.md), [user_link.md](user_link.md)
+- **docs-naming-convention-fix.md** — varianti storiche: [docs-naming-convention-fix-1.md](docs-naming-convention-fix-1.md), [docs-naming-convention-fix-duplicate.md](docs-naming-convention-fix-duplicate.md), [docs_naming_convention_fix.md](docs_naming_convention_fix.md)
+- **documentation-link-conventions.md** — varianti storiche: [documentation-link-conventions-1.md](documentation-link-conventions-1.md), [documentation_link_conventions.md](documentation_link_conventions.md)
+- **mcp-server-recommended.md** — varianti storiche: [mcp_server_recommended.md](mcp_server_recommended.md)
+- **on-demand-pattern.md** — varianti storiche: [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md)
+- **qmd-setup.md** — varianti storiche: [QMD-SETUP.md](QMD-SETUP.md)
+
+## Riferimenti
+
+- BMAD story di questo audit: [stories/docs-index-audit.story.md](stories/docs-index-audit.story.md)
