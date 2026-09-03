@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'fields' => [
         'language' => [
@@ -63,6 +61,7 @@ return [
             'tooltip' => 'Create a new translation',
             'success' => 'Translation created successfully',
             'error' => 'Error creating translation',
+            'icon' => 'create',
         ],
         'edit' => [
             'label' => 'Edit',
@@ -76,6 +75,12 @@ return [
             'success' => 'Translation deleted successfully',
             'error' => 'Error deleting translation',
             'confirmation' => 'Are you sure you want to delete this translation?',
+            'icon' => 'delete',
+        ],
+        'layout' => [
+            'label' => 'layout',
+            'icon' => 'layout',
+            'tooltip' => 'layout',
         ],
     ],
     'messages' => [

@@ -42,7 +42,7 @@ abstract class TestCase extends XotBaseTestCase
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
                 continue;
             }
 
@@ -66,7 +66,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {
@@ -74,12 +74,12 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param class-string<\Throwable> $exceptionClass
+     * @param  class-string<\Throwable>  $exceptionClass
      */
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
         $this->expectException($exceptionClass);
-        if (null !== $message) {
+        if ($message !== null) {
             $this->expectThrowableMessage($message);
         }
     }
@@ -87,9 +87,8 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @template T of object
      *
-     * @param class-string<T>                        $abstract
-     * @param (\Closure(MockInterface&T): void)|null $callback
-     *
+     * @param  class-string<T>  $abstract
+     * @param  (\Closure(MockInterface&T): void)|null  $callback
      * @return MockInterface&T
      */
     public static function mockServiceStatic(string $abstract, ?\Closure $callback = null): MockInterface
@@ -97,7 +96,7 @@ abstract class TestCase extends XotBaseTestCase
         /** @var MockInterface&T $mock */
         $mock = Mockery::mock($abstract);
 
-        if (null !== $callback) {
+        if ($callback !== null) {
             $callback($mock);
         }
 
@@ -157,7 +156,7 @@ abstract class TestCase extends XotBaseTestCase
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
                 continue;
             }
 
