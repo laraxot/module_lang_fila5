@@ -6,7 +6,7 @@ namespace Modules\Lang\Providers;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\Field;
-use Filament\Forms\Components\Placeholder;
+use Filament\Infolists\Components\TextEntry;
 use Filament\Forms\Components\Select;
 use Filament\Infolists\Components\Entry;
 use Filament\Schemas\Components\Section;
@@ -58,7 +58,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             Assert::isInstanceOf($component, Field::class);
 
             $validationMessages = __('user::validation');
-            if (is_array($validationMessages) && [] !== $validationMessages) {
+            if (is_array($validationMessages) && $validationMessages !== []) {
                 /** @var array<string, string> $typedMessages */
                 $typedMessages = [];
                 foreach ($validationMessages as $key => $value) {
@@ -67,7 +67,7 @@ class LangServiceProvider extends XotBaseServiceProvider
                     }
                 }
 
-                if ([] !== $typedMessages) {
+                if ($typedMessages !== []) {
                     $component->validationMessages($typedMessages);
                 }
             }
@@ -120,7 +120,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             'getRecord' => $component->getRecord(),
             ]);
             */
-            if (method_exists($component, 'getRecord') && null === $component->getRecord()) {
+            if (method_exists($component, 'getRecord') && $component->getRecord() === null) {
                 if (method_exists($component, 'button')) {
                     $component->button();
                 }
@@ -171,7 +171,7 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     protected function translatableComponents(): void
     {
-        $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
+        $components = [Field::class, BaseFilter::class, TextEntry::class, Column::class, Entry::class];
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
                 if (method_exists($translatable, 'translateLabel')) {
