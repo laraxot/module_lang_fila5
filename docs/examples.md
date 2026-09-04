@@ -714,7 +714,7 @@ namespace Modules\User\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Services\UserService;
 
 class UserController extends Controller
@@ -878,7 +878,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature;
 
 use Tests\TestCase;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class UserResourceTest extends TestCase
