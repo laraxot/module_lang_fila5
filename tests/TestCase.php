@@ -15,7 +15,7 @@ use Mockery\LegacyMockInterface;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Providers\LangServiceProvider;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
 
@@ -24,6 +24,7 @@ use function Safe\getmypid;
 use function Safe\putenv;
 use function Safe\touch;
 use function Safe\unlink;
+use Modules\User\Models\User;
 
 /**
  * No-op SaveTransAction per evitare scritture su lang/*.php durante i test Filament.
@@ -69,7 +70,7 @@ abstract class TestCase extends XotBaseTestCase
             DB::purge($connection);
         }
 
-        config(['auth.providers.users.model' => User::class]);
+        config(['auth.providers.users.model' => \Modules\User\Models\User::class]);
 
         self::restoreSaveTransActionNoOp();
     }
