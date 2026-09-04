@@ -182,3 +182,91 @@ modificato); ripristinati con `git checkout -- lang/ && git clean -fd lang/` pri
 ```
 ```
 ```
+
+## 2026-09-04 — app/Services retired, no-services-rule compliance
+
+Task: convert every file under `Modules/Lang/app/Services/` to the QueueableAction /
+Actions layout required by `docs/wiki/rules/no-services-rule.md` (RELIGION, no exceptions
+on destination folder).
+
+**Censimento**: `app/Services/` contained exactly one file, `TranslatorService.php`
+(a subclass of `Illuminate\Translation\Translator`, meant to be bound as the framework
+`translator` singleton — not a multi-method "god service" facade).
+
+### Classification
+
+| File | Kind | Finding | Action |
+|---|---|---|---|
+| `app/Services/TranslatorService.php` | Neither A nor B — **dead duplicate** | A previous session had already migrated this exact class to `app/Adapters/TranslatorAdapter.php` (same `get()` override, but `notifyMissingKey()` delegates to the real `Modules\Lang\Actions\Translation\RecordMissingTranslationAction` QueueableAction instead of inlining `Translation::firstOrCreate()`). `LangServiceProvider::registerTranslator()` already binds `TranslatorAdapter` as the `translator` singleton (the call is currently commented out in `boot()`, pre-existing and unrelated to this task — not re-enabled here, out of scope). `TranslatorService` had zero production call sites; it was referenced only by its own file and by two coverage tests that instantiated it directly for line coverage. | **Deleted** the file and the now-empty `app/Services/` directory. Not moved to `Actions/` — a class without a real `execute()` entrypoint used as framework-container adapter belongs in `Adapters/` per the rule's own carve-out, and that destination already existed with better code than the Service version. |
+
+No second Kind-A/Kind-B file existed — this module's `app/Services/` was already a single stray leftover from an earlier, unfinished migration, not a live god-service.
+
+### Call sites updated (all inside Modules/Lang, no other module referenced `Lang\Services\TranslatorService`)
+
+- `tests/Unit/LangCoverageGapsTest.php` — removed `use Modules\Lang\Services\TranslatorService;`; test
+  `TranslatorService notifyMissingKey and TranslatorAction non-string branch` renamed to
+  `TranslatorAdapter notifyMissingKey and TranslatorAction non-string branch`, instantiates
+  `TranslatorAdapter` instead (import already present).
+- `tests/Unit/LangHundredPercentCoverageTest.php` — removed `use Modules\Lang\Services\TranslatorService;`;
+  test `TranslatorAction and TranslatorService cover missing keys and array results` renamed to
+  `TranslatorAction and TranslatorAdapter cover missing keys and array results`, swapped the
+  `TranslatorService` instantiation for `TranslatorAdapter` and added a missing-key assertion so the
+  `RecordMissingTranslationAction` delegation path stays covered (the old test only exercised the inline
+  `notifyMissingKey` version).
+- `tests/Unit/Services/TranslatorServiceTest.php` — **deleted**. It didn't actually instantiate
+  `TranslatorService` (it resolved `app('translator')`, which — since `registerTranslator()` is
+  currently commented out — resolves to Laravel's stock translator, not any module class); it duplicated
+  `tests/Unit/Adapters/TranslatorAdapterTest.php` in intent without exercising anything the class-under-test
+  name claimed. Removed together with the now-empty `tests/Unit/Services/` directory.
+
+Grep across the whole `Modules/` tree for `Lang\\Services`, `Modules\\Lang\\Services`, `TranslatorService::`,
+`new TranslatorService`, `app(TranslatorService::class)` found no hits outside the four files above.
+
+### Known pre-existing duplicate left untouched (out of scope)
+
+`app/Actions/TranslatorAction.php` is a near-identical third copy of the same translator subclass
+(inline `notifyMissingKey`, flat in `Actions/` root instead of a context subfolder, fake no-op
+`execute(): void {}`) that predates this task and is not under `app/Services/`. It is not converted here
+— flagged for a follow-up story so nobody re-litigates it blind. During this session it was also found
+mid-edit with broken syntax from a concurrent session (see Collision note below); untouched on disk after
+verification.
+
+### PHPStan
+
+- True baseline (`clear-result-cache` then `analyse Modules/Lang --no-progress`): **0 errors**.
+- True final (same, after all edits): **0 errors**.
+
+### Pest
+
+Full-suite `./vendor/bin/pest Modules/Lang/tests -c Modules/Lang/phpunit.xml` was attempted but the run
+is not clean end-to-end for reasons unrelated to this change: `Modules/Lang/app/Actions/SaveTransAction.php`
+calls `dddx()` (dump-and-die) in its catch branch, and `tests/Unit/LangCoverageGapsTest.php`'s pre-existing
+`SaveTransAction catch and non-array require paths` test deliberately triggers that branch, which kills the
+whole PHP test process (pre-existing, not introduced here). Verification was therefore scoped with
+`--filter` to the tests touched by this change:
+
+```
+./vendor/bin/pest Modules/Lang/tests -c Modules/Lang/phpunit.xml --no-coverage \
+  --filter="TranslatorAdapter notifyMissingKey|TranslatorAction and TranslatorAdapter cover missing keys|TranslatorAdapter business logic"
+# Tests: 6 passed (15 assertions)
+```
+
+### PHPMD
+
+`./tools/phpmd.sh Modules/Lang text ../docs/phpmd.ruleset.xml` crashes on the whole module
+(`No node to visit provided for visitAnonymousClass.`, pre-existing, unrelated to this change). Scoped to
+the two changed test files: only pre-existing debt outside the touched lines (`Superglobals` on
+`$GLOBALS` usage in helper functions, `BooleanArgumentFlag` on unrelated helpers in the same files).
+
+### Collision with another session (discovered, not caused by this task)
+
+While verifying, `Modules/Lang/app/Actions/TranslatorAction.php` was found on disk with a syntax error —
+`use Spatie\QueueableAction\ActionJob;` duplicated three times, twice inside method bodies — consistent
+with another concurrent AI session's in-flight, not-yet-completed edit to that file (see
+`bashscripts/ai/wiki/rules/multi-agent-same-repo-race.md`). It was restored to its exact on-disk state
+after a transient local fix was used only to unblock this module's own PHPStan/Pest verification (never
+committed). `Modules/Lang/lang/it/txt.php` was also found already modified before this task started and
+kept changing while this task was in progress — left untouched and excluded from this commit, per the
+"don't touch another session's live WIP" rule.
+
+Story: `docs/stories/lang-services-to-actions.story.md`.
