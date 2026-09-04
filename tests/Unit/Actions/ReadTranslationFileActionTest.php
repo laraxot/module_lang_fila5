@@ -15,7 +15,7 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 /**
- * @return array<string, mixed>
+ * @return array{auth: array{failed: string, password: string}, pagination: array{previous: string, next: string}}
  */
 function defaultReadTranslationTestData(): array
 {
