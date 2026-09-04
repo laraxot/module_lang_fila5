@@ -8,6 +8,8 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions;
 
+use Spatie\QueueableAction\ActionJob;
+
 use Illuminate\Events\Dispatcher;
 use Illuminate\Translation\Translator as LaravelTranslator;
 use Modules\Lang\Models\Translation;
@@ -16,9 +18,6 @@ use Spatie\QueueableAction\QueueableAction;
 class TranslatorAction extends LaravelTranslator
 {
     use QueueableAction;
-
-    /** @var Dispatcher */
-    protected $events;
 
     /**
      * Get the translation for the given key.
@@ -54,12 +53,14 @@ class TranslatorAction extends LaravelTranslator
     {
         $lang = app()->getLocale();
         [$namespace, $group, $item] = $this->parseKey($key);
+
         $data = [
             'lang' => $lang,
             'namespace' => $namespace,
             'group' => $group,
             'item' => $item,
         ];
+
         Translation::firstOrCreate($data);
     }
 }
