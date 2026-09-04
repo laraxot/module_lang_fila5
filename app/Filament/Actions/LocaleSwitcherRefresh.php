@@ -6,6 +6,8 @@ namespace Modules\Lang\Filament\Actions;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\Select;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\App;
 
 class LocaleSwitcherRefresh extends Action
@@ -49,7 +51,7 @@ class LocaleSwitcherRefresh extends Action
     /**
      * @param  array<string, mixed>  $data
      */
-    public function applyLocale(array $data): mixed
+    public function applyLocale(array $data): RedirectResponse|Redirector
     {
         $locale = $data['locale'] ?? 'en';
         $locale = is_string($locale) ? $locale : 'en';
