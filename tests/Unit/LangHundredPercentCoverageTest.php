@@ -65,7 +65,6 @@ use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Lang\Providers\RouteServiceProvider;
 use Modules\Lang\Providers\TranslatorTraitPhpstanProbe;
-use Modules\Lang\Services\TranslatorService;
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Components\LanguageSwitcher;
 use Modules\Lang\View\Composers\ThemeComposer;
@@ -355,7 +354,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         Assert::assertTrue(Translation::query()->where('namespace', '*')->where('group', 'lonely')->whereNull('item')->exists());
     });
 
-    test('TranslatorAction and TranslatorService cover missing keys and array results', function (): void {
+    test('TranslatorAction and TranslatorAdapter cover missing keys and array results', function (): void {
         langForceSqliteTranslations();
 
         $loader = new ArrayLoader();
@@ -373,10 +372,11 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         Assert::assertSame($missingKey, $action->get($missingKey));
         $action->execute();
 
-        $service = new TranslatorService($loader, 'it');
-        Assert::assertSame('Ciao', $service->get('messages.known'));
-        Assert::assertSame(['a' => 'b'], $service->get('messages.tree'));
-        $service->execute();
+        $adapter = new TranslatorAdapter($loader, 'it');
+        Assert::assertSame('Ciao', $adapter->get('messages.known'));
+        Assert::assertSame(['a' => 'b'], $adapter->get('messages.tree'));
+        $adapterMissingKey = 'messages.missing_'.uniqid('', true);
+        Assert::assertSame($adapterMissingKey, $adapter->get($adapterMissingKey));
         Assert::assertGreaterThan(0, Translation::query()->count());
     });
 
