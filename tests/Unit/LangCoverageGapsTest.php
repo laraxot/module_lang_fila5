@@ -34,7 +34,6 @@ use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Lang\Providers\RouteServiceProvider;
-use Modules\Lang\Services\TranslatorService;
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Composers\ThemeComposer;
 use Modules\Xot\Actions\File\AssetAction;
@@ -117,14 +116,14 @@ function langGapsSqlite(): void
 }
 
 describe('Lang coverage gaps closeout', function (): void {
-    test('TranslatorService notifyMissingKey and TranslatorAction non-string branch', function (): void {
+    test('TranslatorAdapter notifyMissingKey and TranslatorAction non-string branch', function (): void {
         langGapsSqlite();
         $loader = new ArrayLoader();
         $loader->addMessages('it', 'g', ['n' => 9]);
 
-        $service = new TranslatorService($loader, 'it');
+        $adapter = new TranslatorAdapter($loader, 'it');
         $missing = 'g.missing_'.uniqid('', true);
-        Assert::assertSame($missing, $service->get($missing));
+        Assert::assertSame($missing, $adapter->get($missing));
         Assert::assertTrue(Translation::query()->where('item', substr($missing, 2))->exists() || Translation::query()->count() > 0);
 
         $action = new TranslatorAction($loader, 'it');
