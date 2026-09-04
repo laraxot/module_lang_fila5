@@ -96,11 +96,7 @@ class TranslationFile extends BaseModel
         $files = app(GetAllTranslationAction::class)->execute();
 
         /** @var array<int, array<string, mixed>> $result */
-        $result = Arr::map($files, function (mixed $item) {
-            if (! is_array($item)) {
-                return [];
-            }
-
+        $result = Arr::map($files, function (array $item) {
             $key = $item['key'] ?? null;
             /** @var string|int|float|bool|null $keyNarrowed */
             $keyNarrowed = $key;
