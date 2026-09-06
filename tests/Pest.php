@@ -24,7 +24,7 @@ use function Safe\unlink;
  */
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createTranslation(array $attributes = []): Translation
 {
@@ -32,7 +32,7 @@ function createTranslation(array $attributes = []): Translation
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function makeTranslation(array $attributes = []): Translation
 {
@@ -45,7 +45,7 @@ function makeTranslation(array $attributes = []): Translation
 }
 
 /**
- * @param array<string, mixed> $translations
+ * @param  array<string, mixed>  $translations
  */
 function createTranslationFile(string $filePath, array $translations): void
 {
@@ -60,7 +60,7 @@ function cleanupTranslationFile(string $filePath): void
     }
 }
 /**
- * @param array<string, mixed> $data
+ * @param  array<string, mixed>  $data
  */
 function langAssertDatabaseHasRow(string $table, array $data, ?string $connection = 'lang'): void
 {
@@ -72,5 +72,3 @@ function langAssertDatabaseHasRow(string $table, array $data, ?string $connectio
 
     Assert::assertTrue($query->exists());
 }
-
-pest()->extend(\Modules\Lang\Tests\TestCase::class)->in(__DIR__.'/Unit', __DIR__.'/Feature');
