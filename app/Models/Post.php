@@ -56,10 +56,10 @@ use Spatie\Sluggable\SlugOptions;
  * @property string|null $relatedrev_count
  * @property string|null $linkable_type
  * @property int|null $views_count
- * @property-read \Modules\Quaeris\Models\Profile|null $creator
- * @property-read \Modules\Quaeris\Models\Profile|null $deleter
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $deleter
  * @property-read \Illuminate\Database\Eloquent\Model|null $linkable
- * @property-read \Modules\Quaeris\Models\Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post query()
