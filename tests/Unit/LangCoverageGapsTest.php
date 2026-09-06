@@ -10,18 +10,13 @@ use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Wizard\Step;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Str;
+use Illuminate\Support\HtmlString;
 use Illuminate\Translation\ArrayLoader;
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
-use Modules\Lang\Actions\GetAllTranslationAction;
-use Modules\Lang\Actions\GetTransPathAction;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
 use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
@@ -39,8 +34,6 @@ use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Lang\Providers\RouteServiceProvider;
-use Modules\Lang\Services\TranslatorService;
-use Modules\Lang\Tests\Fixtures\NationalFlagSelectStub;
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Composers\ThemeComposer;
 use Modules\Xot\Actions\File\AssetAction;
@@ -48,6 +41,7 @@ use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
+use ReflectionProperty;
 
 use function Safe\file_put_contents;
 use function Safe\getmypid;
@@ -55,13 +49,30 @@ use function Safe\mkdir;
 use function Safe\touch;
 use function Safe\unlink;
 
-uses(\Modules\Lang\Tests\TestCase::class);
+uses(TestCase::class);
+
+final class NationalFlagSelectStub extends NationalFlagSelect
+{
+    /** @var array<int, mixed> */
+    public array $forcedCountries = [];
+
+    /**
+     * Vedi la nota in LangFinalGapsTest: `mixed` e' il tipo reale dei dati che i test
+     * iniettano di proposito per verificare la robustezza del filtro.
+     *
+     * @return array<int, mixed>
+     */
+    protected function resolveCountries(): array
+    {
+        return $this->forcedCountries;
+    }
+}
 
 afterEach(function (): void {
     Mockery::close();
     $sqlite = $GLOBALS['__lang_gaps_sqlite'] ?? null;
     if (is_string($sqlite)) {
-        DB::purge('lang');
+        \Illuminate\Support\Facades\DB::purge('lang');
         if (is_file($sqlite)) {
             unlink($sqlite);
         }
@@ -81,8 +92,8 @@ function langGapsSqlite(): void
             'foreign_key_constraints' => false,
         ],
     ]);
-    DB::purge('lang');
-    DB::reconnect('lang');
+    \Illuminate\Support\Facades\DB::purge('lang');
+    \Illuminate\Support\Facades\DB::reconnect('lang');
     Schema::connection('lang')->create('translations', static function (Blueprint $table): void {
         $table->id();
         $table->string('lang')->nullable();
@@ -105,14 +116,14 @@ function langGapsSqlite(): void
 }
 
 describe('Lang coverage gaps closeout', function (): void {
-    test('TranslatorService notifyMissingKey and TranslatorAction non-string branch', function (): void {
+    test('TranslatorAdapter notifyMissingKey and TranslatorAction non-string branch', function (): void {
         langGapsSqlite();
         $loader = new ArrayLoader();
         $loader->addMessages('it', 'g', ['n' => 9]);
 
-        $service = new TranslatorService($loader, 'it');
+        $adapter = new TranslatorAdapter($loader, 'it');
         $missing = 'g.missing_'.uniqid('', true);
-        Assert::assertSame($missing, $service->get($missing));
+        Assert::assertSame($missing, $adapter->get($missing));
         Assert::assertTrue(Translation::query()->where('item', substr($missing, 2))->exists() || Translation::query()->count() > 0);
 
         $action = new TranslatorAction($loader, 'it');
@@ -142,7 +153,7 @@ describe('Lang coverage gaps closeout', function (): void {
         $file = sys_get_temp_dir().'/save_trans_'.uniqid().'.php';
         file_put_contents($file, '<?php throw new Exception("x");');
 
-        $this->mockService(GetTransPathAction::class, static function (MockInterface $mock) use ($file): void {
+        $this->mockService(\Modules\Lang\Actions\GetTransPathAction::class, static function (MockInterface $mock) use ($file): void {
             $mock->allows(['execute' => $file]);
         });
 
@@ -155,7 +166,7 @@ describe('Lang coverage gaps closeout', function (): void {
         $loaded = require $file;
         Assert::assertSame('v', $loaded['y']);
         unlink($file);
-        TestCase::restoreSaveTransActionNoOp();
+        TestCase::forgetSaveTransActionOverride();
     });
 
     test('WriteTranslationFileAction backs up existing file', function (): void {
@@ -243,8 +254,9 @@ describe('Lang coverage gaps closeout', function (): void {
         Assert::assertNotEmpty($edit->getFormSchema());
         Assert::assertNotEmpty($edit->makeFromArray(['a' => '1', 'b' => ['c' => '2']], 'content'));
         Assert::assertSame([], $edit->makeFromArray([]));
-        Assert::assertNotEmpty($edit->makeFromArray(['a' => '1'], 'content'));
-        Assert::assertSame([], $edit->makeFromArray([]));
+        Assert::assertNotEmpty($edit->schemaFromRecord((object) ['content' => ['a' => '1']]));
+        Assert::assertSame([], $edit->schemaFromRecord(null));
+        Assert::assertSame([], $edit->schemaFromRecord((object) ['content' => 'x']));
     });
 
     test('Livewire Change and Switcher handle non-string localized urls', function (): void {
@@ -256,12 +268,12 @@ describe('Lang coverage gaps closeout', function (): void {
         ]);
         app()->setLocale('it');
 
-        LaravelLocalization::shouldReceive('getSupportedLocales')
+        \Mcamara\LaravelLocalization\Facades\LaravelLocalization::shouldReceive('getSupportedLocales')
             ->andReturn([
                 'it' => ['name' => 'Italiano'],
                 'en' => ['name' => 'English'],
             ]);
-        LaravelLocalization::shouldReceive('getLocalizedURL')
+        \Mcamara\LaravelLocalization\Facades\LaravelLocalization::shouldReceive('getLocalizedURL')
             ->andReturn(false);
 
         $change = new LangChange();
@@ -276,7 +288,7 @@ describe('Lang coverage gaps closeout', function (): void {
     test('Post accessors persist when model has key', function (): void {
         langGapsSqlite();
         $post = new Post();
-        $post->id = (string) Str::uuid();
+        $post->id = (string) \Illuminate\Support\Str::uuid();
         $post->exists = true;
         $post->setRawAttributes([
             'id' => $post->id,
@@ -286,22 +298,22 @@ describe('Lang coverage gaps closeout', function (): void {
         // Avoid real update by mocking
         /** @var Post&MockInterface $post */
         $post = Mockery::mock(Post::class)->makePartial();
-        TestCase::mockExpectation($post, 'getKey')->andReturn('abc');
-        TestCase::mockExpectation($post, 'update')->andReturnTrue();
+        $post->shouldReceive('getKey')->andReturn('abc');
+        $post->shouldReceive('update')->andReturnTrue();
         $post->setRawAttributes(['post_type' => 'article', 'post_id' => '1'], true);
         Assert::assertSame('article 1', $post->getTitleAttribute(null));
 
         /** @var Post&MockInterface $post2 */
         $post2 = Mockery::mock(Post::class)->makePartial();
-        TestCase::mockExpectation($post2, 'getKey')->andReturn('abc');
-        TestCase::mockExpectation($post2, 'update')->andReturnTrue();
+        $post2->shouldReceive('getKey')->andReturn('abc');
+        $post2->shouldReceive('update')->andReturnTrue();
         $post2->setRawAttributes(['title' => ''], true);
         Assert::assertIsString($post2->getGuidAttribute(null));
     });
 
     test('TranslationFile empty content when path key missing', function (): void {
-        $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock): void {
-            TestCase::mockExpectation($mock, 'execute')->andReturn([
+        $this->mockService(\Modules\Lang\Actions\GetAllTranslationAction::class, static function (MockInterface $mock): void {
+            $mock->shouldReceive('execute')->andReturn([
                 ['key' => 'lang::only'],
             ]);
         });
@@ -371,7 +383,7 @@ describe('Lang coverage gaps closeout', function (): void {
 
         app()->instance('request', Request::create('http://localhost/it/admin/dashboard', 'GET'));
         session(['in_admin' => true]);
-        Route::shouldReceive('currentRouteName')->andReturn(null);
+        \Illuminate\Support\Facades\Route::shouldReceive('currentRouteName')->andReturn(null);
         $firstLanguage = $composer->languages()->toCollection()->first();
         Assert::assertNotNull($firstLanguage);
         Assert::assertSame('#', $firstLanguage->url);
@@ -385,7 +397,7 @@ describe('Lang coverage gaps closeout', function (): void {
             $mock->allows('execute');
         });
         $this->mockService(SvgExistsAction::class, static function (MockInterface $mock): void {
-            TestCase::mockAllows($mock, 'execute')->andReturn(true);
+            $mock->allows('execute')->andReturn(true);
         });
 
         app('translator')->addLines([
