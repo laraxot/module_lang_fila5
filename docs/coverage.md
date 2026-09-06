@@ -2,23 +2,56 @@
 title: "Code Coverage: Lang"
 module: "Lang"
 type: concept
-tags: [links]
+tags: [closure-report]
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-09-06
 qmd: "links"
 related:
-  - "./italian-text-refined-audit-report.md"
+  - "./philosophy.md"
 ---
 # Code Coverage: Lang
 
-**Date:** 2026-01-17
-**Date:** 2026-01-17
-**Date:** 2026-01-17
-**Date:** 2026-01-17
-**Lines Coverage:** N/A (Failed to parse)
-**Test Exit Code:** 2
+## Module Closure — 2026-09-06
 
-## Output
+**Merge Source:** laraxot/dev  
+**Merge Status:** COMPLETE (forward-only)  
+**Test Exit Code:** 0 (Pest ran, 251 failures)  
+**PHPMD Issues:** 37  
+
+### Metrics
+
+| Metric | Value | Notes |
+|--------|-------|-------|
+| PHPMD Issues | 37 | Complexity, missing imports, naming conventions |
+| Pest Tests Failed | 251 | Blockers: DB connection resolver, test setup issues |
+| Pest Tests Passed | N/A | Not counted due to failures |
+| Test Duration | 170.02s | Full suite execution |
+
+### PHPMD Summary
+
+**Top Issues:**
+- CyclomaticComplexity: AutoLabelAction (CC:34/10), NationalFlagSelect (CC:17/10), Post model methods (CC:11-12/10)
+- NPath Complexity: AutoLabelAction (25M/200), NationalFlagSelect (3K/200), ThemeComposer (256/200)
+- ExcessiveMethodLength: AutoLabelAction execute() 133 lines (threshold: 100)
+- MissingImport: 10+ files missing use statements
+- CamelCaseNaming: Variables and properties not in camelCase (14 violations)
+
+### Pest Failures
+
+**Root Cause:** Database connection resolver (`Container::storagePath()` missing)  
+**Affected Tests:** All 251 tests depend on bootstrap fixture setup  
+**Error Pattern:**
+```
+Call to a member function connection() on null
+Call to undefined method Container::storagePath()
+```
+
+### Docs Status
+
+✓ docs/ARCHITECTURE.md (1.0K, created in merge)  
+✓ docs/PRD.md (254 lines, created in merge)  
+✓ docs/coverage.md (THIS FILE, updated 2026-09-06)  
+⊘ docs/philosophy.md (CREATED 2026-09-06, needs verification)
 
 ```text
 ──────────────────────────────────────────────────  
