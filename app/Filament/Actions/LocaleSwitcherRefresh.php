@@ -47,6 +47,7 @@ class LocaleSwitcherRefresh extends XotBaseAction
             // ->icon('heroicon-o-language')
             ->color('gray');
     }
+
     /**
      * Applica la lingua scelta a sessione e applicazione.
      *
@@ -57,7 +58,7 @@ class LocaleSwitcherRefresh extends XotBaseAction
      * Il fallback a `en` copre il caso in cui il valore arrivi non-stringa: il Select lo
      * garantisce, ma `$data` e' pur sempre input e la garanzia sta qui, non nel form.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     public function applyLocale(array $data): void
     {

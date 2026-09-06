@@ -813,7 +813,7 @@ $result = trans('patient::patient.profile.title', [], 'de');
 
 ### Prerequisites
 
-- Laravel 12+
+- Laravel 13+
 - PHP 8.3+
 - Filament 5 (optional, for admin UI)
 
