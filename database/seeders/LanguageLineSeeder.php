@@ -14,7 +14,7 @@ use Modules\Lang\Models\LanguageLine;
 class LanguageLineSeeder extends Seeder
 {
     /** @var list<array{group: string, key: string, locale: string, text: array<string, string>}> */
-    private const array ENTRIES = [
+    private const ENTRIES = [
         [
             'group' => 'auth',
             'key' => 'failed',
