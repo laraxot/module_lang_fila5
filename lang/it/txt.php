@@ -216,6 +216,7 @@ return [
         'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
         'convert' => ['label' => 'convert', 'icon' => 'convert', 'tooltip' => 'convert'],
         'field' => ['label' => 'field', 'icon' => 'field', 'tooltip' => 'field'],
+        'bet_action' => ['label' => 'bet_action', 'icon' => 'bet_action', 'tooltip' => 'bet_action'],
     ],
     'sections' => [
         'address' => ['label' => 'address', 'heading' => 'address'],
