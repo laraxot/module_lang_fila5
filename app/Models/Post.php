@@ -56,10 +56,10 @@ use Spatie\Sluggable\SlugOptions;
  * @property string|null $relatedrev_count
  * @property string|null $linkable_type
  * @property int|null $views_count
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $deleter
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $deleter
  * @property-read \Illuminate\Database\Eloquent\Model|null $linkable
- * @property-read ProfileContract|null $updater
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post query()
