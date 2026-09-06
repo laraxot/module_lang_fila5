@@ -32,7 +32,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
      *
      * @return array<int, Component>
      */
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [];
     }
@@ -51,6 +51,8 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
      * Ottiene le lingue disponibili nel sistema.
      *
      * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
+     *
+     * @phpstan-return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
      */
     public function getAvailableLocales(): Collection
     {

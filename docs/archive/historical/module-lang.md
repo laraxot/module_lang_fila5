@@ -1,10 +1,10 @@
 # Modulo Lang
 
 ## Informazioni Generali
-- **Nome**: `laraxot/module_lang_fila5`
+- **Nome**: `laraxot/module_lang_fila3`
 - **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
 - **Namespace**: `Modules\Lang`
-- **Repository**: https://github.com/laraxot/module_lang_fila5.git
+- **Repository**: https://github.com/laraxot/module_lang_fila3.git
 
 ### Versione HEAD
 

@@ -190,7 +190,7 @@ class SyncTranslationsAction
     /**
      * Filtra un array per avere solo chiavi stringa (aiuta PHPStan).
      *
-     * @param array<mixed, mixed> $arr
+     * @param array<array-key, mixed> $arr
      *
      * @return array<string, mixed>
      */
