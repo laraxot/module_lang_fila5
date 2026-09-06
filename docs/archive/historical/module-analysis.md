@@ -4,7 +4,7 @@
 **Module Name**: Lang  
 **Type**: Localization & Translation Module  
 **Status**: ✅ Active  
-**Framework**: Laravel 12.x + Filament 4.x  
+**Framework**: Laravel 13.x + Filament 4.x  
 **Translation System**: Laravel Localization + Advanced Features  
 **Language**: Multi-language (IT/EN/DE + 7 more)  
 
