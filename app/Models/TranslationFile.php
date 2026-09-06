@@ -27,7 +27,6 @@ use Sushi\Sushi;
  * @property array<array-key, mixed>|null $content
  * @property ProfileContract|null         $creator
  * @property ProfileContract|null         $updater
- *
  * @method static TranslationFileFactory          factory($count = null, $state = [])
  * @method static Builder<static>|TranslationFile newModelQuery()
  * @method static Builder<static>|TranslationFile newQuery()
@@ -37,9 +36,7 @@ use Sushi\Sushi;
  * @method static Builder<static>|TranslationFile whereKey($value)
  * @method static Builder<static>|TranslationFile whereName($value)
  * @method static Builder<static>|TranslationFile wherePath($value)
- *
  * @property ProfileContract|null $deleter
- *
  * @mixin \Eloquent
  */
 class TranslationFile extends BaseModel
@@ -96,17 +93,17 @@ class TranslationFile extends BaseModel
         $files = app(GetAllTranslationAction::class)->execute();
 
         /** @var array<int, array<string, mixed>> $result */
-        $result = Arr::map($files, function ($item) {
-            if (! is_array($item)) {
-                return [];
-            }
-
+        $result = Arr::map($files, function (array $item) {
             $key = $item['key'] ?? null;
-            $keyStr = is_string($key) ? $key : (string) $key;
+            /** @var string|int|float|bool|null $keyNarrowed */
+            $keyNarrowed = $key;
+            $keyStr = is_string($keyNarrowed) ? $keyNarrowed : (string) $keyNarrowed;
             $item['id'] = isset($item['key']) ? $keyStr : '';
 
             $pathValue = $item['path'] ?? null;
-            $pathStr = is_string($pathValue) ? $pathValue : (string) $pathValue;
+            /** @var string|int|float|bool|null $pathValueNarrowed */
+            $pathValueNarrowed = $pathValue;
+            $pathStr = is_string($pathValueNarrowed) ? $pathValueNarrowed : (string) $pathValueNarrowed;
             $item['name'] = isset($item['path']) ? basename($pathStr, '.php') : '';
 
             if (isset($item['path'])) {

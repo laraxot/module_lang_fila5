@@ -93,9 +93,20 @@ class ThemeComposer
     {
         $currentLocale = app()->getLocale();
 
-        return $this->languages()->filter(function (LangData $item) use ($currentLocale): bool {
-            return $item->id !== $currentLocale;
-        });
+        // `DataCollection::filter()` e' deprecata in spatie/laravel-data v5 («use a
+        // regular Laravel collection instead»). Il filtro passa quindi da
+        // `toCollection()`, e il risultato viene ricomposto in DataCollection perche'
+        // e' quello che il tipo di ritorno e i chiamanti dichiarano.
+        $others = $this->languages()
+            ->toCollection()
+            ->filter(static fn (LangData $item): bool => $item->id !== $currentLocale)
+            ->values()
+            ->all();
+
+        /** @var DataCollection<int, LangData> $collection */
+        $collection = LangData::collect($others, DataCollection::class);
+
+        return $collection;
     }
 
     /**
@@ -130,7 +141,7 @@ class ThemeComposer
      *
      * @return string The generated URL
      */
-    private function buildAdminLanguageUrl(string $locale): string
+    public function buildAdminLanguageUrl(string $locale): string
     {
         $routeName = Route::currentRouteName();
         if (! is_string($routeName)) {
