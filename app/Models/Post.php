@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
@@ -120,7 +119,6 @@ class Post extends BaseModel
 {
     use HasSlug;
 
-    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     // use Cachable;
