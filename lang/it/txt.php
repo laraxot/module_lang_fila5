@@ -183,6 +183,8 @@ return [
         'b' => ['label' => 'b'],
         'badge' => ['label' => 'badge', 'placeholder' => 'badge', 'helper_text' => 'badge', 'description' => 'badge'],
         'date' => ['label' => 'date', 'placeholder' => 'date', 'helper_text' => 'date', 'description' => 'date'],
+        'order_column' => ['label' => 'order_column'],
+        'map_picker' => ['label' => 'map_picker', 'placeholder' => 'map_picker', 'helper_text' => 'map_picker', 'description' => 'map_picker'],
     ],
     'actions' => [
         'authenticate' => ['label' => 'Autentica', 'tooltip' => 'Effettua il login nel sistema', 'icon' => 'ui-login', 'color' => 'primary'],
@@ -216,6 +218,7 @@ return [
         'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
         'convert' => ['label' => 'convert', 'icon' => 'convert', 'tooltip' => 'convert'],
         'field' => ['label' => 'field', 'icon' => 'field', 'tooltip' => 'field'],
+        'bet_action' => ['label' => 'bet_action', 'icon' => 'bet_action', 'tooltip' => 'bet_action'],
     ],
     'sections' => [
         'address' => ['label' => 'address', 'heading' => 'address'],

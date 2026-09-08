@@ -6,11 +6,11 @@ namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use Illuminate\Support\Str;
+use Illuminate\Support\Carbon;
 // --- traits ---
-use Modules\Lang\Database\Factories\PostFactory;
 // use Laravel\Scout\Searchable;
-use Modules\Xot\Models\Traits\HasXotFactory;
+use Illuminate\Support\Str;
+use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
@@ -18,34 +18,34 @@ use Spatie\Sluggable\SlugOptions;
 /**
  * Colonne allineate a `2026_01_21_211814_create_posts_table`.
  *
- * @property string                          $id
- * @property int|null                        $user_id
- * @property string|int|null                 $post_id
- * @property string|null                     $lang
- * @property string|null                     $guid
- * @property string|null                     $title
- * @property string|null                     $subtitle
- * @property string|null                     $post_type
- * @property string|null                     $txt
- * @property string|null                     $content
- * @property string|null                     $excerpt
- * @property string|null                     $slug
- * @property string|null                     $status
- * @property \Illuminate\Support\Carbon|null $published_at
- * @property string|null                     $locale
- * @property string|null                     $category
- * @property string|null                     $image_src
- * @property string|null                     $image_alt
- * @property string|null                     $image_title
- * @property string|null                     $meta_title
- * @property string|null                     $meta_description
- * @property string|null                     $meta_keywords
- * @property int|null                        $author_id
- * @property string|null                     $url
- * @property array<string, string>|null      $url_lang
- * @property string|null                     $image_resize_src
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string $id
+ * @property int|null $user_id
+ * @property string|int|null $post_id
+ * @property string|null $lang
+ * @property string|null $guid
+ * @property string|null $title
+ * @property string|null $subtitle
+ * @property string|null $post_type
+ * @property string|null $txt
+ * @property string|null $content
+ * @property string|null $excerpt
+ * @property string|null $slug
+ * @property string|null $status
+ * @property Carbon|null $published_at
+ * @property string|null $locale
+ * @property string|null $category
+ * @property string|null $image_src
+ * @property string|null $image_alt
+ * @property string|null $image_title
+ * @property string|null $meta_title
+ * @property string|null $meta_description
+ * @property string|null $meta_keywords
+ * @property int|null $author_id
+ * @property string|null $url
+ * @property array<string, string>|null $url_lang
+ * @property string|null $image_resize_src
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property int|null $category_id
  * @property string|null $image
  * @property int|null $published
@@ -56,10 +56,11 @@ use Spatie\Sluggable\SlugOptions;
  * @property string|null $relatedrev_count
  * @property string|null $linkable_type
  * @property int|null $views_count
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $deleter
- * @property-read \Illuminate\Database\Eloquent\Model|null $linkable
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $deleter
+ * @property-read Model|null $linkable
+ * @property-read ProfileContract|null $updater
+ *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post query()
@@ -101,12 +102,12 @@ use Spatie\Sluggable\SlugOptions;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUrlLang($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUserId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereViewsCount($value)
+ *
  * @mixin \Eloquent
  */
 class Post extends BaseModel
 {
     use HasSlug;
-    use HasXotFactory;
 
     // use Cachable;
     use Updater;
@@ -223,11 +224,11 @@ class Post extends BaseModel
 
     public function getTitleAttribute(?string $value): ?string
     {
-        if (null !== $value) {
+        if ($value !== null) {
             return $value;
         }
 
-        if (isset($this->attributes['post_type']) && '' !== $this->attributes['post_type'] && '0' !== $this->attributes['post_type']) {
+        if (isset($this->attributes['post_type']) && $this->attributes['post_type'] !== '' && $this->attributes['post_type'] !== '0') {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
@@ -245,7 +246,7 @@ class Post extends BaseModel
 
         $this->title = $value;
 
-        if (null !== $this->getKey()) {
+        if ($this->getKey() !== null) {
             $this->update([
                 'title' => $value,
             ]);
@@ -256,11 +257,11 @@ class Post extends BaseModel
 
     public function getGuidAttribute(?string $value): ?string
     {
-        if (\is_string($value) && '' !== $value && ! str_contains($value, ' ')) {
+        if (\is_string($value) && $value !== '' && ! str_contains($value, ' ')) {
             return $value;
         }
         $value = $this->title;
-        if ('' === $value) {
+        if ($value === '') {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
@@ -270,13 +271,13 @@ class Post extends BaseModel
                 : '';
             $value = $postType.' '.$postId;
         }
-        if (null === $value) {
+        if ($value === null) {
             $value = 'u-'.random_int(1, 1000);
         }
         $value = Str::slug($value);
         $this->guid = $value;
 
-        if (null !== $this->getKey()) {
+        if ($this->getKey() !== null) {
             $this->update([
                 'guid' => $value,
             ]);

@@ -12,6 +12,7 @@ use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Filters\BaseFilter;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
@@ -19,15 +20,17 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\HtmlString;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator as LaravelTranslator;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
+use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
 use Modules\Lang\Actions\TranslatorAction;
 use Modules\Lang\Actions\WriteTranslationFileAction;
 use Modules\Lang\Adapters\TranslatorAdapter;
-use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
+use Modules\Lang\Datas\LangData;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Modules\Lang\Filament\Forms\Components\TranslationEditor;
@@ -47,7 +50,6 @@ use ReflectionProperty;
 
 use function Safe\file_put_contents;
 use function Safe\mkdir;
-use function Safe\putenv;
 use function Safe\rename;
 use function Safe\rmdir;
 use function Safe\unlink;
@@ -99,8 +101,7 @@ final class NationalFlagSelectFinalStub extends NationalFlagSelect
     }
 
     /**
-     * @param array<int, mixed> $filteredCountries
-     *
+     * @param  array<int, mixed>  $filteredCountries
      * @return array<int, mixed>
      */
     protected function finalizeFilteredCountries(array $filteredCountries): array
@@ -160,7 +161,7 @@ final class PostNullTitleForGuidStub extends Post
 
 final class ThemeComposerNonStringFieldStub extends ThemeComposer
 {
-    protected function langFieldValue(\Modules\Lang\Datas\LangData $lang, string $field): mixed
+    protected function langFieldValue(LangData $lang, string $field): mixed
     {
         return 42;
     }
@@ -274,7 +275,7 @@ test('SyncTranslationsAction skips empty casted glob entries', function (): void
     } finally {
         Mockery::close();
         if (is_dir($base)) {
-            \Illuminate\Support\Facades\File::deleteDirectory($base);
+            File::deleteDirectory($base);
         }
     }
 });
@@ -305,7 +306,7 @@ test('WriteTranslationFileAction createBackup makes directory', function (): voi
         }
         if (isset($moved) && is_dir($moved)) {
             if (is_dir($backupDir)) {
-                \Illuminate\Support\Facades\File::deleteDirectory($backupDir);
+                File::deleteDirectory($backupDir);
             }
             rename($moved, $backupDir);
         }
@@ -320,9 +321,9 @@ test('Switcher covers non-string localized url branch', function (): void {
         ],
     ]);
     app()->setLocale('it');
-    \Mcamara\LaravelLocalization\Facades\LaravelLocalization::shouldReceive('getSupportedLocales')
+    LaravelLocalization::shouldReceive('getSupportedLocales')
         ->andReturn(['it' => ['name' => 'Italiano'], 'en' => ['name' => 'English']]);
-    \Mcamara\LaravelLocalization\Facades\LaravelLocalization::shouldReceive('getLocalizedURL')
+    LaravelLocalization::shouldReceive('getLocalizedURL')
         ->andReturn(true);
 
     $switcher = new LangSwitcher();
@@ -332,7 +333,7 @@ test('Switcher covers non-string localized url branch', function (): void {
 
 test('Post linkable and accessor edge branches', function (): void {
     $post = new Post();
-    Assert::assertInstanceOf(\Illuminate\Database\Eloquent\Relations\MorphTo::class, $post->linkable());
+    Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
     $post->setRawAttributes(['post_type' => 123, 'post_id' => ['x']], true);
     Assert::assertIsString($post->getTitleAttribute(null));
@@ -585,8 +586,10 @@ test('NationalFlagSelect getCountryOptions casts int localized label', function 
     app()->setLocale('it');
     $real = app('translator');
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
-    app()->instance('translator', new class($real) {
+    app()->instance('translator', new class($real)
+    {
         public function __construct(private LaravelTranslator $inner) {}
+
         /** @param array<string, mixed> $replace */
         public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
         {
@@ -596,6 +599,7 @@ test('NationalFlagSelect getCountryOptions casts int localized label', function 
 
             return $this->inner->get($key, $replace, $locale, $fallback);
         }
+
         /** @param list<mixed> $arguments */
         public function __call(string $name, array $arguments): mixed
         {
@@ -621,8 +625,10 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
     app()->setLocale('it');
     $real = app('translator');
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
-    app()->instance('translator', new class($real) {
+    app()->instance('translator', new class($real)
+    {
         public function __construct(private LaravelTranslator $inner) {}
+
         /** @param array<string, mixed> $replace */
         public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
         {
@@ -632,6 +638,7 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
 
             return $this->inner->get($key, $replace, $locale, $fallback);
         }
+
         /** @param list<mixed> $arguments */
         public function __call(string $name, array $arguments): mixed
         {
