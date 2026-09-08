@@ -9,12 +9,14 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Section;
-use Filament\Schemas\Components\Wizard\Step;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
-use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Translation\ArrayLoader;
@@ -25,7 +27,9 @@ use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Actions\GetAllModuleTranslationAction;
 use Modules\Lang\Actions\GetAllTranslationAction;
+use Modules\Lang\Actions\GetTransPathAction;
 use Modules\Lang\Actions\PublishTranslationAction;
+use Modules\Lang\Actions\ReadTranslationFileAction;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
 use Modules\Lang\Actions\TransArrayAction;
@@ -76,8 +80,8 @@ use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 
-use function Safe\file_put_contents;
 use function Safe\fclose;
+use function Safe\file_put_contents;
 use function Safe\fopen;
 use function Safe\getmypid;
 use function Safe\mkdir;
@@ -110,11 +114,6 @@ final class LangBaseListRecordsStub extends LangBaseListRecords
 final class LangBaseViewRecordStub extends LangBaseViewRecord
 {
     protected static string $resource = TranslationFileResource::class;
-
-    protected function getInfolistSchema(): array
-    {
-        return [];
-    }
 }
 
 final class LangBasePolicyStub extends LangBasePolicy {}
@@ -159,11 +158,11 @@ final class StrictTranslationsHost extends BaseModel
 
 /**
  * @param  list<string>  $permissions
- * @return Mockery\MockInterface&UserContract
+ * @return MockInterface&UserContract
  */
 function langHundredFakeUser(array $permissions = [], bool $superAdmin = false): UserContract
 {
-    /** @var Mockery\MockInterface&UserContract $user */
+    /** @var MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
     $user->shouldReceive('hasRole')->with('super-admin')->andReturn($superAdmin);
     $user->shouldReceive('hasPermissionTo')
@@ -173,7 +172,6 @@ function langHundredFakeUser(array $permissions = [], bool $superAdmin = false):
 }
 
 /**
- * @param mixed ...$values
  * @return Collection<int|string, mixed>
  */
 function langMixedCollection(mixed ...$values): Collection
@@ -197,8 +195,8 @@ function langForceSqliteTranslations(): void
             'foreign_key_constraints' => false,
         ],
     ]);
-    \Illuminate\Support\Facades\DB::purge('lang');
-    \Illuminate\Support\Facades\DB::reconnect('lang');
+    DB::purge('lang');
+    DB::reconnect('lang');
 
     Schema::connection('lang')->dropIfExists('translations');
     Schema::connection('lang')->create('translations', static function (Blueprint $table): void {
@@ -221,7 +219,7 @@ afterEach(function (): void {
 
     $sqlite = $GLOBALS['__lang_cov_sqlite'] ?? null;
     if (is_string($sqlite)) {
-        \Illuminate\Support\Facades\DB::purge('lang');
+        DB::purge('lang');
         if (file_exists($sqlite)) {
             unlink($sqlite);
         }
@@ -302,7 +300,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
     test('SaveTransAction creates missing file and sets nested key', function (): void {
         TestCase::bindRealSaveTransAction();
         $file = sys_get_temp_dir().'/lang_save_cov_'.uniqid().'.php';
-        $this->mockService(\Modules\Lang\Actions\GetTransPathAction::class, static function (MockInterface $mock) use ($file): void {
+        $this->mockService(GetTransPathAction::class, static function (MockInterface $mock) use ($file): void {
             $mock->allows(['execute' => $file]);
         });
 
@@ -326,7 +324,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         TestCase::bindRealSaveTransAction();
         $file = sys_get_temp_dir().'/lang_save_root_'.uniqid().'.php';
         TestCase::createTranslationFile($file, ['a' => '1']);
-        $this->mockService(\Modules\Lang\Actions\GetTransPathAction::class, static function (MockInterface $mock) use ($file): void {
+        $this->mockService(GetTransPathAction::class, static function (MockInterface $mock) use ($file): void {
             $mock->allows(['execute' => $file]);
         });
 
@@ -417,9 +415,9 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $path = sys_get_temp_dir().'/lang_bad_'.uniqid().'.php';
         $action = app(WriteTranslationFileAction::class);
 
-        $read = Mockery::mock(\Modules\Lang\Actions\ReadTranslationFileAction::class);
+        $read = Mockery::mock(ReadTranslationFileAction::class);
         $read->shouldReceive('toPhp')->andReturn('<?php return [;');
-        app()->instance(\Modules\Lang\Actions\ReadTranslationFileAction::class, $read);
+        app()->instance(ReadTranslationFileAction::class, $read);
 
         expect(fn () => $action->execute($path, ['x' => 'y']))->toThrow(\Exception::class);
     });
@@ -636,7 +634,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 
         $mutate = new ReflectionMethod($edit, 'mutateFormDataBeforeSave');
         $mutate->setAccessible(true);
-        $record = new class() extends \Illuminate\Database\Eloquent\Model
+        $record = new class() extends Model
         {
             protected $guarded = [];
         };
@@ -646,7 +644,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         Assert::assertSame(['content' => null], $mutate->invoke($edit, ['content' => null]));
 
         $editNoKey = new EditTranslationFile();
-        $editNoKey->record = new class() extends \Illuminate\Database\Eloquent\Model
+        $editNoKey->record = new class() extends Model
         {
             protected $guarded = [];
         };
@@ -654,7 +652,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 
         $after = new ReflectionMethod($edit, 'afterSave');
         $after->setAccessible(true);
-        $refreshable = new class() extends \Illuminate\Database\Eloquent\Model
+        $refreshable = new class() extends Model
         {
             public bool $refreshed = false;
 
@@ -740,7 +738,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 
     test('LangField cast get and set via host model', function (): void {
         $cast = new LangField();
-        $host = new \Modules\Lang\Tests\Unit\LangFieldHostModel();
+        $host = new LangFieldHostModel();
         /** @var Post&MockInterface $post */
         $post = Mockery::mock(Post::class)->makePartial();
         $initialTitle = ['it' => 'Hello'];
@@ -844,7 +842,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
     test('Post linkable slug options and accessors without persistence', function (): void {
         $post = new Post();
         Assert::assertSame('guid', $post->getSlugOptions()->slugField);
-        Assert::assertInstanceOf(\Illuminate\Database\Eloquent\Relations\MorphTo::class, $post->linkable());
+        Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
         $post->setRawAttributes(['post_type' => 'article', 'post_id' => '9']);
         Assert::assertSame('article 9', $post->getTitleAttribute(null));
