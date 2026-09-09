@@ -5,7 +5,7 @@ type: concept
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -46,7 +46,7 @@ related:
 - Proper null handling implemented
 - Strict type declarations throughout
 
-### Filament 4.x Compatibility
+### Filament 5.x Compatibility
 - Translation resources properly structured
 - Language management follows new patterns
 - Form components use correct validation
@@ -91,7 +91,7 @@ related:
 ### Documentation Quality
 - Clear compliance documentation
 - Well-structured module features
-- Proper Filament 4.x compatibility notes
+- Proper Filament 5.x compatibility notes
 
 ## 📝 Documentation Status
 

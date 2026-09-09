@@ -12,7 +12,7 @@ related:
 # Filament 5 Migration Guide for Lang Module
 
 ## Overview
-This document describes the migration of the Lang module from Filament 4 with `lara-zeus/spatie-translatable` to Filament 5 with built-in translation support.
+This document describes the migration of the Lang module from Filament 5 with `lara-zeus/spatie-translatable` to Filament 5 with built-in translation support.
 
 ## Key Changes
 

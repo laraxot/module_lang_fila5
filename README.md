@@ -1,6 +1,6 @@
 # Lang Module
 
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
+[![Laravel 13.x](https://img.shields.io/badge/Laravel-13.x-red.svg)](https://laravel.com/)
 [![Filament 5.x](https://img.shields.io/badge/Filament-5.x-blue.svg)](https://filamentphp.com/)
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
 [![PHP 8.3+](https://img.shields.io/badge/PHP-8.3+-blue.svg)](https://php.net)
@@ -11,7 +11,6 @@
 
 ---
 
-<<<<<<< .merge_file_LJc3im
 ## Scopo e confini
 
 Lang è il modulo più piccolo del progetto — 62 file PHP, 4.545 righe — con la superficie
@@ -33,9 +32,7 @@ Scopo esteso, misure e mosse: [docs/scopo.md](docs/scopo.md).
 ---
 
 ## Perché
-=======
 ## Cosa fa
->>>>>>> .merge_file_4QglzC
 
 Il modulo Lang gestisce il sistema di localizzazione dell'intera applicazione: sincronizza i file di traduzione tra moduli, fornisce un editor visuale in Filament per modificare le traduzioni senza toccare i file, valida la completezza delle traduzioni tramite comandi Artisan, e integra Spatie/Astrotomic Translatable per modelli multilingua.
 
@@ -46,9 +43,9 @@ TextInput::make('name');
 // -> Risolve automaticamente da: {locale}/{module}::field.name.label
 
 // Sincronizzazione traduzioni
-app(SyncTranslationsAction::class)->execute('Quaeris', ['it', 'en', 'de']);
+app(SyncTranslationsAction::class)->execute('<nome progetto>', ['it', 'en', 'de']);
 
-// Modelli traducibili
+// Modelli traducibili<nome progetto>
 $survey->setTranslation('title', 'it', 'Questionario Soddisfazione');
 $survey->setTranslation('title', 'en', 'Satisfaction Survey');
 $survey->getTranslation('title', 'de'); // 'Zufriedenheitsumfrage'
@@ -151,9 +148,9 @@ Il modulo include un package locale (`Modules/Lang/packages/lara-zeus/spatie-tra
 
 ```
 Lang ──> Tutti i moduli (auto-risoluzione traduzioni)
-Lang ──> Quaeris    (titoli survey, etichette chart)
+Lang ──> <nome progetto>    (titoli survey, etichette chart)
 Lang ──> Limesurvey (traduzioni domande/risposte)
-Lang ──> Cms        (contenuto pagine multilingua)
+Lang ──> <nome progetto>    (contenuto pagine multilingua)
 Lang ──> Meetup     (eventi multilingua)
 Lang ──> UI         (componenti con label tradotte)
 ```
@@ -745,14 +742,14 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
 # 🌐 Lang
 
 [![Domain-i18n](https://img.shields.io/badge/Domain-i18n-5E35B1.svg)](#)
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
+[![Laravel 13](https://img.shields.io/badge/Laravel-13-red.svg)](https://laravel.com/)
 [![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
 [![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+[![<nome progetto> Platform](https://img.shields.io/badge/Platform-<nome progetto>-008758.svg)](#)
 
 > **Italiano in UI, inglese nel codice.** Chiavi strutturate, zero `->label()` hardcoded — i18n che scala su 20 moduli.
 
@@ -797,8 +794,7 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
-<<<<<<< .merge_file_LJc3im
-**Modulo** `lang` · **Laraxot / FixCity Platform** · licenza MIT
+**Modulo** `lang` · **Laraxot / <nome progetto> Platform** · licenza MIT
 
 ---
 
@@ -806,6 +802,4 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 Perche' esiste, come raggiungere meglio il suo scopo e cosa **non** gli appartiene:
 [`docs/purpose.md`](./docs/purpose.md).
-=======
-**Modulo** `lang` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
->>>>>>> .merge_file_4QglzC
+**Modulo** `lang` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5

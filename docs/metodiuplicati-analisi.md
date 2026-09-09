@@ -5,7 +5,7 @@ type: concept
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -117,7 +117,7 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 
 ### Pattern 1: getTableColumns() - ESEMPIO REALE
 
-#### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
+#### <nome progetto>/TicketResource/ListTickets.php (ECCELLENTE)
 ```php
 protected function getTableColumns(): array
 {
@@ -478,7 +478,7 @@ public function getTableFilters(): array
 - Test dopo ogni modulo
 - Code review
 
-**Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
+**Settimana 2**: Moduli Business (<nome progetto>, Blog, Geo)
 - 20 List files
 - Test integrazione
 - Performance check
@@ -516,7 +516,7 @@ public function getTableFilters(): array
 3. Refactoring moduli core (Xot, User, Cms)
 
 #### ⭐⭐⭐⭐ PRIORITÀ ALTA
-4. Refactoring moduli business (Fixcity, Blog, Geo)
+4. Refactoring moduli business (<nome progetto>, Blog, Geo)
 5. ActionPresets per CRUD
 6. Documentazione completa
 

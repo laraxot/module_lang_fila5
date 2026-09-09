@@ -1625,7 +1625,7 @@ type: concept
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -2352,7 +2352,7 @@ type: concept
 tags: [migration, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migration filament 4"
+qmd: "migration Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -3407,7 +3407,7 @@ type: concept
 tags: [migration, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migration filament 4"
+qmd: "migration Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---

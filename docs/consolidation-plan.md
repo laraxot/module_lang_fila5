@@ -194,7 +194,7 @@ laravel/Modules/Lang/docs/
 
 ### Backup
 ```bash
-cd /var/www/_bases/base_ptvx_fila5
+cd /var/www/_bases/<repo progetto>
 git add -A
 git commit -m "backup: Lang docs before consolidation"
 ```
@@ -335,7 +335,7 @@ Example workflow:
 ## Final Commit
 
 ```bash
-cd /var/www/_bases/base_ptvx_fila5
+cd /var/www/_bases/<repo progetto>
 git add -A
 git commit -m "chore: Lang docs aggressive consolidation — 579→150 files, 339→24 root
 
