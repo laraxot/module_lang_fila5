@@ -1792,7 +1792,7 @@ type: rule
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -3732,7 +3732,7 @@ type: concept
 tags: [migration, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migration filament 4"
+qmd: "migration Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -3882,7 +3882,7 @@ type: concept
 tags: [migration, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migration filament 4"
+qmd: "migration Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -5175,7 +5175,7 @@ type: rule
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -7239,7 +7239,7 @@ type: rule
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -7410,7 +7410,7 @@ type: concept
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -8265,7 +8265,7 @@ type: rule
 tags: [migration, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migration filament 4"
+qmd: "migration Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -13635,7 +13635,7 @@ type: concept
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -15072,7 +15072,7 @@ type: concept
 tags: [migration, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migration filament 4"
+qmd: "migration Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -15551,16 +15551,16 @@ return [
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 2.0*
-*Compatibilità: Laravel 12.x, Filament 4.x*
+*Compatibilità: Laravel 13.x, Filament 5.x*
 *Versione: 2.0*
-*Compatibilità: Laravel 12.x, Filament 4.x*
+*Compatibilità: Laravel 13.x, Filament 5.x*
 *Versione: 2.0*
-*Compatibilità: Laravel 12.x, Filament 4.x*
+*Compatibilità: Laravel 13.x, Filament 5.x*
 *Versione: 2.0*
-*Compatibilità: Laravel 12.x, Filament 4.x*
+*Compatibilità: Laravel 13.x, Filament 5.x*
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 2.0*
-*Compatibilità: Laravel 12.x, Filament 4.x*
+*Compatibilità: Laravel 13.x, Filament 5.x*
 
 ---
 
@@ -15574,7 +15574,7 @@ type: concept
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---

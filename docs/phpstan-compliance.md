@@ -27,7 +27,7 @@ The Lang module is fully compliant with PHPStan level 9 analysis, demonstrating:
 - ✅ Rigorous type hints implementation
 - ✅ Proper null handling
 - ✅ Correct array structure definitions
-- ✅ Filament 4.x compatibility
+- ✅ Filament 5.x compatibility
 - ✅ Safe function usage
 - ✅ Strict types declaration
 
@@ -40,7 +40,7 @@ This module provides internationalization functionality including:
 - Locale configuration
 - Translation validation
 
-## Filament 4.x Compatibility
+## Filament 5.x Compatibility
 
 All Filament components verified:
 - Translation resources properly structured

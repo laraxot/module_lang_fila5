@@ -48,11 +48,11 @@ This file contains a comprehensive list of files with merge conflict markers (`<
 - ./laravel/Modules/Geo/docs/wiki/log.md
 - ./laravel/Modules/Geo/docs/wiki/AGENTS.md
 
-### Fixcity Module (4 files)
-- ./laravel/Modules/Fixcity/docs/wiki/index.md
-- ./laravel/Modules/Fixcity/docs/wiki/log.md
-- ./laravel/Modules/Fixcity/resources/views/filament/widgets/ticket-create-wizard.blade.php
-- ./laravel/Modules/Fixcity/docs/wiki/index.md
+### <nome progetto> Module (4 files)
+- ./laravel/Modules/<nome progetto>/docs/wiki/index.md
+- ./laravel/Modules/<nome progetto>/docs/wiki/log.md
+- ./laravel/Modules/<nome progetto>/resources/views/filament/widgets/ticket-create-wizard.blade.php
+- ./laravel/Modules/<nome progetto>/docs/wiki/index.md
 
 ### Notify Module (3 files)
 - ./laravel/Modules/Notify/docs/wiki/index.md

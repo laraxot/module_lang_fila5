@@ -5,7 +5,7 @@ type: concept
 tags: [migration, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migration filament 4"
+qmd: "migration Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -15,7 +15,7 @@ related:
 **Module Name**: Lang  
 **Type**: Localization & Translation Module  
 **Status**: ✅ Active  
-**Framework**: Laravel 12.x + Filament 4.x  
+**Framework**: Laravel 13.x + Filament 5.x  
 **Translation System**: Laravel Localization + Advanced Features  
 **Language**: Multi-language (IT/EN/DE + 7 more)  
 
@@ -80,7 +80,7 @@ The Lang module provides comprehensive localization and translation management:
 - Xot module (for base classes)
 - Laravel localization system
 - Translation management tools
-- Filament 4.x (management interface)
+- Filament 5.x (management interface)
 - Database for translation storage
 
 ## Key Metrics

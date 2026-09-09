@@ -49,7 +49,7 @@ type: concept
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -1941,7 +1941,7 @@ type: concept
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -2280,7 +2280,7 @@ type: concept
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -2894,7 +2894,7 @@ type: concept
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -2999,7 +2999,7 @@ type: concept
 tags: [migration, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migration filament 4"
+qmd: "migration Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -3288,7 +3288,7 @@ Same issue - localize POST URLs to prevent redirects that change locale.
 ## References
 
 - [Official Documentation](https://github.com/mcamara/laravel-localization)
-- [Laravel 12 Compatibility](#laravel-compatibility)
+- [Laravel 13 Compatibility](#laravel-compatibility)
 
 ---
 
@@ -3302,7 +3302,7 @@ type: concept
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -4782,7 +4782,7 @@ type: concept
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migrazione filament 4"
+qmd: "migrazione Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
