@@ -15,7 +15,7 @@ related:
 **Module Name**: Lang  
 **Type**: Localization & Translation Module  
 **Status**: ✅ Active  
-**Framework**: Laravel 12.x + Filament 4.x  
+**Framework**: Laravel 13.x + Filament 5.x  
 **Translation System**: Laravel Localization + Advanced Features  
 **Language**: Multi-language (IT/EN/DE + 7 more)  
 
@@ -70,7 +70,7 @@ The Lang module provides comprehensive localization and translation management:
 ## Integration with Other Modules
 - **User**: User language preferences
 - **Cms**: Multi-language content
-- **Quaeris**: Survey translation
+- **<nome progetto>**: Survey translation
 - **Limesurvey**: Question translation
 - **Xot**: Base localization infrastructure
 - **Filament**: Translation management interface
@@ -79,7 +79,7 @@ The Lang module provides comprehensive localization and translation management:
 - Xot module (for base classes)
 - Laravel localization system
 - Translation management tools
-- Filament 4.x (management interface)
+- Filament 5.x (management interface)
 - Database for translation storage
 
 ## Key Metrics
