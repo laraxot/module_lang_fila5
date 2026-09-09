@@ -150,9 +150,8 @@ describe('Lang coverage boost — Filament static', function (): void {
 
 describe('Lang coverage boost — UI and data', function (): void {
     test('translation file schemas and pages build executable structures', function (): void {
-        # @phpstan-ignore-next-line
-        $formSchema = TranslationFileForm::getFormSchema();
-        $infolistSchema = TranslationFileInfolist::getInfolistSchema();
+        $formSchema = app(TranslationFileForm::class)->getFormSchema();
+        $infolistSchema = app(TranslationFileInfolist::class)->getInfolistSchema();
         $tableColumns = (new TranslationFilesTable)->getTableColumns();
 
         Assert::assertArrayHasKey('name', $formSchema);
