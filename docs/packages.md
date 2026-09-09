@@ -5,7 +5,7 @@ type: concept
 tags: [migration, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "migration filament 4"
+qmd: "migration Filament 5"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -14,12 +14,12 @@ related:
 ## Pacchetti Utilizzati
 
 ### Core
-- [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
-- [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
-- [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
 - [laraxot/module_xot_fila5](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
-- [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
+- [laraxot/module_tenant_fila5](../Tenant/docs/packages.md) - Gestione multi-tenant
+- [laraxot/module_xot_fila5](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
+- [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
+- [laraxot/module_tenant_fila5](../Tenant/docs/packages.md) - Gestione multi-tenant
 - [laraxot/module_xot_fila5](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila5](../Tenant/docs/packages.md) - Gestione multi-tenant

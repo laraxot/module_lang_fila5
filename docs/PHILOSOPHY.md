@@ -72,7 +72,7 @@ When a key is requested but not found, the **TranslatorAdapter** catches it, log
 
 In a 20-module Laravel platform:
 
-- **FixCity**: admin, geo, survey, communication, analytics, reports, settings — each with their own UI.
+- **<nome progetto>**: admin, geo, survey, communication, analytics, reports, settings — each with their own UI.
 - **Without Lang**: Each module hardcodes labels in Blade/Filament. Translators receive Blade files. Nightmarish.
 - **With Lang**: Each module contributes `/lang/it/module.php`. Translators work with PHP arrays. Sync ensures consistency.
 
@@ -145,7 +145,7 @@ The architecture **prepares for RTL** (e.g., Arabic, Hebrew):
 
 ---
 
-## SCOPO (Purpose in FixCity)
+## SCOPO (Purpose in <nome progetto>)
 
 The Lang module exists to serve a **20+ module healthcare platform** where:
 
@@ -155,9 +155,9 @@ The Lang module exists to serve a **20+ module healthcare platform** where:
 - **Reports, surveys, patient communications** are fully translatable.
 - **Changelog, audit logs** stay in English for developer access.
 
-**Specific FixCity responsibilities**:
+**Specific <nome progetto> responsibilities**:
 
-1. **Quaeris integration**: Survey titles, chart labels, question translations.
+1. **<nome progetto> integration**: Survey titles, chart labels, question translations.
 2. **CMS integration**: Page content, menu titles, rich text descriptions.
 3. **Email/Notification templates**: Multi-language messages, dynamic placeholders.
 4. **Form validation**: 50+ validation rules, each translated to 3 languages.
@@ -258,8 +258,8 @@ Current: Keys are logged when requested but not found.
 
 Planned:
 
-- Artisan command: `php artisan lang:audit --module=Quaeris --threshold=90`
-- Report: "Module Quaeris has 87% translation coverage. Missing: 15 keys in German."
+- Artisan command: `php artisan lang:audit --module=<nome progetto> --threshold=90`
+- Report: "Module <nome progetto> has 87% translation coverage. Missing: 15 keys in German."
 - Dashboard widget in Filament showing coverage per module per language.
 
 **Timeline**: Q3 2026.
@@ -763,7 +763,7 @@ php artisan lang:sync --module=Patient --source=it --target=en,de
 php artisan lang:sync
 
 # Sync with specific target language
-php artisan lang:sync --module=Quaeris --target=de
+php artisan lang:sync --module=<nome progetto> --target=de
 ```
 
 ### F. Validating Translation Completeness

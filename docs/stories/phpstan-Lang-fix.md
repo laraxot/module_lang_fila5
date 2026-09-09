@@ -1,7 +1,7 @@
 ---
 id: phpstan-Lang-fix
 slug: phpstan-Lang
-scope: [module:Lang, project:base_workorder_fila5]
+scope: [module:Lang, project:<repo progetto>]
 status: Done
 priority: High
 created: 2026-09-06
@@ -16,13 +16,13 @@ related:
 ## Problema
 PHPStan errors in Modules/Lang: `class.notFound` on `@property-read` docblocks in
 `app/Models/LanguageLine.php` and `app/Models/Post.php` referencing
-`Modules\Quaeris\Models\Profile`, a class that does not exist in this codebase
-(leftover from an unrelated project — no `Modules/Quaeris` anywhere in the tree).
+`Modules\<nome progetto>\Models\Profile`, a class that does not exist in this codebase
+(leftover from an unrelated project — no `Modules/<nome progetto>` anywhere in the tree).
 
 ## Solution
 1. Analyze with phpstan → 6 errors, all `class.notFound` on the same bogus
-   `Modules\Quaeris\Models\Profile` reference (3 properties x 2 files).
-2. Fix root cause: replaced `Modules\Quaeris\Models\Profile` with
+   `Modules\<nome progetto>\Models\Profile` reference (3 properties x 2 files).
+2. Fix root cause: replaced `Modules\<nome progetto>\Models\Profile` with
    `Modules\Xot\Contracts\ProfileContract` in both files' `use` imports and
    `@property-read` docblocks — matching the established pattern already used
    identically by `Modules/Geo/app/Models/Location.php`,
