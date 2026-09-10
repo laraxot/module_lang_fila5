@@ -10,12 +10,4 @@ use Modules\Lang\Models\TranslationFile;
 final class LangBaseResourceStub extends LangBaseResource
 {
     protected static ?string $model = TranslationFile::class;
-
-    /**
-     * @return array<int|string, \Filament\Schemas\Components\Component>
-     */
-    public function getFormSchemaOld(): array
-    {
-        return [];
-    }
 }
