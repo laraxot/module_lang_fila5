@@ -214,7 +214,7 @@ return [
         'stabi' => ['label' => 'stabi', 'icon' => 'stabi', 'tooltip' => 'stabi'],
         'repar' => ['label' => 'repar', 'icon' => 'repar', 'tooltip' => 'repar'],
         'nome_stabi' => ['label' => 'nome_stabi', 'icon' => 'nome_stabi', 'tooltip' => 'nome_stabi'],
-        'logout' => ['tooltip' => 'logout'],
+        'logout' => ['tooltip' => 'logout', 'icon' => 'logout'],
         'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
         'convert' => ['label' => 'convert', 'icon' => 'convert', 'tooltip' => 'convert'],
         'field' => ['label' => 'field', 'icon' => 'field', 'tooltip' => 'field'],
