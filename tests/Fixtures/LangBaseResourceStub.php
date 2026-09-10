@@ -12,9 +12,9 @@ final class LangBaseResourceStub extends LangBaseResource
     protected static ?string $model = TranslationFile::class;
 
     /**
-     * @return array<string, mixed>
+     * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-    public static function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [];
     }

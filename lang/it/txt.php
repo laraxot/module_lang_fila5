@@ -183,6 +183,16 @@ return [
         'b' => ['label' => 'b'],
         'badge' => ['label' => 'badge', 'placeholder' => 'badge', 'helper_text' => 'badge', 'description' => 'badge'],
         'date' => ['label' => 'date', 'placeholder' => 'date', 'helper_text' => 'date', 'description' => 'date'],
+        'map_picker' => ['label' => 'map_picker', 'placeholder' => 'map_picker', 'helper_text' => 'map_picker', 'description' => 'map_picker'],
+        'worker' => ['label' => 'worker'],
+        'mixed' => ['label' => 'mixed'],
+        'valid' => ['label' => 'valid'],
+        'also_valid' => ['label' => 'also_valid'],
+        'empty' => ['label' => 'empty'],
+        'id/motivo' => ['label' => 'id/motivo'],
+        'valutatore' => [
+            'nome_diri' => ['label' => 'valutatore.nome_diri'],
+        ],
     ],
     'actions' => [
         'authenticate' => ['label' => 'Autentica', 'tooltip' => 'Effettua il login nel sistema', 'icon' => 'ui-login', 'color' => 'primary'],
