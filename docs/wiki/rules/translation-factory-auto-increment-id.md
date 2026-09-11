@@ -7,9 +7,15 @@ created: 2026-06-12
 updated: 2026-06-12
 qmd: "Lang TranslationFactory auto increment id sqlite unique constraint randomNumber factory"
 issues:
+<<<<<<< HEAD
   - "https://github.com/laraxot/base_ptv_fila5/issues/345"
 discussions:
   - "https://github.com/laraxot/base_ptv_fila5/discussions/273"
+=======
+  - "https://github.com/laraxot/platform/issues/345"
+discussions:
+  - "https://github.com/laraxot/platform/discussions/273"
+>>>>>>> laraxot/dev
 related:
   - ../../../../../docs/wiki/rules/testing-modules-pest.md
   - ../../../../../docs/wiki/bmad/architecture-phpunit-central-config.md
@@ -31,7 +37,11 @@ Corretto: lasciare che sqlite/mysql assegnino l'id auto-increment.
 
 ## Perche'
 
+<<<<<<< HEAD
 Durante i run Pest coverage di STORY-345, `TranslationFactory` ha generato un `id` gia' presente nel database condiviso `ptv_data.sqlite`, causando:
+=======
+Durante i run Pest coverage di STORY-345, `TranslationFactory` ha generato un `id` gia' presente nel database condiviso `database.sqlite`, causando:
+>>>>>>> laraxot/dev
 
 ```text
 UNIQUE constraint failed: translations.id

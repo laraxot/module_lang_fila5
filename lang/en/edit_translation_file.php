@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 return [
     'navigation' => [
         'name' => [
@@ -92,6 +97,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'key' => [
             'label' => 'key',
             'placeholder' => 'key',
@@ -502,6 +508,8 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'resources' => [
         'doctor' => [
@@ -513,6 +521,7 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
+<<<<<<< HEAD
         'delete' => [
             'label' => 'delete',
         ],
@@ -522,5 +531,7 @@ return [
         'lang' => [
             'label' => 'lang',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
 ];

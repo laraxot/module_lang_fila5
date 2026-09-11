@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Model Translations in `<nome progetto>`"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "migrazione filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Model Translations in `<nome progetto>`
 
 ## Overview

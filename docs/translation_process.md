@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Processo di Traduzione: Da Sviluppatore a Traduttore"
 module: "Lang"
 type: concept
@@ -250,6 +251,8 @@ Questo documento fornisce una guida completa per la gestione delle traduzioni ne
 <!-- Merged from TRANSLATION_PROCESS.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
+=======
+>>>>>>> laraxot/dev
 module: theme
 topic: TRANSLATION_PROCESS
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules

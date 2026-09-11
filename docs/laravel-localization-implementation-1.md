@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione della Localizzazione"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Implementazione della Localizzazione
 
 ## Collegamenti correlati

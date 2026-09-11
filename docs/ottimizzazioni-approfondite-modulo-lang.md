@@ -171,7 +171,11 @@ if [ -d "_docs" ]; then
 fi
 
 # Eliminare file duplicati
+<<<<<<< HEAD
 rm -f CHANGELOG.md
+=======
+rm -f changelog.md
+>>>>>>> laraxot/dev
 ```
 
 ### Fase 2: Standardizzazione Cartelle (Priorità ALTA)

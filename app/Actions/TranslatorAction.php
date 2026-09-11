@@ -8,7 +8,10 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions;
 
+<<<<<<< HEAD
 use Illuminate\Events\Dispatcher;
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Translation\Translator as LaravelTranslator;
 use Modules\Lang\Models\Translation;
 use Spatie\QueueableAction\QueueableAction;
@@ -17,9 +20,12 @@ class TranslatorAction extends LaravelTranslator
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     /** @var Dispatcher */
     protected $events;
 
+=======
+>>>>>>> laraxot/dev
     /**
      * Get the translation for the given key.
      *
@@ -38,7 +44,15 @@ class TranslatorAction extends LaravelTranslator
             return $result;
         }
 
+<<<<<<< HEAD
         return is_string($result) ? $result : (string) $result;
+=======
+        if (! is_string($result)) {
+            return (string) $key;
+        }
+
+        return $result;
+>>>>>>> laraxot/dev
     }
 
     public function execute(): void {}
@@ -47,12 +61,20 @@ class TranslatorAction extends LaravelTranslator
     {
         $lang = app()->getLocale();
         [$namespace, $group, $item] = $this->parseKey($key);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
         $data = [
             'lang' => $lang,
             'namespace' => $namespace,
             'group' => $group,
             'item' => $item,
         ];
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
         Translation::firstOrCreate($data);
     }
 }

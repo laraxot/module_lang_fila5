@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Collegamenti al Modulo User"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Collegamenti al Modulo User
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo Lang e il modulo User.

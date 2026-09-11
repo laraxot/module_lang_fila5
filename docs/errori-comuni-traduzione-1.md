@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Errori comuni nei file di traduzione"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "migrazione filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Errori comuni nei file di traduzione
 
 ## Errori di sintassi
