@@ -13,12 +13,17 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Modules\Lang\Actions\GetAllTranslationAction;
+<<<<<<< HEAD
+=======
+use Modules\Lang\Database\Factories\TranslationFileFactory;
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\ProfileContract;
 use Sushi\Sushi;
 
 use function Safe\json_encode;
 
 /**
+<<<<<<< HEAD
  * @property int $id
  * @property string|null $name
  * @property string|null $path
@@ -30,6 +35,27 @@ use function Safe\json_encode;
  * @method static Builder<static>|TranslationFile newQuery()
  * @method static Builder<static>|TranslationFile query()
  * @method static Builder<static>|TranslationFile whereId($value)
+=======
+ * @property string|null $key
+ * @property string|null $path
+ * @property string|null $id
+ * @property string|null $name
+ * @property array<array-key, mixed>|null $content
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ *
+ * @method static TranslationFileFactory factory($count = null, $state = [])
+ * @method static Builder<static>|TranslationFile newModelQuery()
+ * @method static Builder<static>|TranslationFile newQuery()
+ * @method static Builder<static>|TranslationFile query()
+ * @method static Builder<static>|TranslationFile whereContent($value)
+ * @method static Builder<static>|TranslationFile whereId($value)
+ * @method static Builder<static>|TranslationFile whereKey($value)
+ * @method static Builder<static>|TranslationFile whereName($value)
+ * @method static Builder<static>|TranslationFile wherePath($value)
+ *
+ * @property ProfileContract|null $deleter
+>>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */
@@ -88,11 +114,15 @@ class TranslationFile extends BaseModel
         $files = app(GetAllTranslationAction::class)->execute();
 
         /** @var array<int, array<string, mixed>> $result */
+<<<<<<< HEAD
         $result = Arr::map($files, function (mixed $item): array {
             if (! is_array($item)) {
                 return [];
             }
 
+=======
+        $result = Arr::map($files, function (array $item) {
+>>>>>>> laraxot/dev
             $key = $item['key'] ?? null;
             /** @var string|int|float|bool|null $keyNarrowed */
             $keyNarrowed = $key;
@@ -143,8 +173,18 @@ class TranslationFile extends BaseModel
 
     private function isRunningIdeHelper(): bool
     {
+<<<<<<< HEAD
         return filter_var(config('app.phpstan_running', false), FILTER_VALIDATE_BOOLEAN)
             || (is_array($_SERVER['argv'] ?? null) && in_array('ide-helper:models', $_SERVER['argv'], true));
+=======
+        if (defined('PHPSTAN_RUNNING')) {
+            return true;
+        }
+
+        $argv = $_SERVER['argv'] ?? [];
+
+        return is_array($argv) && in_array('ide-helper:models', $argv, true);
+>>>>>>> laraxot/dev
     }
 
     /**

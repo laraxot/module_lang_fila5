@@ -8,7 +8,11 @@ use Modules\Lang\Models\Post;
 
 final class PostNullTitleForGuidStub extends Post
 {
+<<<<<<< HEAD
     protected function titleForGuid(): ?string
+=======
+    protected function titleForGuid(): null
+>>>>>>> laraxot/dev
     {
         return null;
     }

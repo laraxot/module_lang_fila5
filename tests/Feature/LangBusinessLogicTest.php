@@ -10,11 +10,15 @@ use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
+<<<<<<< HEAD
 use Modules\Xot\Tests\XotBasePest;
+=======
+>>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 beforeEach(function (): void {
     /** @var TestCase $this */
     if (TestCase::langDbUnavailable()) {
@@ -22,6 +26,8 @@ beforeEach(function (): void {
     }
 });
 
+=======
+>>>>>>> laraxot/dev
 describe('Lang Business Logic', function () {
     it('can create and manage posts', function () {
         $user = UserFactory::new()->createOne();
@@ -38,7 +44,11 @@ describe('Lang Business Logic', function () {
         Assert::assertSame('Test Post', $post->title);
         Assert::assertSame('draft', $post->status);
 
+<<<<<<< HEAD
         XotBasePest::assertTableHas('lang', 'posts', [
+=======
+        langAssertDatabaseHasRow('posts', [
+>>>>>>> laraxot/dev
             'id' => $post->id,
             'user_id' => $user->id,
             'title' => 'Test Post',
@@ -58,7 +68,11 @@ describe('Lang Business Logic', function () {
         $freshPost = $post->fresh();
         Assert::assertNotNull($freshPost);
         Assert::assertSame('published', $freshPost->status);
+<<<<<<< HEAD
         XotBasePest::assertTableHas('lang', 'posts', [
+=======
+        langAssertDatabaseHasRow('posts', [
+>>>>>>> laraxot/dev
             'id' => $post->id,
             'status' => 'published',
         ]);
@@ -81,12 +95,20 @@ describe('Lang Business Logic', function () {
 
         Assert::assertSame('news', $newsPost->category);
         Assert::assertSame('tutorial', $tutorialPost->category);
+<<<<<<< HEAD
         XotBasePest::assertTableHas('lang', 'posts', [
+=======
+        langAssertDatabaseHasRow('posts', [
+>>>>>>> laraxot/dev
             'id' => $newsPost->id,
             'category' => 'news',
         ]);
 
+<<<<<<< HEAD
         XotBasePest::assertTableHas('lang', 'posts', [
+=======
+        langAssertDatabaseHasRow('posts', [
+>>>>>>> laraxot/dev
             'id' => $tutorialPost->id,
             'category' => 'tutorial',
         ]);
@@ -108,7 +130,11 @@ describe('Lang Business Logic', function () {
         Assert::assertSame('Welcome to our application', $translation->value);
         Assert::assertSame('en', $translation->locale);
 
+<<<<<<< HEAD
         XotBasePest::assertTableHas('lang', 'translations', [
+=======
+        langAssertDatabaseHasRow('translations', [
+>>>>>>> laraxot/dev
             'id' => $translation->id,
             'user_id' => $user->id,
             'key' => 'welcome.message',
@@ -145,17 +171,29 @@ describe('Lang Business Logic', function () {
         Assert::assertSame('Benvenuto nella nostra applicazione', $italianTranslation->value);
         Assert::assertSame('Willkommen in unserer Anwendung', $germanTranslation->value);
 
+<<<<<<< HEAD
         XotBasePest::assertTableHas('lang', 'translations', [
+=======
+        langAssertDatabaseHasRow('translations', [
+>>>>>>> laraxot/dev
             'key' => 'welcome.message',
             'locale' => 'en',
         ]);
 
+<<<<<<< HEAD
         XotBasePest::assertTableHas('lang', 'translations', [
+=======
+        langAssertDatabaseHasRow('translations', [
+>>>>>>> laraxot/dev
             'key' => 'welcome.message',
             'locale' => 'it',
         ]);
 
+<<<<<<< HEAD
         XotBasePest::assertTableHas('lang', 'translations', [
+=======
+        langAssertDatabaseHasRow('translations', [
+>>>>>>> laraxot/dev
             'key' => 'welcome.message',
             'locale' => 'de',
         ]);
@@ -234,7 +272,11 @@ describe('Lang Business Logic', function () {
         $freshTranslation = $translation->fresh();
         Assert::assertNotNull($freshTranslation);
         Assert::assertSame('Updated message', $freshTranslation->value);
+<<<<<<< HEAD
         XotBasePest::assertTableHas('lang', 'translations', [
+=======
+        langAssertDatabaseHasRow('translations', [
+>>>>>>> laraxot/dev
             'id' => $translation->id,
             'value' => 'Updated message',
         ]);
@@ -255,7 +297,11 @@ describe('Lang Business Logic', function () {
         Assert::assertSame('SEO Meta Description', $post->meta_description);
         Assert::assertSame('seo, optimization, meta', $post->meta_keywords);
 
+<<<<<<< HEAD
         XotBasePest::assertTableHas('lang', 'posts', [
+=======
+        langAssertDatabaseHasRow('posts', [
+>>>>>>> laraxot/dev
             'id' => $post->id,
             'meta_title' => 'SEO Meta Title',
             'meta_description' => 'SEO Meta Description',
@@ -284,12 +330,20 @@ describe('Lang Business Logic', function () {
 
         Assert::assertSame('admin', $adminTranslation->namespace);
         Assert::assertSame('frontend', $frontendTranslation->namespace);
+<<<<<<< HEAD
         XotBasePest::assertTableHas('lang', 'translations', [
+=======
+        langAssertDatabaseHasRow('translations', [
+>>>>>>> laraxot/dev
             'id' => $adminTranslation->id,
             'namespace' => 'admin',
         ]);
 
+<<<<<<< HEAD
         XotBasePest::assertTableHas('lang', 'translations', [
+=======
+        langAssertDatabaseHasRow('translations', [
+>>>>>>> laraxot/dev
             'id' => $frontendTranslation->id,
             'namespace' => 'frontend',
         ]);
@@ -309,7 +363,11 @@ describe('Lang Business Logic', function () {
             ]);
 
             Assert::assertSame($locale, $translation->locale);
+<<<<<<< HEAD
             XotBasePest::assertTableHas('lang', 'translations', [
+=======
+            langAssertDatabaseHasRow('translations', [
+>>>>>>> laraxot/dev
                 'id' => $translation->id,
                 'locale' => $locale,
             ]);
@@ -333,7 +391,11 @@ describe('Lang Business Logic', function () {
             $futureDate->format('Y-m-d H:i:s'),
             $scheduledPost->published_at->format('Y-m-d H:i:s'),
         );
+<<<<<<< HEAD
         XotBasePest::assertTableHas('lang', 'posts', [
+=======
+        langAssertDatabaseHasRow('posts', [
+>>>>>>> laraxot/dev
             'id' => $scheduledPost->id,
             'status' => 'scheduled',
         ]);

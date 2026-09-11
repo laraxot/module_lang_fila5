@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Integrazione avanzata: mcamara/laravel-localization + Laravel Folio"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Integrazione avanzata: mcamara/laravel-localization + Laravel Folio
 
 ## 1. Introduzione

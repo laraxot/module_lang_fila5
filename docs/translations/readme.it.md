@@ -79,7 +79,11 @@ related:
 - [Workflow PHPStan](../phpstan_workflow.md)
 - [Panoramica dei Moduli](../modules.md)
 - [Architettura](../architecture.md)
+<<<<<<< HEAD
 - [Indice del Progetto](../index.md)
+=======
+- [Indice del Progetto](../INDEX.md)
+>>>>>>> laraxot/dev
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
 - [Architettura](architecture.md)
@@ -169,7 +173,11 @@ Questo progetto è open-source e disponibile sotto la [Licenza MIT](../../LICENS
 - [Workflow PHPStan](../phpstan_workflow.md)
 - [Panoramica dei Moduli](../modules.md)
 - [Architettura](../architecture.md)
+<<<<<<< HEAD
 - [Indice del Progetto](../index.md)
+=======
+- [Indice del Progetto](../INDEX.md)
+>>>>>>> laraxot/dev
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
 - [Architettura](architecture.md)
@@ -189,6 +197,7 @@ Questo progetto è open-source e disponibile sotto la [Licenza MIT](../../LICENS
 <div align="center">
   <sub>Costruito con ❤️ dal team Base <nome progetto> Fila 5</sub>
 </div>
+<<<<<<< HEAD
 
 ---
 
@@ -291,3 +300,5 @@ Questo progetto è open-source e disponibile sotto la [Licenza MIT](../../LICENS
 <div align="center">
   <sub>Costruito con ❤️ dal team Base Predict Fila3 Mono</sub>
 </div>
+=======
+>>>>>>> laraxot/dev

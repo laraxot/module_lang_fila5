@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Integrazione di mcamara/laravel-localization"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Integrazione di mcamara/laravel-localization
 
 Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto <nome progetto>.

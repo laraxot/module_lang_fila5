@@ -85,6 +85,7 @@ related:
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+<<<<<<< HEAD
 
 ---
 
@@ -145,3 +146,5 @@ related:
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+=======
+>>>>>>> laraxot/dev

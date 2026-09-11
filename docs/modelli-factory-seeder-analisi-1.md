@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi Modelli, Factory e Seeder - Modulo Lang"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "migration filament"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Analisi Modelli, Factory e Seeder - Modulo Lang
 
 ## Panoramica

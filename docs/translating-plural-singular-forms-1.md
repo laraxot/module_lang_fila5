@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Traduzione di Forme Plurali e Singolari"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Traduzione di Forme Plurali e Singolari
 
 ## Introduzione

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Migration Patterns for Lang Module"
 module: "Lang"
@@ -210,6 +211,8 @@ This migration pattern has been applied to:
 
 <!-- Merged from MIGRATIONS.md, which collided with this file on case-insensitive filesystems. -->
 
+=======
+>>>>>>> laraxot/dev
 # Migrations — Lang Module
 
 Questo documento descrive le migrazioni nel modulo Lang e come mantengono la conformità con il pattern XotBaseMigration.

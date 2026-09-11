@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
         'email' => ['label' => 'Email', 'placeholder' => 'Inserisci la tua email', 'tooltip' => 'Usa un indirizzo email valido', 'icon' => 'heroicon-o-mail', 'description' => 'email', 'helper_text' => ''],
+=======
+        'email' => ['label' => 'Email', 'placeholder' => 'Inserisci la tua email', 'tooltip' => 'Usa un indirizzo email valido', 'icon' => 'heroicon-o-envelope', 'description' => 'email', 'helper_text' => ''],
+>>>>>>> laraxot/dev
         'password' => ['label' => 'Password', 'placeholder' => 'Inserisci la tua password', 'tooltip' => 'La password deve contenere almeno 8 caratteri', 'icon' => 'heroicon-o-lock-closed', 'description' => 'password', 'helper_text' => ''],
         'remember' => ['label' => 'Ricordami', 'tooltip' => 'Mantieni l\'accesso attivo su questo dispositivo', 'description' => 'remember', 'helper_text' => '', 'placeholder' => 'remember'],
         'applyFilters' => ['label' => 'applyFilters', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -109,6 +113,7 @@ return [
         'invoice' => ['label' => 'invoice', 'placeholder' => 'invoice', 'helper_text' => 'invoice', 'description' => 'invoice'],
         'contract' => ['label' => 'contract', 'placeholder' => 'contract', 'helper_text' => 'contract', 'description' => 'contract'],
         'receipt' => ['label' => 'receipt', 'placeholder' => 'receipt', 'helper_text' => 'receipt', 'description' => 'receipt'],
+<<<<<<< HEAD
         'ha_diritto' => ['label' => 'ha_diritto'],
         'title' => ['label' => 'title', 'placeholder' => 'title', 'helper_text' => 'title', 'description' => 'title'],
         'color' => ['label' => 'color', 'placeholder' => 'color', 'helper_text' => 'color', 'description' => 'color'],
@@ -142,6 +147,37 @@ return [
         'option_id' => ['label' => 'option_id', 'placeholder' => 'option_id', 'helper_text' => 'option_id', 'description' => 'option_id'],
         'pos' => ['label' => 'pos', 'placeholder' => 'pos', 'helper_text' => 'pos', 'description' => 'pos'],
         'txt1' => ['label' => 'txt1', 'placeholder' => 'txt1', 'helper_text' => 'txt1', 'description' => 'txt1'],
+=======
+        'ha_diritto' => ['label' => 'ha_diritto', 'placeholder' => 'ha_diritto', 'helper_text' => 'ha_diritto', 'description' => 'ha_diritto'],
+        'motivo' => ['label' => 'motivo', 'placeholder' => 'motivo', 'helper_text' => 'motivo', 'description' => 'motivo'],
+        'matr' => ['label' => 'matr', 'placeholder' => 'matr', 'helper_text' => 'matr', 'description' => 'matr'],
+        'cognome' => ['label' => 'cognome', 'placeholder' => 'cognome', 'helper_text' => 'cognome', 'description' => 'cognome'],
+        'nome' => ['label' => 'nome', 'placeholder' => 'nome', 'helper_text' => 'nome', 'description' => 'nome'],
+        'propro' => ['label' => 'propro', 'placeholder' => 'propro', 'helper_text' => 'propro', 'description' => 'propro'],
+        'posfun' => ['label' => 'posfun', 'placeholder' => 'posfun', 'helper_text' => 'posfun', 'description' => 'posfun'],
+        'posiz' => ['label' => 'posiz', 'placeholder' => 'posiz', 'helper_text' => 'posiz', 'description' => 'posiz'],
+        'posiz_txt' => ['label' => 'posiz_txt', 'placeholder' => 'posiz_txt', 'helper_text' => 'posiz_txt', 'description' => 'posiz_txt'],
+        'disci1' => ['label' => 'disci1', 'placeholder' => 'disci1', 'helper_text' => 'disci1', 'description' => 'disci1'],
+        'disci1_txt' => ['label' => 'disci1_txt', 'placeholder' => 'disci1_txt', 'helper_text' => 'disci1_txt', 'description' => 'disci1_txt'],
+        'stabi' => ['label' => 'stabi', 'placeholder' => 'stabi', 'helper_text' => 'stabi', 'description' => 'stabi'],
+        'stabi_txt' => ['label' => 'stabi_txt', 'placeholder' => 'stabi_txt', 'helper_text' => 'stabi_txt', 'description' => 'stabi_txt'],
+        'repar' => ['label' => 'repar', 'placeholder' => 'repar', 'helper_text' => 'repar', 'description' => 'repar'],
+        'repar_txt' => ['label' => 'repar_txt', 'placeholder' => 'repar_txt', 'helper_text' => 'repar_txt', 'description' => 'repar_txt'],
+        'dal' => ['label' => 'dal', 'placeholder' => 'dal', 'helper_text' => 'dal', 'description' => 'dal'],
+        'al' => ['label' => 'al', 'placeholder' => 'al', 'helper_text' => 'al', 'description' => 'al'],
+        'anno' => ['label' => 'anno', 'placeholder' => 'anno', 'helper_text' => 'anno', 'description' => 'anno'],
+        'gg_presenza_dalal' => ['label' => 'gg_presenza_dalal', 'placeholder' => 'gg_presenza_dalal', 'helper_text' => 'gg_presenza_dalal', 'description' => 'gg_presenza_dalal'],
+        'gg_assenza_dalal' => ['label' => 'gg_assenza_dalal', 'placeholder' => 'gg_assenza_dalal', 'helper_text' => 'gg_assenza_dalal', 'description' => 'gg_assenza_dalal'],
+        'hh_assenza_dalal' => ['label' => 'hh_assenza_dalal', 'placeholder' => 'hh_assenza_dalal', 'helper_text' => 'hh_assenza_dalal', 'description' => 'hh_assenza_dalal'],
+        'valutatore_id' => ['label' => 'valutatore_id', 'placeholder' => 'valutatore_id', 'helper_text' => 'valutatore_id', 'description' => 'valutatore_id'],
+        'nome_stabi' => ['label' => 'nome_stabi', 'placeholder' => 'nome_stabi', 'helper_text' => 'nome_stabi', 'description' => 'nome_stabi'],
+        'nome_diri' => ['label' => 'nome_diri', 'placeholder' => 'nome_diri', 'helper_text' => 'nome_diri', 'description' => 'nome_diri'],
+        'nome_diri_plus' => ['label' => 'nome_diri_plus', 'placeholder' => 'nome_diri_plus', 'helper_text' => 'nome_diri_plus', 'description' => 'nome_diri_plus'],
+        'parent_id' => ['label' => 'parent_id', 'placeholder' => 'parent_id', 'helper_text' => 'parent_id', 'description' => 'parent_id'],
+        'new_type' => ['label' => 'new_type', 'placeholder' => 'new_type', 'helper_text' => 'new_type', 'description' => 'new_type'],
+        'title' => ['label' => 'title', 'placeholder' => 'title', 'helper_text' => 'title', 'description' => 'title'],
+        'txt' => ['label' => 'txt', 'placeholder' => 'txt', 'helper_text' => 'txt', 'description' => 'txt'],
+>>>>>>> laraxot/dev
         'id_tbl' => ['label' => 'id_tbl', 'placeholder' => 'id_tbl', 'helper_text' => 'id_tbl', 'description' => 'id_tbl'],
         'tbl' => ['label' => 'tbl', 'placeholder' => 'tbl', 'helper_text' => 'tbl', 'description' => 'tbl'],
         'obj' => ['label' => 'obj', 'placeholder' => 'obj', 'helper_text' => 'obj', 'description' => 'obj'],
@@ -149,10 +185,53 @@ return [
         'note' => ['label' => 'note', 'placeholder' => 'note', 'helper_text' => 'note', 'description' => 'note'],
         'data' => ['label' => 'data', 'placeholder' => 'data', 'helper_text' => 'data', 'description' => 'data'],
         'created_by' => ['label' => 'created_by', 'placeholder' => 'created_by', 'helper_text' => 'created_by', 'description' => 'created_by'],
+<<<<<<< HEAD
         'field_name' => ['label' => 'field_name', 'placeholder' => 'field_name', 'helper_text' => 'field_name', 'description' => 'field_name'],
         'op' => ['label' => 'op', 'placeholder' => 'op', 'helper_text' => 'op', 'description' => 'op'],
         'anno_valutatore' => ['label' => 'anno_valutatore'],
         'stabi_repar_anno' => ['label' => 'stabi_repar_anno'],
+=======
+        'extra_attributes' => [
+            'type' => ['label' => 'extra_attributes.type', 'placeholder' => 'extra_attributes.type', 'helper_text' => 'extra_attributes.type', 'description' => 'extra_attributes.type'],
+            'anno' => ['label' => 'extra_attributes.anno', 'placeholder' => 'extra_attributes.anno', 'helper_text' => 'extra_attributes.anno', 'description' => 'extra_attributes.anno'],
+        ],
+        'color' => ['label' => 'color', 'placeholder' => 'color', 'helper_text' => 'color', 'description' => 'color'],
+        'rule' => ['label' => 'rule', 'placeholder' => 'rule', 'helper_text' => 'rule', 'description' => 'rule'],
+        'is_disabled' => ['label' => 'is_disabled', 'placeholder' => 'is_disabled', 'helper_text' => 'is_disabled', 'description' => 'is_disabled'],
+        'is_readonly' => ['label' => 'is_readonly', 'placeholder' => 'is_readonly', 'helper_text' => 'is_readonly', 'description' => 'is_readonly'],
+        'field_name' => ['label' => 'field_name', 'placeholder' => 'field_name', 'helper_text' => 'field_name', 'description' => 'field_name'],
+        'op' => ['label' => 'op', 'placeholder' => 'op', 'helper_text' => 'op', 'description' => 'op'],
+        'option_type' => ['label' => 'option_type', 'placeholder' => 'option_type', 'helper_text' => 'option_type', 'description' => 'option_type'],
+        'option_id' => ['label' => 'option_id', 'placeholder' => 'option_id', 'helper_text' => 'option_id', 'description' => 'option_id'],
+        'pos' => ['label' => 'pos', 'placeholder' => 'pos', 'helper_text' => 'pos', 'description' => 'pos'],
+        'txt1' => ['label' => 'txt1', 'placeholder' => 'txt1', 'helper_text' => 'txt1', 'description' => 'txt1'],
+        'year' => ['label' => 'year', 'placeholder' => 'year', 'helper_text' => 'year', 'description' => 'year'],
+        'user' => [
+            'name' => ['label' => 'user.name', 'placeholder' => 'user.name', 'helper_text' => 'user.name', 'description' => 'user.name'],
+        ],
+        'first_name' => ['label' => 'first_name', 'placeholder' => 'first_name', 'helper_text' => 'first_name', 'description' => 'first_name'],
+        'last_name' => ['label' => 'last_name', 'placeholder' => 'last_name', 'helper_text' => 'last_name', 'description' => 'last_name'],
+        'photo_profile' => ['label' => 'photo_profile', 'placeholder' => 'photo_profile', 'helper_text' => 'photo_profile', 'description' => 'photo_profile'],
+        'quadrimestre' => ['label' => 'quadrimestre', 'placeholder' => 'quadrimestre', 'helper_text' => 'quadrimestre', 'description' => 'quadrimestre'],
+        'video' => ['label' => 'video'],
+        'field' => ['label' => 'field', 'placeholder' => 'field', 'helper_text' => 'field', 'description' => 'field'],
+        'allegato' => ['label' => 'allegato'],
+        'fattura' => ['label' => 'fattura'],
+        'arguments' => ['label' => 'arguments'],
+        'card' => ['label' => 'card', 'placeholder' => 'card', 'helper_text' => 'card', 'description' => 'card'],
+        'c' => ['label' => 'c', 'placeholder' => 'c', 'helper_text' => 'c', 'description' => 'c'],
+        'state' => ['label' => 'state', 'placeholder' => 'state', 'helper_text' => 'state', 'description' => 'state'],
+        'hours' => ['label' => 'hours', 'placeholder' => 'hours', 'helper_text' => 'hours', 'description' => 'hours'],
+        'collection' => ['label' => 'collection', 'placeholder' => 'collection', 'helper_text' => 'collection', 'description' => 'collection'],
+        'select_state' => ['label' => 'select_state', 'placeholder' => 'select_state', 'helper_text' => 'select_state', 'description' => 'select_state'],
+        'corner' => ['label' => 'corner', 'placeholder' => 'corner', 'helper_text' => 'corner', 'description' => 'corner'],
+        'a' => ['label' => 'a'],
+        'b' => ['label' => 'b'],
+        'badge' => ['label' => 'badge', 'placeholder' => 'badge', 'helper_text' => 'badge', 'description' => 'badge'],
+        'date' => ['label' => 'date', 'placeholder' => 'date', 'helper_text' => 'date', 'description' => 'date'],
+        'order_column' => ['label' => 'order_column'],
+        'map_picker' => ['label' => 'map_picker', 'placeholder' => 'map_picker', 'helper_text' => 'map_picker', 'description' => 'map_picker'],
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'authenticate' => ['label' => 'Autentica', 'tooltip' => 'Effettua il login nel sistema', 'icon' => 'ui-login', 'color' => 'primary'],
@@ -175,6 +254,7 @@ return [
         'changePassword' => ['label' => 'changePassword', 'icon' => 'changePassword', 'tooltip' => 'changePassword'],
         'test' => ['label' => 'test', 'icon' => 'test', 'tooltip' => 'test'],
         'register' => ['tooltip' => 'register', 'icon' => 'register', 'label' => 'register'],
+<<<<<<< HEAD
         'my-profile' => ['label' => 'my-profile', 'icon' => 'my-profile', 'tooltip' => 'my-profile'],
         'bet_action' => ['label' => 'bet_action', 'icon' => 'bet_action', 'tooltip' => 'bet_action'],
         'convert' => ['label' => 'convert', 'icon' => 'convert', 'tooltip' => 'convert'],
@@ -193,6 +273,23 @@ return [
         'compila' => ['label' => 'compila', 'icon' => 'compila', 'tooltip' => 'compila'],
         'fill_out_the_form' => ['label' => 'fill_out_the_form', 'icon' => 'fill_out_the_form', 'tooltip' => 'fill_out_the_form'],
         'record_pdf' => ['label' => 'record_pdf', 'icon' => 'record_pdf', 'tooltip' => 'record_pdf'],
+=======
+        'refresh' => ['label' => 'refresh', 'icon' => 'refresh', 'tooltip' => 'refresh'],
+        'gg_presenza_dalal' => ['label' => 'gg_presenza_dalal', 'icon' => 'gg_presenza_dalal', 'tooltip' => 'gg_presenza_dalal'],
+        'gg_assenza_dalal' => ['label' => 'gg_assenza_dalal', 'icon' => 'gg_assenza_dalal', 'tooltip' => 'gg_assenza_dalal'],
+        'hh_assenza_dalal' => ['label' => 'hh_assenza_dalal', 'icon' => 'hh_assenza_dalal', 'tooltip' => 'hh_assenza_dalal'],
+        'stabi' => ['label' => 'stabi', 'icon' => 'stabi', 'tooltip' => 'stabi'],
+        'repar' => ['label' => 'repar', 'icon' => 'repar', 'tooltip' => 'repar'],
+        'nome_stabi' => ['label' => 'nome_stabi', 'icon' => 'nome_stabi', 'tooltip' => 'nome_stabi'],
+        'logout' => ['tooltip' => 'logout', 'icon' => 'logout'],
+        'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
+        'convert' => ['label' => 'convert', 'icon' => 'convert', 'tooltip' => 'convert'],
+        'field' => ['label' => 'field', 'icon' => 'field', 'tooltip' => 'field'],
+        'bet_action' => ['label' => 'bet_action', 'icon' => 'bet_action', 'tooltip' => 'bet_action'],
+        'export_xls_lazy_cov' => ['label' => 'export_xls_lazy_cov', 'icon' => 'export_xls_lazy_cov', 'tooltip' => 'export_xls_lazy_cov'],
+        'export_xls_cov' => ['label' => 'export_xls_cov', 'icon' => 'export_xls_cov', 'tooltip' => 'export_xls_cov'],
+        'title' => ['label' => 'title', 'icon' => 'title', 'tooltip' => 'title'],
+>>>>>>> laraxot/dev
     ],
     'sections' => [
         'address' => ['label' => 'address', 'heading' => 'address'],
@@ -202,8 +299,14 @@ return [
         'rep' => ['label' => 'rep', 'heading' => 'rep'],
         'periodo' => ['label' => 'periodo', 'heading' => 'periodo'],
         'assenze' => ['label' => 'assenze', 'heading' => 'assenze'],
+<<<<<<< HEAD
         'empty' => ['label' => 'empty', 'heading' => 'empty'],
         'Dettagli Log' => ['label' => 'Dettagli Log', 'heading' => 'Dettagli Log'],
+=======
+        'Dettagli Log' => ['label' => 'Dettagli Log', 'heading' => 'Dettagli Log'],
+        'empty' => ['label' => '', 'heading' => ''],
+        'field' => ['label' => 'field', 'heading' => 'field'],
+>>>>>>> laraxot/dev
     ],
     'label' => 'Txt',
     'plural_label' => 'Txt (Plurale)',
@@ -213,7 +316,11 @@ return [
         'group' => ['name' => 'General', 'description' => 'General Settings'],
         'label' => 'Txt',
         'sort' => 1,
+<<<<<<< HEAD
         'icon' => 'heroicon-o-collection',
+=======
+        'icon' => 'heroicon-o-rectangle-stack',
+>>>>>>> laraxot/dev
     ],
     'steps' => [
         'test' => ['label' => 'test'],

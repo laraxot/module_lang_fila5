@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitto EditTranslationFile.php (Classe)"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "lang service helper text"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitto EditTranslationFile.php (Classe)
 
 ## Problema Identificato

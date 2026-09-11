@@ -15,6 +15,12 @@ use Modules\Lang\Actions\Filament\AutoLabelAction;
 
 final class AutoLabelNullCallerStub extends AutoLabelAction
 {
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> laraxot/dev
     protected function findCallerFrame(Field|Entry|BaseFilter|Column|Step|Action|Section $component): array
     {
         return ['function' => 'foo'];

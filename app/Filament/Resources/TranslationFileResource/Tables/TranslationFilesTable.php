@@ -9,11 +9,23 @@ use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
+<<<<<<< HEAD
+=======
+use Modules\Lang\Models\TranslationFile;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class TranslationFilesTable extends XotBaseResourceTable
 {
     /**
+<<<<<<< HEAD
+=======
+     * @var class-string<TranslationFile>
+     */
+    protected static string $model = TranslationFile::class;
+
+    /**
+>>>>>>> laraxot/dev
      * @return array<string, Action|ActionGroup>
      */
     public function getTableHeaderActions(): array
@@ -39,6 +51,7 @@ class TranslationFilesTable extends XotBaseResourceTable
      */
     public function getTableColumns(): array
     {
+<<<<<<< HEAD
         /*
          * @return array<int\|string, \Filament\Tables\Columns\Column>
          */
@@ -46,6 +59,12 @@ class TranslationFilesTable extends XotBaseResourceTable
             'id' => TextColumn::make('id')->sortable(),
             'name' => TextColumn::make('name')->searchable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
+=======
+        return [
+            'name' => TextColumn::make('name')->searchable()->sortable(),
+            'key' => TextColumn::make('key')->searchable()->sortable()->wrap(),
+            'path' => TextColumn::make('path')->searchable()->sortable()->wrap()->toggleable(isToggledHiddenByDefault: true),
+>>>>>>> laraxot/dev
         ];
     }
 }

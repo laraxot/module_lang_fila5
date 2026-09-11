@@ -12,6 +12,10 @@ related:
 # Analisi Approfondita del Modulo Lang
 
 > **Generato**: 2025-12-24
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:docs/wiki/integrations/_da-riconciliare/filosofia-modulo-lang.md
+>>>>>>> laraxot/dev
 > **Generato**: 2025-12-24
 > **Generato**: [DATE]
 > **Generato**: [DATE]
@@ -19,6 +23,11 @@ related:
 > **Generato**: [DATE]
 > **Generato**: 2025-12-24
 > **Generato**: 2025-12-24
+<<<<<<< HEAD
+=======
+========
+>>>>>>>> laraxot/dev:docs/archive/historical/filosofia-modulo-lang.md
+>>>>>>> laraxot/dev
 > **Scopo**: Documentare la filosofia, logica e architettura del modulo Lang
 
 ---

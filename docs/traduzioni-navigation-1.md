@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Traduzioni con '.navigation' - Audit Completo 2025"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "migration filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Traduzioni con ".navigation" - Audit Completo 2025
 
 ## Riepilogo Problema

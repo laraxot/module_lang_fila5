@@ -42,22 +42,44 @@ use Modules\Lang\Casts\LangField;
 use Modules\Lang\Datas\TranslationData;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
+<<<<<<< HEAD
+=======
+use Modules\Lang\Filament\Forms\Components\TranslationEditor;
+use Modules\Lang\Filament\Resources\LangBaseResource;
+use Modules\Lang\Filament\Resources\Pages\LangBaseCreateRecord;
+use Modules\Lang\Filament\Resources\Pages\LangBaseEditRecord;
+use Modules\Lang\Filament\Resources\Pages\LangBaseListRecords;
+use Modules\Lang\Filament\Resources\Pages\LangBaseViewRecord;
+use Modules\Lang\Filament\Resources\TranslationFileResource;
+>>>>>>> laraxot/dev
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\ListTranslationFiles;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Tables\TranslationFilesTable;
 use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
 use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
+<<<<<<< HEAD
 use Modules\Lang\Models\LanguageLine;
+=======
+use Modules\Lang\Models\BaseModel;
+use Modules\Lang\Models\BaseModelLang;
+use Modules\Lang\Models\LanguageLine;
+use Modules\Lang\Models\Policies\LangBasePolicy;
+>>>>>>> laraxot/dev
 use Modules\Lang\Models\Policies\PostPolicy;
 use Modules\Lang\Models\Policies\TranslationFilePolicy;
 use Modules\Lang\Models\Policies\TranslationPolicy;
 use Modules\Lang\Models\Post;
+<<<<<<< HEAD
+=======
+use Modules\Lang\Models\Traits\HasStrictTranslations;
+>>>>>>> laraxot/dev
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Lang\Providers\RouteServiceProvider;
 use Modules\Lang\Providers\TranslatorTraitPhpstanProbe;
+<<<<<<< HEAD
 use Modules\Lang\Services\TranslatorService;
 use Modules\Lang\Tests\Fixtures\LangBaseCreateRecordStub;
 use Modules\Lang\Tests\Fixtures\LangBaseEditRecordStub;
@@ -68,6 +90,8 @@ use Modules\Lang\Tests\Fixtures\LangBaseViewRecordStub;
 use Modules\Lang\Tests\Fixtures\LangFieldHostModel;
 use Modules\Lang\Tests\Fixtures\StrictTranslationsHost;
 use Modules\Lang\Tests\Fixtures\TranslationEditorStub;
+=======
+>>>>>>> laraxot/dev
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Components\LanguageSwitcher;
 use Modules\Lang\View\Composers\ThemeComposer;
@@ -90,6 +114,74 @@ use function Safe\unlink;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
+=======
+final class LangBaseResourceStub extends LangBaseResource
+{
+    protected static ?string $model = TranslationFile::class;
+}
+
+final class LangBaseCreateRecordStub extends LangBaseCreateRecord
+{
+    protected static string $resource = TranslationFileResource::class;
+}
+
+final class LangBaseEditRecordStub extends LangBaseEditRecord
+{
+    protected static string $resource = TranslationFileResource::class;
+}
+
+final class LangBaseListRecordsStub extends LangBaseListRecords
+{
+    protected static string $resource = TranslationFileResource::class;
+}
+
+final class LangBaseViewRecordStub extends LangBaseViewRecord
+{
+    protected static string $resource = TranslationFileResource::class;
+}
+
+final class LangBasePolicyStub extends LangBasePolicy {}
+
+final class LangFieldHostModel extends BaseModelLang
+{
+    public $timestamps = false;
+}
+
+final class TranslationEditorStub extends TranslationEditor
+{
+    public mixed $forcedState = [];
+
+    public function getState(): mixed
+    {
+        return $this->forcedState;
+    }
+}
+
+final class StrictTranslationsHost extends BaseModel
+{
+    use HasStrictTranslations;
+
+    /** @var list<string> */
+    public array $translatable = ['title'];
+
+    public $timestamps = false;
+
+    protected $guarded = [];
+
+    protected $table = 'translations';
+
+    public mixed $forcedTranslation = null;
+
+    protected function spatieGetTranslation(string $key, string $locale, bool $useFallbackLocale = true): mixed
+    {
+        unset($key, $locale, $useFallbackLocale);
+
+        return $this->forcedTranslation;
+    }
+}
+
+>>>>>>> laraxot/dev
 /**
  * @param  list<string>  $permissions
  * @return MockInterface&UserContract
@@ -98,8 +190,13 @@ function langHundredFakeUser(array $permissions = [], bool $superAdmin = false):
 {
     /** @var MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
+<<<<<<< HEAD
     TestCase::mockExpectation($user, 'hasRole')->with('super-admin')->andReturn($superAdmin);
     TestCase::mockExpectation($user, 'hasPermissionTo')
+=======
+    $user->shouldReceive('hasRole')->with('super-admin')->andReturn($superAdmin);
+    $user->shouldReceive('hasPermissionTo')
+>>>>>>> laraxot/dev
         ->andReturnUsing(static fn (string $permission): bool => in_array($permission, $permissions, true));
 
     return $user;
@@ -221,7 +318,11 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         ]);
 
         $this->mockService(SaveArrayAction::class, static function (MockInterface $mock): void {
+<<<<<<< HEAD
             TestCase::mockExpectation($mock, 'execute')->never();
+=======
+            $mock->shouldReceive('execute')->never();
+>>>>>>> laraxot/dev
         });
 
         app(PublishTranslationAction::class)->execute($data);
@@ -250,7 +351,11 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             if (file_exists($file)) {
                 unlink($file);
             }
+<<<<<<< HEAD
             TestCase::restoreSaveTransActionNoOp();
+=======
+            TestCase::forgetSaveTransActionOverride();
+>>>>>>> laraxot/dev
         }
     });
 
@@ -269,7 +374,11 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             if (file_exists($file)) {
                 unlink($file);
             }
+<<<<<<< HEAD
             TestCase::restoreSaveTransActionNoOp();
+=======
+            TestCase::forgetSaveTransActionOverride();
+>>>>>>> laraxot/dev
         }
     });
 
@@ -286,7 +395,11 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         Assert::assertTrue(Translation::query()->where('namespace', '*')->where('group', 'lonely')->whereNull('item')->exists());
     });
 
+<<<<<<< HEAD
     test('TranslatorAction and TranslatorService cover missing keys and array results', function (): void {
+=======
+    test('TranslatorAction and TranslatorAdapter cover missing keys and array results', function (): void {
+>>>>>>> laraxot/dev
         langForceSqliteTranslations();
 
         $loader = new ArrayLoader();
@@ -304,10 +417,18 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         Assert::assertSame($missingKey, $action->get($missingKey));
         $action->execute();
 
+<<<<<<< HEAD
         $service = new TranslatorService($loader, 'it');
         Assert::assertSame('Ciao', $service->get('messages.known'));
         Assert::assertSame(['a' => 'b'], $service->get('messages.tree'));
         $service->execute();
+=======
+        $adapter = new TranslatorAdapter($loader, 'it');
+        Assert::assertSame('Ciao', $adapter->get('messages.known'));
+        Assert::assertSame(['a' => 'b'], $adapter->get('messages.tree'));
+        $adapterMissingKey = 'messages.missing_'.uniqid('', true);
+        Assert::assertSame($adapterMissingKey, $adapter->get($adapterMissingKey));
+>>>>>>> laraxot/dev
         Assert::assertGreaterThan(0, Translation::query()->count());
     });
 
@@ -349,7 +470,11 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $action = app(WriteTranslationFileAction::class);
 
         $read = Mockery::mock(ReadTranslationFileAction::class);
+<<<<<<< HEAD
         TestCase::mockExpectation($read, 'toPhp')->andReturn('<?php return [;');
+=======
+        $read->shouldReceive('toPhp')->andReturn('<?php return [;');
+>>>>>>> laraxot/dev
         app()->instance(ReadTranslationFileAction::class, $read);
 
         expect(fn () => $action->execute($path, ['x' => 'y']))->toThrow(\Exception::class);
@@ -440,7 +565,11 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             $mock->allows('execute');
         });
         $this->mockService(SvgExistsAction::class, static function (MockInterface $mock): void {
+<<<<<<< HEAD
             TestCase::mockAllows($mock, 'execute')->andReturnUsing(static fn (string $label): bool => $label === 'heroicon-o-check');
+=======
+            $mock->allows('execute')->andReturnUsing(static fn (string $label): bool => $label === 'heroicon-o-check');
+>>>>>>> laraxot/dev
         });
 
         app('translator')->addLines([
@@ -676,7 +805,11 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $post = Mockery::mock(Post::class)->makePartial();
         $initialTitle = ['it' => 'Hello'];
         $post->setAttribute('custom_field', $initialTitle);
+<<<<<<< HEAD
         TestCase::mockExpectation($post, 'save')->once()->andReturnTrue();
+=======
+        $post->shouldReceive('save')->once()->andReturnTrue();
+>>>>>>> laraxot/dev
         $host->setRelation('post', $post);
 
         Assert::assertSame($initialTitle, $cast->get($host, 'custom_field', null, []));
@@ -802,14 +935,22 @@ describe('Lang 100% — Models policies providers views', function (): void {
         $_SERVER['argv'] = $previousArgv;
 
         $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock): void {
+<<<<<<< HEAD
             TestCase::mockExpectation($mock, 'execute')->andThrow(new \RuntimeException('boom'));
+=======
+            $mock->shouldReceive('execute')->andThrow(new \RuntimeException('boom'));
+>>>>>>> laraxot/dev
         });
         Assert::assertSame([], (new TranslationFile())->getRows());
 
         $bad = sys_get_temp_dir().'/tf_bad_'.uniqid().'.php';
         file_put_contents($bad, '<?php throw new Exception("x");');
         $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock) use ($bad): void {
+<<<<<<< HEAD
             TestCase::mockExpectation($mock, 'execute')->andReturn([
+=======
+            $mock->shouldReceive('execute')->andReturn([
+>>>>>>> laraxot/dev
                 ['key' => 'lang::bad', 'path' => $bad],
                 ['key' => 'lang::missing', 'path' => '/no/file.php'],
                 123,

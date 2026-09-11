@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -39,8 +42,17 @@ class SyncTranslationsAction
         foreach ($modules as $module) {
             $moduleResults = $this->syncModule($module, $sourceLang, $targetLangs);
             $results['modules'][$module] = $moduleResults;
+<<<<<<< HEAD
             $results['total_files'] += SafeIntCastAction::cast($moduleResults['files_processed'] ?? 0);
             $results['total_translations'] += SafeIntCastAction::cast($moduleResults['translations_added'] ?? 0);
+=======
+            $results['total_files'] += is_numeric($moduleResults['files_processed'] ?? null)
+                ? ((int) $moduleResults['files_processed'])
+                : 0;
+            $results['total_translations'] += is_numeric($moduleResults['translations_added'] ?? null)
+                ? ((int) $moduleResults['translations_added'])
+                : 0;
+>>>>>>> laraxot/dev
             $results['total_modules']++;
         }
 
@@ -83,8 +95,12 @@ class SyncTranslationsAction
         $translationsAdded = 0;
 
         foreach ($sourceFiles as $sourceFile) {
+<<<<<<< HEAD
             $sourceFile = is_string($sourceFile) ? $sourceFile : '';
             if ($sourceFile === '') {
+=======
+            if (! is_string($sourceFile)) {
+>>>>>>> laraxot/dev
                 continue;
             }
             $fileName = basename($sourceFile);
@@ -184,7 +200,11 @@ class SyncTranslationsAction
     /**
      * Filtra un array per avere solo chiavi stringa (aiuta PHPStan).
      *
+<<<<<<< HEAD
      * @param  array<mixed, mixed>  $arr
+=======
+     * @param  array<array-key, mixed>  $arr
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     private function filterStringKeyArray(array $arr): array

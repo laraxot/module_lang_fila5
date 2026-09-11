@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzione Convenzione Naming Cartelle Docs - Gennaio 2025"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "readme.es 1"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Correzione Convenzione Naming Cartelle Docs - Gennaio 2025
 
 ## Data Aggiornamento
