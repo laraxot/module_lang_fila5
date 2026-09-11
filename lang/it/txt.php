@@ -219,6 +219,9 @@ return [
         'convert' => ['label' => 'convert', 'icon' => 'convert', 'tooltip' => 'convert'],
         'field' => ['label' => 'field', 'icon' => 'field', 'tooltip' => 'field'],
         'bet_action' => ['label' => 'bet_action', 'icon' => 'bet_action', 'tooltip' => 'bet_action'],
+        'export_xls_lazy_cov' => ['label' => 'export_xls_lazy_cov', 'icon' => 'export_xls_lazy_cov', 'tooltip' => 'export_xls_lazy_cov'],
+        'export_xls_cov' => ['label' => 'export_xls_cov', 'icon' => 'export_xls_cov', 'tooltip' => 'export_xls_cov'],
+        'title' => ['label' => 'title', 'icon' => 'title', 'tooltip' => 'title'],
     ],
     'sections' => [
         'address' => ['label' => 'address', 'heading' => 'address'],

@@ -39,13 +39,10 @@ class TranslationFilesTable extends XotBaseResourceTable
      */
     public function getTableColumns(): array
     {
-        /*
-         * @return array<int\|string, \Filament\Tables\Columns\Column>
-         */
         return [
-            'id' => TextColumn::make('id')->sortable(),
-            'name' => TextColumn::make('name')->searchable(),
-            'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
+            'name' => TextColumn::make('name')->searchable()->sortable(),
+            'key' => TextColumn::make('key')->searchable()->sortable()->wrap(),
+            'path' => TextColumn::make('path')->searchable()->wrap()->toggleable(isToggledHiddenByDefault: true),
         ];
     }
 }
