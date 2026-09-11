@@ -28,11 +28,14 @@ class TranslationFileResource extends XotBaseResource
         return ['it', 'en'];
     }
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
     {
         return [];
     }
 
+=======
+>>>>>>> laraxot/dev
     #[\Override]
     public static function getPages(): array
     {

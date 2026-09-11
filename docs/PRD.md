@@ -204,7 +204,11 @@ The Lang module provides a structured framework for managing lang operations wit
 
 ### 7.3 Technical Constraints
 - PHP 8.3+ required
+<<<<<<< HEAD
 - Laravel 12+ required
+=======
+- Laravel 13+ required
+>>>>>>> laraxot/dev
 - Filament v5 for UI
 - MySQL 8.0+
 

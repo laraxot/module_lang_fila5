@@ -727,7 +727,11 @@
 - Best Practice
 - Validazione di Campi Array
 - Traduzione degli Attributi
+<<<<<<< HEAD
 - Laravel 12 lang path rule
+=======
+- Laravel 13 lang path rule
+>>>>>>> laraxot/dev
 - Gitmodules sync session
 - Git Conflict Inventory
 - EventServiceProvider
@@ -3691,9 +3695,15 @@ Nodes (4): Il Problema, Soluzione: Utilizzo di `*` e Placeholder, Utilizzo di `:
 Cohesion: 0.50
 Nodes (4): Il Problema di Base, Soluzione: Metodo `attributes()`, Traduzione degli Attributi, Utilizzo delle Traduzioni
 
+<<<<<<< HEAD
 ### Community 721 - "Laravel 12 lang path rule"
 Cohesion: 0.50
 Nodes (4): Backlink, Laravel 12 lang path rule, Regola modulo, Sintesi
+=======
+### Community 721 - "Laravel 13 lang path rule"
+Cohesion: 0.50
+Nodes (4): Backlink, Laravel 13 lang path rule, Regola modulo, Sintesi
+>>>>>>> laraxot/dev
 
 ### Community 722 - "Gitmodules sync session"
 Cohesion: 0.50

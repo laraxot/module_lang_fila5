@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Gestione delle Lingue in Laravel"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Gestione delle Lingue in Laravel
 
 ## Indice

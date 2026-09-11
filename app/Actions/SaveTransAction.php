@@ -19,6 +19,7 @@ class SaveTransAction
      */
     public function execute(string $key, int|string|array|Htmlable|null $data): void
     {
+<<<<<<< HEAD
         // In Pest/PHPUnit AutoLabel (Filament configureUsing) chiama SaveTrans su chiavi
         // mancanti: senza guard i file Modules/*/lang/*.php vengono corrotti a metà suite.
         // I test che devono esercitare la scrittura usano TestCase::bindRealSaveTransAction().
@@ -32,6 +33,8 @@ class SaveTransAction
             }
         }
 
+=======
+>>>>>>> laraxot/dev
         $cont = [];
 
         $filename = app(GetTransPathAction::class)->execute($key);
@@ -46,7 +49,16 @@ class SaveTransAction
         try {
             $cont = File::getRequire($filename);
         } catch (\Exception $e) {
+<<<<<<< HEAD
             throw new \RuntimeException('Removed debug dddx');
+=======
+            dddx([
+                'key' => $key,
+                'data' => $data,
+                'filename' => $filename,
+                'message' => $e->getMessage(),
+            ]);
+>>>>>>> laraxot/dev
         }
 
         if (! is_array($cont)) {

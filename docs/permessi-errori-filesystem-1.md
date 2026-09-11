@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Gestione Permessi e Errori Filesystem su File di Lingua (Lang)"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Gestione Permessi e Errori Filesystem su File di Lingua (Lang)
 
 > **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)

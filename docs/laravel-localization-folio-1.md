@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Integrazione tra mcamara/laravel-localization e Laravel Folio"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Integrazione tra mcamara/laravel-localization e Laravel Folio
 
 ## Obiettivo

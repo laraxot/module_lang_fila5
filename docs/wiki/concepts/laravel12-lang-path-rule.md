@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "Laravel 12 lang path rule"
+=======
+title: "Laravel 13 lang path rule"
+>>>>>>> laraxot/dev
 module: "Lang"
 type: rule
 tags: [migration, filament]
@@ -9,7 +13,11 @@ qmd: "migration filament"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+<<<<<<< HEAD
 # Laravel 12 lang path rule
+=======
+# Laravel 13 lang path rule
+>>>>>>> laraxot/dev
 
 ## Sintesi
 
@@ -23,4 +31,8 @@ Per il modulo `Lang`, il riferimento valido e sempre `lang/` e non `resources/la
 
 ## Backlink
 
+<<<<<<< HEAD
 - [Regola globale Laravel 12 lang root](../../../../../docs/wiki/concepts/laravel12-lang-root-rule.md)
+=======
+- [Regola globale Laravel 13 lang root](../../../../../docs/wiki/concepts/laravel12-lang-root-rule.md)
+>>>>>>> laraxot/dev

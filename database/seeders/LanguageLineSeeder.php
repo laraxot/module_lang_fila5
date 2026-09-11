@@ -14,12 +14,22 @@ use Modules\Lang\Models\LanguageLine;
 class LanguageLineSeeder extends Seeder
 {
     /** @var list<array{group: string, key: string, locale: string, text: array<string, string>}> */
+<<<<<<< HEAD
     private const array ENTRIES = [[
         'group' => 'auth',
         'key' => 'failed',
         'locale' => 'it',
         'text' => ['it' => 'Credenziali non valide.'],
     ],
+=======
+    private const array ENTRIES = [
+        [
+            'group' => 'auth',
+            'key' => 'failed',
+            'locale' => 'it',
+            'text' => ['it' => 'Credenziali non valide.'],
+        ],
+>>>>>>> laraxot/dev
         [
             'group' => 'auth',
             'key' => 'failed',

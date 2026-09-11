@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Processo di Traduzione: Da Sviluppatore a Traduttore"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Processo di Traduzione: Da Sviluppatore a Traduttore
 
 ## Indice

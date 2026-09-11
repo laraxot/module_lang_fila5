@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Best Practices per le Migrazioni - Modulo Lang"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "readme.es 1"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Best Practices per le Migrazioni - Modulo Lang
 
 ## Panoramica

@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 return [
     'actions' => [
         'edit' => [
@@ -9,6 +14,7 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
+<<<<<<< HEAD
         'group' => [
             'name' => 'General',
             'description' => 'General Settings',
@@ -17,10 +23,16 @@ return [
         'sort' => '100',
         'name' => 'View Translation File',
         'plural' => 'View Translation File',
+=======
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+>>>>>>> laraxot/dev
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
+<<<<<<< HEAD
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -39,5 +51,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
 ];

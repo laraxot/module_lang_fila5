@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Guida Completa a Laravel Localization"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Guida Completa a Laravel Localization
 
 ## Introduzione

@@ -5,8 +5,18 @@ declare(strict_types=1);
 namespace Modules\Lang\Tests\Unit;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
+=======
+use Filament\Forms\Components\Field;
+use Filament\Forms\Components\TextInput;
+use Filament\Infolists\Components\Entry;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Components\Wizard\Step;
+use Filament\Tables\Columns\Column;
+use Filament\Tables\Filters\BaseFilter;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
@@ -18,12 +28,20 @@ use Illuminate\Translation\Translator as LaravelTranslator;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Mockery;
 use Mockery\MockInterface;
+<<<<<<< HEAD
+=======
+use Modules\Lang\Actions\Filament\AutoLabelAction;
+>>>>>>> laraxot/dev
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
 use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
 use Modules\Lang\Actions\TranslatorAction;
 use Modules\Lang\Actions\WriteTranslationFileAction;
 use Modules\Lang\Adapters\TranslatorAdapter;
+<<<<<<< HEAD
+=======
+use Modules\Lang\Datas\LangData;
+>>>>>>> laraxot/dev
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Modules\Lang\Filament\Forms\Components\TranslationEditor;
@@ -32,6 +50,7 @@ use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\RouteServiceProvider;
+<<<<<<< HEAD
 use Modules\Lang\Tests\Fixtures\AutoLabelExecuteNestedCaller;
 use Modules\Lang\Tests\Fixtures\AutoLabelForcedKeyStub;
 use Modules\Lang\Tests\Fixtures\AutoLabelNullCallerStub;
@@ -41,6 +60,8 @@ use Modules\Lang\Tests\Fixtures\PostNullTitleForGuidStub;
 use Modules\Lang\Tests\Fixtures\ThemeComposerNonStringFieldStub;
 use Modules\Lang\Tests\Fixtures\WriteTranslationFileActionFailStub;
 use Modules\Lang\Tests\Fixtures\WriteTranslationFileActionWriteFailStub;
+=======
+>>>>>>> laraxot/dev
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Composers\ThemeComposer;
 use Modules\Xot\Actions\File\AssetAction;
@@ -58,6 +79,120 @@ use function Safe\unlink;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
+=======
+final class WriteTranslationFileActionFailStub extends WriteTranslationFileAction
+{
+    /**
+     * Simula il fallimento della scrittura: ritorna sempre `false`, mai un conteggio
+     * di byte, quindi il tipo di ritorno e' `false` e non `int|false`.
+     */
+    protected function putTranslationFile(string $filePath, string $phpContent): false
+    {
+        return false;
+    }
+}
+
+final class WriteTranslationFileActionWriteFailStub extends WriteTranslationFileAction
+{
+    /**
+     * Come sopra: solo il ramo di fallimento, quindi `false`.
+     */
+    protected function writeLangTempContents(string $tempFile, string $phpContent): false
+    {
+        return false;
+    }
+}
+
+final class NationalFlagSelectFinalStub extends NationalFlagSelect
+{
+    /** @var array<int, mixed> */
+    public array $forcedCountries = [];
+
+    /** @var array<int, mixed> */
+    public array $extraFilteredRows = [];
+
+    /**
+     * `mixed` e' il tipo vero, non una scorciatoia: i test alimentano di proposito righe
+     * non conformi — array associativi validi, interi al posto di stringhe e stringhe nude —
+     * per verificare che il filtro regga input sporco. Un tipo piu' stretto renderebbe
+     * impossibile scrivere proprio il caso in esame.
+     *
+     * @return array<int, mixed>
+     */
+    protected function resolveCountries(): array
+    {
+        return $this->forcedCountries;
+    }
+
+    /**
+     * @param  array<int, mixed>  $filteredCountries
+     * @return array<int, mixed>
+     */
+    protected function finalizeFilteredCountries(array $filteredCountries): array
+    {
+        return array_merge(array_values($filteredCountries), $this->extraFilteredRows);
+    }
+}
+
+final class AutoLabelForcedKeyStub extends AutoLabelAction
+{
+    /**
+     * @return array<string, string>
+     */
+    protected function findCallerFrame(Field|Entry|BaseFilter|Column|Step|Action|Section $component): array
+    {
+        return ['class' => self::class];
+    }
+}
+
+final class AutoLabelNullCallerStub extends AutoLabelAction
+{
+    /**
+     * @return array<string, string>
+     */
+    protected function findCallerFrame(Field|Entry|BaseFilter|Column|Step|Action|Section $component): array
+    {
+        return ['function' => 'foo'];
+    }
+}
+
+final class AutoLabelExecuteNestedCaller
+{
+    public function execute(Field|Entry|BaseFilter|Column|Step|Action|Section $component, string $type = 'label'): Field|Entry|BaseFilter|Column|Step|Action|Section
+    {
+        return app(AutoLabelAction::class)->execute($component, $type);
+    }
+}
+
+final class AutoLabelStaticCaller
+{
+    public static function run(Field|Entry|BaseFilter|Column|Step|Action|Section $component, string $type = 'label'): Field|Entry|BaseFilter|Column|Step|Action|Section
+    {
+        return app(AutoLabelAction::class)->execute($component, $type);
+    }
+}
+
+final class PostNullTitleForGuidStub extends Post
+{
+    /**
+     * Copre il solo ramo «titolo assente»: non restituisce mai una stringa.
+     */
+    protected function titleForGuid(): null
+    {
+        return null;
+    }
+}
+
+final class ThemeComposerNonStringFieldStub extends ThemeComposer
+{
+    protected function langFieldValue(LangData $lang, string $field): mixed
+    {
+        return 42;
+    }
+}
+
+>>>>>>> laraxot/dev
 afterEach(function (): void {
     Mockery::close();
 });
@@ -84,8 +219,19 @@ test('LocaleSwitcherRefresh applyLocale covers string and non-string locale', fu
 });
 
 test('TranslatorAction and Adapter coerce non-string loaded values', function (): void {
+<<<<<<< HEAD
     TestCase::forceSqliteTranslations();
 
+=======
+    // Qui c'era `TestCase::forceSqliteTranslations()`, un helper invocato e mai
+    // scritto. Non e' stato scritto ma rimosso: il test non tocca il database.
+    // Carica le traduzioni da un `ArrayLoader`, scrive la property `loaded` per
+    // reflection e mocka `RecordMissingTranslationAction`, che e' l'unico punto
+    // che avrebbe interrogato una connessione. Un helper che forzasse la
+    // connessione a SQLite avrebbe dato l'impressione di proteggere qualcosa
+    // che non e' in pericolo, e avrebbe contraddetto la regola per cui i test
+    // girano sulle repliche MySQL. Story LANG-17.4.
+>>>>>>> laraxot/dev
     $loader = new ArrayLoader();
     $action = new TranslatorAction($loader, 'it');
     $loaded = new ReflectionProperty(LaravelTranslator::class, 'loaded');
@@ -144,7 +290,12 @@ test('SyncTranslationsAction skips empty casted glob entries', function (): void
     mkdir($base.'/lang/it', 0o755, true);
     file_put_contents($base.'/lang/it/ok.php', "<?php\nreturn ['a' => 'b'];\n");
 
+<<<<<<< HEAD
     TestCase::mockExpectation(File::partialMock(), 'glob')
+=======
+    File::partialMock()
+        ->shouldReceive('glob')
+>>>>>>> laraxot/dev
         ->andReturn([null, '', $base.'/lang/it/ok.php']);
     File::shouldReceive('exists')->andReturnUsing(static fn (string $p): bool => file_exists($p) || is_dir($p));
     File::shouldReceive('makeDirectory')->andReturn(true);
@@ -403,7 +554,11 @@ test('NationalFlagSelect casts non-array non-string localized label', function (
     });
     $translator = app('translator');
     $mock = Mockery::mock($translator)->makePartial();
+<<<<<<< HEAD
     TestCase::mockExpectation($mock, 'get')
+=======
+    $mock->shouldReceive('get')
+>>>>>>> laraxot/dev
         ->andReturnUsing(static function (string $key, array $replace = [], ?string $locale = null) use ($translator): mixed {
             if (str_contains($key, 'countries.it')) {
                 return 99;
@@ -450,7 +605,11 @@ test('SaveTransAction early return when persist disabled in unit tests', functio
     app()->instance(SaveTransAction::class, new SaveTransAction());
     app(SaveTransAction::class)->execute('lang::should_not_write.nested', 'x');
     Assert::assertFileDoesNotExist(base_path('Modules/Lang/lang/'.app()->getLocale().'/should_not_write.php'));
+<<<<<<< HEAD
     TestCase::restoreSaveTransActionNoOp();
+=======
+    TestCase::forgetSaveTransActionOverride();
+>>>>>>> laraxot/dev
 });
 
 test('AutoLabelAction static caller covers class-only frame', function (): void {

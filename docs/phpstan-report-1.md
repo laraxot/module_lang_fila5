@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Report PHPStan - Modulo Lang"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Report PHPStan - Modulo Lang
 
 ## Stato Attuale

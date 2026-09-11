@@ -31,12 +31,50 @@ class AutoLabelAction
      */
     public function execute(Field|Entry|BaseFilter|Column|Step|Action|Section $component, string $type = 'label'): Field|Entry|BaseFilter|Column|Step|Action|Section
     {
+<<<<<<< HEAD
         $class = $this->findCallerFrame($component);
 
         if (is_array($class)) {
             $object_class = $this->objectClassFromFrame($class);
             if (is_null($object_class)) {
                 return $component;
+=======
+        $backtrace = debug_backtrace();
+        $backtrace_slice = array_slice($backtrace, 2);
+        $class = Arr::first($backtrace_slice, function (array $item) use ($component) {
+            if ($item['function'] === 'execute') {
+                return false;
+            }
+
+            if (
+                isset($item['object'])
+                    && Str::startsWith($item['object']::class, 'Modules\\')
+                    && $item['object'] !== $component
+            ) {
+                return true;
+            }
+
+            if (isset($item['class']) && Str::startsWith($item['class'], 'Modules\\')) {
+                $reflection_class = new \ReflectionClass($item['class']);
+                if (! $reflection_class->isAbstract()) {
+                    return true;
+                }
+            }
+
+            return false;
+        });
+
+        if (is_array($class)) {
+            $object_class = null;
+            if (isset($class['object'])) {
+                $object_class = $class['object']::class;
+            }
+            if (isset($class['class']) && $object_class === null) {
+                $object_class = $class['class'];
+            }
+            if (is_null($object_class)) {
+                throw new \Exception('No object class found');
+>>>>>>> laraxot/dev
             }
             $trans_key = app(GetTransKeyAction::class)->execute($object_class);
         } else {
@@ -45,6 +83,12 @@ class AutoLabelAction
 
         $label_tkey = null;
         $val = 'no-set-val';
+<<<<<<< HEAD
+=======
+        // Valore da persistere quando la traduzione non esiste ancora. Di norma coincide
+        // con il segmento di chiave, ma non sempre: vedi le sezioni senza titolo.
+        $default_val = null;
+>>>>>>> laraxot/dev
 
         if ($component instanceof Step) {
             Assert::string($val = $component->getLabel());
@@ -53,7 +97,17 @@ class AutoLabelAction
         if ($label_tkey === null && $component instanceof Section) {
             $val = $component->getHeading();
             if ($val === null) {
+<<<<<<< HEAD
                 $val = 'empty';
+=======
+                // Una sezione senza titolo e' una scelta: raggruppa i campi senza
+                // annunciarsi. Serve comunque un segmento di chiave, e `empty` lo fa, ma
+                // il valore salvato deve restare vuoto — altrimenti la prima visita
+                // persiste la stringa "empty" e da li' in poi la sezione mostra quella
+                // parola come intestazione.
+                $val = 'empty';
+                $default_val = '';
+>>>>>>> laraxot/dev
             }
             if (! is_string($val)) {
                 $val = app(SafeStringCastAction::class)->execute($val);
@@ -74,7 +128,11 @@ class AutoLabelAction
 
         $label = trans($label_key);
         if (is_string($label) && $label_key === $label) { // se non esiste la traduzione, la salvo
+<<<<<<< HEAD
             app(SaveTransAction::class)->execute($label_key, $val);
+=======
+            app(SaveTransAction::class)->execute($label_key, $default_val ?? $val);
+>>>>>>> laraxot/dev
         }
         if (! is_string($label)) {
             $component->label('FIX:'.$label_key);
@@ -84,6 +142,7 @@ class AutoLabelAction
         if ($label_key === $label || ! method_exists($component, $type)) {
             return $component;
         }
+<<<<<<< HEAD
         if ($type === 'icon') {
             $exists = app(SvgExistsAction::class)->execute($label);
             if ($exists && method_exists($component, 'iconButton')) {
@@ -97,6 +156,48 @@ class AutoLabelAction
         }
 
         if (strip_tags($label) !== $label && $type === 'helperText') {
+=======
+        /*
+        if (is_string($label) && $label_key !== $label && method_exists($component, $type)) {
+
+                if ($type === 'icon' && !app(SvgExistsAction::class)->execute($label)) {
+
+                    $component->{$type}('heroicon-o-question-mark-circle');
+                    return $component;
+                }
+                if (strip_tags($label) !== $label && in_array($type, ['helperText'], strict: true)) {
+                    $component->{$type}(new HtmlString($label));
+                } else {
+                    $component->{$type}($label);
+                }
+
+        }
+        */
+        if ($type === 'icon' && app(SvgExistsAction::class)->execute($label)) {
+            if (method_exists($component, 'iconButton')) {
+                $component->iconButton();
+            }
+            $component->{$type}($label);
+
+            // $component->label('FIX:'.$label_key);
+            return $component;
+        }
+        if ($type === 'icon' && ! app(SvgExistsAction::class)->execute($label)) {
+            // $component->{$type}($label);
+            if (method_exists($component, 'iconButton')) {
+                $component->iconButton();
+            }
+
+            // $component->label('FIX:'.$label_key);
+            // $component->tooltip('FIX:'.$label_key);
+            // $component->{$type}('heroicon-o-question-mark-circle');
+
+            // $component->{$type}(null);
+            return $component;
+        }
+
+        if (strip_tags($label) !== $label && in_array($type, ['helperText'], strict: true)) {
+>>>>>>> laraxot/dev
             $component->{$type}(new HtmlString($label));
 
             return $component;
@@ -106,6 +207,7 @@ class AutoLabelAction
 
         return $component;
     }
+<<<<<<< HEAD
 
     /**
      * @return array<string, mixed>|null
@@ -156,4 +258,6 @@ class AutoLabelAction
 
         return is_string($object_class) ? $object_class : null;
     }
+=======
+>>>>>>> laraxot/dev
 }

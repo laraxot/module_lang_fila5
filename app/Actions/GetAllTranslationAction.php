@@ -4,8 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
+=======
+use Illuminate\Support\Str;
+
+use function Safe\glob;
+
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 class GetAllTranslationAction
@@ -26,7 +33,11 @@ class GetAllTranslationAction
 
         $lang = app()->getLocale();
         $path = base_path('Modules/*/lang/'.$lang.'/*.php');
+<<<<<<< HEAD
         $files = File::glob($path) ?: [];
+=======
+        $files = glob($path);
+>>>>>>> laraxot/dev
 
         $result = [];
         foreach ($files as $file) {

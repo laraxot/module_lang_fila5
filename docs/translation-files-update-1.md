@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Aggiornamento File di Traduzione - Gennaio 2025"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Aggiornamento File di Traduzione - Gennaio 2025
 
 ## Data Aggiornamento
