@@ -9,10 +9,16 @@ use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
+use Modules\Lang\Models\TranslationFile;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class TranslationFilesTable extends XotBaseResourceTable
 {
+    /**
+     * @var class-string<TranslationFile>
+     */
+    protected static string $model = TranslationFile::class;
+
     /**
      * @return array<string, Action|ActionGroup>
      */
@@ -42,7 +48,7 @@ class TranslationFilesTable extends XotBaseResourceTable
         return [
             'name' => TextColumn::make('name')->searchable()->sortable(),
             'key' => TextColumn::make('key')->searchable()->sortable()->wrap(),
-            'path' => TextColumn::make('path')->searchable()->wrap()->toggleable(isToggledHiddenByDefault: true),
+            'path' => TextColumn::make('path')->searchable()->sortable()->wrap()->toggleable(isToggledHiddenByDefault: true),
         ];
     }
 }
