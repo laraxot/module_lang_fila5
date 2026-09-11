@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Advanced Language Switching Strategies"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Advanced Language Switching Strategies
 
 ## Overview

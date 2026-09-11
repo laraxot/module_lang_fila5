@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "PRD: Lang Module"
 module: "Lang"
 type: concept
@@ -45,6 +46,8 @@ Transparent language selection via URL prefix (e.g., `/it/admin`, `/en/admin`).
 <!-- Merged from PRD.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
+=======
+>>>>>>> laraxot/dev
 title: "Product Requirements Document (PRD) - Lang Module"
 module: "Lang"
 type: concept
@@ -250,7 +253,11 @@ The Lang module provides a structured framework for managing lang operations wit
 
 ### 7.3 Technical Constraints
 - PHP 8.3+ required
+<<<<<<< HEAD
 - Laravel 12+ required
+=======
+- Laravel 13+ required
+>>>>>>> laraxot/dev
 - Filament v5 for UI
 - MySQL 8.0+
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Traduzioni Automatiche con LangServiceProvider"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "automatic translations 1"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Traduzioni Automatiche con LangServiceProvider
 
 ## Regola Fondamentale

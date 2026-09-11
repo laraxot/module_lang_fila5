@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests;
 
+<<<<<<< HEAD
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Application;
@@ -16,10 +17,19 @@ use Mockery\MockInterface;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Xot\Contracts\UserContract;
+=======
+use Illuminate\Foundation\Application;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Support\Facades\DB;
+use Modules\Lang\Actions\SaveTransAction;
+use Modules\Lang\Providers\LangServiceProvider;
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
 
 use function Safe\file_put_contents;
+<<<<<<< HEAD
 use function Safe\getmypid;
 use function Safe\putenv;
 use function Safe\touch;
@@ -33,6 +43,9 @@ final class SaveTransActionNoOpStub extends SaveTransAction
 {
     public function execute(string $key, int|string|array|Htmlable|null $data): void {}
 }
+=======
+use function Safe\mkdir;
+>>>>>>> laraxot/dev
 
 /**
  * Base test case for Lang module.
@@ -51,12 +64,18 @@ abstract class TestCase extends XotBaseTestCase
 
     protected function setUp(): void
     {
+<<<<<<< HEAD
         // App riusata tra test: reset PRIMA del boot (AutoLabel gira durante parent::setUp).
         self::disablePersistTransInTests();
 
         parent::setUp();
 
         $database = database_path('fixcity_data.sqlite');
+=======
+        parent::setUp();
+
+        $database = database_path('database.sqlite');
+>>>>>>> laraxot/dev
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
@@ -70,6 +89,7 @@ abstract class TestCase extends XotBaseTestCase
             DB::purge($connection);
         }
 
+<<<<<<< HEAD
         config(['auth.providers.users.model' => \Modules\User\Models\User::class]);
 
         self::restoreSaveTransActionNoOp();
@@ -155,6 +175,9 @@ abstract class TestCase extends XotBaseTestCase
             $table->text('value')->nullable();
             $table->timestamps();
         });
+=======
+        config(['auth.providers.users.model' => User::class]);
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -170,6 +193,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+<<<<<<< HEAD
      * Scrive un file di traduzione PHP nel percorso indicato.
      *
      * @param  array<string, mixed>  $translations
@@ -180,6 +204,8 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+=======
+>>>>>>> laraxot/dev
      * @param  array<string, mixed>  $data
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
@@ -199,6 +225,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+<<<<<<< HEAD
      * Mockery::shouldReceive() con un singolo metodo restituisce Expectation a runtime;
      * la firma nativa dichiara un'unione che PHPStan non restringe da solo.
      */
@@ -224,5 +251,52 @@ abstract class TestCase extends XotBaseTestCase
         $expectation = $mock->expects($method);
 
         return $expectation;
+=======
+     * Scrive un file di traduzione PHP, creando la directory se manca.
+     *
+     * I test la usano per preparare un file esistente prima di verificare come
+     * lo trattano le action di scrittura. Il tipo e' `array<string, string>` e
+     * non un array annidato perche' tutti i chiamanti passano coppie piatte:
+     * se un giorno servisse l'annidamento, si allarga di proposito e si aggiorna
+     * questo commento, invece di partire larghi e non sapere piu' cosa arriva.
+     *
+     * @param  array<string, string>  $data
+     */
+    public static function createTranslationFile(string $path, array $data): void
+    {
+        $directory = \dirname($path);
+
+        if (! is_dir($directory)) {
+            mkdir($directory, 0o755, true);
+        }
+
+        file_put_contents($path, '<?php'.PHP_EOL.PHP_EOL.'return '.var_export($data, true).';'.PHP_EOL);
+    }
+
+    /**
+     * Registra nel container l'implementazione reale di SaveTransAction.
+     *
+     * Serve ai test che vogliono verificare la scrittura vera su file: senza
+     * questa riga il container puo' ancora avere il mock lasciato da un test
+     * precedente dello stesso processo, e l'asserzione verificherebbe il mock.
+     */
+    public static function bindRealSaveTransAction(): void
+    {
+        app()->instance(SaveTransAction::class, new SaveTransAction());
+    }
+
+    /**
+     * Rimuove l'override di SaveTransAction dal container.
+     *
+     * Si chiamava `restoreSaveTransActionNoOp()`, ma il nome descriveva un
+     * meccanismo che non e' mai esistito: nessun bootstrap registra una versione
+     * no-op da ripristinare. Quello che i test fanno davvero, nel `finally`, e'
+     * togliere l'istanza forzata da {@see bindRealSaveTransAction()} perche' il
+     * test successivo riparta dalla risoluzione normale.
+     */
+    public static function forgetSaveTransActionOverride(): void
+    {
+        app()->forgetInstance(SaveTransAction::class);
+>>>>>>> laraxot/dev
     }
 }

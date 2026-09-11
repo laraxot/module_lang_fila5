@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitto translation-file-syntax.md"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitto translation-file-syntax.md
 
 ## Problema Identificato

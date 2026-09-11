@@ -114,7 +114,14 @@ class LangServiceProvider extends XotBaseServiceProvider
             //    // $component->iconButton();
             // }
             /*
+<<<<<<< HEAD
             throw new \RuntimeException('Removed debug dddx');
+=======
+            dddx([
+            'methods' => get_class_methods($component),
+            'getRecord' => $component->getRecord(),
+            ]);
+>>>>>>> laraxot/dev
             */
             if (method_exists($component, 'getRecord') && $component->getRecord() === null) {
                 if (method_exists($component, 'button')) {
@@ -167,6 +174,11 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     protected function translatableComponents(): void
     {
+<<<<<<< HEAD
+=======
+        // `Placeholder` e' deprecata in favore di `TextEntry`, che estende `Entry`:
+        // la voce era anche ridondante, non solo deprecata.
+>>>>>>> laraxot/dev
         $components = [Field::class, BaseFilter::class, Column::class, Entry::class];
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
