@@ -24,7 +24,11 @@ describe('BaseModelLang', function () {
         $reflection = new \ReflectionClass(BaseModelLang::class);
         $traits = $reflection->getTraitNames();
 
+<<<<<<< HEAD
         $hasLinked = count(array_filter($traits, static fn (string $t): bool => str_contains($t, 'Linked'))) > 0;
+=======
+        $hasLinked = count(array_filter($traits, fn (string $t) => str_contains($t, 'Linked'))) > 0;
+>>>>>>> laraxot/dev
         Assert::assertTrue($hasLinked);
     });
 

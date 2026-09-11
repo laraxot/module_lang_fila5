@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Traduzione dei Messaggi di Validazione"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "test"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Traduzione dei Messaggi di Validazione
 
 ## Introduzione

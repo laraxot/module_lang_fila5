@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Integration of Mcamara Laravel Localization with Laravel Folio"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Integration of Mcamara Laravel Localization with Laravel Folio
 
 ## Overview

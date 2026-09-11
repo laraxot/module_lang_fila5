@@ -27,6 +27,7 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 
 ## Collegamenti correlati
 - [Composer merge plugin](composer-merge-plugin.md)
+<<<<<<< HEAD
 
 ---
 
@@ -76,3 +77,5 @@ Translation and localization management module
 - **PHPStan L10**: Pending execution
 - **PHPMD**: Pending analysis
 - **Test Coverage**: Needs Pest test suite
+=======
+>>>>>>> laraxot/dev

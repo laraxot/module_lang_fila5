@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Sistema di Traduzione in il progetto"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Sistema di Traduzione in il progetto
 
 ## LangServiceProvider

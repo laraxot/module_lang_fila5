@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Lang\Tests\Unit\Actions;
 
 use Illuminate\Contracts\Translation\Loader;
+<<<<<<< HEAD
 use Illuminate\Database\QueryException;
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Translation\Translator;
 use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Lang\Tests\TestCase;
@@ -23,6 +26,7 @@ function makeTranslatorAdapter(): TranslatorAdapter
 
 describe('TranslatorAdapter business logic', function () {
     test('returns the key itself when translation is missing', function () {
+<<<<<<< HEAD
         /** @var TestCase $this */
         if (TestCase::langDbUnavailable()) {
             $this->skipTest('DB `lang` non raggiungibile: blocco di ambiente.');
@@ -35,11 +39,17 @@ describe('TranslatorAdapter business logic', function () {
         } catch (QueryException $exception) {
             $this->skipTest('DB `lang` write lock (sqlite condiviso): '.$exception->getMessage());
         }
+=======
+        $key = 'lang::missing.unknown_key_'.uniqid();
+
+        $result = makeTranslatorAdapter()->get($key);
+>>>>>>> laraxot/dev
 
         Assert::assertSame($key, $result);
     });
 
     test('get returns the key for a missing string key', function () {
+<<<<<<< HEAD
         /** @var TestCase $this */
         if (TestCase::langDbUnavailable()) {
             $this->skipTest('DB `lang` non raggiungibile: blocco di ambiente.');
@@ -50,6 +60,9 @@ describe('TranslatorAdapter business logic', function () {
         } catch (QueryException $exception) {
             $this->skipTest('DB `lang` write lock (sqlite condiviso): '.$exception->getMessage());
         }
+=======
+        $result = makeTranslatorAdapter()->get('lang::missing.another_key_'.uniqid());
+>>>>>>> laraxot/dev
 
         Assert::assertIsString($result);
     });

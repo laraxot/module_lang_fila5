@@ -19,6 +19,14 @@ use Modules\Xot\Contracts\UserContract;
  * Modules\Lang\Models\Traits\LinkedTrait.
  *
  * @property UserContract|null $user
+<<<<<<< HEAD
  * @property Post $post
  */
 trait LinkedTrait {}
+=======
+ * @property Post              $post
+ */
+trait LinkedTrait
+{
+}
+>>>>>>> laraxot/dev

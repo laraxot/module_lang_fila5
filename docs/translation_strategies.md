@@ -2,6 +2,7 @@
 title: "Strategie di Gestione delle Traduzioni in Laravel"
 module: "Lang"
 type: concept
+<<<<<<< HEAD
 tags: [filament4, migration]
 created: 2026-07-14
 updated: 2026-07-14
@@ -274,6 +275,8 @@ Per questo progetto, si consiglia di utilizzare i file PHP per le traduzioni di 
 title: "Strategie di Gestione delle Traduzioni in Laravel"
 module: "Lang"
 type: concept
+=======
+>>>>>>> laraxot/dev
 tags: [migration, filament]
 created: 2026-07-14
 updated: 2026-07-14
