@@ -161,7 +161,15 @@ class StoreOrderRequest extends FormRequest
 ## 9. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
+<<<<<<< HEAD
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
+=======
+<<<<<<<< HEAD:docs/wiki/integrations/_da-riconciliare/validation-messages.md
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
+========
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+>>>>>>>> laraxot/dev:docs/archive/historical/validation-messages.md
+>>>>>>> laraxot/dev
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)
@@ -317,6 +325,10 @@ class StoreOrderRequest extends FormRequest
 ## 9. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:docs/wiki/integrations/_da-riconciliare/validation-messages.md
+>>>>>>> laraxot/dev
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
@@ -325,3 +337,12 @@ class StoreOrderRequest extends FormRequest
 - [README.md](./README.md)
 - [README.md](./README.md)
 - [README.md](./README.md)
+<<<<<<< HEAD
+=======
+========
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+- [translations-storage.md](./translations-storage.md)
+- [translation-process.md](./translation-process.md)
+- [README.md](./README.md)
+>>>>>>>> laraxot/dev:docs/archive/historical/validation-messages.md
+>>>>>>> laraxot/dev

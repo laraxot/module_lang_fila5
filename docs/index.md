@@ -337,6 +337,7 @@ php artisan lang:debug [--log-missing] [--log-performance]
 - [Conflict Resolution](conflict-resolution.md)
 
 - [Conflict Resolution](conflict-resolution.md)
+<<<<<<< HEAD
 
 ---
 
@@ -349,3 +350,5 @@ Modulo: Lang
 ## File disponibili
 
 <!-- auto-generato: elencare i file .md presenti -->
+=======
+>>>>>>> laraxot/dev

@@ -39,8 +39,11 @@ use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Lang\Providers\RouteServiceProvider;
+<<<<<<< HEAD
 use Modules\Lang\Services\TranslatorService;
 use Modules\Lang\Tests\Fixtures\NationalFlagSelectStub;
+=======
+>>>>>>> laraxot/dev
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Composers\ThemeComposer;
 use Modules\Xot\Actions\File\AssetAction;
@@ -57,6 +60,26 @@ use function Safe\unlink;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
+=======
+final class NationalFlagSelectStub extends NationalFlagSelect
+{
+    /** @var array<int, mixed> */
+    public array $forcedCountries = [];
+
+    /**
+     * Vedi la nota in LangFinalGapsTest: `mixed` e' il tipo reale dei dati che i test
+     * iniettano di proposito per verificare la robustezza del filtro.
+     *
+     * @return array<int, mixed>
+     */
+    protected function resolveCountries(): array
+    {
+        return $this->forcedCountries;
+    }
+}
+
+>>>>>>> laraxot/dev
 afterEach(function (): void {
     Mockery::close();
     $sqlite = $GLOBALS['__lang_gaps_sqlite'] ?? null;
@@ -105,14 +128,24 @@ function langGapsSqlite(): void
 }
 
 describe('Lang coverage gaps closeout', function (): void {
+<<<<<<< HEAD
     test('TranslatorService notifyMissingKey and TranslatorAction non-string branch', function (): void {
+=======
+    test('TranslatorAdapter notifyMissingKey and TranslatorAction non-string branch', function (): void {
+>>>>>>> laraxot/dev
         langGapsSqlite();
         $loader = new ArrayLoader();
         $loader->addMessages('it', 'g', ['n' => 9]);
 
+<<<<<<< HEAD
         $service = new TranslatorService($loader, 'it');
         $missing = 'g.missing_'.uniqid('', true);
         Assert::assertSame($missing, $service->get($missing));
+=======
+        $adapter = new TranslatorAdapter($loader, 'it');
+        $missing = 'g.missing_'.uniqid('', true);
+        Assert::assertSame($missing, $adapter->get($missing));
+>>>>>>> laraxot/dev
         Assert::assertTrue(Translation::query()->where('item', substr($missing, 2))->exists() || Translation::query()->count() > 0);
 
         $action = new TranslatorAction($loader, 'it');
@@ -155,7 +188,11 @@ describe('Lang coverage gaps closeout', function (): void {
         $loaded = require $file;
         Assert::assertSame('v', $loaded['y']);
         unlink($file);
+<<<<<<< HEAD
         TestCase::restoreSaveTransActionNoOp();
+=======
+        TestCase::forgetSaveTransActionOverride();
+>>>>>>> laraxot/dev
     });
 
     test('WriteTranslationFileAction backs up existing file', function (): void {
@@ -287,22 +324,36 @@ describe('Lang coverage gaps closeout', function (): void {
         // Avoid real update by mocking
         /** @var Post&MockInterface $post */
         $post = Mockery::mock(Post::class)->makePartial();
+<<<<<<< HEAD
         TestCase::mockExpectation($post, 'getKey')->andReturn('abc');
         TestCase::mockExpectation($post, 'update')->andReturnTrue();
+=======
+        $post->shouldReceive('getKey')->andReturn('abc');
+        $post->shouldReceive('update')->andReturnTrue();
+>>>>>>> laraxot/dev
         $post->setRawAttributes(['post_type' => 'article', 'post_id' => '1'], true);
         Assert::assertSame('article 1', $post->getTitleAttribute(null));
 
         /** @var Post&MockInterface $post2 */
         $post2 = Mockery::mock(Post::class)->makePartial();
+<<<<<<< HEAD
         TestCase::mockExpectation($post2, 'getKey')->andReturn('abc');
         TestCase::mockExpectation($post2, 'update')->andReturnTrue();
+=======
+        $post2->shouldReceive('getKey')->andReturn('abc');
+        $post2->shouldReceive('update')->andReturnTrue();
+>>>>>>> laraxot/dev
         $post2->setRawAttributes(['title' => ''], true);
         Assert::assertIsString($post2->getGuidAttribute(null));
     });
 
     test('TranslationFile empty content when path key missing', function (): void {
         $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock): void {
+<<<<<<< HEAD
             TestCase::mockExpectation($mock, 'execute')->andReturn([
+=======
+            $mock->shouldReceive('execute')->andReturn([
+>>>>>>> laraxot/dev
                 ['key' => 'lang::only'],
             ]);
         });
@@ -386,7 +437,11 @@ describe('Lang coverage gaps closeout', function (): void {
             $mock->allows('execute');
         });
         $this->mockService(SvgExistsAction::class, static function (MockInterface $mock): void {
+<<<<<<< HEAD
             TestCase::mockAllows($mock, 'execute')->andReturn(true);
+=======
+            $mock->allows('execute')->andReturn(true);
+>>>>>>> laraxot/dev
         });
 
         app('translator')->addLines([

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Localizzazione di Date e Valute"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Localizzazione di Date e Valute
 
 ## Introduzione

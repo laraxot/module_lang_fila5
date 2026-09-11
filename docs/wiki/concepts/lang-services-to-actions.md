@@ -46,5 +46,9 @@ resta thin e la business logic è testabile in isolamento.
 ## Test
 
 `Modules/Lang/tests/unit/actions/RecordMissingTranslationActionTest.php` (pest).
+<<<<<<< HEAD
 Prerequisito ambiente pre-esistente: il DB di test `database/ptv_data.sqlite`
+=======
+Prerequisito ambiente pre-esistente: il DB di test `database/database.sqlite`
+>>>>>>> laraxot/dev
 deve esistere e avere la tabella `translations` (migrare il modulo Lang).

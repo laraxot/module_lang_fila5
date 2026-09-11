@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Storage delle Traduzioni: PHP vs JSON"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "google translate"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Storage delle Traduzioni: PHP vs JSON
 
 ## Introduzione

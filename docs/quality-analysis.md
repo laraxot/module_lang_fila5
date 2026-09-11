@@ -316,11 +316,19 @@ public function view(User $user, Post $_post): bool
 ## Comparison with Other Modules
 
 Based on `PHPSTAN_JOURNEY.md`, the following modules have achieved Level 10:
+<<<<<<< HEAD
 - Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, Quaeris
 - Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, <nome progetto>
 - Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, <nome progetto>
 - Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, <nome progetto>
 - Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, Quaeris
+=======
+- Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, modulo questionari
+- Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, <nome progetto>
+- Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, <nome progetto>
+- Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, <nome progetto>
+- Activity, Cms, CloudStorage, Gdpr, DbForge, Chart, Geo, Job, modulo questionari
+>>>>>>> laraxot/dev
 
 **Lang Module Status**:
 - ✅ PHPStan Level 10: **ACHIEVED**

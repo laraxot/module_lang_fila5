@@ -11,6 +11,7 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\Lang\Models\LanguageLine.
  *
+<<<<<<< HEAD
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  *
@@ -18,11 +19,14 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static EloquentBuilder<static>|LanguageLine newQuery()
  * @method static EloquentBuilder<static>|LanguageLine query()
  *
+=======
+>>>>>>> laraxot/dev
  * @property int $id
  * @property string $group
  * @property string $key
  * @property array<array-key, mixed> $text
  * @property string $locale
+<<<<<<< HEAD
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -38,6 +42,30 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedAt($value)
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedBy($value)
  *
+=======
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ *
+ * @method static EloquentBuilder<static>|LanguageLine newModelQuery()
+ * @method static EloquentBuilder<static>|LanguageLine newQuery()
+ * @method static EloquentBuilder<static>|LanguageLine query()
+ * @method static EloquentBuilder<static>|LanguageLine whereId($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereGroup($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereKey($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereText($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereLocale($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereCreatedAt($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereUpdatedAt($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereCreatedBy($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereUpdatedBy($value)
+ *
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $deleter
+ * @property-read ProfileContract|null $updater
+ *
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class LanguageLine extends BaseModel

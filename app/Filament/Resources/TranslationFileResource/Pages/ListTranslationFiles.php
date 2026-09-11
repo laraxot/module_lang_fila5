@@ -14,6 +14,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListTranslationFiles extends XotBaseListRecords
 {
     protected static string $resource = TranslationFileResource::class;
+<<<<<<< HEAD
 
     #[\Override]
     public function getTableColumns(): array
@@ -22,6 +23,9 @@ class ListTranslationFiles extends XotBaseListRecords
             'key' => TextColumn::make('key')->searchable(['key', 'content']),
         ];
     }
+=======
+   
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, Action|ActionGroup>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Integrazione Livewire Volt + mcamara/laravel-localization"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "migrazione filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Integrazione Livewire Volt + mcamara/laravel-localization
 
 ## 1. Obiettivo

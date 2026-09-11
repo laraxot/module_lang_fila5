@@ -55,6 +55,10 @@ Se la regola non e' specifica di `Lang`, collegare anche:
 
 ## Vedi anche
 
+<<<<<<< HEAD
 - [Rules Index](../rules/INDEX.md)
+=======
+- [Rules Index](../rules/index.md)
+>>>>>>> laraxot/dev
 - [Lang Wiki Index](../index.md)
 - [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)

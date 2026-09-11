@@ -158,7 +158,11 @@ $post->getTranslation('title', 'it')  // 'Titolo'
 - Form fields salvano JSON multilingua
 
 **Quando usare XotBase:**
+<<<<<<< HEAD
 - Modulo NON ha contenuti multilingua (User, TechPlanner, UI)
+=======
+- Modulo NON ha contenuti multilingua (User, modulo operativo, UI)
+>>>>>>> laraxot/dev
 - Standard Laravel/Filament workflow
 - Traduzioni solo per UI, non per contenuti
 

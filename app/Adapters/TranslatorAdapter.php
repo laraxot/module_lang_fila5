@@ -27,7 +27,12 @@ class TranslatorAdapter extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
+<<<<<<< HEAD
      * @param  array<string, mixed>  $replace
+=======
+     * @param array<string, mixed> $replace
+     *
+>>>>>>> laraxot/dev
      * @return string|array<array-key, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
@@ -45,7 +50,15 @@ class TranslatorAdapter extends LaravelTranslator
             return $result;
         }
 
+<<<<<<< HEAD
         return is_string($result) ? $result : (string) $result;
+=======
+        if (! is_string($result)) {
+            return (string) $key;
+        }
+
+        return $result;
+>>>>>>> laraxot/dev
     }
 
     /*

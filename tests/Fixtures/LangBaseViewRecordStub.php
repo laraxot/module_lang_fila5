@@ -10,9 +10,12 @@ use Modules\Lang\Filament\Resources\TranslationFileResource;
 final class LangBaseViewRecordStub extends LangBaseViewRecord
 {
     protected static string $resource = TranslationFileResource::class;
+<<<<<<< HEAD
 
     protected function getInfolistSchema(): array
     {
         return [];
     }
+=======
+>>>>>>> laraxot/dev
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzioni Migrazione - Modulo Lang"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "migrazione filament"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Correzioni Migrazione - Modulo Lang
 
 ## Problema Identificato

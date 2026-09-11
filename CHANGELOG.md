@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## [1.0.0-dev.17](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.16...v1.0.0-dev.17) (2026-08-27)
 
 ### Bug Fixes
@@ -16,6 +17,13 @@
 ### Bug Fixes
 
 * resolve merge conflicts and standardize naming conventions in module.json and config.php; clean up test files ([de7a9e4](https://github.com/laraxot/module_lang_fila5/commit/de7a9e4d38e2dacbfb779d8d77670fcdd450ba5f))
+=======
+## [1.0.0-dev.15](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.14...v1.0.0-dev.15) (2026-08-25)
+
+### Bug Fixes
+
+* **phpstan:** analyse Modules a zero errori ([31903cb](https://github.com/laraxot/module_lang_fila5/commit/31903cbdf7a314ccf1d800dadcbe20f08a1e1995))
+>>>>>>> laraxot/dev
 
 ## [1.0.0-dev.12](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.11...v1.0.0-dev.12) (2026-07-31)
 

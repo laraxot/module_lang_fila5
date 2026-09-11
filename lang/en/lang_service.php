@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 return [
     'fields' => [
         'language' => [
@@ -10,28 +15,47 @@ return [
             'description' => '',
         ],
         'available_languages' => [
+<<<<<<< HEAD
             'label' => 'Lingue Disponibili',
             'placeholder' => 'Elenco lingue disponibili',
             'helper_text' => 'Lingue disponibili per la selezione nell\'interfaccia',
+=======
+            'label' => 'Available Languages',
+            'placeholder' => 'Available languages list',
+            'helper_text' => 'Languages available for interface selection',
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'description' => '',
         ],
         'value' => [
+<<<<<<< HEAD
             'label' => 'Valore',
             'placeholder' => 'Inserisci il valore',
             'helper_text' => 'Valore della traduzione',
+=======
+            'label' => 'Value',
+            'placeholder' => 'Enter value',
+            'helper_text' => 'Translation value',
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'description' => '',
         ],
         'key' => [
+<<<<<<< HEAD
             'label' => 'Chiave',
             'placeholder' => 'Inserisci la chiave di traduzione',
             'helper_text' => 'Chiave identificativa per la traduzione',
+=======
+            'label' => 'Key',
+            'placeholder' => 'Enter translation key',
+            'helper_text' => 'Unique identifier for the translation',
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'description' => '',
         ],
         'locale' => [
             'label' => 'Locale',
+<<<<<<< HEAD
             'placeholder' => 'Seleziona il locale',
             'helper_text' => 'Codice locale della lingua (es. it, en, de]',
             'tooltip' => '',
@@ -5444,15 +5468,66 @@ return [
             'label' => 'send_mail',
             'icon' => 'send_mail',
             'tooltip' => 'send_mail',
+=======
+            'placeholder' => 'Select locale',
+            'helper_text' => 'Language locale code (e.g. it, en, de)',
+            'tooltip' => '',
+            'description' => '',
+        ],
+    ],
+    'actions' => [
+        'change_language' => [
+            'label' => 'Change Language',
+            'tooltip' => 'Change interface language',
+            'success' => 'Language changed successfully',
+            'error' => 'Error changing language',
+            'confirmation' => 'Are you sure you want to change the language?',
+        ],
+        'cancel' => [
+            'label' => 'Cancel',
+            'tooltip' => 'Cancel current operation',
+        ],
+        'save' => [
+            'label' => 'Save',
+            'tooltip' => 'Save changes',
+            'success' => 'Changes saved successfully',
+            'error' => 'Error saving changes',
+        ],
+        'create' => [
+            'label' => 'Create Translation',
+            'tooltip' => 'Create a new translation',
+            'success' => 'Translation created successfully',
+            'error' => 'Error creating translation',
+        ],
+        'edit' => [
+            'label' => 'Edit',
+            'tooltip' => 'Edit selected translation',
+            'success' => 'Translation updated successfully',
+            'error' => 'Error updating translation',
+        ],
+        'delete' => [
+            'label' => 'Delete',
+            'tooltip' => 'Delete selected translation',
+            'success' => 'Translation deleted successfully',
+            'error' => 'Error deleting translation',
+            'confirmation' => 'Are you sure you want to delete this translation?',
+>>>>>>> laraxot/dev
         ],
     ],
     'messages' => [
         'language_changed' => 'Language changed successfully',
+<<<<<<< HEAD
+=======
+        'error' => 'An error occurred while changing language',
+>>>>>>> laraxot/dev
         'no_translations' => 'No translations found',
         'loading' => 'Loading translations...',
         'empty_state' => 'No translations available',
         'search_placeholder' => 'Search translations...',
+<<<<<<< HEAD
         'error' => 'Si è verificato un errore durante il cambio lingua',
+=======
+>>>>>>> laraxot/dev
     ],
     'validation' => [
         'language_required' => 'Language is required',
@@ -5464,6 +5539,7 @@ return [
         'locale_valid' => 'Locale format is not valid',
     ],
     'navigation' => [
+<<<<<<< HEAD
         'group' => 'Localization',
         'label' => 'Servizio Lingue',
         'icon' => 'heroicon-o-language',
@@ -5707,4 +5783,17 @@ return [
             'label' => 'test',
         ],
     ],
+=======
+        'label' => 'Language Service',
+        'group' => 'Localization',
+        'icon' => 'heroicon-o-language',
+    ],
+    'page' => [
+        'title' => 'Translation Management',
+        'heading' => 'Language Service',
+        'description' => 'Manage translations and available languages in the system',
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> laraxot/dev
 ];

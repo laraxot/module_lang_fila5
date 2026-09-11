@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Guida Rapida alle Traduzioni"
 module: "Lang"
 type: concept
@@ -146,6 +147,8 @@ Poi modificare i file in `lang/vendor/{package}/{locale}/`.
 <!-- Merged from QUICK_REFERENCE.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
+=======
+>>>>>>> laraxot/dev
 module: theme
 topic: QUICK_REFERENCE
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules

@@ -289,7 +289,11 @@ protected function createApplication()
     $app = parent::createApplication();
     
     $app['config']->set([
+<<<<<<< HEAD
         'database.connections.lang.database' => 'quaeris_data_test',
+=======
+        'database.connections.lang.database' => 'modulo questionari_data_test',
+>>>>>>> laraxot/dev
     ]);
     
     return $app;
@@ -369,7 +373,11 @@ protected function createApplication()
 
 ### External Resources
 
+<<<<<<< HEAD
 - [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+=======
+- [Laravel 13.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+>>>>>>> laraxot/dev
 - [Pest Installation Guide](https://pestphp.com/docs/installation)
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 
@@ -473,6 +481,7 @@ Following these guidelines will ensure your Lang module tests are:
 
 Remember: Good tests are the foundation of reliable software development.
 
+<<<<<<< HEAD
 ## Coverage — story 5.24 (floor 50%)
 
 | Perimetro | Coverage | Gate `--min=50` | Suite |
@@ -509,3 +518,13 @@ Riferimenti: [Xot coverage.md](../../Xot/docs/coverage.md).
 ---
 
 *Last updated: August 2026*
+=======
+---
+
+*Last updated: January 2025*
+*
+*
+*
+*
+*Last updated: January 2025*
+>>>>>>> laraxot/dev

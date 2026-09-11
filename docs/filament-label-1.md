@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Gestione automatica delle label in Filament tramite LangServiceProvider"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Gestione automatica delle label in Filament tramite LangServiceProvider
 
 ## Funzionamento

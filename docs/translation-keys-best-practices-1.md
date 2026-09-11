@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Best Practices per le Chiavi di Traduzione"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Best Practices per le Chiavi di Traduzione
 
 ## Collegamenti correlati

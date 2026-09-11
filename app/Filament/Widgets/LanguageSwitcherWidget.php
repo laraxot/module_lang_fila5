@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Filament\Widgets;
 
+<<<<<<< HEAD
+=======
+use Filament\Schemas\Components\Component;
+>>>>>>> laraxot/dev
 use Illuminate\Support\Collection;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
@@ -23,6 +27,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
      */
     public static function canView(): bool
     {
+<<<<<<< HEAD
         return (bool) config('lang.language_switcher.enabled', true);
     }
 
@@ -38,6 +43,19 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
 
         // Fallback alle lingue configurate staticamente
         return Collection::make($this->getDefaultLanguages());
+=======
+        return true;
+    }
+
+    /**
+     * Schema del form per la configurazione del widget.
+     *
+     * @return array<int, Component>
+     */
+    public function getFormSchemaOld(): array
+    {
+        return [];
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -51,7 +69,31 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     }
 
     /**
+<<<<<<< HEAD
      * Cambia la lingua corrente.
+=======
+     * Ottiene le lingue disponibili nel sistema.
+     *
+     * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
+     *
+     * @phpstan-return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
+     */
+    public function getAvailableLocales(): Collection
+    {
+        // TODO: Implementare modello Language se necessario
+        // Per ora usa fallback con lingue configurate
+
+        // Fallback alle lingue configurate staticamente
+        return collect($this->getDefaultLanguages());
+    }
+
+    /**
+     * Cambia la lingua corrente.
+     *
+     * @param  string  $locale  Codice della lingua
+     * @param  string  $locale  Codice della lingua
+     * @return void *
+>>>>>>> laraxot/dev
      */
     public function changeLanguage(string $locale): void
     {

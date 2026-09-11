@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Translation Management Packages"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "git conflicts resolution sumy"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Translation Management Packages
 
 ## Overview

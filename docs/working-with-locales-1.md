@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Gestione delle Lingue (Locales) in Laravel"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "git conflicts resolution summary"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Gestione delle Lingue (Locales) in Laravel
 
 ## Introduzione
