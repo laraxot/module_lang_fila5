@@ -161,15 +161,7 @@ class StoreOrderRequest extends FormRequest
 ## 9. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
-<<<<<<< .merge_file_qpGlXJ
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
-=======
-<<<<<<< HEAD
-- [TRANSLATION_KEYS_BEST_PRACTICES.md](translation_keys_best_practices.md)
-=======
-- [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_g6Kpnb
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)
