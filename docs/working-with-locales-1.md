@@ -1,3 +1,20 @@
+<<<<<<< .merge_file_zxll2y
+=======
+<<<<<<< HEAD
+---
+title: "Gestione delle Lingue (Locales) in Laravel"
+module: "Lang"
+type: concept
+tags: [git, conflicts, resolution, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "git conflicts resolution summary"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_u4crP4
 # Gestione delle Lingue (Locales) in Laravel
 
 ## Introduzione
