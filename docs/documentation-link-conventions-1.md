@@ -90,7 +90,15 @@ Prima di fare commit dei documenti:
 
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella
 ```markdown
+<<<<<<< .merge_file_lRQpFE
 [Best Practices](translation-keys-best-practices.md)
+=======
+<<<<<<< HEAD
+[Best Practices](translation_keys_best_practices.md)
+=======
+[Best Practices](translation-keys-best-practices.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zjlgWx
 ```
 
 ## Vantaggi dei Percorsi Relativi
