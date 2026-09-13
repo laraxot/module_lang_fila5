@@ -15,11 +15,25 @@ class ListTranslationFiles extends XotBaseListRecords
 {
     protected static string $resource = TranslationFileResource::class;
 
+<<<<<<< HEAD
     
+=======
+    #[\Override]
+    public function getTableColumns(): array
+    {
+        return [
+            'key' => TextColumn::make('key')->searchable(['key', 'content']),
+        ];
+    }
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, Action|ActionGroup>
      */
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     protected function getHeaderActions(): array
     {
         $parentActions = parent::getHeaderActions();
