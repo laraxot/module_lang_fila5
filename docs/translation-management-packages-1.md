@@ -1,20 +1,3 @@
-<<<<<<< .merge_file_np0kir
-=======
-<<<<<<< HEAD
----
-title: "Translation Management Packages"
-module: "Lang"
-type: concept
-tags: [git, conflicts, resolution, sumy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git conflicts resolution sumy"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_l8Gakd
 # Translation Management Packages
 
 ## Overview

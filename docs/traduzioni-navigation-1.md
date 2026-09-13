@@ -1,20 +1,3 @@
-<<<<<<< .merge_file_szv3X7
-=======
-<<<<<<< HEAD
----
-title: "Traduzioni con '.navigation' - Audit Completo 2025"
-module: "Lang"
-type: concept
-tags: [migration, filament, 4]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration filament 4"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_L4ZU9i
 # Traduzioni con ".navigation" - Audit Completo 2025
 
 ## Riepilogo Problema

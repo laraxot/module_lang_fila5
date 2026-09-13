@@ -1,20 +1,3 @@
-<<<<<<< .merge_file_F5TVG7
-=======
-<<<<<<< HEAD
----
-title: "Localizzazione di Date e Valute"
-module: "Lang"
-type: concept
-tags: [links]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "links"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_lYA2hq
 # Localizzazione di Date e Valute
 
 ## Introduzione

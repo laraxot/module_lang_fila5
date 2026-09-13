@@ -1,20 +1,3 @@
-<<<<<<< .merge_file_LCjFvi
-=======
-<<<<<<< HEAD
----
-title: "Localizzazione di Date e Valute"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_0FbwuI
 # Localizzazione di Date e Valute
 
 ## Introduzione

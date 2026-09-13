@@ -1,20 +1,3 @@
-<<<<<<< .merge_file_wtly8L
-=======
-<<<<<<< HEAD
----
-title: "Integrazione Livewire Volt + mcamara/laravel-localization"
-module: "Lang"
-type: concept
-tags: [migrazione, filament, 4]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migrazione filament 4"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_U99Q27
 # Integrazione Livewire Volt + mcamara/laravel-localization
 
 ## 1. Obiettivo
