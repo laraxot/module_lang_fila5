@@ -1,37 +1,10 @@
-<<<<<<< .merge_file_FrbqFi
-=======
-<<<<<<< HEAD
----
-title: "Regole per le Chiavi di Traduzione"
-module: "Lang"
-type: rule
-tags: [google, translate]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "google translate"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_coqldp
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
 - [Documentazione centrale](./README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
-<<<<<<< .merge_file_FrbqFi
 - [Implementazione Auth Pages](../../User/docs/AUTH_PAGES_IMPLEMENTATION.md)
 - [Regole Traduzioni User](../../User/docs/TRANSLATION_KEYS_RULES.md)
-=======
-<<<<<<< HEAD
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Regole Traduzioni User](translation_keys_rules.md)
-=======
-- [Implementazione Auth Pages](../../User/docs/AUTH_PAGES_IMPLEMENTATION.md)
-- [Regole Traduzioni User](../../User/docs/TRANSLATION_KEYS_RULES.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_coqldp
 - [Documentazione Lang](./README.md)
 
 ## Regole Fondamentali per le Traduzioni

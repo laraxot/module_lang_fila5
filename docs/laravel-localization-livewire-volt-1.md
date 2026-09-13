@@ -1,20 +1,3 @@
-<<<<<<< .merge_file_dqAI3v
-=======
-<<<<<<< HEAD
----
-title: "Integrazione di mcamara/laravel-localization con Livewire Volt"
-module: "Lang"
-type: concept
-tags: [filament4, migration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament4 migration"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_04kUzU
 # Integrazione di mcamara/laravel-localization con Livewire Volt
 
 ## Obiettivo

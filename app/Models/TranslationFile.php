@@ -162,14 +162,7 @@ class TranslationFile extends BaseModel
      *
      * @return array<string, string>
      */
-<<<<<<< .merge_file_8Ea3VP
     #[\Override]
-=======
-<<<<<<< HEAD
-=======
-    #[\Override]
->>>>>>> laraxot/dev
->>>>>>> .merge_file_boGW3n
     protected function casts(): array
     {
         return [

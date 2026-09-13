@@ -1,20 +1,3 @@
-<<<<<<< .merge_file_MCT9MO
-=======
-<<<<<<< HEAD
----
-title: "Correzioni Migrazione - Modulo Lang"
-module: "Lang"
-type: concept
-tags: [migrazione, filament]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migrazione filament"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_u4GLH6
 # Correzioni Migrazione - Modulo Lang
 
 ## Problema Identificato

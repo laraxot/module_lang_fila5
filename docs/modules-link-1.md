@@ -1,20 +1,3 @@
-<<<<<<< .merge_file_iEdpox
-=======
-<<<<<<< HEAD
----
-title: "Collegamenti ai Moduli che utilizzano le Traduzioni"
-module: "Lang"
-type: concept
-tags: [build, publish.yml]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "build publish.yml"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_G2fHM5
 # Collegamenti ai Moduli che utilizzano le Traduzioni
 
 Questa pagina elenca, per ogni modulo, la presenza di un file di collegamento alle traduzioni centralizzate.

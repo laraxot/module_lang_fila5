@@ -1,20 +1,3 @@
-<<<<<<< .merge_file_Q0YpdS
-=======
-<<<<<<< HEAD
----
-title: "Integration of Mcamara Laravel Localization with Laravel Folio"
-module: "Lang"
-type: concept
-tags: [REDUNDANCY, ANALYSIS]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "redundancy analysis"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_fM6U9i
 # Integration of Mcamara Laravel Localization with Laravel Folio
 
 ## Overview
