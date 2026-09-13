@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Documentation
 
 This directory contains documentation for the module.
@@ -15,7 +14,6 @@ Documentation should be:
 - Example-driven
 - Updated with code changes
 - Use Markdown format (.md)
-=======
 ---
 title: "Lang Module Documentation"
 type: documentation
@@ -382,4 +380,3 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse --level=max Modules/Lang
 **Last Updated**: 2026-07-14  
 **Requirements**: PHP 8.3+, Laravel 13  
 **PHPStan Level**: 10 (Compliant)
->>>>>>> laraxot/dev

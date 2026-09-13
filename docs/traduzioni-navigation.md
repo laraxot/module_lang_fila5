@@ -2,17 +2,14 @@
 title: "Traduzioni con '.navigation' - Audit Completo 2025"
 module: "Lang"
 type: concept
-<<<<<<< HEAD
 tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "migrazione filament 4"
-=======
 tags: [phpstan, level10, fixes, 1]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
->>>>>>> laraxot/dev
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -47,15 +44,11 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 
 ### Fase 1: Correzione Errori Sintassi UI ✅ COMPLETATO
 1. **UI/lang/it/collection_lang.php** ✅ - Corretto errore linea 55
-<<<<<<< HEAD
 2. **UI/lang/it/field.php** ✅ - Corretto errore linea 51  
 2. **UI/lang/it/field.php** ✅ - Corretto errore linea 51
 2. **UI/lang/it/field.php** ✅ - Corretto errore linea 51
 2. **UI/lang/it/field.php** ✅ - Corretto errore linea 51
 2. **UI/lang/it/field.php** ✅ - Corretto errore linea 51  
-=======
-2. **UI/lang/it/field.php** ✅ - Corretto errore linea 51
->>>>>>> laraxot/dev
 3. **UI/lang/it/field_option.php** ✅ - Corretto errore linea 72
 
 ### Fase 2: Correzione Traduzioni Navigation ✅ COMPLETATO
@@ -93,15 +86,11 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 
 ### Errori Sintassi UI ✅
 - [x] collection_lang.php - Corretto parentesi mancanti
-<<<<<<< HEAD
 - [x] field.php - Corretto parentesi mancanti  
 - [x] field.php - Corretto parentesi mancanti
 - [x] field.php - Corretto parentesi mancanti
 - [x] field.php - Corretto parentesi mancanti
 - [x] field.php - Corretto parentesi mancanti  
-=======
-- [x] field.php - Corretto parentesi mancanti
->>>>>>> laraxot/dev
 - [x] field_option.php - Corretto parentesi mancanti
 
 ### Traduzioni Navigation ✅
@@ -135,11 +124,9 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-<<<<<<< HEAD
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-=======
 # Traduzioni con ".navigation" - Audit Completo 2025
 
 ## Riepilogo Problema
@@ -240,7 +227,6 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 ## Collegamenti Correlati
 - [Errori Comuni Traduzione](../errori_comuni_traduzione.md)
 - [Correzioni Errori Sintassi 2025](../correzioni_errori_sintassi_2025.md)
->>>>>>> laraxot/dev
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*

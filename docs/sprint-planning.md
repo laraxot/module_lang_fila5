@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Sprint Planning: Lang Stabilization"
 module: "Lang"
 type: concept
@@ -24,7 +23,6 @@ Reach 100% localization parity for all modules and finalize the documentation.
 ## ✅ Definition of Done
 - All 6 files exist.
 - No hardcoded strings in the core modules.
-=======
 title: "Lang Module - Sprint Planning"
 module: "Lang"
 type: concept
@@ -103,4 +101,3 @@ Implement core internationalization system with multi-language support.
 ---
 
 *Last Updated: March 12, 2026*
->>>>>>> laraxot/dev

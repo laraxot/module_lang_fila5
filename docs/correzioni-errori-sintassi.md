@@ -2,17 +2,14 @@
 title: "Correzioni Errori Sintassi File Traduzione - Gennaio 2025"
 module: "Lang"
 type: concept
-<<<<<<< HEAD
 tags: [phpstan, level10, fixes, 1]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
-=======
 tags: [guida, migrazione, step, by]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "guida migrazione step by step"
->>>>>>> laraxot/dev
 related:
   - "./italian-text-refined-audit-report.md"
 ---
@@ -155,15 +152,11 @@ php -l laravel/Modules/Chart/lang/it/chart.php
 php -l laravel/Modules/Chart/lang/it/mixed_chart.php
 # ... per tutti i file corretti
 
-<<<<<<< HEAD
 # Verifica assenza array() 
 # Verifica assenza array()
 # Verifica assenza array()
 # Verifica assenza array()
 # Verifica assenza array() 
-=======
-# Verifica assenza array()
->>>>>>> laraxot/dev
 grep -r "array(" laravel/Modules/*/lang/ --include="*.php"
 ```
 
@@ -193,9 +186,7 @@ grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php"
 - [Best practices traduzioni](./translation_rules.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-<<<<<<< HEAD
 *Ultimo aggiornamento: 6 Gennaio 2025*
-=======
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 
 ## Riepilogo Problemi Risolti
@@ -364,5 +355,4 @@ grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php"
 - [Regole sintassi array breve](/.cursor/rules/translation_files_array_syntax.mdc)
 - [Best practices traduzioni](./translation_rules.md)
 
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: 6 Gennaio 2025*

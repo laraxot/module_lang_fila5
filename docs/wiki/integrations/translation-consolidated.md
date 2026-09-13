@@ -2505,11 +2505,8 @@ class TranslationFileResource extends XotBaseResource
 {
     protected static ?string $model = TranslationFile::class;
 
-<<<<<<< HEAD
     public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Components\TextInput::make('key')
@@ -2760,11 +2757,8 @@ class TranslationFileResource extends XotBaseResource
 {
     protected static ?string $model = TranslationFile::class;
 
-<<<<<<< HEAD
     public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Components\TextInput::make('key')
@@ -11595,11 +11589,8 @@ class TranslationFileResource extends XotBaseResource
 {
     protected static ?string $model = TranslationFile::class;
 
-<<<<<<< HEAD
     public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Components\TextInput::make('key')
@@ -15563,7 +15554,6 @@ return [
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 2.0*
-<<<<<<< HEAD
 *Compatibilità: Laravel 12.x, Filament 4.x*
 *Versione: 2.0*
 *Compatibilità: Laravel 12.x, Filament 4.x*
@@ -15574,7 +15564,6 @@ return [
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 2.0*
 *Compatibilità: Laravel 12.x, Filament 4.x*
-=======
 *Compatibilità: Laravel 13.x, Filament 4.x*
 *Versione: 2.0*
 *Compatibilità: Laravel 13.x, Filament 4.x*
@@ -15585,7 +15574,6 @@ return [
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 2.0*
 *Compatibilità: Laravel 13.x, Filament 4.x*
->>>>>>> laraxot/dev
 
 ---
 

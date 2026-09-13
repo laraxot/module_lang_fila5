@@ -13,11 +13,8 @@ related:
 
 ## Overview
 
-<<<<<<< HEAD
 This document outlines the correct migration patterns to follow when creating database migrations for the Lang module and all other modules in the TechPlanner project.
-=======
 This document outlines the correct migration patterns to follow when creating database migrations for the Lang module and all other modules in the modulo operativo project.
->>>>>>> laraxot/dev
 
 ## Critical Rule: Use XotBaseMigration
 
@@ -115,11 +112,8 @@ This migration pattern has been applied to:
 
 ## Overview
 
-<<<<<<< HEAD
 This document outlines the correct migration patterns to follow when creating database migrations for the Lang module and all other modules in the TechPlanner project.
-=======
 This document outlines the correct migration patterns to follow when creating database migrations for the Lang module and all other modules in the modulo operativo project.
->>>>>>> laraxot/dev
 
 ## Critical Rule: Use XotBaseMigration
 

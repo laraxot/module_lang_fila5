@@ -479,11 +479,8 @@ class PageResource extends XotBaseResource
 {
     protected static ?string $model = Page::class;
 
-<<<<<<< HEAD
     public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('title')->required(),

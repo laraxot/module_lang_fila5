@@ -39,8 +39,5 @@ php artisan module_lang:install
 ---
 ---
 ---
-<<<<<<< HEAD
 
 ```
-=======
->>>>>>> laraxot/dev

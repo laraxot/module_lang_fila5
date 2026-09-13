@@ -569,11 +569,8 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int, \Filament\Forms\Components\Component>
      */
-<<<<<<< HEAD
     public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\Section::make()
@@ -718,11 +715,8 @@ namespace Modules\User\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 use Modules\User\Services\UserService;
 
 class UserController extends Controller
@@ -886,11 +880,8 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature;
 
 use Tests\TestCase;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class UserResourceTest extends TestCase
