@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "User Research: Lang Module"
 module: "Lang"
 type: concept
@@ -22,7 +21,6 @@ Understand how developers manage translations and where they struggle.
 ## ✅ Actionable Insights / Next Steps
 - Implement a "Missing Translation" alert in the admin dashboard.
 - Standardize on PHP files for translations to allow better static analysis.
-=======
 title: "Lang Module - User Research"
 module: "Lang"
 type: concept
@@ -121,4 +119,3 @@ Users want ability to change language.
 ---
 
 *Last Updated: March 12, 2026*
->>>>>>> laraxot/dev

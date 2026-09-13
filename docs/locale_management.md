@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Gestione delle Lingue in Laravel"
 module: "Lang"
 type: concept
@@ -278,8 +277,6 @@ Questo documento fornisce una panoramica completa sulla gestione delle lingue in
 <!-- Merged from LOCALE_MANAGEMENT.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
-=======
->>>>>>> laraxot/dev
 module: theme
 topic: LOCALE_MANAGEMENT
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules

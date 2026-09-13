@@ -13,13 +13,8 @@ return [
     ],
     'sections' => [
         'empty' => [
-<<<<<<< HEAD
             'label' => 'empty',
             'heading' => 'empty',
-=======
-            'label' => '',
-            'heading' => '',
->>>>>>> laraxot/dev
         ],
     ],
 ];

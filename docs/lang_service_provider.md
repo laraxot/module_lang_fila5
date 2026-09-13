@@ -189,11 +189,8 @@ class TranslationResource extends XotBaseResource
     
     protected static ?string $navigationIcon = 'heroicon-o-language';
     
-<<<<<<< HEAD
     public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'key' => TextInput::make('key')

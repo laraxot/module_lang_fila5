@@ -2,7 +2,6 @@
 title: "Guida all'Implementazione di mcamara/laravel-localization"
 module: "Lang"
 type: how-to
-<<<<<<< HEAD
 tags: [lang, service, helper, text]
 created: 2026-07-14
 updated: 2026-07-14
@@ -204,8 +203,6 @@ Route::prefix('api')->group(function () {
 title: "Guida all'Implementazione di mcamara/laravel-localization"
 module: "Lang"
 type: how-to
-=======
->>>>>>> laraxot/dev
 tags: [git, conflicts, resolution, summary]
 created: 2026-07-14
 updated: 2026-07-14

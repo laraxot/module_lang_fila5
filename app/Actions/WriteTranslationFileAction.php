@@ -10,10 +10,7 @@ use Spatie\QueueableAction\QueueableAction;
 use function Safe\date;
 use function Safe\exec;
 use function Safe\file_put_contents;
-<<<<<<< HEAD
 use function Safe\rename;
-=======
->>>>>>> laraxot/dev
 use function Safe\tempnam;
 use function Safe\unlink;
 
@@ -41,11 +38,7 @@ class WriteTranslationFileAction
         $this->validatePhpSyntax($phpContent);
 
         // Scrivi il file
-<<<<<<< HEAD
         $result = $this->putTranslationFile($filePath, $phpContent);
-=======
-        $result = File::put($filePath, $phpContent);
->>>>>>> laraxot/dev
 
         if ($result === false) {
             throw new \Exception("Impossibile scrivere il file: {$filePath}");
@@ -57,7 +50,6 @@ class WriteTranslationFileAction
         return true;
     }
 
-<<<<<<< HEAD
     protected function putTranslationFile(string $filePath, string $phpContent): int|false
     {
         $directory = dirname($filePath);
@@ -92,8 +84,6 @@ class WriteTranslationFileAction
         return true;
     }
 
-=======
->>>>>>> laraxot/dev
     /**
      * Crea un backup del file di traduzione.
      *

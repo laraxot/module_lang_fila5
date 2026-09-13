@@ -111,15 +111,12 @@ Prima di fare commit dei documenti:
 
 ### Da Modules/Lang/project_docs/ a un altro file nella stessa cartella
 ```markdown
-<<<<<<< HEAD
 [Best Practices](translation_keys_best_practices.md)
 [Best Practices](translation_keys_best_practices.md)
 [Best Practices](translation_keys_best_practices.md)
-=======
 [Best Practices](translation-keys-best-practices.md)
 [Best Practices](translation-keys-best-practices.md)
 [Best Practices](translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 ```
 
 ## Vantaggi dei Percorsi Relativi
@@ -227,15 +224,12 @@ Prima di fare commit dei documenti:
 
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella
 ```markdown
-<<<<<<< HEAD
 [Best Practices](translation_keys_best_practices.md)
 [Best Practices](translation_keys_best_practices.md)
 [Best Practices](translation_keys_best_practices.md)
-=======
 [Best Practices](translation-keys-best-practices.md)
 [Best Practices](translation-keys-best-practices.md)
 [Best Practices](translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 ```
 
 ## Vantaggi dei Percorsi Relativi

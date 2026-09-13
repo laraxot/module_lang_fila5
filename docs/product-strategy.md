@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Lang - Product Strategy"
 module: "Lang"
 type: concept
@@ -63,7 +62,6 @@ Portare **Lang** a uno stato in cui il progetto ottiene un vantaggio netto e mis
 - Action-first: niente generic `Services` per la business logic
 - Standard operativo: `spatie/laravel-queueable-action`
 - Convenzione: Action con metodo `execute()` e dispatch tramite container
-=======
 title: "Lang Module - Product Strategy"
 module: "Lang"
 type: concept
@@ -165,4 +163,3 @@ Leverage AI for scale.
 ---
 
 *Last Updated: March 12, 2026*
->>>>>>> laraxot/dev

@@ -201,11 +201,8 @@ class TranslationFileResource extends XotBaseResource
 {
     protected static ?string $model = TranslationFile::class;
 
-<<<<<<< HEAD
     public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Components\TextInput::make('key')

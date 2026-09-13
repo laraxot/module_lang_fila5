@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Quality and coverage contract: Lang"
 module: "Lang"
 type: concept
@@ -29,7 +28,6 @@ cd laravel
 ./vendor/bin/phpstan analyse Modules/Lang --level=10 --no-progress
 ./vendor/bin/pest Modules/Lang/tests --no-coverage
 ```
-=======
 title: "Code Coverage: Lang"
 module: "Lang"
 type: concept
@@ -400,4 +398,3 @@ session owns the broader Epic 4 canonical-structure work currently in flight on 
 - `docs/stories/7.4.phpstan-canonical-schemas-static-call-fix.story.md` (new)
 
 Story: `docs/stories/lang-services-to-actions.story.md`.
->>>>>>> laraxot/dev

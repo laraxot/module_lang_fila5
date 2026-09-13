@@ -1,21 +1,12 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 return [
     'fields' => [
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'tooltip' => 'Use a valid email address',
-<<<<<<< HEAD
             'icon' => 'heroicon-o-mail',
-=======
-            'icon' => 'heroicon-o-envelope',
->>>>>>> laraxot/dev
             'description' => 'email',
             'helper_text' => '',
         ],
@@ -48,7 +39,6 @@ return [
             'description' => 'test_date',
             'tooltip' => '',
         ],
-<<<<<<< HEAD
         'applyFilters' => [
             'label' => 'applyFilters',
             'tooltip' => '',
@@ -820,8 +810,6 @@ return [
         'stabi_repar_anno' => [
             'label' => 'stabi_repar_anno',
         ],
-=======
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'authenticate' => [
@@ -838,7 +826,6 @@ return [
         ],
         'request' => [
             'label' => 'request',
-<<<<<<< HEAD
             'tooltip' => 'request',
             'icon' => 'request',
         ],
@@ -1004,14 +991,11 @@ return [
             'label' => 'record_pdf',
             'icon' => 'record_pdf',
             'tooltip' => 'record_pdf',
-=======
->>>>>>> laraxot/dev
         ],
     ],
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-<<<<<<< HEAD
         'group' => [
             'name' => 'General',
             'description' => 'General Settings',
@@ -1066,12 +1050,4 @@ return [
             'label' => 'test',
         ],
     ],
-=======
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> laraxot/dev
 ];

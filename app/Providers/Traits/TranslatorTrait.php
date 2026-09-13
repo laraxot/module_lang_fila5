@@ -8,10 +8,6 @@ namespace Modules\Lang\Providers\Traits;
 use Illuminate\Translation\Translator;
 use Modules\Lang\Adapters\TranslatorAdapter;
 
-<<<<<<< HEAD
-=======
-/** @phpstan-ignore trait.unused */
->>>>>>> laraxot/dev
 trait TranslatorTrait
 {
     public function registerTranslator(): void
