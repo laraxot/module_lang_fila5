@@ -176,15 +176,7 @@ return [
 
 ### Collegamenti
 - [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md)
-<<<<<<< .merge_file_svlWsb
 - [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
-=======
-<<<<<<< HEAD
-- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
-=======
-- [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_mMh7Sy
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica

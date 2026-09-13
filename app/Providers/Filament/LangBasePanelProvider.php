@@ -11,16 +11,8 @@ use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 abstract class LangBasePanelProvider extends XotBasePanelProvider
 {
     protected string $module = 'Lang';
-<<<<<<< .merge_file_0uTlU8
 
     #[\Override]
-=======
-<<<<<<< HEAD
-=======
-
-    #[\Override]
->>>>>>> laraxot/dev
->>>>>>> .merge_file_4CkfVL
     public function panel(Panel $panel): Panel
     {
         $panel = parent::panel($panel);

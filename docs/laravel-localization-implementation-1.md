@@ -1,20 +1,3 @@
-<<<<<<< .merge_file_GHpOhH
-=======
-<<<<<<< HEAD
----
-title: "Implementazione della Localizzazione"
-module: "Lang"
-type: concept
-tags: [REDUNDANCY, ANALYSIS]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "redundancy analysis"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_eVHDWI
 # Implementazione della Localizzazione
 
 ## Collegamenti correlati

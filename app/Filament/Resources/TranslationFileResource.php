@@ -27,21 +27,8 @@ class TranslationFileResource extends XotBaseResource
     {
         return ['it', 'en'];
     }
-<<<<<<< .merge_file_HMJl3w
 
     #[\Override]
-=======
-<<<<<<< HEAD
-=======
-
-    public static function getFormSchema(): array
-    {
-        return [];
-    }
-
-    #[\Override]
->>>>>>> laraxot/dev
->>>>>>> .merge_file_Z69qGO
     public static function getPages(): array
     {
         return [

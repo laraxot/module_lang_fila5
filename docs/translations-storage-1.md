@@ -1,20 +1,3 @@
-<<<<<<< .merge_file_c1o4Fg
-=======
-<<<<<<< HEAD
----
-title: "Storage delle Traduzioni: PHP vs JSON"
-module: "Lang"
-type: concept
-tags: [google, translate]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "google translate"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_6R2VoP
 # Storage delle Traduzioni: PHP vs JSON
 
 ## Introduzione

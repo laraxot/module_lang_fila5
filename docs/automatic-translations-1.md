@@ -1,20 +1,3 @@
-<<<<<<< .merge_file_H4JMUI
-=======
-<<<<<<< HEAD
----
-title: "Traduzioni Automatiche con LangServiceProvider"
-module: "Lang"
-type: concept
-tags: [automatic, translations, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "automatic translations 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_5BKtMC
 # Traduzioni Automatiche con LangServiceProvider
 
 ## Regola Fondamentale
