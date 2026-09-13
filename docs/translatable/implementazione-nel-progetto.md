@@ -57,7 +57,6 @@ Il plugin fornisce componenti specifici per la gestione delle traduzioni:
 ```php
 use Filament\Forms\Components\SpatieTranslatableForms\Components\TranslatableTabs;
 
-public static function getFormSchema(): array
 public function getFormSchema(): array
 {
     return [

@@ -36,20 +36,19 @@ class ThemeComposer
             throw new \Exception(sprintf('Invalid config for supportedLocales on line %d in %s', __LINE__, class_basename($this)));
         }
 
-        $languagesArray = [];
-        foreach ($langs as $locale => $item) {
-            if (! is_string($locale)) {
-                continue;
-            }
-
+        $languages = collect($langs)->map(function (mixed $item, string $locale): array {
+            // Ensure $item is an array
             if (! is_array($item)) {
                 throw new \InvalidArgumentException(sprintf('Expected array at locale %s, got %s', $locale, gettype($item)));
             }
 
+            // Ensure $item has the required keys
             if (! isset($item['regional'], $item['name'])) {
                 throw new \InvalidArgumentException(sprintf('Expected array with "regional" and "name" keys at locale %s', $locale));
             }
 
+            // Extract regional code and handle 'en' to 'gb' mapping.
+            // Verifichiamo che regional sia una stringa o lo convertiamo in modo sicuro
             $regional = $item['regional'];
             if (! is_string($regional)) {
                 $regional = '';
@@ -61,23 +60,27 @@ class ThemeComposer
                 $regionalCode = 'gb';
             }
 
-            $url = '#';
+            $url = '#'; // Placeholder URL for frontend.
             if (inAdmin()) {
                 $url = $this->buildAdminLanguageUrl($locale);
             }
 
+            // Verifichiamo che name sia una stringa o lo convertiamo in modo sicuro
             $name = $item['name'];
             if (! is_string($name)) {
-                $name = $locale;
+                $name = $locale; // Fallback al codice locale
             }
 
-            $languagesArray[] = [
+            return [
                 'id' => $locale,
                 'name' => $name,
                 'flag' => $this->buildFlagHtml($regionalCode),
                 'url' => $url,
             ];
-        }
+        });
+
+        // Convertiamo esplicitamente a array<int, mixed> per soddisfare il tipo richiesto
+        $languagesArray = $languages->values()->all();
 
         return LangData::collection($languagesArray);
     }
@@ -91,12 +94,20 @@ class ThemeComposer
     {
         $currentLocale = app()->getLocale();
 
-        return LangData::collection(
-            $this->languages()->toCollection()
-                ->filter(fn (LangData $item): bool => $item->id !== $currentLocale)
-                ->values()
-                ->all(),
-        );
+        // `DataCollection::filter()` e' deprecata in spatie/laravel-data v5 («use a
+        // regular Laravel collection instead»). Il filtro passa quindi da
+        // `toCollection()`, e il risultato viene ricomposto in DataCollection perche'
+        // e' quello che il tipo di ritorno e i chiamanti dichiarano.
+        $others = $this->languages()
+            ->toCollection()
+            ->filter(static fn (LangData $item): bool => $item->id !== $currentLocale)
+            ->values()
+            ->all();
+
+        /** @var DataCollection<int, LangData> $collection */
+        $collection = LangData::collect($others, DataCollection::class);
+
+        return $collection;
     }
 
     /**
@@ -116,17 +127,12 @@ class ThemeComposer
         }
 
         // Verifichiamo che il valore del campo sia una stringa o lo convertiamo in modo sicuro
-        $value = $this->langFieldValue($lang, $field);
+        $value = $lang->{$field};
         if (! is_string($value)) {
             return $field === 'id' ? $currentLocale : '';
         }
 
         return $value;
-    }
-
-    protected function langFieldValue(LangData $lang, string $field): mixed
-    {
-        return $lang->{$field};
     }
 
     /**

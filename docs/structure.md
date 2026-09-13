@@ -26,9 +26,6 @@ Data: 2025-04-23 19:09:56
 Modules\\Lang\\Database\\Factories
 Modules\\Lang\\Database\\Seeders
 - **Pacchetto Composer**: laraxot/module_lang_fila5
-- **Pacchetto Composer**: laraxot/module_lang_fila5
-- **Pacchetto Composer**: laraxot/module_lang_fila5
-- **Pacchetto Composer**: laraxot/module_lang_fila5
 - **Pacchetto Composer**: laraxot/module_lang_fila3
 - **Pacchetto Composer**: laraxot/module_lang_fila3
 - **Pacchetto Composer**: laraxot/module_lang_fila3

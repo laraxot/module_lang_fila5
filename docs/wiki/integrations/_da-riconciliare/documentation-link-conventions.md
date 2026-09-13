@@ -220,9 +220,6 @@ Per collegare documenti tra moduli diversi:
 <!-- Da Modules/ModuloA/docs/file.md a docs/file.md nella root -->
 [Link a docs root](../../../docs/file.md)
 [Link a ModuloB](../../ModuloB/docs/file.md)
-
-<!-- Da Modules/ModuloA/docs/file.md a docs/file.md nella root -->
-[Link a docs root](../../../../docs/file.md)
 ========
 >>>>>>>> laraxot/dev:docs/archive/historical/documentation-link-conventions.md
 

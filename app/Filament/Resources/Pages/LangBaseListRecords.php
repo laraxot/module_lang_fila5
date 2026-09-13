@@ -19,10 +19,7 @@ abstract class LangBaseListRecords extends XotBaseListRecords
     /**
      * @return array<string, Action|ActionGroup>
      */
-<<<<<<< HEAD
-=======
     #[\Override]
->>>>>>> laraxot/dev
     protected function getHeaderActions(): array
     {
         $parentActions = parent::getHeaderActions();

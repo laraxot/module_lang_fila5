@@ -176,7 +176,6 @@ return [
 
 ### Collegamenti
 - [<nome modulo>/docs/appointment-management.md](../../<nome modulo>/docs/appointment-management.md)
-- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
 - [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
 
 ### Checklist aggiornata
@@ -352,7 +351,6 @@ return [
 
 ### Collegamenti
 - [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md)
-- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
 - [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
 
 ### Checklist aggiornata

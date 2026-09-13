@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Analisi Modelli, Factory e Seeder - Modulo Lang"
-module: "Lang"
-type: concept
-tags: [migration, filament]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration filament"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
 # Analisi Modelli, Factory e Seeder - Modulo Lang
 
 ## Panoramica

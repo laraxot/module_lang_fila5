@@ -16,11 +16,6 @@ updated: 2026-05-12
 laravel/Modules/Lang/docs/wiki/
 ├── index.md                              # ≤30 righe
 ├── rules/
-│   ├── INDEX.md                          # ≤20 righe
-│   ├── translation-key-governance.md     # ≤200 righe
-│   └── translation-audit.md              # ≤150 righe
-├── skills/
-│   ├── INDEX.md                          # ≤20 righe
 │   ├── index.md                          # ≤20 righe
 │   ├── translation-key-governance.md     # ≤200 righe
 │   └── translation-audit.md              # ≤150 righe

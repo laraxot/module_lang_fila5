@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Gestione File di Traduzione"
-module: "Lang"
-type: concept
-tags: [lang, service, helper, text]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text fix"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
 # Gestione File di Traduzione
 
 ## Panoramica
@@ -204,11 +190,7 @@ class TranslationFileResource extends XotBaseResource
 {
     protected static ?string $model = TranslationFile::class;
 
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Components\TextInput::make('key')

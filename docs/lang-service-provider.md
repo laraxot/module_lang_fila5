@@ -189,7 +189,6 @@ class TranslationResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-language';
 
-    public static function getFormSchema(): array
     public function getFormSchema(): array
     {
         return [
@@ -453,7 +452,6 @@ class TranslationResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-language';
 
-    public static function getFormSchema(): array
     public function getFormSchema(): array
     {
         return [

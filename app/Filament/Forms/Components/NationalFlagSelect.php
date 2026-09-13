@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Filament\Forms\Components;
 
-use Filament\Forms\Components\Select;
 use Illuminate\Support\Arr;
 use Modules\Xot\Actions\File\AssetAction;
+use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 
 /**
  * National Flag Select Component.
@@ -14,7 +14,7 @@ use Modules\Xot\Actions\File\AssetAction;
  * A Filament Select component that displays countries with their flags
  * and supports searching by country name using localized translations.
  */
-class NationalFlagSelect extends Select
+class NationalFlagSelect extends XotBaseSelect
 {
     /**
      * Set up the component configuration.
@@ -38,10 +38,10 @@ class NationalFlagSelect extends Select
      */
     protected function getCountryOptions(): array
     {
-        $countries = $this->resolveCountries();
+        $countries = countries();
         // PHPStan L10: Type narrowing for array offset access
-        $countries = Arr::sort($countries, static function (mixed $c): string {
-            return is_array($c) && isset($c['name']) && is_string($c['name']) ? $c['name'] : '';
+        $countries = Arr::sort($countries, function (mixed $c) {
+            return is_array($c) && isset($c['name']) ? $c['name'] : '';
         });
 
         /** @var array<string, string> $options */
@@ -60,9 +60,6 @@ class NationalFlagSelect extends Select
 
             $flagName = strtolower($code);
             $localizedLabel = __('lang::countries.'.$flagName);
-            if (! is_string($localizedLabel)) {
-                $localizedLabel = is_array($localizedLabel) ? $code : (string) $localizedLabel;
-            }
 
             $flagSrc = app(AssetAction::class)->execute('lang::svg/flag/'.$flagName.'.svg');
             $flag = '<img src="'.$flagSrc.'" class="h-4 w-6 mr-2" inline-block />';
@@ -73,25 +70,6 @@ class NationalFlagSelect extends Select
         }
 
         return $options;
-    }
-
-    /**
-     * @return array<array-key, mixed>
-     */
-    protected function resolveCountries(): array
-    {
-        return countries();
-    }
-
-    /**
-     * Hook for tests: allow injecting defensive/non-array rows after filtering.
-     *
-     * @param  array<array-key, mixed>  $filteredCountries
-     * @return array<array-key, mixed>
-     */
-    protected function finalizeFilteredCountries(array $filteredCountries): array
-    {
-        return $filteredCountries;
     }
 
     /**
@@ -106,11 +84,11 @@ class NationalFlagSelect extends Select
             return $this->getCountryOptions();
         }
 
-        $countries = $this->resolveCountries();
+        $countries = countries();
         $searchLower = strtolower($search);
 
         // Filter countries by search term
-        $filteredCountries = array_filter($countries, static function (mixed $country) use ($searchLower): bool {
+        $filteredCountries = array_filter($countries, function (mixed $country) use ($searchLower) {
             // PHPStan L10: Type narrowing for country array
             if (! is_array($country) || ! isset($country['iso_3166_1_alpha2'], $country['name'])) {
                 return false;
@@ -142,27 +120,27 @@ class NationalFlagSelect extends Select
         });
 
         // Sort filtered results by name
-        $filteredCountries = Arr::sort($filteredCountries, static function (mixed $c): string {
-            return is_array($c) && isset($c['name']) && is_string($c['name']) ? $c['name'] : '';
+        $filteredCountries = Arr::sort($filteredCountries, function (mixed $c) {
+            return is_array($c) && isset($c['name']) ? $c['name'] : '';
         });
-
-        $filteredCountries = $this->finalizeFilteredCountries($filteredCountries);
 
         // Map to options format with flags
         /** @var array<string, string> $options */
         $options = [];
 
         foreach ($filteredCountries as $c) {
-            if (! is_array($c) || ! isset($c['iso_3166_1_alpha2']) || ! is_string($c['iso_3166_1_alpha2'])) {
+            // PHPStan L10: Type narrowing for country array
+            if (! is_array($c) || ! isset($c['iso_3166_1_alpha2'])) {
                 continue;
             }
 
             $code = $c['iso_3166_1_alpha2'];
+            if (! is_string($code)) {
+                continue;
+            }
+
             $flagName = strtolower($code);
             $localizedLabel = __('lang::countries.'.$flagName);
-            if (! is_string($localizedLabel)) {
-                $localizedLabel = is_array($localizedLabel) ? $code : (string) $localizedLabel;
-            }
 
             $flagSrc = app(AssetAction::class)->execute('lang::svg/flag/'.$flagName.'.svg');
             $flag = '<img src="'.$flagSrc.'" class="h-4 w-6 mr-2" inline-block />';

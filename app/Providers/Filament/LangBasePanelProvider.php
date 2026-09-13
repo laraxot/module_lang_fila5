@@ -11,11 +11,8 @@ use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 abstract class LangBasePanelProvider extends XotBasePanelProvider
 {
     protected string $module = 'Lang';
-<<<<<<< HEAD
-=======
 
     #[\Override]
->>>>>>> laraxot/dev
     public function panel(Panel $panel): Panel
     {
         $panel = parent::panel($panel);

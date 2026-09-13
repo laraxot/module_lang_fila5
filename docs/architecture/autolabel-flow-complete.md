@@ -479,7 +479,6 @@ class PageResource extends XotBaseResource
 {
     protected static ?string $model = Page::class;
 
-    public static function getFormSchema(): array
     public function getFormSchema(): array
     {
         return [

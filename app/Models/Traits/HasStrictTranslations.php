@@ -9,6 +9,7 @@ use Spatie\Translatable\HasTranslations;
 /**
  * Trait che estende HasTranslations con tipi di ritorno più stretti.
  *
+ * @phpstan-ignore trait.unused
  */
 trait HasStrictTranslations
 {
@@ -50,7 +51,7 @@ trait HasStrictTranslations
     }
 
     /**
-     * @param  array<mixed, mixed>  $value
+     * @param  array<array-key, mixed>  $value
      * @return array<string, mixed>
      */
     private static function normalizeTranslationArray(array $value): array

@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "🚀 Benvenuto in Laraxot PTVX"
-module: "Lang"
-type: concept
-tags: [git, conflicts, resolution, summary]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git conflicts resolution summary"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>
   
@@ -78,17 +64,10 @@ related:
 
 ## 📚 Documentazione
 
-<<<<<<< HEAD
-- [Indice del Progetto](../INDEX.md)
-- [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
-- [Panoramica dei Moduli](../MODULES.md)
-- [Architettura](../ARCHITECTURE.md)
-=======
 - [Indice del Progetto](../index.md)
 - [Workflow PHPStan](../phpstan_workflow.md)
 - [Panoramica dei Moduli](../modules.md)
 - [Architettura](../architecture.md)
->>>>>>> laraxot/dev
 
 ---
 
@@ -103,9 +82,5 @@ Questo progetto è open-source e disponibile sotto la [Licenza MIT](../../LICENS
 ---
 
 <div align="center">
-<<<<<<< HEAD
-  <sub>Costruito con ❤️ dal team Base Predict Fila3 Mono</sub>
-=======
   <sub>Costruito con ❤️ dal team Base <nome progetto> Fila 5</sub>
->>>>>>> laraxot/dev
 </div>

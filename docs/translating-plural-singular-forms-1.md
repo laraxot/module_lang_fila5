@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Traduzione di Forme Plurali e Singolari"
-module: "Lang"
-type: concept
-tags: [REDUNDANCY, ANALYSIS]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "redundancy analysis"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
 # Traduzione di Forme Plurali e Singolari
 
 ## Introduzione

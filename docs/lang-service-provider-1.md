@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "LangServiceProvider: Analisi e Proposte di Miglioramento"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
 # LangServiceProvider: Analisi e Proposte di Miglioramento
 
 ## Analisi dell'Implementazione Attuale
@@ -141,11 +127,7 @@ class TranslationResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-language';
 
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'key' => TextInput::make('key')

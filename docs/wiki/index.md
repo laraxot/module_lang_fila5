@@ -7,11 +7,6 @@ created: 2026-04-15
 updated: 2026-06-12
 qmd: "lang module wiki index i18n translations second brain pest factory auto increment id"
 issues:
-  - "https://github.com/laraxot/base_ptv_fila5/issues/272"
-discussions:
-  - "https://github.com/laraxot/base_ptv_fila5/discussions/273"
-related:
-  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-ptv-map.md
   - "https://github.com/laraxot/platform/issues/272"
 discussions:
   - "https://github.com/laraxot/platform/discussions/273"
@@ -25,7 +20,6 @@ related:
 # Lang Module Wiki
 ## AI / second brain
 
-- [hackernoon-ai-coding-tips-ptv-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-ptv-map.md)
 - [hackernoon-ai-coding-tips-progetto corrente-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md)
 - [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
 - [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)

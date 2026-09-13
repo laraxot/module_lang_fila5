@@ -569,7 +569,6 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int, \Filament\Forms\Components\Component>
      */
-    public static function getFormSchema(): array
     public function getFormSchema(): array
     {
         return [
@@ -715,7 +714,6 @@ namespace Modules\User\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
-use Modules\Xot\Contracts\UserContract;
 use Modules\User\Models\User;
 use Modules\User\Services\UserService;
 
@@ -880,7 +878,6 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature;
 
 use Tests\TestCase;
-use Modules\Xot\Contracts\UserContract;
 use Modules\User\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 

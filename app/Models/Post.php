@@ -4,35 +4,29 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Models;
 
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Str;
 // --- traits ---
 // use Laravel\Scout\Searchable;
+use Illuminate\Support\Str;
 use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
 /**
- * Modules\Lang\Models\Post.
+ * Colonne allineate a `2026_01_21_211814_create_posts_table`.
  *
- * @property-read ProfileContract|null $creator
- * @property-read string|null $guid
- * @property string|null $title
- * @property-read string|null $txt
- * @property-read Model $linkable
- * @property-read ProfileContract|null $updater
- * @property string|null $id
- * @property int|string|null $user_id
- * @property int|string|null $post_id
+ * @property string $id
+ * @property int|null $user_id
+ * @property string|int|null $post_id
  * @property string|null $lang
+ * @property string|null $guid
+ * @property string|null $title
  * @property string|null $subtitle
  * @property string|null $post_type
+ * @property string|null $txt
  * @property string|null $content
  * @property string|null $excerpt
  * @property string|null $slug
@@ -46,24 +40,74 @@ use Spatie\Sluggable\SlugOptions;
  * @property string|null $meta_title
  * @property string|null $meta_description
  * @property string|null $meta_keywords
- * @property int|string|null $author_id
+ * @property int|null $author_id
  * @property string|null $url
- * @property array<array-key, mixed>|null $url_lang
- * @property array<array-key, mixed>|null $image_resize_src
+ * @property array<string, string>|null $url_lang
+ * @property string|null $image_resize_src
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+ * @property int|null $category_id
+ * @property string|null $image
+ * @property int|null $published
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property string|null $linked_count
+ * @property string|null $related_count
+ * @property string|null $relatedrev_count
+ * @property string|null $linkable_type
+ * @property int|null $views_count
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $deleter
+ * @property-read Model|null $linkable
+ * @property-read ProfileContract|null $updater
  *
- * @method static \Modules\Lang\Database\Factories\PostFactory factory($count = null, $state = [])
- * @method static Builder<static>|Post newModelQuery()
- * @method static Builder<static>|Post newQuery()
- * @method static Builder<static>|Post query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereAuthorId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereCategory($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereCategoryId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereContent($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereCreatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereExcerpt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereGuid($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereImage($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereImageAlt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereImageResizeSrc($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereImageSrc($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereImageTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereLang($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereLinkableType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereLinkedCount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereLocale($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereMetaDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereMetaKeywords($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereMetaTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post wherePostId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post wherePostType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post wherePublished($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post wherePublishedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereRelatedCount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereRelatedrevCount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereSubtitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereTxt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUpdatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUrl($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUrlLang($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereViewsCount($value)
  *
  * @mixin \Eloquent
  */
 class Post extends BaseModel
 {
     use HasSlug;
-    use HasXotFactory;
 
     // use Cachable;
     use Updater;
@@ -76,13 +120,6 @@ class Post extends BaseModel
 
     final public const array SEARCHABLE_FIELDS = ['title', 'guid', 'txt'];
 
-    /**
-     * Indicates whether attributes are snake cased on arrays.
-     *
-     * @see  https://laravel-news.com/6-eloquent-secrets
-     *
-     * @var bool
-     */
     public static $snakeAttributes = true;
 
     /** @var bool */
@@ -143,16 +180,12 @@ class Post extends BaseModel
      * }
      */
 
-    /**
-     * Get the options for generating the slug.
-     */
     public function getSlugOptions(): SlugOptions
     {
         return SlugOptions::create()->generateSlugsFrom('title')->saveSlugsTo('guid');
     }
 
     // -------- relationship ------
-
     /**
      * @return MorphTo<Model, $this>
      */
@@ -189,9 +222,6 @@ class Post extends BaseModel
         $this->attributes['guid'] = Str::slug($value);
     }
 
-    /**
-     * Undocumented function.
-     */
     public function getTitleAttribute(?string $value): ?string
     {
         if ($value !== null) {
@@ -208,12 +238,9 @@ class Post extends BaseModel
                 : '';
             $value = $postType.' '.$postId;
         } else {
-            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
-                ? $this->attributes['post_type']
-                : '';
-            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
-                ? (string) $this->attributes['post_id']
-                : '';
+            // Assicuriamoci che post_type e post_id siano stringhe
+            $postType = is_string($this->post_type) ? $this->post_type : '';
+            $postId = is_scalar($this->post_id) ? ((string) $this->post_id) : '';
             $value = $postType.' '.$postId;
         }
 
@@ -228,15 +255,12 @@ class Post extends BaseModel
         return $value;
     }
 
-    /**
-     * ---.
-     */
     public function getGuidAttribute(?string $value): ?string
     {
         if (\is_string($value) && $value !== '' && ! str_contains($value, ' ')) {
             return $value;
         }
-        $value = $this->titleForGuid();
+        $value = $this->title;
         if ($value === '') {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
@@ -262,11 +286,6 @@ class Post extends BaseModel
         return $value;
     }
 
-    protected function titleForGuid(): ?string
-    {
-        return $this->title;
-    }
-
     public function getTxtAttribute(?string $value): ?string
     {
         return $value ?? '';
@@ -279,25 +298,4 @@ class Post extends BaseModel
     {
         return $this->only(self::SEARCHABLE_FIELDS);
     }
-
-    /**
-     * @return array<string, string> */
-    protected function casts(): array
-    {
-        return [
-            'id' => 'string',
-            'uuid' => 'string',
-            'user_id' => 'integer',
-            'post_id' => 'integer',
-            'author_id' => 'integer',
-            'image_resize_src' => 'array',
-            'url_lang' => 'array',
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-            'published_at' => 'datetime',
-        ];
-    }
 }
-
-// end class

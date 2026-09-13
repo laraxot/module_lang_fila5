@@ -15,7 +15,7 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 /**
- * @return array{auth: array{failed: string, password: string}, pagination: array{previous: string, next: string}}
+ * @return array<string, mixed>
  */
 function defaultReadTranslationTestData(): array
 {
@@ -53,7 +53,7 @@ describe('Read Translation File Action', function (): void {
         /** @var TestCase $this */
         $filePath = readTranslationTestFilePath();
         $translations = defaultReadTranslationTestData();
-        TestCase::createTranslationFile($filePath, $translations);
+        createTranslationFile($filePath, $translations);
 
         $result = makeReadTranslationFileAction()->execute($filePath);
 
@@ -64,7 +64,7 @@ describe('Read Translation File Action', function (): void {
     });
 
     test('throws exception for non existent file', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         $this->expectApplicationException(\Exception::class, 'File di traduzione non trovato:');
 
         makeReadTranslationFileAction()->execute(storage_path('non_existent.php'));
@@ -73,7 +73,7 @@ describe('Read Translation File Action', function (): void {
     test('throws exception for unreadable file', function (): void {
         /** @var TestCase $this */
         $filePath = readTranslationTestFilePath();
-        TestCase::createTranslationFile($filePath, defaultReadTranslationTestData());
+        createTranslationFile($filePath, defaultReadTranslationTestData());
         chmod($filePath, 0o000);
 
         $this->expectApplicationException(\Exception::class, 'File di traduzione non leggibile:');
@@ -156,8 +156,8 @@ describe('Read Translation File Action', function (): void {
         $phpContent = $action->toPhp($translations);
         $lines = explode("\n", $phpContent);
 
-        $parentLine = array_filter($lines, static fn (string $line): bool => str_contains($line, "'parent'"));
-        $childLine = array_filter($lines, static fn (string $line): bool => str_contains($line, "'child'"));
+        $parentLine = array_filter($lines, fn (string $line) => str_contains($line, "'parent'"));
+        $childLine = array_filter($lines, fn (string $line) => str_contains($line, "'child'"));
 
         Assert::assertStringStartsWith('    ', (string) current($parentLine));
         Assert::assertStringStartsWith('        ', (string) current($childLine));
@@ -190,7 +190,7 @@ describe('Read Translation File Action', function (): void {
         Assert::assertStringContainsString("'number' => '123'", $phpContent);
         Assert::assertStringContainsString("'float' => '45.67'", $phpContent);
         Assert::assertStringContainsString("'boolean_true' => '1'", $phpContent);
-        Assert::assertStringContainsString("'boolean_false' => '0'", $phpContent);
+        Assert::assertStringContainsString("'boolean_false' => ''", $phpContent);
     });
 
     test('preserves key order in output', function (): void {

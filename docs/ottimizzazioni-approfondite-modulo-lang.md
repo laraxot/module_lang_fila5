@@ -171,7 +171,6 @@ if [ -d "_docs" ]; then
 fi
 
 # Eliminare file duplicati
-rm -f CHANGELOG.md
 rm -f changelog.md
 ```
 

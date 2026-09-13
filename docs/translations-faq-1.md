@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "FAQ e Problemi Comuni sulle Traduzioni"
-module: "Lang"
-type: concept
-tags: [google, translate]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "google translate"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
 # FAQ e Problemi Comuni sulle Traduzioni
 
 ## 1. Perché il POST non funziona su rotte localizzate?
@@ -59,8 +45,4 @@ Aggiorna sempre la documentazione in `/Modules/Lang/docs` e spiega la strategia 
 
 ### Devo registrare manualmente i comandi console?
 
-<<<<<<< HEAD
-**No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)
-=======
 **No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
->>>>>>> laraxot/dev

@@ -2,10 +2,6 @@
 title: "Correzione Errori Traduzioni - 2025"
 module: "Lang"
 type: concept
-tags: [filament4, migration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament4 migration"
 tags: [links]
 created: 2026-07-14
 updated: 2026-07-14
@@ -49,8 +45,6 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 - `txt.php`: `'title_required' => 'The title is required'`
 - `edit_section.php`: `'required' => 'This field is required'`
 
-#### ✅ Modulo <main module>
-#### ✅ Modulo <main module>
 #### ✅ Modulo <nome progetto>
 **File Tedeschi (DE):**
 - `doctor_availability_calendar.php`: `'required' => 'Dieses Feld ist erforderlich'`
@@ -66,11 +60,7 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 
 #### ✅ Modulo Notify
 **File Tedeschi (DE):**
-- `send_email.php`: 
 - `send_email.php`:
-- `send_email.php`:
-- `send_email.php`:
-- `send_email.php`: 
   - `'subject_required' => 'Der Betreff ist erforderlich'`
   - `'to_required' => 'Der Empfänger ist erforderlich'`
   - `'content_required' => 'Der Inhalt ist erforderlich'`
@@ -129,11 +119,7 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 
 #### ✅ Modulo Xot
 **File Tedeschi (DE):**
-- `env.php`: 
 - `env.php`:
-- `env.php`:
-- `env.php`:
-- `env.php`: 
   - `'required' => 'Der Wert ist erforderlich'`
   - `'required' => 'Die Umgebung ist erforderlich'`
 - `extra.php`:
@@ -205,15 +191,6 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 
 ### Moduli con Documentazione Aggiornata
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
-2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
-2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
-2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
-
-### Collegamenti Bidirezionali
-- [Root Docs: Translation Standards](../../docs/translation_standards.md)
-- [Lang Module: Translation Best Practices](translation_best_practices.md)
-- [<main module> Module: Translation Guidelines](../<main module>/docs/translation_guidelines.md)
-- [<main module> Module: Translation Guidelines](../<main module>/docs/translation_guidelines.md)
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali
@@ -231,8 +208,6 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 ### Moduli Interessati
 1. Lang Module ✅
 2. DbForge Module ✅
-3. <main module> Module ✅
-3. <main module> Module ✅
 3. <nome progetto> Module ✅
 4. Notify Module ✅
 5. FormBuilder Module ✅
@@ -285,9 +260,6 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Autore**: Sistema di Correzione Automatica
-**Versione**: 1.0
-**Versione**: 1.0
-**Versione**: 1.0
 **Versione**: 1.0
 # Correzione Errori Traduzioni - 2025
 

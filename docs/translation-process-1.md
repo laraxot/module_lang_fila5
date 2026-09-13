@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Processo di Traduzione: Da Sviluppatore a Traduttore"
-module: "Lang"
-type: concept
-tags: [readme.es, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme.es 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-=======
->>>>>>> laraxot/dev
 # Processo di Traduzione: Da Sviluppatore a Traduttore
 
 ## Indice

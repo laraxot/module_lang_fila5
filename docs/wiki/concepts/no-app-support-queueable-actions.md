@@ -6,9 +6,6 @@ created: 2026-07-12
 updated: 2026-07-12
 qmd: "Lang module no app Support TranslatorService Adapter QueueableAction"
 issues:
-  - "https://github.com/laraxot/base_ptv_fila5/issues/372"
-discussions:
-  - "https://github.com/laraxot/base_ptv_fila5/discussions/273"
   - "https://github.com/laraxot/platform/issues/372"
 discussions:
   - "https://github.com/laraxot/platform/discussions/273"

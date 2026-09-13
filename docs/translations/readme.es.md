@@ -1,20 +1,4 @@
 ---
-title: "Readme.Es"
-module: "Lang"
-type: concept
-tags: [readme.es]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme.es"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-
----
-
-<!-- Merged from README.es.md, which collided with this file on case-insensitive filesystems. -->
-
----
 title: "🚀 Bienvenido a Laraxot PTVX"
 module: "Lang"
 type: concept
@@ -109,6 +93,5 @@ Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](..
 ---
 
 <div align="center">
-  <sub>Construido con ❤️ por el equipo Base Predict Fila3 Mono</sub>
   <sub>Construido con ❤️ por el equipo Base forecast Fila3 Mono</sub>
 </div>

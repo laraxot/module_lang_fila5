@@ -6,9 +6,6 @@ created: 2026-07-13
 updated: 2026-07-13
 qmd: "Lang TranslatorService TranslatorAction adapter not QueueableAction"
 issues:
-  - "https://github.com/laraxot/base_predict_fila5/issues/372"
-discussions:
-  - "https://github.com/laraxot/base_predict_fila5/discussions/273"
   - "https://github.com/laraxot/base_ptvx_fila5/issues/372"
 discussions:
   - "https://github.com/laraxot/base_ptvx_fila5/discussions/273"
