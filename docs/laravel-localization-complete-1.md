@@ -1,3 +1,20 @@
+<<<<<<< .merge_file_KMymR5
+=======
+<<<<<<< HEAD
+---
+title: "Guida Completa a Laravel Localization"
+module: "Lang"
+type: concept
+tags: [ottimizzazioni, correzioni]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ottimizzazioni correzioni"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_49SIVc
 # Guida Completa a Laravel Localization
 
 ## Introduzione

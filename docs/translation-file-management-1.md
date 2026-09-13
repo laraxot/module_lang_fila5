@@ -1,3 +1,20 @@
+<<<<<<< .merge_file_nDjgf2
+=======
+<<<<<<< HEAD
+---
+title: "Gestione File di Traduzione"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OwFyS3
 # Gestione File di Traduzione
 
 ## Panoramica
@@ -190,7 +207,15 @@ class TranslationFileResource extends XotBaseResource
 {
     protected static ?string $model = TranslationFile::class;
 
+<<<<<<< .merge_file_nDjgf2
     public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OwFyS3
     {
         return [
             Components\TextInput::make('key')

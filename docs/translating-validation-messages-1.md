@@ -1,3 +1,20 @@
+<<<<<<< .merge_file_740mi0
+=======
+<<<<<<< HEAD
+---
+title: "Traduzione dei Messaggi di Validazione"
+module: "Lang"
+type: concept
+tags: [test]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "test"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ZZCOhX
 # Traduzione dei Messaggi di Validazione
 
 ## Introduzione

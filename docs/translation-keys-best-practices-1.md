@@ -1,3 +1,20 @@
+<<<<<<< .merge_file_AJlHKl
+=======
+<<<<<<< HEAD
+---
+title: "Best Practices per le Chiavi di Traduzione"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_2GMIGA
 # Best Practices per le Chiavi di Traduzione
 
 ## Collegamenti correlati
