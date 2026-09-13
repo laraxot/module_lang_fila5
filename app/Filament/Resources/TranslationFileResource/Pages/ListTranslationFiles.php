@@ -14,12 +14,34 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListTranslationFiles extends XotBaseListRecords
 {
     protected static string $resource = TranslationFileResource::class;
+<<<<<<< .merge_file_SPGyVG
    
+=======
+
+<<<<<<< HEAD
+    
+=======
+    #[\Override]
+    public function getTableColumns(): array
+    {
+        return [
+            'key' => TextColumn::make('key')->searchable(['key', 'content']),
+        ];
+    }
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ejkgph
 
     /**
      * @return array<string, Action|ActionGroup>
      */
+<<<<<<< .merge_file_SPGyVG
     #[\Override]
+=======
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ejkgph
     protected function getHeaderActions(): array
     {
         $parentActions = parent::getHeaderActions();

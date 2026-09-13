@@ -11,8 +11,16 @@ use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 class AdminPanelProvider extends XotBasePanelProvider
 {
     protected string $module = 'Lang';
+<<<<<<< .merge_file_nRNhAu
 
     #[\Override]
+=======
+<<<<<<< HEAD
+=======
+
+    #[\Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_6Eu5dv
     public function panel(Panel $panel): Panel
     {
         $panel = parent::panel($panel);
