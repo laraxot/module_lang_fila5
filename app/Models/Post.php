@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Models;
 
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
@@ -16,7 +15,6 @@ use Modules\Lang\Database\Factories\PostFactory;
 // use Laravel\Scout\Searchable;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
-=======
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
@@ -24,13 +22,11 @@ use Illuminate\Support\Carbon;
 // use Laravel\Scout\Searchable;
 use Illuminate\Support\Str;
 use Modules\Xot\Contracts\ProfileContract;
->>>>>>> laraxot/dev
 use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
 /**
-<<<<<<< HEAD
  * Modules\Lang\Models\Post.
  *
  * @property string $id
@@ -109,7 +105,6 @@ use Spatie\Sluggable\SlugOptions;
  *
  * @mixin Model
  *
-=======
  * Colonne allineate a `2026_01_21_211814_create_posts_table`.
  *
  * @property string $id
@@ -122,14 +117,12 @@ use Spatie\Sluggable\SlugOptions;
  * @property string|null $post_type
  * @property string|null $txt
  * @property string|null $content
->>>>>>> laraxot/dev
  * @property string|null $excerpt
  * @property string|null $slug
  * @property string|null $status
  * @property Carbon|null $published_at
  * @property string|null $locale
  * @property string|null $category
-<<<<<<< HEAD
  * @property string|null $meta_title
  *
  * @method static Builder<static>|Post whereCategory($value)
@@ -139,7 +132,6 @@ use Spatie\Sluggable\SlugOptions;
  * @method static Builder<static>|Post wherePublishedAt($value)
  * @method static Builder<static>|Post whereSlug($value)
  * @method static Builder<static>|Post whereStatus($value)
-=======
  * @property string|null $image_src
  * @property string|null $image_alt
  * @property string|null $image_title
@@ -208,7 +200,6 @@ use Spatie\Sluggable\SlugOptions;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUrlLang($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUserId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereViewsCount($value)
->>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */
@@ -216,12 +207,9 @@ class Post extends BaseModel
 {
     use HasSlug;
 
-<<<<<<< HEAD
     /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
-=======
->>>>>>> laraxot/dev
     // use Cachable;
     use Updater;
 
@@ -233,7 +221,6 @@ class Post extends BaseModel
 
     final public const array SEARCHABLE_FIELDS = ['title', 'guid', 'txt'];
 
-<<<<<<< HEAD
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
@@ -241,8 +228,6 @@ class Post extends BaseModel
      *
      * @var bool
      */
-=======
->>>>>>> laraxot/dev
     public static $snakeAttributes = true;
 
     /** @var bool */
@@ -278,10 +263,7 @@ class Post extends BaseModel
         'image_alt',
         'image_title',
         // ------ SEO FIELDS -----
-<<<<<<< HEAD
-=======
         'meta_title',
->>>>>>> laraxot/dev
         'meta_description',
         'meta_keywords', // seo
         'author_id',
@@ -306,22 +288,16 @@ class Post extends BaseModel
      * }
      */
 
-<<<<<<< HEAD
     /**
      * Get the options for generating the slug.
      */
-=======
->>>>>>> laraxot/dev
     public function getSlugOptions(): SlugOptions
     {
         return SlugOptions::create()->generateSlugsFrom('title')->saveSlugsTo('guid');
     }
 
     // -------- relationship ------
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
     /**
      * @return MorphTo<Model, $this>
      */
@@ -358,12 +334,9 @@ class Post extends BaseModel
         $this->attributes['guid'] = Str::slug($value);
     }
 
-<<<<<<< HEAD
     /**
      * Undocumented function.
      */
-=======
->>>>>>> laraxot/dev
     public function getTitleAttribute(?string $value): ?string
     {
         if ($value !== null) {
@@ -397,12 +370,9 @@ class Post extends BaseModel
         return $value;
     }
 
-<<<<<<< HEAD
     /**
      * ---.
      */
-=======
->>>>>>> laraxot/dev
     public function getGuidAttribute(?string $value): ?string
     {
         if (\is_string($value) && $value !== '' && ! str_contains($value, ' ')) {
@@ -446,7 +416,6 @@ class Post extends BaseModel
     {
         return $this->only(self::SEARCHABLE_FIELDS);
     }
-<<<<<<< HEAD
 
     /**
      * @return array<string, string> */
@@ -466,6 +435,4 @@ class Post extends BaseModel
 }
 
 // end class
-=======
 }
->>>>>>> laraxot/dev
