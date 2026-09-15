@@ -8,10 +8,14 @@ return [
             'label' => 'key',
             'placeholder' => 'key',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'key',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> e6b66f52 (.)
             'description' => 'key',
             'tooltip' => '',
         ],
@@ -29,10 +33,14 @@ return [
         'pippo' => [
             'description' => 'pippo',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'pippo',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> e6b66f52 (.)
             'placeholder' => 'pippo',
             'label' => 'pippo',
             'tooltip' => '',

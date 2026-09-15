@@ -8,10 +8,14 @@ return [
             'label' => 'fields',
             'placeholder' => 'fields',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'fields',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> e6b66f52 (.)
             'description' => 'fields',
             'tooltip' => '',
         ],
