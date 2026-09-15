@@ -8,10 +8,14 @@ return [
             'label' => 'locale',
             'placeholder' => 'locale',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'locale',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> e6b66f52 (.)
             'description' => 'locale',
             'tooltip' => '',
         ],
