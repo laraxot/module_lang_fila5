@@ -7,21 +7,6 @@ return [
         'locale' => [
             'label' => 'locale',
             'placeholder' => 'locale',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-            'helper_text' => '',
-=======
-            'helper_text' => 'locale',
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-            'helper_text' => '',
->>>>>>> e6b66f52 (.)
-=======
->>>>>>> laraxot/dev
             'description' => 'locale',
             'tooltip' => '',
         ],
