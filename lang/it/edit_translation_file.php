@@ -7,6 +7,7 @@ return [
         'key' => [
             'label' => 'key',
             'placeholder' => 'key',
+            'helper_text' => 'key',
             'description' => 'key',
             'tooltip' => '',
         ],
@@ -23,6 +24,7 @@ return [
         ],
         'pippo' => [
             'description' => 'pippo',
+            'helper_text' => 'pippo',
             'placeholder' => 'pippo',
             'label' => 'pippo',
             'tooltip' => '',

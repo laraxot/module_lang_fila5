@@ -29,15 +29,6 @@ class TranslationFileResource extends XotBaseResource
     }
 
     #[\Override]
-<<<<<<< HEAD
-=======
-    public static function getFormSchemaOld(): array
-    {
-        return [];
-    }
-
-    #[\Override]
->>>>>>> laraxot/dev
     public static function getPages(): array
     {
         return [
