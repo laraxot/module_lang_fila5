@@ -7,21 +7,33 @@ return [
         'email' => [
             'label' => 'email',
             'placeholder' => 'email',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'email',
+>>>>>>> laraxot/dev
             'description' => 'email',
             'tooltip' => '',
         ],
         'password' => [
             'label' => 'password',
             'placeholder' => 'password',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'password',
+>>>>>>> laraxot/dev
             'description' => 'password',
             'tooltip' => '',
         ],
         'remember' => [
             'label' => 'remember',
             'placeholder' => 'remember',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'remember',
+>>>>>>> laraxot/dev
             'description' => 'remember',
             'tooltip' => '',
         ],
