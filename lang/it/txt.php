@@ -93,8 +93,11 @@ return [
         ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e6b66f52 (.)
+=======
+>>>>>>> laraxot/dev
         'test_date' => ['label' => 'test_date', 'placeholder' => 'test_date', 'helper_text' => '', 'description' => 'test_date', 'tooltip' => ''],
         'test' => ['label' => 'test', 'placeholder' => 'test', 'helper_text' => '', 'description' => 'test', 'tooltip' => ''],
         'view' => ['label' => 'view', 'placeholder' => 'view', 'helper_text' => '', 'description' => 'view', 'tooltip' => ''],
@@ -150,6 +153,9 @@ return [
         'data' => ['label' => 'data', 'placeholder' => 'data', 'helper_text' => '', 'description' => 'data'],
         'created_by' => ['label' => 'created_by', 'placeholder' => 'created_by', 'helper_text' => '', 'description' => 'created_by'],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
         'test_date' => ['label' => 'test_date', 'placeholder' => 'test_date', 'helper_text' => 'test_date', 'description' => 'test_date', 'tooltip' => ''],
         'test' => ['label' => 'test', 'placeholder' => 'test', 'helper_text' => 'test', 'description' => 'test', 'tooltip' => ''],
@@ -206,16 +212,22 @@ return [
         'data' => ['label' => 'data', 'placeholder' => 'data', 'helper_text' => 'data', 'description' => 'data'],
         'created_by' => ['label' => 'created_by', 'placeholder' => 'created_by', 'helper_text' => 'created_by', 'description' => 'created_by'],
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> e6b66f52 (.)
+=======
+>>>>>>> laraxot/dev
         'extra_attributes' => [
             'type' => ['label' => 'extra_attributes.type', 'placeholder' => 'extra_attributes.type', 'helper_text' => 'extra_attributes.type', 'description' => 'extra_attributes.type'],
             'anno' => ['label' => 'extra_attributes.anno', 'placeholder' => 'extra_attributes.anno', 'helper_text' => 'extra_attributes.anno', 'description' => 'extra_attributes.anno'],
         ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e6b66f52 (.)
+=======
+>>>>>>> laraxot/dev
         'color' => ['label' => 'color', 'placeholder' => 'color', 'helper_text' => '', 'description' => 'color'],
         'rule' => ['label' => 'rule', 'placeholder' => 'rule', 'helper_text' => '', 'description' => 'rule'],
         'is_disabled' => ['label' => 'is_disabled', 'placeholder' => 'is_disabled', 'helper_text' => '', 'description' => 'is_disabled'],
@@ -253,6 +265,9 @@ return [
         'order_column' => ['label' => 'order_column'],
         'map_picker' => ['label' => 'map_picker', 'placeholder' => 'map_picker', 'helper_text' => '', 'description' => 'map_picker'],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
         'color' => ['label' => 'color', 'placeholder' => 'color', 'helper_text' => 'color', 'description' => 'color'],
         'rule' => ['label' => 'rule', 'placeholder' => 'rule', 'helper_text' => 'rule', 'description' => 'rule'],
@@ -291,8 +306,11 @@ return [
         'order_column' => ['label' => 'order_column'],
         'map_picker' => ['label' => 'map_picker', 'placeholder' => 'map_picker', 'helper_text' => 'map_picker', 'description' => 'map_picker'],
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> e6b66f52 (.)
+=======
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'authenticate' => ['label' => 'Autentica', 'tooltip' => 'Effettua il login nel sistema', 'icon' => 'ui-login', 'color' => 'primary'],

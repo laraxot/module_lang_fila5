@@ -9,13 +9,19 @@ return [
             'placeholder' => 'email',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
 =======
             'helper_text' => 'email',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             'helper_text' => '',
 >>>>>>> e6b66f52 (.)
+=======
+>>>>>>> laraxot/dev
             'description' => 'email',
             'tooltip' => '',
         ],
@@ -24,13 +30,19 @@ return [
             'placeholder' => 'password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
 =======
             'helper_text' => 'password',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             'helper_text' => '',
 >>>>>>> e6b66f52 (.)
+=======
+>>>>>>> laraxot/dev
             'description' => 'password',
             'tooltip' => '',
         ],
@@ -39,13 +51,19 @@ return [
             'placeholder' => 'remember',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
 =======
             'helper_text' => 'remember',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             'helper_text' => '',
 >>>>>>> e6b66f52 (.)
+=======
+>>>>>>> laraxot/dev
             'description' => 'remember',
             'tooltip' => '',
         ],

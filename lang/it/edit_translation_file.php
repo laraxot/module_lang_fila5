@@ -9,13 +9,19 @@ return [
             'placeholder' => 'key',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
 =======
             'helper_text' => 'key',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             'helper_text' => '',
 >>>>>>> e6b66f52 (.)
+=======
+>>>>>>> laraxot/dev
             'description' => 'key',
             'tooltip' => '',
         ],
@@ -34,13 +40,19 @@ return [
             'description' => 'pippo',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
 =======
             'helper_text' => 'pippo',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             'helper_text' => '',
 >>>>>>> e6b66f52 (.)
+=======
+>>>>>>> laraxot/dev
             'placeholder' => 'pippo',
             'label' => 'pippo',
             'tooltip' => '',
