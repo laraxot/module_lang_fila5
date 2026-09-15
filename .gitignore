@@ -144,6 +144,7 @@ yarn.lock
 
 # Root quality tool configs forbidden in module root
 phpmd*
+<<<<<<< HEAD
 docs/archive
 docs/legacy
 /.ai*
@@ -155,3 +156,5 @@ docs/legacy
 rector.php
 docs/_archive
 docs/_archive/
+=======
+>>>>>>> laraxot/dev
