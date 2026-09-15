@@ -7,7 +7,11 @@ return [
         'locale' => [
             'label' => 'locale',
             'placeholder' => 'locale',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'locale',
+>>>>>>> laraxot/dev
             'description' => 'locale',
             'tooltip' => '',
         ],

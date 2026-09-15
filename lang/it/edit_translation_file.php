@@ -7,7 +7,11 @@ return [
         'key' => [
             'label' => 'key',
             'placeholder' => 'key',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'key',
+>>>>>>> laraxot/dev
             'description' => 'key',
             'tooltip' => '',
         ],
@@ -24,7 +28,11 @@ return [
         ],
         'pippo' => [
             'description' => 'pippo',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'pippo',
+>>>>>>> laraxot/dev
             'placeholder' => 'pippo',
             'label' => 'pippo',
             'tooltip' => '',
