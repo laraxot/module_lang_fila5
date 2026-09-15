@@ -42,6 +42,7 @@ class EditTranslationFile extends XotBaseEditRecord
     }
 
     /**
+<<<<<<< HEAD
      * Costruisce i campi della sezione `content` a partire dal record.
      *
      * Estratto dalla closure di {@see getFormSchemaOld()} per renderlo verificabile:
@@ -64,6 +65,8 @@ class EditTranslationFile extends XotBaseEditRecord
     }
 
     /**
+=======
+>>>>>>> laraxot/dev
      * @param  array<string, mixed>  $array
      * @return array<int, Section|TextInput>
      */
