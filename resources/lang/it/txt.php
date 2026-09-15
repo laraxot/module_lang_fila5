@@ -8,10 +8,14 @@ return [
             'label' => 'email',
             'placeholder' => 'email',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'email',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> e6b66f52 (.)
             'description' => 'email',
             'tooltip' => '',
         ],
@@ -19,10 +23,14 @@ return [
             'label' => 'password',
             'placeholder' => 'password',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'password',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> e6b66f52 (.)
             'description' => 'password',
             'tooltip' => '',
         ],
@@ -30,10 +38,14 @@ return [
             'label' => 'remember',
             'placeholder' => 'remember',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'remember',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> e6b66f52 (.)
             'description' => 'remember',
             'tooltip' => '',
         ],
