@@ -7,7 +7,11 @@ return [
         'fields' => [
             'label' => 'fields',
             'placeholder' => 'fields',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'fields',
+>>>>>>> laraxot/dev
             'description' => 'fields',
             'tooltip' => '',
         ],
