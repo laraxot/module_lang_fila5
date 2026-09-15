@@ -144,7 +144,6 @@ yarn.lock
 
 # Root quality tool configs forbidden in module root
 phpmd*
-<<<<<<< HEAD
 docs/archive
 docs/legacy
 /.ai*
@@ -153,8 +152,17 @@ docs/legacy
 /_docs
 /docs/archive
 /docs/legacy
-rector.php
 docs/_archive
 docs/_archive/
-=======
->>>>>>> laraxot/dev
+
+# Laraxot — forbidden at module/theme root (rector.php, phpinsights.php, .cursor, .windsurf, .vscode)
+/rector.php
+/phpinsights.php
+/.cursor
+/.cursor/
+/.windsurf
+/.windsurf/
+/.vscode
+/.vscode/
+.cursor~*
+.windsurf~*
