@@ -7,7 +7,7 @@ return [
         'fields' => [
             'label' => 'fields',
             'placeholder' => 'fields',
-            'helper_text' => 'fields',
+            'helper_text' => '',
             'description' => 'fields',
             'tooltip' => '',
         ],
@@ -23,7 +23,7 @@ return [
         ],
         'label' => 'Translation Editor',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [

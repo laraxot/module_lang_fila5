@@ -7,14 +7,14 @@ return [
         'name' => [
             'label' => 'name',
             'placeholder' => 'name',
-            'helper_text' => 'name',
+            'helper_text' => '',
             'description' => 'name',
         ],
     ],
     'sections' => [
         'empty' => [
-            'label' => 'empty',
-            'heading' => 'empty',
+            'label' => '',
+            'heading' => '',
         ],
     ],
 ];

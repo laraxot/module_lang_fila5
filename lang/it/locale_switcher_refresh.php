@@ -7,7 +7,7 @@ return [
         'locale' => [
             'label' => 'locale',
             'placeholder' => 'locale',
-            'helper_text' => 'locale',
+            'helper_text' => '',
             'description' => 'locale',
             'tooltip' => '',
         ],
@@ -23,7 +23,7 @@ return [
         ],
         'label' => 'Locale Switcher Refresh',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [

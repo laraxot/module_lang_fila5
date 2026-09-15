@@ -7,7 +7,7 @@ return [
         'key' => [
             'label' => 'key',
             'placeholder' => 'key',
-            'helper_text' => 'key',
+            'helper_text' => '',
             'description' => 'key',
             'tooltip' => '',
         ],
@@ -24,7 +24,7 @@ return [
         ],
         'pippo' => [
             'description' => 'pippo',
-            'helper_text' => 'pippo',
+            'helper_text' => '',
             'placeholder' => 'pippo',
             'label' => 'pippo',
             'tooltip' => '',
@@ -437,6 +437,6 @@ return [
         ],
         'label' => 'Edit Translation File',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
 ];
