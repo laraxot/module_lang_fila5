@@ -9,6 +9,7 @@
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
+<<<<<<< HEAD
 # Binary files (regular git blobs — NO git-lfs)
 # `binary` + `!filter` azzera eventuali filtri LFS ereditati
 *.png binary !filter
@@ -31,7 +32,14 @@ CHANGELOG.md export-ignore
 *.sqlite binary !filter
 *.png !text !filter !merge !diff
 *.svg !text !filter !merge !diff
+=======
+>>>>>>> laraxot/dev
 *.jpg !text !filter !merge !diff
 *.jpeg !text !filter !merge !diff
 *.gif !text !filter !merge !diff
 *.webp !text !filter !merge !diff
+<<<<<<< HEAD
+=======
+*.png !text !filter !merge !diff
+*.svg !text !filter !merge !diff
+>>>>>>> laraxot/dev

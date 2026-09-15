@@ -51,7 +51,11 @@ trait HasStrictTranslations
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<array-key, mixed>  $value
+=======
+     * @param  array<mixed, mixed>  $value
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     private static function normalizeTranslationArray(array $value): array
