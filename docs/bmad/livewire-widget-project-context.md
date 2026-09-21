@@ -9,4 +9,4 @@ related:
 
 # Context Lang
 
-Un selettore lingua. Il widget Filament è il contenitore panel/tema. HTTP Change/Switcher sono copia Jet.
+Un selettore lingua. Destinazione: `LanguageSwitcherWidget` (`$isDiscovered = false`, `LaravelLocalization`). Oggi il mount vivo è ancora l'HTTP `lang.change` in `UI headernav:60`; `Switcher` è già uscito (alias stale da ripulire). Copie Jet in ritiro.

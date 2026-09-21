@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 ?>
 {{-- Chrome FO: Alpine + href URL localizzato. Icone ui-flags.{code}. --}}
 <div x-data="{ open: false }">

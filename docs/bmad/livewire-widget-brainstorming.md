@@ -8,4 +8,6 @@ related:
 
 # Brainstorming
 
-Change e Switcher sono copy-paste. Tenerne uno HTTP sarebbe comunque un gemello del widget. Ritiro entrambi.
+Change e Switcher erano copy-paste (stesso `mount()`, stessa vista `lang::livewire.lang.change`). Tenerne uno HTTP sarebbe comunque un gemello del widget.
+
+**Stato (21/09, verificato):** `Switcher.php` ritirato; `Change.php` ancora montato in `UI headernav:60`; `LanguageSwitcherWidget` corretto ma senza consumatori. Ritiro di `Change` subordinato allo swap del tag — ordine e AC in story 12.1 (`blocked`).
