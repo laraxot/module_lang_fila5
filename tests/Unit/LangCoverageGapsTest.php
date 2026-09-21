@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 namespace Modules\Lang\Tests\Unit;
 
 use Filament\Actions\Action;

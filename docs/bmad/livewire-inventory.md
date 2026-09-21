@@ -3,81 +3,118 @@ title: "Inventario Lang — Livewire HTTP → widget"
 type: inventory
 module: Lang
 status: approved
+track: campaign
 related:
-  - ./livewire-widget-prd.md
+  - ./livewire-widget-conversion.md
   - ./livewire-widget-architecture.md
+  - ./livewire-widget-prd.md
   - ./livewire-widget-tech-spec.md
   - ./livewire-widget-epics.md
+  - ./livewire-widget-decision-log.md
   - ../../Xot/docs/bmad/livewire-widget-project-context.md
+  - ../../Cms/docs/bmad/livewire-inventory.md
+  - ../../UI/docs/bmad/livewire-widget-project-context.md
   - ../stories/12.1.retire-lang-http-switchers.story.md
 ---
 
 # Inventario: Livewire HTTP → Filament (Lang)
 
-**Solo documentazione. Nessun PHP convertito in questa sessione.**
+**Solo documentazione. Nessun PHP toccato in questo audit.**
 
-Questa versione sostituisce la precedente del 2026-09-21, che era corretta nel verdetto finale (ritirare i due Livewire HTTP, tenere il widget) ma incompleta su due punti verificabili nel codice: dove `Change` viene effettivamente montato oggi, e se il widget che dovrebbe sostituirlo sia davvero già agganciato da qualche parte. Non lo è. Sotto ci sono le citazioni file:riga per ogni affermazione.
+SSoT del modulo Lang per la campagna Livewire → Filament widget; formato e metodo come [Modules/Cms/docs/bmad/livewire-inventory.md](../../Cms/docs/bmad/livewire-inventory.md).
 
-## Metodo
+> **Stato 2026-09-21 (post 12.1):** HTTP `Switcher`/`Change` ritirati. Header FO monta `LanguageSwitcherWidget` via FQCN. `View\Components\LanguageSwitcher` resta inerte. Story [12.1](../stories/12.1.retire-lang-http-switchers.story.md) `done`.
 
-Comandi usati per verificare, non per assumere:
+## Metodo (comandi eseguiti, non assunti)
 
 ```bash
-find Modules/Lang/app/Http/Livewire -name '*.php'
-find Modules/Lang/app/Filament/Widgets -name '*.php'
-grep -rn "lang\.\(switcher\|change\)" --include="*.php" --include="*.blade.php" Modules/
-grep -rln "LanguageSwitcherWidget::class\|LanguageSwitcherWidget()" Modules/ Themes/
-grep -rln "lang\.change\|lang\.switcher\|LanguageSwitcherWidget\|Lang\\\\Http\\\\Livewire" Modules/*/app/Providers/Filament/*.php
+find Modules/Lang/app/Http/Livewire -type f
 cat Modules/Lang/app/Http/Livewire/_components.json
+git status --short -- Modules/Lang                              # → M Change.php, D Switcher.php
+grep -rn "livewire:lang\|lang\.change\|lang\.switcher" --include="*.blade.php" --include="*.php" .
+grep -rn "LanguageSwitcherWidget" --include="*.blade.php" Modules Themes
+grep -rn "renderHook\|RenderHook" Modules/*/app/Providers/Filament/*.php
 ```
 
-## Le tre classi in gioco
+## Le classi in gioco
 
-### 1. `Http\Livewire\Lang\Switcher` (Modules/Lang/app/Http/Livewire/Lang/Switcher.php)
+### 1. `Http\Livewire\Lang\Switcher` — ritirato
 
-Componente Livewire che in `mount()` (righe 30-54) legge `app()->getLocale()`, recupera `LaravelLocalization::getSupportedLocales()` e costruisce, per ogni lingua diversa da quella corrente, l'URL localizzato tramite `LaravelLocalization::getLocalizedURL()`. Il metodo `switchLang()` è commentato (righe 56-61): la classe non esegue nessuna azione, produce solo una lista di link. Il `render()` (righe 63-75) punta sempre alla vista `lang::livewire.lang.change` (riga 66) — non a una vista propria `lang.switcher`.
+File assente. Alias `lang.switcher` assente da `_components.json` (`[]`).
 
-L'alias Livewire `lang.switcher` risulta registrato nella cache `Modules/Lang/app/Http/Livewire/_components.json` (`{"name":"lang.switcher","class":"Lang\\Switcher","ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"}`), quindi la classe è tecnicamente invocabile con `<livewire:lang.switcher>` o `@livewire('lang.switcher')`. Ma un grep sull'intero repository per `lang.switcher` (blade, php, routes) non trova nessuna occorrenza al di fuori della definizione stessa e della voce di cache. Nessun blade, nessun render hook di pannello, nessuna rotta la invoca. È codice orfano: registrato ma senza nessun chiamante.
+### 2. `Http\Livewire\Lang\Change` — ritirato
 
-### 2. `Http\Livewire\Lang\Change` (Modules/Lang/app/Http/Livewire/Lang/Change.php)
+File assente. Vista HTTP `lang::livewire.lang.change` assente.
 
-Stessa identica logica di `Switcher`: `mount()` alle righe 30-57 è una copia quasi carattere per carattere (stessa chiamata a `LaravelLocalization`, stesso `Arr::map`, persino lo stesso commento `// Recupera la URL localizzata corrente` che manca solo nella variante `Switcher`). Anche qui `switchLang()` è commentato (righe 59-64) e `render()` (righe 66-78) punta alla stessa vista `lang::livewire.lang.change` (riga 69).
+Montaggio FO: `Modules/UI/resources/views/components/headernav/simple.blade.php` usa
 
-A differenza di `Switcher`, però, `Change` **ha un chiamante reale**: `Modules/UI/resources/views/components/headernav/simple.blade.php:60` contiene `<livewire:lang.change></livewire:lang.change>`, non commentato, dentro il blocco "Right Menu" dell'header del tema frontoffice. È lo switcher lingua che compare nell'intestazione del sito pubblico quando questo blocco headernav è quello attivo. Lo stesso tag compare — ma commentato con `{{--`, quindi inattivo — in due file gemelli del modulo Cms: `Modules/Cms/resources/views/components/headernav/simple.blade.php:43` e `Modules/Cms/resources/views/components/blocks/headernav/simple.blade.php:43`.
+```blade
+@livewire(\Modules\Lang\Filament\Widgets\LanguageSwitcherWidget::class)
+```
 
-Va detto con chiarezza, perché il documento precedente non lo diceva: **questo non è un render hook di un `*PanelProvider`**. Un grep su tutti i `Modules/*/app/Providers/Filament/*.php` del repository per `lang.change`, `lang.switcher`, `LanguageSwitcherWidget` o `Lang\Http\Livewire` non produce nessun risultato. Non esiste, in nessun modulo, un hook tipo `panels::...->before` o `->after` che monti un componente Lang nel chrome di un pannello Filament. Il montaggio di `Change` è un tag Blade diretto dentro una vista di tema frontoffice (UI/Cms), non un hook di pannello admin. Per questo `Change` non è un candidato Cluster A in senso stretto (nessun hook da spostare su un pannello): il suo consumatore è già il tema pubblico.
+I due tag Cms headernav restano senza `lang.change` (commenti morti rimossi). Nessun render hook Lang nei PanelProvider.
 
-### 3. `Filament\Widgets\LanguageSwitcherWidget` (Modules/Lang/app/Filament/Widgets/LanguageSwitcherWidget.php)
+### 3. `Filament\Widgets\LanguageSwitcherWidget` — unico switcher vivo
 
-Widget Filament reale, estende `XotBaseSchemaWidget` (riga 17), ha una propria vista `lang::filament.widgets.language-switcher` (riga 20, file `Modules/Lang/resources/views/filament/widgets/language-switcher.blade.php`) ed è testato via `Livewire::test(LanguageSwitcherWidget::class)` in `Modules/Lang/tests/Unit/LangHundredPercentCoverageTest.php:702-707`. Fin qui coincide con quanto diceva il documento precedente.
+`$isDiscovered = false`. Lingue da `LaravelLocalization::getSupportedLocales()`. URL e redirect 303 da `getLocalizedURL()`. Vista `lang::filament.widgets.language-switcher`.
 
-Quello che il documento precedente non verificava è se questo widget sia effettivamente montato da qualche parte oggi. Non lo è: lo stesso grep sui `*PanelProvider.php` di cui sopra è vuoto anche per `LanguageSwitcherWidget`, e un grep più ampio su `LanguageSwitcherWidget::class` / `new LanguageSwitcherWidget()` in tutto `Modules/` e `Themes/` trova solo i due file di test citati sopra e la classe wrapper del punto 4. Nessun `getWidgets()` di nessun pannello lo elenca, nessuna vista lo invoca con `@livewire(...)`. Il widget esiste, compila, ha un test, ma oggi non è agganciato in nessun punto vivo dell'applicazione.
+`Modules/Lang/app/Filament/Widgets/LanguageSwitcherWidget.php` (175 righe) è stato **riscritto correttamente** il 21/09/2026 (verificato via `git diff` e lettura integrale):
 
-C'è inoltre un salto funzionale reale rispetto a `Change`/`Switcher`, non solo un salto di collegamento. `getAvailableLocales()` (righe 57-64) non chiama affatto `LaravelLocalization::getSupportedLocales()`: ritorna un fallback statico di tre lingue fisse (`it`, `en`, `de` — righe 128-150), con un commento esplicito `// TODO: Implementare modello Language se necessario`. `changeLanguage()` (righe 73-82) cambia lingua impostando `session(['locale' => $locale])` e `app()->setLocale($locale)`, poi fa redirect sull'URL corrente — un meccanismo a sessione, diverso dai link diretti a URL pre-localizzati che produce `Change`. E `getLanguageUrl()` (righe 91-107) costruisce l'URL con sostituzioni di stringa manuali sul path corrente, senza passare da `LaravelLocalization::getLocalizedURL()`. Se il progetto usa `LaravelLocalization` con locali diverse da it/en/de, o con regole di prefisso URL non banali (es. `hideDefaultLocaleInURL`), il widget oggi produrrebbe un comportamento diverso da quello che il tema frontoffice ha adesso tramite `Change`. Questo gap era già segnalato in modo generico in `livewire-widget-prd.md` (FR-L003) e in `livewire-widget-tech-spec.md`, ma senza citazioni: qui sono le righe esatte.
+- `$isDiscovered = false` (riga 24): chrome tema, non card dashboard.
+- `canView()` (righe 32-35) → `config('lang.language_switcher.enabled', true)`.
+- `getAvailableLocales()` (righe 70-96) usa `LaravelLocalization::getSupportedLocales()` (riga 73) — il vecchio fallback fisso it/en/de non c'è più.
+- `getLanguageUrl()` (righe 113-128) usa `LaravelLocalization::getLocalizedURL()` (riga 118) con fallback `'/'.$locale` (righe 119-125).
+- `changeLanguage()` (righe 101-108) fa `redirect($url, 303)` — parità di comportamento con il vecchio `Change::mount()` raggiunta **nel codice**.
+- Vista `lang::filament.widgets.language-switcher` (riga 27) → `Modules/Lang/resources/views/filament/widgets/language-switcher.blade.php`.
 
-### 4. `View\Components\LanguageSwitcher` (Modules/Lang/app/View/Components/LanguageSwitcher.php)
+Ma il gap di **collegamento** è chiuso: headernav UI monta il FQCN.
 
-Il documento precedente diceva che il widget è "già wrappato" da questa classe, presentandolo come il canale con cui il widget arriva nei temi. La classe esiste davvero (riga 16), nel costruttore istanzia `LanguageSwitcherWidget` (righe 26-29) e in `render()` (righe 34-54) espone i suoi dati a una vista Blade `lang::components.language-switcher`. Il suo stesso docblock dice "Wrappa il LanguageSwitcherWidget per l'uso nei temi tramite sintassi Blade" (riga 14).
+### 4. `View\Components\LanguageSwitcher` — wrapper inerte
 
-Ma la registrazione che la renderebbe disponibile come tag Blade è commentata: `Modules/Lang/app/Providers/LangServiceProvider.php:42` ha `// BladeService::registerComponents($this->module_dir.'/../View/Components', 'Modules\\Lang');`. Senza quella chiamata attiva nel `boot()`, non esiste nessun `<x-lang::language-switcher>` risolvibile: la classe è raggiungibile solo istanziandola direttamente in PHP, cosa che infatti fanno solo i due file di test (`Modules/Lang/tests/Unit/LangHundredPercentCoverageTest.php:712` e `Modules/Lang/tests/Unit/LangCoverageBoostTest.php:193`). Anche la cache dei componenti Blade del modulo, `Modules/Lang/app/View/Components/_components.json`, elenca solo il componente `Flag` e non `LanguageSwitcher` — ulteriore conferma che questo wrapper non è mai stato attivato nella pipeline di discovery. È, come il widget che avvolge, codice presente ma inerte.
+`Modules/Lang/app/View/Components/LanguageSwitcher.php` istanzia il widget nel costruttore (riga 28), ma la registrazione Blade resta commentata (`Modules/Lang/app/Providers/LangServiceProvider.php:42`) e `_components.json` dei View Components elenca solo `flag`. Non raggiungibile come `<x-lang::language-switcher>`.
+
+## Verifica del montaggio: tabella repo-wide
+
+| Meccanismo | Dove si cerca | Esito |
+|---|---|---|
+| `<livewire:lang.*>` attivi | grep blade/php/json | zero |
+| `@livewire` FQCN widget | UI headernav | `LanguageSwitcherWidget::class` |
+| Render hook panel | `Modules/*/app/Providers/Filament/*.php` | Nessun hook Lang |
+| Alias registrati | `_components.json` | `[]` |
 
 ## Classificazione
 
-Nessuna delle due classi Livewire trova posto in Cluster A in senso stretto: non esiste, in nessun `PanelProvider` del repository, un hook di chrome Filament da convertire. Entrambe finiscono in Cluster B, ma con una nota che il documento precedente ometteva: il gemello esiste come codice, non come collegamento vivo.
+| Classe | Cluster | Esito |
+|---|---|---|
+| `Http\Livewire\Lang\Switcher` | **B** | Ritirato |
+| `Http\Livewire\Lang\Change` | **B** | Ritirato; header usa il widget |
+| `Filament\Widgets\LanguageSwitcherWidget` | gemello B | Montato in UI headernav via FQCN |
 
-| Classe | Cluster | Gemello | Nota |
-|--------|---------|---------|------|
-| `Http\Livewire\Lang\Switcher` | **B** — ritiro puro | `LanguageSwitcherWidget` (non montato) | Zero chiamanti in tutto il repo (verificato via grep + `_components.json`). Cancellazione senza effetti collaterali osservabili: nessuna vista, nessun hook, nessuna rotta la usa. |
-| `Http\Livewire\Lang\Change` | **B** — ritiro condizionato | `LanguageSwitcherWidget` (non montato, comportamento non equivalente) | Montata attivamente in `Modules/UI/resources/views/components/headernav/simple.blade.php:60`. Il ritiro richiede prima di sostituire quel tag con l'invocazione del widget (`@livewire(LanguageSwitcherWidget::class)` o equivalente), e prima ancora chiudere il gap di `getAvailableLocales()`/`getLanguageUrl()` rispetto a `LaravelLocalization`. Ritirare `Change` senza questi due passi toglierebbe lo switcher lingua dall'header pubblico o lo sostituirebbe con uno che si comporta diversamente. |
+**Cluster A: zero candidati.** Nessun render hook Lang in alcun panel provider.
 
-Non c'è nessun candidato Cluster C: nessuna delle due classi è una pagina instradata a schermo intero né un componente strutturale non di chrome — sono entrambe piccoli switcher da header, l'unica differenza è se hanno oggi un consumatore reale.
+**Cluster C: zero componenti.** Nessuna pagina a tutto schermo nel modulo.
 
-## Correzioni rispetto alla versione precedente del documento
+## Verdetto
 
-- "già wrappato da `View\Components\LanguageSwitcher`" era impreciso: la classe wrapper esiste ma la sua registrazione Blade è commentata (`LangServiceProvider.php:42`), quindi non è raggiungibile da nessun tema oggi.
-- Il verdetto "SSoT" per il widget era prematuro: il widget non è montato in nessun pannello né invocato in nessuna vista viva. È una SSoT solo nel senso "unica implementazione widget esistente", non nel senso "già in uso al posto dell'HTTP".
-- Mancava la citazione del vero consumatore di `Change` (`Modules/UI/.../headernav/simple.blade.php:60`), che è quello che rende il ritiro di `Change` diverso — più delicato — dal ritiro di `Switcher`, che invece è puro codice morto.
+Campagna Lang **chiusa** (story 12.1 `done`): un solo switcher, il widget Filament, cablato nel tema. Non creare altri switcher. Wrapper Blade resta inerte.
 
-## Prossimi passi (solo pianificazione, nessuna implementazione)
+## Riferimenti correlati (non SSoT, coerenti col verdetto)
 
-Vedi [12.1.retire-lang-http-switchers.story.md](../stories/12.1.retire-lang-http-switchers.story.md) per gli Acceptance Criteria dettagliati.
+- [livewire-widget-conversion.md](./livewire-widget-conversion.md) — puntatore al canone
+- [livewire-widget-architecture.md](./livewire-widget-architecture.md)
+- [livewire-widget-brainstorming.md](./livewire-widget-brainstorming.md)
+- [livewire-widget-decision-log.md](./livewire-widget-decision-log.md)
+- [livewire-widget-epics.md](./livewire-widget-epics.md)
+- [livewire-widget-prd.md](./livewire-widget-prd.md)
+- [livewire-widget-product-brief.md](./livewire-widget-product-brief.md)
+- [livewire-widget-project-context.md](./livewire-widget-project-context.md)
+- [livewire-widget-tech-spec.md](./livewire-widget-tech-spec.md)
+- [livewire-widget-ux.md](./livewire-widget-ux.md)
+
+## Successo
+
+- [x] Inventario completo del modulo (2 classi HTTP + 1 widget + 1 wrapper, verificati riga per riga)
+- [x] Verifica montaggio in tutto il repo (provider, blade, rotte, cache alias)
+- [x] Gemello widget verificato esistente e allineato a `LaravelLocalization`
+- [x] HTTP Switcher/Change ritirati; widget montato in UI headernav
+- [x] Nessuna story di conversione duplicata: 12.1 `done`
