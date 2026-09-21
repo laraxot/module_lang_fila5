@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Support\Collection;
 use Livewire\Livewire;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -38,7 +37,7 @@ test('LanguageSwitcherWidget getAvailableLocales riflette LaravelLocalization no
     ]);
 
     try {
-        $widget = new LanguageSwitcherWidget();
+        $widget = new LanguageSwitcherWidget;
         $locales = $widget->getAvailableLocales();
         Assert::assertInstanceOf(Collection::class, $locales);
         $codes = $locales->pluck('code')->all();
@@ -58,8 +57,9 @@ test('LanguageSwitcherWidget getAvailableLocales riflette LaravelLocalization no
 });
 
 test('LanguageSwitcher HTTP Switcher and Change non esistono più', function (): void {
-    Assert::assertFalse(class_exists('Modules\\Lang\\Http\\Livewire\\Lang\\Switcher', false));
-    Assert::assertFalse(class_exists('Modules\\Lang\\Http\\Livewire\\Lang\\Change', false));
+    $httpLangDir = dirname(__DIR__, 3).'/app/Http/Livewire/Lang';
+    Assert::assertFileDoesNotExist($httpLangDir.'/Switcher.php');
+    Assert::assertFileDoesNotExist($httpLangDir.'/Change.php');
 });
 
 test('LanguageSwitcherWidget changeLanguage redirect 303 su URL localizzato', function (): void {
@@ -73,6 +73,6 @@ test('LanguageSwitcherWidget getLanguageUrl usa LaravelLocalization con fallback
         ->once()
         ->andReturn(false);
 
-    $widget = new LanguageSwitcherWidget();
+    $widget = new LanguageSwitcherWidget;
     Assert::assertSame('/fr', $widget->getLanguageUrl('fr'));
 });

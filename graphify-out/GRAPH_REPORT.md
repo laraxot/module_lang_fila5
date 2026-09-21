@@ -1,50 +1,34 @@
-<<<<<<< HEAD
-# Graph Report - Lang  (2026-08-20)
+# Graph Report - Lang  (2026-09-21)
 
 ## Corpus Check
-- 788 files · ~709,676 words
+- 1076 files · ~907,940 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 11086 nodes · 11082 edges · 925 communities (861 shown, 64 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 13 edges (avg confidence: 0.8)
+- 16687 nodes · 16606 edges · 1286 communities (1166 shown, 120 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `45e35b32`
-=======
-# Graph Report - /var/www/_bases/<nome repository>/laravel/Modules/Lang  (2026-08-04)
-
-## Corpus Check
-- cluster-only mode — file stats not available
-
-## Summary
-- 614 nodes · 817 edges · 111 communities (103 shown, 8 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.8)
-- Token cost: 0 input · 0 output
-
-## Graph Freshness
-- Built from commit: `4f8454aa`
->>>>>>> laraxot/dev
+- Built from commit: `1cfd45f1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-<<<<<<< HEAD
 - Recent Updates
 - Recent Updates
-- Post
+- Modules\Xot\Contracts\UserContract
 - LangHundredPercentCoverageTest.php
 - Best Practices per le Migrazioni - Modulo Lang
 - Testing Documentation
-- Aggiornamento File di Traduzione - Gennaio 2025
+- Illuminate\Database\Eloquent\Factories\Factory
 - 📚 **Best Practices Modulo Lang - Laraxot**
 - `H_cross_module_homonym`
-- File Corretti
+- EditTranslationFile
 - 📚 **Indice Documentazione Modulo Lang - Laraxot**
 - Gestione delle Lingue in Laravel
 - LangServiceProvider: Analisi e Proposte di Miglioramento
-- Riepilogo Correzioni Traduzioni - Gennaio 2025
+- Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06
 - AutoLabel Flow - Analisi Completa del Flusso
 - Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>
 - Dettaglio Metodi Duplicati
@@ -57,12 +41,12 @@
 - Guida all'Implementazione di mcamara/laravel-localization
 - Guida all'Implementazione di mcamara/laravel-localization
 - Plurale/Singolare e Localizzazione Date/Valute
-- Traduzioni con ".navigation" - Audit Completo 2025
+- TranslationEditor
 - Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>
-- 🌍 Lang - Il SISTEMA di TRADUZIONI più POTENTE! 🗣️
+- ReadTranslationFileAction
 - Guida Completa alla Validazione delle Traduzioni - <nome progetto>
 - LanguageSwitcherWidget
-- Moduli Corretti
+- Audit Traduzioni Completato - 2025
 - Regole Fondamentali per le Traduzioni
 - Correzione Errori di Sintassi nei File di Traduzione
 - Correzione Errori di Sintassi nei File di Traduzione
@@ -90,7 +74,7 @@
 - Implementazione della Localizzazione
 - Ottimizzazioni Modulo Lang
 - Traduzione di Testi Statici in Laravel
-- LangCoverageBoostTest.php
+- LocaleSwitcherRefresh.php
 - Traduzioni Automatiche con LangServiceProvider
 - Audit Traduzioni Inglesi - <main module>
 - Metodi Duplicati — Analisi Lang
@@ -118,20 +102,20 @@
 - FURIOUS LITIGATION: Why "fields" Key is SACRED and IMMUTABLE
 - 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 - 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
-- BaseMorphPivot.php
+- integrations/_da-riconciliare/index.md
 - Architettura Modulo Lang
 - Editor File di Traduzione
-- Lang Module Docs Consolidation Plan
+- SyncTranslationsAction
 - 💡 **Esempi Pratici Modulo Lang - Laraxot**
 - Integrazione tra mcamara/laravel-localization e Laravel Folio
 - Integrazione di mcamara/laravel-localization con Livewire Volt
-- Guida all'Implementazione di mcamara/laravel-localization
+- Lang - Sprint Planning Meeting
 - Regola Critica: fields.php è OBBLIGATORIO
 - Enum Translation Pattern - Implementazione Regola Critica
 - Enum Translation Pattern - Implementazione Regola Critica
 - Gestione di Forme Plurali e Localizzazione di Date/Valute in Laravel
 - prd.json
-- Processo di Traduzione: Da Sviluppatore a Traduttore
+- File Corretti
 - LangFinalGapsTest.php
 - Risoluzione Conflitto EditTranslationFile.php (Classe)
 - filament-translations.md
@@ -160,11 +144,11 @@
 - File Corretti
 - File Corretti
 - LaravelLocalization - Best Practices
-- Gestione delle Lingue in Laravel
+- Traduzione di Forme Plurali e Singolari
 - File Corretti
 - File Corretti
 - Refactor Completo File di Traduzione - Riepilogo Finale
-- docs/README.md
+- Documentation
 - Errori di sintassi critici identificati
 - LangServiceProvider: Analisi e Proposte di Miglioramento
 - Aggiornamento File di Traduzione Lang Service - 2025-01-06
@@ -181,7 +165,7 @@
 - Riepilogo Correzioni Traduzioni - Gennaio 2025
 - Riepilogo Correzioni Traduzioni - Gennaio 2025
 - Gestione delle Traduzioni dei Messaggi di Validazione
-- TranslationFile
+- Illuminate\Database\Seeder
 - Utilizzo di mcamara/laravel-localization
 - Integrazione di mcamara/laravel-localization con Livewire
 - Analisi Modelli, Factory e Seeder - Modulo Lang
@@ -193,7 +177,7 @@
 - Regole Critiche per la Preservazione delle Traduzioni
 - Regole Critiche per la Preservazione delle Traduzioni
 - Translation Module PDF Reports
-- Lang/CHANGELOG.md
+- CHANGELOG.md
 - Advanced Language Switching Strategies
 - Correzioni Pattern ".navigation" - Gennaio 2025
 - Correzioni Pattern ".navigation" - Gennaio 2025
@@ -201,7 +185,7 @@
 - Enum Translation Pattern - Regola Critica
 - Language Module - Filament Widgets Integration
 - Laravel Localization Reference
-- Lang {{TYPE^}} LLM Wiki Agent Instructions
+- Collegamenti agli Standard di Traduzione
 - Lang {{TYPE^}} LLM Wiki Agent Instructions
 - Migration Patterns for Lang Module
 - Correzioni Pattern ".navigation" - Gennaio 2025
@@ -209,19 +193,19 @@
 - Regole Fondamentali per le Traduzioni
 - Correzione Errori di Sintassi nei File di Traduzione
 - Translation Module PDF Reports
-- Lang {{TYPE^}} LLM Wiki Agent Instructions
+- Laravel Localization
 - Gestione delle Lingue (Locales) in Laravel
-- LangCoverageGapsTest.php
+- Cerca in docs/wiki/ + tutti i moduli
 - Integration of Mcamara Laravel Localization with Laravel Folio
 - Integrazione avanzata: mcamara/laravel-localization + Laravel Folio
 - Correzioni Migrazione - Modulo Lang
 - Audit Traduzioni con ".navigation" - <nome progetto>
 - Performance
-- Lang - Sprint Planning Meeting
+- Lang Module - Product Roadmap
 - Regole Fondamentali dei Test
 - Recent Updates
 - Sistema di Traduzioni
-- contributor-lines-report.mjs
+- Task: Lang PHPStan Level 10
 - Composer Merge Plugin nel Modulo Lang
 - Risoluzione Conflitto AutoLabelAction
 - Correzione Convenzione Naming Cartelle Docs - Gennaio 2025
@@ -230,7 +214,7 @@
 - Aggiornamento File di Traduzione Lang Service - 2025-01-06
 - Correzioni Traduzioni Navigation - Modulo Lang
 - Traduzioni
-- Product Requirements Document (PRD) - Lang Module
+- Benefici Ottenuti
 - Regole Fondamentali dei Test
 - Implementazione di Spatie Laravel Translatable nel Progetto
 - Gestione Errori di Sintassi nei File di Traduzione PHP
@@ -252,7 +236,7 @@
 - Gestione Traduzioni Contenuti JSON
 - LanguageSwitcherWidget
 - NationalFlagSelect
-- Illuminate\Database\Eloquent\Factories\Factory
+- Post
 - lang-link.md
 - Traduzioni Automatiche con LangServiceProvider
 - Risoluzione Conflitto LangServiceProvider
@@ -281,10 +265,10 @@
 - Risoluzione Conflitto translation-file-syntax.md
 - Classi LangBase per Modelli Traducibili
 - Registrazione Traduzioni Temi - Standard Laraxot
-- ON-DEMAND-PATTERN.md
+- docs/ON-DEMAND-PATTERN.md
 - Localizzazione
 - Lang Module - Product Roadmap
-- Technical Specification - Lang Module
+- Merge conflict markers — file list
 - Business Logic Test Coverage
 - Business Logic Test Coverage
 - Gestione delle Traduzioni Mancanti con Spatie Laravel Translatable
@@ -308,16 +292,16 @@
 - Gestione Permessi e Proprietà per File di Lingua (`lang/it/`)
 - Gestione Permessi e Errori Filesystem su File di Lingua (Lang)
 - Miglioramenti Qualità Codice - Modulo Lang - [DATE]
-- roadmap/00-index.md
+- roadmap/00-INDEX.md
 - Gestione delle Traduzioni Mancanti con Spatie Laravel Translatable
 - Traduzione di Forme Plurali e Singolari
 - Traduzione dei Messaggi di Validazione
 - Best Practices per le Chiavi di Traduzione
 - FAQ e Problemi Comuni sulle Traduzioni
 - FAQ e Problemi Comuni sulle Traduzioni
-- FAQ e Problemi Comuni sulle Traduzioni
+- Collegamento alle Traduzioni del Modulo Chart
 - Lang — `TranslatorService` → `TranslatorAction`
-- wiki/index.md
+- wiki/INDEX.md
 - Lang Module — Overview
 - WriteTranslationFileAction
 - 1. Errori YAML negli SKILL.md
@@ -326,14 +310,14 @@
 - docs/roadmap.md
 - ⚠️ Regola fondamentale: MAI usare chiavi che terminano con `.navigation` nei file di traduzione
 - Files by Module/Theme:
-- PERFORMANCE-OPTIMIZATION.md
+- 1. Executive Summary
 - Lang Module - Product Launch Plan
 - Guida Rapida alle Traduzioni
-- Guida Rapida alle Traduzioni
+- 1. Executive Summary
 - Rinvex Countries Usage in Lang Module
 - Rinvex Countries Usage in Lang Module
 - Rinvex Countries Usage in Lang Module
-- Audit Traduzioni Completato - 2025
+- 2. Goals & Objectives
 - Correzione Errori Traduzioni - 2025
 - Best Practices per le Chiavi di Traduzione
 - Best Practices per le Chiavi di Traduzione
@@ -353,39 +337,38 @@
 - MCP Server Configuration - Lang Module
 - Lang Module - Comprehensive Analysis
 - Lang Module - Comprehensive Analysis
-- Guida Rapida alle Traduzioni
-- Guida Rapida alle Traduzioni
+- 5. Non-Functional Requirements
 - Testing ServiceProvider Fix - Lang Module
 - Testing ServiceProvider Fix - Lang Module
-- Moduli Affetti e Correzioni Effettuate
+- 5. Non-Functional Requirements
 - Moduli Affetti e Correzioni Effettuate
 - Regole per le Chiavi di Traduzione
 - Regole per le Chiavi di Traduzione
 - Collegamenti al Modulo User
 - 📚 **API Reference Modulo Lang - Laraxot**
-- Lang Module — Architecture
+- 7. Technical Considerations
 - Regole Fondamentali per i Link Markdown
 - Audit Traduzioni Inglesi - <nome progetto>
 - Audit Traduzioni Inglesi - <nome progetto>
 - Audit Traduzioni Inglesi - <nome progetto>
 - Errori di sintassi critici identificati
 - IDE Helper + Sushi: Pattern di Caricamento Lazy
-- philosophy.md
+- Lang Module: Philosophy, Purpose, and Design Principles
 - Laravel Localization (mcamara) — Consolidated Reference
 - Lang Module Wiki Index
 - Approach 1: Manual Model Translations (Without Packages)
 - PHPStan Compliance Documentation
-- Lang - Product Launch Plan
-- Cerca in docs/wiki/ + tutti i moduli
-- Correzione Errori Traduzioni - 2025
+- Lang Module - Product Launch Plan
+- QMD-SETUP.md
+- 7. Technical Considerations
 - Regole per le Chiavi di Traduzione
 - Strategie di Gestione delle Traduzioni in Laravel
-- Strategie di Gestione delle Traduzioni in Laravel
+- Strumenti Consigliati
 - Gestione delle Traduzioni dei Messaggi di Validazione
-- Lang Module
+- 📊 **Monitoraggio e Metriche**
 - composer.json
 - Advanced Language Switching Strategies
-- Path canonico migrazioni Lang
+- **3. Errori di Validazione**
 - Code quality — modulo Lang
 - Cyclomatic Complexity Report - Module: Lang
 - Cyclomatic Complexity Report - Module: Lang
@@ -399,12 +382,12 @@
 - Traduzioni nel Progetto
 - Spatie Laravel Translatable
 - Moduli Corretti
-- Moduli Corretti
-- Processo di Traduzione: Da Sviluppatore a Traduttore
+- ottimizzazioni-consolidated.md
+- 🚨 Problemi Critici Identificati
 - Traduzione dei Messaggi di Validazione
 - Gestione delle Lingue (Locales) in Laravel
 - Contributing
-- SyncTranslationsAction
+- Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>
 - keywords
 - docs/00-index.md
 - Errori comuni nei file di traduzione
@@ -414,17 +397,17 @@
 - Regole che derivano dal pacchetto
 - Analisi di Ottimizzazione - Modulo Lang
 - Analisi di Ottimizzazione - Modulo Lang
-- PRD: Lang Module
-- Lang - Product Strategy
+- 🏗️ Ottimizzazioni Strutturali
+- Lang Module - Product Strategy
 - 🏗️ Key Features
 - Regola Critica: Sezione "fields" Obbligatoria nelle Traduzioni
 - Standardizzazione Traduzioni Modulo Notify
 - Processo di Traduzione: Da Sviluppatore a Traduttore
-- Strategie di Gestione delle Traduzioni in Laravel
+- Documentation Index
 - Strategie di Gestione delle Traduzioni in Laravel
 - Traduzioni nel Progetto
 - Traduzione dei Messaggi di Validazione
-- 📚 **Indice Documentazione Modulo Lang**
+- Errori Corretti
 - **Metodi Principali**
 - **Funzioni Globali**
 - Risoluzione Conflitto in .php-cs-fixer.php
@@ -435,7 +418,7 @@
 - Localizzazione di Date e Valute
 - Analisi Modelli, Factory e Seeder - Modulo Lang
 - Analisi Modelli, Factory e Seeder - Modulo Lang
-- Ottimizzazioni Applicate
+- Metriche di Performance
 - Struttura corretta per i file di traduzione nel modulo Lang
 - Struttura corretta per i file di traduzione nel modulo Lang
 - Translation Completeness Audit
@@ -446,7 +429,7 @@
 - Procedura
 - {{title}}
 - Filament\Panel
-- 📚 **Indice Documentazione Modulo Lang**
+- 4. Functional Requirements
 - Modulo Lang
 - Case Sensitivity Rules - Lang Module
 - Collegamento al Modulo Cms
@@ -475,7 +458,7 @@
 - Regole Specifiche per Campi Geografici
 - Traduzione di Forme Plurali e Singolari
 - Traduzione dei Messaggi di Validazione
-- Translation Completeness Audit
+- Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>
 - Gestione File di Traduzione
 - Regole Fondamentali per le Traduzioni
 - Regole Fondamentali per le Traduzioni
@@ -488,12 +471,12 @@
 - Collegamenti agli Standard di Traduzione
 - Collegamenti alla Documentazione sugli Standard di Traduzione
 - Sistema di Traduzione in il progetto
-- TranslationFileForm.php
-- 🚀 Bienvenido a Laraxot PTVX
+- Plurale/Singolare e Localizzazione Date/Valute
+- Note Tecniche
 - 🔧 **Troubleshooting Modulo Lang - Laraxot**
 - Visual Testing con Playwright e Puppeteer — Modulo Lang
 - Lang Wiki Overview
-- Lang Module — Wiki Schema
+- Note Tecniche
 - {{title}}
 - {{title}}
 - Laravel Localization Metadata for Windsurf
@@ -502,9 +485,9 @@
 - **Metodi Principali**
 - **CacheStatus**
 - **Metodi Principali**
-- Autoregistrazione dei Comandi da Console
-- Case Sensitivity Rules - Lang Module
-- 1. Executive Summary
+- Prevenzione Errori Futuri
+- Path canonico migrazioni Lang
+- Guida Completa alla Validazione delle Traduzioni - <nome progetto>
 - 🐄 DRY & KISS Analysis - Lang
 - Gestione automatica delle label in Filament tramite LangServiceProvider
 - PHPSTAN-FIXES.md
@@ -518,14 +501,14 @@
 - Gestione di Forme Plurali e Localizzazione di Date/Valute in Laravel
 - 🌐 Lang — English presentation
 - 🏗️ Fasi di Sviluppo
-- Roadmap for Completion
+- Guida Completa alla Validazione delle Traduzioni - <nome progetto>
 - Gestione File di Traduzione
 - Translation File Merge Function
 - Gestione Errori di Sintassi nei File di Traduzione PHP
 - Collegamenti alla Documentazione sugli Standard di Traduzione
+- Moduli Corretti
 - 🚀 Benvenuto in Laraxot PTVX
-- 🚀 Benvenuto in Laraxot PTVX
-- Fasi di sviluppo - Lang Module
+- Moduli Corretti
 - Collegamenti al Modulo User
 - Politica, Filosofia, Religione, Etica, Zen – Modulo Lang
 - BMAD Method v6.3 operativo nel progetto
@@ -535,8 +518,8 @@
 - require
 - Risultati Analisi Modulo Lang
 - **Metodi Principali**
-- Chaos Monkey Translation Fallbacks (Lang)
-- Conflict Resolution — Module Lang
+- Riepilogo Statistiche
+- docs/README.md
 - Analisi Conflitti - README.md
 - Docs Health - Lang
 - Regole di Traduzione
@@ -560,7 +543,7 @@
 - Gestione delle Forme Plurali
 - Gestione delle Forme Plurali
 - Ponytail audit — Lang (over-engineering)
-- 3. Target Users
+- Pattern di Correzione Implementato
 - Regola prompt condivisi
 - Regola prompt condivisi
 - Queueable Actions — Lang Module Doctrine
@@ -572,15 +555,15 @@
 - Product Roadmap - Lang Module
 - Workstreams - Lang
 - Product Strategy: Lang Module
-- Task: Folio & Volt Localization
+- Gestione File di Traduzione
 - Task: Lang Docs Cleanup
-- Task: Lang Filament v5 Alignment (Clusters)
-- Task: Lang PHPStan Level 10
+- Moduli Corretti
+- laravel-consolidated.md
 - Template Traduzione
-- Benefici Ottenuti
-- Benefici Ottenuti
+- Pattern di Correzione Implementato
+- Moduli Affetti e Correzioni Effettuate
 - Editor File di Traduzione
-- Actions
+- Moduli Affetti e Correzioni Effettuate
 - no `app/Support/` — business logic in QueueableAction
 - Lang - Wiki Activity Log
 - 🌐 Lang
@@ -598,16 +581,16 @@
 - Implementation Details
 - Widget di Autenticazione (pub_theme::)
 - Helper Text Audit Report
-- Best Practices
-- Best Practices
-- Pacchetti Raccomandati
+- LangBase Classes - Requisiti e Pattern
+- Correzione Errori Traduzioni - 2025
+- Correzione Errori Traduzioni - 2025
 - Merge conflict markers — file list
 - Model/Factory/Seeder Audit
 - Model/Factory/Seeder Audit
 - Collegamenti ai Moduli che utilizzano le Traduzioni
 - No PHPStan probe files in Lang
 - obbligatorio-audit-script.php
-- Pipeline di Verifica
+- Note Tecniche
 - Implementazione nel Progetto
 - Risoluzione Problemi
 - Implementazione nel Progetto
@@ -616,7 +599,7 @@
 - Implementazione nel Progetto
 - Risoluzione Problemi
 - Risoluzione Problemi
-- 2. Goals & Objectives
+- Correzione Errori Traduzioni - 2025
 - Release e README marketing — Lang
 - Roadmap overview (Module Lang)
 - Now (Module Lang)
@@ -627,45 +610,43 @@
 - Now (Module Lang)
 - Roadmap overview (Module Lang)
 - CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH
-- Sprint Planning: Lang Stabilization
+- Lang Module - Sprint Planning
 - Task: Aumentare Copertura Test - Lang
-- Task: Complete Translation Management Interface
+- Enum Translation Pattern - Implementazione Regola Critica
 - Convenzioni per l'Accesso alle Traduzioni
 - Best Practices
-- Pattern di Correzione Standardizzati
+- Note Tecniche
 - Pattern di Correzione Standardizzati
 - Funzionalità
 - Funzionalità
 - Implementazione nel Progetto
+- Note Tecniche
+- Gestione Plurale/Singolare nelle Traduzioni
+- Automazione
+- Automazione
 - Implementazione nel Progetto
+- Struttura dei File di Traduzione
 - Gestione Plurale/Singolare nelle Traduzioni
-- Gestione Plurale/Singolare nelle Traduzioni
-- Implementazione nel Progetto
-- Implementazione nel Progetto
-- Gestione Plurale/Singolare nelle Traduzioni
-- Gestione Plurale/Singolare nelle Traduzioni
-- **2. Performance Lente**
+- File PHP vs JSON
 - Aggiornamenti {#aggiornamenti}
-- User Research: Lang Module
+- Lang Module - User Research
 - Lang Module - commands Index
 - claude-audit static (Lang)
 - Lang e composer root minimale
 - Lang Module - concepts Index
 - Pest PHP
-- Lang Module Wiki
+- lang — product
 - Lang Module - memories Index
 - Translation factory — auto-increment id
 - Dashboard
 - Problemi Identificati
 - Risoluzione Conflitti - Lang
-- Next Steps
-- Analisi di Sistema
-- Analisi Statica del Codice (PHPStan)
-- Metriche di Successo
-- Contribuire
-- Task & Progress
+- 00-index.divergenza.md
+- agent-edit-discipline.divergenza.md
+- coverage.divergenza.md
+- file-naming.divergenza.md
 - Miglioramenti Pianificati
-- Funzionalità Future
+- filosofia-modulo-lang.divergenza.md
 - Metodi duplicati — Lang
 - Comandi Utili
 - Processo di Traduzione
@@ -678,21 +659,25 @@
 - Errori da Evitare
 - Vantaggi di Questa Architettura
 - helper-text-audit-script.php
-- 4. Functional Requirements
+- Enum Translation Pattern - Implementazione Regola Critica
 - italian-text-audit-script.php
 - italian-text-validation-refined.php
 - Modifiche Apportate
 - Modifiche Apportate
 - Struttura Finale Implementata
-- 🚨 **Emergenze e Rollback**
+- git-multi-org-sync-handoff.divergenza.md
 - Note Implementative
 - 🔧 **Correzioni Implementate**
-- Collegamenti ai Moduli Correlati
+- Moduli Affetti e Correzioni Effettuate
+- Gestione File di Traduzione
+- Moduli Affetti e Correzioni Effettuate
 - Localizzazione di Date e Orari
 - Localizzazione di Date e Orari
 - Localizzazione di Date e Orari
 - Localizzazione di Date e Orari
-- 5. Non-Functional Requirements
+- Struttura Espansa per File di Traduzione - Progetto <nome progetto>
+- Product Requirements Document (PRD) - Lang Module
+- Product Requirements Document (PRD) - Lang Module
 - Current State - Lang
 - Next (Module Lang)
 - Risks and dependencies (Module Lang)
@@ -729,10 +714,13 @@
 - Esempi Corretti vs. Errati
 - Best Practice
 - Strumenti Consigliati
-- Best Practice
-- Strumenti Consigliati
+- merge-conflict-files-list.divergenza.md
+- Strategie di Gestione delle Traduzioni in Laravel
+- Risultati Analisi Modulo Lang - 2025-01-06
 - 🛠️ **Strumenti di Debug**
 - 🔗 **Risorse e Supporto**
+- Aggiornamento File di Traduzione Lang Service - 2025-01-06
+- Aggiornamento File di Traduzione Lang Service - 2025-01-06
 - 📋 **Checklist Troubleshooting**
 - 📝 **Template Segnalazione Bug**
 - Risoluzione Problemi
@@ -751,16 +739,17 @@
 - Disciplina edit e qualità (puntatore)
 - Changelog
 - Mai `Filament\*` — sempre `Modules\Xot\Filament\...\XotBase*`
-- Code Coverage: Lang
+- merge-conflicts-list.divergenza.md
+- Quality Analysis Report - Lang Module
 - Sintassi Array
 - Problemi Identificati
-- Implementazione Standard
+- Refactor Completo File di Traduzione - Riepilogo Finale
 - _integration/google-translate.md
 - 📚 **Risorse per il Futuro**
 - ✅ **Regola Corretta**
 - Lang Activity Log
 - Collegamenti ai Moduli che utilizzano le Traduzioni
-- Metriche di Performance
+- Strategie di Gestione delle Traduzioni in Laravel
 - Changelog
 - Later (Module Lang)
 - Later (Module Lang)
@@ -768,12 +757,12 @@
 - Changelog
 - Changelog
 - Task: Consolidare Documentazione - Lang
-- Documentazione Aggiornata
-- Prevenzione Errori Futuri
-- Riepilogo Statistiche
-- Pattern di Correzione Implementato
-- Prevenzione Errori Futuri
-- Pattern di Correzione Implementato
+- Strategie di Gestione delle Traduzioni in Laravel
+- Lang Module — Mappa Graphify
+- Aggiornamento File di Traduzione Lang Service - 2025-01-06
+- Aggiornamento File di Traduzione Lang Service - 2025-01-06
+- Gestione File di Traduzione
+- Strategie di Gestione delle Traduzioni in Laravel
 - Struttura delle Chiavi di Traduzione
 - Struttura delle Chiavi di Traduzione
 - Struttura delle Chiavi di Traduzione
@@ -781,32 +770,28 @@
 - Regola Fondamentale: Mai Usare Chiavi in Italiano
 - Regola Fondamentale: Mai Usare Chiavi in Italiano
 - Integrazione con il Flusso di Lavoro
-- Risoluzione dei Problemi
-- Struttura dei File di Traduzione
-- Integrazione con il Flusso di Lavoro
-- Automazione
-- Risoluzione dei Problemi
+- Strategie di Gestione delle Traduzioni in Laravel
+- Refactor Completo File di Traduzione - Riepilogo Finale
+- Refactor Completo File di Traduzione - Riepilogo Finale
+- metodi-duplicati-analisi.divergenza.md
+- Refactor Completo File di Traduzione - Riepilogo Finale
 - Migrazione tra Formati
-- Migrazione tra Formati
+- metodiuplicati-analisi.DIVERGENZA.md
 - Helper di Traduzione
-- Helper di Traduzione
+- module-analysis.divergenza.md
 - File PHP vs JSON
-- File PHP vs JSON
+- quality-analysis.divergenza.md
+- Refactor Completo File di Traduzione - Riepilogo Finale
 - Strumenti Utili
-- Strumenti Utili
+- quality-improvements.divergenza.md
 - Migrazione tra Formati
-- Migrazione tra Formati
+- readme-en.DIVERGENZA.md
 - Helper di Traduzione
-- Helper di Traduzione
-- File PHP vs JSON
-- File PHP vs JSON
+- release-marketing-standard.divergenza.md
+- 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
+- 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 - webpack.mix.js
-- composer_init.sh
-- bashscripts/docs/confidence_guidelines.md
-- bashscripts/docs/filament-version.md
-- source/docs/confidence_guidelines.md
-- source/docs/filament-version.md
-- update.sh
+- Quality Analysis Report - Lang Module
 - agent-confidence-discipline.md
 - agent-confidence-protocol.md
 - binary-assets.md
@@ -841,66 +826,363 @@
 - context-overflow-prevention.md
 - organizzativa-money.md
 - xotbase-table-columns-enforcement.md
-- SECURITY.md
-=======
-- Spatie\QueueableAction\QueueableAction
-- Modules\Xot\Contracts\UserContract
-- Post
-- LangServiceProvider.php
-- LanguageSwitcherWidget
-- devDependencies
-- TestCase.php
-- .languages
-- EditTranslationFile
-- Illuminate\Database\Seeder
-- TranslationFileResource.php
-- contributor-lines-report.mjs
-- LangServiceProvider
-- composer.json
-- keywords
-- ReadTranslationFileAction
-- SyncTranslationsAction
-- Filament\Panel
-- scripts
-- laravel
-- require
-- LangBaseViewRecord
-- config
-- psr-4
-- Dashboard
-- RouteServiceProvider
-- EventServiceProvider
-- autoload-dev
-- consolidate.sh
->>>>>>> laraxot/dev
 - components/language-switcher.blade.php
 - widgets/language-switcher.blade.php
 - vite.config.js
+- Refactor Completo File di Traduzione - Riepilogo Finale
+- translation-consolidated.md
+- Strategie di Gestione delle Traduzioni in Laravel
+- Editor File di Traduzione
+- Editor File di Traduzione
+- Lang Module Docs Consolidation Plan
+- Lang Module Docs Consolidation Plan
+- Lang Module Docs Consolidation Plan
+- Editor File di Traduzione
+- Processo di Traduzione: Da Sviluppatore a Traduttore
+- Processo di Traduzione: Da Sviluppatore a Traduttore
+- laravel-localization complete guide
+- Regole Fondamentali per i Link Markdown
+- lang-consolidated.md
+- Aggiornamento File di Traduzione - Gennaio 2025
+- Aggiornamento File di Traduzione - Gennaio 2025
+- Aggiornamento File di Traduzione - Gennaio 2025
+- Aggiornamento File di Traduzione - Gennaio 2025
+- Aggiornamento File di Traduzione - Gennaio 2025
+- Best Practices per le Chiavi di Traduzione
+- Best Practices per le Chiavi di Traduzione
+- Gestione delle Lingue in Laravel
+- Gestione delle Lingue in Laravel
+- Aggiornamento File di Traduzione - Gennaio 2025
+- LaravelLocalization - Best Practices
+- Ottimizzazioni Super DRY + KISS - Modulo Lang
+- Aggiornamento File di Traduzione - Gennaio 2025
+- Best Practices per le Chiavi di Traduzione
+- Best Practices per le Chiavi di Traduzione
+- File Corretti
+- _da-riconciliare/PERFORMANCE-OPTIMIZATION.md
+- Gestione delle Traduzioni dei Messaggi di Validazione
+- Correzioni Errori Sintassi File Traduzione - Gennaio 2025
+- LangServiceProvider: Analisi e Proposte di Miglioramento
+- LangServiceProvider: Analisi e Proposte di Miglioramento
+- Ottimizzazioni Super DRY + KISS - Modulo Lang
+- Riepilogo Correzioni Traduzioni - Gennaio 2025
+- Riepilogo Correzioni Traduzioni - Gennaio 2025
+- Riepilogo Correzioni Traduzioni - Gennaio 2025
+- Riepilogo Correzioni Traduzioni - Gennaio 2025
+- Riepilogo Correzioni Traduzioni - Gennaio 2025
+- Riepilogo Correzioni Traduzioni - Gennaio 2025
+- Lang {{TYPE^}} LLM Wiki Agent Instructions
+- Analisi Modelli, Factory e Seeder - Modulo Lang
+- Plurale/Singolare e Localizzazione Date/Valute
+- Riepilogo Correzioni Traduzioni - Gennaio 2025
+- Rinvex Countries Usage in Lang Module
+- Traduzioni con ".navigation" - Audit Completo 2025
+- LangServiceProvider: Analisi e Proposte di Miglioramento
+- Utilizzo di mcamara/laravel-localization
+- Translation Module PDF Reports
+- Standard per helper_text nelle Traduzioni <nome progetto>
+- Regole per le Chiavi di Traduzione
+- Regole per le Chiavi di Traduzione
+- Regole Critiche per la Preservazione delle Traduzioni
+- Regole Critiche per la Preservazione delle Traduzioni
+- Lang {{TYPE^}} LLM Wiki Agent Instructions
+- Lang {{TYPE^}} LLM Wiki Agent Instructions
+- Correzione Errori Traduzioni - 2025
+- Lang {{TYPE^}} LLM Wiki Agent Instructions
+- PHPStan Compliance Documentation
+- Utilizzo di mcamara/laravel-localization
+- Utilizzo di mcamara/laravel-localization
+- Laravel Localization Reference
+- Regole per le Chiavi di Traduzione
+- Regole per le Chiavi di Traduzione
+- Correzione Errori di Sintassi nei File di Traduzione
+- Correzione Errori di Sintassi nei File di Traduzione
+- Correzione Errori di Sintassi nei File di Traduzione
+- I confini, e dove oggi sono rotti
+- Integrazione avanzata: mcamara/laravel-localization + Laravel Folio
+- Integrazione avanzata: mcamara/laravel-localization + Laravel Folio
+- Integration of Mcamara Laravel Localization with Laravel Folio
+- Integration of Mcamara Laravel Localization with Laravel Folio
+- Integration of Mcamara Laravel Localization with Laravel Folio
+- Ottimizzazioni Approfondite Modulo Lang - DRY + KISS
+- Regole Fondamentali per le Traduzioni
+- Regole Fondamentali per le Traduzioni
+- Regole Fondamentali per le Traduzioni
+- Correzione Errori di Sintassi nei File di Traduzione
+- Correzione Errori di Sintassi nei File di Traduzione
+- Recent Updates
+- Sistema di Traduzioni
+- conflict-consolidated.md
+- Risoluzione Conflitto AutoLabelAction
+- Risoluzione Conflitto AutoLabelAction
+- Miglioramenti LangServiceProvider
+- Miglioramenti LangServiceProvider
+- Integrazione avanzata: mcamara/laravel-localization + Laravel Folio
+- Correzioni Traduzioni Navigation - Modulo Lang
+- Ottimizzazioni Modulo Lang
+- Recent Updates
+- Risoluzione Conflitto AutoLabelAction
+- Risoluzione Conflitto WriteTranslationFileAction
+- Risoluzione Conflitto WriteTranslationFileAction
+- Correzione Convenzione Naming Cartelle Docs - Gennaio 2025
+- Miglioramenti LangServiceProvider
+- Implementazione della Localizzazione
+- Implementazione della Localizzazione
+- Guida Completa a Laravel Localization
+- Guida Completa a Laravel Localization
+- Traduzioni con ".navigation" - Audit Completo 2025
+- Correzioni Traduzioni Navigation - Modulo Lang
+- Standard per Modal Heading e Description nelle Traduzioni <nome progetto>
+- composer-merge-plugin.md
+- Story 7.4-LANG — Fix PHPStan method.staticCall dopo migrazione canonical Schemas
+- LANG-7.3 — chiavi duplicate in `lang_service.php`
+- Technical Specification - Lang Module
+- Technical Specification - Lang Module
+- Audit Traduzioni Completato - 2025
+- Processo di Traduzione: Da Sviluppatore a Traduttore
+- Risoluzione Conflitto LangServiceProvider
+- Risoluzione Conflitto ReadTranslationFileAction
+- Risoluzione Conflitto WriteTranslationFileAction
+- Risoluzione Conflitto LangServiceProvider
+- Risoluzione Conflitto ReadTranslationFileAction
+- Regole di Naming per File
+- _da-riconciliare/PROJECT-STRUCTURE.md
+- Traduzione di Testi Statici in Laravel
+- Implementazione della Localizzazione
+- Guida Completa a Laravel Localization
+- Gestione Traduzioni - Regole Critiche
+- Standard per le Traduzioni nel Progetto <nome progetto>corrente
+- Standard per le Traduzioni nel Progetto <nome progetto>
+- Storage delle Traduzioni: PHP vs JSON
+- Storage delle Traduzioni: PHP vs JSON
+- livewire-inventory.md
+- Story 7.2-LANG — Contratti PHPStan test harness
+- Audit Traduzioni Completato - 2025
+- Risoluzione Conflitto LangServiceProvider
+- Risoluzione Conflitto ReadTranslationFileAction
+- Risoluzione Conflitto translation-file-syntax.md
+- Risoluzione Conflitto edit_translation_file.php
+- Risoluzione Conflitto translation-file-syntax.md
+- Risoluzione Conflitto edit_translation_file.php
+- _da-riconciliare/ON-DEMAND-PATTERN.md
+- Navigation Translations Completion - Global Roadmap
+- Ottimizzazioni Proposte
+- FAQ e Problemi Comuni sulle Traduzioni
+- FAQ e Problemi Comuni sulle Traduzioni
+- Standard per le Traduzioni nel Progetto
+- Storage delle Traduzioni: PHP vs JSON
+- Guida all'Implementazione di mcamara/laravel-localization
+- Story 7.1-LANG — Contratti PHPStan traduzioni
+- Correzione Errori Traduzioni - 2025
+- Risoluzione Conflitto translation-file-syntax.md
+- Risoluzione Conflitto edit_translation_file.php
+- Risultati Analisi Modulo Lang - 2025-01-06
+- Guida all'Implementazione di mcamara/laravel-localization
+- Guida all'Implementazione di mcamara/laravel-localization
+- Files by Module/Theme:
+- Miglioramenti Qualità Codice - Modulo Lang - [DATE]
+- Correzioni Errori Sintassi File Traduzione - Gennaio 2025
+- Correzioni Errori Sintassi File Traduzione - Gennaio 2025
+- Correzioni Errori Sintassi File Traduzione - Gennaio 2025
+- Integrazione tra mcamara/laravel-localization e Laravel Folio
+- Integrazione tra mcamara/laravel-localization e Laravel Folio
+- Integrazione di mcamara/laravel-localization con Livewire Volt
+- Integrazione di mcamara/laravel-localization con Livewire Volt
+- mcamara/laravel-localization — Riferimento per moduli e temi
+- mcamara/laravel-localization — Riferimento per moduli e temi
+- FAQ e Problemi Comuni sulle Traduzioni
+- File Corretti
+- Lang/docs/PERFORMANCE-OPTIMIZATION.md
+- performance-optimization.md
+- Riepilogo Correzioni Traduzioni - Gennaio 2025
+- Moduli Corretti
+- Aggiornamento File di Traduzione - Gennaio 2025
+- Risoluzione Conflitto EditTranslationFile.php (Classe)
+- Risoluzione Conflitto EditTranslationFile.php (Classe)
+- Guida Rapida alle Traduzioni
+- Guida Rapida alle Traduzioni
+- Integrazione tra mcamara/laravel-localization e Laravel Folio
+- Integrazione di mcamara/laravel-localization con Livewire Volt
+- Correzioni Pattern ".navigation" - Gennaio 2025
+- Lang — perche' esiste
+- 17.4: sei helper di `TestCase` invocati e mai scritti
+- Moduli Affetti e Correzioni Effettuate
+- Moduli Affetti e Correzioni Effettuate
+- Correzione Errori Traduzioni - 2025
+- Risoluzione Conflitto EditTranslationFile.php (Classe)
+- Regole Fondamentali per i Link Markdown
+- Lang Module - Comprehensive Analysis
+- Fix Errore Sintassi TransArrayAction
+- Laravel Localization (mcamara) — Consolidated Reference
+- Git LFS non si usa in questo progetto
+- COME INSTALLARLO (Installation Guide)
+- Approach 1: Manual Model Translations (Without Packages)
+- Gestione delle Traduzioni dei Messaggi di Validazione
+- Lang — cosa migliorerei se questo modulo fosse mio per un mese
+- Audit di qualita — modulo Lang
+- LANG — riduzione uso di `mixed`
+- Moduli Corretti
+- Moduli Corretti
+- Advanced Language Switching Strategies
+- ANALISI MODULO LANG: SISTEMA DI TRADUZIONI AUTOMATIZZATO
+- Gestione delle Lingue (Locales) in Laravel
+- Fix Errore Sintassi TransArrayAction
+- 12.1: Ritiro Lang HTTP Switcher/Change su widget cablato nel tema
+- LANG-7.3 — Param type mancanti nel modulo Lang
+- Traduzioni con ".navigation" - Audit Completo 2025
+- Localizzazione di Date e Valute
+- Sistema di Traduzione in il progetto
+- Traduzioni nel Progetto
+- Standardizzazione Traduzioni Modulo Notify
+- Standardizzazione Traduzioni Modulo Notify
+- Regola Critica: Sezione "fields" Obbligatoria nelle Traduzioni
+- 📚 **Indice Documentazione Modulo Lang**
+- Ottimizzazioni Applicate
+- Ottimizzazioni Applicate
+- BEST PRACTICES
+- COME USARLO (Usage Guide)
+- Lang Module: A Philosophy of Localization
+- Lang — app/Services retired, no-services-rule compliance
+- 📚 **Indice Documentazione Modulo Lang**
+- Localizzazione di Date e Valute
+- PRD: Lang Module
+- File Corretti
+- File Corretti
+- File Corretti
+- PHPStan Level 10 Compliance — Lang Module
+- Evaluated Packages
+- Evaluated Packages
+- Standardizzazione Traduzioni Modulo Notify
+- 📚 **Indice Documentazione Modulo Lang**
+- Lang Module — Architecture
+- Inventario: Livewire HTTP → Filament (Lang)
+- La tabella si configura nella Table class, non nella pagina
+- Occorrenze Trovate
+- BAD PRACTICES (Anti-Patterns)
+- Modulo Lang
+- Standard per Campi Geografici
+- 🚀 Bienvenido a Laraxot PTVX
+- 🚀 Bienvenido a Laraxot PTVX
+- 🚀 Benvenuto in Laraxot PTVX
+- Traduzione dei Messaggi di Validazione
+- Evaluated Packages
+- Sistema di Traduzione in il progetto
+- Collegamenti alla Documentazione sugli Standard di Traduzione
+- Collegamenti alla Documentazione sugli Standard di Traduzione
+- `helper_text` vuoto quando coincide con la chiave del campo
+- LangServiceProvider
+- Upgrade Laravel 13 - Lang 🐄✨
+- File Corretti
+- Sistema di Traduzione in il progetto
+- 4. Applico la regola/skill/command/memory
+- FUTURE IMPLEMENTAZIONI (Planned Features)
+- FALSE FRIENDS (Easy Mistakes)
+- RELIGIONE (i18n Dogmas)
+- 3. Target Users
+- 3. Target Users
+- Benefici Ottenuti
+- Benefici Ottenuti
+- Benefici Ottenuti
+- 2. Regola Testi Italiani in File Non Italiani
+- 📋 Checklist Implementazione
+- 📋 Checklist Implementazione
+- 📋 Checklist Implementazione
+- 🔧 Implementazione Ottimizzazioni
+- Contributing
+- Le classi in gioco
+- PRD Lang
+- Collisioni di nome per sola differenza di maiuscole
+- Array lang: una chiave per riga
+- navigation-consolidated.md
+- COMPETITORS & INSPIRATIONS
+- Lang Module — Continuation Task
+- Pattern di Correzione Standardizzati
+- Pattern di Correzione Standardizzati
+- Pattern di Correzione Standardizzati
+- Lang Module Wiki
+- Lang Module Wiki
+- Per Ogni Modulo
+- 🚨 Problemi Critici Identificati
+- PHPStan Status — Lang Module
+- Decision log
+- Collegamenti ai Moduli
+- COVERAGE ANALYSIS
+- LIBRERIE DA INSTALLARE (Dependencies)
+- FILOSOFIA (Why Lang Exists)
+- Quality Report — Lang
+- Quality Report — Lang
+- Best Practice
+- fixes-consolidated.md
+- Regole di Correzione Implementate
+- 📚 Ottimizzazioni Documentazione
+- Colonne delle Resource — verifica 2026-09-10
+- Wiki Schema - Lang
+- Wiki Schema - Lang
+- Changelog
+- Risoluzione Problemi
+- Links — risorse esterne
+- Prevenzione Errori Futuri
+- Riepilogo Statistiche
+- Note Tecniche
+- Struttura dei File di Traduzione
+- Preparazione per i Traduttori
+- Rules — Lang Module Wiki
+- Skills — Lang Module Wiki
+- .github/security.md
+- livewire-widget-ux.md
+- git-conflict-resolution.md
+- git-conflict-resolution-2026-07-31.md
+- 01.larastan-isForwardedQueryBuilderMethod-bug.story.md
+- docs-index-audit.story.md
+- xotbaseresourcetable-model-audit-batch-tenant-limesurvey-lang-ai.story.md
+- advanced_language_switching.divergenza.md
+- Divergenza: `advanced_language_switching.md`
+- docs-naming-convention-fix.divergenza.md
+- docs_naming_convention_fix.divergenza.md
+- documentation_link_conventions.DIVERGENZA.md
+- documentation-link-conventions.DIVERGENZA.md
+- INDEX.DIVERGENZA.md
+- localizing-dates-and-currencies.divergenza.md
+- localizing_dates_and_currencies.DIVERGENZA.md
+- localizing_dates_currencies.divergenza.md
+- localizing-dates-currencies.divergenza.md
+- model_translations.divergenza.md
+- model-translations.divergenza.md
+- modelli-factory-seeder-analisi.divergenza.md
+- modelli_factory_seeder_analisi.divergenza.md
+- ON-DEMAND-PATTERN.DIVERGENZA.md
+- PERFORMANCE-OPTIMIZATION.DIVERGENZA.md
+- PHPSTAN-FIXES.DIVERGENZA.md
+- pluralization_and_localization.divergenza.md
+- pluralization-and-localization.DIVERGENZA.md
+- pluralization-and-localization.divergenza.md
+- prd.DIVERGENZA.md
+- PROJECT-STRUCTURE.DIVERGENZA.md
+- rinvex-countries-usage.divergenza.md
+- Divergenza: `rinvex_countries_usage.md`
+- static-text-translation.divergenza.md
+- Divergenza: `static_text_translation.md`
+- translating_plural_singular_forms.DIVERGENZA.md
+- translating-plural-singular-forms.divergenza.md
+- Divergenza: `translating_validation_messages.md`
+- Divergenza: `translating_validation_messages.md`
+- validation_messages.divergenza.md
+- validation-messages.DIVERGENZA.md
+- working_with_locales.DIVERGENZA.md
+- Divergenza: `working_with_locales.md`
+- Lang/.github/SECURITY.md
 
 ## God Nodes (most connected - your core abstractions)
-<<<<<<< HEAD
 1. `Recent Updates` - 81 edges
 2. `Recent Updates` - 81 edges
-3. `Post` - 33 edges
+3. `Post` - 32 edges
 4. `Metodi Duplicati — Analisi Lang` - 31 edges
-5. `Translation` - 27 edges
-6. `TranslationFile` - 24 edges
-7. `Modulo Lang` - 19 edges
-8. `Roadmap Modulo Lang` - 17 edges
-9. `Testing Documentation` - 17 edges
-10. `WriteTranslationFileAction` - 16 edges
-=======
-1. `Post` - 27 edges
-2. `TranslationFile` - 20 edges
-3. `Translation` - 18 edges
-4. `LanguageSwitcherWidget` - 14 edges
-5. `BaseModel` - 11 edges
-6. `SyncTranslationsAction` - 10 edges
-7. `LangServiceProvider` - 10 edges
-8. `keywords` - 10 edges
-9. `EditTranslationFile` - 9 edges
-10. `PostPolicy` - 9 edges
->>>>>>> laraxot/dev
+5. `TranslationFile` - 26 edges
+6. `Modulo Lang` - 19 edges
+7. `Documentation` - 18 edges
+8. `Gestione File di Traduzione` - 18 edges
+9. `AutoLabelAction` - 17 edges
+10. `LanguageSwitcherWidget` - 17 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `makeGetAllTranslationAction()` --references--> `GetAllTranslationAction`  [EXTRACTED]
@@ -917,8 +1199,7 @@
 ## Import Cycles
 - None detected.
 
-<<<<<<< HEAD
-## Communities (925 total, 64 thin omitted)
+## Communities (1286 total, 120 thin omitted)
 
 ### Community 0 - "Recent Updates"
 Cohesion: 0.02
@@ -928,13 +1209,13 @@ Nodes (81): 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys, 202
 Cohesion: 0.02
 Nodes (81): 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys, 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys, 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys, 2025-01-06: Appointment Translation Files Enhancement, 2025-01-06: Appointment Translation Files Enhancement, 2025-01-06: Appointment Translation Files Enhancement, 2025-01-06: Complete PDF Template Internationalization, 2025-01-06: Complete PDF Template Internationalization (+73 more)
 
-### Community 2 - "Post"
-Cohesion: 0.06
-Nodes (15): LangBasePolicy, PostPolicy, TranslationPolicy, Post, Translation, Illuminate\Auth\Access\HandlesAuthorization, Illuminate\Database\Eloquent\Builder, Illuminate\Database\Eloquent\Relations\MorphTo (+7 more)
+### Community 2 - "Modules\Xot\Contracts\UserContract"
+Cohesion: 0.07
+Nodes (15): LangBasePolicy, PostPolicy, TranslationFilePolicy, TranslationPolicy, Translation, TranslationFile, Illuminate\Auth\Access\HandlesAuthorization, Illuminate\Database\Eloquent\Builder (+7 more)
 
 ### Community 3 - "LangHundredPercentCoverageTest.php"
-Cohesion: 0.06
-Nodes (26): TranslationEditor, LangBaseCreateRecord, LangBaseEditRecord, LangBaseListRecords, LangBaseViewRecord, CreateTranslationFile, LaraZeus\SpatieTranslatable\Resources\Pages\CreateRecord\Concerns\Translatable, LaraZeus\SpatieTranslatable\Resources\Pages\EditRecord\Concerns\Translatable (+18 more)
+Cohesion: 0.05
+Nodes (33): TransCollectionAction, LangBaseResource, LangBaseCreateRecord, LangBaseListRecords, LangBaseViewRecord, CreateTranslationFile, ListTranslationFiles, TranslationFileResource (+25 more)
 
 ### Community 4 - "Best Practices per le Migrazioni - Modulo Lang"
 Cohesion: 0.04
@@ -942,11 +1223,11 @@ Nodes (48): 1. Gestione delle Traduzioni JSON, 1. `language_lines`, 1. Mancanza 
 
 ### Community 5 - "Testing Documentation"
 Cohesion: 0.04
-Nodes (49): 1. Configuration Issues, 1. Database Transactions, 1. Setup Phase, 2. Database Issues, 2. Development Phase, 2. Test Isolation, 3. Module Configuration, 3. Quality Assurance (+41 more)
+Nodes (47): 1. Configuration Issues, 1. Database Transactions, 1. Setup Phase, 2. Database Issues, 2. Development Phase, 2. Test Isolation, 3. Module Configuration, 3. Quality Assurance (+39 more)
 
-### Community 6 - "Aggiornamento File di Traduzione - Gennaio 2025"
-Cohesion: 0.04
-Nodes (48): 1. `Modules/Notify/lang/it/test_smtp.php`, 1. Sintassi Array Moderna, 2. Dichiarazione Strict Types, 2. `Modules/Notify/lang/it/send_email.php`, 3. `Modules/Lang/lang/it/lang_service.php`, 3. Risoluzione Conflitti di Merge, 4. Rimozione Duplicazioni e Campi Vuoti, 5. Miglioramento Struttura e Contenuto (+40 more)
+### Community 6 - "Illuminate\Database\Eloquent\Factories\Factory"
+Cohesion: 0.11
+Nodes (8): LanguageLineFactory, static, PostFactory, TranslationFactory, TranslationFileFactory, Illuminate\Database\Eloquent\Factories\Factory, createTranslation(), makeTranslation()
 
 ### Community 7 - "📚 **Best Practices Modulo Lang - Laraxot**"
 Cohesion: 0.04
@@ -956,9 +1237,9 @@ Nodes (48): **1. Cache Strategy**, **1. Componenti Automatici**, **1. DRY (Don't
 Cohesion: 0.04
 Nodes (46): A — Hook framework con corpo identico (override ridondante / candidato default XotBase), B — Business logic con corpo identico (consolidare: 1 owner), `casts` — 2 classi · 9 righe · ~9 righe duplicate, `casts` — 3 classi · 10 righe · ~20 righe duplicate, Corpi metodo duplicati — Lang, Dettaglio, `execute` — 2 classi · 29 righe · ~29 righe duplicate, `execute` — 2 classi · 9 righe · ~9 righe duplicate (+38 more)
 
-### Community 9 - "File Corretti"
-Cohesion: 0.04
-Nodes (46): 1. Chart/lang/it/chart.php, 1. Struttura File Standard, 2. Chart/lang/it/mixed_chart.php, 2. Regole Applicate, 3. Contesti Specifici, 3. FormBuilder/lang/it/collection_lang.php, 4. FormBuilder/lang/it/field.php, 5. FormBuilder/lang/it/field_option.php (+38 more)
+### Community 9 - "EditTranslationFile"
+Cohesion: 0.11
+Nodes (9): LangBaseEditRecord, EditTranslationFile, setTranslation(), getTranslation(), LaraZeus\SpatieTranslatable\Resources\Pages\EditRecord\Concerns\Translatable, Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord, self, LangBaseEditRecordStub (+1 more)
 
 ### Community 10 - "📚 **Indice Documentazione Modulo Lang - Laraxot**"
 Cohesion: 0.04
@@ -966,15 +1247,15 @@ Nodes (47): **🏗️ Architettura e Design**, 📋 **Checklist Implementazione*
 
 ### Community 11 - "Gestione delle Lingue in Laravel"
 Cohesion: 0.04
-Nodes (46): 1. Aggiornare il Service Provider, 1. Le traduzioni JSON non funzionano con il fallback, 1. Struttura delle Cartelle, 2. Convenzioni per le Chiavi, 2. Creare un Helper per la Lingua, 2. La lingua non viene mantenuta tra le richieste, 3. Gestione delle Eccezioni, Best Practice (+38 more)
+Nodes (46): 1. Aggiornare il Service Provider, 1. Aggiornare il Service Provider, 1. Le traduzioni JSON non funzionano con il fallback, 1. Le traduzioni JSON non funzionano con il fallback, 1. Struttura delle Cartelle, 1. Struttura delle Cartelle, 2. Convenzioni per le Chiavi, 2. Convenzioni per le Chiavi (+38 more)
 
 ### Community 12 - "LangServiceProvider: Analisi e Proposte di Miglioramento"
 Cohesion: 0.04
 Nodes (44): 1. Estensione Supporto Componenti (Priorità: Alta), 2. Ottimizzazione Cache Traduzioni (Priorità: Media), 3. Supporto per Enum nei Select (Priorità: Alta), 4. Interfaccia di Gestione Traduzioni (Priorità: Bassa), Analisi dell'Implementazione Attuale, Approfondimento, Architettura Attuale, Autoregistrazione (Filosofia Xot) (+36 more)
 
-### Community 13 - "Riepilogo Correzioni Traduzioni - Gennaio 2025"
-Cohesion: 0.04
-Nodes (44): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttura Espansa Obbligatoria, 2. No Hardcoded Labels, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE, 3. Coerenza Strutturale, 3. Traduzioni Mancanti Appointment ✅ RISOLTE, 4. Audit Sistematico, Best Practices Implementate (+36 more)
+### Community 13 - "Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06"
+Cohesion: 0.13
+Nodes (15): Analisi Iniziale, AutoLabelAction.php, Collegamenti, ConvertTranslations.php, Data, FindMissingTranslations.php, Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06, Obiettivo (+7 more)
 
 ### Community 14 - "AutoLabel Flow - Analisi Completa del Flusso"
 Cohesion: 0.05
@@ -993,8 +1274,8 @@ Cohesion: 0.05
 Nodes (43): 1. Metodo: `linkable`, 2. Metodo: `trans`, 3. Metodo: `getSlugOptions`, 4. Metodo: `getRows`, 5. Metodo: `casts`, 6. Metodo: `get`, 7. Metodo: `execute`, Analisi Metodi Duplicati - Modulo Lang (+35 more)
 
 ### Community 18 - "Migrations — Lang Module"
-Cohesion: 0.05
-Nodes (43): 7. Connessione Automatica — Niente `$connection` nelle Migrazioni, Audit Status, Automatic Connection Resolution, Benefits of XotBaseMigration, Benefits of XotBaseMigration, Check migration naming compliance, Correct Pattern, Correct Pattern (+35 more)
+Cohesion: 0.08
+Nodes (23): 7. Connessione Automatica — Niente `$connection` nelle Migrazioni, Audit Status, Automatic Connection Resolution, Check migration naming compliance, Count models vs migrations (verify parity), Discovery Commands, Key Methods, Key Models Explained (+15 more)
 
 ### Community 19 - "Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>"
 Cohesion: 0.05
@@ -1024,29 +1305,25 @@ Nodes (42): Best Practice, Best Practice, Configurazione, Configurazione, Gestio
 Cohesion: 0.05
 Nodes (42): 1.4 Modifiche Proposte ai File, 1.5 Esempio Completo, 1.6 Checklist, 3. FAQ e Problemi Comuni, 4. Collegamenti correlati, Configurazione, Esempio base, Formati diversi per lingua (+34 more)
 
-### Community 26 - "Traduzioni con ".navigation" - Audit Completo 2025"
-Cohesion: 0.05
-Nodes (42): 1. Modules/User/lang/it/permission.php ✅ CORRETTO, 2. Modules/Lang/lang/en/edit_translation_file.php ✅ CORRETTO, Checklist Correzione ✅ COMPLETATO, Collegamenti Correlati, Errori Sintassi UI ✅, Fase 1: Correzione Errori Sintassi UI ✅ COMPLETATO, Fase 2: Correzione Traduzioni Navigation ✅ COMPLETATO, Fase 3: Standardizzazione ✅ COMPLETATO (+34 more)
+### Community 26 - "TranslationEditor"
+Cohesion: 0.24
+Nodes (4): TranslationEditor, Modules\Xot\Filament\Forms\Components\XotBaseField, TranslationEditorStub, TranslationEditorStub
 
 ### Community 27 - "Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>"
 Cohesion: 0.08
 Nodes (26): Alta Priorità - Tedeschi, Checklist di Verifica, Collegamenti Bidirezionali, Colori Standard per Contesti, Comando PHPStan, Comunicazione, Esempio Corretto, Esempio Errato (+18 more)
-
-### Community 28 - "🌍 Lang - Il SISTEMA di TRADUZIONI più POTENTE! 🗣️"
-Cohesion: 0.05
-Nodes (43): 📊 **Analytics Widgets**, 🏗️ Architettura Avanzata, 🏗️ **Architettura Scalabile**, 🤖 **Auto-Translation Service**, 👨‍💻 Autore, 🏅 **Badge di Qualità**, 🎯 **Caratteristiche Uniche**, 🔄 Changelog (+35 more)
 
 ### Community 29 - "Guida Completa alla Validazione delle Traduzioni - <nome progetto>"
 Cohesion: 0.05
 Nodes (41): 1. Helper Text Audit, 1. Regola helper_text Normalizzazione, 2. Italian Text Validation, 2. Regola Testi Italiani in File Non Italiani, 3. Obbligatorio Specific Audit, Aggiornamenti, Campo Città, Campo Login/Accedi (+33 more)
 
 ### Community 30 - "LanguageSwitcherWidget"
-Cohesion: 0.10
-Nodes (11): LanguageSwitcherWidget, Collection, Change, Switcher, Flag, LanguageSwitcher, Illuminate\Contracts\Support\Renderable, Illuminate\View\Component (+3 more)
+Cohesion: 0.07
+Nodes (15): TranslationFileForm, TranslationFileInfolist, LanguageSwitcherWidget, Change, Switcher, Flag, LanguageSwitcher, Filament\Schemas\Components\Component (+7 more)
 
-### Community 31 - "Moduli Corretti"
-Cohesion: 0.05
-Nodes (40): 1. Coerenza Linguistica, 2. Qualità UX, 3. Manutenibilità, 4. Completezza, 5. Professionalità, Audit Traduzioni Completato - 2025, Benefici Ottenuti, Collegamenti Bidirezionali Creati (+32 more)
+### Community 31 - "Audit Traduzioni Completato - 2025"
+Cohesion: 0.12
+Nodes (16): Audit Traduzioni Completato - 2025, Collegamenti Bidirezionali Creati, Conclusione, Controlli Automatici Implementati, Correzioni Effettuate, Documentazione Aggiornata, Moduli con Documentazione Aggiornata, Note Tecniche (+8 more)
 
 ### Community 32 - "Regole Fondamentali per le Traduzioni"
 Cohesion: 0.05
@@ -1117,16 +1394,16 @@ Cohesion: 0.05
 Nodes (36): Best Practice, Componenti Volt Localizzati, Configurazione di Laravel-Localization, Configurazione Iniziale, Creazione di un Componente Base, Esempio di Componente Volt Localizzato, Indice, Installazione di Volt (+28 more)
 
 ### Community 49 - "Spatie\QueueableAction\QueueableAction"
-Cohesion: 0.07
-Nodes (14): GetAllModuleTranslationAction, GetAllTranslationAction, GetTransPathAction, MergeTranslationsAction, PublishTranslationAction, ReadTranslationFileAction, TransArrayAction, TranslationData (+6 more)
+Cohesion: 0.06
+Nodes (18): GetAllModuleTranslationAction, GetAllTranslationAction, GetTransPathAction, MergeTranslationsAction, PublishTranslationAction, TransArrayAction, RecordMissingTranslationAction, TranslatorAction (+10 more)
 
 ### Community 50 - "Ottimizzazioni Approfondite Modulo Lang - DRY + KISS"
 Cohesion: 0.06
 Nodes (35): 1. Cartelle con Naming Inconsistente, 1. Consolidamento Cartelle Documentazione, 1. Standardizzazione Naming Cartelle, 1. Struttura Codice, 2. Configurazione, 2. File di Configurazione Duplicati, 2. Standardizzazione Naming File, 2. Verifica Estensioni Classi (+27 more)
 
 ### Community 51 - "Moduli Affetti e Correzioni Effettuate"
-Cohesion: 0.06
-Nodes (35): Analisi del Problema, Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Controlli Automatici Implementati, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, File Corretti (+27 more)
+Cohesion: 0.15
+Nodes (13): Analisi del Problema, Moduli Affetti e Correzioni Effettuate, ✅ Modulo Cms, ✅ Modulo DbForge, ✅ Modulo FormBuilder, ✅ Modulo Lang, ✅ Modulo <nome progetto>, ✅ Modulo <nome progetto> (+5 more)
 
 ### Community 52 - "Risoluzione Conflitto WriteTranslationFileAction"
 Cohesion: 0.06
@@ -1156,9 +1433,9 @@ Nodes (34): 1. Scomposizione Logica (KISS), 2. Contenuto README Ottimizzato, 3. 
 Cohesion: 0.06
 Nodes (34): Analisi e Ragionamento per il Progetto `<nome progetto>`, Analisi e Ragionamento per il Progetto `<nome progetto>`, Conclusione, File JSON, File PHP, Gestione Plurale/Singolare nelle Traduzioni, Introduzione, Conclusione (+26 more)
 
-### Community 59 - "LangCoverageBoostTest.php"
-Cohesion: 0.07
-Nodes (12): LocaleSwitcherRefresh, LangBaseResource, EditTranslationFile, ListTranslationFiles, TranslationFilesTable, TranslationFileResource, LaraZeus\SpatieTranslatable\Resources\Concerns\Translatable, Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable (+4 more)
+### Community 59 - "LocaleSwitcherRefresh.php"
+Cohesion: 0.23
+Nodes (4): LocaleSwitcherRefresh, TranslationFilesTable, Modules\Xot\Filament\Actions\XotBaseAction, Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable
 
 ### Community 60 - "Traduzioni Automatiche con LangServiceProvider"
 Cohesion: 0.06
@@ -1226,11 +1503,11 @@ Nodes (32): 1. Obiettivo, 2.1. Installazione pacchetti, 2.2. Configurazione dell
 
 ### Community 76 - "ThemeComposer"
 Cohesion: 0.15
-Nodes (9): TransCollectionAction, LangData, DataCollection, ThemeComposer, Illuminate\Database\Eloquent\Collection, Illuminate\Support\Collection, Spatie\LaravelData\DataCollection, makeTransCollectionAction() (+1 more)
+Nodes (9): LangData, DataCollection, TranslationData, DataCollection, ThemeComposer, Spatie\LaravelData\Data, Spatie\LaravelData\DataCollection, ThemeComposerNonStringFieldStub (+1 more)
 
 ### Community 77 - "TestCase.php"
-Cohesion: 0.07
-Nodes (13): SaveTransAction, setTranslation(), getTranslation(), Illuminate\Contracts\Support\Htmlable, Illuminate\Contracts\Translation\Translator, Illuminate\Foundation\Application, Illuminate\Foundation\Testing\DatabaseTransactions, Modules\Xot\Tests\XotBaseTestCase (+5 more)
+Cohesion: 0.09
+Nodes (11): SaveTransAction, BaseMorphPivot, Illuminate\Contracts\Support\Htmlable, Illuminate\Contracts\Translation\Translator, Illuminate\Database\Eloquent\Relations\MorphPivot, Illuminate\Foundation\Application, Illuminate\Foundation\Testing\DatabaseTransactions, Modules\Xot\Tests\XotBaseTestCase (+3 more)
 
 ### Community 78 - "Lang Module - Business Logic Overview"
 Cohesion: 0.06
@@ -1268,9 +1545,9 @@ Nodes (30): 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION, 📊 ANALISI
 Cohesion: 0.06
 Nodes (30): 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION, 📊 ANALISI QUANTITATIVA REALE, BaseModel - Confronto Reale, Blog BaseModel (BEN FATTO), 🏆 CONCLUSIONI SUPER MUCCA, Cosa Abbiamo Scoperto, Dati Chiave (VERIFICATI), 🎯 Executive Summary (+22 more)
 
-### Community 87 - "BaseMorphPivot.php"
-Cohesion: 0.53
-Nodes (3): BaseMorphPivot, Illuminate\Database\Eloquent\Relations\MorphPivot, Modules\Xot\Traits\Updater
+### Community 87 - "integrations/_da-riconciliare/index.md"
+Cohesion: 0.06
+Nodes (24): Disciplina edit e qualità (puntatore), Link operativi, Code Coverage: Lang, Output, Handoff — multi-org sync (STORY-003), Link, Note owner, Perché (+16 more)
 
 ### Community 88 - "Architettura Modulo Lang"
 Cohesion: 0.07
@@ -1279,10 +1556,6 @@ Nodes (29): **1. Estensione Diretta**, **1. Estensione Obbligatoria**, **1. Serv
 ### Community 89 - "Editor File di Traduzione"
 Cohesion: 0.07
 Nodes (29): 1. Lista File di Traduzione, 1. Struttura Chiavi, 2. Naming Convention, 2. Visualizzazione File, 3. Modifica Traduzioni, 3. Validazione Contenuto, Accesso, Aggiungere una Nuova Traduzione (+21 more)
-
-### Community 90 - "Lang Module Docs Consolidation Plan"
-Cohesion: 0.07
-Nodes (28): 1. DELETE DUPLICATES (Kebab vs Snake Case) — ~30 files, 2. DELETE OBSOLETE FILES — ~20 files, 3. CONSOLIDATE TRANSLATION FILES (65 → 4), 4. CONSOLIDATE CONFLICT RESOLUTION (17 → 1), 5. CONSOLIDATE VALIDATION (4 → 2), 6. CONSOLIDATE PHPSTAN (3 → 2), 7. MOVE TO WIKI/ SUBDIRECTORIES — ~40 files, After (+20 more)
 
 ### Community 91 - "💡 **Esempi Pratici Modulo Lang - Laraxot**"
 Cohesion: 0.07
@@ -1296,9 +1569,9 @@ Nodes (28): 1. Cos'è Laravel Folio?, 2. Sfida dell'integrazione, 3. Best Practi
 Cohesion: 0.07
 Nodes (28): 1. Cos'è Livewire Volt?, 2. Sfida dell'integrazione, 3. Best Practice per l'integrazione, 4. Checklist, 5. FAQ e problemi comuni, 6. Modifiche consigliate ai file del progetto, 7. Best Practices operative (.mdc), a) Registrazione delle rotte Volt nel gruppo localizzato (+20 more)
 
-### Community 94 - "Guida all'Implementazione di mcamara/laravel-localization"
-Cohesion: 0.07
-Nodes (28): Best Practice, Configurazione, Gestione della Cache, Gestione delle Route, Guida all'Implementazione di mcamara/laravel-localization, Indice, Installazione, Interruttore di Lingua (+20 more)
+### Community 94 - "Lang - Sprint Planning Meeting"
+Cohesion: 0.22
+Nodes (8): Candidate stories, Collegamenti, Definizione di done, Input richiesti, Lang - Sprint Planning Meeting, Obiettivo sprint, Proposta agenda, Retro da pianificare
 
 ### Community 95 - "Regola Critica: fields.php è OBBLIGATORIO"
 Cohesion: 0.07
@@ -1320,13 +1593,13 @@ Nodes (26): 1. Creazione dei File di Traduzione, 2. Aggiornamento del Service Pr
 Cohesion: 0.07
 Nodes (27): actionStandard, architectureRule, companionDocs, dependencies, goals, implementationPattern, name, nonGoals (+19 more)
 
-### Community 100 - "Processo di Traduzione: Da Sviluppatore a Traduttore"
-Cohesion: 0.07
-Nodes (27): 1. Branch di Traduzione, 1. Comandi Personalizzati, 1. Convenzioni per le Chiavi, 1. Laravel Lang, 1. Traduzioni Mancanti, 2. Gestione dei Parametri, 2. GitHub Actions, 2. Problemi di Codifica (+19 more)
+### Community 100 - "File Corretti"
+Cohesion: 0.22
+Nodes (9): 1. Chart/lang/it/chart.php, 2. Chart/lang/it/mixed_chart.php, 3. FormBuilder/lang/it/collection_lang.php, 4. FormBuilder/lang/it/field.php, 5. FormBuilder/lang/it/field_option.php, 6. Lang/lang/it/translation_file.php, 7. Notify/lang/it/send_whats_app.php, 8. UI/lang/it/s3_test.php (+1 more)
 
 ### Community 101 - "LangFinalGapsTest.php"
-Cohesion: 0.19
-Nodes (14): AutoLabelAction, Filament\Actions\Action, Filament\Forms\Components\Field, Filament\Infolists\Components\Entry, Filament\Schemas\Components\Section, Filament\Schemas\Components\Wizard\Step, Filament\Support\Components\Component, Filament\Tables\Columns\Column (+6 more)
+Cohesion: 0.25
+Nodes (16): AutoLabelAction, Filament\Actions\Action, Filament\Forms\Components\Field, Filament\Infolists\Components\Entry, Filament\Schemas\Components\Section, Filament\Schemas\Components\Wizard\Step, Filament\Tables\Columns\Column, Filament\Tables\Filters\BaseFilter (+8 more)
 
 ### Community 102 - "Risoluzione Conflitto EditTranslationFile.php (Classe)"
 Cohesion: 0.07
@@ -1353,11 +1626,11 @@ Cohesion: 0.08
 Nodes (25): 1. Regole Cursor, 1. TransTrait Obbligatorio, 2. Documentazione Root, 3. Documentazione Modulo UI, 3. Struttura Traduzioni, 4. Naming Convention, Collegamenti, Controllo Automatico (+17 more)
 
 ### Community 108 - "Gestione delle Traduzioni in Laravel"
-Cohesion: 0.08
-Nodes (26): Collegamenti ai Moduli Correlati, Comandi Utili, Comandi Utili, Formattazione Valuta, Formattazione Valuta, Gestione Base delle Traduzioni, Gestione delle Traduzioni in Laravel, Gestione Modelli Multilingua (+18 more)
+Cohesion: 0.04
+Nodes (45): 1. Organizzazione, 1. Organizzazione, 2. Performance, 2. Performance, 3. Manutenzione, 3. Manutenzione, 4. Sicurezza, 4. Sicurezza (+37 more)
 
 ### Community 109 - "Lang {{TYPE^}} LLM Wiki Agent Instructions"
-Cohesion: 0.10
+Cohesion: 0.09
 Nodes (21): Before Committing, Create Module Page If:, Cross-Linking to Project Wiki, Directory Rules, Frontmatter Schema, Ingest, Lang {{TYPE^}} LLM Wiki Agent Instructions, Lint (+13 more)
 
 ### Community 110 - "Product Requirements Document (PRD)"
@@ -1377,8 +1650,8 @@ Cohesion: 0.08
 Nodes (24): 1. Gestione delle Traduzioni JSON, 1. `language_lines`, 1. Mancanza delle Proprietà Obbligatorie, 1. `$table`, 2. Campo JSON Non Definito Correttamente, 2. `$connection`, 2. Indici per Performance, 2. `translation_groups` (+16 more)
 
 ### Community 114 - "Modulo Lang"
-Cohesion: 0.06
-Nodes (33): Best Practices, Changelog, Collegamenti, Collegamenti ai Moduli, Configurazione, Database, Dipendenze, Esempi (+25 more)
+Cohesion: 0.07
+Nodes (29): Best Practices, Changelog, Collegamenti, Configurazione, Database, Dipendenze, Esempi, Factories (+21 more)
 
 ### Community 115 - "PDF Translation Guide - HTML2PDF Integration"
 Cohesion: 0.08
@@ -1389,8 +1662,8 @@ Cohesion: 0.08
 Nodes (24): 1. Fattura Multilingua, 1. Italiano (it), 1. PDF Export with Language Selection, 1. PDF Translation Service, 1. Traduzione Automatica Template, 1. Translation Caching, 1. Unit Tests, 2. Batch PDF Generation (+16 more)
 
 ### Community 117 - "Aggiornamento File di Traduzione - Gennaio 2025"
-Cohesion: 0.08
-Nodes (24): 1. `Modules/Notify/lang/it/test_smtp.php`, 1. Sintassi Array Moderna, 2. Dichiarazione Strict Types, 2. `Modules/Notify/lang/it/send_email.php`, 3. `Modules/Lang/lang/it/lang_service.php`, 3. Risoluzione Conflitti di Merge, 4. Rimozione Duplicazioni e Campi Vuoti, 5. Miglioramento Struttura e Contenuto (+16 more)
+Cohesion: 0.04
+Nodes (48): 1. `Modules/Notify/lang/it/test_smtp.php`, 1. `Modules/Notify/lang/it/test_smtp.php`, 1. Sintassi Array Moderna, 1. Sintassi Array Moderna, 2. Dichiarazione Strict Types, 2. Dichiarazione Strict Types, 2. `Modules/Notify/lang/it/send_email.php`, 2. `Modules/Notify/lang/it/send_email.php` (+40 more)
 
 ### Community 118 - "Aggiornamento File di Traduzione - Gennaio 2025"
 Cohesion: 0.08
@@ -1401,12 +1674,12 @@ Cohesion: 0.08
 Nodes (24): [AGGIORNAMENTO 2024-06-XX] - Correzione appointment.php, Best Practices per le Chiavi di Traduzione, Checklist aggiornata, Checklist Dev → Traduttore, Checklist per la scelta, Collegamenti correlati, Componenti UI, Conclusione (+16 more)
 
 ### Community 120 - "Guida Completa alla Validazione delle Traduzioni - <nome progetto>"
-Cohesion: 0.05
-Nodes (43): 1. Helper Text Audit, 1. Regola helper_text Normalizzazione, 2. Italian Text Validation, 2. Regola Testi Italiani in File Non Italiani, 3. Obbligatorio Specific Audit, Aggiornamenti, Campo Città, Campo Login/Accedi (+35 more)
+Cohesion: 0.07
+Nodes (29): 1. Helper Text Audit, 2. Italian Text Validation, 3. Obbligatorio Specific Audit, Aggiornamenti, Collegamenti alla Documentazione, Controlli Periodici, Documentazione Centrale, Documentazione Moduli (+21 more)
 
 ### Community 121 - "File Corretti"
-Cohesion: 0.08
-Nodes (23): 1. Chart/lang/it/chart.php, 1. Struttura File Standard, 2. Chart/lang/it/mixed_chart.php, 2. Regole Applicate, 3. Contesti Specifici, 3. FormBuilder/lang/it/collection_lang.php, 4. FormBuilder/lang/it/field.php, 5. FormBuilder/lang/it/field_option.php (+15 more)
+Cohesion: 0.04
+Nodes (46): 1. Chart/lang/it/chart.php, 1. Chart/lang/it/chart.php, 1. Struttura File Standard, 1. Struttura File Standard, 2. Chart/lang/it/mixed_chart.php, 2. Chart/lang/it/mixed_chart.php, 2. Regole Applicate, 2. Regole Applicate (+38 more)
 
 ### Community 122 - "File Corretti"
 Cohesion: 0.08
@@ -1436,9 +1709,9 @@ Nodes (23): 1. Chart/lang/it/chart.php, 1. Struttura File Standard, 2. Chart/lan
 Cohesion: 0.08
 Nodes (23): Blade Templates, Common Issues, Config File, Correct Methods, Folio Routes (Service Provider), Forms, Helpers Reference, Incorrect Usage (+15 more)
 
-### Community 129 - "Gestione delle Lingue in Laravel"
-Cohesion: 0.08
-Nodes (23): 1. Aggiornare il Service Provider, 1. Le traduzioni JSON non funzionano con il fallback, 1. Struttura delle Cartelle, 2. Convenzioni per le Chiavi, 2. Creare un Helper per la Lingua, 2. La lingua non viene mantenuta tra le richieste, 3. Gestione delle Eccezioni, Best Practice (+15 more)
+### Community 129 - "Traduzione di Forme Plurali e Singolari"
+Cohesion: 0.25
+Nodes (7): Analisi e Ragionamento per il Progetto `<nome progetto>corrente`, Introduzione, Modifiche Proposte, Pluralizzazione nei File JSON, Pluralizzazione nei File PHP, Traduzione di Forme Plurali e Singolari, Uso di `trans_choice()` per Pluralizzazione
 
 ### Community 130 - "File Corretti"
 Cohesion: 0.08
@@ -1452,9 +1725,9 @@ Nodes (23): 1. Chart/lang/it/chart.php, 1. Struttura File Standard, 2. Chart/lan
 Cohesion: 0.09
 Nodes (23): Benefici Ottenuti, Collegamenti alla Documentazione, ✅ Controlli di Completezza, ✅ Controlli Linguistici, ✅ Controlli Tecnici, Documentazione Centrale, Documentazione Creata/Aggiornata, Documentazione Moduli (+15 more)
 
-### Community 133 - "docs/README.md"
-Cohesion: 0.17
-Nodes (7): Documentation Index, File disponibili, Data, Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06, Documentation, Guidelines, Structure
+### Community 133 - "Documentation"
+Cohesion: 0.06
+Nodes (32): Componenti Principali, Configuration, Design Principles, Dipendenze / Moduli Correlati, Documentation, Documenti Correlati, Filament Translation Editor, Funzionalità Principali (+24 more)
 
 ### Community 134 - "Errori di sintassi critici identificati"
 Cohesion: 0.09
@@ -1477,8 +1750,8 @@ Cohesion: 0.09
 Nodes (22): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttura Espansa Obbligatoria, 2. No Hardcoded Labels, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE, 3. Coerenza Strutturale, 3. Traduzioni Mancanti Appointment ✅ RISOLTE, 4. Audit Sistematico, Best Practices Implementate (+14 more)
 
 ### Community 139 - "Riepilogo Correzioni Traduzioni - Gennaio 2025"
-Cohesion: 0.09
-Nodes (22): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttura Espansa Obbligatoria, 2. No Hardcoded Labels, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE, 3. Coerenza Strutturale, 3. Traduzioni Mancanti Appointment ✅ RISOLTE, 4. Audit Sistematico, Best Practices Implementate (+14 more)
+Cohesion: 0.04
+Nodes (44): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttura Espansa Obbligatoria, 1. Struttura Espansa Obbligatoria, 2. No Hardcoded Labels, 2. No Hardcoded Labels, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE (+36 more)
 
 ### Community 140 - "Riepilogo Correzioni Traduzioni - Gennaio 2025"
 Cohesion: 0.09
@@ -1489,7 +1762,7 @@ Cohesion: 0.09
 Nodes (22): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttura Espansa Obbligatoria, 2. No Hardcoded Labels, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE, 3. Coerenza Strutturale, 3. Traduzioni Mancanti Appointment ✅ RISOLTE, 4. Audit Sistematico, Best Practices Implementate (+14 more)
 
 ### Community 142 - "Refactor Completo File di Traduzione - Riepilogo Finale"
-Cohesion: 0.07
+Cohesion: 0.09
 Nodes (23): Benefici Ottenuti, Collegamenti alla Documentazione, ✅ Controlli di Completezza, ✅ Controlli Linguistici, ✅ Controlli Tecnici, Documentazione Centrale, Documentazione Creata/Aggiornata, Documentazione Moduli (+15 more)
 
 ### Community 143 - "Refactor Completo File di Traduzione - Riepilogo Finale"
@@ -1520,9 +1793,9 @@ Nodes (22): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttu
 Cohesion: 0.09
 Nodes (22): 1. Messaggi di Validazione Standard, 2. Personalizzazione dei Nomi dei Campi (attributes), 3. Messaggi di Validazione Personalizzati, 4. Gestione degli Array di Campi, 5. Esempio Completo, 6. Best Practice e Checklist, 7. Modifiche consigliate ai file del progetto, 8. FAQ e Problemi Comuni (+14 more)
 
-### Community 150 - "TranslationFile"
-Cohesion: 0.09
-Nodes (9): TranslationFilePolicy, TranslationFile, LangDatabaseSeeder, LanguageLineSeeder, PostSeeder, TranslationFileSeeder, TranslationSeeder, Illuminate\Database\Seeder (+1 more)
+### Community 150 - "Illuminate\Database\Seeder"
+Cohesion: 0.12
+Nodes (7): LanguageLine, LangDatabaseSeeder, LanguageLineSeeder, PostSeeder, TranslationFileSeeder, TranslationSeeder, Illuminate\Database\Seeder
 
 ### Community 151 - "Utilizzo di mcamara/laravel-localization"
 Cohesion: 0.09
@@ -1553,8 +1826,8 @@ Cohesion: 0.09
 Nodes (21): 1. Modules/User/lang/it/permission.php ✅ CORRETTO, 2. Modules/Lang/lang/en/edit_translation_file.php ✅ CORRETTO, Checklist Correzione ✅ COMPLETATO, Collegamenti Correlati, Errori Sintassi UI ✅, Fase 1: Correzione Errori Sintassi UI ✅ COMPLETATO, Fase 2: Correzione Traduzioni Navigation ✅ COMPLETATO, Fase 3: Standardizzazione ✅ COMPLETATO (+13 more)
 
 ### Community 158 - "Traduzioni con ".navigation" - Audit Completo 2025"
-Cohesion: 0.09
-Nodes (21): 1. Modules/User/lang/it/permission.php ✅ CORRETTO, 2. Modules/Lang/lang/en/edit_translation_file.php ✅ CORRETTO, Checklist Correzione ✅ COMPLETATO, Collegamenti Correlati, Errori Sintassi UI ✅, Fase 1: Correzione Errori Sintassi UI ✅ COMPLETATO, Fase 2: Correzione Traduzioni Navigation ✅ COMPLETATO, Fase 3: Standardizzazione ✅ COMPLETATO (+13 more)
+Cohesion: 0.05
+Nodes (42): 1. Modules/User/lang/it/permission.php ✅ CORRETTO, 1. Modules/User/lang/it/permission.php ✅ CORRETTO, 2. Modules/Lang/lang/en/edit_translation_file.php ✅ CORRETTO, 2. Modules/Lang/lang/en/edit_translation_file.php ✅ CORRETTO, Checklist Correzione ✅ COMPLETATO, Checklist Correzione ✅ COMPLETATO, Collegamenti Correlati, Collegamenti Correlati (+34 more)
 
 ### Community 159 - "Regole Critiche per la Preservazione delle Traduzioni"
 Cohesion: 0.09
@@ -1568,9 +1841,9 @@ Nodes (21): Ambito Medico/Odontoiatrico, Checklist per Nuove Traduzioni, Collega
 Cohesion: 0.09
 Nodes (21): 1. Caching Strategy, 1. Coverage Report Template, 1. Translation Coverage Report, 1. Translation Report Action, 1. Translation Report Service, 1. Unit Tests, 2. Memory Management, 2. Translation Usage Report (+13 more)
 
-### Community 162 - "Lang/CHANGELOG.md"
-Cohesion: 0.10
-Nodes (20): 1.0.0 - 202X-XX-XX, [1.0.0-dev.10](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.9...v1.0.0-dev.10) (2026-07-23), [1.0.0-dev.11](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.10...v1.0.0-dev.11) (2026-07-31), [1.0.0-dev.12](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.11...v1.0.0-dev.12) (2026-07-31), [1.0.0-dev.13](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.12...v1.0.0-dev.13) (2026-08-05), [1.0.0-dev.2](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-07-15), [1.0.0-dev.3](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.2...v1.0.0-dev.3) (2026-07-15), [1.0.0-dev.4](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.3...v1.0.0-dev.4) (2026-07-15) (+12 more)
+### Community 162 - "CHANGELOG.md"
+Cohesion: 0.09
+Nodes (22): [1.0.0-dev.10](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.9...v1.0.0-dev.10) (2026-07-23), [1.0.0-dev.11](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.10...v1.0.0-dev.11) (2026-07-31), [1.0.0-dev.12](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.11...v1.0.0-dev.12) (2026-07-31), [1.0.0-dev.13](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.12...v1.0.0-dev.13) (2026-08-05), [1.0.0-dev.15](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.14...v1.0.0-dev.15) (2026-08-25), [1.0.0-dev.2](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-07-15), [1.0.0-dev.3](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.2...v1.0.0-dev.3) (2026-07-15), [1.0.0-dev.4](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.3...v1.0.0-dev.4) (2026-07-15) (+14 more)
 
 ### Community 163 - "Advanced Language Switching Strategies"
 Cohesion: 0.10
@@ -1600,9 +1873,9 @@ Nodes (20): 1. Header Integration, 1. Performance, 2. Configuration, 2. Security
 Cohesion: 0.10
 Nodes (20): Available Methods, Available Options (config/laravellocalization.php), Common Issues, Configuration, Getting Locale Information, Installation, Language Selector, Laravel Localization Reference (+12 more)
 
-### Community 170 - "Lang {{TYPE^}} LLM Wiki Agent Instructions"
-Cohesion: 0.08
-Nodes (23): Before Committing, Create Module Page If:, Cross-Linking to Project Wiki, Directory Rules, Frontmatter Schema, Ingest, Lang {{TYPE^}} LLM Wiki Agent Instructions, Lint (+15 more)
+### Community 170 - "Collegamenti agli Standard di Traduzione"
+Cohesion: 0.25
+Nodes (8): Collegamenti agli Standard di Traduzione, Collegamenti Correlati, Documentazione Principale, Esempi e Fix, Moduli Specifici, Regole Critiche, Script di Manutenzione, Traduzioni Temi
 
 ### Community 171 - "Lang {{TYPE^}} LLM Wiki Agent Instructions"
 Cohesion: 0.10
@@ -1632,17 +1905,17 @@ Nodes (20): 1. Parentesi Non Bilanciate, 2. declare() Posizionato Erroneamente, 
 Cohesion: 0.10
 Nodes (21): 1. Caching Strategy, 1. Coverage Report Template, 1. Translation Coverage Report, 1. Translation Report Action, 1. Translation Report Service, 1. Unit Tests, 2. Memory Management, 2. Translation Usage Report (+13 more)
 
-### Community 178 - "Lang {{TYPE^}} LLM Wiki Agent Instructions"
-Cohesion: 0.10
-Nodes (21): Before Committing, Create Module Page If:, Cross-Linking to Project Wiki, Directory Rules, Frontmatter Schema, Ingest, Lang {{TYPE^}} LLM Wiki Agent Instructions, Lint (+13 more)
+### Community 178 - "Laravel Localization"
+Cohesion: 0.29
+Nodes (7): Analisi del Progetto `<nome progetto>`, Conclusione, Funzionalità Principali, Introduzione, Laravel Localization, laravel_localization, Modifiche Suggerite
 
 ### Community 179 - "Gestione delle Lingue (Locales) in Laravel"
 Cohesion: 0.10
 Nodes (20): Analisi e Ragionamento per il Progetto `<nome progetto>`, Analisi e Ragionamento per il Progetto `<nome progetto>`, Conclusione, Configurazione della Lingua di Fallback, Configurazione della Lingua Predefinita, Gestione delle Lingue (Locales) in Laravel, Impostazione Dinamica della Lingua nel Codice, Introduzione (+12 more)
 
-### Community 180 - "LangCoverageGapsTest.php"
-Cohesion: 0.09
-Nodes (9): RecordMissingTranslationAction, TranslatorAction, TranslatorAdapter, RouteServiceProvider, TranslatorService, Illuminate\Translation\Translator, Modules\Xot\Providers\XotBaseRouteServiceProvider, makeTranslatorAdapter() (+1 more)
+### Community 180 - "Cerca in docs/wiki/ + tutti i moduli"
+Cohesion: 0.33
+Nodes (6): Cache Location, Cerca in docs/wiki/ + tutti i moduli, Integrazione con l'On-Demand Pattern, Performance Tips, Riferimenti, Troubleshooting
 
 ### Community 181 - "Integration of Mcamara Laravel Localization with Laravel Folio"
 Cohesion: 0.10
@@ -1657,16 +1930,16 @@ Cohesion: 0.10
 Nodes (19): 1. Estensione XotBaseMigration, 2. Proprietà Obbligatorie, 3. Documentazione, 4. Verifiche di Sicurezza, 5. Performance, Correzioni Implementate, Correzioni Migrazione - Modulo Lang, ✅ Documentazione Completa (+11 more)
 
 ### Community 184 - "Audit Traduzioni con ".navigation" - <nome progetto>"
-Cohesion: 0.10
-Nodes (19): Audit Traduzioni con ".navigation" - <nome progetto>, Collegamenti, File: `/Modules/Geo/lang/it/.php` (file con nome problematico), File: `/Modules/Lang/lang/en/edit_translation_file.php`, File: `/Modules/User/lang/it/device.php`, File: `/Modules/User/lang/it/permission.php`, Modulo Geo, ✅ Modulo Geo - RISOLTO (+11 more)
+Cohesion: 0.18
+Nodes (11): Audit Traduzioni con ".navigation" - <nome progetto>, Collegamenti, ✅ Modulo Geo - RISOLTO, ✅ Modulo Lang - CONFORME, ✅ Modulo User - RISOLTO, Note, Panoramica, Piano di Sistemazione (+3 more)
 
 ### Community 185 - "Performance"
 Cohesion: 0.10
 Nodes (20): Best Practices, Cache, Cache, Cache Traduzioni, Collegamenti, Collegamenti tra versioni di performance.md, Implementazione, Monitoring (+12 more)
 
-### Community 186 - "Lang - Sprint Planning Meeting"
-Cohesion: 0.10
-Nodes (18): Dipendenze, Lang - Product Roadmap, M1 - Convergenza Core, M2 - Superfici Vere, M3 - Eccellenza Operativa, Milestone, Orizzonte 0-30 giorni, Orizzonte 30-90 giorni (+10 more)
+### Community 186 - "Lang Module - Product Roadmap"
+Cohesion: 0.12
+Nodes (15): Dependencies, Lang Module - Product Roadmap, LATER, Milestones, NEXT, NOW, Now / Next / Later, Q1 2026 - Core i18n (+7 more)
 
 ### Community 187 - "Regole Fondamentali dei Test"
 Cohesion: 0.10
@@ -1680,13 +1953,13 @@ Nodes (19): 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys, 202
 Cohesion: 0.10
 Nodes (19): Best Practices, Cache, Collegamenti Bidirezionali, Esempi di Implementazione Corretta, File di Traduzione, Implementazione, LangServiceProvider, Modulo <nome progetto> - Appointment Report (+11 more)
 
-### Community 190 - "contributor-lines-report.mjs"
-Cohesion: 0.16
-Nodes (19): args, barChartSvg(), buildHtml(), buildSummary(), clocData, collectCloc(), collectGitChurn(), cwd (+11 more)
+### Community 190 - "Task: Lang PHPStan Level 10"
+Cohesion: 0.33
+Nodes (5): 🚨 Azioni Richieste, ✅ Checklist, 📋 Obiettivo, 🔗 Riferimenti, Task: Lang PHPStan Level 10
 
 ### Community 191 - "Composer Merge Plugin nel Modulo Lang"
-Cohesion: 0.11
-Nodes (15): Architectural Rules & Guidelines, Collegamenti correlati, Business logic e motivazione, Checklist, Collegamenti correlati, Composer Merge Plugin nel Modulo Lang, Configurazione locale consigliata, Flusso di integrazione (+7 more)
+Cohesion: 0.20
+Nodes (10): Business logic e motivazione, Checklist, Collegamenti correlati, Composer Merge Plugin nel Modulo Lang, Configurazione locale consigliata, Flusso di integrazione, Regole operative, Scopo (+2 more)
 
 ### Community 192 - "Risoluzione Conflitto AutoLabelAction"
 Cohesion: 0.11
@@ -1716,9 +1989,9 @@ Nodes (18): Analisi File, Collegamenti, Controlli Effettuati, Correzioni Traduzi
 Cohesion: 0.11
 Nodes (19): Best Practices, Cache, Collegamenti, Collegamenti tra versioni di translations.md, Core, Database, Implementazione, Modello Tradotto (+11 more)
 
-### Community 199 - "Product Requirements Document (PRD) - Lang Module"
-Cohesion: 0.13
-Nodes (15): 10. Open Questions, 6.1 User Flows, 6.3 Design Principles, 6. User Experience, 7.1 Architecture Overview, 7.2 Dependencies, 7.3 Technical Constraints, 7. Technical Considerations (+7 more)
+### Community 199 - "Benefici Ottenuti"
+Cohesion: 0.33
+Nodes (6): 1. Coerenza Linguistica, 2. Qualità UX, 3. Manutenibilità, 4. Completezza, 5. Professionalità, Benefici Ottenuti
 
 ### Community 200 - "Regole Fondamentali dei Test"
 Cohesion: 0.11
@@ -1781,8 +2054,8 @@ Cohesion: 0.11
 Nodes (18): 1. AutoLabelAction, 1. File Operations, 1. Label Generation, 1. Performance Metrics, 1. Translation Registry, 2. Alerting, 2. Translation Loading, 3. Logging (+10 more)
 
 ### Community 215 - "Lang Module - Complete Roadmap"
-Cohesion: 0.11
-Nodes (18): 1. Language Management, 2. Translation Management, 3. Translation Workflow, 4. Translation Integration, ✅ Completed Components, Core Dependencies, Current State Analysis, Dependencies & Integration Points (+10 more)
+Cohesion: 0.08
+Nodes (25): 1. Language Management, 2. Translation Management, 3. Translation Workflow, 4. Translation Integration, ✅ Completed Components, Core Dependencies, Current State Analysis, Dependencies & Integration Points (+17 more)
 
 ### Community 216 - "Traduzione di Testi Statici in Laravel"
 Cohesion: 0.11
@@ -1801,12 +2074,12 @@ Cohesion: 0.11
 Nodes (18): Accessibility, Best Practices, Configuration, Customization, Database Integration, Error Handling, Fallback Configuration, Features (+10 more)
 
 ### Community 220 - "NationalFlagSelect"
-Cohesion: 0.24
-Nodes (4): NationalFlagSelect, Filament\Forms\Components\Select, NationalFlagSelectStub, NationalFlagSelectFinalStub
+Cohesion: 0.15
+Nodes (6): NationalFlagSelect, Modules\Xot\Filament\Forms\Components\XotBaseSelect, NationalFlagSelectFinalStub, NationalFlagSelectStub, NationalFlagSelectStub, NationalFlagSelectFinalStub
 
-### Community 221 - "Illuminate\Database\Eloquent\Factories\Factory"
-Cohesion: 0.12
-Nodes (7): LanguageLine, LanguageLineFactory, static, PostFactory, TranslationFactory, TranslationFileFactory, Illuminate\Database\Eloquent\Factories\Factory
+### Community 221 - "Post"
+Cohesion: 0.10
+Nodes (7): Post, Illuminate\Database\Eloquent\Relations\MorphTo, SlugOptions, Spatie\Sluggable\HasSlug, Spatie\Sluggable\SlugOptions, PostNullTitleForGuidStub, PostNullTitleForGuidStub
 
 ### Community 222 - "lang-link.md"
 Cohesion: 0.11
@@ -1825,8 +2098,8 @@ Cohesion: 0.12
 Nodes (16): Analisi del Conflitto, Collegamenti Correlati, Conflitto 1 (Linea 14) - Documentazione PHPDoc, Conflitto 2 (Linea 31) - Messaggi di Errore, Criteri di Risoluzione, Data Risoluzione, Giustificazione Tecnica, Impatto (+8 more)
 
 ### Community 226 - "Roadmap Modulo Lang"
-Cohesion: 0.12
-Nodes (17): Collegamenti, Collegamenti tra versioni di roadmap.md, Documentazione, Integration Testing, Piano di Testing, 📊 Progress Overview, Q1 2024, Q2 2024 (+9 more)
+Cohesion: 0.04
+Nodes (45): A Lungo Termine, A Medio Termine, Analisi di Sistema, Analisi Statica del Codice (PHPStan), Business, Collegamenti, Collegamenti tra versioni di roadmap.md, Come Contribuire (+37 more)
 
 ### Community 227 - "Regole di Naming per File"
 Cohesion: 0.12
@@ -1894,7 +2167,7 @@ Nodes (16): Best Practice per SaluteOra, Confronto tra PHP e JSON, Esempi, Fonti
 
 ### Community 243 - "Lang Module - User Research"
 Cohesion: 0.12
-Nodes (16): Finding 1: Native Language Preferred, Finding 2: Quality Matters, Finding 3: Auto-Detection Expected, Finding 4: Manual Override Important, Immediate, Lang Module - User Research, Long-Term, Key Findings (+8 more)
+Nodes (16): Finding 1: Native Language Preferred, Finding 2: Quality Matters, Finding 3: Auto-Detection Expected, Finding 4: Manual Override Important, Immediate, Key Findings, Lang Module - User Research, Long-Term (+8 more)
 
 ### Community 244 - "Integrazione Livewire Volt + mcamara/laravel-localization"
 Cohesion: 0.12
@@ -1902,7 +2175,7 @@ Nodes (16): 1. Obiettivo, 2.1. Installazione pacchetti, 2.2. Configurazione dell
 
 ### Community 245 - "Code Quality Improvement Report — Lang"
 Cohesion: 0.12
-Nodes (15): Baseline, Code Quality Improvement Report — Lang, Criteri di uscita, Gate PHPStan (2026-07-27), GitHub (repo del componente), GRAVE: issue/discussion del modulo — mai base_techplanner / base_workorder / mono., Modifiche effettive da fare, P0 — baseline affidabile (+7 more)
+Nodes (15): Baseline, Code Quality Improvement Report — Lang, Criteri di uscita, Gate PHPStan (2026-07-27), GitHub (repo del componente), GRAVE: issue/discussion del modulo — mai base_project / base_workorder / mono., Modifiche effettive da fare, P0 — baseline affidabile (+7 more)
 
 ### Community 246 - "Risoluzione Conflitto edit_translation_file.php"
 Cohesion: 0.12
@@ -1918,11 +2191,11 @@ Nodes (15): Classe CreateRecord Corrispondente, Classi LangBase per Modelli Trad
 
 ### Community 249 - "Registrazione Traduzioni Temi - Standard Laraxot"
 Cohesion: 0.12
-Nodes (16): Checklist Implementazione, Comando di Test, Documentazione Base, Documentazione Base, DRY (Don't Repeat Yourself), Filosofia DRY + KISS, KISS (Keep It Simple, Stupid), Moduli Correlati (+8 more)
+Nodes (16): Checklist Implementazione, Comando di Test, Documentazione Base, Documentazione Base, DRY (Don't Repeat Yourself), Filosofia DRY + KISS, Implementazione Standard, KISS (Keep It Simple, Stupid) (+8 more)
 
-### Community 250 - "ON-DEMAND-PATTERN.md"
-Cohesion: 0.12
-Nodes (15): 1. Identifico il trigger nel task, 2. Consulto la trigger map globale, 3. Carico on-demand la risorsa, 4. Applico la regola/skill/command/memory, Come Funziona, Local vs Global, On-Demand Pattern — Module **Lang**, OPPURE (+7 more)
+### Community 250 - "docs/ON-DEMAND-PATTERN.md"
+Cohesion: 0.20
+Nodes (9): 1. Identifico il trigger nel task, 2. Consulto la trigger map globale, 3. Carico on-demand la risorsa, Come Funziona, On-Demand Pattern — Module **Lang**, OPPURE, Perché On-Demand?, Principio (+1 more)
 
 ### Community 251 - "Localizzazione"
 Cohesion: 0.12
@@ -1932,9 +2205,9 @@ Nodes (16): Best Practices, Collegamenti, Configurazione, Core, Implementazione,
 Cohesion: 0.12
 Nodes (15): Dependencies, Lang Module - Product Roadmap, LATER, Milestones, NEXT, NOW, Now / Next / Later, Q1 2026 - Core i18n (+7 more)
 
-### Community 253 - "Technical Specification - Lang Module"
-Cohesion: 0.17
-Nodes (12): API Endpoints, `BaseModelLang`$, Core Models, Filament Resources, LangResource, `LanguageLine`$, Models, Overview (+4 more)
+### Community 253 - "Merge conflict markers — file list"
+Cohesion: 0.33
+Nodes (5): Lista (auto-generata), Merge conflict markers — file list, Note, Stato, Stato
 
 ### Community 254 - "Business Logic Test Coverage"
 Cohesion: 0.12
@@ -2028,9 +2301,9 @@ Nodes (14): Causa, Causa, Collegamenti, Collegamenti, Esempio pratico, Esempio p
 Cohesion: 0.13
 Nodes (15): Analisi Iniziale, AutoLabelAction.php, Collegamenti, ConvertTranslations.php, Data, FindMissingTranslations.php, Miglioramenti Qualità Codice - Modulo Lang - [DATE], Obiettivo (+7 more)
 
-### Community 277 - "roadmap/00-index.md"
-Cohesion: 0.15
-Nodes (10): Collegamenti, Indice, Lang Module - Roadmap, Metriche rapide, Collegamenti, Indice, Lang Module - Roadmap, Metriche rapide (+2 more)
+### Community 277 - "roadmap/00-INDEX.md"
+Cohesion: 0.12
+Nodes (14): Collegamenti, Indice, Lang Module - Roadmap, Metriche rapide, Collegamenti, Indice, Lang Module - Roadmap, Metriche rapide (+6 more)
 
 ### Community 278 - "Gestione delle Traduzioni Mancanti con Spatie Laravel Translatable"
 Cohesion: 0.13
@@ -2049,32 +2322,28 @@ Cohesion: 0.13
 Nodes (14): [AGGIORNAMENTO 2024-06-XX] - Correzione appointment.php, Best Practices per le Chiavi di Traduzione, Checklist aggiornata, Checklist Dev → Traduttore, Checklist per la scelta, Collegamenti correlati, Conclusione, Gestione Plurale/Singolare nelle Traduzioni (+6 more)
 
 ### Community 282 - "FAQ e Problemi Comuni sulle Traduzioni"
-Cohesion: 0.13
-Nodes (15): 10. Dove documentare le scelte?, 12. Come personalizzare i messaggi di validazione?, 13. Come gestire plurale/singolare e localizzazione di date/valute?, 1. Perché il POST non funziona su rotte localizzate?, 2. Come si cache-izzano le rotte tradotte?, 3. Cosa succede se una chiave manca?, 4. Come gestire traduzioni per traduttori non-dev?, 5. Come evitare conflitti tra PHP e JSON? (+7 more)
+Cohesion: 0.06
+Nodes (30): 10. Dove documentare le scelte?, 12. Come personalizzare i messaggi di validazione?, 13. Come gestire plurale/singolare e localizzazione di date/valute?, 1. Perché il POST non funziona su rotte localizzate?, 2. Come si cache-izzano le rotte tradotte?, 3. Cosa succede se una chiave manca?, 4. Come gestire traduzioni per traduttori non-dev?, 5. Come evitare conflitti tra PHP e JSON? (+22 more)
 
 ### Community 283 - "FAQ e Problemi Comuni sulle Traduzioni"
-Cohesion: 0.13
+Cohesion: 0.12
 Nodes (15): 10. Dove documentare le scelte?, 12. Come personalizzare i messaggi di validazione?, 13. Come gestire plurale/singolare e localizzazione di date/valute?, 1. Perché il POST non funziona su rotte localizzate?, 2. Come si cache-izzano le rotte tradotte?, 3. Cosa succede se una chiave manca?, 4. Come gestire traduzioni per traduttori non-dev?, 5. Come evitare conflitti tra PHP e JSON? (+7 more)
 
-### Community 284 - "FAQ e Problemi Comuni sulle Traduzioni"
-Cohesion: 0.13
-Nodes (15): 10. Dove documentare le scelte?, 12. Come personalizzare i messaggi di validazione?, 13. Come gestire plurale/singolare e localizzazione di date/valute?, 1. Perché il POST non funziona su rotte localizzate?, 2. Come si cache-izzano le rotte tradotte?, 3. Cosa succede se una chiave manca?, 4. Come gestire traduzioni per traduttori non-dev?, 5. Come evitare conflitti tra PHP e JSON? (+7 more)
+### Community 284 - "Collegamento alle Traduzioni del Modulo Chart"
+Cohesion: 0.33
+Nodes (6): Collegamenti tra versioni di lang-link.md, Collegamento alle Traduzioni del Modulo Chart, Collegamento Bidirezionale, lang-service-helper-text, lang-service-helper-text-fix, lang-service-provider-backlink
 
 ### Community 285 - "Lang — `TranslatorService` → `TranslatorAction`"
 Cohesion: 0.14
 Nodes (12): Binding (non rotto), Lang — `Services` → `Actions` (translator missing-key logic), Mapping, Test, Conversione, Lang — Services/Support vietati: solo Actions, Regola, Comportamento (+4 more)
-
-### Community 286 - "wiki/index.md"
-Cohesion: 0.21
-Nodes (7): Contratto wiki locale — stub Lang, Available Rules, Rules — Lang Module Wiki, Usage, Available Skills, Skills — Lang Module Wiki, Usage
 
 ### Community 287 - "Lang Module — Overview"
 Cohesion: 0.13
 Nodes (14): Anti-Pattern, Auto-Discovery delle Traduzioni (Core Pattern), Cross-References, Lang Module — Overview, LangBase Classes (per moduli multilingua), mcamara/laravel-localization — Regole, Raw Sources Prioritari, Regola 1: Route pubbliche nel gruppo localizzato (+6 more)
 
 ### Community 288 - "WriteTranslationFileAction"
-Cohesion: 0.22
-Nodes (3): WriteTranslationFileAction, WriteTranslationFileActionFailStub, WriteTranslationFileActionWriteFailStub
+Cohesion: 0.17
+Nodes (5): WriteTranslationFileAction, WriteTranslationFileActionFailStub, WriteTranslationFileActionWriteFailStub, WriteTranslationFileActionFailStub, WriteTranslationFileActionWriteFailStub
 
 ### Community 289 - "1. Errori YAML negli SKILL.md"
 Cohesion: 0.14
@@ -2085,12 +2354,12 @@ Cohesion: 0.14
 Nodes (13): Analisi del Conflitto, Collegamenti, Conflitto 1 (Linea 38-39) - Logica di Salvataggio, Criteri di Risoluzione, ✅ DECISIONE FINALE: Versione HEAD (Logica semplificata con SaveTransAction), Giustificazione Tecnica, Impatto, Perché la versione HEAD? (+5 more)
 
 ### Community 291 - "Console Commands - Lang Module"
-Cohesion: 0.10
+Cohesion: 0.09
 Nodes (21): Architettura, Best Practices, Collegamenti Correlati, Comandi Disponibili, Console Commands - Lang Module, Conversione Traduzioni, ConvertTranslations, Correzioni PHPStan Implementate (+13 more)
 
 ### Community 292 - "docs/roadmap.md"
-Cohesion: 0.15
-Nodes (9): ✅ Checklist, 📋 Obiettivo, 🚨 Problemi Identificati, 🔗 Riferimenti, Task: Cleanup Lang Docs, Collegamenti, Fase 1: Translation Management Interface, Fase 2: Translation Workflow (+1 more)
+Cohesion: 0.07
+Nodes (24): ✅ Checklist, 📋 Obiettivo, 🚨 Problemi Identificati, 🔗 Riferimenti, Task: Cleanup Lang Docs, 🚨 Azioni Richieste, ✅ Checklist, 📋 Obiettivo (+16 more)
 
 ### Community 293 - "⚠️ Regola fondamentale: MAI usare chiavi che terminano con `.navigation` nei file di traduzione"
 Cohesion: 0.14
@@ -2098,23 +2367,23 @@ Nodes (13): Collegamenti Bidirezionali, Come Funziona il LangServiceProvider, �
 
 ### Community 294 - "Files by Module/Theme:"
 Cohesion: 0.14
-Nodes (13): Core Modules (16 files), Documentation (6 files), Files by Module/Theme:, Fixcity Module (4 files), Geo Module (5 files), Merge Conflict Files List, Notify Module (3 files), Other Files (62 files) (+5 more)
+Nodes (13): Core Modules (16 files), Documentation (6 files), Files by Module/Theme:, Geo Module (5 files), Merge Conflict Files List, Notify Module (3 files), Other Files (62 files), Priority Files for Resolution: (+5 more)
 
-### Community 295 - "PERFORMANCE-OPTIMIZATION.md"
-Cohesion: 0.14
-Nodes (13): Cerca globalmente (solo se necessario), Cerca solo nel modulo corrente, Dimensione cache, Limitare lo Scope, ❌ MAI fare così, Monitoring, Prossimi Miglioramenti (TODO), Query QMD Efficienti (+5 more)
+### Community 295 - "1. Executive Summary"
+Cohesion: 0.40
+Nodes (5): 1.1 Problem Statement, 1.2 Proposed Solution, 1.3 Business Value Proposition, 1.4 Success Metrics (High-Level), 1. Executive Summary
 
 ### Community 296 - "Lang Module - Product Launch Plan"
 Cohesion: 0.14
 Nodes (13): Lang Module - Product Launch Plan, Launch Day Activities, Launch Objectives, Post-Launch Activities, Pre-Launch Checklist, Success Criteria, T-1 Week, T+1 Week (+5 more)
 
 ### Community 297 - "Guida Rapida alle Traduzioni"
-Cohesion: 0.14
-Nodes (13): Best Practice, Comandi Utili, Console Commands, Esempi Avanzati, Formato delle Chiavi, Guida Rapida alle Traduzioni, Nei Controller/Classi PHP, Nei File Blade (+5 more)
+Cohesion: 0.05
+Nodes (39): Best Practice, Best Practice, Best Practice, Comandi Utili, Comandi Utili, Comandi Utili, Console Commands, Console Commands (+31 more)
 
-### Community 298 - "Guida Rapida alle Traduzioni"
-Cohesion: 0.14
-Nodes (13): Best Practice, Comandi Utili, Console Commands, Esempi Avanzati, Formato delle Chiavi, Guida Rapida alle Traduzioni, Nei Controller/Classi PHP, Nei File Blade (+5 more)
+### Community 298 - "1. Executive Summary"
+Cohesion: 0.40
+Nodes (5): 1.1 Problem Statement, 1.2 Proposed Solution, 1.3 Business Value Proposition, 1.4 Success Metrics (High-Level), 1. Executive Summary
 
 ### Community 299 - "Rinvex Countries Usage in Lang Module"
 Cohesion: 0.14
@@ -2128,13 +2397,13 @@ Nodes (14): Basic Usage, Best Practices, Data Structure Example, Error Handling,
 Cohesion: 0.14
 Nodes (14): Basic Usage, Best Practices, Data Structure Example, Error Handling, External Resources, Getting All Countries, Getting Single Country, Installation (+6 more)
 
-### Community 302 - "Audit Traduzioni Completato - 2025"
-Cohesion: 0.14
-Nodes (13): Audit Traduzioni Completato - 2025, Conclusione, Controlli Automatici Implementati, Correzioni Effettuate, Note Tecniche, Pattern di Errore, Pattern di Validazione, Prevenzione Errori Futuri (+5 more)
+### Community 302 - "2. Goals & Objectives"
+Cohesion: 0.40
+Nodes (5): 2.1 Primary Goals (SMART), 2.2 Secondary Goals, 2.3 Non-Goals, 2.4 Key Results (OKRs), 2. Goals & Objectives
 
 ### Community 303 - "Correzione Errori Traduzioni - 2025"
 Cohesion: 0.14
-Nodes (14): Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, File Corretti, Moduli con Documentazione Aggiornata, Moduli Interessati (+6 more)
+Nodes (14): Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Controlli Automatici Implementati, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, File Corretti, Moduli con Documentazione Aggiornata (+6 more)
 
 ### Community 304 - "Best Practices per le Chiavi di Traduzione"
 Cohesion: 0.14
@@ -2149,12 +2418,12 @@ Cohesion: 0.14
 Nodes (14): [2024-07-07] Nota storica: correzione massiva Notify, [[DATE]] Nota storica: correzione massiva Notify, 1. Estrazione Automatica delle Chiavi, 1. Nei Template Blade, [2024-07-07] Nota storica: correzione massiva Notify, 2. Nei Componenti Filament, 2. Verifica delle Traduzioni Mancanti, 3. Sincronizzazione delle Traduzioni (+6 more)
 
 ### Community 307 - "BaseModel"
-Cohesion: 0.15
-Nodes (9): LangField, BaseModel, BaseModelLang, Illuminate\Contracts\Database\Eloquent\CastsAttributes, Illuminate\Database\Eloquent\Model, Modules\Lang\Models\Traits\LinkedTrait, Modules\Xot\Models\XotBaseModel, LangFieldHostModel (+1 more)
+Cohesion: 0.10
+Nodes (14): LangField, BaseModel, BaseModelLang, Illuminate\Contracts\Database\Eloquent\CastsAttributes, Illuminate\Database\Eloquent\Model, Modules\Lang\Models\Traits\HasStrictTranslations, Modules\Lang\Models\Traits\LinkedTrait, Modules\Xot\Models\XotBaseModel (+6 more)
 
 ### Community 308 - "LangServiceProvider"
-Cohesion: 0.22
-Nodes (6): LangServiceProvider, TranslatorTraitPhpstanProbe, Illuminate\Contracts\Foundation\Application, Modules\Lang\Providers\Traits\TranslatorTrait, Modules\Xot\Providers\XotBaseServiceProvider, makeLangServiceProvider()
+Cohesion: 0.19
+Nodes (7): LangServiceProvider, TranslatorTraitPhpstanProbe, Filament\Support\Components\Component, Illuminate\Contracts\Foundation\Application, Modules\Lang\Providers\Traits\TranslatorTrait, Modules\Xot\Providers\XotBaseServiceProvider, makeLangServiceProvider()
 
 ### Community 309 - "**CacheCommand**"
 Cohesion: 0.15
@@ -2185,7 +2454,7 @@ Cohesion: 0.17
 Nodes (12): Audit Traduzioni Inglesi - <nome progetto>, Checklist Traduzione, Collegamenti, Comandi Utili, ✅ CORRETTO - Sintassi Short Array, ❌ ERRATO - Sintassi Array Tradizionale, Note Importanti, Panoramica (+4 more)
 
 ### Community 316 - "Epic 1: Core CRUD Operations"
-Cohesion: 0.15
+Cohesion: 0.13
 Nodes (12): Epic 1: Core CRUD Operations, Epic 2: Bulk Operations, Epic 3: Audit and Compliance, Lang Epics and User Stories, Story 1.1: Record Creation, Story 1.2: Record Listing and Filtering, Story 1.3: Record Editing, Story 1.4: Record Deletion (+4 more)
 
 ### Community 317 - "Filament nel modulo Lang"
@@ -2208,13 +2477,9 @@ Nodes (12): Architecture, Critical Dependencies, Current Implementation Status, 
 Cohesion: 0.15
 Nodes (12): Architecture, Critical Dependencies, Current Implementation Status, ✅ Fully Implemented Features, Future Enhancements, Integration with Other Modules, Key Metrics, Lang Module - Comprehensive Analysis (+4 more)
 
-### Community 322 - "Guida Rapida alle Traduzioni"
-Cohesion: 0.15
-Nodes (13): Best Practice, Comandi Utili, Console Commands, Esempi Avanzati, Formato delle Chiavi, Guida Rapida alle Traduzioni, Nei Controller/Classi PHP, Nei File Blade (+5 more)
-
-### Community 323 - "Guida Rapida alle Traduzioni"
-Cohesion: 0.15
-Nodes (13): Best Practice, Comandi Utili, Console Commands, Esempi Avanzati, Formato delle Chiavi, Guida Rapida alle Traduzioni, Nei Controller/Classi PHP, Nei File Blade (+5 more)
+### Community 323 - "5. Non-Functional Requirements"
+Cohesion: 0.50
+Nodes (4): 5.1 Performance Requirements, 5.2 Security Requirements, 5.3 Scalability Requirements, 5. Non-Functional Requirements
 
 ### Community 324 - "Testing ServiceProvider Fix - Lang Module"
 Cohesion: 0.15
@@ -2224,13 +2489,13 @@ Nodes (12): Action Taken, Option 1: Delete the Test (RECOMMENDED), Option 2: Con
 Cohesion: 0.15
 Nodes (12): Action Taken, Option 1: Delete the Test (RECOMMENDED), Option 2: Convert to Integration Test, Option 3: Test Only Module-Specific Logic, Problem, Recommendation, Related Documentation, Root Cause (+4 more)
 
-### Community 326 - "Moduli Affetti e Correzioni Effettuate"
-Cohesion: 0.15
-Nodes (13): Analisi del Problema, Moduli Affetti e Correzioni Effettuate, ✅ Modulo Cms, ✅ Modulo DbForge, ✅ Modulo FormBuilder, ✅ Modulo Lang, ✅ Modulo <nome progetto>, ✅ Modulo <nome progetto> (+5 more)
+### Community 326 - "5. Non-Functional Requirements"
+Cohesion: 0.50
+Nodes (4): 5.1 Performance Requirements, 5.2 Security Requirements, 5.3 Scalability Requirements, 5. Non-Functional Requirements
 
 ### Community 327 - "Moduli Affetti e Correzioni Effettuate"
 Cohesion: 0.15
-Nodes (13): Analisi del Problema, Moduli Affetti e Correzioni Effettuate, ✅ Modulo Cms, ✅ Modulo DbForge, ✅ Modulo FormBuilder, ✅ Modulo Lang, ✅ Modulo <nome progetto>, ✅ Modulo Notify (+5 more)
+Nodes (13): Analisi del Problema, Moduli Affetti e Correzioni Effettuate, ✅ Modulo Cms, ✅ Modulo DbForge, ✅ Modulo FormBuilder, ✅ Modulo Lang, ✅ Modulo <nome progetto>, ✅ Modulo <nome progetto> (+5 more)
 
 ### Community 328 - "Regole per le Chiavi di Traduzione"
 Cohesion: 0.15
@@ -2248,9 +2513,9 @@ Nodes (12): Collegamenti al Modulo User, Collegamenti Principali, Collegamenti t
 Cohesion: 0.17
 Nodes (12): **1. Documentazione**, **1. Gestione Errori**, **2. Esempi**, **2. Performance**, **3. Framework**, **3. Validazione Input**, 📚 **API Reference Modulo Lang - Laraxot**, 🏗️ **Architettura API** (+4 more)
 
-### Community 332 - "Lang Module — Architecture"
-Cohesion: 0.11
-Nodes (16): Architectural Rules & Guidelines, Collegamenti correlati, Core Components, Database Schema, Design Decisions, Integration Points, Lang Module — Architecture, Purpose (+8 more)
+### Community 332 - "7. Technical Considerations"
+Cohesion: 0.50
+Nodes (4): 7.1 Architecture Overview, 7.2 Dependencies, 7.3 Technical Constraints, 7. Technical Considerations
 
 ### Community 333 - "Regole Fondamentali per i Link Markdown"
 Cohesion: 0.15
@@ -2276,12 +2541,12 @@ Nodes (11): 1. Dichiarazione `declare(strict_types=1)` posizionata erroneamente,
 Cohesion: 0.17
 Nodes (11): Come Funziona, Filosofia, IDE Helper + Sushi: Pattern di Caricamento Lazy, Implementazione, Pattern Applicabile Ad Altri Moduli, Problema, Root Cause, Run 2026-07-15 (+3 more)
 
-### Community 339 - "philosophy.md"
-Cohesion: 0.17
+### Community 339 - "Lang Module: Philosophy, Purpose, and Design Principles"
+Cohesion: 0.25
 Nodes (7): Alignment with `Lang`'s Philosophy:, 🤝 Business Logic (Supporting Global Reach & Usability), 🤖 Integration with Model Context Protocol (MCP), Key MCPs for `Lang`'s Operations:, Lang Module: Philosophy, Purpose, and Design Principles, 💡 Philosophy & Zen (Guiding Principles), 🎯 Purpose and Core Responsibilities
 
 ### Community 340 - "Laravel Localization (mcamara) — Consolidated Reference"
-Cohesion: 0.17
+Cohesion: 0.15
 Nodes (12): Configuration, Key Helpers, Language Selector (Blade), Laravel Localization (mcamara) — Consolidated Reference, Laraxot Rules, Middleware, Overview, Project Usage (+4 more)
 
 ### Community 341 - "Lang Module Wiki Index"
@@ -2293,20 +2558,20 @@ Cohesion: 0.17
 Nodes (11): Approach 1: Manual Model Translations (Without Packages), Approach 2: Using Packages for Model Translations, Astrotomic Laravel Translatable, Controller Logic, Database Structure, Model Setup, Overview, Spatie Laravel Translatable (+3 more)
 
 ### Community 343 - "PHPStan Compliance Documentation"
-Cohesion: 0.17
-Nodes (12): 1. TranslationFileResource - Lang Module, 2. TranslationFileResource - Type Safety, Configurazione PHPStan, Documentazione Esterna, Errori Corretti, Flag Utilizzati, GitHub Issues, Overview (+4 more)
+Cohesion: 0.14
+Nodes (14): 1. PHPStan, 2. PHPMD (Mess Detector), 3. PHPInsights, 4. Pest Tests, Configurazione PHPStan, Documentazione Esterna, Flag Utilizzati, GitHub Issues (+6 more)
 
-### Community 344 - "Lang - Product Launch Plan"
-Cohesion: 0.17
-Nodes (11): Audience interna, Collegamenti, Criteri di readiness, Fase 1 - Internal readiness, Fase 2 - Controlled rollout, Fase 3 - Post-launch review, Lang - Product Launch Plan, Metriche di lancio (+3 more)
+### Community 344 - "Lang Module - Product Launch Plan"
+Cohesion: 0.14
+Nodes (13): Lang Module - Product Launch Plan, Launch Day Activities, Launch Objectives, Post-Launch Activities, Pre-Launch Checklist, Success Criteria, T-1 Week, T+1 Week (+5 more)
 
-### Community 345 - "Cerca in docs/wiki/ + tutti i moduli"
-Cohesion: 0.17
-Nodes (11): Cache Location, Cerca in docs/wiki/ + tutti i moduli, Cerca solo in ./laravel/Modules/Lang/docs/wiki/, Collection Configuration, Configurazione QMD per Questo Module, Integrazione con l'On-Demand Pattern, Performance Tips, QMD Setup per Module **Lang** (+3 more)
+### Community 345 - "QMD-SETUP.md"
+Cohesion: 0.33
+Nodes (5): Cerca solo in ./laravel/Modules/Lang/docs/wiki/, Collection Configuration, Configurazione QMD per Questo Module, QMD Setup per Module **Lang**, Ricerca Locale vs Globale
 
-### Community 346 - "Correzione Errori Traduzioni - 2025"
-Cohesion: 0.17
-Nodes (11): Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, Moduli con Documentazione Aggiornata, Note Tecniche, Pattern di Validazione (+3 more)
+### Community 346 - "7. Technical Considerations"
+Cohesion: 0.50
+Nodes (4): 7.1 Architecture Overview, 7.2 Dependencies, 7.3 Technical Constraints, 7. Technical Considerations
 
 ### Community 347 - "Regole per le Chiavi di Traduzione"
 Cohesion: 0.17
@@ -2316,17 +2581,17 @@ Nodes (12): 1. Estrazione Automatica delle Chiavi, 1. Nei Template Blade, 2. Nei
 Cohesion: 0.17
 Nodes (12): Best Practice, Comandi Artisan, Conclusione, File di Configurazione, Indice, Pacchetti Consigliati, Panoramica, Processo Dev → Traduttore: Strategia Operativa (+4 more)
 
-### Community 349 - "Strategie di Gestione delle Traduzioni in Laravel"
-Cohesion: 0.17
-Nodes (12): Best Practice, Comandi Artisan, Conclusione, File di Configurazione, Indice, Pacchetti Consigliati, Panoramica, Processo Dev → Traduttore: Strategia Operativa (+4 more)
+### Community 349 - "Strumenti Consigliati"
+Cohesion: 0.50
+Nodes (4): 1. Laravel Lang, 2. Traduzione Automatica con AI, 3. Editor Online, Strumenti Consigliati
 
 ### Community 350 - "Gestione delle Traduzioni dei Messaggi di Validazione"
 Cohesion: 0.17
 Nodes (11): 1. Messaggi di Validazione Standard, 2. Personalizzazione dei Nomi dei Campi (attributes), 3. Messaggi di Validazione Personalizzati, 4. Gestione degli Array di Campi, 5. Esempio Completo, 6. Best Practice e Checklist, 7. Modifiche consigliate ai file del progetto, 8. FAQ e Problemi Comuni (+3 more)
 
-### Community 351 - "Lang Module"
-Cohesion: 0.17
-Nodes (12): Auto-risoluzione traduzioni, Azioni (10), Cosa fa, Filament Integration, Integrazione con altri moduli, Integrazione Spatie Translatable, Lang Module, Lingue supportate (+4 more)
+### Community 351 - "📊 **Monitoraggio e Metriche**"
+Cohesion: 0.50
+Nodes (4): **1. Metriche Performance**, **2. Qualità Traduzioni**, **3. Monitoraggio Real-time**, 📊 **Monitoraggio e Metriche**
 
 ### Community 352 - "composer.json"
 Cohesion: 0.18
@@ -2336,9 +2601,9 @@ Nodes (10): authors, description, homepage, license, minimum-stability, name, pr
 Cohesion: 0.18
 Nodes (10): Advanced Language Switching Strategies, Benefits, Code Examples, Combined URL and Session-Based Language Switching, Implementation Steps, Language Switch Controller, Middleware Enhancement, Overview (+2 more)
 
-### Community 354 - "Path canonico migrazioni Lang"
-Cohesion: 0.18
-Nodes (8): Lang redundancy audit 2026-05-21, Audit cross-modulo, Incidente 2026-07-01 (non ripetere), Migrazioni canoniche per modello, Path canonico migrazioni Lang, Regola, Stato modulo Lang, Verifica
+### Community 354 - "**3. Errori di Validazione**"
+Cohesion: 0.50
+Nodes (4): **3. Errori di Validazione**, **Diagnosi**, **Sintomi**, **Soluzioni**
 
 ### Community 355 - "Code quality — modulo Lang"
 Cohesion: 0.18
@@ -2390,15 +2655,15 @@ Nodes (11): Accesso alle traduzioni, API e utilizzo comune, Dichiarazione di cam
 
 ### Community 367 - "Moduli Corretti"
 Cohesion: 0.18
-Nodes (11): Moduli Corretti, ✅ Modulo Cms, ✅ Modulo DbForge, ✅ Modulo FormBuilder, ✅ Modulo Lang, ✅ Modulo <nome progetto>, ✅ Modulo Notify, ✅ Modulo User (+3 more)
-
-### Community 368 - "Moduli Corretti"
-Cohesion: 0.18
 Nodes (11): Moduli Corretti, ✅ Modulo Cms, ✅ Modulo DbForge, ✅ Modulo FormBuilder, ✅ Modulo Lang, ✅ Modulo <nome progetto>, ✅ Modulo <nome progetto>, ✅ Modulo Notify (+3 more)
 
-### Community 369 - "Processo di Traduzione: Da Sviluppatore a Traduttore"
-Cohesion: 0.18
-Nodes (10): Conclusione, File JSON (Traduzioni Globali), File PHP (Traduzioni Categorizzate), Indice, Introduzione, Istruzioni per i Traduttori, Preparazione per i Traduttori, Processo di Traduzione: Da Sviluppatore a Traduttore (+2 more)
+### Community 368 - "ottimizzazioni-consolidated.md"
+Cohesion: 0.50
+Nodes (3): ottimizzazioni-approfondite-modulo-lang, ottimizzazioni — Consolidated Documentation, Table of Contents
+
+### Community 369 - "🚨 Problemi Critici Identificati"
+Cohesion: 0.50
+Nodes (4): 1. **Cartelle con Naming Inconsistente (ALTO IMPATTO)**, 2. **Struttura Filament Non Standardizzata (MEDIO IMPATTO)**, 3. **Possibili Duplicazioni Codice (MEDIO IMPATTO)**, 🚨 Problemi Critici Identificati
 
 ### Community 370 - "Traduzione dei Messaggi di Validazione"
 Cohesion: 0.18
@@ -2409,16 +2674,20 @@ Cohesion: 0.18
 Nodes (10): Analisi e Ragionamento per il Progetto `saluteora`, Conclusione, Configurazione della Lingua di Fallback, Configurazione della Lingua Predefinita, Gestione delle Lingue (Locales) in Laravel, Impostazione Dinamica della Lingua nel Codice, Introduzione, Limitazioni delle Traduzioni JSON con Fallback (+2 more)
 
 ### Community 372 - "Contributing"
-Cohesion: 0.18
-Nodes (10): Contributing, Contributing, Etiquette, Etiquette, Procedure, Procedure, Requirements, Requirements (+2 more)
+Cohesion: 0.12
+Nodes (15): Contributing, Contributing, Etiquette, Etiquette, Contributing, Etiquette, Procedure, Requirements (+7 more)
+
+### Community 373 - "Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>"
+Cohesion: 0.05
+Nodes (44): Alta Priorità - Tedeschi, Campo "Accedi/Login", Campo "Città", Campo "Provincia/Province", Campo "Regione/Region", Checklist di Verifica, Collegamenti Bidirezionali, Colori Standard per Contesti (+36 more)
 
 ### Community 374 - "keywords"
 Cohesion: 0.20
 Nodes (10): keywords, filament, i18n, l10n, lang, laravel, laraxot, localization (+2 more)
 
 ### Community 375 - "docs/00-index.md"
-Cohesion: 0.22
-Nodes (6): Catalogo completo, Pacchetti studiati rilevanti, Package Dependency Chaos Map (Lang), Rischi principali, Test operativo minimo, Rules Index
+Cohesion: 0.09
+Nodes (18): Autoregistrazione dei Comandi da Console, Conclusione, Errore Precedente e Correzione, Filosofia e Zen, Implicazioni, Introduzione, Chaos Monkey Translation Fallbacks (Lang), Comandi (+10 more)
 
 ### Community 376 - "Errori comuni nei file di traduzione"
 Cohesion: 0.20
@@ -2448,13 +2717,13 @@ Nodes (9): 1. **Translation Management**, 1. **Translation Service**, 2. **Perfo
 Cohesion: 0.20
 Nodes (9): 1. **Translation Management**, 1. **Translation Service**, 2. **Performance**, Analisi di Ottimizzazione - Modulo Lang, ⚡ Ottimizzazioni Raccomandate, 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot, 🚨 Problemi Identificati, 🎯 Roadmap (+1 more)
 
-### Community 383 - "PRD: Lang Module"
-Cohesion: 0.20
-Nodes (8): 🎨 Design & User Experience, 🛠️ Functional Requirements, 🎯 Goals & Success Metrics, 🚫 Out of Scope, 📋 Overview, PRD: Lang Module, ❓ Problem Statement, 👤 User Stories
+### Community 383 - "🏗️ Ottimizzazioni Strutturali"
+Cohesion: 0.50
+Nodes (4): 1. **Standardizzazione Cartelle App**, 2. **Standardizzazione Struttura Filament**, 3. **Organizzazione Logica Cartelle**, 🏗️ Ottimizzazioni Strutturali
 
-### Community 384 - "Lang - Product Strategy"
-Cohesion: 0.20
-Nodes (9): Collegamenti, Cosa non fare, Lang - Product Strategy, Metriche strategiche, Missione, Principi strategici, Problema da risolvere, Regola architetturale (+1 more)
+### Community 384 - "Lang Module - Product Strategy"
+Cohesion: 0.12
+Nodes (16): Executive Summary, Financial Projections, Go-to-Market Strategy, Lang Module - Product Strategy, Market Analysis, Phase 1: Foundation (Q1 2026), Phase 2: Expansion (Q2-Q3 2026), Phase 3: Intelligence (Q4 2026) (+8 more)
 
 ### Community 385 - "🏗️ Key Features"
 Cohesion: 0.20
@@ -2470,11 +2739,7 @@ Nodes (9): Collegamenti alla Documentazione, Documenti di Riferimento, Impatto d
 
 ### Community 388 - "Processo di Traduzione: Da Sviluppatore a Traduttore"
 Cohesion: 0.20
-Nodes (10): 1. Comandi Personalizzati, 2. GitHub Actions, Automazione, Conclusione, Indice, Introduzione, Istruzioni per i Traduttori, Preparazione per i Traduttori (+2 more)
-
-### Community 389 - "Strategie di Gestione delle Traduzioni in Laravel"
-Cohesion: 0.20
-Nodes (9): Best Practice, Conclusione, File di Configurazione, Indice, Panoramica, Processo Dev → Traduttore: Strategia Operativa, Strategie di Gestione delle Traduzioni in Laravel, Struttura Consigliata (+1 more)
+Nodes (10): 1. Traduzioni Mancanti, 2. Problemi di Codifica, Conclusione, Indice, Introduzione, Istruzioni per i Traduttori, Preparazione per i Traduttori, Processo di Traduzione: Da Sviluppatore a Traduttore (+2 more)
 
 ### Community 390 - "Strategie di Gestione delle Traduzioni in Laravel"
 Cohesion: 0.20
@@ -2488,9 +2753,9 @@ Nodes (10): Best Practices, Checklist di Verifica, Documentazione Correlata, Fil
 Cohesion: 0.20
 Nodes (10): 1. Creare un Form Request Base, 2. Estendere il Form Request Base, Conclusione, Implementazione nel Progetto, Indice, Introduzione, Messaggi per Campi Array, Messaggi Personalizzati (+2 more)
 
-### Community 393 - "📚 **Indice Documentazione Modulo Lang**"
-Cohesion: 0.22
-Nodes (9): 🏗️ **Configurazione e Setup**, Dependency Intelligence, 🚀 **Funzionalità Avanzate**, 📚 **Indice Documentazione Modulo Lang**, 🎯 **Lettura Essenziale**, 🧹 **Manutenzione**, 🔗 **Moduli Correlati**, 🏷️ **Naming & Standards** (+1 more)
+### Community 393 - "Errori Corretti"
+Cohesion: 0.67
+Nodes (3): 1. TranslationFileResource - Lang Module, 2. TranslationFileResource - Type Safety, Errori Corretti
 
 ### Community 394 - "**Metodi Principali**"
 Cohesion: 0.22
@@ -2532,9 +2797,9 @@ Nodes (8): Analisi Modelli, Factory e Seeder - Modulo Lang, Analisi Utilizzo, Fa
 Cohesion: 0.22
 Nodes (8): Analisi Modelli, Factory e Seeder - Modulo Lang, Analisi Utilizzo, Factory Presenti, Modelli Presenti, Riepilogo Modelli, Seeder Presenti, Stato di Completezza, Stato Generale: ✅ COMPLETO
 
-### Community 404 - "Ottimizzazioni Applicate"
-Cohesion: 0.22
-Nodes (9): 1. On-Demand Loading (principale), 2. Cache Esterna al Repo, 3. Node Modules Puliti, 4. Wiki Indici Locali, Best Practice per Sviluppatori, Caricamento Efficiente, Metriche Attuali, Ottimizzazioni Applicate (+1 more)
+### Community 404 - "Metriche di Performance"
+Cohesion: 0.67
+Nodes (3): Memory Usage, Metriche di Performance, Velocità Analisi
 
 ### Community 405 - "Struttura corretta per i file di traduzione nel modulo Lang"
 Cohesion: 0.22
@@ -2545,8 +2810,8 @@ Cohesion: 0.22
 Nodes (8): Anti-pattern comuni da evitare, Collegamenti alla documentazione correlata, Percorsi corretti, Percorsi errati da evitare, Percorsi standard per i file di traduzione, Regole di manutenzione, Struttura corretta per i file di traduzione nel modulo Lang, Verifiche periodiche
 
 ### Community 407 - "Translation Completeness Audit"
-Cohesion: 0.22
-Nodes (8): Audit Status, Completed ✅, In Progress 🔄, Links and References, Overview, Pending 📋, Quality Standards Applied, Translation Completeness Audit
+Cohesion: 0.12
+Nodes (16): Audit Status, Completed ✅, In Progress 🔄, Links and References, Audit Status, Completed ✅, In Progress 🔄, Links and References (+8 more)
 
 ### Community 408 - "Editor File di Traduzione"
 Cohesion: 0.22
@@ -2562,7 +2827,7 @@ Nodes (9): **1. Integrazione Filament**, **2. Fallback Traduzioni**, **3. Cache 
 
 ### Community 411 - "**1. Traduzioni Non Caricate**"
 Cohesion: 0.22
-Nodes (9): **1. Traduzioni Non Caricate**, **3. Errori di Validazione**, **Diagnosi**, **Diagnosi Rapida**, 🚨 **Problemi Critici**, **Sintomi**, **Sintomi**, **Soluzioni** (+1 more)
+Nodes (9): **1. Traduzioni Non Caricate**, **2. Performance Lente**, **Diagnosi**, **Diagnosi Rapida**, 🚨 **Problemi Critici**, **Sintomi**, **Sintomi**, **Soluzioni** (+1 more)
 
 ### Community 412 - "Procedura"
 Cohesion: 0.22
@@ -2576,13 +2841,13 @@ Nodes (8): Action Items, Key Concepts Extracted, Key Takeaways, Notes, Relevant 
 Cohesion: 0.43
 Nodes (4): AdminPanelProvider, LangBasePanelProvider, Filament\Panel, Modules\Xot\Providers\Filament\XotBasePanelProvider
 
-### Community 415 - "📚 **Indice Documentazione Modulo Lang**"
-Cohesion: 0.25
-Nodes (8): 🏗️ **Configurazione e Setup**, 🚀 **Funzionalità Avanzate**, 📚 **Indice Documentazione Modulo Lang**, 🎯 **Lettura Essenziale**, 🧹 **Manutenzione**, 🔗 **Moduli Correlati**, 🏷️ **Naming & Standards**, 🧪 **Qualità e Testing**
+### Community 415 - "4. Functional Requirements"
+Cohesion: 0.67
+Nodes (3): 4.1 Requirements Matrix, 4.2 Priority Definitions, 4. Functional Requirements
 
 ### Community 416 - "Modulo Lang"
-Cohesion: 0.11
-Nodes (16): Collegamenti alla documentazione generale, Collegamenti tra versioni di structure.md, Dipendenze da altri moduli, Informazioni generali, Modulo Lang, Namespace e autoload, Struttura della Registrazione dei Console Commands, Struttura delle directory (+8 more)
+Cohesion: 0.25
+Nodes (8): Collegamenti alla documentazione generale, Collegamenti tra versioni di structure.md, Dipendenze da altri moduli, Informazioni generali, Modulo Lang, Namespace e autoload, Struttura della Registrazione dei Console Commands, Struttura delle directory
 
 ### Community 417 - "Case Sensitivity Rules - Lang Module"
 Cohesion: 0.25
@@ -2601,7 +2866,7 @@ Cohesion: 0.25
 Nodes (7): Context, Context, Implementation Notes, Key Points, Laravel Localization Metadata for Cursor, Laravel Localization Metadata for Cursor, Related Documentation
 
 ### Community 421 - "Dependency Intelligence - Module Lang"
-Cohesion: 0.25
+Cohesion: 0.29
 Nodes (7): Chaos monkey focus points, Declared but missing from installed set, Deep Study References, Dependency Intelligence - Module Lang, Dev dependencies (`require-dev`), Runtime dependencies (`require`), Workspace critical runtime versions
 
 ### Community 422 - "Report: Metodi con nome duplicato nei moduli e nei temi"
@@ -2678,7 +2943,7 @@ Nodes (8): Available Country Data, Basic Information, Communication, Geographic 
 
 ### Community 440 - "Lang Module - Sprint Planning"
 Cohesion: 0.25
-Nodes (7): Capacity Planning, Lang Module - Sprint Planning, Definition of Done, Sprint Backlog, Sprint Goal, Risks, User Stories
+Nodes (7): Capacity Planning, Definition of Done, Lang Module - Sprint Planning, Risks, Sprint Backlog, Sprint Goal, User Stories
 
 ### Community 441 - "Regole Specifiche per Campi Geografici"
 Cohesion: 0.12
@@ -2692,9 +2957,9 @@ Nodes (7): Analisi e Ragionamento per il Progetto `saluteora`, Introduzione, Mod
 Cohesion: 0.25
 Nodes (7): Analisi e Ragionamento per il Progetto `saluteora`, Introduzione, Messaggi di Validazione Personalizzati, Modifiche Proposte, Problema di Corrispondenza tra Etichetta e Nome del Campo, Traduzione dei Messaggi di Validazione, Validazione di Campi Array
 
-### Community 444 - "Translation Completeness Audit"
-Cohesion: 0.25
-Nodes (8): Audit Status, Completed ✅, In Progress 🔄, Links and References, Overview, Pending 📋, Quality Standards Applied, Translation Completeness Audit
+### Community 444 - "Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>"
+Cohesion: 0.05
+Nodes (44): Alta Priorità - Tedeschi, Campo "Accedi/Login", Campo "Città", Campo "Provincia/Province", Campo "Regione/Region", Checklist di Verifica, Collegamenti Bidirezionali, Colori Standard per Contesti (+36 more)
 
 ### Community 445 - "Gestione File di Traduzione"
 Cohesion: 0.25
@@ -2744,17 +3009,17 @@ Nodes (7): Collegamenti alla Documentazione sugli Standard di Traduzione, Correz
 Cohesion: 0.25
 Nodes (7): Best Practices, Collegamenti, Componenti Supportati, Funzionamento, LangServiceProvider, Sistema di Traduzione in il progetto, Vedi Anche
 
-### Community 457 - "TranslationFileForm.php"
-Cohesion: 0.28
-Nodes (5): TranslationFileForm, TranslationFileInfolist, Filament\Schemas\Components\Component, Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm, Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist
+### Community 457 - "Plurale/Singolare e Localizzazione Date/Valute"
+Cohesion: 0.05
+Nodes (42): 1.4 Modifiche Proposte ai File, 1.5 Esempio Completo, 1.6 Checklist, 3. FAQ e Problemi Comuni, 4. Collegamenti correlati, Configurazione, Esempio base, Formati diversi per lingua (+34 more)
 
-### Community 458 - "🚀 Bienvenido a Laraxot PTVX"
-Cohesion: 0.25
-Nodes (7): 🚀 Bienvenido a Laraxot PTVX, ✨ Características Principales, 📚 Documentación, 📚 Estructura del Proyecto, 🏁 Inicio Rápido, 📝 Licencia, ✨ ¿Por qué Laraxot PTVX?
+### Community 458 - "Note Tecniche"
+Cohesion: 0.67
+Nodes (3): Note Tecniche, Pattern di Validazione, Struttura File Corretta
 
 ### Community 459 - "🔧 **Troubleshooting Modulo Lang - Laraxot**"
-Cohesion: 0.22
-Nodes (9): **1. Metriche Performance**, **1. Validazione File**, **2. Qualità Traduzioni**, **2. Rate Limiting**, **3. Monitoraggio Real-time**, 📊 **Monitoraggio e Metriche**, 🎯 **Panoramica**, 🔒 **Problemi di Sicurezza** (+1 more)
+Cohesion: 0.25
+Nodes (8): **1. Rollback Rapido**, **1. Validazione File**, **2. Modalità Emergenza**, **2. Rate Limiting**, 🚨 **Emergenze e Rollback**, 🎯 **Panoramica**, 🔒 **Problemi di Sicurezza**, 🔧 **Troubleshooting Modulo Lang - Laraxot**
 
 ### Community 460 - "Visual Testing con Playwright e Puppeteer — Modulo Lang"
 Cohesion: 0.25
@@ -2764,9 +3029,9 @@ Nodes (7): Best Practices, Collocazione Test, Esempio Base, Panoramica, Playwrig
 Cohesion: 0.25
 Nodes (7): For AI Agents, For Humans, How to Use, Lang Wiki Overview, Quick Stats, Structure, What This Wiki Is
 
-### Community 462 - "Lang Module — Wiki Schema"
-Cohesion: 0.25
-Nodes (7): Convenzioni, Lang Module — Wiki Schema, QMD collection, Regole ingest, Struttura, Struttura wiki, Wiki Schema - Lang
+### Community 462 - "Note Tecniche"
+Cohesion: 0.67
+Nodes (3): Note Tecniche, Pattern di Validazione, Struttura File Corretta
 
 ### Community 463 - "{{title}}"
 Cohesion: 0.25
@@ -2786,7 +3051,7 @@ Nodes (7): scripts, analyse, format, post-autoload-dump, post-update-cmd, test, 
 
 ### Community 467 - "Documentation Index"
 Cohesion: 0.29
-Nodes (7): Dependency Intelligence, Development, Documentation Index, 📋 **Documenti Prodotto & Sviluppo**, 🔗 **Moduli Correlati**, 📦 **Pacchetti Composer**, Product
+Nodes (7): Development, Documentation Index, 📋 **Documenti Prodotto & Sviluppo**, Dependency Intelligence, 🔗 **Moduli Correlati**, 📦 **Pacchetti Composer**, Product
 
 ### Community 468 - "**Metodi Principali**"
 Cohesion: 0.29
@@ -2800,17 +3065,17 @@ Nodes (7): **CacheStatus**, **Esempio Output**, **Esempio Output**, 📊 **Respo
 Cohesion: 0.29
 Nodes (7): **Classe Base**, **get() - Recupera Traduzione**, **has() - Verifica Esistenza**, **Metodi Principali**, **missing() - Chiavi Mancanti**, **set() - Imposta Traduzione**, **TranslationService**
 
-### Community 471 - "Autoregistrazione dei Comandi da Console"
-Cohesion: 0.29
-Nodes (6): Autoregistrazione dei Comandi da Console, Conclusione, Errore Precedente e Correzione, Filosofia e Zen, Implicazioni, Introduzione
+### Community 471 - "Prevenzione Errori Futuri"
+Cohesion: 0.67
+Nodes (3): Controlli Automatici Implementati, Prevenzione Errori Futuri, Regole di Manutenzione
 
-### Community 472 - "Case Sensitivity Rules - Lang Module"
-Cohesion: 0.29
-Nodes (7): Case Sensitivity Rules - Lang Module, Convenzioni, Directory Structure, File/Directory Rimossi da Lang Module, Motivazione, Problema / Problem, Update Log
+### Community 472 - "Path canonico migrazioni Lang"
+Cohesion: 0.11
+Nodes (15): Case Sensitivity Rules - Lang Module, Convenzioni, Directory Structure, File/Directory Rimossi da Lang Module, Motivazione, Problema / Problem, Update Log, Lang redundancy audit 2026-05-21 (+7 more)
 
-### Community 473 - "1. Executive Summary"
-Cohesion: 0.40
-Nodes (5): 1.1 Problem Statement, 1.2 Proposed Solution, 1.3 Business Value Proposition, 1.4 Success Metrics (High-Level), 1. Executive Summary
+### Community 473 - "Guida Completa alla Validazione delle Traduzioni - <nome progetto>"
+Cohesion: 0.05
+Nodes (43): 1. Helper Text Audit, 1. Regola helper_text Normalizzazione, 2. Italian Text Validation, 2. Regola Testi Italiani in File Non Italiani, 3. Obbligatorio Specific Audit, Aggiornamenti, Campo Città, Campo Login/Accedi (+35 more)
 
 ### Community 474 - "🐄 DRY & KISS Analysis - Lang"
 Cohesion: 0.29
@@ -2853,16 +3118,16 @@ Cohesion: 0.29
 Nodes (7): Best Practice, Gestione di Forme Plurali e Localizzazione di Date/Valute in Laravel, Helper Personalizzati, Indice, Introduzione, Localizzazione di Valute e Numeri, Utilizzo di NumberFormatter
 
 ### Community 485 - "🌐 Lang — English presentation"
-Cohesion: 0.29
+Cohesion: 0.33
 Nodes (6): Certifications, Documentation, Join the team, 🌐 Lang — English presentation, Superpowers, Why it exists
 
 ### Community 486 - "🏗️ Fasi di Sviluppo"
 Cohesion: 0.29
 Nodes (7): ✅ Checklist Qualità, Fase 1: Stability & Cleanup (In Progress), Fase 2: Developer Experience (Planned), Fase 3: AI & Dynamics (Future), 🏗️ Fasi di Sviluppo, Lang Module Roadmap, 🎯 Visione
 
-### Community 487 - "Roadmap for Completion"
-Cohesion: 0.29
-Nodes (7): Phase 1: Translation Management Interface (Priority: High), Phase 2: Translation Workflow (Priority: High), Phase 3: Translation Memory (Priority: Medium), Phase 4: External Integration (Priority: Medium), Phase 5: Translation Analytics (Priority: Low), Phase 6: Advanced Features (Priority: Low), Roadmap for Completion
+### Community 487 - "Guida Completa alla Validazione delle Traduzioni - <nome progetto>"
+Cohesion: 0.05
+Nodes (42): 1. Helper Text Audit, 1. Regola helper_text Normalizzazione, 2. Italian Text Validation, 2. Regola Testi Italiani in File Non Italiani, 3. Obbligatorio Specific Audit, Aggiornamenti, Campo Città, Campo Login/Accedi (+34 more)
 
 ### Community 488 - "Gestione File di Traduzione"
 Cohesion: 0.29
@@ -2880,17 +3145,17 @@ Nodes (6): Caso Specifico: Errore in `lang_service.php`, Causa Radice Tipica, Ge
 Cohesion: 0.29
 Nodes (7): Collegamenti alla Documentazione sugli Standard di Traduzione, Correzioni Implementate, Documentazione nel Modulo Lang, Documentazione nel Modulo Notify, Problemi Identificati e Correzioni in Corso, Prossimi Passi, Riepilogo dei Problemi
 
-### Community 492 - "🚀 Benvenuto in Laraxot PTVX"
-Cohesion: 0.29
-Nodes (7): 🏁 Avvio Rapido, 🚀 Benvenuto in Laraxot PTVX, ✨ Caratteristiche Principali, 📚 Documentazione, 📝 Licenza, ✨ Perché Laraxot PTVX?, 📚 Struttura del Progetto
+### Community 492 - "Moduli Corretti"
+Cohesion: 0.05
+Nodes (39): 1. Coerenza Linguistica, 2. Qualità UX, 3. Manutenibilità, 4. Completezza, 5. Professionalità, Audit Traduzioni Completato - 2025, Benefici Ottenuti, Collegamenti Bidirezionali Creati (+31 more)
 
 ### Community 493 - "🚀 Benvenuto in Laraxot PTVX"
-Cohesion: 0.29
-Nodes (7): 🏁 Avvio Rapido, 🚀 Benvenuto in Laraxot PTVX, ✨ Caratteristiche Principali, 📚 Documentazione, 📝 Licenza, ✨ Perché Laraxot PTVX?, 📚 Struttura del Progetto
+Cohesion: 0.13
+Nodes (14): 🏁 Avvio Rapido, 🚀 Benvenuto in Laraxot PTVX, ✨ Caratteristiche Principali, 📚 Documentazione, 📝 Licenza, 🏁 Avvio Rapido, 🚀 Benvenuto in Laraxot PTVX, ✨ Caratteristiche Principali (+6 more)
 
-### Community 494 - "Fasi di sviluppo - Lang Module"
-Cohesion: 0.50
-Nodes (4): Fase 1: Stabilità e Pulizia (In Corso), Fase 2: Developer Experience (Pianificato), Fase 3: Ottimizzazione e AI (Futuro), Fasi di sviluppo - Lang Module
+### Community 494 - "Moduli Corretti"
+Cohesion: 0.05
+Nodes (38): 1. Coerenza Linguistica, 2. Qualità UX, 3. Manutenibilità, 4. Completezza, 5. Professionalità, Audit Traduzioni Completato - 2025, Benefici Ottenuti, Collegamenti Bidirezionali Creati (+30 more)
 
 ### Community 495 - "Collegamenti al Modulo User"
 Cohesion: 0.29
@@ -2928,13 +3193,13 @@ Nodes (5): Data, Modulo Summary, Risultati Analisi Modulo Lang, Stato Codice, Ve
 Cohesion: 0.33
 Nodes (6): **Classe Base**, **fix() - Correzione Automatica**, **Metodi Principali**, **validate() - Validazione Completa**, **validateFile() - Validazione Singolo File**, **ValidationService**
 
-### Community 504 - "Chaos Monkey Translation Fallbacks (Lang)"
-Cohesion: 0.33
-Nodes (6): Chaos Monkey Translation Fallbacks (Lang), Comandi, Contromisure Immediate, Obiettivo, Rischi Ricorrenti, Smoke Test
+### Community 504 - "Riepilogo Statistiche"
+Cohesion: 0.67
+Nodes (3): File Corretti, Moduli Interessati, Riepilogo Statistiche
 
-### Community 505 - "Conflict Resolution — Module Lang"
-Cohesion: 0.33
-Nodes (5): Backlinks, Conflict Resolution — Module Lang, Documentation Files, PHP Files, Summary
+### Community 505 - "docs/README.md"
+Cohesion: 0.13
+Nodes (9): Backlinks, Conflict Resolution — Module Lang, Documentation Files, PHP Files, Summary, Data, Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06, LLM Wiki (+1 more)
 
 ### Community 506 - "Analisi Conflitti - README.md"
 Cohesion: 0.33
@@ -3028,9 +3293,9 @@ Nodes (5): Esempi Pratici, Esempio 1: Messaggi di Notifica, Esempio 2: Prodotti 
 Cohesion: 0.33
 Nodes (4): Collegamenti, Esito run 2026-06-30, Ponytail audit — Lang (over-engineering), Ponytail audit — Lang
 
-### Community 529 - "3. Target Users"
-Cohesion: 0.33
-Nodes (6): 3.1 User Personas, 3.2 Use Cases, 3.3 Pain Points Addressed, 3. Target Users, Persona 1: Administrator, Persona 2: End User
+### Community 529 - "Pattern di Correzione Implementato"
+Cohesion: 0.67
+Nodes (3): Inglese (EN), Pattern di Correzione Implementato, Tedesco (DE)
 
 ### Community 530 - "Regola prompt condivisi"
 Cohesion: 0.33
@@ -3076,41 +3341,41 @@ Nodes (5): Workstreams - Lang, WS1 Architecture, WS2 Reliability, WS3 Documentat
 Cohesion: 0.33
 Nodes (5): 🌍 Market Context, Product Strategy: Lang Module, 🏛️ Strategic Pillars, 🗺️ Strategic Roadmap (1-2 Years), 💎 Unique Value Proposition
 
-### Community 541 - "Task: Folio & Volt Localization"
-Cohesion: 0.33
-Nodes (5): 🚨 Azioni Richieste, ✅ Checklist, 📋 Obiettivo, 🔗 Riferimenti, Task: Folio & Volt Localization
+### Community 541 - "Gestione File di Traduzione"
+Cohesion: 0.05
+Nodes (39): 1. Backup Automatico, 1. Resource Configuration, 1. Sincronizzazione, 1. Struttura Chiavi, 1. Visualizzazione File, 2. Controllo Accessi, 2. Custom Actions, 2. Modifica Traduzioni (+31 more)
 
 ### Community 542 - "Task: Lang Docs Cleanup"
 Cohesion: 0.33
 Nodes (5): ✅ Checklist, 📋 Obiettivo, 🚨 Problemi Identificati, 🔗 Riferimenti, Task: Lang Docs Cleanup
 
-### Community 543 - "Task: Lang Filament v5 Alignment (Clusters)"
-Cohesion: 0.33
-Nodes (5): ✅ Checklist, 📋 Obiettivo, 🔗 Riferimenti, 🏗️ Struttura Proposta, Task: Lang Filament v5 Alignment (Clusters)
+### Community 543 - "Moduli Corretti"
+Cohesion: 0.05
+Nodes (39): 1. Coerenza Linguistica, 2. Qualità UX, 3. Manutenibilità, 4. Completezza, 5. Professionalità, Audit Traduzioni Completato - 2025, Benefici Ottenuti, Collegamenti Bidirezionali Creati (+31 more)
 
-### Community 544 - "Task: Lang PHPStan Level 10"
-Cohesion: 0.33
-Nodes (5): 🚨 Azioni Richieste, ✅ Checklist, 📋 Obiettivo, 🔗 Riferimenti, Task: Lang PHPStan Level 10
+### Community 544 - "laravel-consolidated.md"
+Cohesion: 0.06
+Nodes (30): Analisi del Progetto `<nome progetto>`, Analisi del Progetto `<nome progetto>`, Analisi del Progetto `<nome progetto>corrente`, Conclusione, Conclusione, Conclusione, Conclusione, Context (+22 more)
 
 ### Community 545 - "Template Traduzione"
 Cohesion: 0.33
 Nodes (5): Best Practices, Metadati, Note per i Traduttori, Struttura, Template Traduzione
 
-### Community 547 - "Benefici Ottenuti"
-Cohesion: 0.33
-Nodes (6): 1. Coerenza Linguistica, 2. Qualità UX, 3. Manutenibilità, 4. Completezza, 5. Professionalità, Benefici Ottenuti
+### Community 547 - "Pattern di Correzione Implementato"
+Cohesion: 0.67
+Nodes (3): Inglese (EN), Pattern di Correzione Implementato, Tedesco (DE)
 
-### Community 548 - "Benefici Ottenuti"
-Cohesion: 0.33
-Nodes (6): 1. Coerenza Linguistica, 2. Qualità UX, 3. Manutenibilità, 4. Completezza, 5. Professionalità, Benefici Ottenuti
+### Community 548 - "Moduli Affetti e Correzioni Effettuate"
+Cohesion: 0.06
+Nodes (34): Analisi del Problema, Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Controlli Automatici Implementati, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, File Corretti (+26 more)
 
 ### Community 549 - "Editor File di Traduzione"
 Cohesion: 0.33
 Nodes (5): Accesso, Collegamenti, Editor File di Traduzione, Note per lo Sviluppo, Panoramica
 
-### Community 550 - "Actions"
-Cohesion: 0.50
-Nodes (4): Actions, Core Actions, `SyncTranslationsAction`$, `ValidateTranslationsAction`$
+### Community 550 - "Moduli Affetti e Correzioni Effettuate"
+Cohesion: 0.06
+Nodes (35): Analisi del Problema, Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Controlli Automatici Implementati, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, File Corretti (+27 more)
 
 ### Community 551 - "no `app/Support/` — business logic in QueueableAction"
 Cohesion: 0.33
@@ -3122,7 +3387,7 @@ Nodes (5): [2026-05-11] Wiki Structure Created, [2026-05-12] docs | lang wiki ro
 
 ### Community 553 - "🌐 Lang"
 Cohesion: 0.33
-Nodes (6): Certificazioni, Documentazione, 🌐 Lang, Perché esiste, Superpoteri, Vuoi entrare nel team?
+Nodes (6): Confini architetturali, Cosa offre, Documentazione, Integrazione rapida, 🌐 Lang, Qualità e manutenzione
 
 ### Community 554 - "config"
 Cohesion: 0.40
@@ -3176,17 +3441,17 @@ Nodes (5): Esempi di Widget Auth, Pattern Corretto, Pattern della View nel Tema,
 Cohesion: 0.40
 Nodes (4): Helper Text Audit Report, Problemi Identificati, Regola Applicata, Riepilogo
 
-### Community 569 - "Best Practices"
-Cohesion: 0.40
-Nodes (5): 1. Organizzazione, 2. Performance, 3. Manutenzione, 4. Sicurezza, Best Practices
+### Community 569 - "LangBase Classes - Requisiti e Pattern"
+Cohesion: 0.06
+Nodes (33): 1. Sempre Registrare Plugin, 2. Migrare Modelli Esistenti, 3. Testing Multilingua, ⚠️  Altri Moduli, Best Practice, Checklist Estensione LangBase, Classi Disponibili, Collegamenti (+25 more)
 
-### Community 570 - "Best Practices"
-Cohesion: 0.40
-Nodes (5): 1. Organizzazione, 2. Performance, 3. Manutenzione, 4. Sicurezza, Best Practices
+### Community 570 - "Correzione Errori Traduzioni - 2025"
+Cohesion: 0.06
+Nodes (34): Analisi del Problema, Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Controlli Automatici Implementati, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, File Corretti (+26 more)
 
-### Community 571 - "Pacchetti Raccomandati"
-Cohesion: 0.40
-Nodes (5): Gestione Base delle Traduzioni, Gestione Modelli Multilingua, Gestione UI Multilingua, Pacchetti Raccomandati, Traduzioni Automatiche
+### Community 571 - "Correzione Errori Traduzioni - 2025"
+Cohesion: 0.06
+Nodes (34): Analisi del Problema, Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Controlli Automatici Implementati, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, File Corretti (+26 more)
 
 ### Community 572 - "Merge conflict markers — file list"
 Cohesion: 0.40
@@ -3212,9 +3477,9 @@ Nodes (4): Applicazione pratica, No PHPStan probe files in Lang, Regola, Riferim
 Cohesion: 0.70
 Nodes (4): auditObbligatorioInNonItalianFiles(), generateObbligatorioReport(), getLanguageFromPath(), getSuggestedTranslation()
 
-### Community 578 - "Pipeline di Verifica"
-Cohesion: 0.40
-Nodes (5): 1. PHPStan, 2. PHPMD (Mess Detector), 3. PHPInsights, 4. Pest Tests, Pipeline di Verifica
+### Community 578 - "Note Tecniche"
+Cohesion: 0.67
+Nodes (3): Note Tecniche, Pattern di Validazione, Struttura File Corretta
 
 ### Community 579 - "Implementazione nel Progetto"
 Cohesion: 0.40
@@ -3248,9 +3513,9 @@ Nodes (5): I plurali non funzionano come previsto, Le date non vengono formattat
 Cohesion: 0.40
 Nodes (5): I plurali non funzionano come previsto, Le date non vengono formattate correttamente, Le traduzioni non vengono caricate, Problemi con le valute, Risoluzione Problemi
 
-### Community 587 - "2. Goals & Objectives"
-Cohesion: 0.40
-Nodes (5): 2.1 Primary Goals (SMART), 2.2 Secondary Goals, 2.3 Non-Goals, 2.4 Key Results (OKRs), 2. Goals & Objectives
+### Community 587 - "Correzione Errori Traduzioni - 2025"
+Cohesion: 0.06
+Nodes (34): Analisi del Problema, Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Controlli Automatici Implementati, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, File Corretti (+26 more)
 
 ### Community 588 - "Release e README marketing — Lang"
 Cohesion: 0.40
@@ -3292,17 +3557,17 @@ Nodes (4): Goals, Non-goals, Roadmap overview (Module Lang), Scope
 Cohesion: 0.40
 Nodes (4): Correct Approach, CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH, Rule, Why?
 
-### Community 598 - "Sprint Planning: Lang Stabilization"
-Cohesion: 0.40
-Nodes (4): ✅ Definition of Done, 📋 Sprint Backlog, 🏁 Sprint Goal, Sprint Planning: Lang Stabilization
+### Community 598 - "Lang Module - Sprint Planning"
+Cohesion: 0.25
+Nodes (7): Capacity Planning, Definition of Done, Lang Module - Sprint Planning, Risks, Sprint Backlog, Sprint Goal, User Stories
 
 ### Community 599 - "Task: Aumentare Copertura Test - Lang"
 Cohesion: 0.40
 Nodes (4): Criteri di Completamento, Descrizione, Task: Aumentare Copertura Test - Lang, Test da Implementare
 
-### Community 600 - "Task: Complete Translation Management Interface"
-Cohesion: 0.40
-Nodes (5): Collegamenti, Dipendenze, Obiettivo, Sottotask, Task: Complete Translation Management Interface
+### Community 600 - "Enum Translation Pattern - Implementazione Regola Critica"
+Cohesion: 0.06
+Nodes (31): 1. Regole Cursor, 1. TransTrait Obbligatorio, 1. Type Safety, 2. Documentazione Root, 2. Namespace Automatico, 3. Consistenza, 3. Documentazione Modulo UI, 3. Struttura Traduzioni (+23 more)
 
 ### Community 601 - "Convenzioni per l'Accesso alle Traduzioni"
 Cohesion: 0.40
@@ -3312,9 +3577,9 @@ Nodes (5): Accesso Diretto, Convenzioni per l'Accesso alle Traduzioni, Impostazi
 Cohesion: 0.40
 Nodes (5): 1. Coerenza Strutturale, 2. Traduzioni Appropriate, 3. Validazione, 4. Manutenzione, Best Practices
 
-### Community 603 - "Pattern di Correzione Standardizzati"
-Cohesion: 0.40
-Nodes (5): File Corretti, Inglese (EN), Pattern di Correzione Standardizzati, Statistiche Finali, Tedesco (DE)
+### Community 603 - "Note Tecniche"
+Cohesion: 0.67
+Nodes (3): Note Tecniche, Pattern di Validazione, Struttura File Corretta
 
 ### Community 604 - "Pattern di Correzione Standardizzati"
 Cohesion: 0.40
@@ -3332,48 +3597,48 @@ Nodes (5): 1. Visualizzazione File, 2. Modifica Traduzioni, 3. Gestione Chiavi, 
 Cohesion: 0.40
 Nodes (5): 1. Creazione Struttura Base, 2. File di Traduzione PHP, 3. File di Traduzione JSON, 4. Middleware per la Lingua, Implementazione nel Progetto
 
-### Community 608 - "Implementazione nel Progetto"
-Cohesion: 0.40
-Nodes (5): 1. Creazione Struttura Base, 2. File di Traduzione PHP, 3. File di Traduzione JSON, 4. Middleware per la Lingua, Implementazione nel Progetto
+### Community 608 - "Note Tecniche"
+Cohesion: 0.67
+Nodes (3): Note Tecniche, Pattern di Validazione, Struttura File Corretta
 
 ### Community 609 - "Gestione Plurale/Singolare nelle Traduzioni"
 Cohesion: 0.40
 Nodes (5): Gestione Plurale/Singolare nelle Traduzioni, Modifiche Proposte, Plurale in JSON, Sintassi delle Regole Plurali, Uso di `trans_choice()` e `@choice`
 
-### Community 610 - "Gestione Plurale/Singolare nelle Traduzioni"
-Cohesion: 0.40
-Nodes (5): Gestione Plurale/Singolare nelle Traduzioni, Modifiche Proposte, Plurale in JSON, Sintassi delle Regole Plurali, Uso di `trans_choice()` e `@choice`
+### Community 610 - "Automazione"
+Cohesion: 0.67
+Nodes (3): 1. Comandi Personalizzati, 2. GitHub Actions, Automazione
 
-### Community 611 - "Implementazione nel Progetto"
-Cohesion: 0.40
-Nodes (5): 1. Creazione Struttura Base, 2. File di Traduzione PHP, 3. File di Traduzione JSON, 4. Middleware per la Lingua, Implementazione nel Progetto
+### Community 611 - "Automazione"
+Cohesion: 0.67
+Nodes (3): 1. Comandi Personalizzati, 2. GitHub Actions, Automazione
 
 ### Community 612 - "Implementazione nel Progetto"
 Cohesion: 0.40
 Nodes (5): 1. Creazione Struttura Base, 2. File di Traduzione PHP, 3. File di Traduzione JSON, 4. Middleware per la Lingua, Implementazione nel Progetto
 
-### Community 613 - "Gestione Plurale/Singolare nelle Traduzioni"
-Cohesion: 0.40
-Nodes (5): Gestione Plurale/Singolare nelle Traduzioni, Modifiche Proposte, Plurale in JSON, Sintassi delle Regole Plurali, Uso di `trans_choice()` e `@choice`
+### Community 613 - "Struttura dei File di Traduzione"
+Cohesion: 0.67
+Nodes (3): File JSON (Traduzioni Globali), File PHP (Traduzioni Categorizzate), Struttura dei File di Traduzione
 
 ### Community 614 - "Gestione Plurale/Singolare nelle Traduzioni"
 Cohesion: 0.40
 Nodes (5): Gestione Plurale/Singolare nelle Traduzioni, Modifiche Proposte, Plurale in JSON, Sintassi delle Regole Plurali, Uso di `trans_choice()` e `@choice`
 
-### Community 615 - "**2. Performance Lente**"
-Cohesion: 0.50
-Nodes (4): **2. Performance Lente**, **Diagnosi**, **Sintomi**, **Soluzioni**
+### Community 615 - "File PHP vs JSON"
+Cohesion: 0.67
+Nodes (3): File PHP vs JSON, Vantaggi File JSON, Vantaggi File PHP
 
 ### Community 616 - "Aggiornamenti {#aggiornamenti}"
 Cohesion: 0.40
 Nodes (4): Aggiornamenti {#aggiornamenti}, Collegamenti tra versioni di upgrade.md, Verifica dei pacchetti installati, Versione Incoming
 
-### Community 617 - "User Research: Lang Module"
-Cohesion: 0.40
-Nodes (4): ✅ Actionable Insights / Next Steps, 💡 Key Findings, 🔬 Research Goals, User Research: Lang Module
+### Community 617 - "Lang Module - User Research"
+Cohesion: 0.12
+Nodes (16): Finding 1: Native Language Preferred, Finding 2: Quality Matters, Finding 3: Auto-Detection Expected, Finding 4: Manual Override Important, Immediate, Key Findings, Lang Module - User Research, Long-Term (+8 more)
 
 ### Community 618 - "Lang Module - commands Index"
-Cohesion: 0.40
+Cohesion: 0.50
 Nodes (4): Lang Module - commands Index, On-Demand Loading, Purpose, See Also
 
 ### Community 619 - "claude-audit static (Lang)"
@@ -3385,16 +3650,12 @@ Cohesion: 0.40
 Nodes (4): Lang e composer root minimale, Merge root — solo moduli, Regola, Riferimento
 
 ### Community 621 - "Lang Module - concepts Index"
-Cohesion: 0.40
+Cohesion: 0.50
 Nodes (4): Lang Module - concepts Index, On-Demand Loading, Purpose, See Also
 
 ### Community 622 - "Pest PHP"
 Cohesion: 0.40
 Nodes (4): Convenzioni locali, Pest PHP, Quality Gate, Testing in Lang
-
-### Community 623 - "Lang Module Wiki"
-Cohesion: 0.40
-Nodes (5): AI / second brain, Indices, Lang Module Wiki, On-Demand Focus, On-Demand Workflow
 
 ### Community 624 - "Lang Module - memories Index"
 Cohesion: 0.40
@@ -3416,37 +3677,9 @@ Nodes (3): File Completamente in Italiano, File con Mix Italiano/Inglese, Proble
 Cohesion: 0.50
 Nodes (3): Decisioni adottate, File modificati, Risoluzione Conflitti - Lang
 
-### Community 629 - "Next Steps"
-Cohesion: 0.50
-Nodes (4): A Lungo Termine, A Medio Termine, Immediati, Next Steps
-
-### Community 630 - "Analisi di Sistema"
-Cohesion: 0.50
-Nodes (4): Analisi di Sistema, Design e UX, Performance, Sicurezza
-
-### Community 631 - "Analisi Statica del Codice (PHPStan)"
-Cohesion: 0.50
-Nodes (4): Analisi Statica del Codice (PHPStan), Obiettivi di Qualità, Piano d'Azione, Stato Attuale
-
-### Community 632 - "Metriche di Successo"
-Cohesion: 0.50
-Nodes (4): Business, Metriche di Successo, Performance, Qualità
-
-### Community 633 - "Contribuire"
-Cohesion: 0.50
-Nodes (4): Come Contribuire, Contribuire, Processo di Review, Standard di Codice
-
-### Community 634 - "Task & Progress"
-Cohesion: 0.50
-Nodes (4): Completato (100%), Da Fare (0%), In Progress (50%), Task & Progress
-
 ### Community 635 - "Miglioramenti Pianificati"
 Cohesion: 0.50
 Nodes (4): Developer Experience, Integration, Miglioramenti Pianificati, Performance
-
-### Community 636 - "Funzionalità Future"
-Cohesion: 0.50
-Nodes (4): Funzionalità Future, Integration, Message System, Translation Management
 
 ### Community 637 - "Metodi duplicati — Lang"
 Cohesion: 0.50
@@ -3481,8 +3714,8 @@ Cohesion: 0.50
 Nodes (4): Browser Tests, Integration Tests, Testing, Unit Tests
 
 ### Community 645 - "Fix Errore Sintassi TransArrayAction"
-Cohesion: 0.50
-Nodes (4): Collegamenti, Fix Errore Sintassi TransArrayAction, Mixed narrowing (campagna 5.10), Sintassi (storico)
+Cohesion: 0.17
+Nodes (12): Causa, Collegamenti, Data: 2025-01-27, Data: 2025-01-27, Data: [DATE], Fix Errore Sintassi TransArrayAction, Impatto, Miglioramenti Aggiuntivi (+4 more)
 
 ### Community 646 - "Errori da Evitare"
 Cohesion: 0.50
@@ -3492,9 +3725,9 @@ Nodes (4): Errori da Evitare, ✅ Implementazione Corretta, ❌ Registrazione Si
 Cohesion: 0.50
 Nodes (4): 🔧 **Logica Centralizzata**, 🔒 **Sicurezza Coerente**, 🎨 **Temi Personalizzabili**, Vantaggi di Questa Architettura
 
-### Community 649 - "4. Functional Requirements"
-Cohesion: 0.67
-Nodes (3): 4.1 Requirements Matrix, 4.2 Priority Definitions, 4. Functional Requirements
+### Community 649 - "Enum Translation Pattern - Implementazione Regola Critica"
+Cohesion: 0.06
+Nodes (31): 1. Regole Cursor, 1. TransTrait Obbligatorio, 1. Type Safety, 2. Documentazione Root, 2. Namespace Automatico, 3. Consistenza, 3. Documentazione Modulo UI, 3. Struttura Traduzioni (+23 more)
 
 ### Community 650 - "italian-text-audit-script.php"
 Cohesion: 0.83
@@ -3516,10 +3749,6 @@ Nodes (4): 1. File Italiano (`lang/it/lang_service.php`), 2. File Inglese (`lang
 Cohesion: 0.50
 Nodes (4): Azioni (actions), Campi (fields), Sezioni Aggiuntive, Struttura Finale Implementata
 
-### Community 655 - "🚨 **Emergenze e Rollback**"
-Cohesion: 0.67
-Nodes (3): **1. Rollback Rapido**, **2. Modalità Emergenza**, 🚨 **Emergenze e Rollback**
-
 ### Community 656 - "Note Implementative"
 Cohesion: 0.50
 Nodes (4): Filosofia, Note Implementative, Politica, Zen
@@ -3528,9 +3757,17 @@ Nodes (4): Filosofia, Note Implementative, Politica, Zen
 Cohesion: 0.50
 Nodes (4): 1. Aggiornato Widget, 2. Creata View nel Tema, 3. Documentazione Aggiornata, 🔧 **Correzioni Implementate**
 
-### Community 658 - "Collegamenti ai Moduli Correlati"
-Cohesion: 0.50
-Nodes (4): Collegamenti ai Moduli Correlati, Moduli Core, Moduli di Supporto, Moduli Tematici
+### Community 658 - "Moduli Affetti e Correzioni Effettuate"
+Cohesion: 0.06
+Nodes (33): Analisi del Problema, Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Controlli Automatici Implementati, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, File Corretti (+25 more)
+
+### Community 659 - "Gestione File di Traduzione"
+Cohesion: 0.06
+Nodes (33): 1. Backup Automatico, 1. Resource Configuration, 1. Sincronizzazione, 1. Struttura Chiavi, 1. Visualizzazione File, 2. Controllo Accessi, 2. Custom Actions, 2. Modifica Traduzioni (+25 more)
+
+### Community 660 - "Moduli Affetti e Correzioni Effettuate"
+Cohesion: 0.06
+Nodes (33): Analisi del Problema, Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Controlli Automatici Implementati, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, File Corretti (+25 more)
 
 ### Community 661 - "Localizzazione di Date e Orari"
 Cohesion: 0.50
@@ -3548,9 +3785,17 @@ Nodes (4): Configurazione di Carbon, Differenze tra Date, Formattazione delle Da
 Cohesion: 0.50
 Nodes (4): Configurazione di Carbon, Differenze tra Date, Formattazione delle Date, Localizzazione di Date e Orari
 
-### Community 665 - "5. Non-Functional Requirements"
-Cohesion: 0.50
-Nodes (4): 5.1 Performance Requirements, 5.2 Security Requirements, 5.3 Scalability Requirements, 5. Non-Functional Requirements
+### Community 665 - "Struttura Espansa per File di Traduzione - Progetto <nome progetto>"
+Cohesion: 0.06
+Nodes (33): Benefici Attesi, Collegamenti Bidirezionali, Colori Standard, Consistenza Linguistica, Core Properties (Sempre Richieste), Documentazione Correlata, DRY (Don't Repeat Yourself), Esempio Pratico - Campo "Città" (+25 more)
+
+### Community 666 - "Product Requirements Document (PRD) - Lang Module"
+Cohesion: 0.12
+Nodes (16): 10. Open Questions, 2.1 Primary Goals (SMART), 2.2 Secondary Goals, 2.3 Non-Goals, 2.4 Key Results (OKRs), 2. Goals & Objectives, 6.1 User Flows, 6.3 Design Principles (+8 more)
+
+### Community 667 - "Product Requirements Document (PRD) - Lang Module"
+Cohesion: 0.14
+Nodes (14): 10. Open Questions, 4.1 Requirements Matrix, 4.2 Priority Definitions, 4. Functional Requirements, 6.1 User Flows, 6.3 Design Principles, 6. User Experience, 8. Release Criteria (+6 more)
 
 ### Community 668 - "Current State - Lang"
 Cohesion: 0.50
@@ -3696,13 +3941,13 @@ Nodes (4): 1. Convenzioni per le Chiavi, 2. Gestione dei Parametri, 3. Plurale/S
 Cohesion: 0.50
 Nodes (4): 1. Laravel Lang, 2. Traduzione Automatica con AI, 3. Editor Online, Strumenti Consigliati
 
-### Community 704 - "Best Practice"
-Cohesion: 0.50
-Nodes (4): 1. Convenzioni per le Chiavi, 2. Gestione dei Parametri, 3. Plurale/Singolare, Best Practice
+### Community 705 - "Strategie di Gestione delle Traduzioni in Laravel"
+Cohesion: 0.06
+Nodes (31): 1. Creazione Struttura Base, 2. File di Traduzione PHP, 3. File di Traduzione JSON, 4. Middleware per la Lingua, Best Practice, Comandi Artisan, Conclusione, Da JSON a PHP (+23 more)
 
-### Community 705 - "Strumenti Consigliati"
-Cohesion: 0.50
-Nodes (4): 1. Laravel Lang, 2. Traduzione Automatica con AI, 3. Editor Online, Strumenti Consigliati
+### Community 706 - "Risultati Analisi Modulo Lang - 2025-01-06"
+Cohesion: 0.13
+Nodes (15): AutoLabelAction.php, Collegamenti, ConvertTranslations.php, Data, FindMissingTranslations.php, Piano di Azione, Priorità Alta, Priorità Bassa (+7 more)
 
 ### Community 707 - "🛠️ **Strumenti di Debug**"
 Cohesion: 0.50
@@ -3711,6 +3956,14 @@ Nodes (4): **1. Comandi Artisan**, **2. Debug Mode**, **3. Tinker Debug**, 🛠�
 ### Community 708 - "🔗 **Risorse e Supporto**"
 Cohesion: 0.50
 Nodes (4): **1. Documentazione**, **2. Comandi Utili**, **3. Log e Debug**, 🔗 **Risorse e Supporto**
+
+### Community 709 - "Aggiornamento File di Traduzione Lang Service - 2025-01-06"
+Cohesion: 0.06
+Nodes (31): 1. File Italiano (`lang/it/lang_service.php`), 2. File Inglese (`lang/en/lang_service.php`), 3. File Tedesco (`lang/de/lang_service.php`), Aggiornamento File di Traduzione Lang Service - 2025-01-06, Azioni (actions), Campi (fields), Checklist Completata, Coerenza Multi-Lingua (+23 more)
+
+### Community 710 - "Aggiornamento File di Traduzione Lang Service - 2025-01-06"
+Cohesion: 0.06
+Nodes (31): 1. File Italiano (`lang/it/lang_service.php`), 2. File Inglese (`lang/en/lang_service.php`), 3. File Tedesco (`lang/de/lang_service.php`), Aggiornamento File di Traduzione Lang Service - 2025-01-06, Azioni (actions), Campi (fields), Checklist Completata, Coerenza Multi-Lingua (+23 more)
 
 ### Community 711 - "📋 **Checklist Troubleshooting**"
 Cohesion: 0.50
@@ -3768,6 +4021,10 @@ Nodes (3): Files, Git Conflict Inventory, Notes
 Cohesion: 0.67
 Nodes (3): autoload-dev, psr-4, Modules\\Lang\\Tests\\
 
+### Community 730 - "Quality Analysis Report - Lang Module"
+Cohesion: 0.06
+Nodes (30): 1. AutoLabelAction::execute() - CRITICAL, 1. Forbidden Public Properties (33 occurrences), 2. Disallow Mixed Type Hint (42 occurrences), 3. Disallow empty() Function (5 occurrences), 4. Disallow == Operators (2 occurrences), 5. Other Style Issues, CamelCase Naming Violations (30+ occurrences), Common Issues Across Module (+22 more)
+
 ### Community 731 - "Sintassi Array"
 Cohesion: 0.67
 Nodes (3): ✅ CORRETTO - Sintassi Short Array, ❌ ERRATO - Sintassi Array Tradizionale, Sintassi Array
@@ -3776,9 +4033,9 @@ Nodes (3): ✅ CORRETTO - Sintassi Short Array, ❌ ERRATO - Sintassi Array Trad
 Cohesion: 0.67
 Nodes (3): File Completamente in Italiano, File con Mix Italiano/Inglese, Problemi Identificati
 
-### Community 733 - "Implementazione Standard"
-Cohesion: 0.67
-Nodes (3): Implementazione Standard, Motivazione, ThemeServiceProvider Pattern
+### Community 733 - "Refactor Completo File di Traduzione - Riepilogo Finale"
+Cohesion: 0.06
+Nodes (31): Benefici Ottenuti, ✅ Campi di Autenticazione Standardizzati, ✅ Campi Geografici Standardizzati, Campo "Accedi/Login", Campo "Città/City", Campo "Provincia/Province", Campo "Regione/Region", Collegamenti alla Documentazione (+23 more)
 
 ### Community 735 - "📚 **Risorse per il Futuro**"
 Cohesion: 0.67
@@ -3788,33 +4045,33 @@ Nodes (3): Documentazione di Riferimento, Pattern di Controllo, 📚 **Risorse p
 Cohesion: 0.67
 Nodes (3): ✅ **Regola Corretta**, Widget di Autenticazione → `pub_theme::`, Widget Funzionali → Namespace Modulo
 
-### Community 739 - "Metriche di Performance"
-Cohesion: 0.67
-Nodes (3): Memory Usage, Metriche di Performance, Velocità Analisi
+### Community 739 - "Strategie di Gestione delle Traduzioni in Laravel"
+Cohesion: 0.06
+Nodes (31): 1. Creazione Struttura Base, 2. File di Traduzione PHP, 3. File di Traduzione JSON, 4. Middleware per la Lingua, Best Practice, Comandi Artisan, Conclusione, Da JSON a PHP (+23 more)
 
-### Community 747 - "Documentazione Aggiornata"
-Cohesion: 0.67
-Nodes (3): Collegamenti Bidirezionali Creati, Documentazione Aggiornata, Moduli con Documentazione Aggiornata
+### Community 747 - "Strategie di Gestione delle Traduzioni in Laravel"
+Cohesion: 0.06
+Nodes (31): 1. Creazione Struttura Base, 2. File di Traduzione PHP, 3. File di Traduzione JSON, 4. Middleware per la Lingua, Best Practice, Comandi Artisan, Conclusione, Da JSON a PHP (+23 more)
 
-### Community 748 - "Prevenzione Errori Futuri"
-Cohesion: 0.67
-Nodes (3): Controlli Automatici Implementati, Prevenzione Errori Futuri, Regole di Manutenzione
+### Community 748 - "Lang Module — Mappa Graphify"
+Cohesion: 0.06
+Nodes (31): Analiza coverage test, 🏗️ Architettura Essenziale, Checklist Copertura, 🚀 Comandi Rapidi, 📌 Cosa fa il modulo Lang, Dependencies (Incoming), Dependencies (Outgoing), Entry Points (+23 more)
 
-### Community 749 - "Riepilogo Statistiche"
-Cohesion: 0.67
-Nodes (3): File Corretti, Moduli Interessati, Riepilogo Statistiche
+### Community 749 - "Aggiornamento File di Traduzione Lang Service - 2025-01-06"
+Cohesion: 0.06
+Nodes (32): 1. File Italiano (`lang/it/lang_service.php`), 2. File Inglese (`lang/en/lang_service.php`), 3. File Tedesco (`lang/de/lang_service.php`), Aggiornamento File di Traduzione Lang Service - 2025-01-06, Azioni (actions), Campi (fields), Checklist Completata, Coerenza Multi-Lingua (+24 more)
 
-### Community 750 - "Pattern di Correzione Implementato"
-Cohesion: 0.67
-Nodes (3): Inglese (EN), Pattern di Correzione Implementato, Tedesco (DE)
+### Community 750 - "Aggiornamento File di Traduzione Lang Service - 2025-01-06"
+Cohesion: 0.06
+Nodes (32): 1. File Italiano (`lang/it/lang_service.php`), 2. File Inglese (`lang/en/lang_service.php`), 3. File Tedesco (`lang/de/lang_service.php`), Aggiornamento File di Traduzione Lang Service - 2025-01-06, Azioni (actions), Campi (fields), Checklist Completata, Coerenza Multi-Lingua (+24 more)
 
-### Community 751 - "Prevenzione Errori Futuri"
-Cohesion: 0.67
-Nodes (3): Controlli Automatici Implementati, Prevenzione Errori Futuri, Regole di Manutenzione
+### Community 751 - "Gestione File di Traduzione"
+Cohesion: 0.06
+Nodes (32): 1. Backup Automatico, 1. Resource Configuration, 1. Sincronizzazione, 1. Struttura Chiavi, 1. Visualizzazione File, 2. Controllo Accessi, 2. Custom Actions, 2. Modifica Traduzioni (+24 more)
 
-### Community 752 - "Pattern di Correzione Implementato"
-Cohesion: 0.67
-Nodes (3): Inglese (EN), Pattern di Correzione Implementato, Tedesco (DE)
+### Community 752 - "Strategie di Gestione delle Traduzioni in Laravel"
+Cohesion: 0.06
+Nodes (32): 1. Creazione Struttura Base, 2. File di Traduzione PHP, 3. File di Traduzione JSON, 4. Middleware per la Lingua, Best Practice, Comandi Artisan, Conclusione, Da JSON a PHP (+24 more)
 
 ### Community 753 - "Struttura delle Chiavi di Traduzione"
 Cohesion: 0.67
@@ -3844,31 +4101,23 @@ Nodes (3): Problema, Regola Fondamentale: Mai Usare Chiavi in Italiano, Soluzion
 Cohesion: 0.67
 Nodes (3): 1. Branch di Traduzione, 2. Verifica delle Traduzioni, Integrazione con il Flusso di Lavoro
 
-### Community 760 - "Risoluzione dei Problemi"
-Cohesion: 0.67
-Nodes (3): 1. Traduzioni Mancanti, 2. Problemi di Codifica, Risoluzione dei Problemi
+### Community 760 - "Strategie di Gestione delle Traduzioni in Laravel"
+Cohesion: 0.06
+Nodes (32): 1. Creazione Struttura Base, 2. File di Traduzione PHP, 3. File di Traduzione JSON, 4. Middleware per la Lingua, Best Practice, Comandi Artisan, Conclusione, Da JSON a PHP (+24 more)
 
-### Community 761 - "Struttura dei File di Traduzione"
-Cohesion: 0.67
-Nodes (3): File JSON (Traduzioni Globali), File PHP (Traduzioni Categorizzate), Struttura dei File di Traduzione
+### Community 761 - "Refactor Completo File di Traduzione - Riepilogo Finale"
+Cohesion: 0.06
+Nodes (32): Benefici Ottenuti, ✅ Campi di Autenticazione Standardizzati, ✅ Campi Geografici Standardizzati, Campo "Accedi/Login", Campo "Città/City", Campo "Provincia/Province", Campo "Regione/Region", Collegamenti alla Documentazione (+24 more)
 
-### Community 762 - "Integrazione con il Flusso di Lavoro"
-Cohesion: 0.67
-Nodes (3): 1. Branch di Traduzione, 2. Verifica delle Traduzioni, Integrazione con il Flusso di Lavoro
+### Community 762 - "Refactor Completo File di Traduzione - Riepilogo Finale"
+Cohesion: 0.06
+Nodes (32): Benefici Ottenuti, ✅ Campi di Autenticazione Standardizzati, ✅ Campi Geografici Standardizzati, Campo "Accedi/Login", Campo "Città/City", Campo "Provincia/Province", Campo "Regione/Region", Collegamenti alla Documentazione (+24 more)
 
-### Community 763 - "Automazione"
-Cohesion: 0.67
-Nodes (3): 1. Comandi Personalizzati, 2. GitHub Actions, Automazione
-
-### Community 764 - "Risoluzione dei Problemi"
-Cohesion: 0.67
-Nodes (3): 1. Traduzioni Mancanti, 2. Problemi di Codifica, Risoluzione dei Problemi
+### Community 764 - "Refactor Completo File di Traduzione - Riepilogo Finale"
+Cohesion: 0.06
+Nodes (32): Benefici Ottenuti, ✅ Campi di Autenticazione Standardizzati, ✅ Campi Geografici Standardizzati, Campo "Accedi/Login", Campo "Città/City", Campo "Provincia/Province", Campo "Regione/Region", Collegamenti alla Documentazione (+24 more)
 
 ### Community 765 - "Migrazione tra Formati"
-Cohesion: 0.67
-Nodes (3): Da JSON a PHP, Da PHP a JSON, Migrazione tra Formati
-
-### Community 766 - "Migrazione tra Formati"
 Cohesion: 0.67
 Nodes (3): Da JSON a PHP, Da PHP a JSON, Migrazione tra Formati
 
@@ -3876,190 +4125,1245 @@ Nodes (3): Da JSON a PHP, Da PHP a JSON, Migrazione tra Formati
 Cohesion: 0.67
 Nodes (3): Esempi di Utilizzo, Helper di Traduzione, `__()` vs `trans()`
 
-### Community 768 - "Helper di Traduzione"
-Cohesion: 0.67
-Nodes (3): Esempi di Utilizzo, Helper di Traduzione, `__()` vs `trans()`
-
 ### Community 769 - "File PHP vs JSON"
 Cohesion: 0.67
 Nodes (3): File PHP vs JSON, Vantaggi File JSON, Vantaggi File PHP
 
-### Community 770 - "File PHP vs JSON"
-Cohesion: 0.67
-Nodes (3): File PHP vs JSON, Vantaggi File JSON, Vantaggi File PHP
-
-### Community 771 - "Strumenti Utili"
-Cohesion: 0.67
-Nodes (3): Comandi Artisan, Pacchetti Consigliati, Strumenti Utili
+### Community 771 - "Refactor Completo File di Traduzione - Riepilogo Finale"
+Cohesion: 0.06
+Nodes (32): Benefici Ottenuti, ✅ Campi di Autenticazione Standardizzati, ✅ Campi Geografici Standardizzati, Campo "Accedi/Login", Campo "Città/City", Campo "Provincia/Province", Campo "Regione/Region", Collegamenti alla Documentazione (+24 more)
 
 ### Community 772 - "Strumenti Utili"
 Cohesion: 0.67
 Nodes (3): Comandi Artisan, Pacchetti Consigliati, Strumenti Utili
 
-### Community 773 - "Migrazione tra Formati"
-Cohesion: 0.67
-Nodes (3): Da JSON a PHP, Da PHP a JSON, Migrazione tra Formati
-
 ### Community 774 - "Migrazione tra Formati"
 Cohesion: 0.67
 Nodes (3): Da JSON a PHP, Da PHP a JSON, Migrazione tra Formati
-
-### Community 775 - "Helper di Traduzione"
-Cohesion: 0.67
-Nodes (3): Esempi di Utilizzo, Helper di Traduzione, `__()` vs `trans()`
 
 ### Community 776 - "Helper di Traduzione"
 Cohesion: 0.67
 Nodes (3): Esempi di Utilizzo, Helper di Traduzione, `__()` vs `trans()`
 
-### Community 777 - "File PHP vs JSON"
-Cohesion: 0.67
-Nodes (3): File PHP vs JSON, Vantaggi File JSON, Vantaggi File PHP
+### Community 778 - "🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION"
+Cohesion: 0.06
+Nodes (31): 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION, 📊 ANALISI QUANTITATIVA REALE, BaseModel - Confronto Reale, Blog BaseModel (BEN FATTO), 🏆 CONCLUSIONI SUPER MUCCA, Cosa Abbiamo Scoperto, Dati Chiave (VERIFICATI), 🎯 Executive Summary (+23 more)
 
-### Community 778 - "File PHP vs JSON"
-Cohesion: 0.67
-Nodes (3): File PHP vs JSON, Vantaggi File JSON, Vantaggi File PHP
+### Community 779 - "🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION"
+Cohesion: 0.06
+Nodes (31): 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION, 📊 ANALISI QUANTITATIVA REALE, BaseModel - Confronto Reale, Blog BaseModel (BEN FATTO), 🏆 CONCLUSIONI SUPER MUCCA, Cosa Abbiamo Scoperto, Dati Chiave (VERIFICATI), 🎯 Executive Summary (+23 more)
 
-## Knowledge Gaps
-- **7414 isolated node(s):** `composer_init.sh script`, `update.sh script`, `name`, `description`, `laraxot` (+7409 more)
-  These have ≤1 connection - possible missing edges or undocumented components.
-- **64 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
-=======
-## Communities (111 total, 8 thin omitted)
+### Community 787 - "Quality Analysis Report - Lang Module"
+Cohesion: 0.06
+Nodes (30): 1. AutoLabelAction::execute() - CRITICAL, 1. Forbidden Public Properties (33 occurrences), 2. Disallow Mixed Type Hint (42 occurrences), 3. Disallow empty() Function (5 occurrences), 4. Disallow == Operators (2 occurrences), 5. Other Style Issues, CamelCase Naming Violations (30+ occurrences), Common Issues Across Module (+22 more)
 
-### Community 0 - "Spatie\QueueableAction\QueueableAction"
-Cohesion: 0.05
-Nodes (18): GetAllModuleTranslationAction, GetAllTranslationAction, GetTransPathAction, MergeTranslationsAction, PublishTranslationAction, TransArrayAction, RecordMissingTranslationAction, TranslatorAction (+10 more)
+### Community 934 - "Refactor Completo File di Traduzione - Riepilogo Finale"
+Cohesion: 0.06
+Nodes (31): Benefici Ottenuti, ✅ Campi di Autenticazione Standardizzati, ✅ Campi Geografici Standardizzati, Campo "Accedi/Login", Campo "Città/City", Campo "Provincia/Province", Campo "Regione/Region", Collegamenti alla Documentazione (+23 more)
 
-### Community 1 - "Modules\Xot\Contracts\UserContract"
+### Community 935 - "translation-consolidated.md"
+Cohesion: 0.07
+Nodes (29): Caso Specifico: Errore in `lang_service.php`, Caso Specifico: Errore in `lang_service.php`, Caso Specifico: Errore in `lang_service.php`, Caso Specifico: Errore in `lang_service.php`, Causa Radice Tipica, Causa Radice Tipica, Causa Radice Tipica, Causa Radice Tipica (+21 more)
+
+### Community 936 - "Strategie di Gestione delle Traduzioni in Laravel"
+Cohesion: 0.06
+Nodes (31): 1. Creazione Struttura Base, 2. File di Traduzione PHP, 3. File di Traduzione JSON, 4. Middleware per la Lingua, Best Practice, Comandi Artisan, Conclusione, Da JSON a PHP (+23 more)
+
+### Community 937 - "Editor File di Traduzione"
+Cohesion: 0.07
+Nodes (30): 1. Lista File di Traduzione, 1. Struttura Chiavi, 2. Naming Convention, 2. Visualizzazione File, 3. Modifica Traduzioni, 3. Validazione Contenuto, Accesso, Aggiungere una Nuova Traduzione (+22 more)
+
+### Community 938 - "Editor File di Traduzione"
+Cohesion: 0.07
+Nodes (30): 1. Lista File di Traduzione, 1. Struttura Chiavi, 2. Naming Convention, 2. Visualizzazione File, 3. Modifica Traduzioni, 3. Validazione Contenuto, Accesso, Aggiungere una Nuova Traduzione (+22 more)
+
+### Community 939 - "Lang Module Docs Consolidation Plan"
+Cohesion: 0.07
+Nodes (28): 1. DELETE DUPLICATES (Kebab vs Snake Case) — ~30 files, 2. DELETE OBSOLETE FILES — ~20 files, 3. CONSOLIDATE TRANSLATION FILES (65 → 4), 4. CONSOLIDATE CONFLICT RESOLUTION (17 → 1), 5. CONSOLIDATE VALIDATION (4 → 2), 6. CONSOLIDATE PHPSTAN (3 → 2), 7. MOVE TO WIKI/ SUBDIRECTORIES — ~40 files, After (+20 more)
+
+### Community 940 - "Lang Module Docs Consolidation Plan"
+Cohesion: 0.07
+Nodes (28): 1. DELETE DUPLICATES (Kebab vs Snake Case) — ~30 files, 2. DELETE OBSOLETE FILES — ~20 files, 3. CONSOLIDATE TRANSLATION FILES (65 → 4), 4. CONSOLIDATE CONFLICT RESOLUTION (17 → 1), 5. CONSOLIDATE VALIDATION (4 → 2), 6. CONSOLIDATE PHPSTAN (3 → 2), 7. MOVE TO WIKI/ SUBDIRECTORIES — ~40 files, After (+20 more)
+
+### Community 941 - "Lang Module Docs Consolidation Plan"
+Cohesion: 0.07
+Nodes (28): 1. DELETE DUPLICATES (Kebab vs Snake Case) — ~30 files, 2. DELETE OBSOLETE FILES — ~20 files, 3. CONSOLIDATE TRANSLATION FILES (65 → 4), 4. CONSOLIDATE CONFLICT RESOLUTION (17 → 1), 5. CONSOLIDATE VALIDATION (4 → 2), 6. CONSOLIDATE PHPSTAN (3 → 2), 7. MOVE TO WIKI/ SUBDIRECTORIES — ~40 files, After (+20 more)
+
+### Community 942 - "Editor File di Traduzione"
+Cohesion: 0.07
+Nodes (29): 1. Lista File di Traduzione, 1. Struttura Chiavi, 2. Naming Convention, 2. Visualizzazione File, 3. Modifica Traduzioni, 3. Validazione Contenuto, Accesso, Aggiungere una Nuova Traduzione (+21 more)
+
+### Community 943 - "Processo di Traduzione: Da Sviluppatore a Traduttore"
+Cohesion: 0.07
+Nodes (27): 1. Branch di Traduzione, 1. Comandi Personalizzati, 1. Convenzioni per le Chiavi, 1. Laravel Lang, 1. Traduzioni Mancanti, 2. Gestione dei Parametri, 2. GitHub Actions, 2. Problemi di Codifica (+19 more)
+
+### Community 944 - "Processo di Traduzione: Da Sviluppatore a Traduttore"
+Cohesion: 0.07
+Nodes (27): 1. Branch di Traduzione, 1. Comandi Personalizzati, 1. Convenzioni per le Chiavi, 1. Laravel Lang, 1. Traduzioni Mancanti, 2. Gestione dei Parametri, 2. GitHub Actions, 2. Problemi di Codifica (+19 more)
+
+### Community 945 - "laravel-localization complete guide"
+Cohesion: 0.07
+Nodes (25): Edge cases, Facade methods, Files in this project, Folio + Volt integration, Form actions, hideDefaultLocaleInURL = false (project default), How the project applies middleware, Language switcher (+17 more)
+
+### Community 946 - "Regole Fondamentali per i Link Markdown"
 Cohesion: 0.08
-Nodes (13): LangBasePolicy, TranslationFilePolicy, TranslationPolicy, Translation, TranslationFile, TranslationFactory, Illuminate\Auth\Access\HandlesAuthorization, Illuminate\Database\Eloquent\Builder (+5 more)
+Nodes (25): 1. Utilizzare Sempre Percorsi Relativi, 2. Navigazione Tra Cartelle, 3. Struttura della Documentazione, 4. Collegamenti Tra Moduli, 5. Verificare Sempre i Link, Collegamenti correlati, Convenzioni per i Link nella Documentazione, Da Modules/Lang/project_docs/ a docs/ nella root (+17 more)
 
-### Community 2 - "Post"
-Cohesion: 0.07
-Nodes (14): BaseMorphPivot, PostPolicy, Post, PostFactory, TranslationFileFactory, Illuminate\Database\Eloquent\Factories\Factory, Illuminate\Database\Eloquent\Relations\MorphPivot, Illuminate\Database\Eloquent\Relations\MorphTo (+6 more)
-
-### Community 3 - "LangServiceProvider.php"
-Cohesion: 0.09
-Nodes (20): AutoLabelAction, LocaleSwitcherRefresh, NationalFlagSelect, TranslationEditor, LangBaseListRecords, ListTranslationFiles, TranslationFilesTable, Filament\Actions\Action (+12 more)
-
-### Community 4 - "LanguageSwitcherWidget"
-Cohesion: 0.07
-Nodes (15): TranslationFileForm, TranslationFileInfolist, LanguageSwitcherWidget, Change, Switcher, Flag, LanguageSwitcher, Filament\Schemas\Components\Component (+7 more)
-
-### Community 5 - "devDependencies"
-Cohesion: 0.05
-Nodes (36): autoprefixer, axios, cross-env, laravel-mix, laravel-mix-merge-manifest, laravel-vite-plugin, lodash, devDependencies (+28 more)
-
-### Community 6 - "TestCase.php"
-Cohesion: 0.09
-Nodes (14): LangField, BaseModel, BaseModelLang, Illuminate\Contracts\Database\Eloquent\CastsAttributes, Illuminate\Contracts\Translation\Translator, Illuminate\Database\Eloquent\Model, Illuminate\Foundation\Application, Illuminate\Foundation\Testing\DatabaseTransactions (+6 more)
-
-### Community 7 - ".languages"
-Cohesion: 0.13
-Nodes (10): TransCollectionAction, LangData, DataCollection, TranslationData, ThemeComposer, Illuminate\Database\Eloquent\Collection, Illuminate\Support\Collection, Spatie\LaravelData\Data (+2 more)
-
-### Community 8 - "EditTranslationFile"
+### Community 947 - "lang-consolidated.md"
 Cohesion: 0.11
-Nodes (9): SaveTransAction, LangBaseEditRecord, EditTranslationFile, setTranslation(), getTranslation(), Illuminate\Contracts\Support\Htmlable, LaraZeus\SpatieTranslatable\Resources\Pages\EditRecord\Concerns\Translatable, Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord (+1 more)
+Nodes (18): Aggiornamento File di Traduzione Lang Service - 2025-01-06, Aggiornamento File di Traduzione Lang Service - 2025-01-06, Aggiornamento File di Traduzione Lang Service - 2025-01-06, Aggiornamento File di Traduzione Lang Service - [DATE], Aggiornamento File di Traduzione Lang Service - [DATE], Aggiornamento File di Traduzione Lang Service - [DATE], Aggiornamento File di Traduzione Lang Service - [DATE], Collegamenti tra versioni di lang-link.md (+10 more)
 
-### Community 9 - "Illuminate\Database\Seeder"
-Cohesion: 0.11
-Nodes (8): LanguageLine, LanguageLineFactory, LangDatabaseSeeder, LanguageLineSeeder, PostSeeder, TranslationFileSeeder, TranslationSeeder, Illuminate\Database\Seeder
+### Community 948 - "Aggiornamento File di Traduzione - Gennaio 2025"
+Cohesion: 0.08
+Nodes (25): 1. `Modules/Notify/lang/it/test_smtp.php`, 1. Sintassi Array Moderna, 2. Dichiarazione Strict Types, 2. `Modules/Notify/lang/it/send_email.php`, 3. `Modules/Lang/lang/it/lang_service.php`, 3. Risoluzione Conflitti di Merge, 4. Rimozione Duplicazioni e Campi Vuoti, 5. Miglioramento Struttura e Contenuto (+17 more)
 
-### Community 10 - "TranslationFileResource.php"
+### Community 949 - "Aggiornamento File di Traduzione - Gennaio 2025"
+Cohesion: 0.08
+Nodes (25): 1. `Modules/Notify/lang/it/test_smtp.php`, 1. Sintassi Array Moderna, 2. Dichiarazione Strict Types, 2. `Modules/Notify/lang/it/send_email.php`, 3. `Modules/Lang/lang/it/lang_service.php`, 3. Risoluzione Conflitti di Merge, 4. Rimozione Duplicazioni e Campi Vuoti, 5. Miglioramento Struttura e Contenuto (+17 more)
+
+### Community 950 - "Aggiornamento File di Traduzione - Gennaio 2025"
+Cohesion: 0.08
+Nodes (25): 1. `Modules/Notify/lang/it/test_smtp.php`, 1. Sintassi Array Moderna, 2. Dichiarazione Strict Types, 2. `Modules/Notify/lang/it/send_email.php`, 3. `Modules/Lang/lang/it/lang_service.php`, 3. Risoluzione Conflitti di Merge, 4. Rimozione Duplicazioni e Campi Vuoti, 5. Miglioramento Struttura e Contenuto (+17 more)
+
+### Community 951 - "Aggiornamento File di Traduzione - Gennaio 2025"
+Cohesion: 0.08
+Nodes (25): 1. `Modules/Notify/lang/it/test_smtp.php`, 1. Sintassi Array Moderna, 2. Dichiarazione Strict Types, 2. `Modules/Notify/lang/it/send_email.php`, 3. `Modules/Lang/lang/it/lang_service.php`, 3. Risoluzione Conflitti di Merge, 4. Rimozione Duplicazioni e Campi Vuoti, 5. Miglioramento Struttura e Contenuto (+17 more)
+
+### Community 952 - "Aggiornamento File di Traduzione - Gennaio 2025"
+Cohesion: 0.08
+Nodes (25): 1. `Modules/Notify/lang/it/test_smtp.php`, 1. Sintassi Array Moderna, 2. Dichiarazione Strict Types, 2. `Modules/Notify/lang/it/send_email.php`, 3. `Modules/Lang/lang/it/lang_service.php`, 3. Risoluzione Conflitti di Merge, 4. Rimozione Duplicazioni e Campi Vuoti, 5. Miglioramento Struttura e Contenuto (+17 more)
+
+### Community 953 - "Best Practices per le Chiavi di Traduzione"
+Cohesion: 0.08
+Nodes (25): [AGGIORNAMENTO 2024-06-XX] - Correzione appointment.php, Best Practices per le Chiavi di Traduzione, Checklist aggiornata, Checklist Dev → Traduttore, Checklist per la scelta, Collegamenti correlati, Componenti UI, Conclusione (+17 more)
+
+### Community 954 - "Best Practices per le Chiavi di Traduzione"
+Cohesion: 0.08
+Nodes (25): [AGGIORNAMENTO 2024-06-XX] - Correzione appointment.php, Best Practices per le Chiavi di Traduzione, Checklist aggiornata, Checklist Dev → Traduttore, Checklist per la scelta, Collegamenti correlati, Componenti UI, Conclusione (+17 more)
+
+### Community 955 - "Gestione delle Lingue in Laravel"
+Cohesion: 0.08
+Nodes (23): 1. Aggiornare il Service Provider, 1. Le traduzioni JSON non funzionano con il fallback, 1. Struttura delle Cartelle, 2. Convenzioni per le Chiavi, 2. Creare un Helper per la Lingua, 2. La lingua non viene mantenuta tra le richieste, 3. Gestione delle Eccezioni, Best Practice (+15 more)
+
+### Community 956 - "Gestione delle Lingue in Laravel"
+Cohesion: 0.08
+Nodes (23): 1. Aggiornare il Service Provider, 1. Le traduzioni JSON non funzionano con il fallback, 1. Struttura delle Cartelle, 2. Convenzioni per le Chiavi, 2. Creare un Helper per la Lingua, 2. La lingua non viene mantenuta tra le richieste, 3. Gestione delle Eccezioni, Best Practice (+15 more)
+
+### Community 957 - "Aggiornamento File di Traduzione - Gennaio 2025"
+Cohesion: 0.08
+Nodes (24): 1. `Modules/Notify/lang/it/test_smtp.php`, 1. Sintassi Array Moderna, 2. Dichiarazione Strict Types, 2. `Modules/Notify/lang/it/send_email.php`, 3. `Modules/Lang/lang/it/lang_service.php`, 3. Risoluzione Conflitti di Merge, 4. Rimozione Duplicazioni e Campi Vuoti, 5. Miglioramento Struttura e Contenuto (+16 more)
+
+### Community 958 - "LaravelLocalization - Best Practices"
+Cohesion: 0.08
+Nodes (24): Blade Templates, Common Issues, Config File, Correct Methods, Folio Routes (Service Provider), Forms, Helpers Reference, Incorrect Usage (+16 more)
+
+### Community 959 - "Ottimizzazioni Super DRY + KISS - Modulo Lang"
+Cohesion: 0.10
+Nodes (20): 1. **Eliminazione Duplicazioni Documentazione**, 1. **Quantitative**, 1. **Standardizzazione Completa**, 1. **Standardizzazione Namespace**, 2. **Eliminazione Duplicazioni Codice**, 2. **Miglioramento Manutenibilità**, 2. **Qualitative**, 2. **Standardizzazione Naming File** (+12 more)
+
+### Community 960 - "Aggiornamento File di Traduzione - Gennaio 2025"
+Cohesion: 0.08
+Nodes (24): 1. `Modules/Notify/lang/it/test_smtp.php`, 1. Sintassi Array Moderna, 2. Dichiarazione Strict Types, 2. `Modules/Notify/lang/it/send_email.php`, 3. `Modules/Lang/lang/it/lang_service.php`, 3. Risoluzione Conflitti di Merge, 4. Rimozione Duplicazioni e Campi Vuoti, 5. Miglioramento Struttura e Contenuto (+16 more)
+
+### Community 961 - "Best Practices per le Chiavi di Traduzione"
+Cohesion: 0.08
+Nodes (24): [AGGIORNAMENTO 2024-06-XX] - Correzione appointment.php, Best Practices per le Chiavi di Traduzione, Checklist aggiornata, Checklist Dev → Traduttore, Checklist per la scelta, Collegamenti correlati, Componenti UI, Conclusione (+16 more)
+
+### Community 962 - "Best Practices per le Chiavi di Traduzione"
+Cohesion: 0.08
+Nodes (24): [AGGIORNAMENTO 2024-06-XX] - Correzione appointment.php, Best Practices per le Chiavi di Traduzione, Checklist aggiornata, Checklist Dev → Traduttore, Checklist per la scelta, Collegamenti correlati, Componenti UI, Conclusione (+16 more)
+
+### Community 963 - "File Corretti"
+Cohesion: 0.08
+Nodes (23): 1. Chart/lang/it/chart.php, 1. Struttura File Standard, 2. Chart/lang/it/mixed_chart.php, 2. Regole Applicate, 3. Contesti Specifici, 3. FormBuilder/lang/it/collection_lang.php, 4. FormBuilder/lang/it/field.php, 5. FormBuilder/lang/it/field_option.php (+15 more)
+
+### Community 964 - "_da-riconciliare/PERFORMANCE-OPTIMIZATION.md"
+Cohesion: 0.09
+Nodes (22): 1. On-Demand Loading (principale), 2. Cache Esterna al Repo, 3. Node Modules Puliti, 4. Wiki Indici Locali, Best Practice per Sviluppatori, Caricamento Efficiente, Cerca globalmente (solo se necessario), Cerca solo nel modulo corrente (+14 more)
+
+### Community 965 - "Gestione delle Traduzioni dei Messaggi di Validazione"
+Cohesion: 0.09
+Nodes (22): 1. Messaggi di Validazione Standard, 2. Personalizzazione dei Nomi dei Campi (attributes), 3. Messaggi di Validazione Personalizzati, 4. Gestione degli Array di Campi, 5. Esempio Completo, 6. Best Practice e Checklist, 7. Modifiche consigliate ai file del progetto, 8. FAQ e Problemi Comuni (+14 more)
+
+### Community 966 - "Correzioni Errori Sintassi File Traduzione - Gennaio 2025"
 Cohesion: 0.14
-Nodes (8): LangBaseResource, LangBaseCreateRecord, CreateTranslationFile, TranslationFileResource, LaraZeus\SpatieTranslatable\Resources\Concerns\Translatable, LaraZeus\SpatieTranslatable\Resources\Pages\CreateRecord\Concerns\Translatable, Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord, Modules\Xot\Filament\Resources\XotBaseResource
+Nodes (14): 1. Struttura File Standard, 2. Regole Applicate, 3. Contesti Specifici, Collegamenti Documentazione, Comandi di Verifica, Controlli Eseguiti, Correzioni Errori Sintassi File Traduzione - Gennaio 2025, Errori Critici Identificati (+6 more)
 
-### Community 11 - "contributor-lines-report.mjs"
-Cohesion: 0.16
-Nodes (19): args, barChartSvg(), buildHtml(), buildSummary(), clocData, collectCloc(), collectGitChurn(), cwd (+11 more)
+### Community 967 - "LangServiceProvider: Analisi e Proposte di Miglioramento"
+Cohesion: 0.09
+Nodes (23): 1. Estensione Supporto Componenti (Priorità: Alta), 2. Ottimizzazione Cache Traduzioni (Priorità: Media), 3. Supporto per Enum nei Select (Priorità: Alta), 4. Interfaccia di Gestione Traduzioni (Priorità: Bassa), Analisi dell'Implementazione Attuale, Approfondimento, Architettura Attuale, Autoregistrazione (Filosofia Xot) (+15 more)
 
-### Community 12 - "LangServiceProvider"
-Cohesion: 0.21
-Nodes (7): LangServiceProvider, TranslatorTraitPhpstanProbe, Illuminate\Contracts\Foundation\Application, Modules\Lang\Providers\Traits\TranslatorTrait, Modules\Xot\Providers\XotBaseServiceProvider, makeLangServiceProvider(), makeLangServiceProvider()
+### Community 968 - "LangServiceProvider: Analisi e Proposte di Miglioramento"
+Cohesion: 0.09
+Nodes (23): 1. Estensione Supporto Componenti (Priorità: Alta), 2. Ottimizzazione Cache Traduzioni (Priorità: Media), 3. Supporto per Enum nei Select (Priorità: Alta), 4. Interfaccia di Gestione Traduzioni (Priorità: Bassa), Analisi dell'Implementazione Attuale, Approfondimento, Architettura Attuale, Autoregistrazione (Filosofia Xot) (+15 more)
 
-### Community 13 - "composer.json"
+### Community 969 - "Ottimizzazioni Super DRY + KISS - Modulo Lang"
+Cohesion: 0.09
+Nodes (23): 1. **Cartelle con Naming Inconsistente (ALTO IMPATTO)**, 1. **Quantitative**, 1. **Standardizzazione Cartelle App**, 1. **Standardizzazione Completa**, 1. **Standardizzazione Namespace**, 2. **Eliminazione Duplicazioni Codice**, 2. **Miglioramento Manutenibilità**, 2. **Qualitative** (+15 more)
+
+### Community 970 - "Riepilogo Correzioni Traduzioni - Gennaio 2025"
+Cohesion: 0.09
+Nodes (23): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttura Espansa Obbligatoria, 2. No Hardcoded Labels, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE, 3. Coerenza Strutturale, 3. Traduzioni Mancanti Appointment ✅ RISOLTE, 4. Audit Sistematico, Best Practices Implementate (+15 more)
+
+### Community 971 - "Riepilogo Correzioni Traduzioni - Gennaio 2025"
+Cohesion: 0.09
+Nodes (23): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttura Espansa Obbligatoria, 2. No Hardcoded Labels, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE, 3. Coerenza Strutturale, 3. Traduzioni Mancanti Appointment ✅ RISOLTE, 4. Audit Sistematico, Best Practices Implementate (+15 more)
+
+### Community 972 - "Riepilogo Correzioni Traduzioni - Gennaio 2025"
+Cohesion: 0.09
+Nodes (23): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttura Espansa Obbligatoria, 2. No Hardcoded Labels, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE, 3. Coerenza Strutturale, 3. Traduzioni Mancanti Appointment ✅ RISOLTE, 4. Audit Sistematico, Best Practices Implementate (+15 more)
+
+### Community 973 - "Riepilogo Correzioni Traduzioni - Gennaio 2025"
+Cohesion: 0.09
+Nodes (23): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttura Espansa Obbligatoria, 2. No Hardcoded Labels, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE, 3. Coerenza Strutturale, 3. Traduzioni Mancanti Appointment ✅ RISOLTE, 4. Audit Sistematico, Best Practices Implementate (+15 more)
+
+### Community 974 - "Riepilogo Correzioni Traduzioni - Gennaio 2025"
+Cohesion: 0.09
+Nodes (23): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttura Espansa Obbligatoria, 2. No Hardcoded Labels, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE, 3. Coerenza Strutturale, 3. Traduzioni Mancanti Appointment ✅ RISOLTE, 4. Audit Sistematico, Best Practices Implementate (+15 more)
+
+### Community 975 - "Riepilogo Correzioni Traduzioni - Gennaio 2025"
+Cohesion: 0.09
+Nodes (23): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttura Espansa Obbligatoria, 2. No Hardcoded Labels, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE, 3. Coerenza Strutturale, 3. Traduzioni Mancanti Appointment ✅ RISOLTE, 4. Audit Sistematico, Best Practices Implementate (+15 more)
+
+### Community 976 - "Lang {{TYPE^}} LLM Wiki Agent Instructions"
+Cohesion: 0.10
+Nodes (21): Before Committing, Create Module Page If:, Cross-Linking to Project Wiki, Directory Rules, Frontmatter Schema, Ingest, Lang {{TYPE^}} LLM Wiki Agent Instructions, Lint (+13 more)
+
+### Community 977 - "Analisi Modelli, Factory e Seeder - Modulo Lang"
+Cohesion: 0.09
+Nodes (21): Analisi Dettagliata Modelli, Analisi Modelli, Factory e Seeder - Modulo Lang, Azioni Future, Azioni Immediate, Collegamenti, Documentazione Correlata, Factory Mancanti (Nessuna), File Duplicati/Backup (+13 more)
+
+### Community 978 - "Plurale/Singolare e Localizzazione Date/Valute"
+Cohesion: 0.09
+Nodes (21): 1.4 Modifiche Proposte ai File, 1.5 Esempio Completo, 1.6 Checklist, 3. FAQ e Problemi Comuni, 4. Collegamenti correlati, Configurazione, Esempio base, Formati diversi per lingua (+13 more)
+
+### Community 979 - "Riepilogo Correzioni Traduzioni - Gennaio 2025"
+Cohesion: 0.09
+Nodes (22): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttura Espansa Obbligatoria, 2. No Hardcoded Labels, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE, 3. Coerenza Strutturale, 3. Traduzioni Mancanti Appointment ✅ RISOLTE, 4. Audit Sistematico, Best Practices Implementate (+14 more)
+
+### Community 980 - "Rinvex Countries Usage in Lang Module"
+Cohesion: 0.09
+Nodes (22): Available Country Data, Basic Information, Basic Usage, Best Practices, Communication, Data Structure Example, Error Handling, External Resources (+14 more)
+
+### Community 981 - "Traduzioni con ".navigation" - Audit Completo 2025"
+Cohesion: 0.09
+Nodes (21): 1. Modules/User/lang/it/permission.php ✅ CORRETTO, 2. Modules/Lang/lang/en/edit_translation_file.php ✅ CORRETTO, Checklist Correzione ✅ COMPLETATO, Collegamenti Correlati, Errori Sintassi UI ✅, Fase 1: Correzione Errori Sintassi UI ✅ COMPLETATO, Fase 2: Correzione Traduzioni Navigation ✅ COMPLETATO, Fase 3: Standardizzazione ✅ COMPLETATO (+13 more)
+
+### Community 982 - "LangServiceProvider: Analisi e Proposte di Miglioramento"
+Cohesion: 0.09
+Nodes (22): 1. Estensione Supporto Componenti (Priorità: Alta), 2. Ottimizzazione Cache Traduzioni (Priorità: Media), 3. Supporto per Enum nei Select (Priorità: Alta), 4. Interfaccia di Gestione Traduzioni (Priorità: Bassa), Analisi dell'Implementazione Attuale, Approfondimento, Architettura Attuale, Autoregistrazione (Filosofia Xot) (+14 more)
+
+### Community 983 - "Utilizzo di mcamara/laravel-localization"
+Cohesion: 0.09
+Nodes (22): 1. Ottenere la Lingua Corrente, 2. Ottenere le Lingue Supportate, 3. Generare URL Localizzati, 4. Esempio di Selettore Lingua Completo, Collegamenti correlati, Componenti Bandiera, Configurazione, Errori Comuni da Evitare (+14 more)
+
+### Community 984 - "Translation Module PDF Reports"
+Cohesion: 0.09
+Nodes (22): 1. Caching Strategy, 1. Coverage Report Template, 1. Translation Coverage Report, 1. Translation Report Action, 1. Translation Report Service, 1. Unit Tests, 2. Memory Management, 2. Translation Usage Report (+14 more)
+
+### Community 985 - "Standard per helper_text nelle Traduzioni <nome progetto>"
+Cohesion: 0.09
+Nodes (22): 1. Controllo Obbligatorio, 2. Coerenza Multilingua, 3. Struttura Completa, Applicazione Globale, Caso Studio: <nome progetto> profile_widget.php, Checklist di Validazione, Collegamenti, ✅ CORRETTO (+14 more)
+
+### Community 986 - "Regole per le Chiavi di Traduzione"
+Cohesion: 0.09
+Nodes (22): 1. Estrazione Automatica delle Chiavi, 1. Nei Template Blade, 1. Struttura delle Chiavi di Traduzione, [2024-07-07] Nota storica: correzione massiva Notify, [2024-07-07] Nota storica: correzione massiva Notify, 2. Convenzioni di Naming, 2. Nei Componenti Filament, 2. Verifica delle Traduzioni Mancanti (+14 more)
+
+### Community 987 - "Regole per le Chiavi di Traduzione"
+Cohesion: 0.09
+Nodes (22): 1. Estrazione Automatica delle Chiavi, 1. Nei Template Blade, 1. Struttura delle Chiavi di Traduzione, [2024-07-07] Nota storica: correzione massiva Notify, 2. Convenzioni di Naming, 2. Nei Componenti Filament, 2. Verifica delle Traduzioni Mancanti, 3. Divieto di Chiavi in Italiano (+14 more)
+
+### Community 988 - "Regole Critiche per la Preservazione delle Traduzioni"
+Cohesion: 0.09
+Nodes (22): Ambito Medico/Odontoiatrico, Checklist per Nuove Traduzioni, Collegamenti, ✅ CORRETTO - Inglese, ✅ CORRETTO - Italiano, ✅ CORRETTO - Tedesco, Documentazione delle Modifiche, Dopo (Corretto) (+14 more)
+
+### Community 989 - "Regole Critiche per la Preservazione delle Traduzioni"
+Cohesion: 0.09
+Nodes (22): Ambito Medico/Odontoiatrico, Checklist per Nuove Traduzioni, Collegamenti, ✅ CORRETTO - Inglese, ✅ CORRETTO - Italiano, ✅ CORRETTO - Tedesco, Documentazione delle Modifiche, Dopo (Corretto) (+14 more)
+
+### Community 990 - "Lang {{TYPE^}} LLM Wiki Agent Instructions"
+Cohesion: 0.10
+Nodes (21): Before Committing, Create Module Page If:, Cross-Linking to Project Wiki, Directory Rules, Frontmatter Schema, Ingest, Lang {{TYPE^}} LLM Wiki Agent Instructions, Lint (+13 more)
+
+### Community 991 - "Lang {{TYPE^}} LLM Wiki Agent Instructions"
+Cohesion: 0.10
+Nodes (21): Before Committing, Create Module Page If:, Cross-Linking to Project Wiki, Directory Rules, Frontmatter Schema, Ingest, Lang {{TYPE^}} LLM Wiki Agent Instructions, Lint (+13 more)
+
+### Community 992 - "Correzione Errori Traduzioni - 2025"
+Cohesion: 0.17
+Nodes (11): Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, Inglese (EN), Moduli con Documentazione Aggiornata, Pattern di Correzione Implementato (+3 more)
+
+### Community 993 - "Lang {{TYPE^}} LLM Wiki Agent Instructions"
+Cohesion: 0.10
+Nodes (21): Before Committing, Create Module Page If:, Cross-Linking to Project Wiki, Directory Rules, Frontmatter Schema, Ingest, Lang {{TYPE^}} LLM Wiki Agent Instructions, Lint (+13 more)
+
+### Community 994 - "PHPStan Compliance Documentation"
+Cohesion: 0.10
+Nodes (20): 1. PHPStan, 1. TranslationFileResource - Lang Module, 2. PHPMD (Mess Detector), 2. TranslationFileResource - Type Safety, 3. PHPInsights, 4. Pest Tests, Configurazione PHPStan, Documentazione Esterna (+12 more)
+
+### Community 995 - "Utilizzo di mcamara/laravel-localization"
+Cohesion: 0.10
+Nodes (21): 1. Ottenere la Lingua Corrente, 2. Ottenere le Lingue Supportate, 3. Generare URL Localizzati, 4. Esempio di Selettore Lingua Completo, Collegamenti correlati, Componenti Bandiera, Configurazione, Errori Comuni da Evitare (+13 more)
+
+### Community 996 - "Utilizzo di mcamara/laravel-localization"
+Cohesion: 0.10
+Nodes (21): 1. Ottenere la Lingua Corrente, 2. Ottenere le Lingue Supportate, 3. Generare URL Localizzati, 4. Esempio di Selettore Lingua Completo, Collegamenti correlati, Componenti Bandiera, Configurazione, Errori Comuni da Evitare (+13 more)
+
+### Community 997 - "Laravel Localization Reference"
+Cohesion: 0.10
+Nodes (21): Available Methods, Available Options (config/laravellocalization.php), Common Issues, Configuration, Getting Locale Information, Installation, Language Selector, Laravel Localization Reference (+13 more)
+
+### Community 998 - "Regole per le Chiavi di Traduzione"
+Cohesion: 0.10
+Nodes (21): 1. Estrazione Automatica delle Chiavi, 1. Nei Template Blade, 1. Struttura delle Chiavi di Traduzione, [2024-07-07] Nota storica: correzione massiva Notify, 2. Convenzioni di Naming, 2. Nei Componenti Filament, 2. Verifica delle Traduzioni Mancanti, 3. Divieto di Chiavi in Italiano (+13 more)
+
+### Community 999 - "Regole per le Chiavi di Traduzione"
+Cohesion: 0.10
+Nodes (21): 1. Estrazione Automatica delle Chiavi, 1. Nei Template Blade, 1. Struttura delle Chiavi di Traduzione, 2. Convenzioni di Naming, 2. Nei Componenti Filament, 2. Verifica delle Traduzioni Mancanti, 3. Divieto di Chiavi in Italiano, 3. Sincronizzazione delle Traduzioni (+13 more)
+
+### Community 1000 - "Correzione Errori di Sintassi nei File di Traduzione"
+Cohesion: 0.10
+Nodes (21): 1. Parentesi Non Bilanciate, 2. declare() Posizionato Erroneamente, Best Practices Applicate, Chart Module, Checklist di Verifica, Collegamenti, Correzione Errori di Sintassi nei File di Traduzione, Documentazione Aggiornata (+13 more)
+
+### Community 1001 - "Correzione Errori di Sintassi nei File di Traduzione"
+Cohesion: 0.10
+Nodes (21): 1. Parentesi Non Bilanciate, 2. declare() Posizionato Erroneamente, Best Practices Applicate, Chart Module, Checklist di Verifica, Collegamenti, Correzione Errori di Sintassi nei File di Traduzione, Documentazione Aggiornata (+13 more)
+
+### Community 1002 - "Correzione Errori di Sintassi nei File di Traduzione"
+Cohesion: 0.10
+Nodes (21): 1. Parentesi Non Bilanciate, 2. declare() Posizionato Erroneamente, Best Practices Applicate, Chart Module, Checklist di Verifica, Collegamenti, Correzione Errori di Sintassi nei File di Traduzione, Documentazione Aggiornata (+13 more)
+
+### Community 1003 - "I confini, e dove oggi sono rotti"
+Cohesion: 0.10
+Nodes (19): 1. Spostare la guardia dal runtime alla registrazione, 2. Non svuotare la cache dell'applicazione per una traduzione, 3. Decidere se il TranslatorAdapter serve, e agire di conseguenza, 4. Un solo `AutoLabelAction`, 5. Tipizzare `LanguageLine` sul contratto, `app/Services/` esiste ancora, `AutoLabelAction` esiste due volte, e la copia in Xot non è usata da nessuno, Collegamenti (+11 more)
+
+### Community 1004 - "Integrazione avanzata: mcamara/laravel-localization + Laravel Folio"
+Cohesion: 0.10
+Nodes (20): 1. Introduzione, 2.1. Come funziona Folio, 2.2. Come funziona mcamara/laravel-localization, 2.3. Punti critici, 2. Analisi tecnica e criticità, 3.1. Wrappare tutte le route Folio nel gruppo localizzato, 3.2. Traduzione degli slug Folio, 3.3. Gestione avanzata dei parametri dinamici (slug, id, ecc.) (+12 more)
+
+### Community 1005 - "Integrazione avanzata: mcamara/laravel-localization + Laravel Folio"
+Cohesion: 0.10
+Nodes (20): 1. Introduzione, 2.1. Come funziona Folio, 2.2. Come funziona mcamara/laravel-localization, 2.3. Punti critici, 2. Analisi tecnica e criticità, 3.1. Wrappare tutte le route Folio nel gruppo localizzato, 3.2. Traduzione degli slug Folio, 3.3. Gestione avanzata dei parametri dinamici (slug, id, ecc.) (+12 more)
+
+### Community 1006 - "Integration of Mcamara Laravel Localization with Laravel Folio"
+Cohesion: 0.10
+Nodes (20): Analysis of Components, Best Practices for `<nome progetto>`, Best Practices for `ptvx`, Conclusion, Integration Challenges, Integration of Mcamara Laravel Localization with Laravel Folio, Integration Solution, Laravel Folio (+12 more)
+
+### Community 1007 - "Integration of Mcamara Laravel Localization with Laravel Folio"
+Cohesion: 0.10
+Nodes (20): Analysis of Components, Best Practices for `<nome progetto>`, Conclusion, Integration Challenges, Integration of Mcamara Laravel Localization with Laravel Folio, Integration Solution, Laravel Folio, laravel-localization-folio (+12 more)
+
+### Community 1008 - "Integration of Mcamara Laravel Localization with Laravel Folio"
+Cohesion: 0.10
+Nodes (20): Analysis of Components, Best Practices for `<nome progetto>corrente`, Conclusion, Integration Challenges, Integration of Mcamara Laravel Localization with Laravel Folio, Integration Solution, Laravel Folio, laravel_localization_implementation (+12 more)
+
+### Community 1009 - "Ottimizzazioni Approfondite Modulo Lang - DRY + KISS"
+Cohesion: 0.10
+Nodes (20): 1. Consolidamento Cartelle Documentazione, 1. Standardizzazione Naming Cartelle, 1. Struttura Codice, 2. Configurazione, 2. Standardizzazione Naming File, 2. Verifica Estensioni Classi, 3. Consolidamento Configurazioni, 3. Consolidamento Contenuto (+12 more)
+
+### Community 1010 - "Regole Fondamentali per le Traduzioni"
+Cohesion: 0.10
+Nodes (20): 1. Estrazione Automatica delle Chiavi, 1. Nei Template Blade, 1. Struttura delle Chiavi di Traduzione, 2. Convenzioni di Naming, 2. Nei Componenti Filament, 2. Verifica delle Traduzioni Mancanti, 3. Divieto di Chiavi in Italiano, 3. Sincronizzazione delle Traduzioni (+12 more)
+
+### Community 1011 - "Regole Fondamentali per le Traduzioni"
+Cohesion: 0.10
+Nodes (20): 1. Estrazione Automatica delle Chiavi, 1. Nei Template Blade, 1. Struttura delle Chiavi di Traduzione, 2. Convenzioni di Naming, 2. Nei Componenti Filament, 2. Verifica delle Traduzioni Mancanti, 3. Divieto di Chiavi in Italiano, 3. Sincronizzazione delle Traduzioni (+12 more)
+
+### Community 1012 - "Regole Fondamentali per le Traduzioni"
+Cohesion: 0.10
+Nodes (20): 1. Estrazione Automatica delle Chiavi, 1. Nei Template Blade, 1. Struttura delle Chiavi di Traduzione, 2. Convenzioni di Naming, 2. Nei Componenti Filament, 2. Verifica delle Traduzioni Mancanti, 3. Divieto di Chiavi in Italiano, 3. Sincronizzazione delle Traduzioni (+12 more)
+
+### Community 1013 - "Correzione Errori di Sintassi nei File di Traduzione"
+Cohesion: 0.10
+Nodes (20): 1. Parentesi Non Bilanciate, 2. declare() Posizionato Erroneamente, Best Practices Applicate, Chart Module, Checklist di Verifica, Collegamenti, Correzione Errori di Sintassi nei File di Traduzione, Documentazione Aggiornata (+12 more)
+
+### Community 1014 - "Correzione Errori di Sintassi nei File di Traduzione"
+Cohesion: 0.10
+Nodes (20): 1. Parentesi Non Bilanciate, 2. declare() Posizionato Erroneamente, Best Practices Applicate, Chart Module, Checklist di Verifica, Collegamenti, Correzione Errori di Sintassi nei File di Traduzione, Documentazione Aggiornata (+12 more)
+
+### Community 1015 - "Recent Updates"
+Cohesion: 0.10
+Nodes (20): Audit Status, Completed ✅, [DATE]: Added Missing 'minutes' and 'page' Translation Keys, [DATE]: Appointment Translation Files Enhancement, [DATE]: Complete PDF Template Internationalization, [DATE]: Doctor Translation Files Audit and Fix, [DATE]: English Translation Files Completion, [DATE]: Fixed Hardcoded Italian Text in Theme Views (+12 more)
+
+### Community 1016 - "Sistema di Traduzioni"
+Cohesion: 0.10
+Nodes (20): Best Practices, Cache, Collegamenti Bidirezionali, Esempi di Implementazione Corretta, File di Traduzione, Implementazione, LangServiceProvider, Modulo <nome progetto> - Appointment Report (+12 more)
+
+### Community 1017 - "conflict-consolidated.md"
+Cohesion: 0.11
+Nodes (18): Analisi Conflitti - README.md, Backlinks, Collegamenti correlati, conflict — Consolidated Documentation, conflict-resolution-autolabelaction, conflict_resolution_autolabelaction, Conflict Resolution — Module Lang, conflicts (+10 more)
+
+### Community 1018 - "Risoluzione Conflitto AutoLabelAction"
+Cohesion: 0.11
+Nodes (19): Analisi del Conflitto, Collegamenti Correlati, conflict_resolution_edit_translation_file, Conflitto 1 (Linea 25) - Documentazione PHPDoc, Conflitto 2 (Linea 49) - Logica di Debug, Conflitto 3 (Linea 108) - Concatenazione Stringhe, Criteri di Risoluzione, Data Risoluzione (+11 more)
+
+### Community 1019 - "Risoluzione Conflitto AutoLabelAction"
+Cohesion: 0.11
+Nodes (19): Analisi del Conflitto, Collegamenti Correlati, conflict-resolution-edit-translation-file, Conflitto 1 (Linea 25) - Documentazione PHPDoc, Conflitto 2 (Linea 49) - Logica di Debug, Conflitto 3 (Linea 108) - Concatenazione Stringhe, Criteri di Risoluzione, Data Risoluzione (+11 more)
+
+### Community 1020 - "Miglioramenti LangServiceProvider"
+Cohesion: 0.11
+Nodes (19): 1. Caching delle Traduzioni, 1. Configurazione, 1. Tempi di Caricamento, 2. Middleware, 2. Utilizzo Memoria, 2. Validazione delle Chiavi, 3. Eventi, 3. Gestione Fallback (+11 more)
+
+### Community 1021 - "Miglioramenti LangServiceProvider"
+Cohesion: 0.11
+Nodes (19): 1. Caching delle Traduzioni, 1. Configurazione, 1. Tempi di Caricamento, 2. Middleware, 2. Utilizzo Memoria, 2. Validazione delle Chiavi, 3. Eventi, 3. Gestione Fallback (+11 more)
+
+### Community 1022 - "Integrazione avanzata: mcamara/laravel-localization + Laravel Folio"
+Cohesion: 0.11
+Nodes (19): 1. Introduzione, 2.1. Come funziona Folio, 2.2. Come funziona mcamara/laravel-localization, 2.3. Punti critici, 2. Analisi tecnica e criticità, 3.1. Wrappare tutte le route Folio nel gruppo localizzato, 3.2. Traduzione degli slug Folio, 3.3. Gestione avanzata dei parametri dinamici (slug, id, ecc.) (+11 more)
+
+### Community 1023 - "Correzioni Traduzioni Navigation - Modulo Lang"
+Cohesion: 0.11
+Nodes (19): Analisi File, Collegamenti, Controlli Effettuati, Correzioni Traduzioni Navigation - Modulo Lang, Data Intervento, DRY (Don't Repeat Yourself), Esempio Struttura Corretta Trovata, File: `lang/en/edit_translation_file.php` (+11 more)
+
+### Community 1024 - "Ottimizzazioni Modulo Lang"
+Cohesion: 0.11
+Nodes (19): Analisi Situazione Attuale, Benefici Attesi, Considerazioni Speciali, Cross-Module Impact:, Fase 1: Estrazione Contenuto, Fase 2: Ottimizzazione, Fase 3: Validazione, Metriche di Successo (+11 more)
+
+### Community 1025 - "Recent Updates"
+Cohesion: 0.11
+Nodes (19): Audit Status, Completed ✅, [DATE]: Added Missing 'minutes' and 'page' Translation Keys, [DATE]: Appointment Translation Files Enhancement, [DATE]: Complete PDF Template Internationalization, [DATE]: Doctor Translation Files Audit and Fix, [DATE]: English Translation Files Completion, [DATE]: Fixed Hardcoded Italian Text in Theme Views (+11 more)
+
+### Community 1026 - "Risoluzione Conflitto AutoLabelAction"
+Cohesion: 0.11
+Nodes (18): Analisi del Conflitto, Collegamenti Correlati, Conflitto 1 (Linea 25) - Documentazione PHPDoc, Conflitto 2 (Linea 49) - Logica di Debug, Conflitto 3 (Linea 108) - Concatenazione Stringhe, Criteri di Risoluzione, Data Risoluzione, ✅ DECISIONE FINALE: Versione HEAD (Documentazione completa + Spazi + Logica debug) (+10 more)
+
+### Community 1027 - "Risoluzione Conflitto WriteTranslationFileAction"
+Cohesion: 0.11
+Nodes (18): Analisi del Conflitto, Collegamenti Correlati, conflict-resolution, Conflitto 1 (Linea 44) - Commento Cache, Conflitto 2 (Linea 119) - Commento PHPStan, Criteri di Risoluzione, Data Risoluzione, Giustificazione Tecnica (+10 more)
+
+### Community 1028 - "Risoluzione Conflitto WriteTranslationFileAction"
+Cohesion: 0.11
+Nodes (18): Analisi del Conflitto, Collegamenti Correlati, conflicts-analysis, Conflitto 1 (Linea 44) - Commento Cache, Conflitto 2 (Linea 119) - Commento PHPStan, Criteri di Risoluzione, Data Risoluzione, Giustificazione Tecnica (+10 more)
+
+### Community 1029 - "Correzione Convenzione Naming Cartelle Docs - Gennaio 2025"
+Cohesion: 0.11
+Nodes (18): Convenzione Applicata, Correzione Convenzione Naming Cartelle Docs - Gennaio 2025, Data Aggiornamento, File Corretti, Impatto, Modulo Geo, Modulo <nome progetto>corrente, Modulo UI (+10 more)
+
+### Community 1030 - "Miglioramenti LangServiceProvider"
+Cohesion: 0.11
+Nodes (18): 1. Caching delle Traduzioni, 1. Configurazione, 1. Tempi di Caricamento, 2. Middleware, 2. Utilizzo Memoria, 2. Validazione delle Chiavi, 3. Eventi, 3. Gestione Fallback (+10 more)
+
+### Community 1031 - "Implementazione della Localizzazione"
+Cohesion: 0.11
+Nodes (18): 1. Utilizzo di Rotte Personalizzate, 2. Implementazione di Controller per il Cambio Lingua, 3. Utilizzo di Helper Personalizzati, Collegamenti correlati, Componente Blade, Conclusione, Configurazione del Pacchetto, Errori Comuni da Evitare (+10 more)
+
+### Community 1032 - "Implementazione della Localizzazione"
+Cohesion: 0.11
+Nodes (18): 1. Utilizzo di Rotte Personalizzate, 2. Implementazione di Controller per il Cambio Lingua, 3. Utilizzo di Helper Personalizzati, Collegamenti correlati, Componente Blade, Conclusione, Configurazione del Pacchetto, Errori Comuni da Evitare (+10 more)
+
+### Community 1033 - "Guida Completa a Laravel Localization"
+Cohesion: 0.11
+Nodes (18): Abilitazione di Diverse Lingue, Aggiunta di un Selettore di Lingua, Conclusione, Configurazione delle Route, Correzione della Cache delle Route, Funzionalità Estese del Pacchetto, Funzionalità Principali, Guida Completa a Laravel Localization (+10 more)
+
+### Community 1034 - "Guida Completa a Laravel Localization"
+Cohesion: 0.11
+Nodes (18): Abilitazione di Diverse Lingue, Aggiunta di un Selettore di Lingua, Conclusione, Configurazione delle Route, Correzione della Cache delle Route, Funzionalità Estese del Pacchetto, Funzionalità Principali, Guida Completa a Laravel Localization (+10 more)
+
+### Community 1035 - "Traduzioni con ".navigation" - Audit Completo 2025"
+Cohesion: 0.11
+Nodes (18): 1. Modules/User/lang/it/permission.php ✅ CORRETTO, 2. Modules/Lang/lang/en/edit_translation_file.php ✅ CORRETTO, Checklist Correzione ✅ COMPLETATO, Collegamenti Correlati, Errori Sintassi UI ✅, Fase 1: Correzione Errori Sintassi UI ✅ COMPLETATO, Fase 2: Correzione Traduzioni Navigation ✅ COMPLETATO, Fase 3: Standardizzazione ✅ COMPLETATO (+10 more)
+
+### Community 1036 - "Correzioni Traduzioni Navigation - Modulo Lang"
+Cohesion: 0.11
+Nodes (18): Analisi File, Collegamenti, Controlli Effettuati, Correzioni Traduzioni Navigation - Modulo Lang, Data Intervento, DRY (Don't Repeat Yourself), Esempio Struttura Corretta Trovata, File: `lang/en/edit_translation_file.php` (+10 more)
+
+### Community 1037 - "Standard per Modal Heading e Description nelle Traduzioni <nome progetto>"
+Cohesion: 0.11
+Nodes (18): Applicazione Globale, Azione di Eliminazione, Azione di Modifica, Checklist di Conformità, Collegamenti, ✅ CORRETTO - Stringhe Dirette, Eccezioni, ❌ ERRATO - Array con Label (+10 more)
+
+### Community 1038 - "composer-merge-plugin.md"
 Cohesion: 0.18
-Nodes (10): authors, description, homepage, license, minimum-stability, name, prefer-stable, repositories (+2 more)
+Nodes (7): Architectural Rules & Guidelines, Collegamenti correlati, Architectural Rules & Guidelines, Collegamenti correlati, Collegamenti tra versioni di installation.md, Installazione {#installazione}, Versione Incoming
 
-### Community 14 - "keywords"
+### Community 1039 - "Story 7.4-LANG — Fix PHPStan method.staticCall dopo migrazione canonical Schemas"
+Cohesion: 0.12
+Nodes (16): Acceptance Criteria, Alternative scartate, Contesto, Dependency Maps, Dev Agent Record, Dev Notes, File List, Implementation (+8 more)
+
+### Community 1040 - "LANG-7.3 — chiavi duplicate in `lang_service.php`"
+Cohesion: 0.12
+Nodes (16): Acceptance Criteria, Coda: l'ultimo duplicato non era innocuo, Dev Agent Record, Dev Notes, Esecuzione 2026-08-24 — Claude (Opus 5), Evidenza misurata (2026-08-24), Il dato che rende la correzione sicura, L'errore che stavo per fare (+8 more)
+
+### Community 1041 - "Technical Specification - Lang Module"
+Cohesion: 0.12
+Nodes (16): Actions, API Endpoints, `BaseModelLang`$, Core Actions, Core Models, Filament Resources, LangResource, `LanguageLine`$ (+8 more)
+
+### Community 1042 - "Technical Specification - Lang Module"
+Cohesion: 0.12
+Nodes (16): Actions, API Endpoints, `BaseModelLang`$, Core Actions, Core Models, Filament Resources, LangResource, `LanguageLine`$ (+8 more)
+
+### Community 1043 - "Audit Traduzioni Completato - 2025"
+Cohesion: 0.14
+Nodes (13): Audit Traduzioni Completato - 2025, Collegamenti Bidirezionali Creati, Conclusione, Controlli Automatici Implementati, Correzioni Effettuate, Documentazione Aggiornata, Moduli con Documentazione Aggiornata, Pattern di Errore (+5 more)
+
+### Community 1044 - "Processo di Traduzione: Da Sviluppatore a Traduttore"
+Cohesion: 0.18
+Nodes (10): 1. Branch di Traduzione, 1. Traduzioni Mancanti, 2. Problemi di Codifica, 2. Verifica delle Traduzioni, Conclusione, Indice, Integrazione con il Flusso di Lavoro, Introduzione (+2 more)
+
+### Community 1045 - "Risoluzione Conflitto LangServiceProvider"
+Cohesion: 0.12
+Nodes (17): Analisi del Conflitto, Collegamenti Correlati, conflict-resolution-readtranslationfileaction, Conflitto 1, Conflitto 1 (Linea 44), Conflitto 2, Conflitto 2 (Linea 121), Criteri di Risoluzione (+9 more)
+
+### Community 1046 - "Risoluzione Conflitto ReadTranslationFileAction"
+Cohesion: 0.12
+Nodes (17): Analisi del Conflitto, Collegamenti Correlati, conflict-resolution-translation-file-syntax, Conflitto 1 (Linea 14) - Documentazione PHPDoc, Conflitto 2 (Linea 31) - Messaggi di Errore, Criteri di Risoluzione, Data Risoluzione, Giustificazione Tecnica (+9 more)
+
+### Community 1047 - "Risoluzione Conflitto WriteTranslationFileAction"
+Cohesion: 0.12
+Nodes (17): Analisi del Conflitto, Collegamenti Correlati, Conflitto 1 (Linea 44) - Commento Cache, Conflitto 2 (Linea 119) - Commento PHPStan, Criteri di Risoluzione, Data Risoluzione, Giustificazione Tecnica, Impatto (+9 more)
+
+### Community 1048 - "Risoluzione Conflitto LangServiceProvider"
+Cohesion: 0.12
+Nodes (17): Analisi del Conflitto, Collegamenti Correlati, conflict_resolution_readtranslationfileaction, Conflitto 1, Conflitto 1 (Linea 44), Conflitto 2, Conflitto 2 (Linea 121), Criteri di Risoluzione (+9 more)
+
+### Community 1049 - "Risoluzione Conflitto ReadTranslationFileAction"
+Cohesion: 0.12
+Nodes (17): Analisi del Conflitto, Collegamenti Correlati, conflict_resolution_translation_file_syntax, Conflitto 1 (Linea 14) - Documentazione PHPDoc, Conflitto 2 (Linea 31) - Messaggi di Errore, Criteri di Risoluzione, Data Risoluzione, Giustificazione Tecnica (+9 more)
+
+### Community 1050 - "Regole di Naming per File"
+Cohesion: 0.12
+Nodes (16): ✅ Checklist Pre-Commit, 🔧 Come Identificare Duplicati, 📋 Convenzioni di Naming, Eccezioni, File Blade, File Config, File Markdown, File PHP (+8 more)
+
+### Community 1051 - "_da-riconciliare/PROJECT-STRUCTURE.md"
+Cohesion: 0.12
+Nodes (16): 1. Crea struttura wiki, 2. Crea INDEX files (già creati), 3. Aggiungi a QMD collection (opzionale, già incluso global), 4. Committa, Convenzioni, Directory Structure, ... etc, File Chiave (+8 more)
+
+### Community 1052 - "Traduzione di Testi Statici in Laravel"
+Cohesion: 0.12
+Nodes (17): Analisi e Ragionamento per il Progetto `<nome progetto>corrente`, Conclusione, File JSON, File PHP, Gestione Plurale/Singolare nelle Traduzioni, Introduzione, Modifiche Proposte, Modifiche Proposte (+9 more)
+
+### Community 1053 - "Implementazione della Localizzazione"
+Cohesion: 0.12
+Nodes (17): 1. Utilizzo di Rotte Personalizzate, 2. Implementazione di Controller per il Cambio Lingua, 3. Utilizzo di Helper Personalizzati, Collegamenti correlati, Componente Blade, Conclusione, Configurazione del Pacchetto, Errori Comuni da Evitare (+9 more)
+
+### Community 1054 - "Guida Completa a Laravel Localization"
+Cohesion: 0.12
+Nodes (17): Abilitazione di Diverse Lingue, Aggiunta di un Selettore di Lingua, Conclusione, Configurazione delle Route, Correzione della Cache delle Route, Funzionalità Estese del Pacchetto, Funzionalità Principali, Guida Completa a Laravel Localization (+9 more)
+
+### Community 1055 - "Gestione Traduzioni - Regole Critiche"
+Cohesion: 0.12
+Nodes (17): 1. Mai Stringhe Hardcoded, 2. Struttura Espansa, 3. Sincronizzazione Lingue, Collegamenti, Controllo Automatico, ✅ CORRETTO - SEMPRE FARE QUESTO, ❌ ERRATO - MAI FARE QUESTO, Gestione Traduzioni - Regole Critiche (+9 more)
+
+### Community 1056 - "Standard per le Traduzioni nel Progetto <nome progetto>corrente"
+Cohesion: 0.12
+Nodes (17): [AGGIORNAMENTO 2024-06-XX] - Esempio appointment.php, Best Practices, Checklist aggiornata, Collegamenti, Convenzione di Naming, ✅ Corretto:, ❌ Errato:, Esempi (+9 more)
+
+### Community 1057 - "Standard per le Traduzioni nel Progetto <nome progetto>"
+Cohesion: 0.12
+Nodes (17): [AGGIORNAMENTO 2024-06-XX] - Esempio appointment.php, Best Practices, Checklist aggiornata, Collegamenti, Convenzione di Naming, ✅ Corretto:, ❌ Errato:, Esempi (+9 more)
+
+### Community 1058 - "Storage delle Traduzioni: PHP vs JSON"
+Cohesion: 0.12
+Nodes (17): Best Practice per <nome progetto>, Confronto tra PHP e JSON, Esempi, Fonti, Gestione Plurale/Singolare nelle Traduzioni, Introduzione, JSON, Modifiche Proposte (+9 more)
+
+### Community 1059 - "Storage delle Traduzioni: PHP vs JSON"
+Cohesion: 0.12
+Nodes (17): Best Practice per <nome progetto>corrente, Best Practice per SaluteOra, Confronto tra PHP e JSON, Esempi, Fonti, Gestione Plurale/Singolare nelle Traduzioni, Introduzione, JSON (+9 more)
+
+### Community 1060 - "livewire-inventory.md"
+Cohesion: 0.12
+Nodes (7): Architecture Lang, Brainstorming, Lang — canone, Epic 12, Brief, Context Lang, Tech spec Lang
+
+### Community 1061 - "Story 7.2-LANG — Contratti PHPStan test harness"
+Cohesion: 0.12
+Nodes (15): Acceptance Criteria, Baseline misurata e ownership, Dependency Maps, Dev Agent Record, Dev Notes, File List, Implementation, Learnings from Previous Stories (+7 more)
+
+### Community 1062 - "Audit Traduzioni Completato - 2025"
+Cohesion: 0.14
+Nodes (13): Audit Traduzioni Completato - 2025, Collegamenti Bidirezionali Creati, Conclusione, Controlli Automatici Implementati, Correzioni Effettuate, Documentazione Aggiornata, Moduli con Documentazione Aggiornata, Pattern di Errore (+5 more)
+
+### Community 1063 - "Risoluzione Conflitto LangServiceProvider"
+Cohesion: 0.12
+Nodes (16): Analisi del Conflitto, Collegamenti Correlati, Conflitto 1, Conflitto 1 (Linea 44), Conflitto 2, Conflitto 2 (Linea 121), Criteri di Risoluzione, Data Risoluzione (+8 more)
+
+### Community 1064 - "Risoluzione Conflitto ReadTranslationFileAction"
+Cohesion: 0.12
+Nodes (16): Analisi del Conflitto, Collegamenti Correlati, Conflitto 1 (Linea 14) - Documentazione PHPDoc, Conflitto 2 (Linea 31) - Messaggi di Errore, Criteri di Risoluzione, Data Risoluzione, Giustificazione Tecnica, Impatto (+8 more)
+
+### Community 1065 - "Risoluzione Conflitto translation-file-syntax.md"
+Cohesion: 0.12
+Nodes (16): Analisi del Conflitto, Collegamenti Correlati, conflict-resolution-writetranslationfileaction, Conflitto (Linea 49) - Sezione Best Practice 2025, Criteri di Risoluzione, Data Risoluzione, Giustificazione Tecnica, Impatto (+8 more)
+
+### Community 1066 - "Risoluzione Conflitto edit_translation_file.php"
+Cohesion: 0.12
+Nodes (16): Analisi del Conflitto, Collegamenti Correlati, conflict_resolution_edittranslationfile_class, Conflitto (Linea 2) - Dichiarazione Strict Types, Criteri di Risoluzione, Data Risoluzione, Giustificazione Tecnica, Impatto (+8 more)
+
+### Community 1067 - "Risoluzione Conflitto translation-file-syntax.md"
+Cohesion: 0.12
+Nodes (16): Analisi del Conflitto, Collegamenti Correlati, conflict_resolution_writetranslationfileaction, Conflitto (Linea 49) - Sezione Best Practice 2025, Criteri di Risoluzione, Data Risoluzione, Giustificazione Tecnica, Impatto (+8 more)
+
+### Community 1068 - "Risoluzione Conflitto edit_translation_file.php"
+Cohesion: 0.12
+Nodes (16): Analisi del Conflitto, Collegamenti Correlati, conflict-resolution-edittranslationfile-class, Conflitto (Linea 2) - Dichiarazione Strict Types, Criteri di Risoluzione, Data Risoluzione, Giustificazione Tecnica, Impatto (+8 more)
+
+### Community 1069 - "_da-riconciliare/ON-DEMAND-PATTERN.md"
+Cohesion: 0.12
+Nodes (15): 1. Identifico il trigger nel task, 2. Consulto la trigger map globale, 3. Carico on-demand la risorsa, 4. Applico la regola/skill/command/memory, Come Funziona, Local vs Global, On-Demand Pattern — Module **Lang**, OPPURE (+7 more)
+
+### Community 1070 - "Navigation Translations Completion - Global Roadmap"
+Cohesion: 0.12
+Nodes (16): Chiavi Navigation con Riferimenti Nidificati, 📚 Documentazione Correlata, 📊 Executive Summary, 🔍 File Identificati con `.navigation`, Modulo Job (12 file), Modulo Notify (1 file), Modulo User (12 file), Navigation Translations Completion - Global Roadmap (+8 more)
+
+### Community 1071 - "Ottimizzazioni Proposte"
+Cohesion: 0.12
+Nodes (16): 1. Scomposizione Logica (KISS), 2. Contenuto README Ottimizzato, 3. Estrazione Contenuto Specializzato, 4. Eliminazione Ridondanze (DRY), 5. Template Standardizzato, `configuration.md`:, Da Monolite a Struttura Modulare:, Dopo: (+8 more)
+
+### Community 1072 - "FAQ e Problemi Comuni sulle Traduzioni"
+Cohesion: 0.12
+Nodes (16): 10. Dove documentare le scelte?, 12. Come personalizzare i messaggi di validazione?, 13. Come gestire plurale/singolare e localizzazione di date/valute?, 1. Perché il POST non funziona su rotte localizzate?, 2. Come si cache-izzano le rotte tradotte?, 3. Cosa succede se una chiave manca?, 4. Come gestire traduzioni per traduttori non-dev?, 5. Come evitare conflitti tra PHP e JSON? (+8 more)
+
+### Community 1073 - "FAQ e Problemi Comuni sulle Traduzioni"
+Cohesion: 0.12
+Nodes (16): 10. Dove documentare le scelte?, 12. Come personalizzare i messaggi di validazione?, 13. Come gestire plurale/singolare e localizzazione di date/valute?, 1. Perché il POST non funziona su rotte localizzate?, 2. Come si cache-izzano le rotte tradotte?, 3. Cosa succede se una chiave manca?, 4. Come gestire traduzioni per traduttori non-dev?, 5. Come evitare conflitti tra PHP e JSON? (+8 more)
+
+### Community 1074 - "Standard per le Traduzioni nel Progetto"
+Cohesion: 0.12
+Nodes (16): [AGGIORNAMENTO 2024-06-XX] - Esempio appointment.php, Best Practices, Checklist aggiornata, Collegamenti, Convenzione di Naming, ✅ Corretto:, ❌ Errato:, Esempi (+8 more)
+
+### Community 1075 - "Storage delle Traduzioni: PHP vs JSON"
+Cohesion: 0.12
+Nodes (16): Best Practice per, Confronto tra PHP e JSON, Esempi, Fonti, Gestione Plurale/Singolare nelle Traduzioni, Introduzione, JSON, Modifiche Proposte (+8 more)
+
+### Community 1076 - "Guida all'Implementazione di mcamara/laravel-localization"
+Cohesion: 0.13
+Nodes (14): Best Practice, Configurazione, Gestione della Cache, Gestione delle Route, Guida all'Implementazione di mcamara/laravel-localization, Indice, Installazione, Interruttore di Lingua (+6 more)
+
+### Community 1077 - "Story 7.1-LANG — Contratti PHPStan traduzioni"
+Cohesion: 0.13
+Nodes (14): Acceptance Criteria, Dependency Maps, Dev Agent Record, Dev Notes, File List, Handoff Status, Implementation, Learnings from Previous Stories (+6 more)
+
+### Community 1078 - "Correzione Errori Traduzioni - 2025"
+Cohesion: 0.14
+Nodes (14): Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Controlli Automatici Implementati, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, File Corretti, Moduli con Documentazione Aggiornata (+6 more)
+
+### Community 1079 - "Risoluzione Conflitto translation-file-syntax.md"
+Cohesion: 0.13
+Nodes (15): Analisi del Conflitto, Collegamenti Correlati, Conflitto (Linea 49) - Sezione Best Practice 2025, Criteri di Risoluzione, Data Risoluzione, Giustificazione Tecnica, Impatto, Note per Sviluppatori Futuri (+7 more)
+
+### Community 1080 - "Risoluzione Conflitto edit_translation_file.php"
+Cohesion: 0.13
+Nodes (15): Analisi del Conflitto, Collegamenti Correlati, Conflitto (Linea 2) - Dichiarazione Strict Types, Criteri di Risoluzione, Data Risoluzione, Giustificazione Tecnica, Impatto, Note per Sviluppatori Futuri (+7 more)
+
+### Community 1081 - "Risultati Analisi Modulo Lang - 2025-01-06"
+Cohesion: 0.13
+Nodes (15): AutoLabelAction.php, Collegamenti, ConvertTranslations.php, Data, FindMissingTranslations.php, Piano di Azione, Priorità Alta, Priorità Bassa (+7 more)
+
+### Community 1082 - "Guida all'Implementazione di mcamara/laravel-localization"
+Cohesion: 0.13
+Nodes (14): Best Practice, Configurazione, Gestione della Cache, Gestione delle Route, Guida all'Implementazione di mcamara/laravel-localization, Indice, Installazione, Interruttore di Lingua (+6 more)
+
+### Community 1083 - "Guida all'Implementazione di mcamara/laravel-localization"
+Cohesion: 0.13
+Nodes (14): Best Practice, Configurazione, Gestione della Cache, Gestione delle Route, Guida all'Implementazione di mcamara/laravel-localization, Indice, Installazione, Interruttore di Lingua (+6 more)
+
+### Community 1084 - "Files by Module/Theme:"
+Cohesion: 0.13
+Nodes (14): Core Modules (16 files), Documentation (6 files), Files by Module/Theme:, Geo Module (5 files), Merge Conflict Files List, <nome progetto> Module (4 files), Notify Module (3 files), Other Files (62 files) (+6 more)
+
+### Community 1085 - "Miglioramenti Qualità Codice - Modulo Lang - [DATE]"
+Cohesion: 0.13
+Nodes (15): Analisi Iniziale, AutoLabelAction.php, Collegamenti, ConvertTranslations.php, Data, FindMissingTranslations.php, Miglioramenti Qualità Codice - Modulo Lang - [DATE], Obiettivo (+7 more)
+
+### Community 1086 - "Correzioni Errori Sintassi File Traduzione - Gennaio 2025"
+Cohesion: 0.13
+Nodes (15): 1. Struttura File Standard, 2. Regole Applicate, 3. Contesti Specifici, Collegamenti Documentazione, Comandi di Verifica, Controlli Eseguiti, Correzioni Errori Sintassi File Traduzione - Gennaio 2025, Errori Critici Identificati (+7 more)
+
+### Community 1087 - "Correzioni Errori Sintassi File Traduzione - Gennaio 2025"
+Cohesion: 0.13
+Nodes (15): 1. Struttura File Standard, 2. Regole Applicate, 3. Contesti Specifici, Collegamenti Documentazione, Comandi di Verifica, Controlli Eseguiti, Correzioni Errori Sintassi File Traduzione - Gennaio 2025, Errori Critici Identificati (+7 more)
+
+### Community 1088 - "Correzioni Errori Sintassi File Traduzione - Gennaio 2025"
+Cohesion: 0.13
+Nodes (15): 1. Struttura File Standard, 2. Regole Applicate, 3. Contesti Specifici, Collegamenti Documentazione, Comandi di Verifica, Controlli Eseguiti, Correzioni Errori Sintassi File Traduzione - Gennaio 2025, Errori Critici Identificati (+7 more)
+
+### Community 1089 - "Integrazione tra mcamara/laravel-localization e Laravel Folio"
+Cohesion: 0.13
+Nodes (15): 1. Cos'è Laravel Folio?, 2. Sfida dell'integrazione, 3. Best Practice per l'integrazione, 4. FAQ e problemi comuni, 5. Checklist, 6. Modifiche consigliate ai file del progetto, 7. Collegamenti correlati, a) Registrazione delle rotte Folio nel gruppo localizzato (+7 more)
+
+### Community 1090 - "Integrazione tra mcamara/laravel-localization e Laravel Folio"
+Cohesion: 0.13
+Nodes (15): 1. Cos'è Laravel Folio?, 2. Sfida dell'integrazione, 3. Best Practice per l'integrazione, 4. FAQ e problemi comuni, 5. Checklist, 6. Modifiche consigliate ai file del progetto, 7. Collegamenti correlati, a) Registrazione delle rotte Folio nel gruppo localizzato (+7 more)
+
+### Community 1091 - "Integrazione di mcamara/laravel-localization con Livewire Volt"
+Cohesion: 0.13
+Nodes (15): 1. Cos'è Livewire Volt?, 2. Sfida dell'integrazione, 3. Best Practice per l'integrazione, 4. Checklist, 5. FAQ e problemi comuni, 6. Modifiche consigliate ai file del progetto, 7. Best Practices operative (.mdc), a) Registrazione delle rotte Volt nel gruppo localizzato (+7 more)
+
+### Community 1092 - "Integrazione di mcamara/laravel-localization con Livewire Volt"
+Cohesion: 0.13
+Nodes (15): 1. Cos'è Livewire Volt?, 2. Sfida dell'integrazione, 3. Best Practice per l'integrazione, 4. Checklist, 5. FAQ e problemi comuni, 6. Modifiche consigliate ai file del progetto, 7. Best Practices operative (.mdc), a) Registrazione delle rotte Volt nel gruppo localizzato (+7 more)
+
+### Community 1093 - "mcamara/laravel-localization — Riferimento per moduli e temi"
+Cohesion: 0.13
+Nodes (15): Come aiuta Cms (Folio + Volt), Come aiuta il modulo Lang, Come aiuta Meetup (modulo e tema), Come aiuta User (auth), Configurazione, Form, Funzionalità principali, Language selector (+7 more)
+
+### Community 1094 - "mcamara/laravel-localization — Riferimento per moduli e temi"
+Cohesion: 0.13
+Nodes (15): Come aiuta Cms (Folio + Volt), Come aiuta il modulo Lang, Come aiuta Meetup (modulo e tema), Come aiuta User (auth), Configurazione, Form, Funzionalità principali, Language selector (+7 more)
+
+### Community 1095 - "FAQ e Problemi Comuni sulle Traduzioni"
+Cohesion: 0.13
+Nodes (15): 10. Dove documentare le scelte?, 12. Come personalizzare i messaggi di validazione?, 13. Come gestire plurale/singolare e localizzazione di date/valute?, 1. Perché il POST non funziona su rotte localizzate?, 2. Come si cache-izzano le rotte tradotte?, 3. Cosa succede se una chiave manca?, 4. Come gestire traduzioni per traduttori non-dev?, 5. Come evitare conflitti tra PHP e JSON? (+7 more)
+
+### Community 1096 - "File Corretti"
+Cohesion: 0.04
+Nodes (46): 1. Chart/lang/it/chart.php, 1. Chart/lang/it/chart.php, 1. Struttura File Standard, 1. Struttura File Standard, 2. Chart/lang/it/mixed_chart.php, 2. Chart/lang/it/mixed_chart.php, 2. Regole Applicate, 2. Regole Applicate (+38 more)
+
+### Community 1098 - "Lang/docs/PERFORMANCE-OPTIMIZATION.md"
+Cohesion: 0.14
+Nodes (13): Cerca globalmente (solo se necessario), Cerca solo nel modulo corrente, Dimensione cache, Limitare lo Scope, ❌ MAI fare così, Monitoring, Prossimi Miglioramenti (TODO), Query QMD Efficienti (+5 more)
+
+### Community 1099 - "performance-optimization.md"
+Cohesion: 0.14
+Nodes (13): Cerca globalmente (solo se necessario), Cerca solo nel modulo corrente, Dimensione cache, Limitare lo Scope, ❌ MAI fare così, Monitoring, Prossimi Miglioramenti (TODO), Query QMD Efficienti (+5 more)
+
+### Community 1100 - "Riepilogo Correzioni Traduzioni - Gennaio 2025"
+Cohesion: 0.04
+Nodes (44): 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Errori di Sintassi nei File di Traduzione ✅ RISOLTI, 1. Struttura Espansa Obbligatoria, 1. Struttura Espansa Obbligatoria, 2. No Hardcoded Labels, 2. No Hardcoded Labels, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE, 2. Traduzioni con Pattern ".navigation" ✅ RISOLTE (+36 more)
+
+### Community 1101 - "Moduli Corretti"
+Cohesion: 0.18
+Nodes (11): Moduli Corretti, ✅ Modulo Cms, ✅ Modulo DbForge, ✅ Modulo FormBuilder, ✅ Modulo Lang, ✅ Modulo <nome progetto>, ✅ Modulo <nome progetto>, ✅ Modulo Notify (+3 more)
+
+### Community 1102 - "Aggiornamento File di Traduzione - Gennaio 2025"
+Cohesion: 0.04
+Nodes (48): 1. `Modules/Notify/lang/it/test_smtp.php`, 1. `Modules/Notify/lang/it/test_smtp.php`, 1. Sintassi Array Moderna, 1. Sintassi Array Moderna, 2. Dichiarazione Strict Types, 2. Dichiarazione Strict Types, 2. `Modules/Notify/lang/it/send_email.php`, 2. `Modules/Notify/lang/it/send_email.php` (+40 more)
+
+### Community 1104 - "Risoluzione Conflitto EditTranslationFile.php (Classe)"
+Cohesion: 0.14
+Nodes (14): Analisi del Conflitto, Collegamenti, conflict_resolution_langserviceprovider, Conflitto 1 (Linea 38-39) - Logica di Salvataggio, Criteri di Risoluzione, ✅ DECISIONE FINALE: Versione HEAD (Logica semplificata con SaveTransAction), Giustificazione Tecnica, Impatto (+6 more)
+
+### Community 1105 - "Risoluzione Conflitto EditTranslationFile.php (Classe)"
+Cohesion: 0.14
+Nodes (14): Analisi del Conflitto, Collegamenti, conflict-resolution-langserviceprovider, Conflitto 1 (Linea 38-39) - Logica di Salvataggio, Criteri di Risoluzione, ✅ DECISIONE FINALE: Versione HEAD (Logica semplificata con SaveTransAction), Giustificazione Tecnica, Impatto (+6 more)
+
+### Community 1106 - "Guida Rapida alle Traduzioni"
+Cohesion: 0.14
+Nodes (13): Best Practice, Comandi Utili, Console Commands, Esempi Avanzati, Formato delle Chiavi, Guida Rapida alle Traduzioni, Nei Controller/Classi PHP, Nei File Blade (+5 more)
+
+### Community 1107 - "Guida Rapida alle Traduzioni"
+Cohesion: 0.14
+Nodes (13): Best Practice, Comandi Utili, Console Commands, Esempi Avanzati, Formato delle Chiavi, Guida Rapida alle Traduzioni, Nei Controller/Classi PHP, Nei File Blade (+5 more)
+
+### Community 1108 - "Integrazione tra mcamara/laravel-localization e Laravel Folio"
+Cohesion: 0.14
+Nodes (14): 1. Cos'è Laravel Folio?, 2. Sfida dell'integrazione, 3. Best Practice per l'integrazione, 4. FAQ e problemi comuni, 5. Checklist, 6. Modifiche consigliate ai file del progetto, 7. Collegamenti correlati, a) Registrazione delle rotte Folio nel gruppo localizzato (+6 more)
+
+### Community 1109 - "Integrazione di mcamara/laravel-localization con Livewire Volt"
+Cohesion: 0.14
+Nodes (14): 1. Cos'è Livewire Volt?, 2. Sfida dell'integrazione, 3. Best Practice per l'integrazione, 4. Checklist, 5. FAQ e problemi comuni, 6. Modifiche consigliate ai file del progetto, 7. Best Practices operative (.mdc), a) Registrazione delle rotte Volt nel gruppo localizzato (+6 more)
+
+### Community 1110 - "Correzioni Pattern ".navigation" - Gennaio 2025"
+Cohesion: 0.14
+Nodes (14): Benefici Ottenuti, Collegamenti, Correzioni Pattern ".navigation" - Gennaio 2025, Data Intervento, DRY (Don't Repeat Yourself), Gruppi Navigation Standardizzati, Icone Heroicons Utilizzate, KISS (Keep It Simple, Stupid) (+6 more)
+
+### Community 1113 - "Lang — perche' esiste"
+Cohesion: 0.15
+Nodes (12): 1. Una chiave mancante deve fallire in sviluppo e ripiegare in produzione, 2. Serve un comando che elenchi le chiavi mancanti e quelle orfane, 3. La struttura dei file di lingua e' una convenzione: va verificata, 4. Italiano prima di tutto, ma le chiavi in inglese, 5. 704 documenti per 62 file di codice, Collegamenti, Come raggiungerlo **meglio**, Confini — cosa **non** appartiene a Lang (+4 more)
+
+### Community 1116 - "17.4: sei helper di `TestCase` invocati e mai scritti"
+Cohesion: 0.15
+Nodes (12): 17.4: sei helper di `TestCase` invocati e mai scritti, Acceptance Criteria, Contesto misurato, Decisione, helper per helper, Dev Notes, GitHub (tracciamento), Misura, Non-goal (+4 more)
+
+### Community 1117 - "Moduli Affetti e Correzioni Effettuate"
+Cohesion: 0.15
+Nodes (13): Analisi del Problema, Moduli Affetti e Correzioni Effettuate, ✅ Modulo Cms, ✅ Modulo DbForge, ✅ Modulo FormBuilder, ✅ Modulo Lang, ✅ Modulo <nome progetto>, ✅ Modulo <nome progetto> (+5 more)
+
+### Community 1118 - "Moduli Affetti e Correzioni Effettuate"
+Cohesion: 0.15
+Nodes (13): Analisi del Problema, Moduli Affetti e Correzioni Effettuate, ✅ Modulo Cms, ✅ Modulo DbForge, ✅ Modulo FormBuilder, ✅ Modulo Lang, ✅ Modulo <nome progetto>, ✅ Modulo <nome progetto> (+5 more)
+
+### Community 1119 - "Correzione Errori Traduzioni - 2025"
+Cohesion: 0.17
+Nodes (11): Best Practices Implementate, Collegamenti Bidirezionali, Conclusione, Correzione Errori Traduzioni - 2025, Documentazione Aggiornata, Inglese (EN), Moduli con Documentazione Aggiornata, Pattern di Correzione Implementato (+3 more)
+
+### Community 1120 - "Risoluzione Conflitto EditTranslationFile.php (Classe)"
+Cohesion: 0.15
+Nodes (13): Analisi del Conflitto, Collegamenti, Conflitto 1 (Linea 38-39) - Logica di Salvataggio, Criteri di Risoluzione, ✅ DECISIONE FINALE: Versione HEAD (Logica semplificata con SaveTransAction), Giustificazione Tecnica, Impatto, Perché la versione HEAD? (+5 more)
+
+### Community 1121 - "Regole Fondamentali per i Link Markdown"
+Cohesion: 0.15
+Nodes (12): 1. Utilizzare Sempre Percorsi Relativi, 2. Navigazione Tra Cartelle, 3. Struttura della Documentazione, 4. Collegamenti Tra Moduli, 5. Verificare Sempre i Link, Convenzioni per i Link nella Documentazione, Da Modules/Lang/docs/ a docs/ nella root, Da Modules/Lang/docs/ a Modules/Notify/docs/ (+4 more)
+
+### Community 1122 - "Lang Module - Comprehensive Analysis"
+Cohesion: 0.15
+Nodes (12): Architecture, Critical Dependencies, Current Implementation Status, ✅ Fully Implemented Features, Future Enhancements, Integration with Other Modules, Key Metrics, Lang Module - Comprehensive Analysis (+4 more)
+
+### Community 1123 - "Fix Errore Sintassi TransArrayAction"
+Cohesion: 0.15
+Nodes (13): Causa, Collegamenti, Data: 2025-01-27, Data: 2025-01-27, Data: [DATE], Fix Errore Sintassi TransArrayAction, fixes-syntax-errors, Impatto (+5 more)
+
+### Community 1124 - "Laravel Localization (mcamara) — Consolidated Reference"
+Cohesion: 0.15
+Nodes (13): Configuration, Key Helpers, Language Selector (Blade), laravel-localization-folio-integration, Laravel Localization (mcamara) — Consolidated Reference, Laraxot Rules, Middleware, Overview (+5 more)
+
+### Community 1125 - "Git LFS non si usa in questo progetto"
+Cohesion: 0.17
+Nodes (11): Canone, Git LFS non si usa in questo progetto, Il prototipo, La regola, Non tutto cio' che sembra rotto viene da LFS, Perche', Perche' `binary !filter` e non solo `binary`, Se LFS e' rientrato (+3 more)
+
+### Community 1126 - "COME INSTALLARLO (Installation Guide)"
+Cohesion: 0.17
+Nodes (12): COME INSTALLARLO (Installation Guide), Optional: Configure Auto-Translation (Q4 2026), Prerequisites, Step 1: Enable the Module, Step 2: Run Migrations, Step 3: Publish Config (Optional), Step 4: Create Language Files, Step 5: Sync to Other Languages (+4 more)
+
+### Community 1127 - "Approach 1: Manual Model Translations (Without Packages)"
+Cohesion: 0.17
+Nodes (11): Approach 1: Manual Model Translations (Without Packages), Approach 2: Using Packages for Model Translations, Astrotomic Laravel Translatable, Controller Logic, Database Structure, Model Setup, Model Translations in `<nome progetto>corrente`, Overview (+3 more)
+
+### Community 1128 - "Gestione delle Traduzioni dei Messaggi di Validazione"
+Cohesion: 0.17
+Nodes (11): 1. Messaggi di Validazione Standard, 2. Personalizzazione dei Nomi dei Campi (attributes), 3. Messaggi di Validazione Personalizzati, 4. Gestione degli Array di Campi, 5. Esempio Completo, 6. Best Practice e Checklist, 7. Modifiche consigliate ai file del progetto, 8. FAQ e Problemi Comuni (+3 more)
+
+### Community 1129 - "Lang — cosa migliorerei se questo modulo fosse mio per un mese"
+Cohesion: 0.18
+Nodes (9): Come rifare ogni numero, Cosa fare, in ordine di resa, Cosa migliorare — modulo Lang, I numeri, 1. Un modulo chiamato "Lang" che dipende da `rinvex/countries`, 2. `phpstan.neon.dist` orfano, 3. `docs/` — 518 file, 98 famiglie di doppioni, e una cartella `archive/`, La visione, in una riga (+1 more)
+
+### Community 1130 - "Audit di qualita — modulo Lang"
+Cohesion: 0.18
+Nodes (10): 25 collisioni di case nei docs, 2 collisioni di case nel codice, Audit di qualita — modulo Lang, Come rifare la misura, Cosa non va, Cosa questa misura non vede, Coverage, La suite riscrive file tracciati (+2 more)
+
+### Community 1131 - "LANG — riduzione uso di `mixed`"
+Cohesion: 0.18
+Nodes (10): Acceptance Criteria, Dev Agent Record, Dev Notes, Esecuzione 2026-09-04 — Claude (Sonnet 5), Esecuzione 2026-09-21 — php-backend-agent, Evidenza misurata (2026-09-04), LANG — riduzione uso di `mixed`, Story (+2 more)
+
+### Community 1132 - "Moduli Corretti"
+Cohesion: 0.18
+Nodes (11): Moduli Corretti, ✅ Modulo Cms, ✅ Modulo DbForge, ✅ Modulo FormBuilder, ✅ Modulo Lang, ✅ Modulo <nome progetto>, ✅ Modulo <nome progetto>, ✅ Modulo Notify (+3 more)
+
+### Community 1133 - "Moduli Corretti"
+Cohesion: 0.18
+Nodes (11): Moduli Corretti, ✅ Modulo Cms, ✅ Modulo DbForge, ✅ Modulo FormBuilder, ✅ Modulo Lang, ✅ Modulo <nome progetto>, ✅ Modulo <nome progetto>, ✅ Modulo Notify (+3 more)
+
+### Community 1134 - "Advanced Language Switching Strategies"
+Cohesion: 0.18
+Nodes (10): Advanced Language Switching Strategies, Benefits, Code Examples, Combined URL and Session-Based Language Switching, Implementation Steps, Language Switch Controller, Middleware Enhancement, Overview (+2 more)
+
+### Community 1135 - "ANALISI MODULO LANG: SISTEMA DI TRADUZIONI AUTOMATIZZATO"
+Cohesion: 0.18
+Nodes (10): 1. LOGICA CORE - Auto-Discovery Traduzioni, 2. FILOSOFIA I18N - Struttura Gerarchica, 3. BUSINESS LOGIC - LangBase Classes, 4. RELIGIONE - Dogmi Architetturali, 5. SCOPO - Sistema Completo, 6. ZEN - Essenza Arquitectturale, Analisi Approfondita del Modulo Lang, ANALISI MODULO LANG: SISTEMA DI TRADUZIONI AUTOMATIZZATO (+2 more)
+
+### Community 1136 - "Gestione delle Lingue (Locales) in Laravel"
+Cohesion: 0.18
+Nodes (10): Analisi e Ragionamento per il Progetto `<nome progetto>corrente`, Conclusione, Configurazione della Lingua di Fallback, Configurazione della Lingua Predefinita, Gestione delle Lingue (Locales) in Laravel, Impostazione Dinamica della Lingua nel Codice, Introduzione, Limitazioni delle Traduzioni JSON con Fallback (+2 more)
+
+### Community 1137 - "Fix Errore Sintassi TransArrayAction"
+Cohesion: 0.18
+Nodes (11): Causa, Collegamenti, Data: [DATE], Fix Errore Sintassi TransArrayAction, fixes-syntaxs, Impatto, Miglioramenti Aggiuntivi, Note per il Futuro (+3 more)
+
+### Community 1139 - "12.1: Ritiro Lang HTTP Switcher/Change su widget cablato nel tema"
 Cohesion: 0.20
-Nodes (10): keywords, filament, i18n, l10n, lang, laravel, laraxot, localization (+2 more)
+Nodes (10): 12.1: Ritiro Lang HTTP Switcher/Change su widget cablato nel tema, Acceptance Criteria, Dependency Maps, Dev Agent Record, Dev Notes, GitHub (tracciamento), Owned File/Module Scope, Story (+2 more)
 
-### Community 17 - "Filament\Panel"
-Cohesion: 0.43
-Nodes (4): AdminPanelProvider, LangBasePanelProvider, Filament\Panel, Modules\Xot\Providers\Filament\XotBasePanelProvider
+### Community 1140 - "LANG-7.3 — Param type mancanti nel modulo Lang"
+Cohesion: 0.20
+Nodes (9): Acceptance Criteria, Contesto, GitHub (tracciamento), LANG-7.3 — Param type mancanti nel modulo Lang, Owned File/Module Scope, Tasks / Subtasks, Testing, User story (+1 more)
 
-### Community 18 - "scripts"
+### Community 1141 - "Traduzioni con ".navigation" - Audit Completo 2025"
+Cohesion: 0.05
+Nodes (42): 1. Modules/User/lang/it/permission.php ✅ CORRETTO, 1. Modules/User/lang/it/permission.php ✅ CORRETTO, 2. Modules/Lang/lang/en/edit_translation_file.php ✅ CORRETTO, 2. Modules/Lang/lang/en/edit_translation_file.php ✅ CORRETTO, Checklist Correzione ✅ COMPLETATO, Checklist Correzione ✅ COMPLETATO, Collegamenti Correlati, Collegamenti Correlati (+34 more)
+
+### Community 1145 - "Localizzazione di Date e Valute"
+Cohesion: 0.20
+Nodes (9): Analisi e Ragionamento per il Progetto `<nome progetto>corrente`, Analisi e Ragionamento per il Progetto `saluteora`, Creazione di una Funzione Helper per le Valute, Introduzione, Localizzazione delle Differenze Temporali, Localizzazione di Date con Carbon, Localizzazione di Date e Valute, Localizzazione di Valute con `NumberFormatter` (+1 more)
+
+### Community 1146 - "Sistema di Traduzione in il progetto"
+Cohesion: 0.20
+Nodes (10): Best Practices, Collegamenti, Componenti Supportati, Funzionamento, LangServiceProvider, Sistema di Traduzione in il progetto, translation-validation-complete-guide, Vedi Anche (+2 more)
+
+### Community 1147 - "Traduzioni nel Progetto"
+Cohesion: 0.20
+Nodes (10): Best Practices, Checklist di Verifica, Documentazione Correlata, File di Traduzione, Gestione Automatica delle Traduzioni, Note Importanti, Regola #1: MAI utilizzare ->label() o metodi simili, Regole Fondamentali (+2 more)
+
+### Community 1148 - "Standardizzazione Traduzioni Modulo Notify"
+Cohesion: 0.20
+Nodes (10): Collegamenti alla Documentazione, Documenti di Riferimento, Impatto della Standardizzazione, Panoramica delle Problematiche, Piano di Standardizzazione, Standard Violati, Standardizzazione Implementata, Standardizzazione Traduzioni Modulo Notify (+2 more)
+
+### Community 1149 - "Standardizzazione Traduzioni Modulo Notify"
+Cohesion: 0.20
+Nodes (10): Collegamenti alla Documentazione, Documenti di Riferimento, Impatto della Standardizzazione, Panoramica delle Problematiche, Piano di Standardizzazione, Standard Violati, Standardizzazione Implementata, Standardizzazione Traduzioni Modulo Notify (+2 more)
+
+### Community 1150 - "Regola Critica: Sezione "fields" Obbligatoria nelle Traduzioni"
+Cohesion: 0.20
+Nodes (10): ✅ CORRETTO (Fields presente), 📚 Documentazione Correlata, ❌ ERRATO (Rimosso fields), 🔧 Pattern Corretto, Perché è Critico, 🔴 Regola Assoluta, ✅ Regola Assoluta, Regola Critica: Sezione "fields" Obbligatoria nelle Traduzioni (+2 more)
+
+### Community 1152 - "📚 **Indice Documentazione Modulo Lang**"
+Cohesion: 0.22
+Nodes (9): 🏗️ **Configurazione e Setup**, Dependency Intelligence, 🚀 **Funzionalità Avanzate**, 📚 **Indice Documentazione Modulo Lang**, 🎯 **Lettura Essenziale**, 🧹 **Manutenzione**, 🔗 **Moduli Correlati**, 🏷️ **Naming & Standards** (+1 more)
+
+### Community 1157 - "Ottimizzazioni Applicate"
+Cohesion: 0.22
+Nodes (9): 1. On-Demand Loading (principale), 2. Cache Esterna al Repo, 3. Node Modules Puliti, 4. Wiki Indici Locali, Best Practice per Sviluppatori, Caricamento Efficiente, Metriche Attuali, Ottimizzazioni Applicate (+1 more)
+
+### Community 1158 - "Ottimizzazioni Applicate"
+Cohesion: 0.22
+Nodes (9): 1. On-Demand Loading (principale), 2. Cache Esterna al Repo, 3. Node Modules Puliti, 4. Wiki Indici Locali, Best Practice per Sviluppatori, Caricamento Efficiente, Metriche Attuali, Ottimizzazioni Applicate (+1 more)
+
+### Community 1159 - "BEST PRACTICES"
+Cohesion: 0.22
+Nodes (8): 1. Namespace by Module, 2. Expand Keys for UI Components, 3. Sync Before Deploy, 4. Test Translations, 5. Use Validation Messages from Files, 7. Comment Keys for Translators, 8. Lazy-Load Large Translation Files, BEST PRACTICES
+
+### Community 1160 - "COME USARLO (Usage Guide)"
+Cohesion: 0.22
+Nodes (9): A. Basic Translation in Blade, B. Translation in Controller / Action, C. Filament Auto-Label (No Hardcoding), COME USARLO (Usage Guide), D. Using with Spatie Translatable (Model Attributes), E. Syncing Translations Across Modules, F. Validating Translation Completeness, G. Recording Missing Translations Manually (+1 more)
+
+### Community 1161 - "Lang Module: A Philosophy of Localization"
+Cohesion: 0.22
+Nodes (8): Configured Locales, Lang Module: A Philosophy of Localization, Language Metadata, POLITICA (Supported Languages & RTL Handling), RTL Support (Future), SCOPO (Purpose in FixCity), Summary: The Lang Philosophy Compressed, ZEN (The Essence)
+
+### Community 1162 - "Lang — app/Services retired, no-services-rule compliance"
+Cohesion: 0.22
+Nodes (8): Call site aggiornati, Classificazione (tabella per il coordinatore), Collisione con un'altra sessione (scoperta, non causata da questa story), Cosa c'era davvero, Debito noto, non toccato (fuori scope), Lang — app/Services retired, no-services-rule compliance, Story, Verifica
+
+### Community 1164 - "📚 **Indice Documentazione Modulo Lang**"
+Cohesion: 0.07
+Nodes (24): 🏗️ **Configurazione e Setup**, 🏗️ **Configurazione e Setup**, Dependency Intelligence, Dependency Intelligence, Development, Documentation Index, 📋 **Documenti Prodotto & Sviluppo**, 🚀 **Funzionalità Avanzate** (+16 more)
+
+### Community 1165 - "Localizzazione di Date e Valute"
+Cohesion: 0.22
+Nodes (8): Analisi e Ragionamento per il Progetto `<nome progetto>corrente`, Creazione di una Funzione Helper per le Valute, Introduzione, Localizzazione delle Differenze Temporali, Localizzazione di Date con Carbon, Localizzazione di Date e Valute, Localizzazione di Valute, Modifiche Proposte
+
+### Community 1166 - "PRD: Lang Module"
+Cohesion: 0.22
+Nodes (8): 🎨 Design & User Experience, 🛠️ Functional Requirements, 🎯 Goals & Success Metrics, 🚫 Out of Scope, 📋 Overview, PRD: Lang Module, ❓ Problem Statement, 👤 User Stories
+
+### Community 1167 - "File Corretti"
+Cohesion: 0.22
+Nodes (9): 1. Chart/lang/it/chart.php, 2. Chart/lang/it/mixed_chart.php, 3. FormBuilder/lang/it/collection_lang.php, 4. FormBuilder/lang/it/field.php, 5. FormBuilder/lang/it/field_option.php, 6. Lang/lang/it/translation_file.php, 7. Notify/lang/it/send_whats_app.php, 8. UI/lang/it/s3_test.php (+1 more)
+
+### Community 1168 - "File Corretti"
+Cohesion: 0.22
+Nodes (9): 1. Chart/lang/it/chart.php, 2. Chart/lang/it/mixed_chart.php, 3. FormBuilder/lang/it/collection_lang.php, 4. FormBuilder/lang/it/field.php, 5. FormBuilder/lang/it/field_option.php, 6. Lang/lang/it/translation_file.php, 7. Notify/lang/it/send_whats_app.php, 8. UI/lang/it/s3_test.php (+1 more)
+
+### Community 1169 - "File Corretti"
+Cohesion: 0.22
+Nodes (9): 1. Chart/lang/it/chart.php, 2. Chart/lang/it/mixed_chart.php, 3. FormBuilder/lang/it/collection_lang.php, 4. FormBuilder/lang/it/field.php, 5. FormBuilder/lang/it/field_option.php, 6. Lang/lang/it/translation_file.php, 7. Notify/lang/it/send_whats_app.php, 8. UI/lang/it/s3_test.php (+1 more)
+
+### Community 1170 - "PHPStan Level 10 Compliance — Lang Module"
+Cohesion: 0.22
+Nodes (8): 1. Language Line Types, 2. Translation Arrays, 3. Type Narrowing in i18n, Patterns Applied, PHPStan Level 10 Compliance — Lang Module, Related Docs, Summary, Verification
+
+### Community 1171 - "Evaluated Packages"
+Cohesion: 0.22
+Nodes (9): 1. Spatie Laravel Translation Loader, 2. Mcamara Laravel Localization, 3. Nikaia Translation Sheet, 4. MohmmedAshraf Laravel Translations, Evaluated Packages, Overview, Recommendation for `<nome progetto>corrente`, Translation Management Packages (+1 more)
+
+### Community 1172 - "Evaluated Packages"
+Cohesion: 0.22
+Nodes (9): 1. Spatie Laravel Translation Loader, 2. Mcamara Laravel Localization, 3. Nikaia Translation Sheet, 4. MohmmedAshraf Laravel Translations, Evaluated Packages, Overview, Recommendation for `<nome progetto>`, translation-management (+1 more)
+
+### Community 1173 - "Standardizzazione Traduzioni Modulo Notify"
+Cohesion: 0.22
+Nodes (9): Collegamenti alla Documentazione, Documenti di Riferimento, Impatto della Standardizzazione, Panoramica delle Problematiche, Piano di Standardizzazione, Standard Violati, Standardizzazione Implementata, Standardizzazione Traduzioni Modulo Notify (+1 more)
+
+### Community 1174 - "📚 **Indice Documentazione Modulo Lang**"
+Cohesion: 0.25
+Nodes (8): 🏗️ **Configurazione e Setup**, 🚀 **Funzionalità Avanzate**, 📚 **Indice Documentazione Modulo Lang**, 🎯 **Lettura Essenziale**, 🧹 **Manutenzione**, 🔗 **Moduli Correlati**, 🏷️ **Naming & Standards**, 🧪 **Qualità e Testing**
+
+### Community 1175 - "Lang Module — Architecture"
+Cohesion: 0.25
+Nodes (7): Core Components, Database Schema, Design Decisions, Integration Points, Lang Module — Architecture, Purpose, Quality Gates
+
+### Community 1176 - "Inventario: Livewire HTTP → Filament (Lang)"
+Cohesion: 0.25
+Nodes (8): Classificazione, Correzioni rispetto alla versione precedente del documento, Inventario: Livewire HTTP → Filament (Lang), Metodo (comandi eseguiti, non assunti), Riferimenti correlati (non SSoT, coerenti col verdetto), Successo, Verdetto, Verifica del montaggio: tabella repo-wide
+
+### Community 1177 - "La tabella si configura nella Table class, non nella pagina"
+Cohesion: 0.25
+Nodes (7): Come accorgersi che si sta sbagliando, I nomi dei metodi non hanno prefisso, Il nome della Table class, Il percorso, per intero, La regola, La tabella si configura nella Table class, non nella pagina, Storia, per non ripeterla
+
+### Community 1179 - "Occorrenze Trovate"
+Cohesion: 0.25
+Nodes (8): File: `/Modules/Geo/lang/it/.php` (file con nome problematico), File: `/Modules/Lang/lang/en/edit_translation_file.php`, File: `/Modules/User/lang/it/device.php`, File: `/Modules/User/lang/it/permission.php`, Modulo Geo, Modulo Lang, Modulo User, Occorrenze Trovate
+
+### Community 1180 - "BAD PRACTICES (Anti-Patterns)"
+Cohesion: 0.25
+Nodes (8): 1. Hardcoded Labels in Blade, 2. Translation Keys That Change, 3. Storing Translations in Database for System UI, 4. Missing Fallback, 5. Mixing Languages in a Single File, 6. Using Keys as Display Text, 7. Not Syncing Before Translating, BAD PRACTICES (Anti-Patterns)
+
+### Community 1181 - "Modulo Lang"
+Cohesion: 0.20
+Nodes (8): Collegamenti alla documentazione generale, Collegamenti tra versioni di structure.md, Dipendenze da altri moduli, Informazioni generali, Modulo Lang, Namespace e autoload, Struttura della Registrazione dei Console Commands, Struttura delle directory
+
+### Community 1183 - "Standard per Campi Geografici"
+Cohesion: 0.25
+Nodes (8): Campo Città, Campo Login/Accedi, Campo Provincia, Campo Regione, Standard per Campi di Autenticazione, Standard per Campi Geografici, Struttura Completa a 7 Elementi, Struttura Traduzioni Standard
+
+### Community 1184 - "🚀 Bienvenido a Laraxot PTVX"
+Cohesion: 0.25
+Nodes (7): 🚀 Bienvenido a Laraxot PTVX, ✨ Características Principales, 📚 Documentación, 📚 Estructura del Proyecto, 🏁 Inicio Rápido, 📝 Licencia, ✨ ¿Por qué Laraxot PTVX?
+
+### Community 1185 - "🚀 Bienvenido a Laraxot PTVX"
+Cohesion: 0.25
+Nodes (7): 🚀 Bienvenido a Laraxot PTVX, ✨ Características Principales, 📚 Documentación, 📚 Estructura del Proyecto, 🏁 Inicio Rápido, 📝 Licencia, ✨ ¿Por qué Laraxot PTVX?
+
+### Community 1186 - "🚀 Benvenuto in Laraxot PTVX"
+Cohesion: 0.25
+Nodes (7): 🏁 Avvio Rapido, 🚀 Benvenuto in Laraxot PTVX, ✨ Caratteristiche Principali, 📚 Documentazione, 📝 Licenza, ✨ Perché Laraxot PTVX?, 📚 Struttura del Progetto
+
+### Community 1188 - "Traduzione dei Messaggi di Validazione"
+Cohesion: 0.25
+Nodes (7): Analisi e Ragionamento per il Progetto `<nome progetto>corrente`, Introduzione, Messaggi di Validazione Personalizzati, Modifiche Proposte, Problema di Corrispondenza tra Etichetta e Nome del Campo, Traduzione dei Messaggi di Validazione, Validazione di Campi Array
+
+### Community 1189 - "Evaluated Packages"
+Cohesion: 0.25
+Nodes (8): 1. Spatie Laravel Translation Loader, 2. Mcamara Laravel Localization, 3. Nikaia Translation Sheet, 4. MohmmedAshraf Laravel Translations, Evaluated Packages, Overview, Recommendation for `<nome progetto>`, Translation Management Packages
+
+### Community 1190 - "Sistema di Traduzione in il progetto"
+Cohesion: 0.25
+Nodes (8): Best Practices, Collegamenti, Componenti Supportati, Funzionamento, LangServiceProvider, Sistema di Traduzione in il progetto, translationes, Vedi Anche
+
+### Community 1191 - "Collegamenti alla Documentazione sugli Standard di Traduzione"
+Cohesion: 0.25
+Nodes (8): Collegamenti alla Documentazione sugli Standard di Traduzione, Correzioni Implementate, Documentazione nel Modulo Lang, Documentazione nel Modulo Notify, Problemi Identificati e Correzioni in Corso, Prossimi Passi, Riepilogo dei Problemi, translation-standards
+
+### Community 1192 - "Collegamenti alla Documentazione sugli Standard di Traduzione"
+Cohesion: 0.25
+Nodes (8): Collegamenti alla Documentazione sugli Standard di Traduzione, Correzioni Implementate, Documentazione nel Modulo Lang, Documentazione nel Modulo Notify, Problemi Identificati e Correzioni in Corso, Prossimi Passi, Riepilogo dei Problemi, translation_strategies
+
+### Community 1194 - "`helper_text` vuoto quando coincide con la chiave del campo"
 Cohesion: 0.29
-Nodes (7): scripts, analyse, format, post-autoload-dump, post-update-cmd, test, test-coverage
+Nodes (6): Come riconoscerlo in futuro, Come si fa correttamente, `helper_text` vuoto quando coincide con la chiave del campo, L'errore che si è ripetuto (su scala), Perché è sbagliato, Riferimenti
 
-### Community 19 - "laravel"
+### Community 1198 - "LangServiceProvider"
+Cohesion: 0.29
+Nodes (7): Caratteristiche Principali, Documentazione Dettagliata, lang-service-provider-improvements, LangServiceProvider, Panoramica, Struttura Chiavi di Traduzione, Utilizzo Corretto
+
+### Community 1199 - "Upgrade Laravel 13 - Lang 🐄✨"
+Cohesion: 0.29
+Nodes (7): laravel-localization-best-practices, 🛠️ Modifiche Eseguite, 📝 Note Operative, 🧘 Principi Applicati, 🚀 Quality Gates (Target), Upgrade Laravel 13 - Lang 🐄✨, 🎯 Visione Architetturale
+
+### Community 1200 - "File Corretti"
+Cohesion: 0.29
+Nodes (7): 1. `Modules/Ptv/lang/it/criteri_esclusione.php`, 2. `Modules/Performance/lang/it/organizzativa.php`, 3. `Modules/Pdnd/lang/it/pdnd.php`, 4. `Modules/Ptv/lang/it/message.php`, 5. `Modules/Ptv/lang/it/option.php`, 6. `Modules/Incentivi/lang/it/department.php`, File Corretti
+
+### Community 1201 - "Sistema di Traduzione in il progetto"
+Cohesion: 0.29
+Nodes (7): Best Practices, Collegamenti, Componenti Supportati, Funzionamento, LangServiceProvider, Sistema di Traduzione in il progetto, Vedi Anche
+
+### Community 1204 - "4. Applico la regola/skill/command/memory"
 Cohesion: 0.33
-Nodes (6): extra, laravel, aliases, providers, Modules\\Lang\\Providers\\Filament\\AdminPanelProvider, Modules\\Lang\\Providers\\LangServiceProvider
+Nodes (6): 4. Applico la regola/skill/command/memory, Local vs Global, Quick Reference, Regole Critiche per Module, Riferimenti, Struttura di Questo Module
 
-### Community 20 - "require"
+### Community 1205 - "FUTURE IMPLEMENTAZIONI (Planned Features)"
 Cohesion: 0.33
-Nodes (6): require, lara-zeus/spatie-translatable, mcamara/laravel-localization, php, rinvex/countries, spatie/laravel-sluggable
+Nodes (6): 1. Auto-Translation Service, 2. Advanced Missing Key Detection, 3. Translation Memory / Glossary, 4. RTL Support (Arabic, Hebrew, Farsi), 5. Multi-Workspace Translations, FUTURE IMPLEMENTAZIONI (Planned Features)
 
-### Community 21 - "LangBaseViewRecord"
-Cohesion: 0.60
-Nodes (3): LangBaseViewRecord, LaraZeus\SpatieTranslatable\Resources\Pages\ViewRecord\Concerns\Translatable, Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord
+### Community 1206 - "FALSE FRIENDS (Easy Mistakes)"
+Cohesion: 0.33
+Nodes (6): 1. Locale vs Language, 2. Translation vs Localization, 3. Pluralization vs Plurals, 4. Timezone vs Language, 5. Translation Files vs Translation Models, FALSE FRIENDS (Easy Mistakes)
 
-### Community 22 - "config"
+### Community 1207 - "RELIGIONE (i18n Dogmas)"
+Cohesion: 0.33
+Nodes (6): 1. The PHP File Hierarchy is Sacred, 2. Three Sacred Languages, 3. Fallback Chain is Law, 4. Filament Labels Resolve Automatically, 5. Missing Keys Are Recorded, Not Ignored, RELIGIONE (i18n Dogmas)
+
+### Community 1208 - "3. Target Users"
+Cohesion: 0.33
+Nodes (6): 3.1 User Personas, 3.2 Use Cases, 3.3 Pain Points Addressed, 3. Target Users, Persona 1: Administrator, Persona 2: End User
+
+### Community 1209 - "3. Target Users"
+Cohesion: 0.33
+Nodes (6): 3.1 User Personas, 3.2 Use Cases, 3.3 Pain Points Addressed, 3. Target Users, Persona 1: Administrator, Persona 2: End User
+
+### Community 1210 - "Benefici Ottenuti"
+Cohesion: 0.33
+Nodes (6): 1. Coerenza Linguistica, 2. Qualità UX, 3. Manutenibilità, 4. Completezza, 5. Professionalità, Benefici Ottenuti
+
+### Community 1211 - "Benefici Ottenuti"
+Cohesion: 0.33
+Nodes (6): 1. Coerenza Linguistica, 2. Qualità UX, 3. Manutenibilità, 4. Completezza, 5. Professionalità, Benefici Ottenuti
+
+### Community 1212 - "Benefici Ottenuti"
+Cohesion: 0.33
+Nodes (6): 1. Coerenza Linguistica, 2. Qualità UX, 3. Manutenibilità, 4. Completezza, 5. Professionalità, Benefici Ottenuti
+
+### Community 1214 - "2. Regola Testi Italiani in File Non Italiani"
+Cohesion: 0.33
+Nodes (6): 1. Regola helper_text Normalizzazione, 2. Regola Testi Italiani in File Non Italiani, Esempio, Pattern Problematici, Regole Fondamentali, Termini Accettabili (Internazionali)
+
+### Community 1215 - "📋 Checklist Implementazione"
+Cohesion: 0.33
+Nodes (6): 📋 Checklist Implementazione, Codice, Configurazione, Documentazione, Struttura Cartelle, Testing
+
+### Community 1216 - "📋 Checklist Implementazione"
+Cohesion: 0.33
+Nodes (6): 📋 Checklist Implementazione, Fase 1: Standardizzazione Naming (Priorità ALTA), Fase 2: Standardizzazione Filament (Priorità MEDIA), Fase 3: Aggiornamento Namespace (Priorità MEDIA), Fase 4: Ottimizzazione Codice (Priorità MEDIA), Fase 5: Documentazione (Priorità BASSA)
+
+### Community 1217 - "📋 Checklist Implementazione"
+Cohesion: 0.33
+Nodes (6): 📋 Checklist Implementazione, Fase 1: Standardizzazione Naming (Priorità ALTA), Fase 2: Standardizzazione Filament (Priorità MEDIA), Fase 3: Aggiornamento Namespace (Priorità MEDIA), Fase 4: Ottimizzazione Codice (Priorità MEDIA), Fase 5: Documentazione (Priorità BASSA)
+
+### Community 1218 - "🔧 Implementazione Ottimizzazioni"
+Cohesion: 0.33
+Nodes (6): Fase 1: Consolidamento Documentazione (Priorità ALTA), Fase 2: Standardizzazione Cartelle (Priorità ALTA), Fase 3: Pulizia File Configurazione (Priorità MEDIA), Fase 4: Verifica Codice (Priorità MEDIA), Fase 5: Testing e Validazione (Priorità BASSA), 🔧 Implementazione Ottimizzazioni
+
+### Community 1219 - "Contributing"
+Cohesion: 0.33
+Nodes (5): Contributing, Etiquette, Procedure, Requirements, Viability
+
+### Community 1220 - "Le classi in gioco"
 Cohesion: 0.40
-Nodes (5): pestphp/pest-plugin, phpstan/extension-installer, config, allow-plugins, sort-packages
+Nodes (5): 1. `Http\Livewire\Lang\Switcher` — **ritirato** (12.1), 2. `Http\Livewire\Lang\Change` — **ritirato** (12.1), 3. `Filament\Widgets\LanguageSwitcherWidget` — SSoT, ora davvero montato, 4. `View\Components\LanguageSwitcher` — wrapper ancora inerte, Le classi in gioco
 
-### Community 23 - "psr-4"
+### Community 1221 - "PRD Lang"
 Cohesion: 0.40
-Nodes (5): autoload, psr-4, Modules\\Lang\\, Modules\\Lang\\Database\\Factories\\, Modules\\Lang\\Database\\Seeders\\
+Nodes (4): FR-L001 [MUST] HTTP Switcher e Change assenti. — **soddisfatto** (file cancellati, `_components.json` = `[]`)., FR-L002 [MUST] Widget + Blade wrapper restano. Nessuna terza classe. — soddisfatto; il wrapper `View\Components\LanguageSwitcher` resta inerte (registrazione commentata), il montaggio vivo è `@livewire(FQCN)`., FR-L003 [SHOULD] Parità URL localizzati. — **chiuso**: il widget ora usa `LaravelLocalization::getSupportedLocales()`/`getLocalizedURL()` (righe 73, 118) e redirect 303, stesso meccanismo del vecchio `Change`., PRD Lang
 
-### Community 24 - "Dashboard"
-Cohesion: 0.67
-Nodes (3): Dashboard, BackedEnum, Modules\Xot\Filament\Pages\XotBaseDashboard
+### Community 1222 - "Collisioni di nome per sola differenza di maiuscole"
+Cohesion: 0.40
+Nodes (4): Collisioni di nome per sola differenza di maiuscole, Come si chiude, Coppie a contenuto identico (15), Il problema
 
-### Community 27 - "autoload-dev"
+### Community 1225 - "Array lang: una chiave per riga"
+Cohesion: 0.40
+Nodes (4): Array lang: una chiave per riga, Causa, Errore, Fix
+
+### Community 1226 - "navigation-consolidated.md"
+Cohesion: 0.40
+Nodes (3): navigation — Consolidated Documentation, navigation-corrections, Table of Contents
+
+### Community 1227 - "COMPETITORS & INSPIRATIONS"
+Cohesion: 0.40
+Nodes (5): COMPETITORS & INSPIRATIONS, Gettext (`.po` / `.pot` files), i18next (JavaScript), Laravel's Native Localization (`resources/lang/`), Spatie Translatable
+
+### Community 1231 - "Lang Module — Continuation Task"
+Cohesion: 0.40
+Nodes (4): Lang Module — Continuation Task, Modelli attesi (da verificare), Stato, Task
+
+### Community 1232 - "Pattern di Correzione Standardizzati"
+Cohesion: 0.40
+Nodes (5): File Corretti, Inglese (EN), Pattern di Correzione Standardizzati, Statistiche Finali, Tedesco (DE)
+
+### Community 1233 - "Pattern di Correzione Standardizzati"
+Cohesion: 0.40
+Nodes (5): File Corretti, Inglese (EN), Pattern di Correzione Standardizzati, Statistiche Finali, Tedesco (DE)
+
+### Community 1234 - "Pattern di Correzione Standardizzati"
+Cohesion: 0.40
+Nodes (5): File Corretti, Inglese (EN), Pattern di Correzione Standardizzati, Statistiche Finali, Tedesco (DE)
+
+### Community 1239 - "Lang Module Wiki"
+Cohesion: 0.40
+Nodes (5): AI / second brain, Indices, Lang Module Wiki, On-Demand Focus, On-Demand Workflow
+
+### Community 1240 - "Lang Module Wiki"
+Cohesion: 0.40
+Nodes (5): AI / second brain, Indices, Lang Module Wiki, On-Demand Focus, On-Demand Workflow
+
+### Community 1241 - "Per Ogni Modulo"
+Cohesion: 0.40
+Nodes (5): ✅ Checklist Implementazione Globale, Modulo Job, Modulo Notify, Modulo User, Per Ogni Modulo
+
+### Community 1242 - "🚨 Problemi Critici Identificati"
+Cohesion: 0.40
+Nodes (5): 1. Cartelle con Naming Inconsistente, 2. File di Configurazione Duplicati, 3. Duplicazione Cartelle Documentazione, 4. File di Configurazione Obsoleti, 🚨 Problemi Critici Identificati
+
+### Community 1243 - "PHPStan Status — Lang Module"
+Cohesion: 0.40
+Nodes (4): Latest Analysis, Next Steps, PHPStan Status — Lang Module, Progress
+
+### Community 1246 - "Decision log"
+Cohesion: 0.50
+Nodes (3): [2026-09-21] 12.1 implementata: HTTP cancellati, widget montato e realineato, [2026-09-21] Widget SSoT, HTTP duplicati fuori, Decision log
+
+### Community 1251 - "Collegamenti ai Moduli"
+Cohesion: 0.50
+Nodes (4): Collegamenti ai Moduli, Moduli con Traduzioni, Regole Generali, Versione Incoming
+
+### Community 1253 - "COVERAGE ANALYSIS"
+Cohesion: 0.50
+Nodes (4): Bottlenecks, COVERAGE ANALYSIS, Current State, Future Metrics (2026-2027)
+
+### Community 1254 - "LIBRERIE DA INSTALLARE (Dependencies)"
+Cohesion: 0.50
+Nodes (4): Bundled (in packages/ folder), LIBRERIE DA INSTALLARE (Dependencies), Optional (Future), Required
+
+### Community 1255 - "FILOSOFIA (Why Lang Exists)"
+Cohesion: 0.50
+Nodes (4): FILOSOFIA (Why Lang Exists), The Architecture Insight, The Problem Lang Solves, Why Not Native Laravel Localization?
+
+### Community 1256 - "Quality Report — Lang"
+Cohesion: 0.50
+Nodes (3): Come misurare la coverage Pest, Note, Quality Report — Lang
+
+### Community 1257 - "Quality Report — Lang"
+Cohesion: 0.50
+Nodes (3): Come misurare la coverage Pest, Note, Quality Report — Lang
+
+### Community 1268 - "Best Practice"
+Cohesion: 0.50
+Nodes (4): 1. Convenzioni per le Chiavi, 2. Gestione dei Parametri, 3. Plurale/Singolare, Best Practice
+
+### Community 1269 - "fixes-consolidated.md"
+Cohesion: 0.50
+Nodes (3): fixes — Consolidated Documentation, fixes-errori-sintassi, Table of Contents
+
+### Community 1270 - "Regole di Correzione Implementate"
+Cohesion: 0.50
+Nodes (4): Helper Text Rules ✅, Naming Convention ✅, Regole di Correzione Implementate, Struttura Espansa Obbligatoria ✅
+
+### Community 1271 - "📚 Ottimizzazioni Documentazione"
+Cohesion: 0.50
+Nodes (4): 1. **Eliminazione Duplicazioni Documentazione**, 2. **Standardizzazione Naming File**, 3. **Struttura Documentazione Standardizzata**, 📚 Ottimizzazioni Documentazione
+
+### Community 1274 - "Colonne delle Resource — verifica 2026-09-10"
+Cohesion: 0.50
+Nodes (3): Colonne delle Resource — verifica 2026-09-10, Contratto e verifica, Evidenze e decisioni
+
+### Community 1275 - "Wiki Schema - Lang"
+Cohesion: 0.50
+Nodes (3): Convenzioni, Struttura, Wiki Schema - Lang
+
+### Community 1276 - "Wiki Schema - Lang"
+Cohesion: 0.50
+Nodes (3): Convenzioni, Struttura, Wiki Schema - Lang
+
+### Community 1280 - "Risoluzione Problemi"
 Cohesion: 0.67
-Nodes (3): autoload-dev, psr-4, Modules\\Lang\\Tests\\
+Nodes (3): Namespace Errato, Risoluzione Problemi, Traduzione Non Trovata
+
+### Community 1293 - "Prevenzione Errori Futuri"
+Cohesion: 0.67
+Nodes (3): Controlli Automatici Implementati, Prevenzione Errori Futuri, Regole di Manutenzione
+
+### Community 1294 - "Riepilogo Statistiche"
+Cohesion: 0.67
+Nodes (3): File Corretti, Moduli Interessati, Riepilogo Statistiche
+
+### Community 1296 - "Note Tecniche"
+Cohesion: 0.67
+Nodes (3): Note Tecniche, Pattern di Validazione, Struttura File Corretta
+
+### Community 1297 - "Struttura dei File di Traduzione"
+Cohesion: 0.67
+Nodes (3): File JSON (Traduzioni Globali), File PHP (Traduzioni Categorizzate), Struttura dei File di Traduzione
+
+### Community 1298 - "Preparazione per i Traduttori"
+Cohesion: 0.67
+Nodes (3): Istruzioni per i Traduttori, Preparazione per i Traduttori, Struttura Consigliata
+
+### Community 1305 - "Rules — Lang Module Wiki"
+Cohesion: 0.67
+Nodes (3): Available Rules, Rules — Lang Module Wiki, Usage
+
+### Community 1308 - "Skills — Lang Module Wiki"
+Cohesion: 0.67
+Nodes (3): Available Skills, Skills — Lang Module Wiki, Usage
 
 ## Knowledge Gaps
-- **72 isolated node(s):** `name`, `description`, `laraxot`, `laravel`, `filament` (+67 more)
+- **11485 isolated node(s):** `name`, `description`, `laraxot`, `laravel`, `filament` (+11480 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
->>>>>>> laraxot/dev
+- **120 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-<<<<<<< HEAD
-- **Why does `📚 **API Reference Modulo Lang - Laraxot**` connect `📚 **API Reference Modulo Lang - Laraxot**` to `docs/README.md`, `**Metodi Principali**`, `**Funzioni Globali**`, `**Componenti Automatici**`, `**Metodi Principali**`, `**CacheCommand**`, `**CacheStatus**`?**
-  _High betweenness centrality (0.006) - this node is a cross-community bridge._
-- **Why does `Miglioramenti LangServiceProvider` connect `Miglioramenti LangServiceProvider` to `docs/README.md`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **What connects `composer_init.sh script`, `update.sh script`, `name` to the rest of the system?**
-  _7414 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Recent Updates` be split into smaller, more focused modules?**
-  _Cohesion score 0.024691358024691357 - nodes in this community are weakly interconnected._
-- **Should `Recent Updates` be split into smaller, more focused modules?**
-  _Cohesion score 0.024691358024691357 - nodes in this community are weakly interconnected._
-- **Should `Post` be split into smaller, more focused modules?**
-  _Cohesion score 0.05786090005844535 - nodes in this community are weakly interconnected._
-- **Should `LangHundredPercentCoverageTest.php` be split into smaller, more focused modules?**
-  _Cohesion score 0.05893719806763285 - nodes in this community are weakly interconnected._
-=======
-- **Why does `TranslationFile` connect `Modules\Xot\Contracts\UserContract` to `Illuminate\Database\Seeder`, `TranslationFileResource.php`, `Post`, `TestCase.php`?**
-  _High betweenness centrality (0.075) - this node is a cross-community bridge._
-- **Why does `Post` connect `Post` to `Illuminate\Database\Seeder`, `TestCase.php`?**
-  _High betweenness centrality (0.056) - this node is a cross-community bridge._
-- **Are the 4 inferred relationships involving `Translation` (e.g. with `.execute()` and `.notifyMissingKey()`) actually correct?**
-  _`Translation` has 4 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `📚 **API Reference Modulo Lang - Laraxot**` connect `📚 **API Reference Modulo Lang - Laraxot**` to `**Metodi Principali**`, `**Funzioni Globali**`, `**Componenti Automatici**`, `**Metodi Principali**`, `**CacheCommand**`, `**CacheStatus**`, `docs/README.md`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `🔧 **Troubleshooting Modulo Lang - Laraxot**` connect `🔧 **Troubleshooting Modulo Lang - Laraxot**` to `🛠️ **Strumenti di Debug**`, `🔗 **Risorse e Supporto**`, `📋 **Checklist Troubleshooting**`, `📝 **Template Segnalazione Bug**`, `docs/README.md`, `🔍 **Problemi Specifici**`, `**1. Traduzioni Non Caricate**`, `📊 **Monitoraggio e Metriche**`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `Lang Module - Complete Roadmap` connect `Lang Module - Complete Roadmap` to `docs/roadmap.md`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `name`, `description`, `laraxot` to the rest of the system?**
-  _72 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Spatie\QueueableAction\QueueableAction` be split into smaller, more focused modules?**
-  _Cohesion score 0.05202661826981246 - nodes in this community are weakly interconnected._
+  _11485 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Recent Updates` be split into smaller, more focused modules?**
+  _Cohesion score 0.024691358024691357 - nodes in this community are weakly interconnected._
+- **Should `Recent Updates` be split into smaller, more focused modules?**
+  _Cohesion score 0.024691358024691357 - nodes in this community are weakly interconnected._
 - **Should `Modules\Xot\Contracts\UserContract` be split into smaller, more focused modules?**
-  _Cohesion score 0.07955596669750231 - nodes in this community are weakly interconnected._
-- **Should `Post` be split into smaller, more focused modules?**
-  _Cohesion score 0.06565656565656566 - nodes in this community are weakly interconnected._
->>>>>>> laraxot/dev
+  _Cohesion score 0.06936026936026936 - nodes in this community are weakly interconnected._

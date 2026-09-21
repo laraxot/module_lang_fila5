@@ -8,4 +8,4 @@ related:
 
 # Lang — canone
 
-SSoT: [livewire-inventory.md](./livewire-inventory.md). Ritiro HTTP Change/Switcher. SSoT: `LanguageSwitcherWidget`. Non creare un terzo switcher.
+SSoT: [livewire-inventory.md](./livewire-inventory.md). Story 12.1 `blocked`: `Switcher` ritirato, `Change` ancora montato via `<livewire:lang.change>` in `Modules/UI/.../headernav/simple.blade.php:60`. SSoT futuro: `LanguageSwitcherWidget` (già allineato a `LaravelLocalization`, non ancora montato). Non creare un terzo switcher.
