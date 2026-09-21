@@ -58,8 +58,8 @@ test('LanguageSwitcherWidget getAvailableLocales riflette LaravelLocalization no
 });
 
 test('LanguageSwitcher HTTP Switcher and Change non esistono più', function (): void {
-    Assert::assertFalse(class_exists('Modules\\Lang\\Http\\Livewire\\Lang\\Switcher'));
-    Assert::assertFalse(class_exists('Modules\\Lang\\Http\\Livewire\\Lang\\Change'));
+    Assert::assertFalse(class_exists('Modules\\Lang\\Http\\Livewire\\Lang\\Switcher', false));
+    Assert::assertFalse(class_exists('Modules\\Lang\\Http\\Livewire\\Lang\\Change', false));
 });
 
 test('LanguageSwitcherWidget changeLanguage redirect 303 su URL localizzato', function (): void {
