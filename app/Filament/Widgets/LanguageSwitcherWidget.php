@@ -27,11 +27,11 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     protected string $view = 'lang::filament.widgets.language-switcher';
 
     /**
-     * Determina se il widget può essere visualizzato.
+     * Chrome tema: visibile salvo disattivazione esplicita.
      */
     public static function canView(): bool
     {
-        return true;
+        return true === config('lang.language_switcher.enabled', true);
     }
 
     /**
