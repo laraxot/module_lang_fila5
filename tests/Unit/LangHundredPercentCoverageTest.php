@@ -718,8 +718,8 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
     });
 
     test('retired HTTP Switcher and Change classes no longer exist', function (): void {
-        Assert::assertFalse(class_exists('Modules\\Lang\\Http\\Livewire\\Lang\\Change'));
-        Assert::assertFalse(class_exists('Modules\\Lang\\Http\\Livewire\\Lang\\Switcher'));
+        Assert::assertFalse(class_exists('Modules\\Lang\\Http\\Livewire\\Lang\\Change', false));
+        Assert::assertFalse(class_exists('Modules\\Lang\\Http\\Livewire\\Lang\\Switcher', false));
     });
 
     test('LangField cast get and set via host model', function (): void {
