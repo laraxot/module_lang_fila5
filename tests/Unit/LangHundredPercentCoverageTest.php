@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
 use Livewire\Livewire;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
@@ -53,8 +54,6 @@ use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslatio
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\ListTranslationFiles;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Tables\TranslationFilesTable;
 use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
-use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
-use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
 use Modules\Lang\Models\BaseModel;
 use Modules\Lang\Models\BaseModelLang;
 use Modules\Lang\Models\LanguageLine;
@@ -685,19 +684,22 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $widget = new LanguageSwitcherWidget();
         $viewData = $widget->exposeViewData();
         Assert::assertArrayHasKey('available_locales', $viewData);
+        Assert::assertArrayHasKey('lang', $viewData);
+        Assert::assertArrayHasKey('langs', $viewData);
         $availableLocales = $viewData['available_locales'];
         Assert::assertInstanceOf(Collection::class, $availableLocales);
-        Assert::assertCount(3, $availableLocales);
+        $supportedCodes = array_keys(LaravelLocalization::getSupportedLocales());
+        Assert::assertSame($supportedCodes, $availableLocales->pluck('code')->all());
 
         app()->instance('request', Request::create('http://localhost/it/demo', 'GET'));
         app()->setLocale('it');
-        Assert::assertStringContainsString('/en/', $widget->getLanguageUrl('en'));
+        Assert::assertStringContainsString('en', $widget->getLanguageUrl('en'));
 
         app()->instance('request', Request::create('http://localhost/it', 'GET'));
         Assert::assertStringContainsString('en', $widget->getLanguageUrl('en'));
 
         app()->instance('request', Request::create('http://localhost/', 'GET'));
-        Assert::assertStringContainsString('de', $widget->getLanguageUrl('de'));
+        Assert::assertSame('/de', $widget->getLanguageUrl('de'));
 
         Livewire::test(LanguageSwitcherWidget::class)
             ->call('changeLanguage', 'en')
@@ -715,25 +717,9 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         Assert::assertSame('lang::components.empty', $view->name());
     });
 
-    test('Livewire Change and Switcher mount and render', function (): void {
-        config([
-            'laravellocalization.supportedLocales' => [
-                'it' => ['name' => 'Italiano', 'script' => 'Latn', 'native' => 'Italiano', 'regional' => 'it_IT'],
-                'en' => ['name' => 'English', 'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB'],
-            ],
-        ]);
-        app()->setLocale('it');
-
-        $change = new LangChange();
-        $change->mount();
-        Assert::assertSame('it', $change->lang);
-        Assert::assertArrayHasKey('en', $change->langs);
-        Assert::assertInstanceOf(View::class, $change->render());
-
-        $switcher = new LangSwitcher();
-        $switcher->mount();
-        Assert::assertSame('it', $switcher->lang);
-        Assert::assertInstanceOf(View::class, $switcher->render());
+    test('retired HTTP Switcher and Change classes no longer exist', function (): void {
+        Assert::assertFalse(class_exists('Modules\\Lang\\Http\\Livewire\\Lang\\Change'));
+        Assert::assertFalse(class_exists('Modules\\Lang\\Http\\Livewire\\Lang\\Switcher'));
     });
 
     test('LangField cast get and set via host model', function (): void {

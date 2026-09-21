@@ -32,8 +32,7 @@ use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Modules\Lang\Filament\Forms\Components\TranslationEditor;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
-use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
-use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
+use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
@@ -263,30 +262,12 @@ describe('Lang coverage gaps closeout', function (): void {
         Assert::assertSame([], $edit->schemaFromRecord((object) ['content' => 'x']));
     });
 
-    test('Livewire Change and Switcher handle non-string localized urls', function (): void {
-        config([
-            'laravellocalization.supportedLocales' => [
-                'it' => ['name' => 'Italiano', 'script' => 'Latn', 'native' => 'Italiano', 'regional' => 'it_IT'],
-                'en' => ['name' => 'English', 'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB'],
-            ],
-        ]);
-        app()->setLocale('it');
-
-        LaravelLocalization::shouldReceive('getSupportedLocales')
-            ->andReturn([
-                'it' => ['name' => 'Italiano'],
-                'en' => ['name' => 'English'],
-            ]);
+    test('LanguageSwitcherWidget falls back when getLocalizedURL is not a string', function (): void {
         LaravelLocalization::shouldReceive('getLocalizedURL')
             ->andReturn(false);
 
-        $change = new LangChange();
-        $change->mount();
-        Assert::assertSame('/en', $change->langs['en']['url']);
-
-        $switcher = new LangSwitcher();
-        $switcher->mount();
-        Assert::assertFalse($switcher->langs['en']['url']);
+        $widget = new LanguageSwitcherWidget();
+        Assert::assertSame('/en', $widget->getLanguageUrl('en'));
     });
 
     test('Post accessors persist when model has key', function (): void {
