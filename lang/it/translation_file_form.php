@@ -7,7 +7,7 @@ return [
         'name' => [
             'label' => 'name',
             'placeholder' => 'name',
-            'helper_text' => '',
+            'helper_text' => 'name',
             'description' => 'name',
         ],
     ],

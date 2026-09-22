@@ -29,12 +29,6 @@ class TranslationFileResource extends XotBaseResource
     }
 
     #[\Override]
-    public static function getFormSchemaOld(): array
-    {
-        return [];
-    }
-
-    #[\Override]
     public static function getPages(): array
     {
         return [
