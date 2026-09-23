@@ -56,11 +56,8 @@ Per navigare nella struttura delle cartelle, utilizzare:
 Esempi:
 - Per collegare a un file nello stesso modulo: `[File](./altro_file.md)` o `[File](altro_file.md)`
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/project_docs/file.md)`
-<<<<<<<< HEAD:docs/wiki/integrations/_da-riconciliare/documentation-link-conventions.md
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/project_docs/file.md)`
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/project_docs/file.md)`
-========
->>>>>>>> laraxot/dev:docs/archive/historical/documentation-link-conventions.md
 
 ### 3. Struttura della Documentazione
 
@@ -185,11 +182,8 @@ Per navigare nella struttura delle cartelle, utilizzare:
 Esempi:
 - Per collegare a un file nello stesso modulo: `[File](./altro_file.md)` o `[File](altro_file.md)`
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/docs/file.md)`
-<<<<<<<< HEAD:docs/wiki/integrations/_da-riconciliare/documentation-link-conventions.md
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/docs/file.md)`
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/docs/file.md)`
-========
->>>>>>>> laraxot/dev:docs/archive/historical/documentation-link-conventions.md
 
 ### 3. Struttura della Documentazione
 
