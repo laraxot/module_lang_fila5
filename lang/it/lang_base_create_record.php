@@ -1,0 +1,48 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'actions' => [
+        'activeLocale' => [
+            'label' => 'activeLocale',
+        ],
+    ],
+    'label' => 'Lang Base Create Record',
+    'plural_label' => 'Lang Base Create Record (Plurale)',
+    'navigation' => [
+        'name' => 'Lang Base Create Record',
+        'plural' => 'Lang Base Create Record',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Lang Base Create Record',
+<<<<<<< HEAD
+        'sort' => '1',
+=======
+        'sort' => 1,
+>>>>>>> laraxot/dev
+        'icon' => 'heroicon-o-rectangle-stack',
+    ],
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+];
