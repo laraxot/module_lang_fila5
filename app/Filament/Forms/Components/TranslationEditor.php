@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 // app/Filament/Components/TranslationEditor.php
 
 namespace Modules\Lang\Filament\Forms\Components;

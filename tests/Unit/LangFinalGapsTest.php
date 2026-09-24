@@ -21,7 +21,18 @@ use Illuminate\Support\HtmlString;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator as LaravelTranslator;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+<<<<<<< HEAD
 use Mockery;
+=======
+<<<<<<< .merge_file_j7iRhn
+use Mockery;
+=======
+<<<<<<< .merge_file_ZYE65J
+=======
+use Mockery;
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Actions\SaveTransAction;
@@ -35,7 +46,23 @@ use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Modules\Lang\Filament\Forms\Components\TranslationEditor;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
+<<<<<<< HEAD
 use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
+=======
+<<<<<<< .merge_file_j7iRhn
+use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
+=======
+<<<<<<< .merge_file_ZYE65J
+use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
+=======
+<<<<<<< .merge_file_CtdPUc
+use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
+=======
+use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\RouteServiceProvider;
@@ -45,8 +72,21 @@ use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use ReflectionMethod;
 use ReflectionProperty;
+=======
+<<<<<<< .merge_file_j7iRhn
+use ReflectionMethod;
+use ReflectionProperty;
+=======
+<<<<<<< .merge_file_ZYE65J
+=======
+use ReflectionMethod;
+use ReflectionProperty;
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
 
 use function Safe\file_put_contents;
 use function Safe\mkdir;
@@ -101,7 +141,20 @@ final class NationalFlagSelectFinalStub extends NationalFlagSelect
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<int, mixed>  $filteredCountries
+=======
+<<<<<<< .merge_file_j7iRhn
+     * @param  array<int, mixed>  $filteredCountries
+=======
+<<<<<<< .merge_file_ZYE65J
+     * @param array<int, mixed> $filteredCountries
+     *
+=======
+     * @param  array<int, mixed>  $filteredCountries
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
      * @return array<int, mixed>
      */
     protected function finalizeFilteredCountries(array $filteredCountries): array
@@ -161,18 +214,60 @@ final class PostNullTitleForGuidStub extends Post
 
 final class ThemeComposerNonStringFieldStub extends ThemeComposer
 {
+<<<<<<< HEAD
     protected function langFieldValue(LangData $lang, string $field): mixed
+=======
+<<<<<<< .merge_file_j7iRhn
+    protected function langFieldValue(LangData $lang, string $field): mixed
+=======
+<<<<<<< .merge_file_ZYE65J
+    protected function langFieldValue(LangData $lang, string $field): mixed
+=======
+<<<<<<< .merge_file_CtdPUc
+    protected function langFieldValue(LangData $lang, string $field): mixed
+=======
+    protected function langFieldValue(LangData $lang, string $field): int
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     {
         return 42;
     }
 }
 
 afterEach(function (): void {
+<<<<<<< HEAD
     Mockery::close();
+=======
+<<<<<<< .merge_file_j7iRhn
+=======
+<<<<<<< .merge_file_ZYE65J
+    \Mockery::close();
+>>>>>>> laraxot/dev
 });
 
 test('EditTranslationFile schemaFromRecord covers both branches', function (): void {
     $edit = new EditTranslationFile();
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_4xgoE1
+    Mockery::close();
+});
+
+test('EditTranslationFile schemaFromRecord covers both branches', function (): void {
+<<<<<<< .merge_file_j7iRhn
+    $edit = new EditTranslationFile();
+=======
+<<<<<<< .merge_file_CtdPUc
+    $edit = new EditTranslationFile();
+=======
+    $edit = new EditTranslationFile;
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     Assert::assertNotEmpty($edit->schemaFromRecord((object) ['content' => ['hello' => 'world']]));
     Assert::assertSame([], $edit->schemaFromRecord(null));
     Assert::assertSame([], $edit->schemaFromRecord((object) ['content' => 'scalar']));
@@ -201,9 +296,31 @@ test('TranslatorAction and Adapter coerce non-string loaded values', function ()
     // connessione a SQLite avrebbe dato l'impressione di proteggere qualcosa
     // che non e' in pericolo, e avrebbe contraddetto la regola per cui i test
     // girano sulle repliche MySQL. Story LANG-17.4.
+<<<<<<< HEAD
     $loader = new ArrayLoader();
     $action = new TranslatorAction($loader, 'it');
     $loaded = new ReflectionProperty(LaravelTranslator::class, 'loaded');
+=======
+<<<<<<< .merge_file_j7iRhn
+    $loader = new ArrayLoader();
+    $action = new TranslatorAction($loader, 'it');
+    $loaded = new ReflectionProperty(LaravelTranslator::class, 'loaded');
+=======
+<<<<<<< .merge_file_ZYE65J
+    $loader = new ArrayLoader();
+    $action = new TranslatorAction($loader, 'it');
+    $loaded = new \ReflectionProperty(LaravelTranslator::class, 'loaded');
+=======
+<<<<<<< .merge_file_CtdPUc
+    $loader = new ArrayLoader();
+=======
+    $loader = new ArrayLoader;
+>>>>>>> .merge_file_LlUNeP
+    $action = new TranslatorAction($loader, 'it');
+    $loaded = new ReflectionProperty(LaravelTranslator::class, 'loaded');
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     $loaded->setAccessible(true);
     // JSON translation path returns non-string/non-array values without notifyMissingKey/DB
     $loaded->setValue($action, ['*' => ['*' => ['it' => ['json.int.key' => 42]]]]);
@@ -219,7 +336,23 @@ test('TranslatorAction and Adapter coerce non-string loaded values', function ()
 
 test('ThemeComposer fallback locales and buildAdminLanguageUrl', function (): void {
     Config::set('laravellocalization', []);
+<<<<<<< HEAD
     $composer = new ThemeComposer();
+=======
+<<<<<<< .merge_file_j7iRhn
+    $composer = new ThemeComposer();
+=======
+<<<<<<< .merge_file_ZYE65J
+    $composer = new ThemeComposer();
+=======
+<<<<<<< .merge_file_CtdPUc
+    $composer = new ThemeComposer();
+=======
+    $composer = new ThemeComposer;
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     Assert::assertGreaterThan(0, $composer->languages()->count());
 
     Assert::assertSame('#', $composer->buildAdminLanguageUrl('it'));
@@ -248,7 +381,23 @@ test('RouteServiceProvider covers fallback locales and admin segment index', fun
 
 test('TranslationFile respects configured PHPStan runtime boundary', function (): void {
     config(['app.phpstan_running' => true]);
+<<<<<<< HEAD
     Assert::assertSame([], (new TranslationFile())->getRows());
+=======
+<<<<<<< .merge_file_j7iRhn
+    Assert::assertSame([], (new TranslationFile())->getRows());
+=======
+<<<<<<< .merge_file_ZYE65J
+    Assert::assertSame([], (new TranslationFile())->getRows());
+=======
+<<<<<<< .merge_file_CtdPUc
+    Assert::assertSame([], (new TranslationFile())->getRows());
+=======
+    Assert::assertSame([], (new TranslationFile)->getRows());
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     config(['app.phpstan_running' => false]);
 });
 
@@ -273,7 +422,19 @@ test('SyncTranslationsAction skips empty casted glob entries', function (): void
         Assert::assertIsArray($result['modules'][$tmpModule]);
         Assert::assertSame('completed', $result['modules'][$tmpModule]['status']);
     } finally {
+<<<<<<< HEAD
         Mockery::close();
+=======
+<<<<<<< .merge_file_j7iRhn
+        Mockery::close();
+=======
+<<<<<<< .merge_file_ZYE65J
+        \Mockery::close();
+=======
+        Mockery::close();
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
         if (is_dir($base)) {
             File::deleteDirectory($base);
         }
@@ -292,9 +453,32 @@ test('WriteTranslationFileAction createBackup makes directory', function (): voi
 
     $path = sys_get_temp_dir().'/wfa_'.uniqid().'.php';
     TestCase::createTranslationFile($path, ['x' => '1']);
+<<<<<<< HEAD
     app()->instance('cache', new class()
     {
         public function flush(): void {}
+=======
+<<<<<<< .merge_file_j7iRhn
+    app()->instance('cache', new class()
+    {
+        public function flush(): void {}
+=======
+<<<<<<< .merge_file_ZYE65J
+    app()->instance('cache', new class {
+        public function flush(): void
+        {
+        }
+=======
+<<<<<<< .merge_file_CtdPUc
+    app()->instance('cache', new class()
+=======
+    app()->instance('cache', new class
+>>>>>>> .merge_file_LlUNeP
+    {
+        public function flush(): void {}
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     });
 
     try {
@@ -313,6 +497,16 @@ test('WriteTranslationFileAction createBackup makes directory', function (): voi
     }
 });
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_j7iRhn
+=======
+<<<<<<< .merge_file_ZYE65J
+=======
+<<<<<<< .merge_file_CtdPUc
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
 test('Switcher covers non-string localized url branch', function (): void {
     config([
         'laravellocalization.supportedLocales' => [
@@ -333,12 +527,49 @@ test('Switcher covers non-string localized url branch', function (): void {
 
 test('Post linkable and accessor edge branches', function (): void {
     $post = new Post();
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_j7iRhn
+=======
+<<<<<<< .merge_file_ZYE65J
+=======
+=======
+test('LanguageSwitcherWidget falls back when getLocalizedURL returns non-string true', function (): void {
+    LaravelLocalization::shouldReceive('getLocalizedURL')
+        ->andReturn(true);
+
+    $widget = new LanguageSwitcherWidget;
+    Assert::assertSame('/en', $widget->getLanguageUrl('en'));
+});
+
+test('Post linkable and accessor edge branches', function (): void {
+    $post = new Post;
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
     $post->setRawAttributes(['post_type' => 123, 'post_id' => ['x']], true);
     Assert::assertIsString($post->getTitleAttribute(null));
 
+<<<<<<< HEAD
     $post2 = new Post();
+=======
+<<<<<<< .merge_file_j7iRhn
+    $post2 = new Post();
+=======
+<<<<<<< .merge_file_ZYE65J
+    $post2 = new Post();
+=======
+<<<<<<< .merge_file_CtdPUc
+    $post2 = new Post();
+=======
+    $post2 = new Post;
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     $post2->setRawAttributes(['title' => null], true);
     // guid with null title falls through
     Assert::assertIsString($post2->getGuidAttribute(' '));
@@ -357,7 +588,19 @@ test('NationalFlagSelect array localized name and bad code in filter', function 
         ['iso_3166_1_alpha2' => 9, 'name' => 'Bad'],
         'nope',
     ];
+<<<<<<< HEAD
     $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+=======
+<<<<<<< .merge_file_j7iRhn
+    $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+=======
+<<<<<<< .merge_file_ZYE65J
+    $f = new \ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+=======
+    $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     $f->setAccessible(true);
     Assert::assertIsArray($f->invoke($select, 'ital'));
     Assert::assertIsArray($f->invoke($select, 'IT'));
@@ -371,17 +614,62 @@ test('TranslationEditor make preserves the field name', function (): void {
 test('WriteTranslationFileAction throws when put fails', function (): void {
     $path = sys_get_temp_dir().'/wfail_'.uniqid().'.php';
     TestCase::createTranslationFile($path, ['a' => '1']);
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_j7iRhn
+=======
+<<<<<<< .merge_file_ZYE65J
+    app()->instance('cache', new class {
+        public function flush(): void
+        {
+        }
+    });
+    $action = new WriteTranslationFileActionFailStub();
+=======
+<<<<<<< .merge_file_CtdPUc
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     app()->instance('cache', new class()
     {
         public function flush(): void {}
     });
     $action = new WriteTranslationFileActionFailStub();
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_j7iRhn
+=======
+=======
+    app()->instance('cache', new class
+    {
+        public function flush(): void {}
+    });
+    $action = new WriteTranslationFileActionFailStub;
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     expect(fn () => $action->execute($path, ['a' => '2']))->toThrow(\Exception::class);
     unlink($path);
 });
 
 test('Post guid null title uses random fallback', function (): void {
+<<<<<<< HEAD
     $post = new Post();
+=======
+<<<<<<< .merge_file_j7iRhn
+    $post = new Post();
+=======
+<<<<<<< .merge_file_ZYE65J
+    $post = new Post();
+=======
+<<<<<<< .merge_file_CtdPUc
+    $post = new Post();
+=======
+    $post = new Post;
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     $post->setRawAttributes([], true);
     // force title accessor path to null then guid
     $guid = $post->getGuidAttribute(null);
@@ -389,7 +677,23 @@ test('Post guid null title uses random fallback', function (): void {
 });
 
 test('RouteServiceProvider non-array locales and admin n=3', function (): void {
+<<<<<<< HEAD
     config(['laravellocalization.supportedLocales' => new \stdClass()]);
+=======
+<<<<<<< .merge_file_j7iRhn
+    config(['laravellocalization.supportedLocales' => new \stdClass()]);
+=======
+<<<<<<< .merge_file_ZYE65J
+    config(['laravellocalization.supportedLocales' => new \stdClass()]);
+=======
+<<<<<<< .merge_file_CtdPUc
+    config(['laravellocalization.supportedLocales' => new \stdClass()]);
+=======
+    config(['laravellocalization.supportedLocales' => new \stdClass]);
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     $request = Request::create('http://localhost/it/admin/pages', 'GET');
     app()->instance('request', $request);
     \Illuminate\Support\Facades\Request::swap($request);
@@ -409,7 +713,23 @@ test('ThemeComposer inAdmin language urls and non-string currentLang field', fun
     app()->instance('request', $request);
     \Illuminate\Support\Facades\Request::swap($request);
     app()->setLocale('it');
+<<<<<<< HEAD
     $composer = new ThemeComposer();
+=======
+<<<<<<< .merge_file_j7iRhn
+    $composer = new ThemeComposer();
+=======
+<<<<<<< .merge_file_ZYE65J
+    $composer = new ThemeComposer();
+=======
+<<<<<<< .merge_file_CtdPUc
+    $composer = new ThemeComposer();
+=======
+    $composer = new ThemeComposer;
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     Assert::assertGreaterThan(0, $composer->languages()->count());
     // flag field is HTML string; asking a missing dynamic property via currentLang on 'flag' works as string
     Assert::assertStringContainsString('<', $composer->currentLang('flag'));
@@ -425,7 +745,19 @@ test('NationalFlagSelect hits array localized translation branch', function (): 
     $select->forcedCountries = [
         ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
     ];
+<<<<<<< HEAD
     $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+=======
+<<<<<<< .merge_file_j7iRhn
+    $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+=======
+<<<<<<< .merge_file_ZYE65J
+    $f = new \ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+=======
+    $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     $f->setAccessible(true);
     $options = $f->invoke($select, 'ital');
     Assert::assertIsArray($options);
@@ -451,7 +783,23 @@ test('AutoLabelAction covers FIX label for array translation', function (): void
     ], 'it', 'lang');
     app()->setLocale('it');
 
+<<<<<<< HEAD
     $action = new AutoLabelForcedKeyStub();
+=======
+<<<<<<< .merge_file_j7iRhn
+    $action = new AutoLabelForcedKeyStub();
+=======
+<<<<<<< .merge_file_ZYE65J
+    $action = new AutoLabelForcedKeyStub();
+=======
+<<<<<<< .merge_file_CtdPUc
+    $action = new AutoLabelForcedKeyStub();
+=======
+    $action = new AutoLabelForcedKeyStub;
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     $section = Section::make()->heading(null);
     Assert::assertSame($section, $action->execute($section, 'heading'));
 
@@ -470,7 +818,23 @@ test('AutoLabelAction covers FIX label for array translation', function (): void
 
 test('AutoLabelAction null caller frame returns component early', function (): void {
     $field = TextInput::make('x');
+<<<<<<< HEAD
     Assert::assertSame($field, (new AutoLabelNullCallerStub())->execute($field, 'label'));
+=======
+<<<<<<< .merge_file_j7iRhn
+    Assert::assertSame($field, (new AutoLabelNullCallerStub())->execute($field, 'label'));
+=======
+<<<<<<< .merge_file_ZYE65J
+    Assert::assertSame($field, (new AutoLabelNullCallerStub())->execute($field, 'label'));
+=======
+<<<<<<< .merge_file_CtdPUc
+    Assert::assertSame($field, (new AutoLabelNullCallerStub())->execute($field, 'label'));
+=======
+    Assert::assertSame($field, (new AutoLabelNullCallerStub)->execute($field, 'label'));
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
 });
 
 test('AutoLabelAction nested execute caller covers execute skip frame', function (): void {
@@ -483,11 +847,37 @@ test('AutoLabelAction nested execute caller covers execute skip frame', function
     app('translator')->addLines(['form.fields.nested.label' => 'N'], 'it', 'lang');
     app()->setLocale('it');
     $field = TextInput::make('nested');
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_j7iRhn
+=======
+<<<<<<< .merge_file_ZYE65J
+=======
+<<<<<<< .merge_file_CtdPUc
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     Assert::assertSame($field, (new AutoLabelExecuteNestedCaller())->execute($field, 'label'));
 });
 
 test('Post guid null titleForGuid uses random fallback', function (): void {
     $post = new PostNullTitleForGuidStub();
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_j7iRhn
+=======
+<<<<<<< .merge_file_ZYE65J
+=======
+=======
+    Assert::assertSame($field, (new AutoLabelExecuteNestedCaller)->execute($field, 'label'));
+});
+
+test('Post guid null titleForGuid uses random fallback', function (): void {
+    $post = new PostNullTitleForGuidStub;
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     $guid = $post->getGuidAttribute(null);
     Assert::assertIsString($guid);
     Assert::assertNotSame('', $guid);
@@ -508,7 +898,23 @@ test('ThemeComposer non-string lang field returns empty string', function (): vo
         ],
     ]);
     app()->setLocale('it');
+<<<<<<< HEAD
     $composer = new ThemeComposerNonStringFieldStub();
+=======
+<<<<<<< .merge_file_j7iRhn
+    $composer = new ThemeComposerNonStringFieldStub();
+=======
+<<<<<<< .merge_file_ZYE65J
+    $composer = new ThemeComposerNonStringFieldStub();
+=======
+<<<<<<< .merge_file_CtdPUc
+    $composer = new ThemeComposerNonStringFieldStub();
+=======
+    $composer = new ThemeComposerNonStringFieldStub;
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     Assert::assertSame('', $composer->currentLang('name'));
     Assert::assertSame('it', $composer->currentLang('id'));
 });
@@ -518,9 +924,31 @@ test('NationalFlagSelect casts non-array non-string localized label', function (
         $mock->allows(['execute' => '/f.svg']);
     });
     $translator = app('translator');
+<<<<<<< HEAD
     $mock = Mockery::mock($translator)->makePartial();
     $mock->shouldReceive('get')
         ->andReturnUsing(static function (string $key, array $replace = [], ?string $locale = null) use ($translator): mixed {
+=======
+<<<<<<< .merge_file_j7iRhn
+    $mock = Mockery::mock($translator)->makePartial();
+    $mock->shouldReceive('get')
+        ->andReturnUsing(static function (string $key, array $replace = [], ?string $locale = null) use ($translator): mixed {
+=======
+<<<<<<< .merge_file_ZYE65J
+    $mock = \Mockery::mock($translator)->makePartial();
+    $mock->shouldReceive('get')
+        ->andReturnUsing(static function (string $key, array $replace = [], ?string $locale = null) use ($translator): mixed {
+=======
+    $mock = Mockery::mock($translator)->makePartial();
+    $mock->shouldReceive('get')
+<<<<<<< .merge_file_CtdPUc
+        ->andReturnUsing(static function (string $key, array $replace = [], ?string $locale = null) use ($translator): mixed {
+=======
+        ->andReturnUsing(static function (string $key, array $replace = [], ?string $locale = null) use ($translator): string|int|array {
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
             if (str_contains($key, 'countries.it')) {
                 return 99;
             }
@@ -534,7 +962,19 @@ test('NationalFlagSelect casts non-array non-string localized label', function (
     $select->forcedCountries = [
         ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
     ];
+<<<<<<< HEAD
     $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+=======
+<<<<<<< .merge_file_j7iRhn
+    $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+=======
+<<<<<<< .merge_file_ZYE65J
+    $m = new \ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+=======
+    $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     $m->setAccessible(true);
     $options = $m->invoke($select);
     Assert::assertIsArray($options);
@@ -554,7 +994,19 @@ test('NationalFlagSelect finalizeFilteredCountries defensive continue', function
         ['iso_3166_1_alpha2' => null],
         ['name' => 'NoCode'],
     ];
+<<<<<<< HEAD
     $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+=======
+<<<<<<< .merge_file_j7iRhn
+    $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+=======
+<<<<<<< .merge_file_ZYE65J
+    $f = new \ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+=======
+    $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     $f->setAccessible(true);
     $options = $f->invoke($select, 'ital');
     Assert::assertIsArray($options);
@@ -563,7 +1015,23 @@ test('NationalFlagSelect finalizeFilteredCountries defensive continue', function
 
 test('SaveTransAction early return when persist disabled in unit tests', function (): void {
     config(['lang.persist_trans_in_tests' => false]);
+<<<<<<< HEAD
     app()->instance(SaveTransAction::class, new SaveTransAction());
+=======
+<<<<<<< .merge_file_j7iRhn
+    app()->instance(SaveTransAction::class, new SaveTransAction());
+=======
+<<<<<<< .merge_file_ZYE65J
+    app()->instance(SaveTransAction::class, new SaveTransAction());
+=======
+<<<<<<< .merge_file_CtdPUc
+    app()->instance(SaveTransAction::class, new SaveTransAction());
+=======
+    app()->instance(SaveTransAction::class, new SaveTransAction);
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     app(SaveTransAction::class)->execute('lang::should_not_write.nested', 'x');
     Assert::assertFileDoesNotExist(base_path('Modules/Lang/lang/'.app()->getLocale().'/should_not_write.php'));
     TestCase::forgetSaveTransActionOverride();
@@ -586,12 +1054,46 @@ test('NationalFlagSelect getCountryOptions casts int localized label', function 
     app()->setLocale('it');
     $real = app('translator');
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_j7iRhn
+=======
+<<<<<<< .merge_file_ZYE65J
+    app()->instance('translator', new class($real) {
+        public function __construct(private LaravelTranslator $inner)
+        {
+        }
+
+        /** @param array<string, mixed> $replace */
+        public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
+=======
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     app()->instance('translator', new class($real)
     {
         public function __construct(private LaravelTranslator $inner) {}
 
+<<<<<<< HEAD
         /** @param array<string, mixed> $replace */
         public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
+=======
+<<<<<<< .merge_file_j7iRhn
+        /** @param array<string, mixed> $replace */
+        public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
+=======
+<<<<<<< .merge_file_CtdPUc
+        /** @param array<string, mixed> $replace */
+        public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
+=======
+        /**
+         * @param  array<string, mixed>  $replace
+         * @return string|int|array<array-key, mixed>
+         */
+        public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): string|int|array
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
         {
             if (str_contains($key, 'countries.it')) {
                 return 77;
@@ -611,7 +1113,19 @@ test('NationalFlagSelect getCountryOptions casts int localized label', function 
     $select->forcedCountries = [
         ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
     ];
+<<<<<<< HEAD
     $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+=======
+<<<<<<< .merge_file_j7iRhn
+    $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+=======
+<<<<<<< .merge_file_ZYE65J
+    $m = new \ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+=======
+    $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     $m->setAccessible(true);
     $options = $m->invoke($select);
     Assert::assertIsArray($options);
@@ -625,12 +1139,46 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
     app()->setLocale('it');
     $real = app('translator');
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_j7iRhn
+=======
+<<<<<<< .merge_file_ZYE65J
+    app()->instance('translator', new class($real) {
+        public function __construct(private LaravelTranslator $inner)
+        {
+        }
+
+        /** @param array<string, mixed> $replace */
+        public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
+=======
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     app()->instance('translator', new class($real)
     {
         public function __construct(private LaravelTranslator $inner) {}
 
+<<<<<<< HEAD
         /** @param array<string, mixed> $replace */
         public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
+=======
+<<<<<<< .merge_file_j7iRhn
+        /** @param array<string, mixed> $replace */
+        public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
+=======
+<<<<<<< .merge_file_CtdPUc
+        /** @param array<string, mixed> $replace */
+        public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
+=======
+        /**
+         * @param  array<string, mixed>  $replace
+         * @return string|array<array-key, mixed>
+         */
+        public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): string|array
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
         {
             if (str_contains($key, 'countries.it')) {
                 return ['n' => 'Italia'];
@@ -650,7 +1198,19 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
     $select->forcedCountries = [
         ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
     ];
+<<<<<<< HEAD
     $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+=======
+<<<<<<< .merge_file_j7iRhn
+    $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+=======
+<<<<<<< .merge_file_ZYE65J
+    $m = new \ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+=======
+    $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     $m->setAccessible(true);
     $options = $m->invoke($select);
     Assert::assertIsArray($options);
@@ -658,8 +1218,27 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
 });
 
 test('WriteTranslationFileAction putTranslationFile returns false when write fails', function (): void {
+<<<<<<< HEAD
     $action = new WriteTranslationFileActionWriteFailStub();
     $m = new ReflectionMethod(WriteTranslationFileAction::class, 'putTranslationFile');
+=======
+<<<<<<< .merge_file_j7iRhn
+    $action = new WriteTranslationFileActionWriteFailStub();
+    $m = new ReflectionMethod(WriteTranslationFileAction::class, 'putTranslationFile');
+=======
+<<<<<<< .merge_file_ZYE65J
+    $action = new WriteTranslationFileActionWriteFailStub();
+    $m = new \ReflectionMethod(WriteTranslationFileAction::class, 'putTranslationFile');
+=======
+<<<<<<< .merge_file_CtdPUc
+    $action = new WriteTranslationFileActionWriteFailStub();
+=======
+    $action = new WriteTranslationFileActionWriteFailStub;
+>>>>>>> .merge_file_LlUNeP
+    $m = new ReflectionMethod(WriteTranslationFileAction::class, 'putTranslationFile');
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     $m->setAccessible(true);
     $dir = sys_get_temp_dir().'/lang_put_false_'.uniqid();
     $path = $dir.'/x.php';
@@ -667,19 +1246,74 @@ test('WriteTranslationFileAction putTranslationFile returns false when write fai
 });
 
 test('WriteTranslationFileAction putTranslationFile edge paths', function (): void {
+<<<<<<< HEAD
     app()->instance('cache', new class()
     {
         public function flush(): void {}
+=======
+<<<<<<< .merge_file_j7iRhn
+    app()->instance('cache', new class()
+    {
+        public function flush(): void {}
+=======
+<<<<<<< .merge_file_ZYE65J
+    app()->instance('cache', new class {
+        public function flush(): void
+        {
+        }
+=======
+<<<<<<< .merge_file_CtdPUc
+    app()->instance('cache', new class()
+=======
+    app()->instance('cache', new class
+>>>>>>> .merge_file_LlUNeP
+    {
+        public function flush(): void {}
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     });
 
     $missingDir = sys_get_temp_dir().'/lang_wfa_dir_'.uniqid();
     $path = $missingDir.'/out.php';
+<<<<<<< HEAD
     Assert::assertTrue((new WriteTranslationFileAction())->execute($path, ['a' => '1']));
+=======
+<<<<<<< .merge_file_j7iRhn
+    Assert::assertTrue((new WriteTranslationFileAction())->execute($path, ['a' => '1']));
+=======
+<<<<<<< .merge_file_ZYE65J
+    Assert::assertTrue((new WriteTranslationFileAction())->execute($path, ['a' => '1']));
+=======
+<<<<<<< .merge_file_CtdPUc
+    Assert::assertTrue((new WriteTranslationFileAction())->execute($path, ['a' => '1']));
+=======
+    Assert::assertTrue((new WriteTranslationFileAction)->execute($path, ['a' => '1']));
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
     Assert::assertFileExists($path);
 
     $path3 = sys_get_temp_dir().'/lang_wfa_wf_'.uniqid().'.php';
     TestCase::createTranslationFile($path3, ['c' => '1']);
+<<<<<<< HEAD
     expect(fn () => (new WriteTranslationFileActionWriteFailStub())->execute($path3, ['c' => '2']))
+=======
+<<<<<<< .merge_file_j7iRhn
+    expect(fn () => (new WriteTranslationFileActionWriteFailStub())->execute($path3, ['c' => '2']))
+=======
+<<<<<<< .merge_file_ZYE65J
+    expect(fn () => (new WriteTranslationFileActionWriteFailStub())->execute($path3, ['c' => '2']))
+=======
+<<<<<<< .merge_file_CtdPUc
+    expect(fn () => (new WriteTranslationFileActionWriteFailStub())->execute($path3, ['c' => '2']))
+=======
+    expect(fn () => (new WriteTranslationFileActionWriteFailStub)->execute($path3, ['c' => '2']))
+>>>>>>> .merge_file_LlUNeP
+>>>>>>> .merge_file_CoCwBi
+>>>>>>> .merge_file_4xgoE1
+>>>>>>> laraxot/dev
         ->toThrow(\Exception::class);
 
     foreach ([$path, $path3] as $f) {

@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_xnouoG
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Root file policy"
 module: "Lang"
@@ -9,6 +14,10 @@ qmd: "google translate"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_fCC0iv
+>>>>>>> laraxot/dev
 # Root file policy
 
 Updated: 2026-07-08

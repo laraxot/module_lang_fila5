@@ -212,6 +212,16 @@ rm -f \
   documentation_link_conventions.md \
   errori_comuni_traduzione.md \
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_KKjgTm
+=======
+<<<<<<< .merge_file_BXFSs5
+  lang_link.md \
+=======
+<<<<<<< .merge_file_b1kTZ7
+>>>>>>> .merge_file_DtHTeh
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
   lang_link.md \
 =======
 <<<<<<< HEAD
@@ -219,6 +229,17 @@ rm -f \
 =======
   lang_link.md \
 >>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_KKjgTm
+=======
+=======
+  lang_link.md \
+  lang-link.md \
+>>>>>>> .merge_file_mH6FMs
+>>>>>>> .merge_file_PaD7rc
+>>>>>>> .merge_file_DtHTeh
 >>>>>>> laraxot/dev
   lang_service_helper_text_fix.md \
   laravel_localization.md \
@@ -245,6 +266,19 @@ rm -f \
   coverage.md \
   REDUNDANCY_ANALYSIS.md \
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_KKjgTm
+=======
+<<<<<<< .merge_file_BXFSs5
+  00-INDEX.md \
+  00-index.md \
+  index.md \
+  INDEX.md
+=======
+<<<<<<< .merge_file_b1kTZ7
+>>>>>>> .merge_file_DtHTeh
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
   00-index.md \
   index.md
 =======
@@ -257,6 +291,19 @@ rm -f \
   00-index.md \
   INDEX.md
 >>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_KKjgTm
+=======
+=======
+  00-INDEX.md \
+  00-index.md \
+  INDEX.md \
+  index.md
+>>>>>>> .merge_file_mH6FMs
+>>>>>>> .merge_file_PaD7rc
+>>>>>>> .merge_file_DtHTeh
 >>>>>>> laraxot/dev
 
 # 3. Delete conflict-resolution snake_case variants

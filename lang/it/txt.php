@@ -253,7 +253,11 @@ return [
         'plural' => 'Txt',
         'group' => ['name' => 'General', 'description' => 'General Settings'],
         'label' => 'Txt',
+<<<<<<< HEAD
         'sort' => 1,
+=======
+        'sort' => '1',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-rectangle-stack',
     ],
     'steps' => [

@@ -99,7 +99,11 @@ return [
         'label' => 'File Traduzione',
         'group' => 'Lang',
         'icon' => 'heroicon-o-language',
+<<<<<<< HEAD
         'sort' => 73,
+=======
+        'sort' => '73',
+>>>>>>> laraxot/dev
     ],
     'model' => [
         'label' => 'File Traduzione',

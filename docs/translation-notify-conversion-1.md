@@ -1,0 +1,179 @@
+<<<<<<< .merge_file_8JT6S3
+=======
+<<<<<<< .merge_file_MEQZ7f
+=======
+<<<<<<< .merge_file_85idQP
+=======
+>>>>>>> .merge_file_TUPSFE
+<<<<<<< .merge_file_b9p58J
+---
+title: "Standardizzazione Traduzioni Modulo Notify"
+module: "Lang"
+type: concept
+tags: [migrazione, filament]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migrazione filament"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+=======
+>>>>>>> .merge_file_o4wTlV
+<<<<<<< .merge_file_8JT6S3
+=======
+>>>>>>> .merge_file_jt5N1R
+>>>>>>> .merge_file_u4C2Ey
+>>>>>>> .merge_file_TUPSFE
+# Standardizzazione Traduzioni Modulo Notify
+
+## Panoramica delle Problematiche
+
+Durante l'analisi del codice è emerso che numerosi file di traduzione nel modulo Notify non rispettano gli standard definiti per <nome progetto>. Questo documento riassume i problemi identificati e le strategie di correzione implementate.
+
+## Standard Violati
+
+1. **Naming dei File**
+   - Alcuni file utilizzano convenzioni di naming non conformi
+   - Esempio: `send_whats_app.php` invece di `send_whatsapp.php`
+   - Regola: i termini composti come "WhatsApp" devono essere trattati come un'unica parola in snake_case
+
+2. **Struttura dei File**
+   - Numerosi file mancano della dichiarazione `declare(strict_types=1);`
+   - Manca spesso la sezione `resource` obbligatoria
+   - Le strutture gerarchiche sono incomplete rispetto agli standard richiesti
+
+3. **Messaggi da Tradurre**
+   - I messaggi utilizzano strutture incoerenti
+   - Mancano spesso elementi importanti come placeholder, helper_text, tooltip
+
+## Standardizzazione Implementata
+
+### Documenti di Riferimento
+<<<<<<< .merge_file_8JT6S3
+=======
+<<<<<<< .merge_file_MEQZ7f
+- [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
+- [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
+- [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
+=======
+<<<<<<< .merge_file_85idQP
+- [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
+- [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
+- [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
+=======
+>>>>>>> .merge_file_TUPSFE
+<<<<<<< .merge_file_b9p58J
+- [Regole di Naming per i File di Traduzione](translation-file-naming-rules.md)
+- [Guida alla Struttura dei File di Traduzione](translation-file-structure-guide.md)
+- [Progresso della Standardizzazione](translation_standards_progress.md)
+=======
+- [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
+- [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
+- [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
+>>>>>>> .merge_file_o4wTlV
+<<<<<<< .merge_file_8JT6S3
+=======
+>>>>>>> .merge_file_jt5N1R
+>>>>>>> .merge_file_u4C2Ey
+>>>>>>> .merge_file_TUPSFE
+
+### Struttura Standard Richiesta
+
+```php
+<?php
+
+declare(strict_types=1);
+
+return [
+    'resource' => [
+        'name' => 'Nome Risorsa',
+        'plural' => 'Nome Risorse',
+    ],
+    'navigation' => [
+        'name' => 'Nome Menu',
+        'plural' => 'Nome Menu Plurale',
+        'group' => [
+            'name' => 'Gruppo Menu',
+            'description' => 'Descrizione del gruppo',
+        ],
+        'label' => 'Etichetta Menu',
+        'icon' => 'heroicon-o-icon-name',
+        'sort' => 10, // Ordine nel menu
+    ],
+    'fields' => [
+        'field_name' => [
+            'label' => 'Etichetta Campo',
+            'placeholder' => 'Testo placeholder',
+            'helper_text' => 'Testo di aiuto',
+        ],
+    ],
+    'actions' => [
+        'action_name' => [
+            'label' => 'Etichetta Azione',
+            'tooltip' => 'Descrizione tooltip',
+            'success_message' => 'Messaggio di successo',
+            'error_message' => 'Messaggio di errore',
+        ],
+    ],
+    'messages' => [
+        'success' => 'Operazione completata con successo',
+        'error' => 'Si è verificato un errore',
+        'confirmation' => 'Sei sicuro di voler continuare?',
+    ],
+];
+```
+
+## Piano di Standardizzazione
+
+1. **Fase 1: Documentazione e Mappatura**
+   - ✅ Creazione della documentazione di riferimento
+   - ✅ Identificazione di tutti i file non conformi
+   - ✅ Definizione degli standard di correzione
+
+2. **Fase 2: Implementazione Prioritaria**
+   - ✅ Correzione dei file con naming errato
+   - ✅ Standardizzazione dei file più utilizzati
+   - ⏳ Aggiornamento progressivo di tutti i file
+
+3. **Fase 3: Verifica e Validazione**
+   - ⏳ Controllo dei riferimenti nel codice
+   - ⏳ Test di funzionalità con i nuovi file
+   - ⏳ Validazione della coerenza tra le lingue
+
+## Impatto della Standardizzazione
+
+La corretta implementazione degli standard di traduzione garantisce:
+- Coerenza nell'interfaccia utente
+- Facilità di manutenzione
+- Miglior supporto per la localizzazione
+- Conformità alle best practice di Laravel e <nome progetto>
+
+## Collegamenti alla Documentazione
+
+<<<<<<< .merge_file_8JT6S3
+=======
+<<<<<<< .merge_file_MEQZ7f
+- [Regole Generali per le Traduzioni](./TRANSLATION_KEYS_RULES.md)
+- [Best Practices per le Traduzioni](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+- [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
+=======
+<<<<<<< .merge_file_85idQP
+- [Regole Generali per le Traduzioni](./TRANSLATION_KEYS_RULES.md)
+- [Best Practices per le Traduzioni](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+- [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
+=======
+>>>>>>> .merge_file_TUPSFE
+<<<<<<< .merge_file_b9p58J
+- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
+=======
+- [Regole Generali per le Traduzioni](./TRANSLATION_KEYS_RULES.md)
+- [Best Practices per le Traduzioni](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+- [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
+>>>>>>> .merge_file_o4wTlV
+<<<<<<< .merge_file_8JT6S3
+=======
+>>>>>>> .merge_file_jt5N1R
+>>>>>>> .merge_file_u4C2Ey
+>>>>>>> .merge_file_TUPSFE

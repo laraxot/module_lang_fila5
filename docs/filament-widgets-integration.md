@@ -104,6 +104,7 @@ class LanguageSwitcherWidget extends XotBaseWidget
 Replace Livewire component with Filament widget:
 
 ```blade
+<<<<<<< HEAD
 {{-- OLD --}}
 <livewire:lang.switcher />
 
@@ -111,6 +112,10 @@ Replace Livewire component with Filament widget:
 <x-filament-widgets::widget
     :widget="\Modules\Lang\Filament\Widgets\LanguageSwitcherWidget::class"
 />
+=======
+{{-- Headernav FO (canon 12.1) --}}
+@livewire(\Modules\Lang\Filament\Widgets\LanguageSwitcherWidget::class)
+>>>>>>> laraxot/dev
 ```
 
 ### 2. Configuration

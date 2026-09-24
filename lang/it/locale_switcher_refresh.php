@@ -22,7 +22,11 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Locale Switcher Refresh',
+<<<<<<< HEAD
         'sort' => 1,
+=======
+        'sort' => '1',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [

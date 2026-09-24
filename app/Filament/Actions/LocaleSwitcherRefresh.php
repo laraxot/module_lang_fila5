@@ -38,7 +38,11 @@ class LocaleSwitcherRefresh extends XotBaseAction
                     ->required(),
             ])
             ->action(function (array $data) {
+<<<<<<< HEAD
                 /** @var array<string, mixed> $data */
+=======
+                /* @var array<string, mixed> $data */
+>>>>>>> laraxot/dev
                 $this->applyLocale($data);
 
                 return redirect(request()->header('Referer'));
@@ -58,7 +62,11 @@ class LocaleSwitcherRefresh extends XotBaseAction
      * Il fallback a `en` copre il caso in cui il valore arrivi non-stringa: il Select lo
      * garantisce, ma `$data` e' pur sempre input e la garanzia sta qui, non nel form.
      *
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> laraxot/dev
      */
     public function applyLocale(array $data): void
     {

@@ -53,7 +53,11 @@ class EditTranslationFile extends XotBaseEditRecord
      */
     public function schemaFromRecord(?object $record): array
     {
+<<<<<<< HEAD
         if ($record === null || ! isset($record->content) || ! \is_array($record->content)) {
+=======
+        if (null === $record || ! isset($record->content) || ! \is_array($record->content)) {
+>>>>>>> laraxot/dev
             return [];
         }
 
@@ -64,7 +68,12 @@ class EditTranslationFile extends XotBaseEditRecord
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $array
+=======
+     * @param array<string, mixed> $array
+     *
+>>>>>>> laraxot/dev
      * @return array<int, Section|TextInput>
      */
     public function makeFromArray(array $array, string $prefix = ''): array
@@ -73,7 +82,11 @@ class EditTranslationFile extends XotBaseEditRecord
 
         foreach ($array as $key => $value) {
             $keyStr = (string) $key;
+<<<<<<< HEAD
             $fullKey = $prefix === '' ? $keyStr : ($prefix.'.'.$keyStr);
+=======
+            $fullKey = '' === $prefix ? $keyStr : ($prefix.'.'.$keyStr);
+>>>>>>> laraxot/dev
 
             if (is_array($value)) {
                 /** @var array<string, mixed> $childArray */

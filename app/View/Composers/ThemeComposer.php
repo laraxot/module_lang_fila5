@@ -17,10 +17,16 @@ class ThemeComposer
     /**
      * Get all supported languages as a DataCollection.
      *
+<<<<<<< HEAD
      *
      * @return DataCollection<int, LangData>
      *
      * @throws \Exception if supportedLocales config is not an array
+=======
+     * @throws \Exception if supportedLocales config is not an array
+     *
+     * @return DataCollection<int, LangData>
+>>>>>>> laraxot/dev
      */
     public function languages(): DataCollection
     {
@@ -36,12 +42,17 @@ class ThemeComposer
             throw new \Exception(sprintf('Invalid config for supportedLocales on line %d in %s', __LINE__, class_basename($this)));
         }
 
+<<<<<<< HEAD
         $languages = collect($langs)->map(function (mixed $item, string $locale): array {
             // Ensure $item is an array
             if (! is_array($item)) {
                 throw new \InvalidArgumentException(sprintf('Expected array at locale %s, got %s', $locale, gettype($item)));
             }
 
+=======
+        /** @var array<string, array<array-key, mixed>> $langs */
+        $languages = collect($langs)->map(function (array $item, string $locale): array {
+>>>>>>> laraxot/dev
             // Ensure $item has the required keys
             if (! isset($item['regional'], $item['name'])) {
                 throw new \InvalidArgumentException(sprintf('Expected array with "regional" and "name" keys at locale %s', $locale));
@@ -56,7 +67,11 @@ class ThemeComposer
             $regionalParts = explode('_', $regional);
             $regionalCode = $regionalParts[0] ?? 'en';
 
+<<<<<<< HEAD
             if ($regionalCode === 'en') {
+=======
+            if ('en' === $regionalCode) {
+>>>>>>> laraxot/dev
                 $regionalCode = 'gb';
             }
 
@@ -129,7 +144,11 @@ class ThemeComposer
         // Verifichiamo che il valore del campo sia una stringa o lo convertiamo in modo sicuro
         $value = $lang->{$field};
         if (! is_string($value)) {
+<<<<<<< HEAD
             return $field === 'id' ? $currentLocale : '';
+=======
+            return 'id' === $field ? $currentLocale : '';
+>>>>>>> laraxot/dev
         }
 
         return $value;
@@ -138,7 +157,12 @@ class ThemeComposer
     /**
      * Build the URL for the admin panel based on the current route and parameters.
      *
+<<<<<<< HEAD
      * @param  string  $locale  The locale code to build URL for
+=======
+     * @param string $locale The locale code to build URL for
+     *
+>>>>>>> laraxot/dev
      * @return string The generated URL
      */
     public function buildAdminLanguageUrl(string $locale): string
@@ -158,7 +182,12 @@ class ThemeComposer
     /**
      * Build the HTML for the language flag.
      *
+<<<<<<< HEAD
      * @param  string  $regionalCode  The regional code for the flag
+=======
+     * @param string $regionalCode The regional code for the flag
+     *
+>>>>>>> laraxot/dev
      * @return string The HTML for the flag
      */
     private function buildFlagHtml(string $regionalCode): string

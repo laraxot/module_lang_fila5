@@ -1,13 +1,46 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+<<<<<<< .merge_file_mEQkfi
+
+=======
+<<<<<<< .merge_file_EgQrHQ
+
+=======
+<<<<<<< .merge_file_QPBytg
+
+=======
+>>>>>>> .merge_file_1D3Q9R
+>>>>>>> .merge_file_5GNBcs
+>>>>>>> .merge_file_pRjAdk
+>>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Lang\Models\Post;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 return new class() extends XotBaseMigration
 {
+=======
+<<<<<<< .merge_file_mEQkfi
+return new class() extends XotBaseMigration
+{
+=======
+<<<<<<< .merge_file_EgQrHQ
+return new class extends XotBaseMigration {
+=======
+<<<<<<< .merge_file_QPBytg
+return new class() extends XotBaseMigration
+=======
+return new class extends XotBaseMigration
+>>>>>>> .merge_file_1D3Q9R
+{
+>>>>>>> .merge_file_5GNBcs
+>>>>>>> .merge_file_pRjAdk
+>>>>>>> laraxot/dev
     protected ?string $model_class = Post::class;
 
     public function up(): void

@@ -16,7 +16,11 @@ class SaveTransAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>|int|string|Htmlable|null  $data
+=======
+     * @param array<string, mixed>|int|string|Htmlable|null $data
+>>>>>>> laraxot/dev
      */
     public function execute(string $key, int|string|array|Htmlable|null $data): void
     {
@@ -27,7 +31,11 @@ class SaveTransAction
         // Il default e' "acceso, tranne che sotto test": la config del modulo non e'
         // caricata nell'app dei test, quindi un default preso solo da li' sarebbe
         // rimasto acceso proprio dove serve spento.
+<<<<<<< HEAD
         if (Config::get('lang.save_missing_translations', ! app()->runningUnitTests()) !== true) {
+=======
+        if (true !== Config::get('lang.save_missing_translations', ! app()->runningUnitTests())) {
+>>>>>>> laraxot/dev
             return;
         }
 
@@ -58,7 +66,11 @@ class SaveTransAction
         }
 
         $piece = implode('.', array_slice(explode('.', $key), 1));
+<<<<<<< HEAD
         if ($piece !== '') {
+=======
+        if ('' !== $piece) {
+>>>>>>> laraxot/dev
             Arr::set($cont, $piece, $data);
         } else {
             $cont = $data;
