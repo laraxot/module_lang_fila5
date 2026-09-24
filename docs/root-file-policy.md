@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_xnouoG
+=======
+---
+title: "Root file policy"
+module: "Lang"
+type: rule
+tags: [google, translate]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "google translate"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+>>>>>>> .merge_file_fCC0iv
 # Root file policy
 
 Updated: 2026-07-08
