@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_y6Rp7V
 
+=======
+>>>>>>> .merge_file_HUHOsF
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Translator.php
  */
@@ -10,12 +13,14 @@ namespace Modules\Lang\Adapters;
 
 use Illuminate\Events\Dispatcher;
 use Illuminate\Translation\Translator as LaravelTranslator;
-use Modules\Lang\Models\Translation;
+use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
 
 /**
- * ponytail: framework adapter — extends Laravel's Translator and is bound
- * as the container's `translator` singleton. Not a business-logic Action:
- * it must remain a Translator subclass to satisfy the framework contract.
+ * Translator Laravel esteso: registra chiavi mancanti nel DB delegando
+ * la business logic a RecordMissingTranslationAction.
+ *
+ * Eccezione architetturale: estende Illuminate\Translator (non è una
+ * QueueableAction di dominio) ed è bindato come singleton `translator`.
  */
 class TranslatorAdapter extends LaravelTranslator
 {
@@ -25,39 +30,53 @@ class TranslatorAdapter extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
+<<<<<<< .merge_file_y6Rp7V
      * @param array<string, mixed> $replace
      *
-     * @return string|array<string, mixed>
+=======
+     * I parametri nativi restano `mixed` per compatibilita' LSP con
+     * `Illuminate\Translation\Translator::get()`, che non dichiara tipi.
+     *
+     * @param  array<string, mixed>  $replace
+     * @param  string  $key
+     * @param  string|null  $locale
+     * @param  bool  $fallback
+>>>>>>> .merge_file_HUHOsF
+     * @return string|array<array-key, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
     {
+        // Get without fallback
         $result = parent::get($key, $replace, $locale, $fallback);
         if ($result === $key) {
             $this->notifyMissingKey($key);
 
+            // Reget with fallback
             $result = parent::get($key, $replace, $locale, $fallback);
         }
 
         if (is_array($result)) {
-            /** @var array<string, mixed> $arrayResult */
-            $arrayResult = $result;
+            return $result;
+        }
 
-            return $arrayResult;
+        if (! is_string($result)) {
+            return (string) $key;
         }
 
         return $result;
     }
 
+    /*
+     * public function setTranslationManager(Manager $manager)
+     * {
+     * $this->manager = $manager;
+     * }
+     */
+    /**
+     * Undocumented function.
+     */
     protected function notifyMissingKey(string $key): void
     {
-        $lang = app()->getLocale();
-        [$namespace, $group, $item] = $this->parseKey($key);
-        $data = [
-            'lang' => $lang,
-            'namespace' => $namespace,
-            'group' => $group,
-            'item' => $item,
-        ];
-        Translation::firstOrCreate($data);
+        app(RecordMissingTranslationAction::class)->execute($key, (string) app()->getLocale());
     }
 }
