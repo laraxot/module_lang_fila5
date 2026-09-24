@@ -189,7 +189,6 @@ return [
         'unified_naming' => true,
         'framework_compliance' => true,
     ],
-<<<<<<< HEAD
 
     /*
      * |--------------------------------------------------------------------------
@@ -210,6 +209,4 @@ return [
      */
 
     'save_missing_translations' => true,
-=======
->>>>>>> laraxot/dev
 ];
