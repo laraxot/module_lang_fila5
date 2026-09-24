@@ -11,7 +11,6 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-<<<<<<< HEAD
         'group' => [
             'name' => 'General',
             'description' => 'General Settings',
@@ -20,16 +19,10 @@ return [
         'sort' => '100',
         'name' => 'Translations',
         'plural' => 'Translations',
-=======
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
->>>>>>> laraxot/dev
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
-<<<<<<< HEAD
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -59,9 +52,5 @@ return [
         'delete' => [
             'label' => 'Elimina Translations',
         ],
-=======
-    ],
-    'actions' => [
->>>>>>> laraxot/dev
     ],
 ];

@@ -19,7 +19,6 @@ class TranslatorAction extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
-<<<<<<< HEAD
      * I parametri nativi restano `mixed` per compatibilita' LSP con
      * `Illuminate\Translation\Translator::get()`, che non dichiara tipi.
      *
@@ -28,9 +27,6 @@ class TranslatorAction extends LaravelTranslator
      * @param string|null          $locale
      * @param bool                 $fallback
      *
-=======
-     * @param  array<string, mixed>  $replace
->>>>>>> laraxot/dev
      * @return string|array<array-key, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
@@ -52,13 +48,9 @@ class TranslatorAction extends LaravelTranslator
         return $result;
     }
 
-<<<<<<< HEAD
     public function execute(): void
     {
     }
-=======
-    public function execute(): void {}
->>>>>>> laraxot/dev
 
     protected function notifyMissingKey(string $key): void
     {
