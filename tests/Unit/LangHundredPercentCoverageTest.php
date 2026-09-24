@@ -867,11 +867,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
     test('TranslationFile getRows ide-helper path and load failures', function (): void {
         $previousArgv = $_SERVER['argv'] ?? null;
         $_SERVER['argv'] = ['artisan', 'ide-helper:models'];
-<<<<<<< .merge_file_MpXnwU
         $ideHelperRows = (new TranslationFile())->getRows();
-=======
-        Assert::assertSame([], (new TranslationFile)->getRows());
->>>>>>> .merge_file_ote0C2
         $_SERVER['argv'] = $previousArgv;
         Assert::assertSame([], $ideHelperRows);
 
