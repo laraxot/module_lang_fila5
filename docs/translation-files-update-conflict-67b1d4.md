@@ -2,7 +2,18 @@
 
 ## Data Aggiornamento
 2025-01-27
+<<<<<<< .merge_file_v3mV1E
 2025-01-27
+=======
+<<<<<<< .merge_file_Oven31
+2025-01-27
+=======
+<<<<<<< .merge_file_8SQrbv
+=======
+2025-01-27
+>>>>>>> .merge_file_gHtBQH
+>>>>>>> .merge_file_nFrV5E
+>>>>>>> .merge_file_0CyBD9
 [DATE]
 
 ## File Modificati
@@ -126,17 +137,50 @@ return [
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
+<<<<<<< .merge_file_v3mV1E
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
+=======
+<<<<<<< .merge_file_Oven31
+- [Best Practices](../Xot/docs/translations-best-practices.md)
+- [Translation Rules](../xot/docs/translation_rules.md)
+- [Translation Standards](./translation-standards.md)
+=======
+<<<<<<< .merge_file_8SQrbv
+=======
+- [Best Practices](../Xot/docs/translations-best-practices.md)
+- [Translation Rules](../xot/docs/translation_rules.md)
+- [Translation Standards](./translation-standards.md)
+>>>>>>> .merge_file_gHtBQH
+>>>>>>> .merge_file_nFrV5E
+>>>>>>> .merge_file_0CyBD9
 - [Best Practices](../xot/docs/translations-best-practices.md)
 
 ## Prossimi Passi
 
 1. **Test**: Verificare il funzionamento in ambiente di sviluppo
 2. **Documentazione**: Aggiornare la documentazione dei moduli Notify e Lang
+<<<<<<< .merge_file_v3mV1E
+=======
+<<<<<<< .merge_file_Oven31
+3. **Review**: Code review per confermare le modifiche
+=======
+<<<<<<< .merge_file_8SQrbv
+3. **Review**: Code review per confermare le modifiche
+=======
+>>>>>>> .merge_file_nFrV5E
+>>>>>>> .merge_file_0CyBD9
 3. **Review**: Code review per confermare le modifiche
 3. **Review**: Code review per confermare le modifiche
 3. **Review**: Code review per confermare le modifiche
 3. **Review**: Code review per confermare le modifiche
+<<<<<<< .merge_file_v3mV1E
 3. **Review**: Code review per confermare le modifiche
+=======
+<<<<<<< .merge_file_Oven31
+=======
+3. **Review**: Code review per confermare le modifiche
+>>>>>>> .merge_file_gHtBQH
+>>>>>>> .merge_file_nFrV5E
+>>>>>>> .merge_file_0CyBD9

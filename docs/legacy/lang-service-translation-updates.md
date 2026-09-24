@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_tml6Ci
+=======
+<<<<<<< .merge_file_byMZBm
+=======
+<<<<<<< .merge_file_KJCRIY
+=======
+<<<<<<< .merge_file_O16Gxg
+=======
+<<<<<<< .merge_file_pRU0bC
+=======
+>>>>>>> .merge_file_PaleY8
 <<<<<<< .merge_file_J1Z2cP
 ---
 title: "Lang Service Translation Updates"
@@ -16,6 +27,13 @@ related:
 
 Vedi il file canonico: [lang-service-translation-updates.md](./lang-service-translation-updates.md)
 =======
+<<<<<<< .merge_file_tml6Ci
+=======
+>>>>>>> .merge_file_DI6d0E
+>>>>>>> .merge_file_veYjlI
+>>>>>>> .merge_file_txI5k6
+>>>>>>> .merge_file_6JvVJF
+>>>>>>> .merge_file_PaleY8
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 
 ## Panoramica
@@ -176,4 +194,20 @@ canonical: ../../../../Themes/docs/shared-components/lang-service-translation-up
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/lang-service-translation-updates-2025-01-06.md
+<<<<<<< .merge_file_tml6Ci
 >>>>>>> .merge_file_9il2Bp
+=======
+<<<<<<< .merge_file_byMZBm
+=======
+<<<<<<< .merge_file_KJCRIY
+=======
+<<<<<<< .merge_file_O16Gxg
+=======
+<<<<<<< .merge_file_pRU0bC
+=======
+>>>>>>> .merge_file_9il2Bp
+>>>>>>> .merge_file_DI6d0E
+>>>>>>> .merge_file_veYjlI
+>>>>>>> .merge_file_txI5k6
+>>>>>>> .merge_file_6JvVJF
+>>>>>>> .merge_file_PaleY8
