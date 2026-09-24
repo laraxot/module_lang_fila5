@@ -4,4 +4,16 @@
 
 ---
 
+<<<<<<< .merge_file_sDeyoD
 **Nota:**
+=======
+<<<<<<< .merge_file_KazJFe
+**Nota:**
+=======
+<<<<<<< .merge_file_A87x3U
+**Nota:**
+=======
+**Nota:**
+>>>>>>> .merge_file_wXJTqA
+>>>>>>> .merge_file_ryUkbf
+>>>>>>> .merge_file_dvUxcz
