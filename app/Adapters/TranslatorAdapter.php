@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_y6Rp7V
 
-=======
->>>>>>> .merge_file_HUHOsF
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Translator.php
  */
@@ -30,10 +27,6 @@ class TranslatorAdapter extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
-<<<<<<< .merge_file_y6Rp7V
-     * @param array<string, mixed> $replace
-     *
-=======
      * I parametri nativi restano `mixed` per compatibilita' LSP con
      * `Illuminate\Translation\Translator::get()`, che non dichiara tipi.
      *
@@ -41,7 +34,6 @@ class TranslatorAdapter extends LaravelTranslator
      * @param  string  $key
      * @param  string|null  $locale
      * @param  bool  $fallback
->>>>>>> .merge_file_HUHOsF
      * @return string|array<array-key, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
