@@ -1,12 +1,19 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_QPBytg
 
+=======
+>>>>>>> .merge_file_1D3Q9R
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Lang\Models\Post;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< .merge_file_QPBytg
 return new class() extends XotBaseMigration
+=======
+return new class extends XotBaseMigration
+>>>>>>> .merge_file_1D3Q9R
 {
     protected ?string $model_class = Post::class;
 

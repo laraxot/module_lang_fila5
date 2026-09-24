@@ -7,11 +7,15 @@ created: 2026-04-15
 updated: 2026-06-12
 qmd: "lang module wiki index i18n translations second brain pest factory auto increment id"
 issues:
+<<<<<<< .merge_file_YpOxkH
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_GV9APG
   - "https://github.com/laraxot/platform/issues/272"
 discussions:
   - "https://github.com/laraxot/platform/discussions/273"
 related:
+<<<<<<< .merge_file_YpOxkH
   - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md
 =======
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
@@ -20,6 +24,9 @@ discussions:
 related:
   - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
 >>>>>>> laraxot/dev
+=======
+  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto-corrente-map.md
+>>>>>>> .merge_file_GV9APG
   - ../../../../docs/wiki/bmad/architecture.md
   - ../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
   - ../../docs/wiki/concepts/ai-harness-module-discipline.md
@@ -28,11 +35,15 @@ related:
 # Lang Module Wiki
 ## AI / second brain
 
+<<<<<<< .merge_file_YpOxkH
 <<<<<<< HEAD
 - [hackernoon-ai-coding-tips-progetto corrente-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md)
 =======
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
 >>>>>>> laraxot/dev
+=======
+- [hackernoon-ai-coding-tips-progetto-corrente-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto-corrente-map.md)
+>>>>>>> .merge_file_GV9APG
 - [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
 - [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
 - [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)

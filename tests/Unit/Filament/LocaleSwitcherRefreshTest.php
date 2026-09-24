@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_kgY22a
 
+=======
+>>>>>>> .merge_file_RQKIuM
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;

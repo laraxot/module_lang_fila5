@@ -9,7 +9,11 @@ use Modules\Lang\View\Composers\ThemeComposer;
 
 final class ThemeComposerNonStringFieldStub extends ThemeComposer
 {
+<<<<<<< .merge_file_3orXpy
     protected function langFieldValue(LangData $lang, string $field): mixed
+=======
+    protected function langFieldValue(LangData $lang, string $field): int
+>>>>>>> .merge_file_C3IgAf
     {
         return 42;
     }
