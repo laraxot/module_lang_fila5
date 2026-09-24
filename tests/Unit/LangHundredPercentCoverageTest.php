@@ -67,7 +67,7 @@ use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Lang\Providers\RouteServiceProvider;
-use Modules\Lang\Providers\TranslatorTraitPhpstanProbe;
+use Modules\Lang\Providers\Traits\TranslatorTrait;
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Components\LanguageSwitcher;
 use Modules\Lang\View\Composers\ThemeComposer;
@@ -981,9 +981,12 @@ describe('Lang 100% — Models policies providers views', function (): void {
         Assert::assertInstanceOf(Action::class, Action::make('act'));
     });
 
-    test('TranslatorTrait registerTranslator via probe', function (): void {
-        $probe = new TranslatorTraitPhpstanProbe(app());
-        $probe->registerTranslator();
+    test('TranslatorTrait registerTranslator wraps the translator', function (): void {
+        $provider = new class(app()) extends \Illuminate\Support\ServiceProvider
+        {
+            use TranslatorTrait;
+        };
+        $provider->registerTranslator();
         Assert::assertInstanceOf(TranslatorAdapter::class, app('translator'));
     });
 

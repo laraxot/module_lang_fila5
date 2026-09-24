@@ -18,7 +18,7 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'View Translation File',
-        'sort' => '1',
+        'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [

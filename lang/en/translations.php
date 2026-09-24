@@ -11,14 +11,11 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => '100',
+        'group' => 'Missing Group',
         'name' => 'Translations',
         'plural' => 'Translations',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
@@ -43,14 +40,5 @@ return [
         ],
     ],
     'actions' => [
-        'create' => [
-            'label' => 'Crea Translations',
-        ],
-        'edit' => [
-            'label' => 'Modifica Translations',
-        ],
-        'delete' => [
-            'label' => 'Elimina Translations',
-        ],
     ],
 ];
