@@ -44,6 +44,7 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è
 
    - Verificare il comportamento con lingue diverse
 
+<<<<<<< .merge_file_SKv5xx
 ---
 
  [OK] No errors        
@@ -97,3 +98,6 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è
    - Verificare il comportamento con lingue diverse
 
 ---
+=======
+---
+>>>>>>> .merge_file_qHnkIk

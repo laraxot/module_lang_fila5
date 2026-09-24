@@ -190,7 +190,19 @@ class TranslationFileResource extends XotBaseResource
 {
     protected static ?string $model = TranslationFile::class;
 
+<<<<<<< .merge_file_F2QrRr
     public static function getFormSchema(): array
+=======
+<<<<<<< .merge_file_8QSFiI
+    public static function getFormSchema(): array
+=======
+<<<<<<< .merge_file_BWDVyR
+    public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_PFIHvg
+>>>>>>> .merge_file_nq02VI
+>>>>>>> .merge_file_QqsrOu
     {
         return [
             Components\TextInput::make('key')
