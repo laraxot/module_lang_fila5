@@ -267,7 +267,7 @@ return [
         ],
         'label' => 'Countries',
         'sort' => 1,
-        'icon' => 'heroicon-o-rectangle-stack',
+        'icon' => 'heroicon-o-collection',
     ],
     'fields' => [
         'id' => [

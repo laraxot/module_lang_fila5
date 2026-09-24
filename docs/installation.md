@@ -35,7 +35,3 @@ php artisan module_lang:install
 - [Composer merge plugin](composer-merge-plugin.md)
 
 ---
----
----
----
----
