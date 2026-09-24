@@ -1,3 +1,14 @@
+---
+title: "Ottimizzazioni Approfondite Modulo Lang - DRY + KISS"
+module: "Lang"
+type: concept
+tags: [filament4, migration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament4 migration"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Ottimizzazioni Approfondite Modulo Lang - DRY + KISS
 
 ## Panoramica
@@ -160,7 +171,7 @@ if [ -d "_docs" ]; then
 fi
 
 # Eliminare file duplicati
-rm -f CHANGELOG.md
+rm -f changelog.md
 ```
 
 ### Fase 2: Standardizzazione Cartelle (Priorità ALTA)
