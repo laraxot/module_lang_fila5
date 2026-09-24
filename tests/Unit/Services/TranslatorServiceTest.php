@@ -27,9 +27,11 @@ describe('TranslatorAdapter Business Logic', function () {
         Assert::assertSame($key, $result);
     });
 
-    test('get returns a string or an array', function () {
-        $result = makeTranslatorAdapter()->get('lang::missing.another_key_'.uniqid());
+    test('replacements do not alter a missing key', function () {
+        $key = 'lang::missing.another_key_'.uniqid();
 
-        Assert::assertTrue(is_string($result) || is_array($result));
+        $result = makeTranslatorAdapter()->get($key, ['name' => 'Mario']);
+
+        Assert::assertSame($key, $result);
     });
 });
