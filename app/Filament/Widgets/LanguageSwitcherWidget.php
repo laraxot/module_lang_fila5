@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 namespace Modules\Lang\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
