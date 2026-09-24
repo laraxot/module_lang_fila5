@@ -1,14 +1,3 @@
----
-title: "Correzioni Pattern '.navigation' - Gennaio 2025"
-module: "Lang"
-type: concept
-tags: [migration, filament]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration filament"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Correzioni Pattern ".navigation" - Gennaio 2025
 
 ## Data Intervento

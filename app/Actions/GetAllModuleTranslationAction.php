@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions;
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
 use function Safe\glob;
@@ -17,7 +18,7 @@ class GetAllModuleTranslationAction
     /**
      * Restituisce il path completo del file di traduzione dato un key.
      *
-     * @return list<array{key: string, path: string}>
+     * @return array<int, array<string, mixed>>
      */
     public function execute(): array
     {
@@ -30,22 +31,19 @@ class GetAllModuleTranslationAction
         $path = base_path('Modules/*/lang/'.$lang.'/*.php');
         $files = glob($path);
 
-        $result = [];
-        foreach ($files as $file) {
-            if (! is_string($file)) {
-                continue;
-            }
-
-            $moduleLower = Str::of($file)
+        /** @var array<int, array<string, mixed>> $result */
+        $result = Arr::map($files, function (string $file) {
+            $fileStr = $file;
+            $moduleLower = Str::of($fileStr)
                 ->between('Modules/', '/lang/')
                 ->lower()
                 ->toString();
 
-            $result[] = [
-                'key' => $moduleLower.'::'.basename($file, '.php'),
-                'path' => $file,
+            return [
+                'key' => $moduleLower.'::'.basename($fileStr, '.php'),
+                'path' => $fileStr,
             ];
-        }
+        });
 
         return $result;
     }

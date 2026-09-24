@@ -1,14 +1,3 @@
----
-title: "Laravel Localization Reference"
-module: "Lang"
-type: concept
-tags: [lang, service, helper, text]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text fix"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Laravel Localization Reference
 
 ## Overview
@@ -189,4 +178,4 @@ Same issue - localize POST URLs to prevent redirects that change locale.
 ## References
 
 - [Official Documentation](https://github.com/mcamara/laravel-localization)
-- [Laravel 13 Compatibility](#laravel-compatibility)
+- [Laravel 12 Compatibility](#laravel-compatibility)

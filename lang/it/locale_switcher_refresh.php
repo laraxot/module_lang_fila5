@@ -23,7 +23,7 @@ return [
         ],
         'label' => 'Locale Switcher Refresh',
         'sort' => 1,
-        'icon' => 'heroicon-o-rectangle-stack',
+        'icon' => 'heroicon-o-collection',
     ],
     'actions' => [
         'create' => [

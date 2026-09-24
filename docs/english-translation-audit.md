@@ -1,14 +1,3 @@
----
-title: "Audit Traduzioni Inglesi - <nome progetto>"
-module: "Lang"
-type: concept
-tags: [migrazione, filament, 4]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migrazione filament 4"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Audit Traduzioni Inglesi - <nome progetto>
 
 ## Panoramica
@@ -24,34 +13,16 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Conteneva: Tutto il testo in italiano
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
 
 2. **Modules/Notify/lang/en/test_smtp.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
 
 3. **Modules/Notify/lang/en/send_email.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 
@@ -62,22 +33,10 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Conteneva: Placeholder in italiano
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
 
 2. **Modules/UI/lang/en/opening_hours_field.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Mancavano molte voci presenti in italiano + sintassi array() invece di []
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
    - Aggiunte: Tutte le voci mancanti (morning, afternoon, morning_label, afternoon_label, etc.)
@@ -86,12 +45,6 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 3. **Modules/<nome progetto>/lang/en/doctor.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Sintassi array() invece di [] + molte voci mancanti dalla versione italiana
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
    - Aggiunte: Tutte le voci mancanti (steps, fields, filters, actions, messages, sections, validation, empty_state, specialties)
@@ -103,12 +56,6 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Problemi: Era completamente in italiano invece che in tedesco + sintassi array() invece di []
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
    - Tradotto: Tutto il contenuto in tedesco appropriato
    - Aggiunte: Tutte le voci mancanti dalla versione italiana
    - Convertito: Sintassi short array []
@@ -118,24 +65,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
    - Traduzioni: Complete in inglese (Doctor, Patient, Administrator)
    - Convertito: Sintassi short array [] + declare(strict_types=1)
 
 6. **Modules/<nome progetto>/lang/de/user_type_enum.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
    - Traduzioni: Complete in tedesco (Arzt, Patient, Administrator)
@@ -366,11 +301,6 @@ return array(
 
 ## Collegamenti
 
-- [Regole Traduzioni](../../docs/translation-standards.md)
-- [Regole Traduzioni](../../docs/translation-standards.md)
-- [Regole Traduzioni](../../docs/translation-standards.md)
-- [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 
@@ -384,16 +314,6 @@ return array(
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-- [Regole Traduzioni](../../../docs/translation-standards.md)
-- [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
-
----
-
-**Ultimo aggiornamento**: 2025-01-06
-**Ultimo aggiornamento**: [DATE]
-**Ultimo aggiornamento**: [DATE]
-**Ultimo aggiornamento**: [DATE]
 **Status**: In corso
 # Audit Traduzioni Inglesi - <nome progetto>
 
@@ -410,34 +330,16 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Conteneva: Tutto il testo in italiano
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
 
 2. **Modules/Notify/lang/en/test_smtp.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
 
 3. **Modules/Notify/lang/en/send_email.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 
@@ -448,22 +350,10 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Conteneva: Placeholder in italiano
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
 
 2. **Modules/UI/lang/en/opening_hours_field.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Mancavano molte voci presenti in italiano + sintassi array() invece di []
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
    - Aggiunte: Tutte le voci mancanti (morning, afternoon, morning_label, afternoon_label, etc.)
@@ -472,12 +362,6 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 3. **Modules/<nome progetto>/lang/en/doctor.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Sintassi array() invece di [] + molte voci mancanti dalla versione italiana
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
    - Aggiunte: Tutte le voci mancanti (steps, fields, filters, actions, messages, sections, validation, empty_state, specialties)
@@ -489,12 +373,6 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Problemi: Era completamente in italiano invece che in tedesco + sintassi array() invece di []
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
    - Tradotto: Tutto il contenuto in tedesco appropriato
    - Aggiunte: Tutte le voci mancanti dalla versione italiana
    - Convertito: Sintassi short array []
@@ -504,24 +382,12 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
    - Traduzioni: Complete in inglese (Doctor, Patient, Administrator)
    - Convertito: Sintassi short array [] + declare(strict_types=1)
 
 6. **Modules/<nome progetto>/lang/de/user_type_enum.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
-   - Risolto: 2025-01-06
-   - Risolto: 2025-01-06
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
-   - Risolto: [DATE]
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
    - Traduzioni: Complete in tedesco (Arzt, Patient, Administrator)
@@ -752,29 +618,6 @@ return array(
 
 ## Collegamenti
 
-- [Regole Traduzioni](../../docs/translation-standards.md)
-- [Regole Traduzioni](../../docs/translation-standards.md)
-- [Regole Traduzioni](../../docs/translation-standards.md)
-- [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
-
----
-
-**Ultimo aggiornamento**: 2025-01-06
-- [Regole Traduzioni](../../../docs/translation-standards.md)
-- [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
-
----
-
-**Ultimo aggiornamento**: 2025-01-06
-**Status**: In corso
-**Ultimo aggiornamento**: [DATE]
-**Status**: In corso
-**Ultimo aggiornamento**: [DATE]
-**Status**: In corso
-**Ultimo aggiornamento**: [DATE]
-**Status**: In corso
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 

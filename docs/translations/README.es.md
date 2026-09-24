@@ -1,14 +1,3 @@
----
-title: "🚀 Bienvenido a Laraxot PTVX"
-module: "Lang"
-type: concept
-tags: [readme.es]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme.es"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>
   
@@ -78,7 +67,7 @@ related:
 - [Índice del Proyecto](../INDEX.md)
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panorama de los Módulos](../MODULES.md)
-- [Arquitectura](architecture.md)
+- [Arquitectura](../ARCHITECTURE.md)
 
 ---
 

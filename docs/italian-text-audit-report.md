@@ -1,17 +1,5 @@
----
-title: "Italian Text in Non-Italian Translation Files - Audit Report"
-module: "Lang"
-type: concept
-tags: [migrazione, filament, 4]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migrazione filament 4"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Italian Text in Non-Italian Translation Files - Audit Report
 
-**Data**: 2025-08-08 11:19:40
 **Data**: 2025-08-08 11:19:40
 
 ## Problemi Identificati
@@ -114,8 +102,4 @@ related:
 
 **I file di traduzione non italiani NON devono contenere testi in italiano.**
 
-Ogni testo deve essere tradotto nella lingua appropriata del file.
-Ogni testo deve essere tradotto nella lingua appropriata del file.
-Ogni testo deve essere tradotto nella lingua appropriata del file.
-Ogni testo deve essere tradotto nella lingua appropriata del file.
 Ogni testo deve essere tradotto nella lingua appropriata del file.
