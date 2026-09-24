@@ -81,7 +81,7 @@ return [
         ],
         'updated_at' => [
             'label' => 'Ultimo Aggiornamento',
-            'help' => "Data dell'ultima modifica",
+            'help' => 'Data dell\'ultima modifica',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -96,20 +96,18 @@ return [
         'export' => [
             'label' => 'Esporta Report',
             'success' => 'Report esportato con successo',
-            'error' => "Errore durante l'esportazione",
+            'error' => 'Errore durante l\'esportazione',
         ],
         'refresh' => [
             'label' => 'Aggiorna',
             'success' => 'Dati aggiornati con successo',
-            'error' => "Errore durante l'aggiornamento",
+            'error' => 'Errore durante l\'aggiornamento',
         ],
     ],
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
-        'name' => 'Individuale Tot Stabi',
-        'plural' => 'Individuale Tot Stabi',
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

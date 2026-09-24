@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 /**
  * Script per audit e correzione automatica dei valori helper_text
  * che sono uguali alla chiave del campo padre.

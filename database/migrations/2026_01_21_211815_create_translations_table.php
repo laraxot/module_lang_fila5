@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Lang\Models\Translation;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
