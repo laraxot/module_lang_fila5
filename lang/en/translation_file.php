@@ -103,7 +103,6 @@ return [
         ],
         'lang' => [
             'label' => 'lang',
-            'tooltip' => 'Seleziona lingua',
         ],
     ],
     'label' => 'Missing Label',

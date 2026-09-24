@@ -253,7 +253,7 @@ return [
         'plural' => 'Txt',
         'group' => ['name' => 'General', 'description' => 'General Settings'],
         'label' => 'Txt',
-        'sort' => '1',
+        'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
     ],
     'steps' => [
