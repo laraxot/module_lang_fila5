@@ -27,15 +27,9 @@ class TranslatorAdapter extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
-     * I parametri nativi restano `mixed` per compatibilita' LSP con
-     * `Illuminate\Translation\Translator::get()`, che non dichiara tipi.
-     *
      * @param array<string, mixed> $replace
-     * @param string               $key
-     * @param string|null          $locale
-     * @param bool                 $fallback
      *
-     * @return string|array<array-key, mixed>
+     * @return string|array<string, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
     {
@@ -49,11 +43,10 @@ class TranslatorAdapter extends LaravelTranslator
         }
 
         if (is_array($result)) {
-            return $result;
-        }
+            /** @var array<string, mixed> $arrayResult */
+            $arrayResult = $result;
 
-        if (! is_string($result)) {
-            return (string) $key;
+            return $arrayResult;
         }
 
         return $result;

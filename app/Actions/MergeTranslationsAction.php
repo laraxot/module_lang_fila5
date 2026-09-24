@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions;
 
+use Illuminate\Support\Arr;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -19,7 +20,6 @@ class MergeTranslationsAction
      * Sovrascrive chiavi esistenti con valori da file successivi (principio LIFO).
      *
      * @param array<array<string, string>> $translationFiles Array di file di traduzione, dove ogni file è un array associativo (key => value)
-     *
      * @return array<string, mixed> Struttura fusa e consolidata delle traduzioni
      */
     public function execute(array $translationFiles): array

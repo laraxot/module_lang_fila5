@@ -1,14 +1,3 @@
----
-title: "🐄 DRY & KISS Analysis - Lang"
-module: "Lang"
-type: concept
-tags: [filament4, migration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament4 migration"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # 🐄 DRY & KISS Analysis - Lang
 
 **Data:** [DATE] | **Status:** ✅
