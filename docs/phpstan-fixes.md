@@ -18,6 +18,7 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/Lang
 ## Storico — Level 7 (Gennaio 2025)
 
 Il modulo Lang era a 0 errori Level 7.
+<<<<<<< .merge_file_rtxnPi
 # Lang Module - PHPStan Level 7 Fixes - Gennaio 2025
 # Lang Module — PHPStan
 
@@ -40,6 +41,8 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/Lang
 ## Storico — Level 7 (Gennaio 2025)
 
 Il modulo Lang era a 0 errori Level 7.
+=======
+>>>>>>> .merge_file_qHAytu
 
 ## 🔧 **Correzioni Implementate**
 
@@ -127,9 +130,13 @@ private function castWithAction(mixed $value): string
 ---
 *Ultimo aggiornamento: Gennaio 2025*
 *Ultimo aggiornamento: Gennaio 2025*
+<<<<<<< .merge_file_rtxnPi
 *Stato: ✅ Completato - 0 errori PHPStan*
 *Stato: ✅ Completato - 0 errori PHPStan*
 *Stato: ✅ Completato - 0 errori PHPStan*
 *Stato: ✅ Completato - 0 errori PHPStan*
 *Ultimo aggiornamento: Gennaio 2025*
 *Stato: ✅ Completato - 0 errori PHPStan*
+=======
+*Stato: ✅ Completato - 0 errori PHPStan*
+>>>>>>> .merge_file_qHAytu

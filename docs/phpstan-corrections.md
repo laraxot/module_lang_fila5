@@ -5,24 +5,30 @@ Questo documento registra le correzioni PHPStan implementate nel modulo Lang.
 
 **Ultimo aggiornamento**: 2025-01-27
 **Ultimo aggiornamento**: 2025-01-27
+<<<<<<< .merge_file_oayQgn
 **Ultimo aggiornamento**: [DATE]
 **Ultimo aggiornamento**: [DATE]
 **Ultimo aggiornamento**: [DATE]
 **Ultimo aggiornamento**: [DATE]
 **Ultimo aggiornamento**: 2025-01-27
 **Ultimo aggiornamento**: 2025-01-27
+=======
+>>>>>>> .merge_file_vXjv0F
 **Status PHPStan Level 10**: ✅ **PASSED** - 0 errori
 
 ## Correzioni Implementate
 
 ### Post.php - Doppio Import PostFactory (2025-01-27)
 ### Post.php - Doppio Import PostFactory (2025-01-27)
+<<<<<<< .merge_file_oayQgn
 ### Post.php - Doppio Import PostFactory ([DATE])
 ### Post.php - Doppio Import PostFactory ([DATE])
 ### Post.php - Doppio Import PostFactory ([DATE])
 ### Post.php - Doppio Import PostFactory ([DATE])
 ### Post.php - Doppio Import PostFactory (2025-01-27)
 ### Post.php - Doppio Import PostFactory (2025-01-27)
+=======
+>>>>>>> .merge_file_vXjv0F
 
 **Problema**: Doppio import di `PostFactory` causava conflitto di namespace
 ```php
@@ -106,15 +112,22 @@ if (is_array($value)) {
 - [Translation System](./translation-system.md)
 - [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
 - [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
+<<<<<<< .merge_file_oayQgn
 - [FormBuilder Module PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
+=======
+>>>>>>> .merge_file_vXjv0F
 
 ## Note per Sviluppo Futuro
 
 1. **Type Hints**: Utilizzare sempre type hints espliciti
 2. **Mixed Types**: Gestire sempre i tipi `mixed` con type casting
 3. **Assertions**: Validare i tipi con assertions appropriate
+<<<<<<< .merge_file_oayQgn
 4. **Documentation**: Documentare sempre i parametri e return types
 4. **Documentation**: Documentare sempre i parametri e return types
 4. **Documentation**: Documentare sempre i parametri e return types
 4. **Documentation**: Documentare sempre i parametri e return types
 4. **Documentation**: Documentare sempre i parametri e return types
+=======
+4. **Documentation**: Documentare sempre i parametri e return types
+>>>>>>> .merge_file_vXjv0F
