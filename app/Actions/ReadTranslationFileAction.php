@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions;
 
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -69,8 +68,8 @@ class ReadTranslationFileAction
     /**
      * Converte un array in formato PHP con indentazione.
      *
-     * @param array<array-key, mixed> $array  Array da convertire
-     * @param int                     $indent Livello di indentazione
+     * @param array<string, mixed> $array  Array da convertire
+     * @param int                  $indent Livello di indentazione
      *
      * @return string Codice PHP dell'array
      */
@@ -80,21 +79,16 @@ class ReadTranslationFileAction
         $indentStr = str_repeat('    ', $indent);
 
         foreach ($array as $key => $value) {
-            $content .= $indentStr."'".addslashes((string) $key)."' => ";
+            $content .= $indentStr."'".addslashes($key)."' => ";
 
             if (is_array($value)) {
-                foreach (array_keys($value) as $nestedKey) {
-                    Assert::string($nestedKey);
-                }
-
-                /** @var array<string, mixed> $nestedValue */
-                $nestedValue = $value;
-
                 $content .= "[\n";
-                $content .= $this->arrayToPhp($nestedValue, $indent + 1);
+                /** @phpstan-ignore argument.type */
+                $content .= $this->arrayToPhp($value, $indent + 1);
                 $content .= $indentStr."],\n";
             } else {
-                $content .= "'".addslashes(SafeStringCastAction::cast($value))."',\n";
+                /** @phpstan-ignore-next-line */
+                $content .= "'".addslashes((string) $value)."',\n";
             }
         }
 

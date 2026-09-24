@@ -1,18 +1,5 @@
----
-title: "Navigation Translations Completion - Global Roadmap"
-module: "Lang"
-type: concept
-tags: [readme.es, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme.es 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Navigation Translations Completion - Global Roadmap
 
-**Data**: 2026-01-09  
-**Data**: 2026-01-09  
 **Data**: 2026-01-09  
 **Data**: 2026-01-09  
 **Modulo**: Lang (Coordinamento Globale)  
@@ -177,15 +164,6 @@ Per ogni risorsa, le traduzioni navigation seguono questo pattern:
 - [Translation Standards](../../Xot/docs/translation-standards.md)
 - [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-2026-01-09.md)
-- [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-[DATE].md)
-- [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-[DATE].md)
-- [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-[DATE].md)
-- [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-[DATE].md)
-- [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-[DATE].md)
-- [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-[DATE].md)
-- [Translation Standards](../../Xot/docs/translation-standards.md)
-- [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-2026-01-09.md)
-- [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [Translation Standards](../../Xot/docs/translation-standards.md)
 - [Navigation Translations Fixes](./navigation-translations-fixes.md)
 
@@ -193,11 +171,5 @@ Per ogni risorsa, le traduzioni navigation seguono questo pattern:
 
 **Status**: 📝 **ROADMAP CREATA - PRONTA PER IMPLEMENTAZIONE**
 
-**Ultimo aggiornamento**: 2026-01-09
-**Ultimo aggiornamento**: 2026-01-09
-**Ultimo aggiornamento**: [DATE]
-**Ultimo aggiornamento**: [DATE]
-**Ultimo aggiornamento**: [DATE]
-**Ultimo aggiornamento**: [DATE]
 **Ultimo aggiornamento**: 2026-01-09
 **Ultimo aggiornamento**: 2026-01-09

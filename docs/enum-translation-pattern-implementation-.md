@@ -1,14 +1,3 @@
----
-title: "Enum Translation Pattern - Implementazione Regola Critica"
-module: "Lang"
-type: pattern
-tags: [lang, service, helper, text]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text fix"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Enum Translation Pattern - Implementazione Regola Critica
 
 ## Data: 27 Gennaio 2025
