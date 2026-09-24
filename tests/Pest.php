@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\DB;
 use Modules\Lang\Database\Factories\TranslationFactory;
 use Modules\Lang\Models\Translation;
@@ -27,11 +23,7 @@ use function Safe\unlink;
  */
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $attributes
-=======
- * @param  array<string, mixed>  $attributes
->>>>>>> laraxot/dev
  */
 function createTranslation(array $attributes = []): Translation
 {
@@ -39,11 +31,7 @@ function createTranslation(array $attributes = []): Translation
 }
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $attributes
-=======
- * @param  array<string, mixed>  $attributes
->>>>>>> laraxot/dev
  */
 function makeTranslation(array $attributes = []): Translation
 {
@@ -56,11 +44,7 @@ function makeTranslation(array $attributes = []): Translation
 }
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $translations
-=======
- * @param  array<string, mixed>  $translations
->>>>>>> laraxot/dev
  */
 function createTranslationFile(string $filePath, array $translations): void
 {
@@ -75,11 +59,7 @@ function cleanupTranslationFile(string $filePath): void
     }
 }
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $data
-=======
- * @param  array<string, mixed>  $data
->>>>>>> laraxot/dev
  */
 function langAssertDatabaseHasRow(string $table, array $data, ?string $connection = 'lang'): void
 {

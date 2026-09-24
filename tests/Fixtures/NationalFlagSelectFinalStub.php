@@ -23,12 +23,8 @@ final class NationalFlagSelectFinalStub extends NationalFlagSelect
     }
 
     /**
-<<<<<<< HEAD
      * @param array<int, mixed> $filteredCountries
      *
-=======
-     * @param  array<int, mixed>  $filteredCountries
->>>>>>> laraxot/dev
      * @return array<int, mixed>
      */
     protected function finalizeFilteredCountries(array $filteredCountries): array

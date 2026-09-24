@@ -57,11 +57,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             Assert::isInstanceOf($component, Field::class);
 
             $validationMessages = __('user::validation');
-<<<<<<< HEAD
             if (is_array($validationMessages) && [] !== $validationMessages) {
-=======
-            if (is_array($validationMessages) && $validationMessages !== []) {
->>>>>>> laraxot/dev
                 /** @var array<string, string> $typedMessages */
                 $typedMessages = [];
                 foreach ($validationMessages as $key => $value) {
@@ -70,11 +66,7 @@ class LangServiceProvider extends XotBaseServiceProvider
                     }
                 }
 
-<<<<<<< HEAD
                 if ([] !== $typedMessages) {
-=======
-                if ($typedMessages !== []) {
->>>>>>> laraxot/dev
                     $component->validationMessages($typedMessages);
                 }
             }
@@ -127,11 +119,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             'getRecord' => $component->getRecord(),
             ]);
             */
-<<<<<<< HEAD
             if (method_exists($component, 'getRecord') && null === $component->getRecord()) {
-=======
-            if (method_exists($component, 'getRecord') && $component->getRecord() === null) {
->>>>>>> laraxot/dev
                 if (method_exists($component, 'button')) {
                     $component->button();
                 }

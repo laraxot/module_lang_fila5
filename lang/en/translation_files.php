@@ -13,14 +13,11 @@ return [
         'created_at' => [
             'label' => 'created_at',
         ],
-<<<<<<< HEAD
         'key' => [
             'label' => 'key',
         ],
         'path' => [
             'label' => 'path',
         ],
-=======
->>>>>>> laraxot/dev
     ],
 ];

@@ -5,10 +5,6 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
-<<<<<<< HEAD
-=======
-use Spatie\QueueableAction\QueueableAction;
->>>>>>> laraxot/dev
 
 use function Safe\date;
 use function Safe\exec;
@@ -16,11 +12,8 @@ use function Safe\file_put_contents;
 use function Safe\tempnam;
 use function Safe\unlink;
 
-<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
-=======
->>>>>>> laraxot/dev
 class WriteTranslationFileAction
 {
     use QueueableAction;
@@ -28,14 +21,9 @@ class WriteTranslationFileAction
     /**
      * Scrive il contenuto in un file di traduzione con backup automatico.
      *
-<<<<<<< HEAD
      * @param string               $filePath     Percorso del file di traduzione
      * @param array<string, mixed> $translations Traduzioni da scrivere
      *
-=======
-     * @param  string  $filePath  Percorso del file di traduzione
-     * @param  array<string, mixed>  $translations  Traduzioni da scrivere
->>>>>>> laraxot/dev
      * @return bool True se il file è stato scritto con successo
      */
     public function execute(string $filePath, array $translations): bool
@@ -53,11 +41,7 @@ class WriteTranslationFileAction
         // Scrivi il file
         $result = File::put($filePath, $phpContent);
 
-<<<<<<< HEAD
         if (false === $result) {
-=======
-        if ($result === false) {
->>>>>>> laraxot/dev
             throw new \Exception("Impossibile scrivere il file: {$filePath}");
         }
 
@@ -70,11 +54,7 @@ class WriteTranslationFileAction
     /**
      * Crea un backup del file di traduzione.
      *
-<<<<<<< HEAD
      * @param string $filePath Percorso del file
-=======
-     * @param  string  $filePath  Percorso del file
->>>>>>> laraxot/dev
      */
     private function createBackup(string $filePath): void
     {
@@ -97,11 +77,7 @@ class WriteTranslationFileAction
     /**
      * Valida la sintassi PHP del contenuto.
      *
-<<<<<<< HEAD
      * @param string $phpContent Contenuto PHP da validare
-=======
-     * @param  string  $phpContent  Contenuto PHP da validare
->>>>>>> laraxot/dev
      *
      * @throws \Exception Se la sintassi PHP non è valida
      */
@@ -119,11 +95,7 @@ class WriteTranslationFileAction
 
         unlink($tempFile);
 
-<<<<<<< HEAD
         if (0 !== $returnCode) {
-=======
-        if ($returnCode !== 0) {
->>>>>>> laraxot/dev
             $lines = [];
             foreach ($output as $line) {
                 if (is_string($line)) {

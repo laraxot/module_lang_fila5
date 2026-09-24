@@ -21,11 +21,7 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Widgets',
-<<<<<<< HEAD
         'sort' => '1',
-=======
-        'sort' => 1,
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [

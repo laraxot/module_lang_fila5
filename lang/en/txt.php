@@ -41,7 +41,6 @@ return [
             'description' => 'test_date',
             'tooltip' => '',
         ],
-<<<<<<< HEAD
         'applyFilters' => [
             'label' => 'applyFilters',
             'tooltip' => '',
@@ -999,8 +998,6 @@ return [
         ],
         'ratings' => [
         ],
-=======
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'authenticate' => [
@@ -1017,7 +1014,6 @@ return [
         ],
         'request' => [
             'label' => 'request',
-<<<<<<< HEAD
             'tooltip' => 'request',
             'icon' => 'request',
         ],
@@ -1167,14 +1163,11 @@ return [
             'label' => 'title',
             'icon' => 'title',
             'tooltip' => 'title',
-=======
->>>>>>> laraxot/dev
         ],
     ],
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-<<<<<<< HEAD
         'group' => [
             'name' => 'General',
             'description' => 'General Settings',
@@ -1233,12 +1226,4 @@ return [
             'label' => 'test',
         ],
     ],
-=======
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> laraxot/dev
 ];

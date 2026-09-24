@@ -24,10 +24,18 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 ```markdown
 [Regole Generali](../../Xot/project_docs/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
+[Regole Generali](../../Xot/project_docs/translations.md)
+[Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
+[Regole Generali](../../Xot/project_docs/translations.md)
+[Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
 ```
 
 ❌ **ERRATO**:
 ```markdown
+[Regole Generali](Modules/Xot/project_docs/translations.md)
+[Best Practices](Modules/Lang/project_docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+[Regole Generali](Modules/Xot/project_docs/translations.md)
+[Best Practices](Modules/Lang/project_docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 [Regole Generali](Modules/Xot/project_docs/translations.md)
 [Best Practices](Modules/Lang/project_docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 ```
@@ -90,11 +98,15 @@ Prima di fare commit dei documenti:
 ### Da Modules/Lang/project_docs/ a Modules/Notify/project_docs/
 ```markdown
 [Convenzioni Notify](../../Notify/project_docs/TRANSLATION_CONVENTIONS.md)
+[Convenzioni Notify](../../Notify/project_docs/TRANSLATION_CONVENTIONS.md)
+[Convenzioni Notify](../../Notify/project_docs/TRANSLATION_CONVENTIONS.md)
 ```
 
 ### Da Modules/Lang/project_docs/ a docs/ nella root
 ```markdown
 [Documentazione Principale](../../../project_docs/README.md)
+[Documentazione Principale](../../../../docs/project/README.md)
+[Documentazione Principale](../../../../docs/project/README.md)
 ```
 
 ### Da Modules/Lang/project_docs/ a un altro file nella stessa cartella
@@ -122,10 +134,18 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 ```markdown
 [Regole Generali](../../Xot/docs/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
+[Regole Generali](../../Xot/docs/translations.md)
+[Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
+[Regole Generali](../../Xot/docs/translations.md)
+[Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
 ```
 
 ❌ **ERRATO**:
 ```markdown
+[Regole Generali](Modules/Xot/docs/translations.md)
+[Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+[Regole Generali](Modules/Xot/docs/translations.md)
+[Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 [Regole Generali](Modules/Xot/docs/translations.md)
 [Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 ```
@@ -170,6 +190,10 @@ Per collegare documenti tra moduli diversi:
 
 <!-- Da Modules/ModuloA/docs/file.md a docs/file.md nella root -->
 [Link a docs root](../../../docs/file.md)
+[Link a ModuloB](../../ModuloB/docs/file.md)
+
+<!-- Da Modules/ModuloA/docs/file.md a docs/file.md nella root -->
+[Link a docs root](../../../../docs/file.md)
 ```
 
 ### 5. Verificare Sempre i Link
@@ -191,6 +215,8 @@ Prima di fare commit dei documenti:
 ### Da Modules/Lang/docs/ a docs/ nella root
 ```markdown
 [Documentazione Principale](../../../docs/README.md)
+[Documentazione Principale](../../../../docs/README.md)
+[Documentazione Principale](../../../../docs/README.md)
 ```
 
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella
