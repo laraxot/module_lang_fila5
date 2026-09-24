@@ -19,7 +19,8 @@ class TranslatorAction extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
-     * @param  array<string, mixed>  $replace
+     * @param array<string, mixed> $replace
+     *
      * @return string|array<array-key, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
@@ -41,7 +42,9 @@ class TranslatorAction extends LaravelTranslator
         return $result;
     }
 
-    public function execute(): void {}
+    public function execute(): void
+    {
+    }
 
     protected function notifyMissingKey(string $key): void
     {
