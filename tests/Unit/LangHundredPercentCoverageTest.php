@@ -22,6 +22,10 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
 use Livewire\Livewire;
+<<<<<<< .merge_file_zA4CJB
+=======
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+>>>>>>> .merge_file_aWv0C1
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
@@ -53,8 +57,11 @@ use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslatio
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\ListTranslationFiles;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Tables\TranslationFilesTable;
 use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
+<<<<<<< .merge_file_zA4CJB
 use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
 use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
+=======
+>>>>>>> .merge_file_aWv0C1
 use Modules\Lang\Models\BaseModel;
 use Modules\Lang\Models\BaseModelLang;
 use Modules\Lang\Models\LanguageLine;
@@ -125,6 +132,13 @@ final class LangFieldHostModel extends BaseModelLang
 
 final class TranslationEditorStub extends TranslationEditor
 {
+<<<<<<< .merge_file_zA4CJB
+=======
+    /**
+     * `mixed` voluto: lo stato Filament forzato e' eterogeneo per i rami coperti
+     * (array, stringa, null). Il tipo nativo riflette il contratto di getState().
+     */
+>>>>>>> .merge_file_aWv0C1
     public mixed $forcedState = [];
 
     public function getState(): mixed
@@ -146,8 +160,21 @@ final class StrictTranslationsHost extends BaseModel
 
     protected $table = 'translations';
 
+<<<<<<< .merge_file_zA4CJB
     public mixed $forcedTranslation = null;
 
+=======
+    /**
+     * `mixed` voluto: i test forzano traduzioni di tipo arbitrario (int, array, bool)
+     * per coprire tutti i rami di normalizzazione di getTranslation().
+     */
+    public mixed $forcedTranslation = null;
+
+    /**
+     * Firma speculare a `HasTranslations::getTranslation(): mixed` — i parametri
+     * restano invariati, il ritorno e' eterogeneo per contratto spatie.
+     */
+>>>>>>> .merge_file_aWv0C1
     protected function spatieGetTranslation(string $key, string $locale, bool $useFallbackLocale = true): mixed
     {
         unset($key, $locale, $useFallbackLocale);
@@ -172,6 +199,11 @@ function langHundredFakeUser(array $permissions = [], bool $superAdmin = false):
 }
 
 /**
+<<<<<<< .merge_file_zA4CJB
+=======
+ * `mixed ...$values` voluto: helper per costruire collezioni di valori eterogenei.
+ *
+>>>>>>> .merge_file_aWv0C1
  * @return Collection<int|string, mixed>
  */
 function langMixedCollection(mixed ...$values): Collection
@@ -355,7 +387,11 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
     test('TranslatorAction and TranslatorAdapter cover missing keys and array results', function (): void {
         langForceSqliteTranslations();
 
+<<<<<<< .merge_file_zA4CJB
         $loader = new ArrayLoader();
+=======
+        $loader = new ArrayLoader;
+>>>>>>> .merge_file_aWv0C1
         $loader->addMessages('it', 'messages', [
             'known' => 'Ciao',
             'tree' => ['a' => 'b'],
@@ -382,11 +418,19 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $path = sys_get_temp_dir().'/lang_write_cov_'.uniqid().'.php';
         TestCase::createTranslationFile($path, ['old' => '1']);
 
+<<<<<<< .merge_file_zA4CJB
         app()->instance('cache', new class()
         {
             public function flush(): void {}
         });
         $translationLoader = new class()
+=======
+        app()->instance('cache', new class
+        {
+            public function flush(): void {}
+        });
+        $translationLoader = new class
+>>>>>>> .merge_file_aWv0C1
         {
             public bool $flushed = false;
 
@@ -551,23 +595,39 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
     test('LangBase page stubs expose header actions with locale switcher', function (): void {
         $create = new ReflectionMethod(LangBaseCreateRecordStub::class, 'getHeaderActions');
         $create->setAccessible(true);
+<<<<<<< .merge_file_zA4CJB
         Assert::assertNotEmpty($create->invoke(new LangBaseCreateRecordStub()));
 
         $edit = new ReflectionMethod(LangBaseEditRecordStub::class, 'getHeaderActions');
         $edit->setAccessible(true);
         $editActions = $edit->invoke(new LangBaseEditRecordStub());
+=======
+        Assert::assertNotEmpty($create->invoke(new LangBaseCreateRecordStub));
+
+        $edit = new ReflectionMethod(LangBaseEditRecordStub::class, 'getHeaderActions');
+        $edit->setAccessible(true);
+        $editActions = $edit->invoke(new LangBaseEditRecordStub);
+>>>>>>> .merge_file_aWv0C1
         Assert::assertIsArray($editActions);
         Assert::assertArrayHasKey('locale-switcher', $editActions);
 
         $list = new ReflectionMethod(LangBaseListRecordsStub::class, 'getHeaderActions');
         $list->setAccessible(true);
+<<<<<<< .merge_file_zA4CJB
         $listActions = $list->invoke(new LangBaseListRecordsStub());
+=======
+        $listActions = $list->invoke(new LangBaseListRecordsStub);
+>>>>>>> .merge_file_aWv0C1
         Assert::assertIsArray($listActions);
         Assert::assertArrayHasKey('locale_switcher', $listActions);
 
         $view = new ReflectionMethod(LangBaseViewRecordStub::class, 'getHeaderActions');
         $view->setAccessible(true);
+<<<<<<< .merge_file_zA4CJB
         $viewActions = $view->invoke(new LangBaseViewRecordStub());
+=======
+        $viewActions = $view->invoke(new LangBaseViewRecordStub);
+>>>>>>> .merge_file_aWv0C1
         Assert::assertIsArray($viewActions);
         Assert::assertArrayHasKey('locale-switcher', $viewActions);
     });
@@ -622,7 +682,11 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
             $mock->allows('execute');
         });
 
+<<<<<<< .merge_file_zA4CJB
         $edit = new EditTranslationFile();
+=======
+        $edit = new EditTranslationFile;
+>>>>>>> .merge_file_aWv0C1
         $schema = $edit->getFormSchema();
         Assert::assertNotEmpty($schema);
 
@@ -634,7 +698,11 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 
         $mutate = new ReflectionMethod($edit, 'mutateFormDataBeforeSave');
         $mutate->setAccessible(true);
+<<<<<<< .merge_file_zA4CJB
         $record = new class() extends Model
+=======
+        $record = new class extends Model
+>>>>>>> .merge_file_aWv0C1
         {
             protected $guarded = [];
         };
@@ -643,8 +711,13 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         Assert::assertSame(['content' => ['a' => 'b']], $mutate->invoke($edit, ['content' => ['a' => 'b']]));
         Assert::assertSame(['content' => null], $mutate->invoke($edit, ['content' => null]));
 
+<<<<<<< .merge_file_zA4CJB
         $editNoKey = new EditTranslationFile();
         $editNoKey->record = new class() extends Model
+=======
+        $editNoKey = new EditTranslationFile;
+        $editNoKey->record = new class extends Model
+>>>>>>> .merge_file_aWv0C1
         {
             protected $guarded = [];
         };
@@ -652,7 +725,11 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 
         $after = new ReflectionMethod($edit, 'afterSave');
         $after->setAccessible(true);
+<<<<<<< .merge_file_zA4CJB
         $refreshable = new class() extends Model
+=======
+        $refreshable = new class extends Model
+>>>>>>> .merge_file_aWv0C1
         {
             public bool $refreshed = false;
 
@@ -670,18 +747,27 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $edit->record = null;
         $after->invoke($edit);
 
+<<<<<<< .merge_file_zA4CJB
         $list = new ListTranslationFiles();
+=======
+        $list = new ListTranslationFiles;
+>>>>>>> .merge_file_aWv0C1
         $listHeader = new ReflectionMethod($list, 'getHeaderActions');
         $listHeader->setAccessible(true);
         $listHeaderActions = $listHeader->invoke($list);
         Assert::assertIsArray($listHeaderActions);
         Assert::assertArrayHasKey('locale_switcher', $listHeaderActions);
 
+<<<<<<< .merge_file_zA4CJB
         $table = new TranslationFilesTable();
+=======
+        $table = new TranslationFilesTable;
+>>>>>>> .merge_file_aWv0C1
         Assert::assertArrayHasKey('locale_switcher', $table->getTableHeaderActions());
     });
 
     test('LanguageSwitcherWidget covers changeLanguage urls and view data', function (): void {
+<<<<<<< .merge_file_zA4CJB
         $widget = new LanguageSwitcherWidget();
         $viewData = $widget->exposeViewData();
         Assert::assertArrayHasKey('available_locales', $viewData);
@@ -692,12 +778,31 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         app()->instance('request', Request::create('http://localhost/it/demo', 'GET'));
         app()->setLocale('it');
         Assert::assertStringContainsString('/en/', $widget->getLanguageUrl('en'));
+=======
+        $widget = new LanguageSwitcherWidget;
+        $viewData = $widget->exposeViewData();
+        Assert::assertArrayHasKey('available_locales', $viewData);
+        Assert::assertArrayHasKey('lang', $viewData);
+        Assert::assertArrayHasKey('langs', $viewData);
+        $availableLocales = $viewData['available_locales'];
+        Assert::assertInstanceOf(Collection::class, $availableLocales);
+        $supportedCodes = array_keys(LaravelLocalization::getSupportedLocales());
+        Assert::assertSame($supportedCodes, $availableLocales->pluck('code')->all());
+
+        app()->instance('request', Request::create('http://localhost/it/demo', 'GET'));
+        app()->setLocale('it');
+        Assert::assertStringContainsString('en', $widget->getLanguageUrl('en'));
+>>>>>>> .merge_file_aWv0C1
 
         app()->instance('request', Request::create('http://localhost/it', 'GET'));
         Assert::assertStringContainsString('en', $widget->getLanguageUrl('en'));
 
         app()->instance('request', Request::create('http://localhost/', 'GET'));
+<<<<<<< .merge_file_zA4CJB
         Assert::assertStringContainsString('de', $widget->getLanguageUrl('de'));
+=======
+        Assert::assertSame('/de', $widget->getLanguageUrl('de'));
+>>>>>>> .merge_file_aWv0C1
 
         Livewire::test(LanguageSwitcherWidget::class)
             ->call('changeLanguage', 'en')
@@ -709,12 +814,17 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 
     test('LanguageSwitcher blade component empty branch when disabled', function (): void {
         config(['lang.language_switcher.enabled' => false]);
+<<<<<<< .merge_file_zA4CJB
         $component = new LanguageSwitcher();
+=======
+        $component = new LanguageSwitcher;
+>>>>>>> .merge_file_aWv0C1
         $view = $component->render();
         Assert::assertInstanceOf(View::class, $view);
         Assert::assertSame('lang::components.empty', $view->name());
     });
 
+<<<<<<< .merge_file_zA4CJB
     test('Livewire Change and Switcher mount and render', function (): void {
         config([
             'laravellocalization.supportedLocales' => [
@@ -739,6 +849,17 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
     test('LangField cast get and set via host model', function (): void {
         $cast = new LangField();
         $host = new LangFieldHostModel();
+=======
+    test('retired HTTP Switcher and Change files no longer exist', function (): void {
+        $httpLangDir = dirname(__DIR__, 2).'/app/Http/Livewire/Lang';
+        Assert::assertFileDoesNotExist($httpLangDir.'/Change.php');
+        Assert::assertFileDoesNotExist($httpLangDir.'/Switcher.php');
+    });
+
+    test('LangField cast get and set via host model', function (): void {
+        $cast = new LangField;
+        $host = new LangFieldHostModel;
+>>>>>>> .merge_file_aWv0C1
         /** @var Post&MockInterface $post */
         $post = Mockery::mock(Post::class)->makePartial();
         $initialTitle = ['it' => 'Hello'];
@@ -755,7 +876,11 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 
 describe('Lang 100% — Models policies providers views', function (): void {
     test('LanguageLine fillable and casts', function (): void {
+<<<<<<< .merge_file_zA4CJB
         $line = new LanguageLine();
+=======
+        $line = new LanguageLine;
+>>>>>>> .merge_file_aWv0C1
         Assert::assertSame(['group', 'key', 'text', 'locale'], $line->getFillable());
         $casts = new ReflectionMethod($line, 'casts');
         $casts->setAccessible(true);
@@ -763,7 +888,11 @@ describe('Lang 100% — Models policies providers views', function (): void {
     });
 
     test('HasStrictTranslations normalizes scalar array bool float and object', function (): void {
+<<<<<<< .merge_file_zA4CJB
         $model = new StrictTranslationsHost();
+=======
+        $model = new StrictTranslationsHost;
+>>>>>>> .merge_file_aWv0C1
 
         $model->forcedTranslation = 'Ciao';
         Assert::assertSame('Ciao', $model->getTranslation('title', 'it'));
@@ -783,7 +912,11 @@ describe('Lang 100% — Models policies providers views', function (): void {
         $model->forcedTranslation = 1.5;
         Assert::assertSame(1, $model->getTranslation('title', 'fr'));
 
+<<<<<<< .merge_file_zA4CJB
         $model->forcedTranslation = new class()
+=======
+        $model->forcedTranslation = new class
+>>>>>>> .merge_file_aWv0C1
         {
             public function __toString(): string
             {
@@ -809,6 +942,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
         ]);
         $denied = langHundredFakeUser([]);
 
+<<<<<<< .merge_file_zA4CJB
         $translationPolicy = new TranslationPolicy();
         $postPolicy = new PostPolicy();
         $filePolicy = new TranslationFilePolicy();
@@ -836,28 +970,73 @@ describe('Lang 100% — Models policies providers views', function (): void {
         Assert::assertTrue($filePolicy->update($user, new TranslationFile()));
         Assert::assertTrue($filePolicy->restore($user, new TranslationFile()));
         Assert::assertTrue($filePolicy->forceDelete($user, new TranslationFile()));
+=======
+        $translationPolicy = new TranslationPolicy;
+        $postPolicy = new PostPolicy;
+        $filePolicy = new TranslationFilePolicy;
+        $base = new LangBasePolicyStub;
+
+        Assert::assertNull($base->before($denied, 'viewAny'));
+        Assert::assertTrue($translationPolicy->viewAny($user));
+        Assert::assertTrue($translationPolicy->view($user, new Translation));
+        Assert::assertTrue($translationPolicy->create($user));
+        Assert::assertTrue($translationPolicy->update($user, new Translation));
+        Assert::assertTrue($translationPolicy->delete($user, new Translation));
+        Assert::assertTrue($translationPolicy->restore($user, new Translation));
+        Assert::assertTrue($translationPolicy->forceDelete($user, new Translation));
+        Assert::assertFalse($translationPolicy->viewAny($denied));
+
+        Assert::assertTrue($postPolicy->viewAny($user));
+        Assert::assertTrue($postPolicy->view($user, new Post));
+        Assert::assertTrue($postPolicy->create($user));
+        Assert::assertTrue($postPolicy->restore($user, new Post));
+        Assert::assertTrue($postPolicy->forceDelete($user, new Post));
+
+        Assert::assertTrue($filePolicy->viewAny($user));
+        Assert::assertTrue($filePolicy->view($user, new TranslationFile));
+        Assert::assertTrue($filePolicy->create($user));
+        Assert::assertTrue($filePolicy->update($user, new TranslationFile));
+        Assert::assertTrue($filePolicy->restore($user, new TranslationFile));
+        Assert::assertTrue($filePolicy->forceDelete($user, new TranslationFile));
+>>>>>>> .merge_file_aWv0C1
         Assert::assertFalse($filePolicy->viewAny($denied));
     });
 
     test('Post linkable slug options and accessors without persistence', function (): void {
+<<<<<<< .merge_file_zA4CJB
         $post = new Post();
+=======
+        $post = new Post;
+>>>>>>> .merge_file_aWv0C1
         Assert::assertSame('guid', $post->getSlugOptions()->slugField);
         Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
         $post->setRawAttributes(['post_type' => 'article', 'post_id' => '9']);
         Assert::assertSame('article 9', $post->getTitleAttribute(null));
 
+<<<<<<< .merge_file_zA4CJB
         $post2 = new Post();
+=======
+        $post2 = new Post;
+>>>>>>> .merge_file_aWv0C1
         $post2->setRawAttributes([]);
         $post2->post_type = 'page';
         $post2->post_id = 3;
         Assert::assertSame('page 3', $post2->getTitleAttribute(null));
 
+<<<<<<< .merge_file_zA4CJB
         $post3 = new Post();
         $post3->setRawAttributes(['title' => '']);
         Assert::assertIsString($post3->getGuidAttribute('bad value with spaces'));
 
         $post4 = new Post();
+=======
+        $post3 = new Post;
+        $post3->setRawAttributes(['title' => '']);
+        Assert::assertIsString($post3->getGuidAttribute('bad value with spaces'));
+
+        $post4 = new Post;
+>>>>>>> .merge_file_aWv0C1
         $post4->setRawAttributes(['title' => '', 'post_type' => 'x', 'post_id' => 1]);
         Assert::assertSame('x-1', $post4->getGuidAttribute(null));
     });
@@ -865,13 +1044,21 @@ describe('Lang 100% — Models policies providers views', function (): void {
     test('TranslationFile getRows ide-helper path and load failures', function (): void {
         $previousArgv = $_SERVER['argv'] ?? null;
         $_SERVER['argv'] = ['artisan', 'ide-helper:models'];
+<<<<<<< .merge_file_zA4CJB
         Assert::assertSame([], (new TranslationFile())->getRows());
+=======
+        Assert::assertSame([], (new TranslationFile)->getRows());
+>>>>>>> .merge_file_aWv0C1
         $_SERVER['argv'] = $previousArgv;
 
         $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock): void {
             $mock->shouldReceive('execute')->andThrow(new \RuntimeException('boom'));
         });
+<<<<<<< .merge_file_zA4CJB
         Assert::assertSame([], (new TranslationFile())->getRows());
+=======
+        Assert::assertSame([], (new TranslationFile)->getRows());
+>>>>>>> .merge_file_aWv0C1
 
         $bad = sys_get_temp_dir().'/tf_bad_'.uniqid().'.php';
         file_put_contents($bad, '<?php throw new Exception("x");');
@@ -882,17 +1069,29 @@ describe('Lang 100% — Models policies providers views', function (): void {
                 123,
             ]);
         });
+<<<<<<< .merge_file_zA4CJB
         $rows = (new TranslationFile())->getRows();
+=======
+        $rows = (new TranslationFile)->getRows();
+>>>>>>> .merge_file_aWv0C1
         Assert::assertNotEmpty($rows);
         unlink($bad);
     });
 
     test('TranslationData throws when namespace missing or file not array', function (): void {
+<<<<<<< .merge_file_zA4CJB
         app()->instance('translator', new class()
         {
             public function getLoader(): object
             {
                 return new class()
+=======
+        app()->instance('translator', new class
+        {
+            public function getLoader(): object
+            {
+                return new class
+>>>>>>> .merge_file_aWv0C1
                 {
                     /** @return array<string, string> */
                     public function namespaces(): array
@@ -925,7 +1124,11 @@ describe('Lang 100% — Models policies providers views', function (): void {
     });
 
     test('TranslatorAdapter covers array and non-string translation results', function (): void {
+<<<<<<< .merge_file_zA4CJB
         $loader = new ArrayLoader();
+=======
+        $loader = new ArrayLoader;
+>>>>>>> .merge_file_aWv0C1
         $loader->addMessages('it', 'm', [
             'tree' => ['k' => 'v'],
             'num' => 5,
@@ -991,21 +1194,33 @@ describe('Lang 100% — Models policies providers views', function (): void {
 
     test('ThemeComposer covers invalid config admin url and missing current lang', function (): void {
         config(['laravellocalization.supportedLocales' => 'bad']);
+<<<<<<< .merge_file_zA4CJB
         expect(fn () => (new ThemeComposer())->languages())->toThrow(\Exception::class);
+=======
+        expect(fn () => (new ThemeComposer)->languages())->toThrow(\Exception::class);
+>>>>>>> .merge_file_aWv0C1
 
         config([
             'laravellocalization.supportedLocales' => [
                 'it' => 'nope',
             ],
         ]);
+<<<<<<< .merge_file_zA4CJB
         expect(fn () => (new ThemeComposer())->languages())->toThrow(\InvalidArgumentException::class);
+=======
+        expect(fn () => (new ThemeComposer)->languages())->toThrow(\InvalidArgumentException::class);
+>>>>>>> .merge_file_aWv0C1
 
         config([
             'laravellocalization.supportedLocales' => [
                 'it' => ['name' => 'Italiano'],
             ],
         ]);
+<<<<<<< .merge_file_zA4CJB
         expect(fn () => (new ThemeComposer())->languages())->toThrow(\InvalidArgumentException::class);
+=======
+        expect(fn () => (new ThemeComposer)->languages())->toThrow(\InvalidArgumentException::class);
+>>>>>>> .merge_file_aWv0C1
 
         config([
             'laravellocalization.supportedLocales' => [
@@ -1014,7 +1229,11 @@ describe('Lang 100% — Models policies providers views', function (): void {
             ],
         ]);
         app()->setLocale('it');
+<<<<<<< .merge_file_zA4CJB
         $composer = new ThemeComposer();
+=======
+        $composer = new ThemeComposer;
+>>>>>>> .merge_file_aWv0C1
         Assert::assertCount(2, $composer->languages());
 
         $request = request();

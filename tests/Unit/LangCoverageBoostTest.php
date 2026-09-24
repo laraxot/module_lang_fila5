@@ -6,6 +6,10 @@ namespace Modules\Lang\Tests\Unit;
 
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
+<<<<<<< .merge_file_NQlOQL
+=======
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+>>>>>>> .merge_file_fHe2ff
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\MergeTranslationsAction;
@@ -81,7 +85,11 @@ describe('Lang coverage boost — Actions', function (): void {
         $path = sys_get_temp_dir().'/lang_write_test_'.uniqid().'.php';
 
         try {
+<<<<<<< .merge_file_NQlOQL
             app()->instance('cache', new class()
+=======
+            app()->instance('cache', new class
+>>>>>>> .merge_file_fHe2ff
             {
                 public function flush(): void {}
             });
@@ -106,24 +114,37 @@ describe('Lang coverage boost — Actions', function (): void {
 
 describe('Lang coverage boost — Policies', function (): void {
     test('TranslationPolicy delegates to permissions', function (): void {
+<<<<<<< .merge_file_NQlOQL
         $policy = new TranslationPolicy();
+=======
+        $policy = new TranslationPolicy;
+>>>>>>> .merge_file_fHe2ff
         $allowed = langFakeUser(['translation.viewAny', 'translation.view', 'translation.create']);
         $denied = langFakeUser([]);
 
         Assert::assertTrue($policy->viewAny($allowed));
+<<<<<<< .merge_file_NQlOQL
         Assert::assertTrue($policy->view($allowed, new Translation()));
+=======
+        Assert::assertTrue($policy->view($allowed, new Translation));
+>>>>>>> .merge_file_fHe2ff
         Assert::assertTrue($policy->create($allowed));
         Assert::assertFalse($policy->viewAny($denied));
     });
 
     test('super-admin bypasses TranslationPolicy checks', function (): void {
+<<<<<<< .merge_file_NQlOQL
         $policy = new TranslationPolicy();
+=======
+        $policy = new TranslationPolicy;
+>>>>>>> .merge_file_fHe2ff
         $superAdmin = langFakeUser(superAdmin: true);
 
         Assert::assertTrue($policy->before($superAdmin, 'viewAny'));
     });
 
     test('PostPolicy and TranslationFilePolicy enforce permissions', function (): void {
+<<<<<<< .merge_file_NQlOQL
         $postPolicy = new PostPolicy();
         $filePolicy = new TranslationFilePolicy();
         $user = langFakeUser(['post.update', 'translation_file.delete']);
@@ -131,6 +152,15 @@ describe('Lang coverage boost — Policies', function (): void {
         Assert::assertTrue($postPolicy->update($user, new Post()));
         Assert::assertTrue($filePolicy->delete($user, new TranslationFile()));
         Assert::assertFalse($postPolicy->delete(langFakeUser([]), new Post()));
+=======
+        $postPolicy = new PostPolicy;
+        $filePolicy = new TranslationFilePolicy;
+        $user = langFakeUser(['post.update', 'translation_file.delete']);
+
+        Assert::assertTrue($postPolicy->update($user, new Post));
+        Assert::assertTrue($filePolicy->delete($user, new TranslationFile));
+        Assert::assertFalse($postPolicy->delete(langFakeUser([]), new Post));
+>>>>>>> .merge_file_fHe2ff
     });
 });
 
@@ -150,16 +180,27 @@ describe('Lang coverage boost — Filament static', function (): void {
 
 describe('Lang coverage boost — UI and data', function (): void {
     test('translation file schemas and pages build executable structures', function (): void {
+<<<<<<< .merge_file_NQlOQL
         $formSchema = (new TranslationFileForm())->getFormSchema();
         $infolistSchema = (new TranslationFileInfolist())->getInfolistSchema();
         $tableColumns = (new TranslationFilesTable())->getTableColumns();
+=======
+        $formSchema = (new TranslationFileForm)->getFormSchema();
+        $infolistSchema = (new TranslationFileInfolist)->getInfolistSchema();
+        $tableColumns = (new TranslationFilesTable)->getTableColumns();
+>>>>>>> .merge_file_fHe2ff
 
         Assert::assertArrayHasKey('name', $formSchema);
         Assert::assertArrayHasKey('id', $infolistSchema);
         Assert::assertArrayHasKey('created_at', $tableColumns);
 
+<<<<<<< .merge_file_NQlOQL
         $listPage = new ListTranslationFiles();
         $editPage = new EditTranslationFile();
+=======
+        $listPage = new ListTranslationFiles;
+        $editPage = new EditTranslationFile;
+>>>>>>> .merge_file_fHe2ff
 
         $builtFields = $editPage->makeFromArray([
             'title' => 'Hello',
@@ -176,6 +217,7 @@ describe('Lang coverage boost — UI and data', function (): void {
     });
 
     test('language widget and blade components expose runtime data', function (): void {
+<<<<<<< .merge_file_NQlOQL
         $widget = new LanguageSwitcherWidget();
 
         Assert::assertTrue(LanguageSwitcherWidget::canView());
@@ -183,14 +225,30 @@ describe('Lang coverage boost — UI and data', function (): void {
         $firstLocale = $widget->getAvailableLocales()->first();
         Assert::assertNotNull($firstLocale);
         Assert::assertSame('it', $firstLocale['code']);
+=======
+        $widget = new LanguageSwitcherWidget;
+
+        Assert::assertTrue(LanguageSwitcherWidget::canView());
+        $supportedCodes = array_keys(LaravelLocalization::getSupportedLocales());
+        Assert::assertSame($supportedCodes, $widget->getAvailableLocales()->pluck('code')->all());
+        $firstLocale = $widget->getAvailableLocales()->first();
+        Assert::assertNotNull($firstLocale);
+        Assert::assertContains($firstLocale['code'], $supportedCodes);
+>>>>>>> .merge_file_fHe2ff
 
         app('request')->server->set('REQUEST_URI', '/it/example');
         app('request')->server->set('PATH_INFO', '/it/example');
         app()->setLocale('it');
 
+<<<<<<< .merge_file_NQlOQL
         Assert::assertSame(url('en'), $widget->getLanguageUrl('en'));
 
         $component = new LanguageSwitcher();
+=======
+        Assert::assertStringContainsString('en', $widget->getLanguageUrl('en'));
+
+        $component = new LanguageSwitcher;
+>>>>>>> .merge_file_fHe2ff
         $rendered = $component->render();
 
         Assert::assertInstanceOf(View::class, $rendered);
@@ -216,7 +274,11 @@ describe('Lang coverage boost — UI and data', function (): void {
         ]);
         app()->setLocale('it');
 
+<<<<<<< .merge_file_NQlOQL
         $composer = new ThemeComposer();
+=======
+        $composer = new ThemeComposer;
+>>>>>>> .merge_file_fHe2ff
         $languages = $composer->languages();
         $others = $composer->otherLanguages();
 
@@ -268,7 +330,11 @@ describe('Lang coverage boost — UI and data', function (): void {
         Assert::assertSame($filePath, $translationData->getFilename());
         Assert::assertSame(['welcome' => 'Ciao'], $translationData->getData());
 
+<<<<<<< .merge_file_NQlOQL
         $loader = new ArrayLoader();
+=======
+        $loader = new ArrayLoader;
+>>>>>>> .merge_file_fHe2ff
         $loader->addMessages('it', 'messages', ['known' => 'Valore']);
         $adapter = new TranslatorAdapter($loader, 'it');
 
@@ -287,7 +353,11 @@ describe('Lang coverage boost — UI and data', function (): void {
 
 describe('Lang coverage boost — Post accessors', function (): void {
     test('Post mutators and accessors work without persisting', function (): void {
+<<<<<<< .merge_file_NQlOQL
         $post = new Post();
+=======
+        $post = new Post;
+>>>>>>> .merge_file_fHe2ff
         $post->setTitleAttribute('My Title');
 
         Assert::assertSame('My Title', $post->getAttributes()['title']);
@@ -305,7 +375,11 @@ describe('Lang coverage boost — Post accessors', function (): void {
     });
 
     test('Post guid accessor slugifies fallback title', function (): void {
+<<<<<<< .merge_file_NQlOQL
         $post = new Post();
+=======
+        $post = new Post;
+>>>>>>> .merge_file_fHe2ff
         $post->setRawAttributes(['title' => 'Hello World']);
 
         Assert::assertSame('hello-world', $post->getGuidAttribute(null));
