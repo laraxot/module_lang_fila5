@@ -1,4 +1,17 @@
+<<<<<<< .merge_file_5Hx0tg
 <<<<<<< .merge_file_l9uFCx
+=======
+<<<<<<< .merge_file_dreOOJ
+=======
+<<<<<<< .merge_file_DzqLKu
+=======
+<<<<<<< .merge_file_b8TUo7
+=======
+<<<<<<< .merge_file_ziJ4x3
+=======
+<<<<<<< .merge_file_l9uFCx
+>>>>>>> .merge_file_Jd1Usi
+>>>>>>> .merge_file_1wr6h7
 ---
 title: "🚀 Benvenuto in Laraxot PTVX"
 module: "Lang"
@@ -10,8 +23,19 @@ qmd: "git conflicts resolution summary"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+<<<<<<< .merge_file_5Hx0tg
 =======
 >>>>>>> .merge_file_jJPNpy
+=======
+<<<<<<< .merge_file_DzqLKu
+=======
+=======
+>>>>>>> .merge_file_jJPNpy
+>>>>>>> .merge_file_FuSC5y
+>>>>>>> .merge_file_9sXiLk
+>>>>>>> .merge_file_Jd1Usi
+>>>>>>> .merge_file_oYEm5m
+>>>>>>> .merge_file_1wr6h7
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>
   
@@ -97,8 +121,30 @@ Questo progetto è open-source e disponibile sotto la [Licenza MIT](../../LICENS
 
 <div align="center">
   <sub>Costruito con ❤️ dal team Base Predict Fila3 Mono</sub>
+<<<<<<< .merge_file_5Hx0tg
+=======
+<<<<<<< .merge_file_dreOOJ
+</div>
+=======
+<<<<<<< .merge_file_DzqLKu
+</div>
+=======
+<<<<<<< .merge_file_b8TUo7
+</div>
+=======
+<<<<<<< .merge_file_ziJ4x3
+</div>
+=======
+>>>>>>> .merge_file_1wr6h7
 <<<<<<< .merge_file_l9uFCx
 </div>
 =======
 </div>
 >>>>>>> .merge_file_jJPNpy
+<<<<<<< .merge_file_5Hx0tg
+=======
+>>>>>>> .merge_file_FuSC5y
+>>>>>>> .merge_file_9sXiLk
+>>>>>>> .merge_file_Jd1Usi
+>>>>>>> .merge_file_oYEm5m
+>>>>>>> .merge_file_1wr6h7
