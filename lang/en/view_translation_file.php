@@ -11,14 +11,11 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => '100',
+        'group' => 'Missing Group',
         'name' => 'View Translation File',
         'plural' => 'View Translation File',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
