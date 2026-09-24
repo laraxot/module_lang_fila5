@@ -4,4 +4,8 @@
 
 ---
 
+<<<<<<< .merge_file_A87x3U
 **Nota:**
+=======
+**Nota:**
+>>>>>>> .merge_file_wXJTqA

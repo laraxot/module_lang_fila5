@@ -1,5 +1,8 @@
+<<<<<<< .merge_file_T0b7eh
 # Changelog
 
+=======
+>>>>>>> .merge_file_Inerc4
 ## [1.0.0-dev.15](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.14...v1.0.0-dev.15) (2026-08-25)
 
 ### Bug Fixes

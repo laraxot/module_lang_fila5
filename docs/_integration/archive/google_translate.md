@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_GDTFRc
 ---
 title: "google_translate"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "google translate"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> .merge_file_ilf0L0
 # google_translate
 
 <!-- Contenuto migrato da _docs/google_translate.txt -->

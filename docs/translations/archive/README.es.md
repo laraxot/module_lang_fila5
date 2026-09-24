@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Bu6zjH
 ---
 title: "🚀 Bienvenido a Laraxot PTVX"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "git conflicts resolution summary"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> .merge_file_gCMlqU
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>
   
@@ -94,4 +97,8 @@ Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](..
 
 <div align="center">
   <sub>Construido con ❤️ por el equipo Base Predict Fila3 Mono</sub>
+<<<<<<< .merge_file_Bu6zjH
 </div>
+=======
+</div>
+>>>>>>> .merge_file_gCMlqU

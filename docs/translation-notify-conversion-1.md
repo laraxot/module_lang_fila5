@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_b9p58J
 ---
 title: "Standardizzazione Traduzioni Modulo Notify"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "migrazione filament"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> .merge_file_o4wTlV
 # Standardizzazione Traduzioni Modulo Notify
 
 ## Panoramica delle Problematiche
@@ -34,9 +37,15 @@ Durante l'analisi del codice è emerso che numerosi file di traduzione nel modul
 ## Standardizzazione Implementata
 
 ### Documenti di Riferimento
+<<<<<<< .merge_file_b9p58J
 - [Regole di Naming per i File di Traduzione](translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](translation-file-structure-guide.md)
 - [Progresso della Standardizzazione](translation_standards_progress.md)
+=======
+- [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
+- [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
+- [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
+>>>>>>> .merge_file_o4wTlV
 
 ### Struttura Standard Richiesta
 
@@ -111,6 +120,12 @@ La corretta implementazione degli standard di traduzione garantisce:
 
 ## Collegamenti alla Documentazione
 
+<<<<<<< .merge_file_b9p58J
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
+=======
+- [Regole Generali per le Traduzioni](./TRANSLATION_KEYS_RULES.md)
+- [Best Practices per le Traduzioni](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+- [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
+>>>>>>> .merge_file_o4wTlV

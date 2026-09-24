@@ -9,7 +9,6 @@ This directory contains documentation for the module.
 
 ## Guidelines
 
-<<<<<<< HEAD
 - Gestione file traduzioni Laravel (.php e .json)
 - Editor Filament per traduzioni multi-lingua
 - Sincronizzazione traduzioni tra lingue
@@ -360,10 +359,3 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse --level=max Modules/Lang
 **Last Updated**: 2026-07-14  
 **Requirements**: PHP 8.3+, Laravel 13  
 **PHPStan Level**: 10 (Compliant)
-=======
-Documentation should be:
-- Clear and concise
-- Example-driven
-- Updated with code changes
-- Use Markdown format (.md)
->>>>>>> laraxot/dev
