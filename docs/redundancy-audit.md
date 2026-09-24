@@ -5,7 +5,7 @@ module: Lang
 tags: [redundancy, duplicate-code, docs]
 created: 2026-05-21
 related:
-  - https://github.com/laraxot/base_fixcity_fila5/issues/89
+  - https://github.com/laraxot/platform/issues/89
 ---
 
 # Lang redundancy audit 2026-05-21
@@ -16,6 +16,7 @@ Findings:
 - Heavy docs duplication: locale management, quick reference, translation strategies/process, implementation guide, and archive/historical copies.
 - `docs/archive` and `docs/translations/archive` duplicate active translation docs.
 - Migration directory case-only duplicate: `database/Migrations` vs `database/migrations` — **risolto 2026-07-01**; vedi [wiki/concepts/migration-path-canonical.md](wiki/concepts/migration-path-canonical.md).
+- Anti-pattern annidato `database/migrations/Migrations/` — reintrodotto per errore in `f840e0cc0`, rimosso; guard in `audit-database-folder-lowercase.sh`.
 - Docs index variants include `INDEX.md`/`index.md` and `00-INDEX.md`/`00-index.md`.
 
 Risk:
