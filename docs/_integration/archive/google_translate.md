@@ -1,4 +1,17 @@
+<<<<<<< .merge_file_YN41UZ
 <<<<<<< .merge_file_GDTFRc
+=======
+<<<<<<< .merge_file_4yZ4PK
+=======
+<<<<<<< .merge_file_Y8qirk
+=======
+<<<<<<< .merge_file_hH4cT5
+=======
+<<<<<<< .merge_file_lHyoqG
+=======
+<<<<<<< .merge_file_GDTFRc
+>>>>>>> .merge_file_sgsWwb
+>>>>>>> .merge_file_9cMYVu
 ---
 title: "google_translate"
 module: "Lang"
@@ -10,8 +23,19 @@ qmd: "google translate"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+<<<<<<< .merge_file_YN41UZ
 =======
 >>>>>>> .merge_file_ilf0L0
+=======
+<<<<<<< .merge_file_Y8qirk
+=======
+=======
+>>>>>>> .merge_file_ilf0L0
+>>>>>>> .merge_file_5OzvgQ
+>>>>>>> .merge_file_8eaFQy
+>>>>>>> .merge_file_sgsWwb
+>>>>>>> .merge_file_OckBsM
+>>>>>>> .merge_file_9cMYVu
 # google_translate
 
 <!-- Contenuto migrato da _docs/google_translate.txt -->

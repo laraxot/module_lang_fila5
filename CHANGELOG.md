@@ -1,8 +1,3 @@
-<<<<<<< .merge_file_T0b7eh
-# Changelog
-
-=======
->>>>>>> .merge_file_Inerc4
 ## [1.0.0-dev.15](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.14...v1.0.0-dev.15) (2026-08-25)
 
 ### Bug Fixes
@@ -83,3 +78,11 @@
 ### Bug Fixes
 
 * **Lang:** PHPStan L10 after git sync ([f52ef6c](https://github.com/laraxot/module_lang_fila5/commit/f52ef6c00a1fa74406ca03177370a9827791e021))
+
+# Changelog
+
+All notable changes to `:package_name` will be documented in this file.
+
+## 1.0.0 - 202X-XX-XX
+
+- initial release

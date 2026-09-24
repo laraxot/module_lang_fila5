@@ -1,3 +1,10 @@
+<<<<<<< .merge_file_ZAdbW0
+=======
+<<<<<<< .merge_file_FXqwTi
+=======
+<<<<<<< .merge_file_Y4KlSI
+=======
+>>>>>>> .merge_file_61wqdG
 <<<<<<< .merge_file_dcStbc
 ---
 title: "Convenzioni per i Link nella Documentazione"
@@ -12,6 +19,11 @@ related:
 ---
 =======
 >>>>>>> .merge_file_eMmLsl
+<<<<<<< .merge_file_ZAdbW0
+=======
+>>>>>>> .merge_file_0Cm3HZ
+>>>>>>> .merge_file_rrUVmj
+>>>>>>> .merge_file_61wqdG
 # Convenzioni per i Link nella Documentazione
 
 ## Regole Fondamentali per i Link Markdown
@@ -83,11 +95,25 @@ Prima di fare commit dei documenti:
 
 ### Da Modules/Lang/docs/ a Modules/Notify/docs/
 ```markdown
+<<<<<<< .merge_file_ZAdbW0
+=======
+<<<<<<< .merge_file_FXqwTi
+[Convenzioni Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
+=======
+<<<<<<< .merge_file_Y4KlSI
+[Convenzioni Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
+=======
+>>>>>>> .merge_file_61wqdG
 <<<<<<< .merge_file_dcStbc
 [Convenzioni Notify](translation_conventions.md)
 =======
 [Convenzioni Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
 >>>>>>> .merge_file_eMmLsl
+<<<<<<< .merge_file_ZAdbW0
+=======
+>>>>>>> .merge_file_0Cm3HZ
+>>>>>>> .merge_file_rrUVmj
+>>>>>>> .merge_file_61wqdG
 ```
 
 ### Da Modules/Lang/docs/ a docs/ nella root
@@ -97,11 +123,25 @@ Prima di fare commit dei documenti:
 
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella
 ```markdown
+<<<<<<< .merge_file_ZAdbW0
+=======
+<<<<<<< .merge_file_FXqwTi
+[Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+<<<<<<< .merge_file_Y4KlSI
+[Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+>>>>>>> .merge_file_61wqdG
 <<<<<<< .merge_file_dcStbc
 [Best Practices](translation-keys-best-practices.md)
 =======
 [Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> .merge_file_eMmLsl
+<<<<<<< .merge_file_ZAdbW0
+=======
+>>>>>>> .merge_file_0Cm3HZ
+>>>>>>> .merge_file_rrUVmj
+>>>>>>> .merge_file_61wqdG
 ```
 
 ## Vantaggi dei Percorsi Relativi
@@ -109,8 +149,22 @@ Prima di fare commit dei documenti:
 1. **Portabilità**: La documentazione funziona in qualsiasi ambiente
 2. **Manutenibilità**: Se la struttura cambia, sono necessarie meno modifiche
 3. **Collaborazione**: Facilita il lavoro di più sviluppatori
+<<<<<<< .merge_file_ZAdbW0
+=======
+<<<<<<< .merge_file_FXqwTi
+4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
+=======
+<<<<<<< .merge_file_Y4KlSI
+4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
+=======
+>>>>>>> .merge_file_61wqdG
 <<<<<<< .merge_file_dcStbc
 4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
 =======
 4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
 >>>>>>> .merge_file_eMmLsl
+<<<<<<< .merge_file_ZAdbW0
+=======
+>>>>>>> .merge_file_0Cm3HZ
+>>>>>>> .merge_file_rrUVmj
+>>>>>>> .merge_file_61wqdG

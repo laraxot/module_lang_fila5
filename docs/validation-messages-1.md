@@ -1,3 +1,10 @@
+<<<<<<< .merge_file_jcTLNT
+=======
+<<<<<<< .merge_file_CQjoJ4
+=======
+<<<<<<< .merge_file_Jgm7sD
+=======
+>>>>>>> .merge_file_bJkqzt
 <<<<<<< .merge_file_Mpv96E
 ---
 title: "Gestione delle Traduzioni dei Messaggi di Validazione"
@@ -12,6 +19,11 @@ related:
 ---
 =======
 >>>>>>> .merge_file_J9iREq
+<<<<<<< .merge_file_jcTLNT
+=======
+>>>>>>> .merge_file_kw27lJ
+>>>>>>> .merge_file_H4P6kT
+>>>>>>> .merge_file_bJkqzt
 # Gestione delle Traduzioni dei Messaggi di Validazione
 
 ## Obiettivo
@@ -164,11 +176,25 @@ class StoreOrderRequest extends FormRequest
 ## 9. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
+<<<<<<< .merge_file_jcTLNT
+=======
+<<<<<<< .merge_file_CQjoJ4
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+<<<<<<< .merge_file_Jgm7sD
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+>>>>>>> .merge_file_bJkqzt
 <<<<<<< .merge_file_Mpv96E
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
 =======
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> .merge_file_J9iREq
+<<<<<<< .merge_file_jcTLNT
+=======
+>>>>>>> .merge_file_kw27lJ
+>>>>>>> .merge_file_H4P6kT
+>>>>>>> .merge_file_bJkqzt
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)
