@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_GSvee9
 ---
 title: "Plurale/Singolare e Localizzazione Date/Valute"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> .merge_file_rOA1Fh
 # Plurale/Singolare e Localizzazione Date/Valute
 
 ## Pluralizzazione
@@ -190,7 +193,11 @@ related:
 ## 4. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
+<<<<<<< .merge_file_GSvee9
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
+=======
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+>>>>>>> .merge_file_rOA1Fh
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)
