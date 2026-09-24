@@ -1,3 +1,23 @@
+<<<<<<< .merge_file_b8TUo7
+=======
+<<<<<<< .merge_file_ziJ4x3
+=======
+<<<<<<< .merge_file_l9uFCx
+---
+title: "🚀 Benvenuto in Laraxot PTVX"
+module: "Lang"
+type: concept
+tags: [git, conflicts, resolution, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "git conflicts resolution summary"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+=======
+>>>>>>> .merge_file_jJPNpy
+>>>>>>> .merge_file_FuSC5y
+>>>>>>> .merge_file_9sXiLk
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>
   
@@ -83,4 +103,16 @@ Questo progetto è open-source e disponibile sotto la [Licenza MIT](../../LICENS
 
 <div align="center">
   <sub>Costruito con ❤️ dal team Base Predict Fila3 Mono</sub>
+<<<<<<< .merge_file_b8TUo7
 </div>
+=======
+<<<<<<< .merge_file_ziJ4x3
+</div>
+=======
+<<<<<<< .merge_file_l9uFCx
+</div>
+=======
+</div>
+>>>>>>> .merge_file_jJPNpy
+>>>>>>> .merge_file_FuSC5y
+>>>>>>> .merge_file_9sXiLk

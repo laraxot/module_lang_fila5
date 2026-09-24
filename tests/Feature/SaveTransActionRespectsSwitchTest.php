@@ -9,7 +9,19 @@ use function Safe\file_get_contents;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_sOHGRb
 /*
+=======
+<<<<<<< .merge_file_oW38vF
+/**
+=======
+<<<<<<< .merge_file_Zmh6aB
+/*
+=======
+/**
+>>>>>>> .merge_file_2IwgNw
+>>>>>>> .merge_file_svrvNy
+>>>>>>> .merge_file_vHlNyB
  * `AutoLabelAction` chiama `SaveTransAction` ogni volta che una chiave manca, e la
  * suite passa su migliaia di etichette: senza interruttore i test riscrivono i file
  * di lingua dell'albero di lavoro e lasciano in `git status` modifiche che nessuno

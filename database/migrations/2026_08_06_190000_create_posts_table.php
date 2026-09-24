@@ -1,12 +1,28 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_EgQrHQ
 
+=======
+<<<<<<< .merge_file_QPBytg
+
+=======
+>>>>>>> .merge_file_1D3Q9R
+>>>>>>> .merge_file_5GNBcs
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Lang\Models\Post;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< .merge_file_EgQrHQ
 return new class extends XotBaseMigration {
+=======
+<<<<<<< .merge_file_QPBytg
+return new class() extends XotBaseMigration
+=======
+return new class extends XotBaseMigration
+>>>>>>> .merge_file_1D3Q9R
+{
+>>>>>>> .merge_file_5GNBcs
     protected ?string $model_class = Post::class;
 
     public function up(): void

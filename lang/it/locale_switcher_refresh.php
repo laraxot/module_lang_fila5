@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-// Lang translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Lang/docs/wiki — domain i18n only.
-// File: lang/it/locale_switcher_refresh.php
 return [
     'fields' => [
         'locale' => [
@@ -26,8 +22,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Locale Switcher Refresh',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'sort' => '1',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [
