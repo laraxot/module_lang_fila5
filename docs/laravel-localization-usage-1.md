@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Y1SPLy
 ---
 title: "Utilizzo di mcamara/laravel-localization"
 module: "Lang"
@@ -9,11 +10,17 @@ qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> .merge_file_UGQSZQ
 # Utilizzo di mcamara/laravel-localization
 
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
+<<<<<<< .merge_file_Y1SPLy
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
+=======
+- [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+>>>>>>> .merge_file_UGQSZQ
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
