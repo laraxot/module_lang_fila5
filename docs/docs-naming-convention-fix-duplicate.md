@@ -1,23 +1,3 @@
-<<<<<<< .merge_file_Qj5JSf
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_H6pZE0
----
-title: "Correzione Convenzione Naming Cartelle Docs - Gennaio 2025"
-module: "Lang"
-type: concept
-tags: [phpstan, level10, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 fixes 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
-<<<<<<< .merge_file_Qj5JSf
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_H6pZE0
 # Correzione Convenzione Naming Cartelle Docs - Gennaio 2025
 
 ## Data Aggiornamento
