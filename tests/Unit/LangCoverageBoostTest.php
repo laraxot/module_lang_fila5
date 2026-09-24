@@ -6,11 +6,7 @@ namespace Modules\Lang\Tests\Unit;
 
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
-<<<<<<< HEAD
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-=======
-use Mockery;
->>>>>>> laraxot/dev
 use Mockery\MockInterface;
 use Modules\Lang\Actions\MergeTranslationsAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
@@ -48,22 +44,14 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 /**
-<<<<<<< HEAD
  * @param list<string> $permissions
  *
-=======
- * @param  list<string>  $permissions
->>>>>>> laraxot/dev
  * @return MockInterface&UserContract
  */
 function langFakeUser(array $permissions = [], bool $superAdmin = false): UserContract
 {
     /** @var MockInterface&UserContract $user */
-<<<<<<< HEAD
     $user = \Mockery::mock(UserContract::class);
-=======
-    $user = Mockery::mock(UserContract::class);
->>>>>>> laraxot/dev
     $user->shouldReceive('hasRole')
         ->with('super-admin')
         ->andReturn($superAdmin);
@@ -76,11 +64,7 @@ function langFakeUser(array $permissions = [], bool $superAdmin = false): UserCo
 }
 
 afterEach(function (): void {
-<<<<<<< HEAD
     \Mockery::close();
-=======
-    Mockery::close();
->>>>>>> laraxot/dev
 });
 
 describe('Lang coverage boost — Actions', function (): void {
@@ -98,16 +82,10 @@ describe('Lang coverage boost — Actions', function (): void {
         $path = sys_get_temp_dir().'/lang_write_test_'.uniqid().'.php';
 
         try {
-<<<<<<< HEAD
             app()->instance('cache', new class {
                 public function flush(): void
                 {
                 }
-=======
-            app()->instance('cache', new class()
-            {
-                public function flush(): void {}
->>>>>>> laraxot/dev
             });
 
             $result = app(WriteTranslationFileAction::class)->execute($path, [
@@ -203,28 +181,17 @@ describe('Lang coverage boost — UI and data', function (): void {
         $widget = new LanguageSwitcherWidget();
 
         Assert::assertTrue(LanguageSwitcherWidget::canView());
-<<<<<<< HEAD
         $supportedCodes = array_keys(LaravelLocalization::getSupportedLocales());
         Assert::assertSame($supportedCodes, $widget->getAvailableLocales()->pluck('code')->all());
         $firstLocale = $widget->getAvailableLocales()->first();
         Assert::assertNotNull($firstLocale);
         Assert::assertContains($firstLocale['code'], $supportedCodes);
-=======
-        Assert::assertCount(3, $widget->getAvailableLocales());
-        $firstLocale = $widget->getAvailableLocales()->first();
-        Assert::assertNotNull($firstLocale);
-        Assert::assertSame('it', $firstLocale['code']);
->>>>>>> laraxot/dev
 
         app('request')->server->set('REQUEST_URI', '/it/example');
         app('request')->server->set('PATH_INFO', '/it/example');
         app()->setLocale('it');
 
-<<<<<<< HEAD
         Assert::assertStringContainsString('en', $widget->getLanguageUrl('en'));
-=======
-        Assert::assertSame(url('en'), $widget->getLanguageUrl('en'));
->>>>>>> laraxot/dev
 
         $component = new LanguageSwitcher();
         $rendered = $component->render();
@@ -275,7 +242,6 @@ describe('Lang coverage boost — UI and data', function (): void {
         mkdir(dirname($filePath), 0o755, true);
         TestCase::createTranslationFile($filePath, ['welcome' => 'Ciao']);
 
-<<<<<<< HEAD
         app()->instance('translator', new class($langDir) {
             public function __construct(private readonly string $path)
             {
@@ -287,17 +253,6 @@ describe('Lang coverage boost — UI and data', function (): void {
                     public function __construct(private readonly string $path)
                     {
                     }
-=======
-        app()->instance('translator', new class($langDir)
-        {
-            public function __construct(private readonly string $path) {}
-
-            public function getLoader(): object
-            {
-                return new class($this->path)
-                {
-                    public function __construct(private readonly string $path) {}
->>>>>>> laraxot/dev
 
                     /** @return array<string, string> */
                     public function namespaces(): array

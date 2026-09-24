@@ -34,11 +34,7 @@ class AutoLabelAction
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);
         $class = Arr::first($backtrace_slice, function (array $item) use ($component) {
-<<<<<<< HEAD
             if ('execute' === $item['function']) {
-=======
-            if ($item['function'] === 'execute') {
->>>>>>> laraxot/dev
                 return false;
             }
 
@@ -65,11 +61,7 @@ class AutoLabelAction
             if (isset($class['object'])) {
                 $object_class = $class['object']::class;
             }
-<<<<<<< HEAD
             if (isset($class['class']) && null === $object_class) {
-=======
-            if (isset($class['class']) && $object_class === null) {
->>>>>>> laraxot/dev
                 $object_class = $class['class'];
             }
             if (is_null($object_class)) {
@@ -90,15 +82,9 @@ class AutoLabelAction
             Assert::string($val = $component->getLabel());
             $label_tkey = $trans_key.'.steps.'.$val.'';
         }
-<<<<<<< HEAD
         if (null === $label_tkey && $component instanceof Section) {
             $val = $component->getHeading();
             if (null === $val) {
-=======
-        if ($label_tkey === null && $component instanceof Section) {
-            $val = $component->getHeading();
-            if ($val === null) {
->>>>>>> laraxot/dev
                 // Una sezione senza titolo e' una scelta: raggruppa i campi senza
                 // annunciarsi. Serve comunque un segmento di chiave, e `empty` lo fa, ma
                 // il valore salvato deve restare vuoto — altrimenti la prima visita
@@ -112,11 +98,7 @@ class AutoLabelAction
             }
             $label_tkey = $trans_key.'.sections.'.$val.'';
         }
-<<<<<<< HEAD
         if (null === $label_tkey && method_exists($component, 'getName')) {
-=======
-        if ($label_tkey === null && method_exists($component, 'getName')) {
->>>>>>> laraxot/dev
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.fields.'.$val.'';
         }
@@ -156,11 +138,7 @@ class AutoLabelAction
 
         }
         */
-<<<<<<< HEAD
         if ('icon' === $type && app(SvgExistsAction::class)->execute($label)) {
-=======
-        if ($type === 'icon' && app(SvgExistsAction::class)->execute($label)) {
->>>>>>> laraxot/dev
             if (method_exists($component, 'iconButton')) {
                 $component->iconButton();
             }
@@ -169,11 +147,7 @@ class AutoLabelAction
             // $component->label('FIX:'.$label_key);
             return $component;
         }
-<<<<<<< HEAD
         if ('icon' === $type && ! app(SvgExistsAction::class)->execute($label)) {
-=======
-        if ($type === 'icon' && ! app(SvgExistsAction::class)->execute($label)) {
->>>>>>> laraxot/dev
             // $component->{$type}($label);
             if (method_exists($component, 'iconButton')) {
                 $component->iconButton();
