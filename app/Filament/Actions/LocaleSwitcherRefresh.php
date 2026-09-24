@@ -37,12 +37,13 @@ class LocaleSwitcherRefresh extends XotBaseAction
                     ->reactive()
                     ->required(),
             ])
-            ->action(function (array $data) {
-                /* @var array<string, mixed> $data */
-                $this->applyLocale($data);
+            ->action(
+                function (array $data) {
+                    $this->applyLocale(['locale' => $data['locale'] ?? null]);
 
-                return redirect(request()->header('Referer'));
-            })
+                    return redirect(request()->header('Referer'));
+                }
+            )
             ->modalHeading('Cambia lingua')
             // ->icon('heroicon-o-language')
             ->color('gray');
