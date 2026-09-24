@@ -2,15 +2,11 @@
 
 declare(strict_types=1);
 
-// Lang translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Lang/docs/wiki — domain i18n only.
-// File: lang/en/translation_file.php
 return [
-    // Lang — translation keys (no business logic).
-    // Lang — translation keys (no business logic).
     'model' => [
         'label' => 'translation file.model',
+        'placeholder' => 'Seleziona file traduzione',
+        'helper_text' => 'File di traduzione per la gestione delle lingue',
     ],
     'navigation' => [
         'label' => 'Navigation Label',
@@ -69,6 +65,7 @@ return [
                         'description' => 'snapshots.fields.updated_at.label',
                         'helper_text' => 'snapshots.fields.updated_at.label',
                         'placeholder' => 'snapshots.fields.updated_at.label',
+                        'label' => 'Etichetta Data',
                     ],
                 ],
             ],
@@ -88,14 +85,25 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'placeholder' => 'Inserisci chiave traduzione',
+            'help' => 'Chiave identificativa della traduzione',
+        ],
+        'delete' => [
+            'label' => 'delete',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [
         'create' => [
             'label' => 'create',
+            'tooltip' => 'Crea nuovo file di traduzione',
+            'success' => 'File di traduzione creato con successo',
         ],
         'lang' => [
             'label' => 'lang',
+            'tooltip' => 'Seleziona lingua',
         ],
     ],
     'label' => 'Missing Label',

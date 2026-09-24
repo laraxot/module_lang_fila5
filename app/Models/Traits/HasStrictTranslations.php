@@ -18,17 +18,27 @@ trait HasStrictTranslations
     }
 
     /**
+<<<<<<< .merge_file_tJj3zB
      * @param string $key               Il nome dell'attributo da tradurre
      * @param string $locale            Il codice della lingua richiesta
      * @param bool   $useFallbackLocale Se utilizzare o meno la lingua di fallback
      *
+=======
+     * @param  string  $key  Il nome dell'attributo da tradurre
+     * @param  string  $locale  Il codice della lingua richiesta
+     * @param  bool  $useFallbackLocale  Se utilizzare o meno la lingua di fallback
+>>>>>>> .merge_file_EdQiLn
      * @return string|array<string, mixed>|int|null Il valore tradotto dell'attributo
      */
     public function getTranslation(string $key, string $locale, bool $useFallbackLocale = true): string|array|int|null
     {
         $value = $this->spatieGetTranslation($key, $locale, $useFallbackLocale);
 
+<<<<<<< .merge_file_tJj3zB
         if (is_string($value) || is_int($value) || null === $value) {
+=======
+        if (is_string($value) || is_int($value) || $value === null) {
+>>>>>>> .merge_file_EdQiLn
             return $value;
         }
 
@@ -52,8 +62,12 @@ trait HasStrictTranslations
     }
 
     /**
+<<<<<<< .merge_file_tJj3zB
      * @param array<mixed, mixed> $value
      *
+=======
+     * @param  array<array-key, mixed>  $value
+>>>>>>> .merge_file_EdQiLn
      * @return array<string, mixed>
      */
     private static function normalizeTranslationArray(array $value): array
