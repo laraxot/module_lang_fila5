@@ -1,3 +1,14 @@
+---
+title: "FURIOUS LITIGATION: Why 'fields' Key is SACRED and IMMUTABLE"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # FURIOUS LITIGATION: Why "fields" Key is SACRED and IMMUTABLE
 
 **Date**: 2026-01-09 (Round 2)
@@ -333,7 +344,7 @@ Create custom PHPStan rule:
 **Before changing translation files, ALWAYS read**:
 1. `Modules/Lang/docs/critical-rules/fields-file-is-mandatory.md`
 2. `Modules/Lang/docs/architecture/autolabel-flow-complete.md`
-3. THIS FILE (fields-key-litigation-round2.md)
+3. THIS FILE (fields-key-litigation-2026-01-09-round2.md)
 
 ### 5. Mnemonic Device
 

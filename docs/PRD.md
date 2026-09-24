@@ -204,11 +204,25 @@ The Lang module provides a structured framework for managing lang operations wit
 
 ### 7.3 Technical Constraints
 - PHP 8.3+ required
+<<<<<<< .merge_file_EkeIIb
+=======
+<<<<<<< .merge_file_tW85bt
+- Laravel 12+ required
+=======
+<<<<<<< .merge_file_ij8WvT
+>>>>>>> .merge_file_bj1RbX
 <<<<<<< HEAD
 - Laravel 13+ required
 =======
 - Laravel 12+ required
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EkeIIb
+=======
+=======
+- Laravel 12+ required
+>>>>>>> .merge_file_zrnbbP
+>>>>>>> .merge_file_PryL0z
+>>>>>>> .merge_file_bj1RbX
 - Filament v5 for UI
 - MySQL 8.0+
 
@@ -253,6 +267,13 @@ The Lang module provides a structured framework for managing lang operations wit
 | Module | Self-contained Laravel module following Laraxot conventions |
 
 ### Related Documents
+<<<<<<< .merge_file_EkeIIb
+=======
+<<<<<<< .merge_file_tW85bt
+- [Architecture](ARCHITECTURE.md)
+=======
+<<<<<<< .merge_file_ij8WvT
+>>>>>>> .merge_file_bj1RbX
 <<<<<<< HEAD
 - [Architecture](architecture.md)
 =======
@@ -262,5 +283,12 @@ The Lang module provides a structured framework for managing lang operations wit
 - [Architecture](ARCHITECTURE.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EkeIIb
+=======
+=======
+- [Architecture](architecture.md)
+>>>>>>> .merge_file_zrnbbP
+>>>>>>> .merge_file_PryL0z
+>>>>>>> .merge_file_bj1RbX
 - [Technical Specification](TECH_SPEC.md)
 - [User Stories](epics/lang-epics-and-stories.md)

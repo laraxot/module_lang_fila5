@@ -1,3 +1,14 @@
+---
+title: "Integrazione tra mcamara/laravel-localization e Laravel Folio"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Integrazione tra mcamara/laravel-localization e Laravel Folio
 
 ## Obiettivo

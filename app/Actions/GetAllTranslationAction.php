@@ -4,12 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions;
 
-use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
+use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\glob;
-
-use Spatie\QueueableAction\QueueableAction;
 
 class GetAllTranslationAction
 {
@@ -18,42 +16,35 @@ class GetAllTranslationAction
     /**
      * Restituisce il path completo del file di traduzione dato un key.
      *
-     * @return array<int, array<string, mixed>>
+     * @return list<array{key: string, path: string}>
      */
     public function execute(): array
     {
-        /** @var list<string> $allowedLocales */
-        $allowedLocales = config('lang.available_locales', ['it', 'en']);
-        if (! is_array($allowedLocales)) {
-            $allowedLocales = ['it', 'en'];
-        }
-
         $lang = session()->get('locale');
-        if (is_string($lang) && in_array($lang, $allowedLocales, strict: true)) {
+        if (is_string($lang) && in_array($lang, ['it', 'en'], strict: true)) {
             app()->setLocale($lang);
         }
 
         $lang = app()->getLocale();
-        if (! in_array($lang, $allowedLocales, strict: true)) {
-            $lang = (string) config('app.locale', 'it');
-        }
-
         $path = base_path('Modules/*/lang/'.$lang.'/*.php');
         $files = glob($path);
 
-        /** @var array<int, array<string, mixed>> $result */
-        $result = Arr::map($files, function (string $file) {
-            $fileStr = $file;
-            $moduleLower = Str::of($fileStr)
+        $result = [];
+        foreach ($files as $file) {
+            if (! is_string($file)) {
+                continue;
+            }
+
+            $moduleLower = Str::of($file)
                 ->between('Modules/', '/lang/')
                 ->lower()
                 ->toString();
 
-            return [
-                'key' => $moduleLower.'::'.basename($fileStr, '.php'),
-                'path' => $fileStr,
+            $result[] = [
+                'key' => $moduleLower.'::'.basename($file, '.php'),
+                'path' => $file,
             ];
-        });
+        }
 
         return $result;
     }
