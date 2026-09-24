@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "Root file policy"
-module: "Lang"
-type: rule
-tags: [google, translate]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "google translate"
-related:
-  - "./italian-text-refined-audit-report.md"
----
->>>>>>> laraxot/dev
 # Root file policy
 
 Updated: 2026-07-08

@@ -211,6 +211,7 @@ rm -f \
   docs_naming_convention_fix.md \
   documentation_link_conventions.md \
   errori_comuni_traduzione.md \
+  lang-link.md \
   lang_link.md \
   lang-link.md \
   lang_service_helper_text_fix.md \
@@ -239,6 +240,9 @@ rm -f \
   REDUNDANCY_ANALYSIS.md \
   00-INDEX.md \
   00-index.md \
+  index.md \
+  INDEX.md
+  index.md
   INDEX.md \
   index.md
 

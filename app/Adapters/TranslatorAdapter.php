@@ -27,7 +27,6 @@ class TranslatorAdapter extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
-<<<<<<< HEAD
      * I parametri nativi restano `mixed` per compatibilita' LSP con
      * `Illuminate\Translation\Translator::get()`, che non dichiara tipi.
      *
@@ -35,9 +34,6 @@ class TranslatorAdapter extends LaravelTranslator
      * @param string               $key
      * @param string|null          $locale
      * @param bool                 $fallback
-=======
-     * @param array<string, mixed> $replace
->>>>>>> laraxot/dev
      *
      * @return string|array<array-key, mixed>
      */
