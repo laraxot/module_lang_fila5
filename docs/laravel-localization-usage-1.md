@@ -1,3 +1,10 @@
+<<<<<<< .merge_file_l3xSnY
+=======
+<<<<<<< .merge_file_0Ujnmj
+=======
+<<<<<<< .merge_file_Q93Pyt
+=======
+>>>>>>> .merge_file_BIj2I5
 <<<<<<< .merge_file_Y1SPLy
 ---
 title: "Utilizzo di mcamara/laravel-localization"
@@ -12,15 +19,34 @@ related:
 ---
 =======
 >>>>>>> .merge_file_UGQSZQ
+<<<<<<< .merge_file_l3xSnY
+=======
+>>>>>>> .merge_file_O5gVtj
+>>>>>>> .merge_file_oCAucT
+>>>>>>> .merge_file_BIj2I5
 # Utilizzo di mcamara/laravel-localization
 
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
+<<<<<<< .merge_file_l3xSnY
+=======
+<<<<<<< .merge_file_0Ujnmj
+- [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+<<<<<<< .merge_file_Q93Pyt
+- [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+>>>>>>> .merge_file_BIj2I5
 <<<<<<< .merge_file_Y1SPLy
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
 =======
 - [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> .merge_file_UGQSZQ
+<<<<<<< .merge_file_l3xSnY
+=======
+>>>>>>> .merge_file_O5gVtj
+>>>>>>> .merge_file_oCAucT
+>>>>>>> .merge_file_BIj2I5
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 

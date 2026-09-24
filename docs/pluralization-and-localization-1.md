@@ -1,3 +1,10 @@
+<<<<<<< .merge_file_NPHW6i
+=======
+<<<<<<< .merge_file_mNLlIN
+=======
+<<<<<<< .merge_file_ZjgysM
+=======
+>>>>>>> .merge_file_zcvcH0
 <<<<<<< .merge_file_GSvee9
 ---
 title: "Plurale/Singolare e Localizzazione Date/Valute"
@@ -12,6 +19,11 @@ related:
 ---
 =======
 >>>>>>> .merge_file_rOA1Fh
+<<<<<<< .merge_file_NPHW6i
+=======
+>>>>>>> .merge_file_LugaPF
+>>>>>>> .merge_file_ljkJXN
+>>>>>>> .merge_file_zcvcH0
 # Plurale/Singolare e Localizzazione Date/Valute
 
 ## Pluralizzazione
@@ -193,11 +205,25 @@ related:
 ## 4. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
+<<<<<<< .merge_file_NPHW6i
+=======
+<<<<<<< .merge_file_mNLlIN
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+<<<<<<< .merge_file_ZjgysM
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+>>>>>>> .merge_file_zcvcH0
 <<<<<<< .merge_file_GSvee9
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
 =======
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> .merge_file_rOA1Fh
+<<<<<<< .merge_file_NPHW6i
+=======
+>>>>>>> .merge_file_LugaPF
+>>>>>>> .merge_file_ljkJXN
+>>>>>>> .merge_file_zcvcH0
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)

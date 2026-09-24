@@ -1,0 +1,49 @@
+includes:
+    - phpstan-baseline.neon
+<<<<<<< .merge_file_JTpqnS
+    - ./vendor/larastan/larastan/extension.neon
+=======
+    - ../../vendor/larastan/larastan/extension.neon
+>>>>>>> .merge_file_dRJ08N
+
+parameters:
+    level: max
+    paths:
+        - .
+    excludePaths:
+        - ./build/*
+        - ./vendor/*
+        - ./*/vendor/*
+        - ./docs/*
+<<<<<<< .merge_file_JTpqnS
+        - ./Tests/*
+        - ./_ide_helper.php
+        - ./Services/Trend.php
+=======
+        - ./Tests/* (?)
+        - ./_ide_helper.php (?)
+        - ./Services/Trend.php (?)
+>>>>>>> .merge_file_dRJ08N
+
+    bootstrapFiles:
+        # - ./Services/vendor/autoload.php
+        # - ./phpstan_constants.php
+
+
+    scanFiles:
+<<<<<<< .merge_file_JTpqnS
+        # - ./helpers/Helper.php
+        # - ./vendor/laraxot/module_xot/helpers/Helper.php
+=======
+        # - ./Helpers/Helper.php
+        # - ./vendor/laraxot/module_xot/Helpers/Helper.php
+>>>>>>> .merge_file_dRJ08N
+
+    tmpDir: build/phpstan
+    reportUnmatchedIgnoredErrors: false
+    checkOctaneCompatibility: false
+    checkModelProperties: false
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    checkImplicitMixed: false
+
