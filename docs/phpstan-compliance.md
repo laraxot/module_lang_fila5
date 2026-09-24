@@ -4,10 +4,7 @@
 
 **Analysis Date:** September 22, 2025
 **Analysis Date:** September 22, 2025
-<<<<<<< .merge_file_1NRbYD
 **Analysis Date:** September 22, 2025
-=======
->>>>>>> .merge_file_HyxEU7
 **PHPStan Level:** 9 (Maximum)
 **Files Analyzed:** 123
 **Errors Found:** 0
@@ -48,12 +45,8 @@ The module maintains:
 - Strict type declarations
 - Comprehensive type hints
 - Internationalization best practices
-<<<<<<< .merge_file_1NRbYD
 - Modern PHP 8.2+ feature utilization
 - Modern PHP 8.2+ feature utilization
 - Modern PHP 8.2+ feature utilization
 - Modern PHP 8.2+ feature utilization
 - Modern PHP 8.2+ feature utilization
-=======
-- Modern PHP 8.2+ feature utilization
->>>>>>> .merge_file_HyxEU7
