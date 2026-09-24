@@ -14,6 +14,7 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Filters\BaseFilter;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
@@ -184,12 +185,20 @@ test('LocaleSwitcherRefresh applyLocale covers string and non-string locale', fu
         'HTTP_REFERER' => 'http://localhost/it',
     ]));
     $action = LocaleSwitcherRefresh::make('x');
-    $action->applyLocale(['locale' => 'en']);
-    Assert::assertSame('en', app()->getLocale());
-    $action->applyLocale(['locale' => 123]);
-    Assert::assertSame('en', app()->getLocale());
+    $localeAfterApplying = static function (mixed $locale) use ($action): string {
+        $action->applyLocale(['locale' => $locale]);
+
+        return app()->getLocale();
+    };
+    Assert::assertSame('de', $localeAfterApplying('de'));
+    Assert::assertSame('de', session('locale'));
+    // A non-string locale falls back to 'en' instead of keeping the previous one.
+    Assert::assertSame('en', $localeAfterApplying(123));
+    Assert::assertSame('fr', $localeAfterApplying('fr'));
+    // A missing locale also falls back to 'en', and the session follows.
     $action->applyLocale([]);
-    Assert::assertSame('en', app()->getLocale());
+    Assert::assertSame('en', App::getLocale());
+    Assert::assertSame('en', session()->get('locale'));
 });
 
 test('TranslatorAction and Adapter coerce non-string loaded values', function (): void {

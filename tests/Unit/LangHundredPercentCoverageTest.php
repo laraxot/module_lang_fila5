@@ -18,6 +18,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
@@ -865,13 +866,21 @@ describe('Lang 100% — Models policies providers views', function (): void {
     test('TranslationFile getRows ide-helper path and load failures', function (): void {
         $previousArgv = $_SERVER['argv'] ?? null;
         $_SERVER['argv'] = ['artisan', 'ide-helper:models'];
-        Assert::assertSame([], (new TranslationFile())->getRows());
+        $ideHelperRows = (new TranslationFile())->getRows();
         $_SERVER['argv'] = $previousArgv;
+        Assert::assertSame([], $ideHelperRows);
 
         $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock): void {
             $mock->shouldReceive('execute')->andThrow(new \RuntimeException('boom'));
         });
-        Assert::assertSame([], (new TranslationFile())->getRows());
+        $logSpy = Log::spy();
+        $failedRows = (new TranslationFile())->getRows();
+        Assert::assertSame([], $failedRows);
+        $logSpy->shouldHaveReceived('warning')
+            ->once()
+            ->with('TranslationFile::getRows failed', Mockery::on(
+                static fn (mixed $context): bool => is_array($context) && ($context['error'] ?? null) === 'boom',
+            ));
 
         $bad = sys_get_temp_dir().'/tf_bad_'.uniqid().'.php';
         file_put_contents($bad, '<?php throw new Exception("x");');
