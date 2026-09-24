@@ -1,0 +1,11 @@
+# Gestione Permessi e Errori Filesystem su File di Lingua (Lang)
+
+> **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
+
+---
+
+<<<<<<< .merge_file_A87x3U
+**Nota:**
+=======
+**Nota:**
+>>>>>>> .merge_file_wXJTqA

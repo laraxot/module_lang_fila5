@@ -1,0 +1,19 @@
+<<<<<<< .merge_file_GDTFRc
+---
+title: "google_translate"
+module: "Lang"
+type: concept
+tags: [google, translate]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "google translate"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+=======
+>>>>>>> .merge_file_ilf0L0
+# google_translate
+
+<!-- Contenuto migrato da _docs/google_translate.txt -->
+
+https://medium.com/@mwaqasiu/translating-text-in-laravel-made-easy-with-translatetexthelper-and-google-translate-library-214c7c76d655
