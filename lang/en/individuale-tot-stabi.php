@@ -107,9 +107,14 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
+        'sort' => '100',
+        'name' => 'Individuale Tot Stabi',
+        'plural' => 'Individuale Tot Stabi',
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',

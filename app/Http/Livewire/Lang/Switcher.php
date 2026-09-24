@@ -62,7 +62,6 @@ class Switcher extends Component
 
     public function render(): View
     {
-        /** @phpstan-var view-string */
         $view = 'lang::livewire.lang.change';
         $viewParams = [
             'view' => $view,

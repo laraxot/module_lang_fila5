@@ -249,6 +249,6 @@ The Lang module provides a structured framework for managing lang operations wit
 | Module | Self-contained Laravel module following Laraxot conventions |
 
 ### Related Documents
-- [Architecture](ARCHITECTURE.md)
+- [Architecture](architecture.md)
 - [Technical Specification](TECH_SPEC.md)
 - [User Stories](epics/lang-epics-and-stories.md)

@@ -1,5 +1,7 @@
-# Documentation Index — puntatore
+# Documentation Index
 
 Modulo: Lang
 
-Indice canonico: [00-INDEX.md](./00-INDEX.md). Entry point generale: [README.md](./README.md).
+## File disponibili
+
+<!-- auto-generato: elencare i file .md presenti -->

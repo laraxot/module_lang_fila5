@@ -35,7 +35,7 @@ related:
 - 📝 **[Translation File Editor](./translation-file-editor.md)** - UI per la modifica dei file `.php` di lingua.
 
 ## 🧪 **Qualità e Testing**
-- ✅ **[PHPStan Analysis](./PHPSTAN-FIXES.md)** - Report di conformità Level 10.
+- ✅ **[PHPStan Analysis](./phpstan-analysis-lang.md)** - Report di conformità Level 10.
 - 🔬 **[Testing Guidelines](./testing.md)** - Verifica della presenza delle chiavi di traduzione.
 - 🐒 **[Chaos Monkey Translation Fallbacks](./chaos-monkey-translation-fallbacks.md)** - Protocollo di recovery su regressioni i18n.
 
@@ -43,17 +43,13 @@ related:
 - 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
 - 📁 **[Path canonico migrazioni](./wiki/concepts/migration-path-canonical.md)** — solo `database/migrations/`; mai `Migrations/` annidata.
 
-## 📋 **Documenti Prodotto**
-- [PRD.md](./PRD.md) · [PRODUCT_ROADMAP.md](./PRODUCT_ROADMAP.md) · [PRODUCT_STRATEGY.md](./PRODUCT_STRATEGY.md) · [PRODUCT_LAUNCH_PLAN.md](./PRODUCT_LAUNCH_PLAN.md) · [SPRINT_PLANNING.md](./SPRINT_PLANNING.md) · [USER_RESEARCH.md](./USER_RESEARCH.md)
-
-## 📦 **Pacchetti Composer**
-- [Package Dependency Chaos Map](./package-dependency-chaos-map.md) · [Dependency Intelligence](./dependency-intelligence.md)
-- `mcamara/laravel-localization` - URL localizzati · `lara-zeus/spatie-translatable` - Campi Filament tradotti · `rinvex/countries` - Dati paesi · `spatie/laravel-sluggable` - Slug multilingua
-
 ## 🔗 **Moduli Correlati**
-- [Xot](../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
-- [UI](../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
-- [AGENTS.md](../../../../AGENTS.md) - Project guidelines
+- [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
+- [UI](../../ui/docs/readme.md) - Componenti Blade e Filament che consumano le traduzioni.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+
+## Dependency Intelligence
+
+- [Dependency intelligence](dependency-intelligence.md)
