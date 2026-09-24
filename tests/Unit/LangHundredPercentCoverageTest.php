@@ -116,7 +116,6 @@ final class LangBaseViewRecordStub extends LangBaseViewRecord
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
      */
-    #[\Override]
     protected function getInfolistSchema(): array
     {
         return [];
