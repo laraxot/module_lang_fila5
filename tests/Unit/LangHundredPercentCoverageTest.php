@@ -874,7 +874,6 @@ describe('Lang 100% — Models policies providers views', function (): void {
         $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock): void {
             $mock->shouldReceive('execute')->andThrow(new \RuntimeException('boom'));
         });
-<<<<<<< .merge_file_MpXnwU
         $logSpy = Log::spy();
         $failedRows = (new TranslationFile())->getRows();
         Assert::assertSame([], $failedRows);
@@ -883,9 +882,6 @@ describe('Lang 100% — Models policies providers views', function (): void {
             ->with('TranslationFile::getRows failed', Mockery::on(
                 static fn (mixed $context): bool => is_array($context) && ($context['error'] ?? null) === 'boom',
             ));
-=======
-        Assert::assertSame([], (new TranslationFile)->getRows());
->>>>>>> .merge_file_ote0C2
 
         $bad = sys_get_temp_dir().'/tf_bad_'.uniqid().'.php';
         file_put_contents($bad, '<?php throw new Exception("x");');
