@@ -1,4 +1,15 @@
-# Laravel 12 lang path rule
+---
+title: "Laravel 13 lang path rule"
+module: "Lang"
+type: rule
+tags: [migration, filament]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+# Laravel 13 lang path rule
 
 ## Sintesi
 
@@ -12,4 +23,4 @@ Per il modulo `Lang`, il riferimento valido e sempre `lang/` e non `resources/la
 
 ## Backlink
 
-- [Regola globale Laravel 12 lang root](../../../../../docs/wiki/concepts/laravel12-lang-root-rule.md)
+- [Regola globale Laravel 13 lang root](../../../../../docs/wiki/concepts/laravel12-lang-root-rule.md)
