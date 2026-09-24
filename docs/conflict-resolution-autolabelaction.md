@@ -1,14 +1,3 @@
----
-title: "Risoluzione Conflitto AutoLabelAction"
-module: "Lang"
-type: concept
-tags: [links]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "links"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Risoluzione Conflitto AutoLabelAction
 
 ## Problema Identificato

@@ -8,7 +8,7 @@ return [
             'label' => 'E-Mail',
             'placeholder' => 'Geben Sie Ihre E-Mail ein',
             'tooltip' => 'Verwenden Sie eine gültige E-Mail-Adresse',
-            'icon' => 'heroicon-o-envelope',
+            'icon' => 'heroicon-o-mail',
             'description' => 'email',
             'helper_text' => '',
         ],

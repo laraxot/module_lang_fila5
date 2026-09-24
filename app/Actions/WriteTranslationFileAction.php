@@ -6,7 +6,6 @@ namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
 
-use function Safe\date;
 use function Safe\exec;
 use function Safe\file_put_contents;
 use function Safe\tempnam;

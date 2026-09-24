@@ -1,14 +1,3 @@
----
-title: "PDF Translation Guide - HTML2PDF Integration"
-module: "Lang"
-type: concept
-tags: [migration, filament]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration filament"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # PDF Translation Guide - HTML2PDF Integration
 
 ## 📋 Overview
@@ -761,7 +750,7 @@ class BatchPdfGenerator
 ## 📚 References
 
 - [HTML2PDF Best Practices](../xot/docs/html2pdf-best-practices.md)
-- [Lang Module README](README.md)
+- [Lang Module README](./readme.md)
 - [Filament Internationalization](https://filamentphp.com/docs/3.x/panels/translations)
 - [Laravel Localization](https://laravel.com/docs/localization)
 

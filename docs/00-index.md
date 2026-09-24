@@ -1,14 +1,3 @@
----
-title: "📚 **Indice Documentazione Modulo Lang**"
-module: "Lang"
-type: concept
-tags: [lang, service, helper, text]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # 📚 **Indice Documentazione Modulo Lang**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -67,7 +56,7 @@ related:
 | USER_RESEARCH.md | User Research |
 
 ## 📦 **Pacchetti Composer**
-- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
+- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
 - [Package Dependency Chaos Map](./package-dependency-chaos-map.md)
 - `mcamara/laravel-localization` - URL localizzati
 - `lara-zeus/spatie-translatable` - Campi Filament tradotti
