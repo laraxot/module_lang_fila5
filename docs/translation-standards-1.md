@@ -1,3 +1,10 @@
+<<<<<<< .merge_file_4No6J8
+=======
+<<<<<<< .merge_file_8imP5a
+=======
+<<<<<<< .merge_file_AOkDBA
+=======
+>>>>>>> .merge_file_kCt1iA
 <<<<<<< .merge_file_Tv8YBD
 ---
 title: "Standard per le Traduzioni nel Progetto <nome progetto>"
@@ -12,6 +19,11 @@ related:
 ---
 =======
 >>>>>>> .merge_file_TvPYVq
+<<<<<<< .merge_file_4No6J8
+=======
+>>>>>>> .merge_file_29fqCi
+>>>>>>> .merge_file_ss4Yjs
+>>>>>>> .merge_file_kCt1iA
 # Standard per le Traduzioni nel Progetto <nome progetto>
 
 ## Struttura delle Cartelle
@@ -179,11 +191,25 @@ return [
 
 ### Collegamenti
 - [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md)
+<<<<<<< .merge_file_4No6J8
+=======
+<<<<<<< .merge_file_8imP5a
+- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
+=======
+<<<<<<< .merge_file_AOkDBA
+- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
+=======
+>>>>>>> .merge_file_kCt1iA
 <<<<<<< .merge_file_Tv8YBD
 - [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
 =======
 - [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
 >>>>>>> .merge_file_TvPYVq
+<<<<<<< .merge_file_4No6J8
+=======
+>>>>>>> .merge_file_29fqCi
+>>>>>>> .merge_file_ss4Yjs
+>>>>>>> .merge_file_kCt1iA
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica

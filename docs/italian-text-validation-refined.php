@@ -1,6 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_ln8WkB
+
+=======
+<<<<<<< .merge_file_1bLjO4
+
+=======
+>>>>>>> .merge_file_M7GMAf
+>>>>>>> .merge_file_JBICNY
 /**
  * Script raffinato per identificare VERI testi italiani in file di traduzione non italiani
  * Esclude falsi positivi come "email", "password" che sono termini internazionali.
@@ -217,12 +225,27 @@ function auditRealItalianText(string $basePath): array
         foreach ($realItalianPatterns as $pattern) {
             $lineNumber = 0;
             foreach ($lines as $line) {
+<<<<<<< .merge_file_ln8WkB
+=======
+<<<<<<< .merge_file_1bLjO4
+>>>>>>> .merge_file_JBICNY
+                ++$lineNumber;
+                if (false !== stripos($line, $pattern)) {
+                    // Verifica che non sia un falso positivo
+                    $isExcluded = false;
+                    foreach ($excludePatterns as $exclude) {
+                        if (false !== stripos($line, $exclude) && false !== stripos($line, $pattern)) {
+<<<<<<< .merge_file_ln8WkB
+=======
+=======
                 $lineNumber++;
                 if (stripos($line, $pattern) !== false) {
                     // Verifica che non sia un falso positivo
                     $isExcluded = false;
                     foreach ($excludePatterns as $exclude) {
                         if (stripos($line, $exclude) !== false && stripos($line, $pattern) !== false) {
+>>>>>>> .merge_file_M7GMAf
+>>>>>>> .merge_file_JBICNY
                             // Controlla se il pattern è parte del termine escluso
                             if (str_contains(strtolower($exclude), strtolower(trim($pattern)))) {
                                 $isExcluded = true;
