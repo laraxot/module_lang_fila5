@@ -2,7 +2,7 @@
 title: "Queueable Actions — Lang Module"
 type: concept
 created: 2026-07-12
-updated: 2026-07-13
+updated: 2026-07-12
 confidence: high
 tags: [queueable-action, spatie, architecture, laraxot, lang]
 related:
@@ -50,10 +50,6 @@ class DoSomethingAction
 ```php
 app(DoSomethingAction::class)->execute();
 ```
-
-## Framework adapter (eccezione)
-
-`TranslatorAdapter` (`app/Adapters/TranslatorAdapter.php`) estende `Illuminate\Translation\Translator` ed è bound come singleton `translator` in `LangServiceProvider`. Non è una Action — vedi [no-app-support-queueable-actions](wiki/concepts/no-app-support-queueable-actions.md).
 
 ## Verification
 

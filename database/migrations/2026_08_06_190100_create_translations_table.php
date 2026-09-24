@@ -1,13 +1,37 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_FsEugv
 
+=======
+<<<<<<< .merge_file_LRUXEu
+
+=======
+<<<<<<< .merge_file_9lnCWm
+
+=======
+>>>>>>> .merge_file_z4mUoj
+>>>>>>> .merge_file_C5lzhK
+>>>>>>> .merge_file_YzQ3Od
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Lang\Models\Translation;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< .merge_file_FsEugv
 return new class() extends XotBaseMigration
 {
+=======
+<<<<<<< .merge_file_LRUXEu
+return new class extends XotBaseMigration {
+=======
+<<<<<<< .merge_file_9lnCWm
+return new class() extends XotBaseMigration
+=======
+return new class extends XotBaseMigration
+>>>>>>> .merge_file_z4mUoj
+{
+>>>>>>> .merge_file_C5lzhK
+>>>>>>> .merge_file_YzQ3Od
     protected ?string $model_class = Translation::class;
 
     public function up(): void

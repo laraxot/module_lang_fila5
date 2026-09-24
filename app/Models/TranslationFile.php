@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Models/Translation.php
  */
@@ -11,24 +10,24 @@ namespace Modules\Lang\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Log;
 use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
 use Modules\Xot\Contracts\ProfileContract;
+use Sushi\Sushi;
 
 use function Safe\json_encode;
 
-use Sushi\Sushi;
-
 /**
- * @property string|null                  $key
- * @property string|null                  $path
- * @property string|null                  $id
- * @property string|null                  $name
+ * @property string|null $key
+ * @property string|null $path
+ * @property string|null $id
+ * @property string|null $name
  * @property array<array-key, mixed>|null $content
- * @property ProfileContract|null         $creator
- * @property ProfileContract|null         $updater
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
  *
- * @method static TranslationFileFactory          factory($count = null, $state = [])
+ * @method static TranslationFileFactory factory($count = null, $state = [])
  * @method static Builder<static>|TranslationFile newModelQuery()
  * @method static Builder<static>|TranslationFile newQuery()
  * @method static Builder<static>|TranslationFile query()
@@ -67,22 +66,59 @@ class TranslationFile extends BaseModel
      */
     public function getRows(): array
     {
+        if ($this->isRunningIdeHelper()) {
+            return [];
+        }
+
+        try {
+            return $this->loadTranslationDataWithErrorHandling();
+        } catch (\Throwable $e) {
+            Log::warning('TranslationFile::getRows failed', [
+                'error' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+            ]);
+
+            return [];
+        }
+    }
+
+    /**
+     * Carica i dati di traduzione con error handling robusto.
+     *
+     *
+     * @return array<int, array<string, mixed>>
+     *
+     * @throws \Throwable
+     */
+    private function loadTranslationDataWithErrorHandling(): array
+    {
         $files = app(GetAllTranslationAction::class)->execute();
 
         /** @var array<int, array<string, mixed>> $result */
-        $result = Arr::map($files, function ($item) {
-            if (! is_array($item)) {
-                return [];
-            }
-
+        $result = Arr::map($files, function (array $item) {
             $key = $item['key'] ?? null;
-            $keyStr = is_string($key) ? $key : (string) $key;
+            /** @var string|int|float|bool|null $keyNarrowed */
+            $keyNarrowed = $key;
+            $keyStr = is_string($keyNarrowed) ? $keyNarrowed : (string) $keyNarrowed;
             $item['id'] = isset($item['key']) ? $keyStr : '';
 
             $pathValue = $item['path'] ?? null;
-            $pathStr = is_string($pathValue) ? $pathValue : (string) $pathValue;
+            /** @var string|int|float|bool|null $pathValueNarrowed */
+            $pathValueNarrowed = $pathValue;
+            $pathStr = is_string($pathValueNarrowed) ? $pathValueNarrowed : (string) $pathValueNarrowed;
             $item['name'] = isset($item['path']) ? basename($pathStr, '.php') : '';
-            $item['content'] = $this->loadTranslationFileContent($pathStr);
+
+            if (isset($item['path'])) {
+                $path = $pathStr;
+                if (File::exists($path)) {
+                    $item['content'] = $this->loadFileContent($path);
+                } else {
+                    $item['content'] = '';
+                }
+            } else {
+                $item['content'] = '';
+            }
 
             return $item;
         });
@@ -90,19 +126,34 @@ class TranslationFile extends BaseModel
         return $result;
     }
 
-    private function loadTranslationFileContent(string $path): string
+    /**
+     * Carica il contenuto di un file di traduzione con fallback.
+     */
+    private function loadFileContent(string $path): string
     {
-        if ('' === $path || ! File::exists($path)) {
-            return '';
-        }
-
         try {
             $content = File::getRequire($path);
 
-            return json_encode($content);
-        } catch (\Exception) {
+            return json_encode($content) ?: '';
+        } catch (\Throwable $e) {
+            Log::debug('Failed to load translation file', [
+                'path' => $path,
+                'error' => $e->getMessage(),
+            ]);
+
             return '';
         }
+    }
+
+    private function isRunningIdeHelper(): bool
+    {
+        if (defined('PHPSTAN_RUNNING')) {
+            return true;
+        }
+
+        $argv = $_SERVER['argv'] ?? [];
+
+        return is_array($argv) && in_array('ide-helper:models', $argv, true);
     }
 
     /**

@@ -1,3 +1,14 @@
+---
+title: "Testing Rules Summary"
+module: "Lang"
+type: rule
+tags: [links]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

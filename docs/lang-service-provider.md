@@ -1,3 +1,14 @@
+---
+title: "LangServiceProvider: Analisi e Proposte di Miglioramento"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # LangServiceProvider: Analisi e Proposte di Miglioramento
 
 ## Analisi dell'Implementazione Attuale
@@ -178,7 +189,7 @@ class TranslationResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-language';
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'key' => TextInput::make('key')
@@ -441,7 +452,7 @@ class TranslationResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-language';
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'key' => TextInput::make('key')

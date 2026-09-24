@@ -6,7 +6,6 @@ namespace Modules\Lang\Providers;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\Field;
-use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Select;
 use Filament\Infolists\Components\Entry;
 use Filament\Schemas\Components\Section;
@@ -56,7 +55,22 @@ class LangServiceProvider extends XotBaseServiceProvider
         Field::configureUsing(function (Field $component) {
             $component = app(AutoLabelAction::class)->execute($component, 'label');
             Assert::isInstanceOf($component, Field::class);
-            $this->applyUserValidationMessages($component);
+
+            $validationMessages = __('user::validation');
+            if (is_array($validationMessages) && $validationMessages !== []) {
+                /** @var array<string, string> $typedMessages */
+                $typedMessages = [];
+                foreach ($validationMessages as $key => $value) {
+                    if (is_string($key) && is_string($value)) {
+                        $typedMessages[$key] = $value;
+                    }
+                }
+
+                if ($typedMessages !== []) {
+                    $component->validationMessages($typedMessages);
+                }
+            }
+
             $component = app(AutoLabelAction::class)->execute($component, 'placeholder');
             $component = app(AutoLabelAction::class)->execute($component, 'helperText');
 
@@ -64,9 +78,7 @@ class LangServiceProvider extends XotBaseServiceProvider
         });
 
         Entry::configureUsing(function (Entry $component) {
-            $component = app(AutoLabelAction::class)->execute($component, 'label');
-
-            return $component;
+            return app(AutoLabelAction::class)->execute($component, 'label');
         });
 
         Section::configureUsing(function (Section $component) {
@@ -93,18 +105,32 @@ class LangServiceProvider extends XotBaseServiceProvider
             // ->translateLabel()
         });
 
-        Action::configureUsing(function (Action $component): Action {
-            $labeled = app(AutoLabelAction::class)->execute($component);
-            Assert::isInstanceOf($labeled, Action::class);
-            $component = $labeled;
-            $labeled = app(AutoLabelAction::class)->execute($component, 'icon');
-            Assert::isInstanceOf($labeled, Action::class);
-            $component = $labeled;
-            $labeled = app(AutoLabelAction::class)->execute($component, 'tooltip');
-            Assert::isInstanceOf($labeled, Action::class);
-            $component = $labeled;
+        Action::configureUsing(function (Action $component) {
+            $component = app(AutoLabelAction::class)->execute($component);
+            $component = app(AutoLabelAction::class)->execute($component, 'icon');
+            $component = app(AutoLabelAction::class)->execute($component, 'tooltip');
 
-            return $this->configureActionAsButtonWhenNoRecord($component);
+            // if (method_exists($component, 'iconButton')) {
+            //    // $component->iconButton();
+            // }
+            /*
+            dddx([
+            'methods' => get_class_methods($component),
+            'getRecord' => $component->getRecord(),
+            ]);
+            */
+            if (method_exists($component, 'getRecord') && $component->getRecord() === null) {
+                if (method_exists($component, 'button')) {
+                    $component->button();
+                }
+            }
+
+            // if (method_exists($component, 'icon')) {
+            // $component->icon('heroicon-o-plus');
+            // }
+
+            // ->translateLabel()
+            return $component;
         });
 
         // Method Filament\Widgets\StatsOverviewWidget\Stat::configureUsing does not exist.
@@ -144,49 +170,15 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     protected function translatableComponents(): void
     {
-        $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
+        // `Placeholder` e' deprecata in favore di `TextEntry`, che estende `Entry`:
+        // la voce era anche ridondante, non solo deprecata.
+        $components = [Field::class, BaseFilter::class, Column::class, Entry::class];
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
                 if (method_exists($translatable, 'translateLabel')) {
-                    if (method_exists($translatable, 'hasCustomLabel') && $translatable->hasCustomLabel()) {
-                        return;
-                    }
-
                     $translatable->translateLabel();
                 }
             });
         }
-    }
-
-    private function applyUserValidationMessages(Field $component): void
-    {
-        $validationMessages = __('user::validation');
-        if (! is_array($validationMessages) || [] === $validationMessages) {
-            return;
-        }
-
-        /** @var array<string, string> $typedMessages */
-        $typedMessages = array_filter(
-            $validationMessages,
-            static fn (mixed $value, mixed $key): bool => is_string($key) && is_string($value),
-            ARRAY_FILTER_USE_BOTH,
-        );
-
-        if ([] === $typedMessages) {
-            return;
-        }
-
-        $component->validationMessages($typedMessages);
-    }
-
-    private function configureActionAsButtonWhenNoRecord(Action $component): Action
-    {
-        if (null !== $component->getRecord()) {
-            return $component;
-        }
-
-        $component->button();
-
-        return $component;
     }
 }

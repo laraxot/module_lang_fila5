@@ -1,3 +1,14 @@
+---
+title: "📚 **Indice Documentazione Modulo Lang**"
+module: "Lang"
+type: concept
+tags: [filament4, migration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament4 migration"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # 📚 **Indice Documentazione Modulo Lang**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -30,6 +41,7 @@
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
+- 📁 **[Path canonico migrazioni](./wiki/concepts/migration-path-canonical.md)** — solo `database/migrations/`; mai `Migrations/` annidata.
 
 ## 🔗 **Moduli Correlati**
 - [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
