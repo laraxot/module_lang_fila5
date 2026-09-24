@@ -1,20 +1,20 @@
-# Modulo Lang
+# Documentation
 
-Gestione centralizzata delle traduzioni Laravel per l'intero monorepo modulare: lettura/scrittura
-file di traduzione PHP e JSON, editor Filament per le stringhe multi-lingua, sincronizzazione
-delle chiavi tra lingue e traduzioni specifiche per ciascun modulo.
+This directory contains documentation for the module.
 
-## Struttura della documentazione
+## Structure
 
-- **architecture.md** - Architettura e design pattern del modulo
-- **README.md** - Questo file (entry point)
+- **architecture.md** - Module architecture and design patterns
+- **README.md** - This file
 
-## Linee guida documentazione
+## Guidelines
 
-- Chiara e concisa
-- Basata su esempi
-- Aggiornata insieme al codice
-- Formato Markdown (.md)
+- Gestione file traduzioni Laravel (.php e .json)
+- Editor Filament per traduzioni multi-lingua
+- Sincronizzazione traduzioni tra lingue
+- Helper per traduzioni dinamiche
+- Support per traduzioni modulo-specifiche
+- Caching traduzioni per performance
 
 ## Funzionalità Principali
 
@@ -39,7 +39,7 @@ Modules/Lang/
 │   │   ├── TranslatorAction.php
 │   │   └── GetAllTranslationAction.php
 │   ├── Services/
-│   │   └── TranslatorService.php
+│   │   └── TranslationService.php
 │   ├── Adapters/
 │   │   └── TranslatorAdapter.php
 │   ├── Datas/
@@ -79,25 +79,27 @@ Modules/Lang/
 | `SyncTranslationsAction` | Sincronizza tra lingue | Action |
 | `PublishTranslationAction` | Publish traduzioni | Action |
 | `TranslatorAction` | Translation lookup | Action |
-| `TranslatorService` | Logica traduzioni (estende `Illuminate\Translation\Translator`) | Service |
+| `TranslationService` | Logica traduzioni | Service |
 | `TranslatorAdapter` | Wrapper translator Laravel | Adapter |
 
 ## Trait Disponibili
 
 | Trait | Scopo | Utilizzo |
 |-------|-------|----------|
-| `Modules\Lang\Models\Traits\HasStrictTranslations` | Estende `Spatie\Translatable\HasTranslations` con tipi di ritorno più stretti (PHPStan) | Model con campi `spatie/laravel-translatable` |
-| `Modules\Lang\Providers\Traits\TranslatorTrait` | Registra `TranslatorAdapter` come translator dell'app nel service provider | Service Provider |
+| `Modules\Lang\Traits\HasTranslator` | Helper translation lookup | Qualsiasi class |
 
 **Utilizzo**:
 ```php
-use Modules\Lang\Models\Traits\HasStrictTranslations;
-use Spatie\Translatable\HasTranslations;
+use Modules\Lang\Traits\HasTranslator;
 
-class Post extends Model
+class User extends Model
 {
-    use HasTranslations;
-    use HasStrictTranslations; // overrides getTranslation() with narrower return types
+    use HasTranslator;
+    
+    public function greetingMessage(): string
+    {
+        return $this->trans('user.greeting', ['name' => $this->name]);
+    }
 }
 ```
 
@@ -176,20 +178,26 @@ use Modules\Lang\Filament\Resources\TranslationFileResource;
 
 ### Language Configuration
 
-Configurare lingue in `Modules/Lang/config/lang.php` (pubblicato come `config('lang.*)`):
+Configurare lingue in `laravel/config/local/lang/config.php`:
 
 ```php
 return [
-    'default_locale' => 'it',
-    'fallback_locale' => 'en',
-    'available_locales' => ['it', 'en', 'de'],
-
-    'cache' => [
-        'enabled' => true,
-        'ttl' => 3600, // 1 ora
-        'prefix' => 'lang_translations',
+    'default_language' => 'en',
+    
+    'supported_languages' => [
+        'en' => 'English',
+        'it' => 'Italiano',
+        'de' => 'Deutsch',
+        'fr' => 'Français',
     ],
-    // ... vedi Modules/Lang/config/lang.php per le sezioni validation/auto_translate/filament/structure
+    
+    'paths' => [
+        'resources' => resource_path('lang'),
+        'modules' => base_path('Modules/*/resources/lang'),
+    ],
+    
+    'cache_translations' => true,
+    'cache_ttl' => 3600, // 1 hour
 ];
 ```
 
@@ -278,8 +286,8 @@ trans()->addJsonPath(module_path('User/resources/lang'));
 # Run Lang module tests
 ./vendor/bin/pest Modules/Lang/tests
 
-# Run the business-logic feature test
-./vendor/bin/pest Modules/Lang/tests/Feature/LangBusinessLogicTest.php
+# Run translation tests
+./vendor/bin/pest Modules/Lang/tests/Feature/TranslationSyncTest.php
 
 # With coverage
 ./vendor/bin/pest Modules/Lang/tests --coverage
@@ -349,5 +357,5 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse --level=max Modules/Lang
 
 **Status**: ✅ Production  
 **Last Updated**: 2026-07-14  
-**Requirements**: PHP 8.3+, Laravel 12  
+**Requirements**: PHP 8.3+, Laravel 13  
 **PHPStan Level**: 10 (Compliant)
