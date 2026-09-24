@@ -1,20 +1,12 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_SvwR2Y
-=======
-
->>>>>>> .merge_file_PhB2eB
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-<<<<<<< .merge_file_SvwR2Y
 return new class extends Migration
 {
-=======
-return new class extends Migration {
->>>>>>> .merge_file_PhB2eB
     /**
      * Run the migrations.
      */
