@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_kbNBpX
 
-=======
-<<<<<<< .merge_file_x3Hwfl
-
-=======
->>>>>>> .merge_file_ZZVhlI
->>>>>>> .merge_file_S74Vrg
 /**
  * Script specifico per identificare la parola "obbligatorio" e varianti
  * in file di traduzione non italiani.
@@ -71,18 +64,8 @@ function auditObbligatorioInNonItalianFiles(string $basePath): array
         foreach ($obbligatorioPatterns as $pattern) {
             $lineNumber = 0;
             foreach ($lines as $line) {
-<<<<<<< .merge_file_kbNBpX
                 ++$lineNumber;
                 if (false !== stripos($line, $pattern)) {
-=======
-<<<<<<< .merge_file_x3Hwfl
-                ++$lineNumber;
-                if (false !== stripos($line, $pattern)) {
-=======
-                $lineNumber++;
-                if (stripos($line, $pattern) !== false) {
->>>>>>> .merge_file_ZZVhlI
->>>>>>> .merge_file_S74Vrg
                     $fileIssues[] = [
                         'pattern' => $pattern,
                         'line' => $lineNumber,
