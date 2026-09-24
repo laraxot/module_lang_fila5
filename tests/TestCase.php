@@ -41,7 +41,7 @@ abstract class TestCase extends XotBaseTestCase
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
-            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
                 continue;
             }
 
@@ -65,7 +65,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {
@@ -73,12 +73,12 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param  class-string<\Throwable>  $exceptionClass
+     * @param class-string<\Throwable> $exceptionClass
      */
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
         $this->expectException($exceptionClass);
-        if ($message !== null) {
+        if (null !== $message) {
             $this->expectThrowableMessage($message);
         }
     }
@@ -92,7 +92,7 @@ abstract class TestCase extends XotBaseTestCase
      * se un giorno servisse l'annidamento, si allarga di proposito e si aggiorna
      * questo commento, invece di partire larghi e non sapere piu' cosa arriva.
      *
-     * @param  array<string, string>  $data
+     * @param array<string, string> $data
      */
     public static function createTranslationFile(string $path, array $data): void
     {
