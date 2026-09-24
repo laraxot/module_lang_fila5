@@ -14,14 +14,11 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => '100',
+        'group' => 'Missing Group',
         'name' => 'Widgets',
         'plural' => 'Widgets',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
@@ -46,14 +43,5 @@ return [
         ],
     ],
     'actions' => [
-        'create' => [
-            'label' => 'Crea Widgets',
-        ],
-        'edit' => [
-            'label' => 'Modifica Widgets',
-        ],
-        'delete' => [
-            'label' => 'Elimina Widgets',
-        ],
     ],
 ];
