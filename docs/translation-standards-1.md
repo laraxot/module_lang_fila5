@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Tv8YBD
 ---
 title: "Standard per le Traduzioni nel Progetto <nome progetto>"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> .merge_file_TvPYVq
 # Standard per le Traduzioni nel Progetto <nome progetto>
 
 ## Struttura delle Cartelle
@@ -176,7 +179,11 @@ return [
 
 ### Collegamenti
 - [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md)
+<<<<<<< .merge_file_Tv8YBD
 - [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
+=======
+- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
+>>>>>>> .merge_file_TvPYVq
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica

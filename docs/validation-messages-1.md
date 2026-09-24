@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Mpv96E
 ---
 title: "Gestione delle Traduzioni dei Messaggi di Validazione"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "google translate"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> .merge_file_J9iREq
 # Gestione delle Traduzioni dei Messaggi di Validazione
 
 ## Obiettivo
@@ -161,7 +164,11 @@ class StoreOrderRequest extends FormRequest
 ## 9. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
+<<<<<<< .merge_file_Mpv96E
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
+=======
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+>>>>>>> .merge_file_J9iREq
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)

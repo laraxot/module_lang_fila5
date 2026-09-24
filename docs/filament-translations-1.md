@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_gzOkzU
 ---
 title: "Regole per le Traduzioni in Filament"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> .merge_file_p88CfQ
 # Regole per le Traduzioni in Filament
 
 > **Regola fondamentale:** MAI utilizzare il metodo `->label()` nei componenti Filament, specialmente nei Blocks. Le etichette sono gestite automaticamente dal LangServiceProvider.
@@ -30,7 +33,11 @@ related:
   'label' => 'patient.navigation',
   ```
 - Consulta anche:
+<<<<<<< .merge_file_gzOkzU
   - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
+=======
+  - [translation_keys_best_practices.md](../translation_keys_best_practices.md)
+>>>>>>> .merge_file_p88CfQ
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [docs <nome progetto>](../../<nome progetto>/docs/translations.md)
 

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_xk3bXG
 ---
 title: "Audit Traduzioni Completato - 2025"
 module: "Lang"
@@ -9,6 +10,8 @@ qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> .merge_file_UpyqQb
 # Audit Traduzioni Completato - 2025
 
 ## Riepilogo Lavoro Effettuato
