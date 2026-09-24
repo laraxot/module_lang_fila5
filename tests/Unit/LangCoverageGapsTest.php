@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_IJCTLE
 
+=======
+>>>>>>> .merge_file_hdmWeP
 namespace Modules\Lang\Tests\Unit;
 
 use Filament\Actions\Action;
@@ -32,8 +35,12 @@ use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Modules\Lang\Filament\Forms\Components\TranslationEditor;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
+<<<<<<< .merge_file_IJCTLE
 use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
 use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
+=======
+use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
+>>>>>>> .merge_file_hdmWeP
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
@@ -263,6 +270,7 @@ describe('Lang coverage gaps closeout', function (): void {
         Assert::assertSame([], $edit->schemaFromRecord((object) ['content' => 'x']));
     });
 
+<<<<<<< .merge_file_IJCTLE
     test('Livewire Change and Switcher handle non-string localized urls', function (): void {
         config([
             'laravellocalization.supportedLocales' => [
@@ -287,6 +295,14 @@ describe('Lang coverage gaps closeout', function (): void {
         $switcher = new LangSwitcher();
         $switcher->mount();
         Assert::assertFalse($switcher->langs['en']['url']);
+=======
+    test('LanguageSwitcherWidget falls back when getLocalizedURL is not a string', function (): void {
+        LaravelLocalization::shouldReceive('getLocalizedURL')
+            ->andReturn(false);
+
+        $widget = new LanguageSwitcherWidget();
+        Assert::assertSame('/en', $widget->getLanguageUrl('en'));
+>>>>>>> .merge_file_hdmWeP
     });
 
     test('Post accessors persist when model has key', function (): void {

@@ -1,3 +1,14 @@
+---
+title: "Testing Rules Summary"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test
@@ -278,7 +289,7 @@ protected function createApplication()
     $app = parent::createApplication();
     
     $app['config']->set([
-        'database.connections.lang.database' => 'quaeris_data_test',
+        'database.connections.lang.database' => 'modulo questionari_data_test',
     ]);
     
     return $app;
@@ -358,7 +369,7 @@ protected function createApplication()
 
 ### External Resources
 
-- [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+- [Laravel 13.x Testing Documentation](https://laravel.com/docs/12.x/testing)
 - [Pest Installation Guide](https://pestphp.com/docs/installation)
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 
@@ -464,4 +475,9 @@ Remember: Good tests are the foundation of reliable software development.
 
 ---
 
+*Last updated: January 2025*
+*
+*
+*
+*
 *Last updated: January 2025*

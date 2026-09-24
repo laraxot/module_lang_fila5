@@ -87,4 +87,16 @@ Prima di fare commit dei documenti:
 1. **Portabilità**: La documentazione funziona in qualsiasi ambiente
 2. **Manutenibilità**: Se la struttura cambia, sono necessarie meno modifiche
 3. **Collaborazione**: Facilita il lavoro di più sviluppatori
+<<<<<<< .merge_file_SgZ7lf
 4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
+=======
+<<<<<<< .merge_file_Utr1bF
+4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
+=======
+<<<<<<< .merge_file_nMdvZ3
+4. **Coerenza**: Rispetta gli standard del progetto
+=======
+4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
+>>>>>>> .merge_file_uYIvCu
+>>>>>>> .merge_file_jlrq0q
+>>>>>>> .merge_file_UzpC1R

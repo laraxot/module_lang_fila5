@@ -37,7 +37,15 @@ test('LanguageSwitcherWidget getAvailableLocales riflette LaravelLocalization no
     ]);
 
     try {
+<<<<<<< .merge_file_tDxNlQ
         $widget = new LanguageSwitcherWidget;
+=======
+<<<<<<< .merge_file_JzB3Kh
+        $widget = new LanguageSwitcherWidget();
+=======
+        $widget = new LanguageSwitcherWidget;
+>>>>>>> .merge_file_IDc2IO
+>>>>>>> .merge_file_D2sqyE
         $locales = $widget->getAvailableLocales();
         Assert::assertInstanceOf(Collection::class, $locales);
         $codes = $locales->pluck('code')->all();
@@ -73,6 +81,14 @@ test('LanguageSwitcherWidget getLanguageUrl usa LaravelLocalization con fallback
         ->once()
         ->andReturn(false);
 
+<<<<<<< .merge_file_tDxNlQ
     $widget = new LanguageSwitcherWidget;
+=======
+<<<<<<< .merge_file_JzB3Kh
+    $widget = new LanguageSwitcherWidget();
+=======
+    $widget = new LanguageSwitcherWidget;
+>>>>>>> .merge_file_IDc2IO
+>>>>>>> .merge_file_D2sqyE
     Assert::assertSame('/fr', $widget->getLanguageUrl('fr'));
 });

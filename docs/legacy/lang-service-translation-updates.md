@@ -1,3 +1,27 @@
+<<<<<<< .merge_file_O16Gxg
+=======
+<<<<<<< .merge_file_pRU0bC
+=======
+<<<<<<< .merge_file_J1Z2cP
+---
+title: "Lang Service Translation Updates"
+type: concept
+status: deprecated
+module: "Lang"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated lang-service-translation-updates"
+related:
+  - "./lang-service-translation-updates.md"
+---
+# Lang Service Translation Updates
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [lang-service-translation-updates.md](./lang-service-translation-updates.md)
+=======
+>>>>>>> .merge_file_DI6d0E
+>>>>>>> .merge_file_veYjlI
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 
 ## Panoramica
@@ -158,3 +182,10 @@ canonical: ../../../../Themes/docs/shared-components/lang-service-translation-up
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/lang-service-translation-updates-2025-01-06.md
+<<<<<<< .merge_file_O16Gxg
+=======
+<<<<<<< .merge_file_pRU0bC
+=======
+>>>>>>> .merge_file_9il2Bp
+>>>>>>> .merge_file_DI6d0E
+>>>>>>> .merge_file_veYjlI

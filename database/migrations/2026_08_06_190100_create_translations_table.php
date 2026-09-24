@@ -1,12 +1,19 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_9lnCWm
 
+=======
+>>>>>>> .merge_file_z4mUoj
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Lang\Models\Translation;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< .merge_file_9lnCWm
 return new class() extends XotBaseMigration
+=======
+return new class extends XotBaseMigration
+>>>>>>> .merge_file_z4mUoj
 {
     protected ?string $model_class = Translation::class;
 

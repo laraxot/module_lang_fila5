@@ -13,5 +13,14 @@ return [
         'created_at' => [
             'label' => 'created_at',
         ],
+<<<<<<< .merge_file_QaMbBL
+=======
+        'key' => [
+            'label' => 'key',
+        ],
+        'path' => [
+            'label' => 'path',
+        ],
+>>>>>>> .merge_file_kST5Ic
     ],
 ];

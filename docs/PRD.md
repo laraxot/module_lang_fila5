@@ -204,11 +204,15 @@ The Lang module provides a structured framework for managing lang operations wit
 
 ### 7.3 Technical Constraints
 - PHP 8.3+ required
+<<<<<<< .merge_file_ij8WvT
 <<<<<<< HEAD
 - Laravel 13+ required
 =======
 - Laravel 12+ required
 >>>>>>> laraxot/dev
+=======
+- Laravel 12+ required
+>>>>>>> .merge_file_zrnbbP
 - Filament v5 for UI
 - MySQL 8.0+
 
@@ -253,6 +257,7 @@ The Lang module provides a structured framework for managing lang operations wit
 | Module | Self-contained Laravel module following Laraxot conventions |
 
 ### Related Documents
+<<<<<<< .merge_file_ij8WvT
 <<<<<<< HEAD
 - [Architecture](architecture.md)
 =======
@@ -262,5 +267,8 @@ The Lang module provides a structured framework for managing lang operations wit
 - [Architecture](ARCHITECTURE.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Architecture](architecture.md)
+>>>>>>> .merge_file_zrnbbP
 - [Technical Specification](TECH_SPEC.md)
 - [User Stories](epics/lang-epics-and-stories.md)
