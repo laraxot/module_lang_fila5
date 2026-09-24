@@ -127,11 +127,25 @@ class TranslationResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-language';
 
+<<<<<<< .merge_file_w3fGs8
+=======
+<<<<<<< .merge_file_dBTZ4x
+    public static function getFormSchema(): array
+=======
+<<<<<<< .merge_file_C429O9
+    public static function getFormSchema(): array
+=======
+>>>>>>> .merge_file_bxlNmS
 <<<<<<< .merge_file_AOcPZo
     public function getFormSchema(): array
 =======
     public static function getFormSchema(): array
 >>>>>>> .merge_file_4fIAtV
+<<<<<<< .merge_file_w3fGs8
+=======
+>>>>>>> .merge_file_yWmap2
+>>>>>>> .merge_file_cND4Tt
+>>>>>>> .merge_file_bxlNmS
     {
         return [
             'key' => TextInput::make('key')
