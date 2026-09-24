@@ -1,3 +1,23 @@
+<<<<<<< .merge_file_mNLlIN
+=======
+<<<<<<< .merge_file_ZjgysM
+=======
+<<<<<<< .merge_file_GSvee9
+---
+title: "Plurale/Singolare e Localizzazione Date/Valute"
+module: "Lang"
+type: concept
+tags: [ottimizzazioni, correzioni]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ottimizzazioni correzioni"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+=======
+>>>>>>> .merge_file_rOA1Fh
+>>>>>>> .merge_file_LugaPF
+>>>>>>> .merge_file_ljkJXN
 # Plurale/Singolare e Localizzazione Date/Valute
 
 ## Pluralizzazione
@@ -179,7 +199,19 @@
 ## 4. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
+<<<<<<< .merge_file_mNLlIN
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+<<<<<<< .merge_file_ZjgysM
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+<<<<<<< .merge_file_GSvee9
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
+=======
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+>>>>>>> .merge_file_rOA1Fh
+>>>>>>> .merge_file_LugaPF
+>>>>>>> .merge_file_ljkJXN
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)
