@@ -14,7 +14,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property int $id
  * @property string $group
  * @property string $key
+<<<<<<< .merge_file_Wf48e2
  * @property array<array-key, mixed> $text
+=======
+ * @property array<string, string> $text
+>>>>>>> .merge_file_ThtvFr
  * @property string $locale
  * @property string|null $created_by
  * @property string|null $updated_by

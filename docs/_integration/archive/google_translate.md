@@ -1,3 +1,20 @@
+<<<<<<< .merge_file_lHyoqG
+=======
+<<<<<<< .merge_file_GDTFRc
+---
+title: "google_translate"
+module: "Lang"
+type: concept
+tags: [google, translate]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "google translate"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
+=======
+>>>>>>> .merge_file_ilf0L0
+>>>>>>> .merge_file_5OzvgQ
 # google_translate
 
 <!-- Contenuto migrato da _docs/google_translate.txt -->
