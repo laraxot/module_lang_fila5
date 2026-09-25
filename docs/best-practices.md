@@ -1,3 +1,14 @@
+---
+title: "📚 **Best Practices Modulo Lang - Laraxot**"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # 📚 **Best Practices Modulo Lang - Laraxot**
 
 ## 🎯 **Panoramica**
@@ -336,6 +347,7 @@ php artisan lang:benchmark         # Test performance
 // Metadati versione
 'version' => '2.0.0',
 'last_updated' => '2025-01-27',
+'last_updated' => '2025-01-27',
 'last_updated' => '[DATE]',
 'compatibility' => [
     'laravel' => '^12.0',
@@ -418,7 +430,8 @@ return [
 ## 🔗 **Riferimenti e Collegamenti**
 
 - [README.md](README.md) - Documentazione principale modulo
-- [README.md](readme.md) - Documentazione principale modulo
+- [README.md](README.md) - Documentazione principale modulo
+- [README.md](README.md) - Documentazione principale modulo
 - [config/lang.php](../config/lang.php) - Configurazione centralizzata
 - [Laraxot Framework](https://github.com/laraxot/laraxot) - Framework principale
 - [Laravel Localization](https://laravel.com/project_docs/localization) - Documentazione ufficiale
@@ -428,4 +441,8 @@ return [
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 2.0.0
 **Autore**: Team Laraxot
+**Mantenuto da**: Community Laraxot
+**Mantenuto da**: Community Laraxot
+**Mantenuto da**: Community Laraxot
+**Mantenuto da**: Community Laraxot
 **Mantenuto da**: Community Laraxot

@@ -16,10 +16,12 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\HtmlString;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator as LaravelTranslator;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Mockery;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Actions\SaveTransAction;
@@ -33,7 +35,7 @@ use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Modules\Lang\Filament\Forms\Components\TranslationEditor;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
-use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
+use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\RouteServiceProvider;
@@ -43,6 +45,8 @@ use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use PHPUnit\Framework\Assert;
+use ReflectionMethod;
+use ReflectionProperty;
 
 use function Safe\file_put_contents;
 use function Safe\mkdir;
@@ -97,8 +101,7 @@ final class NationalFlagSelectFinalStub extends NationalFlagSelect
     }
 
     /**
-     * @param array<int, mixed> $filteredCountries
-     *
+     * @param  array<int, mixed>  $filteredCountries
      * @return array<int, mixed>
      */
     protected function finalizeFilteredCountries(array $filteredCountries): array
@@ -158,28 +161,35 @@ final class PostNullTitleForGuidStub extends Post
 
 final class ThemeComposerNonStringFieldStub extends ThemeComposer
 {
-    protected function langFieldValue(LangData $lang, string $field): int
+    protected function langFieldValue(LangData $lang, string $field): mixed
     {
         return 42;
     }
 }
 
 afterEach(function (): void {
+    Mockery::close();
 });
 
-test('EditTranslationFile builds public schema from translation data', function (): void {
+test('EditTranslationFile schemaFromRecord covers both branches', function (): void {
     $edit = new EditTranslationFile();
-    Assert::assertNotEmpty($edit->getFormSchema());
-    Assert::assertNotEmpty($edit->makeFromArray(['hello' => 'world', 'nested' => ['item' => 'value']], 'content'));
-    Assert::assertSame([], $edit->makeFromArray([]));
+    Assert::assertNotEmpty($edit->schemaFromRecord((object) ['content' => ['hello' => 'world']]));
+    Assert::assertSame([], $edit->schemaFromRecord(null));
+    Assert::assertSame([], $edit->schemaFromRecord((object) ['content' => 'scalar']));
+    Assert::assertSame([], $edit->schemaFromRecord((object) []));
 });
 
-test('LocaleSwitcherRefresh initializes from the current session and request', function (): void {
-    session()->put('locale', 'en');
-    app()->instance('request', Request::create('http://localhost/en', 'GET'));
+test('LocaleSwitcherRefresh applyLocale covers string and non-string locale', function (): void {
+    app()->instance('request', Request::create('http://localhost/it', 'GET', [], [], [], [
+        'HTTP_REFERER' => 'http://localhost/it',
+    ]));
     $action = LocaleSwitcherRefresh::make('x');
-    Assert::assertSame('en', $action->lang);
-    Assert::assertSame('http://localhost/en', $action->fullUrl);
+    $action->applyLocale(['locale' => 'en']);
+    Assert::assertSame('en', app()->getLocale());
+    $action->applyLocale(['locale' => 123]);
+    expect(app()->getLocale())->toBe('en');
+    $action->applyLocale([]);
+    expect(app()->getLocale())->toBe('en');
 });
 
 test('TranslatorAction and Adapter coerce non-string loaded values', function (): void {
@@ -193,7 +203,7 @@ test('TranslatorAction and Adapter coerce non-string loaded values', function ()
     // girano sulle repliche MySQL. Story LANG-17.4.
     $loader = new ArrayLoader();
     $action = new TranslatorAction($loader, 'it');
-    $loaded = new \ReflectionProperty(LaravelTranslator::class, 'loaded');
+    $loaded = new ReflectionProperty(LaravelTranslator::class, 'loaded');
     $loaded->setAccessible(true);
     // JSON translation path returns non-string/non-array values without notifyMissingKey/DB
     $loaded->setValue($action, ['*' => ['*' => ['it' => ['json.int.key' => 42]]]]);
@@ -212,14 +222,19 @@ test('ThemeComposer fallback locales and buildAdminLanguageUrl', function (): vo
     $composer = new ThemeComposer();
     Assert::assertGreaterThan(0, $composer->languages()->count());
 
+    Assert::assertSame('#', $composer->buildAdminLanguageUrl('it'));
+
     config([
         'laravellocalization.supportedLocales' => [
             'it' => ['name' => 'Italiano', 'regional' => 'it_IT'],
             'en' => ['name' => 'English', 'regional' => 'en_US'],
         ],
     ]);
-    $languages = $composer->languages()->toCollection();
-    Assert::assertCount(2, $languages);
+    Route::shouldReceive('currentRouteName')->andReturn('home');
+    Route::shouldReceive('current')->andReturn(null);
+    Route::shouldReceive('has')->andReturn(true);
+    $url = $composer->buildAdminLanguageUrl('en');
+    Assert::assertNotSame('', $url);
 });
 
 test('RouteServiceProvider covers fallback locales and admin segment index', function (): void {
@@ -258,7 +273,7 @@ test('SyncTranslationsAction skips empty casted glob entries', function (): void
         Assert::assertIsArray($result['modules'][$tmpModule]);
         Assert::assertSame('completed', $result['modules'][$tmpModule]['status']);
     } finally {
-        \Mockery::close();
+        Mockery::close();
         if (is_dir($base)) {
             File::deleteDirectory($base);
         }
@@ -277,10 +292,9 @@ test('WriteTranslationFileAction createBackup makes directory', function (): voi
 
     $path = sys_get_temp_dir().'/wfa_'.uniqid().'.php';
     TestCase::createTranslationFile($path, ['x' => '1']);
-    app()->instance('cache', new class {
-        public function flush(): void
-        {
-        }
+    app()->instance('cache', new class()
+    {
+        public function flush(): void {}
     });
 
     try {
@@ -299,20 +313,22 @@ test('WriteTranslationFileAction createBackup makes directory', function (): voi
     }
 });
 
-test('LanguageSwitcherWidget builds URL for configured request locale', function (): void {
+test('Switcher covers non-string localized url branch', function (): void {
+    config([
+        'laravellocalization.supportedLocales' => [
+            'it' => ['name' => 'Italiano'],
+            'en' => ['name' => 'English'],
+        ],
+    ]);
     app()->setLocale('it');
-    app()->instance('request', Request::create('http://localhost/it/home', 'GET'));
-
-    $widget = new LanguageSwitcherWidget();
-    Assert::assertSame('http://localhost/en/home', $widget->getLanguageUrl('en'));
-});
-
-test('LanguageSwitcherWidget falls back when getLocalizedURL returns non-string true', function (): void {
+    LaravelLocalization::shouldReceive('getSupportedLocales')
+        ->andReturn(['it' => ['name' => 'Italiano'], 'en' => ['name' => 'English']]);
     LaravelLocalization::shouldReceive('getLocalizedURL')
         ->andReturn(true);
 
-    $widget = new LanguageSwitcherWidget();
-    Assert::assertSame('/en', $widget->getLanguageUrl('en'));
+    $switcher = new LangSwitcher();
+    $switcher->mount();
+    Assert::assertSame('/en', $switcher->langs['en']['url']);
 });
 
 test('Post linkable and accessor edge branches', function (): void {
@@ -341,7 +357,7 @@ test('NationalFlagSelect array localized name and bad code in filter', function 
         ['iso_3166_1_alpha2' => 9, 'name' => 'Bad'],
         'nope',
     ];
-    $f = new \ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+    $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
     $f->setAccessible(true);
     Assert::assertIsArray($f->invoke($select, 'ital'));
     Assert::assertIsArray($f->invoke($select, 'IT'));
@@ -355,16 +371,9 @@ test('TranslationEditor make preserves the field name', function (): void {
 test('WriteTranslationFileAction throws when put fails', function (): void {
     $path = sys_get_temp_dir().'/wfail_'.uniqid().'.php';
     TestCase::createTranslationFile($path, ['a' => '1']);
-    app()->instance('cache', new class {
-        public function flush(): void
-        {
-        }
-    });
-    $action = new WriteTranslationFileActionFailStub();
-    app()->instance('cache', new class {
-        public function flush(): void
-        {
-        }
+    app()->instance('cache', new class()
+    {
+        public function flush(): void {}
     });
     $action = new WriteTranslationFileActionFailStub();
     expect(fn () => $action->execute($path, ['a' => '2']))->toThrow(\Exception::class);
@@ -416,7 +425,7 @@ test('NationalFlagSelect hits array localized translation branch', function (): 
     $select->forcedCountries = [
         ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
     ];
-    $f = new \ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+    $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
     $f->setAccessible(true);
     $options = $f->invoke($select, 'ital');
     Assert::assertIsArray($options);
@@ -509,9 +518,9 @@ test('NationalFlagSelect casts non-array non-string localized label', function (
         $mock->allows(['execute' => '/f.svg']);
     });
     $translator = app('translator');
-    $mock = \Mockery::mock($translator)->makePartial();
+    $mock = Mockery::mock($translator)->makePartial();
     $mock->shouldReceive('get')
-        ->andReturnUsing(static function (string $key, array $replace = [], ?string $locale = null) use ($translator): string|int|array {
+        ->andReturnUsing(static function (string $key, array $replace = [], ?string $locale = null) use ($translator): mixed {
             if (str_contains($key, 'countries.it')) {
                 return 99;
             }
@@ -525,7 +534,7 @@ test('NationalFlagSelect casts non-array non-string localized label', function (
     $select->forcedCountries = [
         ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
     ];
-    $m = new \ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+    $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
     $m->setAccessible(true);
     $options = $m->invoke($select);
     Assert::assertIsArray($options);
@@ -545,7 +554,7 @@ test('NationalFlagSelect finalizeFilteredCountries defensive continue', function
         ['iso_3166_1_alpha2' => null],
         ['name' => 'NoCode'],
     ];
-    $f = new \ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+    $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
     $f->setAccessible(true);
     $options = $f->invoke($select, 'ital');
     Assert::assertIsArray($options);
@@ -577,17 +586,12 @@ test('NationalFlagSelect getCountryOptions casts int localized label', function 
     app()->setLocale('it');
     $real = app('translator');
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
-    app()->instance('translator', new class($real) {
-        public function __construct(private LaravelTranslator $inner)
-        {
-        }
+    app()->instance('translator', new class($real)
+    {
+        public function __construct(private LaravelTranslator $inner) {}
 
-        /**
-         * @param array<string, mixed> $replace
-         *
-         * @return string|int|array<array-key, mixed>
-         */
-        public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): string|int|array
+        /** @param array<string, mixed> $replace */
+        public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
         {
             if (str_contains($key, 'countries.it')) {
                 return 77;
@@ -607,7 +611,7 @@ test('NationalFlagSelect getCountryOptions casts int localized label', function 
     $select->forcedCountries = [
         ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
     ];
-    $m = new \ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+    $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
     $m->setAccessible(true);
     $options = $m->invoke($select);
     Assert::assertIsArray($options);
@@ -621,17 +625,12 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
     app()->setLocale('it');
     $real = app('translator');
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
-    app()->instance('translator', new class($real) {
-        public function __construct(private LaravelTranslator $inner)
-        {
-        }
+    app()->instance('translator', new class($real)
+    {
+        public function __construct(private LaravelTranslator $inner) {}
 
-        /**
-         * @param array<string, mixed> $replace
-         *
-         * @return string|array<array-key, mixed>
-         */
-        public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): string|array
+        /** @param array<string, mixed> $replace */
+        public function get(string $key, array $replace = [], ?string $locale = null, bool $fallback = true): mixed
         {
             if (str_contains($key, 'countries.it')) {
                 return ['n' => 'Italia'];
@@ -651,7 +650,7 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
     $select->forcedCountries = [
         ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
     ];
-    $m = new \ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+    $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
     $m->setAccessible(true);
     $options = $m->invoke($select);
     Assert::assertIsArray($options);
@@ -660,7 +659,7 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
 
 test('WriteTranslationFileAction putTranslationFile returns false when write fails', function (): void {
     $action = new WriteTranslationFileActionWriteFailStub();
-    $m = new \ReflectionMethod(WriteTranslationFileAction::class, 'putTranslationFile');
+    $m = new ReflectionMethod(WriteTranslationFileAction::class, 'putTranslationFile');
     $m->setAccessible(true);
     $dir = sys_get_temp_dir().'/lang_put_false_'.uniqid();
     $path = $dir.'/x.php';
@@ -668,10 +667,9 @@ test('WriteTranslationFileAction putTranslationFile returns false when write fai
 });
 
 test('WriteTranslationFileAction putTranslationFile edge paths', function (): void {
-    app()->instance('cache', new class {
-        public function flush(): void
-        {
-        }
+    app()->instance('cache', new class()
+    {
+        public function flush(): void {}
     });
 
     $missingDir = sys_get_temp_dir().'/lang_wfa_dir_'.uniqid();

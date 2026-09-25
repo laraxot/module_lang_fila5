@@ -1,3 +1,14 @@
+---
+title: "Conflict Resolution — Module Lang"
+module: "Lang"
+type: concept
+tags: [ottimizzazioni, correzioni]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ottimizzazioni correzioni"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Conflict Resolution — Module Lang
 
 ## Summary
@@ -19,7 +30,7 @@
 - docs/translation_audit_completion.md
 - docs/translation_completeness_audit.md
 - docs/translation_errors_correction.md
-- docs/translation_keys_best_practices.md
+- docs/translation-keys-best-practices.md
 - docs/translation_keys_rules.md
 - docs/translation_notify_conversion.md
 

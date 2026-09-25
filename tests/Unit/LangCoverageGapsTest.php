@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Illuminate\Translation\ArrayLoader;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Mockery;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Actions\GetAllTranslationAction;
@@ -30,7 +32,8 @@ use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Modules\Lang\Filament\Forms\Components\TranslationEditor;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
-use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
+use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
+use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
@@ -42,6 +45,7 @@ use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use PHPUnit\Framework\Assert;
+use ReflectionMethod;
 
 use function Safe\file_put_contents;
 use function Safe\getmypid;
@@ -69,7 +73,7 @@ final class NationalFlagSelectStub extends NationalFlagSelect
 }
 
 afterEach(function (): void {
-    \Mockery::close();
+    Mockery::close();
     $sqlite = $GLOBALS['__lang_gaps_sqlite'] ?? null;
     if (is_string($sqlite)) {
         DB::purge('lang');
@@ -172,10 +176,9 @@ describe('Lang coverage gaps closeout', function (): void {
     test('WriteTranslationFileAction backs up existing file', function (): void {
         $path = sys_get_temp_dir().'/write_cov_'.uniqid().'.php';
         TestCase::createTranslationFile($path, ['a' => '1']);
-        app()->instance('cache', new class {
-            public function flush(): void
-            {
-            }
+        app()->instance('cache', new class()
+        {
+            public function flush(): void {}
         });
 
         Assert::assertTrue(app(WriteTranslationFileAction::class)->execute($path, ['a' => '2']));
@@ -228,13 +231,13 @@ describe('Lang coverage gaps closeout', function (): void {
             ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
             ['iso_3166_1_alpha2' => 'XX', 'name' => 99],
         ];
-        $m = new \ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+        $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
         $m->setAccessible(true);
         $options = $m->invoke($select);
         Assert::assertIsArray($options);
         Assert::assertArrayHasKey('IT', $options);
 
-        $f = new \ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+        $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
         $f->setAccessible(true);
         $byName = $f->invoke($select, 'ital');
         $byCode = $f->invoke($select, 'IT');
@@ -246,7 +249,7 @@ describe('Lang coverage gaps closeout', function (): void {
 
     test('TranslationEditor afterStateHydrated and EditTranslationFile schema paths', function (): void {
         $editor = TranslationEditor::make('c');
-        $setUp = new \ReflectionMethod($editor, 'setUp');
+        $setUp = new ReflectionMethod($editor, 'setUp');
         $setUp->setAccessible(true);
         $setUp->invoke($editor);
         Assert::assertInstanceOf(TranslationEditor::class, $editor);
@@ -255,14 +258,35 @@ describe('Lang coverage gaps closeout', function (): void {
         Assert::assertNotEmpty($edit->getFormSchema());
         Assert::assertNotEmpty($edit->makeFromArray(['a' => '1', 'b' => ['c' => '2']], 'content'));
         Assert::assertSame([], $edit->makeFromArray([]));
+        Assert::assertNotEmpty($edit->schemaFromRecord((object) ['content' => ['a' => '1']]));
+        Assert::assertSame([], $edit->schemaFromRecord(null));
+        Assert::assertSame([], $edit->schemaFromRecord((object) ['content' => 'x']));
     });
 
-    test('LanguageSwitcherWidget builds a locale URL from the current request', function (): void {
+    test('Livewire Change and Switcher handle non-string localized urls', function (): void {
+        config([
+            'laravellocalization.supportedLocales' => [
+                'it' => ['name' => 'Italiano', 'script' => 'Latn', 'native' => 'Italiano', 'regional' => 'it_IT'],
+                'en' => ['name' => 'English', 'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB'],
+            ],
+        ]);
         app()->setLocale('it');
-        app()->instance('request', Request::create('http://localhost/it/home', 'GET'));
 
-        $widget = new LanguageSwitcherWidget();
-        Assert::assertSame('http://localhost/en/home', $widget->getLanguageUrl('en'));
+        LaravelLocalization::shouldReceive('getSupportedLocales')
+            ->andReturn([
+                'it' => ['name' => 'Italiano'],
+                'en' => ['name' => 'English'],
+            ]);
+        LaravelLocalization::shouldReceive('getLocalizedURL')
+            ->andReturn(false);
+
+        $change = new LangChange();
+        $change->mount();
+        Assert::assertSame('/en', $change->langs['en']['url']);
+
+        $switcher = new LangSwitcher();
+        $switcher->mount();
+        Assert::assertFalse($switcher->langs['en']['url']);
     });
 
     test('Post accessors persist when model has key', function (): void {
@@ -277,14 +301,14 @@ describe('Lang coverage gaps closeout', function (): void {
         ], true);
         // Avoid real update by mocking
         /** @var Post&MockInterface $post */
-        $post = \Mockery::mock(Post::class)->makePartial();
+        $post = Mockery::mock(Post::class)->makePartial();
         $post->shouldReceive('getKey')->andReturn('abc');
         $post->shouldReceive('update')->andReturnTrue();
         $post->setRawAttributes(['post_type' => 'article', 'post_id' => '1'], true);
         Assert::assertSame('article 1', $post->getTitleAttribute(null));
 
         /** @var Post&MockInterface $post2 */
-        $post2 = \Mockery::mock(Post::class)->makePartial();
+        $post2 = Mockery::mock(Post::class)->makePartial();
         $post2->shouldReceive('getKey')->andReturn('abc');
         $post2->shouldReceive('update')->andReturnTrue();
         $post2->setRawAttributes(['title' => ''], true);

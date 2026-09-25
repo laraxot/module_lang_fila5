@@ -1,3 +1,14 @@
+---
+title: "Correzione Errori Traduzioni - 2025"
+module: "Lang"
+type: concept
+tags: [links]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Correzione Errori Traduzioni - 2025
 
 ## Problema Identificato
