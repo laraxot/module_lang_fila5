@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_OV1N0J
-=======
-<<<<<<< .merge_file_zkdNYO
-=======
-<<<<<<< .merge_file_OknGLj
-=======
->>>>>>> .merge_file_pxzH7P
-<<<<<<< .merge_file_xk3bXG
 ---
 title: "Audit Traduzioni Completato - 2025"
 module: "Lang"
@@ -17,13 +9,6 @@ qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
-=======
->>>>>>> .merge_file_UpyqQb
-<<<<<<< .merge_file_OV1N0J
-=======
->>>>>>> .merge_file_mIBcHi
->>>>>>> .merge_file_gGd3tD
->>>>>>> .merge_file_pxzH7P
 # Audit Traduzioni Completato - 2025
 
 ## Riepilogo Lavoro Effettuato

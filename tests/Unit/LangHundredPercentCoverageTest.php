@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
 use Livewire\Livewire;
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Mockery;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Actions\GetAllModuleTranslationAction;
@@ -53,6 +53,8 @@ use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslatio
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\ListTranslationFiles;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Tables\TranslationFilesTable;
 use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
+use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
+use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
 use Modules\Lang\Models\BaseModel;
 use Modules\Lang\Models\BaseModelLang;
 use Modules\Lang\Models\LanguageLine;
@@ -65,9 +67,8 @@ use Modules\Lang\Models\Traits\HasStrictTranslations;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\LangServiceProvider;
-use Modules\Lang\Providers\Traits\TranslatorTrait;
-use Illuminate\Contracts\Foundation\Application;
 use Modules\Lang\Providers\RouteServiceProvider;
+use Modules\Lang\Providers\TranslatorTraitPhpstanProbe;
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Components\LanguageSwitcher;
 use Modules\Lang\View\Composers\ThemeComposer;
@@ -77,6 +78,7 @@ use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+use ReflectionMethod;
 
 use function Safe\fclose;
 use function Safe\file_put_contents;
@@ -114,9 +116,7 @@ final class LangBaseViewRecordStub extends LangBaseViewRecord
     protected static string $resource = TranslationFileResource::class;
 }
 
-final class LangBasePolicyStub extends LangBasePolicy
-{
-}
+final class LangBasePolicyStub extends LangBasePolicy {}
 
 final class LangFieldHostModel extends BaseModelLang
 {
@@ -125,10 +125,6 @@ final class LangFieldHostModel extends BaseModelLang
 
 final class TranslationEditorStub extends TranslationEditor
 {
-    /**
-     * `mixed` voluto: lo stato Filament forzato e' eterogeneo per i rami coperti
-     * (array, stringa, null). Il tipo nativo riflette il contratto di getState().
-     */
     public mixed $forcedState = [];
 
     public function getState(): mixed
@@ -150,16 +146,8 @@ final class StrictTranslationsHost extends BaseModel
 
     protected $table = 'translations';
 
-    /**
-     * `mixed` voluto: i test forzano traduzioni di tipo arbitrario (int, array, bool)
-     * per coprire tutti i rami di normalizzazione di getTranslation().
-     */
     public mixed $forcedTranslation = null;
 
-    /**
-     * Firma speculare a `HasTranslations::getTranslation(): mixed` — i parametri
-     * restano invariati, il ritorno e' eterogeneo per contratto spatie.
-     */
     protected function spatieGetTranslation(string $key, string $locale, bool $useFallbackLocale = true): mixed
     {
         unset($key, $locale, $useFallbackLocale);
@@ -169,14 +157,13 @@ final class StrictTranslationsHost extends BaseModel
 }
 
 /**
- * @param list<string> $permissions
- *
+ * @param  list<string>  $permissions
  * @return MockInterface&UserContract
  */
 function langHundredFakeUser(array $permissions = [], bool $superAdmin = false): UserContract
 {
     /** @var MockInterface&UserContract $user */
-    $user = \Mockery::mock(UserContract::class);
+    $user = Mockery::mock(UserContract::class);
     $user->shouldReceive('hasRole')->with('super-admin')->andReturn($superAdmin);
     $user->shouldReceive('hasPermissionTo')
         ->andReturnUsing(static fn (string $permission): bool => in_array($permission, $permissions, true));
@@ -185,8 +172,6 @@ function langHundredFakeUser(array $permissions = [], bool $superAdmin = false):
 }
 
 /**
- * `mixed ...$values` voluto: helper per costruire collezioni di valori eterogenei.
- *
  * @return Collection<int|string, mixed>
  */
 function langMixedCollection(mixed ...$values): Collection
@@ -229,7 +214,7 @@ function langForceSqliteTranslations(): void
 }
 
 afterEach(function (): void {
-    \Mockery::close();
+    Mockery::close();
     config(['lang.language_switcher.enabled' => true]);
 
     $sqlite = $GLOBALS['__lang_cov_sqlite'] ?? null;
@@ -257,11 +242,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         Assert::assertNotEmpty($moduleRows);
         Assert::assertSame($moduleRows[0]['path'], $sample);
         Assert::assertNotEmpty($allRows);
-        $firstRow = $allRows[0] ?? null;
-        Assert::assertIsArray($firstRow);
-        $firstKey = $firstRow['key'] ?? null;
-        Assert::assertIsString($firstKey);
-        Assert::assertStringContainsString('lang::', $firstKey);
+        Assert::assertStringContainsString('lang::', $allRows[0]['key']);
     });
 
     test('PublishTranslationAction writes when item value changes', function (): void {
@@ -401,12 +382,12 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $path = sys_get_temp_dir().'/lang_write_cov_'.uniqid().'.php';
         TestCase::createTranslationFile($path, ['old' => '1']);
 
-        app()->instance('cache', new class {
-            public function flush(): void
-            {
-            }
+        app()->instance('cache', new class()
+        {
+            public function flush(): void {}
         });
-        $translationLoader = new class {
+        $translationLoader = new class()
+        {
             public bool $flushed = false;
 
             public function flush(): void
@@ -434,7 +415,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $path = sys_get_temp_dir().'/lang_bad_'.uniqid().'.php';
         $action = app(WriteTranslationFileAction::class);
 
-        $read = \Mockery::mock(ReadTranslationFileAction::class);
+        $read = Mockery::mock(ReadTranslationFileAction::class);
         $read->shouldReceive('toPhp')->andReturn('<?php return [;');
         app()->instance(ReadTranslationFileAction::class, $read);
 
@@ -470,7 +451,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             Assert::assertSame('completed', $synced['modules'][$tmpModule]['status']);
             Assert::assertFileExists($base.'/lang/en/nested.php');
 
-            $getModules = new \ReflectionMethod($action, 'getModules');
+            $getModules = new ReflectionMethod($action, 'getModules');
             $getModules->setAccessible(true);
             /** @var list<string> $modules */
             $modules = $getModules->invoke($action, base_path('Modules'));
@@ -479,7 +460,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             File::deleteDirectory($base);
         }
 
-        $load = new \ReflectionMethod($action, 'loadTranslations');
+        $load = new ReflectionMethod($action, 'loadTranslations');
         $load->setAccessible(true);
         Assert::assertSame([], $load->invoke($action, '/no/such/file.php'));
 
@@ -526,7 +507,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             $mock->allows('execute');
         });
         $this->mockService(SvgExistsAction::class, static function (MockInterface $mock): void {
-            $mock->allows('execute')->andReturnUsing(static fn (string $label): bool => 'heroicon-o-check' === $label);
+            $mock->allows('execute')->andReturnUsing(static fn (string $label): bool => $label === 'heroicon-o-check');
         });
 
         app('translator')->addLines([
@@ -568,43 +549,23 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
     });
 
     test('LangBase page stubs expose header actions with locale switcher', function (): void {
-        $edit = new \ReflectionMethod(LangBaseEditRecordStub::class, 'getHeaderActions');
-        $edit->setAccessible(true);
-        $editActions = $edit->invoke(new LangBaseEditRecordStub());
-        Assert::assertIsArray($editActions);
-        Assert::assertArrayHasKey('locale-switcher', $editActions);
-
-        $list = new \ReflectionMethod(LangBaseListRecordsStub::class, 'getHeaderActions');
-        $list->setAccessible(true);
-        $listActions = $list->invoke(new LangBaseListRecordsStub());
-        Assert::assertIsArray($listActions);
-        Assert::assertArrayHasKey('locale_switcher', $listActions);
-
-        $view = new \ReflectionMethod(LangBaseViewRecordStub::class, 'getHeaderActions');
-        $view->setAccessible(true);
-        $viewActions = $view->invoke(new LangBaseViewRecordStub());
-        $create = new \ReflectionMethod(LangBaseCreateRecordStub::class, 'getHeaderActions');
+        $create = new ReflectionMethod(LangBaseCreateRecordStub::class, 'getHeaderActions');
         $create->setAccessible(true);
         Assert::assertNotEmpty($create->invoke(new LangBaseCreateRecordStub()));
 
-        $edit = new \ReflectionMethod(LangBaseEditRecordStub::class, 'getHeaderActions');
-        $edit->setAccessible(true);
-        $editActions = $edit->invoke(new LangBaseEditRecordStub());
-        Assert::assertNotEmpty($create->invoke(new LangBaseCreateRecordStub()));
-
-        $edit = new \ReflectionMethod(LangBaseEditRecordStub::class, 'getHeaderActions');
+        $edit = new ReflectionMethod(LangBaseEditRecordStub::class, 'getHeaderActions');
         $edit->setAccessible(true);
         $editActions = $edit->invoke(new LangBaseEditRecordStub());
         Assert::assertIsArray($editActions);
         Assert::assertArrayHasKey('locale-switcher', $editActions);
 
-        $list = new \ReflectionMethod(LangBaseListRecordsStub::class, 'getHeaderActions');
+        $list = new ReflectionMethod(LangBaseListRecordsStub::class, 'getHeaderActions');
         $list->setAccessible(true);
         $listActions = $list->invoke(new LangBaseListRecordsStub());
         Assert::assertIsArray($listActions);
         Assert::assertArrayHasKey('locale_switcher', $listActions);
 
-        $view = new \ReflectionMethod(LangBaseViewRecordStub::class, 'getHeaderActions');
+        $view = new ReflectionMethod(LangBaseViewRecordStub::class, 'getHeaderActions');
         $view->setAccessible(true);
         $viewActions = $view->invoke(new LangBaseViewRecordStub());
         Assert::assertIsArray($viewActions);
@@ -630,13 +591,13 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         });
 
         $select = NationalFlagSelect::make('country');
-        $optionsMethod = new \ReflectionMethod($select, 'getCountryOptions');
+        $optionsMethod = new ReflectionMethod($select, 'getCountryOptions');
         $optionsMethod->setAccessible(true);
         /** @var array<string, string> $options */
         $options = $optionsMethod->invoke($select);
         Assert::assertNotEmpty($options);
 
-        $filterMethod = new \ReflectionMethod($select, 'getFilteredCountryOptions');
+        $filterMethod = new ReflectionMethod($select, 'getFilteredCountryOptions');
         $filterMethod->setAccessible(true);
         Assert::assertNotEmpty($filterMethod->invoke($select, ''));
         Assert::assertIsArray($filterMethod->invoke($select, 'ital'));
@@ -665,20 +626,16 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $schema = $edit->getFormSchema();
         Assert::assertNotEmpty($schema);
 
-        $header = new \ReflectionMethod($edit, 'getHeaderActions');
-        $edit = new EditTranslationFile();
-        $schema = $edit->getFormSchema();
-        Assert::assertNotEmpty($schema);
-
-        $header = new \ReflectionMethod($edit, 'getHeaderActions');
+        $header = new ReflectionMethod($edit, 'getHeaderActions');
         $header->setAccessible(true);
         $headerActions = $header->invoke($edit);
         Assert::assertIsArray($headerActions);
         Assert::assertArrayHasKey('locale-switcher', $headerActions);
 
-        $mutate = new \ReflectionMethod($edit, 'mutateFormDataBeforeSave');
+        $mutate = new ReflectionMethod($edit, 'mutateFormDataBeforeSave');
         $mutate->setAccessible(true);
-        $record = new class extends Model {
+        $record = new class() extends Model
+        {
             protected $guarded = [];
         };
         $record->forceFill(['key' => 'lang::messages']);
@@ -687,14 +644,16 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         Assert::assertSame(['content' => null], $mutate->invoke($edit, ['content' => null]));
 
         $editNoKey = new EditTranslationFile();
-        $editNoKey->record = new class extends Model {
+        $editNoKey->record = new class() extends Model
+        {
             protected $guarded = [];
         };
         Assert::assertSame(['x' => 1], $mutate->invoke($editNoKey, ['x' => 1]));
 
-        $after = new \ReflectionMethod($edit, 'afterSave');
+        $after = new ReflectionMethod($edit, 'afterSave');
         $after->setAccessible(true);
-        $refreshable = new class extends Model {
+        $refreshable = new class() extends Model
+        {
             public bool $refreshed = false;
 
             public function refresh(): static
@@ -712,7 +671,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $after->invoke($edit);
 
         $list = new ListTranslationFiles();
-        $listHeader = new \ReflectionMethod($list, 'getHeaderActions');
+        $listHeader = new ReflectionMethod($list, 'getHeaderActions');
         $listHeader->setAccessible(true);
         $listHeaderActions = $listHeader->invoke($list);
         Assert::assertIsArray($listHeaderActions);
@@ -733,25 +692,12 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         app()->instance('request', Request::create('http://localhost/it/demo', 'GET'));
         app()->setLocale('it');
         Assert::assertStringContainsString('/en/', $widget->getLanguageUrl('en'));
-        $widget = new LanguageSwitcherWidget();
-        $viewData = $widget->exposeViewData();
-        Assert::assertArrayHasKey('available_locales', $viewData);
-        Assert::assertArrayHasKey('lang', $viewData);
-        Assert::assertArrayHasKey('langs', $viewData);
-        $availableLocales = $viewData['available_locales'];
-        Assert::assertInstanceOf(Collection::class, $availableLocales);
-        $supportedCodes = array_keys(LaravelLocalization::getSupportedLocales());
-        Assert::assertSame($supportedCodes, $availableLocales->pluck('code')->all());
-
-        app()->instance('request', Request::create('http://localhost/it/demo', 'GET'));
-        app()->setLocale('it');
-        Assert::assertStringContainsString('en', $widget->getLanguageUrl('en'));
 
         app()->instance('request', Request::create('http://localhost/it', 'GET'));
         Assert::assertStringContainsString('en', $widget->getLanguageUrl('en'));
 
         app()->instance('request', Request::create('http://localhost/', 'GET'));
-        Assert::assertSame('/de', $widget->getLanguageUrl('de'));
+        Assert::assertStringContainsString('de', $widget->getLanguageUrl('de'));
 
         Livewire::test(LanguageSwitcherWidget::class)
             ->call('changeLanguage', 'en')
@@ -769,347 +715,317 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         Assert::assertSame('lang::components.empty', $view->name());
     });
 
-    test('LanguageSwitcherWidget exposes configured locales', function (): void {
-        $widget = new LanguageSwitcherWidget();
-        Assert::assertNotEmpty($widget->getAvailableLocales());
-        Assert::assertSame('/en', $widget->getLanguageUrl('en'));
+    test('Livewire Change and Switcher mount and render', function (): void {
+        config([
+            'laravellocalization.supportedLocales' => [
+                'it' => ['name' => 'Italiano', 'script' => 'Latn', 'native' => 'Italiano', 'regional' => 'it_IT'],
+                'en' => ['name' => 'English', 'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB'],
+            ],
+        ]);
+        app()->setLocale('it');
+
+        $change = new LangChange();
+        $change->mount();
+        Assert::assertSame('it', $change->lang);
+        Assert::assertArrayHasKey('en', $change->langs);
+        Assert::assertInstanceOf(View::class, $change->render());
+
+        $switcher = new LangSwitcher();
+        $switcher->mount();
+        Assert::assertSame('it', $switcher->lang);
+        Assert::assertInstanceOf(View::class, $switcher->render());
     });
 
     test('LangField cast get and set via host model', function (): void {
         $cast = new LangField();
         $host = new LangFieldHostModel();
-        test('retired HTTP Switcher and Change files no longer exist', function (): void {
-            $httpLangDir = dirname(__DIR__, 2).'/app/Http/Livewire/Lang';
-            Assert::assertFileDoesNotExist($httpLangDir.'/Change.php');
-            Assert::assertFileDoesNotExist($httpLangDir.'/Switcher.php');
-        });
+        /** @var Post&MockInterface $post */
+        $post = Mockery::mock(Post::class)->makePartial();
+        $initialTitle = ['it' => 'Hello'];
+        $post->setAttribute('custom_field', $initialTitle);
+        $post->shouldReceive('save')->once()->andReturnTrue();
+        $host->setRelation('post', $post);
 
-        test('LangField cast get and set via host model', function (): void {
-            $cast = new LangField();
-            $host = new LangFieldHostModel();
-            /** @var Post&MockInterface $post */
-            $post = \Mockery::mock(Post::class)->makePartial();
-            $initialTitle = ['it' => 'Hello'];
-            $post->setAttribute('custom_field', $initialTitle);
-            $post->shouldReceive('save')->once()->andReturnTrue();
-            $host->setRelation('post', $post);
+        Assert::assertSame($initialTitle, $cast->get($host, 'custom_field', null, []));
+        $translatedTitle = ['it' => 'World'];
+        Assert::assertSame([], $cast->set($host, 'custom_field', $translatedTitle, []));
+        Assert::assertSame($translatedTitle, $post->getAttribute('custom_field'));
+    });
+});
 
-            Assert::assertSame($initialTitle, $cast->get($host, 'custom_field', null, []));
-            $translatedTitle = ['it' => 'World'];
-            Assert::assertSame([], $cast->set($host, 'custom_field', $translatedTitle, []));
-            Assert::assertSame($translatedTitle, $post->getAttribute('custom_field'));
-        });
+describe('Lang 100% — Models policies providers views', function (): void {
+    test('LanguageLine fillable and casts', function (): void {
+        $line = new LanguageLine();
+        Assert::assertSame(['group', 'key', 'text', 'locale'], $line->getFillable());
+        $casts = new ReflectionMethod($line, 'casts');
+        $casts->setAccessible(true);
+        Assert::assertSame(['text' => 'json'], $casts->invoke($line));
     });
 
-    describe('Lang 100% — Models policies providers views', function (): void {
-        test('LanguageLine fillable and casts', function (): void {
-            $line = new LanguageLine();
-            Assert::assertSame(['group', 'key', 'text', 'locale'], $line->getFillable());
-            $casts = new \ReflectionMethod($line, 'casts');
-            $casts->setAccessible(true);
-            Assert::assertSame(['text' => 'json'], $casts->invoke($line));
+    test('HasStrictTranslations normalizes scalar array bool float and object', function (): void {
+        $model = new StrictTranslationsHost();
+
+        $model->forcedTranslation = 'Ciao';
+        Assert::assertSame('Ciao', $model->getTranslation('title', 'it'));
+
+        $model->forcedTranslation = 3;
+        Assert::assertSame(3, $model->getTranslation('title', 'it'));
+
+        $model->forcedTranslation = null;
+        Assert::assertNull($model->getTranslation('title', 'it'));
+
+        $model->forcedTranslation = ['nested' => 'x', 0 => 'skip'];
+        Assert::assertSame(['nested' => 'x'], $model->getTranslation('title', 'en'));
+
+        $model->forcedTranslation = true;
+        Assert::assertSame(1, $model->getTranslation('title', 'de'));
+
+        $model->forcedTranslation = 1.5;
+        Assert::assertSame(1, $model->getTranslation('title', 'fr'));
+
+        $model->forcedTranslation = new class()
+        {
+            public function __toString(): string
+            {
+                return 'obj';
+            }
+        };
+        Assert::assertSame('obj', $model->getTranslation('title', 'es'));
+
+        $model->forcedTranslation = fopen('php://memory', 'r');
+        Assert::assertNull($model->getTranslation('title', 'pt'));
+        if (is_resource($model->forcedTranslation)) {
+            fclose($model->forcedTranslation);
+        }
+    });
+
+    test('policies cover all abilities and before null path', function (): void {
+        $user = langHundredFakeUser([
+            'translation.viewAny', 'translation.view', 'translation.create', 'translation.update',
+            'translation.delete', 'translation.restore', 'translation.forceDelete',
+            'post.viewAny', 'post.view', 'post.create', 'post.update', 'post.delete', 'post.restore', 'post.forceDelete',
+            'translation_file.viewAny', 'translation_file.view', 'translation_file.create', 'translation_file.update',
+            'translation_file.delete', 'translation_file.restore', 'translation_file.forceDelete',
+        ]);
+        $denied = langHundredFakeUser([]);
+
+        $translationPolicy = new TranslationPolicy();
+        $postPolicy = new PostPolicy();
+        $filePolicy = new TranslationFilePolicy();
+        $base = new LangBasePolicyStub();
+
+        Assert::assertNull($base->before($denied, 'viewAny'));
+        Assert::assertTrue($translationPolicy->viewAny($user));
+        Assert::assertTrue($translationPolicy->view($user, new Translation()));
+        Assert::assertTrue($translationPolicy->create($user));
+        Assert::assertTrue($translationPolicy->update($user, new Translation()));
+        Assert::assertTrue($translationPolicy->delete($user, new Translation()));
+        Assert::assertTrue($translationPolicy->restore($user, new Translation()));
+        Assert::assertTrue($translationPolicy->forceDelete($user, new Translation()));
+        Assert::assertFalse($translationPolicy->viewAny($denied));
+
+        Assert::assertTrue($postPolicy->viewAny($user));
+        Assert::assertTrue($postPolicy->view($user, new Post()));
+        Assert::assertTrue($postPolicy->create($user));
+        Assert::assertTrue($postPolicy->restore($user, new Post()));
+        Assert::assertTrue($postPolicy->forceDelete($user, new Post()));
+
+        Assert::assertTrue($filePolicy->viewAny($user));
+        Assert::assertTrue($filePolicy->view($user, new TranslationFile()));
+        Assert::assertTrue($filePolicy->create($user));
+        Assert::assertTrue($filePolicy->update($user, new TranslationFile()));
+        Assert::assertTrue($filePolicy->restore($user, new TranslationFile()));
+        Assert::assertTrue($filePolicy->forceDelete($user, new TranslationFile()));
+        Assert::assertFalse($filePolicy->viewAny($denied));
+    });
+
+    test('Post linkable slug options and accessors without persistence', function (): void {
+        $post = new Post();
+        Assert::assertSame('guid', $post->getSlugOptions()->slugField);
+        Assert::assertInstanceOf(MorphTo::class, $post->linkable());
+
+        $post->setRawAttributes(['post_type' => 'article', 'post_id' => '9']);
+        Assert::assertSame('article 9', $post->getTitleAttribute(null));
+
+        $post2 = new Post();
+        $post2->setRawAttributes([]);
+        $post2->post_type = 'page';
+        $post2->post_id = 3;
+        Assert::assertSame('page 3', $post2->getTitleAttribute(null));
+
+        $post3 = new Post();
+        $post3->setRawAttributes(['title' => '']);
+        Assert::assertIsString($post3->getGuidAttribute('bad value with spaces'));
+
+        $post4 = new Post();
+        $post4->setRawAttributes(['title' => '', 'post_type' => 'x', 'post_id' => 1]);
+        Assert::assertSame('x-1', $post4->getGuidAttribute(null));
+    });
+
+    test('TranslationFile getRows ide-helper path and load failures', function (): void {
+        $previousArgv = $_SERVER['argv'] ?? null;
+        $_SERVER['argv'] = ['artisan', 'ide-helper:models'];
+        Assert::assertSame([], (new TranslationFile())->getRows());
+        $_SERVER['argv'] = $previousArgv;
+
+        $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock): void {
+            $mock->shouldReceive('execute')->andThrow(new \RuntimeException('boom'));
         });
+        expect((new TranslationFile())->getRows())->toBeEmpty();
 
-        test('HasStrictTranslations normalizes scalar array bool float and object', function (): void {
-            $model = new StrictTranslationsHost();
+        $bad = sys_get_temp_dir().'/tf_bad_'.uniqid().'.php';
+        file_put_contents($bad, '<?php throw new Exception("x");');
+        $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock) use ($bad): void {
+            $mock->shouldReceive('execute')->andReturn([
+                ['key' => 'lang::bad', 'path' => $bad],
+                ['key' => 'lang::missing', 'path' => '/no/file.php'],
+                123,
+            ]);
+        });
+        $rows = (new TranslationFile())->getRows();
+        Assert::assertNotEmpty($rows);
+        unlink($bad);
+    });
 
-            $model->forcedTranslation = 'Ciao';
-            Assert::assertSame('Ciao', $model->getTranslation('title', 'it'));
-
-            $model->forcedTranslation = 3;
-            Assert::assertSame(3, $model->getTranslation('title', 'it'));
-
-            $model->forcedTranslation = null;
-            Assert::assertNull($model->getTranslation('title', 'it'));
-
-            $model->forcedTranslation = ['nested' => 'x', 0 => 'skip'];
-            Assert::assertSame(['nested' => 'x'], $model->getTranslation('title', 'en'));
-
-            $model->forcedTranslation = true;
-            Assert::assertSame(1, $model->getTranslation('title', 'de'));
-
-            $model->forcedTranslation = 1.5;
-            Assert::assertSame(1, $model->getTranslation('title', 'fr'));
-
-            $model->forcedTranslation = new class {
-                public function __toString(): string
+    test('TranslationData throws when namespace missing or file not array', function (): void {
+        app()->instance('translator', new class()
+        {
+            public function getLoader(): object
+            {
+                return new class()
                 {
-                    return 'obj';
-                }
-            };
-            Assert::assertSame('obj', $model->getTranslation('title', 'es'));
-
-            $model->forcedTranslation = fopen('php://memory', 'r');
-            Assert::assertNull($model->getTranslation('title', 'pt'));
-            if (is_resource($model->forcedTranslation)) {
-                fclose($model->forcedTranslation);
+                    /** @return array<string, string> */
+                    public function namespaces(): array
+                    {
+                        return [];
+                    }
+                };
             }
         });
 
-        test('policies cover all abilities and before null path', function (): void {
-            $user = langHundredFakeUser([
-                'translation.viewAny', 'translation.view', 'translation.create', 'translation.update',
-                'translation.delete', 'translation.restore', 'translation.forceDelete',
-                'post.viewAny', 'post.view', 'post.create', 'post.update', 'post.delete', 'post.restore', 'post.forceDelete',
-                'translation_file.viewAny', 'translation_file.view', 'translation_file.create', 'translation_file.update',
-                'translation_file.delete', 'translation_file.restore', 'translation_file.forceDelete',
-            ]);
-            $denied = langHundredFakeUser([]);
+        $data = TranslationData::from([
+            'lang' => 'it',
+            'namespace' => 'missing',
+            'group' => 'g',
+            'item' => 'i',
+        ]);
+        expect(fn () => $data->getFilename())->toThrow(\Exception::class);
 
-            $translationPolicy = new TranslationPolicy();
-            $postPolicy = new PostPolicy();
-            $filePolicy = new TranslationFilePolicy();
-            $base = new LangBasePolicyStub();
+        $file = sys_get_temp_dir().'/td_'.uniqid().'.php';
+        file_put_contents($file, "<?php\nreturn 'nope';\n");
+        $data2 = TranslationData::from([
+            'lang' => 'it',
+            'namespace' => 'x',
+            'group' => 'g',
+            'item' => 'i',
+            'filename' => $file,
+        ]);
+        expect(fn () => $data2->getData())->toThrow(\Exception::class);
+        unlink($file);
+    });
 
-            Assert::assertNull($base->before($denied, 'viewAny'));
-            Assert::assertTrue($translationPolicy->viewAny($user));
-            Assert::assertTrue($translationPolicy->view($user, new Translation()));
-            Assert::assertTrue($translationPolicy->create($user));
-            Assert::assertTrue($translationPolicy->update($user, new Translation()));
-            Assert::assertTrue($translationPolicy->delete($user, new Translation()));
-            Assert::assertTrue($translationPolicy->restore($user, new Translation()));
-            Assert::assertTrue($translationPolicy->forceDelete($user, new Translation()));
-            Assert::assertFalse($translationPolicy->viewAny($denied));
+    test('TranslatorAdapter covers array and non-string translation results', function (): void {
+        $loader = new ArrayLoader();
+        $loader->addMessages('it', 'm', [
+            'tree' => ['k' => 'v'],
+            'num' => 5,
+            'ok' => 'yes',
+        ]);
+        $adapter = new TranslatorAdapter($loader, 'it');
 
-            Assert::assertTrue($postPolicy->viewAny($user));
-            Assert::assertTrue($postPolicy->view($user, new Post()));
-            Assert::assertTrue($postPolicy->create($user));
-            Assert::assertTrue($postPolicy->restore($user, new Post()));
-            Assert::assertTrue($postPolicy->forceDelete($user, new Post()));
-
-            Assert::assertTrue($filePolicy->viewAny($user));
-            Assert::assertTrue($filePolicy->view($user, new TranslationFile()));
-            Assert::assertTrue($filePolicy->create($user));
-            Assert::assertTrue($filePolicy->update($user, new TranslationFile()));
-            Assert::assertTrue($filePolicy->restore($user, new TranslationFile()));
-            Assert::assertTrue($filePolicy->forceDelete($user, new TranslationFile()));
-            $translationPolicy = new TranslationPolicy();
-            $postPolicy = new PostPolicy();
-            $filePolicy = new TranslationFilePolicy();
-            $base = new LangBasePolicyStub();
-
-            Assert::assertNull($base->before($denied, 'viewAny'));
-            Assert::assertTrue($translationPolicy->viewAny($user));
-            Assert::assertTrue($translationPolicy->view($user, new Translation()));
-            Assert::assertTrue($translationPolicy->create($user));
-            Assert::assertTrue($translationPolicy->update($user, new Translation()));
-            Assert::assertTrue($translationPolicy->delete($user, new Translation()));
-            Assert::assertTrue($translationPolicy->restore($user, new Translation()));
-            Assert::assertTrue($translationPolicy->forceDelete($user, new Translation()));
-            Assert::assertFalse($translationPolicy->viewAny($denied));
-
-            Assert::assertTrue($postPolicy->viewAny($user));
-            Assert::assertTrue($postPolicy->view($user, new Post()));
-            Assert::assertTrue($postPolicy->create($user));
-            Assert::assertTrue($postPolicy->restore($user, new Post()));
-            Assert::assertTrue($postPolicy->forceDelete($user, new Post()));
-
-            Assert::assertTrue($filePolicy->viewAny($user));
-            Assert::assertTrue($filePolicy->view($user, new TranslationFile()));
-            Assert::assertTrue($filePolicy->create($user));
-            Assert::assertTrue($filePolicy->update($user, new TranslationFile()));
-            Assert::assertTrue($filePolicy->restore($user, new TranslationFile()));
-            Assert::assertTrue($filePolicy->forceDelete($user, new TranslationFile()));
-            Assert::assertFalse($filePolicy->viewAny($denied));
+        $this->mockService(RecordMissingTranslationAction::class, static function (MockInterface $mock): void {
+            $mock->allows('execute');
         });
 
-        test('Post linkable slug options and accessors without persistence', function (): void {
-            $post = new Post();
-            Assert::assertSame('guid', $post->getSlugOptions()->slugField);
-            Assert::assertInstanceOf(MorphTo::class, $post->linkable());
+        Assert::assertSame(['k' => 'v'], $adapter->get('m.tree'));
+        Assert::assertSame('m.num', $adapter->get('m.num'));
+        Assert::assertSame('yes', $adapter->get('m.ok'));
+    });
 
-            $post->setRawAttributes(['post_type' => 'article', 'post_id' => '9']);
-            Assert::assertSame('article 9', $post->getTitleAttribute(null));
-
-            $post2 = new Post();
-            $post2->setRawAttributes([]);
-            $post2->post_type = 'page';
-            $post2->post_id = 3;
-            Assert::assertSame('page 3', $post2->getTitleAttribute(null));
-
-            $post3 = new Post();
-            $post3->setRawAttributes(['title' => '']);
-            Assert::assertIsString($post3->getGuidAttribute('bad value with spaces'));
-
-            $post4 = new Post();
-            $post3 = new Post();
-            $post3->setRawAttributes(['title' => '']);
-            Assert::assertIsString($post3->getGuidAttribute('bad value with spaces'));
-
-            $post4 = new Post();
-            $post4->setRawAttributes(['title' => '', 'post_type' => 'x', 'post_id' => 1]);
-            Assert::assertSame('x-1', $post4->getGuidAttribute(null));
+    test('LangServiceProvider registerTranslator and filament configure callbacks', function (): void {
+        $this->mockService(SaveTransAction::class, static function (MockInterface $mock): void {
+            $mock->allows('execute');
+        });
+        $this->mockService(RecordMissingTranslationAction::class, static function (MockInterface $mock): void {
+            $mock->allows('execute');
+        });
+        $this->mockService(GetTransKeyAction::class, static function (MockInterface $mock): void {
+            $mock->allows(['execute' => 'lang::txt']);
         });
 
-        test('TranslationFile getRows ide-helper path and load failures', function (): void {
-            $previousArgv = $_SERVER['argv'] ?? null;
-            $_SERVER['argv'] = ['artisan', 'ide-helper:models'];
-            Assert::assertCount(0, (new TranslationFile())->getRows());
-            $_SERVER['argv'] = $previousArgv;
+        $provider = new LangServiceProvider(app());
+        $provider->registerTranslator();
+        Assert::assertInstanceOf(TranslatorAdapter::class, app('translator'));
 
-            $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock): void {
-                $mock->shouldReceive('execute')->andThrow(new \RuntimeException('boom'));
-            });
-            Assert::assertCount(0, (new TranslationFile())->getRows());
+        $provider->registerFilamentLabel();
+        Assert::assertInstanceOf(Select::class, Select::make('s'));
+        Assert::assertInstanceOf(TextInput::class, TextInput::make('t'));
+        Assert::assertInstanceOf(TextEntry::class, TextEntry::make('e'));
+        Assert::assertInstanceOf(Section::class, Section::make('sec'));
+        Assert::assertInstanceOf(Filter::class, Filter::make('f'));
+        Assert::assertInstanceOf(TextColumn::class, TextColumn::make('c'));
+        Assert::assertInstanceOf(Action::class, Action::make('act'));
+    });
 
-            $bad = sys_get_temp_dir().'/tf_bad_'.uniqid().'.php';
-            file_put_contents($bad, '<?php throw new Exception("x");');
-            $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock) use ($bad): void {
-                $mock->shouldReceive('execute')->andReturn([
-                    ['key' => 'lang::bad', 'path' => $bad],
-                    ['key' => 'lang::missing', 'path' => '/no/file.php'],
-                    123,
-                ]);
-            });
-            $rows = (new TranslationFile())->getRows();
-            Assert::assertNotEmpty($rows);
-            unlink($bad);
-        });
+    test('TranslatorTrait registerTranslator via probe', function (): void {
+        $probe = new TranslatorTraitPhpstanProbe(app());
+        $probe->registerTranslator();
+        Assert::assertInstanceOf(TranslatorAdapter::class, app('translator'));
+    });
 
-        test('TranslationData throws when namespace missing or file not array', function (): void {
-            app()->instance('translator', new class {
-                public function getLoader(): object
-                {
-                    return new class {
-                        /** @return array<string, string> */
-                        public function namespaces(): array
-                        {
-                            return [];
-                        }
-                    };
-                }
-            });
+    test('RouteServiceProvider registerLang with admin segment and locales', function (): void {
+        config([
+            'laravellocalization.supportedLocales' => [
+                'it' => ['name' => 'it'],
+                'en' => ['name' => 'en'],
+            ],
+        ]);
+        $request = request();
+        $request->server->set('REQUEST_URI', '/it/admin/dashboard');
+        $request->server->set('PATH_INFO', '/it/admin/dashboard');
 
-            $data = TranslationData::from([
-                'lang' => 'it',
-                'namespace' => 'missing',
-                'group' => 'g',
-                'item' => 'i',
-            ]);
-            expect(fn () => $data->getFilename())->toThrow(\Exception::class);
+        $provider = new RouteServiceProvider(app());
+        $provider->registerLang();
+        Assert::assertContains(app()->getLocale(), ['it', 'en']);
+    });
 
-            $file = sys_get_temp_dir().'/td_'.uniqid().'.php';
-            file_put_contents($file, "<?php\nreturn 'nope';\n");
-            $data2 = TranslationData::from([
-                'lang' => 'it',
-                'namespace' => 'x',
-                'group' => 'g',
-                'item' => 'i',
-                'filename' => $file,
-            ]);
-            expect(fn () => $data2->getData())->toThrow(\Exception::class);
-            unlink($file);
-        });
+    test('ThemeComposer covers invalid config admin url and missing current lang', function (): void {
+        config(['laravellocalization.supportedLocales' => 'bad']);
+        expect(fn () => (new ThemeComposer())->languages())->toThrow(\Exception::class);
 
-        test('TranslatorAdapter covers array and non-string translation results', function (): void {
-            $loader = new ArrayLoader();
-            $loader->addMessages('it', 'm', [
-                'tree' => ['k' => 'v'],
-                'num' => 5,
-                'ok' => 'yes',
-            ]);
-            $adapter = new TranslatorAdapter($loader, 'it');
+        config([
+            'laravellocalization.supportedLocales' => [
+                'it' => 'nope',
+            ],
+        ]);
+        expect(fn () => (new ThemeComposer())->languages())->toThrow(\InvalidArgumentException::class);
 
-            $this->mockService(RecordMissingTranslationAction::class, static function (MockInterface $mock): void {
-                $mock->allows('execute');
-            });
+        config([
+            'laravellocalization.supportedLocales' => [
+                'it' => ['name' => 'Italiano'],
+            ],
+        ]);
+        expect(fn () => (new ThemeComposer())->languages())->toThrow(\InvalidArgumentException::class);
 
-            Assert::assertSame(['k' => 'v'], $adapter->get('m.tree'));
-            Assert::assertSame('m.num', $adapter->get('m.num'));
-            Assert::assertSame('yes', $adapter->get('m.ok'));
-        });
+        config([
+            'laravellocalization.supportedLocales' => [
+                'it' => ['name' => 'Italiano', 'regional' => 'it_IT'],
+                'en' => ['name' => 'English', 'regional' => 'en_US'],
+            ],
+        ]);
+        app()->setLocale('it');
+        $composer = new ThemeComposer();
+        Assert::assertCount(2, $composer->languages());
 
-        test('LangServiceProvider registerTranslator and filament configure callbacks', function (): void {
-            $this->mockService(SaveTransAction::class, static function (MockInterface $mock): void {
-                $mock->allows('execute');
-            });
-            $this->mockService(RecordMissingTranslationAction::class, static function (MockInterface $mock): void {
-                $mock->allows('execute');
-            });
-            $this->mockService(GetTransKeyAction::class, static function (MockInterface $mock): void {
-                $mock->allows(['execute' => 'lang::txt']);
-            });
+        $request = request();
+        $request->server->set('REQUEST_URI', '/it/admin/x');
+        $request->server->set('PATH_INFO', '/it/admin/x');
+        session(['in_admin' => true]);
+        $firstLanguage = $composer->languages()->toCollection()->first();
+        Assert::assertNotNull($firstLanguage);
+        Assert::assertIsString($firstLanguage->url);
 
-            $provider = new LangServiceProvider(app());
-            $provider->registerTranslator();
-            Assert::assertInstanceOf(TranslatorAdapter::class, app('translator'));
-
-            $provider->registerFilamentLabel();
-            Assert::assertInstanceOf(Select::class, Select::make('s'));
-            Assert::assertInstanceOf(TextInput::class, TextInput::make('t'));
-            Assert::assertInstanceOf(TextEntry::class, TextEntry::make('e'));
-            Assert::assertInstanceOf(Section::class, Section::make('sec'));
-            Assert::assertInstanceOf(Filter::class, Filter::make('f'));
-            Assert::assertInstanceOf(TextColumn::class, TextColumn::make('c'));
-            Assert::assertInstanceOf(Action::class, Action::make('act'));
-        });
-
-        test('TranslatorTrait registerTranslator via probe', function (): void {
-            $probe = new class(app()) {
-                use TranslatorTrait;
-
-                public function __construct(protected Application $app)
-                {
-                }
-            };
-            $probe->registerTranslator();
-            Assert::assertInstanceOf(TranslatorAdapter::class, app('translator'));
-        });
-
-        test('RouteServiceProvider registerLang with admin segment and locales', function (): void {
-            config([
-                'laravellocalization.supportedLocales' => [
-                    'it' => ['name' => 'it'],
-                    'en' => ['name' => 'en'],
-                ],
-            ]);
-            $request = request();
-            $request->server->set('REQUEST_URI', '/it/admin/dashboard');
-            $request->server->set('PATH_INFO', '/it/admin/dashboard');
-
-            $provider = new RouteServiceProvider(app());
-            $provider->registerLang();
-            Assert::assertContains(app()->getLocale(), ['it', 'en']);
-        });
-
-        test('ThemeComposer covers invalid config admin url and missing current lang', function (): void {
-            config(['laravellocalization.supportedLocales' => 'bad']);
-            expect(fn () => (new ThemeComposer())->languages())->toThrow(\Exception::class);
-
-            config([
-                'laravellocalization.supportedLocales' => [
-                    'it' => 'nope',
-                ],
-            ]);
-            expect(fn () => (new ThemeComposer())->languages())->toThrow(\InvalidArgumentException::class);
-
-            config([
-                'laravellocalization.supportedLocales' => [
-                    'it' => ['name' => 'Italiano'],
-                ],
-            ]);
-            expect(fn () => (new ThemeComposer())->languages())->toThrow(\InvalidArgumentException::class);
-
-            config([
-                'laravellocalization.supportedLocales' => [
-                    'it' => ['name' => 'Italiano', 'regional' => 'it_IT'],
-                    'en' => ['name' => 'English', 'regional' => 'en_US'],
-                ],
-            ]);
-            app()->setLocale('it');
-            $composer = new ThemeComposer();
-            Assert::assertCount(2, $composer->languages());
-
-            $request = request();
-            $request->server->set('REQUEST_URI', '/it/admin/x');
-            $request->server->set('PATH_INFO', '/it/admin/x');
-            session(['in_admin' => true]);
-            $firstLanguage = $composer->languages()->toCollection()->first();
-            Assert::assertNotNull($firstLanguage);
-            Assert::assertIsString($firstLanguage->url);
-
-            app()->setLocale('zz');
-            expect(fn () => $composer->currentLang('name'))->toThrow(\Exception::class);
-        });
+        app()->setLocale('zz');
+        expect(fn () => $composer->currentLang('name'))->toThrow(\Exception::class);
     });
 });

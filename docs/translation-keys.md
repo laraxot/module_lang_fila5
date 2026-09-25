@@ -1,11 +1,22 @@
+---
+title: "Regole per le Chiavi di Traduzione"
+module: "Lang"
+type: concept
+tags: [readme.es, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "readme.es 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
-- [Documentazione centrale](./readme.md)
+- [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-- [Documentazione Lang](./readme.md)
+- [Documentazione Lang](README.md)
 
 ## Regole Fondamentali per le Traduzioni
 
@@ -218,11 +229,11 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
-- [Documentazione centrale](./readme.md)
+- [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-- [Documentazione Lang](./readme.md)
+- [Documentazione Lang](README.md)
 
 ## Regole Fondamentali per le Traduzioni
 
