@@ -19,6 +19,7 @@ trait HasStrictTranslations
 
     /**
      * @return string|array<string, mixed>|int|null
+     * @phpstan-return string|array<string, mixed>|int|null
      */
     public function getTranslation(string $key, string $locale, bool $useFallbackLocale = true): string|array|int|null
     {
@@ -48,9 +49,10 @@ trait HasStrictTranslations
     }
 
     /**
-     * @param array<array-key, mixed> $value
-     *
+     * @param  array<array-key, mixed>  $value
      * @return array<string, mixed>
+     * @phpstan-param array<array-key, mixed> $value
+     * @phpstan-return array<string, mixed>
      */
     private static function normalizeTranslationArray(array $value): array
     {

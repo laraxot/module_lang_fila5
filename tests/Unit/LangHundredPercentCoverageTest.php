@@ -65,8 +65,9 @@ use Modules\Lang\Models\Traits\HasStrictTranslations;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\LangServiceProvider;
+use Modules\Lang\Providers\Traits\TranslatorTrait;
+use Illuminate\Contracts\Foundation\Application;
 use Modules\Lang\Providers\RouteServiceProvider;
-use Modules\Lang\Providers\TranslatorTraitPhpstanProbe;
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Components\LanguageSwitcher;
 use Modules\Lang\View\Composers\ThemeComposer;
@@ -1044,7 +1045,13 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         });
 
         test('TranslatorTrait registerTranslator via probe', function (): void {
-            $probe = new TranslatorTraitPhpstanProbe(app());
+            $probe = new class(app()) {
+                use TranslatorTrait;
+
+                public function __construct(protected Application $app)
+                {
+                }
+            };
             $probe->registerTranslator();
             Assert::assertInstanceOf(TranslatorAdapter::class, app('translator'));
         });
