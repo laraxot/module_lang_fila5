@@ -1,18 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_UaSiI6
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ullp4h
-=======
-<<<<<<< .merge_file_j9ju6u
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_Vm7OXp
->>>>>>> .merge_file_TAj1AK
->>>>>>> .merge_file_CvMDxX
->>>>>>> laraxot/dev
 ---
 title: "Asset binari"
 module: lang
@@ -22,23 +8,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-<<<<<<< HEAD
 =======
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_UaSiI6
-=======
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_ullp4h
-=======
-<<<<<<< .merge_file_j9ju6u
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Vm7OXp
->>>>>>> .merge_file_TAj1AK
->>>>>>> .merge_file_CvMDxX
 >>>>>>> laraxot/dev
 # Asset binari
 

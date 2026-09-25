@@ -1,148 +1,168 @@
-# Laraxot Lang module ignore rules
 
-# Dependencies and package manager artifacts
-vendor/
-node_modules/
-composer.lock
-package-lock.json
-yarn.lock
-npm-debug.log
-yarn-error.log
-
-# Build output and caches
-build/
-dist/
-cache/
-docs/cache/
-docs/phpstan/
-docs/archive/
-docs/archive/**
-*.cache
-*.lock
-*.phar
-*.jar
-*.tmp
-*.swp
-*.swo
-*.stackdump
-*:Zone.Identifier
-v8-compile-cache-*
-.php-cs-fixer.cache
-.phpunit.result.cache
-
-# Logs
-*.log
-error_log
-npm-debug.log*
-yarn-error.log*
-lerna-debug.log*
-
-# Laravel runtime and local environment
-bootstrap/compiled.php
-app/storage/
-public/storage
-public/hot
-public_html/storage
-public_html/hot
-storage/*.key
-.env
-.env.*
 !.env.example
-Homestead.yaml
-Homestead.json
-.vagrant/
-.idea/
-.phpintel
-
-# Editor and assistant tooling
-.vscode/
-.windsurf/
-.devcontainer/
-.phpstorm.meta.php
-.claude-audit
-agentdb.rvf
-app/Phpstan/
-
-# Git, merge and backup artifacts
-.git-rewrite/
-.git-blame-ignore-revs
-*~HEAD
-*~BASE
-*~LOCAL
-*~REMOTE
-*~head
-*.orig
-*.rej
-*.old
-*.old1
-*.old2
+# ==============================================
+# BACKUP FILES
+# BUILD & COMPILED FILES
+# CACHE & TEMPORARY FILES
+# Cache traduzioni
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+# DEPENDENCIES & PACKAGES
+# DEVELOPMENT TOOLS
+# DOCUMENTATION CACHE
+# END OF LANG .GITIGNORE
+# ENVIRONMENT & CONFIGURATION
+# FILE SPECIFICI DEL PROGETTO
+# File configurazione locale
+# File temporanei di traduzione
+# File test traduzioni
+# GIT SPECIFIC
+# LARAVEL SPECIFIC
+# LARAXOT MODULE LANG - .GITIGNORE
+# LOG FILES
+# Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
+# Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
+# Local vector DB (agent tooling)
+# MODULE ROOT FORBIDDEN DIRS
+# MODULE SPECIFIC - LANG
+# Modulo Lang Laraxot - Template standardizzato
+# OLD DIRECTORIES (LEGACY CLEANUP)
+# SYSTEM FILES
+# Ultimo aggiornamento: 2025-01-31
 *.backup
-*.backup.*
 *.backup-*
+*.backup.*
 *.backup_*
 *.bak
 *.bakcup
+*.cache
+*.fila2
+*.jar
+*.lock
+*.log
 *.new
-
-# Operating system files
+*.old
+*.old1
+*.old2
+*.orig
+*.phar
+*.rej
+*.stackdump
+*.swo
+*.swp
+*.tmp
+*:Zone.Identifier
+*~BASE
+*~HEAD
+*~LOCAL
+*~REMOTE
+*~headagentdb.rvf
 .DS_Store
 .DS_Store?
-._*
 .Spotlight-V100
 .Trashes
-ehthumbs.db
+._*
+.claude-audit
+.cursor/
+.devcontainer/
+.env
+.env.*
+.git-blame-ignore-revs
+.git-rewrite/
+.idea/
+.php-cs-fixer.cache
+.phpintel
+.phpstorm.meta.php
+.phpunit.result.cache
+.vagrant/
+.vscode/
+.windsurf/
+Homestead.json
+Homestead.yaml
 Thumbs.db
-
-# Documentation and generated legacy material
+_docs
 _docs/
-lang/lang/
-docs/archive/
-
-# Legacy directories and generated migrations
-resources/views/Components_old/
+app/Phpstan/
+app/storage/
+archive/
+audit-coverage/
+bootstrap/compiled.php
+build/
+cache/
+composer.lock
+config/development.php
+config/local.php
+database/Factories_old/
+database/Migrations/
 database/Migrations_old/
 database/Seeders_old/
-database/Factories_old/
-database_old/
-database/Migrations/
 database/migrations/Migrations/
-
-# Generated test artifacts
-/tests/AuditCoverage/
-
-# Lang module generated data and local configuration
-config/local.php
-config/development.php
-storage/lang/
-storage/translations/
-lang/temp/
+database_old/
+dist/
+docs/**/*-[0-9].md
+docs/archive/
+docs/archive/**
+docs/cache/
+docs/phpstan/
+ehthumbs.db
+error_log
 lang/drafts/
 lang/exports/
+lang/lang/
+lang/temp/
 lang_test_data.json
-test_translations.sql
-packages/lara-zeus/
-
-# Project-specific files
-*.fila2
 laravel
+legacy/
+lerna-debug.log*
+node_modules/
+npm-debug.log
+npm-debug.log*
+package-lock.json
+packages/lara-zeus/
+phpinsights.php
+phpmd.ruleset.xml
+phpstan*
+phpstan-baseline.neon
+public/hot
+public/storage
 public_html
+public_html/hot
+public_html/storage
+rector.php
+resources/views/Components_old/
+ruvector.db
+storage/*.key
+storage/lang/
+storage/translations/
+test_translations.sql
+tests/AuditCoverage/
+v8-compile-cache-*
+vendor/
+workbench
+yarn-error.log
+yarn-error.log*
+yarn.lock
 
-# Agent tooling and local audit output
+# Root quality tool configs forbidden in module root
+phpmd*
+docs/archive
+docs/legacy
+/.ai*
+/_bmad
+/bashscripts
+/_docs
+/docs/archive
+/docs/legacy
+docs/_archive
+docs/_archive/
 
-# Module-local quality tool configuration
-.rector.php
-.phpinsights.php
-
-# Root agent tooling and PHP quality configuration
-/.agents/
-/.codex/
-/.cursor/
-/.opencode/
-/.qwen/
+# Laraxot — forbidden at module/theme root (rector.php, phpinsights.php, .cursor, .windsurf, .vscode)
 /rector.php
 /phpinsights.php
-/.php-cs-fixer.php
-/.php-cs-fixer.dist.php
-
-# Generated Claude audit coverage scaffold (never commit)
-/audit-coverage/
+/.cursor
+/.cursor/
+/.windsurf
+/.windsurf/
+/.vscode
+/.vscode/
+.cursor~*
+.windsurf~*

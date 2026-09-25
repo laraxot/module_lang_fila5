@@ -14,6 +14,7 @@ use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
 
 use function Safe\file_put_contents;
+use function Safe\mkdir;
 
 /**
  * Base test case for Lang module.
@@ -34,13 +35,13 @@ abstract class TestCase extends XotBaseTestCase
     {
         parent::setUp();
 
-        $database = database_path('fixcity_data.sqlite');
+        $database = database_path('database.sqlite');
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
                 continue;
             }
 
@@ -64,27 +65,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param array<string, mixed> $translations
-     */
-    public static function createTranslationFile(string $filePath, array $translations): void
-    {
-        $phpContent = "<?php\n\nreturn ".var_export($translations, true).";\n";
-        file_put_contents($filePath, $phpContent);
-    }
-
-    public static function bindRealSaveTransAction(): void
-    {
-        $action = app()->make(SaveTransAction::class);
-        app()->instance(SaveTransAction::class, $action);
-    }
-
-    public static function forgetSaveTransActionOverride(): void
-    {
-        app()->forgetInstance(SaveTransAction::class);
-    }
-
-    /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {
@@ -92,13 +73,61 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param class-string<\Throwable> $exceptionClass
+     * @param  class-string<\Throwable>  $exceptionClass
      */
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
         $this->expectException($exceptionClass);
-        if (null !== $message) {
+        if ($message !== null) {
             $this->expectThrowableMessage($message);
         }
+    }
+
+    /**
+     * Scrive un file di traduzione PHP, creando la directory se manca.
+     *
+     * I test la usano per preparare un file esistente prima di verificare come
+     * lo trattano le action di scrittura. Il tipo e' `array<string, string>` e
+     * non un array annidato perche' tutti i chiamanti passano coppie piatte:
+     * se un giorno servisse l'annidamento, si allarga di proposito e si aggiorna
+     * questo commento, invece di partire larghi e non sapere piu' cosa arriva.
+     *
+     * @param  array<string, string>  $data
+     */
+    public static function createTranslationFile(string $path, array $data): void
+    {
+        $directory = \dirname($path);
+
+        if (! is_dir($directory)) {
+            mkdir($directory, 0o755, true);
+        }
+
+        file_put_contents($path, '<?php'.PHP_EOL.PHP_EOL.'return '.var_export($data, true).';'.PHP_EOL);
+    }
+
+    /**
+     * Registra nel container l'implementazione reale di SaveTransAction.
+     *
+     * Serve ai test che vogliono verificare la scrittura vera su file: senza
+     * questa riga il container puo' ancora avere il mock lasciato da un test
+     * precedente dello stesso processo, e l'asserzione verificherebbe il mock.
+     */
+    public static function bindRealSaveTransAction(): void
+    {
+        app()->instance(SaveTransAction::class, new SaveTransAction());
+    }
+
+    /**
+     * Rimuove l'override di SaveTransAction dal container.
+     *
+     * Si chiamava `restoreSaveTransActionNoOp()`, ma il nome descriveva un
+     * meccanismo che non e' mai esistito: nessun bootstrap registra una versione
+     * no-op da ripristinare. Quello che i test fanno davvero, nel `finally`, e'
+     * togliere l'istanza forzata da {@see bindRealSaveTransAction()} perche' il
+     * test successivo riparta dalla risoluzione normale.
+     */
+    public static function forgetSaveTransActionOverride(): void
+    {
+        app()->forgetInstance(SaveTransAction::class);
     }
 }
