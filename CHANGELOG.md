@@ -1,3 +1,18 @@
+## [1.0.0-dev.22](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.21...v1.0.0-dev.22) (2026-09-25)
+
+### Bug Fixes
+
+* **Lang:** LocaleSwitcherRefresh passa ad applyLocale solo la chiave locale; test Translator con asserzione reale ([3289e59](https://github.com/laraxot/module_lang_fila5/commit/3289e59fb01da118321eab4a094e20d1a0b9f55c))
+* **Lang:** LocaleSwitcherRefresh passa ad applyLocale solo la chiave locale; test Translator con asserzione reale ([d3d5157](https://github.com/laraxot/module_lang_fila5/commit/d3d5157ba60a6fd120a34d0b2884e8dabfa3f985))
+* **Lang:** PHPStan Modules a 0 errori dopo il sync delle 16:10 (regressioni ripristinate) ([5aa2ae8](https://github.com/laraxot/module_lang_fila5/commit/5aa2ae81537c372be08c36008b614972211ca66d))
+* **Lang:** PHPStan Modules a 0 errori dopo il sync delle 16:10 (regressioni ripristinate) ([09c8bde](https://github.com/laraxot/module_lang_fila5/commit/09c8bde0e3c28fe3760a3c5f5cfee159a0db6b97))
+* **Lang:** risolti conflitti di merge in migration e file di traduzione; rimosso declare strict_types dai file lang/en ([2e69487](https://github.com/laraxot/module_lang_fila5/commit/2e694870a4f0733b2406b365447ae6a10dcf8c2f))
+* **Lang:** risolti conflitti di merge in migration e file di traduzione; rimosso declare strict_types dai file lang/en ([d23b636](https://github.com/laraxot/module_lang_fila5/commit/d23b6364d507ef977015394453c2d6a41c7c3616))
+* **Lang:** test rotti dal merge automatico riportati all ultima versione pulita ([e78ef31](https://github.com/laraxot/module_lang_fila5/commit/e78ef31e0b2dcc6e7c903554ea59df523d3531e0))
+* **Lang:** test rotti dal merge automatico riportati all ultima versione pulita ([c60547f](https://github.com/laraxot/module_lang_fila5/commit/c60547ff1181d91fa0206b332a1bb1ee983df0fd))
+* rimossi i marker di conflitto '.merge_file_*' (anche dentro i docblock) e ripuliti i doc uniti ([db95c46](https://github.com/laraxot/module_lang_fila5/commit/db95c4608a01575a5d04fd7c1d85fc4bd080b48a))
+* rimossi i marker di conflitto '.merge_file_*' (anche dentro i docblock) e ripuliti i doc uniti ([ef53e92](https://github.com/laraxot/module_lang_fila5/commit/ef53e9263a68bb384a5e1c7ce278cac73e03bf40))
+
 ## [1.0.0-dev.15](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.14...v1.0.0-dev.15) (2026-08-25)
 
 ### Bug Fixes
