@@ -1,31 +1,22 @@
-# ==============================================
-# LARAXOT MODULE LANG - .GITIGNORE
-# Modulo Lang Laraxot - Template standardizzato
-# Ultimo aggiornamento: 2025-01-31
-# ==============================================
+# Laraxot Lang module ignore rules
 
-# ==============================================
-# DEPENDENCIES & PACKAGES
-# ==============================================
+# Dependencies and package manager artifacts
 vendor/
 node_modules/
+composer.lock
 package-lock.json
 yarn.lock
-composer.lock
-yarn-error.log
 npm-debug.log
+yarn-error.log
 
-# ==============================================
-# BUILD & COMPILED FILES
-# ==============================================
+# Build output and caches
 build/
 dist/
-docs/cache/
 cache/
-
-# ==============================================
-# CACHE & TEMPORARY FILES
-# ==============================================
+docs/cache/
+docs/phpstan/
+docs/archive/
+docs/archive/**
 *.cache
 *.lock
 *.phar
@@ -39,18 +30,14 @@ v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
 
-# ==============================================
-# LOG FILES
-# ==============================================
+# Logs
 *.log
 error_log
 npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# ==============================================
-# LARAVEL SPECIFIC
-# ==============================================
+# Laravel runtime and local environment
 bootstrap/compiled.php
 app/storage/
 public/storage
@@ -61,36 +48,31 @@ storage/*.key
 .env
 .env.*
 !.env.example
-
-# ==============================================
-# ENVIRONMENT & CONFIGURATION
-# ==============================================
 Homestead.yaml
 Homestead.json
 .vagrant/
 .idea/
 .phpintel
 
-# ==============================================
-# GIT SPECIFIC
-# ==============================================
+# Editor and assistant tooling
+.vscode/
+.windsurf/
+.devcontainer/
+.phpstorm.meta.php
+.claude-audit
+agentdb.rvf
+app/Phpstan/
+
+# Git, merge and backup artifacts
 .git-rewrite/
 .git-blame-ignore-revs
-
-# ==============================================
-# SYSTEM FILES
-# ==============================================
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# ==============================================
-# BACKUP FILES
-# ==============================================
+*~HEAD
+*~BASE
+*~LOCAL
+*~REMOTE
+*~head
+*.orig
+*.rej
 *.old
 *.old1
 *.old2
@@ -102,78 +84,65 @@ Thumbs.db
 *.bakcup
 *.new
 
-# ==============================================
-# DEVELOPMENT TOOLS
-# ==============================================
-.windsurf/
-.cursor/
-.phpstorm.meta.php
+# Operating system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# ==============================================
-# DOCUMENTATION CACHE
-# ==============================================
-docs/phpstan/
-docs/cache/
+# Documentation and generated legacy material
+_docs/
+lang/lang/
 docs/archive/
-docs/archive/**
 
-# ==============================================
-# OLD DIRECTORIES (LEGACY CLEANUP)
-# ==============================================
+# Legacy directories and generated migrations
 resources/views/Components_old/
 database/Migrations_old/
 database/Seeders_old/
 database/Factories_old/
 database_old/
+database/Migrations/
+database/migrations/Migrations/
 
-# ==============================================
-# MODULE SPECIFIC - LANG
-# ==============================================
-# File configurazione locale
+# Generated test artifacts
+/tests/AuditCoverage/
+
+# Lang module generated data and local configuration
 config/local.php
 config/development.php
-
-# Cache traduzioni
 storage/lang/
 storage/translations/
-
-# File temporanei di traduzione
 lang/temp/
 lang/drafts/
 lang/exports/
-
-# File test traduzioni
 lang_test_data.json
 test_translations.sql
+packages/lara-zeus/
 
-# ==============================================
-# FILE SPECIFICI DEL PROGETTO
-# ==============================================
+# Project-specific files
 *.fila2
 laravel
 public_html
 
-# ==============================================
-# END OF LANG .GITIGNORE
-# ==============================================
-lang/lang/
-_docs/
-_docs/
-packages/lara-zeus/
+# Agent tooling and local audit output
 
-# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
-*~HEAD
-*~BASE
-*~LOCAL
-*~REMOTE
-*.orig
-*.rej
-*~headagentdb.rvf
-database/Migrations/
-database/migrations/Migrations/
-audit-coverage/
-.vscode/
-.devcontainer/
-app/Phpstan/
-.claude-audit
-packages/lara-zeus/
+# Module-local quality tool configuration
+.rector.php
+.phpinsights.php
+
+# Root agent tooling and PHP quality configuration
+/.agents/
+/.codex/
+/.cursor/
+/.opencode/
+/.qwen/
+/rector.php
+/phpinsights.php
+/.php-cs-fixer.php
+/.php-cs-fixer.dist.php
+
+# Generated Claude audit coverage scaffold (never commit)
+/audit-coverage/
