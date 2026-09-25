@@ -1,3 +1,14 @@
+---
+title: "Standard per le Traduzioni nel Progetto <nome progetto>"
+module: "Lang"
+type: rule
+tags: [links]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Standard per le Traduzioni nel Progetto <nome progetto>
 
 ## Struttura delle Cartelle
@@ -165,7 +176,7 @@ return [
 
 ### Collegamenti
 - [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md)
-- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
+- [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica

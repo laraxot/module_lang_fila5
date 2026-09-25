@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_kZXGyx
-=======
-<<<<<<< .merge_file_TaDk1e
-=======
-<<<<<<< .merge_file_vh6JvP
-=======
->>>>>>> .merge_file_PPWkph
-<<<<<<< .merge_file_sGxhWu
 ---
 title: "Correzione Errori Traduzioni - 2025"
 module: "Lang"
@@ -17,13 +9,6 @@ qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
-=======
->>>>>>> .merge_file_4kPHto
-<<<<<<< .merge_file_kZXGyx
-=======
->>>>>>> .merge_file_I5G5SA
->>>>>>> .merge_file_1ENPcb
->>>>>>> .merge_file_PPWkph
 # Correzione Errori Traduzioni - 2025
 
 ## Problema Identificato

@@ -8,7 +8,6 @@ namespace Modules\Lang\Filament\Forms\Components;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Forms\Components\XotBaseField;
 
 class TranslationEditor extends XotBaseField
@@ -19,7 +18,7 @@ class TranslationEditor extends XotBaseField
     {
         parent::setUp();
 
-        $this->afterStateHydrated(function (TranslationEditor $component, mixed $state): void {
+        $this->afterStateHydrated(function (TranslationEditor $component, $state): void {
             $component->state($state ?? []);
         });
     }
@@ -28,21 +27,20 @@ class TranslationEditor extends XotBaseField
     {
         $components = [];
         $state = $this->getState() ?? [];
-        if (! is_iterable($state)) {
+        if (! is_array($state)) {
             return $components;
         }
 
         foreach ($state as $key => $value) {
-            if (! is_string($key) && ! is_int($key)) {
-                continue;
-            }
             $keyStr = (string) $key;
             if (is_array($value)) {
                 $components[] = Section::make($keyStr)->schema([
                     TranslationEditor::make($keyStr)->label('')->state($value),
                 ]);
             } else {
-                $valueStr = SafeStringCastAction::cast($value);
+                /** @var string|int|float|bool|null $valueNarrowed */
+                $valueNarrowed = $value;
+                $valueStr = is_string($valueNarrowed) ? $valueNarrowed : (string) $valueNarrowed;
                 $label = str_replace('_', ' ', $keyStr);
                 $components[] = TextInput::make($keyStr)->label($label)->default($valueStr);
             }

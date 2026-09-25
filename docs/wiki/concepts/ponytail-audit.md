@@ -1,3 +1,14 @@
+---
+title: "Ponytail audit — Lang"
+module: "Lang"
+type: concept
+tags: [migration, filament]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Ponytail audit — Lang
 
 **Delta modulo only here.** Ranked list, gate e remediation globale negli hub progetto.
