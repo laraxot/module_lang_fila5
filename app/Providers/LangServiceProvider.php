@@ -8,6 +8,7 @@ use Filament\Actions\Action;
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Select;
 use Filament\Infolists\Components\Entry;
+use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Support\Components\Component;
@@ -57,11 +58,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             Assert::isInstanceOf($component, Field::class);
 
             $validationMessages = __('user::validation');
-<<<<<<< HEAD
             if (is_array($validationMessages) && $validationMessages !== []) {
-=======
-            if (is_array($validationMessages) && [] !== $validationMessages) {
->>>>>>> laraxot/dev
                 /** @var array<string, string> $typedMessages */
                 $typedMessages = [];
                 foreach ($validationMessages as $key => $value) {
@@ -70,11 +67,7 @@ class LangServiceProvider extends XotBaseServiceProvider
                     }
                 }
 
-<<<<<<< HEAD
                 if ($typedMessages !== []) {
-=======
-                if ([] !== $typedMessages) {
->>>>>>> laraxot/dev
                     $component->validationMessages($typedMessages);
                 }
             }
@@ -86,7 +79,9 @@ class LangServiceProvider extends XotBaseServiceProvider
         });
 
         Entry::configureUsing(function (Entry $component) {
-            return app(AutoLabelAction::class)->execute($component, 'label');
+            $component = app(AutoLabelAction::class)->execute($component, 'label');
+
+            return $component;
         });
 
         Section::configureUsing(function (Section $component) {
@@ -127,11 +122,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             'getRecord' => $component->getRecord(),
             ]);
             */
-<<<<<<< HEAD
             if (method_exists($component, 'getRecord') && $component->getRecord() === null) {
-=======
-            if (method_exists($component, 'getRecord') && null === $component->getRecord()) {
->>>>>>> laraxot/dev
                 if (method_exists($component, 'button')) {
                     $component->button();
                 }
@@ -182,9 +173,7 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     protected function translatableComponents(): void
     {
-        // `Placeholder` e' deprecata in favore di `TextEntry`, che estende `Entry`:
-        // la voce era anche ridondante, non solo deprecata.
-        $components = [Field::class, BaseFilter::class, Column::class, Entry::class];
+        $components = [Field::class, BaseFilter::class, TextEntry::class, Column::class, Entry::class];
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
                 if (method_exists($translatable, 'translateLabel')) {

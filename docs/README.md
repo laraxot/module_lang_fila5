@@ -1,18 +1,19 @@
-# Documentation
+---
+title: "Lang Module Documentation"
+type: documentation
+tags: [module, documentation, localization, translations]
+created: 2026-07-14
+updated: 2026-07-14
+---
 
-This directory contains documentation for the module.
+# Modulo Lang
 
-## Structure
+## Overview
 
-- **architecture.md** - Module architecture and design patterns
-- **README.md** - This file
+Il modulo **Lang** gestisce il sistema di localizzazione e traduzioni multi-lingua per la piattaforma Laraxot. Fornisce gestione file traduzioni, sincronizzazione linguaggi, Filament translation editor, e helper per traduzioni dinamiche.
 
-## Guidelines
+## Scopo
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - Gestione file traduzioni Laravel (.php e .json)
 - Editor Filament per traduzioni multi-lingua
 - Sincronizzazione traduzioni tra lingue
@@ -332,13 +333,16 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse --level=max Modules/Lang
 
 ## Dipendenze / Moduli Correlati
 
-- [Xot - Framework Base](../../Xot/docs/README.md) — Always dependency
-- [User - Authentication](../../User/docs/README.md) — For user-facing strings
-- [Cms - Content](../../Cms/docs/README.md) — For content translations
-- [Notify - Notifications](../../Notify/docs/README.md) — For email translations
+- [Xot - Framework Base](../Xot/docs/README.md) — Always dependency
+- [User - Authentication](../User/docs/README.md) — For user-facing strings
+- [Cms - Content](../Cms/docs/README.md) — For content translations
+- [Notify - Notifications](../Notify/docs/README.md) — For email translations
 
 ## Documenti Correlati
 
+- [Translation Best Practices](../../../docs/wiki/standards/translations.md)
+- [Translation File Merge Pattern](../../../docs/wiki/standards/translation-merge-pattern.md)
+- [Module Translation Structure](../../../docs/wiki/standards/module-translations.md)
 - [PHPStan Configuration](../../../phpstan.neon)
 
 ## Regole Critiche
@@ -353,23 +357,13 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse --level=max Modules/Lang
 
 ## Standard Rules & Workflow
 
-- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
-- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
+- [[BMAD Method](../../../docs/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../docs/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../docs/wiki/concepts/llm-wiki-governance.md)]
 
 ---
 
 **Status**: ✅ Production  
 **Last Updated**: 2026-07-14  
-**Requirements**: PHP 8.3+, Laravel 13  
+**Requirements**: PHP 8.3+, Laravel 12  
 **PHPStan Level**: 10 (Compliant)
-<<<<<<< HEAD
-=======
-Documentation should be:
-- Clear and concise
-- Example-driven
-- Updated with code changes
-- Use Markdown format (.md)
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

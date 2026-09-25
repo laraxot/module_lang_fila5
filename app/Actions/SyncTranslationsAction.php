@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 class SyncTranslationsAction
@@ -15,16 +14,10 @@ class SyncTranslationsAction
     /**
      * Sincronizza le traduzioni da una lingua sorgente a lingue target.
      *
-<<<<<<< HEAD
-     * @param  string  $sourceLang  Lingua sorgente (default: 'it')
-     * @param  array<string>  $targetLangs  Lingue target (default: ['en', 'de'])
-     * @param  string|null  $specificModule  Modulo specifico (opzionale)
-=======
      * @param string        $sourceLang     Lingua sorgente (default: 'it')
      * @param array<string> $targetLangs    Lingue target (default: ['en', 'de'])
      * @param string|null   $specificModule Modulo specifico (opzionale)
      *
->>>>>>> laraxot/dev
      * @return array<string, mixed> Risultato della sincronizzazione
      */
     public function execute(
@@ -51,11 +44,7 @@ class SyncTranslationsAction
             $results['total_translations'] += is_numeric($moduleResults['translations_added'] ?? null)
                 ? ((int) $moduleResults['translations_added'])
                 : 0;
-<<<<<<< HEAD
-            $results['total_modules']++;
-=======
             ++$results['total_modules'];
->>>>>>> laraxot/dev
         }
 
         return $results;
@@ -64,16 +53,10 @@ class SyncTranslationsAction
     /**
      * Sincronizza le traduzioni per un modulo specifico.
      *
-<<<<<<< HEAD
-     * @param  string  $module  Nome del modulo
-     * @param  string  $sourceLang  Lingua sorgente
-     * @param  array<string>  $targetLangs  Lingue target
-=======
      * @param string        $module      Nome del modulo
      * @param string        $sourceLang  Lingua sorgente
      * @param array<string> $targetLangs Lingue target
      *
->>>>>>> laraxot/dev
      * @return array<string, mixed> Risultato per il modulo
      */
     private function syncModule(string $module, string $sourceLang, array $targetLangs): array
@@ -110,19 +93,11 @@ class SyncTranslationsAction
             $fileName = basename($sourceFile);
             $sourceTranslations = $this->loadTranslations($sourceFile);
 
-<<<<<<< HEAD
-            if ($sourceTranslations === []) {
-                continue;
-            }
-
-            $filesProcessed++;
-=======
-            if ([] === $sourceTranslations) {
+            if (empty($sourceTranslations)) {
                 continue;
             }
 
             ++$filesProcessed;
->>>>>>> laraxot/dev
 
             foreach ($targetLangs as $targetLang) {
                 $targetPath = "{$moduleLangPath}/{$targetLang}";
@@ -137,6 +112,8 @@ class SyncTranslationsAction
                 $targetTranslations = File::exists($targetFile) ? $this->loadTranslations($targetFile) : [];
 
                 // Merge translations
+                /** @var array<string, mixed> $sourceTranslations */
+                /** @var array<string, mixed> $targetTranslations */
                 $mergedTranslations = $this->mergeTranslations($sourceTranslations, $targetTranslations);
 
                 // Save merged translations
@@ -157,12 +134,8 @@ class SyncTranslationsAction
     /**
      * Ottiene la lista dei moduli con cartella lang.
      *
-<<<<<<< HEAD
-     * @param  string  $modulesPath  Percorso dei moduli
-=======
      * @param string $modulesPath Percorso dei moduli
      *
->>>>>>> laraxot/dev
      * @return array<string> Lista dei moduli
      */
     private function getModules(string $modulesPath): array
@@ -184,12 +157,8 @@ class SyncTranslationsAction
     /**
      * Carica le traduzioni da un file.
      *
-<<<<<<< HEAD
-     * @param  string  $filePath  Percorso del file
-=======
      * @param string $filePath Percorso del file
      *
->>>>>>> laraxot/dev
      * @return array<string, mixed> Traduzioni caricate
      */
     private function loadTranslations(string $filePath): array
@@ -222,12 +191,8 @@ class SyncTranslationsAction
     /**
      * Filtra un array per avere solo chiavi stringa (aiuta PHPStan).
      *
-<<<<<<< HEAD
-     * @param  array<array-key, mixed>  $arr
-=======
-     * @param array<array-key, mixed> $arr
+     * @param array<mixed, mixed> $arr
      *
->>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     private function filterStringKeyArray(array $arr): array
@@ -245,14 +210,9 @@ class SyncTranslationsAction
     /**
      * Unisce le traduzioni sorgente con quelle target.
      *
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $source  Traduzioni sorgente
-     * @param  array<string, mixed>  $target  Traduzioni target
-=======
      * @param array<string, mixed> $source Traduzioni sorgente
      * @param array<string, mixed> $target Traduzioni target
      *
->>>>>>> laraxot/dev
      * @return array<string, mixed> Traduzioni unite
      */
     private function mergeTranslations(array $source, array $target): array
@@ -279,13 +239,8 @@ class SyncTranslationsAction
     /**
      * Salva le traduzioni in un file.
      *
-<<<<<<< HEAD
-     * @param  string  $filePath  Percorso del file
-     * @param  array<string, mixed>  $translations  Traduzioni da salvare
-=======
      * @param string               $filePath     Percorso del file
      * @param array<string, mixed> $translations Traduzioni da salvare
->>>>>>> laraxot/dev
      */
     private function saveTranslations(string $filePath, array $translations): void
     {
@@ -299,14 +254,9 @@ class SyncTranslationsAction
     /**
      * Converte un array in formato PHP.
      *
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $array  Array da convertire
-     * @param  int  $indent  Livello di indentazione
-=======
      * @param array<string, mixed> $array  Array da convertire
      * @param int                  $indent Livello di indentazione
      *
->>>>>>> laraxot/dev
      * @return string Codice PHP
      */
     private function arrayToPhp(array $array, int $indent = 0): string
@@ -322,7 +272,8 @@ class SyncTranslationsAction
                 $content .= $this->arrayToPhp($this->filterStringKeyArray($value), $indent + 1);
                 $content .= $indentStr."],\n";
             } else {
-                $content .= "'".addslashes(SafeStringCastAction::cast($value))."',\n";
+                /** @phpstan-ignore-next-line */
+                $content .= "'".addslashes((string) $value)."',\n";
             }
         }
 

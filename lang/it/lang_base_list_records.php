@@ -18,12 +18,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Lang Base List Records',
-<<<<<<< HEAD
         'sort' => 1,
-=======
-        'sort' => '1',
->>>>>>> laraxot/dev
-        'icon' => 'heroicon-o-rectangle-stack',
+        'icon' => 'heroicon-o-collection',
     ],
     'fields' => [
         'id' => [

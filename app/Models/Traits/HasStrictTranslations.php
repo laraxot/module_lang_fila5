@@ -18,37 +18,16 @@ trait HasStrictTranslations
     }
 
     /**
-<<<<<<< HEAD
-     * @param  string  $key  Il nome dell'attributo da tradurre
-     * @param  string  $locale  Il codice della lingua richiesta
-     * @param  bool  $useFallbackLocale  Se utilizzare o meno la lingua di fallback
-=======
-<<<<<<< .merge_file_tJj3zB
-     * @param string $key               Il nome dell'attributo da tradurre
-     * @param string $locale            Il codice della lingua richiesta
-     * @param bool   $useFallbackLocale Se utilizzare o meno la lingua di fallback
-     *
-=======
-     * @param  string  $key  Il nome dell'attributo da tradurre
-     * @param  string  $locale  Il codice della lingua richiesta
-     * @param  bool  $useFallbackLocale  Se utilizzare o meno la lingua di fallback
->>>>>>> .merge_file_EdQiLn
->>>>>>> laraxot/dev
-     * @return string|array<string, mixed>|int|null Il valore tradotto dell'attributo
+     * @param string $key
+     * @param string $locale
+     * @param bool $useFallbackLocale
+     * @return string|array<string, mixed>|int|null
      */
     public function getTranslation(string $key, string $locale, bool $useFallbackLocale = true): string|array|int|null
     {
         $value = $this->spatieGetTranslation($key, $locale, $useFallbackLocale);
 
-<<<<<<< HEAD
         if (is_string($value) || is_int($value) || $value === null) {
-=======
-<<<<<<< .merge_file_tJj3zB
-        if (is_string($value) || is_int($value) || null === $value) {
-=======
-        if (is_string($value) || is_int($value) || $value === null) {
->>>>>>> .merge_file_EdQiLn
->>>>>>> laraxot/dev
             return $value;
         }
 
@@ -72,16 +51,7 @@ trait HasStrictTranslations
     }
 
     /**
-<<<<<<< HEAD
-     * @param  array<array-key, mixed>  $value
-=======
-<<<<<<< .merge_file_tJj3zB
-     * @param array<mixed, mixed> $value
-     *
-=======
-     * @param  array<array-key, mixed>  $value
->>>>>>> .merge_file_EdQiLn
->>>>>>> laraxot/dev
+     * @param array<array-key, mixed> $value
      * @return array<string, mixed>
      */
     private static function normalizeTranslationArray(array $value): array

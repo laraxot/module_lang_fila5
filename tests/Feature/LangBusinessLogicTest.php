@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 use Modules\Lang\Database\Factories\PostFactory;
 use Modules\Lang\Database\Factories\TranslationFactory;
 use Modules\Lang\Database\Factories\TranslationFileFactory;

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Filament\Forms\Components;
 
+use Filament\Forms\Components\Select;
 use Illuminate\Support\Arr;
 use Modules\Xot\Actions\File\AssetAction;
-use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 
 /**
  * National Flag Select Component.
@@ -14,7 +14,7 @@ use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
  * A Filament Select component that displays countries with their flags
  * and supports searching by country name using localized translations.
  */
-class NationalFlagSelect extends XotBaseSelect
+class NationalFlagSelect extends Select
 {
     /**
      * Set up the component configuration.
@@ -38,17 +38,9 @@ class NationalFlagSelect extends XotBaseSelect
      */
     protected function getCountryOptions(): array
     {
-<<<<<<< HEAD
         $countries = countries();
         // PHPStan L10: Type narrowing for array offset access
         $countries = Arr::sort($countries, function (mixed $c) {
-=======
-        // countries() restituisce righe array; i test alimentano anche righe sporche (stringhe)
-        /** @var array<array-key, array<array-key, mixed>|string> $countries */
-        $countries = countries();
-        // PHPStan L10: Type narrowing for array offset access
-        $countries = Arr::sort($countries, function (array|string $c) {
->>>>>>> laraxot/dev
             return is_array($c) && isset($c['name']) ? $c['name'] : '';
         });
 
@@ -83,37 +75,21 @@ class NationalFlagSelect extends XotBaseSelect
     /**
      * Get filtered country options based on search query.
      *
-<<<<<<< HEAD
-     * @param  string  $search  The search query
-=======
      * @param string $search The search query
      *
->>>>>>> laraxot/dev
      * @return array<string, string>
      */
     protected function getFilteredCountryOptions(string $search): array
     {
-<<<<<<< HEAD
-        if (trim($search) === '') {
+        if (empty(trim($search))) {
             return $this->getCountryOptions();
         }
 
-=======
-        if ('' === trim($search)) {
-            return $this->getCountryOptions();
-        }
-
-        /** @var array<array-key, array<array-key, mixed>|string> $countries */
->>>>>>> laraxot/dev
         $countries = countries();
         $searchLower = strtolower($search);
 
         // Filter countries by search term
-<<<<<<< HEAD
         $filteredCountries = array_filter($countries, function (mixed $country) use ($searchLower) {
-=======
-        $filteredCountries = array_filter($countries, function (array|string $country) use ($searchLower) {
->>>>>>> laraxot/dev
             // PHPStan L10: Type narrowing for country array
             if (! is_array($country) || ! isset($country['iso_3166_1_alpha2'], $country['name'])) {
                 return false;
@@ -145,11 +121,7 @@ class NationalFlagSelect extends XotBaseSelect
         });
 
         // Sort filtered results by name
-<<<<<<< HEAD
         $filteredCountries = Arr::sort($filteredCountries, function (mixed $c) {
-=======
-        $filteredCountries = Arr::sort($filteredCountries, function (array|string $c) {
->>>>>>> laraxot/dev
             return is_array($c) && isset($c['name']) ? $c['name'] : '';
         });
 

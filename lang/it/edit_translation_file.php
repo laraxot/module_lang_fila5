@@ -436,11 +436,7 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Edit Translation File',
-<<<<<<< HEAD
         'sort' => 1,
-=======
-        'sort' => '1',
->>>>>>> laraxot/dev
-        'icon' => 'heroicon-o-rectangle-stack',
+        'icon' => 'heroicon-o-collection',
     ],
 ];

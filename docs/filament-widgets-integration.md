@@ -1,14 +1,3 @@
----
-title: "Language Module - Filament Widgets Integration"
-module: "Lang"
-type: concept
-tags: [readme.es, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme.es 1"
-related:
-  - "./italian-text-refined-audit-report.md"
----
 # Language Module - Filament Widgets Integration
 
 ## Overview
@@ -104,7 +93,6 @@ class LanguageSwitcherWidget extends XotBaseWidget
 Replace Livewire component with Filament widget:
 
 ```blade
-<<<<<<< HEAD
 {{-- OLD --}}
 <livewire:lang.switcher />
 
@@ -112,10 +100,6 @@ Replace Livewire component with Filament widget:
 <x-filament-widgets::widget
     :widget="\Modules\Lang\Filament\Widgets\LanguageSwitcherWidget::class"
 />
-=======
-{{-- Headernav FO (canon 12.1) --}}
-@livewire(\Modules\Lang\Filament\Widgets\LanguageSwitcherWidget::class)
->>>>>>> laraxot/dev
 ```
 
 ### 2. Configuration

@@ -6,10 +6,7 @@ namespace Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
-<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
-=======
->>>>>>> laraxot/dev
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Resources\TranslationFileResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -17,10 +14,14 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListTranslationFiles extends XotBaseListRecords
 {
     protected static string $resource = TranslationFileResource::class;
-<<<<<<< HEAD
-   
-=======
->>>>>>> laraxot/dev
+
+    #[\Override]
+    public function getTableColumns(): array
+    {
+        return [
+            'key' => TextColumn::make('key')->searchable(['key', 'content']),
+        ];
+    }
 
     /**
      * @return array<string, Action|ActionGroup>

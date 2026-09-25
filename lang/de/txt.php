@@ -8,7 +8,7 @@ return [
             'label' => 'E-Mail',
             'placeholder' => 'Geben Sie Ihre E-Mail ein',
             'tooltip' => 'Verwenden Sie eine gültige E-Mail-Adresse',
-            'icon' => 'heroicon-o-envelope',
+            'icon' => 'heroicon-o-mail',
             'description' => 'email',
             'helper_text' => '',
         ],
@@ -50,11 +50,7 @@ return [
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
-<<<<<<< HEAD
         'sort' => 100,
-=======
-        'sort' => '100',
->>>>>>> laraxot/dev
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
