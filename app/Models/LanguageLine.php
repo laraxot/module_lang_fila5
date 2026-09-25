@@ -11,7 +11,6 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\Lang\Models\LanguageLine.
  *
- *
  * @property int                     $id
  * @property string                  $group
  * @property string                  $key
@@ -48,7 +47,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedAt($value)
  * @method static EloquentBuilder<static>|LanguageLine whereCreatedBy($value)
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedBy($value)
- *
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
