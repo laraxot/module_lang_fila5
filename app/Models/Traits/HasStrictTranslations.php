@@ -18,16 +18,13 @@ trait HasStrictTranslations
     }
 
     /**
-     * @param string $key
-     * @param string $locale
-     * @param bool $useFallbackLocale
      * @return string|array<string, mixed>|int|null
      */
     public function getTranslation(string $key, string $locale, bool $useFallbackLocale = true): string|array|int|null
     {
         $value = $this->spatieGetTranslation($key, $locale, $useFallbackLocale);
 
-        if (is_string($value) || is_int($value) || $value === null) {
+        if (is_string($value) || is_int($value) || null === $value) {
             return $value;
         }
 
@@ -52,6 +49,7 @@ trait HasStrictTranslations
 
     /**
      * @param array<array-key, mixed> $value
+     *
      * @return array<string, mixed>
      */
     private static function normalizeTranslationArray(array $value): array
