@@ -23,17 +23,11 @@ final class NationalFlagSelectFinalStub extends NationalFlagSelect
     }
 
     /**
-     * <<<<<<< .merge_file_uzzdPP.
      *
      * @param array<int, mixed> $filteredCountries
-     *                                             =======
-     *                                             <<<<<<< .merge_file_EvvuRM
      * @param array<int, mixed> $filteredCountries
      *
-     * =======
      * @param array<int, mixed> $filteredCountries
-     *                                             >>>>>>> .merge_file_7NTrg4
-     *                                             >>>>>>> .merge_file_PTnW5z
      *
      * @return array<int, mixed>
      */
