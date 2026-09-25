@@ -5,91 +5,24 @@ module: Lang
 slug: lang-mixed-type-reduction
 status: done
 created: 2026-09-04
-<<<<<<< HEAD
 updated: 2026-09-04
-=======
-<<<<<<< .merge_file_Z8oc8C
-updated: 2026-09-04
-=======
-<<<<<<< .merge_file_ioERzJ
-updated: 2026-09-04
-=======
-<<<<<<< .merge_file_Dv0RG3
-updated: 2026-09-04
-=======
-updated: 2026-09-21
->>>>>>> .merge_file_zGhjhz
->>>>>>> .merge_file_bZwTFV
->>>>>>> .merge_file_1qVpFl
->>>>>>> laraxot/dev
 repository: https://github.com/laraxot/module_lang_fila5
 tags:
   - phpstan
   - lang
   - type-safety
   - mixed
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_Z8oc8C
-=======
-<<<<<<< .merge_file_ioERzJ
-=======
-<<<<<<< .merge_file_Dv0RG3
-=======
-  - strict-types
->>>>>>> .merge_file_zGhjhz
->>>>>>> .merge_file_bZwTFV
->>>>>>> .merge_file_1qVpFl
->>>>>>> laraxot/dev
 estimated_effort: "0.25 dev-day"
 blocked_by: []
 related:
   - "./lang-duplicate-array-keys.story.md"
-<<<<<<< HEAD
   - "../coverage.md"
-=======
-<<<<<<< .merge_file_Z8oc8C
-  - "../coverage.md"
-=======
-<<<<<<< .merge_file_ioERzJ
-  - "../coverage.md"
-=======
-<<<<<<< .merge_file_Dv0RG3
-  - "../coverage.md"
-=======
-  - "../purpose.md"
->>>>>>> .merge_file_zGhjhz
->>>>>>> .merge_file_bZwTFV
->>>>>>> .merge_file_1qVpFl
->>>>>>> laraxot/dev
 owned_scope:
   - laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php
   - laravel/Modules/Lang/app/Models/TranslationFile.php
   - laravel/Modules/Lang/app/Models/Traits/HasStrictTranslations.php
   - laravel/Modules/Lang/app/Actions/SyncTranslationsAction.php
-<<<<<<< HEAD
   - laravel/Modules/Lang/docs/coverage.md
-=======
-<<<<<<< .merge_file_Z8oc8C
-  - laravel/Modules/Lang/docs/coverage.md
-=======
-<<<<<<< .merge_file_ioERzJ
-  - laravel/Modules/Lang/docs/coverage.md
-=======
-<<<<<<< .merge_file_Dv0RG3
-  - laravel/Modules/Lang/docs/coverage.md
-=======
-  - laravel/Modules/Lang/app/Datas/LangData.php
-  - laravel/Modules/Lang/app/Models/Contracts/HasTranslationsContract.php
-  - laravel/Modules/Lang/app/Models/LanguageLine.php
-  - laravel/Modules/Lang/app/Http/Livewire/Lang/Switcher.php
-  - laravel/Modules/Lang/app/Http/Livewire/Lang/Change.php
-  - laravel/Modules/Lang/resources/views/components/i18n-link.blade.php
-  - laravel/Modules/Lang/lang/en
->>>>>>> .merge_file_zGhjhz
->>>>>>> .merge_file_bZwTFV
->>>>>>> .merge_file_1qVpFl
->>>>>>> laraxot/dev
   - laravel/Modules/Lang/docs/stories/lang-mixed-type-reduction.story.md
 ---
 
@@ -122,28 +55,8 @@ indicazione del task.
    un'assunzione.
 3. Le firme che overridano contratti vendor tipizzati `mixed` (o non tipizzati, quindi
    equivalenti a `mixed` per compatibilita' LSP) restano invariate.
-<<<<<<< HEAD
 4. `docs/coverage.md` aggiornato con sezione datata, prima/dopo PHPStan, esito onesto
    di Pest/PHPMD.
-=======
-<<<<<<< .merge_file_Z8oc8C
-4. `docs/coverage.md` aggiornato con sezione datata, prima/dopo PHPStan, esito onesto
-   di Pest/PHPMD.
-=======
-<<<<<<< .merge_file_ioERzJ
-4. `docs/coverage.md` aggiornato con sezione datata, prima/dopo PHPStan, esito onesto
-   di Pest/PHPMD.
-=======
-<<<<<<< .merge_file_Dv0RG3
-4. `docs/coverage.md` aggiornato con sezione datata, prima/dopo PHPStan, esito onesto
-   di Pest/PHPMD.
-=======
-4. Esito PHPStan/PHPMD tracciato in questa story (non si crea un secondo `.md`:
-   `docs/coverage.md` non esiste, il dettaglio resta qui).
->>>>>>> .merge_file_zGhjhz
->>>>>>> .merge_file_bZwTFV
->>>>>>> .merge_file_1qVpFl
->>>>>>> laraxot/dev
 
 ## Tasks / Subtasks
 
@@ -164,25 +77,6 @@ indicazione del task.
 - [x] PHPMD scoped sui file modificati (crash su tutto il modulo, noto/flaky).
 - [x] Pest: confermare via `git stash` che le failure preesistenti non dipendono da
       questo diff.
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_Z8oc8C
-=======
-<<<<<<< .merge_file_ioERzJ
-=======
-<<<<<<< .merge_file_Dv0RG3
-=======
-- [x] 2026-09-21: `declare(strict_types=1)` su tutti i PHP in `lang/**` (31 file `en/`
-      senza declare nelle prime 20 righe; `it/` e `de/` gia' coperti). Chiavi/valori
-      invariati.
-- [x] 2026-09-21: declare in testa a `resources/views/components/i18n-link.blade.php`
-      (unico Blade del modulo ancora senza).
-- [x] 2026-09-21: ridurre `mixed` evidenti in `app/` dove il tipo e' desumibile;
-      `LanguageSwitcherWidget` gia' tipato, non riscritto.
->>>>>>> .merge_file_zGhjhz
->>>>>>> .merge_file_bZwTFV
->>>>>>> .merge_file_1qVpFl
->>>>>>> laraxot/dev
 
 ## Dev Notes
 
@@ -207,112 +101,15 @@ indicazione del task.
 ## Testing
 
 - `cd laravel && ./vendor/bin/phpstan analyse Modules/Lang --no-progress --error-format=table`
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_Z8oc8C
-=======
-<<<<<<< .merge_file_ioERzJ
-=======
-<<<<<<< .merge_file_Dv0RG3
->>>>>>> .merge_file_bZwTFV
->>>>>>> .merge_file_1qVpFl
->>>>>>> laraxot/dev
   → 0 errori prima e dopo.
 - `cd laravel && ./tools/phpmd.sh <file-modificati> text ../docs/phpmd.ruleset.xml` →
   solo debito preesistente, nessun nuovo finding sulle righe modificate.
 - `cd laravel && ./vendor/bin/pest Modules/Lang/tests -c Modules/Lang/phpunit.xml --no-coverage`
   → failure preesistenti confermate identiche con `git stash` (diff rimosso).
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_Z8oc8C
-=======
-<<<<<<< .merge_file_ioERzJ
-=======
-=======
-  → 0 errori (livello max da `phpstan.neon`, senza `--level`). Una riesecuzione
-  intermedia e' crashata su `Modules/Quaeris/.../AlertWidget.php:20` (lock altrui
-  `quaeris-activity-mixed-strict`); retry a file di nuovo valido → 0 errori.
-- `cd laravel && ./tools/phpmd.sh <file-modificati-app> text ../docs/phpmd.xml`
-  (2026-09-21; in precedenza `phpmd.ruleset.xml`) → solo debito preesistente
-  `BooleanArgumentFlag` su `HasTranslationsContract::getTranslation`.
-- `cd laravel && ./vendor/bin/pest Modules/Lang/tests -c Modules/Lang/phpunit.xml --no-coverage`
-  → 2026-09-04: failure preesistenti confermate identiche con `git stash`.
-  2026-09-21: Pest non rilanciato di proposito — la suite **riscrive** `lang/en/*.php`
-  e toglie il `declare`; i 31 file sono stati normalizzati dopo quel side-effect.
->>>>>>> .merge_file_zGhjhz
->>>>>>> .merge_file_bZwTFV
->>>>>>> .merge_file_1qVpFl
->>>>>>> laraxot/dev
 
 ## Dev Agent Record
 
 ### Esecuzione 2026-09-04 — Claude (Sonnet 5)
 
-<<<<<<< HEAD
 4 file modificati, 4 sostituzioni native/docblock mirate, 0 regressioni PHPStan. Dettaglio
 completo in `docs/coverage.md#2026-09-04-mixed-type-reduction`.
-=======
-<<<<<<< .merge_file_Z8oc8C
-4 file modificati, 4 sostituzioni native/docblock mirate, 0 regressioni PHPStan. Dettaglio
-completo in `docs/coverage.md#2026-09-04-mixed-type-reduction`.
-=======
-<<<<<<< .merge_file_ioERzJ
-4 file modificati, 4 sostituzioni native/docblock mirate, 0 regressioni PHPStan. Dettaglio
-completo in `docs/coverage.md#2026-09-04-mixed-type-reduction`.
-=======
-<<<<<<< .merge_file_Dv0RG3
-4 file modificati, 4 sostituzioni native/docblock mirate, 0 regressioni PHPStan. Dettaglio
-completo in `docs/coverage.md#2026-09-04-mixed-type-reduction`.
-=======
-4 file modificati, 4 sostituzioni native/docblock mirate, 0 regressioni PHPStan.
-
-### Esecuzione 2026-09-21 — php-backend-agent
-
-Scopo: il modulo Lang esiste per tenere **fuori dal codice** ogni parola utente. I file
-`lang/*.php` sono array di chiavi, non logica: si aggiunge solo `declare(strict_types=1)`
-dopo `<?php`, senza toccare chiavi/valori. I `mixed` restano solo dove il tipo reale
-non e' desumibile (contratti vendor, alberi di traduzione, payload config).
-
-**strict_types**
-- 31 file in `lang/en/` senza declare nelle prime 20 righe: aggiunto dopo `<?php`.
-- `it/` e `de/` gia' a norma.
-- Nota operativa: i test del modulo **riscrivono** `lang/en/*.php` e perdono il declare.
-  I 31 file sono stati re-applicati dopo quel side-effect. Non e' un restore delle chiavi.
-- Blade: `resources/views/components/i18n-link.blade.php` — blocco declare in testa.
-
-**mixed ridotti (app/, ultima spiaggia lasciata)**
-- `HasTranslationsContract::getTranslation`: `array<mixed>` → `array<string, mixed>`
-  (allineato a `HasStrictTranslations`).
-- `LangData::collection`: da `Collection<int, mixed>` / `EloquentCollection<int, mixed>`
-  alla shape reale `{id,name,flag,url}` o `LangData`. Tolto `EloquentCollection` dalla
-  firma: `LangData` non e' un Model (`generics.notSubtype` a PHPStan max).
-- `Switcher` / `Change`: `array<string, array<string, mixed>>` →
-  `array<string, array<string, string>>` (locale mcamara + `url` stringa).
-- `LanguageLine::$text`: `array<array-key, mixed>` → `array<string, string>` (locale → testo).
-- `LanguageSwitcherWidget`: **non toccato** — gia' tipato.
-- Non toccati: PanelProvider, XotBaseComponent, User 10.3.
-
-**mixed nativi lasciati (ultima spiaggia, giustificati)**
-- Override `Translator::get()` (`TranslatorAction`, `TranslatorAdapter`, `TranslatorService`).
-- `CastsAttributes` (`LangField`).
-- `TransArrayAction::trans` / `TransCollectionAction::trans`: item eterogenei da
-  array/collection (string|int|bool|null nei test, `mixed` nel chiamante Xot export).
-- Closure `rinvex/countries` in `NationalFlagSelect`.
-- Payload `config('laravellocalization.supportedLocales')` in `ThemeComposer`.
-
-**Conteggio**
-- 2026-09-04: 142 occorrenze / 47 file (tutto il modulo).
-- 2026-09-21: 131 occorrenze modulo; 68 in `app/` (22 file). Il calo e' docblock
-  desumibili, non native hint vendor.
-
-**Gate**
-- `cd laravel && ./vendor/bin/phpstan analyse Modules/Lang` (max da `phpstan.neon`,
-  nessun `--level`) → 0 errori. Un retry intermedio e' crashato su Quaeris
-  `AlertWidget` (lock altrui, non toccato); retry finale → 0.
-- `cd laravel && ./tools/phpmd.sh <app files> text ../docs/phpmd.xml` → solo
-  `BooleanArgumentFlag` preesistente su `HasTranslationsContract::getTranslation`
-  (`$useFallbackLocale`). Nessun finding nuovo sulle righe di questa esecuzione.
->>>>>>> .merge_file_zGhjhz
->>>>>>> .merge_file_bZwTFV
->>>>>>> .merge_file_1qVpFl
->>>>>>> laraxot/dev

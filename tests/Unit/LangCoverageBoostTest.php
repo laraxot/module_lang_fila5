@@ -6,7 +6,7 @@ namespace Modules\Lang\Tests\Unit;
 
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Mockery;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\MergeTranslationsAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
@@ -44,14 +44,13 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 /**
- * @param list<string> $permissions
- *
+ * @param  list<string>  $permissions
  * @return MockInterface&UserContract
  */
 function langFakeUser(array $permissions = [], bool $superAdmin = false): UserContract
 {
     /** @var MockInterface&UserContract $user */
-    $user = \Mockery::mock(UserContract::class);
+    $user = Mockery::mock(UserContract::class);
     $user->shouldReceive('hasRole')
         ->with('super-admin')
         ->andReturn($superAdmin);
@@ -64,7 +63,7 @@ function langFakeUser(array $permissions = [], bool $superAdmin = false): UserCo
 }
 
 afterEach(function (): void {
-    \Mockery::close();
+    Mockery::close();
 });
 
 describe('Lang coverage boost — Actions', function (): void {
@@ -82,10 +81,9 @@ describe('Lang coverage boost — Actions', function (): void {
         $path = sys_get_temp_dir().'/lang_write_test_'.uniqid().'.php';
 
         try {
-            app()->instance('cache', new class {
-                public function flush(): void
-                {
-                }
+            app()->instance('cache', new class()
+            {
+                public function flush(): void {}
             });
 
             $result = app(WriteTranslationFileAction::class)->execute($path, [
@@ -126,13 +124,6 @@ describe('Lang coverage boost — Policies', function (): void {
     });
 
     test('PostPolicy and TranslationFilePolicy enforce permissions', function (): void {
-        $postPolicy = new PostPolicy();
-        $filePolicy = new TranslationFilePolicy();
-        $user = langFakeUser(['post.update', 'translation_file.delete']);
-
-        Assert::assertTrue($postPolicy->update($user, new Post()));
-        Assert::assertTrue($filePolicy->delete($user, new TranslationFile()));
-        Assert::assertFalse($postPolicy->delete(langFakeUser([]), new Post()));
         $postPolicy = new PostPolicy();
         $filePolicy = new TranslationFilePolicy();
         $user = langFakeUser(['post.update', 'translation_file.delete']);
@@ -192,20 +183,12 @@ describe('Lang coverage boost — UI and data', function (): void {
         $firstLocale = $widget->getAvailableLocales()->first();
         Assert::assertNotNull($firstLocale);
         Assert::assertSame('it', $firstLocale['code']);
-        $widget = new LanguageSwitcherWidget();
-
-        Assert::assertTrue(LanguageSwitcherWidget::canView());
-        $supportedCodes = array_keys(LaravelLocalization::getSupportedLocales());
-        Assert::assertSame($supportedCodes, $widget->getAvailableLocales()->pluck('code')->all());
-        $firstLocale = $widget->getAvailableLocales()->first();
-        Assert::assertNotNull($firstLocale);
-        Assert::assertContains($firstLocale['code'], $supportedCodes);
 
         app('request')->server->set('REQUEST_URI', '/it/example');
         app('request')->server->set('PATH_INFO', '/it/example');
         app()->setLocale('it');
 
-        Assert::assertStringContainsString('en', $widget->getLanguageUrl('en'));
+        Assert::assertSame(url('en'), $widget->getLanguageUrl('en'));
 
         $component = new LanguageSwitcher();
         $rendered = $component->render();
@@ -256,17 +239,15 @@ describe('Lang coverage boost — UI and data', function (): void {
         mkdir(dirname($filePath), 0o755, true);
         TestCase::createTranslationFile($filePath, ['welcome' => 'Ciao']);
 
-        app()->instance('translator', new class($langDir) {
-            public function __construct(private readonly string $path)
-            {
-            }
+        app()->instance('translator', new class($langDir)
+        {
+            public function __construct(private readonly string $path) {}
 
             public function getLoader(): object
             {
-                return new class($this->path) {
-                    public function __construct(private readonly string $path)
-                    {
-                    }
+                return new class($this->path)
+                {
+                    public function __construct(private readonly string $path) {}
 
                     /** @return array<string, string> */
                     public function namespaces(): array
