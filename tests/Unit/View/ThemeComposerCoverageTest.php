@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Modules\Lang\Datas\LangData;
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Composers\ThemeComposer;
@@ -81,14 +82,8 @@ test('ThemeComposer currentLang restituisce name e gestisce campo non stringa', 
     Assert::assertSame('it', $composer->currentLang('id'));
 });
 
-test('ThemeComposer languages returns a usable collection when no admin route exists', function (): void {
-    config(['laravellocalization.supportedLocales' => [
-        'en' => ['name' => 'English', 'regional' => 'en_US'],
-    ]]);
-
-    $languages = (new ThemeComposer())->languages()->toCollection();
-    Assert::assertCount(1, $languages);
-    Assert::assertInstanceOf(LangData::class, $languages->first());
+test('ThemeComposer buildAdminLanguageUrl senza route corrente torna hash', function (): void {
+    Assert::assertSame('#', (new ThemeComposer())->buildAdminLanguageUrl('en'));
 });
 
 test('ThemeComposer languages mappa en regional a flag gb', function (): void {
