@@ -27,20 +27,12 @@ class TranslationData extends Data
 
     public function getFilename(): string
     {
-<<<<<<< HEAD
-        if ($this->filename !== null) {
-=======
         if (null !== $this->filename) {
->>>>>>> laraxot/dev
             return $this->filename;
         }
         $hints = app('translator')->getLoader()->namespaces();
         $path = collect($hints)->get($this->namespace);
-<<<<<<< HEAD
-        if ($path === null) {
-=======
         if (null === $path) {
->>>>>>> laraxot/dev
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
 
