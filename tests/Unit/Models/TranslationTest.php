@@ -13,11 +13,7 @@ uses(TestCase::class);
 
 describe('Translation Model', function () {
     test('has correct fillable attributes', function () {
-<<<<<<< HEAD
-        $model = new Translation;
-=======
         $model = new Translation();
->>>>>>> laraxot/dev
         $fillable = $model->getFillable();
 
         Assert::assertContains('id', $fillable);
@@ -52,11 +48,7 @@ describe('Translation Model', function () {
     });
 
     test('casts datetime fields', function () {
-<<<<<<< HEAD
-        $model = new Translation;
-=======
         $model = new Translation();
->>>>>>> laraxot/dev
         $casts = $model->getCasts();
 
         Assert::assertArrayHasKey('created_at', $casts);
