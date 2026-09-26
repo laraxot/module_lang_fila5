@@ -16,7 +16,11 @@ class TranslationFileSeeder extends Seeder
     {
         $count = TranslationFile::query()->count();
 
+<<<<<<< HEAD
         if ($this->command !== null) {
+=======
+        if (null !== $this->command) {
+>>>>>>> laraxot/dev
             $this->command->info("TranslationFileSeeder: {$count} file lang indicizzati via Sushi.");
         }
     }

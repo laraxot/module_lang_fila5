@@ -204,6 +204,7 @@ The Lang module provides a structured framework for managing lang operations wit
 
 ### 7.3 Technical Constraints
 - PHP 8.3+ required
+<<<<<<< HEAD
 <<<<<<< .merge_file_EkeIIb
 =======
 <<<<<<< .merge_file_tW85bt
@@ -211,11 +212,14 @@ The Lang module provides a structured framework for managing lang operations wit
 =======
 <<<<<<< .merge_file_ij8WvT
 >>>>>>> .merge_file_bj1RbX
+=======
+>>>>>>> laraxot/dev
 <<<<<<< HEAD
 - Laravel 13+ required
 =======
 - Laravel 12+ required
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_EkeIIb
 =======
 =======
@@ -223,6 +227,8 @@ The Lang module provides a structured framework for managing lang operations wit
 >>>>>>> .merge_file_zrnbbP
 >>>>>>> .merge_file_PryL0z
 >>>>>>> .merge_file_bj1RbX
+=======
+>>>>>>> laraxot/dev
 - Filament v5 for UI
 - MySQL 8.0+
 
@@ -267,6 +273,7 @@ The Lang module provides a structured framework for managing lang operations wit
 | Module | Self-contained Laravel module following Laraxot conventions |
 
 ### Related Documents
+<<<<<<< HEAD
 <<<<<<< .merge_file_EkeIIb
 =======
 <<<<<<< .merge_file_tW85bt
@@ -274,6 +281,8 @@ The Lang module provides a structured framework for managing lang operations wit
 =======
 <<<<<<< .merge_file_ij8WvT
 >>>>>>> .merge_file_bj1RbX
+=======
+>>>>>>> laraxot/dev
 <<<<<<< HEAD
 - [Architecture](architecture.md)
 =======
@@ -283,6 +292,7 @@ The Lang module provides a structured framework for managing lang operations wit
 - [Architecture](ARCHITECTURE.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_EkeIIb
 =======
 =======
@@ -290,5 +300,7 @@ The Lang module provides a structured framework for managing lang operations wit
 >>>>>>> .merge_file_zrnbbP
 >>>>>>> .merge_file_PryL0z
 >>>>>>> .merge_file_bj1RbX
+=======
+>>>>>>> laraxot/dev
 - [Technical Specification](TECH_SPEC.md)
 - [User Stories](epics/lang-epics-and-stories.md)

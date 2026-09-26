@@ -9,6 +9,7 @@ use Modules\Lang\View\Composers\ThemeComposer;
 
 final class ThemeComposerNonStringFieldStub extends ThemeComposer
 {
+<<<<<<< HEAD
 <<<<<<< .merge_file_oLmTjS
     protected function langFieldValue(LangData $lang, string $field): mixed
 =======
@@ -22,6 +23,9 @@ final class ThemeComposerNonStringFieldStub extends ThemeComposer
 >>>>>>> .merge_file_C3IgAf
 >>>>>>> .merge_file_MPUYGu
 >>>>>>> .merge_file_CygvPl
+=======
+    protected function langFieldValue(LangData $lang, string $field): mixed
+>>>>>>> laraxot/dev
     {
         return 42;
     }

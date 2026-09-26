@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_aBzjaq
 
 =======
@@ -9,6 +10,9 @@ declare(strict_types=1);
 =======
 >>>>>>> .merge_file_ZFlouR
 >>>>>>> .merge_file_UeBosc
+=======
+
+>>>>>>> laraxot/dev
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Translator.php
  */
@@ -30,6 +34,7 @@ class TranslatorService extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
+<<<<<<< HEAD
 <<<<<<< .merge_file_aBzjaq
      * @param  array<string, mixed>  $replace
 =======
@@ -45,6 +50,9 @@ class TranslatorService extends LaravelTranslator
      * @param  bool  $fallback
 >>>>>>> .merge_file_ZFlouR
 >>>>>>> .merge_file_UeBosc
+=======
+     * @param  array<string, mixed>  $replace
+>>>>>>> laraxot/dev
      * @return string|array<string, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array

@@ -8,6 +8,7 @@ use Modules\Lang\Filament\Forms\Components\TranslationEditor;
 
 final class TranslationEditorStub extends TranslationEditor
 {
+<<<<<<< HEAD
 <<<<<<< .merge_file_OPHAgr
 =======
 <<<<<<< .merge_file_0idHn6
@@ -18,6 +19,8 @@ final class TranslationEditorStub extends TranslationEditor
 >>>>>>> .merge_file_qWX4ry
 >>>>>>> .merge_file_F9RthZ
 >>>>>>> .merge_file_JcRCYp
+=======
+>>>>>>> laraxot/dev
     public mixed $forcedState = [];
 
     public function getState(): mixed

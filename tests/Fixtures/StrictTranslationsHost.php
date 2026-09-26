@@ -20,6 +20,7 @@ final class StrictTranslationsHost extends BaseModel
 
     protected $table = 'translations';
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_UZGmZL
     public mixed $forcedTranslation = null;
 
@@ -41,6 +42,10 @@ final class StrictTranslationsHost extends BaseModel
 >>>>>>> .merge_file_sC7aI1
 >>>>>>> .merge_file_7buX8R
 >>>>>>> .merge_file_QatNR2
+=======
+    public mixed $forcedTranslation = null;
+
+>>>>>>> laraxot/dev
     protected function spatieGetTranslation(string $key, string $locale, bool $useFallbackLocale = true): mixed
     {
         unset($key, $locale, $useFallbackLocale);
