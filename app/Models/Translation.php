@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Models/Translation.php
  */

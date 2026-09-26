@@ -5,6 +5,7 @@ module: Lang
 slug: lang-mixed-type-reduction
 status: done
 created: 2026-09-04
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z8oc8C
 updated: 2026-09-04
 =======
@@ -18,12 +19,16 @@ updated: 2026-09-21
 >>>>>>> .merge_file_zGhjhz
 >>>>>>> .merge_file_bZwTFV
 >>>>>>> .merge_file_1qVpFl
+=======
+updated: 2026-09-04
+>>>>>>> laraxot/dev
 repository: https://github.com/laraxot/module_lang_fila5
 tags:
   - phpstan
   - lang
   - type-safety
   - mixed
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z8oc8C
 =======
 <<<<<<< .merge_file_ioERzJ
@@ -34,10 +39,13 @@ tags:
 >>>>>>> .merge_file_zGhjhz
 >>>>>>> .merge_file_bZwTFV
 >>>>>>> .merge_file_1qVpFl
+=======
+>>>>>>> laraxot/dev
 estimated_effort: "0.25 dev-day"
 blocked_by: []
 related:
   - "./lang-duplicate-array-keys.story.md"
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z8oc8C
   - "../coverage.md"
 =======
@@ -51,11 +59,15 @@ related:
 >>>>>>> .merge_file_zGhjhz
 >>>>>>> .merge_file_bZwTFV
 >>>>>>> .merge_file_1qVpFl
+=======
+  - "../coverage.md"
+>>>>>>> laraxot/dev
 owned_scope:
   - laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php
   - laravel/Modules/Lang/app/Models/TranslationFile.php
   - laravel/Modules/Lang/app/Models/Traits/HasStrictTranslations.php
   - laravel/Modules/Lang/app/Actions/SyncTranslationsAction.php
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z8oc8C
   - laravel/Modules/Lang/docs/coverage.md
 =======
@@ -75,6 +87,9 @@ owned_scope:
 >>>>>>> .merge_file_zGhjhz
 >>>>>>> .merge_file_bZwTFV
 >>>>>>> .merge_file_1qVpFl
+=======
+  - laravel/Modules/Lang/docs/coverage.md
+>>>>>>> laraxot/dev
   - laravel/Modules/Lang/docs/stories/lang-mixed-type-reduction.story.md
 ---
 
@@ -107,6 +122,7 @@ indicazione del task.
    un'assunzione.
 3. Le firme che overridano contratti vendor tipizzati `mixed` (o non tipizzati, quindi
    equivalenti a `mixed` per compatibilita' LSP) restano invariate.
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z8oc8C
 4. `docs/coverage.md` aggiornato con sezione datata, prima/dopo PHPStan, esito onesto
    di Pest/PHPMD.
@@ -124,6 +140,10 @@ indicazione del task.
 >>>>>>> .merge_file_zGhjhz
 >>>>>>> .merge_file_bZwTFV
 >>>>>>> .merge_file_1qVpFl
+=======
+4. `docs/coverage.md` aggiornato con sezione datata, prima/dopo PHPStan, esito onesto
+   di Pest/PHPMD.
+>>>>>>> laraxot/dev
 
 ## Tasks / Subtasks
 
@@ -144,6 +164,7 @@ indicazione del task.
 - [x] PHPMD scoped sui file modificati (crash su tutto il modulo, noto/flaky).
 - [x] Pest: confermare via `git stash` che le failure preesistenti non dipendono da
       questo diff.
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z8oc8C
 =======
 <<<<<<< .merge_file_ioERzJ
@@ -160,6 +181,8 @@ indicazione del task.
 >>>>>>> .merge_file_zGhjhz
 >>>>>>> .merge_file_bZwTFV
 >>>>>>> .merge_file_1qVpFl
+=======
+>>>>>>> laraxot/dev
 
 ## Dev Notes
 
@@ -184,6 +207,7 @@ indicazione del task.
 ## Testing
 
 - `cd laravel && ./vendor/bin/phpstan analyse Modules/Lang --no-progress --error-format=table`
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z8oc8C
 =======
 <<<<<<< .merge_file_ioERzJ
@@ -191,11 +215,14 @@ indicazione del task.
 <<<<<<< .merge_file_Dv0RG3
 >>>>>>> .merge_file_bZwTFV
 >>>>>>> .merge_file_1qVpFl
+=======
+>>>>>>> laraxot/dev
   → 0 errori prima e dopo.
 - `cd laravel && ./tools/phpmd.sh <file-modificati> text ../docs/phpmd.ruleset.xml` →
   solo debito preesistente, nessun nuovo finding sulle righe modificate.
 - `cd laravel && ./vendor/bin/pest Modules/Lang/tests -c Modules/Lang/phpunit.xml --no-coverage`
   → failure preesistenti confermate identiche con `git stash` (diff rimosso).
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z8oc8C
 =======
 <<<<<<< .merge_file_ioERzJ
@@ -214,11 +241,14 @@ indicazione del task.
 >>>>>>> .merge_file_zGhjhz
 >>>>>>> .merge_file_bZwTFV
 >>>>>>> .merge_file_1qVpFl
+=======
+>>>>>>> laraxot/dev
 
 ## Dev Agent Record
 
 ### Esecuzione 2026-09-04 — Claude (Sonnet 5)
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z8oc8C
 4 file modificati, 4 sostituzioni native/docblock mirate, 0 regressioni PHPStan. Dettaglio
 completo in `docs/coverage.md#2026-09-04-mixed-type-reduction`.
@@ -282,3 +312,7 @@ non e' desumibile (contratti vendor, alberi di traduzione, payload config).
 >>>>>>> .merge_file_zGhjhz
 >>>>>>> .merge_file_bZwTFV
 >>>>>>> .merge_file_1qVpFl
+=======
+4 file modificati, 4 sostituzioni native/docblock mirate, 0 regressioni PHPStan. Dettaglio
+completo in `docs/coverage.md#2026-09-04-mixed-type-reduction`.
+>>>>>>> laraxot/dev

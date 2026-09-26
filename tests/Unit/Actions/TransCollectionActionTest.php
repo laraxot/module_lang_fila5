@@ -13,7 +13,11 @@ uses(TestCase::class);
 
 function makeTransCollectionAction(): TransCollectionAction
 {
+<<<<<<< HEAD
     return new TransCollectionAction;
+=======
+    return new TransCollectionAction();
+>>>>>>> laraxot/dev
 }
 
 describe('TransCollectionAction Business Logic', function () {
