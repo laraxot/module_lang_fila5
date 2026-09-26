@@ -12,7 +12,11 @@ uses(TestCase::class);
 
 function makeGetTransPathAction(): GetTransPathAction
 {
+<<<<<<< HEAD
     return new GetTransPathAction;
+=======
+    return new GetTransPathAction();
+>>>>>>> laraxot/dev
 }
 
 describe('GetTransPathAction Business Logic', function () {

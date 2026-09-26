@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_sUvhtC
 
 =======
@@ -13,6 +14,9 @@ declare(strict_types=1);
 >>>>>>> .merge_file_hdmWeP
 >>>>>>> .merge_file_RgY48v
 >>>>>>> .merge_file_M9jcK0
+=======
+
+>>>>>>> laraxot/dev
 namespace Modules\Lang\Tests\Unit;
 
 use Filament\Actions\Action;
@@ -28,6 +32,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Illuminate\Translation\ArrayLoader;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+<<<<<<< HEAD
 <<<<<<< .merge_file_sUvhtC
 use Mockery;
 =======
@@ -36,6 +41,9 @@ use Mockery;
 use Mockery;
 >>>>>>> .merge_file_RgY48v
 >>>>>>> .merge_file_M9jcK0
+=======
+use Mockery;
+>>>>>>> laraxot/dev
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Actions\GetAllTranslationAction;
@@ -50,6 +58,7 @@ use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Modules\Lang\Filament\Forms\Components\TranslationEditor;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
+<<<<<<< HEAD
 <<<<<<< .merge_file_sUvhtC
 use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
 use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
@@ -66,6 +75,10 @@ use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 >>>>>>> .merge_file_hdmWeP
 >>>>>>> .merge_file_RgY48v
 >>>>>>> .merge_file_M9jcK0
+=======
+use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
+use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
+>>>>>>> laraxot/dev
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
@@ -77,6 +90,7 @@ use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 <<<<<<< .merge_file_sUvhtC
 use ReflectionMethod;
 =======
@@ -85,6 +99,9 @@ use ReflectionMethod;
 use ReflectionMethod;
 >>>>>>> .merge_file_RgY48v
 >>>>>>> .merge_file_M9jcK0
+=======
+use ReflectionMethod;
+>>>>>>> laraxot/dev
 
 use function Safe\file_put_contents;
 use function Safe\getmypid;
@@ -112,6 +129,7 @@ final class NationalFlagSelectStub extends NationalFlagSelect
 }
 
 afterEach(function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_sUvhtC
     Mockery::close();
 =======
@@ -121,6 +139,9 @@ afterEach(function (): void {
     Mockery::close();
 >>>>>>> .merge_file_RgY48v
 >>>>>>> .merge_file_M9jcK0
+=======
+    Mockery::close();
+>>>>>>> laraxot/dev
     $sqlite = $GLOBALS['__lang_gaps_sqlite'] ?? null;
     if (is_string($sqlite)) {
         DB::purge('lang');
@@ -223,6 +244,7 @@ describe('Lang coverage gaps closeout', function (): void {
     test('WriteTranslationFileAction backs up existing file', function (): void {
         $path = sys_get_temp_dir().'/write_cov_'.uniqid().'.php';
         TestCase::createTranslationFile($path, ['a' => '1']);
+<<<<<<< HEAD
 <<<<<<< .merge_file_sUvhtC
         app()->instance('cache', new class()
         {
@@ -239,6 +261,11 @@ describe('Lang coverage gaps closeout', function (): void {
             public function flush(): void {}
 >>>>>>> .merge_file_RgY48v
 >>>>>>> .merge_file_M9jcK0
+=======
+        app()->instance('cache', new class()
+        {
+            public function flush(): void {}
+>>>>>>> laraxot/dev
         });
 
         Assert::assertTrue(app(WriteTranslationFileAction::class)->execute($path, ['a' => '2']));
@@ -291,6 +318,7 @@ describe('Lang coverage gaps closeout', function (): void {
             ['iso_3166_1_alpha2' => 'IT', 'name' => 'Italy'],
             ['iso_3166_1_alpha2' => 'XX', 'name' => 99],
         ];
+<<<<<<< HEAD
 <<<<<<< .merge_file_sUvhtC
         $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
 =======
@@ -300,11 +328,15 @@ describe('Lang coverage gaps closeout', function (): void {
         $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
 >>>>>>> .merge_file_RgY48v
 >>>>>>> .merge_file_M9jcK0
+=======
+        $m = new ReflectionMethod(NationalFlagSelect::class, 'getCountryOptions');
+>>>>>>> laraxot/dev
         $m->setAccessible(true);
         $options = $m->invoke($select);
         Assert::assertIsArray($options);
         Assert::assertArrayHasKey('IT', $options);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_sUvhtC
         $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
 =======
@@ -314,6 +346,9 @@ describe('Lang coverage gaps closeout', function (): void {
         $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
 >>>>>>> .merge_file_RgY48v
 >>>>>>> .merge_file_M9jcK0
+=======
+        $f = new ReflectionMethod(NationalFlagSelect::class, 'getFilteredCountryOptions');
+>>>>>>> laraxot/dev
         $f->setAccessible(true);
         $byName = $f->invoke($select, 'ital');
         $byCode = $f->invoke($select, 'IT');
@@ -325,6 +360,7 @@ describe('Lang coverage gaps closeout', function (): void {
 
     test('TranslationEditor afterStateHydrated and EditTranslationFile schema paths', function (): void {
         $editor = TranslationEditor::make('c');
+<<<<<<< HEAD
 <<<<<<< .merge_file_sUvhtC
         $setUp = new ReflectionMethod($editor, 'setUp');
 =======
@@ -334,6 +370,9 @@ describe('Lang coverage gaps closeout', function (): void {
         $setUp = new ReflectionMethod($editor, 'setUp');
 >>>>>>> .merge_file_RgY48v
 >>>>>>> .merge_file_M9jcK0
+=======
+        $setUp = new ReflectionMethod($editor, 'setUp');
+>>>>>>> laraxot/dev
         $setUp->setAccessible(true);
         $setUp->invoke($editor);
         Assert::assertInstanceOf(TranslationEditor::class, $editor);
@@ -347,6 +386,7 @@ describe('Lang coverage gaps closeout', function (): void {
         Assert::assertSame([], $edit->schemaFromRecord((object) ['content' => 'x']));
     });
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_sUvhtC
 =======
 <<<<<<< .merge_file_KityzM
@@ -354,6 +394,8 @@ describe('Lang coverage gaps closeout', function (): void {
 <<<<<<< .merge_file_IJCTLE
 >>>>>>> .merge_file_RgY48v
 >>>>>>> .merge_file_M9jcK0
+=======
+>>>>>>> laraxot/dev
     test('Livewire Change and Switcher handle non-string localized urls', function (): void {
         config([
             'laravellocalization.supportedLocales' => [
@@ -378,6 +420,7 @@ describe('Lang coverage gaps closeout', function (): void {
         $switcher = new LangSwitcher();
         $switcher->mount();
         Assert::assertFalse($switcher->langs['en']['url']);
+<<<<<<< HEAD
 <<<<<<< .merge_file_sUvhtC
 =======
 <<<<<<< .merge_file_KityzM
@@ -392,6 +435,8 @@ describe('Lang coverage gaps closeout', function (): void {
 >>>>>>> .merge_file_hdmWeP
 >>>>>>> .merge_file_RgY48v
 >>>>>>> .merge_file_M9jcK0
+=======
+>>>>>>> laraxot/dev
     });
 
     test('Post accessors persist when model has key', function (): void {
@@ -406,6 +451,7 @@ describe('Lang coverage gaps closeout', function (): void {
         ], true);
         // Avoid real update by mocking
         /** @var Post&MockInterface $post */
+<<<<<<< HEAD
 <<<<<<< .merge_file_sUvhtC
         $post = Mockery::mock(Post::class)->makePartial();
 =======
@@ -415,12 +461,16 @@ describe('Lang coverage gaps closeout', function (): void {
         $post = Mockery::mock(Post::class)->makePartial();
 >>>>>>> .merge_file_RgY48v
 >>>>>>> .merge_file_M9jcK0
+=======
+        $post = Mockery::mock(Post::class)->makePartial();
+>>>>>>> laraxot/dev
         $post->shouldReceive('getKey')->andReturn('abc');
         $post->shouldReceive('update')->andReturnTrue();
         $post->setRawAttributes(['post_type' => 'article', 'post_id' => '1'], true);
         Assert::assertSame('article 1', $post->getTitleAttribute(null));
 
         /** @var Post&MockInterface $post2 */
+<<<<<<< HEAD
 <<<<<<< .merge_file_sUvhtC
         $post2 = Mockery::mock(Post::class)->makePartial();
 =======
@@ -430,6 +480,9 @@ describe('Lang coverage gaps closeout', function (): void {
         $post2 = Mockery::mock(Post::class)->makePartial();
 >>>>>>> .merge_file_RgY48v
 >>>>>>> .merge_file_M9jcK0
+=======
+        $post2 = Mockery::mock(Post::class)->makePartial();
+>>>>>>> laraxot/dev
         $post2->shouldReceive('getKey')->andReturn('abc');
         $post2->shouldReceive('update')->andReturnTrue();
         $post2->setRawAttributes(['title' => ''], true);

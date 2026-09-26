@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_FhwO8Y
 
 =======
@@ -13,6 +14,9 @@ declare(strict_types=1);
 >>>>>>> .merge_file_RQKIuM
 >>>>>>> .merge_file_U22Iun
 >>>>>>> .merge_file_UOmfr6
+=======
+
+>>>>>>> laraxot/dev
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;

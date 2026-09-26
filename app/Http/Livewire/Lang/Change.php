@@ -65,6 +65,10 @@ class Change extends Component
 
     public function render(): View
     {
+<<<<<<< HEAD
+=======
+        /** @phpstan-var view-string */
+>>>>>>> laraxot/dev
         $view = 'lang::livewire.lang.change';
         $viewParams = [
             'view' => $view,

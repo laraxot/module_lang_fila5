@@ -12,7 +12,11 @@ uses(TestCase::class);
 
 function makeTransArrayAction(): TransArrayAction
 {
+<<<<<<< HEAD
     return new TransArrayAction;
+=======
+    return new TransArrayAction();
+>>>>>>> laraxot/dev
 }
 
 describe('TransArrayAction Business Logic', function () {

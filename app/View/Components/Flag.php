@@ -15,7 +15,12 @@ class Flag extends Component
 {
     public function __construct(
         public string $name,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     public function render(): Renderable
     {

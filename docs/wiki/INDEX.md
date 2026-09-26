@@ -7,6 +7,7 @@ created: 2026-04-15
 updated: 2026-06-12
 qmd: "lang module wiki index i18n translations second brain pest factory auto increment id"
 issues:
+<<<<<<< HEAD
 <<<<<<< .merge_file_MszxAZ
 <<<<<<< HEAD
 =======
@@ -17,10 +18,14 @@ issues:
 =======
 >>>>>>> .merge_file_GV9APG
 >>>>>>> .merge_file_bpwMbJ
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
   - "https://github.com/laraxot/platform/issues/272"
 discussions:
   - "https://github.com/laraxot/platform/discussions/273"
 related:
+<<<<<<< HEAD
 <<<<<<< .merge_file_MszxAZ
   - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md
 =======
@@ -30,11 +35,16 @@ related:
 =======
 >>>>>>> .merge_file_flWk4N
 >>>>>>> .merge_file_bpwMbJ
+=======
+  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md
+=======
+>>>>>>> laraxot/dev
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
   - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+<<<<<<< HEAD
 <<<<<<< .merge_file_MszxAZ
 >>>>>>> laraxot/dev
 =======
@@ -46,6 +56,9 @@ related:
 >>>>>>> .merge_file_GV9APG
 >>>>>>> .merge_file_flWk4N
 >>>>>>> .merge_file_bpwMbJ
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
   - ../../../../docs/wiki/bmad/architecture.md
   - ../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
   - ../../docs/wiki/concepts/ai-harness-module-discipline.md
@@ -54,6 +67,7 @@ related:
 # Lang Module Wiki
 ## AI / second brain
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_MszxAZ
 =======
 <<<<<<< .merge_file_w5eXAr
@@ -61,11 +75,14 @@ related:
 =======
 <<<<<<< .merge_file_YpOxkH
 >>>>>>> .merge_file_bpwMbJ
+=======
+>>>>>>> laraxot/dev
 <<<<<<< HEAD
 - [hackernoon-ai-coding-tips-progetto corrente-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md)
 =======
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_MszxAZ
 =======
 =======
@@ -73,6 +90,8 @@ related:
 >>>>>>> .merge_file_GV9APG
 >>>>>>> .merge_file_flWk4N
 >>>>>>> .merge_file_bpwMbJ
+=======
+>>>>>>> laraxot/dev
 - [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
 - [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
 - [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)

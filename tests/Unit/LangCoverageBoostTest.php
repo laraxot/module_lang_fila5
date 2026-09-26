@@ -6,6 +6,7 @@ namespace Modules\Lang\Tests\Unit;
 
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
 use Mockery;
 =======
@@ -18,6 +19,9 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Mockery;
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+use Mockery;
+>>>>>>> laraxot/dev
 use Mockery\MockInterface;
 use Modules\Lang\Actions\MergeTranslationsAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
@@ -55,6 +59,7 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
  * @param  list<string>  $permissions
 =======
@@ -65,11 +70,15 @@ uses(TestCase::class);
  * @param  list<string>  $permissions
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+ * @param  list<string>  $permissions
+>>>>>>> laraxot/dev
  * @return MockInterface&UserContract
  */
 function langFakeUser(array $permissions = [], bool $superAdmin = false): UserContract
 {
     /** @var MockInterface&UserContract $user */
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
     $user = Mockery::mock(UserContract::class);
 =======
@@ -79,6 +88,9 @@ function langFakeUser(array $permissions = [], bool $superAdmin = false): UserCo
     $user = Mockery::mock(UserContract::class);
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+    $user = Mockery::mock(UserContract::class);
+>>>>>>> laraxot/dev
     $user->shouldReceive('hasRole')
         ->with('super-admin')
         ->andReturn($superAdmin);
@@ -91,6 +103,7 @@ function langFakeUser(array $permissions = [], bool $superAdmin = false): UserCo
 }
 
 afterEach(function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
     Mockery::close();
 =======
@@ -100,6 +113,9 @@ afterEach(function (): void {
     Mockery::close();
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+    Mockery::close();
+>>>>>>> laraxot/dev
 });
 
 describe('Lang coverage boost — Actions', function (): void {
@@ -117,6 +133,7 @@ describe('Lang coverage boost — Actions', function (): void {
         $path = sys_get_temp_dir().'/lang_write_test_'.uniqid().'.php';
 
         try {
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
             app()->instance('cache', new class()
             {
@@ -137,6 +154,11 @@ describe('Lang coverage boost — Actions', function (): void {
                 public function flush(): void {}
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+            app()->instance('cache', new class()
+            {
+                public function flush(): void {}
+>>>>>>> laraxot/dev
             });
 
             $result = app(WriteTranslationFileAction::class)->execute($path, [
@@ -159,6 +181,7 @@ describe('Lang coverage boost — Actions', function (): void {
 
 describe('Lang coverage boost — Policies', function (): void {
     test('TranslationPolicy delegates to permissions', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
         $policy = new TranslationPolicy();
 =======
@@ -172,10 +195,14 @@ describe('Lang coverage boost — Policies', function (): void {
 >>>>>>> .merge_file_fHe2ff
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+        $policy = new TranslationPolicy();
+>>>>>>> laraxot/dev
         $allowed = langFakeUser(['translation.viewAny', 'translation.view', 'translation.create']);
         $denied = langFakeUser([]);
 
         Assert::assertTrue($policy->viewAny($allowed));
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
         Assert::assertTrue($policy->view($allowed, new Translation()));
 =======
@@ -189,11 +216,15 @@ describe('Lang coverage boost — Policies', function (): void {
 >>>>>>> .merge_file_fHe2ff
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+        Assert::assertTrue($policy->view($allowed, new Translation()));
+>>>>>>> laraxot/dev
         Assert::assertTrue($policy->create($allowed));
         Assert::assertFalse($policy->viewAny($denied));
     });
 
     test('super-admin bypasses TranslationPolicy checks', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
         $policy = new TranslationPolicy();
 =======
@@ -207,12 +238,16 @@ describe('Lang coverage boost — Policies', function (): void {
 >>>>>>> .merge_file_fHe2ff
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+        $policy = new TranslationPolicy();
+>>>>>>> laraxot/dev
         $superAdmin = langFakeUser(superAdmin: true);
 
         Assert::assertTrue($policy->before($superAdmin, 'viewAny'));
     });
 
     test('PostPolicy and TranslationFilePolicy enforce permissions', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
 =======
 <<<<<<< .merge_file_czjRgv
@@ -220,6 +255,8 @@ describe('Lang coverage boost — Policies', function (): void {
 <<<<<<< .merge_file_NQlOQL
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+>>>>>>> laraxot/dev
         $postPolicy = new PostPolicy();
         $filePolicy = new TranslationFilePolicy();
         $user = langFakeUser(['post.update', 'translation_file.delete']);
@@ -227,6 +264,7 @@ describe('Lang coverage boost — Policies', function (): void {
         Assert::assertTrue($postPolicy->update($user, new Post()));
         Assert::assertTrue($filePolicy->delete($user, new TranslationFile()));
         Assert::assertFalse($postPolicy->delete(langFakeUser([]), new Post()));
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
 =======
 <<<<<<< .merge_file_czjRgv
@@ -242,6 +280,8 @@ describe('Lang coverage boost — Policies', function (): void {
 >>>>>>> .merge_file_fHe2ff
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+>>>>>>> laraxot/dev
     });
 });
 
@@ -261,6 +301,7 @@ describe('Lang coverage boost — Filament static', function (): void {
 
 describe('Lang coverage boost — UI and data', function (): void {
     test('translation file schemas and pages build executable structures', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
         $formSchema = (new TranslationFileForm())->getFormSchema();
         $infolistSchema = (new TranslationFileInfolist())->getInfolistSchema();
@@ -282,11 +323,17 @@ describe('Lang coverage boost — UI and data', function (): void {
 >>>>>>> .merge_file_fHe2ff
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+        $formSchema = (new TranslationFileForm())->getFormSchema();
+        $infolistSchema = (new TranslationFileInfolist())->getInfolistSchema();
+        $tableColumns = (new TranslationFilesTable())->getTableColumns();
+>>>>>>> laraxot/dev
 
         Assert::assertArrayHasKey('name', $formSchema);
         Assert::assertArrayHasKey('id', $infolistSchema);
         Assert::assertArrayHasKey('created_at', $tableColumns);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
         $listPage = new ListTranslationFiles();
         $editPage = new EditTranslationFile();
@@ -304,6 +351,10 @@ describe('Lang coverage boost — UI and data', function (): void {
 >>>>>>> .merge_file_fHe2ff
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+        $listPage = new ListTranslationFiles();
+        $editPage = new EditTranslationFile();
+>>>>>>> laraxot/dev
 
         $builtFields = $editPage->makeFromArray([
             'title' => 'Hello',
@@ -320,6 +371,7 @@ describe('Lang coverage boost — UI and data', function (): void {
     });
 
     test('language widget and blade components expose runtime data', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
 =======
 <<<<<<< .merge_file_czjRgv
@@ -327,6 +379,8 @@ describe('Lang coverage boost — UI and data', function (): void {
 <<<<<<< .merge_file_NQlOQL
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+>>>>>>> laraxot/dev
         $widget = new LanguageSwitcherWidget();
 
         Assert::assertTrue(LanguageSwitcherWidget::canView());
@@ -334,6 +388,7 @@ describe('Lang coverage boost — UI and data', function (): void {
         $firstLocale = $widget->getAvailableLocales()->first();
         Assert::assertNotNull($firstLocale);
         Assert::assertSame('it', $firstLocale['code']);
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
 =======
 <<<<<<< .merge_file_czjRgv
@@ -350,11 +405,14 @@ describe('Lang coverage boost — UI and data', function (): void {
 >>>>>>> .merge_file_fHe2ff
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+>>>>>>> laraxot/dev
 
         app('request')->server->set('REQUEST_URI', '/it/example');
         app('request')->server->set('PATH_INFO', '/it/example');
         app()->setLocale('it');
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
         Assert::assertSame(url('en'), $widget->getLanguageUrl('en'));
 
@@ -376,6 +434,11 @@ describe('Lang coverage boost — UI and data', function (): void {
 >>>>>>> .merge_file_fHe2ff
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+        Assert::assertSame(url('en'), $widget->getLanguageUrl('en'));
+
+        $component = new LanguageSwitcher();
+>>>>>>> laraxot/dev
         $rendered = $component->render();
 
         Assert::assertInstanceOf(View::class, $rendered);
@@ -401,6 +464,7 @@ describe('Lang coverage boost — UI and data', function (): void {
         ]);
         app()->setLocale('it');
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
         $composer = new ThemeComposer();
 =======
@@ -414,6 +478,9 @@ describe('Lang coverage boost — UI and data', function (): void {
 >>>>>>> .merge_file_fHe2ff
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+        $composer = new ThemeComposer();
+>>>>>>> laraxot/dev
         $languages = $composer->languages();
         $others = $composer->otherLanguages();
 
@@ -436,6 +503,7 @@ describe('Lang coverage boost — UI and data', function (): void {
         mkdir(dirname($filePath), 0o755, true);
         TestCase::createTranslationFile($filePath, ['welcome' => 'Ciao']);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
 =======
 <<<<<<< .merge_file_czjRgv
@@ -452,6 +520,8 @@ describe('Lang coverage boost — UI and data', function (): void {
                     }
 =======
 >>>>>>> .merge_file_7QePWk
+=======
+>>>>>>> laraxot/dev
         app()->instance('translator', new class($langDir)
         {
             public function __construct(private readonly string $path) {}
@@ -461,10 +531,13 @@ describe('Lang coverage boost — UI and data', function (): void {
                 return new class($this->path)
                 {
                     public function __construct(private readonly string $path) {}
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
 =======
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+>>>>>>> laraxot/dev
 
                     /** @return array<string, string> */
                     public function namespaces(): array
@@ -485,6 +558,7 @@ describe('Lang coverage boost — UI and data', function (): void {
         Assert::assertSame($filePath, $translationData->getFilename());
         Assert::assertSame(['welcome' => 'Ciao'], $translationData->getData());
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
         $loader = new ArrayLoader();
 =======
@@ -498,6 +572,9 @@ describe('Lang coverage boost — UI and data', function (): void {
 >>>>>>> .merge_file_fHe2ff
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+        $loader = new ArrayLoader();
+>>>>>>> laraxot/dev
         $loader->addMessages('it', 'messages', ['known' => 'Valore']);
         $adapter = new TranslatorAdapter($loader, 'it');
 
@@ -516,6 +593,7 @@ describe('Lang coverage boost — UI and data', function (): void {
 
 describe('Lang coverage boost — Post accessors', function (): void {
     test('Post mutators and accessors work without persisting', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
         $post = new Post();
 =======
@@ -529,6 +607,9 @@ describe('Lang coverage boost — Post accessors', function (): void {
 >>>>>>> .merge_file_fHe2ff
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+        $post = new Post();
+>>>>>>> laraxot/dev
         $post->setTitleAttribute('My Title');
 
         Assert::assertSame('My Title', $post->getAttributes()['title']);
@@ -546,6 +627,7 @@ describe('Lang coverage boost — Post accessors', function (): void {
     });
 
     test('Post guid accessor slugifies fallback title', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_qiJiRg
         $post = new Post();
 =======
@@ -559,6 +641,9 @@ describe('Lang coverage boost — Post accessors', function (): void {
 >>>>>>> .merge_file_fHe2ff
 >>>>>>> .merge_file_Dtn50R
 >>>>>>> .merge_file_7QePWk
+=======
+        $post = new Post();
+>>>>>>> laraxot/dev
         $post->setRawAttributes(['title' => 'Hello World']);
 
         Assert::assertSame('hello-world', $post->getGuidAttribute(null));
