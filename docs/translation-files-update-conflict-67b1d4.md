@@ -2,10 +2,13 @@
 
 ## Data Aggiornamento
 2025-01-27
+<<<<<<< HEAD
 <<<<<<< .merge_file_8SQrbv
 =======
 2025-01-27
 >>>>>>> .merge_file_gHtBQH
+=======
+>>>>>>> laraxot/dev
 [DATE]
 
 ## File Modificati
@@ -129,18 +132,22 @@ return [
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_8SQrbv
 =======
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
 >>>>>>> .merge_file_gHtBQH
+=======
+>>>>>>> laraxot/dev
 - [Best Practices](../xot/docs/translations-best-practices.md)
 
 ## Prossimi Passi
 
 1. **Test**: Verificare il funzionamento in ambiente di sviluppo
 2. **Documentazione**: Aggiornare la documentazione dei moduli Notify e Lang
+<<<<<<< HEAD
 <<<<<<< .merge_file_8SQrbv
 3. **Review**: Code review per confermare le modifiche
 =======
@@ -150,3 +157,6 @@ return [
 3. **Review**: Code review per confermare le modifiche
 3. **Review**: Code review per confermare le modifiche
 >>>>>>> .merge_file_gHtBQH
+=======
+3. **Review**: Code review per confermare le modifiche
+>>>>>>> laraxot/dev

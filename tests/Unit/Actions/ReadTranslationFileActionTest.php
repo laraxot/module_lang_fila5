@@ -38,7 +38,11 @@ function readTranslationTestFilePath(): string
 
 function makeReadTranslationFileAction(): ReadTranslationFileAction
 {
+<<<<<<< HEAD
     return new ReadTranslationFileAction;
+=======
+    return new ReadTranslationFileAction();
+>>>>>>> laraxot/dev
 }
 
 afterEach(function (): void {

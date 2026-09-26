@@ -166,4 +166,7 @@ docs/_archive/
 /.vscode/
 .cursor~*
 .windsurf~*
+<<<<<<< HEAD
 graphify-out/
+=======
+>>>>>>> laraxot/dev

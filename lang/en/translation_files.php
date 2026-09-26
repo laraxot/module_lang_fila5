@@ -13,6 +13,7 @@ return [
         'created_at' => [
             'label' => 'created_at',
         ],
+<<<<<<< HEAD
 <<<<<<< .merge_file_VA8mjk
 =======
 <<<<<<< .merge_file_elALEJ
@@ -28,5 +29,7 @@ return [
 >>>>>>> .merge_file_kST5Ic
 >>>>>>> .merge_file_XTRuB4
 >>>>>>> .merge_file_1Qprlp
+=======
+>>>>>>> laraxot/dev
     ],
 ];

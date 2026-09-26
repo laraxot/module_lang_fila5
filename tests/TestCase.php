@@ -114,7 +114,11 @@ abstract class TestCase extends XotBaseTestCase
      */
     public static function bindRealSaveTransAction(): void
     {
+<<<<<<< HEAD
         app()->instance(SaveTransAction::class, new SaveTransAction);
+=======
+        app()->instance(SaveTransAction::class, new SaveTransAction());
+>>>>>>> laraxot/dev
     }
 
     /**

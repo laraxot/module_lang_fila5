@@ -38,11 +38,17 @@ class NationalFlagSelect extends XotBaseSelect
      */
     protected function getCountryOptions(): array
     {
+<<<<<<< HEAD
         // countries() restituisce righe array; i test alimentano anche righe sporche (stringhe)
         /** @var array<array-key, array<array-key, mixed>|string> $countries */
         $countries = countries();
         // PHPStan L10: Type narrowing for array offset access
         $countries = Arr::sort($countries, function (array|string $c) {
+=======
+        $countries = countries();
+        // PHPStan L10: Type narrowing for array offset access
+        $countries = Arr::sort($countries, function (mixed $c) {
+>>>>>>> laraxot/dev
             return is_array($c) && isset($c['name']) ? $c['name'] : '';
         });
 
@@ -86,12 +92,19 @@ class NationalFlagSelect extends XotBaseSelect
             return $this->getCountryOptions();
         }
 
+<<<<<<< HEAD
         /** @var array<array-key, array<array-key, mixed>|string> $countries */
+=======
+>>>>>>> laraxot/dev
         $countries = countries();
         $searchLower = strtolower($search);
 
         // Filter countries by search term
+<<<<<<< HEAD
         $filteredCountries = array_filter($countries, function (array|string $country) use ($searchLower) {
+=======
+        $filteredCountries = array_filter($countries, function (mixed $country) use ($searchLower) {
+>>>>>>> laraxot/dev
             // PHPStan L10: Type narrowing for country array
             if (! is_array($country) || ! isset($country['iso_3166_1_alpha2'], $country['name'])) {
                 return false;
@@ -123,7 +136,11 @@ class NationalFlagSelect extends XotBaseSelect
         });
 
         // Sort filtered results by name
+<<<<<<< HEAD
         $filteredCountries = Arr::sort($filteredCountries, function (array|string $c) {
+=======
+        $filteredCountries = Arr::sort($filteredCountries, function (mixed $c) {
+>>>>>>> laraxot/dev
             return is_array($c) && isset($c['name']) ? $c['name'] : '';
         });
 
