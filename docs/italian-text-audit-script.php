@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 /**
  * Script per identificare testi italiani residui in file di traduzione non italiani.
  */
@@ -130,13 +127,8 @@ function auditItalianTextInNonItalianFiles(string $basePath): array
         foreach ($italianPatterns as $pattern) {
             $lineNumber = 0;
             foreach ($lines as $line) {
-<<<<<<< HEAD
-                $lineNumber++;
-                if (stripos($line, $pattern) !== false) {
-=======
                 ++$lineNumber;
                 if (false !== stripos($line, $pattern)) {
->>>>>>> laraxot/dev
                     $fileIssues[] = [
                         'pattern' => $pattern,
                         'line' => $lineNumber,
@@ -194,11 +186,7 @@ function generateItalianTextReport(array $issues): string
         }
     }
 
-<<<<<<< HEAD
-    if ($totalFiles === 0) {
-=======
     if (0 === $totalFiles) {
->>>>>>> laraxot/dev
         $report .= "✅ **Nessun problema trovato!** Tutti i file di traduzione non italiani sono puliti.\n\n";
     }
 

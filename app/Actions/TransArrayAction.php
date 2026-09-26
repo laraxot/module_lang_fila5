@@ -20,21 +20,13 @@ class TransArrayAction
     /**
      * Esegue la traduzione di una collezione.
      *
-<<<<<<< HEAD
-     * @param  array<int|string, mixed>  $array
-=======
      * @param array<int|string, mixed> $array
      *
->>>>>>> laraxot/dev
      * @return array<int|string, string>
      */
     public function execute(array $array, ?string $transKey): array
     {
-<<<<<<< HEAD
-        if ($transKey === null) {
-=======
         if (null === $transKey) {
->>>>>>> laraxot/dev
             $result = Arr::map($array, SafeStringCastAction::cast(...));
             if (is_array($result)) {
                 $stringResult = [];
@@ -66,12 +58,8 @@ class TransArrayAction
     /**
      * Traduce un singolo elemento.
      *
-<<<<<<< HEAD
-     * @param  mixed  $item  L'elemento da tradurre
-=======
      * @param mixed $item L'elemento da tradurre
      *
->>>>>>> laraxot/dev
      * @return string L'elemento tradotto o l'elemento originale se la traduzione non esiste
      */
     public function trans(mixed $item): string
@@ -81,11 +69,7 @@ class TransArrayAction
             $item = SafeStringCastAction::cast($item);
         }
 
-<<<<<<< HEAD
-        if ($item === '' || $item === '0' || $this->transKey === null) {
-=======
         if ('' === $item || '0' === $item || null === $this->transKey) {
->>>>>>> laraxot/dev
             return $item;
         }
 

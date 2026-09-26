@@ -1,18 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_sBVilp
 
-=======
-<<<<<<< .merge_file_F57s2N
-
-=======
->>>>>>> .merge_file_GnTBey
->>>>>>> .merge_file_9BgPIZ
-=======
-
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Translator.php
  */
@@ -30,26 +19,7 @@ class TranslatorAction extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_sBVilp
      * @param  array<string, mixed>  $replace
-=======
-<<<<<<< .merge_file_F57s2N
-     * @param array<string, mixed> $replace
-     *
-=======
-     * I parametri nativi restano `mixed` per compatibilita' LSP con
-     * `Illuminate\Translation\Translator::get()`, che non dichiara tipi.
-     *
-     * @param  string  $key
-     * @param  array<string, mixed>  $replace
-     * @param  string|null  $locale
-     * @param  bool  $fallback
->>>>>>> .merge_file_GnTBey
->>>>>>> .merge_file_9BgPIZ
-=======
-     * @param  array<string, mixed>  $replace
->>>>>>> laraxot/dev
      * @return string|array<array-key, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
@@ -71,21 +41,7 @@ class TranslatorAction extends LaravelTranslator
         return $result;
     }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_sBVilp
     public function execute(): void {}
-=======
-<<<<<<< .merge_file_F57s2N
-    public function execute(): void
-    {
-    }
-=======
-    public function execute(): void {}
->>>>>>> .merge_file_GnTBey
->>>>>>> .merge_file_9BgPIZ
-=======
-    public function execute(): void {}
->>>>>>> laraxot/dev
 
     protected function notifyMissingKey(string $key): void
     {

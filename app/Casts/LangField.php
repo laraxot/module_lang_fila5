@@ -17,14 +17,7 @@ class LangField implements CastsAttributes
     /**
      * Cast the given value.
      *
-<<<<<<< HEAD
-     * `mixed $value` e il ritorno `mixed` sono imposti da `CastsAttributes`:
-     * il valore grezzo dell'attributo e' eterogeneo per contratto.
-     *
-     * @param  array<string, mixed>  $attributes
-=======
      * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
      */
     public function get(Model $model, string $key, mixed $value, array $attributes): mixed
     {
@@ -37,14 +30,8 @@ class LangField implements CastsAttributes
     /**
      * Prepare the given value for storage.
      *
-<<<<<<< HEAD
-     * `mixed $value` e' imposto da `CastsAttributes` (compatibilita' LSP).
-     *
-     * @param  array<string, mixed>  $attributes
-=======
      * @param array<string, mixed> $attributes
      *
->>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public function set(Model $model, string $key, mixed $value, array $attributes): array

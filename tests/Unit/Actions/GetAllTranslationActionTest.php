@@ -12,11 +12,7 @@ uses(TestCase::class);
 
 function makeGetAllTranslationAction(): GetAllTranslationAction
 {
-<<<<<<< HEAD
-    return new GetAllTranslationAction;
-=======
     return new GetAllTranslationAction();
->>>>>>> laraxot/dev
 }
 
 describe('GetAllTranslationAction Business Logic', function () {
