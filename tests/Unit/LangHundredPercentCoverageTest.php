@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
 use Livewire\Livewire;
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 use Mockery;
 =======
@@ -34,6 +35,9 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Mockery;
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+use Mockery;
+>>>>>>> laraxot/dev
 use Mockery\MockInterface;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Actions\GetAllModuleTranslationAction;
@@ -64,6 +68,7 @@ use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslatio
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\ListTranslationFiles;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Tables\TranslationFilesTable;
 use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
 use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
@@ -79,6 +84,10 @@ use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
+use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
+>>>>>>> laraxot/dev
 use Modules\Lang\Models\BaseModel;
 use Modules\Lang\Models\BaseModelLang;
 use Modules\Lang\Models\LanguageLine;
@@ -102,6 +111,7 @@ use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 use ReflectionMethod;
 =======
@@ -110,6 +120,9 @@ use ReflectionMethod;
 use ReflectionMethod;
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+use ReflectionMethod;
+>>>>>>> laraxot/dev
 
 use function Safe\fclose;
 use function Safe\file_put_contents;
@@ -147,6 +160,7 @@ final class LangBaseViewRecordStub extends LangBaseViewRecord
     protected static string $resource = TranslationFileResource::class;
 }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 final class LangBasePolicyStub extends LangBasePolicy {}
 =======
@@ -158,6 +172,9 @@ final class LangBasePolicyStub extends LangBasePolicy
 final class LangBasePolicyStub extends LangBasePolicy {}
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+final class LangBasePolicyStub extends LangBasePolicy {}
+>>>>>>> laraxot/dev
 
 final class LangFieldHostModel extends BaseModelLang
 {
@@ -166,6 +183,7 @@ final class LangFieldHostModel extends BaseModelLang
 
 final class TranslationEditorStub extends TranslationEditor
 {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 =======
 <<<<<<< .merge_file_b5pEBu
@@ -179,6 +197,8 @@ final class TranslationEditorStub extends TranslationEditor
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
     public mixed $forcedState = [];
 
     public function getState(): mixed
@@ -200,6 +220,7 @@ final class StrictTranslationsHost extends BaseModel
 
     protected $table = 'translations';
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
     public mixed $forcedTranslation = null;
 
@@ -225,6 +246,10 @@ final class StrictTranslationsHost extends BaseModel
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+    public mixed $forcedTranslation = null;
+
+>>>>>>> laraxot/dev
     protected function spatieGetTranslation(string $key, string $locale, bool $useFallbackLocale = true): mixed
     {
         unset($key, $locale, $useFallbackLocale);
@@ -234,6 +259,7 @@ final class StrictTranslationsHost extends BaseModel
 }
 
 /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
  * @param  list<string>  $permissions
 =======
@@ -244,11 +270,15 @@ final class StrictTranslationsHost extends BaseModel
  * @param  list<string>  $permissions
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+ * @param  list<string>  $permissions
+>>>>>>> laraxot/dev
  * @return MockInterface&UserContract
  */
 function langHundredFakeUser(array $permissions = [], bool $superAdmin = false): UserContract
 {
     /** @var MockInterface&UserContract $user */
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
     $user = Mockery::mock(UserContract::class);
 =======
@@ -258,6 +288,9 @@ function langHundredFakeUser(array $permissions = [], bool $superAdmin = false):
     $user = Mockery::mock(UserContract::class);
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+    $user = Mockery::mock(UserContract::class);
+>>>>>>> laraxot/dev
     $user->shouldReceive('hasRole')->with('super-admin')->andReturn($superAdmin);
     $user->shouldReceive('hasPermissionTo')
         ->andReturnUsing(static fn (string $permission): bool => in_array($permission, $permissions, true));
@@ -266,6 +299,7 @@ function langHundredFakeUser(array $permissions = [], bool $superAdmin = false):
 }
 
 /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 =======
 <<<<<<< .merge_file_b5pEBu
@@ -277,6 +311,8 @@ function langHundredFakeUser(array $permissions = [], bool $superAdmin = false):
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
  * @return Collection<int|string, mixed>
  */
 function langMixedCollection(mixed ...$values): Collection
@@ -319,6 +355,7 @@ function langForceSqliteTranslations(): void
 }
 
 afterEach(function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
     Mockery::close();
 =======
@@ -328,6 +365,9 @@ afterEach(function (): void {
     Mockery::close();
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+    Mockery::close();
+>>>>>>> laraxot/dev
     config(['lang.language_switcher.enabled' => true]);
 
     $sqlite = $GLOBALS['__lang_cov_sqlite'] ?? null;
@@ -468,6 +508,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
     test('TranslatorAction and TranslatorAdapter cover missing keys and array results', function (): void {
         langForceSqliteTranslations();
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $loader = new ArrayLoader();
 =======
@@ -481,6 +522,9 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $loader = new ArrayLoader();
+>>>>>>> laraxot/dev
         $loader->addMessages('it', 'messages', [
             'known' => 'Ciao',
             'tree' => ['a' => 'b'],
@@ -507,6 +551,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $path = sys_get_temp_dir().'/lang_write_cov_'.uniqid().'.php';
         TestCase::createTranslationFile($path, ['old' => '1']);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 =======
 <<<<<<< .merge_file_b5pEBu
@@ -519,11 +564,14 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
 =======
 <<<<<<< .merge_file_zA4CJB
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
         app()->instance('cache', new class()
         {
             public function flush(): void {}
         });
         $translationLoader = new class()
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         {
 =======
@@ -537,6 +585,9 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         {
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        {
+>>>>>>> laraxot/dev
             public bool $flushed = false;
 
             public function flush(): void
@@ -564,6 +615,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $path = sys_get_temp_dir().'/lang_bad_'.uniqid().'.php';
         $action = app(WriteTranslationFileAction::class);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $read = Mockery::mock(ReadTranslationFileAction::class);
 =======
@@ -573,6 +625,9 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $read = Mockery::mock(ReadTranslationFileAction::class);
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $read = Mockery::mock(ReadTranslationFileAction::class);
+>>>>>>> laraxot/dev
         $read->shouldReceive('toPhp')->andReturn('<?php return [;');
         app()->instance(ReadTranslationFileAction::class, $read);
 
@@ -608,6 +663,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             Assert::assertSame('completed', $synced['modules'][$tmpModule]['status']);
             Assert::assertFileExists($base.'/lang/en/nested.php');
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
             $getModules = new ReflectionMethod($action, 'getModules');
 =======
@@ -617,6 +673,9 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             $getModules = new ReflectionMethod($action, 'getModules');
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+            $getModules = new ReflectionMethod($action, 'getModules');
+>>>>>>> laraxot/dev
             $getModules->setAccessible(true);
             /** @var list<string> $modules */
             $modules = $getModules->invoke($action, base_path('Modules'));
@@ -625,6 +684,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             File::deleteDirectory($base);
         }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $load = new ReflectionMethod($action, 'loadTranslations');
 =======
@@ -634,6 +694,9 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $load = new ReflectionMethod($action, 'loadTranslations');
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $load = new ReflectionMethod($action, 'loadTranslations');
+>>>>>>> laraxot/dev
         $load->setAccessible(true);
         Assert::assertSame([], $load->invoke($action, '/no/such/file.php'));
 
@@ -680,6 +743,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             $mock->allows('execute');
         });
         $this->mockService(SvgExistsAction::class, static function (MockInterface $mock): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
             $mock->allows('execute')->andReturnUsing(static fn (string $label): bool => $label === 'heroicon-o-check');
 =======
@@ -689,6 +753,9 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             $mock->allows('execute')->andReturnUsing(static fn (string $label): bool => $label === 'heroicon-o-check');
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+            $mock->allows('execute')->andReturnUsing(static fn (string $label): bool => $label === 'heroicon-o-check');
+>>>>>>> laraxot/dev
         });
 
         app('translator')->addLines([
@@ -730,6 +797,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
     });
 
     test('LangBase page stubs expose header actions with locale switcher', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $create = new ReflectionMethod(LangBaseCreateRecordStub::class, 'getHeaderActions');
         $create->setAccessible(true);
@@ -759,11 +827,16 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $create->setAccessible(true);
 <<<<<<< .merge_file_zA4CJB
 >>>>>>> .merge_file_E1lPtT
+=======
+        $create = new ReflectionMethod(LangBaseCreateRecordStub::class, 'getHeaderActions');
+        $create->setAccessible(true);
+>>>>>>> laraxot/dev
         Assert::assertNotEmpty($create->invoke(new LangBaseCreateRecordStub()));
 
         $edit = new ReflectionMethod(LangBaseEditRecordStub::class, 'getHeaderActions');
         $edit->setAccessible(true);
         $editActions = $edit->invoke(new LangBaseEditRecordStub());
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 =======
 =======
@@ -774,11 +847,14 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $editActions = $edit->invoke(new LangBaseEditRecordStub);
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
         Assert::assertIsArray($editActions);
         Assert::assertArrayHasKey('locale-switcher', $editActions);
 
         $list = new ReflectionMethod(LangBaseListRecordsStub::class, 'getHeaderActions');
         $list->setAccessible(true);
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $listActions = $list->invoke(new LangBaseListRecordsStub());
 =======
@@ -788,11 +864,15 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $listActions = $list->invoke(new LangBaseListRecordsStub);
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_E1lPtT
+=======
+        $listActions = $list->invoke(new LangBaseListRecordsStub());
+>>>>>>> laraxot/dev
         Assert::assertIsArray($listActions);
         Assert::assertArrayHasKey('locale_switcher', $listActions);
 
         $view = new ReflectionMethod(LangBaseViewRecordStub::class, 'getHeaderActions');
         $view->setAccessible(true);
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $viewActions = $view->invoke(new LangBaseViewRecordStub());
 =======
@@ -803,6 +883,9 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $viewActions = $view->invoke(new LangBaseViewRecordStub());
+>>>>>>> laraxot/dev
         Assert::assertIsArray($viewActions);
         Assert::assertArrayHasKey('locale-switcher', $viewActions);
     });
@@ -826,6 +909,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         });
 
         $select = NationalFlagSelect::make('country');
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $optionsMethod = new ReflectionMethod($select, 'getCountryOptions');
 =======
@@ -835,11 +919,15 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $optionsMethod = new ReflectionMethod($select, 'getCountryOptions');
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $optionsMethod = new ReflectionMethod($select, 'getCountryOptions');
+>>>>>>> laraxot/dev
         $optionsMethod->setAccessible(true);
         /** @var array<string, string> $options */
         $options = $optionsMethod->invoke($select);
         Assert::assertNotEmpty($options);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $filterMethod = new ReflectionMethod($select, 'getFilteredCountryOptions');
 =======
@@ -849,6 +937,9 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $filterMethod = new ReflectionMethod($select, 'getFilteredCountryOptions');
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $filterMethod = new ReflectionMethod($select, 'getFilteredCountryOptions');
+>>>>>>> laraxot/dev
         $filterMethod->setAccessible(true);
         Assert::assertNotEmpty($filterMethod->invoke($select, ''));
         Assert::assertIsArray($filterMethod->invoke($select, 'ital'));
@@ -873,14 +964,18 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
             $mock->allows('execute');
         });
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 =======
 <<<<<<< .merge_file_b5pEBu
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
         $edit = new EditTranslationFile();
         $schema = $edit->getFormSchema();
         Assert::assertNotEmpty($schema);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $header = new ReflectionMethod($edit, 'getHeaderActions');
 =======
@@ -897,16 +992,23 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $header = new ReflectionMethod($edit, 'getHeaderActions');
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $header = new ReflectionMethod($edit, 'getHeaderActions');
+>>>>>>> laraxot/dev
         $header->setAccessible(true);
         $headerActions = $header->invoke($edit);
         Assert::assertIsArray($headerActions);
         Assert::assertArrayHasKey('locale-switcher', $headerActions);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
+=======
+>>>>>>> laraxot/dev
         $mutate = new ReflectionMethod($edit, 'mutateFormDataBeforeSave');
         $mutate->setAccessible(true);
         $record = new class() extends Model
         {
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_b5pEBu
         $mutate = new \ReflectionMethod($edit, 'mutateFormDataBeforeSave');
@@ -923,6 +1025,8 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         {
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
             protected $guarded = [];
         };
         $record->forceFill(['key' => 'lang::messages']);
@@ -930,6 +1034,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         Assert::assertSame(['content' => ['a' => 'b']], $mutate->invoke($edit, ['content' => ['a' => 'b']]));
         Assert::assertSame(['content' => null], $mutate->invoke($edit, ['content' => null]));
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $editNoKey = new EditTranslationFile();
         $editNoKey->record = new class() extends Model
@@ -949,15 +1054,24 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         {
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $editNoKey = new EditTranslationFile();
+        $editNoKey->record = new class() extends Model
+        {
+>>>>>>> laraxot/dev
             protected $guarded = [];
         };
         Assert::assertSame(['x' => 1], $mutate->invoke($editNoKey, ['x' => 1]));
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
+=======
+>>>>>>> laraxot/dev
         $after = new ReflectionMethod($edit, 'afterSave');
         $after->setAccessible(true);
         $refreshable = new class() extends Model
         {
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_b5pEBu
         $after = new \ReflectionMethod($edit, 'afterSave');
@@ -974,6 +1088,8 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         {
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
             public bool $refreshed = false;
 
             public function refresh(): static
@@ -990,6 +1106,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $edit->record = null;
         $after->invoke($edit);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $list = new ListTranslationFiles();
         $listHeader = new ReflectionMethod($list, 'getHeaderActions');
@@ -1006,11 +1123,16 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $listHeader = new ReflectionMethod($list, 'getHeaderActions');
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $list = new ListTranslationFiles();
+        $listHeader = new ReflectionMethod($list, 'getHeaderActions');
+>>>>>>> laraxot/dev
         $listHeader->setAccessible(true);
         $listHeaderActions = $listHeader->invoke($list);
         Assert::assertIsArray($listHeaderActions);
         Assert::assertArrayHasKey('locale_switcher', $listHeaderActions);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $table = new TranslationFilesTable();
 =======
@@ -1024,10 +1146,14 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $table = new TranslationFilesTable();
+>>>>>>> laraxot/dev
         Assert::assertArrayHasKey('locale_switcher', $table->getTableHeaderActions());
     });
 
     test('LanguageSwitcherWidget covers changeLanguage urls and view data', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 =======
 <<<<<<< .merge_file_b5pEBu
@@ -1035,6 +1161,8 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 <<<<<<< .merge_file_zA4CJB
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
         $widget = new LanguageSwitcherWidget();
         $viewData = $widget->exposeViewData();
         Assert::assertArrayHasKey('available_locales', $viewData);
@@ -1045,6 +1173,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         app()->instance('request', Request::create('http://localhost/it/demo', 'GET'));
         app()->setLocale('it');
         Assert::assertStringContainsString('/en/', $widget->getLanguageUrl('en'));
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 =======
 <<<<<<< .merge_file_b5pEBu
@@ -1066,11 +1195,14 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
 
         app()->instance('request', Request::create('http://localhost/it', 'GET'));
         Assert::assertStringContainsString('en', $widget->getLanguageUrl('en'));
 
         app()->instance('request', Request::create('http://localhost/', 'GET'));
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         Assert::assertStringContainsString('de', $widget->getLanguageUrl('de'));
 =======
@@ -1084,6 +1216,9 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        Assert::assertStringContainsString('de', $widget->getLanguageUrl('de'));
+>>>>>>> laraxot/dev
 
         Livewire::test(LanguageSwitcherWidget::class)
             ->call('changeLanguage', 'en')
@@ -1095,6 +1230,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 
     test('LanguageSwitcher blade component empty branch when disabled', function (): void {
         config(['lang.language_switcher.enabled' => false]);
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $component = new LanguageSwitcher();
 =======
@@ -1108,11 +1244,15 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $component = new LanguageSwitcher();
+>>>>>>> laraxot/dev
         $view = $component->render();
         Assert::assertInstanceOf(View::class, $view);
         Assert::assertSame('lang::components.empty', $view->name());
     });
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 =======
 <<<<<<< .merge_file_b5pEBu
@@ -1120,6 +1260,8 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 <<<<<<< .merge_file_zA4CJB
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
     test('Livewire Change and Switcher mount and render', function (): void {
         config([
             'laravellocalization.supportedLocales' => [
@@ -1144,6 +1286,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
     test('LangField cast get and set via host model', function (): void {
         $cast = new LangField();
         $host = new LangFieldHostModel();
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         /** @var Post&MockInterface $post */
         $post = Mockery::mock(Post::class)->makePartial();
@@ -1167,6 +1310,10 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $post = Mockery::mock(Post::class)->makePartial();
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        /** @var Post&MockInterface $post */
+        $post = Mockery::mock(Post::class)->makePartial();
+>>>>>>> laraxot/dev
         $initialTitle = ['it' => 'Hello'];
         $post->setAttribute('custom_field', $initialTitle);
         $post->shouldReceive('save')->once()->andReturnTrue();
@@ -1181,6 +1328,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 
 describe('Lang 100% — Models policies providers views', function (): void {
     test('LanguageLine fillable and casts', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $line = new LanguageLine();
         Assert::assertSame(['group', 'key', 'text', 'locale'], $line->getFillable());
@@ -1200,11 +1348,17 @@ describe('Lang 100% — Models policies providers views', function (): void {
         $casts = new ReflectionMethod($line, 'casts');
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $line = new LanguageLine();
+        Assert::assertSame(['group', 'key', 'text', 'locale'], $line->getFillable());
+        $casts = new ReflectionMethod($line, 'casts');
+>>>>>>> laraxot/dev
         $casts->setAccessible(true);
         Assert::assertSame(['text' => 'json'], $casts->invoke($line));
     });
 
     test('HasStrictTranslations normalizes scalar array bool float and object', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $model = new StrictTranslationsHost();
 =======
@@ -1218,6 +1372,9 @@ describe('Lang 100% — Models policies providers views', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $model = new StrictTranslationsHost();
+>>>>>>> laraxot/dev
 
         $model->forcedTranslation = 'Ciao';
         Assert::assertSame('Ciao', $model->getTranslation('title', 'it'));
@@ -1237,6 +1394,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
         $model->forcedTranslation = 1.5;
         Assert::assertSame(1, $model->getTranslation('title', 'fr'));
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $model->forcedTranslation = new class()
         {
@@ -1252,6 +1410,10 @@ describe('Lang 100% — Models policies providers views', function (): void {
         {
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $model->forcedTranslation = new class()
+        {
+>>>>>>> laraxot/dev
             public function __toString(): string
             {
                 return 'obj';
@@ -1276,6 +1438,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
         ]);
         $denied = langHundredFakeUser([]);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 =======
 <<<<<<< .merge_file_b5pEBu
@@ -1283,6 +1446,8 @@ describe('Lang 100% — Models policies providers views', function (): void {
 <<<<<<< .merge_file_zA4CJB
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
         $translationPolicy = new TranslationPolicy();
         $postPolicy = new PostPolicy();
         $filePolicy = new TranslationFilePolicy();
@@ -1310,6 +1475,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
         Assert::assertTrue($filePolicy->update($user, new TranslationFile()));
         Assert::assertTrue($filePolicy->restore($user, new TranslationFile()));
         Assert::assertTrue($filePolicy->forceDelete($user, new TranslationFile()));
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 =======
 <<<<<<< .merge_file_b5pEBu
@@ -1345,10 +1511,13 @@ describe('Lang 100% — Models policies providers views', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
         Assert::assertFalse($filePolicy->viewAny($denied));
     });
 
     test('Post linkable slug options and accessors without persistence', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $post = new Post();
 =======
@@ -1362,12 +1531,16 @@ describe('Lang 100% — Models policies providers views', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $post = new Post();
+>>>>>>> laraxot/dev
         Assert::assertSame('guid', $post->getSlugOptions()->slugField);
         Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
         $post->setRawAttributes(['post_type' => 'article', 'post_id' => '9']);
         Assert::assertSame('article 9', $post->getTitleAttribute(null));
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $post2 = new Post();
 =======
@@ -1381,11 +1554,15 @@ describe('Lang 100% — Models policies providers views', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $post2 = new Post();
+>>>>>>> laraxot/dev
         $post2->setRawAttributes([]);
         $post2->post_type = 'page';
         $post2->post_id = 3;
         Assert::assertSame('page 3', $post2->getTitleAttribute(null));
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 =======
 <<<<<<< .merge_file_b5pEBu
@@ -1393,11 +1570,14 @@ describe('Lang 100% — Models policies providers views', function (): void {
 <<<<<<< .merge_file_zA4CJB
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
         $post3 = new Post();
         $post3->setRawAttributes(['title' => '']);
         Assert::assertIsString($post3->getGuidAttribute('bad value with spaces'));
 
         $post4 = new Post();
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 =======
 <<<<<<< .merge_file_b5pEBu
@@ -1411,6 +1591,8 @@ describe('Lang 100% — Models policies providers views', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
         $post4->setRawAttributes(['title' => '', 'post_type' => 'x', 'post_id' => 1]);
         Assert::assertSame('x-1', $post4->getGuidAttribute(null));
     });
@@ -1418,6 +1600,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
     test('TranslationFile getRows ide-helper path and load failures', function (): void {
         $previousArgv = $_SERVER['argv'] ?? null;
         $_SERVER['argv'] = ['artisan', 'ide-helper:models'];
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         Assert::assertSame([], (new TranslationFile())->getRows());
 =======
@@ -1431,11 +1614,15 @@ describe('Lang 100% — Models policies providers views', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        Assert::assertSame([], (new TranslationFile())->getRows());
+>>>>>>> laraxot/dev
         $_SERVER['argv'] = $previousArgv;
 
         $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock): void {
             $mock->shouldReceive('execute')->andThrow(new \RuntimeException('boom'));
         });
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         Assert::assertSame([], (new TranslationFile())->getRows());
 =======
@@ -1449,6 +1636,9 @@ describe('Lang 100% — Models policies providers views', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        expect((new TranslationFile())->getRows())->toBeEmpty();
+>>>>>>> laraxot/dev
 
         $bad = sys_get_temp_dir().'/tf_bad_'.uniqid().'.php';
         file_put_contents($bad, '<?php throw new Exception("x");');
@@ -1459,6 +1649,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
                 123,
             ]);
         });
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $rows = (new TranslationFile())->getRows();
 =======
@@ -1472,11 +1663,15 @@ describe('Lang 100% — Models policies providers views', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $rows = (new TranslationFile())->getRows();
+>>>>>>> laraxot/dev
         Assert::assertNotEmpty($rows);
         unlink($bad);
     });
 
     test('TranslationData throws when namespace missing or file not array', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
 =======
 <<<<<<< .merge_file_b5pEBu
@@ -1487,11 +1682,14 @@ describe('Lang 100% — Models policies providers views', function (): void {
 =======
 <<<<<<< .merge_file_zA4CJB
 >>>>>>> .merge_file_E1lPtT
+=======
+>>>>>>> laraxot/dev
         app()->instance('translator', new class()
         {
             public function getLoader(): object
             {
                 return new class()
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
                 {
 =======
@@ -1505,6 +1703,9 @@ describe('Lang 100% — Models policies providers views', function (): void {
                 {
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+                {
+>>>>>>> laraxot/dev
                     /** @return array<string, string> */
                     public function namespaces(): array
                     {
@@ -1536,6 +1737,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
     });
 
     test('TranslatorAdapter covers array and non-string translation results', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $loader = new ArrayLoader();
 =======
@@ -1549,6 +1751,9 @@ describe('Lang 100% — Models policies providers views', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $loader = new ArrayLoader();
+>>>>>>> laraxot/dev
         $loader->addMessages('it', 'm', [
             'tree' => ['k' => 'v'],
             'num' => 5,
@@ -1614,6 +1819,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
 
     test('ThemeComposer covers invalid config admin url and missing current lang', function (): void {
         config(['laravellocalization.supportedLocales' => 'bad']);
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         expect(fn () => (new ThemeComposer())->languages())->toThrow(\Exception::class);
 =======
@@ -1627,12 +1833,16 @@ describe('Lang 100% — Models policies providers views', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        expect(fn () => (new ThemeComposer())->languages())->toThrow(\Exception::class);
+>>>>>>> laraxot/dev
 
         config([
             'laravellocalization.supportedLocales' => [
                 'it' => 'nope',
             ],
         ]);
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         expect(fn () => (new ThemeComposer())->languages())->toThrow(\InvalidArgumentException::class);
 =======
@@ -1646,12 +1856,16 @@ describe('Lang 100% — Models policies providers views', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        expect(fn () => (new ThemeComposer())->languages())->toThrow(\InvalidArgumentException::class);
+>>>>>>> laraxot/dev
 
         config([
             'laravellocalization.supportedLocales' => [
                 'it' => ['name' => 'Italiano'],
             ],
         ]);
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         expect(fn () => (new ThemeComposer())->languages())->toThrow(\InvalidArgumentException::class);
 =======
@@ -1665,6 +1879,9 @@ describe('Lang 100% — Models policies providers views', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        expect(fn () => (new ThemeComposer())->languages())->toThrow(\InvalidArgumentException::class);
+>>>>>>> laraxot/dev
 
         config([
             'laravellocalization.supportedLocales' => [
@@ -1673,6 +1890,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
             ],
         ]);
         app()->setLocale('it');
+<<<<<<< HEAD
 <<<<<<< .merge_file_tWY0jc
         $composer = new ThemeComposer();
 =======
@@ -1686,6 +1904,9 @@ describe('Lang 100% — Models policies providers views', function (): void {
 >>>>>>> .merge_file_aWv0C1
 >>>>>>> .merge_file_LTxXzl
 >>>>>>> .merge_file_E1lPtT
+=======
+        $composer = new ThemeComposer();
+>>>>>>> laraxot/dev
         Assert::assertCount(2, $composer->languages());
 
         $request = request();

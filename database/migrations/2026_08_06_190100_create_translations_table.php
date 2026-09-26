@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_FsEugv
 
 =======
@@ -13,10 +14,14 @@ declare(strict_types=1);
 >>>>>>> .merge_file_z4mUoj
 >>>>>>> .merge_file_C5lzhK
 >>>>>>> .merge_file_YzQ3Od
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Lang\Models\Translation;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_FsEugv
 return new class() extends XotBaseMigration
 {
@@ -32,6 +37,10 @@ return new class extends XotBaseMigration
 {
 >>>>>>> .merge_file_C5lzhK
 >>>>>>> .merge_file_YzQ3Od
+=======
+return new class() extends XotBaseMigration
+{
+>>>>>>> laraxot/dev
     protected ?string $model_class = Translation::class;
 
     public function up(): void

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_sBVilp
 
 =======
@@ -9,6 +10,9 @@ declare(strict_types=1);
 =======
 >>>>>>> .merge_file_GnTBey
 >>>>>>> .merge_file_9BgPIZ
+=======
+
+>>>>>>> laraxot/dev
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Translator.php
  */
@@ -26,6 +30,7 @@ class TranslatorAction extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
+<<<<<<< HEAD
 <<<<<<< .merge_file_sBVilp
      * @param  array<string, mixed>  $replace
 =======
@@ -42,6 +47,9 @@ class TranslatorAction extends LaravelTranslator
      * @param  bool  $fallback
 >>>>>>> .merge_file_GnTBey
 >>>>>>> .merge_file_9BgPIZ
+=======
+     * @param  array<string, mixed>  $replace
+>>>>>>> laraxot/dev
      * @return string|array<array-key, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
@@ -63,6 +71,7 @@ class TranslatorAction extends LaravelTranslator
         return $result;
     }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_sBVilp
     public function execute(): void {}
 =======
@@ -74,6 +83,9 @@ class TranslatorAction extends LaravelTranslator
     public function execute(): void {}
 >>>>>>> .merge_file_GnTBey
 >>>>>>> .merge_file_9BgPIZ
+=======
+    public function execute(): void {}
+>>>>>>> laraxot/dev
 
     protected function notifyMissingKey(string $key): void
     {
