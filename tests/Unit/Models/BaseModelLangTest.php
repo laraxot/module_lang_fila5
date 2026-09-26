@@ -12,11 +12,7 @@ uses(TestCase::class);
 
 describe('BaseModelLang', function () {
     test('has correct connection', function () {
-<<<<<<< HEAD
-        $model = new class extends BaseModelLang
-=======
         $model = new class() extends BaseModelLang
->>>>>>> laraxot/dev
         {
             protected $table = 'test';
         };
@@ -37,11 +33,7 @@ describe('BaseModelLang', function () {
     });
 
     test('has timestamps enabled', function () {
-<<<<<<< HEAD
-        $model = new class extends BaseModelLang
-=======
         $model = new class() extends BaseModelLang
->>>>>>> laraxot/dev
         {
             protected $table = 'test';
         };
@@ -50,11 +42,7 @@ describe('BaseModelLang', function () {
     });
 
     test('has incrementing set from property', function () {
-<<<<<<< HEAD
-        $model = new class extends BaseModelLang
-=======
         $model = new class() extends BaseModelLang
->>>>>>> laraxot/dev
         {
             protected $table = 'test';
         };
@@ -63,11 +51,7 @@ describe('BaseModelLang', function () {
     });
 
     test('has default perPage', function () {
-<<<<<<< HEAD
-        $model = new class extends BaseModelLang
-=======
         $model = new class() extends BaseModelLang
->>>>>>> laraxot/dev
         {
             protected $table = 'test';
         };
@@ -76,11 +60,7 @@ describe('BaseModelLang', function () {
     });
 
     test('casts id as string', function () {
-<<<<<<< HEAD
-        $model = new class extends BaseModelLang
-=======
         $model = new class() extends BaseModelLang
->>>>>>> laraxot/dev
         {
             protected $table = 'test';
         };
@@ -90,11 +70,7 @@ describe('BaseModelLang', function () {
     });
 
     test('casts datetime fields', function () {
-<<<<<<< HEAD
-        $model = new class extends BaseModelLang
-=======
         $model = new class() extends BaseModelLang
->>>>>>> laraxot/dev
         {
             protected $table = 'test';
         };

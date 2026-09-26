@@ -14,21 +14,13 @@ uses(TestCase::class);
 
 describe('TranslationFile Model', function () {
     test('uses Sushi trait', function () {
-<<<<<<< HEAD
-        $model = new TranslationFile;
-=======
         $model = new TranslationFile();
->>>>>>> laraxot/dev
 
         Assert::assertArrayHasKey('Sushi\Sushi', class_uses($model));
     });
 
     test('has correct fillable attributes', function () {
-<<<<<<< HEAD
-        $model = new TranslationFile;
-=======
         $model = new TranslationFile();
->>>>>>> laraxot/dev
         $fillable = $model->getFillable();
 
         Assert::assertContains('id', $fillable);
@@ -38,11 +30,7 @@ describe('TranslationFile Model', function () {
     });
 
     test('has form property accessible via reflection', function () {
-<<<<<<< HEAD
-        $model = new TranslationFile;
-=======
         $model = new TranslationFile();
->>>>>>> laraxot/dev
         $reflection = new \ReflectionClass($model);
         $property = $reflection->getProperty('form');
         $property->setAccessible(true);
@@ -55,22 +43,14 @@ describe('TranslationFile Model', function () {
     });
 
     test('casts content as array', function () {
-<<<<<<< HEAD
-        $model = new TranslationFile;
-=======
         $model = new TranslationFile();
->>>>>>> laraxot/dev
         $casts = $model->getCasts();
 
         Assert::assertSame('array', $casts['content']);
     });
 
     test('has getRows method', function () {
-<<<<<<< HEAD
-        $model = new TranslationFile;
-=======
         $model = new TranslationFile();
->>>>>>> laraxot/dev
 
         Assert::assertTrue(is_callable([$model, 'getRows']));
     });

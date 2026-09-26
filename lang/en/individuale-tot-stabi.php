@@ -107,20 +107,9 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-<<<<<<< HEAD
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => '100',
-        'name' => 'Individuale Tot Stabi',
-        'plural' => 'Individuale Tot Stabi',
-=======
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
->>>>>>> laraxot/dev
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
