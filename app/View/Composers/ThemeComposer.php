@@ -36,17 +36,12 @@ class ThemeComposer
             throw new \Exception(sprintf('Invalid config for supportedLocales on line %d in %s', __LINE__, class_basename($this)));
         }
 
-<<<<<<< HEAD
-        /** @var array<string, array<array-key, mixed>> $langs */
-        $languages = collect($langs)->map(function (array $item, string $locale): array {
-=======
         $languages = collect($langs)->map(function (mixed $item, string $locale): array {
             // Ensure $item is an array
             if (! is_array($item)) {
                 throw new \InvalidArgumentException(sprintf('Expected array at locale %s, got %s', $locale, gettype($item)));
             }
 
->>>>>>> laraxot/dev
             // Ensure $item has the required keys
             if (! isset($item['regional'], $item['name'])) {
                 throw new \InvalidArgumentException(sprintf('Expected array with "regional" and "name" keys at locale %s', $locale));

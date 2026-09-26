@@ -8,56 +8,17 @@ updated: 2026-06-12
 qmd: "lang module wiki index i18n translations second brain pest factory auto increment id"
 issues:
 <<<<<<< HEAD
-<<<<<<< .merge_file_MszxAZ
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_w5eXAr
-=======
-<<<<<<< .merge_file_YpOxkH
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_GV9APG
->>>>>>> .merge_file_bpwMbJ
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
   - "https://github.com/laraxot/platform/issues/272"
 discussions:
   - "https://github.com/laraxot/platform/discussions/273"
 related:
-<<<<<<< HEAD
-<<<<<<< .merge_file_MszxAZ
   - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md
 =======
-=======
-<<<<<<< .merge_file_YpOxkH
-  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md
-=======
->>>>>>> .merge_file_flWk4N
->>>>>>> .merge_file_bpwMbJ
-=======
-  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md
-=======
->>>>>>> laraxot/dev
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
   - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
-<<<<<<< HEAD
-<<<<<<< .merge_file_MszxAZ
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_w5eXAr
-=======
->>>>>>> laraxot/dev
-=======
-  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto-corrente-map.md
->>>>>>> .merge_file_GV9APG
->>>>>>> .merge_file_flWk4N
->>>>>>> .merge_file_bpwMbJ
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
   - ../../../../docs/wiki/bmad/architecture.md
   - ../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
@@ -68,29 +29,9 @@ related:
 ## AI / second brain
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_MszxAZ
-=======
-<<<<<<< .merge_file_w5eXAr
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
-=======
-<<<<<<< .merge_file_YpOxkH
->>>>>>> .merge_file_bpwMbJ
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
 - [hackernoon-ai-coding-tips-progetto corrente-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md)
 =======
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_MszxAZ
-=======
-=======
-- [hackernoon-ai-coding-tips-progetto-corrente-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto-corrente-map.md)
->>>>>>> .merge_file_GV9APG
->>>>>>> .merge_file_flWk4N
->>>>>>> .merge_file_bpwMbJ
-=======
 >>>>>>> laraxot/dev
 - [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
 - [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)

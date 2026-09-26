@@ -5,11 +5,6 @@ declare(strict_types=1);
 return [
     'model' => [
         'label' => 'translation file.model',
-<<<<<<< HEAD
-        'placeholder' => 'Seleziona file traduzione',
-        'helper_text' => 'File di traduzione per la gestione delle lingue',
-=======
->>>>>>> laraxot/dev
     ],
     'navigation' => [
         'label' => 'Navigation Label',
@@ -68,10 +63,6 @@ return [
                         'description' => 'snapshots.fields.updated_at.label',
                         'helper_text' => 'snapshots.fields.updated_at.label',
                         'placeholder' => 'snapshots.fields.updated_at.label',
-<<<<<<< HEAD
-                        'label' => 'Etichetta Data',
-=======
->>>>>>> laraxot/dev
                     ],
                 ],
             ],
@@ -91,34 +82,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-            'placeholder' => 'Inserisci chiave traduzione',
-            'help' => 'Chiave identificativa della traduzione',
-        ],
-        'delete' => [
-            'label' => 'delete',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
         'create' => [
             'label' => 'create',
-<<<<<<< HEAD
-            'tooltip' => 'Crea nuovo file di traduzione',
-            'success' => 'File di traduzione creato con successo',
         ],
         'lang' => [
             'label' => 'lang',
-            'tooltip' => 'Seleziona lingua',
-=======
-        ],
-        'lang' => [
-            'label' => 'lang',
->>>>>>> laraxot/dev
         ],
     ],
     'label' => 'Missing Label',
