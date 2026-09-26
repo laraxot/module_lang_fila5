@@ -1,3 +1,13 @@
+## [1.0.0-dev.23](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.22...v1.0.0-dev.23) (2026-09-26)
+
+### Bug Fixes
+
+* **Lang:** LocaleSwitcherRefresh passa ad applyLocale solo la chiave locale; test Translator con asserzione reale ([b7a8fed](https://github.com/laraxot/module_lang_fila5/commit/b7a8fed19c7675eda736b8088b244771c33e589f))
+* **Lang:** PHPStan Modules a 0 errori dopo il sync delle 16:10 (regressioni ripristinate) ([a577a13](https://github.com/laraxot/module_lang_fila5/commit/a577a134bda4a07c46eafc8f9b8782ca9b76317a))
+* **Lang:** risolti conflitti di merge in migration e file di traduzione; rimosso declare strict_types dai file lang/en ([01f5f64](https://github.com/laraxot/module_lang_fila5/commit/01f5f6475dff8c96312166b812f72bced793c87e))
+* **Lang:** test rotti dal merge automatico riportati all ultima versione pulita ([0ed1653](https://github.com/laraxot/module_lang_fila5/commit/0ed16537431322588de42213c41041da4059e32b))
+* rimossi i marker di conflitto '.merge_file_*' (anche dentro i docblock) e ripuliti i doc uniti ([c465af3](https://github.com/laraxot/module_lang_fila5/commit/c465af3a450c3442ae6620afbc733295b8df653b))
+
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
