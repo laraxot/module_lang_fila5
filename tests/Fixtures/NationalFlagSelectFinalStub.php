@@ -23,6 +23,7 @@ final class NationalFlagSelectFinalStub extends NationalFlagSelect
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_uzzdPP
      * @param  array<int, mixed>  $filteredCountries
 =======
@@ -33,6 +34,9 @@ final class NationalFlagSelectFinalStub extends NationalFlagSelect
      * @param  array<int, mixed>  $filteredCountries
 >>>>>>> .merge_file_7NTrg4
 >>>>>>> .merge_file_PTnW5z
+=======
+     * @param  array<int, mixed>  $filteredCountries
+>>>>>>> laraxot/dev
      * @return array<int, mixed>
      */
     protected function finalizeFilteredCountries(array $filteredCountries): array

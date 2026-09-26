@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\DB;
 use Modules\Lang\Database\Factories\TranslationFactory;
 use Modules\Lang\Models\Translation;

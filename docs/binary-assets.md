@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_UaSiI6
 <<<<<<< HEAD
 =======
@@ -9,6 +10,9 @@
 >>>>>>> .merge_file_Vm7OXp
 >>>>>>> .merge_file_TAj1AK
 >>>>>>> .merge_file_CvMDxX
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Asset binari"
 module: lang
@@ -18,6 +22,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_UaSiI6
 =======
 >>>>>>> laraxot/dev
@@ -31,6 +36,10 @@ updated: 2026-08-24
 >>>>>>> .merge_file_Vm7OXp
 >>>>>>> .merge_file_TAj1AK
 >>>>>>> .merge_file_CvMDxX
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Asset binari
 
 Gli asset binari sono file normali del repository.

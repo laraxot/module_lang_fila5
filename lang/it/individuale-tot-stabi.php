@@ -114,7 +114,11 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Individuale Tot Stabi',
+<<<<<<< HEAD
         'sort' => '1',
+=======
+        'sort' => 1,
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-rectangle-stack',
     ],
 ];

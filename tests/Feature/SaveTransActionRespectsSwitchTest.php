@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Config;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Tests\TestCase;
@@ -9,6 +13,7 @@ use function Safe\file_get_contents;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_RjlMYM
 /**
 =======
@@ -26,6 +31,9 @@ uses(TestCase::class);
 >>>>>>> .merge_file_svrvNy
 >>>>>>> .merge_file_vHlNyB
 >>>>>>> .merge_file_lIJnqD
+=======
+/**
+>>>>>>> laraxot/dev
  * `AutoLabelAction` chiama `SaveTransAction` ogni volta che una chiave manca, e la
  * suite passa su migliaia di etichette: senza interruttore i test riscrivono i file
  * di lingua dell'albero di lavoro e lasciano in `git status` modifiche che nessuno
