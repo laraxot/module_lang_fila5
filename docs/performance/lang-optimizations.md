@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Ottimizzazioni Performance Modulo Lang"
 module: "Lang"
 type: concept

@@ -1,4 +1,7 @@
 ---
+qmd: "file naming.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: file-naming.md"
 module: Lang
 type: note

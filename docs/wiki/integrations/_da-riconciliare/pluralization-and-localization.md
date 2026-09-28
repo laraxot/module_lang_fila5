@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Plurale/Singolare e Localizzazione Date/Valute"
 module: "Lang"
 type: concept
@@ -190,11 +192,9 @@ related:
 ## 4. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
-<<<<<<<< HEAD:docs/wiki/integrations/_da-riconciliare/pluralization-and-localization.md
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
-========
+---
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
->>>>>>>> laraxot/dev:docs/archive/historical/pluralization-and-localization.md
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)
@@ -379,7 +379,6 @@ related:
 ## 4. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
-<<<<<<<< HEAD:docs/wiki/integrations/_da-riconciliare/pluralization-and-localization.md
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
@@ -388,9 +387,8 @@ related:
 - [README.md](./README.md)
 - [README.md](./README.md)
 - [README.md](./README.md)
-========
+---
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)
->>>>>>>> laraxot/dev:docs/archive/historical/pluralization-and-localization.md

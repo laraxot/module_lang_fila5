@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Lang Module: Philosophy, Purpose, and Design Principles"
 module: "Lang"
 type: concept

@@ -1,4 +1,7 @@
 ---
+qmd: "lang services to actions.story"
+issues: []
+discussions: []
 title: "Lang: app/Services retired, no-services-rule compliance"
 type: story
 module: Lang

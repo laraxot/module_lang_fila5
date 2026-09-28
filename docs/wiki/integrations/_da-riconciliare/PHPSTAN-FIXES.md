@@ -1,4 +1,7 @@
 ---
+qmd: "PHPSTAN FIXES"
+issues: []
+discussions: []
 title: "PHPStan Compliance Fixes"
 type: documentation
 tags: [phpstan, fixes, compliance]

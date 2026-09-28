@@ -1,4 +1,9 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+qmd: "security"
+issues: []
+discussions: []
 title: "html2pdf security — puntatore"
 type: reference
 updated: 2026-05-21

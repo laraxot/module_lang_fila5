@@ -1,4 +1,7 @@
 ---
+qmd: "modelli factory seeder analisi.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: modelli_factory_seeder_analisi.md"
 module: Lang
 type: note

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Lang Service Helper Text"
 module: "Lang"
 type: concept

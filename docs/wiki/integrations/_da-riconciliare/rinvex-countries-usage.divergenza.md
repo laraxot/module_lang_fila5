@@ -1,4 +1,7 @@
 ---
+qmd: "rinvex countries usage.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: rinvex_countries_usage.md"
 module: Lang
 type: note

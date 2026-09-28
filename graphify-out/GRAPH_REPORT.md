@@ -1,4 +1,14 @@
-<<<<<<< HEAD
+---
+title: "GRAPH REPORT"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "GRAPH REPORT"
+issues: []
+discussions: []
+---
+
 # Graph Report - Lang  (2026-08-20)
 
 ## Corpus Check
@@ -12,7 +22,15 @@
 
 ## Graph Freshness
 - Built from commit: `45e35b32`
-=======
+---
+title: "GRAPH REPORT"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "GRAPH REPORT"
+issues: []
+discussions: []
 # Graph Report - /var/www/_bases/<nome repository>/laravel/Modules/Lang  (2026-08-04)
 
 ## Corpus Check
@@ -25,12 +43,10 @@
 
 ## Graph Freshness
 - Built from commit: `4f8454aa`
->>>>>>> laraxot/dev
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-<<<<<<< HEAD
 - Recent Updates
 - Recent Updates
 - Post
@@ -842,7 +858,7 @@
 - organizzativa-money.md
 - xotbase-table-columns-enforcement.md
 - SECURITY.md
-=======
+---
 - Spatie\QueueableAction\QueueableAction
 - Modules\Xot\Contracts\UserContract
 - Post
@@ -872,13 +888,11 @@
 - EventServiceProvider
 - autoload-dev
 - consolidate.sh
->>>>>>> laraxot/dev
 - components/language-switcher.blade.php
 - widgets/language-switcher.blade.php
 - vite.config.js
 
 ## God Nodes (most connected - your core abstractions)
-<<<<<<< HEAD
 1. `Recent Updates` - 81 edges
 2. `Recent Updates` - 81 edges
 3. `Post` - 33 edges
@@ -889,7 +903,7 @@
 8. `Roadmap Modulo Lang` - 17 edges
 9. `Testing Documentation` - 17 edges
 10. `WriteTranslationFileAction` - 16 edges
-=======
+---
 1. `Post` - 27 edges
 2. `TranslationFile` - 20 edges
 3. `Translation` - 18 edges
@@ -900,7 +914,6 @@
 8. `keywords` - 10 edges
 9. `EditTranslationFile` - 9 edges
 10. `PostPolicy` - 9 edges
->>>>>>> laraxot/dev
 
 ## Surprising Connections (you probably didn't know these)
 - `makeGetAllTranslationAction()` --references--> `GetAllTranslationAction`  [EXTRACTED]
@@ -917,7 +930,6 @@
 ## Import Cycles
 - None detected.
 
-<<<<<<< HEAD
 ## Communities (925 total, 64 thin omitted)
 
 ### Community 0 - "Recent Updates"
@@ -3924,7 +3936,7 @@ Nodes (3): File PHP vs JSON, Vantaggi File JSON, Vantaggi File PHP
 - **7414 isolated node(s):** `composer_init.sh script`, `update.sh script`, `name`, `description`, `laraxot` (+7409 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **64 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
-=======
+---
 ## Communities (111 total, 8 thin omitted)
 
 ### Community 0 - "Spatie\QueueableAction\QueueableAction"
@@ -4027,12 +4039,10 @@ Nodes (3): autoload-dev, psr-4, Modules\\Lang\\Tests\\
 - **72 isolated node(s):** `name`, `description`, `laraxot`, `laravel`, `filament` (+67 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
->>>>>>> laraxot/dev
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-<<<<<<< HEAD
 - **Why does `📚 **API Reference Modulo Lang - Laraxot**` connect `📚 **API Reference Modulo Lang - Laraxot**` to `docs/README.md`, `**Metodi Principali**`, `**Funzioni Globali**`, `**Componenti Automatici**`, `**Metodi Principali**`, `**CacheCommand**`, `**CacheStatus**`?**
   _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **Why does `Miglioramenti LangServiceProvider` connect `Miglioramenti LangServiceProvider` to `docs/README.md`?**
@@ -4047,7 +4057,7 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.05786090005844535 - nodes in this community are weakly interconnected._
 - **Should `LangHundredPercentCoverageTest.php` be split into smaller, more focused modules?**
   _Cohesion score 0.05893719806763285 - nodes in this community are weakly interconnected._
-=======
+---
 - **Why does `TranslationFile` connect `Modules\Xot\Contracts\UserContract` to `Illuminate\Database\Seeder`, `TranslationFileResource.php`, `Post`, `TestCase.php`?**
   _High betweenness centrality (0.075) - this node is a cross-community bridge._
 - **Why does `Post` connect `Post` to `Illuminate\Database\Seeder`, `TestCase.php`?**
@@ -4062,4 +4072,3 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.07955596669750231 - nodes in this community are weakly interconnected._
 - **Should `Post` be split into smaller, more focused modules?**
   _Cohesion score 0.06565656565656566 - nodes in this community are weakly interconnected._
->>>>>>> laraxot/dev

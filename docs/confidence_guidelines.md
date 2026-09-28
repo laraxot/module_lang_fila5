@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Massimizzare il livello di confidenza"
 module: "Lang"
 type: how-to

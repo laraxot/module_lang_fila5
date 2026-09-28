@@ -1,3 +1,14 @@
+---
+title: "traduzioni navigation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "traduzioni navigation"
+issues: []
+discussions: []
+---
+
 # Traduzioni con ".navigation" - Audit Completo 2025
 
 ## Riepilogo Problema

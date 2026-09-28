@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Current State - Lang"
 module: "Lang"
 type: concept
