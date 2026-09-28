@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "riepilogo correzioni traduzioni"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Riepilogo Correzioni Traduzioni - Gennaio 2025
 
 ## Problemi Risolti

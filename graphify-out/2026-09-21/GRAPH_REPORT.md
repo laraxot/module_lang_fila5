@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "GRAPH REPORT"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Graph Report - laravel/Modules/Lang  (2026-09-21)
 
 ## Corpus Check

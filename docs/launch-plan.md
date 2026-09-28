@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Product Launch Plan: Lang Module v1.0"
 module: "Lang"
 type: concept

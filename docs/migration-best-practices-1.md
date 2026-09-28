@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migration best practices 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Best Practices per le Migrazioni - Modulo Lang
 
 ## Panoramica

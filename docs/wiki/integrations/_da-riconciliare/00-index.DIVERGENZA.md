@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "00 index.DIVERGENZA"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: 00-index.md"
 module: Lang
 type: note

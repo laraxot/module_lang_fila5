@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Laravel Localization Metadata for Cursor"
 module: "Lang"
 type: concept

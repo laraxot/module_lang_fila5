@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "phpstan fixes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "PHPStan Fixes 2026-05-06"
 type: troubleshooting
 sources: ["phpstan_modules_initial.json"]

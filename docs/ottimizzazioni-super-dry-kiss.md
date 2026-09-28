@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Ottimizzazioni Super DRY + KISS - Modulo Lang"
 module: "Lang"
 type: concept

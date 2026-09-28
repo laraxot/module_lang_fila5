@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laravel localization integration 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Integrazione avanzata: mcamara/laravel-localization + Laravel Folio
 
 ## 1. Introduzione
@@ -23,8 +20,6 @@ Questa guida approfondisce l'integrazione tra [mcamara/laravel-localization](htt
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "laravel localization integration 1"
 type: note
 tags: [documentation]
@@ -33,7 +28,6 @@ updated: 2026-09-26
 qmd: "laravel localization integration 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 2. Analisi tecnica e criticità
 
 ### 2.1. Come funziona Folio

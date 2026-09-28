@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "PHPSTAN STATUS"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "PHPStan Status — Lang Module"
 module: lang
 type: integration

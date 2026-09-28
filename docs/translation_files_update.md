@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Aggiornamento File di Traduzione - Gennaio 2025"
 module: "Lang"
 type: concept

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "consolidation plan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Lang Module Docs Consolidation Plan
 
 **Phase:** 2d Aggressive Merge  
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "consolidation plan"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "consolidation plan"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Quick Stats
 
 | Category | Current | Target | Action |

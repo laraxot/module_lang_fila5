@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "analysis results"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Risultati Analisi Modulo Lang"
 type: concept
 module: "Lang"

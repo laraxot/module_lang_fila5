@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Lang - Sprint Planning Meeting"
 module: "Lang"
 type: concept

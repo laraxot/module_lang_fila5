@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "mcamara/laravel-localization Deep Dive (<nome progetto>)"
 module: "Lang"
 type: concept

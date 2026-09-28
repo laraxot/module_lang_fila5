@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Best Practices per le Chiavi di Traduzione"
 module: "Lang"
 type: concept

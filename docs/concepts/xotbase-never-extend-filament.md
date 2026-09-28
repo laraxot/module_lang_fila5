@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Lang — mai Filament\*, sempre XotBase*"
 type: concept
 module: Lang

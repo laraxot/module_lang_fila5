@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "coverage.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: coverage.md"
 module: Lang
 type: note

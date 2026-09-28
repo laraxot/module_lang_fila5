@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "documentation link conventions.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: documentation_link_conventions.md"
 module: Lang
 type: note

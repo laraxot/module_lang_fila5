@@ -50,11 +50,7 @@ test('LanguageSwitcherWidget getAvailableLocales riflette LaravelLocalization no
         Assert::assertSame('French', $first['name']);
         Assert::assertSame('Français', $first['native_name']);
         Assert::assertNull($first['flag']);
-<<<<<<< HEAD
-        Assert::assertSame([], $widget->getFormSchemaOld());
-=======
         Assert::assertSame([], $widget->getFormSchema());
->>>>>>> laraxot/dev
     } finally {
         LaravelLocalization::setSupportedLocales($previous);
     }

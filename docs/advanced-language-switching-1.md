@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "advanced language switching 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Advanced Language Switching Strategies
 
 ## Overview

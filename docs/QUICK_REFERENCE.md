@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "QUICK REFERENCE"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "QUICK REFERENCE"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: QUICK_REFERENCE
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules

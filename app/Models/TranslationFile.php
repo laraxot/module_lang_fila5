@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Models/Translation.php
  */
@@ -18,23 +15,6 @@ use Illuminate\Support\Facades\Log;
 use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
 use Modules\Xot\Contracts\ProfileContract;
-<<<<<<< HEAD
-
-use function Safe\json_encode;
-
-use Sushi\Sushi;
-
-/**
- * @property string|null                  $key
- * @property string|null                  $path
- * @property string|null                  $id
- * @property string|null                  $name
- * @property array<array-key, mixed>|null $content
- * @property ProfileContract|null         $creator
- * @property ProfileContract|null         $updater
- *
- * @method static TranslationFileFactory          factory($count = null, $state = [])
-=======
 use Sushi\Sushi;
 
 use function Safe\json_encode;
@@ -49,7 +29,6 @@ use function Safe\json_encode;
  * @property ProfileContract|null $updater
  *
  * @method static TranslationFileFactory factory($count = null, $state = [])
->>>>>>> laraxot/dev
  * @method static Builder<static>|TranslationFile newModelQuery()
  * @method static Builder<static>|TranslationFile newQuery()
  * @method static Builder<static>|TranslationFile query()
@@ -108,16 +87,10 @@ class TranslationFile extends BaseModel
     /**
      * Carica i dati di traduzione con error handling robusto.
      *
-<<<<<<< HEAD
-     * @throws \Throwable
-     *
-     * @return array<int, array<string, mixed>>
-=======
      *
      * @return array<int, array<string, mixed>>
      *
      * @throws \Throwable
->>>>>>> laraxot/dev
      */
     private function loadTranslationDataWithErrorHandling(): array
     {

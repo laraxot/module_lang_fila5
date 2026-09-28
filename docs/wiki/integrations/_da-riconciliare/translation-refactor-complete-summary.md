@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "translation refactor complete summary"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Refactor Completo File di Traduzione - Riepilogo Finale"
 type: concept
 module: "Lang"

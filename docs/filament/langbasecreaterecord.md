@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Classi LangBase per Modelli Traducibili"
 module: "Lang"
 type: concept

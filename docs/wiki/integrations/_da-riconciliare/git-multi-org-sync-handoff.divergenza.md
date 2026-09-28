@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "git multi org sync handoff.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: git-multi-org-sync-handoff.md"
 module: Lang
 type: note

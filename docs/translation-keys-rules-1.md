@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation keys rules 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati

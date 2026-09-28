@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "graphify map"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Lang Module — Mappa Graphify"
 module: lang
 type: integration

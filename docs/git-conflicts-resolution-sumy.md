@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Git Conflicts Resolution Sumy"
 module: "Lang"
 type: concept

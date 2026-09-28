@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "REDUNDANCY ANALYSIS"
 module: "Lang"
 type: concept

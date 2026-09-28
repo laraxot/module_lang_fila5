@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan Lang fix"
 type: note
 tags: [documentation]
 qmd: "phpstan Lang fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: phpstan-Lang-fix
 slug: phpstan-Lang
 scope: [module:Lang, project:base_workorder_fila5]

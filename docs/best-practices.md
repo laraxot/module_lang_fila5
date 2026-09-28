@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "📚 **Best Practices Modulo Lang - Laraxot**"
 module: "Lang"
 type: concept

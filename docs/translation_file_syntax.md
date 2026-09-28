@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Gestione Errori di Sintassi nei File di Traduzione PHP"
 module: "Lang"
 type: concept

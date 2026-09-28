@@ -1,6 +1,3 @@
-<<<<<<< HEAD
- 
-=======
 ---
 title: "lang service helper text fix"
 type: note
@@ -11,4 +8,3 @@ qmd: "lang service helper text fix"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev
