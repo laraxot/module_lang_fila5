@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Gestione delle Traduzioni in Laravel"
 module: "Lang"
 type: concept

@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "concept"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Untitled Concept"
 type: concept
 sources: ["raw/articles/source-filename.md"]

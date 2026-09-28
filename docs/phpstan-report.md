@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan report"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Report PHPStan - Modulo Lang
 
 ## Stato Attuale
@@ -44,6 +58,7 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è
 
    - Verificare il comportamento con lingue diverse
 
+<<<<<<< HEAD
 ---
 
  [OK] No errors        
@@ -97,3 +112,6 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è
    - Verificare il comportamento con lingue diverse
 
 ---
+=======
+---
+>>>>>>> laraxot/dev

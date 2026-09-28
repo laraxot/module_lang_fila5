@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "on demand pattern.divergenza"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: ON-DEMAND-PATTERN.md"
 module: Lang
 type: note

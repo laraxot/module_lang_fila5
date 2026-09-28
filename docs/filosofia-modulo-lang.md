@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Analisi Approfondita del Modulo Lang"
 module: "Lang"
 type: concept

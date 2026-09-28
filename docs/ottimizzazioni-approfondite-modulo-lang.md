@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Ottimizzazioni Approfondite Modulo Lang - DRY + KISS"
 module: "Lang"
 type: concept

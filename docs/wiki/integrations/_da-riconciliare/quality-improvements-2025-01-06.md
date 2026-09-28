@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "quality improvements 2025 01 06"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "quality improvements 2025 01 06"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06
 
 ## Data

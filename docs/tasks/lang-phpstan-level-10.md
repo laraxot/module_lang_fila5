@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "lang phpstan level 10"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "lang phpstan level 10"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Task: Lang PHPStan Level 10
 
 ## 📋 Obiettivo

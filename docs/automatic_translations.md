@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Traduzioni Automatiche con LangServiceProvider"
 module: "Lang"
 type: concept

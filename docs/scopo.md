@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Lang — scopo, confini e come servirlo meglio"
 type: concept
 module: Lang

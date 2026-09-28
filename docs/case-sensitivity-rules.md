@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Case Sensitivity Rules - Lang Module"
 module: "Lang"
 type: rule

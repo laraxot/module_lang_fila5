@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "agent edit discipline.divergenza"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: agent-edit-discipline.md"
 module: Lang
 type: note

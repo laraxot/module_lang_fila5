@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Task: Ridurre Suppressioni PHPStan Inline - Lang"
 module: "Lang"
 type: concept

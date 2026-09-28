@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Lang\Models\LanguageLine;
 use Modules\Xot\Database\Migrations\XotBaseMigration;

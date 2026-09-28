@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "static text translation.divergenza"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: static_text_translation.md"
 module: Lang
 type: note

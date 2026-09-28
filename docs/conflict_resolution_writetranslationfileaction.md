@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Risoluzione Conflitto WriteTranslationFileAction"
 module: "Lang"
 type: concept

@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Sistema di Traduzione in il progetto"
 module: "Lang"
 type: concept

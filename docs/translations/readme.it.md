@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "🚀 Benvenuto in Laraxot PTVX"
 module: "Lang"
 type: concept

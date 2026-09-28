@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Collegamenti ai Moduli che utilizzano le Traduzioni"
 module: "Lang"
 type: concept

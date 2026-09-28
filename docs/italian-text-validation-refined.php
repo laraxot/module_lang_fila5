@@ -224,12 +224,15 @@ function auditRealItalianText(string $basePath): array
                     $isExcluded = false;
                     foreach ($excludePatterns as $exclude) {
                         if (false !== stripos($line, $exclude) && false !== stripos($line, $pattern)) {
+<<<<<<< HEAD
                 $lineNumber++;
                 if (stripos($line, $pattern) !== false) {
                     // Verifica che non sia un falso positivo
                     $isExcluded = false;
                     foreach ($excludePatterns as $exclude) {
                         if (stripos($line, $exclude) !== false && stripos($line, $pattern) !== false) {
+=======
+>>>>>>> laraxot/dev
                             // Controlla se il pattern è parte del termine escluso
                             if (str_contains(strtolower($exclude), strtolower(trim($pattern)))) {
                                 $isExcluded = true;

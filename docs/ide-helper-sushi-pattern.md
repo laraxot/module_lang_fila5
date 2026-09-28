@@ -1,4 +1,15 @@
 ---
+<<<<<<< HEAD
+=======
+title: "ide helper sushi pattern"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ide helper sushi pattern"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 name: ide-helper-sushi-pattern
 description: Pattern per gestire modelli Sushi (in-memory) durante l'analisi ide-helper
 metadata:

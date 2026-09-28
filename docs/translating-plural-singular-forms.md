@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Traduzione di Forme Plurali e Singolari"
 module: "Lang"
 type: concept

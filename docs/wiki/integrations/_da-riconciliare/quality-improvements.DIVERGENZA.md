@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "quality improvements.DIVERGENZA"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: quality-improvements.md"
 module: Lang
 type: note
