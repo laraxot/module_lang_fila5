@@ -12,7 +12,12 @@ uses(TestCase::class);
 
 describe('BaseModelLang', function () {
     test('has correct connection', function () {
+<<<<<<< HEAD
         $model = new class extends BaseModelLang {
+=======
+        $model = new class extends BaseModelLang
+        {
+>>>>>>> laraxot/dev
             protected $table = 'test';
         };
 
@@ -23,7 +28,11 @@ describe('BaseModelLang', function () {
         $reflection = new \ReflectionClass(BaseModelLang::class);
         $traits = $reflection->getTraitNames();
 
+<<<<<<< HEAD
         $hasLinked = count(array_filter($traits, fn ($t) => str_contains($t, 'Linked'))) > 0;
+=======
+        $hasLinked = count(array_filter($traits, fn (string $t): bool => str_contains($t, 'Linked'))) > 0;
+>>>>>>> laraxot/dev
         Assert::assertTrue($hasLinked);
     });
 
@@ -32,7 +41,12 @@ describe('BaseModelLang', function () {
     });
 
     test('has timestamps enabled', function () {
+<<<<<<< HEAD
         $model = new class extends BaseModelLang {
+=======
+        $model = new class extends BaseModelLang
+        {
+>>>>>>> laraxot/dev
             protected $table = 'test';
         };
 
@@ -40,7 +54,12 @@ describe('BaseModelLang', function () {
     });
 
     test('has incrementing set from property', function () {
+<<<<<<< HEAD
         $model = new class extends BaseModelLang {
+=======
+        $model = new class extends BaseModelLang
+        {
+>>>>>>> laraxot/dev
             protected $table = 'test';
         };
 
@@ -48,7 +67,12 @@ describe('BaseModelLang', function () {
     });
 
     test('has default perPage', function () {
+<<<<<<< HEAD
         $model = new class extends BaseModelLang {
+=======
+        $model = new class extends BaseModelLang
+        {
+>>>>>>> laraxot/dev
             protected $table = 'test';
         };
 
@@ -56,7 +80,12 @@ describe('BaseModelLang', function () {
     });
 
     test('casts id as string', function () {
+<<<<<<< HEAD
         $model = new class extends BaseModelLang {
+=======
+        $model = new class extends BaseModelLang
+        {
+>>>>>>> laraxot/dev
             protected $table = 'test';
         };
 
@@ -65,7 +94,12 @@ describe('BaseModelLang', function () {
     });
 
     test('casts datetime fields', function () {
+<<<<<<< HEAD
         $model = new class extends BaseModelLang {
+=======
+        $model = new class extends BaseModelLang
+        {
+>>>>>>> laraxot/dev
             protected $table = 'test';
         };
 

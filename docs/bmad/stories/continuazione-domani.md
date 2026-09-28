@@ -1,4 +1,13 @@
 ---
+<<<<<<< HEAD
+=======
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "continuazione domani"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Continuazione BMAD — Domani (Lang)"
 type: module-fix
 scope: Lang

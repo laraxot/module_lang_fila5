@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Convenzioni per i Link nella Documentazione"
 module: "Lang"
 type: concept

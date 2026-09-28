@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Gestione Permessi e Proprietà per File di Lingua (`lang/it/`)"
 module: "Lang"
 type: concept

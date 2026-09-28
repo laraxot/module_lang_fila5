@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "translation system 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation system 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Sistema di Traduzione in il progetto
 
 ## LangServiceProvider

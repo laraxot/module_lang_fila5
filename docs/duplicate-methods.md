@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Analisi Metodi Duplicati - Modulo Lang"
 module: "Lang"
 type: concept

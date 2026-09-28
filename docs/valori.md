@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Politica, Filosofia, Religione, Etica, Zen – Modulo Lang"
 module: "Lang"
 type: concept

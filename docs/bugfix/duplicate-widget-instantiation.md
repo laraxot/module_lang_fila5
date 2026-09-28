@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Bug Fix: Duplicate Widget Instantiation in LanguageSwitcher"
 module: "Lang"
 type: concept

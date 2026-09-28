@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "translation strategies"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation strategies"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Strategie di Gestione delle Traduzioni in Laravel
 
 ## Indice

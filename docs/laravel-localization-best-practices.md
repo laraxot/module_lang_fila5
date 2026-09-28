@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "LaravelLocalization - Best Practices"
 module: "Lang"
 type: concept

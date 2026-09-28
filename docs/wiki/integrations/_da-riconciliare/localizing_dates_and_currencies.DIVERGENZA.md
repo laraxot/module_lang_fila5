@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "localizing dates and currencies.DIVERGENZA"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: localizing_dates_and_currencies.md"
 module: Lang
 type: note

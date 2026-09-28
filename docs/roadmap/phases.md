@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Fasi di sviluppo - Lang Module"
 module: "Lang"
 type: concept

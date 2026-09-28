@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Lang Module — PHPStan
 
 ## 2026-06-10 — STORY-305 · Level 10 · 0 errori
@@ -15,6 +29,7 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/Lang
 
 ---
 
+<<<<<<< HEAD
 ## Storico — Level 7 (Gennaio 2025)
 
 Il modulo Lang era a 0 errori Level 7.
@@ -37,6 +52,16 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/Lang
 
 ---
 
+=======
+title: "phpstan fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Storico — Level 7 (Gennaio 2025)
 
 Il modulo Lang era a 0 errori Level 7.
@@ -127,9 +152,13 @@ private function castWithAction(mixed $value): string
 ---
 *Ultimo aggiornamento: Gennaio 2025*
 *Ultimo aggiornamento: Gennaio 2025*
+<<<<<<< HEAD
 *Stato: ✅ Completato - 0 errori PHPStan*
 *Stato: ✅ Completato - 0 errori PHPStan*
 *Stato: ✅ Completato - 0 errori PHPStan*
 *Stato: ✅ Completato - 0 errori PHPStan*
 *Ultimo aggiornamento: Gennaio 2025*
 *Stato: ✅ Completato - 0 errori PHPStan*
+=======
+*Stato: ✅ Completato - 0 errori PHPStan*
+>>>>>>> laraxot/dev

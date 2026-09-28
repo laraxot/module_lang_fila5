@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "laravel localization implementation 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laravel localization implementation 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Implementazione della Localizzazione
 
 ## Collegamenti correlati

@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Lang {{TYPE^}} LLM Wiki Agent Instructions"
 module: "Lang"
 type: concept

@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Guida all'Implementazione di mcamara/laravel-localization"
 module: "Lang"
 type: how-to

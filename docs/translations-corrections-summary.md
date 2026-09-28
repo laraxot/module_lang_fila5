@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Riepilogo Correzioni Traduzioni - Gennaio 2025"
 module: "Lang"
 type: concept

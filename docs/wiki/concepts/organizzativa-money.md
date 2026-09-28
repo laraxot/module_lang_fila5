@@ -1,4 +1,12 @@
 ---
+<<<<<<< HEAD
+=======
+tags: [documentation]
+created: 2026-09-26
+qmd: "organizzativa money"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "organizzativa-money — puntatore"
 type: reference
 updated: 2026-05-21
