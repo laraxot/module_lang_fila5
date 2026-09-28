@@ -1,4 +1,7 @@
 ---
+qmd: "lang epics and stories"
+issues: []
+discussions: []
 title: "Lang Epics and User Stories"
 type: user_stories
 tags: [user stories, epics, lang]

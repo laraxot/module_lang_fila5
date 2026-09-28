@@ -1,4 +1,7 @@
 ---
+qmd: "ottimizzazioni consolidated"
+issues: []
+discussions: []
 title: "ottimizzazioni — Consolidated Documentation"
 module: lang
 type: integration

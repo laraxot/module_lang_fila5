@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "lang service translation updates"
+issues: []
+discussions: []
 title: "Aggiornamento File di Traduzione Lang Service"
 type: concept
 module: "Lang"

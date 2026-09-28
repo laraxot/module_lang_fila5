@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Aggiornamento File di Traduzione - Gennaio 2025"
 module: "Lang"
 type: concept

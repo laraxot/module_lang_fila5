@@ -1,4 +1,7 @@
 ---
+qmd: "agent edit discipline.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: agent-edit-discipline.md"
 module: Lang
 type: note

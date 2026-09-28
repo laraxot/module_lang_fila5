@@ -1,4 +1,7 @@
 ---
+qmd: "lang autolabelaction hardening.story"
+issues: []
+discussions: []
 title: "Lang: AutoLabelAction hardening and type safety"
 type: story
 module: Lang

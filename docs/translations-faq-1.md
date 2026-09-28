@@ -1,3 +1,14 @@
+---
+title: "translations faq 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translations faq 1"
+issues: []
+discussions: []
+---
+
 # FAQ e Problemi Comuni sulle Traduzioni
 
 ## 1. Perché il POST non funziona su rotte localizzate?

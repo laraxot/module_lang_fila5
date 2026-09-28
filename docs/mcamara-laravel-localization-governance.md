@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "mcamara/laravel-localization Governance"
 module: "Lang"
 type: concept

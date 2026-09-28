@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "FAQ e Problemi Comuni sulle Traduzioni"
 module: "Lang"
 type: concept

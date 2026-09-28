@@ -1,3 +1,14 @@
+---
+title: "TRANSLATION STRATEGIES"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "TRANSLATION STRATEGIES"
+issues: []
+discussions: []
+---
+
 # Strategie di Gestione delle Traduzioni in Laravel
 
 ## Indice

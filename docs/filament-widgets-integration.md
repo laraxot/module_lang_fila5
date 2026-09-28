@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Language Module - Filament Widgets Integration"
 module: "Lang"
 type: concept

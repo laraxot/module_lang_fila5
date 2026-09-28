@@ -1,4 +1,7 @@
 ---
+qmd: "lang mixed type reduction.story"
+issues: []
+discussions: []
 title: "Lang: ridurre l'uso di mixed dove il tipo reale e' desumibile"
 type: story
 module: Lang

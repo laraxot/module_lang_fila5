@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Guida Completa a Laravel Localization"
 module: "Lang"
 type: concept

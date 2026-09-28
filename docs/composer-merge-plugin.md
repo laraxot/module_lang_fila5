@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Composer Merge Plugin nel Modulo Lang"
 module: "Lang"
 type: concept

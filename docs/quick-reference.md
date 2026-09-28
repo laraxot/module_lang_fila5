@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Guida Rapida alle Traduzioni"
 module: "Lang"
 type: concept

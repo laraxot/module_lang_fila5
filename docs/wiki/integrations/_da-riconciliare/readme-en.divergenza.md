@@ -1,4 +1,7 @@
 ---
+qmd: "readme en.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: readme-en.md"
 module: Lang
 type: note

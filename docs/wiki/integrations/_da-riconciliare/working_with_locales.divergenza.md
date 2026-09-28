@@ -1,4 +1,7 @@
 ---
+qmd: "working with locales.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: working_with_locales.md"
 module: Lang
 type: note

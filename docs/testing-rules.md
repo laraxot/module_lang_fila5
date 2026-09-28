@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Testing Rules Summary"
 module: "Lang"
 type: rule

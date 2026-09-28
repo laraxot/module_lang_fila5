@@ -1,4 +1,7 @@
 ---
+qmd: "00 index.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: 00-index.md"
 module: Lang
 type: note

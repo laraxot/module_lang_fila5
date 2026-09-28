@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "PRD: Lang Module"
 module: "Lang"
 type: concept

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Risoluzione Conflitto WriteTranslationFileAction"
 module: "Lang"
 type: concept

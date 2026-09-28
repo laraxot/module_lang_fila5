@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Analisi Approfondita del Modulo Lang"
 module: "Lang"
 type: concept
@@ -12,7 +14,6 @@ related:
 # Analisi Approfondita del Modulo Lang
 
 > **Generato**: 2025-12-24
-<<<<<<<< HEAD:docs/wiki/integrations/_da-riconciliare/filosofia-modulo-lang.md
 > **Generato**: 2025-12-24
 > **Generato**: [DATE]
 > **Generato**: [DATE]
@@ -20,8 +21,7 @@ related:
 > **Generato**: [DATE]
 > **Generato**: 2025-12-24
 > **Generato**: 2025-12-24
-========
->>>>>>>> laraxot/dev:docs/archive/historical/filosofia-modulo-lang.md
+---
 > **Scopo**: Documentare la filosofia, logica e architettura del modulo Lang
 
 ---

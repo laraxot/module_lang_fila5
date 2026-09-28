@@ -1,4 +1,7 @@
 ---
+qmd: "merge conflicts list.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: merge-conflicts-list.md"
 module: Lang
 type: note

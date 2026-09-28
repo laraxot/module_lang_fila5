@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Docs Health - Lang"
 module: "Lang"
 type: concept

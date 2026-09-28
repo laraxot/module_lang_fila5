@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Regola prompt condivisi"
 module: "Lang"
 type: concept

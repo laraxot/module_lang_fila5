@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Lang Module Wiki Index"
 module: "Lang"
 type: concept

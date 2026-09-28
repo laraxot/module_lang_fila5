@@ -1,3 +1,14 @@
+---
+title: "phpstan errors resolution roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors resolution roadmap"
+issues: []
+discussions: []
+---
+
 # Lang Module - PHPStan Level 10 Errors Resolution Roadmap
 
 ## 📊 Stato Attuale

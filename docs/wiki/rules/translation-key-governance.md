@@ -1,4 +1,7 @@
 ---
+qmd: "translation key governance"
+issues: []
+discussions: []
 title: "Translation Key Governance"
 type: "rule"
 tags: [translations, lang, filament, governance]

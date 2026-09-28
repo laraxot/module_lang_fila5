@@ -1,4 +1,7 @@
 ---
+qmd: "localizing dates and currencies.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: localizing_dates_and_currencies.md"
 module: Lang
 type: note

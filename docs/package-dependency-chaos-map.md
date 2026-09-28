@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Package Dependency Chaos Map (Lang)"
 module: "Lang"
 type: concept

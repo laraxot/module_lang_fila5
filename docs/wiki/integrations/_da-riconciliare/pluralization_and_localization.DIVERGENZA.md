@@ -1,4 +1,7 @@
 ---
+qmd: "pluralization and localization.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: pluralization_and_localization.md"
 module: Lang
 type: note

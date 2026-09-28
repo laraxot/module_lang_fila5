@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Raw Sources — Lang"
 module: "Lang"
 type: concept

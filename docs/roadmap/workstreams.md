@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Workstreams - Lang"
 module: "Lang"
 type: concept

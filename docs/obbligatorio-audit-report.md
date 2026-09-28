@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Audit 'Obbligatorio' in Non-Italian Translation Files"
 module: "Lang"
 type: concept

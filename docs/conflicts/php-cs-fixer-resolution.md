@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Risoluzione Conflitto in .php-cs-fixer.php"
 module: "Lang"
 type: concept

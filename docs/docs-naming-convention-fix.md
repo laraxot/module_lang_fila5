@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Correzione Convenzione Naming Cartelle Docs - Gennaio 2025"
 module: "Lang"
 type: concept

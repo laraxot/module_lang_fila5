@@ -1,4 +1,7 @@
 ---
+qmd: "prd.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: prd.md"
 module: Lang
 type: note

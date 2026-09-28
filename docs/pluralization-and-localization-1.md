@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Plurale/Singolare e Localizzazione Date/Valute"
 module: "Lang"
 type: concept

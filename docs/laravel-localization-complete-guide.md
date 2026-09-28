@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "laravel-localization complete guide"
 module: "Lang"
 type: how-to

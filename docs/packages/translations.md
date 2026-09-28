@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Traduzioni"
 module: "Lang"
 type: concept

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Translation Completeness Audit"
 module: "Lang"
 type: concept

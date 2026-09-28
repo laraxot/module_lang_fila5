@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Ponytail audit — Lang (over-engineering)"
 module: "Lang"
 type: concept

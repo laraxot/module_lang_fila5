@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Analisi Bottlenecks Modulo Lang"
 module: "Lang"
 type: concept
