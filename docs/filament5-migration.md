@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Filament 5 Migration Guide for Lang Module"
 module: "Lang"
 type: concept

@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "merge conflicts list.DIVERGENZA"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: merge-conflicts-list.md"
 module: Lang
 type: note

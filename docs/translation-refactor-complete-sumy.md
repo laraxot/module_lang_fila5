@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Refactor Completo File di Traduzione - Riepilogo Finale"
 module: "Lang"
 type: concept

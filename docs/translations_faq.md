@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "FAQ e Problemi Comuni sulle Traduzioni"
 module: "Lang"
 type: concept

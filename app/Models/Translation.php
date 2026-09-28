@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Models/Translation.php
  */
@@ -16,6 +20,7 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\Lang\Models\Translation.
  *
+<<<<<<< HEAD
  * @property string               $id
  * @property string|null          $lang
  * @property string|null          $key
@@ -31,6 +36,23 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $updater
  *
  * @method static TranslationFactory                  factory($count = null, $state = [])
+=======
+ * @property string $id
+ * @property string|null $lang
+ * @property string|null $key
+ * @property string|null $value
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string $namespace
+ * @property string $group
+ * @property string|null $item
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ *
+ * @method static TranslationFactory factory($count = null, $state = [])
+>>>>>>> laraxot/dev
  * @method static EloquentBuilder<static>|Translation newModelQuery()
  * @method static EloquentBuilder<static>|Translation newQuery()
  * @method static EloquentBuilder<static>|Translation ofTranslatedGroup(string $group)
@@ -50,8 +72,13 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static EloquentBuilder<static>|Translation whereValue($value)
  *
  * @property ProfileContract|null $deleter
+<<<<<<< HEAD
  * @property string|null          $locale
  * @property int|null             $user_id
+=======
+ * @property string|null $locale
+ * @property int|null $user_id
+>>>>>>> laraxot/dev
  *
  * @method static EloquentBuilder<static>|Translation whereLocale($value)
  * @method static EloquentBuilder<static>|Translation whereUserId($value)
@@ -78,8 +105,12 @@ class Translation extends BaseModel
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
     /**
+<<<<<<< HEAD
      * @param EloquentBuilder<Translation> $query
      *
+=======
+     * @param  EloquentBuilder<Translation>  $query
+>>>>>>> laraxot/dev
      * @return EloquentBuilder<Translation>|QueryBuilder
      */
     public function scopeOfTranslatedGroup(EloquentBuilder $query, string $group): QueryBuilder|EloquentBuilder
@@ -88,8 +119,12 @@ class Translation extends BaseModel
     }
 
     /**
+<<<<<<< HEAD
      * @param EloquentBuilder<Translation> $query
      *
+=======
+     * @param  EloquentBuilder<Translation>  $query
+>>>>>>> laraxot/dev
      * @return EloquentBuilder<Translation>
      */
     public function scopeOrderByGroupKeys(EloquentBuilder $query, bool $ordered): EloquentBuilder
@@ -102,8 +137,12 @@ class Translation extends BaseModel
     }
 
     /**
+<<<<<<< HEAD
      * @param EloquentBuilder<Translation> $query
      *
+=======
+     * @param  EloquentBuilder<Translation>  $query
+>>>>>>> laraxot/dev
      * @return EloquentBuilder<Translation>|QueryBuilder
      */
     public function scopeSelectDistinctGroup(EloquentBuilder $query): EloquentBuilder|QueryBuilder

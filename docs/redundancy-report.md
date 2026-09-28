@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Redundancy Report — Modulo Lang"
 module: "Lang"
 type: concept

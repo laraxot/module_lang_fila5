@@ -1,28 +1,46 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "lang mixed type reduction.story"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Lang: ridurre l'uso di mixed dove il tipo reale e' desumibile"
 type: story
 module: Lang
 slug: lang-mixed-type-reduction
 status: done
 created: 2026-09-04
+<<<<<<< HEAD
 updated: 2026-09-21
+=======
+updated: 2026-09-04
+>>>>>>> laraxot/dev
 repository: https://github.com/laraxot/module_lang_fila5
 tags:
   - phpstan
   - lang
   - type-safety
   - mixed
+<<<<<<< HEAD
   - strict-types
+=======
+>>>>>>> laraxot/dev
 estimated_effort: "0.25 dev-day"
 blocked_by: []
 related:
   - "./lang-duplicate-array-keys.story.md"
+<<<<<<< HEAD
   - "../purpose.md"
+=======
+  - "../coverage.md"
+>>>>>>> laraxot/dev
 owned_scope:
   - laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php
   - laravel/Modules/Lang/app/Models/TranslationFile.php
   - laravel/Modules/Lang/app/Models/Traits/HasStrictTranslations.php
   - laravel/Modules/Lang/app/Actions/SyncTranslationsAction.php
+<<<<<<< HEAD
   - laravel/Modules/Lang/app/Datas/LangData.php
   - laravel/Modules/Lang/app/Models/Contracts/HasTranslationsContract.php
   - laravel/Modules/Lang/app/Models/LanguageLine.php
@@ -30,6 +48,9 @@ owned_scope:
   - laravel/Modules/Lang/app/Http/Livewire/Lang/Change.php
   - laravel/Modules/Lang/resources/views/components/i18n-link.blade.php
   - laravel/Modules/Lang/lang/en
+=======
+  - laravel/Modules/Lang/docs/coverage.md
+>>>>>>> laraxot/dev
   - laravel/Modules/Lang/docs/stories/lang-mixed-type-reduction.story.md
 ---
 
@@ -62,8 +83,13 @@ indicazione del task.
    un'assunzione.
 3. Le firme che overridano contratti vendor tipizzati `mixed` (o non tipizzati, quindi
    equivalenti a `mixed` per compatibilita' LSP) restano invariate.
+<<<<<<< HEAD
 4. Esito PHPStan/PHPMD tracciato in questa story (non si crea un secondo `.md`:
    `docs/coverage.md` non esiste, il dettaglio resta qui).
+=======
+4. `docs/coverage.md` aggiornato con sezione datata, prima/dopo PHPStan, esito onesto
+   di Pest/PHPMD.
+>>>>>>> laraxot/dev
 
 ## Tasks / Subtasks
 
@@ -84,6 +110,7 @@ indicazione del task.
 - [x] PHPMD scoped sui file modificati (crash su tutto il modulo, noto/flaky).
 - [x] Pest: confermare via `git stash` che le failure preesistenti non dipendono da
       questo diff.
+<<<<<<< HEAD
 - [x] 2026-09-21: `declare(strict_types=1)` su tutti i PHP in `lang/**` (31 file `en/`
       senza declare nelle prime 20 righe; `it/` e `de/` gia' coperti). Chiavi/valori
       invariati.
@@ -91,6 +118,8 @@ indicazione del task.
       (unico Blade del modulo ancora senza).
 - [x] 2026-09-21: ridurre `mixed` evidenti in `app/` dove il tipo e' desumibile;
       `LanguageSwitcherWidget` gia' tipato, non riscritto.
+=======
+>>>>>>> laraxot/dev
 
 ## Dev Notes
 
@@ -115,6 +144,7 @@ indicazione del task.
 ## Testing
 
 - `cd laravel && ./vendor/bin/phpstan analyse Modules/Lang --no-progress --error-format=table`
+<<<<<<< HEAD
   → 0 errori (livello max da `phpstan.neon`, senza `--level`). Una riesecuzione
   intermedia e' crashata su `Modules/Quaeris/.../AlertWidget.php:20` (lock altrui
   `quaeris-activity-mixed-strict`); retry a file di nuovo valido → 0 errori.
@@ -125,11 +155,19 @@ indicazione del task.
   → 2026-09-04: failure preesistenti confermate identiche con `git stash`.
   2026-09-21: Pest non rilanciato di proposito — la suite **riscrive** `lang/en/*.php`
   e toglie il `declare`; i 31 file sono stati normalizzati dopo quel side-effect.
+=======
+  → 0 errori prima e dopo.
+- `cd laravel && ./tools/phpmd.sh <file-modificati> text ../docs/phpmd.ruleset.xml` →
+  solo debito preesistente, nessun nuovo finding sulle righe modificate.
+- `cd laravel && ./vendor/bin/pest Modules/Lang/tests -c Modules/Lang/phpunit.xml --no-coverage`
+  → failure preesistenti confermate identiche con `git stash` (diff rimosso).
+>>>>>>> laraxot/dev
 
 ## Dev Agent Record
 
 ### Esecuzione 2026-09-04 — Claude (Sonnet 5)
 
+<<<<<<< HEAD
 4 file modificati, 4 sostituzioni native/docblock mirate, 0 regressioni PHPStan.
 
 ### Esecuzione 2026-09-21 — php-backend-agent
@@ -178,3 +216,7 @@ non e' desumibile (contratti vendor, alberi di traduzione, payload config).
 - `cd laravel && ./tools/phpmd.sh <app files> text ../docs/phpmd.xml` → solo
   `BooleanArgumentFlag` preesistente su `HasTranslationsContract::getTranslation`
   (`$useFallbackLocale`). Nessun finding nuovo sulle righe di questa esecuzione.
+=======
+4 file modificati, 4 sostituzioni native/docblock mirate, 0 regressioni PHPStan. Dettaglio
+completo in `docs/coverage.md#2026-09-04-mixed-type-reduction`.
+>>>>>>> laraxot/dev

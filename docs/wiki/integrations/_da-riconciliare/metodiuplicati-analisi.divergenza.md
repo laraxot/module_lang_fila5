@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "metodiuplicati analisi.divergenza"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: metodiuplicati-analisi.md"
 module: Lang
 type: note

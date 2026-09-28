@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "translation keys best practices 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation keys best practices 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Best Practices per le Chiavi di Traduzione
 
 ## Collegamenti correlati

@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+tags: [documentation]
+qmd: "lang service translation updates"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Aggiornamento File di Traduzione Lang Service"
 type: concept
 module: "Lang"

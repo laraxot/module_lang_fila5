@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "quick reference"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "quick reference"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Guida Rapida alle Traduzioni
 
 ## Struttura Base

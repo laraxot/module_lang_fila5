@@ -1,4 +1,15 @@
 ---
+<<<<<<< HEAD
+=======
+title: "git push procedure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "git push procedure"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 name: git-push-procedure
 description: Git push synchronization procedure for Lang module across multiple remotes
 metadata:

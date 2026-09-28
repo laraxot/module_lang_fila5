@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "user link 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "user link 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Collegamenti al Modulo User
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo Lang e il modulo User.

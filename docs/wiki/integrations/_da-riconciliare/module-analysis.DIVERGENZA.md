@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "module analysis.DIVERGENZA"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: module-analysis.md"
 module: Lang
 type: note

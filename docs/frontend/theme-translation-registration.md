@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Registrazione Traduzioni Temi - Standard Laraxot"
 module: "Lang"
 type: concept

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "CONSOLIDATION PLAN"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "CONSOLIDATION PLAN"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Lang Module Docs Consolidation Plan
 
 **Phase:** 2d Aggressive Merge  
@@ -7,6 +21,17 @@
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "CONSOLIDATION PLAN"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "CONSOLIDATION PLAN"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Quick Stats
 
 | Category | Current | Target | Action |
@@ -211,9 +236,17 @@ rm -f \
   docs_naming_convention_fix.md \
   documentation_link_conventions.md \
   errori_comuni_traduzione.md \
+<<<<<<< HEAD
   lang-link.md \
   lang_link.md \
   lang-link.md \
+=======
+  lang_link.md \
+---
+  lang-link.md \
+---
+  lang_link.md \
+>>>>>>> laraxot/dev
   lang_service_helper_text_fix.md \
   laravel_localization.md \
   translation_*.md \
@@ -238,6 +271,7 @@ rm -f \
   docs-health.md \
   coverage.md \
   REDUNDANCY_ANALYSIS.md \
+<<<<<<< HEAD
   00-INDEX.md \
   00-index.md \
   index.md \
@@ -245,6 +279,18 @@ rm -f \
   index.md
   INDEX.md \
   index.md
+=======
+  00-index.md \
+  index.md
+---
+  00-index.md \
+  00-index.md \
+  index.md
+---
+  00-INDEX.md \
+  00-index.md \
+  INDEX.md
+>>>>>>> laraxot/dev
 
 # 3. Delete conflict-resolution snake_case variants
 rm -f conflict_resolution_*.md

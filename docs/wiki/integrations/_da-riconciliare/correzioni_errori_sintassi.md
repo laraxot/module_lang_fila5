@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "correzioni errori sintassi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "correzioni errori sintassi"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 
 ## Riepilogo Problemi Risolti

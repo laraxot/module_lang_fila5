@@ -13,7 +13,12 @@ uses(TestCase::class);
 
 function makeLangBaseModel(): BaseModel
 {
+<<<<<<< HEAD
     return new class extends BaseModel {
+=======
+    return new class() extends BaseModel
+    {
+>>>>>>> laraxot/dev
         protected $table = 'test_lang_table';
     };
 }

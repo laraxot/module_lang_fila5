@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Gestione delle Lingue in Laravel"
 module: "Lang"
 type: concept
