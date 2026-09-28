@@ -23,18 +23,7 @@ class TranslatorService extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
-<<<<<<< HEAD
-     * I parametri nativi restano `mixed` per compatibilita' LSP con
-     * `Illuminate\Translation\Translator::get()`, che non dichiara tipi.
-     *
-     * @param string               $key
-     * @param array<string, mixed> $replace
-     * @param string|null          $locale
-     * @param bool                 $fallback
-     *
-=======
      * @param  array<string, mixed>  $replace
->>>>>>> laraxot/dev
      * @return string|array<string, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
@@ -80,11 +69,5 @@ class TranslatorService extends LaravelTranslator
         Translation::firstOrCreate($data);
     }
 
-<<<<<<< HEAD
-    public function execute(): void
-    {
-    }
-=======
     public function execute(): void {}
->>>>>>> laraxot/dev
 }

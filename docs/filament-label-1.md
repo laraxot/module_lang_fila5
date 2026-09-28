@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament label 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Gestione automatica delle label in Filament tramite LangServiceProvider
 
 ## Funzionamento

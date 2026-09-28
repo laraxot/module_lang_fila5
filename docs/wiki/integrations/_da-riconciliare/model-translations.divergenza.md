@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "model translations.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: model_translations.md"
 module: Lang
 type: note

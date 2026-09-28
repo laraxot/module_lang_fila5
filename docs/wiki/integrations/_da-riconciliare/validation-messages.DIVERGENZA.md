@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "validation messages.DIVERGENZA"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: validation-messages.md"
 module: Lang
 type: note

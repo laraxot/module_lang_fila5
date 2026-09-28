@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Standard per le Traduzioni nel Progetto"
 module: "Lang"
 type: rule

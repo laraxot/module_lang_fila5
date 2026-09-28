@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 qmd: "quality gates phpstan swarm 2026 09 23.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: quality-gates-phpstan-swarm-2026-09-23
 title: PHPStan quality gate swarm — modulo Lang
 status: done

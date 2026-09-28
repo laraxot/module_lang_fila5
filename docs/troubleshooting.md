@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "🔧 **Troubleshooting Modulo Lang - Laraxot**"
 module: "Lang"
 type: concept

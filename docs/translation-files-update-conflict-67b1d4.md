@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation files update conflict 67b1d4"
 type: note
@@ -11,15 +9,10 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Aggiornamento File di Traduzione - Gennaio 2025
 
 ## Data Aggiornamento
 2025-01-27
-<<<<<<< HEAD
-2025-01-27
-=======
->>>>>>> laraxot/dev
 [DATE]
 
 ## File Modificati
@@ -143,24 +136,10 @@ return [
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
-<<<<<<< HEAD
-- [Best Practices](../Xot/docs/translations-best-practices.md)
-- [Translation Rules](../xot/docs/translation_rules.md)
-- [Translation Standards](./translation-standards.md)
-=======
->>>>>>> laraxot/dev
 - [Best Practices](../xot/docs/translations-best-practices.md)
 
 ## Prossimi Passi
 
 1. **Test**: Verificare il funzionamento in ambiente di sviluppo
 2. **Documentazione**: Aggiornare la documentazione dei moduli Notify e Lang
-<<<<<<< HEAD
 3. **Review**: Code review per confermare le modifiche
-3. **Review**: Code review per confermare le modifiche
-3. **Review**: Code review per confermare le modifiche
-3. **Review**: Code review per confermare le modifiche
-3. **Review**: Code review per confermare le modifiche
-=======
-3. **Review**: Code review per confermare le modifiche
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "lang service provider 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # LangServiceProvider: Analisi e Proposte di Miglioramento
 
 ## Analisi dell'Implementazione Attuale

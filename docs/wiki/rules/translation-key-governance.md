@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "translation key governance"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Translation Key Governance"
 type: "rule"
 tags: [translations, lang, filament, governance]

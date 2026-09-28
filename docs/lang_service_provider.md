@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "LangServiceProvider: Analisi e Proposte di Miglioramento"
 module: "Lang"
 type: concept

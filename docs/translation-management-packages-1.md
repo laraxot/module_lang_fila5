@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation management packages 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Translation Management Packages
 
 ## Overview

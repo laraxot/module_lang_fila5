@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation file merge function"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Translation File Merge Function
 
 ## Purpose

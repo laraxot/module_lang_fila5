@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "INDEX"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "lang — integrations"
 module: lang
 type: integration

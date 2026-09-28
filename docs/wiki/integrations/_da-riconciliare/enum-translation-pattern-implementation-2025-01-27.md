@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "enum translation pattern implementation 2025 01 27"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Enum Translation Pattern - Implementazione Regola Critica
 
 ## Data: 27 Gennaio 2025

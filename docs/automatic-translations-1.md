@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "automatic translations 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Traduzioni Automatiche con LangServiceProvider
 
 ## Regola Fondamentale

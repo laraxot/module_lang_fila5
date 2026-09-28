@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "docs naming convention fix 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzione Convenzione Naming Cartelle Docs - Gennaio 2025
 
 ## Data Aggiornamento

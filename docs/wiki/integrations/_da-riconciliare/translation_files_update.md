@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation files update"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Aggiornamento File di Traduzione - Gennaio 2025
 
 ## Data Aggiornamento

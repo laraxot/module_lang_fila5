@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Enum Translation Pattern - Implementazione Regola Critica"
 module: "Lang"
 type: pattern

@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 updated: 2026-09-26
 qmd: "PHPSTAN L10"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: PHPStan Level 10 Compliance — Lang Module
 module: Lang
 type: quality-gate

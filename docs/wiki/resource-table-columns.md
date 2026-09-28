@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "resource table columns"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Colonne delle Resource — verifica 2026-09-10
 
 ## Evidenze e decisioni

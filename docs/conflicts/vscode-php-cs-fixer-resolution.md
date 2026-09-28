@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Risoluzione Conflitto in .vscode/.php-cs-fixer.php"
 module: "Lang"
 type: concept

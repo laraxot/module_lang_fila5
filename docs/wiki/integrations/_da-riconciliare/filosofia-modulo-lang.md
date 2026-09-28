@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Analisi Approfondita del Modulo Lang"
 module: "Lang"
 type: concept
@@ -24,10 +21,7 @@ related:
 > **Generato**: [DATE]
 > **Generato**: 2025-12-24
 > **Generato**: 2025-12-24
-<<<<<<< HEAD
-=======
 ---
->>>>>>> laraxot/dev
 > **Scopo**: Documentare la filosofia, logica e architettura del modulo Lang
 
 ---

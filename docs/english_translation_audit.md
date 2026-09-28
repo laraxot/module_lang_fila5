@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Audit Traduzioni Inglesi - <main module>"
 module: "Lang"
 type: concept

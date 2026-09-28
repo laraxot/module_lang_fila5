@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "mcamara implementation guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Guida all'Implementazione di mcamara/laravel-localization
 
 ## Indice

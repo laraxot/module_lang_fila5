@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "quality analysis.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: quality-analysis.md"
 module: Lang
 type: note

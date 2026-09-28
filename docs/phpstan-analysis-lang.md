@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan analysis lang"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Analysis - Lang Module
 
 ## 📊 Status
@@ -129,8 +126,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan analysis lang"
 type: note
 tags: [documentation]
@@ -139,7 +134,6 @@ updated: 2026-09-26
 qmd: "phpstan analysis lang"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Analysis Date**: 2025-11-05
 **Analysis Date**: [DATE]
 **PHPStan Version**: 2.1.2

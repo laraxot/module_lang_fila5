@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan progress"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🌍 PHPStan Progress Report - Modulo Lang
 
 ## Data: [DATE]
@@ -306,8 +303,6 @@ Noi abbiamo fatto i primi 345 li. Ne restano 655.
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan progress"
 type: note
 tags: [documentation]
@@ -316,7 +311,6 @@ updated: 2026-09-26
 qmd: "phpstan progress"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Namaste* 🙏
 
 **Status**: 🟡 IN PROGRESS

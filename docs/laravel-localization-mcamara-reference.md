@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "mcamara/laravel-localization — Riferimento per moduli e temi"
 module: "Lang"
 type: concept

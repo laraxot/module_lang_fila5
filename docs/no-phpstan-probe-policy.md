@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "no phpstan probe policy"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "no phpstan probe policy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 description: Divieto di creare cartelle o file probe per PHPStan in questo modulo.
 ---
 

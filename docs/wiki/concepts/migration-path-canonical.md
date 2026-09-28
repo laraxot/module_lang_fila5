@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "migration path canonical"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Path canonico migrazioni Lang
 type: concept
 module: Lang

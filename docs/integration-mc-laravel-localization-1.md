@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "integration mc laravel localization 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Integrazione di mcamara/laravel-localization
 
 Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto <nome progetto>.

@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 created: 2026-09-26
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: second brain — puntatore modulo
 type: reference
 qmd: second brain modulo wiki locale laravel

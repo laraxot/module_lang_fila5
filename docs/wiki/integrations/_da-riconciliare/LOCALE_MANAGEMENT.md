@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "LOCALE MANAGEMENT"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Gestione delle Lingue in Laravel
 
 ## Indice
