@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Autoregistrazione dei Comandi da Console"
 module: "Lang"
 type: concept

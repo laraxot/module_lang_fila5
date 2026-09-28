@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 created: 2026-09-26
 qmd: "agent edit discipline"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: agent edit discipline — puntatore
 type: reference
 updated: 2026-05-21

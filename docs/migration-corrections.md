@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Correzioni Migrazione - Modulo Lang"
 module: "Lang"
 type: concept

@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "English Translations Added for <nome progetto> Widgets"
 module: "Lang"
 type: concept

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "lang consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "lang — Consolidated Documentation"
 module: lang
 type: integration

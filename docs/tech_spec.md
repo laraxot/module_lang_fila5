@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "tech spec"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Technical Specification - Lang Module"
 type: technical_spec
 tags: [tech spec, lang, implementation]

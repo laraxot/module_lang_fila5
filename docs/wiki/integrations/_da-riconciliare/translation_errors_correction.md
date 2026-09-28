@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation errors correction"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzione Errori Traduzioni - 2025
 
 ## Problema Identificato
@@ -261,8 +258,6 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "translation errors correction"
 type: note
 tags: [documentation]
@@ -271,7 +266,6 @@ updated: 2026-09-26
 qmd: "translation errors correction"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: Gennaio 2025
 **Autore**: Sistema di Correzione Automatica
 **Versione**: 1.0

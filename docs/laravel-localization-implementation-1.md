@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laravel localization implementation 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Implementazione della Localizzazione
 
 ## Collegamenti correlati

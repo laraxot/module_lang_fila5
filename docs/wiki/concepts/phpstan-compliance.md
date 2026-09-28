@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "phpstan compliance"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Lang Module - PHPStan Type Compliance"
 type: concept
 tags: [lang, phpstan, types, compliance, quality, static-analysis]

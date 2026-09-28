@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Gestione Permessi e Errori Filesystem su File di Lingua (Lang)"
 module: "Lang"
 type: concept

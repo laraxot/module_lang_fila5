@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "rinvex countries usage.DIVERGENZA"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: rinvex_countries_usage.md"
 module: Lang
 type: note

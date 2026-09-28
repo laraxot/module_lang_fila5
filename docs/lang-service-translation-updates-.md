@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Aggiornamento File di Traduzione Lang Service - 2025-01-06"
 module: "Lang"
 type: concept

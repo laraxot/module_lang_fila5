@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "mcamara/laravel-localization Governance"
 module: "Lang"
 type: concept

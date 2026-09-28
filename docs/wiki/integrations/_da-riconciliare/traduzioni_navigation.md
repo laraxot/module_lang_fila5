@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "traduzioni navigation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Traduzioni con ".navigation" - Audit Completo 2025
 
 ## Riepilogo Problema

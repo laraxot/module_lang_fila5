@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "git merge conflict inventory 2026 04 28"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Git Conflict Inventory
 
 - Date: 2026-04-28

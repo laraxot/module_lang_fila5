@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "case variant collisions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Collisioni di nome per sola differenza di maiuscole
 
 **Misurato**: 2026-08-31

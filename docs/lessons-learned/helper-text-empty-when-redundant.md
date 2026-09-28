@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "helper text empty when redundant"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "helper text empty when redundant"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: helper-text-empty-when-redundant
 description: "helper_text va svuotato quando coincide con la chiave dell'array (nome campo non tradotto); label/placeholder/description restano invariati"
 metadata:

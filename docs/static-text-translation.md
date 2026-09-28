@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Traduzione di Testi Statici in Laravel"
 module: "Lang"
 type: concept

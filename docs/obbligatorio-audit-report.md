@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Audit 'Obbligatorio' in Non-Italian Translation Files"
 module: "Lang"
 type: concept

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "advanced language switching.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: advanced_language_switching.md"
 module: Lang
 type: note

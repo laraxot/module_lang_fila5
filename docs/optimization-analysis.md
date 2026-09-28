@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Analisi di Ottimizzazione - Modulo Lang"
 module: "Lang"
 type: concept

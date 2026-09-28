@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "release marketing standard.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: release-marketing-standard.md"
 module: Lang
 type: note

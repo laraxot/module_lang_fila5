@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Ottimizzazioni Performance Modulo Lang"
 module: "Lang"
 type: concept

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "index"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Lang Module - commands Index
 
 ## Purpose
@@ -28,8 +25,6 @@ qmd search "Lang commands" --limit 5
 - [Root Wiki](../../../docs/wiki/)
 
 ---
-<<<<<<< HEAD
-=======
 title: "index"
 type: note
 tags: [documentation]
@@ -38,5 +33,4 @@ updated: 2026-09-26
 qmd: "index"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Updated: 2026-05-11*

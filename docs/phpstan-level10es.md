@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan level10es"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzioni PHPStan Livello 10 - Modulo Lang
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Lang e le relative soluzioni implementate.

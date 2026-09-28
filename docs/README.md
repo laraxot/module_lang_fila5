@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "README"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Documentation
 
 This directory contains documentation for the module.
@@ -369,8 +366,6 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse --level=max Modules/Lang
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "README"
 type: note
 tags: [documentation]
@@ -379,17 +374,13 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Status**: ✅ Production  
 **Last Updated**: 2026-07-14  
 **Requirements**: PHP 8.3+, Laravel 13  
 **PHPStan Level**: 10 (Compliant)
-<<<<<<< HEAD
-=======
 ---
 Documentation should be:
 - Clear and concise
 - Example-driven
 - Updated with code changes
 - Use Markdown format (.md)
->>>>>>> laraxot/dev

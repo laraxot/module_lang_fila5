@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "NestedSet Migration Best Practices - Lang Module"
 module: "Lang"
 type: concept
