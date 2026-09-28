@@ -1,3 +1,14 @@
+---
+title: "docs naming convention fix 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "docs naming convention fix 1"
+issues: []
+discussions: []
+---
+
 # Correzione Convenzione Naming Cartelle Docs - Gennaio 2025
 
 ## Data Aggiornamento

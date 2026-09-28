@@ -1,4 +1,7 @@
 ---
+qmd: "phpstan status"
+issues: []
+discussions: []
 title: "PHPStan Status — Lang Module"
 module: lang
 type: integration

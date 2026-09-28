@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Gestione delle Lingue (Locales) in Laravel"
 module: "Lang"
 type: concept

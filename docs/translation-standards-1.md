@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Standard per le Traduzioni nel Progetto <nome progetto>"
 module: "Lang"
 type: rule

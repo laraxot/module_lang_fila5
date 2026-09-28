@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Task: Complete Translation Management Interface"
 module: "Lang"
 type: concept

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "🚀 Bienvenido a Laraxot PTVX"
 module: "Lang"
 type: concept

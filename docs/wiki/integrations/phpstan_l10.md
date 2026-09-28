@@ -1,4 +1,9 @@
 ---
+tags: [documentation]
+updated: 2026-09-26
+qmd: "phpstan l10"
+issues: []
+discussions: []
 title: PHPStan Level 10 Compliance — Lang Module
 module: Lang
 type: quality-gate

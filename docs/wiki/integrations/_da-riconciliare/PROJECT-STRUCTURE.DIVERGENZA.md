@@ -1,4 +1,7 @@
 ---
+qmd: "PROJECT STRUCTURE.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: PROJECT-STRUCTURE.md"
 module: Lang
 type: note

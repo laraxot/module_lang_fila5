@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Guida all'Implementazione di mcamara/laravel-localization"
 module: "Lang"
 type: concept
