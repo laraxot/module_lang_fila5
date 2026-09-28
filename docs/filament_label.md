@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Gestione automatica delle label in Filament tramite LangServiceProvider"
 module: "Lang"
 type: concept

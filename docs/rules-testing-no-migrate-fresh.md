@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH"
 module: "Lang"
 type: rule

@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Processo di Traduzione: Da Sviluppatore a Traduttore"
 module: "Lang"
 type: concept

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "errori comuni traduzione 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Errori comuni nei file di traduzione
 
 ## Errori di sintassi

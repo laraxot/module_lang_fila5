@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Collegamenti alla Documentazione sugli Standard di Traduzione"
 module: "Lang"
 type: rule

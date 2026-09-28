@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "rinvex countries usage 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Rinvex Countries Usage in Lang Module
 
 ## Overview

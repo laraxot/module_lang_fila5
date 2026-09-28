@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "phpstan level10 fixes 1"
 type: note
@@ -11,4 +8,3 @@ qmd: "phpstan level10 fixes 1"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

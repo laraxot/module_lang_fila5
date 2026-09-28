@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "correzioni errori sintassi"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 
 ## Riepilogo Problemi Risolti

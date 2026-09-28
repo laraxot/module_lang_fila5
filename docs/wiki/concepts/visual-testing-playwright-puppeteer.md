@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "visual testing playwright puppeteer"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Visual Testing con Playwright e Puppeteer — Modulo Lang
 type: concept
 sources:

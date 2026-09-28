@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation system 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Sistema di Traduzione in il progetto
 
 ## LangServiceProvider

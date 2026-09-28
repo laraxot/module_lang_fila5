@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "quick reference"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Guida Rapida alle Traduzioni
 
 ## Struttura Base

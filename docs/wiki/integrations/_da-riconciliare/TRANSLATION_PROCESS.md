@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "TRANSLATION PROCESS"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Processo di Traduzione: Da Sviluppatore a Traduttore
 
 ## Indice

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "roadmap miglioramenti"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Lang — cosa migliorerei se questo modulo fosse mio per un mese
 
 > I numeri misurati sono in [`docs/cosa-migliorare.md`](cosa-migliorare.md),
@@ -75,8 +72,6 @@ criterio scritto, non contro la sensazione di chi la sta aggiungendo quel
 giorno.
 
 ---
-<<<<<<< HEAD
-=======
 title: "roadmap miglioramenti"
 type: note
 tags: [documentation]
@@ -85,6 +80,5 @@ updated: 2026-09-26
 qmd: "roadmap miglioramenti"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Analisi generata il 2026-09-01, dati verificati sul codice (grep/find), non
 sulla documentazione esistente.*

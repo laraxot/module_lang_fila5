@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "localizing dates currencies 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Localizzazione di Date e Valute
 
 ## Introduzione

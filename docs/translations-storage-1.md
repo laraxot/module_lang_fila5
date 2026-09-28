@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translations storage 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Storage delle Traduzioni: PHP vs JSON
 
 ## Introduzione

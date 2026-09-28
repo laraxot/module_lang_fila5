@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "analysis results 2025 01 06"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risultati Analisi Modulo Lang - 2025-01-06
 
 ## Data

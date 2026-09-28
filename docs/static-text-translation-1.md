@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "static text translation 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Traduzione di Testi Statici in Laravel
 
 ## Introduzione

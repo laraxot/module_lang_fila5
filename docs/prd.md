@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "prd"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Product Requirements Document (PRD) - Lang Module"
 module: "Lang"
 type: concept

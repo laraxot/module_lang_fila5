@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "📚 **API Reference Modulo Lang - Laraxot**"
 module: "Lang"
 type: concept

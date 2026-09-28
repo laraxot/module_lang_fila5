@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "quality analysis 2025 11 11"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Quality Analysis Report - Lang Module
 **Date**: 2025-11-11
 **Analyst**: Claude Code
@@ -19,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "quality analysis 2025 11 11"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "quality analysis 2025 11 11"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Executive Summary
 
 The Lang module has been analyzed using three quality assurance tools:

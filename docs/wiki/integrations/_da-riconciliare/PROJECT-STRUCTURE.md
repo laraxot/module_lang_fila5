@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "PROJECT STRUCTURE"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Project Structure — Module Lang"
 type: documentation
 created: 2026-05-11

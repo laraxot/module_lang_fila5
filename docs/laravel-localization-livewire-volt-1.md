@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laravel localization livewire volt 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Integrazione di mcamara/laravel-localization con Livewire Volt
 
 ## Obiettivo
@@ -19,8 +16,6 @@ Fornire una guida pratica per integrare la localizzazione delle rotte e dei cont
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "laravel localization livewire volt 1"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "laravel localization livewire volt 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 1. Cos'è Livewire Volt?
 Volt è una sintassi semplificata per creare componenti Livewire, che permette di scrivere componenti reattivi direttamente in Blade, con una sintassi più concisa e moderna.
 

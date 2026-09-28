@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Risoluzione Conflitto in .php-cs-fixer.dist.php"
 module: "Lang"
 type: concept

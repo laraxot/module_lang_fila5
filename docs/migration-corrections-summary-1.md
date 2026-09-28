@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migration corrections summary 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzioni Migrazione - Modulo Lang
 
 ## Problema Identificato

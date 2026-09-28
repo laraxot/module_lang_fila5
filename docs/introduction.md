@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "introduction"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Introducendo Lang
 description: Introduzione a Module Lang
 extends: _layouts.documentation

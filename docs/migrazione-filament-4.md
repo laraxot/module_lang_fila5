@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "migrazione filament 4"
 type: note
@@ -11,4 +8,3 @@ qmd: "migrazione filament 4"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

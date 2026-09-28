@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "fixes consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "fixes — Consolidated Documentation"
 module: lang
 type: integration

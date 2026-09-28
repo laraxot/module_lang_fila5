@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "database model coverage"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Lang — Copertura Model / Migration / Seeder / Factory
 
 Stato: colmato il gap su `LanguageLine` (mancavano factory e seeder). Documentati gli skip su

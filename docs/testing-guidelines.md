@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Lang Module - Testing Guidelines"
 module: "Lang"
 type: how-to

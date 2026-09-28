@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "model translations 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Model Translations in `<nome progetto>`
 
 ## Overview

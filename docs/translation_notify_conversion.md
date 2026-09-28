@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Standardizzazione Traduzioni Modulo Notify"
 module: "Lang"
 type: concept

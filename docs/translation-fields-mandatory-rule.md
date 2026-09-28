@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Regola Critica: Sezione 'fields' Obbligatoria nelle Traduzioni"
 module: "Lang"
 type: rule

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "MIGRATIONS"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Migrations — Lang Module
 
 Questo documento descrive le migrazioni nel modulo Lang e come mantengono la conformità con il pattern XotBaseMigration.
@@ -338,8 +335,6 @@ php artisan migrate --path=Modules/Lang/database/migrations
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "MIGRATIONS"
 type: note
 tags: [documentation]
@@ -348,5 +343,4 @@ updated: 2026-09-26
 qmd: "MIGRATIONS"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Last updated: 2026-07-15*

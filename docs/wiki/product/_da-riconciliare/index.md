@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "index"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "lang — product"
 module: lang
 type: product

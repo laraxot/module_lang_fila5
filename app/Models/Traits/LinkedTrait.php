@@ -1,17 +1,10 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * ---.
  */
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
->>>>>>> laraxot/dev
 
 namespace Modules\Lang\Models\Traits;
 

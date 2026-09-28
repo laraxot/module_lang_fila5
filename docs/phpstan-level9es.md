@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan level9es"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzione conflitto e miglioramento PHPStan livello 9 in Models/Post.php
 
 **Data:** [DATE]
@@ -37,8 +34,6 @@ Durante un controllo di routine sono stati rilevati diversi conflitti Git non ri
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan level9es"
 type: note
 tags: [documentation]
@@ -47,7 +42,6 @@ updated: 2026-09-26
 qmd: "phpstan level9es"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Vedi anche:**
 - [PHPStan Level 10 Fixes](phpstan_level10_fixes.md)
 - [module_lang.md](module_lang.md)

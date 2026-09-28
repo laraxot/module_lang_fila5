@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Dependency Intelligence - Module Lang"
 module: "Lang"
 type: concept

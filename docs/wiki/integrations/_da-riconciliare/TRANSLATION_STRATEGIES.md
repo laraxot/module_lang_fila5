@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "TRANSLATION STRATEGIES"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Strategie di Gestione delle Traduzioni in Laravel
 
 ## Indice

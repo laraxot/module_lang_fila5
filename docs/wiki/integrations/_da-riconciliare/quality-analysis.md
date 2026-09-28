@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Quality Analysis Report - Lang Module"
 module: "Lang"
 type: concept

@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Risultati Analisi Modulo Lang"
 module: "Lang"
 type: concept

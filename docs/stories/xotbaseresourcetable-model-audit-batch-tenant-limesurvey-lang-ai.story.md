@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 updated: 2026-09-26
 qmd: "xotbaseresourcetable model audit batch tenant limesurvey lang ai.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseResourceTable model audit - Lang/TranslationFilesTable"
 status: done
 type: story

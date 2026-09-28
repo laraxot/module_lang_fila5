@@ -14,10 +14,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListTranslationFiles extends XotBaseListRecords
 {
     protected static string $resource = TranslationFileResource::class;
-<<<<<<< HEAD
-=======
    
->>>>>>> laraxot/dev
 
     /**
      * @return array<string, Action|ActionGroup>

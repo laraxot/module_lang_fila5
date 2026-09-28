@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Risoluzione Conflitto LangServiceProvider"
 module: "Lang"
 type: concept

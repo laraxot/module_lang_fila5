@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translating validation messages 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Traduzione dei Messaggi di Validazione
 
 ## Introduzione

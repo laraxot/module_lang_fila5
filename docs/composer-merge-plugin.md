@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Composer Merge Plugin nel Modulo Lang"
 module: "Lang"
 type: concept

@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 created: 2026-09-26
 qmd: "usage"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "html2pdf usage — puntatore"
 type: reference
 updated: 2026-05-21

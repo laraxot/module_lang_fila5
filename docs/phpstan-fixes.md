@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Lang Module — PHPStan
 
 ## 2026-06-10 — STORY-305 · Level 10 · 0 errori
@@ -29,30 +26,6 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/Lang
 
 ---
 
-<<<<<<< HEAD
-## Storico — Level 7 (Gennaio 2025)
-
-Il modulo Lang era a 0 errori Level 7.
-# Lang Module - PHPStan Level 7 Fixes - Gennaio 2025
-# Lang Module — PHPStan
-
-## 2026-06-10 — STORY-305 · Level 10 · 0 errori
-
-Il modulo Lang è stato completamente risolto per PHPStan Level 7 con 0 errori rimanenti.
-```bash
-cd laravel && ./vendor/bin/phpstan analyse Modules/Lang
-# [OK] No errors
-```
-
-- Test: `Assert::assert*()`, `uses(TestCase::class)`, helper al posto di `$this` in closure
-- `tests/Pest.php` minimal (no `pest()->extend`)
-- `TestCase::assertDatabaseHasRow()` per DB in Pest
-- Tooling: `laravel/scripts/phpstan/fix-pest-tests.php`
-- Issue [#332](https://github.com/laraxot/base_fixcity_fila5/issues/332) · base D[#333](https://github.com/laraxot/base_fixcity_fila5/discussions/333)
-
----
-
-=======
 title: "phpstan fixes"
 type: note
 tags: [documentation]
@@ -61,7 +34,6 @@ updated: 2026-09-26
 qmd: "phpstan fixes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Storico — Level 7 (Gennaio 2025)
 
 Il modulo Lang era a 0 errori Level 7.
@@ -152,13 +124,4 @@ private function castWithAction(mixed $value): string
 ---
 *Ultimo aggiornamento: Gennaio 2025*
 *Ultimo aggiornamento: Gennaio 2025*
-<<<<<<< HEAD
 *Stato: ✅ Completato - 0 errori PHPStan*
-*Stato: ✅ Completato - 0 errori PHPStan*
-*Stato: ✅ Completato - 0 errori PHPStan*
-*Stato: ✅ Completato - 0 errori PHPStan*
-*Ultimo aggiornamento: Gennaio 2025*
-*Stato: ✅ Completato - 0 errori PHPStan*
-=======
-*Stato: ✅ Completato - 0 errori PHPStan*
->>>>>>> laraxot/dev

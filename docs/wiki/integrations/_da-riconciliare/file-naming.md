@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Regole di Naming per File"
 module: "Lang"
 type: concept
@@ -11,15 +8,12 @@ tags: [migrazione, filament, 4]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "migrazione filament 4"
-<<<<<<< HEAD
-=======
 ---
 type: rule
 tags: [migration, filament]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "migration filament"
->>>>>>> laraxot/dev
 related:
   - "./italian-text-refined-audit-report.md"
 ---

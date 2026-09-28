@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "translation study guide"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "translation study guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: translation-study-guide
 description: Study guide for Laravel translation handling with spatie/laravel-translatable
 metadata:

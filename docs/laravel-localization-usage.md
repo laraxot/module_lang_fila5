@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Utilizzo di mcamara/laravel-localization"
 module: "Lang"
 type: concept

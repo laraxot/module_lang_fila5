@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "lang docs conflict marker cleanup 2026 09 22.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Story: Lang — pulizia marker di conflitto residui in docs/
 
 ## Status

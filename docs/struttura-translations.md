@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Struttura corretta per i file di traduzione nel modulo Lang"
 module: "Lang"
 type: concept

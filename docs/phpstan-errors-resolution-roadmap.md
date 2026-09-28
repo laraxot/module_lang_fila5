@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan errors resolution roadmap"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Lang Module - PHPStan Level 10 Errors Resolution Roadmap
 
 ## 📊 Stato Attuale

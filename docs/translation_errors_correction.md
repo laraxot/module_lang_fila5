@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Correzione Errori Traduzioni - 2025"
 module: "Lang"
 type: concept

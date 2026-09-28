@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "INDEX"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Documentation Index
 
 Modulo: Lang

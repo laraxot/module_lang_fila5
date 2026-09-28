@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstanes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Lang Module - PHPStan Level 7 Fixes - Gennaio 2025
 
 ## ✅ **Stato Completato**
@@ -102,8 +99,6 @@ private function castWithAction(mixed $value): string
 - **Method Signatures**: Allineate tutte le signature con le classi base
 
 ---
-<<<<<<< HEAD
-=======
 title: "phpstanes"
 type: note
 tags: [documentation]
@@ -112,5 +107,4 @@ updated: 2026-09-26
 qmd: "phpstanes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Stato: ✅ Completato - 0 errori PHPStan*

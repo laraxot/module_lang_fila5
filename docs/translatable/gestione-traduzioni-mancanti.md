@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Gestione delle Traduzioni Mancanti con Spatie Laravel Translatable"
 module: "Lang"
 type: concept

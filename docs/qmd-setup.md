@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "qmd setup"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "QMD Setup — Module Lang"
 type: documentation
 created: 2026-05-11

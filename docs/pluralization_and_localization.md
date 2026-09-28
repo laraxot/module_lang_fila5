@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Plurale/Singolare e Localizzazione Date/Valute"
 module: "Lang"
 type: concept

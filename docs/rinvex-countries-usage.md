@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Rinvex Countries Usage in Lang Module"
 module: "Lang"
 type: concept

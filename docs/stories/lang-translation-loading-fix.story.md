@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "lang translation loading fix.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Lang: fix array_replace_recursive TypeError in FileLoader"
 type: story
 module: Lang

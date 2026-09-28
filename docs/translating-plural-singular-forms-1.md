@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translating plural singular forms 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Traduzione di Forme Plurali e Singolari
 
 ## Introduzione

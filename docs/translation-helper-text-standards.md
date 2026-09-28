@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Standard per helper_text nelle Traduzioni <nome progetto>"
 module: "Lang"
 type: rule

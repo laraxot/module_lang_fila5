@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Package Dependency Chaos Map (Lang)"
 module: "Lang"
 type: concept

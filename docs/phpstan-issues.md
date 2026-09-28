@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan issues"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Level 10 Issues - Detailed Analysis
 
 **Data Analisi**: [DATE]  
@@ -22,8 +19,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan issues"
 type: note
 tags: [documentation]
@@ -32,7 +27,6 @@ updated: 2026-09-26
 qmd: "phpstan issues"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 **Summary degli Errori**
 
 | Categoria | Count | Severità | Complessità | File Principali |
