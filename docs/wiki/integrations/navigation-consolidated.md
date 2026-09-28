@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "navigation consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "navigation — Consolidated Documentation"
 module: lang
 type: integration

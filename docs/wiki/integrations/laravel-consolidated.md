@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "laravel consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "laravel — Consolidated Documentation"
 module: lang
 type: integration

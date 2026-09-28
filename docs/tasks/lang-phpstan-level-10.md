@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "lang phpstan level 10"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Task: Lang PHPStan Level 10
 
 ## 📋 Obiettivo

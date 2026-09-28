@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "lang autolabelaction hardening.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Lang: AutoLabelAction hardening and type safety"
 type: story
 module: Lang

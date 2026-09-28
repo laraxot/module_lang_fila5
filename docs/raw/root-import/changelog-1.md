@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "changelog 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Changelog
 
 All notable changes to `:package_name` will be documented in this file.

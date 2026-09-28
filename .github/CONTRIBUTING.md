@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "CONTRIBUTING"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Contributing
 
 Contributions are **welcome** and will be fully **credited**.

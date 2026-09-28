@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laravel localization folio 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Integrazione tra mcamara/laravel-localization e Laravel Folio
 
 ## Obiettivo
@@ -19,8 +16,6 @@ Fornire una guida pratica e dettagliata per integrare la localizzazione delle ro
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "laravel localization folio 1"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "laravel localization folio 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 1. Cos'è Laravel Folio?
 - **Folio** è il sistema di routing file-based introdotto in Laravel 11+, che permette di definire le rotte tramite la struttura delle cartelle e dei file in `resources/views/pages`.
 - Ogni file Blade in questa cartella diventa una rotta accessibile via URL.

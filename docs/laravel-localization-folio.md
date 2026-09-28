@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Integrazione tra mcamara/laravel-localization e Laravel Folio"
 module: "Lang"
 type: concept

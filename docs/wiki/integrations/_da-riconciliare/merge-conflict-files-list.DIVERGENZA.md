@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "merge conflict files list.DIVERGENZA"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: merge-conflict-files-list.md"
 module: Lang
 type: note

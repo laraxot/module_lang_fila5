@@ -81,11 +81,7 @@ return [
         ],
         'updated_at' => [
             'label' => 'Ultimo Aggiornamento',
-<<<<<<< HEAD
-            'help' => "Data dell'ultima modifica",
-=======
             'help' => 'Data dell\'ultima modifica',
->>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -100,31 +96,18 @@ return [
         'export' => [
             'label' => 'Esporta Report',
             'success' => 'Report esportato con successo',
-<<<<<<< HEAD
-            'error' => "Errore durante l'esportazione",
-=======
             'error' => 'Errore durante l\'esportazione',
->>>>>>> laraxot/dev
         ],
         'refresh' => [
             'label' => 'Aggiorna',
             'success' => 'Dati aggiornati con successo',
-<<<<<<< HEAD
-            'error' => "Errore durante l'aggiornamento",
-=======
             'error' => 'Errore durante l\'aggiornamento',
->>>>>>> laraxot/dev
         ],
     ],
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
-<<<<<<< HEAD
-        'name' => 'Individuale Tot Stabi',
-        'plural' => 'Individuale Tot Stabi',
-=======
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

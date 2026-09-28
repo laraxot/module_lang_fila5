@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Integration of Mcamara Laravel Localization with Laravel Folio"
 module: "Lang"
 type: concept

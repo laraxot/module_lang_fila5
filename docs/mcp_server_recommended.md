@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "MCP Server Consigliati per il Modulo Lang"
 module: "Lang"
 type: concept

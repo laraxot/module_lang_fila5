@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Guida Completa alla Validazione delle Traduzioni - <nome progetto>"
 module: "Lang"
 type: how-to

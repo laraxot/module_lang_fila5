@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Traduzione dei Messaggi di Validazione"
 module: "Lang"
 type: concept

@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Risoluzione Conflitto nel Modello Translation"
 module: "Lang"
 type: concept

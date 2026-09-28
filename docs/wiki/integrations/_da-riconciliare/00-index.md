@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "📚 **Indice Documentazione Modulo Lang**"
 module: "Lang"
 type: concept

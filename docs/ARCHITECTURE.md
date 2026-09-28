@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "ARCHITECTURE"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Lang Module Architecture"
 type: architecture
 tags: [module, architecture, lang]

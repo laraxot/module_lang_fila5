@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "conflict consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "conflict — Consolidated Documentation"
 module: lang
 type: integration

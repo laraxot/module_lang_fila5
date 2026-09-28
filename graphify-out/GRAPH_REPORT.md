@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "GRAPH REPORT"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Graph Report - Lang  (2026-08-20)
 
 ## Corpus Check
@@ -25,8 +22,6 @@ discussions: []
 
 ## Graph Freshness
 - Built from commit: `45e35b32`
-<<<<<<< HEAD
-=======
 ---
 title: "GRAPH REPORT"
 type: note
@@ -48,7 +43,6 @@ discussions: []
 
 ## Graph Freshness
 - Built from commit: `4f8454aa`
->>>>>>> laraxot/dev
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -765,11 +759,7 @@ discussions: []
 - Best Practice
 - Validazione di Campi Array
 - Traduzione degli Attributi
-<<<<<<< HEAD
-- Laravel 12 lang path rule
-=======
 - Laravel 13 lang path rule
->>>>>>> laraxot/dev
 - Gitmodules sync session
 - Git Conflict Inventory
 - EventServiceProvider
@@ -868,8 +858,6 @@ discussions: []
 - organizzativa-money.md
 - xotbase-table-columns-enforcement.md
 - SECURITY.md
-<<<<<<< HEAD
-=======
 ---
 - Spatie\QueueableAction\QueueableAction
 - Modules\Xot\Contracts\UserContract
@@ -900,7 +888,6 @@ discussions: []
 - EventServiceProvider
 - autoload-dev
 - consolidate.sh
->>>>>>> laraxot/dev
 - components/language-switcher.blade.php
 - widgets/language-switcher.blade.php
 - vite.config.js
@@ -916,8 +903,6 @@ discussions: []
 8. `Roadmap Modulo Lang` - 17 edges
 9. `Testing Documentation` - 17 edges
 10. `WriteTranslationFileAction` - 16 edges
-<<<<<<< HEAD
-=======
 ---
 1. `Post` - 27 edges
 2. `TranslationFile` - 20 edges
@@ -929,7 +914,6 @@ discussions: []
 8. `keywords` - 10 edges
 9. `EditTranslationFile` - 9 edges
 10. `PostPolicy` - 9 edges
->>>>>>> laraxot/dev
 
 ## Surprising Connections (you probably didn't know these)
 - `makeGetAllTranslationAction()` --references--> `GetAllTranslationAction`  [EXTRACTED]
@@ -3780,15 +3764,9 @@ Nodes (4): Il Problema, Soluzione: Utilizzo di `*` e Placeholder, Utilizzo di `:
 Cohesion: 0.50
 Nodes (4): Il Problema di Base, Soluzione: Metodo `attributes()`, Traduzione degli Attributi, Utilizzo delle Traduzioni
 
-<<<<<<< HEAD
-### Community 721 - "Laravel 12 lang path rule"
-Cohesion: 0.50
-Nodes (4): Backlink, Laravel 12 lang path rule, Regola modulo, Sintesi
-=======
 ### Community 721 - "Laravel 13 lang path rule"
 Cohesion: 0.50
 Nodes (4): Backlink, Laravel 13 lang path rule, Regola modulo, Sintesi
->>>>>>> laraxot/dev
 
 ### Community 722 - "Gitmodules sync session"
 Cohesion: 0.50
@@ -3958,8 +3936,6 @@ Nodes (3): File PHP vs JSON, Vantaggi File JSON, Vantaggi File PHP
 - **7414 isolated node(s):** `composer_init.sh script`, `update.sh script`, `name`, `description`, `laraxot` (+7409 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **64 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
-<<<<<<< HEAD
-=======
 ---
 ## Communities (111 total, 8 thin omitted)
 
@@ -4063,7 +4039,6 @@ Nodes (3): autoload-dev, psr-4, Modules\\Lang\\Tests\\
 - **72 isolated node(s):** `name`, `description`, `laraxot`, `laravel`, `filament` (+67 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
->>>>>>> laraxot/dev
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -4081,9 +4056,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Post` be split into smaller, more focused modules?**
   _Cohesion score 0.05786090005844535 - nodes in this community are weakly interconnected._
 - **Should `LangHundredPercentCoverageTest.php` be split into smaller, more focused modules?**
-<<<<<<< HEAD
-  _Cohesion score 0.05893719806763285 - nodes in this community are weakly interconnected._
-=======
   _Cohesion score 0.05893719806763285 - nodes in this community are weakly interconnected._
 ---
 - **Why does `TranslationFile` connect `Modules\Xot\Contracts\UserContract` to `Illuminate\Database\Seeder`, `TranslationFileResource.php`, `Post`, `TestCase.php`?**
@@ -4100,4 +4072,3 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.07955596669750231 - nodes in this community are weakly interconnected._
 - **Should `Post` be split into smaller, more focused modules?**
   _Cohesion score 0.06565656565656566 - nodes in this community are weakly interconnected._
->>>>>>> laraxot/dev

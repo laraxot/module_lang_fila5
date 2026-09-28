@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation file management 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Gestione File di Traduzione
 
 ## Panoramica

@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Convenzioni per i Link nella Documentazione"
 module: "Lang"
 type: concept
@@ -33,10 +30,7 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
 [Regole Generali](../../Xot/project_docs/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
-<<<<<<< HEAD
-=======
 ---
->>>>>>> laraxot/dev
 ```
 
 ❌ **ERRATO**:
@@ -47,10 +41,7 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 [Best Practices](Modules/Lang/project_docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 [Regole Generali](Modules/Xot/project_docs/translations.md)
 [Best Practices](Modules/Lang/project_docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
-<<<<<<< HEAD
-=======
 ---
->>>>>>> laraxot/dev
 ```
 
 ### 2. Navigazione Tra Cartelle
@@ -65,10 +56,7 @@ Esempi:
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/project_docs/file.md)`
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/project_docs/file.md)`
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/project_docs/file.md)`
-<<<<<<< HEAD
-=======
 ---
->>>>>>> laraxot/dev
 
 ### 3. Struttura della Documentazione
 
@@ -117,10 +105,7 @@ Prima di fare commit dei documenti:
 [Convenzioni Notify](../../Notify/project_docs/TRANSLATION_CONVENTIONS.md)
 [Convenzioni Notify](../../Notify/project_docs/TRANSLATION_CONVENTIONS.md)
 [Convenzioni Notify](../../Notify/project_docs/TRANSLATION_CONVENTIONS.md)
-<<<<<<< HEAD
-=======
 ---
->>>>>>> laraxot/dev
 ```
 
 ### Da Modules/Lang/project_docs/ a docs/ nella root
@@ -128,10 +113,7 @@ Prima di fare commit dei documenti:
 [Documentazione Principale](../../../project_docs/README.md)
 [Documentazione Principale](../../../../docs/project/README.md)
 [Documentazione Principale](../../../../docs/project/README.md)
-<<<<<<< HEAD
-=======
 ---
->>>>>>> laraxot/dev
 ```
 
 ### Da Modules/Lang/project_docs/ a un altro file nella stessa cartella
@@ -139,11 +121,8 @@ Prima di fare commit dei documenti:
 [Best Practices](translation-keys-best-practices.md)
 [Best Practices](translation-keys-best-practices.md)
 [Best Practices](translation-keys-best-practices.md)
-<<<<<<< HEAD
-=======
 ---
 [Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
->>>>>>> laraxot/dev
 ```
 
 ## Vantaggi dei Percorsi Relativi
@@ -168,10 +147,7 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
 [Regole Generali](../../Xot/docs/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
-<<<<<<< HEAD
-=======
 ---
->>>>>>> laraxot/dev
 ```
 
 ❌ **ERRATO**:
@@ -182,10 +158,7 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 [Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 [Regole Generali](Modules/Xot/docs/translations.md)
 [Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
-<<<<<<< HEAD
-=======
 ---
->>>>>>> laraxot/dev
 ```
 
 ### 2. Navigazione Tra Cartelle
@@ -200,10 +173,7 @@ Esempi:
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/docs/file.md)`
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/docs/file.md)`
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/docs/file.md)`
-<<<<<<< HEAD
-=======
 ---
->>>>>>> laraxot/dev
 
 ### 3. Struttura della Documentazione
 
@@ -233,16 +203,10 @@ Per collegare documenti tra moduli diversi:
 <!-- Da Modules/ModuloA/docs/file.md a docs/file.md nella root -->
 [Link a docs root](../../../docs/file.md)
 [Link a ModuloB](../../ModuloB/docs/file.md)
-<<<<<<< HEAD
-
-<!-- Da Modules/ModuloA/docs/file.md a docs/file.md nella root -->
-[Link a docs root](../../../../docs/file.md)
-=======
 ---
 
 <!-- Da Modules/ModuloA/docs/file.md a docs/file.md nella root -->
 [Link a docs root](../../../docs/file.md)
->>>>>>> laraxot/dev
 ```
 
 ### 5. Verificare Sempre i Link
@@ -259,11 +223,8 @@ Prima di fare commit dei documenti:
 [Convenzioni Notify](translation_conventions.md)
 [Convenzioni Notify](translation_conventions.md)
 [Convenzioni Notify](translation_conventions.md)
-<<<<<<< HEAD
-=======
 ---
 [Convenzioni Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
->>>>>>> laraxot/dev
 ```
 
 ### Da Modules/Lang/docs/ a docs/ nella root
@@ -271,10 +232,7 @@ Prima di fare commit dei documenti:
 [Documentazione Principale](../../../docs/README.md)
 [Documentazione Principale](../../../../docs/README.md)
 [Documentazione Principale](../../../../docs/README.md)
-<<<<<<< HEAD
-=======
 ---
->>>>>>> laraxot/dev
 ```
 
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella
@@ -282,11 +240,8 @@ Prima di fare commit dei documenti:
 [Best Practices](translation-keys-best-practices.md)
 [Best Practices](translation-keys-best-practices.md)
 [Best Practices](translation-keys-best-practices.md)
-<<<<<<< HEAD
-=======
 ---
 [Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
->>>>>>> laraxot/dev
 ```
 
 ## Vantaggi dei Percorsi Relativi

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "README"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Raw LLM Wiki Sources
 
 Append-only staging area for source material that must be preserved before it is summarized into the local wiki.

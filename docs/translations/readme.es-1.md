@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "readme.es 1"
 type: note
@@ -11,4 +8,3 @@ qmd: "readme.es 1"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

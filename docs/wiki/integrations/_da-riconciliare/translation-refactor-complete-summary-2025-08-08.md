@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation refactor complete summary 2025 08 08"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Refactor Completo File di Traduzione - Riepilogo Finale
 
 ## Panoramica del Progetto
@@ -162,8 +159,6 @@ Tutti i campi di traduzione ora includono la struttura completa a 7 elementi:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "translation refactor complete summary 2025 08 08"
 type: note
 tags: [documentation]
@@ -172,7 +167,6 @@ updated: 2026-09-26
 qmd: "translation refactor complete summary 2025 08 08"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data Completamento**: 8 Agosto 2025  
 **Stato**: ✅ COMPLETATO  
 **Validazione**: ✅ SUPERATA  
