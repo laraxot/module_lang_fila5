@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Ottimizzazioni Super DRY + KISS - Modulo Lang"
 module: "Lang"
 type: concept

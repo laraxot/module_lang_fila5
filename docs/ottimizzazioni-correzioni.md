@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Ottimizzazioni Correzioni"
 module: "Lang"
 type: concept

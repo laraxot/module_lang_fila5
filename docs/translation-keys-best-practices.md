@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Best Practices per le Chiavi di Traduzione"
 module: "Lang"
 type: concept

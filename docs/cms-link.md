@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Collegamento al Modulo Cms"
 module: "Lang"
 type: concept

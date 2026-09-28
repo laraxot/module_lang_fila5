@@ -1,3 +1,14 @@
+---
+title: "laravel localization folio integration 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laravel localization folio integration 1"
+issues: []
+discussions: []
+---
+
 # Integration of Mcamara Laravel Localization with Laravel Folio
 
 ## Overview

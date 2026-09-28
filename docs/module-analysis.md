@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Lang Module - Comprehensive Analysis"
 module: "Lang"
 type: concept

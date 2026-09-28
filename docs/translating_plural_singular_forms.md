@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Traduzione di Forme Plurali e Singolari"
 module: "Lang"
 type: concept

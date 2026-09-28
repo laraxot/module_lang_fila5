@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Indice task - Modulo Lang"
 module: "Lang"
 type: concept

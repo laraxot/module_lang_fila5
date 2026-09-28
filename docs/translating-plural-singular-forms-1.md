@@ -1,3 +1,14 @@
+---
+title: "translating plural singular forms 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translating plural singular forms 1"
+issues: []
+discussions: []
+---
+
 # Traduzione di Forme Plurali e Singolari
 
 ## Introduzione

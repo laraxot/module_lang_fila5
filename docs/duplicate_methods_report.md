@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Report: Metodi con nome duplicato nei moduli e nei temi"
 module: "Lang"
 type: concept
