@@ -1,3 +1,14 @@
+---
+title: "phpstan mixed casting errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan mixed casting errors"
+issues: []
+discussions: []
+---
+
 # PHPStan Mixed Type Casting Errors
 
 ## Problema

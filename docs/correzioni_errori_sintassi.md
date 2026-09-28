@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Correzioni Errori Sintassi File Traduzione - Gennaio 2025"
 module: "Lang"
 type: concept

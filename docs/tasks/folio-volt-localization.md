@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Task: Folio & Volt Localization"
 module: "Lang"
 type: concept

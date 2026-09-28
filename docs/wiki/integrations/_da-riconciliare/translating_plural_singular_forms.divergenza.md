@@ -1,4 +1,7 @@
 ---
+qmd: "translating plural singular forms.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: translating_plural_singular_forms.md"
 module: Lang
 type: note

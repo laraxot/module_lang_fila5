@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Bug Fix: Duplicate Widget Instantiation in LanguageSwitcher"
 module: "Lang"
 type: concept

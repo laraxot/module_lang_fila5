@@ -1,4 +1,10 @@
 ---
+title: "lang module"
+tags: [documentation]
+created: 2026-09-26
+qmd: "lang module"
+issues: []
+discussions: []
 type: overview
 module: Lang
 sources:

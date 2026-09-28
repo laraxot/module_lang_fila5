@@ -1,3 +1,14 @@
+---
+title: "changelog 10"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "changelog 10"
+issues: []
+discussions: []
+---
+
 ## [1.0.0-dev.10](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.9...v1.0.0-dev.10) (2026-07-23)
 
 ### Bug Fixes

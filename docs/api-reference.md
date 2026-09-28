@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "📚 **API Reference Modulo Lang - Laraxot**"
 module: "Lang"
 type: concept

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Task: Cleanup Lang Docs"
 module: "Lang"
 type: concept

@@ -1,4 +1,7 @@
 ---
+qmd: "on demand pattern.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: ON-DEMAND-PATTERN.md"
 module: Lang
 type: note

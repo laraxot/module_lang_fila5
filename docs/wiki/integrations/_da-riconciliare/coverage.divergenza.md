@@ -1,4 +1,7 @@
 ---
+qmd: "coverage.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: coverage.md"
 module: Lang
 type: note

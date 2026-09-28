@@ -1,4 +1,7 @@
 ---
+qmd: "advanced language switching.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: advanced_language_switching.md"
 module: Lang
 type: note
