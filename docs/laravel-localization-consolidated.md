@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Laravel Localization (mcamara) — Consolidated Reference"
 module: "Lang"
 type: concept

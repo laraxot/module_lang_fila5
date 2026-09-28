@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "links"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: 'Links — risorse esterne'
 module: Lang
 type: reference

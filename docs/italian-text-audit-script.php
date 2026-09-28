@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 /**
  * Script per identificare testi italiani residui in file di traduzione non italiani.
  */

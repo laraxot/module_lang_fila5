@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "PERFORMANCE OPTIMIZATION.DIVERGENZA"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: PERFORMANCE-OPTIMIZATION.md"
 module: Lang
 type: note

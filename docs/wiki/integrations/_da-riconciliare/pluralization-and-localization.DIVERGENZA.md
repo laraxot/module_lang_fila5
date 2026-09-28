@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "pluralization and localization.DIVERGENZA"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: pluralization-and-localization.md"
 module: Lang
 type: note

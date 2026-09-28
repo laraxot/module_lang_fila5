@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Implementazione di Spatie Laravel Translatable nel Progetto"
 module: "Lang"
 type: concept

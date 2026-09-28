@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Integrazione avanzata: mcamara/laravel-localization + Laravel Folio"
 module: "Lang"
 type: concept

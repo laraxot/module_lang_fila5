@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "ottimizzazioni consolidated"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "ottimizzazioni — Consolidated Documentation"
 module: lang
 type: integration

@@ -1,4 +1,15 @@
 ---
+<<<<<<< HEAD
+=======
+title: "php array one key per line"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "php array one key per line"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 name: php-array-one-key-per-line
 description: "Nei file lang/PHP ogni chiave di array sta su una riga; SavePhpArrayAction non deve usare VarExporter raw"
 metadata:

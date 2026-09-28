@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Navigation Translations Completion - Global Roadmap"
 module: "Lang"
 type: concept

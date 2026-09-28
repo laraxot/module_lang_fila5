@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "translation consolidated"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "translation — Consolidated Documentation"
 module: lang
 type: integration

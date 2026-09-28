@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Regola Critica: fields.php è OBBLIGATORIO"
 module: "Lang"
 type: rule

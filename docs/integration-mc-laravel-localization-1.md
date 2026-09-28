@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "integration mc laravel localization 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "integration mc laravel localization 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Integrazione di mcamara/laravel-localization
 
 Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto <nome progetto>.

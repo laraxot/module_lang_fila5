@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "translation process 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation process 2"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Processo di Traduzione: Da Sviluppatore a Traduttore
 
 ## Indice

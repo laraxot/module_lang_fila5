@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Chaos Monkey Translation Fallbacks (Lang)"
 module: "Lang"
 type: concept

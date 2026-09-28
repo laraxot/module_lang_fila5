@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "PROJECT STRUCTURE.DIVERGENZA"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: PROJECT-STRUCTURE.md"
 module: Lang
 type: note

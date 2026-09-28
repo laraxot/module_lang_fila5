@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Integrazione di mcamara/laravel-localization con Filament"
 module: "Lang"
 type: concept

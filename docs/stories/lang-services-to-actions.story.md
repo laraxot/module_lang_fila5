@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "lang services to actions.story"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Lang: app/Services retired, no-services-rule compliance"
 type: story
 module: Lang

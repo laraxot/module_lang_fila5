@@ -1,4 +1,14 @@
 ---
+<<<<<<< HEAD
+=======
+title: "metodi duplicati analisi"
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "metodi duplicati analisi"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 module: Lang
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]

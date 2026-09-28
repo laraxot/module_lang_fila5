@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "conflict resolution edittranslationfile class 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution edittranslationfile class 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Risoluzione Conflitto EditTranslationFile.php (Classe)
 
 ## Problema Identificato

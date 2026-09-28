@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Standard per Modal Heading e Description nelle Traduzioni <nome progetto>"
 module: "Lang"
 type: rule

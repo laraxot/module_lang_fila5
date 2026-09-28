@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "translating plural singular forms.DIVERGENZA"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: translating_plural_singular_forms.md"
 module: Lang
 type: note

@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+created: 2026-09-26
+qmd: "index"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Skills Index"
 type: "index"
 tags: [skills, lang, translations, localization]

@@ -74,14 +74,18 @@ return [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
+<<<<<<< HEAD
         'name' => 'Auth',
         'plural' => 'Auth',
+=======
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
+<<<<<<< HEAD
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -100,6 +104,8 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'actions' => [
     ],

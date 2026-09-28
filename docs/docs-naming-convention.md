@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Convenzioni di Naming per Documentazione"
 module: "Lang"
 type: concept

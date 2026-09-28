@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Audit Traduzioni Inglesi - <nome progetto>"
 module: "Lang"
 type: concept

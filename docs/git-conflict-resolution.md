@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+tags: [documentation]
+qmd: "git conflict resolution"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Audit collisioni Git committate in bashscripts"
 type: concept
 module: "Lang"

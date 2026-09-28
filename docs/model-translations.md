@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Model Translations in `<nome progetto>`"
 module: "Lang"
 type: concept

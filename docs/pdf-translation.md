@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "PDF Translation Guide - HTML2PDF Integration"
 module: "Lang"
 type: concept

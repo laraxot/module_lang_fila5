@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "cms link 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cms link 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Collegamento al Modulo Cms
 
 Questo documento descrive le relazioni e i collegamenti tra il modulo Lang e il modulo Cms per quanto riguarda le traduzioni e l'internazionalizzazione.
@@ -12,6 +26,17 @@ Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzi
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "cms link 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cms link 1"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ### Nota Importante
 Quando aggiungi nuovi componenti Filament nel modulo Cms, ricorda di:
 1. NON utilizzare mai `->label()` direttamente

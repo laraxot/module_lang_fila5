@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Correzioni Traduzioni Navigation - Modulo Lang"
 module: "Lang"
 type: concept
