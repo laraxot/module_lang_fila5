@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "phpstan fixes"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "PHPStan Compliance Fixes"
 type: documentation
 tags: [phpstan, fixes, compliance]

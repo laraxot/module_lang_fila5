@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "translation file merge function"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation file merge function"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Translation File Merge Function
 
 ## Purpose

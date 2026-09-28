@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "INDEX.DIVERGENZA"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: INDEX.md"
 module: Lang
 type: note

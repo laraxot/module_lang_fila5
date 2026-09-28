@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "volt localization integration 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "volt localization integration 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Integrazione Livewire Volt + mcamara/laravel-localization
 
 ## 1. Obiettivo
@@ -8,6 +22,17 @@
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "volt localization integration 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "volt localization integration 1"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 2. Setup di base
 
 ### 2.1. Installazione pacchetti

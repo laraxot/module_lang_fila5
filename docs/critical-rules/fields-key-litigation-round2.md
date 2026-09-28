@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "FURIOUS LITIGATION: Why 'fields' Key is SACRED and IMMUTABLE"
 module: "Lang"
 type: concept

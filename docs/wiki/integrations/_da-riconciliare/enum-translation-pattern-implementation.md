@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+tags: [documentation]
+qmd: "enum translation pattern implementation"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Enum Translation Pattern - Implementazione Regola Critica"
 type: concept
 module: "Lang"

@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Regole per i Namespace delle View nei Widget"
 module: "Lang"
 type: concept

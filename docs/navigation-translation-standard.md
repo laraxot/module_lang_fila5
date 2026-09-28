@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "navigation translation standard"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Standard per le traduzioni di navigazione Filament"
 type: standard
 module: Lang

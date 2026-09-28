@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "docs index audit.story"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Lang: audit e ricostruzione indice docs/index.md"
 type: story
 module: Lang

@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "working with locales.DIVERGENZA"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: working_with_locales.md"
 module: Lang
 type: note

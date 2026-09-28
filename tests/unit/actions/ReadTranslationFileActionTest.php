@@ -162,8 +162,13 @@ describe('Read Translation File Action', function (): void {
         $phpContent = $action->toPhp($translations);
         $lines = explode("\n", $phpContent);
 
+<<<<<<< HEAD
         $parentLine = array_filter($lines, fn ($line) => str_contains($line, "'parent'"));
         $childLine = array_filter($lines, fn ($line) => str_contains($line, "'child'"));
+=======
+        $parentLine = array_filter($lines, fn (string $line) => str_contains($line, "'parent'"));
+        $childLine = array_filter($lines, fn (string $line) => str_contains($line, "'child'"));
+>>>>>>> laraxot/dev
 
         Assert::assertStringStartsWith('    ', (string) current($parentLine));
         Assert::assertStringStartsWith('        ', (string) current($childLine));

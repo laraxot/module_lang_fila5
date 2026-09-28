@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "file naming.DIVERGENZA"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: file-naming.md"
 module: Lang
 type: note

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "MCAMARA IMPLEMENTATION GUIDE"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "MCAMARA IMPLEMENTATION GUIDE"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Guida all'Implementazione di mcamara/laravel-localization
 
 ## Indice

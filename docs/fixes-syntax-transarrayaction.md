@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Fix Errore Sintassi TransArrayAction"
 module: "Lang"
 type: concept

@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Gestione Traduzioni Contenuti JSON"
 module: "Lang"
 type: concept

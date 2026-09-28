@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Massimizzare il livello di confidenza"
 module: "Lang"
 type: how-to

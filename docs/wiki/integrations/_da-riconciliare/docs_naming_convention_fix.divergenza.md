@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "docs naming convention fix.divergenza"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: docs_naming_convention_fix.md"
 module: Lang
 type: note

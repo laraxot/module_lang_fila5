@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Regole per le Traduzioni in Filament"
 module: "Lang"
 type: concept

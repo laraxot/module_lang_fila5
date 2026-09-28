@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "entity"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Entity Name"
 type: entity
 sources: ["raw/articles/source-filename.md"]
