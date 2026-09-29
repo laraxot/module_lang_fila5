@@ -736,10 +736,17 @@ return [
             'description' => 'title',
         ],
         'txt' => [
+<<<<<<< .merge_file_RVMLc0
             'label' => 'Text',
             'placeholder' => 'Text',
             'helper_text' => 'Text',
             'description' => 'Text',
+=======
+            'label' => 'txt',
+            'placeholder' => 'txt',
+            'helper_text' => 'txt',
+            'description' => 'txt',
+>>>>>>> .merge_file_btQKAc
         ],
         'id_tbl' => [
             'label' => 'id_tbl',
