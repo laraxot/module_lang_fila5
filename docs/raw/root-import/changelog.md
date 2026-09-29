@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Changelog"
 module: "Lang"
 type: concept

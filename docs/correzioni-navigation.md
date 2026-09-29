@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Correzioni Pattern '.navigation' - Gennaio 2025"
 module: "Lang"
 type: concept

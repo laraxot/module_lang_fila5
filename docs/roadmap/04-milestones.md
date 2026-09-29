@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Milestones - Lang"
 module: "Lang"
 type: concept

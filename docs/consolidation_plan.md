@@ -1,14 +1,3 @@
----
-title: "consolidation plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "consolidation plan"
-issues: []
-discussions: []
----
-
 # Lang Module Docs Consolidation Plan
 
 **Phase:** 2d Aggressive Merge  
@@ -18,14 +7,6 @@ discussions: []
 
 ---
 
-title: "consolidation plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "consolidation plan"
-issues: []
-discussions: []
 ## Quick Stats
 
 | Category | Current | Target | Action |

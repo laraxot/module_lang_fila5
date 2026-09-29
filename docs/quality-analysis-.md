@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Quality Analysis Report - Lang Module"
 module: "Lang"
 type: concept

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Dependencies (Module Lang)"
 module: "Lang"
 type: concept
