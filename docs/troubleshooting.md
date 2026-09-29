@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "🔧 **Troubleshooting Modulo Lang - Laraxot**"
 module: "Lang"
 type: concept

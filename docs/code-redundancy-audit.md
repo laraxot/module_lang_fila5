@@ -1,7 +1,4 @@
 ---
-qmd: "code redundancy audit"
-issues: []
-discussions: []
 title: "Code redundancy audit — Lang"
 type: source
 status: draft

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Fasi di sviluppo - Lang Module"
 module: "Lang"
 type: concept

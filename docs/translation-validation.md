@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Guida Completa alla Validazione delle Traduzioni - <nome progetto>"
 module: "Lang"
 type: concept

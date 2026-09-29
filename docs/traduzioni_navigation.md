@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Traduzioni con '.navigation' - Audit Completo 2025"
 module: "Lang"
 type: concept

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Redundancy Report — Modulo Lang"
 module: "Lang"
 type: concept

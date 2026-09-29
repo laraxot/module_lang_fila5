@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Integration of Mcamara Laravel Localization with Laravel Folio"
 module: "Lang"
 type: concept

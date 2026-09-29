@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Best Practices per Laravel Translatable"
 module: "Lang"
 type: concept

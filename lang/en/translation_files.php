@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'fields' => [
         'id' => [
@@ -12,6 +10,12 @@ return [
         ],
         'created_at' => [
             'label' => 'created_at',
+        ],
+        'key' => [
+            'label' => 'key',
+        ],
+        'path' => [
+            'label' => 'path',
         ],
     ],
 ];

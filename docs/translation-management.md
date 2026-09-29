@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Gestione Traduzioni - Regole Critiche"
 module: "Lang"
 type: concept

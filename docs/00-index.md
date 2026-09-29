@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "📚 **Indice Documentazione Modulo Lang**"
 module: "Lang"
 type: concept
@@ -79,8 +77,6 @@ related:
 ## 🔗 **Moduli Correlati**
 - [Xot](../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
-- [agents.md](../../../../agents.md) - Project guidelines
----
 - [AGENTS.md](../../../../AGENTS.md) - Project guidelines
 
 ---

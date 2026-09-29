@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Checklist qualità - Lang Module"
 module: "Lang"
 type: concept

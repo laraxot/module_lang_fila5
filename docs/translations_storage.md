@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Storage delle Traduzioni: PHP vs JSON"
 module: "Lang"
 type: concept

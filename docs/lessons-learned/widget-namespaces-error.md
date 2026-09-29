@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Lesson Learned: Errore Namespace Widget di Autenticazione"
 module: "Lang"
 type: concept

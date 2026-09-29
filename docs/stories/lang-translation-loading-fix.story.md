@@ -1,7 +1,4 @@
 ---
-qmd: "lang translation loading fix.story"
-issues: []
-discussions: []
 title: "Lang: fix array_replace_recursive TypeError in FileLoader"
 type: story
 module: Lang

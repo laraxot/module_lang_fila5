@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Correzioni PHPStan per Modulo Lang"
 module: "Lang"
 type: concept

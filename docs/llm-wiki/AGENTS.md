@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Lang {{TYPE^}} LLM Wiki Agent Instructions"
 module: "Lang"
 type: concept

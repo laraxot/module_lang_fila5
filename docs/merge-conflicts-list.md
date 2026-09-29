@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Merge conflict markers — file list"
 module: "Lang"
 type: concept

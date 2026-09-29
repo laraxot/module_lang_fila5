@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Risoluzione Conflitto LangServiceProvider"
 module: "Lang"
 type: concept

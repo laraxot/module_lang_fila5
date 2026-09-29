@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Risks and dependencies (Module Lang)"
 module: "Lang"
 type: concept

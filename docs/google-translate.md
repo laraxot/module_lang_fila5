@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Google Translate"
 module: "Lang"
 type: concept
