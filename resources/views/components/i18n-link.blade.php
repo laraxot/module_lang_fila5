@@ -1,7 +1,3 @@
-<?php
-
-declare(strict_types=1);
-?>
 @props([
     'url' => null,
     'locale' => null,

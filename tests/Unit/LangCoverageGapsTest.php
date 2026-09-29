@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 namespace Modules\Lang\Tests\Unit;
 
 use Filament\Actions\Action;
@@ -261,12 +262,14 @@ describe('Lang coverage gaps closeout', function (): void {
         Assert::assertSame([], $edit->schemaFromRecord((object) ['content' => 'x']));
     });
 
-    test('LanguageSwitcherWidget falls back when getLocalizedURL is not a string', function (): void {
-        LaravelLocalization::shouldReceive('getLocalizedURL')
-            ->andReturn(false);
-
+    test('LanguageSwitcherWidget getLanguageUrl handles locale-less and prefixed urls', function (): void {
+        app()->instance('request', Request::create('http://localhost/', 'GET'));
+        app()->setLocale('it');
         $widget = new LanguageSwitcherWidget();
-        Assert::assertSame('/en', $widget->getLanguageUrl('en'));
+        Assert::assertStringContainsString('/en', $widget->getLanguageUrl('en'));
+
+        app()->instance('request', Request::create('http://localhost/it/demo', 'GET'));
+        Assert::assertStringContainsString('/en/', $widget->getLanguageUrl('en'));
     });
 
     test('Post accessors persist when model has key', function (): void {

@@ -1,4 +1,7 @@
 ---
+qmd: "conflict consolidated"
+issues: []
+discussions: []
 title: "conflict — Consolidated Documentation"
 module: lang
 type: integration

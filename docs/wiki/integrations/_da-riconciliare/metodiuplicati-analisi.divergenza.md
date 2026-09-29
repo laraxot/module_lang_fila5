@@ -1,4 +1,7 @@
 ---
+qmd: "metodiuplicati analisi.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: metodiuplicati-analisi.md"
 module: Lang
 type: note

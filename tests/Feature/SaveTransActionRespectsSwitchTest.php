@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Illuminate\Support\Facades\Config;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Tests\TestCase;

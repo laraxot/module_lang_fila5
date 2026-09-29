@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Performance"
 module: "Lang"
 type: concept

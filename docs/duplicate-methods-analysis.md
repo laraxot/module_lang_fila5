@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Analisi Metodi Duplicati - Modulo Lang"
 module: "Lang"
 type: concept

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Standardizzazione Traduzioni Modulo Notify"
 module: "Lang"
 type: concept

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Model/Factory/Seeder Audit"
 module: "Lang"
 type: concept
