@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Task: Lang Filament v5 Alignment (Clusters)"
 module: "Lang"
 type: concept

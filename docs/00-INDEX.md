@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "📚 **Indice Documentazione Modulo Lang**"
 module: "Lang"
 type: concept

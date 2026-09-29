@@ -1,9 +1,4 @@
 ---
-type: note
-updated: 2026-09-26
-qmd: "SCHEMA"
-issues: []
-discussions: []
 title: Wiki Schema
 description: Schema e convenzioni per la manutenzione della wiki
 tags:

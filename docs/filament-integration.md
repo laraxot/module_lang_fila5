@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Integrazione di mcamara/laravel-localization con Filament"
 module: "Lang"
 type: concept

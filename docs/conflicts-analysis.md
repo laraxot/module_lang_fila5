@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Analisi Conflitti - README.md"
 module: "Lang"
 type: concept

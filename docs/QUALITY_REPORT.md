@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Quality Report — Lang"
 type: report
 tags: [quality, phpstan, pest, coverage]

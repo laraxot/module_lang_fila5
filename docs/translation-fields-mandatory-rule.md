@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Regola Critica: Sezione 'fields' Obbligatoria nelle Traduzioni"
 module: "Lang"
 type: rule

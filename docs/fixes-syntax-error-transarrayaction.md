@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Fix Errore Sintassi TransArrayAction"
 module: "Lang"
 type: concept

@@ -1,12 +1,4 @@
 ---
-title: "helper text empty when redundant"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "helper text empty when redundant"
-issues: []
-discussions: []
 name: helper-text-empty-when-redundant
 description: "helper_text va svuotato quando coincide con la chiave dell'array (nome campo non tradotto); label/placeholder/description restano invariati"
 metadata:

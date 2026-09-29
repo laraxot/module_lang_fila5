@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Troubleshooting definitivo permessi file_put_contents su lang_service.php"
 module: "Lang"
 type: concept

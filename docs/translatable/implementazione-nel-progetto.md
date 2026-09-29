@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Implementazione di Spatie Laravel Translatable nel Progetto"
 module: "Lang"
 type: concept

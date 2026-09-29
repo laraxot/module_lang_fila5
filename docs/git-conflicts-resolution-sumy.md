@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Git Conflicts Resolution Sumy"
 module: "Lang"
 type: concept

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Refactor Completo File di Traduzione - Riepilogo Finale"
 module: "Lang"
 type: concept

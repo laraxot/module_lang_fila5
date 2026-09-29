@@ -1,28 +1,9 @@
----
-title: "CHANGELOG"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "CHANGELOG"
-issues: []
-discussions: []
----
-
 ## [1.0.0-dev.15](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.14...v1.0.0-dev.15) (2026-08-25)
 
 ### Bug Fixes
 
 * **phpstan:** analyse Modules a zero errori ([31903cb](https://github.com/laraxot/module_lang_fila5/commit/31903cbdf7a314ccf1d800dadcbe20f08a1e1995))
----
-title: "CHANGELOG"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "CHANGELOG"
-issues: []
-discussions: []
+
 ## [1.0.0-dev.13](https://github.com/laraxot/module_lang_fila5/compare/v1.0.0-dev.12...v1.0.0-dev.13) (2026-08-05)
 
 ### Bug Fixes

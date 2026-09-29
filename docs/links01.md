@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Links01"
 module: "Lang"
 type: concept

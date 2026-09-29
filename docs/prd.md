@@ -1,7 +1,4 @@
 ---
-qmd: "prd"
-issues: []
-discussions: []
 title: "Product Requirements Document (PRD) - Lang Module"
 module: "Lang"
 type: concept

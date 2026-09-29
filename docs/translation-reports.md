@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Translation Module PDF Reports"
 module: "Lang"
 type: concept

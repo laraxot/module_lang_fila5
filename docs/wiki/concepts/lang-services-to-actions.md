@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Lang Services → Actions"
 type: concept
 tags: [lang, actions, queueable-action, translator, migration]

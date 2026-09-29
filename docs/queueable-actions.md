@@ -1,7 +1,4 @@
 ---
-qmd: "queueable actions"
-issues: []
-discussions: []
 title: "Queueable Actions — Lang Module"
 type: concept
 created: 2026-07-12

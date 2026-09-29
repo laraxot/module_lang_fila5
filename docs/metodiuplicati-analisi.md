@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION"
 module: "Lang"
 type: concept

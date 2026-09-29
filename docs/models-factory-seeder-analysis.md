@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Analisi Modelli, Factory e Seeder - Modulo Lang"
 module: "Lang"
 type: concept

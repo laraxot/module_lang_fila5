@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Helper Text Audit Report"
 module: "Lang"
 type: concept

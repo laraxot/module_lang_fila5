@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Traduzione dei Messaggi di Validazione"
 module: "Lang"
 type: concept

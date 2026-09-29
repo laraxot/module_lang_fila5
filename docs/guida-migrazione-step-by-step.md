@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Guida Migrazione Step By Step"
 module: "Lang"
 type: concept

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Case Sensitivity Rules - Lang Module"
 module: "Lang"
 type: rule

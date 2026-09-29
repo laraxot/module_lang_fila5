@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "English Translations Added for <nome progetto> Widgets"
 module: "Lang"
 type: concept
