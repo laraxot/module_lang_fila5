@@ -6,6 +6,7 @@ namespace Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
+use Filament\Tables\Columns\TextColumn;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Resources\TranslationFileResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -13,6 +14,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListTranslationFiles extends XotBaseListRecords
 {
     protected static string $resource = TranslationFileResource::class;
+   
 
     /**
      * @return array<string, Action|ActionGroup>

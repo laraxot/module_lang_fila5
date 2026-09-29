@@ -1,4 +1,7 @@
 ---
+qmd: "release marketing standard.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: release-marketing-standard.md"
 module: Lang
 type: note

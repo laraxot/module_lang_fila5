@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Illuminate\Support\Facades\DB;
 use Modules\Lang\Database\Factories\TranslationFactory;
 use Modules\Lang\Models\Translation;

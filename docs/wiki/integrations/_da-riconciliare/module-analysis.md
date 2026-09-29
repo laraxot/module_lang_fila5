@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Lang Module - Comprehensive Analysis"
 module: "Lang"
 type: concept
@@ -72,6 +74,7 @@ The Lang module provides comprehensive localization and translation management:
 - **Cms**: Multi-language content
 - **Quaeris**: Survey translation
 - **modulo questionari**: Survey translation
+---
 - **Limesurvey**: Question translation
 - **Xot**: Base localization infrastructure
 - **Filament**: Translation management interface

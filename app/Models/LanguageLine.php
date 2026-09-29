@@ -14,7 +14,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property int $id
  * @property string $group
  * @property string $key
- * @property array<string, string> $text
+ * @property array<array-key, mixed> $text
  * @property string $locale
  * @property string|null $created_by
  * @property string|null $updated_by

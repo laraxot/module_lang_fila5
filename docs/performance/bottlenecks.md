@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Lang Module Performance Bottlenecks"
 module: "Lang"
 type: concept

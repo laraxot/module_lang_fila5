@@ -1,4 +1,13 @@
 ---
+title: "docs naming convention fix duplicate"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "docs naming convention fix duplicate"
+issues: []
+discussions: []
+---
 title: "Correzione Convenzione Naming Cartelle Docs - Gennaio 2025"
 module: "Lang"
 type: concept

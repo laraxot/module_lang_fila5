@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Task: Lang PHPStan Level 10"
 module: "Lang"
 type: concept
