@@ -195,9 +195,6 @@ resources/lang
 
 # docs/chat — coordination notes replaced by BMAD stories in docs/bmad/
 docs/chat
-<<<<<<< .merge_file_Ve0BIu
 
 # Laraxot — app/Application forbidden (belongs to laravel/app/, not module app/)
 app/Application
-=======
->>>>>>> .merge_file_sZ1wqU

@@ -738,17 +738,10 @@ return [
             'description' => 'title',
         ],
         'txt' => [
-<<<<<<< .merge_file_WRGo3g
             'label' => 'Testo',
             'placeholder' => 'Testo',
             'helper_text' => 'Testo',
             'description' => 'Testo',
-=======
-            'label' => 'txt',
-            'placeholder' => 'txt',
-            'helper_text' => 'txt',
-            'description' => 'txt',
->>>>>>> .merge_file_bsxrum
         ],
         'id_tbl' => [
             'label' => 'id_tbl',
