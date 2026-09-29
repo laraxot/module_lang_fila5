@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "BMAD Method v6.3 operativo nel progetto"
 module: "Lang"
 type: concept

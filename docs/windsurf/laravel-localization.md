@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Laravel Localization Metadata"
 module: "Lang"
 type: concept

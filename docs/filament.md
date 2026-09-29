@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Filament nel modulo Lang"
 module: "Lang"
 type: concept

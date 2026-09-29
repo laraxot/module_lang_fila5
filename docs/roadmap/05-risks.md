@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Risks - Lang"
 module: "Lang"
 type: concept

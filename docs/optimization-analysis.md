@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Analisi di Ottimizzazione - Modulo Lang"
 module: "Lang"
 type: concept

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "LangBase Classes - Requisiti e Pattern"
 module: "Lang"
 type: concept

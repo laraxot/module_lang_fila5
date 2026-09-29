@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Registrazione Traduzioni Temi - Standard Laraxot"
 module: "Lang"
 type: concept

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Gestione delle Traduzioni in Laravel"
 module: "Lang"
 type: concept

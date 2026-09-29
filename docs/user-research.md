@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Lang Module - User Research"
 module: "Lang"
 type: concept

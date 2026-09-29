@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Correzione Errori di Sintassi nei File di Traduzione"
 module: "Lang"
 type: concept

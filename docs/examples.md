@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "💡 **Esempi Pratici Modulo Lang - Laraxot**"
 module: "Lang"
 type: concept

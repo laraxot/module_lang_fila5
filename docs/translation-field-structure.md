@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>"
 module: "Lang"
 type: concept

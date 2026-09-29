@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Risoluzione Conflitto AutoLabelAction"
 module: "Lang"
 type: concept

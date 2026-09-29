@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Ponytail audit — Lang"
 module: "Lang"
 type: concept
