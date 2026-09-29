@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_buiheD
 <<<<<<< .merge_file_JVDgJY
 ---
 title: "Lang — architecture"
@@ -180,6 +181,8 @@ related:
 - [Setup guide](./setup-guide.md)
 - [BMAD method (Xot)](../../Xot/docs/bmad-method.md)
 =======
+=======
+>>>>>>> .merge_file_6jDR9m
 # Architettura del modulo Lang
 
 ## Overview
@@ -213,4 +216,7 @@ Interfacce per l'iniezione di dipendenze.
 - Filament Widget invece di Livewire
 - Array una chiave per riga
 - Schema-driven Forms (XotBaseSchemaWidget)
+<<<<<<< .merge_file_buiheD
 >>>>>>> .merge_file_YH6c8f
+=======
+>>>>>>> .merge_file_6jDR9m
