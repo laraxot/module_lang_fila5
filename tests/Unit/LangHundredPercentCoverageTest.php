@@ -53,6 +53,8 @@ use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslatio
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\ListTranslationFiles;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Tables\TranslationFilesTable;
 use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
+use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
+use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
 use Modules\Lang\Models\BaseModel;
 use Modules\Lang\Models\BaseModelLang;
 use Modules\Lang\Models\LanguageLine;
@@ -713,6 +715,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         Assert::assertSame('lang::components.empty', $view->name());
     });
 
+<<<<<<< .merge_file_u52dg5
     test('LanguageSwitcherWidget expose data on current locale', function (): void {
         app()->setLocale('it');
         $widget = new LanguageSwitcherWidget();
@@ -723,6 +726,27 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         /** @var Collection<int, array{code: string}> $locales */
         $locales = $data['available_locales'];
         Assert::assertArrayHasKey('en', $locales->keyBy('code')->all());
+=======
+    test('Livewire Change and Switcher mount and render', function (): void {
+        config([
+            'laravellocalization.supportedLocales' => [
+                'it' => ['name' => 'Italiano', 'script' => 'Latn', 'native' => 'Italiano', 'regional' => 'it_IT'],
+                'en' => ['name' => 'English', 'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB'],
+            ],
+        ]);
+        app()->setLocale('it');
+
+        $change = new LangChange();
+        $change->mount();
+        Assert::assertSame('it', $change->lang);
+        Assert::assertArrayHasKey('en', $change->langs);
+        Assert::assertInstanceOf(View::class, $change->render());
+
+        $switcher = new LangSwitcher();
+        $switcher->mount();
+        Assert::assertSame('it', $switcher->lang);
+        Assert::assertInstanceOf(View::class, $switcher->render());
+>>>>>>> .merge_file_5NBmiH
     });
 
     test('LangField cast get and set via host model', function (): void {
