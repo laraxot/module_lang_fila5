@@ -1,7 +1,4 @@
 ---
-qmd: "concept"
-issues: []
-discussions: []
 title: "Untitled Concept"
 type: concept
 sources: ["raw/articles/source-filename.md"]
