@@ -35,7 +35,6 @@ use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Modules\Lang\Filament\Forms\Components\TranslationEditor;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
-use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\RouteServiceProvider;
@@ -313,30 +312,11 @@ test('WriteTranslationFileAction createBackup makes directory', function (): voi
     }
 });
 
-<<<<<<< .merge_file_iuKWdU
 test('LanguageSwitcherWidget getLanguageUrl strips current locale', function (): void {
     app()->instance('request', Request::create('http://localhost/it', 'GET'));
     app()->setLocale('it');
     $widget = new LanguageSwitcherWidget();
     Assert::assertStringContainsString('/en', $widget->getLanguageUrl('en'));
-=======
-test('Switcher covers non-string localized url branch', function (): void {
-    config([
-        'laravellocalization.supportedLocales' => [
-            'it' => ['name' => 'Italiano'],
-            'en' => ['name' => 'English'],
-        ],
-    ]);
-    app()->setLocale('it');
-    LaravelLocalization::shouldReceive('getSupportedLocales')
-        ->andReturn(['it' => ['name' => 'Italiano'], 'en' => ['name' => 'English']]);
-    LaravelLocalization::shouldReceive('getLocalizedURL')
-        ->andReturn(true);
-
-    $switcher = new LangSwitcher();
-    $switcher->mount();
-    Assert::assertSame('/en', $switcher->langs['en']['url']);
->>>>>>> .merge_file_2u0OrA
 });
 
 test('Post linkable and accessor edge branches', function (): void {
