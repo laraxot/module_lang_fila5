@@ -1,3 +1,14 @@
+---
+title: "enum translation pattern implementation 2025 01 27"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "enum translation pattern implementation 2025 01 27"
+issues: []
+discussions: []
+---
+
 # Enum Translation Pattern - Implementazione Regola Critica
 
 ## Data: 27 Gennaio 2025
