@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Analisi Approfondita del Modulo Lang"
 module: "Lang"
 type: concept

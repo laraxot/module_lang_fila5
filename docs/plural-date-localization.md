@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Gestione di Forme Plurali e Localizzazione di Date/Valute in Laravel"
 module: "Lang"
 type: concept

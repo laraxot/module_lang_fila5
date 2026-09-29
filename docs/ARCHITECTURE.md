@@ -1,7 +1,4 @@
 ---
-qmd: "ARCHITECTURE"
-issues: []
-discussions: []
 title: "Lang Module Architecture"
 type: architecture
 tags: [module, architecture, lang]

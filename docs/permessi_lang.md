@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Gestione Permessi e Proprietà per File di Lingua (`lang/it/`)"
 module: "Lang"
 type: concept

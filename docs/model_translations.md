@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Model Translations in `saluteora`"
 module: "Lang"
 type: concept

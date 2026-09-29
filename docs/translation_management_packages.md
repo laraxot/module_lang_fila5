@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Translation Management Packages"
 module: "Lang"
 type: concept

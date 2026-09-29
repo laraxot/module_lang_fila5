@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "📚 **Best Practices Modulo Lang - Laraxot**"
 module: "Lang"
 type: concept

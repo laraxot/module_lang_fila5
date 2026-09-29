@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Regole Critiche per la Preservazione delle Traduzioni"
 module: "Lang"
 type: concept
