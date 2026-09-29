@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Roadmap Modulo Lang"
 module: "Lang"
 type: concept

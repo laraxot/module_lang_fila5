@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "mcamara/laravel-localization Deep Dive (<nome progetto>)"
 module: "Lang"
 type: concept

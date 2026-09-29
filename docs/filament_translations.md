@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Regole per le Traduzioni in Filament"
 module: "Lang"
 type: concept

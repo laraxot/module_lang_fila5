@@ -1,14 +1,3 @@
----
-title: "readme.es"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme.es"
-issues: []
-discussions: []
----
-
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>
   
@@ -24,14 +13,6 @@ discussions: []
 
 ---
 
-title: "readme.es"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme.es"
-issues: []
-discussions: []
 # 🚀 Bienvenido a Laraxot PTVX
 
 > **La plataforma Laravel de nueva generación: modular, multi-tenant y type-safe para proyectos SaaS y empresariales ambiciosos.**

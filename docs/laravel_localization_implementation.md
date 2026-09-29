@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Implementazione della Localizzazione "
 module: "Lang"
 type: concept

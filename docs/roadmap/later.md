@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Later (Module Lang)"
 module: "Lang"
 type: concept

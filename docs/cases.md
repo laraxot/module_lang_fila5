@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Case-Insensitive File Conflicts"
 module: "Lang"
 type: concept

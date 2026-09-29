@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Modulo Lang"
 module: "Lang"
 type: concept

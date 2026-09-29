@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "filament"
 module: "Lang"
 type: concept

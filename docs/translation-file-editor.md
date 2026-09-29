@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Editor File di Traduzione"
 module: "Lang"
 type: concept

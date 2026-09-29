@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Now (Module Lang)"
 module: "Lang"
 type: concept

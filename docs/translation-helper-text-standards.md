@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Standard per helper_text nelle Traduzioni <nome progetto>"
 module: "Lang"
 type: rule

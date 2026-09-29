@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Laravel Folio + Volt - Best Practices and Patterns Analysis"
 module: "Lang"
 type: concept

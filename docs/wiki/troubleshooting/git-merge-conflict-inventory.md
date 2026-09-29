@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Git Conflict Inventory"
 module: "Lang"
 type: concept

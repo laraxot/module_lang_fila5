@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Traduzioni nel Progetto"
 module: "Lang"
 type: concept
