@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Processo di Traduzione: Da Sviluppatore a Traduttore"
 module: "Lang"
 type: concept

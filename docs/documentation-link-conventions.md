@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Convenzioni per i Link nella Documentazione"
 module: "Lang"
 type: concept

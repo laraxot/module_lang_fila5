@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Risoluzione Conflitti - Lang"
 module: "Lang"
 type: concept

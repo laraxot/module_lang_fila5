@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Traduzioni Automatiche con LangServiceProvider"
 module: "Lang"
 type: concept

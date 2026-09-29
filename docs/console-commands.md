@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Console Commands - Lang Module"
 module: "Lang"
 type: concept

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Migrazione Filament"
 module: "Lang"
 type: concept

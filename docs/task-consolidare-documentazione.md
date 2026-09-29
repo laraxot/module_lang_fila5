@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Task: Consolidare Documentazione - Lang"
 module: "Lang"
 type: concept

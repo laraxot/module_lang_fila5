@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Correzioni Traduzioni Navigation - Modulo Lang"
 module: "Lang"
 type: concept

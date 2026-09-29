@@ -1,14 +1,3 @@
----
-title: "roadmap miglioramenti"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roadmap miglioramenti"
-issues: []
-discussions: []
----
-
 # Lang — cosa migliorerei se questo modulo fosse mio per un mese
 
 > I numeri misurati sono in [`docs/cosa-migliorare.md`](cosa-migliorare.md),
@@ -72,13 +61,5 @@ criterio scritto, non contro la sensazione di chi la sta aggiungendo quel
 giorno.
 
 ---
-title: "roadmap miglioramenti"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roadmap miglioramenti"
-issues: []
-discussions: []
 *Analisi generata il 2026-09-01, dati verificati sul codice (grep/find), non
 sulla documentazione esistente.*

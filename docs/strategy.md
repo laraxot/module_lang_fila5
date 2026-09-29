@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Product Strategy: Lang Module"
 module: "Lang"
 type: concept

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "AI Methodologies Handbook"
 module: "Lang"
 type: concept

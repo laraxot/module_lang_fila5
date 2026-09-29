@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Integrazione avanzata: mcamara/laravel-localization + Laravel Folio"
 module: "Lang"
 type: concept
