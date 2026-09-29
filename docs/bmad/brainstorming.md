@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_8eTBQY
 <<<<<<< .merge_file_rFzOC4
 ---
 title: "Lang — brainstorming"
@@ -76,6 +77,8 @@ related:
 - [Epic translation infra](./epics/translation-infrastructure.epic.md)
 - [Module opportunities (shard)](./brainstorming/module-opportunities.md)
 =======
+=======
+>>>>>>> .merge_file_rHG7ee
 # Brainstorming - Modulo Lang
 
 ## Idee iniziali
@@ -98,4 +101,7 @@ related:
 
 - [DOMANDA 1]
 - [DOMANDA 2]
+<<<<<<< .merge_file_8eTBQY
 >>>>>>> .merge_file_BELBYc
+=======
+>>>>>>> .merge_file_rHG7ee
