@@ -32,7 +32,8 @@ use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Modules\Lang\Filament\Forms\Components\TranslationEditor;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
-use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
+use Modules\Lang\Http\Livewire\Lang\Change as LangChange;
+use Modules\Lang\Http\Livewire\Lang\Switcher as LangSwitcher;
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
@@ -262,6 +263,7 @@ describe('Lang coverage gaps closeout', function (): void {
         Assert::assertSame([], $edit->schemaFromRecord((object) ['content' => 'x']));
     });
 
+<<<<<<< .merge_file_lrOuOy
     test('LanguageSwitcherWidget getLanguageUrl handles locale-less and prefixed urls', function (): void {
         app()->instance('request', Request::create('http://localhost/', 'GET'));
         app()->setLocale('it');
@@ -270,6 +272,32 @@ describe('Lang coverage gaps closeout', function (): void {
 
         app()->instance('request', Request::create('http://localhost/it/demo', 'GET'));
         Assert::assertStringContainsString('/en/', $widget->getLanguageUrl('en'));
+=======
+    test('Livewire Change and Switcher handle non-string localized urls', function (): void {
+        config([
+            'laravellocalization.supportedLocales' => [
+                'it' => ['name' => 'Italiano', 'script' => 'Latn', 'native' => 'Italiano', 'regional' => 'it_IT'],
+                'en' => ['name' => 'English', 'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB'],
+            ],
+        ]);
+        app()->setLocale('it');
+
+        LaravelLocalization::shouldReceive('getSupportedLocales')
+            ->andReturn([
+                'it' => ['name' => 'Italiano'],
+                'en' => ['name' => 'English'],
+            ]);
+        LaravelLocalization::shouldReceive('getLocalizedURL')
+            ->andReturn(false);
+
+        $change = new LangChange();
+        $change->mount();
+        Assert::assertSame('/en', $change->langs['en']['url']);
+
+        $switcher = new LangSwitcher();
+        $switcher->mount();
+        Assert::assertFalse($switcher->langs['en']['url']);
+>>>>>>> .merge_file_p1FsIS
     });
 
     test('Post accessors persist when model has key', function (): void {
