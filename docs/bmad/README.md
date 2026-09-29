@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_AkI2i7
 <<<<<<< .merge_file_wPU1Wq
 ---
 title: "Lang — BMAD"
@@ -132,6 +133,8 @@ related:
 - [Setup guide](./setup-guide.md)
 - [BMAD method (Xot)](../../Xot/docs/bmad-method.md)
 =======
+=======
+>>>>>>> .merge_file_8dUBtv
 # Lang Module
 
 Modulo del sistema PTVX per la gestione delle risorse umane e valutazione delle performance nelle pubbliche amministrazioni.
@@ -165,4 +168,7 @@ Il modulo Lang si occupa di [DESCRIZIONE DA COMPLETARE].
 ## Licenza
 
 Proprietario - Laraxot
+<<<<<<< .merge_file_AkI2i7
 >>>>>>> .merge_file_l9hMwG
+=======
+>>>>>>> .merge_file_8dUBtv
