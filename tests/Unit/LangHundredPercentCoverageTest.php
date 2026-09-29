@@ -866,13 +866,15 @@ describe('Lang 100% — Models policies providers views', function (): void {
     test('TranslationFile getRows ide-helper path and load failures', function (): void {
         $previousArgv = $_SERVER['argv'] ?? null;
         $_SERVER['argv'] = ['artisan', 'ide-helper:models'];
-        Assert::assertSame([], (new TranslationFile)->getRows());
+        $ideHelperRows = (new TranslationFile)->getRows();
         $_SERVER['argv'] = $previousArgv;
+        Assert::assertSame([], $ideHelperRows);
 
         $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock): void {
             $mock->shouldReceive('execute')->andThrow(new \RuntimeException('boom'));
         });
-        Assert::assertSame([], (new TranslationFile)->getRows());
+        $failedLoadRows = (new TranslationFile)->getRows();
+        Assert::assertSame([], $failedLoadRows);
 
         $bad = sys_get_temp_dir().'/tf_bad_'.uniqid().'.php';
         file_put_contents($bad, '<?php throw new Exception("x");');

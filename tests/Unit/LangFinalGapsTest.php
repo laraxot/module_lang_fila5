@@ -167,6 +167,20 @@ final class ThemeComposerNonStringFieldStub extends ThemeComposer
     }
 }
 
+/**
+ * Locale dell'app dopo applyLocale(), partendo ogni volta da 'it': un 'en' letto
+ * dopo la chiamata prova il fallback, non un locale rimasto da quella precedente.
+ *
+ * @param  array<string, mixed>  $data
+ */
+function langLocaleAfterApplying(LocaleSwitcherRefresh $action, array $data): string
+{
+    app()->setLocale('it');
+    $action->applyLocale($data);
+
+    return app()->getLocale();
+}
+
 afterEach(function (): void {
     Mockery::close();
 });
@@ -184,12 +198,10 @@ test('LocaleSwitcherRefresh applyLocale covers string and non-string locale', fu
         'HTTP_REFERER' => 'http://localhost/it',
     ]));
     $action = LocaleSwitcherRefresh::make('x');
-    $action->applyLocale(['locale' => 'en']);
-    Assert::assertSame('en', app()->getLocale());
-    $action->applyLocale(['locale' => 123]);
-    Assert::assertSame('en', app()->getLocale());
-    $action->applyLocale([]);
-    Assert::assertSame('en', app()->getLocale());
+
+    Assert::assertSame('de', langLocaleAfterApplying($action, ['locale' => 'de']));
+    Assert::assertSame('en', langLocaleAfterApplying($action, ['locale' => 123]));
+    Assert::assertSame('en', langLocaleAfterApplying($action, []));
 });
 
 test('TranslatorAction and Adapter coerce non-string loaded values', function (): void {
