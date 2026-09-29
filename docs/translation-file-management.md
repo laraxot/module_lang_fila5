@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Gestione File di Traduzione"
 module: "Lang"
 type: concept

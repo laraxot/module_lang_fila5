@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Audit Traduzioni Completato - 2025"
 module: "Lang"
 type: concept

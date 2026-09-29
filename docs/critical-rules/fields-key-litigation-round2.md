@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "FURIOUS LITIGATION: Why 'fields' Key is SACRED and IMMUTABLE"
 module: "Lang"
 type: concept

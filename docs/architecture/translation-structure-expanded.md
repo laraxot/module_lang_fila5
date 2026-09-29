@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Struttura Espansa per File di Traduzione - Progetto <nome progetto>"
 module: "Lang"
 type: concept

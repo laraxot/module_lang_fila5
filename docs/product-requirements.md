@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Product Requirements Document (PRD)"
 module: "Lang"
 type: concept

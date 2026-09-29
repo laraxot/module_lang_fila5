@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Visione - Lang Module"
 module: "Lang"
 type: concept

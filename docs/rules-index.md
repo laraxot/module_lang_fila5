@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Rules Index"
 module: "Lang"
 type: rule

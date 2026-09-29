@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "REDUNDANCY ANALYSIS"
 module: "Lang"
 type: concept

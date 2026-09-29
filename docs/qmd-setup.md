@@ -1,7 +1,4 @@
 ---
-qmd: "qmd setup"
-issues: []
-discussions: []
 title: "QMD Setup — Module Lang"
 type: documentation
 created: 2026-05-11

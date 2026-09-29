@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Classi LangBase per Modelli Traducibili"
 module: "Lang"
 type: concept

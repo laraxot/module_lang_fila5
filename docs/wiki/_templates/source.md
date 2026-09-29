@@ -1,7 +1,4 @@
 ---
-qmd: "source"
-issues: []
-discussions: []
 title: "Source Title"
 type: source
 sources: ["raw/articles/source-filename.md"]

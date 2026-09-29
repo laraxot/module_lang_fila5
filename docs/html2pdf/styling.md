@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-qmd: "styling"
-issues: []
-discussions: []
 title: "html2pdf styling — puntatore"
 type: reference
 updated: 2026-05-21

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Lang - Sprint Planning Meeting"
 module: "Lang"
 type: concept

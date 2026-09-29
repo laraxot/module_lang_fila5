@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Italian Text in Non-Italian Translation Files - Audit Report"
 module: "Lang"
 type: concept

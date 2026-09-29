@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Pacchetti del Modulo Lang"
 module: "Lang"
 type: concept

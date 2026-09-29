@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Risoluzione Conflitto translation-file-syntax.md"
 module: "Lang"
 type: concept

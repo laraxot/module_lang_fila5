@@ -1,7 +1,4 @@
 ---
-qmd: "translation key audit"
-issues: []
-discussions: []
 title: "Skill: Audit translation keys"
 type: "skill"
 tags: [skill, lang, translations, audit]

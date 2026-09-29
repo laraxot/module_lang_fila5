@@ -1,7 +1,4 @@
 ---
-qmd: "links"
-issues: []
-discussions: []
 title: 'Links — risorse esterne'
 module: Lang
 type: reference

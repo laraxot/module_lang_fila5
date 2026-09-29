@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Enum Translation Pattern - Regola Critica"
 module: "Lang"
 type: concept

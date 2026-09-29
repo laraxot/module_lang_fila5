@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Metodi duplicati — Lang"
 module: "Lang"
 type: concept

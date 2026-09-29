@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Lang Module Widgets"
 module: "Lang"
 type: concept

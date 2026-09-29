@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Risultati Analisi Modulo Lang"
 module: "Lang"
 type: concept

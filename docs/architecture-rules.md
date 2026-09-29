@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Architectural Rules & Guidelines"
 module: "Lang"
 type: rule

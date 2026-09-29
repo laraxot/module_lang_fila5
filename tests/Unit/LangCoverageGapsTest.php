@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 namespace Modules\Lang\Tests\Unit;
 
 use Filament\Actions\Action;
@@ -32,6 +31,7 @@ use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Modules\Lang\Filament\Forms\Components\TranslationEditor;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
+use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
@@ -261,14 +261,12 @@ describe('Lang coverage gaps closeout', function (): void {
         Assert::assertSame([], $edit->schemaFromRecord((object) ['content' => 'x']));
     });
 
-    test('LanguageSwitcherWidget getLanguageUrl handles locale-less and prefixed urls', function (): void {
-        app()->instance('request', Request::create('http://localhost/', 'GET'));
-        app()->setLocale('it');
-        $widget = new LanguageSwitcherWidget();
-        Assert::assertStringContainsString('/en', $widget->getLanguageUrl('en'));
+    test('LanguageSwitcherWidget falls back when getLocalizedURL is not a string', function (): void {
+        LaravelLocalization::shouldReceive('getLocalizedURL')
+            ->andReturn(false);
 
-        app()->instance('request', Request::create('http://localhost/it/demo', 'GET'));
-        Assert::assertStringContainsString('/en/', $widget->getLanguageUrl('en'));
+        $widget = new LanguageSwitcherWidget();
+        Assert::assertSame('/en', $widget->getLanguageUrl('en'));
     });
 
     test('Post accessors persist when model has key', function (): void {

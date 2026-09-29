@@ -1,8 +1,4 @@
 ---
-created: 2026-09-26
-qmd: "INDEX"
-issues: []
-discussions: []
 title: "Skills Index"
 type: "index"
 tags: [skills, lang, translations, localization]

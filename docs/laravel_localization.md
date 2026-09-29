@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Laravel Localization"
 module: "Lang"
 type: concept
