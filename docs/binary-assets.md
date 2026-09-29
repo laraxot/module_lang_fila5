@@ -1,7 +1,4 @@
 ---
-qmd: "binary assets"
-issues: []
-discussions: []
 title: "Asset binari"
 module: lang
 type: integration
@@ -10,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
----
 # Asset binari
 
 Gli asset binari sono file normali del repository.

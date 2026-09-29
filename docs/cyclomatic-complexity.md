@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Cyclomatic Complexity Report - Module: Lang"
 module: "Lang"
 type: concept

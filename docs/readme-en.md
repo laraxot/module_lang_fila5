@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "🌐 Lang — English presentation"
 module: "Lang"
 type: concept

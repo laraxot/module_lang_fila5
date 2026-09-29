@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Riepilogo Correzioni Traduzioni - Gennaio 2025"
 module: "Lang"
 type: concept

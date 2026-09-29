@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git status fleet merge markers lang.story"
-issues: []
-discussions: []
 title: "Bonifica marker merge committati — Lang"
 type: story
 module: Lang

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "🐄 DRY & KISS Analysis - Lang"
 module: "Lang"
 type: concept

@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * Script raffinato per identificare VERI testi italiani in file di traduzione non italiani
  * Esclude falsi positivi come "email", "password" che sono termini internazionali.
@@ -218,12 +217,12 @@ function auditRealItalianText(string $basePath): array
         foreach ($realItalianPatterns as $pattern) {
             $lineNumber = 0;
             foreach ($lines as $line) {
-                ++$lineNumber;
-                if (false !== stripos($line, $pattern)) {
+                $lineNumber++;
+                if (stripos($line, $pattern) !== false) {
                     // Verifica che non sia un falso positivo
                     $isExcluded = false;
                     foreach ($excludePatterns as $exclude) {
-                        if (false !== stripos($line, $exclude) && false !== stripos($line, $pattern)) {
+                        if (stripos($line, $exclude) !== false && stripos($line, $pattern) !== false) {
                             // Controlla se il pattern è parte del termine escluso
                             if (str_contains(strtolower($exclude), strtolower(trim($pattern)))) {
                                 $isExcluded = true;

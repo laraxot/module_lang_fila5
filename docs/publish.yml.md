@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Publish.Yml"
 module: "Lang"
 type: concept
