@@ -1,7 +1,4 @@
 ---
-qmd: "PROJECT STRUCTURE"
-issues: []
-discussions: []
 title: "Project Structure — Module Lang"
 type: documentation
 created: 2026-05-11

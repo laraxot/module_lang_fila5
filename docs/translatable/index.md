@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Spatie Laravel Translatable"
 module: "Lang"
 type: concept

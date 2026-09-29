@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Merge Conflict Files List"
 module: "Lang"
 type: concept

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Localizzazione di Date e Valute"
 module: "Lang"
 type: concept

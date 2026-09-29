@@ -7,7 +7,7 @@ module: Lang
 status: active
 tags: [lang, i18n, localization, translations]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-28
 qmd: "lang localization translations editor synchronization fallback module documentation"
 issues:
   - "https://github.com/laraxot/module_lang_fila5/issues/54"
@@ -60,3 +60,29 @@ Keep `declare(strict_types=1);` in PHP, respect project PHPStan config, and upda
 ---
 
 **Modulo** `lang` · **Laraxot ecosystem** · **Project-agnostic**
+---
+
+## Scheda tecnica verificata (2026-09-28)
+
+| Voce | Valore |
+|---|---|
+| Nome dichiarato | `Lang` |
+| Namespace | `Modules\\Lang\\` |
+| File PHP (escluso vendor) | 248 |
+| File PHP di test | 62 |
+| Aree `app/` rilevate | Actions, Adapters, Casts, Datas, Filament, Http, Models, Phpstan, Providers, Services, View |
+| Migrazioni PHP | 16 |
+| SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
+
+Questa scheda è un inventario statico, non una dichiarazione di qualità. Per ogni
+modifica eseguire i gate dal progetto Laravel:
+
+```bash
+cd laravel
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Lang
+./vendor/bin/pest Modules/Lang
+```
+
+La responsabilità del modulo, le decisioni architetturali e le opportunità sono
+documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
+rigenerati quando il modulo cambia; non copiarli in badge non verificati.

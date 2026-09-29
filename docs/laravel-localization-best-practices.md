@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "LaravelLocalization - Best Practices"
 module: "Lang"
 type: concept

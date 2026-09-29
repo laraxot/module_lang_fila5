@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Lang Module - Roadmap"
 module: "Lang"
 type: concept

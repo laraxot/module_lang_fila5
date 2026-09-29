@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Utilizzo di mcamara/laravel-localization"
 module: "Lang"
 type: concept

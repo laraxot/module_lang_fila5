@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Best Practices per le Migrazioni - Modulo Lang"
 module: "Lang"
 type: concept

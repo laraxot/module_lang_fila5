@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Gestione delle Traduzioni dei Messaggi di Validazione"
 module: "Lang"
 type: concept

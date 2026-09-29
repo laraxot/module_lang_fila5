@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Task: Ridurre Suppressioni PHPStan Inline - Lang"
 module: "Lang"
 type: concept

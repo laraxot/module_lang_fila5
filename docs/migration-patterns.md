@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Migration Patterns for Lang Module"
 module: "Lang"
 type: pattern

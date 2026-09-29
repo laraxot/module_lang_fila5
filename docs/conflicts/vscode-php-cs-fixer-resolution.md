@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Risoluzione Conflitto in .vscode/.php-cs-fixer.php"
 module: "Lang"
 type: concept
