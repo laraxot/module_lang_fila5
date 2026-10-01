@@ -1,3 +1,14 @@
+---
+title: "Correzione Errori di Sintassi nei File di Traduzione"
+module: "Lang"
+type: concept
+tags: [links]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Correzione Errori di Sintassi nei File di Traduzione
 
 ## Riepilogo Intervento
