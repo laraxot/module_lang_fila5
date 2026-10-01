@@ -1,3 +1,14 @@
+---
+title: "Standard per helper_text nelle Traduzioni <nome progetto>"
+module: "Lang"
+type: rule
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Standard per helper_text nelle Traduzioni <nome progetto>
 
 ## Regola Critica: Gestione helper_text
@@ -172,6 +183,9 @@ Il file `Modules/<nome progetto>/lang/it/profile_widget.php` conteneva:
 - [Documentazione Modulo Lang](../../laravel/Modules/Lang/docs/)
 - [Best Practices Filament](../../laravel/Modules/Xot/docs/filament/)
 - [Standard di Qualità <nome progetto>](../../laravel/Modules/<nome progetto>/docs/translation_quality_standards.md)
+
+*Ultimo aggiornamento: Gennaio 2025*
+- [Standard di Qualità <nome progetto>](../../laravel/modules/<nome progetto>/docs/translation_quality_standards.md)
 
 *Ultimo aggiornamento: Gennaio 2025*
 - [Standard di Qualità <nome progetto>](../../laravel/modules/<nome progetto>/docs/translation_quality_standards.md)
