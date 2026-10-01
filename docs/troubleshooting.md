@@ -1,3 +1,14 @@
+---
+title: "🔧 **Troubleshooting Modulo Lang - Laraxot**"
+module: "Lang"
+type: concept
+tags: [filament4, migration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament4 migration"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # 🔧 **Troubleshooting Modulo Lang - Laraxot**
 
 ## 🎯 **Panoramica**
@@ -363,7 +374,9 @@ php artisan lang:reset --force
 ### **1. Documentazione**
 - [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices
-- [README.md](readme.md) - Documentazione principale
+- [README.md](README.md) - Documentazione principale
+- [BEST_PRACTICES.md](best_practices.md) - Best practices
+- [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](best_practices.md) - Best practices
 - [config/lang.php](../config/lang.php) - Configurazione
 
@@ -421,4 +434,8 @@ php artisan config:show lang
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 2.0.0
 **Autore**: Team Laraxot
+**Mantenuto da**: Community Laraxot
+**Mantenuto da**: Community Laraxot
+**Mantenuto da**: Community Laraxot
+**Mantenuto da**: Community Laraxot
 **Mantenuto da**: Community Laraxot

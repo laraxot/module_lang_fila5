@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Conflitto EditTranslationFile.php (Classe)"
+module: "Lang"
+type: concept
+tags: [links01]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links01"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Risoluzione Conflitto EditTranslationFile.php (Classe)
 
 ## Problema Identificato
@@ -87,6 +98,12 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 - [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../../docs/)
+- [Modules/Lang/docs/](../docs/)
+- [Modules/Lang/docs/](../docs/)
+- [Modules/Lang/docs/](../docs/)
+- [Modules/Lang/docs/](../docs/)
 *Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../../docs/)
 
@@ -180,6 +197,17 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 - [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../../docs/)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../docs/)
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../docs/)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../docs/)
+
 *Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../../docs/)
 
