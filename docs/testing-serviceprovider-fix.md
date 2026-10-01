@@ -1,3 +1,14 @@
+---
+title: "Testing ServiceProvider Fix - Lang Module"
+module: "Lang"
+type: concept
+tags: [links01]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links01"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Testing ServiceProvider Fix - Lang Module
 
 ## Problem
@@ -143,6 +154,16 @@ The module's functionality is already covered by:
 
 **Date:** 2026-01-09
 **Status:** Documented - Ready for deletion
+**Relates to:** Test failures analysis in `docs/test-failures-analysis-2026-01-09.md`
+**Date:** 2026-01-09
+**Status:** Documented - Ready for deletion
+**Relates to:** Test failures analysis in `docs/test-failures-analysis-2026-01-09.md`
+**Status:** Documented - Ready for deletion
+**Relates to:** Test failures analysis in `docs/test-failures-analysis-[DATE].md`
+**Status:** Documented - Ready for deletion
+**Relates to:** Test failures analysis in `docs/test-failures-analysis-[DATE].md`
+**Status:** Documented - Ready for deletion
+**Relates to:** Test failures analysis in `docs/test-failures-analysis-[DATE].md`
 **Relates to:** Test failures analysis in `docs/test-failures-analysis-2026-01-09.md`
 **Date:** 2026-01-09
 **Status:** Documented - Ready for deletion
