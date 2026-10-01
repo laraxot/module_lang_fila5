@@ -1,3 +1,14 @@
+---
+title: "Correzione Convenzione Naming Cartelle Docs - Gennaio 2025"
+module: "Lang"
+type: concept
+tags: [migrazione, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migrazione filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Correzione Convenzione Naming Cartelle Docs - Gennaio 2025
 
 ## Data Aggiornamento

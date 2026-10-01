@@ -1,3 +1,14 @@
+---
+title: "phpstan fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes"
+issues: []
+discussions: []
+---
+
 # Lang Module — PHPStan
 
 ## 2026-06-10 — STORY-305 · Level 10 · 0 errori
@@ -15,6 +26,14 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/Lang
 
 ---
 
+title: "phpstan fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes"
+issues: []
+discussions: []
 ## Storico — Level 7 (Gennaio 2025)
 
 Il modulo Lang era a 0 errori Level 7.
