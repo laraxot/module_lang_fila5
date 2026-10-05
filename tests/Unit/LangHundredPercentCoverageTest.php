@@ -43,31 +43,29 @@ use Modules\Lang\Casts\LangField;
 use Modules\Lang\Datas\TranslationData;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
-use Modules\Lang\Filament\Forms\Components\TranslationEditor;
-use Modules\Lang\Filament\Resources\LangBaseResource;
-use Modules\Lang\Filament\Resources\Pages\LangBaseCreateRecord;
-use Modules\Lang\Filament\Resources\Pages\LangBaseEditRecord;
-use Modules\Lang\Filament\Resources\Pages\LangBaseListRecords;
-use Modules\Lang\Filament\Resources\Pages\LangBaseViewRecord;
-use Modules\Lang\Filament\Resources\TranslationFileResource;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\EditTranslationFile;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages\ListTranslationFiles;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Tables\TranslationFilesTable;
 use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
-use Modules\Lang\Models\BaseModel;
-use Modules\Lang\Models\BaseModelLang;
 use Modules\Lang\Models\LanguageLine;
-use Modules\Lang\Models\Policies\LangBasePolicy;
 use Modules\Lang\Models\Policies\PostPolicy;
 use Modules\Lang\Models\Policies\TranslationFilePolicy;
 use Modules\Lang\Models\Policies\TranslationPolicy;
 use Modules\Lang\Models\Post;
-use Modules\Lang\Models\Traits\HasStrictTranslations;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Lang\Providers\RouteServiceProvider;
 use Modules\Lang\Providers\TranslatorTraitPhpstanProbe;
+use Modules\Lang\Tests\Fixtures\LangBaseCreateRecordStub;
+use Modules\Lang\Tests\Fixtures\LangBaseEditRecordStub;
+use Modules\Lang\Tests\Fixtures\LangBaseListRecordsStub;
+use Modules\Lang\Tests\Fixtures\LangBasePolicyStub;
+use Modules\Lang\Tests\Fixtures\LangBaseResourceStub;
+use Modules\Lang\Tests\Fixtures\LangBaseViewRecordStub;
+use Modules\Lang\Tests\Fixtures\LangFieldHostModel;
+use Modules\Lang\Tests\Fixtures\StrictTranslationsHost;
+use Modules\Lang\Tests\Fixtures\TranslationEditorStub;
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Components\LanguageSwitcher;
 use Modules\Lang\View\Composers\ThemeComposer;
@@ -89,83 +87,6 @@ use function Safe\touch;
 use function Safe\unlink;
 
 uses(TestCase::class);
-
-final class LangBaseResourceStub extends LangBaseResource
-{
-    protected static ?string $model = TranslationFile::class;
-}
-
-final class LangBaseCreateRecordStub extends LangBaseCreateRecord
-{
-    protected static string $resource = TranslationFileResource::class;
-}
-
-final class LangBaseEditRecordStub extends LangBaseEditRecord
-{
-    protected static string $resource = TranslationFileResource::class;
-}
-
-final class LangBaseListRecordsStub extends LangBaseListRecords
-{
-    protected static string $resource = TranslationFileResource::class;
-}
-
-final class LangBaseViewRecordStub extends LangBaseViewRecord
-{
-    protected static string $resource = TranslationFileResource::class;
-}
-
-final class LangBasePolicyStub extends LangBasePolicy {}
-
-final class LangFieldHostModel extends BaseModelLang
-{
-    public $timestamps = false;
-}
-
-final class TranslationEditorStub extends TranslationEditor
-{
-    /**
-     * `mixed` voluto: lo stato Filament forzato e' eterogeneo per i rami coperti
-     * (array, stringa, null). Il tipo nativo riflette il contratto di getState().
-     */
-    public mixed $forcedState = [];
-
-    public function getState(): mixed
-    {
-        return $this->forcedState;
-    }
-}
-
-final class StrictTranslationsHost extends BaseModel
-{
-    use HasStrictTranslations;
-
-    /** @var list<string> */
-    public array $translatable = ['title'];
-
-    public $timestamps = false;
-
-    protected $guarded = [];
-
-    protected $table = 'translations';
-
-    /**
-     * `mixed` voluto: i test forzano traduzioni di tipo arbitrario (int, array, bool)
-     * per coprire tutti i rami di normalizzazione di getTranslation().
-     */
-    public mixed $forcedTranslation = null;
-
-    /**
-     * Firma speculare a `HasTranslations::getTranslation(): mixed` — i parametri
-     * restano invariati, il ritorno e' eterogeneo per contratto spatie.
-     */
-    protected function spatieGetTranslation(string $key, string $locale, bool $useFallbackLocale = true): mixed
-    {
-        unset($key, $locale, $useFallbackLocale);
-
-        return $this->forcedTranslation;
-    }
-}
 
 /**
  * @param  list<string>  $permissions
