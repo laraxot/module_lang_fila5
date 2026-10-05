@@ -37,6 +37,7 @@ use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Lang\Providers\RouteServiceProvider;
+use Modules\Lang\Tests\Fixtures\NationalFlagSelectStub;
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Composers\ThemeComposer;
 use Modules\Xot\Actions\File\AssetAction;
@@ -52,23 +53,6 @@ use function Safe\touch;
 use function Safe\unlink;
 
 uses(TestCase::class);
-
-final class NationalFlagSelectStub extends NationalFlagSelect
-{
-    /** @var array<int, mixed> */
-    public array $forcedCountries = [];
-
-    /**
-     * Vedi la nota in LangFinalGapsTest: `mixed` e' il tipo reale dei dati che i test
-     * iniettano di proposito per verificare la robustezza del filtro.
-     *
-     * @return array<int, mixed>
-     */
-    protected function resolveCountries(): array
-    {
-        return $this->forcedCountries;
-    }
-}
 
 afterEach(function (): void {
     Mockery::close();
