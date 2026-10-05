@@ -33,3 +33,13 @@ https://github.com/tanmuhittin/laravel-google-translate
 https://github.com/Astrotomic/laravel-translatable
 
 https://github.com/dimsav/laravel-translatable#step-1-install-package
+
+## Fonti fuse (2026-10-05, agente-2 docs-merge)
+
+Da `links01.md` (fuso qui):
+
+https://github.com/JoggApp/laravel-google-translate
+
+https://github.com/Stichoza/google-translate-php (1700 stars)
+
+https://medium.com/@mwaqasiu/translating-text-in-laravel-made-easy-with-translatetexthelper-and-google-translate-library-214c7c76d655
