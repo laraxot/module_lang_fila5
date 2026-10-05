@@ -8,8 +8,10 @@ updated: 2026-06-12
 qmd: "Lang rules translation governance factory auto increment id pest sqlite"
 issues:
   - "https://github.com/laraxot/base_ptv_fila5/issues/345"
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/345"
 discussions:
   - "https://github.com/laraxot/base_ptv_fila5/discussions/273"
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 ---
 
 # Rules — Lang Module Wiki
