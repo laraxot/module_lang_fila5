@@ -736,10 +736,10 @@ return [
             'description' => 'title',
         ],
         'txt' => [
-            'label' => 'txt',
-            'placeholder' => 'txt',
-            'helper_text' => 'txt',
-            'description' => 'txt',
+            'label' => 'Text',
+            'placeholder' => 'Text',
+            'helper_text' => 'Text',
+            'description' => 'Text',
         ],
         'id_tbl' => [
             'label' => 'id_tbl',
