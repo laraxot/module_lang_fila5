@@ -738,10 +738,10 @@ return [
             'description' => 'title',
         ],
         'txt' => [
-            'label' => 'txt',
-            'placeholder' => 'txt',
-            'helper_text' => 'txt',
-            'description' => 'txt',
+            'label' => 'Testo',
+            'placeholder' => 'Testo',
+            'helper_text' => 'Testo',
+            'description' => 'Testo',
         ],
         'id_tbl' => [
             'label' => 'id_tbl',
