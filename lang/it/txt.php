@@ -894,7 +894,7 @@ return [
         'quadrimestre' => [
             'label' => 'quadrimestre',
             'placeholder' => 'quadrimestre',
-            'helper_text' => 'quadrimestre',
+            'helper_text' => '',
             'description' => 'quadrimestre',
         ],
         'video' => [

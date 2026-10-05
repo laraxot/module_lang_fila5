@@ -27,3 +27,17 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 
 ## Collegamenti correlati
 - [Composer merge plugin](composer-merge-plugin.md)
+
+## Componenti core (da `ARCHITECTURE.md`, fuso 2026-10-05)
+
+**Models:** `BaseModelLang`, `LanguageLine`, `Translation`.
+**Actions:** `SyncTranslationsAction`, `ValidateTranslationsAction`.
+**Filament Resources:** `LangResource` — main admin resource.
+
+**Database Schema:** `lang_table` — tabella primaria con colonne standard Laravel (id, timestamps).
+
+**Design Decisions:** XotBaseModel (base coerente), Filament v5 (admin standard), Laravel Queues (background per operazioni pesanti).
+
+**Integration Points:** dipende da Xot; usato da Activity, Notify (logging).
+
+**Quality Gates:** PHPStan L10 / PHPMD / Pest — vedi report qualità nel modulo.
