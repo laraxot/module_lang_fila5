@@ -1014,12 +1014,9 @@ return [
                 ],
             ],
         ],
-<<<<<<< HEAD
         'indennitaTipoDettaglio' => [
             'label' => 'indennitaTipoDettaglio',
         ],
-=======
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'authenticate' => [
@@ -1191,14 +1188,11 @@ return [
             'icon' => 'export_pdf',
             'tooltip' => 'export_pdf',
         ],
-<<<<<<< HEAD
         'export_flusso' => [
             'label' => 'export_flusso',
             'icon' => 'export_flusso',
             'tooltip' => 'export_flusso',
         ],
-=======
->>>>>>> laraxot/dev
     ],
     'sections' => [
         'address' => [
