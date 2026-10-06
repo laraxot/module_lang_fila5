@@ -1,3 +1,7 @@
+---
+bmad: true
+module: Lang
+---
 # BMAD Status — Lang (2026-10-06)
 
 ## Inventario docs
