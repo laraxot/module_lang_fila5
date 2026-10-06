@@ -1,3 +1,7 @@
+---
+bmad: true
+module: Lang
+---
 # Lang Module — Documentation
 
 Complete translation and localization management system for Laravel applications.

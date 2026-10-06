@@ -1,3 +1,7 @@
+---
+bmad: true
+module: Lang
+---
 # readme
 
 <!-- Contenuto migrato da _docs/readme.txt -->
