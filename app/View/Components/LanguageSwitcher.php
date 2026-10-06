@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Lang\View\Components;
 
+use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
-use Illuminate\View\View;
 use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 
 /**
@@ -34,7 +34,7 @@ class LanguageSwitcher extends Component
     public function render(): View
     {
         if (! LanguageSwitcherWidget::canView()) {
-            /** @var view-string $view */
+            /** @var string $view */
             $view = 'lang::components.empty';
 
             return view($view);
@@ -47,7 +47,7 @@ class LanguageSwitcher extends Component
             'widget_id' => 'language-switcher-'.uniqid(),
         ];
 
-        /** @phpstan-var view-string */
+        /** @var string $view */
         $view = 'lang::components.language-switcher';
 
         return \view($view, $viewData);

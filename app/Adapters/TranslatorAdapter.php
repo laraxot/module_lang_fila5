@@ -20,8 +20,7 @@ use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
  */
 class TranslatorAdapter extends LaravelTranslator
 {
-    /** @var Dispatcher */
-    protected $events;
+    protected Dispatcher $events;
 
     /**
      * Get the translation for the given key.
@@ -64,7 +63,7 @@ class TranslatorAdapter extends LaravelTranslator
      * }
      */
     /**
-     * Undocumented function.
+     * Record missing translation key.
      */
     protected function notifyMissingKey(string $key): void
     {

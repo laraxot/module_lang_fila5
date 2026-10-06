@@ -38,7 +38,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property-read ProfileContract|null $deleter
  * @property-read ProfileContract|null $updater
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class LanguageLine extends BaseModel
 {

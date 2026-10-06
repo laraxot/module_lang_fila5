@@ -39,7 +39,7 @@ use function Safe\json_encode;
  *
  * @property ProfileContract|null $deleter
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class TranslationFile extends BaseModel
 {
