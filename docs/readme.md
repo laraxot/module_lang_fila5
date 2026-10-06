@@ -1,3 +1,7 @@
+---
+bmad: true
+module: Lang
+---
 # Documentation
 
 This directory contains documentation for the module.

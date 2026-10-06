@@ -1,3 +1,7 @@
+---
+bmad: true
+module: Lang
+---
 # Lang Module - memories Index
 
 ## Purpose

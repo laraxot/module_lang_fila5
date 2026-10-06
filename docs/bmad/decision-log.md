@@ -1,3 +1,7 @@
+---
+bmad: true
+module: Lang
+---
 # Decision Log - Modulo Lang
 
 ## Formato

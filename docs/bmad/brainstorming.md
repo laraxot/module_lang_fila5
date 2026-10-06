@@ -1,3 +1,7 @@
+---
+bmad: true
+module: Lang
+---
 <<<<<<< .merge_file_8eTBQY
 <<<<<<< .merge_file_rFzOC4
 ---
