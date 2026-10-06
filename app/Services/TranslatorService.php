@@ -16,8 +16,7 @@ class TranslatorService extends LaravelTranslator
 {
     use QueueableAction;
 
-    /** @var Dispatcher */
-    protected $events;
+    protected Dispatcher $events;
 
     /**
      * Get the translation for the given key.
@@ -59,7 +58,7 @@ class TranslatorService extends LaravelTranslator
      * }
      */
     /**
-     * Undocumented function.
+     * Record missing translation key.
      */
     protected function notifyMissingKey(string $key): void
     {
