@@ -1014,6 +1014,9 @@ return [
                 ],
             ],
         ],
+        'indennitaTipoDettaglio' => [
+            'label' => 'indennitaTipoDettaglio',
+        ],
     ],
     'actions' => [
         'authenticate' => [
@@ -1184,6 +1187,11 @@ return [
             'label' => 'export_pdf',
             'icon' => 'export_pdf',
             'tooltip' => 'export_pdf',
+        ],
+        'export_flusso' => [
+            'label' => 'export_flusso',
+            'icon' => 'export_flusso',
+            'tooltip' => 'export_flusso',
         ],
     ],
     'sections' => [
