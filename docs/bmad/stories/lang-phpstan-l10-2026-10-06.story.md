@@ -135,3 +135,19 @@ Questo fix segue il pattern di altre correzioni PHPStan Level 10:
 - Incentivi module: auth type narrowing
 - Ptv module: query builder type assertions
 
+
+## Swarm swarm-lang-tenant (run 4 PHPStan, 2026-10-06): correzione
+
+Claim: agente swarm-lang-tenant. Errori in elenco Lang: 5, risolti 5.
+
+Scopo funzionale: `Flag` renderizza l'icona bandiera di un locale; `LanguageSwitcher` e' il wrapper Blade del widget selettore lingua; `Translation` e' il model delle traduzioni DB.
+
+Cosa e' cambiato:
+- `Flag.php`, `LanguageSwitcher.php`: tolti `@var string` e cast `(string)`. Erano la causa dell'errore `view-string`: allargavano a `string` un tipo che `GetViewAction::execute()` dichiara gia' `view-string`, e per i letterali `lang::components.*` PHPStan verifica da solo che la view esista (esistono). Questo supera il fix della sezione "Categoria 2" sopra (`@var string`), che era la causa, non la cura.
+- `Translation.php`: rimosso `@method static ... firstOrCreate(array, array)`. Era stato aggiunto quando `@mixin \Eloquent` rompeva la risoluzione; ora `@mixin Model` e' corretto e il tag e' ridondante (e dichiarava un ritorno `EloquentBuilder|Translation` falso: `firstOrCreate` ritorna il model). I 3 chiamanti (`RecordMissingTranslationAction`, `TranslatorAction`, `TranslatorService`) passano PHPStan senza il tag.
+
+Verifica: `phpstan analyse` mirato su `View/`, `Models/Translation.php`, i 3 chiamanti: `[OK] No errors`. `php -l` e `class_exists` ok. Pest su `LangCoverageBoostTest` (filtro flag/switcher): muto fino al timeout 120s su questo host, NON e' un esito verde.
+
+Problema NON risolto, trovato leggendo lo scopo: `resources/views/components/flag.blade.php` ignora `$name` e punta sempre a `Theme::asset('lang::svg/it.svg')`; quel file non esiste (le bandiere stanno in `resources/svg/flag/{codice}.svg`). Il componente mostra sempre una bandiera italiana rotta. Serve decidere la mappa locale -> codice paese (`en` -> `gb`/`us`) prima di correggerlo.
+
+Lezione: un `@var string` messo per "calmare" PHPStan su una view e' un sintomo di tipo allargato a monte; togliere l'annotazione e lasciar fluire il letterale fa verificare a PHPStan che la view esista davvero.
