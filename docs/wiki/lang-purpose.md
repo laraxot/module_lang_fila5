@@ -1,3 +1,7 @@
+---
+bmad: true
+module: Lang
+---
 # Lang — Scopo (Nota Second Brain 2026-10-06)
 
 ## Funzione

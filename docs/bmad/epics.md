@@ -1,3 +1,7 @@
+---
+bmad: true
+module: Lang
+---
 # Epics e User Stories - Modulo Lang
 
 ## Epics
