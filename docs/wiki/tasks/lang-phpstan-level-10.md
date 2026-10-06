@@ -1,3 +1,7 @@
+---
+bmad: true
+module: Lang
+---
 # Task: Lang PHPStan Level 10
 
 ## 📋 Obiettivo
