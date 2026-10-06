@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Lang\View\Components;
 
+use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
-use Illuminate\View\View;
 use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 
 /**
