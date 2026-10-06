@@ -56,7 +56,6 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static EloquentBuilder<static>|Translation whereLocale($value)
  * @method static EloquentBuilder<static>|Translation whereUserId($value)
- * @method static EloquentBuilder<static>|Translation firstOrCreate(array $attributes = [], array $values = [])
  *
  * @mixin \Illuminate\Database\Eloquent\Model
  */
