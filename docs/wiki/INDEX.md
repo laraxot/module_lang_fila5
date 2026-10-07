@@ -41,6 +41,7 @@ related:
 - [translation-factory-auto-increment-id](rules/translation-factory-auto-increment-id.md) — `TranslationFactory` non imposta `id` quando la migration usa `$table->id()`
 - [translation-key-audit](skills/translation-key-audit.md) — skill operativa per audit rapido tra modulo, tema e Filament
 - [laravel12-lang-path-rule](concepts/laravel12-lang-path-rule.md) — promemoria locale sul path `lang/`
+- [phpstan-cleanup-lang (story)](../stories/2026-10-06-phpstan-cleanup-lang.story.md) / [dev](../stories/2026-10-06-phpstan-cleanup-lang.dev.md) — 2026-10-06: `TranslationStatusEnum`, script di audit con `Safe\*`, artefatto cache phpdoc su classi anonime, conflitto `^8.2` vs costanti tipizzate
 
 ## On-Demand Workflow
 

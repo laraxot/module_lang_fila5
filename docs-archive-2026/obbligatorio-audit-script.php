@@ -1,9 +1,16 @@
 <?php
 
 declare(strict_types=1);
+
+use function Safe\file_get_contents;
+use function Safe\file_put_contents;
+use function Safe\glob;
+
 /**
  * Script specifico per identificare la parola "obbligatorio" e varianti
  * in file di traduzione non italiani.
+ *
+ * @return array<string, list<array{pattern: string, line: int, content: string, language: string, suggested_translation: string}>>
  */
 function auditObbligatorioInNonItalianFiles(string $basePath): array
 {
@@ -19,8 +26,12 @@ function auditObbligatorioInNonItalianFiles(string $basePath): array
     ];
 
     foreach ($patterns as $pattern) {
-        $files = glob($pattern);
-        $nonItalianFiles = array_merge($nonItalianFiles, $files);
+        // Safe\glob dichiara list<mixed>: teniamo solo i percorsi (stringhe).
+        foreach (glob($pattern) as $file) {
+            if (is_string($file)) {
+                $nonItalianFiles[] = $file;
+            }
+        }
     }
 
     // Pattern specifici per "obbligatorio" e varianti
@@ -52,8 +63,9 @@ function auditObbligatorioInNonItalianFiles(string $basePath): array
     ];
 
     foreach ($nonItalianFiles as $file) {
+        // Safe\file_get_contents lancia in caso di errore: qui resta solo il file vuoto.
         $content = file_get_contents($file);
-        if (! $content) {
+        if ($content === '') {
             continue;
         }
 
@@ -163,6 +175,9 @@ function getSuggestedTranslation(string $italianText, string $targetLanguage): s
     }
 }
 
+/**
+ * @param  array<string, list<array{pattern: string, line: int, content: string, language: string, suggested_translation: string}>>  $issues
+ */
 function generateObbligatorioReport(array $issues): string
 {
     $report = "# Audit \"Obbligatorio\" in Non-Italian Translation Files\n\n";
