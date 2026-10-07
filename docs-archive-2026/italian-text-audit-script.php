@@ -1,8 +1,15 @@
 <?php
 
 declare(strict_types=1);
+
+use function Safe\file_get_contents;
+use function Safe\file_put_contents;
+use function Safe\glob;
+
 /**
  * Script per identificare testi italiani residui in file di traduzione non italiani.
+ *
+ * @return array<string, list<array{pattern: string, line: int, content: string, language: string}>>
  */
 function auditItalianTextInNonItalianFiles(string $basePath): array
 {
@@ -18,8 +25,12 @@ function auditItalianTextInNonItalianFiles(string $basePath): array
     ];
 
     foreach ($patterns as $pattern) {
-        $files = glob($pattern);
-        $nonItalianFiles = array_merge($nonItalianFiles, $files);
+        // Safe\glob dichiara list<mixed>: teniamo solo i percorsi (stringhe).
+        foreach (glob($pattern) as $file) {
+            if (is_string($file)) {
+                $nonItalianFiles[] = $file;
+            }
+        }
     }
 
     // Pattern italiani comuni da cercare
@@ -71,7 +82,6 @@ function auditItalianTextInNonItalianFiles(string $basePath): array
         'avviso',
         'messaggio',
         'notifica',
-        'conferma',
         'cancella',
         'chiudi',
         'apri',
@@ -115,8 +125,9 @@ function auditItalianTextInNonItalianFiles(string $basePath): array
     ];
 
     foreach ($nonItalianFiles as $file) {
+        // Safe\file_get_contents lancia in caso di errore: qui resta solo il file vuoto.
         $content = file_get_contents($file);
-        if (! $content) {
+        if ($content === '') {
             continue;
         }
 
@@ -164,6 +175,9 @@ function getLanguageFromPath(string $file): string
     return 'Unknown';
 }
 
+/**
+ * @param  array<string, list<array{pattern: string, line: int, content: string, language: string}>>  $issues
+ */
 function generateItalianTextReport(array $issues): string
 {
     $report = "# Italian Text in Non-Italian Translation Files - Audit Report\n\n";

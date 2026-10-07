@@ -481,7 +481,7 @@ test('NationalFlagSelect getCountryOptions casts int localized label', function 
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
     app()->instance('translator', new class($real)
     {
-        public function __construct(private LaravelTranslator $inner) {}
+        public function __construct(private readonly LaravelTranslator $inner) {}
 
         /**
          * @param  array<string, mixed>  $replace
@@ -523,7 +523,7 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
     app()->instance('translator', new class($real)
     {
-        public function __construct(private LaravelTranslator $inner) {}
+        public function __construct(private readonly LaravelTranslator $inner) {}
 
         /**
          * @param  array<string, mixed>  $replace
