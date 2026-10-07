@@ -1,9 +1,16 @@
 <?php
 
 declare(strict_types=1);
+
+use function Safe\file_get_contents;
+use function Safe\file_put_contents;
+use function Safe\glob;
+
 /**
  * Script per audit e correzione automatica dei valori helper_text
  * che sono uguali alla chiave del campo padre.
+ *
+ * @return array<string, list<array{path: string, key: int|string, current_value: string, should_be: string, line_context: string}>>
  */
 function auditHelperTextFiles(string $basePath): array
 {
@@ -11,12 +18,13 @@ function auditHelperTextFiles(string $basePath): array
     $langFiles = glob($basePath.'/*/lang/*/*.php');
 
     foreach ($langFiles as $file) {
-        if (str_contains($file, '/it/')) {
+        // Safe\glob dichiara list<mixed>: teniamo solo i percorsi (stringhe).
+        if (! is_string($file) || str_contains($file, '/it/')) {
             continue; // Skip Italian files
         }
 
-        $content = file_get_contents($file);
-        if (! $content) {
+        // Safe\file_get_contents lancia in caso di errore: qui resta solo il file vuoto.
+        if (file_get_contents($file) === '') {
             continue;
         }
 
@@ -35,12 +43,16 @@ function auditHelperTextFiles(string $basePath): array
     return $issues;
 }
 
+/**
+ * @param  array<int|string, mixed>  $data
+ * @return list<array{path: string, key: int|string, current_value: string, should_be: string, line_context: string}>
+ */
 function findHelperTextIssues(array $data, string $file, string $parentKey = ''): array
 {
     $issues = [];
 
     foreach ($data as $key => $value) {
-        $currentPath = $parentKey ? $parentKey.'.'.$key : $key;
+        $currentPath = $parentKey !== '' ? $parentKey.'.'.$key : (string) $key;
 
         if (is_array($value)) {
             // Check if this is a field definition with helper_text
@@ -66,6 +78,9 @@ function findHelperTextIssues(array $data, string $file, string $parentKey = '')
     return $issues;
 }
 
+/**
+ * @param  array<string, list<array{path: string, key: int|string, current_value: string, should_be: string, line_context: string}>>  $issues
+ */
 function generateReport(array $issues): string
 {
     $report = "# Helper Text Audit Report\n\n";
