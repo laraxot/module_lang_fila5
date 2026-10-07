@@ -1,10 +1,9 @@
 ---
-<<<<<<< .merge_file_ARI7Il
 title: "Lang — quick reference"
 type: note
 tags: [lang, quick-reference, translations, i18n, localization, actions]
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-10-07
 qmd: "Lang quick reference traduzioni azioni adapter localizzazione"
 related:
   - ./README.md
@@ -132,6 +131,16 @@ related:
 | English | `lang/en/` |
 | Italian (resources) | `resources/lang/it/` |
 
+## Pattern del modulo
+
+- Le chiavi di traduzione hanno forma `modulo::file.chiave`; nelle UI mai stringhe hardcoded.
+- Nelle firme tipizzare su `HasTranslationsContract`, mai su `BaseModel`.
+- `HasStrictTranslations` estende `Spatie\Translatable\HasTranslations` restringendo il tipo di ritorno di `getTranslation()` (normalizza array, bool, float, oggetti stringable); non controlla la presenza delle chiavi nelle altre lingue.
+- Sorgenti di traduzione: DB (`LanguageLine`, `Translation`) e file PHP (`lang/<locale>/*.php`, letti da `ReadTranslationFileAction` con `require`, scritti da `WriteTranslationFileAction`). I file di traduzione sono array PHP, non YAML.
+- Lingue presenti oggi: `de`, `en` in `lang/`, `it` in `resources/lang/`.
+- Il modulo non espone comandi Artisan (`app/Console/Commands/` contiene solo `_components.json`): il sync DB e file passa da `SyncTranslationsAction` e `MergeTranslationsAction`.
+- Altri simboli: `TranslationStatusEnum` (`app/Enums/`), `LangData` e `TranslationData` (`app/Datas/`).
+
 ## Comandi rapidi (da laravel/)
 
 ```bash
@@ -140,121 +149,23 @@ php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Lang
 ./vendor/bin/pest Modules/Lang
 ```
 
+## Comandi BMAD per Lang
+
+Help: `bmad-help`. Flusso consigliato:
+
+| Fase | Comandi |
+|---|---|
+| 1 Analisi | `bmad-domain-research` (i18n, locale, pluralizzazione), `bmad-technical-research` (sync file e DB) |
+| 2 Pianificazione | `bmad-create-prd`, `bmad-create-architecture` (LanguageLine e file PHP) |
+| 3 Soluzione | `bmad-create-epics-and-stories`, `bmad-check-implementation-readiness` |
+| 4 Implementazione | `bmad-sprint-planning`, `bmad-create-story`, `bmad-dev-story`, `bmad-code-review` (focus: chiavi mancanti e fallback) |
+
+Agenti: Mary (`bmad-agent-analyst`), John (`bmad-agent-pm`), Winston (`bmad-agent-architect`), Amelia (`bmad-agent-dev`), Quinn (`bmad-agent-qa`).
+Scorciatoie: `bmad-quick-dev "<richiesta>"`, `bmad-quick-spec "<richiesta>"`.
+
 ## Vedi anche
 
 - [README](./README.md)
 - [Setup guide](./setup-guide.md)
 - [Architettura — module boundary](./architecture/module-boundary.md)
 - [Epic translation infra](./epics/translation-infrastructure.epic.md)
-=======
-title: "Lang — BMAD Quick Reference"
-description: "Comandi rapidi BMAD per il modulo Lang"
-module: "Lang"
-alias: "lang"
-documentation_date: "2026-09-29"
-bmad_version: "6.2.0"
----
-
-# Lang — BMAD Quick Reference
-
-## Comandi Rapidi
-
-### Help
-
-```bash
-bmad-help
-```
-
-### Workflow Lang
-
-```bash
-# Phase 1
-bmad-domain-research      # Studio dominio: i18n, locale, pluralizzazione
-bmad-technical-research   # Fattibilità sync file di traduzione ↔ DB
-
-# Phase 2
-bmad-create-prd           # PRD: gestione traduzioni, lingue attive, fallback
-bmad-create-architecture  # Architettura LanguageLine ↔ file YAML
-
-# Phase 3
-bmad-create-epics-and-stories            # Epic: chiavi, sync, widget switcher
-bmad-check-implementation-readiness      # Quality gate
-
-# Phase 4
-bmad-sprint-planning      # Sprint iniziale
-bmad-create-story         # Story: TranslationFileResource
-bmad-dev-story            # Implementazione
-bmad-code-review          # Review con focus chiavi mancanti e fallback
-```
-
-### Agenti per Lang
-
-| Agente | Skill | Scopo |
-|--------|-------|-------|
-| Mary (analyst) | `skill: "bmad-agent-analyst"` | ricerca pratiche i18n |
-| John (pm) | `skill: "bmad-agent-pm"` | PRD chiavi e lingue |
-| Winston (architect) | `skill: "bmad-agent-architect"` | architettura DB/file |
-| Amelia (dev) | `skill: "bmad-agent-dev"` | implementazione Actions |
-| Quinn (qa) | `skill: "bmad-agent-qa"` | test chiavi mancanti, sync, locale |
-
-## Classi Chiave
-
-### Actions (`app/Actions/`)
-
-| Action | Ruolo |
-|--------|-------|
-| `GetAllTranslationAction` | Tutte le traduzioni del modulo |
-| `GetAllModuleTranslationAction` | Traduzioni aggregate per modulo |
-| `GetTransPathAction` | Risolve il path del file di traduzione |
-| `ReadTranslationFileAction` | Legge il file YAML |
-| `WriteTranslationFileAction` | Scrive il file YAML |
-| `MergeTranslationsAction` | Merge di più sorgenti |
-| `SyncTranslationsAction` | Sincronizza DB ↔ file |
-| `SaveTransAction` | Salvataggio di una chiave |
-| `PublishTranslationAction` | Pubblicazione delle traduzioni |
-| `TransArrayAction` / `TransCollectionAction` | Accesso a array e collection |
-| `TranslatorAction` | Wrapper su `trans()` |
-| **`Actions/Filament/`**, **`Actions/Translation/`** | Sottodomini dedicati |
-
-### Models (`app/Models/`)
-
-`LanguageLine`, `Translation`, `TranslationFile`, `Post`, `BaseModel`, `BaseModelLang`,
-`BaseMorphPivot` — contracts in `Models/Contracts/HasTranslationsContract`.
-
-### Filament 5
-
-- **Resources**: `TranslationFileResource` (da `LangBaseResource`), `Pages/`
-- **Widget**: `LanguageSwitcherWidget`
-
-## Pattern del Modulo
-
-- Le chiavi sono `modulo::file.chiave` — mai stringhe hardcoded nelle UI
-- `HasTranslationsContract` è il contratto da tipizzare (mai `BaseModel`)
-- `HasStrictTranslations` fallisce se una chiave esiste solo in `it` e non nelle altre lingue
-- Supporto multi-lingua: `it`, `en`, `de` (più `es`, `fr`, `nb_NO` dove presenti)
-- Sorgenti DB: `LanguageLine`; sorgenti file: `lang/<locale>/`
-
-## Verifica
-
-```bash
-cd laravel
-
-php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Lang
-./vendor/bin/pest Modules/Lang
-./vendor/bin/pint
-```
-
-## Quick Flow
-
-```bash
-bmad-quick-dev "Aggiungi chiave mancante in de"
-bmad-quick-spec "Specifica comportamento fallback per chiave assente"
-```
-
-> Il modulo non espone comandi Artisan: il sync DB ↔ file passa da
-> `SyncTranslationsAction` / `MergeTranslationsAction`.
-
----
-
-*Lang · BMAD Quick Reference · data 2026-09-29*
->>>>>>> .merge_file_B6J1n7

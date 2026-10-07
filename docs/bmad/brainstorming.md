@@ -1,15 +1,9 @@
 ---
-bmad: true
-module: Lang
----
-<<<<<<< .merge_file_8eTBQY
-<<<<<<< .merge_file_rFzOC4
----
 title: "Lang — brainstorming"
 type: brainstorming
 tags: [lang, brainstorming, risks, open-questions, decisions, translations]
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-10-07
 qmd: "Lang brainstorming decisioni aperte scartate rischi traduzioni localizzazione"
 related:
   - ./README.md
@@ -17,6 +11,9 @@ related:
   - ./brainstorming/module-opportunities.md
   - ./epics/module-roadmap.md
   - ./epics/translation-infrastructure.epic.md
+bmad: true
+module: Lang
+status: active
 ---
 
 # Lang — brainstorming
@@ -80,32 +77,3 @@ related:
 - [Epic roadmap](./epics/module-roadmap.md)
 - [Epic translation infra](./epics/translation-infrastructure.epic.md)
 - [Module opportunities (shard)](./brainstorming/module-opportunities.md)
-=======
-=======
->>>>>>> .merge_file_rHG7ee
-# Brainstorming - Modulo Lang
-
-## Idee iniziali
-
-- [IDEA 1]
-- [IDEA 2]
-- [IDEA 3]
-
-## Problemi da risolvere
-
-- [PROBLEMA 1]
-- [PROBLEMA 2]
-
-## Soluzioni proposte
-
-- [SOLUZIONE 1]
-- [SOLUZIONE 2]
-
-## Domande aperte
-
-- [DOMANDA 1]
-- [DOMANDA 2]
-<<<<<<< .merge_file_8eTBQY
->>>>>>> .merge_file_BELBYc
-=======
->>>>>>> .merge_file_rHG7ee
