@@ -52,6 +52,16 @@ related:
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 
+## Documentazione BMAD del modulo
+
+Aggiornata il 2026-10-07 dopo la risoluzione dei marker di merge nei docs (versioni composte, non scelte a un lato).
+
+- [Brainstorming](bmad/brainstorming.md): decisioni, questioni aperte, opzioni scartate.
+- [Architecture](bmad/architecture.md)
+- [Quick reference](bmad/quick-reference.md)
+- [Setup guide](bmad/setup-guide.md)
+- Story: cartella [bmad/stories/](bmad/stories/).
+
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
