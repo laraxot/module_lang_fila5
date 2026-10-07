@@ -821,6 +821,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
                     /** @return array<string, string> */
                     public function namespaces(): array
                     {
+                        // Nessun namespace registrato: TranslationData deve lanciare.
                         return [];
                     }
                 };
