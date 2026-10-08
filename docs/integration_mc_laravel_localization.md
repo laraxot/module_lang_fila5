@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Integrazione di mcamara/laravel-localization"
 module: "Lang"
 type: concept

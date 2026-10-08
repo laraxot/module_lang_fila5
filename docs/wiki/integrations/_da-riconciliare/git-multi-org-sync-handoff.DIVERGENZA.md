@@ -1,4 +1,7 @@
 ---
+qmd: "git multi org sync handoff.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: git-multi-org-sync-handoff.md"
 module: Lang
 type: note

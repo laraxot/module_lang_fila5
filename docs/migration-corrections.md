@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Correzioni Migrazione - Modulo Lang"
 module: "Lang"
 type: concept

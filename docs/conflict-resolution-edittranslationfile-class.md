@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Risoluzione Conflitto EditTranslationFile.php (Classe)"
 module: "Lang"
 type: concept

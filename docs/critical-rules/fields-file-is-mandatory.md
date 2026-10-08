@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Regola Critica: fields.php è OBBLIGATORIO"
 module: "Lang"
 type: rule

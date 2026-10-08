@@ -1,4 +1,7 @@
 ---
+qmd: "performance optimization.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: PERFORMANCE-OPTIMIZATION.md"
 module: Lang
 type: note

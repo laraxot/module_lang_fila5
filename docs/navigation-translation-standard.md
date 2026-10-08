@@ -1,4 +1,7 @@
 ---
+qmd: "navigation translation standard"
+issues: []
+discussions: []
 title: "Standard per le traduzioni di navigazione Filament"
 type: standard
 module: Lang

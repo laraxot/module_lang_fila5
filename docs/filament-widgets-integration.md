@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Language Module - Filament Widgets Integration"
 module: "Lang"
 type: concept
@@ -104,8 +106,13 @@ class LanguageSwitcherWidget extends XotBaseWidget
 Replace Livewire component with Filament widget:
 
 ```blade
-{{-- Headernav FO (canon 12.1) --}}
-@livewire(\Modules\Lang\Filament\Widgets\LanguageSwitcherWidget::class)
+{{-- OLD --}}
+<livewire:lang.switcher />
+
+{{-- NEW --}}
+<x-filament-widgets::widget
+    :widget="\Modules\Lang\Filament\Widgets\LanguageSwitcherWidget::class"
+/>
 ```
 
 ### 2. Configuration

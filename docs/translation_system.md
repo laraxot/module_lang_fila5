@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Sistema di Traduzione in il progetto"
 module: "Lang"
 type: concept

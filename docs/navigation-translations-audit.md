@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Audit Traduzioni con '.navigation' - <nome progetto>"
 module: "Lang"
 type: concept

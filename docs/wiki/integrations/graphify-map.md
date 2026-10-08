@@ -1,4 +1,7 @@
 ---
+qmd: "graphify map"
+issues: []
+discussions: []
 title: "Lang Module — Mappa Graphify"
 module: lang
 type: integration

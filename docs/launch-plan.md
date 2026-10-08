@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Product Launch Plan: Lang Module v1.0"
 module: "Lang"
 type: concept
