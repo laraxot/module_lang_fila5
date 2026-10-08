@@ -8,6 +8,7 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
@@ -39,7 +40,7 @@ use function Safe\json_encode;
  *
  * @property ProfileContract|null $deleter
  *
- * @mixin \Illuminate\Database\Eloquent\Model
+ * @mixin Model
  */
 class TranslationFile extends BaseModel
 {
