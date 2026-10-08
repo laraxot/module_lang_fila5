@@ -61,6 +61,7 @@ Aggiornata il 2026-10-07 dopo la risoluzione dei marker di merge nei docs (versi
 - [Quick reference](bmad/quick-reference.md)
 - [Setup guide](bmad/setup-guide.md)
 - Story: cartella [bmad/stories/](bmad/stories/).
+- [2026-10-08 Services -> Actions (residuo TranslatorService)](./stories/2026-10-08-services-to-actions-lang.story.md)
 
 ## Dependency Intelligence
 
