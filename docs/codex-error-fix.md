@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Codex Configuration Error Fixes"
 module: "Lang"
 type: concept

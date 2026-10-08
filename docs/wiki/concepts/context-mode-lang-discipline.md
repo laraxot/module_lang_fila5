@@ -1,4 +1,7 @@
 ---
+qmd: "context mode lang discipline"
+issues: []
+discussions: []
 title: "Lang Module — Context-Mode Discipline"
 type: "rule"
 tags: [lang, context-mode, translations, governance]

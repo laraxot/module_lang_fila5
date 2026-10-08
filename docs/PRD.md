@@ -1,4 +1,7 @@
 ---
+qmd: "PRD"
+issues: []
+discussions: []
 title: "Product Requirements Document (PRD) - Lang Module"
 module: "Lang"
 type: concept
@@ -204,6 +207,8 @@ The Lang module provides a structured framework for managing lang operations wit
 
 ### 7.3 Technical Constraints
 - PHP 8.3+ required
+- Laravel 13+ required
+---
 - Laravel 12+ required
 - Filament v5 for UI
 - MySQL 8.0+
@@ -250,5 +255,9 @@ The Lang module provides a structured framework for managing lang operations wit
 
 ### Related Documents
 - [Architecture](architecture.md)
+---
+- [Architecture](architecture.md)
+---
+- [Architecture](ARCHITECTURE.md)
 - [Technical Specification](TECH_SPEC.md)
 - [User Stories](epics/lang-epics-and-stories.md)

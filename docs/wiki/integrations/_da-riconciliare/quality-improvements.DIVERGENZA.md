@@ -1,4 +1,7 @@
 ---
+qmd: "quality improvements.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: quality-improvements.md"
 module: Lang
 type: note

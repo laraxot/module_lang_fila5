@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "SEO Multilingua"
 module: "Lang"
 type: concept

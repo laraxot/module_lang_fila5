@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Lang Module - Testing Guidelines"
 module: "Lang"
 type: concept

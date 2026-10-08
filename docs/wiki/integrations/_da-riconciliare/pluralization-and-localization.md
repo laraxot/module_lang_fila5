@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Plurale/Singolare e Localizzazione Date/Valute"
 module: "Lang"
 type: concept
@@ -191,6 +193,8 @@ related:
 
 - [translations-faq.md](./translations-faq.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
+---
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)
@@ -382,4 +386,9 @@ related:
 - [README.md](./README.md)
 - [README.md](./README.md)
 - [README.md](./README.md)
+- [README.md](./README.md)
+---
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+- [translations-storage.md](./translations-storage.md)
+- [translation-process.md](./translation-process.md)
 - [README.md](./README.md)

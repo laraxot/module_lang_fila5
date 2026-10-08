@@ -5,41 +5,49 @@ declare(strict_types=1);
 namespace Modules\Lang\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Request;
-use Livewire\Features\SupportRedirects\Redirector;
 use Mcamara\LaravelLocalization\Exceptions\UnsupportedLocaleException;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Mcamara\LaravelLocalization\LaravelLocalization as LaravelLocalizationManager;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
-use Webmozart\Assert\Assert;
 
 /**
- * Chrome tema: cambio lingua via prefisso URL (LaravelLocalization).
+ * Widget per il cambio di lingua.
  *
- * Non è una card dashboard: `$isDiscovered = false`.
+ * Fornisce un selettore dropdown per cambiare la lingua dell'interfaccia.
+ * Sostituisce i vecchi componenti HTTP `Http\Livewire\Lang\{Switcher,Change}`:
+ * stessa fonte lingue (`LaravelLocalization::getSupportedLocales()`) e stessa
+ * strategia di URL localizzato (`LaravelLocalization::getLocalizedURL()`), non
+ * più un fallback statico né un redirect sull'URL corrente non localizzato.
+ *
+ * @see https://github.com/mcamara/laravel-localization
  */
 class LanguageSwitcherWidget extends XotBaseSchemaWidget
 {
-    protected static bool $isDiscovered = false;
-
     /** @var view-string */
     protected string $view = 'lang::filament.widgets.language-switcher';
 
     /**
-     * Chrome tema: visibile salvo disattivazione esplicita.
+     * Non è una dashboard card: si monta esplicitamente nel tema
+     * (`@livewire(\Modules\Lang\Filament\Widgets\LanguageSwitcherWidget::class)`),
+     * non va auto-scoperto nelle dashboard Filament.
+     */
+    protected static bool $isDiscovered = false;
+
+    /**
+     * Determina se il widget può essere visualizzato.
      */
     public static function canView(): bool
     {
-        return true === config('lang.language_switcher.enabled', true);
+        return true;
     }
 
     /**
-     * Schema del form per la configurazione del widget.
+     * Schema del form: il widget non espone campi editabili, solo azioni.
      *
      * @return array<int, Component>
      */
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         return [];
     }
@@ -47,13 +55,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     /**
      * Metodo pubblico per esporre i dati della vista ad altri componenti.
      *
-     * @return array{
-     *     current_locale: string,
-     *     available_locales: Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>,
-     *     widget_id: string,
-     *     lang: string,
-     *     langs: array<string, array{native: string, name: string, url: string}>
-     * }
+     * @return array<string, mixed>
      */
     public function exposeViewData(): array
     {
@@ -61,112 +63,92 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     }
 
     /**
-     * Ottiene le lingue disponibili da LaravelLocalization.
+     * Ottiene le lingue disponibili nel sistema da LaravelLocalization,
+     * la stessa fonte usata dai vecchi `Switcher`/`Change`.
      *
      * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
-     *
-     * @phpstan-return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
      */
     public function getAvailableLocales(): Collection
     {
-        $items = [];
-        $supported = LaravelLocalization::getSupportedLocales();
-        Assert::isArray($supported);
+        /** @var array<string, array<string, mixed>> $supportedLocales */
+        $supportedLocales = LaravelLocalization::getSupportedLocales();
 
-        foreach ($supported as $code => $locale) {
-            Assert::string($code);
-            Assert::isArray($locale);
-            $nameRaw = $locale['name'] ?? $code;
-            $nativeRaw = $locale['native'] ?? $nameRaw;
-            $name = is_string($nameRaw) ? $nameRaw : $code;
-            $nativeName = is_string($nativeRaw) ? $nativeRaw : $name;
-            $flag = null;
-            if (isset($locale['flag']) && is_string($locale['flag'])) {
-                $flag = $locale['flag'];
-            }
-            $items[] = [
-                'code' => $code,
-                'name' => $name,
-                'native_name' => $nativeName,
-                'flag' => $flag,
-            ];
-        }
+        return collect($supportedLocales)
+            ->map(function (array $properties, string $code): array {
+                $name = $properties['name'] ?? $code;
 
-        return collect($items);
+                return [
+                    'code' => $code,
+                    'name' => is_string($name) ? $name : $code,
+                    'native_name' => is_string($properties['native'] ?? null)
+                        ? $properties['native']
+                        : (is_string($name) ? $name : $code),
+                    'flag' => is_string($properties['flag'] ?? null) ? $properties['flag'] : null,
+                ];
+            })
+            ->values();
     }
 
     /**
-     * Redirect 303 all'URL localizzato (prefisso, non sessione).
+     * Cambia la lingua corrente e reindirizza all'URL localizzato
+     * equivalente (stesso comportamento del vecchio `Change::mount()`),
+     * non a un URL non localizzato con sola preferenza in sessione.
      */
-    public function changeLanguage(string $locale): RedirectResponse|Redirector|null
+    public function changeLanguage(string $locale): void
     {
         if (! $this->isValidLocale($locale)) {
-            return null;
+            return;
         }
 
-        return redirect($this->getLanguageUrl($locale), 303);
+        $this->redirect($this->getLanguageUrl($locale));
     }
 
     /**
-     * URL con prefisso lingua, stesso meccanismo di Change::mount().
+     * Genera l'URL localizzato per una specifica lingua tramite
+     * `LaravelLocalization::getLocalizedURL()`. Fallback a `/{locale}`
+     * se il pacchetto non riesce a produrre una stringa (es. mock nei test)
+     * o se il locale richiesto non è tra quelli davvero supportati in
+     * configurazione (`UnsupportedLocaleException`).
      */
     public function getLanguageUrl(string $locale): string
     {
-        $currentUrl = Request::getRequestUri();
-
         try {
-            $url = LaravelLocalization::getLocalizedURL($locale, $currentUrl, [], true);
+            $url = app(LaravelLocalizationManager::class)->getLocalizedURL($locale, null, [], true);
         } catch (UnsupportedLocaleException) {
             return '/'.$locale;
         }
 
-        if (! is_string($url)) {
-            return '/'.$locale;
-        }
-
-        return $url;
+        return is_string($url) ? $url : '/'.$locale;
     }
 
     /**
-     * Dati da passare alla vista FO (Alpine + link URL).
+     * Dati da passare alla vista FO (`lang::filament.widgets.language-switcher`):
+     * `$lang` (codice lingua corrente, per l'icona nel pulsante) e `$langs`
+     * (mappa `codice => ['url' => ..., 'native' => ...]` per i link `<a href>`
+     * del dropdown, con URL già localizzati via `getLanguageUrl()`).
      *
-     * @return array{
-     *     current_locale: string,
-     *     available_locales: Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>,
-     *     widget_id: string,
-     *     lang: string,
-     *     langs: array<string, array{native: string, name: string, url: string}>
-     * }
+     * @return array<string, mixed>
      */
     protected function getViewData(): array
     {
-        $lang = app()->getLocale();
         $availableLocales = $this->getAvailableLocales();
-        $langs = [];
 
-        foreach ($availableLocales as $locale) {
-            if ($locale['code'] === $lang) {
-                continue;
-            }
-
-            $langs[$locale['code']] = [
-                'native' => $locale['native_name'],
-                'name' => $locale['name'],
+        $langs = $availableLocales->mapWithKeys(fn (array $locale): array => [
+            $locale['code'] => [
                 'url' => $this->getLanguageUrl($locale['code']),
-            ];
-        }
+                'native' => $locale['native_name'],
+            ],
+        ]);
 
         return [
-            'current_locale' => $lang,
             'available_locales' => $availableLocales,
-            'widget_id' => 'language-switcher-'.uniqid(),
-            'lang' => $lang,
+            'lang' => app()->getLocale(),
             'langs' => $langs,
         ];
     }
 
     /**
-     * Verifica se il locale è tra quelli supportati.
+     * Verifica se il locale è valido (presente tra quelli supportati).
      */
     protected function isValidLocale(string $locale): bool
     {

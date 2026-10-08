@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "📚 **Indice Documentazione Modulo Lang**"
 module: "Lang"
 type: concept
@@ -49,6 +51,17 @@ related:
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+
+## Documentazione BMAD del modulo
+
+Aggiornata il 2026-10-07 dopo la risoluzione dei marker di merge nei docs (versioni composte, non scelte a un lato).
+
+- [Brainstorming](bmad/brainstorming.md): decisioni, questioni aperte, opzioni scartate.
+- [Architecture](bmad/architecture.md)
+- [Quick reference](bmad/quick-reference.md)
+- [Setup guide](bmad/setup-guide.md)
+- Story: cartella [bmad/stories/](bmad/stories/).
+- [2026-10-08 Services -> Actions (residuo TranslatorService)](./stories/2026-10-08-services-to-actions-lang.story.md)
 
 ## Dependency Intelligence
 

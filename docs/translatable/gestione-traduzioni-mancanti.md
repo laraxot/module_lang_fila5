@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Gestione delle Traduzioni Mancanti con Spatie Laravel Translatable"
 module: "Lang"
 type: concept

@@ -1,4 +1,7 @@
 ---
+qmd: "laravel consolidated"
+issues: []
+discussions: []
 title: "laravel — Consolidated Documentation"
 module: lang
 type: integration

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Audit Traduzioni Inglesi - <nome progetto>"
 module: "Lang"
 type: concept

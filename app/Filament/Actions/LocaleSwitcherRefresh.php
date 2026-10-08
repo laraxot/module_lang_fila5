@@ -38,13 +38,8 @@ class LocaleSwitcherRefresh extends XotBaseAction
                     ->required(),
             ])
             ->action(function (array $data) {
-                $payload = [];
-                foreach ($data as $key => $value) {
-                    if (is_string($key)) {
-                        $payload[$key] = $value;
-                    }
-                }
-                $this->applyLocale($payload);
+                /** @var array<string, mixed> $data */
+                $this->applyLocale($data);
 
                 return redirect(request()->header('Referer'));
             })
@@ -63,7 +58,7 @@ class LocaleSwitcherRefresh extends XotBaseAction
      * Il fallback a `en` copre il caso in cui il valore arrivi non-stringa: il Select lo
      * garantisce, ma `$data` e' pur sempre input e la garanzia sta qui, non nel form.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     public function applyLocale(array $data): void
     {

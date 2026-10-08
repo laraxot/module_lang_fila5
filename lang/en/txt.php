@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'fields' => [
         'email' => [
@@ -738,10 +736,10 @@ return [
             'description' => 'title',
         ],
         'txt' => [
-            'label' => 'txt',
-            'placeholder' => 'txt',
-            'helper_text' => 'txt',
-            'description' => 'txt',
+            'label' => 'Text',
+            'placeholder' => 'Text',
+            'helper_text' => 'Text',
+            'description' => 'Text',
         ],
         'id_tbl' => [
             'label' => 'id_tbl',
@@ -894,7 +892,7 @@ return [
         'quadrimestre' => [
             'label' => 'quadrimestre',
             'placeholder' => 'quadrimestre',
-            'helper_text' => 'quadrimestre',
+            'helper_text' => '',
             'description' => 'quadrimestre',
         ],
         'video' => [
@@ -1163,6 +1161,11 @@ return [
             'label' => 'title',
             'icon' => 'title',
             'tooltip' => 'title',
+        ],
+        'export_pdf' => [
+            'label' => 'export_pdf',
+            'icon' => 'export_pdf',
+            'tooltip' => 'export_pdf',
         ],
     ],
     'navigation' => [

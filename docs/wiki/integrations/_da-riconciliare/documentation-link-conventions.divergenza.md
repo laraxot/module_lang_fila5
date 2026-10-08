@@ -1,4 +1,7 @@
 ---
+qmd: "documentation link conventions.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: documentation-link-conventions.md"
 module: Lang
 type: note

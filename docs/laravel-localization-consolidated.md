@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Laravel Localization (mcamara) — Consolidated Reference"
 module: "Lang"
 type: concept

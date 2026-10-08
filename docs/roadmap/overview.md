@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Roadmap overview (Module Lang)"
 module: "Lang"
 type: concept

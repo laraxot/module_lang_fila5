@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Architettura Modulo Lang"
 module: "Lang"
 type: concept

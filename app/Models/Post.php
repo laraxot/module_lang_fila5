@@ -18,48 +18,48 @@ use Spatie\Sluggable\SlugOptions;
 /**
  * Colonne allineate a `2026_01_21_211814_create_posts_table`.
  *
- * @property string                     $id
- * @property int|null                   $user_id
- * @property string|int|null            $post_id
- * @property string|null                $lang
- * @property string|null                $guid
- * @property string|null                $title
- * @property string|null                $subtitle
- * @property string|null                $post_type
- * @property string|null                $txt
- * @property string|null                $content
- * @property string|null                $excerpt
- * @property string|null                $slug
- * @property string|null                $status
- * @property Carbon|null                $published_at
- * @property string|null                $locale
- * @property string|null                $category
- * @property string|null                $image_src
- * @property string|null                $image_alt
- * @property string|null                $image_title
- * @property string|null                $meta_title
- * @property string|null                $meta_description
- * @property string|null                $meta_keywords
- * @property int|null                   $author_id
- * @property string|null                $url
+ * @property string $id
+ * @property int|null $user_id
+ * @property string|int|null $post_id
+ * @property string|null $lang
+ * @property string|null $guid
+ * @property string|null $title
+ * @property string|null $subtitle
+ * @property string|null $post_type
+ * @property string|null $txt
+ * @property string|null $content
+ * @property string|null $excerpt
+ * @property string|null $slug
+ * @property string|null $status
+ * @property Carbon|null $published_at
+ * @property string|null $locale
+ * @property string|null $category
+ * @property string|null $image_src
+ * @property string|null $image_alt
+ * @property string|null $image_title
+ * @property string|null $meta_title
+ * @property string|null $meta_description
+ * @property string|null $meta_keywords
+ * @property int|null $author_id
+ * @property string|null $url
  * @property array<string, string>|null $url_lang
- * @property string|null                $image_resize_src
- * @property Carbon|null                $created_at
- * @property Carbon|null                $updated_at
- * @property int|null                   $category_id
- * @property string|null                $image
- * @property int|null                   $published
- * @property string|null                $created_by
- * @property string|null                $updated_by
- * @property string|null                $linked_count
- * @property string|null                $related_count
- * @property string|null                $relatedrev_count
- * @property string|null                $linkable_type
- * @property int|null                   $views_count
- * @property ProfileContract|null       $creator
- * @property ProfileContract|null       $deleter
- * @property Model|null                 $linkable
- * @property ProfileContract|null       $updater
+ * @property string|null $image_resize_src
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property int|null $category_id
+ * @property string|null $image
+ * @property int|null $published
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property string|null $linked_count
+ * @property string|null $related_count
+ * @property string|null $relatedrev_count
+ * @property string|null $linkable_type
+ * @property int|null $views_count
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $deleter
+ * @property-read Model|null $linkable
+ * @property-read ProfileContract|null $updater
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newQuery()
@@ -103,7 +103,7 @@ use Spatie\Sluggable\SlugOptions;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUserId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereViewsCount($value)
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class Post extends BaseModel
 {
@@ -224,11 +224,11 @@ class Post extends BaseModel
 
     public function getTitleAttribute(?string $value): ?string
     {
-        if (null !== $value) {
+        if ($value !== null) {
             return $value;
         }
 
-        if (isset($this->attributes['post_type']) && '' !== $this->attributes['post_type'] && '0' !== $this->attributes['post_type']) {
+        if (isset($this->attributes['post_type']) && $this->attributes['post_type'] !== '' && $this->attributes['post_type'] !== '0') {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
@@ -246,7 +246,7 @@ class Post extends BaseModel
 
         $this->title = $value;
 
-        if (null !== $this->getKey()) {
+        if ($this->getKey() !== null) {
             $this->update([
                 'title' => $value,
             ]);
@@ -257,11 +257,11 @@ class Post extends BaseModel
 
     public function getGuidAttribute(?string $value): ?string
     {
-        if (\is_string($value) && '' !== $value && ! str_contains($value, ' ')) {
+        if (\is_string($value) && $value !== '' && ! str_contains($value, ' ')) {
             return $value;
         }
         $value = $this->title;
-        if ('' === $value) {
+        if ($value === '') {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
@@ -271,13 +271,13 @@ class Post extends BaseModel
                 : '';
             $value = $postType.' '.$postId;
         }
-        if (null === $value) {
+        if ($value === null) {
             $value = 'u-'.random_int(1, 1000);
         }
         $value = Str::slug($value);
         $this->guid = $value;
 
-        if (null !== $this->getKey()) {
+        if ($this->getKey() !== null) {
             $this->update([
                 'guid' => $value,
             ]);

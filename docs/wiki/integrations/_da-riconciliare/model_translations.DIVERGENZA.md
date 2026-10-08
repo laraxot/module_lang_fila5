@@ -1,4 +1,7 @@
 ---
+qmd: "model translations.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: model_translations.md"
 module: Lang
 type: note

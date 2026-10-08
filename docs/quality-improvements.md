@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06"
 module: "Lang"
 type: concept

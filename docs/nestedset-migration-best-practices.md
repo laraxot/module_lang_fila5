@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "NestedSet Migration Best Practices - Lang Module"
 module: "Lang"
 type: concept

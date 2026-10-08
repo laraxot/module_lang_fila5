@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Model Translations in `<nome progetto>`"
 module: "Lang"
 type: concept

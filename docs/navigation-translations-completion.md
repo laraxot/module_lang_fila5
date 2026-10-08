@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Navigation Translations Completion - Global Roadmap"
 module: "Lang"
 type: concept

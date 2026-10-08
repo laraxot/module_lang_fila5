@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "enum translation pattern implementation"
+issues: []
+discussions: []
 title: "Enum Translation Pattern - Implementazione Regola Critica"
 type: concept
 module: "Lang"

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Convenzioni di Naming per Documentazione"
 module: "Lang"
 type: concept
