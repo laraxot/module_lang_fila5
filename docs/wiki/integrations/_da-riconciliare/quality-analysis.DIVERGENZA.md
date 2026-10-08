@@ -1,4 +1,7 @@
 ---
+qmd: "quality analysis.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: quality-analysis.md"
 module: Lang
 type: note

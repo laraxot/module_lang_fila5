@@ -1,4 +1,7 @@
 ---
+qmd: "lang consolidated"
+issues: []
+discussions: []
 title: "lang — Consolidated Documentation"
 module: lang
 type: integration

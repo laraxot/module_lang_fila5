@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'language_switcher' => [
         'select_language' => 'Select language',
@@ -14,11 +12,14 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => '100',
         'name' => 'Widgets',
         'plural' => 'Widgets',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
@@ -43,5 +44,14 @@ return [
         ],
     ],
     'actions' => [
+        'create' => [
+            'label' => 'Crea Widgets',
+        ],
+        'edit' => [
+            'label' => 'Modifica Widgets',
+        ],
+        'delete' => [
+            'label' => 'Elimina Widgets',
+        ],
     ],
 ];

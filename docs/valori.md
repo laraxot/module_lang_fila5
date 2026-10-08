@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Politica, Filosofia, Religione, Etica, Zen – Modulo Lang"
 module: "Lang"
 type: concept

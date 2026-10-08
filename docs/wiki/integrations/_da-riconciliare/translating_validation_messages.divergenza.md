@@ -1,4 +1,7 @@
 ---
+qmd: "translating validation messages.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: translating_validation_messages.md"
 module: Lang
 type: note

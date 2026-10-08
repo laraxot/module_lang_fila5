@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Dependency Intelligence - Module Lang"
 module: "Lang"
 type: concept

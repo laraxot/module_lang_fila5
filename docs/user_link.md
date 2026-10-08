@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Collegamenti al Modulo User"
 module: "Lang"
 type: concept

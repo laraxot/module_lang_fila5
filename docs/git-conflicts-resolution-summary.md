@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Git Conflicts Resolution Summary"
 module: "Lang"
 type: concept

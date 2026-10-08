@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Sistema di Traduzioni"
 module: "Lang"
 type: concept
