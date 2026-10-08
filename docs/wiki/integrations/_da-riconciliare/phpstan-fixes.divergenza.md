@@ -1,4 +1,7 @@
 ---
+qmd: "phpstan fixes.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: PHPSTAN-FIXES.md"
 module: Lang
 type: note
