@@ -14,7 +14,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property int $id
  * @property string $group
  * @property string $key
- * @property array<array-key, mixed> $text
+ * @property array<string, string> $text
  * @property string $locale
  * @property string|null $created_by
  * @property string|null $updated_by
@@ -38,7 +38,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property-read ProfileContract|null $deleter
  * @property-read ProfileContract|null $updater
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class LanguageLine extends BaseModel
 {

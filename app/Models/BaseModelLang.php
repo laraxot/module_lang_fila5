@@ -22,7 +22,6 @@ abstract class BaseModelLang extends XotBaseModel
      * Indicates whether attributes are snake cased on arrays.
      *
      * @see  https://laravel-news.com/6-eloquent-secrets
-     *
      * @var bool
      */
     public static $snakeAttributes = true;
@@ -49,9 +48,7 @@ abstract class BaseModelLang extends XotBaseModel
     protected $keyType = 'string';
 
     /** @var list<string> */
-    protected $hidden = [
-        // 'password'
-    ];
+    protected $hidden = [];
 
     // -----------
     /*
@@ -61,7 +58,10 @@ abstract class BaseModelLang extends XotBaseModel
      */
 
     /**
-     * @return array<string, string> */
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
     protected function casts(): array
     {
         return [

@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Models/Translation.php
  */
@@ -11,6 +10,7 @@ namespace Modules\Lang\Models;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\DB;
 use Modules\Lang\Database\Factories\TranslationFactory;
 use Modules\Xot\Contracts\ProfileContract;
 
@@ -57,14 +57,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static EloquentBuilder<static>|Translation whereLocale($value)
  * @method static EloquentBuilder<static>|Translation whereUserId($value)
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class Translation extends BaseModel
 {
-    final public const int STATUS_SAVED = 0;
-
-    final public const int STATUS_CHANGED = 1;
-
     protected $fillable = [
         'id',
         'lang',
@@ -106,12 +102,12 @@ class Translation extends BaseModel
      */
     public function scopeSelectDistinctGroup(EloquentBuilder $query): EloquentBuilder|QueryBuilder
     {
-        $select = match (\DB::getDriverName()) {
+        $select = match (DB::getDriverName()) {
             'mysql' => 'DISTINCT `group`',
             default => 'DISTINCT "group"',
         };
 
-        return $query->select(\DB::raw($select));
+        return $query->select(DB::raw($select));
     }
 
     /*
