@@ -114,7 +114,7 @@ abstract class TestCase extends XotBaseTestCase
      */
     public static function bindRealSaveTransAction(): void
     {
-        app()->instance(SaveTransAction::class, new SaveTransAction());
+        app()->instance(SaveTransAction::class, new SaveTransAction);
     }
 
     /**
