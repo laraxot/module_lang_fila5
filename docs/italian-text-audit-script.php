@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 /**
  * Script per identificare testi italiani residui in file di traduzione non italiani.
  */

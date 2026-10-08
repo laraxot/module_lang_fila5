@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Risoluzione Conflitto nel Modello Translation"
 module: "Lang"
 type: concept

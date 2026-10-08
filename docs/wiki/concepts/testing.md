@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Testing in Lang"
 module: "Lang"
 type: concept

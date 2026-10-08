@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Laravel Localization Metadata for Cursor"
 module: "Lang"
 type: concept

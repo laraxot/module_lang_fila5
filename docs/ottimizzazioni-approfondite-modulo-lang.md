@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Ottimizzazioni Approfondite Modulo Lang - DRY + KISS"
 module: "Lang"
 type: concept

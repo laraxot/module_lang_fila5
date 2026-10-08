@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Refined Italian Text Audit Report"
 module: "Lang"
 type: concept

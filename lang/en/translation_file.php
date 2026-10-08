@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'model' => [
         'label' => 'translation file.model',
@@ -103,6 +101,7 @@ return [
         ],
         'lang' => [
             'label' => 'lang',
+            'tooltip' => 'Seleziona lingua',
         ],
     ],
     'label' => 'Missing Label',

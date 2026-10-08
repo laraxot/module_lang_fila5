@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Template Traduzione"
 module: "Lang"
 type: concept

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Collegamenti ai Moduli che utilizzano le Traduzioni"
 module: "Lang"
 type: concept

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Integrazione di mcamara/laravel-localization con Laravel Volt"
 module: "Lang"
 type: concept

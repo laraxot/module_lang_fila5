@@ -1,3 +1,14 @@
+---
+title: "translation files update"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation files update"
+issues: []
+discussions: []
+---
+
 # Aggiornamento File di Traduzione - Gennaio 2025
 
 ## Data Aggiornamento

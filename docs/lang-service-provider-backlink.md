@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "LangServiceProvider"
 module: "Lang"
 type: concept

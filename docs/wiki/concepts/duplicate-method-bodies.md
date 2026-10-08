@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "corpi metodo duplicati — Lang"
 type: analysis
 module: Lang

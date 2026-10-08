@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Testing ServiceProvider Fix - Lang Module"
 module: "Lang"
 type: concept

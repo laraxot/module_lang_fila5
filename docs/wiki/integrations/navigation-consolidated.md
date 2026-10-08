@@ -1,4 +1,7 @@
 ---
+qmd: "navigation consolidated"
+issues: []
+discussions: []
 title: "navigation — Consolidated Documentation"
 module: lang
 type: integration
