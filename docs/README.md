@@ -47,7 +47,6 @@ Modules/Lang/
 │   │   ├── WriteTranslationFileAction.php
 │   │   ├── SyncTranslationsAction.php
 │   │   ├── PublishTranslationAction.php
-│   │   ├── TranslatorAction.php
 │   │   └── GetAllTranslationAction.php
 │   ├── Services/
 │   │   └── TranslationService.php
@@ -89,7 +88,6 @@ Modules/Lang/
 | `WriteTranslationFileAction` | Scrivi file traduzioni | Action |
 | `SyncTranslationsAction` | Sincronizza tra lingue | Action |
 | `PublishTranslationAction` | Publish traduzioni | Action |
-| `TranslatorAction` | Translation lookup | Action |
 | `TranslationService` | Logica traduzioni | Service |
 | `TranslatorAdapter` | Wrapper translator Laravel | Adapter |
 
@@ -163,14 +161,7 @@ SyncTranslationsAction::execute([
 ### Scenario 4: Usare Translator Helper
 
 ```php
-use Modules\Lang\Actions\TranslatorAction;
-
-$message = TranslatorAction::execute([
-    'key' => 'user.welcome',
-    'params' => ['name' => 'Mario'],
-    'language' => 'it',
-    'default' => 'Welcome :name', // fallback
-]);
+$message = __('user.welcome', ['name' => 'Mario'], 'it');
 
 // Result: "Benvenuto Mario" (se esiste traduzione it)
 //         "Welcome Mario" (fallback a English)
