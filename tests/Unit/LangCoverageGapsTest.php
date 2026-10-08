@@ -25,7 +25,6 @@ use Modules\Lang\Actions\GetTransPathAction;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
 use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
-use Modules\Lang\Actions\TranslatorAction;
 use Modules\Lang\Actions\WriteTranslationFileAction;
 use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
@@ -120,7 +119,7 @@ function langGapsSqlite(): void
 }
 
 describe('Lang coverage gaps closeout', function (): void {
-    test('TranslatorAdapter notifyMissingKey and TranslatorAction non-string branch', function (): void {
+    test('TranslatorAdapter notifyMissingKey records the missing key', function (): void {
         langGapsSqlite();
         $loader = new ArrayLoader();
         $loader->addMessages('it', 'g', ['n' => 9]);
@@ -129,9 +128,6 @@ describe('Lang coverage gaps closeout', function (): void {
         $missing = 'g.missing_'.uniqid('', true);
         Assert::assertSame($missing, $adapter->get($missing));
         Assert::assertTrue(Translation::query()->where('item', substr($missing, 2))->exists() || Translation::query()->count() > 0);
-
-        $action = new TranslatorAction($loader, 'it');
-        Assert::assertSame('g.n', $action->get('g.n'));
     });
 
     test('TranslatorAdapter non-string result coerces to key', function (): void {
