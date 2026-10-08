@@ -1,10 +1,15 @@
+---
+title: "phpstan compliance status"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan compliance status"
+issues: []
+discussions: []
+---
+
 # PHPStan Level 10 Compliance Status
-
-**Last Updated**: 2025-12-10
-**Last Updated**: 2025-12-10
-
-
-
 
 **Last Updated**: 2025-12-10
 **Last Updated**: 2025-12-10
@@ -52,8 +57,4 @@ To maintain PHPStan compliance:
 ## Related Documentation
 - [Laravel Localization](https://laravel.com/docs/12.x/localization)
 - [Route Service Providers](route-service-providers.md)
-- [Language Detection Patterns](language-detection.md)
-- [Language Detection Patterns](language-detection.md)
-- [Language Detection Patterns](language-detection.md)
-- [Language Detection Patterns](language-detection.md)
 - [Language Detection Patterns](language-detection.md)
