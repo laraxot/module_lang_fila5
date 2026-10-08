@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Standard per Modal Heading e Description nelle Traduzioni <nome progetto>"
 module: "Lang"
 type: rule

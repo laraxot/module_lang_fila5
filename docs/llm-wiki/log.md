@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Lang Activity Log"
 module: "Lang"
 type: concept

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Integrazione Livewire Volt + mcamara/laravel-localization"
 module: "Lang"
 type: concept

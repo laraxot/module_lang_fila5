@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Goals - Lang"
 module: "Lang"
 type: concept

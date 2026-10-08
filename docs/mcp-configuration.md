@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "MCP Server Configuration - Lang Module"
 module: "Lang"
 type: concept

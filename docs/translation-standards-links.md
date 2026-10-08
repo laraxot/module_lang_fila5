@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Collegamenti agli Standard di Traduzione"
 module: "Lang"
 type: rule

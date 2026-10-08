@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Filament Version Declaration — Lang"
 module: "Lang"
 type: concept

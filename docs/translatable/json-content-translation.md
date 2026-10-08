@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Gestione Traduzioni Contenuti JSON"
 module: "Lang"
 type: concept

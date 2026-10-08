@@ -1,4 +1,7 @@
 ---
+qmd: "migration path canonical"
+issues: []
+discussions: []
 title: Path canonico migrazioni Lang
 type: concept
 module: Lang

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Filament4 Migration"
 module: "Lang"
 type: concept

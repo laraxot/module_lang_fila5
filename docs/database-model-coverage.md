@@ -1,3 +1,14 @@
+---
+title: "database model coverage"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "database model coverage"
+issues: []
+discussions: []
+---
+
 # Lang — Copertura Model / Migration / Seeder / Factory
 
 Stato: colmato il gap su `LanguageLine` (mancavano factory e seeder). Documentati gli skip su

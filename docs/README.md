@@ -1,3 +1,14 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+---
+
 # Documentation
 
 This directory contains documentation for the module.
@@ -36,7 +47,6 @@ Modules/Lang/
 │   │   ├── WriteTranslationFileAction.php
 │   │   ├── SyncTranslationsAction.php
 │   │   ├── PublishTranslationAction.php
-│   │   ├── TranslatorAction.php
 │   │   └── GetAllTranslationAction.php
 │   ├── Services/
 │   │   └── TranslationService.php
@@ -78,7 +88,6 @@ Modules/Lang/
 | `WriteTranslationFileAction` | Scrivi file traduzioni | Action |
 | `SyncTranslationsAction` | Sincronizza tra lingue | Action |
 | `PublishTranslationAction` | Publish traduzioni | Action |
-| `TranslatorAction` | Translation lookup | Action |
 | `TranslationService` | Logica traduzioni | Service |
 | `TranslatorAdapter` | Wrapper translator Laravel | Adapter |
 
@@ -152,14 +161,7 @@ SyncTranslationsAction::execute([
 ### Scenario 4: Usare Translator Helper
 
 ```php
-use Modules\Lang\Actions\TranslatorAction;
-
-$message = TranslatorAction::execute([
-    'key' => 'user.welcome',
-    'params' => ['name' => 'Mario'],
-    'language' => 'it',
-    'default' => 'Welcome :name', // fallback
-]);
+$message = __('user.welcome', ['name' => 'Mario'], 'it');
 
 // Result: "Benvenuto Mario" (se esiste traduzione it)
 //         "Welcome Mario" (fallback a English)
@@ -355,7 +357,21 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse --level=max Modules/Lang
 
 ---
 
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
 **Status**: ✅ Production  
 **Last Updated**: 2026-07-14  
 **Requirements**: PHP 8.3+, Laravel 13  
 **PHPStan Level**: 10 (Compliant)
+---
+Documentation should be:
+- Clear and concise
+- Example-driven
+- Updated with code changes
+- Use Markdown format (.md)

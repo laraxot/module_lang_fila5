@@ -1,3 +1,14 @@
+---
+title: "quality analysis 2025 11 11"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "quality analysis 2025 11 11"
+issues: []
+discussions: []
+---
+
 # Quality Analysis Report - Lang Module
 **Date**: 2025-11-11
 **Analyst**: Claude Code
@@ -5,6 +16,14 @@
 
 ---
 
+title: "quality analysis 2025 11 11"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "quality analysis 2025 11 11"
+issues: []
+discussions: []
 ## Executive Summary
 
 The Lang module has been analyzed using three quality assurance tools:

@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'tab' => [
         'index' => 'Indice',
@@ -11,11 +9,14 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => '100',
         'name' => 'Translations',
         'plural' => 'Translations',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
@@ -40,5 +41,14 @@ return [
         ],
     ],
     'actions' => [
+        'create' => [
+            'label' => 'Crea Translations',
+        ],
+        'edit' => [
+            'label' => 'Modifica Translations',
+        ],
+        'delete' => [
+            'label' => 'Elimina Translations',
+        ],
     ],
 ];

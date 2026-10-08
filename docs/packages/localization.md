@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Localizzazione"
 module: "Lang"
 type: concept
