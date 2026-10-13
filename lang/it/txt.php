@@ -512,6 +512,12 @@ return [
             'placeholder' => 'location',
             'helper_text' => 'location',
             'description' => 'location',
+            'address' => [
+                'label' => 'location.address',
+                'placeholder' => 'location.address',
+                'helper_text' => 'location.address',
+                'description' => 'location.address',
+            ],
         ],
         'coordinates' => [
             'label' => 'coordinates',
@@ -1017,6 +1023,12 @@ return [
         'indennitaTipoDettaglio' => [
             'label' => 'indennitaTipoDettaglio',
         ],
+        'author' => [
+            'label' => 'author',
+            'placeholder' => 'author',
+            'helper_text' => 'author',
+            'description' => 'author',
+        ],
     ],
     'actions' => [
         'authenticate' => [
@@ -1198,6 +1210,16 @@ return [
             'icon' => 'ImportAction',
             'tooltip' => 'ImportAction',
         ],
+        'next' => [
+            'label' => 'next',
+            'icon' => 'next',
+            'tooltip' => 'next',
+        ],
+        'previous' => [
+            'label' => 'previous',
+            'icon' => 'previous',
+            'tooltip' => 'previous',
+        ],
     ],
     'sections' => [
         'address' => [
@@ -1240,6 +1262,18 @@ return [
             'label' => 'field',
             'heading' => 'field',
         ],
+        'Luogo' => [
+            'label' => 'Luogo',
+            'heading' => 'Luogo',
+        ],
+        'Disservizio' => [
+            'label' => 'Disservizio',
+            'heading' => 'Disservizio',
+        ],
+        'Autore della segnalazione' => [
+            'label' => 'Autore della segnalazione',
+            'heading' => 'Autore della segnalazione',
+        ],
     ],
     'label' => 'Txt',
     'plural_label' => 'Txt (Plurale)',
@@ -1257,6 +1291,15 @@ return [
     'steps' => [
         'test' => [
             'label' => 'test',
+        ],
+        'Informativa sulla privacy' => [
+            'label' => 'Informativa sulla privacy',
+        ],
+        'Dati di segnalazione' => [
+            'label' => 'Dati di segnalazione',
+        ],
+        'Riepilogo' => [
+            'label' => 'Riepilogo',
         ],
     ],
 ];
