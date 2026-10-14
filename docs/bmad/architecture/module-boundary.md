@@ -6,6 +6,7 @@ module: Lang
 created: 2026-09-28
 updated: 2026-09-28
 qmd: "Lang architettura confini componenti PHP Laravel Filament"
+tags: [docs, lang, bmad]
 ---
 # Lang — architettura
 

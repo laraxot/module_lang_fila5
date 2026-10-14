@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "links01"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 # Best Practices per le Chiavi di Traduzione
 

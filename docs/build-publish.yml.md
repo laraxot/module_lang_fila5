@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "build publish.yml"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 name: Build & Publish
 

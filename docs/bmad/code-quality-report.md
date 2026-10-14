@@ -1,6 +1,12 @@
 ---
 bmad: true
 module: Lang
+title: "Code quality — modulo Lang"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, lang, bmad]
+qmd: "code quality   modulo lang lang"
 ---
 # Code quality — modulo Lang
 
