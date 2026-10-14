@@ -10,6 +10,7 @@ confidence: high
 tags: [queueable-action, spatie, architecture, laraxot, lang]
 related:
   - Modules/Xot/docs/queueable-actions.md
+status: draft
 ---
 
 # Queueable Actions — Lang Module Doctrine

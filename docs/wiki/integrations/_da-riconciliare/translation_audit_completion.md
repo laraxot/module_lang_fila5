@@ -144,7 +144,7 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali Creati
-- [Root Docs: Translation Standards](translation_standards.md)
+- [Root Docs: Translation Standards](../../../translation_standards.md)
 - [Lang Module: Translation Best Practices](../laravel/Modules/Lang/docs/translation_best_practices.md)
 - [<nome progetto> Module: Translation Guidelines](../laravel/Modules/<nome progetto>/docs/translation_guidelines.md)
 

@@ -9,7 +9,7 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "filament4 migration"
 related:
-  - "./italian-text-refined-audit-report.md"
+  - "../../../italian-text-refined-audit-report.md"
 ---
 # Convenzioni per i Link nella Documentazione
 

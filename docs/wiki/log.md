@@ -10,9 +10,15 @@ issues:
   - "https://github.com/laraxot/platform/issues/345"
 discussions:
   - "https://github.com/laraxot/platform/discussions/273"
+status: draft
 ---
 
 # Lang - Wiki Activity Log
+
+## [2026-10-14] docs | Studio del codice e correzione degli ingressi
+
+- Verificato: `__()` non scrive; il writer e' `SaveTransAction` via `AutoLabelAction` (acceso fuori dai test perche' `config('lang.save_missing_translations')` e' NULL a runtime); `TranslatorAdapter` non agganciato. README sostituito, `index.md` con 41 link ripuntati a `best-practices.md`/`api-reference.md`.
+- Story: [2026-10-14-docs-lang-studio](../stories/2026-10-14-docs-lang-studio.story.md). Memoria: [nota di memoria](../../../../../bashscripts/ai/wiki/memories/2026-10-14-docs-cms-lang-tenant-seo-studio.md)
 
 ## [2026-06-12] testing | TranslationFactory auto-increment id
 
@@ -22,7 +28,7 @@ discussions:
 
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
-- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
+- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt) _(target mancante, verificato 2026-10-14)_
 - GitHub: [#272](https://github.com/laraxot/platform/issues/272) / [D#273](https://github.com/laraxot/platform/discussions/273)
 
 ## [2026-05-11] Wiki Structure Created

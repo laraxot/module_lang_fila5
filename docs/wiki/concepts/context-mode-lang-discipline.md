@@ -7,6 +7,7 @@ type: "rule"
 tags: [lang, context-mode, translations, governance]
 created: 2026-05-12
 updated: 2026-05-12
+status: draft
 ---
 
 # Lang Module — Context-Mode Discipline
