@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan fixes"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Lang Module — PHPStan
@@ -25,15 +26,6 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/Lang
 - Issue [#332](https://github.com/laraxot/base_fixcity_fila5/issues/332) · base D[#333](https://github.com/laraxot/base_fixcity_fila5/discussions/333)
 
 ---
-
-title: "phpstan fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes"
-issues: []
-discussions: []
 ## Storico — Level 7 (Gennaio 2025)
 
 Il modulo Lang era a 0 errori Level 7.

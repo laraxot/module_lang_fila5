@@ -10,6 +10,7 @@ discussions: []
 module: theme
 topic: LOCALE_MANAGEMENT
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
+status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules

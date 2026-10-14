@@ -9,6 +9,7 @@ confidence: verified
 created: 2026-05-06
 updated: 2026-05-06
 tags: [phpstan, lang, action, type-safety]
+status: draft
 ---
 
 # PHPStan Fixes - 2026-05-06

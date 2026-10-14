@@ -13,6 +13,7 @@ metadata:
   type: lesson-learned
   created: 2026-09-15
   github_issues: []
+status: draft
 ---
 
 # `helper_text` vuoto quando coincide con la chiave del campo

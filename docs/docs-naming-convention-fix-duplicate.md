@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "docs naming convention fix duplicate"
 issues: []
 discussions: []
+status: draft
 ---
 title: "Correzione Convenzione Naming Cartelle Docs - Gennaio 2025"
 module: "Lang"

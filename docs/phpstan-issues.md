@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan issues"
 issues: []
 discussions: []
+status: draft
 ---
 
 # PHPStan Level 10 Issues - Detailed Analysis
@@ -18,15 +19,6 @@ discussions: []
 **Stima Risoluzione**: 3-5 giorni lavorativi  
 
 ---
-
-title: "phpstan issues"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan issues"
-issues: []
-discussions: []
 ## 📊 **Summary degli Errori**
 
 | Categoria | Count | Severità | Complessità | File Principali |

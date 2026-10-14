@@ -3,6 +3,8 @@ title: "Riorganizzazione docs core Lang"
 type: story
 tags: [docs, bmad, lang, reorganization]
 qmd: "riorganizzazione docs core Lang"
+status: draft
+updated: 2026-10-09
 ---
 
 # Story — riorganizzazione docs core: Lang

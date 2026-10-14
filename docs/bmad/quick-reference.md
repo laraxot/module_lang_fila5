@@ -9,6 +9,7 @@ related:
   - ./README.md
   - ./setup-guide.md
   - ./architecture/module-boundary.md
+status: draft
 ---
 
 # Lang — quick reference

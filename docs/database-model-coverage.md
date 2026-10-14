@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "database model coverage"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Lang — Copertura Model / Migration / Seeder / Factory
