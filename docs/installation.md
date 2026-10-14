@@ -10,6 +10,7 @@ title: Installazione Automatizzata
 description: Installazione Automatizzata
 extends: _layouts.documentation
 section: content
+status: draft
 ---
 
 # Installazione {#installazione}
