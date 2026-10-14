@@ -12,6 +12,7 @@ related:
   - ../../redundancy-audit.md
   - ../../case-sensitivity-rules.md
   - ../../../../../../docs/wiki/index/llm-wiki.md
+status: draft
 ---
 
 # Path canonico migrazioni Lang

@@ -18,8 +18,8 @@ related:
   - ./livewire-widget-epics.md
   - ./livewire-widget-decision-log.md
   - ../../Xot/docs/bmad/livewire-widget-project-context.md
-  - ../../Cms/docs/bmad/livewire-inventory.md
-  - ../../UI/docs/bmad/livewire-widget-project-context.md
+  - ../../../Cms/docs/bmad/livewire-inventory.md
+  - ../../../UI/docs/bmad/livewire-widget-project-context.md
   - ../stories/12.1.retire-lang-http-switchers.story.md
 ---
 
@@ -27,7 +27,7 @@ related:
 
 **Solo documentazione. Nessun PHP toccato in questo audit.**
 
-SSoT del modulo Lang per la campagna Livewire → Filament widget; formato e metodo come [Modules/Cms/docs/bmad/livewire-inventory.md](../../Cms/docs/bmad/livewire-inventory.md).
+SSoT del modulo Lang per la campagna Livewire → Filament widget; formato e metodo come [Modules/Cms/docs/bmad/livewire-inventory.md](../../../Cms/docs/bmad/livewire-inventory.md).
 
 > **Stato 2026-09-21 (post 12.1):** HTTP `Switcher`/`Change` ritirati. Header FO monta `LanguageSwitcherWidget` via FQCN. `View\Components\LanguageSwitcher` resta inerte. Story [12.1](../stories/12.1.retire-lang-http-switchers.story.md) `done`.
 
