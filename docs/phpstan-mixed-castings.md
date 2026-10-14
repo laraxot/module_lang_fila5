@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan mixed castings"
 issues: []
 discussions: []
+status: draft
 ---
 
 # PHPStan Mixed Type Casting Errors

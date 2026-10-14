@@ -366,7 +366,7 @@ This document tracks the completeness and quality of translation files across th
 ## Links and References
 
 - [Theme Translation Files](../laravel/Themes/One/lang/)
-- [Notify Module Translations](../laravel/Modules/Notify/lang/)
+- [Notify Module Translations](../../Notify/lang)
 - [<nome progetto> Module Translations](../laravel/Modules/<nome progetto>/lang/)
 - [PDF Template](../laravel/Themes/One/resources/views/appointment/report_pdf.blade.php)
 
@@ -734,7 +734,7 @@ This document tracks the completeness and quality of translation files across th
 ## Links and References
 
 - [Theme Translation Files](../laravel/Themes/One/lang/)
-- [Notify Module Translations](../laravel/Modules/Notify/lang/)
+- [Notify Module Translations](../../Notify/lang)
 - [<nome progetto> Module Translations](../laravel/Modules/<nome progetto>/lang/)
 - [PDF Template](../laravel/Themes/One/resources/views/appointment/report_pdf.blade.php)
 

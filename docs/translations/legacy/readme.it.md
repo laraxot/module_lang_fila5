@@ -83,10 +83,10 @@ discussions: []
 
 ## 📚 Documentazione
 
-- [Indice del Progetto](../index.md)
+- [Indice del Progetto](../../index.md)
 - [Workflow PHPStan](../phpstan_workflow.md)
 - [Panoramica dei Moduli](../modules.md)
-- [Architettura](../architecture.md)
+- [Architettura](../../architecture.md)
 
 ---
 

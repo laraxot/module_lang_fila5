@@ -7,6 +7,7 @@ created: "2026-05-26"
 updated: "2026-05-26"
 owner: "Lang"
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/150"
+qmd: "code redundancy audit   lang lang"
 ---
 
 # Code redundancy audit — Lang

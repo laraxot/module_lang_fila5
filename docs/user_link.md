@@ -45,6 +45,6 @@ Questo documento è collegato bidirezionalmente con [lang-link.md](../../User/do
 > Aggiorna entrambi i riferimenti se modifichi la struttura delle traduzioni o aggiungi nuove funzionalità che richiedono traduzioni.
 
 ## Collegamenti tra versioni di user-link.md
-* [user-link.md](../../../Lang/docs/user-link.md)
-* [user-link.md](../../../Cms/docs/user-link.md)
+* [user-link.md](user-link.md)
+* [user-link.md](../../Cms/docs/user-link.md)
 

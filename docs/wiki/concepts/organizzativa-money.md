@@ -9,6 +9,7 @@ type: reference
 updated: 2026-05-21
 related:
   - "../../../../Xot/docs/wiki/concepts/organizzativa-money.md"
+status: draft
 ---
 
 # organizzativa money

@@ -1,6 +1,12 @@
 ---
 bmad: true
 module: Lang
+title: "LLM Wiki (module)"
+type: index
+status: draft
+updated: 2026-10-08
+tags: [docs, lang, wiki]
+qmd: "llm wiki (module) lang"
 ---
 # LLM Wiki (module)
 

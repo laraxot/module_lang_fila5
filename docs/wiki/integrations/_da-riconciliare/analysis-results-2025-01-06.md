@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "analysis results 2025 01 06"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Risultati Analisi Modulo Lang - 2025-01-06

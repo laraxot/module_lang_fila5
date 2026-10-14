@@ -45,8 +45,8 @@ related:
 - 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
-- [UI](../../ui/docs/readme.md) - Componenti Blade e Filament che consumano le traduzioni.
+- [Xot](../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
+- [UI](../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -79,7 +79,7 @@ related:
 ## 🔗 **Moduli Correlati**
 - [Xot](../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
-- [agents.md](../../../../agents.md) - Project guidelines
+- [agents.md](../../../../AGENTS.md) - Project guidelines
 ---
 - [AGENTS.md](../../../../AGENTS.md) - Project guidelines
 

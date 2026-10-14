@@ -6,10 +6,11 @@ module: "Lang"
 type: concept
 tags: [filament4, migration]
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-10-14
 qmd: "filament4 migration"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 # 📚 **Indice Documentazione Modulo Lang - Laraxot**
 
@@ -27,48 +28,48 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
 
 ### **Per Amministratori**
-1. [BEST_PRACTICES.md](best_practices.md) - Best practices e linee guida
+1. [BEST_PRACTICES.md](best-practices.md) - Best practices e linee guida
 2. [TROUBLESHOOTING.md](troubleshooting.md) - Guida troubleshooting
 3. [config/lang.php](../config/lang.php) - Configurazione e ottimizzazioni
 
 ### **Per Integratori**
-1. [API_REFERENCE.md](api_reference.md) - Riferimento API completo
+1. [API_REFERENCE.md](api-reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
-3. [BEST_PRACTICES.md](best_practices.md) - Pattern di implementazione
+3. [BEST_PRACTICES.md](best-practices.md) - Pattern di implementazione
 1. [README.md](README.md) - Documentazione principale e panoramica
 2. [config/lang.php](../config/lang.php) - Configurazione centralizzata
 3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
 
 ### **Per Amministratori**
-1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices e linee guida
+1. [BEST_PRACTICES.md](best-practices.md) - Best practices e linee guida
 2. [TROUBLESHOOTING.md](troubleshooting.md) - Guida troubleshooting
 3. [config/lang.php](../config/lang.php) - Configurazione e ottimizzazioni
 
 ### **Per Integratori**
-1. [API_REFERENCE.md](api_reference.md) - Riferimento API completo
+1. [API_REFERENCE.md](api-reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
-3. [BEST_PRACTICES.md](best_practices.md) - Pattern di implementazione
+3. [BEST_PRACTICES.md](best-practices.md) - Pattern di implementazione
 1. [README.md](README.md) - Documentazione principale e panoramica
 2. [config/lang.php](../config/lang.php) - Configurazione centralizzata
 3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
 
 ### **Per Amministratori**
-1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices e linee guida
+1. [BEST_PRACTICES.md](best-practices.md) - Best practices e linee guida
 2. [TROUBLESHOOTING.md](troubleshooting.md) - Guida troubleshooting
 3. [config/lang.php](../config/lang.php) - Configurazione e ottimizzazioni
 
 ### **Per Integratori**
-1. [API_REFERENCE.md](API_REFERENCE.md) - Riferimento API completo
+1. [API_REFERENCE.md](api-reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
-3. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Pattern di implementazione
+3. [BEST_PRACTICES.md](best-practices.md) - Pattern di implementazione
 
 ---
 
 ## 📖 **Documentazione per Argomento**
 
 ### **🏗️ Architettura e Design**
-- **Principi Fondamentali**: [BEST_PRACTICES.md](BEST_PRACTICES.md#principi-architetturali)
-- **Struttura Modulo**: [README.md](README.md#architettura)
+- **Principi Fondamentali**: [BEST_PRACTICES.md](best-practices.md)
+- **Struttura Modulo**: [README.md](README.md)
 - **Configurazione**: [config/lang.php](../config/lang.php)
 
 ### **🔧 Implementazione e Sviluppo**
@@ -83,40 +84,40 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Componenti Automatici**: [EXAMPLES.md](examples.md#integrazione-filament)
 - **Actions Personalizzate**: [EXAMPLES.md](examples.md#actions-personalizzate)
 - **Resources**: [EXAMPLES.md](examples.md#resource-base)
-- **Best Practices**: [BEST_PRACTICES.md](BEST_PRACTICES.md#integrazione-filament)
+- **Best Practices**: [BEST_PRACTICES.md](best-practices.md)
 
 ### **📁 Struttura File Traduzioni**
-- **Organizzazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#struttura-file-traduzioni)
-- **Convenzioni**: [BEST_PRACTICES.md](BEST_PRACTICES.md#convenzioni-naming)
+- **Organizzazione**: [BEST_PRACTICES.md](best-practices.md)
+- **Convenzioni**: [BEST_PRACTICES.md](best-practices.md)
 - **Esempi Completi**: [EXAMPLES.md](examples.md#struttura-file-traduzioni)
-- **Validazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#validazione-e-controlli)
+- **Validazione**: [BEST_PRACTICES.md](best-practices.md)
 
 ### **🔒 Sicurezza e Validazione**
-- **Validazione File**: [BEST_PRACTICES.md](BEST_PRACTICES.md#sicurezza-e-validazione)
+- **Validazione File**: [BEST_PRACTICES.md](best-practices.md)
 - **Controlli Integrità**: [TROUBLESHOOTING.md](troubleshooting.md#problemi-di-sicurezza)
 - **Rate Limiting**: [TROUBLESHOOTING.md](troubleshooting.md#rate-limiting)
 
 ### **🚀 Performance e Ottimizzazione**
-- **Cache Strategy**: [BEST_PRACTICES.md](BEST_PRACTICES.md#performance-e-ottimizzazione)
-- **Lazy Loading**: [BEST_PRACTICES.md](BEST_PRACTICES.md#lazy-loading)
-- **Memory Management**: [BEST_PRACTICES.md](BEST_PRACTICES.md#memory-management)
+- **Cache Strategy**: [BEST_PRACTICES.md](best-practices.md)
+- **Lazy Loading**: [BEST_PRACTICES.md](best-practices.md)
+- **Memory Management**: [BEST_PRACTICES.md](best-practices.md)
 - **Benchmark**: [TROUBLESHOOTING.md](troubleshooting.md#metriche-performance)
 
 ### **🧪 Testing e Qualità**
 - **Test Unitari**: [EXAMPLES.md](examples.md#testing)
 - **Test Feature**: [EXAMPLES.md](examples.md#test-feature)
-- **PHPStan Compliance**: [BEST_PRACTICES.md](BEST_PRACTICES.md#testing-e-qualità)
-- **Validazione Automatica**: [BEST_PRACTICES.md](BEST_PRACTICES.md#validazione-automatica)
+- **PHPStan Compliance**: [BEST_PRACTICES.md](best-practices.md)
+- **Validazione Automatica**: [BEST_PRACTICES.md](best-practices.md)
 
 ### **🔄 Manutenzione e Aggiornamenti**
-- **Versioning**: [BEST_PRACTICES.md](BEST_PRACTICES.md#versioning-traduzioni)
-- **Migrazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#migrazione-versioni)
-- **Rollback**: [BEST_PRACTICES.md](BEST_PRACTICES.md#rollback-e-recovery)
+- **Versioning**: [BEST_PRACTICES.md](best-practices.md)
+- **Migrazione**: [BEST_PRACTICES.md](best-practices.md)
+- **Rollback**: [BEST_PRACTICES.md](best-practices.md)
 - **Backup**: [TROUBLESHOOTING.md](troubleshooting.md#emergenze-e-rollback)
-- **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
-- **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
-- **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
-- **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
+- **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md) _(target mancante, verificato 2026-10-14)_
+- **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md) _(target mancante, verificato 2026-10-14)_
+- **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md) _(target mancante, verificato 2026-10-14)_
+- **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md) _(target mancante, verificato 2026-10-14)_
 
 ---
 
@@ -149,13 +150,13 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - Validazione e controllo qualità
 
 **Documenti da Leggere**
-1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Tutte le sezioni
+1. [BEST_PRACTICES.md](best-practices.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
-1. [BEST_PRACTICES.md](best_practices.md) - Tutte le sezioni
+1. [BEST_PRACTICES.md](best-practices.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
-1. [BEST_PRACTICES.md](best_practices.md) - Tutte le sezioni
+1. [BEST_PRACTICES.md](best-practices.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
 
@@ -171,14 +172,14 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - Estensioni e plugin
 
 **Documenti da Leggere**
-1. [API_REFERENCE.md](API_REFERENCE.md) - Tutte le sezioni
-2. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Pattern avanzati
+1. [API_REFERENCE.md](api-reference.md) - Tutte le sezioni
+2. [BEST_PRACTICES.md](best-practices.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
-1. [API_REFERENCE.md](api_reference.md) - Tutte le sezioni
-2. [BEST_PRACTICES.md](best_practices.md) - Pattern avanzati
+1. [API_REFERENCE.md](api-reference.md) - Tutte le sezioni
+2. [BEST_PRACTICES.md](best-practices.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
-1. [API_REFERENCE.md](api_reference.md) - Tutte le sezioni
-2. [BEST_PRACTICES.md](best_practices.md) - Pattern avanzati
+1. [API_REFERENCE.md](api-reference.md) - Tutte le sezioni
+2. [BEST_PRACTICES.md](best-practices.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
 
 **Obiettivi**
@@ -191,7 +192,7 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 ## 🔍 **Ricerca per Parole Chiave**
 
 ### **Localizzazione**
-- **File PHP**: [BEST_PRACTICES.md](BEST_PRACTICES.md#sintassi-file-php)
+- **File PHP**: [BEST_PRACTICES.md](best-practices.md)
 - **File JSON**: [README.md](README.md#file-php-vs-json)
 - **Fallback**: [TROUBLESHOOTING.md](troubleshooting.md#fallback-traduzioni)
 - **Pluralizzazione**: [EXAMPLES.md](examples.md#gestione-pluralizzazione)
@@ -200,25 +201,25 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Componenti**: [EXAMPLES.md](examples.md#componenti-automatici)
 - **Actions**: [EXAMPLES.md](examples.md#actions-personalizzate)
 - **Resources**: [EXAMPLES.md](examples.md#resource-base)
-- **Integrazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#integrazione-filament)
+- **Integrazione**: [BEST_PRACTICES.md](best-practices.md)
 
 ### **Performance**
-- **Cache**: [BEST_PRACTICES.md](BEST_PRACTICES.md#cache-strategy)
-- **Lazy Loading**: [BEST_PRACTICES.md](BEST_PRACTICES.md#lazy-loading)
-- **Memory**: [BEST_PRACTICES.md](BEST_PRACTICES.md#memory-management)
+- **Cache**: [BEST_PRACTICES.md](best-practices.md)
+- **Lazy Loading**: [BEST_PRACTICES.md](best-practices.md)
+- **Memory**: [BEST_PRACTICES.md](best-practices.md)
 - **Benchmark**: [TROUBLESHOOTING.md](troubleshooting.md#benchmark-completo)
 
 ### **Validazione**
-- **Sintassi**: [BEST_PRACTICES.md](BEST_PRACTICES.md#sintassi-valida)
-- **Struttura**: [BEST_PRACTICES.md](BEST_PRACTICES.md#struttura-gerarchica)
+- **Sintassi**: [BEST_PRACTICES.md](best-practices.md)
+- **Struttura**: [BEST_PRACTICES.md](best-practices.md)
 - **Auto-fix**: [TROUBLESHOOTING.md](troubleshooting.md#fix-automatici)
 - **Report**: [TROUBLESHOOTING.md](troubleshooting.md#report-qualità)
 
 ### **Testing**
 - **Unit Test**: [EXAMPLES.md](examples.md#test-unitari)
 - **Feature Test**: [EXAMPLES.md](examples.md#test-feature)
-- **PHPStan**: [BEST_PRACTICES.md](BEST_PRACTICES.md#phpstan-compliance)
-- **Validazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#validazione-automatica)
+- **PHPStan**: [BEST_PRACTICES.md](best-practices.md)
+- **Validazione**: [BEST_PRACTICES.md](best-practices.md)
 
 ---
 
@@ -309,7 +310,7 @@ php artisan lang:debug [--log-missing] [--log-performance]
 ### **Strumenti e Risorse**
 - [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper) - Autocompletamento IDE
 - [ide-helper-sushi-pattern](./ide-helper-sushi-pattern.md) - TranslationFile + analisi statica (wave 2026-07-15)
-- [Xot — ide-helper-philosophy](../Xot/docs/ide-helper-philosophy.md) - Filosofia globale PHPDoc model
+- [Xot — ide-helper-philosophy](../Xot/docs/ide-helper-philosophy.md) _(target mancante, verificato 2026-10-14)_ - Filosofia globale PHPDoc model
 - [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) - Debug e profiling
 - [Laravel Telescope](https://laravel.com/project_docs/telescope) - Monitoring applicazione
 

@@ -20,5 +20,5 @@ Portare il modulo Lang dal Livello 9 al Livello 10 di PHPStan, eliminando ogni i
 - [ ] Verificare conformità totale senza l'uso di `mixed`.
 
 ## 🔗 Riferimenti
-- [Roadmap Lang](../roadmap.md)
+- [Roadmap Lang](../../roadmap.md)
 - [PHPStan Journey](../../../../docs/phpstan_journey.md)

@@ -10,7 +10,7 @@ issues:
 discussions:
   - "https://github.com/laraxot/platform/discussions/273"
 related:
-  - ../../../../docs/wiki/rules/queueable-action-trait-mandatory.md
+  - ../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md
 ---
 
 # no `app/Support/` — business logic in QueueableAction
@@ -33,4 +33,4 @@ La logica `notifyMissingKey` resta nell'adapter; eventuale orchestrazione futura
 
 ## Collegamenti
 
-- [queueable-action-trait-mandatory](../../../../docs/wiki/rules/queueable-action-trait-mandatory.md)
+- [queueable-action-trait-mandatory](../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md)
