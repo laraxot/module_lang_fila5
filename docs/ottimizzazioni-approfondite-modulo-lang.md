@@ -41,7 +41,7 @@ Questo documento identifica e propone ottimizzazioni approfondite per il modulo 
 **File duplicati identificati:**
 - `.php-cs-fixer.php` vs `.php-cs-fixer.dist.php`
 - `phpstan.neon.dist` vs `phpstan-baseline.neon`
-- `CHANGELOG.md` vs `changelog.md`
+- `changelog.md` vs `changelog.md`
 
 **Soluzione DRY + KISS:**
 1. **Mantenere** solo file attivi e necessari
@@ -157,7 +157,7 @@ mv Database/ database/
 
 **File da eliminare:**
 - `.php-cs-fixer.php` (mantenere solo `.dist`)
-- `CHANGELOG.md` (mantenere solo `changelog.md`)
+- `changelog.md` (mantenere solo `changelog.md`)
 - `webpack.mix.js` (obsoleto)
 - `grumphp.yml` (non utilizzato)
 - `psalm.xml` (non utilizzato)

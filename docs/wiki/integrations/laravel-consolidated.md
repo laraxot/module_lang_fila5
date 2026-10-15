@@ -3966,7 +3966,7 @@ L'implementazione di `mcamara/laravel-localization` nel progetto `<nome progetto
 
 ## laravel_localization
 
-*Consolidated from: `laravel_localization.md`*
+*Consolidated from: `laravel-localization.md`*
 
 title: "Laravel Localization"
 module: "Lang"
@@ -4017,7 +4017,7 @@ L'implementazione di `mcamara/laravel-localization` nel progetto `<nome progetto
 
 ## laravel_localization_complete
 
-*Consolidated from: `laravel_localization_complete.md`*
+*Consolidated from: `laravel-localization-complete.md`*
 
 title: "Guida Completa a Laravel Localization"
 module: "Lang"
@@ -4232,7 +4232,7 @@ Il pacchetto `mcamara/laravel-localization` offre un controllo versatile sulla l
 
 ## laravel_localization_folio
 
-*Consolidated from: `laravel_localization_folio.md`*
+*Consolidated from: `laravel-localization-folio.md`*
 
 title: "Integrazione tra mcamara/laravel-localization e Laravel Folio"
 module: "Lang"
@@ -4396,7 +4396,7 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 
 ## laravel_localization_folio_integration
 
-*Consolidated from: `laravel_localization_folio_integration.md`*
+*Consolidated from: `laravel-localization-folio-integration.md`*
 
 title: "Integration of Mcamara Laravel Localization with Laravel Folio"
 module: "Lang"
@@ -4601,7 +4601,7 @@ Integrating `mcamara/laravel-localization` with `laravel/folio` requires careful
 
 ## laravel_localization_implementation
 
-*Consolidated from: `laravel_localization_implementation.md`*
+*Consolidated from: `laravel-localization-implementation.md`*
 
 title: "Implementazione della Localizzazione "
 module: "Lang"
@@ -4777,7 +4777,7 @@ Seguendo queste linee guida, è possibile implementare correttamente la localizz
 
 ## laravel_localization_integration
 
-*Consolidated from: `laravel_localization_integration.md`*
+*Consolidated from: `laravel-localization-integration.md`*
 
 title: "Integrazione avanzata: mcamara/laravel-localization + Laravel Folio"
 module: "Lang"
@@ -4950,7 +4950,7 @@ class Article extends Model implements \Mcamara\LaravelLocalization\Interfaces\L
 
 ## laravel_localization_livewire_volt
 
-*Consolidated from: `laravel_localization_livewire_volt.md`*
+*Consolidated from: `laravel-localization-livewire-volt.md`*
 
 title: "Integrazione di mcamara/laravel-localization con Livewire Volt"
 module: "Lang"
@@ -5101,7 +5101,7 @@ Vedi file `.cursor/rules/laravel-localization-livewire-volt.mdc` e `.windsurf/ru
 
 ## laravel_localization_usage
 
-*Consolidated from: `laravel_localization_usage.md`*
+*Consolidated from: `laravel-localization-usage.md`*
 
 title: "Utilizzo di mcamara/laravel-localization "
 module: "Lang"

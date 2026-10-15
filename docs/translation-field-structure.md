@@ -325,7 +325,7 @@ return [
 
 - [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../../User/docs/widget-translation-rules.md)
-- [Translation Syntax Fixes](translation_syntax_fixes.md)
+- [Translation Syntax Fixes](translation-syntax-fixes.md)
 - [Windsurf Translation Rules](../.windsurf/rules/translation-complete-structure.mdc)
 
 ## Implementazione

@@ -1,10 +1,10 @@
 ---
-title: "consolidation plan"
+title: "CONSOLIDATION PLAN"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "consolidation plan"
+qmd: "CONSOLIDATION PLAN"
 issues: []
 discussions: []
 status: draft
@@ -37,7 +37,7 @@ status: draft
 
 ### 1. DELETE DUPLICATES (Kebab vs Snake Case) — ~30 files
 
-Keep kebab-case (e.g., `translation-system.md`); delete snake_case (`translation_system.md`).
+Keep kebab-case (e.g., `translation-system.md`); delete snake_case (`translation-system.md`).
 
 **Delete:**
 ```
@@ -123,7 +123,7 @@ Merge: `translating-plural-singular-forms.md`
 ### 6. CONSOLIDATE PHPSTAN (3 → 2)
 
 - **PHPSTAN_L10.md** — Merge PHPSTAN-FIXES.md + PHPSTAN_STATUS.md into this
-- Delete: `PHPSTAN-FIXES.md`, `PHPSTAN_STATUS.md`
+- Delete: `phpstan-fixes.md`, `PHPSTAN_STATUS.md`
 
 ### 7. MOVE TO WIKI/ SUBDIRECTORIES — ~40 files
 
@@ -205,7 +205,7 @@ laravel/Modules/Lang/docs/
 
 ### Backup
 ```bash
-cd /var/www/_bases/base_ptvx_fila5
+cd /var/www/_bases/<nome repository>
 git add -A
 git commit -m "backup: Lang docs before consolidation"
 ```
@@ -222,7 +222,11 @@ rm -f \
   docs_naming_convention_fix.md \
   documentation_link_conventions.md \
   errori_comuni_traduzione.md \
+  lang_link.md \
+---
   lang-link.md \
+---
+  lang_link.md \
   lang_service_helper_text_fix.md \
   laravel_localization.md \
   translation_*.md \
@@ -248,8 +252,15 @@ rm -f \
   coverage.md \
   REDUNDANCY_ANALYSIS.md \
   00-index.md \
+  index.md
+---
+  00-index.md \
   00-index.md \
   index.md
+---
+  00-INDEX.md \
+  00-index.md \
+  INDEX.md
 
 # 3. Delete conflict-resolution snake_case variants
 rm -f conflict_resolution_*.md
@@ -346,7 +357,7 @@ Example workflow:
 ## Final Commit
 
 ```bash
-cd /var/www/_bases/base_ptvx_fila5
+cd /var/www/_bases/<nome repository>
 git add -A
 git commit -m "chore: Lang docs aggressive consolidation — 579→150 files, 339→24 root
 
