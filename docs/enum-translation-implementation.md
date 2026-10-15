@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Enum Translation Pattern - Implementazione Regola Critica"
+module: "Lang"
+type: concept
+tags: [ottimizzazioni, correzioni]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ottimizzazioni correzioni"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Enum Translation Pattern - Implementazione Regola Critica
 
 ## Data: 27 Gennaio 2025

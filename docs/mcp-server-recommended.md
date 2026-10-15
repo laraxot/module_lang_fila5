@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "MCP Server Consigliati per il Modulo Lang"
+module: "Lang"
+type: concept
+tags: [migrazione, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migrazione filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # MCP Server Consigliati per il Modulo Lang
 
 ## Scopo del Modulo
@@ -19,8 +33,6 @@ Gestione traduzioni, localizzazione e internazionalizzazione.
 
 ## Note
 - Estendi la configurazione per supportare traduzioni dinamiche o servizi esterni.
-<<<<<<< HEAD
-=======
 # MCP Server Consigliati per il Modulo Lang
 
 ## Scopo del Modulo
@@ -42,4 +54,3 @@ Gestione traduzioni, localizzazione e internazionalizzazione.
 
 ## Note
 - Estendi la configurazione per supportare traduzioni dinamiche o servizi esterni.
->>>>>>> bebd548 (.)

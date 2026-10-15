@@ -1,4 +1,10 @@
 ---
+title: "lang module"
+tags: [documentation]
+created: 2026-09-26
+qmd: "lang module"
+issues: []
+discussions: []
 type: overview
 module: Lang
 sources:
@@ -7,6 +13,7 @@ sources:
   - ../../../docs/mcamara-laravel-localization-governance.md
 confidence: high
 updated: 2026-04-15
+status: draft
 ---
 
 # Lang Module — Overview

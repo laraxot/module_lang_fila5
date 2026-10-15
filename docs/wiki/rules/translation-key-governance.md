@@ -1,4 +1,7 @@
 ---
+qmd: "translation key governance"
+issues: []
+discussions: []
 title: "Translation Key Governance"
 type: "rule"
 tags: [translations, lang, filament, governance]
@@ -60,5 +63,5 @@ Nei componenti Filament:
 ## Vedi anche
 
 - [laravel12-lang-path-rule](../concepts/laravel12-lang-path-rule.md)
-- [schema-conventions](../../../../../docs/wiki/rules/schema-conventions.md)
-- [filament-rules-summary](../../../../../docs/wiki/rules/filament-rules-summary.md)
+- [schema-conventions](../../../../../../docs/wiki/rules/schema-conventions.md)
+- [filament-rules-summary](../../../../../../docs/wiki/rules/filament-rules-summary.md)

@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Ottimizzazioni Super DRY + KISS - Modulo Lang"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Ottimizzazioni Super DRY + KISS - Modulo Lang
 
 ## 🎯 Panoramica
@@ -306,7 +319,7 @@ class Language extends Model
 
 ## 🔗 Collegamenti
 
-- [Documentazione Core](../../../../docs/core/)
+- [Documentazione Core](core)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
