@@ -1,3 +1,14 @@
+---
+title: "README.es"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README.es"
+issues: []
+discussions: []
+---
+
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>
   
@@ -13,6 +24,14 @@
 
 ---
 
+title: "README.es"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README.es"
+issues: []
+discussions: []
 # 🚀 Bienvenido a Laraxot PTVX
 
 > **La plataforma Laravel de nueva generación: modular, multi-tenant y type-safe para proyectos SaaS y empresariales ambiciosos.**
@@ -64,10 +83,10 @@
 
 ## 📚 Documentación
 
-- [Índice del Proyecto](../INDEX.md)
+- [Índice del Proyecto](../../INDEX.md)
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panorama de los Módulos](../MODULES.md)
-- [Arquitectura](../ARCHITECTURE.md)
+- [Arquitectura](../../ARCHITECTURE.md)
 
 ---
 

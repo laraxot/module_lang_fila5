@@ -1,11 +1,19 @@
+---
+title: "phpstan roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan roadmap"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Roadmap - Lang Module
 
-<<<<<<< HEAD
-> **Date**: [DATE]
-=======
 > **Date**: 2026-01-14
 > **Date**: 2026-01-14
->>>>>>> bebd548 (.)
 > **Status**: ✅ Fully Compliant (Level 10)
 > **Errors**: 0
 

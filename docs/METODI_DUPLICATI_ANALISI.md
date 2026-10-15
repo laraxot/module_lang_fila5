@@ -1,8 +1,16 @@
 ---
+title: "METODI DUPLICATI ANALISI"
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "METODI DUPLICATI ANALISI"
+issues: []
+discussions: []
 module: Lang
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+status: stub
 ---
 
 # Metodi Duplicati — Analisi Lang

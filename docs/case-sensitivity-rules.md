@@ -1,14 +1,24 @@
+---
+issues: []
+discussions: []
+title: "Case Sensitivity Rules - Lang Module"
+module: "Lang"
+type: rule
+tags: [migrazione, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migrazione filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Case Sensitivity Rules - Lang Module
 
 ## Problema / Problem
 
 **NON possono esistere file con lo stesso nome che differiscono solo per maiuscole/minuscole nella stessa directory.**
 
-Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
-<<<<<<< HEAD
-=======
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
->>>>>>> bebd548 (.)
 
 ## File/Directory Rimossi da Lang Module
 

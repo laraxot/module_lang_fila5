@@ -1,11 +1,19 @@
+---
+title: "phpstan compliance status"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan compliance status"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Level 10 Compliance Status
 
-<<<<<<< HEAD
-
-=======
 **Last Updated**: 2025-12-10
 **Last Updated**: 2025-12-10
->>>>>>> bebd548 (.)
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
 ## Summary

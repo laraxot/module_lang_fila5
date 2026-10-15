@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Correzioni Traduzioni Navigation - Modulo Lang"
+module: "Lang"
+type: concept
+tags: [phpstan, level10, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Correzioni Traduzioni Navigation - Modulo Lang
 
 ## Data Intervento
@@ -79,8 +92,8 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 
 ## Collegamenti
 
-- [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
-- [Documentazione Modulo Lang](readme.md)
+- [Audit Generale Traduzioni Navigation](navigation-translations-audit.md)
+- [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
 

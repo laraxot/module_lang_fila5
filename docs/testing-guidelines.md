@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Lang Module - Testing Guidelines"
+module: "Lang"
+type: how-to
+tags: [guida, migrazione, step, by]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "guida migrazione step by step"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Lang Module - Testing Guidelines
 
 ## Testing Framework Requirements
@@ -372,6 +386,19 @@ describe('Lang Performance Tests', function () {
 
 ---
 
+**Last Updated**: 2025-08-28
+
+**Testing Framework**: Pest
+**Environment**: .env.testing
+
+**Testing Framework**: Pest
+**Environment**: .env.testing
+
+**Testing Framework**: Pest
+**Environment**: .env.testing
+
+**Testing Framework**: Pest
+**Environment**: .env.testing
 **Last Updated**: 2025-08-28
 
 **Testing Framework**: Pest

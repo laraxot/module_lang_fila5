@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Gestione di Forme Plurali e Localizzazione di Date/Valute in Laravel"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Gestione di Forme Plurali e Localizzazione di Date/Valute in Laravel
 
 ## Indice
@@ -106,12 +120,14 @@ $formatted = $date->translatedFormat('j F Y');
 
 ```php
 // Differenza in formato leggibile
-<<<<<<< HEAD
+$postDate = Carbon::parse('2023-01-15');
+$postDate = Carbon::parse('2023-01-15');
 $postDate = Carbon::parse('[DATE]');
-=======
+$postDate = Carbon::parse('[DATE]');
+$postDate = Carbon::parse('[DATE]');
+$postDate = Carbon::parse('[DATE]');
 $postDate = Carbon::parse('2023-01-15');
 $postDate = Carbon::parse('2023-01-15');
->>>>>>> bebd548 (.)
 $diff = $postDate->diffForHumans();
 // Output: "2 mesi fa"
 
@@ -419,12 +435,14 @@ $formatted = $date->translatedFormat('j F Y');
 
 ```php
 // Differenza in formato leggibile
-<<<<<<< HEAD
+$postDate = Carbon::parse('2023-01-15');
+$postDate = Carbon::parse('2023-01-15');
 $postDate = Carbon::parse('[DATE]');
-=======
+$postDate = Carbon::parse('[DATE]');
+$postDate = Carbon::parse('[DATE]');
+$postDate = Carbon::parse('[DATE]');
 $postDate = Carbon::parse('2023-01-15');
 $postDate = Carbon::parse('2023-01-15');
->>>>>>> bebd548 (.)
 $diff = $postDate->diffForHumans();
 // Output: "2 mesi fa"
 
@@ -623,4 +641,8 @@ if (!function_exists('trans_choice_with_count')) {
 ### Problemi con le valute
 - Verifica che il codice valuta sia valido (es: 'EUR', 'USD')
 - Controlla che la localizzazione supporti la valuta specificata
+- Assicurati che il server abbia i dati di localizzazione installati
+- Assicurati che il server abbia i dati di localizzazione installati
+- Assicurati che il server abbia i dati di localizzazione installati
+- Assicurati che il server abbia i dati di localizzazione installati
 - Assicurati che il server abbia i dati di localizzazione installati

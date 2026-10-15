@@ -1,8 +1,19 @@
+---
+title: "phpstan report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan report"
+issues: []
+discussions: []
+status: draft
+---
 
- [OK] No errors        
+# Report PHPStan - Modulo Lang
 
-<<<<<<< HEAD
-=======
+## Stato Attuale
+
 L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è un ottimo risultato che indica una buona qualità del codice per quanto riguarda:
 - Type safety
 - Gestione delle variabili
@@ -46,4 +57,3 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è
    - Verificare il comportamento con lingue diverse
 
 ---
->>>>>>> bebd548 (.)
