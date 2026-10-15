@@ -16,11 +16,11 @@ status: draft
 
 Nel modulo `Lang` sono presenti i seguenti duplicati con differenze solo di maiuscole/minuscole:
 
-- `Modules/Lang/docs`: `LOCALE_MANAGEMENT.md`, `locale_management.md`
-- `Modules/Lang/docs`: `QUICK_REFERENCE.md`, `quick_reference.md`
-- `Modules/Lang/docs`: `TRANSLATION_STRATEGIES.md`, `translation_strategies.md`
-- `Modules/Lang/docs`: `TRANSLATION_PROCESS.md`, `translation_process.md`
-- `Modules/Lang/docs`: `MCAMARA_IMPLEMENTATION_GUIDE.md`, `mcamara_implementation_guide.md`
+- `Modules/Lang/docs`: `locale-management.md`, `locale-management.md`
+- `Modules/Lang/docs`: `quick-reference.md`, `quick-reference.md`
+- `Modules/Lang/docs`: `translation-strategies.md`, `translation-strategies.md`
+- `Modules/Lang/docs`: `translation-process.md`, `translation-process.md`
+- `Modules/Lang/docs`: `mcamara-implementation-guide.md`, `mcamara-implementation-guide.md`
 - `Modules/Lang/docs/translations`: `README.it.md`, `readme.it.md`
 - `Modules/Lang/docs/translations`: `README.es.md`, `readme.es.md`
 
