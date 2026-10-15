@@ -16,8 +16,8 @@ Done.
 
 ## Contesto
 Stesso task ricorrente descritto in
-`Modules/Media/docs/stories/media-docs-conflict-marker-cleanup-2026-09-22.story.md`
-e `Modules/Activity/docs/stories/activity-docs-conflict-marker-cleanup-2026-09-22.story.md`,
+`Modules/Media/docs/stories/media-docs-conflict-marker-cleanup.story.md`
+e `Modules/Activity/docs/stories/activity-docs-conflict-marker-cleanup.story.md`,
 applicato a Lang. Stessa causa radice (daemon locale di auto-commit, vedi
 `docs/stories/5.122-gitmodules-sync-2026-09-15-safe-subset.story.md` nel repo
 principale).
