@@ -7733,7 +7733,7 @@ Tutti i campi di traduzione ora includono la struttura completa a 7 elementi:
 ## Collegamenti alla Documentazione
 
 - [Struttura Campi Traduzione Completa](translation-field-structure-complete.md)
-- [Refactor Modulo User](../Modules/User/docs/translation-city-field-refactor-2025-08-08.md)
+- [Refactor Modulo User](../Modules/User/docs/translation-city-field-refactor-completo-campi-citta-modulo.md)
 - [Status Modulo <nome progetto>](../Modules/<nome progetto>/docs/translation-refactor-summary-2025-08-08.md)
 
 ---
@@ -7904,7 +7904,7 @@ Tutti i campi di traduzione ora includono la struttura completa a 7 elementi:
 ## Collegamenti alla Documentazione
 
 - [Struttura Campi Traduzione Completa](translation-field-structure-complete.md)
-- [Refactor Modulo User](../Modules/User/docs/translation-city-field-refactor-2025-08-08.md)
+- [Refactor Modulo User](../Modules/User/docs/translation-city-field-refactor-completo-campi-citta-modulo.md)
 - [Status Modulo <main module>](../Modules/<main module>/docs/translation-refactor-summary-2025-08-08.md)
 
 ---
@@ -10615,7 +10615,7 @@ php docs/obbligatorio-audit-script.php
 - [Riepilogo Finale Refactor](translation-refactor-complete-summary.md)
 
 ### Documentazione Moduli
-- [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-2025-08-08.md)
+- [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-completo-campi-citta-modulo.md)
 - [<nome progetto> Module - Refactor Summary](../Modules/<nome progetto>/docs/translation-refactor-summary-2025-08-08.md)
 - [Geo Module - Helper Text Fix](../Modules/Geo/docs/helper-text-normalization-fix.md)
 - [User Module - City Field Refactor](../modules/user/docs/translation-city-field-refactor-[date].md)
@@ -10633,7 +10633,7 @@ php docs/obbligatorio-audit-script.php
 - [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-[DATE].md)
 - [<nome progetto> Module - Refactor Summary](../Modules/<nome progetto>/docs/translation-refactor-summary-[DATE].md)
 - [Geo Module - Helper Text Fix](../Modules/Geo/docs/helper-text-normalization-fix.md)
-- [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-2025-08-08.md)
+- [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-completo-campi-citta-modulo.md)
 - [<nome progetto> Module - Refactor Summary](../Modules/<nome progetto>/docs/translation-refactor-summary-2025-08-08.md)
 - [Geo Module - Helper Text Fix](../Modules/Geo/docs/helper-text-normalization-fix.md)
 - [User Module - City Field Refactor](../modules/user/docs/translation-city-field-refactor-[date].md)
