@@ -98,7 +98,7 @@ find Modules -type f \( -name "*.php" -o -name "*.md" \) -exec bash -c '
 
 **Elimina il file che NON rispetta le convenzioni:**
 
-1. **README.md vs readme.md** → Elimina `readme.md`
+1. **README.md vs readme.md** → Elimina `README.md`
 2. **Activity.php vs activity.php** → Elimina `activity.php`
 3. **ListRecords.md vs listrecords.md** → Elimina `listrecords.md`
 4. **ROADMAP.md vs roadmap.md** → Elimina `roadmap.md` (tranne se contiene info diverse)

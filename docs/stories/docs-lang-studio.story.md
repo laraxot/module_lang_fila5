@@ -16,7 +16,7 @@ related:
 # Docs Lang: studio del codice e correzione degli ingressi
 
 ## Richiesta
-Fase BMAD documentazione/qualita' (DOC-010 + DOC-002): studiare Lang con attenzione al writer dei file di lingua (nel brief: «`__()` su chiave mancante crea righe nel DB e il writer scrive i file»), correggere `README.md`, `00-INDEX.md`, `index.md` solo con fatti verificati.
+Fase BMAD documentazione/qualita' (DOC-010 + DOC-002): studiare Lang con attenzione al writer dei file di lingua (nel brief: «`__()` su chiave mancante crea righe nel DB e il writer scrive i file»), correggere `README.md`, `00-index.md`, `index.md` solo con fatti verificati.
 
 ## Analisi
 Il brief va precisato: oggi `__()` da solo non scrive nulla. Verificato il 2026-10-14:
@@ -29,7 +29,7 @@ Il brief va precisato: oggi `__()` da solo non scrive nulla. Verificato il 2026-
 
 ## Modifiche
 - `README.md`: sostituito il blocco da "# Documentation" a "Dipendenze" con identita', cosa fa, attenzione al writer (con interruttore e prova), lingue, cosa non c'e', test, mappa; footer "Production" sostituito dalla data di verifica. `status: active`.
-- `00-INDEX.md`: stato verificato al posto di "PHPStan Level 10 Compliant / Module Version 1.5.0" (non in `module.json`), sezione sul writer, mappa delle directory, 3 voci corrette (`autoregistration-commands.md` stale, `automatic-translations.md` descrive l'auto-label non motori esterni, `phpstan-analysis-lang.md` del 2025-11-05).
+- `00-index.md`: stato verificato al posto di "PHPStan Level 10 Compliant / Module Version 1.5.0" (non in `module.json`), sezione sul writer, mappa delle directory, 3 voci corrette (`autoregistration-commands.md` stale, `automatic-translations.md` descrive l'auto-label non motori esterni, `phpstan-analysis-lang.md` del 2025-11-05).
 - `index.md`: 41 link ripuntati a `best-practices.md` e `api-reference.md` (ancore tolte, perche' i titoli hanno emoji), 5 link a file mancanti annotati.
 - `wiki/index.md` e `wiki/log.md`: 3 link morti annotati; voce datata in `wiki/log.md`.
 - `docs-organizer.py stale --fix`: `autoregistration-commands.md` (il modulo non ha comandi) e `phpstan-analysis-lang.md`.
@@ -37,7 +37,7 @@ Il brief va precisato: oggi `__()` da solo non scrive nulla. Verificato il 2026-
 ## Verifica
 - tinker: `Illuminate\Translation\Translator` e `NULL` per `config('lang.save_missing_translations')`; `php artisan list`: dei comandi di Lang solo `lang:publish`, che e' del framework.
 - Link (eventi `unresolved` con `--busy-minutes 0`, solo i 7 file toccati): prima 50, dopo 9, tutti annotati (senza annotazione: 0). Intero modulo: 2435 prima, 2394 dopo. Con la metrica di `audit` (link rotti nei soli file indice) il brief indicava 67, ora 26.
-- Frontmatter in dry-run: 307 eventi `frontmatter-dry` ancora in attesa nel modulo (308 prima: `README.md` e `00-INDEX.md` ora hanno `status`); gli altri non sono stati toccati.
+- Frontmatter in dry-run: 307 eventi `frontmatter-dry` ancora in attesa nel modulo (308 prima: `README.md` e `00-index.md` ora hanno `status`); gli altri non sono stati toccati.
 - Test non eseguiti: `SaveTransAction` scrive nei file di lingua dell'albero di lavoro; il README indica come lanciarli.
 
 ## Decisioni

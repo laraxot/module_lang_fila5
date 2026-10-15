@@ -28,7 +28,7 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 ## Collegamenti correlati
 - [Composer merge plugin](composer-merge-plugin.md)
 
-## Componenti core (da `ARCHITECTURE.md`, fuso 2026-10-05)
+## Componenti core (da `architecture.md`, fuso 2026-10-05)
 
 **Models:** `BaseModelLang`, `LanguageLine`, `Translation`.
 **Actions:** `SyncTranslationsAction`, `ValidateTranslationsAction`.
