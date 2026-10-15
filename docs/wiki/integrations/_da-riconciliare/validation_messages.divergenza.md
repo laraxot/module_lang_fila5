@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# Divergenza: `validation_messages.md`
+# Divergenza: `validation-messages.md`
 
 Questo file veniva da `docs/wiki/integrations/modules/lang/validation_messages.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
 
