@@ -120,13 +120,13 @@ La corretta implementazione degli standard di traduzione garantisce:
 
 ## Collegamenti alla Documentazione
 
-- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Regole Generali per le Traduzioni](translation-keys-rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
-- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Regole Generali per le Traduzioni](translation-keys-rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
-- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Regole Generali per le Traduzioni](translation-keys-rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 # Standardizzazione Traduzioni Modulo Notify
@@ -237,12 +237,12 @@ La corretta implementazione degli standard di traduzione garantisce:
 
 ## Collegamenti alla Documentazione
 
-- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Regole Generali per le Traduzioni](translation-keys-rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
-- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Regole Generali per le Traduzioni](translation-keys-rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
-- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Regole Generali per le Traduzioni](translation-keys-rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
