@@ -74,7 +74,7 @@ Percorsi coinvolti:
 
 ### 25 collisioni di case nei docs
 
-Coppie tipo `INDEX.md` e `index.md`. Sono documenti che divergono in silenzio:
+Coppie tipo `index.md` e `index.md`. Sono documenti che divergono in silenzio:
 nessun linter le segnala e chi legge non sa quale delle due e la buona.
 
 ## Coverage
