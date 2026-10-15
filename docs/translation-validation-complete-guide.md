@@ -247,7 +247,7 @@ php docs/obbligatorio-audit-script.php
 - [Riepilogo Finale Refactor](translation-refactor-complete-summary.md)
 
 ### Documentazione Moduli
-- [User Module - City Field Refactor](../../User/docs/translation-city-field-refactor-2025-08-08.md)
+- [User Module - City Field Refactor](../../User/docs/translation-city-field-refactor-completo-campi-citta-modulo.md)
 - [<nome progetto> Module - Refactor Summary](../Modules/<nome progetto>/docs/translation-refactor-summary-2025-08-08.md)
 - [Geo Module - Helper Text Fix](../../Geo/docs/helper-text-normalization-fix.md)
 - [User Module - City Field Refactor](../modules/user/docs/translation-city-field-refactor-[date].md)
@@ -265,7 +265,7 @@ php docs/obbligatorio-audit-script.php
 - [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-[DATE].md)
 - [<nome progetto> Module - Refactor Summary](../Modules/<nome progetto>/docs/translation-refactor-summary-[DATE].md)
 - [Geo Module - Helper Text Fix](../../Geo/docs/helper-text-normalization-fix.md)
-- [User Module - City Field Refactor](../../User/docs/translation-city-field-refactor-2025-08-08.md)
+- [User Module - City Field Refactor](../../User/docs/translation-city-field-refactor-completo-campi-citta-modulo.md)
 - [<nome progetto> Module - Refactor Summary](../Modules/<nome progetto>/docs/translation-refactor-summary-2025-08-08.md)
 - [Geo Module - Helper Text Fix](../../Geo/docs/helper-text-normalization-fix.md)
 - [User Module - City Field Refactor](../modules/user/docs/translation-city-field-refactor-[date].md)
