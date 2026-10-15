@@ -4,7 +4,7 @@ module: Lang
 title: "Documentation"
 type: index
 status: draft
-updated: 2026-10-08
+updated: 2026-10-15
 tags: [docs, lang]
 qmd: "documentation lang"
 ---
@@ -369,3 +369,14 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse --level=max Modules/Lang
 **Last Updated**: 2026-07-14  
 **Requirements**: PHP 8.3+, Laravel 13  
 **PHPStan Level**: 10 (Compliant)
+
+## Standing order (qualita' + docs)
+
+- **PHPStan a zero** sul codice del modulo: non ignorare errori, non abbassare il livello, non modificare `phpstan.neon` del progetto. Qualita' + docs + BMAD sono standing order, non opzionali.
+- **Cartella test**: solo `tests/` (minuscolo). `Tests/` e' vietato (case-collision su macOS/Windows e confusione PSR-4).
+- **Nomi `.md`**: kebab-case minuscolo, niente date/timestamp nel nome, unica eccezione `README.md`. Se esistono `readme.md` e `README.md`, resta solo `README.md`.
+- **Docs**: solo dentro `docs/` gia' esistente; consolida invece di moltiplicare file; link relativi; focus su scopo/perche'/business logic (DRY + KISS).
+- **Git**: forward-only (patch in avanti); no reset/revert/checkout come scorciatoia.
+- **BMAD + second brain**: indici e decisioni vivono in `docs/` del modulo; aggiornali quando cambia il perche', non solo il come.
+
+Vedi anche: [00-index.md](./00-index.md) · [index.md](./index.md)
