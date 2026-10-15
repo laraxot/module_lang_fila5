@@ -1161,7 +1161,7 @@ Il `
 
 ## lang-service-translation-updates-
 
-*Consolidated from: `lang-service-translation-updates-.md`*
+*Consolidated from: `lang-service-translation-updates.md`*
 
 title: "Aggiornamento File di Traduzione Lang Service - 2025-01-06"
 module: "Lang"
@@ -1519,7 +1519,7 @@ La gestione delle traduzioni deve essere:
 
 ## lang_link
 
-*Consolidated from: `lang_link.md`*
+*Consolidated from: `lang-link.md`*
 
 title: "Collegamento alle Traduzioni del Modulo Chart"
 module: "Lang"
@@ -1567,7 +1567,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 
 ## lang_service_helper_text_fix
 
-*Consolidated from: `lang_service_helper_text_fix.md`*
+*Consolidated from: `lang-service-helper-text-fix.md`*
 
 title: "Lang Service Helper Text Fix"
 module: "Lang"
@@ -1584,7 +1584,7 @@ related:
 
 ## lang_service_provider
 
-*Consolidated from: `lang_service_provider.md`*
+*Consolidated from: `lang-service-provider.md`*
 
 title: "LangServiceProvider: Analisi e Proposte di Miglioramento"
 module: "Lang"
@@ -1855,7 +1855,7 @@ Il `
 
 ## lang_service_provider_improvements
 
-*Consolidated from: `lang_service_provider_improvements.md`*
+*Consolidated from: `lang-service-provider-improvements.md`*
 
 title: "Miglioramenti LangServiceProvider"
 module: "Lang"
