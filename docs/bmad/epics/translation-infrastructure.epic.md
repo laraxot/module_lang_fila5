@@ -10,7 +10,7 @@ related:
   - ../architecture/module-boundary.md
   - ../brainstorming.md
   - ./module-roadmap.md
-  - ../stories/module-bmad-audit-20260928.story.md
+  - ../stories/module-bmad-audit.story.md
 status: draft
 ---
 
