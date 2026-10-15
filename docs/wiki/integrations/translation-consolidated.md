@@ -287,7 +287,7 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 
 ## translation-errors-correction-
 
-*Consolidated from: `translation-errors-correction-.md`*
+*Consolidated from: `translation-errors-correction.md`*
 
 title: "Correzione Errori Traduzioni - 2025"
 module: "Lang"
@@ -2989,7 +2989,7 @@ Questo errore indica generalmente che il parser PHP si aspettava di chiudere una
 
 ## translation-files-update-
 
-*Consolidated from: `translation-files-update-.md`*
+*Consolidated from: `translation-files-update.md`*
 
 title: "Aggiornamento File di Traduzione - Gennaio 2025"
 module: "Lang"
@@ -7576,7 +7576,7 @@ Ogni correzione terminologica deve essere documentata:
 
 ## translation-refactor-complete-summary-
 
-*Consolidated from: `translation-refactor-complete-summary-.md`*
+*Consolidated from: `translation-refactor-complete-summary.md`*
 
 title: "Refactor Completo File di Traduzione - Riepilogo Finale"
 module: "Lang"
@@ -10922,7 +10922,7 @@ php docs/obbligatorio-audit-script.php
 
 ## translation_errors_correction
 
-*Consolidated from: `translation_errors_correction.md`*
+*Consolidated from: `translation-errors-correction.md`*
 
 title: "Correzione Errori Traduzioni - 2025"
 module: "Lang"
@@ -11191,7 +11191,7 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 
 ## translation_file_editor
 
-*Consolidated from: `translation_file_editor.md`*
+*Consolidated from: `translation-file-editor.md`*
 
 title: "Editor File di Traduzione"
 module: "Lang"
@@ -11386,7 +11386,7 @@ php artisan lang:sync
 
 ## translation_file_management
 
-*Consolidated from: `translation_file_management.md`*
+*Consolidated from: `translation-file-management.md`*
 
 title: "Gestione File di Traduzione"
 module: "Lang"
@@ -11654,7 +11654,7 @@ php artisan lang:export
 
 ## translation_file_merge_function
 
-*Consolidated from: `translation_file_merge_function.md`*
+*Consolidated from: `translation-file-merge-function.md`*
 
 
 ## Purpose
@@ -11685,7 +11685,7 @@ Added to `Modules/Lang/docs` to fulfill user requirement: "documentare tutto den
 
 ## translation_file_syntax
 
-*Consolidated from: `translation_file_syntax.md`*
+*Consolidated from: `translation-file-syntax.md`*
 
 title: "Gestione Errori di Sintassi nei File di Traduzione PHP"
 module: "Lang"
@@ -11751,7 +11751,7 @@ Questo errore indica generalmente che il parser PHP si aspettava di chiudere una
 
 ## translation_files_update
 
-*Consolidated from: `translation_files_update.md`*
+*Consolidated from: `translation-files-update.md`*
 
 title: "Aggiornamento File di Traduzione - Gennaio 2025"
 module: "Lang"
@@ -11898,7 +11898,7 @@ return [
 
 ## translation_keys_best_practices
 
-*Consolidated from: `translation_keys_best_practices.md`*
+*Consolidated from: `translation-keys-best-practices.md`*
 
 title: "Best Practices per le Chiavi di Traduzione"
 module: "Lang"
@@ -12224,7 +12224,7 @@ Seguire queste best practices per le chiavi di traduzione garantirà un'applicaz
 
 ## translation_keys_rules
 
-*Consolidated from: `translation_keys_rules.md`*
+*Consolidated from: `translation-keys-rules.md`*
 
 title: "Regole per le Chiavi di Traduzione "
 module: "Lang"
@@ -12458,7 +12458,7 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 
 ## translation_management_packages
 
-*Consolidated from: `translation_management_packages.md`*
+*Consolidated from: `translation-management-packages.md`*
 
 title: "Translation Management Packages"
 module: "Lang"
@@ -12561,7 +12561,7 @@ This combination ensures both technical flexibility and user accessibility, cruc
 
 ## translation_notify_conversion
 
-*Consolidated from: `translation_notify_conversion.md`*
+*Consolidated from: `translation-notify-conversion.md`*
 
 title: "Standardizzazione Traduzioni Modulo Notify"
 module: "Lang"
@@ -12683,7 +12683,7 @@ La corretta implementazione degli standard di traduzione garantisce:
 
 ## translation_standards
 
-*Consolidated from: `translation_standards.md`*
+*Consolidated from: `translation-standards.md`*
 
 title: "Standard per le Traduzioni nel Progetto <nome progetto>corrente"
 module: "Lang"
@@ -12876,7 +12876,7 @@ return [
 
 ## translation_standards_links
 
-*Consolidated from: `translation_standards_links.md`*
+*Consolidated from: `translation-standards-links.md`*
 
 title: "Collegamenti alla Documentazione sugli Standard di Traduzione"
 module: "Lang"
@@ -12938,7 +12938,7 @@ Stiamo standardizzando i file di traduzione nel modulo Notify che presentano pro
 
 ## translation_strategies
 
-*Consolidated from: `translation_strategies.md`*
+*Consolidated from: `translation-strategies.md`*
 
 title: "Strategie di Gestione delle Traduzioni in Laravel"
 module: "Lang"
@@ -13211,7 +13211,7 @@ Per questo progetto, si consiglia di utilizzare i file PHP per le traduzioni di 
 
 ## translation_syntax_fixes
 
-*Consolidated from: `translation_syntax_fixes.md`*
+*Consolidated from: `translation-syntax-fixes.md`*
 
 title: "Correzione Errori di Sintassi nei File di Traduzione"
 module: "Lang"
@@ -13390,7 +13390,7 @@ return [
 
 ## translation_system
 
-*Consolidated from: `translation_system.md`*
+*Consolidated from: `translation-system.md`*
 
 title: "Sistema di Traduzione in il progetto"
 module: "Lang"
@@ -16533,7 +16533,7 @@ public function generateWithErrorHandling(array $options = []): string
 
 ## translations_faq
 
-*Consolidated from: `translations_faq.md`*
+*Consolidated from: `translations-faq.md`*
 
 title: "FAQ e Problemi Comuni sulle Traduzioni"
 module: "Lang"
@@ -16602,7 +16602,7 @@ Aggiorna sempre la documentazione in `/Modules/Lang/docs` e spiega la strategia 
 
 ## translations_storage
 
-*Consolidated from: `translations_storage.md`*
+*Consolidated from: `translations-storage.md`*
 
 title: "Storage delle Traduzioni: PHP vs JSON"
 module: "Lang"
