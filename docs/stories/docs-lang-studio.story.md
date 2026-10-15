@@ -9,7 +9,7 @@ tags: [docs, lang, autolabel, savetransaction, translator, docs-organizer, bmad]
 qmd: "lang docs studio 2026-10-14 AutoLabelAction SaveTransAction save_missing_translations TranslatorAdapter non agganciato README falso best_practices api_reference"
 related:
   - ../../../../../bmad-output/docs-architecture/module-theme-docs-contract.md
-  - ../../../Fixcity/docs/stories/2026-10-13-dcp-56-organizzazione-docs-moduli-e-temi.story.md
+  - ../../../Fixcity/docs/stories/dcp-56-organizzazione-docs-moduli-e-temi.story.md
   - ./lang-autolabelaction-hardening.story.md
 ---
 

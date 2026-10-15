@@ -57,7 +57,7 @@ related:
 | `_integration/`, `integration/`, `html2pdf/`, `github/`, `frontend/`, `cursor/`, `windsurf/`, `graphify/`, `core/`, `development/`, `filament/`, `prompts/`, `templates/`, `outputs/`, `root-md-files/`, `llm-wiki/` | legacy | varie |
 | `raw/` | sorgenti immutabili | 14 |
 
-Il contratto (`bmad-output/docs-architecture/module-theme-docs-contract.md`) vuole `00-INDEX.md` come indice operativo: in Lang lo e'. `index.md` e `00-index.md` sono varianti storiche (non crearne altre). Story di questo lavoro: [2026-10-14-docs-lang-studio](./stories/2026-10-14-docs-lang-studio.story.md).
+Il contratto (`bmad-output/docs-architecture/module-theme-docs-contract.md`) vuole `00-INDEX.md` come indice operativo: in Lang lo e'. `index.md` e `00-index.md` sono varianti storiche (non crearne altre). Story di questo lavoro: [2026-10-14-docs-lang-studio](./stories/docs-lang-studio.story.md).
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
@@ -79,7 +79,7 @@ Aggiornata il 2026-10-07 dopo la risoluzione dei marker di merge nei docs (versi
 - [Quick reference](bmad/quick-reference.md)
 - [Setup guide](bmad/setup-guide.md)
 - Story: cartella [bmad/stories/](bmad/stories/).
-- [2026-10-08 Services -> Actions (residuo TranslatorService)](./stories/2026-10-08-services-to-actions-lang.story.md)
+- [2026-10-08 Services -> Actions (residuo TranslatorService)](./stories/services-to-actions-lang.story.md)
 
 ## Dependency Intelligence
 
