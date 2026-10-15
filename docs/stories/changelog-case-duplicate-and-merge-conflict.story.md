@@ -18,11 +18,11 @@ Done.
 Regola (`module-theme-root-hygiene.md` sez.5 / `module-theme-root-md-files-limit.md`):
 un solo file canonico per basename in root, case-insensitive. Root di
 `Modules/Lang` aveva sia `CHANGELOG.MD` (127 byte, stub template
-`:package_name` mai compilato) sia `CHANGELOG.md` (7144 byte, changelog
+`:package_name` mai compilato) sia `changelog.md` (7144 byte, changelog
 semantico reale con voci fino a dev.15).
 
 ## Trovato durante l'audit
-`CHANGELOG.md` conteneva marker di conflitto git **committati**, mai
+`changelog.md` conteneva marker di conflitto git **committati**, mai
 risolti:
 ```
 ## [1.0.0-dev.15] ... (2026-08-25) ... phpstan: analyse Modules a zero errori
@@ -42,7 +42,7 @@ dev.13): risolto tenendo entrambe in ordine cronologico decrescente, come le
 voci gia' presenti sotto (dev.12, dev.11, ...), invece di scartarne una.
 
 ## Azione
-- Risolto il conflitto in `CHANGELOG.md` (entrambe le voci preservate).
+- Risolto il conflitto in `changelog.md` (entrambe le voci preservate).
 - Rimosso `CHANGELOG.MD` (stub template, nessun contenuto reale, superato
   dal changelog vero).
 

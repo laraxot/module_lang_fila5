@@ -54,7 +54,7 @@ Canon: [../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../
 Working tree dirty: 1 file (`docs/multi-org-sync-laraxot-provtv.md`, aggiornamento
 sezione "Caso User" di un'altra sessione) → committato (`cd7df5e`). Entrambi remote
 raggiungibili, storie correlate (merge-base presente). `laraxot/dev` aveva 1 commit
-in più (release automatico `chore(release): 1.0.0-dev.10`, solo `CHANGELOG.md`) →
+in più (release automatico `chore(release): 1.0.0-dev.10`, solo `changelog.md`) →
 merge pulito senza conflitti (`fdf2731`). Push riuscito su entrambi: `laraxot dev`
 (`8057427..fdf2731`) e `provtv dev` (`620fce5..fdf2731`). Stato finale: `0 0` su
 entrambi i remote, working tree pulito.

@@ -26,10 +26,10 @@ Eliminate duplicates, apply BMAD structure, zero orphans.
 
 | Removed | Reason | Kept |
 |---------|--------|------|
-| `00-INDEX.md` | Outdated tags, superseded | `00-index.md` |
-| `advanced_language_switching.md` | Underscore variant, less content | `advanced-language-switching.md` |
-| `automatic_translations.md` | Underscore variant | `automatic-translations.md` |
-| `cms_link.md` | Underscore variant | `cms-link.md` |
+| `00-index.md` | Outdated tags, superseded | `00-index.md` |
+| `advanced-language-switching.md` | Underscore variant, less content | `advanced-language-switching.md` |
+| `automatic-translations.md` | Underscore variant | `automatic-translations.md` |
+| `cms-link.md` | Underscore variant | `cms-link.md` |
 | `changelog.md` | Root CHANGELOG.md is canonical | Removed both |
 | `wiki/commands/INDEX.md` | Uppercase duplicate | `wiki/commands/index.md` |
 | `wiki/concepts/INDEX.md` | Uppercase duplicate | `wiki/concepts/index.md` |
