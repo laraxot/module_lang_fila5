@@ -2347,7 +2347,7 @@ related:
 
 ## conflict_resolution_autolabelaction
 
-*Consolidated from: `conflict_resolution_autolabelaction.md`*
+*Consolidated from: `conflict-resolution-autolabelaction.md`*
 
 title: "Risoluzione Conflitto AutoLabelAction"
 module: "Lang"
@@ -2625,7 +2625,7 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 ## conflict_resolution_edit_translation_file
 
-*Consolidated from: `conflict_resolution_edit_translation_file.md`*
+*Consolidated from: `conflict-resolution-edit-translation-file.md`*
 
 title: "Risoluzione Conflitto edit_translation_file.php"
 module: "Lang"
@@ -2733,7 +2733,7 @@ return [
 
 ## conflict_resolution_edittranslationfile_class
 
-*Consolidated from: `conflict_resolution_edittranslationfile_class.md`*
+*Consolidated from: `conflict-resolution-edittranslationfile-class.md`*
 
 title: "Risoluzione Conflitto EditTranslationFile.php (Classe)"
 module: "Lang"
@@ -2842,7 +2842,7 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 ## conflict_resolution_langserviceprovider
 
-*Consolidated from: `conflict_resolution_langserviceprovider.md`*
+*Consolidated from: `conflict-resolution-langserviceprovider.md`*
 
 title: "Risoluzione Conflitto LangServiceProvider"
 module: "Lang"
@@ -2968,7 +2968,7 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 
 ## conflict_resolution_readtranslationfileaction
 
-*Consolidated from: `conflict_resolution_readtranslationfileaction.md`*
+*Consolidated from: `conflict-resolution-readtranslationfileaction.md`*
 
 title: "Risoluzione Conflitto ReadTranslationFileAction"
 module: "Lang"
@@ -3172,7 +3172,7 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 
 ## conflict_resolution_translation_file_syntax
 
-*Consolidated from: `conflict_resolution_translation_file_syntax.md`*
+*Consolidated from: `conflict-resolution-translation-file-syntax.md`*
 
 title: "Risoluzione Conflitto translation-file-syntax.md"
 module: "Lang"
@@ -3402,7 +3402,7 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 ## conflict_resolution_writetranslationfileaction
 
-*Consolidated from: `conflict_resolution_writetranslationfileaction.md`*
+*Consolidated from: `conflict-resolution-writetranslationfileaction.md`*
 
 title: "Risoluzione Conflitto WriteTranslationFileAction"
 module: "Lang"

@@ -176,7 +176,7 @@ grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php"
 
 ## Collegamenti Documentazione
 
-- [Errori comuni traduzione](./errori_comuni_traduzione.md)
+- [Errori comuni traduzione](./errori-comuni-traduzione.md)
 - [Regole sintassi array breve](/.cursor/rules/translation_files_array_syntax.mdc)
 - [Best practices traduzioni](./translation_rules.md)
 
@@ -345,7 +345,7 @@ grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php"
 
 ## Collegamenti Documentazione
 
-- [Errori comuni traduzione](./errori_comuni_traduzione.md)
+- [Errori comuni traduzione](./errori-comuni-traduzione.md)
 - [Regole sintassi array breve](/.cursor/rules/translation_files_array_syntax.mdc)
 - [Best practices traduzioni](./translation_rules.md)
 
