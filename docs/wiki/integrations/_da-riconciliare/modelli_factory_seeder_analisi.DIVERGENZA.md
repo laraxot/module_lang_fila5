@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# Divergenza: `modelli_factory_seeder_analisi.md`
+# Divergenza: `modelli-factory-seeder-analisi.md`
 
 Questo file veniva da `docs/wiki/integrations/modules/lang/modelli_factory_seeder_analisi.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
 

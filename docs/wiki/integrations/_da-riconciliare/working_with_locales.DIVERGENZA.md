@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# Divergenza: `working_with_locales.md`
+# Divergenza: `working-with-locales.md`
 
 Questo file veniva da `docs/wiki/integrations/modules/lang/working_with_locales.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
 
