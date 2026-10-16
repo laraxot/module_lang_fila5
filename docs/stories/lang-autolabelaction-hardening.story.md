@@ -78,7 +78,7 @@ Field::configureUsing()
 - Architettura: `Modules/Xot/app/Actions/CreateTranslateKeyAction.php` (pattern condiviso)
 - Related to: `lang-translation-loading-fix.story.md`
 - Pattern: `QueueableAction` in `bashscripts/ai/wiki/rules/no-services-rule.md`
-- Documentazione: `conflict-resolution-autolabelaction.md` (analisi esistente)
+- Documentazione: `conflict_resolution_autolabelaction.md` (analisi esistente)
 
 ## Creazione (CREATE)
 
