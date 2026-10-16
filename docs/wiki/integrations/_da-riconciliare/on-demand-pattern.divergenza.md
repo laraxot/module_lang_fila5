@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# Divergenza: `on-demand-pattern.md`
+# Divergenza: `ON-DEMAND-PATTERN.md`
 
 Questo file veniva da `docs/wiki/integrations/modules/lang/ON-DEMAND-PATTERN.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
 
