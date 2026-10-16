@@ -26,14 +26,14 @@ principale).
 Il grep ha trovato 9 file. Uno, `docs/stories/changelog-case-duplicate-and-
 merge-conflict.story.md`, e' stato **escluso di proposito** dopo aver letto
 il contesto: i marker al suo interno sono dentro un fence di codice, citati
-come esempio documentale del conflitto gia' risolto in `changelog.md` (root
+come esempio documentale del conflitto gia' risolto in `CHANGELOG.md` (root
 del modulo, non `docs/`) — non un conflitto reale. Trattarlo come tale
 avrebbe distrutto la documentazione di un fix gia' fatto. Questo pattern
 (citazione intenzionale) e' stato poi verificato assente nei file di
 Activity prima di applicare la risoluzione di massa la'.
 
 Dei restanti 8 file: 6 a struttura piatta (un blocco per conflitto), 2
-(`consolidation-plan.md`, `prd.md`) con marker annidati su piu' generazioni.
+(`CONSOLIDATION_PLAN.md`, `PRD.md`) con marker annidati su piu' generazioni.
 
 ## Azione
 - 2 blocchi risolti automaticamente (un lato vuoto).
@@ -49,9 +49,9 @@ Dei restanti 8 file: 6 a struttura piatta (un blocco per conflitto), 2
   `provtv`), corretto lo slug rotto "progetto corrente" (spazio letterale)
   in "progetto-corrente" per coerenza interna (link resta comunque rotto,
   nessun file con questo nome esiste: problema pre-esistente fuori scope).
-- `consolidation-plan.md` (2 blocchi) e `prd.md` (2 blocchi): marker annidati
+- `CONSOLIDATION_PLAN.md` (2 blocchi) e `PRD.md` (2 blocchi): marker annidati
   risolti a mano leggendo il contenuto reale, non con il parser piatto.
-  `prd.md`: "Laravel 12+ required" preferito a "13+" per coerenza con la
+  `PRD.md`: "Laravel 12+ required" preferito a "13+" per coerenza con la
   tabella requisiti 6 righe sopra nello stesso file; "architecture.md"
   preferito a "ARCHITECTURE.md" perche' 2 delle 3 generazioni impilate lo
   sceglievano.

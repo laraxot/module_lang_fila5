@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# Divergenza: `localizing-dates-and-currencies.md`
+# Divergenza: `localizing_dates_and_currencies.md`
 
 Questo file veniva da `docs/wiki/integrations/modules/lang/localizing_dates_and_currencies.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
 
