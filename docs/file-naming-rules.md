@@ -6,7 +6,7 @@ module: "Lang"
 type: rule
 tags: [migration, filament]
 created: 2026-07-14
-updated: 2026-10-15
+updated: 2026-07-14
 qmd: "migration filament"
 related:
   - "./italian-text-refined-audit-report.md"
@@ -98,7 +98,7 @@ find Modules -type f \( -name "*.php" -o -name "*.md" \) -exec bash -c '
 
 **Elimina il file che NON rispetta le convenzioni:**
 
-1. **README.md vs readme.md** → Elimina `README.md`
+1. **README.md vs readme.md** → Elimina `readme.md`
 2. **Activity.php vs activity.php** → Elimina `activity.php`
 3. **ListRecords.md vs listrecords.md** → Elimina `listrecords.md`
 4. **ROADMAP.md vs roadmap.md** → Elimina `roadmap.md` (tranne se contiene info diverse)
@@ -132,11 +132,3 @@ Se entrambi i file contengono contenuto diverso:
 - Laravel Naming Conventions
 - Filament Best Practices
 - Git Case Sensitivity Issues
-
-## Convenzioni `.md` in `docs/`
-
-- Solo **kebab-case minuscolo** (`best-practices.md`), mai `BEST_PRACTICES.md` o `best_practices.md`.
-- Eccezione unica: `README.md`.
-- Niente date/timestamp ne' suffissi `-1.md`/`-2.md` nel nome (la data sta nel frontmatter).
-- Prima di creare un file: verifica che non esista gia' lo stesso argomento; usa `python3 -I bashscripts/tools/docs/md-filenames.py name <percorso>`.
-- Se esistono versioni UPPERCASE e lowercase dello stesso argomento: tieni kebab-case, elimina il duplicato (contenuto piu' ricco vince).

@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# Divergenza: `pluralization-and-localization.md`
+# Divergenza: `pluralization_and_localization.md`
 
 Questo file veniva da `docs/wiki/integrations/modules/lang/pluralization_and_localization.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
 
