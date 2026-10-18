@@ -34,7 +34,7 @@ class AutoLabelAction
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);
         $class = Arr::first($backtrace_slice, function (array $item) use ($component) {
-            if ($item['function'] === 'execute') {
+            if ('execute' === $item['function']) {
                 return false;
             }
 
@@ -61,7 +61,7 @@ class AutoLabelAction
             if (isset($class['object'])) {
                 $object_class = $class['object']::class;
             }
-            if (isset($class['class']) && $object_class === null) {
+            if (isset($class['class']) && null === $object_class) {
                 $object_class = $class['class'];
             }
             if (is_null($object_class)) {
@@ -82,9 +82,9 @@ class AutoLabelAction
             Assert::string($val = $component->getLabel());
             $label_tkey = $trans_key.'.steps.'.$val.'';
         }
-        if ($label_tkey === null && $component instanceof Section) {
+        if (null === $label_tkey && $component instanceof Section) {
             $val = $component->getHeading();
-            if ($val === null) {
+            if (null === $val) {
                 // Una sezione senza titolo e' una scelta: raggruppa i campi senza
                 // annunciarsi. Serve comunque un segmento di chiave, e `empty` lo fa, ma
                 // il valore salvato deve restare vuoto — altrimenti la prima visita
@@ -98,7 +98,7 @@ class AutoLabelAction
             }
             $label_tkey = $trans_key.'.sections.'.$val.'';
         }
-        if ($label_tkey === null && method_exists($component, 'getName')) {
+        if (null === $label_tkey && method_exists($component, 'getName')) {
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.fields.'.$val.'';
         }
@@ -138,7 +138,7 @@ class AutoLabelAction
 
         }
         */
-        if ($type === 'icon' && app(SvgExistsAction::class)->execute($label)) {
+        if ('icon' === $type && app(SvgExistsAction::class)->execute($label)) {
             if (method_exists($component, 'iconButton')) {
                 $component->iconButton();
             }
@@ -147,7 +147,7 @@ class AutoLabelAction
             // $component->label('FIX:'.$label_key);
             return $component;
         }
-        if ($type === 'icon' && ! app(SvgExistsAction::class)->execute($label)) {
+        if ('icon' === $type && ! app(SvgExistsAction::class)->execute($label)) {
             // $component->{$type}($label);
             if (method_exists($component, 'iconButton')) {
                 $component->iconButton();
