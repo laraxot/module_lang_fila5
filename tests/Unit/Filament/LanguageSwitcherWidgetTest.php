@@ -37,7 +37,7 @@ test('LanguageSwitcherWidget getAvailableLocales riflette LaravelLocalization no
     ]);
 
     try {
-        $widget = new LanguageSwitcherWidget;
+        $widget = new LanguageSwitcherWidget();
         $locales = $widget->getAvailableLocales();
         Assert::assertInstanceOf(Collection::class, $locales);
         $codes = $locales->pluck('code')->all();
@@ -73,6 +73,6 @@ test('LanguageSwitcherWidget getLanguageUrl usa LaravelLocalization con fallback
         ->once()
         ->andReturn(false);
 
-    $widget = new LanguageSwitcherWidget;
+    $widget = new LanguageSwitcherWidget();
     Assert::assertSame('/fr', $widget->getLanguageUrl('fr'));
 });
