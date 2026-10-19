@@ -5,9 +5,10 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Str;
-use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\glob;
+
+use Spatie\QueueableAction\QueueableAction;
 
 class GetAllModuleTranslationAction
 {
