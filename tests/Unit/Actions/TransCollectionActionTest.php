@@ -13,7 +13,7 @@ uses(TestCase::class);
 
 function makeTransCollectionAction(): TransCollectionAction
 {
-    return new TransCollectionAction;
+    return new TransCollectionAction();
 }
 
 describe('TransCollectionAction Business Logic', function () {
