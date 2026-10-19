@@ -12,15 +12,15 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\Lang\Models\LanguageLine.
  *
- * @property int $id
- * @property string $group
- * @property string $key
+ * @property int                   $id
+ * @property string                $group
+ * @property string                $key
  * @property array<string, string> $text
- * @property string $locale
- * @property string|null $created_by
- * @property string|null $updated_by
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
+ * @property string                $locale
+ * @property string|null           $created_by
+ * @property string|null           $updated_by
+ * @property Carbon|null           $created_at
+ * @property Carbon|null           $updated_at
  *
  * @method static EloquentBuilder<static>|LanguageLine newModelQuery()
  * @method static EloquentBuilder<static>|LanguageLine newQuery()
@@ -35,9 +35,9 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static EloquentBuilder<static>|LanguageLine whereCreatedBy($value)
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedBy($value)
  *
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $deleter
- * @property-read ProfileContract|null $updater
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $deleter
+ * @property ProfileContract|null $updater
  *
  * @mixin Model
  */
