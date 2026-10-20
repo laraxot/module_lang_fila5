@@ -305,7 +305,7 @@ return array(
 
 ## Collegamenti
 
-- [Regole Traduzioni](../../docs/translation-standards.md)
+- [Regole Traduzioni](translation-standards.md)
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 
