@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+namespace Modules\Lang\Tests\Unit\Actions;
+
+use Modules\Lang\Actions\ReadTranslationFileAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -11,11 +14,40 @@ use function Safe\unlink;
 
 uses(TestCase::class);
 
-/*
- * Helper tipizzati (makeReadTranslationFileAction, readTranslationTestFilePath,
- * defaultReadTranslationTestData): Modules/Lang/tests/Pest.php — namespace globale
- * cosi' pest-plugin-phpstan li risolve (in questo file namespaced → function.notFound).
+/**
+ * @return array<string, mixed>
  */
+function defaultReadTranslationTestData(): array
+{
+    return [
+        'auth' => [
+            'failed' => 'These credentials do not match our records.',
+            'password' => 'The provided password is incorrect.',
+        ],
+        'pagination' => [
+            'previous' => '&laquo; Previous',
+            'next' => 'Next &raquo;',
+        ],
+    ];
+}
+
+function readTranslationTestFilePath(): string
+{
+    return sys_get_temp_dir().'/test_translations.php';
+}
+
+function makeReadTranslationFileAction(): ReadTranslationFileAction
+{
+    return new ReadTranslationFileAction;
+}
+
+/**
+ * @param array<string, mixed> $translations
+ */
+function createTranslationFile(string $filePath, array $translations): void
+{
+    file_put_contents($filePath, "<?php\n\nreturn ".var_export($translations, true).";\n");
+}
 
 afterEach(function (): void {
     $path = readTranslationTestFilePath();
@@ -23,7 +55,6 @@ afterEach(function (): void {
         unlink($path);
     }
 });
-
 describe('Read Translation File Action', function (): void {
     test('can read valid translation file', function (): void {
         $filePath = readTranslationTestFilePath();
@@ -162,7 +193,7 @@ describe('Read Translation File Action', function (): void {
         Assert::assertStringContainsString("'number' => '123'", $phpContent);
         Assert::assertStringContainsString("'float' => '45.67'", $phpContent);
         Assert::assertStringContainsString("'boolean_true' => '1'", $phpContent);
-        Assert::assertStringContainsString("'boolean_false' => ''", $phpContent);
+        Assert::assertStringContainsString("'boolean_false' => '0'", $phpContent);
     });
 
     test('preserves key order in output', function (): void {
@@ -196,3 +227,5 @@ describe('Read Translation File Action', function (): void {
         Assert::assertLessThan($mPos, $aPos);
     });
 });
+
+

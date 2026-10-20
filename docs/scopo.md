@@ -68,8 +68,12 @@ lingue da `LaravelLocalization::getSupportedLocales()`, redirect 303 via
 `getLocalizedURL()`. Dettaglio: [advanced-language-switching.md](./advanced-language-switching.md).
 
 `Http\Livewire\Switcher` / `Change` sono ritirati (story
-[12.1](./stories/12.1.retire-lang-http-switchers.story.md)): un solo switcher evita
-duplicare stato HTTP/Livewire e rompere i test che assumono l'assenza di quei file.
+[12.1](./stories/12.1.retire-lang-http-switchers.story.md), fleet **W0 ✓**):
+un solo switcher evita duplicare stato HTTP/Livewire e rompere i test che assumono
+l'assenza di quei file. Inventario fleet:
+[Xot](../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md) ·
+[fleet story](../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md).
+Dettaglio modulo: [bmad/livewire-inventory.md](./bmad/livewire-inventory.md).
 
 I consumatori espliciti sono pochi perché il consumo vero è implicito, via
 `configureUsing()`. Misurati il 2026-09-02 con
@@ -370,3 +374,4 @@ find Modules/Lang/docs -name '*.md'  -print0 | xargs -0 cat | wc -l      # 14510
 - [sigma-ptv-dependency-direction](../../../../docs/wiki/rules/sigma-ptv-dependency-direction.md) — la direzione delle dipendenze e il `ProfileContract`
 - [data-sacred-no-destructive-db](../../../../docs/wiki/memories/data-sacred-no-destructive-db.md) — i file `lang/` tracciati sono dati, non artefatti
 - [Cms — page resolution](../../Cms/docs/actions/page-resolution-pipeline.md) — URL localizzati nei blocchi CMS
+

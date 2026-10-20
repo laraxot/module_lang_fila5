@@ -31,7 +31,7 @@ Ondata test 2026-10-20 (lane lang): [stories/phpstan-test-wave-lang.story.md](./
 
 ## 🏗️ **Configurazione e Setup**
 - 🌍 **[Locale Management](./locale-management.md)** - Gestione delle lingue attive e default.
-- 🔀 **[Locale switcher](./advanced-language-switching.md)** — UI FO: `LanguageSwitcherWidget` (HTTP `Switcher`/`Change` ritirati; story [12.1](./stories/12.1.retire-lang-http-switchers.story.md)).
+- 🔀 **[Locale switcher](./advanced-language-switching.md)** — UI FO: `LanguageSwitcherWidget` SSoT (HTTP ritirati, fleet **W0 ✓**; [12.1](./stories/12.1.retire-lang-http-switchers.story.md), [inventario Xot](../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md), [fleet](../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md), [livewire-inventory](./bmad/livewire-inventory.md)).
 - 🛣️ **[Route Localization](./laravel-localization-folio-integration.md)** - Integrazione con Folio e Volt per URL localizzati.
 - ⚙️ **[Service Provider](./lang-service-provider-improvements.md)** - Architettura del caricamento dinamico delle traduzioni.
 
