@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "readme.it"
 issues: []
 discussions: []
+status: superseded
+superseded_by: README.it.md
 ---
 
 <div align="center">

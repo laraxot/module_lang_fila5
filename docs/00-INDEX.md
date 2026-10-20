@@ -58,19 +58,27 @@ Ondata test 2026-10-20 (lane lang): [stories/phpstan-test-wave-lang.story.md](./
 
 `SaveTransAction` scrive le chiavi mancanti in `Modules/<Modulo>/lang/<locale>/` fuori dai test (interruttore `lang.save_missing_translations`, a runtime `NULL` quindi acceso). Non e' `__()` a scrivere: e' la catena Filament `AutoLabelAction`. Dettagli e prove nel [README.md](./README.md).
 
-## Mappa delle directory di docs/ (2026-10-14)
+## Mappa delle directory di docs/ (2026-10-20)
+
+Conteggi misurati sul filesystem (file `.md` per cartella, ricorsivo). La radice di `docs/` ha 512 file `.md`, molti sono gemelli per maiuscole o per underscore (vedi la story di riordino).
 
 | Directory | Ruolo | File .md |
 |---|---|---|
-| `README.md`, `wiki/` | canonici (README verificato; `wiki/` contiene 286 file, in gran parte `integrations/`) | 286 in wiki |
-| `stories/` | evidence BMAD | 25 |
-| `bmad/`, `epics/`, `lessons-learned/`, `investigation/`, `bugfix/`, `fixes/`, `conflicts/` | evidence di sessioni | 69, 1, 3, 1, 1, 1, 4 |
+| `README.md`, `wiki/` | canonici (README verificato; `wiki/` contiene 242 file, 133 in `integrations/`) | 242 in wiki |
+| `stories/` | evidence BMAD | 29 |
+| `bmad/`, `epics/`, `lessons-learned/`, `investigation/`, `bugfix/`, `fixes/`, `conflicts/` | evidence di sessioni | 70, 1, 3, 1, 1, 1, 4 |
 | `roadmap/` | piani, non stato | 27 |
 | `translations/`, `translatable/`, `architecture/`, `best-practices/`, `critical-rules/`, `performance/`, `packages/` | riferimenti tecnici (verificare col README prima di fidarsi) | 10, 7, 4, 1, 2, 2, 4 |
-| `_integration/`, `integration/`, `html2pdf/`, `github/`, `frontend/`, `cursor/`, `windsurf/`, `graphify/`, `core/`, `development/`, `filament/`, `prompts/`, `templates/`, `outputs/`, `root-md-files/`, `llm-wiki/` | legacy | varie |
+| `_integration/`, `integration/`, `html2pdf/`, `github/`, `frontend/`, `cursor/`, `windsurf/`, `graphify/`, `core/`, `development/`, `filament/`, `prompts/`, `templates/`, `outputs/`, `root-md-files/`, `llm-wiki/` | legacy | 8, 5, 6, 2, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 7 |
 | `raw/` | sorgenti immutabili | 14 |
 
-Il contratto (`bmad-output/docs-architecture/module-theme-docs-contract.md`) vuole `00-INDEX.md` come indice operativo: in Lang lo e'. `index.md` e `00-index.md` sono varianti storiche (non crearne altre). Story di questo lavoro: [2026-10-14-docs-lang-studio](./stories/docs-lang-studio.story.md).
+Il contratto (`bmad-output/docs-architecture/module-theme-docs-contract.md`) vuole `00-INDEX.md` come indice operativo: in Lang lo e'. `index.md`, `INDEX.md` e `00-index.md` sono varianti storiche che rimandano a questo file (non crearne altre). Storie del lavoro di riordino: [docs-lang-studio](./stories/docs-lang-studio.story.md) e [docs-organization-lang](./stories/docs-organization-lang.story.md).
+
+## Riordino della docs (2026-10-20)
+
+- **Gemelli per maiuscole.** Il canonico e' il nome minuscolo (eccezioni: `README.md`, `CHANGELOG.md`, `AGENTS.md`, `00-INDEX.md`; per `INDEX.md`/`index.md` e `README.*` nelle sottocartelle vale chi ha piu' riferimenti entranti). Il gemello e' marcato `status: superseded` con `superseded_by`: i link esistenti continuano a risolvere. Sono stati cancellati solo i 37 duplicati `*.DIVERGENZA.md` di `wiki/integrations/_da-riconciliare/`, con zero riferimenti entranti. Dettaglio, numeri e coppie ancora aperte: [docs-organization-lang](./stories/docs-organization-lang.story.md).
+- **Story PHPStan versionate.** `docs/.gitignore` riabilita `stories/phpstan-*.story.md` e `phpstan-*.story.md`, che il `.gitignore` radice del modulo nasconderebbe con `phpstan*`.
+- **Dove scrivere.** Nuove pagine nella sottocartella tematica, non nella radice di `docs/`; nomi in kebab-case senza date ne' suffissi numerici (la data sta nel frontmatter).
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
