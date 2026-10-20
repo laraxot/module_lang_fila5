@@ -11,11 +11,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-function makeLangServiceProvider(): LangServiceProvider
-{
-    return new LangServiceProvider(app());
-}
-
 describe('LangServiceProvider Basic Functionality', function () {
     it('extends ServiceProvider', function () {
         $provider = makeLangServiceProvider();
