@@ -12,6 +12,15 @@ status: draft
 
 # Lang Module — PHPStan
 
+## 2026-10-20 — wave r3 · gate modulo
+
+```bash
+cd laravel && php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules/Lang
+# [OK] No errors
+```
+
+Test: reflection parent con `assertInstanceOf(ReflectionClass::class, $parent)` prima di `getName()`; provider senza `method_exists`/`assertInstanceOf` tautologici.
+
 ## 2026-06-10 — STORY-305 · Level 10 · 0 errori
 
 ```bash
