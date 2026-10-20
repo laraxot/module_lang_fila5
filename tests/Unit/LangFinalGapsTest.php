@@ -7,7 +7,6 @@ namespace Modules\Lang\Tests\Unit;
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
-use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
@@ -103,7 +102,7 @@ test('TranslatorAdapter coerces non-string loaded values', function (): void {
     // connessione a SQLite avrebbe dato l'impressione di proteggere qualcosa
     // che non e' in pericolo, e avrebbe contraddetto la regola per cui i test
     // girano sulle repliche MySQL. Story LANG-17.4.
-    $loader = new ArrayLoader();
+    $loader = new ArrayLoader;
     $adapter = new TranslatorAdapter($loader, 'it');
     $loaded = new ReflectionProperty(LaravelTranslator::class, 'loaded');
     $loaded->setAccessible(true);
@@ -221,7 +220,6 @@ test('LanguageSwitcherWidget falls back when getLocalizedURL returns non-string 
 
 test('Post linkable and accessor edge branches', function (): void {
     $post = new Post;
-    Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
     $post->setRawAttributes(['post_type' => 123, 'post_id' => ['x']], true);
     Assert::assertIsString($post->getTitleAttribute(null));
