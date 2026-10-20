@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan progress"
 issues: []
 discussions: []
+status: draft
 ---
 
 # 🌍 PHPStan Progress Report - Modulo Lang
@@ -302,15 +303,6 @@ Noi abbiamo fatto i primi 345 li. Ne restano 655.
 **ॐ Il linguaggio unisce, il codice purifica ॐ**
 
 ---
-
-title: "phpstan progress"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan progress"
-issues: []
-discussions: []
 *Namaste* 🙏
 
 **Status**: 🟡 IN PROGRESS

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "phpstanes"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Lang Module - PHPStan Level 7 Fixes - Gennaio 2025
@@ -99,12 +100,4 @@ private function castWithAction(mixed $value): string
 - **Method Signatures**: Allineate tutte le signature con le classi base
 
 ---
-title: "phpstanes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstanes"
-issues: []
-discussions: []
 *Stato: ✅ Completato - 0 errori PHPStan*

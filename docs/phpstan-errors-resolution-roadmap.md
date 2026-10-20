@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan errors resolution roadmap"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Lang Module - PHPStan Level 10 Errors Resolution Roadmap
