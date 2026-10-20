@@ -8,6 +8,8 @@ type: product
 tags: [product, modules, lang]
 created: 2026-08-24
 updated: 2026-08-24
+status: superseded
+superseded_by: INDEX.md
 ---
 
 # lang — product

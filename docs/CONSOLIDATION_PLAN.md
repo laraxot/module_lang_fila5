@@ -7,7 +7,8 @@ updated: 2026-09-26
 qmd: "CONSOLIDATION PLAN"
 issues: []
 discussions: []
-status: draft
+status: superseded
+superseded_by: consolidation_plan.md
 ---
 
 # Lang Module Docs Consolidation Plan
