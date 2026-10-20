@@ -1,3 +1,13 @@
+---
+title: "Aggiornamento File di Traduzione Lang Service - 2025-01-06"
+type: note
+status: draft
+created: 2026-01-20
+updated: 2026-10-20
+module: Lang
+tags: [docs, lang]
+---
+
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 
 ## Panoramica

@@ -1,3 +1,13 @@
+---
+title: "Refactor Completo File di Traduzione - Riepilogo Finale"
+type: note
+status: draft
+created: 2026-01-20
+updated: 2026-10-20
+module: Lang
+tags: [docs, lang]
+---
+
 # Refactor Completo File di Traduzione - Riepilogo Finale
 
 ## Panoramica del Progetto
