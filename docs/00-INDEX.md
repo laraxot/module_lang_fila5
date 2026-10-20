@@ -6,23 +6,29 @@ module: "Lang"
 type: concept
 tags: [filament4, migration]
 created: 2026-07-14
-updated: 2026-10-14
-qmd: "lang module docs index canonico autolabel savetransaction mappa directory"
+updated: 2026-10-20
+qmd: "lang module docs index canonico autolabel savetransaction mappa directory scopo locale switcher"
 status: active
 related:
+  - "./scopo.md"
+  - "./stories/phpstan-test-wave-lang.story.md"
   - "./italian-text-refined-audit-report.md"
 ---
 # 📚 **Indice Documentazione Modulo Lang**
 
 **Stato verificato sul codice (2026-10-14)**: vedi [README.md](./README.md). Il livello PHPStan non e' stato rimisurato; la "Module Version 1.5.0" non compare in `module.json` ne' in `composer.json`.
 
+Ondata test 2026-10-20 (lane lang): [stories/phpstan-test-wave-lang.story.md](./stories/phpstan-test-wave-lang.story.md) — cause alla sorgente, non checklist errori.
+
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./README.md) - Panoramica del sistema di internazionalizzazione.
-2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Traduzioni AI e centralizzazione.
-3. [philosophy.md](./philosophy.md) - La lingua come infrastruttura: filosofia Laraxot.
+1. [scopo.md](./scopo.md) — Perché esiste Lang: autolabel, scrittura chiavi, confini i18n.
+2. [README.md](./README.md) — Panoramica del sistema di internazionalizzazione.
+3. [philosophy.md](./philosophy.md) — La lingua come infrastruttura: filosofia Laraxot.
+4. [roadmap.md](./roadmap.md) — Evoluzione 2026: Traduzioni AI e centralizzazione.
 
 ## 🏗️ **Configurazione e Setup**
 - 🌍 **[Locale Management](./locale-management.md)** - Gestione delle lingue attive e default.
+- 🔀 **[Locale switcher](./advanced-language-switching.md)** — UI FO: `LanguageSwitcherWidget` (HTTP `Switcher`/`Change` ritirati; story [12.1](./stories/12.1.retire-lang-http-switchers.story.md)).
 - 🛣️ **[Route Localization](./laravel-localization-folio-integration.md)** - Integrazione con Folio e Volt per URL localizzati.
 - ⚙️ **[Service Provider](./lang-service-provider-improvements.md)** - Architettura del caricamento dinamico delle traduzioni.
 
@@ -38,6 +44,8 @@ related:
 
 ## 🧪 **Qualità e Testing**
 - ✅ **[PHPStan Analysis](./phpstan-analysis-lang.md)** - Report del 2025-11-05 (stale, non rimisurato).
+- PHPStan swarm wave Lang (verify EXIT 0): [phpstan-lang-swarm-wave](./stories/phpstan-lang-swarm-wave.story.md).
+- PHPStan test wave (analisi cause / peer): [phpstan-test-wave-lang](./stories/phpstan-test-wave-lang.story.md) — 119 errori, test ripristinati al ciclo ottobre, decisioni aperte su `TranslatorAdapter`/trait.
 - 🔬 **[Testing Guidelines](./testing.md)** - Verifica della presenza delle chiavi di traduzione.
 - 🐒 **[Chaos Monkey Translation Fallbacks](./chaos-monkey-translation-fallbacks.md)** - Protocollo di recovery su regressioni i18n.
 
@@ -50,7 +58,7 @@ related:
 | Directory | Ruolo | File .md |
 |---|---|---|
 | `README.md`, `wiki/` | canonici (README verificato; `wiki/` contiene 286 file, in gran parte `integrations/`) | 286 in wiki |
-| `stories/` | evidence BMAD | 24 |
+| `stories/` | evidence BMAD | 25 |
 | `bmad/`, `epics/`, `lessons-learned/`, `investigation/`, `bugfix/`, `fixes/`, `conflicts/` | evidence di sessioni | 69, 1, 3, 1, 1, 1, 4 |
 | `roadmap/` | piani, non stato | 27 |
 | `translations/`, `translatable/`, `architecture/`, `best-practices/`, `critical-rules/`, `performance/`, `packages/` | riferimenti tecnici (verificare col README prima di fidarsi) | 10, 7, 4, 1, 2, 2, 4 |
