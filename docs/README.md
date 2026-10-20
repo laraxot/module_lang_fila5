@@ -70,9 +70,9 @@ Indice: [00-INDEX.md](./00-INDEX.md). Wiki: [wiki/index.md](./wiki/index.md). St
 
 ## Standard Rules & Workflow
 
-- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
-- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
+- [[BMAD Method](../../../../bashscripts/ai/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../../bashscripts/ai/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../../bashscripts/ai/wiki/concepts/llm-wiki-governance.md)]
 
 ---
 **Ultima verifica**: 2026-10-14 (Laravel 13.35.0, PHP 8.4.26). Il livello PHPStan non e' stato rimisurato in questa verifica.
