@@ -6,15 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Lang\Models\BaseModel;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-uses(TestCase::class);
 
-function makeLangBaseModel(): BaseModel
-{
-    return new class extends BaseModel
-    {
-        protected $table = 'test_lang_table';
-    };
-}
+uses(TestCase::class);
 
 test('base model extends eloquent model', function (): void {
     $baseModel = makeLangBaseModel();
