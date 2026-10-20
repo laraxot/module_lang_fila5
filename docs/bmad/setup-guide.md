@@ -11,6 +11,7 @@ related:
   - ./architecture/module-boundary.md
   - ../../composer.json
   - ../../module.json
+status: draft
 ---
 
 # Lang — setup guide

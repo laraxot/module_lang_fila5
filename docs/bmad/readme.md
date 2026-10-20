@@ -1,6 +1,12 @@
 ---
 bmad: true
 module: Lang
+title: "Lang Module — Documentation"
+type: index
+status: draft
+updated: 2026-10-07
+tags: [docs, lang, bmad]
+qmd: "lang module   documentation lang"
 ---
 # Lang Module — Documentation
 
