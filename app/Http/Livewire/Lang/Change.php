@@ -21,7 +21,7 @@ class Change extends Component
 {
     public string $lang;
 
-    /** @var array<string, array<mixed>> */
+    /** @var array<string, array<string, mixed>> */
     public array $langs;
 
     public string $url;
@@ -37,6 +37,12 @@ class Change extends Component
             if (! is_string($key) || ! is_array($item)) {
                 continue;
             }
+            $locale = [];
+            foreach ($item as $property => $value) {
+                if (is_string($property)) {
+                    $locale[$property] = $value;
+                }
+            }
             $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
             if (false !== $url) {
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
@@ -47,8 +53,8 @@ class Change extends Component
                     $url = Str::of($url)->replace(url(''), '')->toString();
                 }
             }
-            $item['url'] = $url;
-            $this->langs[$key] = $item;
+            $locale['url'] = $url;
+            $this->langs[$key] = $locale;
         }
     }
 

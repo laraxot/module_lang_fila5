@@ -58,15 +58,15 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 /**
- * Locale dell'app dopo applyLocale(), partendo ogni volta da 'it': un 'en' letto
- * dopo la chiamata prova il fallback, non un locale rimasto da quella precedente.
+ * Locale dell'app dopo normalizeLocale()+applyLocale(), partendo ogni volta da 'it':
+ * un 'en' letto dopo la chiamata prova il fallback, non un locale rimasto da prima.
  *
  * @param  array<string, mixed>  $data
  */
 function langLocaleAfterApplying(LocaleSwitcherRefresh $action, array $data): string
 {
     app()->setLocale('it');
-    $action->applyLocale($data);
+    $action->applyLocale(LocaleSwitcherRefresh::normalizeLocale($data['locale'] ?? null));
 
     return app()->getLocale();
 }
