@@ -20,7 +20,7 @@ status: draft
 All tests MUST use `.env.testing` configuration:
 ```env
 APP_ENV=testing
-DB_CONNECTION=sqlite
+DB_CONNECTION=mysql
 DB_DATABASE=<nome progetto>_data_test
 APP_LOCALE=en
 APP_FALLBACK_LOCALE=en
