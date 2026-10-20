@@ -7,6 +7,7 @@ namespace Modules\Lang\Tests\Unit;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Mockery;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\MergeTranslationsAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
@@ -44,14 +45,13 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 /**
- * @param list<string> $permissions
- *
+ * @param  list<string>  $permissions
  * @return MockInterface&UserContract
  */
 function langFakeUser(array $permissions = [], bool $superAdmin = false): UserContract
 {
     /** @var MockInterface&UserContract $user */
-    $user = \Mockery::mock(UserContract::class);
+    $user = Mockery::mock(UserContract::class);
     $user->shouldReceive('hasRole')
         ->with('super-admin')
         ->andReturn($superAdmin);
@@ -64,7 +64,7 @@ function langFakeUser(array $permissions = [], bool $superAdmin = false): UserCo
 }
 
 afterEach(function (): void {
-    \Mockery::close();
+    Mockery::close();
 });
 
 describe('Lang coverage boost — Actions', function (): void {
@@ -82,10 +82,9 @@ describe('Lang coverage boost — Actions', function (): void {
         $path = sys_get_temp_dir().'/lang_write_test_'.uniqid().'.php';
 
         try {
-            app()->instance('cache', new class {
-                public function flush(): void
-                {
-                }
+            app()->instance('cache', new class
+            {
+                public function flush(): void {}
             });
 
             $result = app(WriteTranslationFileAction::class)->execute($path, [
@@ -108,31 +107,31 @@ describe('Lang coverage boost — Actions', function (): void {
 
 describe('Lang coverage boost — Policies', function (): void {
     test('TranslationPolicy delegates to permissions', function (): void {
-        $policy = new TranslationPolicy();
+        $policy = new TranslationPolicy;
         $allowed = langFakeUser(['translation.viewAny', 'translation.view', 'translation.create']);
         $denied = langFakeUser([]);
 
         Assert::assertTrue($policy->viewAny($allowed));
-        Assert::assertTrue($policy->view($allowed, new Translation()));
+        Assert::assertTrue($policy->view($allowed, new Translation));
         Assert::assertTrue($policy->create($allowed));
         Assert::assertFalse($policy->viewAny($denied));
     });
 
     test('super-admin bypasses TranslationPolicy checks', function (): void {
-        $policy = new TranslationPolicy();
+        $policy = new TranslationPolicy;
         $superAdmin = langFakeUser(superAdmin: true);
 
         Assert::assertTrue($policy->before($superAdmin, 'viewAny'));
     });
 
     test('PostPolicy and TranslationFilePolicy enforce permissions', function (): void {
-        $postPolicy = new PostPolicy();
-        $filePolicy = new TranslationFilePolicy();
+        $postPolicy = new PostPolicy;
+        $filePolicy = new TranslationFilePolicy;
         $user = langFakeUser(['post.update', 'translation_file.delete']);
 
-        Assert::assertTrue($postPolicy->update($user, new Post()));
-        Assert::assertTrue($filePolicy->delete($user, new TranslationFile()));
-        Assert::assertFalse($postPolicy->delete(langFakeUser([]), new Post()));
+        Assert::assertTrue($postPolicy->update($user, new Post));
+        Assert::assertTrue($filePolicy->delete($user, new TranslationFile));
+        Assert::assertFalse($postPolicy->delete(langFakeUser([]), new Post));
     });
 });
 
@@ -152,16 +151,16 @@ describe('Lang coverage boost — Filament static', function (): void {
 
 describe('Lang coverage boost — UI and data', function (): void {
     test('translation file schemas and pages build executable structures', function (): void {
-        $formSchema = (new TranslationFileForm())->getFormSchema();
-        $infolistSchema = (new TranslationFileInfolist())->getInfolistSchema();
-        $tableColumns = (new TranslationFilesTable())->getTableColumns();
+        $formSchema = (new TranslationFileForm)->getFormSchema();
+        $infolistSchema = (new TranslationFileInfolist)->getInfolistSchema();
+        $tableColumns = (new TranslationFilesTable)->getTableColumns();
 
         Assert::assertArrayHasKey('name', $formSchema);
         Assert::assertArrayHasKey('id', $infolistSchema);
         Assert::assertArrayHasKey('created_at', $tableColumns);
 
-        $listPage = new ListTranslationFiles();
-        $editPage = new EditTranslationFile();
+        $listPage = new ListTranslationFiles;
+        $editPage = new EditTranslationFile;
 
         $builtFields = $editPage->makeFromArray([
             'title' => 'Hello',
@@ -178,7 +177,7 @@ describe('Lang coverage boost — UI and data', function (): void {
     });
 
     test('language widget and blade components expose runtime data', function (): void {
-        $widget = new LanguageSwitcherWidget();
+        $widget = new LanguageSwitcherWidget;
 
         Assert::assertTrue(LanguageSwitcherWidget::canView());
         $supportedCodes = array_keys(LaravelLocalization::getSupportedLocales());
@@ -193,7 +192,7 @@ describe('Lang coverage boost — UI and data', function (): void {
 
         Assert::assertStringContainsString('en', $widget->getLanguageUrl('en'));
 
-        $component = new LanguageSwitcher();
+        $component = new LanguageSwitcher;
         $rendered = $component->render();
 
         Assert::assertInstanceOf(View::class, $rendered);
@@ -219,7 +218,7 @@ describe('Lang coverage boost — UI and data', function (): void {
         ]);
         app()->setLocale('it');
 
-        $composer = new ThemeComposer();
+        $composer = new ThemeComposer;
         $languages = $composer->languages();
         $others = $composer->otherLanguages();
 
@@ -242,17 +241,15 @@ describe('Lang coverage boost — UI and data', function (): void {
         mkdir(dirname($filePath), 0o755, true);
         TestCase::createTranslationFile($filePath, ['welcome' => 'Ciao']);
 
-        app()->instance('translator', new class($langDir) {
-            public function __construct(private readonly string $path)
-            {
-            }
+        app()->instance('translator', new class($langDir)
+        {
+            public function __construct(private readonly string $path) {}
 
             public function getLoader(): object
             {
-                return new class($this->path) {
-                    public function __construct(private readonly string $path)
-                    {
-                    }
+                return new class($this->path)
+                {
+                    public function __construct(private readonly string $path) {}
 
                     /** @return array<string, string> */
                     public function namespaces(): array
@@ -273,7 +270,7 @@ describe('Lang coverage boost — UI and data', function (): void {
         Assert::assertSame($filePath, $translationData->getFilename());
         Assert::assertSame(['welcome' => 'Ciao'], $translationData->getData());
 
-        $loader = new ArrayLoader();
+        $loader = new ArrayLoader;
         $loader->addMessages('it', 'messages', ['known' => 'Valore']);
         $adapter = new TranslatorAdapter($loader, 'it');
 
@@ -292,7 +289,7 @@ describe('Lang coverage boost — UI and data', function (): void {
 
 describe('Lang coverage boost — Post accessors', function (): void {
     test('Post mutators and accessors work without persisting', function (): void {
-        $post = new Post();
+        $post = new Post;
         $post->setTitleAttribute('My Title');
 
         Assert::assertSame('My Title', $post->getAttributes()['title']);
@@ -310,7 +307,7 @@ describe('Lang coverage boost — Post accessors', function (): void {
     });
 
     test('Post guid accessor slugifies fallback title', function (): void {
-        $post = new Post();
+        $post = new Post;
         $post->setRawAttributes(['title' => 'Hello World']);
 
         Assert::assertSame('hello-world', $post->getGuidAttribute(null));
