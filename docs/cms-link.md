@@ -92,7 +92,7 @@ Quando aggiungi nuovi componenti Filament nel modulo Cms, ricorda di:
 
 ## Collegamenti tra versioni di cms-link.md
 * [cms-link.md](../../../Xot/docs/cms-link.md)
-* [cms-link.md](../../../User/docs/cms-link.md)
+* [cms-link.md](../../User/docs/cms-link.md)
 * [cms-link.md](../../../UI/docs/cms-link.md)
 * [cms-link.md](../../../Lang/docs/cms-link.md)
 * [cms-link.md](../../../Lang/docs/cms-link.md)

@@ -8,6 +8,7 @@ discussions: []
 title: "Module Schema"
 module: "Lang"
 created: "2026-04-15T08:28:44Z"
+status: draft
 ---
 
 # Lang Module Schema

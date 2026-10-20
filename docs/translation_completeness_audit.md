@@ -296,7 +296,7 @@ This document tracks the completeness and quality of translation files across th
 ## Links and References
 
 - [Theme Translation Files](../laravel/Themes/One/lang/)
-- [Notify Module Translations](../laravel/Modules/Notify/lang/)
+- [Notify Module Translations](../../Notify/lang)
 - [<main module> Module Translations](../laravel/Modules/<main module>/lang/)
 - [PDF Template](../laravel/Themes/One/resources/views/appointment/report_pdf.blade.php)
 

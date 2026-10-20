@@ -15,6 +15,7 @@ metadata:
   severity: medium
   status: implemented
   last_run: 2026-07-15
+status: draft
 ---
 
 # IDE Helper + Sushi: Pattern di Caricamento Lazy

@@ -13,6 +13,7 @@ metadata:
   type: procedure
   source: prompts/push.txt (migrated 2026-07-30)
   related_docs: [translation-study-guide]
+status: draft
 ---
 
 # Git Push Procedure — Lang Module

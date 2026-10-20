@@ -7,6 +7,7 @@ type: architecture
 tags: [module, architecture, lang]
 created: 2026-08-04
 updated: 2026-08-04
+status: draft
 ---
 # Lang Module — Architecture
 

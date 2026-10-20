@@ -852,7 +852,7 @@ public function get(string $key, array $replace = [], ?string $locale = null): s
 
 ### **2. Esempi**
 - [Examples/](../Examples/) - Esempi di utilizzo
-- [Tests/](../Tests/) - Test unitari e di integrazione
+- [Tests/](../tests) - Test unitari e di integrazione
 
 ### **3. Framework**
 - [Laraxot Framework](https://github.com/laraxot/laraxot)

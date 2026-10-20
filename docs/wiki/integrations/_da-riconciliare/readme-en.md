@@ -9,7 +9,7 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
-  - "./italian-text-refined-audit-report.md"
+  - "../../../italian-text-refined-audit-report.md"
 ---
 # 🌐 Lang — English presentation
 
@@ -61,7 +61,7 @@ Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 | Language | Link |
 |----------|------|
-| 🇮🇹 Presentation | [../README.md](../README.md) |
+| 🇮🇹 Presentation | [../README.md](../../README.md) |
 | 🇬🇧 Business card | This file |
 | 📚 Technical wiki | [./](./) |
 
