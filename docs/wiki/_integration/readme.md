@@ -1,6 +1,12 @@
 ---
 bmad: true
 module: Lang
+title: "readme"
+type: index
+status: draft
+updated: 2026-10-08
+tags: [docs, lang, wiki]
+qmd: "readme lang"
 ---
 # readme
 

@@ -328,11 +328,11 @@ php artisan test --testsuite=Lang
 - [**Filament Best Practices**](../../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../../docs/core/conventions.md)
 - [**Template Moduli**](../../../docs/templates/)
-- [**Documentazione Core Sistema**](../../docs/core/)
+- [**Documentazione Core Sistema**](../../core)
 - [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../docs/core/conventions.md)
-- [**Template Moduli**](../../docs/templates/)
+- [**Template Moduli**](../../templates)
 
 ---
 
@@ -944,7 +944,7 @@ class Language extends Model
 
 ## 🔗 Collegamenti
 
-- [Documentazione Core](../../../../docs/core/)
+- [Documentazione Core](../../core)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
@@ -1288,7 +1288,7 @@ class Language extends Model
 
 ## 🔗 Collegamenti
 
-- [Documentazione Core](../../../../docs/core/)
+- [Documentazione Core](../../core)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
