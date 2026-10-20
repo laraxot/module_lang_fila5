@@ -50,7 +50,6 @@ afterEach(function (): void {
 
 describe('Read Translation File Action', function (): void {
     test('can read valid translation file', function (): void {
-        /** @var TestCase $this */
         $filePath = readTranslationTestFilePath();
         $translations = defaultReadTranslationTestData();
         createTranslationFile($filePath, $translations);
@@ -64,14 +63,12 @@ describe('Read Translation File Action', function (): void {
     });
 
     test('throws exception for non existent file', function (): void {
-        /* @var TestCase $this */
         $this->expectApplicationException(\Exception::class, 'File di traduzione non trovato:');
 
         makeReadTranslationFileAction()->execute(storage_path('non_existent.php'));
     });
 
     test('throws exception for unreadable file', function (): void {
-        /** @var TestCase $this */
         $filePath = readTranslationTestFilePath();
         createTranslationFile($filePath, defaultReadTranslationTestData());
         chmod($filePath, 0o000);
@@ -82,7 +79,6 @@ describe('Read Translation File Action', function (): void {
     });
 
     test('throws exception for invalid file content', function (): void {
-        /** @var TestCase $this */
         $filePath = readTranslationTestFilePath();
         file_put_contents($filePath, ' return "invalid content";');
 
