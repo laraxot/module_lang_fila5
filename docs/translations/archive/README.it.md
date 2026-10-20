@@ -9,7 +9,7 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "git conflicts resolution summary"
 related:
-  - "./italian-text-refined-audit-report.md"
+  - "../../italian-text-refined-audit-report.md"
 ---
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>
@@ -77,10 +77,10 @@ related:
 
 ## 📚 Documentazione
 
-- [Indice del Progetto](../INDEX.md)
+- [Indice del Progetto](../../INDEX.md)
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
-- [Architettura](../ARCHITECTURE.md)
+- [Architettura](../../ARCHITECTURE.md)
 
 ---
 
