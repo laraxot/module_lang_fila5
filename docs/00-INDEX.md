@@ -13,13 +13,14 @@ related:
   - "./scopo.md"
   - "./stories/phpstan-lang-zero.story.md"
   - "./stories/phpstan-test-wave-lang.story.md"
+  - "./stories/phpstan-lang-test-assertions.story.md"
   - "./italian-text-refined-audit-report.md"
 ---
 # 📚 **Indice Documentazione Modulo Lang**
 
 **Stato verificato sul codice (2026-10-14)**: vedi [README.md](./README.md). **Gate Modules (2026-10-20)**: `phpstan analyse Modules` → file_errors 0, exit 0. Religione: **scopo → fix** + DRY+KISS (niente ignore/baseline). La "Module Version 1.5.0" non compare in `module.json` ne' in `composer.json`. **Gate config:** un solo neon di progetto — [phpstan-single-neon-config](../../Xot/docs/wiki/memories/phpstan-single-neon-config.md) (agenti: analyse senza `-c`; solo l'umano tocca `laravel/phpstan.neon`).
 
-Ondata test 2026-10-20 (lane lang): [stories/phpstan-test-wave-lang.story.md](./stories/phpstan-test-wave-lang.story.md) — cause alla sorgente, non checklist errori. Coordinamento TSV: [stories/phpstan-wave-coord.story.md](./stories/phpstan-wave-coord.story.md) (`.cursor-scratch/phpstan-wave/Lang.tsv`). Hub zero: [phpstan-lang-zero](./stories/phpstan-lang-zero.story.md); Modules: [Xot phpstan-modules-zero-wave3](../../Xot/docs/stories/phpstan-modules-zero-wave3.story.md).
+Ondata test 2026-10-20 (lane lang): [stories/phpstan-test-wave-lang.story.md](./stories/phpstan-test-wave-lang.story.md) — cause alla sorgente, non checklist errori. Wave assert test (unused/emptyClosure): [stories/phpstan-lang-test-assertions.story.md](./stories/phpstan-lang-test-assertions.story.md). Coordinamento TSV: [stories/phpstan-wave-coord.story.md](./stories/phpstan-wave-coord.story.md) (`.cursor-scratch/phpstan-wave/Lang.tsv`). Hub zero: [phpstan-lang-zero](./stories/phpstan-lang-zero.story.md); Modules: [Xot phpstan-modules-zero-wave3](../../Xot/docs/stories/phpstan-modules-zero-wave3.story.md).
 
 **Harness test (perche'):** helper Pest in `tests/Pest.php` = solo wrapper globali. SSoT tipizzato = `Modules\Lang\Tests\TestCase::makeLangServiceProvider()` (FQCN nei test; Pest non ridefinisce). Dettaglio / regressioni `function.notFound`: [phpstan-lang-zero](./stories/phpstan-lang-zero.story.md). Gate tree: [Xot phpstan-modules-zero-wave3](../../Xot/docs/stories/phpstan-modules-zero-wave3.story.md). Religione config: [phpstan-single-neon-config](../../Xot/docs/wiki/memories/phpstan-single-neon-config.md). Stub verso questo file: `00-index.md`, `INDEX.md`.
 
