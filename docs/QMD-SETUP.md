@@ -9,6 +9,8 @@ updated: 2026-05-11
 tags: [qmd, search, docs, performance]
 related:
   - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+status: superseded
+superseded_by: qmd-setup.md
 ---
 
 # QMD Setup per Module **Lang**
