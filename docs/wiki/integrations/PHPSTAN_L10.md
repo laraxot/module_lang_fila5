@@ -7,8 +7,9 @@ discussions: []
 title: PHPStan Level 10 Compliance — Lang Module
 module: Lang
 type: quality-gate
-status: complete
 created: 2026-08-02
+status: superseded
+superseded_by: phpstan_l10.md
 ---
 
 # PHPStan Level 10 Compliance — Lang Module

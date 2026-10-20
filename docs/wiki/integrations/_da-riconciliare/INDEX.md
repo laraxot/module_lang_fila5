@@ -8,6 +8,8 @@ type: integration
 tags: [integrations, modules, lang]
 created: 2026-08-24
 updated: 2026-08-24
+status: superseded
+superseded_by: index.md
 ---
 
 # lang — integrations

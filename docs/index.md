@@ -10,8 +10,11 @@ updated: 2026-10-14
 qmd: "filament4 migration"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
+status: superseded
+superseded_by: 00-INDEX.md
 ---
+
+> Superseded dal 2026-10-20: l'indice canonico e' [00-INDEX.md](./00-INDEX.md). Contenuto conservato per storia.
 # 📚 **Indice Documentazione Modulo Lang - Laraxot**
 
 ## 🎯 **Panoramica**

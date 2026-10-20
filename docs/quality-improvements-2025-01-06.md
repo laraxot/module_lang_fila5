@@ -1,3 +1,13 @@
+---
+title: "Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06"
+type: note
+status: draft
+created: 2026-01-20
+updated: 2026-10-20
+module: Lang
+tags: [docs, lang]
+---
+
 # Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06
 
 ## Data

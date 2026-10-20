@@ -45,12 +45,11 @@ class SaveTransAction
         try {
             $cont = File::getRequire($filename);
         } catch (\Exception $e) {
-            dddx([
-                'key' => $key,
-                'data' => $data,
-                'filename' => $filename,
-                'message' => $e->getMessage(),
-            ]);
+            // File di lingua illeggibile: segnalarlo e non riscriverlo, altrimenti
+            // il salvataggio sotto lo sostituirebbe con la sola chiave nuova.
+            report($e);
+
+            return;
         }
 
         if (! is_array($cont)) {

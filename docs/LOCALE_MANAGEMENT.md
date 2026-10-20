@@ -10,7 +10,8 @@ discussions: []
 module: theme
 topic: LOCALE_MANAGEMENT
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
-status: stub
+status: superseded
+superseded_by: locale_management.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
