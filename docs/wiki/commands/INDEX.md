@@ -1,36 +1,16 @@
 ---
-title: "INDEX"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "INDEX"
-issues: []
-discussions: []
+title: "Lang — alias wiki/commands/INDEX (UPPERCASE)"
+type: alias
+module: Lang
+status: superseded
+superseded_by: index.md
+canonical: ./index.md
+updated: 2026-10-20
+qmd: "alias wiki commands INDEX uppercase verso index"
 ---
 
-# Lang Module - commands Index
+<!-- gateguard: convert existing UPPERCASE INDEX twin to stub. Canonical lowercase index.md. Linked from wiki tree. User: "Fix UPPERCASE md except README in those trees if easy" -->
 
-## Purpose
-Index for Lang module commands.
+# Alias — commands INDEX
 
-## On-Demand Loading
-
-```bash
-qmd search "Lang commands" --limit 5
-```
-
-## See Also
-- [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-- [Root Wiki](../../../docs/wiki/)
-
----
-title: "INDEX"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "INDEX"
-issues: []
-discussions: []
-*Updated: 2026-05-11*
+Canonico: [index.md](./index.md).
