@@ -10,6 +10,7 @@ module: Lang
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+status: stub
 ---
 
 # Metodi Duplicati — Analisi Lang
