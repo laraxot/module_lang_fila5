@@ -57,3 +57,13 @@ copre `TranslatorAdapter`.
   codice, nominata "Action"). Fuori perimetro: da confrontare con `TranslatorAdapter` e consolidare.
 - `tests/Unit/Services/TranslatorServiceTest.php` andrebbe rinominato in `TranslatorAdapterTest` (non fatto per
   non toccare file fuori perimetro).
+
+## Wave A audit — 2026-10-20
+
+Conferma sul checkout corrente: `app/Services/TranslatorService.php` era ancora presente, ma non risultano
+caller applicativi (`new TranslatorService`, `app(TranslatorService::class)` o riferimenti al namespace) in
+`laravel/`. Non è stato creato un nuovo Action: il comportamento applicativo è già coperto da
+`Actions/Translation/RecordMissingTranslationAction`, chiamato da `Adapters/TranslatorAdapter`.
+
+La modifica effettiva è quindi la rimozione del duplicato morto. `TranslatorAdapter` resta infrastruttura Laravel
+e mantiene invariati binding, fallback, conversione del risultato e registrazione delle chiavi mancanti.
