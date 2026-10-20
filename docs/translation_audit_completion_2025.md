@@ -1,3 +1,13 @@
+---
+title: "Audit Traduzioni Completato - 2025"
+type: note
+status: draft
+created: 2026-01-20
+updated: 2026-10-20
+module: Lang
+tags: [docs, lang]
+---
+
 # Audit Traduzioni Completato - 2025
 
 ## Riepilogo Lavoro Effettuato

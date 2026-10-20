@@ -1,3 +1,13 @@
+---
+title: "Quality Analysis Report - Lang Module"
+type: note
+status: draft
+created: 2026-10-20
+updated: 2026-10-20
+module: Lang
+tags: [docs, lang]
+---
+
 # Quality Analysis Report - Lang Module
 **Date**: 2025-11-11
 **Analyst**: Claude Code

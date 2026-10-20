@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "INDEX"
 issues: []
 discussions: []
+status: superseded
+superseded_by: index.md
 ---
 
 # Lang Module - memories Index
