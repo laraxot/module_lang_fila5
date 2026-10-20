@@ -8,7 +8,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Http\Livewire\Lang;
 
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
@@ -22,6 +21,7 @@ class Switcher extends Component
 {
     public string $lang;
 
+    /** @var array<string, array<mixed>> */
     public array $langs;
 
     public string $url;
@@ -32,8 +32,11 @@ class Switcher extends Component
         $langs = LaravelLocalization::getSupportedLocales();
         unset($langs[$this->lang]);
         $this->url = Request::getRequestUri();
-        $langs = Arr::map($langs, function (array $item, string $key) {
-            // @phpstan-ignore staticMethod.notFound
+        $this->langs = [];
+        foreach ($langs as $key => $item) {
+            if (! is_string($key) || ! is_array($item)) {
+                continue;
+            }
             $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
             if (false !== $url) {
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
@@ -45,10 +48,8 @@ class Switcher extends Component
                 }
             }
             $item['url'] = $url;
-
-            return $item;
-        });
-        $this->langs = $langs;
+            $this->langs[$key] = $item;
+        }
     }
 
     // public function switchLang(string $lang): Application|RedirectResponse|Redirector

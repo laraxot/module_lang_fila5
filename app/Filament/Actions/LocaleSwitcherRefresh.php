@@ -38,8 +38,7 @@ class LocaleSwitcherRefresh extends XotBaseAction
                     ->required(),
             ])
             ->action(function (array $data) {
-                /* @var array<string, mixed> $data */
-                $this->applyLocale($data);
+                $this->applyLocale(['locale' => $data['locale'] ?? null]);
 
                 return redirect(request()->header('Referer'));
             })
