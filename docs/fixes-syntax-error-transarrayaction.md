@@ -73,7 +73,7 @@ public function execute(
 
 ## Collegamenti
 
-- [TransArrayAction.php](../../app/Actions/TransArrayAction.php)
+- [TransArrayAction.php](../app/Actions/TransArrayAction.php)
 - [PHPStan Fixes](./phpstan-fixes.md)
 - [Translation Actions](./translation-actions.md)
 

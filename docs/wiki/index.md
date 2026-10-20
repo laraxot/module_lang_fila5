@@ -12,18 +12,18 @@ discussions:
   - "https://github.com/laraxot/platform/discussions/273"
 related:
   - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md
-  - ../../../../docs/wiki/bmad/architecture.md
-  - ../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
-  - ../../docs/wiki/concepts/ai-harness-module-discipline.md
+  - ../../../../../docs/wiki/bmad/architecture.md
+  - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
+  - ../../docs/wiki/concepts/ai-harness-module-discipline.md  # target mancante, verificato 2026-10-14
 ---
 
 # Lang Module Wiki
 ## AI / second brain
 
 - [hackernoon-ai-coding-tips-progetto corrente-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md)
-- [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
-- [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
-- [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)
+- [bmad/architecture](../../../../../docs/wiki/bmad/architecture.md)
+- [frontmatter + GitHub](../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
+- [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md) _(target mancante, verificato 2026-10-14)_
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) → canon Xot
 
 
@@ -39,7 +39,7 @@ related:
 
 - [translation-key-governance](rules/translation-key-governance.md) — regola canonica su chiavi, path e ownership delle traduzioni
 - [translation-factory-auto-increment-id](rules/translation-factory-auto-increment-id.md) — `TranslationFactory` non imposta `id` quando la migration usa `$table->id()`
-- [translation-key-audit](skills/translation-key-audit.md) — skill operativa per audit rapido tra modulo, tema e Filament
+- [translation-key-audit](skills/translation-key-audit.md) _(target mancante, verificato 2026-10-14)_ — skill operativa per audit rapido tra modulo, tema e Filament
 - [laravel12-lang-path-rule](concepts/laravel12-lang-path-rule.md) — promemoria locale sul path `lang/`
 
 ## On-Demand Workflow
