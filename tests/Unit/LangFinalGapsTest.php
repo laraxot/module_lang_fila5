@@ -21,7 +21,6 @@ use Mockery\MockInterface;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
 use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
-use Modules\Lang\Actions\TranslatorAction;
 use Modules\Lang\Actions\WriteTranslationFileAction;
 use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
@@ -95,7 +94,7 @@ test('LocaleSwitcherRefresh applyLocale covers string and non-string locale', fu
     Assert::assertSame('en', langLocaleAfterApplying($action, []));
 });
 
-test('TranslatorAction and Adapter coerce non-string loaded values', function (): void {
+test('TranslatorAdapter coerces non-string loaded values', function (): void {
     // Qui c'era `TestCase::forceSqliteTranslations()`, un helper invocato e mai
     // scritto. Non e' stato scritto ma rimosso: il test non tocca il database.
     // Carica le traduzioni da un `ArrayLoader`, scrive la property `loaded` per
@@ -104,15 +103,11 @@ test('TranslatorAction and Adapter coerce non-string loaded values', function ()
     // connessione a SQLite avrebbe dato l'impressione di proteggere qualcosa
     // che non e' in pericolo, e avrebbe contraddetto la regola per cui i test
     // girano sulle repliche MySQL. Story LANG-17.4.
-    $loader = new ArrayLoader;
-    $action = new TranslatorAction($loader, 'it');
+    $loader = new ArrayLoader();
+    $adapter = new TranslatorAdapter($loader, 'it');
     $loaded = new ReflectionProperty(LaravelTranslator::class, 'loaded');
     $loaded->setAccessible(true);
     // JSON translation path returns non-string/non-array values without notifyMissingKey/DB
-    $loaded->setValue($action, ['*' => ['*' => ['it' => ['json.int.key' => 42]]]]);
-    Assert::assertSame('42', $action->get('json.int.key', [], 'it', false));
-
-    $adapter = new TranslatorAdapter($loader, 'it');
     $loaded->setValue($adapter, ['*' => ['*' => ['it' => ['json.int.key' => 99]]]]);
     $this->mockService(RecordMissingTranslationAction::class, static function (MockInterface $mock): void {
         $mock->allows('execute');
@@ -481,7 +476,7 @@ test('NationalFlagSelect getCountryOptions casts int localized label', function 
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
     app()->instance('translator', new class($real)
     {
-        public function __construct(private LaravelTranslator $inner) {}
+        public function __construct(private readonly LaravelTranslator $inner) {}
 
         /**
          * @param  array<string, mixed>  $replace
@@ -523,7 +518,7 @@ test('NationalFlagSelect getCountryOptions array localized label branch', functi
     Assert::assertInstanceOf(LaravelTranslator::class, $real);
     app()->instance('translator', new class($real)
     {
-        public function __construct(private LaravelTranslator $inner) {}
+        public function __construct(private readonly LaravelTranslator $inner) {}
 
         /**
          * @param  array<string, mixed>  $replace

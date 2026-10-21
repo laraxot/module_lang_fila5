@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 /**
  * Script specifico per identificare la parola "obbligatorio" e varianti
  * in file di traduzione non italiani.
@@ -63,8 +64,8 @@ function auditObbligatorioInNonItalianFiles(string $basePath): array
         foreach ($obbligatorioPatterns as $pattern) {
             $lineNumber = 0;
             foreach ($lines as $line) {
-                $lineNumber++;
-                if (stripos($line, $pattern) !== false) {
+                ++$lineNumber;
+                if (false !== stripos($line, $pattern)) {
                     $fileIssues[] = [
                         'pattern' => $pattern,
                         'line' => $lineNumber,
