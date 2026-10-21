@@ -47,7 +47,21 @@ describe('Post Model', function () {
     });
 
     test('has correct searchable fields', function () {
-        Assert::assertIsArray((new Post)->toSearchableArray());
+        $post = new Post([
+            'title' => 'Search title',
+            'guid' => 'search-guid',
+            'txt' => 'Search body',
+        ]);
+
+        Assert::assertSame(
+            [
+                'title' => 'Search title',
+                'guid' => 'search-guid',
+                'txt' => 'Search body',
+            ],
+            $post->toSearchableArray(),
+        );
+        Assert::assertSame(Post::SEARCHABLE_FIELDS, array_keys($post->toSearchableArray()));
     });
 
     test('has snake attributes enabled', function () {

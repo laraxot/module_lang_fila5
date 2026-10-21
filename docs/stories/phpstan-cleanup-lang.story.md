@@ -8,7 +8,7 @@ created: 2026-10-06
 updated: 2026-10-06
 tags: [phpstan, lang, enum, safe, typeCoverage, bmad]
 related:
-  - ./phpstan-cleanup-lang.dev.md
+  - ./2026-10-06-phpstan-cleanup-lang.dev.md
 ---
 
 # [STORY] PHPStan cleanup modulo Lang
