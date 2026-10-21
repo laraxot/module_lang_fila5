@@ -1,9 +1,15 @@
 ---
+created: 2026-09-26
+qmd: "index"
+issues: []
+discussions: []
 title: "Skills Index"
 type: "index"
 tags: [skills, lang, translations, localization]
 module: "Lang"
 updated: 2026-05-12
+status: superseded
+superseded_by: INDEX.md
 ---
 
 # Skills — Lang Module Wiki
@@ -22,4 +28,4 @@ qmd search "Lang module skill translation audit" --limit 5
 
 ---
 
-**Upstream:** [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+**Upstream:** [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)

@@ -1,6 +1,15 @@
 ---
 bmad: true
 module: Lang
+<<<<<<< .merge_file_tpKj5f
+=======
+title: "BMAD Status — Lang (2026-10-06)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, lang, bmad]
+qmd: "bmad status   lang (2026-10-06) lang"
+>>>>>>> .merge_file_en2RsS
 ---
 # BMAD Status — Lang (2026-10-06)
 

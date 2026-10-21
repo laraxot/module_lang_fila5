@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "google translate"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_UeeGKa
+=======
+status: draft
+>>>>>>> .merge_file_pCog6v
 ---
 # Standard per le Traduzioni nel Progetto SaluteOra
 

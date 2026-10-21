@@ -8,6 +8,10 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_YbaRZu
+=======
+status: draft
+>>>>>>> .merge_file_H4iSc9
 ---
 
 # Divergenza: `static_text_translation.md`

@@ -296,6 +296,7 @@ php artisan test --testsuite=Lang
 
 ## 🔗 Collegamenti Sistema
 
+<<<<<<< .merge_file_xyyTng
 - [**Documentazione Core Sistema**](../../../docs/core/)
 - [**PHPStan Guide**](../../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../../docs/core/filament-best-practices.md)
@@ -306,6 +307,18 @@ php artisan test --testsuite=Lang
 - [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../docs/core/conventions.md)
 - [**Template Moduli**](../../docs/templates/)
+=======
+- [**Documentazione Core Sistema**](core)
+- [**PHPStan Guide**](../../../docs/core/phpstan-guide.md)
+- [**Filament Best Practices**](../../../docs/core/filament-best-practices.md)
+- [**Convenzioni Sistema**](../../../docs/core/conventions.md)
+- [**Template Moduli**](../../../../docs/templates)
+- [**Documentazione Core Sistema**](core)
+- [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
+- [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
+- [**Convenzioni Sistema**](../../docs/core/conventions.md)
+- [**Template Moduli**](templates)
+>>>>>>> .merge_file_o4yP1a
 
 ---
 

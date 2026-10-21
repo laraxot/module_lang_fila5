@@ -7,6 +7,11 @@ updated: 2026-09-26
 qmd: "INDEX"
 issues: []
 discussions: []
+<<<<<<< .merge_file_L3MOeu
+=======
+status: superseded
+superseded_by: index.md
+>>>>>>> .merge_file_oZhnfH
 ---
 
 # Lang Module - memories Index
@@ -21,7 +26,7 @@ qmd search "Lang memories" --limit 5
 ```
 
 ## See Also
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+- [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
 - [Root Wiki](../../../docs/wiki/)
 
 ---

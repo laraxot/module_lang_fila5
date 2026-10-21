@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
+<<<<<<< .merge_file_PcDmkR
+=======
+status: draft
+>>>>>>> .merge_file_houFrN
 ---
 
 # Lang Module Roadmap
@@ -68,6 +72,7 @@ Provide a **comprehensive language** system that includes:
 - Translation collaboration
 
 ---
+<<<<<<< .merge_file_PcDmkR
 
 title: "README"
 type: note
@@ -77,3 +82,5 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_houFrN

@@ -8,6 +8,11 @@ type: concept
 tags: [PRD, lang]
 created: 2026-08-04
 updated: 2026-08-04
+<<<<<<< .merge_file_b2fDlc
+=======
+status: superseded
+superseded_by: prd.md
+>>>>>>> .merge_file_w2RYY9
 ---
 # Product Requirements Document (PRD) - Lang Module
 

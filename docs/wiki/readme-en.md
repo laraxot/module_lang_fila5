@@ -7,7 +7,11 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
+<<<<<<< .merge_file_VGaXIa
   - "./italian-text-refined-audit-report.md"
+=======
+  - "../italian-text-refined-audit-report.md"
+>>>>>>> .merge_file_GHuDX9
 ---
 # 🌐 Lang — English presentation
 
@@ -50,7 +54,11 @@ Centralizes translations and Filament/Livewire label conventions.
 
 Details matter: **every string in the right place**.
 
+<<<<<<< .merge_file_VGaXIa
 Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+=======
+Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+>>>>>>> .merge_file_GHuDX9
 
 ---
 

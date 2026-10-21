@@ -7,7 +7,11 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "redundancy analysis"
 related:
+<<<<<<< .merge_file_hulZoK
   - "./italian-text-refined-audit-report.md"
+=======
+  - "../italian-text-refined-audit-report.md"
+>>>>>>> .merge_file_ieUPF4
 ---
 # Collegamento al Modulo Cms
 
@@ -15,11 +19,19 @@ Questo documento descrive le relazioni e i collegamenti tra il modulo Lang e il 
 
 ## Traduzioni nei Componenti Filament
 
+<<<<<<< .merge_file_hulZoK
 Il modulo Lang fornisce il sistema di traduzione utilizzato dal modulo Cms nei suoi componenti Filament. È fondamentale seguire le [regole per le traduzioni in Filament](./filament-translations.md) quando si lavora con i componenti nel modulo Cms.
 
 ## Convenzioni di Namespace e Struttura
 
 Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) che si integrano con il sistema di traduzioni di questo modulo.
+=======
+Il modulo Lang fornisce il sistema di traduzione utilizzato dal modulo Cms nei suoi componenti Filament. È fondamentale seguire le [regole per le traduzioni in Filament](../filament-translations.md) quando si lavora con i componenti nel modulo Cms.
+
+## Convenzioni di Namespace e Struttura
+
+Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzioni Namespace Filament](../../../Cms/docs/convenzioni-namespace-filament.md) che si integrano con il sistema di traduzioni di questo modulo.
+>>>>>>> .merge_file_ieUPF4
 
 ## Punti di Integrazione
 
@@ -29,8 +41,13 @@ Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzi
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< .merge_file_hulZoK
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)
 - [Lang Link nel modulo Cms](../../Cms/docs/lang-link.md)
+=======
+- [Convenzioni Namespace Filament](../../../Cms/docs/convenzioni-namespace-filament.md)
+- [Lang Link nel modulo Cms](../../../Cms/docs/lang-link.md)
+>>>>>>> .merge_file_ieUPF4
 
 ---
 

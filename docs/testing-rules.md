@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_xKFeUM
+=======
+status: draft
+>>>>>>> .merge_file_0aAwFp
 ---
 # Testing Rules Summary
 
@@ -23,7 +27,11 @@ related:
 ### 2. **NO RefreshDatabase - MAI**
 - **MAI** usare `use RefreshDatabase` nei test
 - **MAI** usare `RefreshDatabase` trait
+<<<<<<< .merge_file_xKFeUM
 - Utilizzare `.env.testing` con SQLite in-memory
+=======
+- Utilizzare `.env.testing` con MySQL (suffisso `_test`, mai SQLite: regola `bashscripts/ai/wiki/rules/workflow/mysql-testing-only.mdc`)
+>>>>>>> .merge_file_0aAwFp
 - Usare `DatabaseTransactions` se necessario (raro)
 
 ### 3. **Configurazione Testing**
@@ -99,7 +107,11 @@ php bashscripts/test_conversion/convert_phpunit_to_pest.php
 5. Estendere classi Filament direttamente invece di XotBase/LangBase
 
 ### ✅ Best Practices
+<<<<<<< .merge_file_xKFeUM
 1. Usare `.env.testing` con SQLite in-memory
+=======
+1. Usare `.env.testing` con MySQL (suffisso `_test`, mai SQLite: regola `bashscripts/ai/wiki/rules/workflow/mysql-testing-only.mdc`)
+>>>>>>> .merge_file_0aAwFp
 2. Scrivere test in formato Pest functional
 3. Usare `DatabaseTransactions` invece di `RefreshDatabase`
 4. Seguire la struttura esistente dei test

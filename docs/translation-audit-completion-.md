@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_8vJlpT
+=======
+status: draft
+>>>>>>> .merge_file_Jf8wNq
 ---
 # Audit Traduzioni Completato - 2025
 

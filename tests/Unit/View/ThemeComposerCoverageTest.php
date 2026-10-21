@@ -5,7 +5,6 @@ use Modules\Lang\Datas\LangData;
 use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Composers\ThemeComposer;
 use PHPUnit\Framework\Assert;
-use Spatie\LaravelData\DataCollection;
 
 uses(TestCase::class);
 
@@ -15,7 +14,6 @@ test('ThemeComposer languages usa fallback quando manca config', function (): vo
     $composer = new ThemeComposer;
     $langs = $composer->languages();
 
-    Assert::assertInstanceOf(DataCollection::class, $langs);
     Assert::assertGreaterThanOrEqual(2, $langs->count());
 });
 

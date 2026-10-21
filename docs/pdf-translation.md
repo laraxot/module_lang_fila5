@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "migration filament"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_QeKUHi
+=======
+status: draft
+>>>>>>> .merge_file_Pdl652
 ---
 # PDF Translation Guide - HTML2PDF Integration
 

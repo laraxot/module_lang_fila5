@@ -1,6 +1,15 @@
 ---
 bmad: true
 module: Lang
+<<<<<<< .merge_file_SgnDLq
+=======
+title: "Lang — Copertura Model / Migration / Seeder / Factory"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, lang, bmad]
+qmd: "lang   copertura model / migration / seeder / factory lang"
+>>>>>>> .merge_file_sh3ziN
 ---
 # Lang — Copertura Model / Migration / Seeder / Factory
 

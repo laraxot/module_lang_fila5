@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_qIHreA
+=======
+status: draft
+>>>>>>> .merge_file_3UJulV
 ---
 # Model Translations in `saluteora`
 

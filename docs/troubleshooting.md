@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "filament4 migration"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_uNy5oF
+=======
+status: draft
+>>>>>>> .merge_file_u4yh0c
 ---
 # 🔧 **Troubleshooting Modulo Lang - Laraxot**
 

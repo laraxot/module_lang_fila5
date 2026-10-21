@@ -7,6 +7,10 @@ type: "rule"
 tags: [lang, context-mode, translations, governance]
 created: 2026-05-12
 updated: 2026-05-12
+<<<<<<< .merge_file_Yuu24x
+=======
+status: draft
+>>>>>>> .merge_file_bCLsoQ
 ---
 
 # Lang Module — Context-Mode Discipline

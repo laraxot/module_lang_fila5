@@ -9,7 +9,11 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
+<<<<<<< .merge_file_y16p9G
   - "./italian-text-refined-audit-report.md"
+=======
+  - "../italian-text-refined-audit-report.md"
+>>>>>>> .merge_file_6Cs0wx
 ---
 # Fasi di sviluppo - Lang Module
 

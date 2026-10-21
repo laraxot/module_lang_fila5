@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_g7KZdT
+=======
+status: draft
+>>>>>>> .merge_file_BAYm3t
 ---
 # FAQ e Problemi Comuni sulle Traduzioni
 
