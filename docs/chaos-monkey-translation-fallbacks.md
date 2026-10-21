@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Chaos Monkey Translation Fallbacks (Lang)"
 module: "Lang"
 type: concept

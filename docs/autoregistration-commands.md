@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Autoregistrazione dei Comandi da Console"
 module: "Lang"
 type: concept
