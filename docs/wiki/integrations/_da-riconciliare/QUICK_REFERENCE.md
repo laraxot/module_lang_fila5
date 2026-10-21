@@ -7,6 +7,11 @@ updated: 2026-09-26
 qmd: "QUICK REFERENCE"
 issues: []
 discussions: []
+<<<<<<< .merge_file_nFIb7i
+=======
+status: superseded
+superseded_by: quick_reference.md
+>>>>>>> .merge_file_NkNIy7
 ---
 
 # Guida Rapida alle Traduzioni
@@ -139,4 +144,8 @@ php artisan vendor:publish --tag=laravel-translations
 Poi modificare i file in `lang/vendor/{package}/{locale}/`.
 
 ## Console Commands
+<<<<<<< .merge_file_nFIb7i
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
+=======
+- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](../../../lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
+>>>>>>> .merge_file_NkNIy7

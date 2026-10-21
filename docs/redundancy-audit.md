@@ -10,6 +10,10 @@ tags: [redundancy, duplicate-code, docs]
 created: 2026-05-21
 related:
   - https://github.com/laraxot/platform/issues/89
+<<<<<<< .merge_file_QInJRS
+=======
+status: draft
+>>>>>>> .merge_file_zA9ClR
 ---
 
 # Lang redundancy audit 2026-05-21

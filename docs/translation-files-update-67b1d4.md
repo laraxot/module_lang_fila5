@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "translation files update 67b1d4"
 issues: []
 discussions: []
+<<<<<<< .merge_file_LAZw0D
+=======
+status: draft
+>>>>>>> .merge_file_MQA7vD
 ---
 
 # Aggiornamento File di Traduzione - Gennaio 2025

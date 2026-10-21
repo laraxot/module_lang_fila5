@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "migration filament"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_fq4FGu
+=======
+status: draft
+>>>>>>> .merge_file_bTE6rU
 ---
 # Product Strategy: Lang Module
 

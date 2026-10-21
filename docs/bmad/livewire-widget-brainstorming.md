@@ -10,6 +10,7 @@ type: brainstorming
 module: Lang
 related:
   - ./livewire-inventory.md
+status: draft
 ---
 
 # Brainstorming

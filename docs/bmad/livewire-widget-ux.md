@@ -10,6 +10,7 @@ type: ux-design
 module: Lang
 related:
   - ./livewire-inventory.md
+status: draft
 ---
 
 # UX

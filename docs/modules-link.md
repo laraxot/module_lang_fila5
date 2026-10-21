@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_iJD9Qd
+=======
+status: draft
+>>>>>>> .merge_file_QOoKF2
 ---
 # Collegamenti ai Moduli che utilizzano le Traduzioni
 

@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "code quality report"
 issues: []
 discussions: []
+<<<<<<< .merge_file_S1oA7z
+=======
+status: draft
+>>>>>>> .merge_file_GgFiWC
 ---
 
 # Code quality — modulo Lang

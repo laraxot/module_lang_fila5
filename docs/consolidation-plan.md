@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "consolidation plan"
 issues: []
 discussions: []
+<<<<<<< .merge_file_7M4LR1
+=======
+status: draft
+>>>>>>> .merge_file_WnnF8W
 ---
 
 # Lang Module Docs Consolidation Plan
@@ -17,6 +21,7 @@ discussions: []
 **Strategy:** Delete duplicates → Consolidate by topic → Move research to wiki/
 
 ---
+<<<<<<< .merge_file_7M4LR1
 
 title: "consolidation plan"
 type: note
@@ -26,6 +31,8 @@ updated: 2026-09-26
 qmd: "consolidation plan"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_WnnF8W
 ## Quick Stats
 
 | Category | Current | Target | Action |

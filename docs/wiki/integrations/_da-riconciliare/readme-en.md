@@ -9,7 +9,11 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
+<<<<<<< .merge_file_DZrdPy
   - "./italian-text-refined-audit-report.md"
+=======
+  - "../../../italian-text-refined-audit-report.md"
+>>>>>>> .merge_file_truP8t
 ---
 # 🌐 Lang — English presentation
 
@@ -61,7 +65,11 @@ Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 | Language | Link |
 |----------|------|
+<<<<<<< .merge_file_DZrdPy
 | 🇮🇹 Presentation | [../README.md](../README.md) |
+=======
+| 🇮🇹 Presentation | [../README.md](../../README.md) |
+>>>>>>> .merge_file_truP8t
 | 🇬🇧 Business card | This file |
 | 📚 Technical wiki | [./](./) |
 

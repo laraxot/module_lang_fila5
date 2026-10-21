@@ -9,6 +9,10 @@ issues: []
 discussions: []
 related:
   - ./coding-agent-manifests.md
+<<<<<<< .merge_file_LHkWdV
+=======
+status: draft
+>>>>>>> .merge_file_iGNIQ2
 ---
 
 # Lang {{TYPE^}} LLM Wiki Agent Instructions

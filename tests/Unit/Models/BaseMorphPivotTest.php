@@ -8,17 +8,16 @@ use Illuminate\Database\Eloquent\Relations\MorphPivot;
 use Modules\Lang\Models\BaseMorphPivot;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use ReflectionClass;
 
 uses(TestCase::class);
 
 describe('BaseMorphPivot Model', function () {
     test('extends MorphPivot', function () {
-        $model = new class extends BaseMorphPivot
-        {
-            protected $table = 'test';
-        };
+        $parent = (new ReflectionClass(BaseMorphPivot::class))->getParentClass();
 
-        Assert::assertInstanceOf(MorphPivot::class, $model);
+        Assert::assertInstanceOf(ReflectionClass::class, $parent);
+        Assert::assertSame(MorphPivot::class, $parent->getName());
     });
 
     test('has correct connection', function () {

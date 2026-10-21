@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "test"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_6fL2ph
+=======
+status: draft
+>>>>>>> .merge_file_3n1KHO
 ---
 # Implementazione della Localizzazione 
 

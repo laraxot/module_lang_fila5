@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "google translate"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_sWY46t
+=======
+status: draft
+>>>>>>> .merge_file_dGXoL1
 ---
 # Integrazione di mcamara/laravel-localization con Filament
 
