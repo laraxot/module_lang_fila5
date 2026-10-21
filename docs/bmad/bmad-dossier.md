@@ -7,6 +7,10 @@ tags: [bmad, lang, i18n]
 qmd: "Lang module product brief PRD architecture UX security epics gaps release"
 issues: ["https://github.com/laraxot/base_fixcity_fila5/issues/383"]
 discussions: ["https://github.com/laraxot/base_fixcity_fila5/discussions/392"]
+<<<<<<< .merge_file_FneGsx
+=======
+status: draft
+>>>>>>> .merge_file_UyTW07
 ---
 # Lang — BMAD dossier
 ## Product brief / PRD

@@ -223,9 +223,15 @@ return [
 
 ## Collegamenti
 
+<<<<<<< .merge_file_6IFSkb
 - [Enum Translation Pattern](enum-translation-pattern.md)
 - [TableLayoutEnum Guide](../laravel/Modules/UI/docs/table-layout-enum-complete-guide.md)
 - [Translation Management](translation-management.md)
+=======
+- [Enum Translation Pattern](../../../enum-translation-pattern.md)
+- [TableLayoutEnum Guide](../laravel/Modules/UI/docs/table-layout-enum-complete-guide.md)
+- [Translation Management](../../../translation-management.md)
+>>>>>>> .merge_file_wtlFiE
 
 ## Ultimo Aggiornamento
 2025-01-27 - Implementazione completa regola critica enum translation pattern 

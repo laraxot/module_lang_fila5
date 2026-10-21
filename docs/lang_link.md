@@ -27,6 +27,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.
 
 ## Collegamenti tra versioni di lang-link.md
+<<<<<<< .merge_file_aLY6gx
 * [lang-link.md](laravel/Modules/Chart/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Reporting/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Gdpr/docs/lang-link.md)
@@ -41,4 +42,20 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Activity/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Patient/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
+=======
+* [lang-link.md](lang-link.md)
+* [lang-link.md](lang-link.md)
+* [lang-link.md](lang-link.md)
+* [lang-link.md](lang-link.md)
+* [lang-link.md](lang-link.md)
+* [lang-link.md](lang-link.md)
+* [lang-link.md](lang-link.md)
+* [lang-link.md](lang-link.md)
+* [lang-link.md](lang-link.md)
+* [lang-link.md](lang-link.md)
+* [lang-link.md](lang-link.md)
+* [lang-link.md](lang-link.md)
+* [lang-link.md](lang-link.md)
+* [lang-link.md](lang-link.md)
+>>>>>>> .merge_file_dnJc6J
 

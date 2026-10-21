@@ -13,6 +13,10 @@ related:
   - lang-services-to-actions.md
   - translator-adapter-migration.md
   - ../../../Xot/docs/wiki/concepts/queueable-action-trait-mandatory.md
+<<<<<<< .merge_file_6wtVoR
+=======
+status: draft
+>>>>>>> .merge_file_rOxb8R
 ---
 
 # Lang — Services/Support vietati: solo Actions

@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "build publish.yml"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_HbZuhg
+=======
+status: draft
+>>>>>>> .merge_file_MX482x
 ---
 # Riepilogo Correzioni Traduzioni - Gennaio 2025
 

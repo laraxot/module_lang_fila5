@@ -292,10 +292,17 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
 - [Best Practices](../translation-keys-best-practices.md)
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+=======
+- [Filament Translations](../../filament-translations.md)
+- [Translation Standards](../../translation-standards.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -553,10 +560,17 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
 - [Best Practices](../translation-keys-best-practices.md)
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+=======
+- [Filament Translations](../../filament-translations.md)
+- [Translation Standards](../../translation-standards.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -661,10 +675,17 @@ return [
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Translation Standards](../translation-standards.md)
 - [PHP Strict Types](../php-strict-types.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Translation Standards](../../translation-standards.md)
+- [PHP Strict Types](../php-strict-types.md)
+- [Translation File Management](../../translation-file-management.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -752,10 +773,17 @@ return [
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Translation Standards](../translation-standards.md)
 - [PHP Strict Types](../php-strict-types.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Translation Standards](../../translation-standards.md)
+- [PHP Strict Types](../php-strict-types.md)
+- [Translation File Management](../../translation-file-management.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -875,6 +903,7 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 ## Collegamenti
 
+<<<<<<< .merge_file_99LcRl
 - [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
 *Ultimo aggiornamento: 29 luglio 2025*
@@ -885,6 +914,18 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 - [Modules/Lang/docs/](../docs/)
 *Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../../docs/)
+=======
+- [conflict-resolution-autolabelaction.md](../../conflict-resolution-autolabelaction.md)
+- [conflict-resolution-edit-translation-file.md](../../conflict-resolution-edit-translation-file.md)
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../..)
+- [Modules/Lang/docs/](../..)
+- [Modules/Lang/docs/](../..)
+- [Modules/Lang/docs/](../..)
+- [Modules/Lang/docs/](../..)
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../..)
+>>>>>>> .merge_file_1liHa3
 
 *Ultimo aggiornamento: 29 luglio 2025*
 # Risoluzione Conflitto EditTranslationFile.php (Classe)
@@ -974,6 +1015,7 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 ## Collegamenti
 
+<<<<<<< .merge_file_99LcRl
 - [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
 *Ultimo aggiornamento: 29 luglio 2025*
@@ -989,6 +1031,23 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 *Ultimo aggiornamento: 29 luglio 2025*
 - [Modules/Lang/docs/](../../docs/)
+=======
+- [conflict-resolution-autolabelaction.md](../../conflict-resolution-autolabelaction.md)
+- [conflict-resolution-edit-translation-file.md](../../conflict-resolution-edit-translation-file.md)
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../..)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../..)
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../..)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../..)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../..)
+>>>>>>> .merge_file_1liHa3
 
 *Ultimo aggiornamento: 29 luglio 2025*
 
@@ -1098,10 +1157,17 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Lang Service Provider](../lang-service-provider.md)
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Lang Service Provider](../../lang-service-provider.md)
+- [Filament Translations](../../filament-translations.md)
+- [Translation Standards](../../translation-standards.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -1206,10 +1272,17 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Lang Service Provider](../lang-service-provider.md)
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Lang Service Provider](../../lang-service-provider.md)
+- [Filament Translations](../../filament-translations.md)
+- [Translation Standards](../../translation-standards.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -1409,10 +1482,17 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Translation Standards](../translation-standards.md)
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Translation Standards](../../translation-standards.md)
+- [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
+- [Translation File Management](../../translation-file-management.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -1596,10 +1676,17 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Translation Standards](../translation-standards.md)
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Translation Standards](../../translation-standards.md)
+- [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
+- [Translation File Management](../../translation-file-management.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -1827,9 +1914,15 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Translation Standards](../translation-standards.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Translation Standards](../../translation-standards.md)
+- [Translation File Management](../../translation-file-management.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
@@ -2043,9 +2136,15 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Translation Standards](../translation-standards.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Translation Standards](../../translation-standards.md)
+- [Translation File Management](../../translation-file-management.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
@@ -2172,10 +2271,17 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Translation File Management](../translation-file-management.md)
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation Standards](../translation-standards.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Translation File Management](../../translation-file-management.md)
+- [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
+- [Translation Standards](../../translation-standards.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -2279,10 +2385,17 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Translation File Management](../translation-file-management.md)
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation Standards](../translation-standards.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Translation File Management](../../translation-file-management.md)
+- [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
+- [Translation Standards](../../translation-standards.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -2601,10 +2714,17 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
 - [Best Practices](../translation-keys-best-practices.md)
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+=======
+- [Filament Translations](../../filament-translations.md)
+- [Translation Standards](../../translation-standards.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -2709,10 +2829,17 @@ return [
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Translation Standards](../translation-standards.md)
 - [PHP Strict Types](../php-strict-types.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Translation Standards](../../translation-standards.md)
+- [PHP Strict Types](../php-strict-types.md)
+- [Translation File Management](../../translation-file-management.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -2832,9 +2959,15 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 ## Collegamenti
 
+<<<<<<< .merge_file_99LcRl
 - [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
 - [Modules/Lang/docs/](../docs/)
+=======
+- [conflict-resolution-autolabelaction.md](../../conflict-resolution-autolabelaction.md)
+- [conflict-resolution-edit-translation-file.md](../../conflict-resolution-edit-translation-file.md)
+- [Modules/Lang/docs/](../..)
+>>>>>>> .merge_file_1liHa3
 
 *Ultimo aggiornamento: 29 luglio 2025*
 
@@ -2945,10 +3078,17 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Lang Service Provider](../lang-service-provider.md)
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Lang Service Provider](../../lang-service-provider.md)
+- [Filament Translations](../../filament-translations.md)
+- [Translation Standards](../../translation-standards.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -3148,10 +3288,17 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Translation Standards](../translation-standards.md)
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Translation Standards](../../translation-standards.md)
+- [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
+- [Translation File Management](../../translation-file-management.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 
@@ -3379,9 +3526,15 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Translation Standards](../translation-standards.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Translation Standards](../../translation-standards.md)
+- [Translation File Management](../../translation-file-management.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 
 ## Note per Sviluppatori Futuri
@@ -3502,10 +3655,17 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_99LcRl
 - [Translation File Management](../translation-file-management.md)
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation Standards](../translation-standards.md)
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Translation File Management](../../translation-file-management.md)
+- [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
+- [Translation Standards](../../translation-standards.md)
+- [Best Practices](../../translation-keys-best-practices.md)
+>>>>>>> .merge_file_1liHa3
 
 ## Note per Sviluppatori Futuri
 

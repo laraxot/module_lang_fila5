@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "readme.es 1"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_j6kEJn
+=======
+status: draft
+>>>>>>> .merge_file_HwhPuf
 ---
 # Guida Rapida alle Traduzioni
 

@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "migrazione filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_fDRjFU
+=======
+status: draft
+>>>>>>> .merge_file_jFaCjb
 ---
 # MCP Server Consigliati per il Modulo Lang
 

@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_Jphh2m
+=======
+status: draft
+>>>>>>> .merge_file_116LWq
 ---
 # Lang Module - Product Launch Plan
 

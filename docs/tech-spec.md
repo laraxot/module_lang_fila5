@@ -7,6 +7,10 @@ type: technical_spec
 tags: [tech spec, lang, implementation]
 created: 2026-08-04
 updated: 2026-08-04
+<<<<<<< .merge_file_oYDa5i
+=======
+status: draft
+>>>>>>> .merge_file_pxeIk2
 ---
 # Technical Specification - Lang Module
 

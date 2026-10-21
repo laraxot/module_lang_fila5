@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_7eAFFI
+=======
+status: draft
+>>>>>>> .merge_file_kSxBoX
 ---
 # Filament 5 Migration Guide for Lang Module
 

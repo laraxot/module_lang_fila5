@@ -182,8 +182,13 @@ Il file `Modules/<nome progetto>/lang/it/profile_widget.php` conteneva:
 ## Collegamenti
 
 - [Regole Generali Traduzioni](translation_standards_links.md)
+<<<<<<< .merge_file_B4uTpW
 - [Documentazione Modulo Lang](../../laravel/Modules/Lang/docs/)
 - [Best Practices Filament](../../laravel/Modules/Xot/docs/filament/)
+=======
+- [Documentazione Modulo Lang](.)
+- [Best Practices Filament](../../Xot/docs/filament)
+>>>>>>> .merge_file_Cmp4Xi
 - [Standard di Qualità <nome progetto>](../../laravel/Modules/<nome progetto>/docs/translation_quality_standards.md)
 
 *Ultimo aggiornamento: Gennaio 2025*

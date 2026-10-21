@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "migration filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_heEEEe
+=======
+status: draft
+>>>>>>> .merge_file_POXUK7
 ---
 # Gestione delle Lingue (Locales) in Laravel
 

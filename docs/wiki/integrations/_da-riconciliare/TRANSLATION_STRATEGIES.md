@@ -7,6 +7,11 @@ updated: 2026-09-26
 qmd: "TRANSLATION STRATEGIES"
 issues: []
 discussions: []
+<<<<<<< .merge_file_eHkfj3
+=======
+status: superseded
+superseded_by: translation_strategies.md
+>>>>>>> .merge_file_JTkMp5
 ---
 
 # Strategie di Gestione delle Traduzioni in Laravel

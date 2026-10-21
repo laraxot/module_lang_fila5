@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "migrazione filament"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_ZhyyLY
+=======
+status: draft
+>>>>>>> .merge_file_zFsL5j
 ---
 # Convenzioni di Naming per Documentazione
 

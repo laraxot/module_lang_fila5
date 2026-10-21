@@ -8,6 +8,10 @@ type: concept
 module: "Lang"
 created: 2026-07-31
 updated: 2026-07-31
+<<<<<<< .merge_file_hLuAx8
+=======
+status: draft
+>>>>>>> .merge_file_zR5rEN
 ---
 
 # Audit collisioni Git committate in bashscripts

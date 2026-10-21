@@ -7,6 +7,11 @@ updated: 2026-09-26
 qmd: "TRANSLATION PROCESS"
 issues: []
 discussions: []
+<<<<<<< .merge_file_HQNn8e
+=======
+status: superseded
+superseded_by: translation_process.md
+>>>>>>> .merge_file_HhA7L2
 ---
 
 # Processo di Traduzione: Da Sviluppatore a Traduttore

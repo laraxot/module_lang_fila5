@@ -13,6 +13,10 @@ metadata:
   type: procedure
   source: prompts/push.txt (migrated 2026-07-30)
   related_docs: [translation-study-guide]
+<<<<<<< .merge_file_yYVAKT
+=======
+status: draft
+>>>>>>> .merge_file_zUXcfb
 ---
 
 # Git Push Procedure — Lang Module

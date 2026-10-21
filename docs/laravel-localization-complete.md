@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_yUAioN
+=======
+status: draft
+>>>>>>> .merge_file_NSDrp1
 ---
 # Guida Completa a Laravel Localization
 

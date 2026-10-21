@@ -9,7 +9,11 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "guida migrazione step by step"
 related:
+<<<<<<< .merge_file_AzGpgX
   - "./italian-text-refined-audit-report.md"
+=======
+  - "../italian-text-refined-audit-report.md"
+>>>>>>> .merge_file_VB4gLp
 ---
 # Laravel Localization Metadata for Cursor
 

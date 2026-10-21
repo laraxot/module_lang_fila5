@@ -328,11 +328,19 @@ php artisan test --testsuite=Lang
 - [**Filament Best Practices**](../../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../../docs/core/conventions.md)
 - [**Template Moduli**](../../../docs/templates/)
+<<<<<<< .merge_file_z2UMQy
 - [**Documentazione Core Sistema**](../../docs/core/)
 - [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../docs/core/conventions.md)
 - [**Template Moduli**](../../docs/templates/)
+=======
+- [**Documentazione Core Sistema**](../../core)
+- [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
+- [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
+- [**Convenzioni Sistema**](../../docs/core/conventions.md)
+- [**Template Moduli**](../../templates)
+>>>>>>> .merge_file_RnttB8
 
 ---
 
@@ -944,7 +952,11 @@ class Language extends Model
 
 ## 🔗 Collegamenti
 
+<<<<<<< .merge_file_z2UMQy
 - [Documentazione Core](../../../../docs/core/)
+=======
+- [Documentazione Core](../../core)
+>>>>>>> .merge_file_RnttB8
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
@@ -1288,7 +1300,11 @@ class Language extends Model
 
 ## 🔗 Collegamenti
 
+<<<<<<< .merge_file_z2UMQy
 - [Documentazione Core](../../../../docs/core/)
+=======
+- [Documentazione Core](../../core)
+>>>>>>> .merge_file_RnttB8
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
