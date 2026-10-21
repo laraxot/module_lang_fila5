@@ -57,22 +57,3 @@ copre `TranslatorAdapter`.
   codice, nominata "Action"). Fuori perimetro: da confrontare con `TranslatorAdapter` e consolidare.
 - `tests/Unit/Services/TranslatorServiceTest.php` andrebbe rinominato in `TranslatorAdapterTest` (non fatto per
   non toccare file fuori perimetro).
-
-## Wave A audit — 2026-10-20
-
-Conferma sul checkout corrente: `app/Services/TranslatorService.php` era ancora presente, ma non risultano
-caller applicativi (`new TranslatorService`, `app(TranslatorService::class)` o riferimenti al namespace) in
-`laravel/`. Non è stato creato un nuovo Action: il comportamento applicativo è già coperto da
-`Actions/Translation/RecordMissingTranslationAction`, chiamato da `Adapters/TranslatorAdapter`.
-
-La modifica effettiva è quindi la rimozione del duplicato morto. `TranslatorAdapter` resta infrastruttura Laravel
-e mantiene invariati binding, fallback, conversione del risultato e registrazione delle chiavi mancanti.
-
-## Nota di verifica 2026-10-20
-
-Epic: [epic-services-to-queueable-actions](../../../../../bmad-output/epic-services-to-queueable-actions.md). Misura delle 13:00 UTC circa, righe volatili.
-
-- Su disco `Lang/app/Services/` non esiste e `TranslatorService.php` e' cancellato (commit `30be5133`, 12:17 UTC). `git -C Modules/Lang ls-tree -r --name-only laraxot/dev -- app/Services | wc -l` restituisce 0. Il test `tests/Unit/Services/TranslatorServiceTest.php` citato sopra non esiste piu' (resta `tests/Unit/Adapters/TranslatorAdapterTest.php`).
-- Sostituito da `Adapters/TranslatorAdapter` (un Translator non e' un'Action, vive in `Adapters/`) e da `Actions/Translation/RecordMissingTranslationAction`, che l'Adapter chiama. Chiamanti del Service: zero.
-- Parita' da verificare, punto aperto che contraddice "binding invariato": `registerTranslator()` (`LangServiceProvider` riga 147 e `Providers/Traits/TranslatorTrait` riga 14) non ha nessuna chiamata attiva. L'unica chiamata, `LangServiceProvider` riga 43, e' commentata; il trait e' usato solo dalla sonda PHPStan `TranslatorTraitPhpstanProbe`. Cercati con `rg` `singleton('translator'` ed `extend('translator'` in Modules, Themes, app, bootstrap e config: solo quelle due definizioni.
-- Se la ricerca e' completa, `app('translator')` e' il Translator stock di Laravel e la registrazione delle chiavi mancanti (lo scopo del Service) oggi non gira, ne' con il Service ne' con l'Adapter. Non verificato a runtime (`get_class(app('translator'))`). Decisione da prendere in W2/W3: attivare il binding con un test, oppure togliere Adapter e Action.
