@@ -8,6 +8,7 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
@@ -56,16 +57,11 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static EloquentBuilder<static>|Translation whereLocale($value)
  * @method static EloquentBuilder<static>|Translation whereUserId($value)
- * @method static EloquentBuilder<static>|Translation firstOrCreate(array $attributes = [], array $values = [])
  *
- * @mixin \Illuminate\Database\Eloquent\Model
+ * @mixin Model
  */
 class Translation extends BaseModel
 {
-    final public const int STATUS_SAVED = 0;
-
-    final public const int STATUS_CHANGED = 1;
-
     protected $fillable = [
         'id',
         'lang',

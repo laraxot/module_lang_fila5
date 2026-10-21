@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Lang Module - Business Logic Overview"
 module: "Lang"
 type: concept
