@@ -7,8 +7,25 @@ updated: 2026-10-06
 qmd: "README"
 issues: []
 discussions: []
+<<<<<<< .merge_file_cVlx33
 ---
 
 # Lang bmad docs
 
 This folder contains BMAD method documentation for the Lang module.
+=======
+status: draft
+---
+
+# Lang bmad docs
+
+## Kit BMAD owner (canonico)
+
+- [BMAD Planning](../bmad-planning.md)
+- [BMAD Brainstorming](../bmad-brainstorming.md)
+- [Filament blueprint](./filament-blueprint.md)
+- [Project context](./project-context.md)
+- [Decision log](./decision-log.md)
+
+This folder contains BMAD method documentation for the Lang module.
+>>>>>>> .merge_file_tJmY91

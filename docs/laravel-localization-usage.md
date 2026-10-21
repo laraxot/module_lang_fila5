@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "migrazione filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_Fv88HZ
+=======
+status: draft
+>>>>>>> .merge_file_ygUTB9
 ---
 # Utilizzo di mcamara/laravel-localization
 

@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "readme.es 1"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_F5VjIa
+=======
+status: draft
+>>>>>>> .merge_file_2ukRNH
 ---
 # Navigation Translations Completion - Global Roadmap
 

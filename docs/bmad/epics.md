@@ -1,6 +1,15 @@
 ---
 bmad: true
 module: Lang
+<<<<<<< .merge_file_m6B4Qx
+=======
+title: "Epics e User Stories - Modulo Lang"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, lang, bmad]
+qmd: "epics e user stories - modulo lang lang"
+>>>>>>> .merge_file_TZCCQu
 ---
 # Epics e User Stories - Modulo Lang
 

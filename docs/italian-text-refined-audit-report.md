@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "italian text refined audit report"
 related:
   - "./automatic-translations-1.md"
+<<<<<<< .merge_file_yffiRP
+=======
+status: draft
+>>>>>>> .merge_file_nglOnk
 ---
 # Refined Italian Text Audit Report
 

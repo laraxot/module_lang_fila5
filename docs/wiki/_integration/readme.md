@@ -1,6 +1,15 @@
 ---
 bmad: true
 module: Lang
+<<<<<<< .merge_file_uz3JaL
+=======
+title: "readme"
+type: index
+status: draft
+updated: 2026-10-08
+tags: [docs, lang, wiki]
+qmd: "readme lang"
+>>>>>>> .merge_file_Z73G7n
 ---
 # readme
 

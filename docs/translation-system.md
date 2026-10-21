@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "links01"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_4wJNnG
+=======
+status: draft
+>>>>>>> .merge_file_Y9ZvQT
 ---
 # Sistema di Traduzione in il progetto
 

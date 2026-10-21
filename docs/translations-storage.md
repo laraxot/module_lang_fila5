@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "migration filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_A9sA36
+=======
+status: draft
+>>>>>>> .merge_file_okEL2s
 ---
 # Storage delle Traduzioni: PHP vs JSON
 

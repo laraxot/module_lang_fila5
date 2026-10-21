@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "git conflicts resolution summary"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_3PQhWd
+=======
+status: draft
+>>>>>>> .merge_file_tKvhT6
 ---
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 

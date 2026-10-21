@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
+<<<<<<< .merge_file_MqeS4n
+=======
+status: draft
+>>>>>>> .merge_file_sgDsH3
 ---
 
 # LLM Wiki (module)

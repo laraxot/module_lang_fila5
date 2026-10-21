@@ -16,7 +16,7 @@ class SaveTransAction
     use QueueableAction;
 
     /**
-     * @param  array<string, mixed>|int|string|Htmlable|null  $data
+     * @param array<string, mixed>|int|string|Htmlable|null $data
      */
     public function execute(string $key, int|string|array|Htmlable|null $data): void
     {
@@ -27,7 +27,7 @@ class SaveTransAction
         // Il default e' "acceso, tranne che sotto test": la config del modulo non e'
         // caricata nell'app dei test, quindi un default preso solo da li' sarebbe
         // rimasto acceso proprio dove serve spento.
-        if (Config::get('lang.save_missing_translations', ! app()->runningUnitTests()) !== true) {
+        if (true !== Config::get('lang.save_missing_translations', ! app()->runningUnitTests())) {
             return;
         }
 
@@ -45,12 +45,11 @@ class SaveTransAction
         try {
             $cont = File::getRequire($filename);
         } catch (\Exception $e) {
-            dddx([
-                'key' => $key,
-                'data' => $data,
-                'filename' => $filename,
-                'message' => $e->getMessage(),
-            ]);
+            // File di lingua illeggibile: segnalarlo e non riscriverlo, altrimenti
+            // il salvataggio sotto lo sostituirebbe con la sola chiave nuova.
+            report($e);
+
+            return;
         }
 
         if (! is_array($cont)) {
@@ -58,7 +57,7 @@ class SaveTransAction
         }
 
         $piece = implode('.', array_slice(explode('.', $key), 1));
-        if ($piece !== '') {
+        if ('' !== $piece) {
             Arr::set($cont, $piece, $data);
         } else {
             $cont = $data;

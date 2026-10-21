@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "laravel 13 upgrade"
 issues: []
 discussions: []
+<<<<<<< .merge_file_29FkfE
+=======
+status: draft
+>>>>>>> .merge_file_mlUJ6n
 ---
 
 # Upgrade Laravel 13 - Lang 🐄✨
@@ -34,6 +38,7 @@ L'upgrade a Laravel 13 per il modulo **Lang** non è un mero aggiornamento tecni
 L'aggiornamento richiede l'esecuzione di `composer go` dalla root per consolidare le dipendenze merged.
 
 ---
+<<<<<<< .merge_file_29FkfE
 title: "laravel 13 upgrade"
 type: note
 tags: [documentation]
@@ -42,4 +47,6 @@ updated: 2026-09-26
 qmd: "laravel 13 upgrade"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_mlUJ6n
 **Status**: Purificato e Pronto per il Futuro.

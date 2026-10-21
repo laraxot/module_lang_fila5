@@ -9,6 +9,10 @@ type: reference
 updated: 2026-05-21
 related:
   - "../../../Media/docs/html2pdf/advanced.md"
+<<<<<<< .merge_file_DvIIyG
+=======
+status: draft
+>>>>>>> .merge_file_lpteFw
 ---
 
 # Html2Pdf — advanced

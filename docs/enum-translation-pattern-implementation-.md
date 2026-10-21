@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_JAbtZ5
+=======
+status: draft
+>>>>>>> .merge_file_8d0RP1
 ---
 # Enum Translation Pattern - Implementazione Regola Critica
 

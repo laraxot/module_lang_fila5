@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "migration filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_skTHxi
+=======
+status: draft
+>>>>>>> .merge_file_0qlfC2
 ---
 # Integrazione di mcamara/laravel-localization con Livewire
 

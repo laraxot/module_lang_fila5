@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_xevYzK
+=======
+status: draft
+>>>>>>> .merge_file_cZsNbJ
 ---
 # Correzione Convenzione Naming Cartelle Docs - Gennaio 2025
 

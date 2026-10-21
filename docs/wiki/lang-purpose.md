@@ -1,6 +1,15 @@
 ---
 bmad: true
 module: Lang
+<<<<<<< .merge_file_7TJj5h
+=======
+title: "Lang — Scopo (Nota Second Brain 2026-10-06)"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, lang, wiki]
+qmd: "lang   scopo (nota second brain 2026-10-06) lang"
+>>>>>>> .merge_file_AYkLBZ
 ---
 # Lang — Scopo (Nota Second Brain 2026-10-06)
 

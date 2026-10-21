@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "locale management"
 issues: []
 discussions: []
+<<<<<<< .merge_file_OLgrc0
+=======
+status: draft
+>>>>>>> .merge_file_q3M2ic
 ---
 
 # Gestione delle Lingue in Laravel

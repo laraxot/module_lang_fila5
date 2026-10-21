@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: QUICK_REFERENCE
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
+<<<<<<< .merge_file_199zZQ
+=======
+status: stub
+>>>>>>> .merge_file_RtdMhD
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules

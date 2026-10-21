@@ -2,6 +2,13 @@
 type: investigation
 title: "Investigation Translation Pipeline"
 links: {github_issue: #XXX}
+<<<<<<< .merge_file_GbWyOf
+=======
+status: draft
+updated: 2026-10-08
+tags: [docs, lang, investigation]
+qmd: "investigation: translation pipeline lang"
+>>>>>>> .merge_file_WdwshT
 ---
 # Investigation: Translation Pipeline
 

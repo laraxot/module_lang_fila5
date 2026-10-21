@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_HSZyGN
+=======
+status: draft
+>>>>>>> .merge_file_ZeWMtn
 ---
 # Risoluzione Conflitto AutoLabelAction
 

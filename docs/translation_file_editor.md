@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_dJbn7Z
+=======
+status: draft
+>>>>>>> .merge_file_v6hAht
 ---
 # Editor File di Traduzione
 

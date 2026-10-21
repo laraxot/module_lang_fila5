@@ -13,7 +13,11 @@ related:
 ---
 # Gestione Permessi e Errori Filesystem su File di Lingua (Lang)
 
+<<<<<<< .merge_file_r9t7VW
 > **Backlink:** [Indice e collegamenti root](../../../docs/links.md)
+=======
+> **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
+>>>>>>> .merge_file_dcgjXh
 
 ## Problema
 
@@ -65,7 +69,11 @@ sudo chmod 664 /var/www/html/ptvx/laravel/Modules/Lang/lang/it/lang_service.php
 ```
 
 ## Collegamenti
+<<<<<<< .merge_file_r9t7VW
 - [Indice e collegamenti root](../../../docs/links.md)
+=======
+- [Indice e collegamenti root](../../../../docs/links.md)
+>>>>>>> .merge_file_dcgjXh
 - [Documentazione MCP e gestione errori](../../../docs/mcp_errors_and_lessons.md)
 
 ---

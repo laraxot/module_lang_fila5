@@ -7,7 +7,11 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "lang service helper text"
 related:
+<<<<<<< .merge_file_RfPKCF
   - "./italian-text-refined-audit-report.md"
+=======
+  - "../italian-text-refined-audit-report.md"
+>>>>>>> .merge_file_llV7R4
 ---
 # 📚 **Best Practices Modulo Lang - Laraxot**
 
@@ -432,7 +436,11 @@ return [
 - [README.md](README.md) - Documentazione principale modulo
 - [README.md](README.md) - Documentazione principale modulo
 - [README.md](README.md) - Documentazione principale modulo
+<<<<<<< .merge_file_RfPKCF
 - [config/lang.php](../config/lang.php) - Configurazione centralizzata
+=======
+- [config/lang.php](../../config/lang.php) - Configurazione centralizzata
+>>>>>>> .merge_file_llV7R4
 - [Laraxot Framework](https://github.com/laraxot/laraxot) - Framework principale
 - [Laravel Localization](https://laravel.com/project_docs/localization) - Documentazione ufficiale
 

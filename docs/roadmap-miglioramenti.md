@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "roadmap miglioramenti"
 issues: []
 discussions: []
+<<<<<<< .merge_file_pdJud2
+=======
+status: draft
+>>>>>>> .merge_file_Fu6oeN
 ---
 
 # Lang — cosa migliorerei se questo modulo fosse mio per un mese
@@ -72,6 +76,7 @@ criterio scritto, non contro la sensazione di chi la sta aggiungendo quel
 giorno.
 
 ---
+<<<<<<< .merge_file_pdJud2
 title: "roadmap miglioramenti"
 type: note
 tags: [documentation]
@@ -80,5 +85,7 @@ updated: 2026-09-26
 qmd: "roadmap miglioramenti"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_Fu6oeN
 *Analisi generata il 2026-09-01, dati verificati sul codice (grep/find), non
 sulla documentazione esistente.*

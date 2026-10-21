@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "filament4 migration"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_FvTps6
+=======
+status: draft
+>>>>>>> .merge_file_jTTHbb
 ---
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 

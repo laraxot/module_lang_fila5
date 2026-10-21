@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
+<<<<<<< .merge_file_sO3Mli
+=======
+status: draft
+>>>>>>> .merge_file_fvbqnh
 ---
 
 # readme

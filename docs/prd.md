@@ -8,6 +8,10 @@ type: concept
 tags: [PRD, lang]
 created: 2026-08-04
 updated: 2026-08-04
+<<<<<<< .merge_file_Z1h5iE
+=======
+status: draft
+>>>>>>> .merge_file_Jb4JsM
 ---
 # Product Requirements Document (PRD) - Lang Module
 

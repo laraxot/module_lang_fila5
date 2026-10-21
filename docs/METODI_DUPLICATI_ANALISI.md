@@ -10,6 +10,11 @@ module: Lang
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+<<<<<<< .merge_file_FMWYVZ
+=======
+status: superseded
+superseded_by: metodi_duplicati_analisi.md
+>>>>>>> .merge_file_yr0Puc
 ---
 
 # Metodi Duplicati — Analisi Lang

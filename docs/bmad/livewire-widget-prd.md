@@ -10,6 +10,7 @@ type: prd
 module: Lang
 related:
   - ./livewire-inventory.md
+status: draft
 ---
 
 # PRD Lang

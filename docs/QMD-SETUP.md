@@ -8,7 +8,13 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [qmd, search, docs, performance]
 related:
+<<<<<<< .merge_file_8Bh3ZD
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+=======
+  - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+status: superseded
+superseded_by: qmd-setup.md
+>>>>>>> .merge_file_ZODgOU
 ---
 
 # QMD Setup per Module **Lang**
@@ -66,7 +72,11 @@ qmd search "form" -c lang  # Solo questo modulo
 ## Riferimenti
 
 - [Global QMD Config](../qmd.md) (root docs)
+<<<<<<< .merge_file_8Bh3ZD
 - [Operational Discipline](../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
+=======
+- [Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
+>>>>>>> .merge_file_ZODgOU
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
 
 ---

@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_r34Ccz
+=======
+status: draft
+>>>>>>> .merge_file_GUG68A
 ---
 # Localizzazione di Date e Valute
 

@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_VrJpeW
 issues: []
 discussions: []
 title: "Strategie di Gestione delle Traduzioni in Laravel"
@@ -267,3 +268,20 @@ La scelta tra file PHP e JSON dipende dalle esigenze del progetto:
 - **JSON**: ideale per progetti più piccoli o con contenuti più fluidi
 
 Per questo progetto, si consiglia di utilizzare i file PHP per le traduzioni di sistema e i moduli, mantenendo una struttura organizzata e scalabile.
+=======
+title: "Lang — alias TRANSLATION_STRATEGIES (UPPERCASE)"
+type: alias
+module: Lang
+status: superseded
+superseded_by: translation-strategies.md
+canonical: ./translation-strategies.md
+updated: 2026-10-20
+qmd: "alias TRANSLATION_STRATEGIES uppercase lang verso translation-strategies"
+---
+
+<!-- gateguard: convert existing UPPERCASE twin to stub. Supersedes TRANSLATION_STRATEGIES.md body; canonical lowercase translation-strategies.md already has fuller content. Linked from wiki case-conflicts. Why stub: naming rule lowercase except README. User: "Fix UPPERCASE md except README in those trees if easy" -->
+
+# Alias — TRANSLATION_STRATEGIES
+
+Canonico: [translation-strategies.md](./translation-strategies.md). Indice: [00-INDEX.md](./00-INDEX.md).
+>>>>>>> .merge_file_uprJoY
