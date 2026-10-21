@@ -7,7 +7,11 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "filament4 migration"
 related:
+<<<<<<< .merge_file_ie23jq
   - "./italian-text-refined-audit-report.md"
+=======
+  - "../italian-text-refined-audit-report.md"
+>>>>>>> .merge_file_S5xtZv
 ---
 # Case Sensitivity Rules - Lang Module
 

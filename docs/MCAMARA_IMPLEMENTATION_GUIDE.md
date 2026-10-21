@@ -10,6 +10,11 @@ updated: 2026-07-14
 qmd: "git conflicts resolution summary"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_G1fNQ4
+=======
+status: superseded
+superseded_by: mcamara_implementation_guide.md
+>>>>>>> .merge_file_ERgLVn
 ---
 # Guida all'Implementazione di mcamara/laravel-localization
 

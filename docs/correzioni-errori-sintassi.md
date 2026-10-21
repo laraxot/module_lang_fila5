@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_UzYivw
+=======
+status: draft
+>>>>>>> .merge_file_RK5nTX
 ---
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 

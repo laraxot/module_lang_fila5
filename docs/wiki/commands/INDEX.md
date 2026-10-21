@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_Gf4tHF
 title: "INDEX"
 type: note
 tags: [documentation]
@@ -15,15 +16,23 @@ discussions: []
 Index for Lang module commands.
 
 ## On-Demand Loading
+=======
+title: "Lang — alias wiki/commands/INDEX (UPPERCASE)"
+type: alias
+module: Lang
+status: superseded
+superseded_by: index.md
+canonical: ./index.md
+updated: 2026-10-20
+qmd: "alias wiki commands INDEX uppercase verso index"
+---
+>>>>>>> .merge_file_KKSX3j
 
-```bash
-qmd search "Lang commands" --limit 5
-```
+<!-- gateguard: convert existing UPPERCASE INDEX twin to stub. Canonical lowercase index.md. Linked from wiki tree. User: "Fix UPPERCASE md except README in those trees if easy" -->
 
-## See Also
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-- [Root Wiki](../../../docs/wiki/)
+# Alias — commands INDEX
 
+<<<<<<< .merge_file_Gf4tHF
 ---
 title: "INDEX"
 type: note
@@ -34,3 +43,6 @@ qmd: "INDEX"
 issues: []
 discussions: []
 *Updated: 2026-05-11*
+=======
+Canonico: [index.md](./index.md).
+>>>>>>> .merge_file_KKSX3j

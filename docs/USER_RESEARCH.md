@@ -10,6 +10,11 @@ updated: 2026-07-14
 qmd: "migrazione filament"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_SmnTRK
+=======
+status: superseded
+superseded_by: user_research.md
+>>>>>>> .merge_file_INNue6
 ---
 # Lang Module - User Research
 

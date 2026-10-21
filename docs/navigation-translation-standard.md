@@ -11,6 +11,10 @@ tags: [traduzioni, filament, navigazione]
 related:
   - ./translation-keys-best-practices.md
   - ./TRANSLATION_PROCESS.md
+<<<<<<< .merge_file_juVkuq
+=======
+status: draft
+>>>>>>> .merge_file_NYEfdR
 ---
 
 # Standard per le traduzioni di navigazione Filament

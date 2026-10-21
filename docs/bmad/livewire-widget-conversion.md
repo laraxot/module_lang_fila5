@@ -10,6 +10,7 @@ type: pointer
 module: Lang
 related:
   - ./livewire-inventory.md
+status: draft
 ---
 
 # Lang — canone

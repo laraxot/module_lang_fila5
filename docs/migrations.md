@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "migrations"
 issues: []
 discussions: []
+<<<<<<< .merge_file_qhGa5m
+=======
+status: draft
+>>>>>>> .merge_file_AJj3B0
 ---
 
 # Migrations — Lang Module
@@ -334,6 +338,7 @@ php artisan migrate --path=Modules/Lang/database/migrations
 **Soft deletes**: ❌ None use soft deletes (correct for Lang domain)
 
 ---
+<<<<<<< .merge_file_qhGa5m
 
 title: "migrations"
 type: note
@@ -343,4 +348,6 @@ updated: 2026-09-26
 qmd: "migrations"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_AJj3B0
 *Last updated: 2026-07-15*

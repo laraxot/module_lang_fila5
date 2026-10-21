@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_DLpEN9
+=======
+status: draft
+>>>>>>> .merge_file_RhNR8G
 ---
 # Lang Module - Testing Guidelines
 
@@ -19,7 +23,11 @@ related:
 All tests MUST use `.env.testing` configuration:
 ```env
 APP_ENV=testing
+<<<<<<< .merge_file_DLpEN9
 DB_CONNECTION=sqlite
+=======
+DB_CONNECTION=mysql
+>>>>>>> .merge_file_RhNR8G
 DB_DATABASE=<nome progetto>_data_test
 APP_LOCALE=en
 APP_FALLBACK_LOCALE=en

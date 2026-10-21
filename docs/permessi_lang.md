@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_6JqwSu
+=======
+status: draft
+>>>>>>> .merge_file_OOwlQx
 ---
 # Gestione Permessi e Proprietà per File di Lingua (`lang/it/`)
 

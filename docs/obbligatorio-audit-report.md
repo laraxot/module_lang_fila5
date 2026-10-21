@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_ugffNy
+=======
+status: draft
+>>>>>>> .merge_file_K1QuLq
 ---
 # Audit "Obbligatorio" in Non-Italian Translation Files
 

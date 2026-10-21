@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_hyLQwe
+=======
+status: draft
+>>>>>>> .merge_file_kBe6jJ
 ---
 # Gestione automatica delle label in Filament tramite LangServiceProvider
 

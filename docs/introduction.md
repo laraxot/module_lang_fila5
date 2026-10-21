@@ -32,9 +32,15 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 * [introduction.md](laravel/vendor/spatie/laravel-data/docs/introduction.md)
 * [introduction.md](laravel/vendor/spatie/laravel-data/docs/validation/introduction.md)
 * [introduction.md](../../../Lang/docs/introduction.md)
+<<<<<<< .merge_file_C2MWt1
 * [introduction.md](../../../Cms/docs/introduction.md)
 * [introduction.md](../../../Lang/docs/introduction.md)
 * [introduction.md](../../../Cms/docs/introduction.md)
+=======
+* [introduction.md](../../Cms/docs/introduction.md)
+* [introduction.md](../../../Lang/docs/introduction.md)
+* [introduction.md](../../Cms/docs/introduction.md)
+>>>>>>> .merge_file_J2WxXJ
 
 ### Versione Incoming
 
@@ -44,7 +50,11 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 
 ---
 * [introduction.md](../../../Lang/docs/introduction.md)
+<<<<<<< .merge_file_C2MWt1
 * [introduction.md](../../../Cms/docs/introduction.md)
+=======
+* [introduction.md](../../Cms/docs/introduction.md)
+>>>>>>> .merge_file_J2WxXJ
 
 ### Versione Incoming
 

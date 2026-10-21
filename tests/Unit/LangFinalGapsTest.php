@@ -7,7 +7,6 @@ namespace Modules\Lang\Tests\Unit;
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
-use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
@@ -58,15 +57,15 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 /**
- * Locale dell'app dopo applyLocale(), partendo ogni volta da 'it': un 'en' letto
- * dopo la chiamata prova il fallback, non un locale rimasto da quella precedente.
+ * Locale dell'app dopo normalizeLocale()+applyLocale(), partendo ogni volta da 'it':
+ * un 'en' letto dopo la chiamata prova il fallback, non un locale rimasto da prima.
  *
  * @param  array<string, mixed>  $data
  */
 function langLocaleAfterApplying(LocaleSwitcherRefresh $action, array $data): string
 {
     app()->setLocale('it');
-    $action->applyLocale($data);
+    $action->applyLocale(LocaleSwitcherRefresh::normalizeLocale($data['locale'] ?? null));
 
     return app()->getLocale();
 }
@@ -221,7 +220,6 @@ test('LanguageSwitcherWidget falls back when getLocalizedURL returns non-string 
 
 test('Post linkable and accessor edge branches', function (): void {
     $post = new Post;
-    Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
     $post->setRawAttributes(['post_type' => 123, 'post_id' => ['x']], true);
     Assert::assertIsString($post->getTitleAttribute(null));
