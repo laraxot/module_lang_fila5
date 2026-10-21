@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 
@@ -38,7 +39,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property-read ProfileContract|null $deleter
  * @property-read ProfileContract|null $updater
  *
- * @mixin \Illuminate\Database\Eloquent\Model
+ * @mixin Model
  */
 class LanguageLine extends BaseModel
 {

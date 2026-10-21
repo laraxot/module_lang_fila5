@@ -1,3 +1,7 @@
+---
+bmad: true
+module: Lang
+---
 # Lang — Copertura Model / Migration / Seeder / Factory
 
 Stato: colmato il gap su `LanguageLine` (mancavano factory e seeder). Documentati gli skip su
