@@ -10,7 +10,11 @@ issues:
 discussions:
   - "https://github.com/laraxot/platform/discussions/273"
 related:
+<<<<<<< .merge_file_dmMPRd
   - ../../../../docs/wiki/rules/queueable-action-trait-mandatory.md
+=======
+  - ../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md
+>>>>>>> .merge_file_nGEGU9
 ---
 
 # no `app/Support/` — business logic in QueueableAction
@@ -33,4 +37,8 @@ La logica `notifyMissingKey` resta nell'adapter; eventuale orchestrazione futura
 
 ## Collegamenti
 
+<<<<<<< .merge_file_dmMPRd
 - [queueable-action-trait-mandatory](../../../../docs/wiki/rules/queueable-action-trait-mandatory.md)
+=======
+- [queueable-action-trait-mandatory](../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md)
+>>>>>>> .merge_file_nGEGU9

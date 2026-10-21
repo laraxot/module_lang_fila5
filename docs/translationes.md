@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_qGs3Ja
+=======
+status: draft
+>>>>>>> .merge_file_GQBALy
 ---
 # Riepilogo Correzioni Traduzioni - Gennaio 2025
 

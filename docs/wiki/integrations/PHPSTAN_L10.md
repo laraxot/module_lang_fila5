@@ -7,8 +7,14 @@ discussions: []
 title: PHPStan Level 10 Compliance — Lang Module
 module: Lang
 type: quality-gate
+<<<<<<< .merge_file_G5wFP7
 status: complete
 created: 2026-08-02
+=======
+created: 2026-08-02
+status: superseded
+superseded_by: phpstan_l10.md
+>>>>>>> .merge_file_hSyfnN
 ---
 
 # PHPStan Level 10 Compliance — Lang Module
@@ -66,7 +72,11 @@ phpstan analyse app --level=10
 
 ## Related Docs
 
+<<<<<<< .merge_file_G5wFP7
 - [`phpstan-l10-compliance.md`](../../../docs/wiki/rules/phpstan-l10-compliance.md)
+=======
+- [`phpstan-l10-compliance.md`](../../../../../../docs/wiki/rules/phpstan-l10-compliance.md)
+>>>>>>> .merge_file_hSyfnN
 - [GitHub Repo](https://github.com/laraxot/module_lang_fila5)
 
 **Status:** ✅ Compliant (2026-08-02)

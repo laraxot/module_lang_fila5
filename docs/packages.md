@@ -18,6 +18,7 @@ related:
 ### Core
 - [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
+<<<<<<< .merge_file_383TOi
 - [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
 - [laraxot/module_xot_fila5](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
@@ -25,6 +26,15 @@ related:
 - [laraxot/module_xot_fila5](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila5](../Tenant/docs/packages.md) - Gestione multi-tenant
+=======
+- [laraxot/module_tenant_fila3](../../Tenant/docs/packages.md) - Gestione multi-tenant
+- [laraxot/module_xot_fila5](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
+- [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
+- [laraxot/module_tenant_fila3](../../Tenant/docs/packages.md) - Gestione multi-tenant
+- [laraxot/module_xot_fila5](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
+- [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
+- [laraxot/module_tenant_fila5](../../Tenant/docs/packages.md) - Gestione multi-tenant
+>>>>>>> .merge_file_od06TB
 
 ### Localizzazione
 - [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
@@ -81,6 +91,7 @@ related:
 ### Versione HEAD
 
 ## Collegamenti tra versioni di packages.md
+<<<<<<< .merge_file_383TOi
 * [packages.md](../../../Gdpr/docs/packages.md)
 * [packages.md](../../../Notify/docs/packages.md)
 * [packages.md](../../../Xot/docs/packages.md)
@@ -90,6 +101,17 @@ related:
 * [packages.md](../../../Job/docs/packages.md)
 * [packages.md](../../../Media/docs/packages.md)
 * [packages.md](../../../Tenant/docs/packages.md)
+=======
+* [packages.md](../../Gdpr/docs/packages.md)
+* [packages.md](../../Notify/docs/packages.md)
+* [packages.md](../../../Xot/docs/packages.md)
+* [packages.md](../../User/docs/packages.md)
+* [packages.md](../../../UI/docs/packages.md)
+* [packages.md](../../../Lang/docs/packages.md)
+* [packages.md](../../Job/docs/packages.md)
+* [packages.md](../../Media/docs/packages.md)
+* [packages.md](../../Tenant/docs/packages.md)
+>>>>>>> .merge_file_od06TB
 
 ### Versione Incoming
 

@@ -11,6 +11,10 @@ related:
   - ./architecture/module-boundary.md
   - ../../composer.json
   - ../../module.json
+<<<<<<< .merge_file_v5Kzdo
+=======
+status: draft
+>>>>>>> .merge_file_9t4vsa
 ---
 
 # Lang — setup guide

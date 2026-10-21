@@ -7,7 +7,11 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "test 1"
 related:
+<<<<<<< .merge_file_8vjg8j
   - "./italian-text-refined-audit-report.md"
+=======
+  - "../../italian-text-refined-audit-report.md"
+>>>>>>> .merge_file_z78IOQ
 ---
 # Modulo Lang
 
@@ -485,6 +489,7 @@ tests/Unit
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
+<<<<<<< .merge_file_8vjg8j
 * [structure.md](../../../gdpr/docs/structure.md)
 * [structure.md](../../../notify/docs/structure.md)
 * [structure.md](../../../xot/docs/structure.md)
@@ -515,10 +520,47 @@ tests/Unit
 * [structure.md](../../../Cms/docs/structure.md)
 * [structure.md](../../../Cms/docs/themes/structure.md)
 * [structure.md](../../../Cms/docs/components/structure.md)
+=======
+* [structure.md](../../../../Gdpr/docs/structure.md)
+* [structure.md](../../../../Notify/docs/structure.md)
+* [structure.md](../../../xot/docs/structure.md)
+* [structure.md](../../../xot/docs/base/structure.md)
+* [structure.md](../../../xot/docs/config/structure.md)
+* [structure.md](../../../../User/docs/structure.md)
+* [structure.md](../../../ui/docs/structure.md)
+* [structure.md](../../structure.md)
+* [structure.md](../../../../Job/docs/structure.md)
+* [structure.md](../../../../Media/docs/structure.md)
+* [structure.md](../../../../Tenant/docs/structure.md)
+* [structure.md](../../../../Activity/docs/structure.md)
+* [structure.md](../../../cms/docs/structure.md)
+* [structure.md](../../../../Cms/docs/themes/structure.md)
+* [structure.md](../../../../Cms/docs/components/structure.md)
+* [structure.md](../../../../Gdpr/docs/structure.md)
+* [structure.md](../../../../Notify/docs/structure.md)
+* [structure.md](../../../Xot/docs/structure.md)
+* [structure.md](../../../Xot/docs/base/structure.md)
+* [structure.md](../../../Xot/docs/config/structure.md)
+* [structure.md](../../../../User/docs/structure.md)
+* [structure.md](../../../UI/docs/structure.md)
+* [structure.md](../../structure.md)
+* [structure.md](../../../../Job/docs/structure.md)
+* [structure.md](../../../../Media/docs/structure.md)
+* [structure.md](../../../../Tenant/docs/structure.md)
+* [structure.md](../../../../Activity/docs/structure.md)
+* [structure.md](../../../Cms/docs/structure.md)
+* [structure.md](../../../../Cms/docs/themes/structure.md)
+* [structure.md](../../../../Cms/docs/components/structure.md)
+>>>>>>> .merge_file_z78IOQ
 
 ## Struttura della Registrazione dei Console Commands
 
 - Tutti i comandi console sono autoregistrati tramite la struttura di XotBaseServiceProvider.
 - Non aggiungere mai manualmente $this->commands([...]) nei provider.
+<<<<<<< .merge_file_8vjg8j
 - Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
 - Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./philosophy.md)
+=======
+- Perché? Vedi [lang-service-provider.md](../../lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
+- Perché? Vedi [lang-service-provider.md](../../lang-service-provider.md) e [PHILOSOPHY.md](./philosophy.md)
+>>>>>>> .merge_file_z78IOQ

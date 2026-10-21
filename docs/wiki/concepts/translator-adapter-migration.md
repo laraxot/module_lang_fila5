@@ -10,7 +10,11 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_ptvx_fila5/discussions/273"
 related:
+<<<<<<< .merge_file_oqztcS
   - ../../../../docs/wiki/rules/no-services-rule.md
+=======
+  - ../../../../../../docs/wiki/rules/no-services-rule.md
+>>>>>>> .merge_file_6LVMMu
   - lang-services-to-actions.md
 ---
 

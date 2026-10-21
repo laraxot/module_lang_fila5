@@ -9,6 +9,10 @@ type: reference
 updated: 2026-05-21
 related:
   - "../../../Media/docs/html2pdf/security.md"
+<<<<<<< .merge_file_S07sIU
+=======
+status: draft
+>>>>>>> .merge_file_gkAnvQ
 ---
 
 # Html2Pdf — security

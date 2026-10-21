@@ -8,6 +8,10 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_lFqVx3
+=======
+status: draft
+>>>>>>> .merge_file_I7qZ3w
 ---
 
 # Divergenza: `localizing_dates_currencies.md`

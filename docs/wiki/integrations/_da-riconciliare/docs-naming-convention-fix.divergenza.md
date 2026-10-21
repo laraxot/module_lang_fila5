@@ -8,6 +8,10 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_dOL1wT
+=======
+status: draft
+>>>>>>> .merge_file_3X0SGE
 ---
 
 # Divergenza: `docs_naming_convention_fix.md`

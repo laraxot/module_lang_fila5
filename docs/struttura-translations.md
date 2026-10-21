@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "links01"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_TmTZhZ
+=======
+status: draft
+>>>>>>> .merge_file_DWkxq3
 ---
 # Struttura corretta per i file di traduzione nel modulo Lang
 

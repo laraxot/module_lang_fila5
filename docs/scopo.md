@@ -6,13 +6,31 @@ type: concept
 module: Lang
 status: active
 created: 2026-09-02
+<<<<<<< .merge_file_ExrEOb
 updated: 2026-09-02
 tags: [scopo, confini, servizio-trasversale, traduzioni, i18n, autolabel, dipendenze]
 qmd: "scopo lang traduzioni autolabel savetransaction scrittura file lang confini dipendenze codice morto translatoradapter"
+=======
+updated: 2026-10-20
+tags: [scopo, confini, servizio-trasversale, traduzioni, i18n, autolabel, locale-switcher, dipendenze]
+qmd: "scopo lang traduzioni autolabel savetransaction locale switcher scrittura file lang confini dipendenze"
+related:
+  - ./00-INDEX.md
+  - ./README.md
+  - ./advanced-language-switching.md
+  - ./stories/phpstan-test-wave-lang.story.md
+  - ./stories/phpstan-lang-zero.story.md
+  - ./stories/12.1.retire-lang-http-switchers.story.md
+>>>>>>> .merge_file_vlUmg8
 ---
 
 # Lang — scopo, confini e come servirlo meglio
 
+<<<<<<< .merge_file_ExrEOb
+=======
+Ingresso docs: [00-INDEX.md](./00-INDEX.md) · panoramica: [README.md](./README.md).
+
+>>>>>>> .merge_file_vlUmg8
 ## Lo scopo, dedotto dal codice
 
 Lang è il modulo più piccolo dei tre servizi trasversali — 62 file PHP, 4.545 righe in
@@ -51,6 +69,24 @@ Da qui la formulazione in una riga:
 > traduzione dal componente e dal modulo, la risolve dai file `lang/` e — quando manca —
 > la scrive lui. La fonte di verità sono i file PHP versionati, non il database.**
 
+<<<<<<< .merge_file_ExrEOb
+=======
+### Secondo mestiere: cambiare lingua senza toccare il dominio
+
+Il FO non deve conoscere i file `lang/`: deve solo **cambiare locale e URL**.
+Contratto vivo: `Filament\Widgets\LanguageSwitcherWidget` (`$isDiscovered = false`),
+lingue da `LaravelLocalization::getSupportedLocales()`, redirect 303 via
+`getLocalizedURL()`. Dettaglio: [advanced-language-switching.md](./advanced-language-switching.md).
+
+`Http\Livewire\Switcher` / `Change` sono ritirati (story
+[12.1](./stories/12.1.retire-lang-http-switchers.story.md), fleet **W0 ✓**):
+un solo switcher evita duplicare stato HTTP/Livewire e rompere i test che assumono
+l'assenza di quei file. Inventario fleet:
+[Xot](../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md) ·
+[fleet story](../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md).
+Dettaglio modulo: [bmad/livewire-inventory.md](./bmad/livewire-inventory.md).
+
+>>>>>>> .merge_file_vlUmg8
 I consumatori espliciti sono pochi perché il consumo vero è implicito, via
 `configureUsing()`. Misurati il 2026-09-02 con
 `grep -rl 'Modules\\Lang\\' Modules/<Modulo>` (esclusi `docs/`, `vendor/`,
@@ -274,6 +310,22 @@ grep -rl 'Modules\\Ptv\\' Modules/Lang/app | wc -l   # obiettivo: 0
 ./vendor/bin/phpstan analyse Modules/Lang            # deve restare a 0 errori
 ```
 
+<<<<<<< .merge_file_ExrEOb
+=======
+## Gate PHPStan (contratti i18n)
+
+Lang e' piccolo in `app/` ma tocca migliaia di file `lang/*.php` e il boot Filament
+(`LangServiceProvider`, `SaveTransAction`, lettura file, switcher). Il gate
+`./vendor/bin/phpstan analyse Modules/Lang` (e il full-tree `Modules`) a **zero errori**
+non e' un badge: e' la garanzia che i tipi di quel percorso — inclusi i bootstrap dei
+test — coincidono con i chiamanti reali.
+
+Nei test, gli helper condivisi stanno in `tests/Pest.php`; `makeLangServiceProvider`
+ha SSoT su `TestCase::makeLangServiceProvider()`. Ridefinirli dentro un file test
+namespaced fa sparire la function agli occhi di PHPStan (`function.notFound`) e
+propaga `mixed` su action e provider. Evidenza e misure: [stories/phpstan-lang-zero.story.md](./stories/phpstan-lang-zero.story.md).
+
+>>>>>>> .merge_file_vlUmg8
 ## Cosa NON è compito di Lang
 
 - **Non** traduce. Non c'è nessun motore di traduzione automatica nel codice: la sezione
@@ -327,8 +379,21 @@ find Modules/Lang/docs -name '*.md'  -print0 | xargs -0 cat | wc -l      # 14510
 
 ## Collegamenti
 
+<<<<<<< .merge_file_ExrEOb
 - [README.md](../README.md) — badge e stato misurato del modulo
 - [no-services-rule](../../../../bashscripts/ai/wiki/rules/no-services-rule.md) — perché `app/Services` non deve esistere
 - [sigma-ptv-dependency-direction](../../../../docs/wiki/rules/sigma-ptv-dependency-direction.md) — la direzione delle dipendenze e il `ProfileContract`
 - [data-sacred-no-destructive-db](../../../../docs/wiki/memories/data-sacred-no-destructive-db.md) — i file `lang/` tracciati sono dati, non artefatti
 - [Sigma/docs/scopo.md](../../Sigma/docs/scopo.md) — il modello di questo documento
+=======
+- [00-INDEX.md](./00-INDEX.md) — ingresso operativo docs
+- [README.md](./README.md) — badge e stato misurato del modulo
+- [purpose.md](./purpose.md) — versione breve (stesso scopo)
+- [advanced-language-switching.md](./advanced-language-switching.md) — locale switcher FO
+- [stories/phpstan-test-wave-lang.story.md](./stories/phpstan-test-wave-lang.story.md) — ondata qualità test (scopo prima dell'errore)
+- [stories/phpstan-lang-zero.story.md](./stories/phpstan-lang-zero.story.md) — chiusura gate Lang (203 → 0) e harness test
+- [no-services-rule](../../../../bashscripts/ai/wiki/rules/no-services-rule.md) — perché `app/Services` non deve esistere
+- [sigma-ptv-dependency-direction](../../../../docs/wiki/rules/sigma-ptv-dependency-direction.md) — la direzione delle dipendenze e il `ProfileContract`
+- [data-sacred-no-destructive-db](../../../../docs/wiki/memories/data-sacred-no-destructive-db.md) — i file `lang/` tracciati sono dati, non artefatti
+- [Cms — page resolution](../../Cms/docs/actions/page-resolution-pipeline.md) — URL localizzati nei blocchi CMS
+>>>>>>> .merge_file_vlUmg8

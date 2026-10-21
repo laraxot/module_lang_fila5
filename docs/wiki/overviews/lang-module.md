@@ -13,6 +13,10 @@ sources:
   - ../../../docs/mcamara-laravel-localization-governance.md
 confidence: high
 updated: 2026-04-15
+<<<<<<< .merge_file_BtP7L7
+=======
+status: draft
+>>>>>>> .merge_file_BudA9Y
 ---
 
 # Lang Module — Overview

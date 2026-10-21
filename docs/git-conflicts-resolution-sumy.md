@@ -10,5 +10,9 @@ updated: 2026-07-14
 qmd: "git conflicts resolution sumy"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_bmcFLd
+=======
+status: draft
+>>>>>>> .merge_file_GnHil7
 ---
 

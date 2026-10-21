@@ -97,16 +97,28 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
+<<<<<<< .merge_file_RrtRh6
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
 - [Audit Generale Traduzioni Navigation](../../docs/navigation-translations-audit.md)
+=======
+- [Audit Generale Traduzioni Navigation](navigation-translations-audit.md)
+- [Documentazione Modulo Lang](README.md)
+- [Sistema Localizzazione](comprehensive_guide.md)
+- [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
+- [Audit Generale Traduzioni Navigation](navigation-translations-audit.md)
+>>>>>>> .merge_file_Mo9ovI
 - [Documentazione Modulo Lang](README.md)
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
+<<<<<<< .merge_file_RrtRh6
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
+=======
+- [Audit Generale Traduzioni Navigation](navigation-translations-audit.md)
+>>>>>>> .merge_file_Mo9ovI
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)

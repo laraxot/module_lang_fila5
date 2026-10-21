@@ -11,6 +11,11 @@ tags:
   - conventions
   - llm-instructions
 created: 2026-04-15
+<<<<<<< .merge_file_GteWR2
+=======
+status: superseded
+superseded_by: schema.md
+>>>>>>> .merge_file_DWRNrx
 ---
 
 # Wiki Schema - Lang

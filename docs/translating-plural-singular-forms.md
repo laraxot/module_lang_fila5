@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_p63Mpe
+=======
+status: draft
+>>>>>>> .merge_file_ZC6o2H
 ---
 # Traduzione di Forme Plurali e Singolari
 

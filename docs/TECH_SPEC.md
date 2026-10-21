@@ -7,6 +7,11 @@ type: technical_spec
 tags: [tech spec, lang, implementation]
 created: 2026-08-04
 updated: 2026-08-04
+<<<<<<< .merge_file_Rvl5pK
+=======
+status: superseded
+superseded_by: tech_spec.md
+>>>>>>> .merge_file_nlojAd
 ---
 # Technical Specification - Lang Module
 

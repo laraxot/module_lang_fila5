@@ -9,7 +9,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "readme.es"
 related:
+<<<<<<< .merge_file_mfmBG2
   - "./italian-text-refined-audit-report.md"
+=======
+  - "../italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: README.es.md
+>>>>>>> .merge_file_sYDkTn
 ---
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>

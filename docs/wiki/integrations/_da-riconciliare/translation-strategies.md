@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "translation strategies"
 issues: []
 discussions: []
+<<<<<<< .merge_file_E95fRX
+=======
+status: draft
+>>>>>>> .merge_file_3AWWlq
 ---
 
 # Strategie di Gestione delle Traduzioni in Laravel

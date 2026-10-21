@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "lang service helper text"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_TsTMGg
+=======
+status: draft
+>>>>>>> .merge_file_hbc6ys
 ---
 # Enum Translation Pattern - Regola Critica
 

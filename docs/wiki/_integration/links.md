@@ -7,7 +7,11 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "google translate"
 related:
+<<<<<<< .merge_file_1wkGG7
   - "./italian-text-refined-audit-report.md"
+=======
+  - "../../italian-text-refined-audit-report.md"
+>>>>>>> .merge_file_b1OzTc
 ---
 # links
 

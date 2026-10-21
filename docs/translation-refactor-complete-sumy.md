@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "links01"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_KI8j4r
+=======
+status: draft
+>>>>>>> .merge_file_Fjl4qP
 ---
 # Refactor Completo File di Traduzione - Riepilogo Finale
 

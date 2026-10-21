@@ -1,6 +1,15 @@
 ---
 bmad: true
 module: Lang
+<<<<<<< .merge_file_sD70U3
+=======
+title: "Decision Log - Modulo Lang"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, lang, bmad]
+qmd: "decision log - modulo lang lang"
+>>>>>>> .merge_file_5w2UWQ
 ---
 # Decision Log - Modulo Lang
 

@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_5zrpnD
+=======
+status: draft
+>>>>>>> .merge_file_xMD8KU
 ---
 # Troubleshooting definitivo permessi file_put_contents su lang_service.php
 

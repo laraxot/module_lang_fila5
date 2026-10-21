@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "translation files update conflict 67b1d4"
 issues: []
 discussions: []
+<<<<<<< .merge_file_W1NPlK
+=======
+status: draft
+>>>>>>> .merge_file_edtuUK
 ---
 
 # Aggiornamento File di Traduzione - Gennaio 2025

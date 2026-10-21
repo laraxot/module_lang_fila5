@@ -9,6 +9,10 @@ type: reference
 updated: 2026-05-21
 related:
   - "../../../Media/docs/html2pdf/usage.md"
+<<<<<<< .merge_file_1fZAev
+=======
+status: draft
+>>>>>>> .merge_file_zKvZCu
 ---
 
 # Html2Pdf — usage

@@ -9,7 +9,11 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "migration filament"
 related:
+<<<<<<< .merge_file_YrbeIo
   - "./italian-text-refined-audit-report.md"
+=======
+  - "../italian-text-refined-audit-report.md"
+>>>>>>> .merge_file_GlbPpM
 ---
 # Lang Module Wiki Index
 
@@ -56,7 +60,11 @@ _No troubleshooting pages created yet_
 ### Related Project Concepts
 
 - [Laraxot Architecture](../../docs/wiki/concepts/laraxot-architecture.md)
+<<<<<<< .merge_file_YrbeIo
 - [Actions Over Services](../../docs/wiki/concepts/actions-over-services.md)
+=======
+- [Actions Over Services](../../../../../docs/wiki/concepts/actions-over-services.md)
+>>>>>>> .merge_file_GlbPpM
 - [PHPStan Level 10](../../docs/wiki/concepts/phpstan-level10.md)
 
 ## Module's Role in Project

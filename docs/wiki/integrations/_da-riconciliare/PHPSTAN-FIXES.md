@@ -7,6 +7,11 @@ type: documentation
 tags: [phpstan, fixes, compliance]
 created: 2026-06-09
 updated: 2026-06-09
+<<<<<<< .merge_file_92Hnyj
+=======
+status: superseded
+superseded_by: phpstan-fixes.md
+>>>>>>> .merge_file_DSrCpq
 ---
 
 # PHPStan Compliance Documentation

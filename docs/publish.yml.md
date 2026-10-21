@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "publish.yml"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_UAt6B6
+=======
+status: draft
+>>>>>>> .merge_file_21a7yX
 ---
 name: Publish
 

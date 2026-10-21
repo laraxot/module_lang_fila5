@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_jS73fw
+=======
+status: draft
+>>>>>>> .merge_file_Z1Fblj
 ---
 # MCP Server Consigliati per il Modulo Lang
 

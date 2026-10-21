@@ -6,6 +6,7 @@ module: Lang
 created: 2026-09-28
 updated: 2026-09-28
 qmd: "Lang epic roadmap qualità architettura test documentazione"
+tags: [docs, lang, bmad]
 ---
 # Lang — epic roadmap
 

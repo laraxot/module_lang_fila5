@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_rMKlB2
+=======
+status: draft
+>>>>>>> .merge_file_PDvtiO
 ---
 # Errori comuni nei file di traduzione
 

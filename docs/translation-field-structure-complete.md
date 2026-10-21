@@ -324,11 +324,19 @@ return [
 ## Collegamenti Bidirezionali
 
 - [<nome progetto> Translation Audit](../Modules/<nome progetto>/docs/translation_audit_city_fields.md)
+<<<<<<< .merge_file_o4oeVG
 - [User Module Translation Rules](../Modules/User/docs/widget-translation-rules.md)
 - [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
 - [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
+=======
+- [User Module Translation Rules](../../User/docs/widget-translation-rules.md)
+- [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
+- [User Module Translation Rules](../../User/docs/widget-translation-rules.md)
+- [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
+- [User Module Translation Rules](../../User/docs/widget-translation-rules.md)
+>>>>>>> .merge_file_ds0r4U
 - [Translation Syntax Fixes](translation_syntax_fixes.md)
 - [Windsurf Translation Rules](../.windsurf/rules/translation-complete-structure.mdc)
 

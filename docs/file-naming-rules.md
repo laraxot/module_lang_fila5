@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "migration filament"
 related:
   - "./italian-text-refined-audit-report.md"
+<<<<<<< .merge_file_x4xdWs
+=======
+status: draft
+>>>>>>> .merge_file_2coYra
 ---
 # Regole di Naming per File
 
