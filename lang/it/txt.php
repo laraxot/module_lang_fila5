@@ -1193,6 +1193,11 @@ return [
             'icon' => 'export_flusso',
             'tooltip' => 'export_flusso',
         ],
+        'ImportAction' => [
+            'label' => 'ImportAction',
+            'icon' => 'ImportAction',
+            'tooltip' => 'ImportAction',
+        ],
     ],
     'sections' => [
         'address' => [

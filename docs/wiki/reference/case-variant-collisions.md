@@ -1,3 +1,7 @@
+---
+bmad: true
+module: Lang
+---
 # Collisioni di nome per sola differenza di maiuscole
 
 **Misurato**: 2026-08-31

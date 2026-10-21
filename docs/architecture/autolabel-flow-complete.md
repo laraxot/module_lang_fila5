@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "AutoLabel Flow - Analisi Completa del Flusso"
 module: "Lang"
 type: concept
