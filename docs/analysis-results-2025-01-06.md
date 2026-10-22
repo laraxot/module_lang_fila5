@@ -99,7 +99,7 @@ tags: [docs, lang]
 
 ## Collegamenti
 
-- [Quality Improvements](./quality-improvements-2025-01-06.md)
+- [Quality Improvements](./quality-improvements-miglioramenti-qualita-codice-modulo.md)
 - [Index Documentation](./index.md)
 - [Best Practices](./BEST_PRACTICES.md)
 
