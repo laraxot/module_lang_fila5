@@ -75,7 +75,7 @@ Tutti i campi di traduzione ora includono la struttura completa a 7 elementi:
 
 ### Documentazione Centrale
 - `/docs/translation-field-structure-complete.md` - Standard completi per tutti i campi
-- `/docs/translation-refactor-complete-summary-2025-08-08.md` - Questo documento
+- `/docs/translation-refactor-complete-summary-completo-file-traduzione-riepilogo.md` - Questo documento
 
 ### Documentazione Moduli
 - `/Modules/User/docs/translation-city-field-refactor-2025-08-08.md` - Dettagli refactor modulo User
