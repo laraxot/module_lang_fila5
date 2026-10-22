@@ -1159,6 +1159,7 @@ return [
         'logout' => [
             'tooltip' => 'logout',
             'icon' => 'logout',
+            'label' => 'logout',
         ],
         'profile' => [
             'label' => 'profile',
@@ -1219,6 +1220,11 @@ return [
             'label' => 'previous',
             'icon' => 'previous',
             'tooltip' => 'previous',
+        ],
+        'billing' => [
+            'label' => 'billing',
+            'icon' => 'billing',
+            'tooltip' => 'billing',
         ],
     ],
     'sections' => [
