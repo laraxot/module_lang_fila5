@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_v40u5S
-=======
 status: draft
->>>>>>> .merge_file_Rq9W7s
 ---
 # Guida all'Implementazione di mcamara/laravel-localization
 

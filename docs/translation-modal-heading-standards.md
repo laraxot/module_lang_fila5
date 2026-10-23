@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "filament4 migration"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_9DTw2Y
-=======
 status: draft
->>>>>>> .merge_file_jWRgyb
 ---
 # Standard per Modal Heading e Description nelle Traduzioni <nome progetto>
 

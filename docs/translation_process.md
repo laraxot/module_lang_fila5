@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: TRANSLATION_PROCESS
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
-<<<<<<< .merge_file_ADXPWo
-=======
 status: stub
->>>>>>> .merge_file_vaNTjc
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules

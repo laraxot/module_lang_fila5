@@ -10,11 +10,8 @@ updated: 2026-07-14
 qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_GTl5RE
-=======
 status: superseded
 superseded_by: product_strategy.md
->>>>>>> .merge_file_qr9Tba
 ---
 # Lang Module - Product Strategy
 

@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_vT4hde
-=======
 status: draft
->>>>>>> .merge_file_13mYR1
 ---
 # Integrazione di mcamara/laravel-localization con Livewire Volt
 

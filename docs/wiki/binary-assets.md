@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, lang]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_qXM6rJ
-=======
 status: draft
 qmd: "asset binari lang"
->>>>>>> .merge_file_SHfGtz
 ---
 
 # Asset binari

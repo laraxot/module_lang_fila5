@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "migration filament"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_WXvUCx
-=======
 status: draft
->>>>>>> .merge_file_2k2r7u
 ---
 # Guida Completa a Laravel Localization
 

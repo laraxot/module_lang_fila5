@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_p0rYSx
-=======
 status: draft
->>>>>>> .merge_file_MXDX17
 ---
 # Enum Translation Pattern - Regola Critica
 

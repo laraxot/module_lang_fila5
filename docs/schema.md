@@ -8,10 +8,7 @@ discussions: []
 title: "Module Schema"
 module: "Lang"
 created: "2026-04-15T08:28:44Z"
-<<<<<<< .merge_file_2Y6Eap
-=======
 status: draft
->>>>>>> .merge_file_kV3Ad3
 ---
 
 # Lang Module Schema

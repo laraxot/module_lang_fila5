@@ -8,10 +8,7 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_0Vlo44
-=======
 status: draft
->>>>>>> .merge_file_JUhBNG
 ---
 
 # Divergenza: `pluralization_and_localization.md`

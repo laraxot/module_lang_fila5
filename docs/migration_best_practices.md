@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_7Lwz22
-=======
 status: draft
->>>>>>> .merge_file_XQ44aY
 ---
 # Best Practices per le Migrazioni - Modulo Lang
 

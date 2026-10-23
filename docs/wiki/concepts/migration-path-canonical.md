@@ -12,10 +12,7 @@ related:
   - ../../redundancy-audit.md
   - ../../case-sensitivity-rules.md
   - ../../../../../../docs/wiki/index/llm-wiki.md
-<<<<<<< .merge_file_fCriQr
-=======
 status: draft
->>>>>>> .merge_file_YyrRJu
 ---
 
 # Path canonico migrazioni Lang

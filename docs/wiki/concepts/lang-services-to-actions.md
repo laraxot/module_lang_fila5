@@ -11,10 +11,7 @@ related:
   - queueable-action-trait-mandatory.md
   - translator-adapter-migration.md
   - no-app-support-queueable-actions.md
-<<<<<<< .merge_file_6XwYj7
-=======
 status: draft
->>>>>>> .merge_file_Oc0ICX
 ---
 
 # Lang — `Services` → `Actions` (translator missing-key logic)

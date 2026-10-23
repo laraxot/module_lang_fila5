@@ -8,10 +8,7 @@ type: report
 module: Lang
 updated: 2026-09-01
 qmd: "audit qualita lang phpstan phpmd phpinsights pest coverage soppressioni collisioni case"
-<<<<<<< .merge_file_xRp7Qd
-=======
 status: draft
->>>>>>> .merge_file_r8a0U6
 ---
 
 # Audit di qualita — modulo Lang

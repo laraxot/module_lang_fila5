@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_NBpBHI
-=======
 status: draft
->>>>>>> .merge_file_D3eOv9
 ---
 # Model/Factory/Seeder Audit
 

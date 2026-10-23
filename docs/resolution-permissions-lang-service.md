@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_rC3fe0
-=======
 status: draft
->>>>>>> .merge_file_sDbxc3
 ---
 # Troubleshooting definitivo permessi file_put_contents su lang_service.php
 

@@ -11,10 +11,7 @@ updated: 2026-06-15
 related:
   - ../../../../../../docs/wiki/method-name-homonym-census.md
   - ../../../../../../bashscripts/docs/method-homonym-census.json
-<<<<<<< .merge_file_rg7Wr1
-=======
 status: draft
->>>>>>> .merge_file_Hiipv4
 ---
 
 # Censimento omonimi metodi — Lang

@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "migration filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_1g8T88
-=======
 status: draft
->>>>>>> .merge_file_Z28sM8
 ---
 
 # Analisi Modelli, Factory e Seeder - Modulo Lang
