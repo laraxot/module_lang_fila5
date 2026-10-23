@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "FRAMEWORKS"
 issues: []
 discussions: []
-<<<<<<< .merge_file_wLerSk
-=======
 status: superseded
 superseded_by: frameworks.md
->>>>>>> .merge_file_SCwrle
 ---
 
 # Lang — Framework Integration Notes
@@ -49,7 +46,6 @@ Efficiency principles:
 - Simplification opportunities: [TBD]
 
 ---
-<<<<<<< .merge_file_wLerSk
 title: "FRAMEWORKS"
 type: note
 tags: [documentation]
@@ -58,6 +54,4 @@ updated: 2026-09-26
 qmd: "FRAMEWORKS"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_SCwrle
 *Generated: 2026-08-04*

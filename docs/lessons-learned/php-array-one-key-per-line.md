@@ -12,10 +12,7 @@ description: "Nei file lang/PHP ogni chiave di array sta su una riga; SavePhpArr
 metadata:
   type: lesson-learned
   created: 2026-09-16
-<<<<<<< .merge_file_R7loEV
-=======
 status: draft
->>>>>>> .merge_file_Y9FUZ4
 ---
 
 # Array lang: una chiave per riga

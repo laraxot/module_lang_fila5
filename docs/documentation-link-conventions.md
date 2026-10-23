@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "filament4 migration"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_mk7IAW
-=======
 status: draft
->>>>>>> .merge_file_V69tUf
 ---
 # Convenzioni per i Link nella Documentazione
 

@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_Fm5wD7
-=======
 status: draft
->>>>>>> .merge_file_9sibRT
 ---
 # Storage delle Traduzioni: PHP vs JSON
 

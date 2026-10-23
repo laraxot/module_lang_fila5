@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "test"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_3HZa4X
-=======
 status: draft
->>>>>>> .merge_file_OrV9Av
 ---
 # Task: Aumentare Copertura Test - Lang
 

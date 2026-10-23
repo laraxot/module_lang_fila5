@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_G4OTmu
-=======
 status: draft
->>>>>>> .merge_file_rHBTAc
 ---
 # Risoluzione Conflitto edit_translation_file.php
 

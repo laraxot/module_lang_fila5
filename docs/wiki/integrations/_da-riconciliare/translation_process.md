@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "translation process"
 issues: []
 discussions: []
-<<<<<<< .merge_file_ZcC0Qc
-=======
 status: draft
->>>>>>> .merge_file_OMYBk4
 ---
 
 # Processo di Traduzione: Da Sviluppatore a Traduttore

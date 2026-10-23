@@ -7,10 +7,7 @@ type: user_stories
 tags: [user stories, epics, lang]
 created: 2026-08-04
 updated: 2026-08-04
-<<<<<<< .merge_file_aE6LRX
-=======
 status: draft
->>>>>>> .merge_file_5emqfg
 ---
 # Lang Epics and User Stories
 

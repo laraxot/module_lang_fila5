@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_92Q42D
-=======
 status: draft
->>>>>>> .merge_file_byMKpR
 ---
 # Best Practices per le Migrazioni - Modulo Lang
 

@@ -12,10 +12,7 @@ qmd: "duplicate method bodies Lang identical hash DRY"
 related:
   - ../../../../../../docs/wiki/duplicate-method-bodies-census.md
   - ./method-name-homonyms.md
-<<<<<<< .merge_file_DWZ1sc
-=======
 status: draft
->>>>>>> .merge_file_NavTnX
 ---
 
 # Corpi metodo duplicati — Lang

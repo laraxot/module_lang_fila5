@@ -10,10 +10,7 @@ tags: [on-demand, pattern, wiki, qmd]
 related:
   - ../../docs/wiki/rules/on-demand-pattern.md
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
-<<<<<<< .merge_file_W5hr4s
-=======
 status: draft
->>>>>>> .merge_file_5EKrjA
 ---
 
 # On-Demand Pattern — Module **Lang**

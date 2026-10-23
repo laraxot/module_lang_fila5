@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "migrazione filament"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_HEbwxV
-=======
 status: draft
->>>>>>> .merge_file_gstCy1
 ---
 # Traduzione dei Messaggi di Validazione
 

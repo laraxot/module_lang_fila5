@@ -1,15 +1,12 @@
 ---
 bmad: true
 module: Lang
-<<<<<<< .merge_file_008wYR
-=======
 title: "Code quality — modulo Lang"
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, lang, bmad]
 qmd: "code quality   modulo lang lang"
->>>>>>> .merge_file_dTz1f5
 ---
 # Code quality — modulo Lang
 

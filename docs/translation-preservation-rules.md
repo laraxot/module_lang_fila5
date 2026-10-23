@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "migrazione filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_UnDO9f
-=======
 status: draft
->>>>>>> .merge_file_UBzJ0e
 ---
 # Regole Critiche per la Preservazione delle Traduzioni
 

@@ -15,10 +15,7 @@ related:
   - ../../../../docs/wiki/concepts/ai-harness-module-discipline.md
   - ../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md
   - ../../../../../../bashscripts/tools/prompts/llm-wiki.txt
-<<<<<<< .merge_file_8kIekb
-=======
 status: draft
->>>>>>> .merge_file_gObuON
 ---
 
 # Contratto wiki locale — stub Lang

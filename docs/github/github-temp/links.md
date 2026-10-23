@@ -11,10 +11,7 @@ tags: [migrato-da-txt, lang]
 converted_from: links.txt
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_ZvoXLT
-=======
 status: draft
->>>>>>> .merge_file_oFTFji
 ---
 
 # Links — risorse esterne
