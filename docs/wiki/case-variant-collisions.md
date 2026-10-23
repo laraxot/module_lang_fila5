@@ -1,15 +1,12 @@
 ---
 bmad: true
 module: Lang
-<<<<<<< .merge_file_BuIODc
-=======
 title: "Collisioni di nome per sola differenza di maiuscole"
 type: note
 status: draft
 updated: 2026-10-08
 tags: [docs, lang, wiki]
 qmd: "collisioni di nome per sola differenza di maiuscole lang"
->>>>>>> .merge_file_nIW3D2
 ---
 # Collisioni di nome per sola differenza di maiuscole
 

@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "MIGRATIONS"
 issues: []
 discussions: []
-<<<<<<< .merge_file_AAKODe
-=======
 status: superseded
 superseded_by: migrations.md
->>>>>>> .merge_file_vcYBnk
 ---
 
 # Migrations — Lang Module
@@ -339,7 +336,6 @@ php artisan migrate --path=Modules/Lang/database/migrations
 **Soft deletes**: ❌ None use soft deletes (correct for Lang domain)
 
 ---
-<<<<<<< .merge_file_AAKODe
 
 title: "MIGRATIONS"
 type: note
@@ -349,6 +345,4 @@ updated: 2026-09-26
 qmd: "MIGRATIONS"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_vcYBnk
 *Last updated: 2026-07-15*

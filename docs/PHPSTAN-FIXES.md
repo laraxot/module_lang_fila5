@@ -7,10 +7,7 @@ type: documentation
 tags: [phpstan, fixes, compliance]
 created: 2026-06-09
 updated: 2026-06-09
-<<<<<<< .merge_file_TBJtJf
-=======
 status: draft
->>>>>>> .merge_file_yIyFCr
 ---
 
 # PHPStan Compliance Documentation

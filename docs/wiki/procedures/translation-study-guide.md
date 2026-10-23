@@ -13,10 +13,7 @@ metadata:
   type: procedure
   source: prompts/01.txt (migrated 2026-07-30)
   related_docs: []
-<<<<<<< .merge_file_4W6CP6
-=======
 status: draft
->>>>>>> .merge_file_x3uM2Y
 ---
 
 # Translation Study Guide — Laravel Lang Module

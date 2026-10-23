@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "links01"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_S7kvYU
-=======
 status: draft
->>>>>>> .merge_file_QHEBGG
 ---
 # Testing ServiceProvider Fix - Lang Module
 

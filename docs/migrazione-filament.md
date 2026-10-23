@@ -10,9 +10,6 @@ updated: 2026-07-14
 qmd: "migrazione filament"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_J6eLVg
-=======
 status: draft
->>>>>>> .merge_file_2Ecu9j
 ---
 

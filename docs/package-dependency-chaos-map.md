@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_Kmn5OG
-=======
 status: draft
->>>>>>> .merge_file_GXUhJc
 ---
 # Package Dependency Chaos Map (Lang)
 

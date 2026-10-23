@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_3DA86i
-=======
 status: draft
->>>>>>> .merge_file_0RnvsD
 ---
 # Massimizzare il livello di confidenza
 

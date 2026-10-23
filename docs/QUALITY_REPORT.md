@@ -8,11 +8,8 @@ module: Lang
 created: 2026-08-24
 updated: 2026-08-24
 qmd: "Lang quality report phpstan pest coverage test ratio"
-<<<<<<< .merge_file_xDhdbW
-=======
 status: superseded
 superseded_by: quality_report.md
->>>>>>> .merge_file_gJm6ho
 ---
 
 # Quality Report — Lang

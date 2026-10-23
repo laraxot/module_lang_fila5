@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "filament4 migration"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_XjB8Ew
-=======
 status: draft
->>>>>>> .merge_file_QSWcvH
 ---
 # Laravel Localization (mcamara) — Consolidated Reference
 
