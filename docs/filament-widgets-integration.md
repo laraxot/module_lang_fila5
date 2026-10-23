@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "readme.es 1"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_sdWNPq
-=======
 status: draft
->>>>>>> .merge_file_8XZg9p
 ---
 # Language Module - Filament Widgets Integration
 

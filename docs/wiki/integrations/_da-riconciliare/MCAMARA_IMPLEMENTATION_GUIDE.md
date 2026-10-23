@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "MCAMARA IMPLEMENTATION GUIDE"
 issues: []
 discussions: []
-<<<<<<< .merge_file_NrMAMP
-=======
 status: superseded
 superseded_by: mcamara_implementation_guide.md
->>>>>>> .merge_file_CsEhDb
 ---
 
 # Guida all'Implementazione di mcamara/laravel-localization

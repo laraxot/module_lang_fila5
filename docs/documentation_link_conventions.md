@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_NyRNJe
-=======
 status: draft
->>>>>>> .merge_file_Of06ey
 ---
 # Convenzioni per i Link nella Documentazione
 

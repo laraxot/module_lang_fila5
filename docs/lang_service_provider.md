@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "migration filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_llgTPb
-=======
 status: draft
->>>>>>> .merge_file_Lk2uSu
 ---
 # LangServiceProvider: Analisi e Proposte di Miglioramento
 

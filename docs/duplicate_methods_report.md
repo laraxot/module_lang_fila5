@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_8Q4aEs
-=======
 status: draft
->>>>>>> .merge_file_yqZujH
 ---
 # Report: Metodi con nome duplicato nei moduli e nei temi
 

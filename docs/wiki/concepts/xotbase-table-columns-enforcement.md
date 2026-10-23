@@ -11,10 +11,7 @@ updated: 2026-05-07
 tags: [xotbase, filament, tables, enforcement]
 related:
   - ../../../../../../docs/wiki/concepts/xotbase-table-columns-enforcement.md
-<<<<<<< .merge_file_TyGT2Y
-=======
 status: draft
->>>>>>> .merge_file_1fIdqt
 ---
 
 # Lang Module: XotBaseResourceTable Columns

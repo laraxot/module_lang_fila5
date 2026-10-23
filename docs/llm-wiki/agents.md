@@ -9,10 +9,7 @@ issues: []
 discussions: []
 related:
   - ./coding-agent-manifests.md
-<<<<<<< .merge_file_5MliGm
-=======
 status: draft
->>>>>>> .merge_file_WvyhvA
 ---
 
 # Lang {{TYPE^}} LLM Wiki Agent Instructions

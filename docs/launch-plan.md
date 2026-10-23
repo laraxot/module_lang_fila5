@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "test 1"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_BMQbnT
-=======
 status: draft
->>>>>>> .merge_file_UQgBop
 ---
 # Product Launch Plan: Lang Module v1.0
 
