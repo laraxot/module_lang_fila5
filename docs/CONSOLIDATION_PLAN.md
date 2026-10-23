@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "CONSOLIDATION PLAN"
 issues: []
 discussions: []
-<<<<<<< .merge_file_x7VpUK
-=======
 status: superseded
 superseded_by: consolidation_plan.md
->>>>>>> .merge_file_BkT1FB
 ---
 
 # Lang Module Docs Consolidation Plan
@@ -22,7 +19,6 @@ superseded_by: consolidation_plan.md
 **Strategy:** Delete duplicates → Consolidate by topic → Move research to wiki/
 
 ---
-<<<<<<< .merge_file_x7VpUK
 
 title: "CONSOLIDATION PLAN"
 type: note
@@ -32,8 +28,6 @@ updated: 2026-09-26
 qmd: "CONSOLIDATION PLAN"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_BkT1FB
 ## Quick Stats
 
 | Category | Current | Target | Action |

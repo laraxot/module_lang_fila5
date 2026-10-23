@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "readme.es 1"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_mEahVn
-=======
 status: draft
->>>>>>> .merge_file_7AbNNB
 ---
 # Gestione delle Traduzioni dei Messaggi di Validazione
 

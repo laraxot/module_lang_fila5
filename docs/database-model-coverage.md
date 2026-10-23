@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "database model coverage"
 issues: []
 discussions: []
-<<<<<<< .merge_file_jm2AFO
-=======
 status: draft
->>>>>>> .merge_file_x9Ydrf
 ---
 
 # Lang — Copertura Model / Migration / Seeder / Factory

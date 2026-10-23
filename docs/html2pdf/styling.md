@@ -9,10 +9,7 @@ type: reference
 updated: 2026-05-21
 related:
   - "../../../Media/docs/html2pdf/styling.md"
-<<<<<<< .merge_file_a7z4fG
-=======
 status: draft
->>>>>>> .merge_file_uDNGDG
 ---
 
 # Html2Pdf — styling

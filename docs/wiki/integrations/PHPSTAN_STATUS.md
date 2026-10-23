@@ -8,11 +8,8 @@ type: integration
 tags: [integrations, modules, lang]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_RycNf0
-=======
 status: superseded
 superseded_by: phpstan_status.md
->>>>>>> .merge_file_n0dstP
 ---
 
 # PHPStan Status — Lang Module

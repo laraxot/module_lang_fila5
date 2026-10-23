@@ -13,10 +13,7 @@ metadata:
   type: lesson-learned
   created: 2026-09-15
   github_issues: []
-<<<<<<< .merge_file_B8Rkuk
-=======
 status: draft
->>>>>>> .merge_file_ZKTF0G
 ---
 
 # `helper_text` vuoto quando coincide con la chiave del campo

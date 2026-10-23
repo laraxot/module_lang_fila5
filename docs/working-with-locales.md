@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_cIWtMi
-=======
 status: draft
->>>>>>> .merge_file_t0nRr7
 ---
 # Gestione delle Lingue (Locales) in Laravel
 

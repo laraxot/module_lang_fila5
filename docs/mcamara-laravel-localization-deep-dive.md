@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "google translate"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_IvjVqF
-=======
 status: draft
->>>>>>> .merge_file_Ij3erM
 ---
 # mcamara/laravel-localization Deep Dive (<nome progetto>)
 

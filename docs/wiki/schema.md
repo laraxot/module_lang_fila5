@@ -11,10 +11,7 @@ tags:
   - conventions
   - llm-instructions
 created: 2026-04-15
-<<<<<<< .merge_file_GFSZDt
-=======
 status: draft
->>>>>>> .merge_file_BeeKYH
 ---
 
 # Wiki Schema - Lang

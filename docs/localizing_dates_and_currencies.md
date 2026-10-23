@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_ZOzdZl
-=======
 status: draft
->>>>>>> .merge_file_KfAJ62
 ---
 # Localizzazione di Date e Valute
 

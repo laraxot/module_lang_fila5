@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "google translate"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_1zZWPF
-=======
 status: draft
->>>>>>> .merge_file_Q5W5Nv
 ---
 # NestedSet Migration Best Practices - Lang Module
 

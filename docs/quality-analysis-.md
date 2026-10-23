@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_PG0es4
-=======
 status: draft
->>>>>>> .merge_file_H9R5Sj
 ---
 # Quality Analysis Report - Lang Module
 **Date**: 2025-11-11

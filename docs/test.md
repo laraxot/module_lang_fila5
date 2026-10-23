@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "test"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_ZaMsCP
-=======
 status: draft
->>>>>>> .merge_file_8ZJ7y2
 ---
 fff
 

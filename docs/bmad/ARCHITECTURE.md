@@ -4,11 +4,8 @@ type: architecture
 tags: [module, architecture, lang]
 created: 2026-08-04
 updated: 2026-08-04
-<<<<<<< .merge_file_j6X4fk
-=======
 status: draft
 qmd: "lang module   architecture lang"
->>>>>>> .merge_file_9uv6Ry
 ---
 # Lang Module — Architecture
 

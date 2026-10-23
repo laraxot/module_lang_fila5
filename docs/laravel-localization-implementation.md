@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "migrazione filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_pRVK1J
-=======
 status: draft
->>>>>>> .merge_file_GbIaM1
 ---
 # Implementazione della Localizzazione
 

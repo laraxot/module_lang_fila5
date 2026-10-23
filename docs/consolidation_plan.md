@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "consolidation plan"
 issues: []
 discussions: []
-<<<<<<< .merge_file_SOTG3m
-=======
 status: draft
->>>>>>> .merge_file_sJRfNo
 ---
 
 # Lang Module Docs Consolidation Plan
@@ -21,7 +18,6 @@ status: draft
 **Strategy:** Delete duplicates → Consolidate by topic → Move research to wiki/
 
 ---
-<<<<<<< .merge_file_SOTG3m
 
 title: "consolidation plan"
 type: note
@@ -31,8 +27,6 @@ updated: 2026-09-26
 qmd: "consolidation plan"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_sJRfNo
 ## Quick Stats
 
 | Category | Current | Target | Action |

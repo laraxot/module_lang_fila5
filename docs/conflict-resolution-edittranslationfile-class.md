@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "links01"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_LdhQ2T
-=======
 status: draft
->>>>>>> .merge_file_iwayi6
 ---
 # Risoluzione Conflitto EditTranslationFile.php (Classe)
 

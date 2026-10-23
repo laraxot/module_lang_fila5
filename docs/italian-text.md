@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "migration filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_8vJv0Z
-=======
 status: draft
->>>>>>> .merge_file_jJQLA0
 ---
 # Italian Text in Non-Italian Translation Files - Audit Report
 

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "translation audit completion 2025"
 issues: []
 discussions: []
-<<<<<<< .merge_file_rm4kYq
-=======
 status: draft
->>>>>>> .merge_file_VOu5a1
 ---
 
 # Audit Traduzioni Completato - 2025
@@ -196,7 +193,6 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 4. Monitorare l'introduzione di nuove traduzioni
 
 ---
-<<<<<<< .merge_file_rm4kYq
 
 title: "translation audit completion 2025"
 type: note
@@ -206,8 +202,6 @@ updated: 2026-09-26
 qmd: "translation audit completion 2025"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_VOu5a1
 **Ultimo aggiornamento**: Gennaio 2025
 **Autore**: Sistema di Correzione Automatica
 **Versione**: 1.0

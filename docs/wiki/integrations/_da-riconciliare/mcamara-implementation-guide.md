@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "mcamara implementation guide"
 issues: []
 discussions: []
-<<<<<<< .merge_file_rXGWuM
-=======
 status: draft
->>>>>>> .merge_file_1XQ8fO
 ---
 
 # Guida all'Implementazione di mcamara/laravel-localization

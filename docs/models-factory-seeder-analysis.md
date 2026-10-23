@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_qmueJA
-=======
 status: draft
->>>>>>> .merge_file_QVuE3E
 ---
 # Analisi Modelli, Factory e Seeder - Modulo Lang
 

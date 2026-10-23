@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_E4XObC
-=======
 status: draft
->>>>>>> .merge_file_nRKdUe
 ---
 # Correzioni Pattern ".navigation" - Gennaio 2025
 
