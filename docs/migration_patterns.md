@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "migrazione filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_oCgFHu
-=======
 status: draft
->>>>>>> .merge_file_5gDDN1
 ---
 # Migration Patterns for Lang Module
 

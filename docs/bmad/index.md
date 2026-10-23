@@ -3,11 +3,8 @@ title: Lang — indice BMAD
 type: index
 tags: [docs, bmad, lang]
 qmd: "Lang indice BMAD documentazione"
-<<<<<<< .merge_file_61rqg4
-=======
 status: draft
 updated: 2026-10-09
->>>>>>> .merge_file_KKAlc8
 ---
 
 # Lang — indice BMAD

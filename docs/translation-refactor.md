@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_7yDcEP
-=======
 status: draft
->>>>>>> .merge_file_M13Q5G
 ---
 # Refactor Completo File di Traduzione - Riepilogo Finale
 

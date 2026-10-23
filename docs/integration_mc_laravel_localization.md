@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_I2Uahw
-=======
 status: draft
->>>>>>> .merge_file_hn5Sox
 ---
 # Integrazione di mcamara/laravel-localization
 

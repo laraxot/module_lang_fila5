@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "migration filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_5td6ri
-=======
 status: draft
->>>>>>> .merge_file_MNLHGe
 ---
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 

@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_Xh4Xwk
-=======
 status: draft
->>>>>>> .merge_file_bMm02W
 ---
 # Integrazione di mcamara/laravel-localization con Laravel Volt
 

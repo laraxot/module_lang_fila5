@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "migration filament"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_hynTUa
-=======
 status: draft
->>>>>>> .merge_file_5lgjk0
 ---
 # Collegamento alle Traduzioni del Modulo Chart
 

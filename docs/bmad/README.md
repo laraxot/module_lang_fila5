@@ -7,13 +7,6 @@ updated: 2026-10-06
 qmd: "README"
 issues: []
 discussions: []
-<<<<<<< .merge_file_cVlx33
----
-
-# Lang bmad docs
-
-This folder contains BMAD method documentation for the Lang module.
-=======
 status: draft
 ---
 
@@ -28,4 +21,3 @@ status: draft
 - [Decision log](./decision-log.md)
 
 This folder contains BMAD method documentation for the Lang module.
->>>>>>> .merge_file_tJmY91

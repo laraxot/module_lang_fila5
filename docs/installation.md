@@ -10,10 +10,7 @@ title: Installazione Automatizzata
 description: Installazione Automatizzata
 extends: _layouts.documentation
 section: content
-<<<<<<< .merge_file_FYvXMv
-=======
 status: draft
->>>>>>> .merge_file_HurOWN
 ---
 
 # Installazione {#installazione}

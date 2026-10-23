@@ -8,10 +8,7 @@ type: integration
 tags: [integrations, modules, lang]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_YrOgOu
-=======
 status: draft
->>>>>>> .merge_file_LghaIt
 ---
 
 # Lang Module — Mappa Graphify

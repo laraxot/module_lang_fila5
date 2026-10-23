@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "readme.es 1"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_u7TlMg
-=======
 status: draft
->>>>>>> .merge_file_dKkk14
 ---
 # Localizzazione di Date e Valute
 

@@ -8,10 +8,7 @@ type: guideline
 module: Lang
 updated: 2026-09-01
 qmd: "git lfs vietato gitattributes prototipo binari blob normali lang puntatori immagini"
-<<<<<<< .merge_file_MFrOtI
-=======
 status: draft
->>>>>>> .merge_file_oBnXBN
 ---
 
 # Git LFS non si usa in questo progetto

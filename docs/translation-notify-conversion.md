@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "migration filament"
 related:
   - "./italian-text-refined-audit-report.md"
-<<<<<<< .merge_file_dyrzpN
-=======
 status: draft
->>>>>>> .merge_file_GXZIVG
 ---
 # Standardizzazione Traduzioni Modulo Notify
 
