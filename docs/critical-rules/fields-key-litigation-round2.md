@@ -11,6 +11,7 @@ qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
   - "../italian-text-refined-audit-report.md"
+status: draft
 ---
 # FURIOUS LITIGATION: Why "fields" Key is SACRED and IMMUTABLE
 

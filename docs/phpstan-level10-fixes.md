@@ -7,7 +7,8 @@ updated: 2026-09-26
 qmd: "phpstan level10 fixes"
 issues: []
 discussions: []
-status: draft
+status: superseded
+superseded_by: phpstan-level10es.md
 ---
 
 # Correzioni PHPStan Livello 10 - Modulo Lang

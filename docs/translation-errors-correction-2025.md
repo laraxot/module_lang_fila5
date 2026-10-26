@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "translation errors correction 2025"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Correzione Errori Traduzioni - 2025
@@ -262,15 +263,6 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 4. Monitorare l'introduzione di nuove traduzioni
 
 ---
-
-title: "translation errors correction 2025"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation errors correction 2025"
-issues: []
-discussions: []
 **Ultimo aggiornamento**: Gennaio 2025
 **Autore**: Sistema di Correzione Automatica
 **Versione**: 1.0

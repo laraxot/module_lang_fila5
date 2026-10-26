@@ -9,6 +9,8 @@ qmd: "test 1"
 related:
   - "./italian-text-refined-audit-report.md"
   - "../../italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: ../../architecture/translation-structure-expanded.md
 ---
 # Struttura Espansa per File di Traduzione - Progetto <nome progetto>
 

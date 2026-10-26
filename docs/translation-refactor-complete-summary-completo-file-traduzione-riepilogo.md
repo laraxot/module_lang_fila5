@@ -6,6 +6,7 @@ created: 2026-01-20
 updated: 2026-10-20
 module: Lang
 tags: [docs, lang]
+qmd: "refactor completo file di traduzione - riepilogo finale lang"
 ---
 
 # Refactor Completo File di Traduzione - Riepilogo Finale

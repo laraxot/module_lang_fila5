@@ -7,7 +7,8 @@ updated: 2026-09-26
 qmd: "translation process"
 issues: []
 discussions: []
-status: draft
+status: superseded
+superseded_by: translation-process.md
 ---
 
 # Processo di Traduzione: Da Sviluppatore a Traduttore

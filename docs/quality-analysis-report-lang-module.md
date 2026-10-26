@@ -1,11 +1,12 @@
 ---
 title: "Quality Analysis Report - Lang Module"
 type: note
-status: draft
 created: 2026-10-20
 updated: 2026-10-20
 module: Lang
 tags: [docs, lang]
+status: superseded
+superseded_by: quality-analysis-.md
 ---
 
 # Quality Analysis Report - Lang Module

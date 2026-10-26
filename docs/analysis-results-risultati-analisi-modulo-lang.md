@@ -6,6 +6,7 @@ created: 2026-05-25
 updated: 2026-10-20
 module: Lang
 tags: [docs, lang]
+qmd: "risultati analisi modulo lang - 2025-01-06 lang"
 ---
 
 # Risultati Analisi Modulo Lang - 2025-01-06
