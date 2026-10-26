@@ -7,11 +7,8 @@ type: documentation
 created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
-<<<<<<< .merge_file_uqXDf2
-=======
 status: superseded
 superseded_by: project-structure.md
->>>>>>> .merge_file_QArIgz
 ---
 
 # Project Structure — Module **Lang**
@@ -102,19 +99,16 @@ graph TD
 
 ## Riferimenti Globali
 
-<<<<<<< .merge_file_uqXDf2
 - [Project Wiki Root](../../docs/wiki/)
 - [Global Rules](../../docs/wiki/rules/)
 - [Global Skills](../../docs/wiki/skills/)
 - [Global Commands](../../docs/wiki/commands/)
 - [Global Memories](../../docs/wiki/memories/)
-=======
 - [Project Wiki Root](../..)
 - [Global Rules](../../rules)
 - [Global Skills](../../skills)
 - [Global Commands](../../commands)
 - [Global Memories](../../memories)
->>>>>>> .merge_file_QArIgz
 
 ## Setup Iniziale (per nuovi moduli)
 

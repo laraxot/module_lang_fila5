@@ -9,11 +9,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "links"
 related:
-<<<<<<< .merge_file_uZAflL
   - "./italian-text-refined-audit-report.md"
-=======
   - "../../../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_pO10EU
 ---
 # Correzione Convenzione Naming Cartelle Docs - Gennaio 2025
 

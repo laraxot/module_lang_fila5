@@ -9,11 +9,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "migrazione filament 4"
 related:
-<<<<<<< .merge_file_lAt7JX
   - "./italian-text-refined-audit-report.md"
-=======
   - "../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_ztRXMf
 ---
 # Ottimizzazioni Performance Modulo Lang
 

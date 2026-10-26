@@ -107,11 +107,8 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 - ✅ Coerenza terminologica tra moduli
 
 ## Collegamenti Correlati
-<<<<<<< .merge_file_6RYxNe
 - [Errori Comuni Traduzione](../errori_comuni_traduzione.md)
-=======
 - [Errori Comuni Traduzione](../../../errori_comuni_traduzione.md)
->>>>>>> .merge_file_Sfp7ZJ
 - [Correzioni Errori Sintassi 2025](../correzioni_errori_sintassi_2025.md)
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 

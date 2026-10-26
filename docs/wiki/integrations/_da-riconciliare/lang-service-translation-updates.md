@@ -131,7 +131,6 @@ Nel campo `value`, il valore di `helper_text` era uguale alla chiave del padre (
 ## Collegamenti
 
 ### Documentazione Correlata
-<<<<<<< .merge_file_kZ7zrj
 - [Translation Standards](translation-standards.md)
 - [Helper Text Rules](translation-helper-text-standards.md)
 - [Lang Service Provider](lang-service-provider.md)
@@ -139,7 +138,6 @@ Nel campo `value`, il valore di `helper_text` era uguale alla chiave del padre (
 ### Regole Applicate
 - [Regola Helper Text Critica](../../docs/translation-helper-text-critical-rule.md)
 - [Struttura Espansa Traduzioni](struttura-traduzioni.md)
-=======
 - [Translation Standards](../../../translation-standards.md)
 - [Helper Text Rules](../../../translation-helper-text-standards.md)
 - [Lang Service Provider](../../../lang-service-provider.md)
@@ -147,7 +145,6 @@ Nel campo `value`, il valore di `helper_text` era uguale alla chiave del padre (
 ### Regole Applicate
 - [Regola Helper Text Critica](../../docs/translation-helper-text-critical-rule.md)
 - [Struttura Espansa Traduzioni](../../../struttura-traduzioni.md)
->>>>>>> .merge_file_LA8gsE
 - [Convenzioni Multi-Lingua](../../../docs/multi-language-conventions.md)
 
 ## Note Implementative

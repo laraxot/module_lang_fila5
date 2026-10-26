@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'it' => 'Italy',
     'fr' => 'France',

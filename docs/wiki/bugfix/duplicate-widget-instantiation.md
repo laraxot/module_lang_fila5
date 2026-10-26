@@ -7,11 +7,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
-<<<<<<< .merge_file_EJ2qAv
   - "./italian-text-refined-audit-report.md"
-=======
   - "../../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_62MXLB
 ---
 # Bug Fix: Duplicate Widget Instantiation in LanguageSwitcher
 
@@ -157,15 +154,12 @@ public function __construct()
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_EJ2qAv
 - [LanguageSwitcher Component](../app/View/Components/LanguageSwitcher.php)
 - [LanguageSwitcherWidget](../app/Filament/Widgets/LanguageSwitcherWidget.php)
 - [Widgets Documentation](./widgets.md)
-=======
 - [LanguageSwitcher Component](../../../app/View/Components/LanguageSwitcher.php)
 - [LanguageSwitcherWidget](../../../app/Filament/Widgets/LanguageSwitcherWidget.php)
 - [Widgets Documentation](../../widgets.md)
->>>>>>> .merge_file_62MXLB
 - [Super Mucca Workflow](../../Xot/docs/super-mucca-workflow.md)
 - [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
 

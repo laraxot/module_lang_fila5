@@ -9,11 +9,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "test 1"
 related:
-<<<<<<< .merge_file_s8aXNg
   - "./italian-text-refined-audit-report.md"
-=======
   - "../../../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_hJo8Cn
 ---
 # Rinvex Countries Usage in Lang Module
 
@@ -252,17 +249,14 @@ if ($country) {
 
 ## Related Documentation
 
-<<<<<<< .merge_file_s8aXNg
 - [Translation File Management](translation-file-management.md)
 - [Filament Components](filament.md)
 - [Localization System](laravel-localization.md)
 - [Static Text Translation](static-text-translation.md)
-=======
 - [Translation File Management](../../../translation-file-management.md)
 - [Filament Components](filament.md)
 - [Localization System](laravel-localization.md)
 - [Static Text Translation](../../../static-text-translation.md)
->>>>>>> .merge_file_hJo8Cn
 
 ## External Resources
 

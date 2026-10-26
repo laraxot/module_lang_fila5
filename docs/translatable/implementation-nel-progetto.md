@@ -9,11 +9,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "redundancy analysis"
 related:
-<<<<<<< .merge_file_EwJax5
   - "./italian-text-refined-audit-report.md"
-=======
   - "../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_1lpTWT
 ---
 # Implementazione di Spatie Laravel Translatable nel Progetto
 
@@ -311,12 +308,9 @@ public function testTranslations()
 
 - [Gestione delle Traduzioni Mancanti](./gestione-traduzioni-mancanti.md)
 - [Best Practices per Laravel Translatable](./best-practices.md)
-<<<<<<< .merge_file_EwJax5
 - [Configurazione Laravel Localization](../../Cms/docs/localization/localization-setup.md)
 - [Configurazione Laravel Localization](../../cms/docs/localization/localization-setup.md)
-=======
 - [Configurazione Laravel Localization](../../../Cms/docs/localization/localization-setup.md)
 - [Configurazione Laravel Localization](../../../Cms/docs/localization/localization-setup.md)
->>>>>>> .merge_file_1lpTWT
 - [Documentazione Ufficiale Spatie Translatable](https://spatie.be/docs/laravel-translatable/v6/basic-usage/handling-missing-translations)
 - [Documentazione Plugin Filament](https://filamentphp.com/plugins/filament-spatie-translatable)

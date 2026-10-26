@@ -7,11 +7,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
-<<<<<<< .merge_file_KmXR8x
   - "./italian-text-refined-audit-report.md"
-=======
   - "../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_329cuL
 ---
 # 📚 **API Reference Modulo Lang - Laraxot**
 
@@ -843,7 +840,6 @@ public function get(string $key, array $replace = [], ?string $locale = null): s
 ### **1. Documentazione**
 - [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices
-<<<<<<< .merge_file_KmXR8x
 - [TROUBLESHOOTING.md](troubleshooting.md) - Troubleshooting
 - [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](best_practices.md) - Best practices
@@ -856,7 +852,6 @@ public function get(string $key, array $replace = [], ?string $locale = null): s
 ### **2. Esempi**
 - [Examples/](../Examples/) - Esempi di utilizzo
 - [Tests/](../Tests/) - Test unitari e di integrazione
-=======
 - [TROUBLESHOOTING.md](../troubleshooting.md) - Troubleshooting
 - [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](best_practices.md) - Best practices
@@ -869,7 +864,6 @@ public function get(string $key, array $replace = [], ?string $locale = null): s
 ### **2. Esempi**
 - [Examples/](../Examples/) - Esempi di utilizzo
 - [Tests/](../../tests) - Test unitari e di integrazione
->>>>>>> .merge_file_329cuL
 
 ### **3. Framework**
 - [Laraxot Framework](https://github.com/laraxot/laraxot)

@@ -21,15 +21,12 @@ Il LangServiceProvider è un componente fondamentale di <nome progetto> che gest
 
 La documentazione completa del LangServiceProvider è disponibile nel modulo Lang:
 
-<<<<<<< .merge_file_jqGtVW
 - [Analisi e Proposte di Miglioramento](../laravel/Modules/Lang/docs/lang-service-provider.md)
 - [Analisi e Proposte di Miglioramento](../laravel/modules/lang/docs/lang-service-provider.md)
 - [Analisi e Proposte di Miglioramento](../laravel/modules/lang/docs/lang-service-provider.md)
-=======
 - [Analisi e Proposte di Miglioramento](lang-service-provider.md)
 - [Analisi e Proposte di Miglioramento](lang-service-provider.md)
 - [Analisi e Proposte di Miglioramento](lang-service-provider.md)
->>>>>>> .merge_file_jm8sW8
 
 ## Caratteristiche Principali
 

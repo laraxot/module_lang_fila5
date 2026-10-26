@@ -97,19 +97,16 @@ graph TD
 
 ## Riferimenti Globali
 
-<<<<<<< .merge_file_IcE18e
 - [Project Wiki Root](../../docs/wiki/)
 - [Global Rules](../../docs/wiki/rules/)
 - [Global Skills](../../docs/wiki/skills/)
 - [Global Commands](../../docs/wiki/commands/)
 - [Global Memories](../../docs/wiki/memories/)
-=======
 - [Project Wiki Root](../..)
 - [Global Rules](../../rules)
 - [Global Skills](../../skills)
 - [Global Commands](../../commands)
 - [Global Memories](../../memories)
->>>>>>> .merge_file_lZt40G
 
 ## Setup Iniziale (per nuovi moduli)
 
