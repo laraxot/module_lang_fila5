@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "quality improvements 2025 01 06"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06

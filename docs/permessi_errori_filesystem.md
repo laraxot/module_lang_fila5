@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 # Gestione Permessi e Errori Filesystem su File di Lingua (Lang)
 

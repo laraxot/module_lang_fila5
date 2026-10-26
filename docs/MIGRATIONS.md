@@ -336,13 +336,4 @@ php artisan migrate --path=Modules/Lang/database/migrations
 **Soft deletes**: ❌ None use soft deletes (correct for Lang domain)
 
 ---
-
-title: "MIGRATIONS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "MIGRATIONS"
-issues: []
-discussions: []
 *Last updated: 2026-07-15*

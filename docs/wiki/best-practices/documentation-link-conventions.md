@@ -9,6 +9,8 @@ qmd: "links01"
 related:
   - "./italian-text-refined-audit-report.md"
   - "../../italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: ../../best-practices/documentation-link-conventions.md
 ---
 # Convenzioni per i Link nella Documentazione
 

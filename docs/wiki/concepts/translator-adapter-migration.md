@@ -13,6 +13,7 @@ related:
   - ../../../../docs/wiki/rules/no-services-rule.md
   - ../../../../../../docs/wiki/rules/no-services-rule.md
   - lang-services-to-actions.md
+status: draft
 ---
 
 # Lang — `TranslatorService` → `TranslatorAction`

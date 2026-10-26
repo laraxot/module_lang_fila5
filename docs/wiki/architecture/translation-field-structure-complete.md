@@ -9,6 +9,7 @@ qmd: "test 1"
 related:
   - "./italian-text-refined-audit-report.md"
   - "../../italian-text-refined-audit-report.md"
+status: draft
 ---
 # Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>
 

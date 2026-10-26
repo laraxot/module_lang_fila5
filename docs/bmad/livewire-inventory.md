@@ -22,8 +22,8 @@ related:
   - ../../../Cms/docs/bmad/livewire-inventory.md
   - ../../../UI/docs/bmad/livewire-widget-project-context.md
   - ../stories/12.1.retire-lang-http-switchers.story.md
-  - ../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md
-  - ../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md
+  - ../../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md
+  - ../../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md
 ---
 
 # Inventario: Livewire HTTP → Filament (Lang)

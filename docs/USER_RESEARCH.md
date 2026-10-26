@@ -11,7 +11,7 @@ qmd: "migrazione filament"
 related:
   - "./italian-text-refined-audit-report.md"
 status: superseded
-superseded_by: user_research.md
+superseded_by: user-research.md
 ---
 # Lang Module - User Research
 

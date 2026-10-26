@@ -11,6 +11,7 @@ qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
   - "../italian-text-refined-audit-report.md"
+status: draft
 ---
 # Risoluzione Conflitto in .vscode/.php-cs-fixer.php
 

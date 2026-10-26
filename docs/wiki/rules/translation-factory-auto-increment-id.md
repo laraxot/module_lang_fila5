@@ -15,6 +15,7 @@ related:
   - ../../../../../docs/wiki/bmad/architecture-phpunit-central-config.md
   - ../../../../../../docs/wiki/rules/testing-modules-pest.md
   - ../../../../../../docs/wiki/bmad/architecture-phpunit-central-config.md
+status: draft
 ---
 
 # Translation factory — auto-increment id

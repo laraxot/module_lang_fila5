@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "google translate"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 # Gestione Permessi e Errori Filesystem su File di Lingua (Lang)
 

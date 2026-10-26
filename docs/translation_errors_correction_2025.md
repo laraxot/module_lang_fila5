@@ -6,6 +6,7 @@ created: 2026-01-20
 updated: 2026-10-20
 module: Lang
 tags: [docs, lang]
+qmd: "correzione errori traduzioni - 2025 lang"
 ---
 
 # Correzione Errori Traduzioni - 2025

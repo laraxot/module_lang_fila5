@@ -18,15 +18,6 @@ status: draft
 **Strategy:** Delete duplicates → Consolidate by topic → Move research to wiki/
 
 ---
-
-title: "consolidation plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "consolidation plan"
-issues: []
-discussions: []
 ## Quick Stats
 
 | Category | Current | Target | Action |

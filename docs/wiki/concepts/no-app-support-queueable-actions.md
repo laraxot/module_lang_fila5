@@ -12,6 +12,7 @@ discussions:
 related:
   - ../../../../docs/wiki/rules/queueable-action-trait-mandatory.md
   - ../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md
+status: draft
 ---
 
 # no `app/Support/` — business logic in QueueableAction

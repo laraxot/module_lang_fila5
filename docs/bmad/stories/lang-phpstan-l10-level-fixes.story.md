@@ -2,13 +2,14 @@
 title: "Lang — PHPStan Level 10 fixes (2026-10-06)"
 type: story
 module: Lang
-status: in_progress
 created: 2026-10-06
 updated: 2026-10-06
 phase: quality-gates
 priority: P1
 related:
   - cluster3-phpstan-swarm-20261006.story.md
+status: superseded
+superseded_by: lang-phpstan-l10.story.md
 ---
 
 # Lang — PHPStan Level 10 fixes (2026-10-06)

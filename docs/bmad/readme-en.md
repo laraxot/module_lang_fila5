@@ -9,6 +9,8 @@ qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
   - "../italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: ../wiki/readme-en.md
 ---
 # 🌐 Lang — English presentation
 

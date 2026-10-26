@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 # Correzione Errori di Sintassi nei File di Traduzione
 

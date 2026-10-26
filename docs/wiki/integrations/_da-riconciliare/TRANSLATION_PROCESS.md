@@ -8,7 +8,7 @@ qmd: "TRANSLATION PROCESS"
 issues: []
 discussions: []
 status: superseded
-superseded_by: translation_process.md
+superseded_by: translation-process.md
 ---
 
 # Processo di Traduzione: Da Sviluppatore a Traduttore

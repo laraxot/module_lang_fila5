@@ -10,7 +10,8 @@ updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
+status: superseded
+superseded_by: fixes-syntaxs.md
 ---
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 

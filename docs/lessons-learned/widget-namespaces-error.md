@@ -11,6 +11,7 @@ qmd: "filament4 migration"
 related:
   - "./italian-text-refined-audit-report.md"
   - "../italian-text-refined-audit-report.md"
+status: draft
 ---
 # Lesson Learned: Errore Namespace Widget di Autenticazione
 

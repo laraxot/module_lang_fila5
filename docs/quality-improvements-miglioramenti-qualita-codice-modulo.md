@@ -6,6 +6,7 @@ created: 2026-01-20
 updated: 2026-10-20
 module: Lang
 tags: [docs, lang]
+qmd: "miglioramenti qualità codice - modulo lang - 2025-01-06 lang"
 ---
 
 # Miglioramenti Qualità Codice - Modulo Lang - 2025-01-06

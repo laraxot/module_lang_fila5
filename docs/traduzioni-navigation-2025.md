@@ -6,6 +6,7 @@ created: 2026-01-20
 updated: 2026-10-20
 module: Lang
 tags: [docs, lang]
+qmd: "traduzioni con '.navigation' - audit completo 2025 lang"
 ---
 
 # Traduzioni con ".navigation" - Audit Completo 2025

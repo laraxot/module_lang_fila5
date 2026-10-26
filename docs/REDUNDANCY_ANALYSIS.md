@@ -11,6 +11,6 @@ qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
 status: superseded
-superseded_by: redundancy_analysis.md
+superseded_by: redundancy-analysis.md
 ---
 Redundancy analysis available: docs/analysis/redundancies/summary.md
