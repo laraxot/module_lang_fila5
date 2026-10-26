@@ -7,11 +7,8 @@ type: documentation
 created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
-<<<<<<< .merge_file_z6nN5i
-=======
 status: superseded
 superseded_by: project-structure.md
->>>>>>> .merge_file_VE5aMS
 ---
 
 # Project Structure — Module **Lang**
@@ -103,17 +100,14 @@ graph TD
 ## Riferimenti Globali
 
 - [Project Wiki Root](../../docs/wiki/)
-<<<<<<< .merge_file_z6nN5i
 - [Global Rules](../../docs/wiki/rules/)
 - [Global Skills](../../docs/wiki/skills/)
 - [Global Commands](../../docs/wiki/commands/)
 - [Global Memories](../../docs/wiki/memories/)
-=======
 - [Global Rules](wiki/rules)
 - [Global Skills](wiki/skills)
 - [Global Commands](wiki/commands)
 - [Global Memories](wiki/memories)
->>>>>>> .merge_file_VE5aMS
 
 ## Setup Iniziale (per nuovi moduli)
 

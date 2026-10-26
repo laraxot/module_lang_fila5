@@ -22,11 +22,8 @@ related:
 
 Il testing visivo (visual regression testing) permette di rilevare cambiamenti UI non intenzionali confrontando screenshot di riferimento con screenshot attuali.
 
-<<<<<<< .merge_file_2xblM8
 Per la policy di collocazione dei test: vedi [Playwright Testing Policy](../../../../docs/wiki/concepts/playwright-testing-policy.md).
-=======
 Per la policy di collocazione dei test: vedi [Playwright Testing Policy](../../../../../../docs/wiki/concepts/playwright-testing-policy.md).
->>>>>>> .merge_file_tK3HSd
 
 ## Collocazione Test
 
@@ -72,10 +69,7 @@ test('Lang UI renders correctly', async ({ page }) => {
 ## Risorse
 
 - [Playwright Docs](https://playwright.dev/)
-<<<<<<< .merge_file_2xblM8
 - [Visual Control Mastery](../../../../docs/wiki/concepts/visual-control-mastery.md)
 - [Playwright Testing Policy](../../../../docs/wiki/concepts/playwright-testing-policy.md)
-=======
 - [Visual Control Mastery](../../../../../../docs/wiki/concepts/visual-control-mastery.md)
 - [Playwright Testing Policy](../../../../../../docs/wiki/concepts/playwright-testing-policy.md)
->>>>>>> .merge_file_tK3HSd

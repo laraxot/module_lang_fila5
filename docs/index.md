@@ -6,13 +6,11 @@ module: "Lang"
 type: concept
 tags: [filament4, migration]
 created: 2026-07-14
-<<<<<<< .merge_file_8BnIpP
 updated: 2026-07-14
 qmd: "filament4 migration"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
-=======
 updated: 2026-10-14
 qmd: "filament4 migration"
 related:
@@ -22,7 +20,6 @@ superseded_by: 00-INDEX.md
 ---
 
 > Superseded dal 2026-10-20: l'indice canonico e' [00-INDEX.md](./00-INDEX.md). Contenuto conservato per storia.
->>>>>>> .merge_file_gjb7Pk
 # 📚 **Indice Documentazione Modulo Lang - Laraxot**
 
 ## 🎯 **Panoramica**
@@ -39,83 +36,62 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
 
 ### **Per Amministratori**
-<<<<<<< .merge_file_8BnIpP
 1. [BEST_PRACTICES.md](best_practices.md) - Best practices e linee guida
-=======
 1. [BEST_PRACTICES.md](best-practices.md) - Best practices e linee guida
->>>>>>> .merge_file_gjb7Pk
 2. [TROUBLESHOOTING.md](troubleshooting.md) - Guida troubleshooting
 3. [config/lang.php](../config/lang.php) - Configurazione e ottimizzazioni
 
 ### **Per Integratori**
-<<<<<<< .merge_file_8BnIpP
 1. [API_REFERENCE.md](api_reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
 3. [BEST_PRACTICES.md](best_practices.md) - Pattern di implementazione
-=======
 1. [API_REFERENCE.md](api-reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
 3. [BEST_PRACTICES.md](best-practices.md) - Pattern di implementazione
->>>>>>> .merge_file_gjb7Pk
 1. [README.md](README.md) - Documentazione principale e panoramica
 2. [config/lang.php](../config/lang.php) - Configurazione centralizzata
 3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
 
 ### **Per Amministratori**
-<<<<<<< .merge_file_8BnIpP
 1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices e linee guida
-=======
 1. [BEST_PRACTICES.md](best-practices.md) - Best practices e linee guida
->>>>>>> .merge_file_gjb7Pk
 2. [TROUBLESHOOTING.md](troubleshooting.md) - Guida troubleshooting
 3. [config/lang.php](../config/lang.php) - Configurazione e ottimizzazioni
 
 ### **Per Integratori**
-<<<<<<< .merge_file_8BnIpP
 1. [API_REFERENCE.md](api_reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
 3. [BEST_PRACTICES.md](best_practices.md) - Pattern di implementazione
-=======
 1. [API_REFERENCE.md](api-reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
 3. [BEST_PRACTICES.md](best-practices.md) - Pattern di implementazione
->>>>>>> .merge_file_gjb7Pk
 1. [README.md](README.md) - Documentazione principale e panoramica
 2. [config/lang.php](../config/lang.php) - Configurazione centralizzata
 3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
 
 ### **Per Amministratori**
-<<<<<<< .merge_file_8BnIpP
 1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices e linee guida
-=======
 1. [BEST_PRACTICES.md](best-practices.md) - Best practices e linee guida
->>>>>>> .merge_file_gjb7Pk
 2. [TROUBLESHOOTING.md](troubleshooting.md) - Guida troubleshooting
 3. [config/lang.php](../config/lang.php) - Configurazione e ottimizzazioni
 
 ### **Per Integratori**
-<<<<<<< .merge_file_8BnIpP
 1. [API_REFERENCE.md](API_REFERENCE.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
 3. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Pattern di implementazione
-=======
 1. [API_REFERENCE.md](api-reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
 3. [BEST_PRACTICES.md](best-practices.md) - Pattern di implementazione
->>>>>>> .merge_file_gjb7Pk
 
 ---
 
 ## 📖 **Documentazione per Argomento**
 
 ### **🏗️ Architettura e Design**
-<<<<<<< .merge_file_8BnIpP
 - **Principi Fondamentali**: [BEST_PRACTICES.md](BEST_PRACTICES.md#principi-architetturali)
 - **Struttura Modulo**: [README.md](README.md#architettura)
-=======
 - **Principi Fondamentali**: [BEST_PRACTICES.md](best-practices.md)
 - **Struttura Modulo**: [README.md](README.md)
->>>>>>> .merge_file_gjb7Pk
 - **Configurazione**: [config/lang.php](../config/lang.php)
 
 ### **🔧 Implementazione e Sviluppo**
@@ -130,7 +106,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Componenti Automatici**: [EXAMPLES.md](examples.md#integrazione-filament)
 - **Actions Personalizzate**: [EXAMPLES.md](examples.md#actions-personalizzate)
 - **Resources**: [EXAMPLES.md](examples.md#resource-base)
-<<<<<<< .merge_file_8BnIpP
 - **Best Practices**: [BEST_PRACTICES.md](BEST_PRACTICES.md#integrazione-filament)
 
 ### **📁 Struttura File Traduzioni**
@@ -141,7 +116,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 
 ### **🔒 Sicurezza e Validazione**
 - **Validazione File**: [BEST_PRACTICES.md](BEST_PRACTICES.md#sicurezza-e-validazione)
-=======
 - **Best Practices**: [BEST_PRACTICES.md](best-practices.md)
 
 ### **📁 Struttura File Traduzioni**
@@ -152,26 +126,21 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 
 ### **🔒 Sicurezza e Validazione**
 - **Validazione File**: [BEST_PRACTICES.md](best-practices.md)
->>>>>>> .merge_file_gjb7Pk
 - **Controlli Integrità**: [TROUBLESHOOTING.md](troubleshooting.md#problemi-di-sicurezza)
 - **Rate Limiting**: [TROUBLESHOOTING.md](troubleshooting.md#rate-limiting)
 
 ### **🚀 Performance e Ottimizzazione**
-<<<<<<< .merge_file_8BnIpP
 - **Cache Strategy**: [BEST_PRACTICES.md](BEST_PRACTICES.md#performance-e-ottimizzazione)
 - **Lazy Loading**: [BEST_PRACTICES.md](BEST_PRACTICES.md#lazy-loading)
 - **Memory Management**: [BEST_PRACTICES.md](BEST_PRACTICES.md#memory-management)
-=======
 - **Cache Strategy**: [BEST_PRACTICES.md](best-practices.md)
 - **Lazy Loading**: [BEST_PRACTICES.md](best-practices.md)
 - **Memory Management**: [BEST_PRACTICES.md](best-practices.md)
->>>>>>> .merge_file_gjb7Pk
 - **Benchmark**: [TROUBLESHOOTING.md](troubleshooting.md#metriche-performance)
 
 ### **🧪 Testing e Qualità**
 - **Test Unitari**: [EXAMPLES.md](examples.md#testing)
 - **Test Feature**: [EXAMPLES.md](examples.md#test-feature)
-<<<<<<< .merge_file_8BnIpP
 - **PHPStan Compliance**: [BEST_PRACTICES.md](BEST_PRACTICES.md#testing-e-qualità)
 - **Validazione Automatica**: [BEST_PRACTICES.md](BEST_PRACTICES.md#validazione-automatica)
 
@@ -184,7 +153,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
-=======
 - **PHPStan Compliance**: [BEST_PRACTICES.md](best-practices.md)
 - **Validazione Automatica**: [BEST_PRACTICES.md](best-practices.md)
 
@@ -197,7 +165,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md) _(target mancante, verificato 2026-10-14)_
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md) _(target mancante, verificato 2026-10-14)_
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md) _(target mancante, verificato 2026-10-14)_
->>>>>>> .merge_file_gjb7Pk
 
 ---
 
@@ -230,7 +197,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - Validazione e controllo qualità
 
 **Documenti da Leggere**
-<<<<<<< .merge_file_8BnIpP
 1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
@@ -238,7 +204,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
 1. [BEST_PRACTICES.md](best_practices.md) - Tutte le sezioni
-=======
 1. [BEST_PRACTICES.md](best-practices.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
@@ -246,7 +211,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
 1. [BEST_PRACTICES.md](best-practices.md) - Tutte le sezioni
->>>>>>> .merge_file_gjb7Pk
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
 
@@ -262,7 +226,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - Estensioni e plugin
 
 **Documenti da Leggere**
-<<<<<<< .merge_file_8BnIpP
 1. [API_REFERENCE.md](API_REFERENCE.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
@@ -271,7 +234,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
 1. [API_REFERENCE.md](api_reference.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](best_practices.md) - Pattern avanzati
-=======
 1. [API_REFERENCE.md](api-reference.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](best-practices.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
@@ -280,7 +242,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
 1. [API_REFERENCE.md](api-reference.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](best-practices.md) - Pattern avanzati
->>>>>>> .merge_file_gjb7Pk
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
 
 **Obiettivi**
@@ -293,11 +254,8 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 ## 🔍 **Ricerca per Parole Chiave**
 
 ### **Localizzazione**
-<<<<<<< .merge_file_8BnIpP
 - **File PHP**: [BEST_PRACTICES.md](BEST_PRACTICES.md#sintassi-file-php)
-=======
 - **File PHP**: [BEST_PRACTICES.md](best-practices.md)
->>>>>>> .merge_file_gjb7Pk
 - **File JSON**: [README.md](README.md#file-php-vs-json)
 - **Fallback**: [TROUBLESHOOTING.md](troubleshooting.md#fallback-traduzioni)
 - **Pluralizzazione**: [EXAMPLES.md](examples.md#gestione-pluralizzazione)
@@ -306,7 +264,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Componenti**: [EXAMPLES.md](examples.md#componenti-automatici)
 - **Actions**: [EXAMPLES.md](examples.md#actions-personalizzate)
 - **Resources**: [EXAMPLES.md](examples.md#resource-base)
-<<<<<<< .merge_file_8BnIpP
 - **Integrazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#integrazione-filament)
 
 ### **Performance**
@@ -318,7 +275,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 ### **Validazione**
 - **Sintassi**: [BEST_PRACTICES.md](BEST_PRACTICES.md#sintassi-valida)
 - **Struttura**: [BEST_PRACTICES.md](BEST_PRACTICES.md#struttura-gerarchica)
-=======
 - **Integrazione**: [BEST_PRACTICES.md](best-practices.md)
 
 ### **Performance**
@@ -330,20 +286,16 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 ### **Validazione**
 - **Sintassi**: [BEST_PRACTICES.md](best-practices.md)
 - **Struttura**: [BEST_PRACTICES.md](best-practices.md)
->>>>>>> .merge_file_gjb7Pk
 - **Auto-fix**: [TROUBLESHOOTING.md](troubleshooting.md#fix-automatici)
 - **Report**: [TROUBLESHOOTING.md](troubleshooting.md#report-qualità)
 
 ### **Testing**
 - **Unit Test**: [EXAMPLES.md](examples.md#test-unitari)
 - **Feature Test**: [EXAMPLES.md](examples.md#test-feature)
-<<<<<<< .merge_file_8BnIpP
 - **PHPStan**: [BEST_PRACTICES.md](BEST_PRACTICES.md#phpstan-compliance)
 - **Validazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#validazione-automatica)
-=======
 - **PHPStan**: [BEST_PRACTICES.md](best-practices.md)
 - **Validazione**: [BEST_PRACTICES.md](best-practices.md)
->>>>>>> .merge_file_gjb7Pk
 
 ---
 
@@ -434,11 +386,8 @@ php artisan lang:debug [--log-missing] [--log-performance]
 ### **Strumenti e Risorse**
 - [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper) - Autocompletamento IDE
 - [ide-helper-sushi-pattern](./ide-helper-sushi-pattern.md) - TranslationFile + analisi statica (wave 2026-07-15)
-<<<<<<< .merge_file_8BnIpP
 - [Xot — ide-helper-philosophy](../Xot/docs/ide-helper-philosophy.md) - Filosofia globale PHPDoc model
-=======
 - [Xot — ide-helper-philosophy](../Xot/docs/ide-helper-philosophy.md) _(target mancante, verificato 2026-10-14)_ - Filosofia globale PHPDoc model
->>>>>>> .merge_file_gjb7Pk
 - [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) - Debug e profiling
 - [Laravel Telescope](https://laravel.com/project_docs/telescope) - Monitoring applicazione
 

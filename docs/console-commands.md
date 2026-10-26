@@ -149,15 +149,12 @@ php artisan lang:find-missing it
 - [Translation System](./translation-system.md)
 - [Lang Module Architecture](./architecture.md)
 - [PHPStan Corrections](../../../../docs/phpstan-fixes.md)
-<<<<<<< .merge_file_YPWOiT
 - [PHPStan Corrections](../../../docs/phpstan-fixes.md)
 - [PHPStan Corrections](../../../docs/phpstan-fixes.md)
 - [PHPStan Corrections](../../../docs/phpstan-fixes.md)
-=======
 - [PHPStan Corrections](../../../../docs/phpstan-fixes.md)
 - [PHPStan Corrections](../../../../docs/phpstan-fixes.md)
 - [PHPStan Corrections](../../../../docs/phpstan-fixes.md)
->>>>>>> .merge_file_0rSNmn
 
 ## Note di Sviluppo
 

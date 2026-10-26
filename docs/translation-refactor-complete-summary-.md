@@ -78,17 +78,14 @@ Tutti i campi di traduzione ora includono la struttura completa a 7 elementi:
 
 ### Documentazione Centrale
 - `/docs/translation-field-structure-complete.md` - Standard completi per tutti i campi
-<<<<<<< .merge_file_Lmn3NS
 - `/docs/translation-refactor-complete-summary-completo-file-traduzione-riepilogo.md` - Questo documento
 
 ### Documentazione Moduli
 - `/Modules/User/docs/translation-city-field-refactor-2025-08-08.md` - Dettagli refactor modulo User
-=======
 - `/docs/translation-refactor-complete-summary.md` - Questo documento
 
 ### Documentazione Moduli
 - `/Modules/User/docs/translation-city-field-refactor-modulo-user.md` - Dettagli refactor modulo User
->>>>>>> .merge_file_xFHu3y
 - `/Modules/<nome progetto>/docs/translation-refactor-summary-2025-08-08.md` - Status modulo <nome progetto>
 
 ## Principi DRY + KISS Applicati
@@ -163,11 +160,8 @@ Tutti i campi di traduzione ora includono la struttura completa a 7 elementi:
 ## Collegamenti alla Documentazione
 
 - [Struttura Campi Traduzione Completa](translation-field-structure-complete.md)
-<<<<<<< .merge_file_Lmn3NS
 - [Refactor Modulo User](../Modules/User/docs/translation-city-field-refactor-2025-08-08.md)
-=======
 - [Refactor Modulo User](../../User/docs/translation-city-field-refactor-completo-campi-citta-modulo.md)
->>>>>>> .merge_file_xFHu3y
 - [Status Modulo <nome progetto>](../Modules/<nome progetto>/docs/translation-refactor-summary-2025-08-08.md)
 
 ---

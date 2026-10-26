@@ -7,11 +7,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
-<<<<<<< .merge_file_zAMOjE
   - "./italian-text-refined-audit-report.md"
-=======
   - "../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_saTOCx
 ---
 # Traduzioni Automatiche con LangServiceProvider
 

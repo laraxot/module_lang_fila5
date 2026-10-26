@@ -196,11 +196,8 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali
-<<<<<<< .merge_file_pCu942
 - [Root Docs: Translation Standards](../../docs/translation_standards.md)
-=======
 - [Root Docs: Translation Standards](translation_standards.md)
->>>>>>> .merge_file_uJFqOS
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
 - [<main module> Module: Translation Guidelines](../<main module>/docs/translation_guidelines.md)
 - [<nome progetto> Module: Translation Guidelines](../<nome progetto>/docs/translation_guidelines.md)

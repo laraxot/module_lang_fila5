@@ -305,11 +305,8 @@ return array(
 
 ## Collegamenti
 
-<<<<<<< .merge_file_lj1ay1
 - [Regole Traduzioni](../../docs/translation-standards.md)
-=======
 - [Regole Traduzioni](translation-standards.md)
->>>>>>> .merge_file_QaSV1h
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 

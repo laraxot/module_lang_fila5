@@ -305,11 +305,8 @@ return array(
 
 ## Collegamenti
 
-<<<<<<< .merge_file_Tgnlwa
 - [Regole Traduzioni](../../../docs/translation-standards.md)
-=======
 - [Regole Traduzioni](../../../../docs/translation-standards.md)
->>>>>>> .merge_file_IYl6sA
 - [Best Practices Filament](../../../docs/filament-best-practices.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 
@@ -611,11 +608,8 @@ return array(
 
 ## Collegamenti
 
-<<<<<<< .merge_file_Tgnlwa
 - [Regole Traduzioni](../../../docs/translation-standards.md)
-=======
 - [Regole Traduzioni](../../../../docs/translation-standards.md)
->>>>>>> .merge_file_IYl6sA
 - [Best Practices Filament](../../../docs/filament-best-practices.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 

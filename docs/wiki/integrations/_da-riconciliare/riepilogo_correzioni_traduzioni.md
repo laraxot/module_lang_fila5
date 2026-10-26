@@ -133,11 +133,8 @@ php artisan tinker
 ## Collegamenti Correlati
 
 ### Documentazione Modulo Lang:
-<<<<<<< .merge_file_XVxQqr
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-=======
 - [Errori Comuni Traduzione](../../../errori_comuni_traduzione.md)
->>>>>>> .merge_file_DJIoCh
 - [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
 - [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
 

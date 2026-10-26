@@ -83,15 +83,12 @@ sudo chmod 664 Modules/Lang/lang/it/lang_service.php
 # Gestione Permessi e Errori Filesystem su File di Lingua (Lang)
 
 > **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
-<<<<<<< .merge_file_8A5DVL
 > **Backlink:** [Indice e collegamenti root](../../../docs/links.md)
 > **Backlink:** [Indice e collegamenti root](../../../docs/links.md)
 > **Backlink:** [Indice e collegamenti root](../../../docs/links.md)
-=======
 > **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
 > **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
 > **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
->>>>>>> .merge_file_pLZIXy
 
 ## Problema
 
@@ -149,11 +146,8 @@ sudo chmod 664 Modules/Lang/lang/it/lang_service.php
 ---
 
 **Nota:**
-<<<<<<< .merge_file_8A5DVL
 - [Indice e collegamenti root](../../../docs/links.md)
-=======
 - [Indice e collegamenti root](../../../../docs/links.md)
->>>>>>> .merge_file_pLZIXy
 - [Documentazione MCP e gestione errori](../../../docs/mcp_errors_and_lessons.md)
 
 ---

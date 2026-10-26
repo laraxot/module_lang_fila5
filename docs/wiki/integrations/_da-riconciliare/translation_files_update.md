@@ -131,11 +131,8 @@ return [
 ## Collegamenti
 
 - [Translation Rules](../Xot/docs/translation_rules.md)
-<<<<<<< .merge_file_WjaOB7
 - [Translation Standards](./translation-standards.md)
-=======
 - [Translation Standards](../../../translation-standards.md)
->>>>>>> .merge_file_6jQUN9
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 
 ## Prossimi Passi

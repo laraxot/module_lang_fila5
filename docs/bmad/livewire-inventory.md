@@ -1,11 +1,8 @@
 ---
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_zdNfQm
 updated: 2026-09-26
-=======
 updated: 2026-10-20
->>>>>>> .merge_file_eCzgS6
 qmd: "livewire inventory"
 issues: []
 discussions: []
