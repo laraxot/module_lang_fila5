@@ -11,6 +11,8 @@ qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
   - "../italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: implementation-nel-progetto.md
 ---
 # Implementazione di Spatie Laravel Translatable nel Progetto
 

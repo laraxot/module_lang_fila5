@@ -3,10 +3,11 @@ bmad: true
 module: Lang
 title: "Code quality — modulo Lang"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, lang, bmad]
 qmd: "code quality   modulo lang lang"
+status: superseded
+superseded_by: ../code-quality-report.md
 ---
 # Code quality — modulo Lang
 

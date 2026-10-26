@@ -11,6 +11,7 @@ qmd: "lang service helper text"
 related:
   - "./italian-text-refined-audit-report.md"
   - "../../../italian-text-refined-audit-report.md"
+status: draft
 ---
 # 📚 **Indice Documentazione Modulo Lang**
 
@@ -114,7 +115,6 @@ related:
 <!-- Merged from 00-INDEX.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
-title: "📚 **Indice Documentazione Modulo Lang**"
 module: "Lang"
 type: concept
 tags: [filament4, migration]

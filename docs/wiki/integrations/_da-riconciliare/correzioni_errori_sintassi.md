@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "correzioni errori sintassi"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025

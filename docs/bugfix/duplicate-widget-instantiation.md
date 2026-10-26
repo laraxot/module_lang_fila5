@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "../italian-text-refined-audit-report.md"
+status: draft
 ---
 # Bug Fix: Duplicate Widget Instantiation in LanguageSwitcher
 

@@ -11,7 +11,7 @@ qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
 status: superseded
-superseded_by: product_roadmap.md
+superseded_by: product-roadmap.md
 ---
 # Lang Module - Product Roadmap
 

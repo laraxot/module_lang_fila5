@@ -10,7 +10,7 @@ updated: 2026-10-20
 tags: [scopo, confini, servizio-trasversale, traduzioni, i18n, autolabel, locale-switcher, dipendenze]
 qmd: "scopo lang traduzioni autolabel savetransaction locale switcher scrittura file lang confini dipendenze"
 related:
-  - ./00-INDEX.md
+  - ./00-index.md
   - ./README.md
   - ./advanced-language-switching.md
   - ./stories/phpstan-test-wave-lang.story.md
@@ -20,7 +20,7 @@ related:
 
 # Lang — scopo, confini e come servirlo meglio
 
-Ingresso docs: [00-INDEX.md](./00-INDEX.md) · panoramica: [README.md](./README.md).
+Ingresso docs: [00-INDEX.md](./00-index.md) · panoramica: [README.md](./README.md).
 ## Lo scopo, dedotto dal codice
 
 Lang è il modulo più piccolo dei tre servizi trasversali — 62 file PHP, 4.545 righe in
@@ -367,7 +367,7 @@ find Modules/Lang/docs -name '*.md'  -print0 | xargs -0 cat | wc -l      # 14510
 - [sigma-ptv-dependency-direction](../../../../docs/wiki/rules/sigma-ptv-dependency-direction.md) — la direzione delle dipendenze e il `ProfileContract`
 - [data-sacred-no-destructive-db](../../../../docs/wiki/memories/data-sacred-no-destructive-db.md) — i file `lang/` tracciati sono dati, non artefatti
 - [Sigma/docs/scopo.md](../../Sigma/docs/scopo.md) — il modello di questo documento
-- [00-INDEX.md](./00-INDEX.md) — ingresso operativo docs
+- [00-INDEX.md](./00-index.md) — ingresso operativo docs
 - [README.md](./README.md) — badge e stato misurato del modulo
 - [purpose.md](./purpose.md) — versione breve (stesso scopo)
 - [advanced-language-switching.md](./advanced-language-switching.md) — locale switcher FO

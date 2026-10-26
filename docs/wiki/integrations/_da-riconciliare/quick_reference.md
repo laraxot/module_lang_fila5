@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "quick reference"
 issues: []
 discussions: []
+status: superseded
+superseded_by: quick-reference.md
 ---
 
 # Guida Rapida alle Traduzioni

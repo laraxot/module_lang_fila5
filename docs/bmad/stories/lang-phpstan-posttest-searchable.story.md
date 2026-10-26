@@ -9,6 +9,7 @@ related:
   - lang-phpstan-l10.story.md
 tags: [lang, phpstan, pest, post]
 qmd: "lang phpstan posttest tosearchablearray searchable fields"
+updated: 2026-10-21
 ---
 
 # Lang — PHPStan PostTest toSearchableArray

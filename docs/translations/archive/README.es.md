@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "git conflicts resolution summary"
 related:
   - "../../italian-text-refined-audit-report.md"
+status: draft
 ---
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>

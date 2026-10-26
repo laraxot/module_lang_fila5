@@ -1,7 +1,6 @@
 ---
 title: "Lang — scopo del modulo e come raggiungerlo meglio"
 type: concept
-status: active
 created: 2026-09-02
 tags: [lang, purpose, traduzioni, label, filament, chiavi]
 qmd: "lang scopo modulo traduzioni label placeholder helper text filament chiavi mancanti fallback"
@@ -13,6 +12,8 @@ issues:
 discussions:
   # DA CREARE — vedi sopra.
   - "https://github.com/provtv/module_lang_fila5/discussions/"
+status: superseded
+superseded_by: ../purpose.md
 ---
 
 # Lang — perche' esiste

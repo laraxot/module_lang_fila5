@@ -3,6 +3,8 @@ title: "Sostenibilità e inbound marketing — Lang"
 type: bmad-pointer
 status: decision-input
 updated: 2026-10-15
+tags: [docs, lang]
+qmd: "riferimento bmad lang"
 ---
 
 # Riferimento BMAD

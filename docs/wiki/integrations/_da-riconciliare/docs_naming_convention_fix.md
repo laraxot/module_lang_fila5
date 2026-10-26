@@ -11,6 +11,7 @@ qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
   - "../../../italian-text-refined-audit-report.md"
+status: draft
 ---
 # Correzione Convenzione Naming Cartelle Docs - Gennaio 2025
 

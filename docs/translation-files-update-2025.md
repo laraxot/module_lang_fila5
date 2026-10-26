@@ -6,6 +6,7 @@ created: 2026-01-20
 updated: 2026-10-20
 module: Lang
 tags: [docs, lang]
+qmd: "aggiornamento file di traduzione - gennaio 2025 lang"
 ---
 
 # Aggiornamento File di Traduzione - Gennaio 2025

@@ -9,6 +9,8 @@ qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
   - "../italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: ../common-translations.md
 ---
 # Errori comuni nei file di traduzione
 

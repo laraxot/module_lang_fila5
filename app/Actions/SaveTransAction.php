@@ -24,10 +24,13 @@ class SaveTransAction
         // passa su migliaia di etichette e riscriverebbe i file di lingua dell'albero
         // di lavoro, lasciando in `git status` modifiche che nessuno ha fatto a mano.
         //
-        // Il default e' "acceso, tranne che sotto test": la config del modulo non e'
-        // caricata nell'app dei test, quindi un default preso solo da li' sarebbe
-        // rimasto acceso proprio dove serve spento.
-        if (true !== Config::get('lang.save_missing_translations', ! app()->runningUnitTests())) {
+        // Il default e' "acceso solo in ambiente locale" (C-05, DCP-282): in produzione un file
+        // di lingua riscritto a runtime puo' restare a meta o con la riga appesa dopo `return [];`,
+        // e un file con errore di sintassi manda in 500 ogni pagina che lo carica. Sotto test
+        // l'ambiente e' `testing`, quindi resta spento. L'override `lang.save_missing_translations`
+        // (true o false) vince sempre; la config del modulo non e' caricata con questo nome, quindi
+        // un default preso solo da li' sarebbe rimasto acceso proprio dove serve spento.
+        if (true !== Config::get('lang.save_missing_translations', app()->isLocal())) {
             return;
         }
 

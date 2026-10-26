@@ -10,6 +10,8 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: translation-errors-correction.md
 ---
 # Correzione Errori Traduzioni - 2025
 

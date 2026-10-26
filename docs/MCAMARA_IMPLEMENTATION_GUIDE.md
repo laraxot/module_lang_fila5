@@ -11,7 +11,7 @@ qmd: "git conflicts resolution summary"
 related:
   - "./italian-text-refined-audit-report.md"
 status: superseded
-superseded_by: mcamara_implementation_guide.md
+superseded_by: wiki/integrations/_da-riconciliare/mcamara-implementation-guide.md
 ---
 # Guida all'Implementazione di mcamara/laravel-localization
 

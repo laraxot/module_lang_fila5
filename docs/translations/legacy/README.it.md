@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "README.it"
 issues: []
 discussions: []
+status: draft
 ---
 
 <div align="center">
@@ -23,15 +24,6 @@ discussions: []
 </div>
 
 ---
-
-title: "README.it"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README.it"
-issues: []
-discussions: []
 # 🚀 Benvenuto in Laraxot PTVX
 
 > **La piattaforma Laravel di nuova generazione: modulare, multi-tenant e type-safe per progetti SaaS e aziendali ambiziosi.**
