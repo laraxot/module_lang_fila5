@@ -7,11 +7,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
-<<<<<<< .merge_file_AqKnOR
   - "./italian-text-refined-audit-report.md"
-=======
   - "../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_513LBz
 ---
 # AI Methodologies Handbook
 
@@ -19,15 +16,12 @@ This file is a DRY local index for AI workflows in this module or theme.
 
 ## Canonical Sources
 
-<<<<<<< .merge_file_AqKnOR
 - [OpenViking Integration Guide](../../../../docs/openviking-integration.md)
 - [AI Methodologies Integration](../../../../docs/project/ai-methodologies-integration.md)
 - [Root Docs Index](../../../../docs/index.md)
-=======
 - [OpenViking Integration Guide](../../../../../docs/openviking-integration.md)
 - [AI Methodologies Integration](../../../../docs/project/ai-methodologies-integration.md)
 - [Root Docs Index](../../../../../docs/index.md)
->>>>>>> .merge_file_513LBz
 
 ## Local Workflow
 

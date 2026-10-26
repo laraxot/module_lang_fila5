@@ -9,11 +9,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "redundancy analysis"
 related:
-<<<<<<< .merge_file_HGRivQ
   - "./italian-text-refined-audit-report.md"
-=======
   - "../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_favAcI
 ---
 # FURIOUS LITIGATION: Why "fields" Key is SACRED and IMMUTABLE
 

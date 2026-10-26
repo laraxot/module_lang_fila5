@@ -328,17 +328,14 @@ return [
 
 - [Chart Module Documentation](../../laravel/modules/chart/docs/translation_syntax_errors.md)
 - [FormBuilder Module Documentation](../../laravel/Modules/FormBuilder/docs/)
-<<<<<<< .merge_file_8HWNgR
 - [Job Module Documentation](../../laravel/Modules/Job/docs/)
 - [Lang Module Documentation](../../laravel/Modules/Lang/docs/)
 - [Notify Module Documentation](../../laravel/Modules/Notify/docs/)
 - [UI Module Documentation](../../laravel/Modules/UI/docs/)
-=======
 - [Job Module Documentation](../../Job/docs)
 - [Lang Module Documentation](.)
 - [Notify Module Documentation](../../Notify/docs)
 - [UI Module Documentation](../../UI/docs)
->>>>>>> .merge_file_kCwV0b
 
 ## Ultimo Aggiornamento
 [DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO

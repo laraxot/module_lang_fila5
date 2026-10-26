@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'language_switcher' => [
         'select_language' => 'Select language',

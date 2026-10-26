@@ -7,11 +7,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "guida migrazione step by step"
 related:
-<<<<<<< .merge_file_OHv6bU
   - "./italian-text-refined-audit-report.md"
-=======
   - "../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_ZLSIW8
 ---
 # Errori comuni nei file di traduzione
 

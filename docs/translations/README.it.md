@@ -9,13 +9,10 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "git conflicts resolution summary"
 related:
-<<<<<<< .merge_file_B5sf7K
   - "./italian-text-refined-audit-report.md"
-=======
   - "../italian-text-refined-audit-report.md"
 status: superseded
 superseded_by: readme.it.md
->>>>>>> .merge_file_fbcwCL
 ---
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>
