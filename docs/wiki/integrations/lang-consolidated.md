@@ -48,7 +48,6 @@ related:
 ---
 # Collegamento alle Traduzioni del Modulo Chart
 
-<<<<<<< .merge_file_Yz5xKd
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni:
@@ -60,7 +59,6 @@ Consulta la documentazione delle traduzioni:
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
-=======
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../..).
 
 Consulta la documentazione delle traduzioni:
@@ -72,21 +70,16 @@ Consulta la documentazione delle traduzioni:
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 - [Introduzione alle Traduzioni](../../introduction.md)
 - [Struttura delle Traduzioni](../../structure.md)
->>>>>>> .merge_file_b18e65
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 
 ## Collegamento Bidirezionale
 
-<<<<<<< .merge_file_Yz5xKd
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/docs/).
-=======
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../..).
->>>>>>> .merge_file_b18e65
 
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.
 
 ## Collegamenti tra versioni di lang-link.md
-<<<<<<< .merge_file_Yz5xKd
 * [lang-link.md](laravel/Modules/Chart/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Reporting/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Gdpr/docs/lang-link.md)
@@ -114,7 +107,6 @@ Consulta la documentazione delle traduzioni:
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
-=======
 * [lang-link.md](../../lang-link.md)
 * [lang-link.md](../../lang-link.md)
 * [lang-link.md](../../lang-link.md)
@@ -142,21 +134,16 @@ Consulta la documentazione delle traduzioni:
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 - [Introduzione alle Traduzioni](../../introduction.md)
 - [Struttura delle Traduzioni](../../structure.md)
->>>>>>> .merge_file_b18e65
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 
 ## Collegamento Bidirezionale
 
-<<<<<<< .merge_file_Yz5xKd
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/docs/).
-=======
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../..).
->>>>>>> .merge_file_b18e65
 
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.
 
 ## Collegamenti tra versioni di lang-link.md
-<<<<<<< .merge_file_Yz5xKd
 * [lang-link.md](laravel/Modules/Chart/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Reporting/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Gdpr/docs/lang-link.md)
@@ -175,7 +162,6 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
-=======
 * [lang-link.md](../../lang-link.md)
 * [lang-link.md](../../lang-link.md)
 * [lang-link.md](../../lang-link.md)
@@ -194,7 +180,6 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](../../lang-link.md)
 * [lang-link.md](../../lang-link.md)
 * [lang-link.md](../../lang-link.md)
->>>>>>> .merge_file_b18e65
 
 ---
 
@@ -258,15 +243,12 @@ Il LangServiceProvider è un componente fondamentale di <nome progetto> che gest
 
 La documentazione completa del LangServiceProvider è disponibile nel modulo Lang:
 
-<<<<<<< .merge_file_Yz5xKd
 - [Analisi e Proposte di Miglioramento](../laravel/Modules/Lang/docs/lang-service-provider.md)
 - [Analisi e Proposte di Miglioramento](../laravel/modules/lang/docs/lang-service-provider.md)
 - [Analisi e Proposte di Miglioramento](../laravel/modules/lang/docs/lang-service-provider.md)
-=======
 - [Analisi e Proposte di Miglioramento](../../lang-service-provider.md)
 - [Analisi e Proposte di Miglioramento](../../lang-service-provider.md)
 - [Analisi e Proposte di Miglioramento](../../lang-service-provider.md)
->>>>>>> .merge_file_b18e65
 
 ## Caratteristiche Principali
 
@@ -1372,7 +1354,6 @@ Nel campo `value`, il valore di `helper_text` era uguale alla chiave del padre (
 ## Collegamenti
 
 ### Documentazione Correlata
-<<<<<<< .merge_file_Yz5xKd
 - [Translation Standards](translation-standards.md)
 - [Helper Text Rules](translation-helper-text-standards.md)
 - [Lang Service Provider](lang-service-provider.md)
@@ -1380,7 +1361,6 @@ Nel campo `value`, il valore di `helper_text` era uguale alla chiave del padre (
 ### Regole Applicate
 - [Regola Helper Text Critica](../../../docs/translation-helper-text-critical-rule.md)
 - [Struttura Espansa Traduzioni](struttura-traduzioni.md)
-=======
 - [Translation Standards](../../translation-standards.md)
 - [Helper Text Rules](../../translation-helper-text-standards.md)
 - [Lang Service Provider](../../lang-service-provider.md)
@@ -1388,7 +1368,6 @@ Nel campo `value`, il valore di `helper_text` era uguale alla chiave del padre (
 ### Regole Applicate
 - [Regola Helper Text Critica](../../../docs/translation-helper-text-critical-rule.md)
 - [Struttura Espansa Traduzioni](../../struttura-traduzioni.md)
->>>>>>> .merge_file_b18e65
 - [Convenzioni Multi-Lingua](../../../../docs/multi-language-conventions.md)
 
 ## Note Implementative
@@ -1559,7 +1538,6 @@ Nel campo `value`, il valore di `helper_text` era uguale alla chiave del padre (
 ## Collegamenti
 
 ### Documentazione Correlata
-<<<<<<< .merge_file_Yz5xKd
 - [Translation Standards](translation-standards.md)
 - [Helper Text Rules](translation-helper-text-standards.md)
 - [Lang Service Provider](lang-service-provider.md)
@@ -1567,7 +1545,6 @@ Nel campo `value`, il valore di `helper_text` era uguale alla chiave del padre (
 ### Regole Applicate
 - [Regola Helper Text Critica](../../docs/translation-helper-text-critical-rule.md)
 - [Struttura Espansa Traduzioni](struttura-traduzioni.md)
-=======
 - [Translation Standards](../../translation-standards.md)
 - [Helper Text Rules](../../translation-helper-text-standards.md)
 - [Lang Service Provider](../../lang-service-provider.md)
@@ -1575,7 +1552,6 @@ Nel campo `value`, il valore di `helper_text` era uguale alla chiave del padre (
 ### Regole Applicate
 - [Regola Helper Text Critica](../../docs/translation-helper-text-critical-rule.md)
 - [Struttura Espansa Traduzioni](../../struttura-traduzioni.md)
->>>>>>> .merge_file_b18e65
 - [Convenzioni Multi-Lingua](../../../docs/multi-language-conventions.md)
 
 ## Note Implementative
@@ -1632,33 +1608,26 @@ related:
 ---
 # Collegamento alle Traduzioni del Modulo Chart
 
-<<<<<<< .merge_file_Yz5xKd
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni:
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
-=======
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../..).
 
 Consulta la documentazione delle traduzioni:
 - [Introduzione alle Traduzioni](../../introduction.md)
 - [Struttura delle Traduzioni](../../structure.md)
->>>>>>> .merge_file_b18e65
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 
 ## Collegamento Bidirezionale
 
-<<<<<<< .merge_file_Yz5xKd
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/docs/).
-=======
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../..).
->>>>>>> .merge_file_b18e65
 
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.
 
 ## Collegamenti tra versioni di lang-link.md
-<<<<<<< .merge_file_Yz5xKd
 * [lang-link.md](laravel/Modules/Chart/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Reporting/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Gdpr/docs/lang-link.md)
@@ -1673,7 +1642,6 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Activity/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Patient/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
-=======
 * [lang-link.md](../../lang-link.md)
 * [lang-link.md](../../lang-link.md)
 * [lang-link.md](../../lang-link.md)
@@ -1688,7 +1656,6 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](../../lang-link.md)
 * [lang-link.md](../../lang-link.md)
 * [lang-link.md](../../lang-link.md)
->>>>>>> .merge_file_b18e65
 
 
 ---
@@ -2378,15 +2345,12 @@ LogicException: Plugin [spatie-translatable] is not registered for panel [xxx::a
 
 **Fix**: Registrare plugin nel panel provider
 
-<<<<<<< .merge_file_Yz5xKd
 **Documentazione**: [Notify - Plugin Not Registered](../../Notify/docs/errori/plugin-spatie-translatable-not-registered.md)
 **Documentazione**: [Notify - Plugin Not Registered](../../notify/docs/errori/plugin-spatie-translatable-not-registered.md)
 **Documentazione**: [Notify - Plugin Not Registered](../../notify/docs/errori/plugin-spatie-translatable-not-registered.md)
-=======
 **Documentazione**: [Notify - Plugin Not Registered](../../../../Notify/docs/errori/plugin-spatie-translatable-not-registered.md)
 **Documentazione**: [Notify - Plugin Not Registered](../../../../Notify/docs/errori/plugin-spatie-translatable-not-registered.md)
 **Documentazione**: [Notify - Plugin Not Registered](../../../../Notify/docs/errori/plugin-spatie-translatable-not-registered.md)
->>>>>>> .merge_file_b18e65
 
 ### Errore: Undefined Method getTranslation()
 
@@ -2520,19 +2484,16 @@ $value = $model->field;  // Ritorna traduzione 'en' se esiste, altrimenti fallba
 - [Spatie Laravel Translatable Docs](https://spatie.be/docs/laravel-translatable/v6/introduction)
 
 ### Documentazione Interna
-<<<<<<< .merge_file_Yz5xKd
 - [Notify Integration](../../Notify/docs/spatie-translatable-integration.md)
 - [Xot Filament Best Practices](../../Xot/docs/filament-best-practices.md)
 - [Notify Integration](../../notify/docs/spatie-translatable-integration.md)
 - [Xot Filament Best Practices](../../xot/docs/filament-best-practices.md)
 - [Notify Integration](../../notify/docs/spatie-translatable-integration.md)
-=======
 - [Notify Integration](../../../../Notify/docs/spatie-translatable-integration.md)
 - [Xot Filament Best Practices](../../Xot/docs/filament-best-practices.md)
 - [Notify Integration](../../../../Notify/docs/spatie-translatable-integration.md)
 - [Xot Filament Best Practices](../../xot/docs/filament-best-practices.md)
 - [Notify Integration](../../../../Notify/docs/spatie-translatable-integration.md)
->>>>>>> .merge_file_b18e65
 - [Xot Filament Best Practices](../../xot/docs/filament-best-practices.md)
 
 ---

@@ -9,11 +9,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "migration filament"
 related:
-<<<<<<< .merge_file_ukzvUm
   - "./italian-text-refined-audit-report.md"
-=======
   - "../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_mec5vn
 ---
 # BMAD Method v6.3 operativo nel progetto
 

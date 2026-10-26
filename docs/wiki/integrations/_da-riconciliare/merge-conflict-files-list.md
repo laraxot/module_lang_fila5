@@ -9,11 +9,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "guida migrazione step by step"
 related:
-<<<<<<< .merge_file_Lw6wXy
   - "./italian-text-refined-audit-report.md"
-=======
   - "../../../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_PYvIoB
 ---
 # Merge Conflict Files List
 
@@ -70,11 +67,8 @@ This file contains a comprehensive list of files with merge conflict markers (`<
 ### Notify Module (3 files)
 - ./laravel/Modules/Notify/docs/wiki/index.md
 - ./laravel/Modules/Notify/docs/wiki/log.md
-<<<<<<< .merge_file_Lw6wXy
 - ./laravel/Modules/Notify/docs/project_docs/riepilogo-risoluzione-conflitti-2025-09-30.md
-=======
 - ./laravel/Modules/Notify/docs/project_docs/riepilogo-risoluzione-conflitti-obiettivo.md
->>>>>>> .merge_file_PYvIoB
 
 ### Other Files (62 files)
 - Various agent session files, todo files, and system files
