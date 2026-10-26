@@ -80,7 +80,7 @@ superseded_by: readme.it.md
 
 ## 📚 Documentazione
 
-- [Indice del Progetto](../INDEX.md)
+- [Indice del Progetto](../index.md)
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
 - [Architettura](architecture.md)

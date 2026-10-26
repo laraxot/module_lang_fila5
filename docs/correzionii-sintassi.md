@@ -10,7 +10,8 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
+status: superseded
+superseded_by: fixes-syntaxs.md
 ---
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 

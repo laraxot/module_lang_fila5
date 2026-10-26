@@ -11,6 +11,7 @@ qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
   - "../../../italian-text-refined-audit-report.md"
+status: draft
 ---
 # Merge Conflict Files List
 

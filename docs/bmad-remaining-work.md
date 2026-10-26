@@ -8,6 +8,8 @@ updated: 2026-10-26
 tags: [bmad, lang, module, stories, remaining-work]
 related:
   - ../../docs/second-brain/project/bmad-architecture.md
+status: draft
+qmd: "lang module   bmad stories & remaining work lang"
 ---
 
 # Lang Module — BMAD Stories & Remaining Work

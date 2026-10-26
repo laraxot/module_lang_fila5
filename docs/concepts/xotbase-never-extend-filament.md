@@ -15,6 +15,7 @@ related:
   - ../../../../../docs/wiki/rules/xotbase-critical-rules.md
   - ../../../../../docs/wiki/rules/xot-base-filament-widgets.md
   - ../../../../../docs/wiki/memories/xotbase-never-extend-filament.md
+status: draft
 ---
 
 # Mai `Filament\*` — sempre `Modules\Xot\Filament\...\XotBase*`

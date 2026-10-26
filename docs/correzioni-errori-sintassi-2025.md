@@ -6,6 +6,7 @@ created: 2026-01-20
 updated: 2026-10-20
 module: Lang
 tags: [docs, lang]
+qmd: "correzioni errori sintassi file traduzione - gennaio 2025 lang"
 ---
 
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
