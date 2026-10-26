@@ -225,7 +225,7 @@ return [
 ## Collegamenti
 
 - [Enum Translation Pattern](enum-translation-pattern.md)
-- [TableLayoutEnum Guide](../laravel/modules/ui/docs/table-layout-enum-complete-guide.md)
+- [TableLayoutEnum Guide](../../UI/docs/table-layout-enum-complete-guide.md)
 - [Translation Management](translation-management.md)
 
 ## Ultimo Aggiornamento

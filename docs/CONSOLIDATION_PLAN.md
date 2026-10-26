@@ -19,15 +19,6 @@ superseded_by: consolidation_plan.md
 **Strategy:** Delete duplicates → Consolidate by topic → Move research to wiki/
 
 ---
-
-title: "CONSOLIDATION PLAN"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "CONSOLIDATION PLAN"
-issues: []
-discussions: []
 ## Quick Stats
 
 | Category | Current | Target | Action |

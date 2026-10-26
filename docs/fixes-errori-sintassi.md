@@ -10,7 +10,8 @@ updated: 2026-07-14
 qmd: "links01"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
+status: superseded
+superseded_by: fixes-syntax-errors.md
 ---
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 

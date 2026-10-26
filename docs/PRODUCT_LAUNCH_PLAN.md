@@ -11,7 +11,7 @@ qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
 status: superseded
-superseded_by: product_launch_plan.md
+superseded_by: product-launch-plan.md
 ---
 # Lang Module - Product Launch Plan
 

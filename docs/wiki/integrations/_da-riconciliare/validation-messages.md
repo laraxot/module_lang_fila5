@@ -11,6 +11,7 @@ qmd: "readme.es 1"
 related:
   - "./italian-text-refined-audit-report.md"
   - "../../../italian-text-refined-audit-report.md"
+status: draft
 ---
 # Gestione delle Traduzioni dei Messaggi di Validazione
 

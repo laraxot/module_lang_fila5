@@ -75,15 +75,6 @@ Indice: [00-INDEX.md](./00-INDEX.md). Wiki: [wiki/index.md](./wiki/index.md). St
 - [[LLM Wiki Governance](../../../../bashscripts/ai/wiki/concepts/llm-wiki-governance.md)]
 
 ---
-
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
 **Status**: ✅ Production  
 **Last Updated**: 2026-07-14  
 **Requirements**: PHP 8.3+, Laravel 13  

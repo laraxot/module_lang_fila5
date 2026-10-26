@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "riepilogo correzioni traduzioni"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Riepilogo Correzioni Traduzioni - Gennaio 2025
