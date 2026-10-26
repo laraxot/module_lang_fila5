@@ -3,10 +3,11 @@ bmad: true
 module: Lang
 title: "Lang — Copertura Model / Migration / Seeder / Factory"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, lang, bmad]
 qmd: "lang   copertura model / migration / seeder / factory lang"
+status: superseded
+superseded_by: ../database-model-coverage.md
 ---
 # Lang — Copertura Model / Migration / Seeder / Factory
 

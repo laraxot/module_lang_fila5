@@ -8,7 +8,7 @@ qmd: "MCAMARA IMPLEMENTATION GUIDE"
 issues: []
 discussions: []
 status: superseded
-superseded_by: mcamara_implementation_guide.md
+superseded_by: mcamara-implementation-guide.md
 ---
 
 # Guida all'Implementazione di mcamara/laravel-localization

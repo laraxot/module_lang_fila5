@@ -10,7 +10,8 @@ updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
+status: superseded
+superseded_by: migration-corrections.md
 ---
 # Correzioni Migrazione - Modulo Lang
 

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "quick reference"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Guida Rapida alle Traduzioni

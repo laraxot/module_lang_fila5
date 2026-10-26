@@ -81,7 +81,7 @@ return [
 ## Collegamenti
 - [Form Components](../Patient/docs/filament-form-components.md)
 - [Wizard Structure](../Patient/docs/filament-wizard-structure.md)
-- [Best Practices](../Xot/docs/filament-best-practices.md)
+- [Best Practices](../../Xot/docs/filament-best-practices.md)
 
 ## Vedi Anche
 - [Laravel Translations](https://laravel.com/docs/localization)

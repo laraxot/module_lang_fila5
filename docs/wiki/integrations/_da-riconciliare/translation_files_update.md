@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "translation files update"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Aggiornamento File di Traduzione - Gennaio 2025

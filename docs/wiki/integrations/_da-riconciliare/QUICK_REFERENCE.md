@@ -8,7 +8,7 @@ qmd: "QUICK REFERENCE"
 issues: []
 discussions: []
 status: superseded
-superseded_by: quick_reference.md
+superseded_by: quick-reference.md
 ---
 
 # Guida Rapida alle Traduzioni
