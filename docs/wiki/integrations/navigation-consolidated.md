@@ -274,15 +274,12 @@ Ogni sezione `navigation` deve includere:
 
 ## Collegamenti
 
-<<<<<<< .merge_file_UmW4kA
 - [Errori Comuni Traduzione](errori-comuni-traduzione.md)
 - [Traduzioni Navigation Audit](traduzioni-navigation-2025.md)
 - [Best Practices Traduzioni](../../xot/docs/translation-standards.md)
-=======
 - [Errori Comuni Traduzione](../../errori-comuni-traduzione.md)
 - [Traduzioni Navigation Audit](traduzioni-navigation-2025.md)
 - [Best Practices Traduzioni](../../translation-standards.md)
->>>>>>> .merge_file_jsA8Qi
 - [NavigationLabelTrait Explained](../../xot/docs/filament/navigation-label-trait-explained.md)
 
 ## Note Tecniche
@@ -477,11 +474,8 @@ Per ogni risorsa, le traduzioni navigation seguono questo pattern:
 
 - [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-2026-01-09.md)
-<<<<<<< .merge_file_UmW4kA
 - [Translation Standards](../../Xot/docs/translation-standards.md)
-=======
 - [Translation Standards](../../translation-standards.md)
->>>>>>> .merge_file_jsA8Qi
 - [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-[DATE].md)
@@ -490,19 +484,16 @@ Per ogni risorsa, le traduzioni navigation seguono questo pattern:
 - [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-[DATE].md)
 - [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-[DATE].md)
 - [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-[DATE].md)
-<<<<<<< .merge_file_UmW4kA
 - [Translation Standards](../../Xot/docs/translation-standards.md)
 - [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [Translation Standards](../../Xot/docs/translation-standards.md)
 - [Navigation Translations Fixes](./navigation-translations-fixes.md)
-=======
 - [Translation Standards](../../translation-standards.md)
 - [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [Translation Standards](../../translation-standards.md)
 - [Navigation Translations Fixes](../../navigation-translations-fixes.md)
->>>>>>> .merge_file_jsA8Qi
 
 ---
 
@@ -623,11 +614,8 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
-<<<<<<< .merge_file_UmW4kA
 - [Audit Generale Traduzioni Navigation](../../docs/navigation-translations-audit.md)
-=======
 - [Audit Generale Traduzioni Navigation](../../navigation-translations-audit.md)
->>>>>>> .merge_file_jsA8Qi
 - [Documentazione Modulo Lang](README.md)
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
@@ -778,11 +766,8 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 - ✅ Coerenza terminologica tra moduli
 
 ## Collegamenti Correlati
-<<<<<<< .merge_file_UmW4kA
 - [Errori Comuni Traduzione](../errori_comuni_traduzione.md)
-=======
 - [Errori Comuni Traduzione](../../errori_comuni_traduzione.md)
->>>>>>> .merge_file_jsA8Qi
 - [Correzioni Errori Sintassi 2025](../correzioni_errori_sintassi_2025.md)
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 

@@ -8,11 +8,8 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [qmd, search, docs, performance]
 related:
-<<<<<<< .merge_file_J4400w
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
-=======
   - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
->>>>>>> .merge_file_0wp0R7
 ---
 
 # QMD Setup per Module **Lang**
@@ -70,11 +67,8 @@ qmd search "form" -c lang  # Solo questo modulo
 ## Riferimenti
 
 - [Global QMD Config](../qmd.md) (root docs)
-<<<<<<< .merge_file_J4400w
 - [Operational Discipline](../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
-=======
 - [Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
->>>>>>> .merge_file_0wp0R7
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
 
 ---

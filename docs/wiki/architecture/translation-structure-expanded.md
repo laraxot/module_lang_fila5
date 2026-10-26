@@ -7,11 +7,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "test 1"
 related:
-<<<<<<< .merge_file_dN3gyC
   - "./italian-text-refined-audit-report.md"
-=======
   - "../../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_tnf5eE
 ---
 # Struttura Espansa per File di Traduzione - Progetto <nome progetto>
 

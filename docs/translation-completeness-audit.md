@@ -366,11 +366,8 @@ This document tracks the completeness and quality of translation files across th
 ## Links and References
 
 - [Theme Translation Files](../laravel/Themes/One/lang/)
-<<<<<<< .merge_file_fmlh3u
 - [Notify Module Translations](../laravel/Modules/Notify/lang/)
-=======
 - [Notify Module Translations](../../Notify/lang)
->>>>>>> .merge_file_EoAh85
 - [<nome progetto> Module Translations](../laravel/Modules/<nome progetto>/lang/)
 - [PDF Template](../laravel/Themes/One/resources/views/appointment/report_pdf.blade.php)
 
@@ -738,11 +735,8 @@ This document tracks the completeness and quality of translation files across th
 ## Links and References
 
 - [Theme Translation Files](../laravel/Themes/One/lang/)
-<<<<<<< .merge_file_fmlh3u
 - [Notify Module Translations](../laravel/Modules/Notify/lang/)
-=======
 - [Notify Module Translations](../../Notify/lang)
->>>>>>> .merge_file_EoAh85
 - [<nome progetto> Module Translations](../laravel/Modules/<nome progetto>/lang/)
 - [PDF Template](../laravel/Themes/One/resources/views/appointment/report_pdf.blade.php)
 
