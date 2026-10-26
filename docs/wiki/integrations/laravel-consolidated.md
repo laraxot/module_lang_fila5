@@ -1206,11 +1206,8 @@ php artisan route:trans:list it # List routes for locale
 ## Related Docs
 
 - [Skill: laravel-localization](../../../../.agent/skills/laravel-localization/skill.md)
-<<<<<<< .merge_file_6tG4ts
 - [Filament Integration](./filament-integration.md)
-=======
 - [Filament Integration](../../filament-integration.md)
->>>>>>> .merge_file_LxjsgN
 - [Philosophy](./philosophy.md)
 
 ---
@@ -1766,19 +1763,16 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Documentazione ufficiale mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 - [Documentazione Laravel Folio](https://laravel.com/project_docs/12.x/folio)
 - [Esempio di mapping rotte](https://github.com/mcamara/laravel-localization#translated-routes)
-<<<<<<< .merge_file_6tG4ts
 - [FAQ e problemi comuni](Modules/Lang/project_docs/translations-faq.md)
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
 - [FAQ e problemi comuni](Modules/Lang/project_docs/translations-faq.md)
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
 - [FAQ e problemi comuni](Modules/Lang/project_docs/translations-faq.md)
-=======
 - [FAQ e problemi comuni](../../translations-faq.md)
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
 - [FAQ e problemi comuni](../../translations-faq.md)
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
 - [FAQ e problemi comuni](../../translations-faq.md)
->>>>>>> .merge_file_LxjsgN
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
 
 ---
@@ -1925,15 +1919,12 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Documentazione ufficiale mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 - [Documentazione Laravel Folio](https://laravel.com/docs/12.x/folio)
 - [Esempio di mapping rotte](https://github.com/mcamara/laravel-localization#translated-routes)
-<<<<<<< .merge_file_6tG4ts
 - [FAQ e problemi comuni](Modules/Lang/docs/translations-faq.md)
 - [Guida language switcher](Modules/Lang/docs/README.md)
 - [FAQ e problemi comuni](Modules/Lang/docs/translations-faq.md)
-=======
 - [FAQ e problemi comuni](../../translations-faq.md)
 - [Guida language switcher](Modules/Lang/docs/README.md)
 - [FAQ e problemi comuni](../../translations-faq.md)
->>>>>>> .merge_file_LxjsgN
 - [Guida language switcher](Modules/Lang/docs/README.md)
 
 ---
@@ -1943,11 +1934,8 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 ---
 
 **Se vuoi che aggiorni direttamente la documentazione o vuoi esempi pratici di override/mapping path Folio, chiedi pure!**
-<<<<<<< .merge_file_6tG4ts
 - [FAQ e problemi comuni](Modules/Lang/docs/translations-faq.md)
-=======
 - [FAQ e problemi comuni](../../translations-faq.md)
->>>>>>> .merge_file_LxjsgN
 - [Guida language switcher](Modules/Lang/docs/README.md)
 
 ---
@@ -3335,7 +3323,6 @@ related:
 
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
-<<<<<<< .merge_file_6tG4ts
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo Lang](./README.md)
@@ -3343,7 +3330,6 @@ related:
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
-=======
 - [Best Practices Chiavi di Traduzione](../../translation-keys-best-practices.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo Lang](./README.md)
@@ -3351,7 +3337,6 @@ related:
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](../../translation-keys-best-practices.md)
->>>>>>> .merge_file_LxjsgN
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -3585,7 +3570,6 @@ Questi middleware sono già configurati  e non è necessario modificarli.
 
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
-<<<<<<< .merge_file_6tG4ts
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo Lang](./README.md)
@@ -3593,7 +3577,6 @@ Questi middleware sono già configurati  e non è necessario modificarli.
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
-=======
 - [Best Practices Chiavi di Traduzione](../../translation-keys-best-practices.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo Lang](./README.md)
@@ -3601,7 +3584,6 @@ Questi middleware sono già configurati  e non è necessario modificarli.
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](../../translation-keys-best-practices.md)
->>>>>>> .merge_file_LxjsgN
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -3954,15 +3936,12 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
   ],
   ```
 - Consulta anche:
-<<<<<<< .merge_file_6tG4ts
   - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [filament-translations.md](../filament-translations.md)
-=======
   - [translation-keys-best-practices.md](../../translation-keys-best-practices.md)
   - [translation_keys_rules.md](../../translation_keys_rules.md)
   - [filament-translations.md](../../filament-translations.md)
->>>>>>> .merge_file_LxjsgN
   - [docs <nome progetto>](../../../<nome progetto>/docs/translations.md)
 ## Modifiche Suggerite
 
@@ -4433,11 +4412,8 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Documentazione ufficiale mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 - [Documentazione Laravel Folio](https://laravel.com/docs/12.x/folio)
 - [Esempio di mapping rotte](https://github.com/mcamara/laravel-localization#translated-routes)
-<<<<<<< .merge_file_6tG4ts
 - [FAQ e problemi comuni]([project-root]/laravel/Modules/Lang/docs/translations-faq.md)
-=======
 - [FAQ e problemi comuni](../../translations-faq.md)
->>>>>>> .merge_file_LxjsgN
 - [Guida language switcher]([project-root]/laravel/Modules/Lang/docs/README.md)
 
 ---
@@ -5169,11 +5145,8 @@ related:
 
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
-<<<<<<< .merge_file_6tG4ts
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
-=======
 - [Best Practices Chiavi di Traduzione](../../translation-keys-best-practices.md)
->>>>>>> .merge_file_LxjsgN
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 

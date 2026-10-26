@@ -7,11 +7,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "migrazione filament 4"
 related:
-<<<<<<< .merge_file_6ylmg0
   - "./italian-text-refined-audit-report.md"
-=======
   - "../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_dRc2Fx
 ---
 # Case Sensitivity Rules - Lang Module
 
@@ -31,11 +28,8 @@ I seguenti file/directory sono stati eliminati perché violavano le regole:
 ✓ Kept:    database/migrations/ (flat, solo file .php)
 ```
 
-<<<<<<< .merge_file_6ylmg0
 Dettaglio incidente e verifica: [wiki/concepts/migration-path-canonical.md](wiki/concepts/migration-path-canonical.md).
-=======
 Dettaglio incidente e verifica: [wiki/concepts/migration-path-canonical.md](concepts/migration-path-canonical.md).
->>>>>>> .merge_file_dRc2Fx
 
 ## Convenzioni
 

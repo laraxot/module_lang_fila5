@@ -65,7 +65,6 @@ Documentation for `lang` module categorized as **integrations**.
 - [`common-translation-errors.md`](./common-translation-errors.md)
 - [`common-translations.md`](./common-translations.md)
 - [`composer-merge-plugin.md`](./composer-merge-plugin.md)
-<<<<<<< .merge_file_RcZ63K
 - [`conflict-resolution-autolabelaction.md`](./conflict-resolution-autolabelaction.md)
 - [`conflict-resolution-edit-translation-file.md`](./conflict-resolution-edit-translation-file.md)
 - [`conflict-resolution-edittranslationfile-class.md`](./conflict-resolution-edittranslationfile-class.md)
@@ -190,7 +189,6 @@ Documentation for `lang` module categorized as **integrations**.
 - [`mcp-configuration.md`](./mcp-configuration.md)
 - [`mcp-server-recommended.md`](./mcp-server-recommended.md)
 - [`mcp_server_recommended.md`](./mcp-server-recommended.md)
-=======
 - [`conflict-resolution-autolabelaction.md`](../../../conflict-resolution-autolabelaction.md)
 - [`conflict-resolution-edit-translation-file.md`](../../../conflict-resolution-edit-translation-file.md)
 - [`conflict-resolution-edittranslationfile-class.md`](../../../conflict-resolution-edittranslationfile-class.md)
@@ -315,12 +313,10 @@ Documentation for `lang` module categorized as **integrations**.
 - [`mcp-configuration.md`](../../../mcp-configuration.md)
 - [`mcp-server-recommended.md`](../../../mcp-server-recommended.md)
 - [`mcp_server_recommended.md`](../../../mcp-server-recommended.md)
->>>>>>> .merge_file_0YMCO8
 - [`merge-conflict-files-list.md`](./merge-conflict-files-list.md)
 - [`merge-conflicts-list.md`](./merge-conflicts-list.md)
 - [`metodi-duplicati-analisi.md`](./metodi-duplicati-analisi.md)
 - [`metodiuplicati-analisi.md`](./metodiuplicati-analisi.md)
-<<<<<<< .merge_file_RcZ63K
 - [`model-factory-seeder.md`](./model-factory-seeder.md)
 - [`model-translations.md`](./model-translations.md)
 - [`model_translations.md`](./model_translations.md)
@@ -376,7 +372,6 @@ Documentation for `lang` module categorized as **integrations**.
 - [`quality-improvements.md`](./quality-improvements.md)
 - [`quality.md`](./quality.md)
 - [`queueable-actions.md`](./queueable-actions.md)
-=======
 - [`model-factory-seeder.md`](../../../model-factory-seeder.md)
 - [`model-translations.md`](../../../model-translations.md)
 - [`model_translations.md`](./model_translations.md)
@@ -432,12 +427,10 @@ Documentation for `lang` module categorized as **integrations**.
 - [`quality-improvements.md`](./quality-improvements.md)
 - [`quality.md`](./quality.md)
 - [`queueable-actions.md`](../../../queueable-actions.md)
->>>>>>> .merge_file_0YMCO8
 - [`quick-reference.md`](./quick-reference.md)
 - [`quick_reference.md`](./quick_reference.md)
 - [`readme-en.md`](./readme-en.md)
 - [`release-marketing-standard.md`](./release-marketing-standard.md)
-<<<<<<< .merge_file_RcZ63K
 - [`resolution-permessi-lang-service.md`](./resolution-permessi-lang-service.md)
 - [`resolution-permissions-lang-service.md`](./resolution-permissions-lang-service.md)
 - [`riepilogo-correzioni-traduzioni-.md`](./riepilogo-correzioni-traduzioni-.md)
@@ -550,7 +543,6 @@ Documentation for `lang` module categorized as **integrations**.
 - [`volt_localization_integration.md`](./volt_localization_integration.md)
 - [`widgets.md`](./widgets.md)
 - [`working-with-locales.md`](./working-with-locales.md)
-=======
 - [`resolution-permessi-lang-service.md`](../../../resolution-permessi-lang-service.md)
 - [`resolution-permissions-lang-service.md`](../../../resolution-permissions-lang-service.md)
 - [`riepilogo-correzioni-traduzioni-.md`](../../../riepilogo-correzioni-traduzioni-.md)
@@ -663,7 +655,6 @@ Documentation for `lang` module categorized as **integrations**.
 - [`volt_localization_integration.md`](../../../volt_localization_integration.md)
 - [`widgets.md`](../../../widgets.md)
 - [`working-with-locales.md`](../../../working-with-locales.md)
->>>>>>> .merge_file_0YMCO8
 - [`working_with_locales.md`](./working_with_locales.md)
 
 ---

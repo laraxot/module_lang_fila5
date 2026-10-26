@@ -368,15 +368,12 @@ return array(
 
 ## Collegamenti
 
-<<<<<<< .merge_file_omEqvX
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Regole Traduzioni](../../docs/translation-standards.md)
-=======
 - [Regole Traduzioni](translation-standards.md)
 - [Regole Traduzioni](translation-standards.md)
 - [Regole Traduzioni](translation-standards.md)
->>>>>>> .merge_file_98rgy6
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
@@ -385,22 +382,16 @@ return array(
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-<<<<<<< .merge_file_omEqvX
 - [Regole Traduzioni](../../../docs/translation-standards.md)
-=======
 - [Regole Traduzioni](../../../../docs/translation-standards.md)
->>>>>>> .merge_file_98rgy6
 - [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-<<<<<<< .merge_file_omEqvX
 - [Regole Traduzioni](../../../docs/translation-standards.md)
-=======
 - [Regole Traduzioni](../../../../docs/translation-standards.md)
->>>>>>> .merge_file_98rgy6
 - [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 
@@ -768,26 +759,20 @@ return array(
 
 ## Collegamenti
 
-<<<<<<< .merge_file_omEqvX
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Regole Traduzioni](../../docs/translation-standards.md)
-=======
 - [Regole Traduzioni](translation-standards.md)
 - [Regole Traduzioni](translation-standards.md)
 - [Regole Traduzioni](translation-standards.md)
->>>>>>> .merge_file_98rgy6
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-<<<<<<< .merge_file_omEqvX
 - [Regole Traduzioni](../../../docs/translation-standards.md)
-=======
 - [Regole Traduzioni](../../../../docs/translation-standards.md)
->>>>>>> .merge_file_98rgy6
 - [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 
@@ -807,11 +792,8 @@ return array(
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-<<<<<<< .merge_file_omEqvX
 - [Regole Traduzioni](../../../docs/translation-standards.md)
-=======
 - [Regole Traduzioni](../../../../docs/translation-standards.md)
->>>>>>> .merge_file_98rgy6
 - [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 

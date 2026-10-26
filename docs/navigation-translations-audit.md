@@ -126,41 +126,32 @@ Questo file contiene molteplici occorrenze problematiche:
 ### ✅ Modulo Geo - RISOLTO
 - **File corrotto rimosso**: `/lang/it/.php` eliminato completamente
 - **Struttura corretta**: Confermata in `geo.php` con navigazione appropriata
-<<<<<<< .merge_file_HEfYEw
 - **Documentazione**: [Correzioni Geo](../Modules/Geo/docs/navigation-translations-fixes.md)
 - **Documentazione**: [Correzioni Geo](../modules/geo/docs/navigation-translations-fixes.md)
 - **Documentazione**: [Correzioni Geo](../modules/geo/docs/navigation-translations-fixes.md)
-=======
 - **Documentazione**: [Correzioni Geo](../../Geo/docs/navigation-translations-fixes.md)
 - **Documentazione**: [Correzioni Geo](../../Geo/docs/navigation-translations-fixes.md)
 - **Documentazione**: [Correzioni Geo](../../Geo/docs/navigation-translations-fixes.md)
->>>>>>> .merge_file_nXxIn8
 
 ### ✅ Modulo User - RISOLTO
 - **device.php**: Traduzioni corrette (Dispositivi → Sicurezza)
 - **permission.php**: Traduzioni corrette (Permessi → Sicurezza)
-<<<<<<< .merge_file_HEfYEw
 - **Documentazione**: [Correzioni User](../Modules/User/docs/navigation-translations-fixes.md)
 - **Documentazione**: [Correzioni User](../modules/user/docs/navigation-translations-fixes.md)
 - **Documentazione**: [Correzioni User](../modules/user/docs/navigation-translations-fixes.md)
-=======
 - **Documentazione**: [Correzioni User](../../User/docs/navigation-translations-fixes.md)
 - **Documentazione**: [Correzioni User](../../User/docs/navigation-translations-fixes.md)
 - **Documentazione**: [Correzioni User](../../User/docs/navigation-translations-fixes.md)
->>>>>>> .merge_file_nXxIn8
 
 ### ✅ Modulo Lang - CONFORME
 - **edit_translation_file.php**: Verificato già conforme agli standard
 - **Nessuna correzione necessaria**: File già strutturato correttamente
-<<<<<<< .merge_file_HEfYEw
 - **Documentazione**: [Verifica Lang](../Modules/Lang/docs/navigation-translations-fixes.md)
 - **Documentazione**: [Verifica Lang](../modules/lang/docs/navigation-translations-fixes.md)
 - **Documentazione**: [Verifica Lang](../modules/lang/docs/navigation-translations-fixes.md)
-=======
 - **Documentazione**: [Verifica Lang](navigation-translations-fixes.md)
 - **Documentazione**: [Verifica Lang](navigation-translations-fixes.md)
 - **Documentazione**: [Verifica Lang](navigation-translations-fixes.md)
->>>>>>> .merge_file_nXxIn8
 
 ## Note
 - Ogni file deve essere studiato nel contesto del modulo

@@ -7,11 +7,8 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
 related:
-<<<<<<< .merge_file_zVQoJJ
   - "./italian-text-refined-audit-report.md"
-=======
   - "../italian-text-refined-audit-report.md"
->>>>>>> .merge_file_w0watd
 ---
 # Analisi Bottlenecks Modulo Lang
 
@@ -151,18 +148,14 @@ related:
 * [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
 * [bottlenecks.md](../../Chart/docs/bottlenecks.md)
 * [bottlenecks.md](../../Chart/docs/performance/bottlenecks.md)
-<<<<<<< .merge_file_zVQoJJ
 * [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
 * [bottlenecks.md](../../Gdpr/docs/performance/bottlenecks.md)
-=======
 * [bottlenecks.md](../../../Gdpr/docs/bottlenecks.md)
 * [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
->>>>>>> .merge_file_w0watd
 * [bottlenecks.md](../../Xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../Xot/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Xot/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Dental/docs/bottlenecks.md)
-<<<<<<< .merge_file_zVQoJJ
 * [bottlenecks.md](../../User/docs/bottlenecks.md)
 * [bottlenecks.md](../../User/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../UI/docs/bottlenecks.md)
@@ -178,7 +171,6 @@ related:
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
-=======
 * [bottlenecks.md](../../../User/docs/bottlenecks.md)
 * [bottlenecks.md](../../../User/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../UI/docs/bottlenecks.md)
@@ -194,4 +186,3 @@ related:
 * [bottlenecks.md](../../../Cms/docs/bottlenecks.md)
 * [bottlenecks.md](../../../Cms/docs/bottlenecks.md)
 * [bottlenecks.md](../../../Cms/docs/bottlenecks.md)
->>>>>>> .merge_file_w0watd

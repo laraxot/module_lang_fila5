@@ -92,11 +92,8 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 
 ## Collegamenti
 
-<<<<<<< .merge_file_cTi9pC
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
-=======
 - [Audit Generale Traduzioni Navigation](navigation-translations-audit.md)
->>>>>>> .merge_file_UvnoQY
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)

@@ -233,11 +233,8 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali Creati
-<<<<<<< .merge_file_jc0VnN
 - [Root Docs: Translation Standards](translation_standards.md)
-=======
 - [Root Docs: Translation Standards](../../translation_standards.md)
->>>>>>> .merge_file_4emrl9
 - [Lang Module: Translation Best Practices](../laravel/modules/lang/docs/translation_best_practices.md)
 - [<nome progetto> Module: Translation Guidelines](../laravel/modules/<nome progetto>/docs/translation_guidelines.md)
 
@@ -1015,11 +1012,8 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali
-<<<<<<< .merge_file_jc0VnN
 - [Root Docs: Translation Standards](../../docs/translation_standards.md)
-=======
 - [Root Docs: Translation Standards](../../translation_standards.md)
->>>>>>> .merge_file_4emrl9
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
 - [<main module> Module: Translation Guidelines](../<main module>/docs/translation_guidelines.md)
 - [<nome progetto> Module: Translation Guidelines](../<nome progetto>/docs/translation_guidelines.md)
@@ -1423,11 +1417,8 @@ return [
 - [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
 - [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
-<<<<<<< .merge_file_jc0VnN
 - [Translation Syntax Fixes](translation_syntax_fixes.md)
-=======
 - [Translation Syntax Fixes](../../translation_syntax_fixes.md)
->>>>>>> .merge_file_4emrl9
 - [Windsurf Translation Rules](../.windsurf/rules/translation-complete-structure.mdc)
 
 ## Implementazione
@@ -1778,11 +1769,8 @@ return [
 
 - [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
-<<<<<<< .merge_file_jc0VnN
 - [Translation Syntax Fixes](translation_syntax_fixes.md)
-=======
 - [Translation Syntax Fixes](../../translation_syntax_fixes.md)
->>>>>>> .merge_file_4emrl9
 - [Windsurf Translation Rules](../.windsurf/rules/translation-complete-structure.mdc)
 
 ## Implementazione
@@ -1924,7 +1912,6 @@ return [
 
 ## 📚 Documentazione Correlata
 
-<<<<<<< .merge_file_jc0VnN
 - [Translation Standards](../../Xot/docs/translation-standards.md)
 - [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-2026-01-09.md)
 - [Translation Standards](../../Xot/docs/translation-standards.md)
@@ -1932,7 +1919,6 @@ return [
 - [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-[DATE].md)
 - [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-2026-01-09.md)
 - [Translation Standards](../../Xot/docs/translation-standards.md)
-=======
 - [Translation Standards](../../translation-standards.md)
 - [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-2026-01-09.md)
 - [Translation Standards](../../translation-standards.md)
@@ -1940,7 +1926,6 @@ return [
 - [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-[DATE].md)
 - [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-2026-01-09.md)
 - [Translation Standards](../../translation-standards.md)
->>>>>>> .merge_file_4emrl9
 - [Job Module Error Documentation](../../Job/docs/translation-fields-critical-error-2026-01-09.md)
 
 ---
@@ -2135,17 +2120,14 @@ php artisan lang:sync
 
 ## Collegamenti
 
-<<<<<<< .merge_file_jc0VnN
 - [Translation Standards](./translation-standards.md)
 - [Translation System](./translation-system.md)
 - [Best Practices](./translation-keys-best-practices.md)
 - [File Management](./translation-file-management.md)
-=======
 - [Translation Standards](../../translation-standards.md)
 - [Translation System](../../translation-system.md)
 - [Best Practices](../../translation-keys-best-practices.md)
 - [File Management](../../translation-file-management.md)
->>>>>>> .merge_file_4emrl9
 
 ## Note per lo Sviluppo
 
@@ -2320,17 +2302,14 @@ php artisan lang:sync
 
 ## Collegamenti
 
-<<<<<<< .merge_file_jc0VnN
 - [Translation Standards](./translation-standards.md)
 - [Translation System](./translation-system.md)
 - [Best Practices](./translation-keys-best-practices.md)
 - [File Management](./translation-file-management.md)
-=======
 - [Translation Standards](../../translation-standards.md)
 - [Translation System](../../translation-system.md)
 - [Best Practices](../../translation-keys-best-practices.md)
 - [File Management](../../translation-file-management.md)
->>>>>>> .merge_file_4emrl9
 
 ## Note per lo Sviluppo
 
@@ -2597,15 +2576,12 @@ php artisan lang:export
 
 ## Collegamenti
 
-<<<<<<< .merge_file_jc0VnN
 - [Translation Standards](./translation-standards.md)
 - [Translation System](./translation-system.md)
 - [Best Practices](./translation-keys-best-practices.md)
-=======
 - [Translation Standards](../../translation-standards.md)
 - [Translation System](../../translation-system.md)
 - [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> .merge_file_4emrl9
 - [Laravel Localization](https://laravel.com/project_docs/localization)
 
 ## Note per lo Sviluppo
@@ -2854,15 +2830,12 @@ php artisan lang:export
 
 ## Collegamenti
 
-<<<<<<< .merge_file_jc0VnN
 - [Translation Standards](./translation-standards.md)
 - [Translation System](./translation-system.md)
 - [Best Practices](./translation-keys-best-practices.md)
-=======
 - [Translation Standards](../../translation-standards.md)
 - [Translation System](../../translation-system.md)
 - [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> .merge_file_4emrl9
 - [Laravel Localization](https://laravel.com/docs/localization)
 
 ## Note per lo Sviluppo
@@ -3175,11 +3148,8 @@ return [
 ## Collegamenti
 
 - [Translation Rules](../Xot/docs/translation_rules.md)
-<<<<<<< .merge_file_jc0VnN
 - [Translation Standards](./translation-standards.md)
-=======
 - [Translation Standards](../../translation-standards.md)
->>>>>>> .merge_file_4emrl9
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 
 ## Prossimi Passi
@@ -3309,11 +3279,8 @@ return [
 ## Collegamenti
 
 - [Translation Rules](../Xot/docs/translation_rules.md)
-<<<<<<< .merge_file_jc0VnN
 - [Translation Standards](./translation-standards.md)
-=======
 - [Translation Standards](../../translation-standards.md)
->>>>>>> .merge_file_4emrl9
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 
 ## Prossimi Passi
@@ -3460,11 +3427,8 @@ return [
 ## Collegamenti
 
 - [Translation Rules](../xot/docs/translation_rules.md)
-<<<<<<< .merge_file_jc0VnN
 - [Translation Standards](./translation-standards.md)
-=======
 - [Translation Standards](../../translation-standards.md)
->>>>>>> .merge_file_4emrl9
 - [Best Practices](../xot/docs/translations-best-practices.md)
 
 ## Prossimi Passi
@@ -3612,7 +3576,6 @@ return [
 ## Collegamenti
 
 - [Translation Rules](../Xot/docs/translation_rules.md)
-<<<<<<< .merge_file_jc0VnN
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../xot/docs/translation_rules.md)
@@ -3620,7 +3583,6 @@ return [
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
-=======
 - [Translation Standards](../../translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../xot/docs/translation_rules.md)
@@ -3628,7 +3590,6 @@ return [
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../xot/docs/translation_rules.md)
 - [Translation Standards](../../translation-standards.md)
->>>>>>> .merge_file_4emrl9
 - [Best Practices](../xot/docs/translations-best-practices.md)
 
 ## Prossimi Passi
@@ -3781,7 +3742,6 @@ return [
 ## Collegamenti
 
 - [Translation Rules](../Xot/docs/translation_rules.md)
-<<<<<<< .merge_file_jc0VnN
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../Xot/docs/translation_rules.md)
@@ -3789,7 +3749,6 @@ return [
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../Xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
-=======
 - [Translation Standards](../../translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../Xot/docs/translation_rules.md)
@@ -3797,7 +3756,6 @@ return [
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../Xot/docs/translation_rules.md)
 - [Translation Standards](../../translation-standards.md)
->>>>>>> .merge_file_4emrl9
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 
 ## Prossimi Passi
@@ -3947,11 +3905,8 @@ php artisan tinker
 ## Collegamenti Correlati
 
 ### Documentazione Modulo Lang:
-<<<<<<< .merge_file_jc0VnN
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-=======
 - [Errori Comuni Traduzione](../../errori_comuni_traduzione.md)
->>>>>>> .merge_file_4emrl9
 - [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
 - [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
 
@@ -4101,11 +4056,8 @@ php artisan tinker
 ## Collegamenti Correlati
 
 ### Documentazione Modulo Lang:
-<<<<<<< .merge_file_jc0VnN
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-=======
 - [Errori Comuni Traduzione](../../errori_comuni_traduzione.md)
->>>>>>> .merge_file_4emrl9
 - [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
 - [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
 
@@ -4300,11 +4252,8 @@ Il file `Modules/<nome progetto>/lang/it/profile_widget.php` conteneva:
 
 ## Collegamenti
 
-<<<<<<< .merge_file_jc0VnN
 - [Regole Generali Traduzioni](translation_standards_links.md)
-=======
 - [Regole Generali Traduzioni](../../translation_standards_links.md)
->>>>>>> .merge_file_4emrl9
 - [Documentazione Modulo Lang](../../laravel/Modules/Lang/docs/)
 - [Best Practices Filament](../../laravel/Modules/Xot/docs/filament/)
 - [Standard di Qualità <nome progetto>](../../laravel/Modules/<nome progetto>/docs/translation_quality_standards.md)
@@ -4619,11 +4568,8 @@ Per blocchi di testo lunghi, valuta se usare chiavi dedicate in PHP (es. `onboar
 
 La traduzione appointment.php del modulo  è stata riscritta secondo le regole di centralizzazione, DRY, KISS, nessun lock-in, e struttura gerarchica inglese. Tutte le chiavi sono ora coerenti con enums, actions, messages, filters, calendar, notifications. La motivazione è filosofica (un solo punto di verità), logica (manutenzione semplice), religiosa (nessuna duplicazione), politica (nessun lock-in tra moduli), zen (serenità del codice).
 
-<<<<<<< .merge_file_jc0VnN
 Vedi esempio e motivazione in [<nome modulo>/docs/appointment-management.md](../../<nome modulo>/docs/appointment-management.md) e [translation-standards.md](./translation-standards.md).
-=======
 Vedi esempio e motivazione in [<nome modulo>/docs/appointment-management.md](../../<nome modulo>/docs/appointment-management.md) e [translation-standards.md](../../translation-standards.md).
->>>>>>> .merge_file_4emrl9
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
@@ -4932,11 +4878,8 @@ Per blocchi di testo lunghi, valuta se usare chiavi dedicate in PHP (es. `onboar
 
 La traduzione appointment.php del modulo  è stata riscritta secondo le regole di centralizzazione, DRY, KISS, nessun lock-in, e struttura gerarchica inglese. Tutte le chiavi sono ora coerenti con enums, actions, messages, filters, calendar, notifications. La motivazione è filosofica (un solo punto di verità), logica (manutenzione semplice), religiosa (nessuna duplicazione), politica (nessun lock-in tra moduli), zen (serenità del codice).
 
-<<<<<<< .merge_file_jc0VnN
 Vedi esempio e motivazione in [<nome modulo>/docs/appointment-management.md](../../<nome modulo>/docs/appointment-management.md) e [translation-standards.md](./translation-standards.md).
-=======
 Vedi esempio e motivazione in [<nome modulo>/docs/appointment-management.md](../../<nome modulo>/docs/appointment-management.md) e [translation-standards.md](../../translation-standards.md).
->>>>>>> .merge_file_4emrl9
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
@@ -5245,11 +5188,8 @@ Per blocchi di testo lunghi, valuta se usare chiavi dedicate in PHP (es. `onboar
 
 La traduzione appointment.php del modulo <nome progetto> è stata riscritta secondo le regole di centralizzazione, DRY, KISS, nessun lock-in, e struttura gerarchica inglese. Tutte le chiavi sono ora coerenti con enums, actions, messages, filters, calendar, notifications. La motivazione è filosofica (un solo punto di verità), logica (manutenzione semplice), religiosa (nessuna duplicazione), politica (nessun lock-in tra moduli), zen (serenità del codice).
 
-<<<<<<< .merge_file_jc0VnN
 Vedi esempio e motivazione in [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md) e [translation-standards.md](./translation-standards.md).
-=======
 Vedi esempio e motivazione in [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md) e [translation-standards.md](../../translation-standards.md).
->>>>>>> .merge_file_4emrl9
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
@@ -5295,7 +5235,6 @@ related:
 ## Collegamenti correlati
 - [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
-<<<<<<< .merge_file_jc0VnN
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
 - [Documentazione Lang](README.md)
@@ -5303,7 +5242,6 @@ related:
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-=======
 - [Implementazione Auth Pages](../../../../User/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../../../User/docs/translation_keys_rules.md)
 - [Documentazione Lang](README.md)
@@ -5311,16 +5249,12 @@ related:
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](../../../../User/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../../../User/docs/translation_keys_rules.md)
->>>>>>> .merge_file_4emrl9
 - [Documentazione Lang](README.md)
 - [Documentazione centrale](./README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
-<<<<<<< .merge_file_jc0VnN
 - [Regole Traduzioni User](translation_keys_rules.md)
-=======
 - [Regole Traduzioni User](../../translation_keys_rules.md)
->>>>>>> .merge_file_4emrl9
 - [Documentazione Lang](./README.md)
 
 ## Regole Fondamentali per le Traduzioni
@@ -5529,7 +5463,6 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 ## [[DATE]] Nota storica: correzione massiva Notify
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
-<<<<<<< .merge_file_jc0VnN
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
 ## [2024-07-07] Nota storica: correzione massiva Notify
 
@@ -5540,7 +5473,6 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../Notify/docs/TRANSLATION_KEYS_RULES.md) per dettagli, esempi e best practice specifiche.
-=======
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
 ## [2024-07-07] Nota storica: correzione massiva Notify
 
@@ -5551,29 +5483,22 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
->>>>>>> .merge_file_4emrl9
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
 - [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
-<<<<<<< .merge_file_jc0VnN
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-=======
 - [Implementazione Auth Pages](../../../../User/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../../../User/docs/translation_keys_rules.md)
->>>>>>> .merge_file_4emrl9
 - [Documentazione Lang](README.md)
 - [Documentazione centrale](./README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
-<<<<<<< .merge_file_jc0VnN
 - [Regole Traduzioni User](translation_keys_rules.md)
-=======
 - [Regole Traduzioni User](../../translation_keys_rules.md)
->>>>>>> .merge_file_4emrl9
 - [Documentazione Lang](./README.md)
 
 ## Regole Fondamentali per le Traduzioni
@@ -5782,33 +5707,24 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 ## [[DATE]] Nota storica: correzione massiva Notify
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
-<<<<<<< .merge_file_jc0VnN
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
-=======
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
->>>>>>> .merge_file_4emrl9
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
 - [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
-<<<<<<< .merge_file_jc0VnN
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-=======
 - [Implementazione Auth Pages](../../../../User/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../../../User/docs/translation_keys_rules.md)
->>>>>>> .merge_file_4emrl9
 - [Documentazione Lang](README.md)
 - [Documentazione centrale](./README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
-<<<<<<< .merge_file_jc0VnN
 - [Regole Traduzioni User](translation_keys_rules.md)
-=======
 - [Regole Traduzioni User](../../translation_keys_rules.md)
->>>>>>> .merge_file_4emrl9
 - [Documentazione Lang](./README.md)
 
 ## Regole Fondamentali per le Traduzioni
@@ -6017,11 +5933,8 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 ## [[DATE]] Nota storica: correzione massiva Notify
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
-<<<<<<< .merge_file_jc0VnN
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
-=======
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
->>>>>>> .merge_file_4emrl9
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 # Regole per le Chiavi di Traduzione
 
@@ -6029,11 +5942,8 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 - [Documentazione centrale](./README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
-<<<<<<< .merge_file_jc0VnN
 - [Regole Traduzioni User](translation_keys_rules.md)
-=======
 - [Regole Traduzioni User](../../translation_keys_rules.md)
->>>>>>> .merge_file_4emrl9
 - [Documentazione Lang](./README.md)
 
 ## Regole Fondamentali per le Traduzioni
@@ -6242,28 +6152,22 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 ## [2024-07-07] Nota storica: correzione massiva Notify
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
-<<<<<<< .merge_file_jc0VnN
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../Notify/docs/TRANSLATION_KEYS_RULES.md) per dettagli, esempi e best practice specifiche.
-=======
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
->>>>>>> .merge_file_4emrl9
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 ## [[DATE]] Nota storica: correzione massiva Notify
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
-<<<<<<< .merge_file_jc0VnN
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../Notify/docs/TRANSLATION_KEYS_RULES.md) per dettagli, esempi e best practice specifiche.
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../Notify/docs/TRANSLATION_KEYS_RULES.md) per dettagli, esempi e best practice specifiche.
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../Notify/docs/TRANSLATION_KEYS_RULES.md) per dettagli, esempi e best practice specifiche.
-=======
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
->>>>>>> .merge_file_4emrl9
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 
 ---
@@ -6287,13 +6191,10 @@ related:
 ## Collegamenti correlati
 - [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
-<<<<<<< .merge_file_jc0VnN
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-=======
 - [Implementazione Auth Pages](../../../../User/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../../../User/docs/translation_keys_rules.md)
->>>>>>> .merge_file_4emrl9
 - [Documentazione Lang](README.md)
 
 ## Regole Fondamentali per le Traduzioni
@@ -6502,24 +6403,18 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 ## [[DATE]] Nota storica: correzione massiva Notify
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
-<<<<<<< .merge_file_jc0VnN
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
-=======
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
->>>>>>> .merge_file_4emrl9
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
 - [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
-<<<<<<< .merge_file_jc0VnN
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-=======
 - [Implementazione Auth Pages](../../../../User/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../../../User/docs/translation_keys_rules.md)
->>>>>>> .merge_file_4emrl9
 - [Documentazione Lang](README.md)
 
 ## Regole Fondamentali per le Traduzioni
@@ -6728,11 +6623,8 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 ## [[DATE]] Nota storica: correzione massiva Notify
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
-<<<<<<< .merge_file_jc0VnN
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
-=======
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
->>>>>>> .merge_file_4emrl9
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 
 ---
@@ -7029,13 +6921,10 @@ Prima di ogni commit, verificare:
 
 ## Collegamenti
 
-<<<<<<< .merge_file_jc0VnN
 - [Regole Traduzioni](../../laravel/Modules/Xot/docs/translation-standards.md)
 - [Regole Traduzioni](../../laravel/modules/xot/docs/translation-standards.md)
-=======
 - [Regole Traduzioni](../../translation-standards.md)
 - [Regole Traduzioni](../../translation-standards.md)
->>>>>>> .merge_file_4emrl9
 - [Best Practices Filament](filament-widget-best-practices.md)
 - [Enum Standards](enum_standards.md)
 
@@ -7171,13 +7060,10 @@ Questa regola si applica a:
 
 ## Collegamenti
 
-<<<<<<< .merge_file_jc0VnN
 - [Regole Traduzioni <nome progetto>](translation-helper-text-standards.md)
 - [Standard Helper Text](translation-helper-text-standards.md)
-=======
 - [Regole Traduzioni <nome progetto>](../../translation-helper-text-standards.md)
 - [Standard Helper Text](../../translation-helper-text-standards.md)
->>>>>>> .merge_file_4emrl9
 - [Convenzioni Filament](filament-best-practices.md)
 
 *Ultimo aggiornamento: 2025-01-06*
@@ -7308,7 +7194,6 @@ La corretta implementazione degli standard di traduzione garantisce:
 
 ## Collegamenti alla Documentazione
 
-<<<<<<< .merge_file_jc0VnN
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
@@ -7317,7 +7202,6 @@ La corretta implementazione degli standard di traduzione garantisce:
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
-=======
 - [Regole Generali per le Traduzioni](../../translation_keys_rules.md)
 - [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
@@ -7326,7 +7210,6 @@ La corretta implementazione degli standard di traduzione garantisce:
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 - [Regole Generali per le Traduzioni](../../translation_keys_rules.md)
 - [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
->>>>>>> .merge_file_4emrl9
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 # Standardizzazione Traduzioni Modulo Notify
 
@@ -7436,7 +7319,6 @@ La corretta implementazione degli standard di traduzione garantisce:
 
 ## Collegamenti alla Documentazione
 
-<<<<<<< .merge_file_jc0VnN
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
@@ -7445,7 +7327,6 @@ La corretta implementazione degli standard di traduzione garantisce:
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
-=======
 - [Regole Generali per le Traduzioni](../../translation_keys_rules.md)
 - [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
@@ -7454,7 +7335,6 @@ La corretta implementazione degli standard di traduzione garantisce:
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 - [Regole Generali per le Traduzioni](../../translation_keys_rules.md)
 - [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
->>>>>>> .merge_file_4emrl9
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 
 ---
@@ -7882,17 +7762,14 @@ Tutti i campi di traduzione ora includono la struttura completa a 7 elementi:
 
 ### Documentazione Centrale
 - `/docs/translation-field-structure-complete.md` - Standard completi per tutti i campi
-<<<<<<< .merge_file_jc0VnN
 - `/docs/translation-refactor-complete-summary-completo-file-traduzione-riepilogo.md` - Questo documento
 
 ### Documentazione Moduli
 - `/Modules/User/docs/translation-city-field-refactor-2025-08-08.md` - Dettagli refactor modulo User
-=======
 - `/docs/translation-refactor-complete-summary.md` - Questo documento
 
 ### Documentazione Moduli
 - `/Modules/User/docs/translation-city-field-refactor-modulo-user.md` - Dettagli refactor modulo User
->>>>>>> .merge_file_4emrl9
 - `/Modules/<nome progetto>/docs/translation-refactor-summary-2025-08-08.md` - Status modulo <nome progetto>
 
 ## Principi DRY + KISS Applicati
@@ -7967,11 +7844,8 @@ Tutti i campi di traduzione ora includono la struttura completa a 7 elementi:
 ## Collegamenti alla Documentazione
 
 - [Struttura Campi Traduzione Completa](translation-field-structure-complete.md)
-<<<<<<< .merge_file_jc0VnN
 - [Refactor Modulo User](../Modules/User/docs/translation-city-field-refactor-2025-08-08.md)
-=======
 - [Refactor Modulo User](../Modules/User/docs/translation-city-field-refactor-completo-campi-citta-modulo.md)
->>>>>>> .merge_file_4emrl9
 - [Status Modulo <nome progetto>](../Modules/<nome progetto>/docs/translation-refactor-summary-2025-08-08.md)
 
 ---
@@ -8064,17 +7938,14 @@ Tutti i campi di traduzione ora includono la struttura completa a 7 elementi:
 
 ### Documentazione Centrale
 - `/docs/translation-field-structure-complete.md` - Standard completi per tutti i campi
-<<<<<<< .merge_file_jc0VnN
 - `/docs/translation-refactor-complete-summary-completo-file-traduzione-riepilogo.md` - Questo documento
 
 ### Documentazione Moduli
 - `/Modules/User/docs/translation-city-field-refactor-2025-08-08.md` - Dettagli refactor modulo User
-=======
 - `/docs/translation-refactor-complete-summary.md` - Questo documento
 
 ### Documentazione Moduli
 - `/Modules/User/docs/translation-city-field-refactor-modulo-user.md` - Dettagli refactor modulo User
->>>>>>> .merge_file_4emrl9
 - `/Modules/<main module>/docs/translation-refactor-summary-2025-08-08.md` - Status modulo <main module>
 
 ## Principi DRY + KISS Applicati
@@ -8149,11 +8020,8 @@ Tutti i campi di traduzione ora includono la struttura completa a 7 elementi:
 ## Collegamenti alla Documentazione
 
 - [Struttura Campi Traduzione Completa](translation-field-structure-complete.md)
-<<<<<<< .merge_file_jc0VnN
 - [Refactor Modulo User](../Modules/User/docs/translation-city-field-refactor-2025-08-08.md)
-=======
 - [Refactor Modulo User](../Modules/User/docs/translation-city-field-refactor-completo-campi-citta-modulo.md)
->>>>>>> .merge_file_4emrl9
 - [Status Modulo <main module>](../Modules/<main module>/docs/translation-refactor-summary-2025-08-08.md)
 
 ---
@@ -8524,11 +8392,8 @@ related:
 # Collegamenti agli Standard di Traduzione
 
 ## Documentazione Principale
-<<<<<<< .merge_file_jc0VnN
 - [Regole Generali Traduzioni](translation_standards.md)
-=======
 - [Regole Generali Traduzioni](../../translation_standards.md)
->>>>>>> .merge_file_4emrl9
 - [Best Practices Filament](filament_translation_best_practices.md)
 - [Struttura File Traduzione](translation_file_structure.md)
 
@@ -8585,15 +8450,12 @@ Stiamo standardizzando i file di traduzione nel modulo Notify che presentano pro
 
 ## Documentazione nel Modulo Lang
 
-<<<<<<< .merge_file_jc0VnN
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
 - [Standardizzazione Traduzioni Modulo Notify](translation_notify_conversion.md)
-=======
 - [Regole Generali per le Traduzioni](../../translation_keys_rules.md)
 - [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
 - [Standardizzazione Traduzioni Modulo Notify](../../translation_notify_conversion.md)
->>>>>>> .merge_file_4emrl9
 
 ## Riepilogo dei Problemi
 
@@ -8806,11 +8668,8 @@ return [
 
 ### Collegamenti
 - [<nome modulo>/docs/appointment-management.md](../../<nome modulo>/docs/appointment-management.md)
-<<<<<<< .merge_file_jc0VnN
 - [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
-=======
 - [Lang/translation-keys-best-practices.md](../../translation-keys-best-practices.md)
->>>>>>> .merge_file_4emrl9
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
@@ -8985,11 +8844,8 @@ return [
 
 ### Collegamenti
 - [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md)
-<<<<<<< .merge_file_jc0VnN
 - [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
-=======
 - [Lang/translation-keys-best-practices.md](../../translation-keys-best-practices.md)
->>>>>>> .merge_file_4emrl9
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
@@ -10882,11 +10738,8 @@ php docs/obbligatorio-audit-script.php
 - [Riepilogo Finale Refactor](translation-refactor-complete-summary.md)
 
 ### Documentazione Moduli
-<<<<<<< .merge_file_jc0VnN
 - [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-2025-08-08.md)
-=======
 - [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-completo-campi-citta-modulo.md)
->>>>>>> .merge_file_4emrl9
 - [<nome progetto> Module - Refactor Summary](../Modules/<nome progetto>/docs/translation-refactor-summary-2025-08-08.md)
 - [Geo Module - Helper Text Fix](../Modules/Geo/docs/helper-text-normalization-fix.md)
 - [User Module - City Field Refactor](../modules/user/docs/translation-city-field-refactor-[date].md)
@@ -10904,11 +10757,8 @@ php docs/obbligatorio-audit-script.php
 - [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-[DATE].md)
 - [<nome progetto> Module - Refactor Summary](../Modules/<nome progetto>/docs/translation-refactor-summary-[DATE].md)
 - [Geo Module - Helper Text Fix](../Modules/Geo/docs/helper-text-normalization-fix.md)
-<<<<<<< .merge_file_jc0VnN
 - [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-2025-08-08.md)
-=======
 - [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-completo-campi-citta-modulo.md)
->>>>>>> .merge_file_4emrl9
 - [<nome progetto> Module - Refactor Summary](../Modules/<nome progetto>/docs/translation-refactor-summary-2025-08-08.md)
 - [Geo Module - Helper Text Fix](../Modules/Geo/docs/helper-text-normalization-fix.md)
 - [User Module - City Field Refactor](../modules/user/docs/translation-city-field-refactor-[date].md)
@@ -11394,11 +11244,8 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali
-<<<<<<< .merge_file_jc0VnN
 - [Root Docs: Translation Standards](../../docs/translation_standards.md)
-=======
 - [Root Docs: Translation Standards](../../translation_standards.md)
->>>>>>> .merge_file_4emrl9
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
 - [<main module> Module: Translation Guidelines](../<main module>/docs/translation_guidelines.md)
 
@@ -11649,17 +11496,14 @@ php artisan lang:sync
 
 ## Collegamenti
 
-<<<<<<< .merge_file_jc0VnN
 - [Translation Standards](./translation-standards.md)
 - [Translation System](./translation-system.md)
 - [Best Practices](./translation-keys-best-practices.md)
 - [File Management](./translation-file-management.md)
-=======
 - [Translation Standards](../../translation-standards.md)
 - [Translation System](../../translation-system.md)
 - [Best Practices](../../translation-keys-best-practices.md)
 - [File Management](../../translation-file-management.md)
->>>>>>> .merge_file_4emrl9
 
 ## Note per lo Sviluppo
 
@@ -11925,15 +11769,12 @@ php artisan lang:export
 
 ## Collegamenti
 
-<<<<<<< .merge_file_jc0VnN
 - [Translation Standards](./translation-standards.md)
 - [Translation System](./translation-system.md)
 - [Best Practices](./translation-keys-best-practices.md)
-=======
 - [Translation Standards](../../translation-standards.md)
 - [Translation System](../../translation-system.md)
 - [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> .merge_file_4emrl9
 - [Laravel Localization](https://laravel.com/docs/localization)
 
 ## Note per lo Sviluppo
@@ -12177,11 +12018,8 @@ return [
 ## Collegamenti
 
 - [Translation Rules](../Xot/docs/translation_rules.md)
-<<<<<<< .merge_file_jc0VnN
 - [Translation Standards](./translation-standards.md)
-=======
 - [Translation Standards](../../translation-standards.md)
->>>>>>> .merge_file_4emrl9
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 
 ## Prossimi Passi
@@ -12491,11 +12329,8 @@ Per blocchi di testo lunghi, valuta se usare chiavi dedicate in PHP (es. `onboar
 
 La traduzione appointment.php del modulo <main module> è stata riscritta secondo le regole di centralizzazione, DRY, KISS, nessun lock-in, e struttura gerarchica inglese. Tutte le chiavi sono ora coerenti con enums, actions, messages, filters, calendar, notifications. La motivazione è filosofica (un solo punto di verità), logica (manutenzione semplice), religiosa (nessuna duplicazione), politica (nessun lock-in tra moduli), zen (serenità del codice).
 
-<<<<<<< .merge_file_jc0VnN
 Vedi esempio e motivazione in [<main module>/docs/appointment-management.md](../../<main module>/docs/appointment-management.md) e [translation-standards.md](./translation-standards.md).
-=======
 Vedi esempio e motivazione in [<main module>/docs/appointment-management.md](../../<main module>/docs/appointment-management.md) e [translation-standards.md](../../translation-standards.md).
->>>>>>> .merge_file_4emrl9
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
@@ -12542,11 +12377,8 @@ related:
 - [Documentazione centrale](./README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
-<<<<<<< .merge_file_jc0VnN
 - [Regole Traduzioni User](translation_keys_rules.md)
-=======
 - [Regole Traduzioni User](../../translation_keys_rules.md)
->>>>>>> .merge_file_4emrl9
 - [Documentazione Lang](./README.md)
 
 ## Regole Fondamentali per le Traduzioni
@@ -12755,11 +12587,8 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 ## [2024-07-07] Nota storica: correzione massiva Notify
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
-<<<<<<< .merge_file_jc0VnN
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../Notify/docs/TRANSLATION_KEYS_RULES.md) per dettagli, esempi e best practice specifiche.
-=======
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
->>>>>>> .merge_file_4emrl9
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 
 ---
@@ -12983,13 +12812,10 @@ La corretta implementazione degli standard di traduzione garantisce:
 
 ## Collegamenti alla Documentazione
 
-<<<<<<< .merge_file_jc0VnN
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
-=======
 - [Regole Generali per le Traduzioni](../../translation_keys_rules.md)
 - [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
->>>>>>> .merge_file_4emrl9
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 
 ---
@@ -13176,11 +13002,8 @@ return [
 ### Collegamenti
 - [SaluteOra/docs/appointment-management.md](../../SaluteOra/docs/appointment-management.md)
 - [<nome progetto>corrente/docs/appointment-management.md<nome progetto>rogetto corrente/docs/appointment-management.md)
-<<<<<<< .merge_file_jc0VnN
 - [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
-=======
 - [Lang/translation-keys-best-practices.md](../../translation-keys-best-practices.md)
->>>>>>> .merge_file_4emrl9
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
@@ -13221,15 +13044,12 @@ Stiamo standardizzando i file di traduzione nel modulo Notify che presentano pro
 
 ## Documentazione nel Modulo Lang
 
-<<<<<<< .merge_file_jc0VnN
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
 - [Standardizzazione Traduzioni Modulo Notify](translation_notify_conversion.md)
-=======
 - [Regole Generali per le Traduzioni](../../translation_keys_rules.md)
 - [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
 - [Standardizzazione Traduzioni Modulo Notify](../../translation_notify_conversion.md)
->>>>>>> .merge_file_4emrl9
 
 ## Riepilogo dei Problemi
 
@@ -13940,11 +13760,8 @@ php artisan tinker
 ## Collegamenti Correlati
 
 ### Documentazione Modulo Lang:
-<<<<<<< .merge_file_jc0VnN
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-=======
 - [Errori Comuni Traduzione](../../errori_comuni_traduzione.md)
->>>>>>> .merge_file_4emrl9
 - [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
 - [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
 
@@ -14961,11 +14778,8 @@ php artisan tinker
 ## Collegamenti Correlati
 
 ### Documentazione Modulo Lang:
-<<<<<<< .merge_file_jc0VnN
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-=======
 - [Errori Comuni Traduzione](../../errori_comuni_traduzione.md)
->>>>>>> .merge_file_4emrl9
 - [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
 - [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
 
@@ -15115,11 +14929,8 @@ php artisan tinker
 ## Collegamenti Correlati
 
 ### Documentazione Modulo Lang:
-<<<<<<< .merge_file_jc0VnN
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-=======
 - [Errori Comuni Traduzione](../../errori_comuni_traduzione.md)
->>>>>>> .merge_file_4emrl9
 - [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
 - [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
 
@@ -15268,11 +15079,8 @@ php artisan tinker
 ## Collegamenti Correlati
 
 ### Documentazione Modulo Lang:
-<<<<<<< .merge_file_jc0VnN
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-=======
 - [Errori Comuni Traduzione](../../errori_comuni_traduzione.md)
->>>>>>> .merge_file_4emrl9
 - [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
 - [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
 
@@ -15348,11 +15156,8 @@ Aggiorna sempre la documentazione in `/Modules/Lang/docs` e spiega la strategia 
 
 ### Devo registrare manualmente i comandi console?
 
-<<<<<<< .merge_file_jc0VnN
 **No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)
-=======
 **No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](../../lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)
->>>>>>> .merge_file_4emrl9
 # FAQ e Problemi Comuni sulle Traduzioni
 
 ## 1. Perché il POST non funziona su rotte localizzate?
@@ -15404,11 +15209,8 @@ Aggiorna sempre la documentazione in `/Modules/Lang/docs` e spiega la strategia 
 
 ### Devo registrare manualmente i comandi console?
 
-<<<<<<< .merge_file_jc0VnN
 **No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)
-=======
 **No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](../../lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)
->>>>>>> .merge_file_4emrl9
 
 ---
 
@@ -15706,11 +15508,8 @@ related:
 ## Collegamenti Bidirezionali
 - [Modulo <nome progetto> - Regole Consolidate Traduzioni](../../<nome progetto>/docs/translation-rules-consolidated.md)
 - [Modulo <nome progetto> - Implementazione Appointment Report](../../<nome progetto>/docs/appointment_report_translations_implementation.md)
-<<<<<<< .merge_file_jc0VnN
 - [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
-=======
 - [Modulo User - Translation Best Practices](../../../../User/docs/translation_best_practices.md)
->>>>>>> .merge_file_4emrl9
 
 ## Panoramica
 Il sistema di traduzioni utilizza `LangServiceProvider` per gestire le traduzioni in modo centralizzato e efficiente.
@@ -16947,11 +16746,8 @@ Aggiorna sempre la documentazione in `/Modules/Lang/docs` e spiega la strategia 
 
 ### Devo registrare manualmente i comandi console?
 
-<<<<<<< .merge_file_jc0VnN
 **No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md) 
-=======
 **No!** Tutti i comandi console sono autoregistrati tramite XotBaseServiceProvider. Non aggiungere mai `$this->commands([...])` nei provider. Perché? Vedi [lang-service-provider.md](../../lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md) 
->>>>>>> .merge_file_4emrl9
 
 ---
 
