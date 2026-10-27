@@ -7,7 +7,7 @@ updated: 2026-10-06
 phase: quality-gates
 priority: P1
 related:
-  - cluster3-phpstan-swarm-20261006.story.md
+  - cluster3-phpstan-swarm.story.md
 status: superseded
 superseded_by: lang-phpstan-l10.story.md
 ---
