@@ -1,21 +1,13 @@
 ---
 title: "Changelog"
-module: "Lang"
-type: concept
-tags: [migration, filament, 4]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration filament 4"
-related:
-  - "./italian-text-refined-audit-report.md"
-  - "../italian-text-refined-audit-report.md"
+type: alias
 status: superseded
-superseded_by: ../CHANGELOG.md
+canonical: "bmad/changelog.md"
+qmd: "changelog alias superseded"
 ---
+
 # Changelog
 
-All notable changes to `:package_name` will be documented in this file.
+Documento identico al canonico: [changelog.md](../bmad/changelog.md).
 
-## 1.0.0 - 202X-XX-XX
-
-- initial release
+Canonico: `laravel/Modules/Lang/docs/bmad/changelog.md`. Qui non ci sono istruzioni: seguire il file collegato.
