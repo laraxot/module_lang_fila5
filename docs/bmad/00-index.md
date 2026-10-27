@@ -8,6 +8,7 @@ updated: 2026-07-14
 qmd: "lang service helper text"
 related:
   - "../italian-text-refined-audit-report.md"
+status: draft
 ---
 # 📚 **Indice Documentazione Modulo Lang**
 

@@ -8,6 +8,8 @@ type: product
 tags: [product, modules, lang]
 created: 2026-08-24
 updated: 2026-08-24
+status: superseded
+superseded_by: INDEX.md
 ---
 
 # lang — product
@@ -16,7 +18,7 @@ Documentation for `lang` module categorized as **product**.
 
 ## Files
 
-- [`index.md`](./index.md)
+- [`INDEX.md`](./index.md)
 - [`product-strategy.md`](../../../product-strategy.md)
 - [`strategy.md`](../../../strategy.md)
 

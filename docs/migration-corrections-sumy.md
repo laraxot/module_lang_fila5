@@ -10,7 +10,8 @@ updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
+status: superseded
+superseded_by: migration-corrections.md
 ---
 # Correzioni Migrazione - Modulo Lang
 
@@ -157,7 +158,7 @@ La migrazione ora segue completamente gli standard del progetto:
 ## Riferimenti
 
 - [Standard Migrazioni](../../xot/docs/migration_standards.md)
-- [Best Practices Migrazioni Lang](migration-best-practices.md)
+- [Best Practices Migrazioni Lang](migration_best_practices.md)
 - [Documentazione Generale](../../xot/docs/migration_guidelines.md)
 
 ## Lezioni Apprese
@@ -314,7 +315,7 @@ La migrazione ora segue completamente gli standard del progetto:
 ## Riferimenti
 
 - [Standard Migrazioni](../../xot/docs/migration_standards.md)
-- [Best Practices Migrazioni Lang](migration-best-practices.md)
+- [Best Practices Migrazioni Lang](migration_best_practices.md)
 - [Documentazione Generale](../../xot/docs/migration_guidelines.md)
 
 ## Lezioni Apprese

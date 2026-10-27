@@ -108,7 +108,7 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 ## Collegamenti
 
 ### Documentazione Correlata
-- [Translation System](./translation-system.md)
+- [Translation System](./translation_system.md)
 - [Multi-language Support](./multi_language_support.md)
 - [Localization Best Practices](./localization_best_practices.md)
 
