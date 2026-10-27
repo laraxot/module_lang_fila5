@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 # Testing Rules Summary
 
@@ -24,6 +25,7 @@ related:
 - **MAI** usare `use RefreshDatabase` nei test
 - **MAI** usare `RefreshDatabase` trait
 - Utilizzare `.env.testing` con SQLite in-memory
+- Utilizzare `.env.testing` con MySQL (suffisso `_test`, mai SQLite: regola `bashscripts/ai/wiki/rules/workflow/mysql-testing-only.mdc`)
 - Usare `DatabaseTransactions` se necessario (raro)
 
 ### 3. **Configurazione Testing**
@@ -100,6 +102,7 @@ php bashscripts/test_conversion/convert_phpunit_to_pest.php
 
 ### ✅ Best Practices
 1. Usare `.env.testing` con SQLite in-memory
+1. Usare `.env.testing` con MySQL (suffisso `_test`, mai SQLite: regola `bashscripts/ai/wiki/rules/workflow/mysql-testing-only.mdc`)
 2. Scrivere test in formato Pest functional
 3. Usare `DatabaseTransactions` invece di `RefreshDatabase`
 4. Seguire la struttura esistente dei test
@@ -379,6 +382,7 @@ protected function createApplication()
 
 - [Testing Setup Guide](../../docs/testing-setup.md)
 - [Testing Best Practices](../../docs/testing-best-practices.md)
+- [Troubleshooting Guide](../../docs/troubleshooting.md)
 - [Troubleshooting Guide](troubleshooting.md)
 
 ## Testing Examples

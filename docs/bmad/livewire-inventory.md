@@ -2,6 +2,7 @@
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
+updated: 2026-10-20
 qmd: "livewire inventory"
 issues: []
 discussions: []
@@ -21,6 +22,8 @@ related:
   - ../../../Cms/docs/bmad/livewire-inventory.md
   - ../../../UI/docs/bmad/livewire-widget-project-context.md
   - ../stories/12.1.retire-lang-http-switchers.story.md
+  - ../../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md
+  - ../../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md
 ---
 
 # Inventario: Livewire HTTP → Filament (Lang)

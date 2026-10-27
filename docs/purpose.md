@@ -17,6 +17,9 @@ discussions:
 
 # Lang — perche' esiste
 
+Documento breve. Analisi completa (confini, switcher, scrittura chiavi): [scopo.md](./scopo.md).
+Indice: [00-INDEX.md](./00-index.md).
+
 ## Lo scopo in una frase
 
 **Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si

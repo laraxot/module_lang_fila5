@@ -9,7 +9,8 @@ updated: 2026-05-11
 tags: [performance, optimization, tokens, context]
 related:
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
-status: draft
+status: superseded
+superseded_by: ../../../performance-optimization.md
 ---
 
 # Performance Optimization — Module **Lang**
@@ -118,8 +119,8 @@ context-mode ctx-stats
 ## Riferimenti
 
 - [Global Performance Guide](../../docs/wiki/concepts/performance-optimization.md)
-- [On-Demand Pattern](./on-demand-pattern.md)
-- [QMD Setup](./qmd-setup.md)
+- [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
+- [QMD Setup](./QMD-SETUP.md)
 
 ---
 *Status: Ottimizzato | Token risparmiati: ~48K per session*

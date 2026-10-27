@@ -157,7 +157,7 @@ La migrazione ora segue completamente gli standard del progetto:
 ## Riferimenti
 
 - [Standard Migrazioni](../../Xot/docs/migration_standards.md)
-- [Best Practices Migrazioni Lang](migration-best-practices.md)
+- [Best Practices Migrazioni Lang](migration_best_practices.md)
 - [Documentazione Generale](../../Xot/docs/migration_guidelines.md)
 
 ## Lezioni Apprese
@@ -314,7 +314,7 @@ La migrazione ora segue completamente gli standard del progetto:
 ## Riferimenti
 
 - [Standard Migrazioni](../../Xot/docs/migration_standards.md)
-- [Best Practices Migrazioni Lang](migration-best-practices.md)
+- [Best Practices Migrazioni Lang](migration_best_practices.md)
 - [Documentazione Generale](../../Xot/docs/migration_guidelines.md)
 
 ## Lezioni Apprese

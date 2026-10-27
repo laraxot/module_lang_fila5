@@ -11,7 +11,8 @@ tags:
   - conventions
   - llm-instructions
 created: 2026-04-15
-status: draft
+status: superseded
+superseded_by: schema.md
 ---
 
 # Wiki Schema - Lang

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Lang\Fixtures;
+namespace Modules\Lang\Tests\Fixtures;
 
 use Modules\Lang\Filament\Resources\Pages\LangBaseViewRecord;
 use Modules\Lang\Filament\Resources\TranslationFileResource;

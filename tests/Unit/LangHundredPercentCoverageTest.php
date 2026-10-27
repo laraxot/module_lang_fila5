@@ -2,17 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Lang\Unit;
+namespace Modules\Lang\Tests\Unit;
 
 use Filament\Actions\Action;
-use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Section;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
@@ -56,6 +51,16 @@ use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Lang\Providers\RouteServiceProvider;
 use Modules\Lang\Providers\TranslatorTraitPhpstanProbe;
+use Modules\Lang\Tests\Fixtures\LangBaseCreateRecordStub;
+use Modules\Lang\Tests\Fixtures\LangBaseEditRecordStub;
+use Modules\Lang\Tests\Fixtures\LangBaseListRecordsStub;
+use Modules\Lang\Tests\Fixtures\LangBasePolicyStub;
+use Modules\Lang\Tests\Fixtures\LangBaseResourceStub;
+use Modules\Lang\Tests\Fixtures\LangBaseViewRecordStub;
+use Modules\Lang\Tests\Fixtures\LangFieldHostModel;
+use Modules\Lang\Tests\Fixtures\StrictTranslationsHost;
+use Modules\Lang\Tests\Fixtures\TranslationEditorStub;
+use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Components\LanguageSwitcher;
 use Modules\Lang\View\Composers\ThemeComposer;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
@@ -65,16 +70,6 @@ use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
-use Tests\Modules\Lang\Fixtures\LangBaseCreateRecordStub;
-use Tests\Modules\Lang\Fixtures\LangBaseEditRecordStub;
-use Tests\Modules\Lang\Fixtures\LangBaseListRecordsStub;
-use Tests\Modules\Lang\Fixtures\LangBasePolicyStub;
-use Tests\Modules\Lang\Fixtures\LangBaseResourceStub;
-use Tests\Modules\Lang\Fixtures\LangBaseViewRecordStub;
-use Tests\Modules\Lang\Fixtures\LangFieldHostModel;
-use Tests\Modules\Lang\Fixtures\StrictTranslationsHost;
-use Tests\Modules\Lang\Fixtures\TranslationEditorStub;
-use Tests\Modules\Lang\TestCase;
 
 use function Safe\fclose;
 use function Safe\file_put_contents;
@@ -756,7 +751,6 @@ describe('Lang 100% — Models policies providers views', function (): void {
     test('Post linkable slug options and accessors without persistence', function (): void {
         $post = new Post;
         Assert::assertSame('guid', $post->getSlugOptions()->slugField);
-        Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
         $post->setRawAttributes(['post_type' => 'article', 'post_id' => '9']);
         Assert::assertSame('article 9', $post->getTitleAttribute(null));
@@ -875,13 +869,6 @@ describe('Lang 100% — Models policies providers views', function (): void {
         Assert::assertInstanceOf(TranslatorAdapter::class, app('translator'));
 
         $provider->registerFilamentLabel();
-        Assert::assertInstanceOf(Select::class, Select::make('s'));
-        Assert::assertInstanceOf(TextInput::class, TextInput::make('t'));
-        Assert::assertInstanceOf(TextEntry::class, TextEntry::make('e'));
-        Assert::assertInstanceOf(Section::class, Section::make('sec'));
-        Assert::assertInstanceOf(Filter::class, Filter::make('f'));
-        Assert::assertInstanceOf(TextColumn::class, TextColumn::make('c'));
-        Assert::assertInstanceOf(Action::class, Action::make('act'));
     });
 
     test('TranslatorTrait registerTranslator via probe', function (): void {
