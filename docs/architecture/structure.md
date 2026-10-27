@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "test 1"
 related:
   - "../italian-text-refined-audit-report.md"
+status: draft
 ---
 # Modulo Lang
 
@@ -522,5 +523,5 @@ tests/Unit
 
 - Tutti i comandi console sono autoregistrati tramite la struttura di XotBaseServiceProvider.
 - Non aggiungere mai manualmente $this->commands([...]) nei provider.
-- Perché? Vedi [lang-service-provider.md](../lang-service-provider.md) e [PHILOSOPHY.md](./philosophy.md)
+- Perché? Vedi [lang-service-provider.md](../lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
 - Perché? Vedi [lang-service-provider.md](../lang-service-provider.md) e [PHILOSOPHY.md](./philosophy.md)

@@ -15,6 +15,7 @@ related:
   - ../../../../../docs/wiki/bmad/architecture.md
   - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
   - ../../docs/wiki/concepts/ai-harness-module-discipline.md  # target mancante, verificato 2026-10-14
+status: draft
 ---
 
 # Lang Module Wiki

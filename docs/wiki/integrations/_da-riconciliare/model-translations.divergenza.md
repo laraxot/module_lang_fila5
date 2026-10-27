@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# Divergenza: `model-translations.md`
+# Divergenza: `model_translations.md`
 
 Questo file veniva da `docs/wiki/integrations/modules/lang/model_translations.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
 

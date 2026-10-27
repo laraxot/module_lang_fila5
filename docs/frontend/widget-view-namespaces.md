@@ -9,7 +9,9 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
+  - "./italian-text-refined-audit-report.md"
   - "../italian-text-refined-audit-report.md"
+status: draft
 ---
 # Regole per i Namespace delle View nei Widget
 

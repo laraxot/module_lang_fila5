@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Lang\Fixtures;
+namespace Modules\Lang\Tests\Fixtures;
 
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 
@@ -23,7 +23,8 @@ final class NationalFlagSelectFinalStub extends NationalFlagSelect
     }
 
     /**
-     * @param  array<int, mixed>  $filteredCountries
+     * @param array<int, mixed> $filteredCountries
+     *
      * @return array<int, mixed>
      */
     protected function finalizeFilteredCountries(array $filteredCountries): array

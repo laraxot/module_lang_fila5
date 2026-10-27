@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 # Ottimizzazioni Super DRY + KISS - Modulo Lang
 
@@ -319,6 +320,11 @@ class Language extends Model
 
 ## 🔗 Collegamenti
 
+- [Documentazione Core](../../../../docs/core/)
+- [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
+- [Convenzioni Sistema](../../../../docs/core/conventions.md)
+- [Template Modulo](../../../../docs/templates/module-template.md)
+- [Documentazione Core](../../../docs/core/)
 - [Documentazione Core](core)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)

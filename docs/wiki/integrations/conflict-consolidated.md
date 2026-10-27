@@ -8,6 +8,7 @@ type: integration
 tags: [integrations, modules, lang]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
 ---
 
 # conflict — Consolidated Documentation
@@ -292,6 +293,10 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 ## Collegamenti Correlati
 
+- [Filament Translations](../filament-translations.md)
+- [Translation Standards](../translation-standards.md)
+- [Best Practices](../translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Filament Translations](../../filament-translations.md)
 - [Translation Standards](../../translation-standards.md)
 - [Best Practices](../../translation-keys-best-practices.md)
@@ -553,6 +558,10 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 ## Collegamenti Correlati
 
+- [Filament Translations](../filament-translations.md)
+- [Translation Standards](../translation-standards.md)
+- [Best Practices](../translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Filament Translations](../../filament-translations.md)
 - [Translation Standards](../../translation-standards.md)
 - [Best Practices](../../translation-keys-best-practices.md)
@@ -661,6 +670,10 @@ return [
 
 ## Collegamenti Correlati
 
+- [Translation Standards](../translation-standards.md)
+- [PHP Strict Types](../php-strict-types.md)
+- [Translation File Management](../translation-file-management.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Translation Standards](../../translation-standards.md)
 - [PHP Strict Types](../php-strict-types.md)
 - [Translation File Management](../../translation-file-management.md)
@@ -752,6 +765,10 @@ return [
 
 ## Collegamenti Correlati
 
+- [Translation Standards](../translation-standards.md)
+- [PHP Strict Types](../php-strict-types.md)
+- [Translation File Management](../translation-file-management.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Translation Standards](../../translation-standards.md)
 - [PHP Strict Types](../php-strict-types.md)
 - [Translation File Management](../../translation-file-management.md)
@@ -875,6 +892,16 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 ## Collegamenti
 
+- [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
+- [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../../docs/)
+- [Modules/Lang/docs/](../docs/)
+- [Modules/Lang/docs/](../docs/)
+- [Modules/Lang/docs/](../docs/)
+- [Modules/Lang/docs/](../docs/)
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../../docs/)
 - [conflict-resolution-autolabelaction.md](../../conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](../../conflict-resolution-edit-translation-file.md)
 *Ultimo aggiornamento: 29 luglio 2025*
@@ -974,6 +1001,21 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 ## Collegamenti
 
+- [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
+- [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../../docs/)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../docs/)
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../docs/)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../docs/)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+- [Modules/Lang/docs/](../../docs/)
 - [conflict-resolution-autolabelaction.md](../../conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](../../conflict-resolution-edit-translation-file.md)
 *Ultimo aggiornamento: 29 luglio 2025*
@@ -1098,6 +1140,10 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 
 ## Collegamenti Correlati
 
+- [Lang Service Provider](../lang-service-provider.md)
+- [Filament Translations](../filament-translations.md)
+- [Translation Standards](../translation-standards.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Lang Service Provider](../../lang-service-provider.md)
 - [Filament Translations](../../filament-translations.md)
 - [Translation Standards](../../translation-standards.md)
@@ -1206,6 +1252,10 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 
 ## Collegamenti Correlati
 
+- [Lang Service Provider](../lang-service-provider.md)
+- [Filament Translations](../filament-translations.md)
+- [Translation Standards](../translation-standards.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Lang Service Provider](../../lang-service-provider.md)
 - [Filament Translations](../../filament-translations.md)
 - [Translation Standards](../../translation-standards.md)
@@ -1409,6 +1459,10 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 
 ## Collegamenti Correlati
 
+- [Translation Standards](../translation-standards.md)
+- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [Translation File Management](../translation-file-management.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Translation Standards](../../translation-standards.md)
 - [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
 - [Translation File Management](../../translation-file-management.md)
@@ -1596,6 +1650,10 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 
 ## Collegamenti Correlati
 
+- [Translation Standards](../translation-standards.md)
+- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [Translation File Management](../translation-file-management.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Translation Standards](../../translation-standards.md)
 - [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
 - [Translation File Management](../../translation-file-management.md)
@@ -1827,6 +1885,9 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 ## Collegamenti Correlati
 
+- [Translation Standards](../translation-standards.md)
+- [Translation File Management](../translation-file-management.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Translation Standards](../../translation-standards.md)
 - [Translation File Management](../../translation-file-management.md)
 - [Best Practices](../../translation-keys-best-practices.md)
@@ -2043,6 +2104,9 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 ## Collegamenti Correlati
 
+- [Translation Standards](../translation-standards.md)
+- [Translation File Management](../translation-file-management.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Translation Standards](../../translation-standards.md)
 - [Translation File Management](../../translation-file-management.md)
 - [Best Practices](../../translation-keys-best-practices.md)
@@ -2172,6 +2236,10 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 
 ## Collegamenti Correlati
 
+- [Translation File Management](../translation-file-management.md)
+- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [Translation Standards](../translation-standards.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Translation File Management](../../translation-file-management.md)
 - [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
 - [Translation Standards](../../translation-standards.md)
@@ -2279,6 +2347,10 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 
 ## Collegamenti Correlati
 
+- [Translation File Management](../translation-file-management.md)
+- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [Translation Standards](../translation-standards.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Translation File Management](../../translation-file-management.md)
 - [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
 - [Translation Standards](../../translation-standards.md)
@@ -2347,7 +2419,7 @@ related:
 
 ## conflict_resolution_autolabelaction
 
-*Consolidated from: `conflict-resolution-autolabelaction.md`*
+*Consolidated from: `conflict_resolution_autolabelaction.md`*
 
 title: "Risoluzione Conflitto AutoLabelAction"
 module: "Lang"
@@ -2601,6 +2673,10 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 ## Collegamenti Correlati
 
+- [Filament Translations](../filament-translations.md)
+- [Translation Standards](../translation-standards.md)
+- [Best Practices](../translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Filament Translations](../../filament-translations.md)
 - [Translation Standards](../../translation-standards.md)
 - [Best Practices](../../translation-keys-best-practices.md)
@@ -2625,7 +2701,7 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 ## conflict_resolution_edit_translation_file
 
-*Consolidated from: `conflict-resolution-edit-translation-file.md`*
+*Consolidated from: `conflict_resolution_edit_translation_file.md`*
 
 title: "Risoluzione Conflitto edit_translation_file.php"
 module: "Lang"
@@ -2709,6 +2785,10 @@ return [
 
 ## Collegamenti Correlati
 
+- [Translation Standards](../translation-standards.md)
+- [PHP Strict Types](../php-strict-types.md)
+- [Translation File Management](../translation-file-management.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Translation Standards](../../translation-standards.md)
 - [PHP Strict Types](../php-strict-types.md)
 - [Translation File Management](../../translation-file-management.md)
@@ -2733,7 +2813,7 @@ return [
 
 ## conflict_resolution_edittranslationfile_class
 
-*Consolidated from: `conflict-resolution-edittranslationfile-class.md`*
+*Consolidated from: `conflict_resolution_edittranslationfile_class.md`*
 
 title: "Risoluzione Conflitto EditTranslationFile.php (Classe)"
 module: "Lang"
@@ -2832,6 +2912,9 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 ## Collegamenti
 
+- [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
+- [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
+- [Modules/Lang/docs/](../docs/)
 - [conflict-resolution-autolabelaction.md](../../conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](../../conflict-resolution-edit-translation-file.md)
 - [Modules/Lang/docs/](../..)
@@ -2842,7 +2925,7 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 ## conflict_resolution_langserviceprovider
 
-*Consolidated from: `conflict-resolution-langserviceprovider.md`*
+*Consolidated from: `conflict_resolution_langserviceprovider.md`*
 
 title: "Risoluzione Conflitto LangServiceProvider"
 module: "Lang"
@@ -2945,6 +3028,10 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 
 ## Collegamenti Correlati
 
+- [Lang Service Provider](../lang-service-provider.md)
+- [Filament Translations](../filament-translations.md)
+- [Translation Standards](../translation-standards.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Lang Service Provider](../../lang-service-provider.md)
 - [Filament Translations](../../filament-translations.md)
 - [Translation Standards](../../translation-standards.md)
@@ -2968,7 +3055,7 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 
 ## conflict_resolution_readtranslationfileaction
 
-*Consolidated from: `conflict-resolution-readtranslationfileaction.md`*
+*Consolidated from: `conflict_resolution_readtranslationfileaction.md`*
 
 title: "Risoluzione Conflitto ReadTranslationFileAction"
 module: "Lang"
@@ -3148,6 +3235,10 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 
 ## Collegamenti Correlati
 
+- [Translation Standards](../translation-standards.md)
+- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [Translation File Management](../translation-file-management.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Translation Standards](../../translation-standards.md)
 - [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
 - [Translation File Management](../../translation-file-management.md)
@@ -3172,7 +3263,7 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 
 ## conflict_resolution_translation_file_syntax
 
-*Consolidated from: `conflict-resolution-translation-file-syntax.md`*
+*Consolidated from: `conflict_resolution_translation_file_syntax.md`*
 
 title: "Risoluzione Conflitto translation-file-syntax.md"
 module: "Lang"
@@ -3379,6 +3470,9 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 ## Collegamenti Correlati
 
+- [Translation Standards](../translation-standards.md)
+- [Translation File Management](../translation-file-management.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Translation Standards](../../translation-standards.md)
 - [Translation File Management](../../translation-file-management.md)
 - [Best Practices](../../translation-keys-best-practices.md)
@@ -3402,7 +3496,7 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 ## conflict_resolution_writetranslationfileaction
 
-*Consolidated from: `conflict-resolution-writetranslationfileaction.md`*
+*Consolidated from: `conflict_resolution_writetranslationfileaction.md`*
 
 title: "Risoluzione Conflitto WriteTranslationFileAction"
 module: "Lang"
@@ -3502,6 +3596,10 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 
 ## Collegamenti Correlati
 
+- [Translation File Management](../translation-file-management.md)
+- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [Translation Standards](../translation-standards.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Translation File Management](../../translation-file-management.md)
 - [PHPStan Level 10 Fixes](../../phpstan-level10-fixes.md)
 - [Translation Standards](../../translation-standards.md)

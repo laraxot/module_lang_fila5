@@ -7,6 +7,8 @@ type: documentation
 created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
+status: superseded
+superseded_by: project-structure.md
 ---
 
 # Project Structure — Module **Lang**
@@ -50,7 +52,7 @@ tags: [structure, architecture, module]
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
-| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
+| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
 
 ## Convenzioni
 
@@ -97,6 +99,11 @@ graph TD
 
 ## Riferimenti Globali
 
+- [Project Wiki Root](../..)
+- [Global Rules](../../rules)
+- [Global Skills](../../skills)
+- [Global Commands](../../commands)
+- [Global Memories](../../memories)
 - [Project Wiki Root](../..)
 - [Global Rules](../../rules)
 - [Global Skills](../../skills)

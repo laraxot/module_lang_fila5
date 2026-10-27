@@ -8,10 +8,11 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
+status: superseded
+superseded_by: docs-naming-convention-fix.divergenza.md
 ---
 
-# Divergenza: `docs-naming-convention-fix.md`
+# Divergenza: `docs_naming_convention_fix.md`
 
 Questo file veniva da `docs/wiki/integrations/modules/lang/docs_naming_convention_fix.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
 

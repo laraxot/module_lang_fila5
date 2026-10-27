@@ -7,9 +7,9 @@ use Modules\Lang\Database\Factories\TranslationFileFactory;
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
+use Modules\Lang\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
-use Tests\Modules\Lang\TestCase;
 
 uses(TestCase::class);
 

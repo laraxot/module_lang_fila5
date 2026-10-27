@@ -9,7 +9,9 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "links"
 related:
+  - "./italian-text-refined-audit-report.md"
   - "../../../italian-text-refined-audit-report.md"
+status: draft
 ---
 # Correzione Convenzione Naming Cartelle Docs - Gennaio 2025
 
@@ -35,7 +37,7 @@ Le cartelle `docs` contenevano file e sottocartelle con caratteri maiuscoli, vio
 - ✅ `filament/infinite-loop-getStepByName-fix.md` → `filament/infinite-loop-getstepbyname-fix.md`
 
 ### Modulo Geo
-- ✅ `MCP_SERVER_RECOMMENDED.md` → `mcp-server-recommended.md`
+- ✅ `MCP_SERVER_RECOMMENDED.md` → `mcp_server_recommended.md`
 - ✅ `phpstan_fixes.md` → `phpstan-fixes-uppercase.md`
 
 ### Modulo UI

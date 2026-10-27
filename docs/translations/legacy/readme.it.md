@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "readme.it"
 issues: []
 discussions: []
+status: superseded
+superseded_by: README.it.md
 ---
 
 <div align="center">
@@ -23,15 +25,6 @@ discussions: []
 </div>
 
 ---
-
-title: "readme.it"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme.it"
-issues: []
-discussions: []
 # 🚀 Benvenuto in Laraxot PTVX
 
 > **La piattaforma Laravel di nuova generazione: modulare, multi-tenant e type-safe per progetti SaaS e aziendali ambiziosi.**
