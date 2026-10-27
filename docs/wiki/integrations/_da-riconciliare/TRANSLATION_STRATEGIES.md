@@ -7,7 +7,8 @@ updated: 2026-09-26
 qmd: "TRANSLATION STRATEGIES"
 issues: []
 discussions: []
-status: draft
+status: superseded
+superseded_by: translation-strategies.md
 ---
 
 # Strategie di Gestione delle Traduzioni in Laravel

@@ -8,10 +8,11 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
+status: superseded
+superseded_by: project-structure.divergenza.md
 ---
 
-# Divergenza: `project-structure.md`
+# Divergenza: `PROJECT-STRUCTURE.md`
 
 Questo file veniva da `docs/wiki/integrations/modules/lang/PROJECT-STRUCTURE.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
 

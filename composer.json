@@ -1,6 +1,6 @@
 {
     "name": "laraxot/module_lang_fila5",
-    "description": "",
+    "description": "Internationalization and localization module for the Laraxot ecosystem: translations, languages, and locale management.",
     "keywords": [
         "laraxot",
         "laravel",
@@ -12,6 +12,10 @@
         "translations",
         "localization"
     ],
+
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://github.com/laraxot/module_lang_fila3.git",
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_lang_fila5.git",
     "authors": [
@@ -44,6 +48,18 @@
             "type": "path",
             "url": "../UI"
         }
+        
+    ],
+    "repositories-comment": [
+        {
+            "type": "path",
+            "url": "./packages/lara-zeus/spatie-translatable"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.org",
+            "canonical": false
+        }
     ],
 
     "repositories-comment": [
@@ -62,6 +78,11 @@
             "Modules\\Lang\\": "app/",
             "Modules\\Lang\\Database\\Factories\\": "database/factories/",
             "Modules\\Lang\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Lang\\Tests\\": "tests/"
         }
     },
     "scripts": {

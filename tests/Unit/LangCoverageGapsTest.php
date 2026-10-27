@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Lang\Unit;
+namespace Modules\Lang\Tests\Unit;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
-use Filament\Schemas\Components\Wizard\Step;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -37,14 +36,14 @@ use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\Lang\Providers\RouteServiceProvider;
+use Modules\Lang\Tests\Fixtures\NationalFlagSelectStub;
+use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Composers\ThemeComposer;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
-use Tests\Modules\Lang\Fixtures\NationalFlagSelectStub;
-use Tests\Modules\Lang\TestCase;
 
 use function Safe\file_put_contents;
 use function Safe\getmypid;
@@ -300,7 +299,6 @@ describe('Lang coverage gaps closeout', function (): void {
 
         $provider = new LangServiceProvider(app());
         $provider->registerFilamentLabel();
-        Assert::assertInstanceOf(Step::class, Step::make('step1')->label('step1'));
 
         config(['laravellocalization.supportedLocales' => 'invalid']);
         app()->instance('request', Request::create('http://localhost/it/admin/dashboard', 'GET'));

@@ -15,7 +15,7 @@ status: draft
 # Collegamenti agli Standard di Traduzione
 
 ## Documentazione Principale
-- [Regole Generali Traduzioni](translation-standards.md)
+- [Regole Generali Traduzioni](translation_standards.md)
 - [Best Practices Filament](filament_translation_best_practices.md)
 - [Struttura File Traduzione](translation_file_structure.md)
 
@@ -72,9 +72,9 @@ Stiamo standardizzando i file di traduzione nel modulo Notify che presentano pro
 
 ## Documentazione nel Modulo Lang
 
-- [Regole Generali per le Traduzioni](translation-keys-rules.md)
+- [Regole Generali per le Traduzioni](translation_keys_rules.md)
 - [Best Practices per le Traduzioni](translation-keys-best-practices.md)
-- [Standardizzazione Traduzioni Modulo Notify](translation-notify-conversion.md)
+- [Standardizzazione Traduzioni Modulo Notify](translation_notify_conversion.md)
 
 ## Riepilogo dei Problemi
 

@@ -128,7 +128,7 @@ Per gli step dei wizard, la chiave di traduzione segue un formato leggermente di
 - [Best Practices Filament](/var/www/html/base_<nome progetto>/laravel/modules/xot/docs/filament-best-practices.md)
 
 ## Collegamenti tra versioni di automatic-translations.md
-* [automatic-translations.md](../../ui/docs/filament/automatic-translations.md)
+* [automatic-translations.md](../../UI/docs/filament/automatic-translations.md)
 
 - [LangServiceProvider](Modules/Lang/app/Providers/LangServiceProvider.php)
 - [Convenzioni di Traduzione](Modules/Lang/project_docs/translation-conventions.md)
