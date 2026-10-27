@@ -10,6 +10,8 @@ issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/345"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
+status: superseded
+superseded_by: INDEX.md
 ---
 
 # Rules — Lang Module Wiki

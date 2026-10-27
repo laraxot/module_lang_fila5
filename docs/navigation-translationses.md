@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 # Correzioni Traduzioni Navigation - Modulo Lang
 
@@ -92,6 +93,7 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 
 ## Collegamenti
 
+- [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
 - [Audit Generale Traduzioni Navigation](navigation-translations-audit.md)
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)

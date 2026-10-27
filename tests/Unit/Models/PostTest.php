@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Lang\Unit\Models;
+namespace Modules\Lang\Tests\Unit\Models;
 
 use Modules\Lang\Models\BaseModel;
 use Modules\Lang\Models\Post;
+use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Tests\Modules\Lang\TestCase;
+use ReflectionClass;
 
 use function Safe\class_uses;
 
@@ -15,9 +16,10 @@ uses(TestCase::class);
 
 describe('Post Model', function () {
     test('extends BaseModel', function () {
-        $model = new Post;
+        $parent = (new ReflectionClass(Post::class))->getParentClass();
 
-        Assert::assertInstanceOf(BaseModel::class, $model);
+        Assert::assertInstanceOf(ReflectionClass::class, $parent);
+        Assert::assertSame(BaseModel::class, $parent->getName());
     });
 
     test('uses HasSlug trait', function () {
@@ -45,7 +47,21 @@ describe('Post Model', function () {
     });
 
     test('has correct searchable fields', function () {
-        Assert::assertSame(['title', 'guid', 'txt'], Post::SEARCHABLE_FIELDS);
+        $post = new Post([
+            'title' => 'Search title',
+            'guid' => 'search-guid',
+            'txt' => 'Search body',
+        ]);
+
+        Assert::assertSame(
+            [
+                'title' => 'Search title',
+                'guid' => 'search-guid',
+                'txt' => 'Search body',
+            ],
+            $post->toSearchableArray(),
+        );
+        Assert::assertSame(Post::SEARCHABLE_FIELDS, array_keys($post->toSearchableArray()));
     });
 
     test('has snake attributes enabled', function () {

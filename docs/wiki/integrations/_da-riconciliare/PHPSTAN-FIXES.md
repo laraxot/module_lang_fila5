@@ -7,7 +7,8 @@ type: documentation
 tags: [phpstan, fixes, compliance]
 created: 2026-06-09
 updated: 2026-06-09
-status: draft
+status: superseded
+superseded_by: phpstan-fixes.md
 ---
 
 # PHPStan Compliance Documentation

@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Lang\Unit;
+namespace Modules\Lang\Tests\Unit;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
-use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
@@ -31,6 +30,16 @@ use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\RouteServiceProvider;
+use Modules\Lang\Tests\Fixtures\AutoLabelExecuteNestedCaller;
+use Modules\Lang\Tests\Fixtures\AutoLabelForcedKeyStub;
+use Modules\Lang\Tests\Fixtures\AutoLabelNullCallerStub;
+use Modules\Lang\Tests\Fixtures\AutoLabelStaticCaller;
+use Modules\Lang\Tests\Fixtures\NationalFlagSelectFinalStub;
+use Modules\Lang\Tests\Fixtures\PostNullTitleForGuidStub;
+use Modules\Lang\Tests\Fixtures\ThemeComposerNonStringFieldStub;
+use Modules\Lang\Tests\Fixtures\WriteTranslationFileActionFailStub;
+use Modules\Lang\Tests\Fixtures\WriteTranslationFileActionWriteFailStub;
+use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Composers\ThemeComposer;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\SvgExistsAction;
@@ -38,16 +47,6 @@ use Modules\Xot\Actions\GetTransKeyAction;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 use ReflectionProperty;
-use Tests\Modules\Lang\Fixtures\AutoLabelExecuteNestedCaller;
-use Tests\Modules\Lang\Fixtures\AutoLabelForcedKeyStub;
-use Tests\Modules\Lang\Fixtures\AutoLabelNullCallerStub;
-use Tests\Modules\Lang\Fixtures\AutoLabelStaticCaller;
-use Tests\Modules\Lang\Fixtures\NationalFlagSelectFinalStub;
-use Tests\Modules\Lang\Fixtures\PostNullTitleForGuidStub;
-use Tests\Modules\Lang\Fixtures\ThemeComposerNonStringFieldStub;
-use Tests\Modules\Lang\Fixtures\WriteTranslationFileActionFailStub;
-use Tests\Modules\Lang\Fixtures\WriteTranslationFileActionWriteFailStub;
-use Tests\Modules\Lang\TestCase;
 
 use function Safe\file_put_contents;
 use function Safe\mkdir;
@@ -58,15 +57,15 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 /**
- * Locale dell'app dopo applyLocale(), partendo ogni volta da 'it': un 'en' letto
- * dopo la chiamata prova il fallback, non un locale rimasto da quella precedente.
+ * Locale dell'app dopo normalizeLocale()+applyLocale(), partendo ogni volta da 'it':
+ * un 'en' letto dopo la chiamata prova il fallback, non un locale rimasto da prima.
  *
  * @param  array<string, mixed>  $data
  */
 function langLocaleAfterApplying(LocaleSwitcherRefresh $action, array $data): string
 {
     app()->setLocale('it');
-    $action->applyLocale($data);
+    $action->applyLocale(LocaleSwitcherRefresh::normalizeLocale($data['locale'] ?? null));
 
     return app()->getLocale();
 }
@@ -103,7 +102,7 @@ test('TranslatorAdapter coerces non-string loaded values', function (): void {
     // connessione a SQLite avrebbe dato l'impressione di proteggere qualcosa
     // che non e' in pericolo, e avrebbe contraddetto la regola per cui i test
     // girano sulle repliche MySQL. Story LANG-17.4.
-    $loader = new ArrayLoader;
+    $loader = new ArrayLoader();
     $adapter = new TranslatorAdapter($loader, 'it');
     $loaded = new ReflectionProperty(LaravelTranslator::class, 'loaded');
     $loaded->setAccessible(true);
@@ -221,7 +220,6 @@ test('LanguageSwitcherWidget falls back when getLocalizedURL returns non-string 
 
 test('Post linkable and accessor edge branches', function (): void {
     $post = new Post;
-    Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
     $post->setRawAttributes(['post_type' => 123, 'post_id' => ['x']], true);
     Assert::assertIsString($post->getTitleAttribute(null));

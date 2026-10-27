@@ -96,35 +96,28 @@ class TranslationFile extends BaseModel
     {
         $files = app(GetAllTranslationAction::class)->execute();
 
+        $result = Arr::map($files, $this->enrichTranslationRow(...));
+
         /** @var array<int, array<string, mixed>> $result */
-        $result = Arr::map($files, function (array $item) {
-            $key = $item['key'] ?? null;
-            /** @var string|int|float|bool|null $keyNarrowed */
-            $keyNarrowed = $key;
-            $keyStr = is_string($keyNarrowed) ? $keyNarrowed : (string) $keyNarrowed;
-            $item['id'] = isset($item['key']) ? $keyStr : '';
-
-            $pathValue = $item['path'] ?? null;
-            /** @var string|int|float|bool|null $pathValueNarrowed */
-            $pathValueNarrowed = $pathValue;
-            $pathStr = is_string($pathValueNarrowed) ? $pathValueNarrowed : (string) $pathValueNarrowed;
-            $item['name'] = isset($item['path']) ? basename($pathStr, '.php') : '';
-
-            if (isset($item['path'])) {
-                $path = $pathStr;
-                if (File::exists($path)) {
-                    $item['content'] = $this->loadFileContent($path);
-                } else {
-                    $item['content'] = '';
-                }
-            } else {
-                $item['content'] = '';
-            }
-
-            return $item;
-        });
-
         return $result;
+    }
+
+    /**
+     * Aggiunge id/name/content alla riga restituita da GetAllTranslationAction.
+     *
+     * @param  array{key: string, path: string}  $item
+     * @return array<string, mixed>
+     */
+    private function enrichTranslationRow(array $item): array
+    {
+        $path = $item['path'];
+
+        return [
+            ...$item,
+            'id' => $item['key'],
+            'name' => basename($path, '.php'),
+            'content' => File::exists($path) ? $this->loadFileContent($path) : '',
+        ];
     }
 
     /**

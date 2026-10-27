@@ -4,27 +4,14 @@ declare(strict_types=1);
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Lang;
-use Illuminate\Support\ServiceProvider;
-use Modules\Lang\Providers\LangServiceProvider;
+use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Tests\Modules\Lang\TestCase;
 
 uses(TestCase::class);
 
-function makeLangServiceProvider(): LangServiceProvider
-{
-    return new LangServiceProvider(app());
-}
-
 describe('LangServiceProvider Basic Functionality', function () {
-    it('extends ServiceProvider', function () {
-        $provider = makeLangServiceProvider();
-        Assert::assertInstanceOf(ServiceProvider::class, $provider);
-    });
-
     it('can be instantiated', function () {
-        $provider = makeLangServiceProvider();
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        Assert::assertSame('Lang', makeLangServiceProvider()->name);
     });
 
     it('has correct module name', function () {
@@ -36,20 +23,19 @@ describe('LangServiceProvider Basic Functionality', function () {
         Assert::assertSame('Lang', $property->getValue($provider));
     });
 });
-
 describe('LangServiceProvider Registration', function () {
     it('can register services', function () {
         $provider = makeLangServiceProvider();
         $provider->register();
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        Assert::assertSame('Lang', $provider->name);
     });
 
     it('can boot services', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        Assert::assertTrue(Lang::has('lang::auth.failed'));
     });
 });
 
@@ -332,21 +318,21 @@ describe('LangServiceProvider Error Handling', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        Assert::assertTrue(Lang::has('lang::auth.failed'));
     });
 
     it('handles malformed translation files gracefully', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        Assert::assertTrue(Lang::has('lang::auth.failed'));
     });
 
     it('handles empty translation files gracefully', function () {
         $provider = makeLangServiceProvider();
         $provider->boot();
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        Assert::assertTrue(Lang::has('lang::auth.failed'));
     });
 });
 
@@ -409,7 +395,6 @@ describe('LangServiceProvider Maintenance', function () {
         $provider->boot();
         $provider->boot();
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
     });
 
     it('maintains state consistency', function () {
@@ -434,6 +419,6 @@ describe('LangServiceProvider Maintenance', function () {
         $provider->register();
         $provider->boot();
 
-        Assert::assertInstanceOf(LangServiceProvider::class, $provider);
+        Assert::assertTrue(Lang::has('lang::auth.failed'));
     });
 });

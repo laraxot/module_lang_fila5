@@ -14,6 +14,7 @@ discussions: []
 related:
   - "../../../../docs/stories/STORY-001-code-quality-moduli-temi.md"
   - "../../../../../docs/wiki/memories/module-github-remote-discipline.md"
+status: draft
 ---
 
 # Code Quality Improvement Report — Lang

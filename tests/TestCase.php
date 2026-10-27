@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Lang;
+namespace Modules\Lang\Tests;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
@@ -11,7 +11,7 @@ use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\User\Models\User;
 use Modules\User\Providers\UserServiceProvider;
-use Tests\Modules\Xot\XotBaseTestCase;
+use Modules\Xot\Tests\XotBaseTestCase;
 
 use function Safe\file_put_contents;
 use function Safe\mkdir;
@@ -39,7 +39,6 @@ abstract class TestCase extends XotBaseTestCase
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
-
         foreach (array_keys($connections) as $connection) {
             if (config("database.connections.{$connection}.driver") !== 'sqlite') {
                 continue;
@@ -81,6 +80,18 @@ abstract class TestCase extends XotBaseTestCase
         if ($message !== null) {
             $this->expectThrowableMessage($message);
         }
+    }
+
+    /**
+     * Istanza tipizzata del provider Lang per i test unitari.
+     *
+     * SSoT del gate PHPStan: i test chiamano questo metodo (FQCN) o il wrapper
+     * globale in `tests/Pest.php`. Non ridefinire `makeLangServiceProvider()`
+     * dentro un file test — pest-plugin non la risolve (`function.notFound`).
+     */
+    public static function makeLangServiceProvider(): LangServiceProvider
+    {
+        return new LangServiceProvider(app());
     }
 
     /**

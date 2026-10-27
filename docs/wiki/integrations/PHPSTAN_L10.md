@@ -9,6 +9,9 @@ module: Lang
 type: quality-gate
 status: complete
 created: 2026-08-02
+created: 2026-08-02
+status: superseded
+superseded_by: phpstan_l10.md
 ---
 
 # PHPStan Level 10 Compliance — Lang Module
@@ -66,6 +69,7 @@ phpstan analyse app --level=10
 
 ## Related Docs
 
+- [`phpstan-l10-compliance.md`](../../../../../../docs/wiki/rules/phpstan-l10-compliance.md)
 - [`phpstan-l10-compliance.md`](../../../../../../docs/wiki/rules/phpstan-l10-compliance.md)
 - [GitHub Repo](https://github.com/laraxot/module_lang_fila5)
 

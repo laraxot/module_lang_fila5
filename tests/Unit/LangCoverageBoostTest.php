@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Lang\Unit;
+namespace Modules\Lang\Tests\Unit;
 
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
@@ -30,13 +30,13 @@ use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
 use Modules\Lang\Providers\RouteServiceProvider;
+use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Components\Flag;
 use Modules\Lang\View\Components\LanguageSwitcher;
 use Modules\Lang\View\Composers\ThemeComposer;
 use Modules\Xot\Actions\GetViewAction;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
-use Tests\Modules\Lang\TestCase;
 
 use function Safe\mkdir;
 use function Safe\rmdir;
