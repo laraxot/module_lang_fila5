@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 # Standard per helper_text nelle Traduzioni <nome progetto>
 
@@ -181,7 +182,9 @@ Il file `Modules/<nome progetto>/lang/it/profile_widget.php` conteneva:
 
 ## Collegamenti
 
-- [Regole Generali Traduzioni](translation-standards-links.md)
+- [Regole Generali Traduzioni](translation_standards_links.md)
+- [Documentazione Modulo Lang](../../laravel/Modules/Lang/docs/)
+- [Best Practices Filament](../../laravel/Modules/Xot/docs/filament/)
 - [Documentazione Modulo Lang](.)
 - [Best Practices Filament](../../Xot/docs/filament)
 - [Standard di Qualità <nome progetto>](../../laravel/Modules/<nome progetto>/docs/translation_quality_standards.md)

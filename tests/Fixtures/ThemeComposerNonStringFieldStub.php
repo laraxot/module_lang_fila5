@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Lang\Fixtures;
+namespace Modules\Lang\Tests\Fixtures;
 
 use Modules\Lang\Datas\LangData;
 use Modules\Lang\View\Composers\ThemeComposer;

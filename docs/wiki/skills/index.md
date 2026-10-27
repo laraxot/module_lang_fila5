@@ -8,6 +8,8 @@ type: "index"
 tags: [skills, lang, translations, localization]
 module: "Lang"
 updated: 2026-05-12
+status: superseded
+superseded_by: INDEX.md
 ---
 
 # Skills — Lang Module Wiki

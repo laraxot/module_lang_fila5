@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Lang\Unit\Actions;
+namespace Modules\Lang\Tests\Unit\Actions;
 
 use Modules\Lang\Actions\SaveTransAction;
+use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Tests\Modules\Lang\TestCase;
 
 uses(TestCase::class);
 

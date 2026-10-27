@@ -9,7 +9,9 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "guida migrazione step by step"
 related:
+  - "./italian-text-refined-audit-report.md"
   - "../../../italian-text-refined-audit-report.md"
+status: draft
 ---
 # Analisi Modelli, Factory e Seeder - Modulo Lang
 
@@ -106,6 +108,7 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 ## Collegamenti
 
 ### Documentazione Correlata
+- [Translation System](./translation_system.md)
 - [Translation System](../../../translation_system.md)
 - [Multi-language Support](./multi_language_support.md)
 - [Localization Best Practices](./localization_best_practices.md)
@@ -113,6 +116,9 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 ### Moduli Collegati
 - [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Traduzioni mediche
 - [<nome progetto>corrente Module<nome progetto>rogetto corrente/docs/modelli_factory_seeder_analisi.md) - Traduzioni mediche
+- [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Traduzioni utente
+- [Cms Module](../../Cms/docs/modelli_factory_seeder_analisi.md) - Contenuti multilingua
+- [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md) - Notifiche multilingua
 - [User Module](../../../../../User/docs/modelli_factory_seeder_analisi.md) - Traduzioni utente
 - [Cms Module](../../../../../Cms/docs/modelli_factory_seeder_analisi.md) - Contenuti multilingua
 - [Notify Module](../../../../../Notify/docs/modelli_factory_seeder_analisi.md) - Notifiche multilingua

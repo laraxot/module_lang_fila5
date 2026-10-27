@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "translation audit completion"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Audit Traduzioni Completato - 2025
@@ -144,6 +145,7 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali Creati
+- [Root Docs: Translation Standards](translation_standards.md)
 - [Root Docs: Translation Standards](../../../translation_standards.md)
 - [Lang Module: Translation Best Practices](../laravel/Modules/Lang/docs/translation_best_practices.md)
 - [<nome progetto> Module: Translation Guidelines](../laravel/Modules/<nome progetto>/docs/translation_guidelines.md)
@@ -188,15 +190,6 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 4. Monitorare l'introduzione di nuove traduzioni
 
 ---
-
-title: "translation audit completion"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation audit completion"
-issues: []
-discussions: []
 **Ultimo aggiornamento**: Gennaio 2025
 **Autore**: Sistema di Correzione Automatica
 **Versione**: 1.0

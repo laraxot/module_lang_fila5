@@ -8,10 +8,11 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
+status: superseded
+superseded_by: translating-validation-messages.divergenza.md
 ---
 
-# Divergenza: `translating-validation-messages.md`
+# Divergenza: `translating_validation_messages.md`
 
 Questo file veniva da `docs/wiki/integrations/modules/lang/translating_validation_messages.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
 
