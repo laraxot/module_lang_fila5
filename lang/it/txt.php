@@ -1029,6 +1029,12 @@ return [
             'helper_text' => 'author',
             'description' => 'author',
         ],
+        'images' => [
+            'label' => 'images',
+            'placeholder' => 'images',
+            'helper_text' => 'images',
+            'description' => 'images',
+        ],
     ],
     'actions' => [
         'authenticate' => [
