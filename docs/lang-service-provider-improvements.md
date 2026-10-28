@@ -198,7 +198,7 @@ class TranslationMissing
 
 ## Collegamenti
 - [Documentazione Traduzioni](../README.md)
-- [Documentazione Traduzioni](../readme.md)
+- [Documentazione Traduzioni](README.md)
 - [Guida Implementazione](./implementation-guide.md)
 - [Best Practices](./best-practices.md)
 

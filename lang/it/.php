@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_riU9jE
-=======
-
->>>>>>> .merge_file_czVMzW
 return array (
   'sections' => 
   array (
@@ -35,11 +31,7 @@ return array (
     'plural_label' => 'Missing Navigation Plural Label',
     'group' => 'Missing Group',
     'icon' => 'heroicon-o-puzzle-piece',
-<<<<<<< .merge_file_riU9jE
     'sort' => '100',
-=======
-    'sort' => 100,
->>>>>>> .merge_file_czVMzW
   ),
   'label' => 'Missing Label',
   'plural_label' => 'Missing Plural label',

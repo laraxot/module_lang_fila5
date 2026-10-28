@@ -16,6 +16,12 @@ status: draft
 
 Data: 2025-04-23 19:09:56
 Data: 2025-04-23 19:09:56
+Data: [DATE] 19:09:56
+Data: [DATE] 19:09:56
+Data: [DATE] 19:09:56
+Data: [DATE] 19:09:56
+Data: 2025-04-23 19:09:56
+Data: 2025-04-23 19:09:56
 
 ## Informazioni generali
 
@@ -23,6 +29,9 @@ Data: 2025-04-23 19:09:56
 Modules\\Lang\\Database\\Factories
 Modules\\Lang\\Database\\Seeders
 - **Pacchetto Composer**: laraxot/module_lang_fila5
+- **Pacchetto Composer**: laraxot/module_lang_fila3
+- **Pacchetto Composer**: laraxot/module_lang_fila3
+- **Pacchetto Composer**: laraxot/module_lang_fila3
 Marco Sottana
 - **Dipendenze**: mcamara/laravel-localization ^2.2 spatie/laravel-sluggable * repositories type path url ../Xot type path url ../Tenant type path url ../UI autoload psr-4
 - **Totale file PHP**: 103
@@ -509,5 +518,6 @@ tests/Unit
 
 - Tutti i comandi console sono autoregistrati tramite la struttura di XotBaseServiceProvider.
 - Non aggiungere mai manualmente $this->commands([...]) nei provider.
-- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
-- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
+- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)
+- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)
+- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](philosophy.md)

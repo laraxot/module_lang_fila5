@@ -27,8 +27,4 @@ Portare il modulo Lang dal Livello 9 al Livello 10 di PHPStan, eliminando ogni i
 
 ## 🔗 Riferimenti
 - [Roadmap Lang](../../roadmap.md)
-<<<<<<< .merge_file_O9BM3i
 - [PHPStan Journey](../../../../docs/phpstan_journey.md)
-=======
-- [PHPStan Journey](../../../../docs/phpstan_journey.md)
->>>>>>> .merge_file_l1B8qO

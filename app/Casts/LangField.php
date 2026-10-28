@@ -17,12 +17,9 @@ class LangField implements CastsAttributes
     /**
      * Cast the given value.
      *
-<<<<<<< .merge_file_WHdvxf
      * `mixed $value` e il ritorno `mixed` sono imposti da `CastsAttributes`:
      * il valore grezzo dell'attributo e' eterogeneo per contratto.
      *
-=======
->>>>>>> .merge_file_ZoKNOc
      * @param array<string, mixed> $attributes
      */
     public function get(Model $model, string $key, mixed $value, array $attributes): mixed
@@ -36,11 +33,8 @@ class LangField implements CastsAttributes
     /**
      * Prepare the given value for storage.
      *
-<<<<<<< .merge_file_WHdvxf
      * `mixed $value` e' imposto da `CastsAttributes` (compatibilita' LSP).
      *
-=======
->>>>>>> .merge_file_ZoKNOc
      * @param array<string, mixed> $attributes
      *
      * @return array<string, mixed>

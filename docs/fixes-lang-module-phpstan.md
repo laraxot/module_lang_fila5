@@ -99,5 +99,11 @@ status: draft
 
 ## Backlinks
 - [Lang Module Overview](../README.md)
-- [Lang Module Overview](../readme.md)
+- [Lang Module Overview](README.md)
+- [Translation System Documentation](./translation-system.md)
+- [Translation System Documentation](./translation-system.md)
+- [Translation System Documentation](./translation-system.md)
+- [Translation System Documentation](./translation-system.md)
+- [Translation System Documentation](./translation-system.md)
+- [Lang Module Overview](README.md)
 - [Translation System Documentation](./translation-system.md)

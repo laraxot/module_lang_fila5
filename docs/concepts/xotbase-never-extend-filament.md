@@ -1,7 +1,7 @@
 ---
 issues: []
 discussions: []
-title: "Lang — mai Filament\*, sempre XotBase*"
+title: "Lang — mai Filament*, sempre XotBase*"
 type: concept
 module: Lang
 tags: [lang, filament, xotbase, architecture]

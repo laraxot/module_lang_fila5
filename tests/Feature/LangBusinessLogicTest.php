@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_5T3ppX
-=======
-
->>>>>>> .merge_file_HU8Kmf
 use Modules\Lang\Database\Factories\PostFactory;
 use Modules\Lang\Database\Factories\TranslationFactory;
 use Modules\Lang\Database\Factories\TranslationFileFactory;

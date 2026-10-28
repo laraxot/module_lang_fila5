@@ -572,7 +572,7 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int, \Filament\Forms\Components\Component>
      */
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             Forms\Components\Section::make()
@@ -925,14 +925,14 @@ class UserResourceTest extends TestCase
 ## 🔗 **Riferimenti e Collegamenti**
 
 ### **1. Documentazione**
-- [README.md](readme.md) - Documentazione principale
+- [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](best_practices.md) - Best practices
 - [API_REFERENCE.md](api_reference.md) - Riferimento API
 - [TROUBLESHOOTING.md](troubleshooting.md) - Troubleshooting
 - [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices
 - [API_REFERENCE.md](API_REFERENCE.md) - Riferimento API
-- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Troubleshooting
+- [TROUBLESHOOTING.md](troubleshooting.md) - Troubleshooting
 
 ### **2. Configurazione**
 - [config/lang.php](../config/lang.php) - Configurazione centralizzata
@@ -942,4 +942,8 @@ class UserResourceTest extends TestCase
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 2.0.0
 **Autore**: Team Laraxot
+**Mantenuto da**: Community Laraxot
+**Mantenuto da**: Community Laraxot
+**Mantenuto da**: Community Laraxot
+**Mantenuto da**: Community Laraxot
 **Mantenuto da**: Community Laraxot

@@ -14,8 +14,4 @@ tags: [docs, lang]
 
 # Alias — TRANSLATION_STRATEGIES
 
-<<<<<<< .merge_file_q0A5hd
 Canonico: [translation-strategies.md](./translation-strategies.md). Indice: [00-INDEX.md](./00-INDEX.md).
-=======
-Canonico: [translation-strategies.md](./translation-strategies.md). Indice: [00-INDEX.md](./00-INDEX.md).
->>>>>>> .merge_file_ZBVsqD
