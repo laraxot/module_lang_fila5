@@ -6,7 +6,11 @@ title: "PHPStan Compliance Fixes"
 type: documentation
 tags: [phpstan, fixes, compliance]
 created: 2026-06-09
+<<<<<<< .merge_file_aEOfnL
 updated: 2026-06-09
+=======
+updated: 2026-10-28
+>>>>>>> .merge_file_A1NYMP
 status: draft
 ---
 
@@ -141,6 +145,16 @@ parameters:
 ### GitHub Issues
 - [Issue #1923](https://github.com/laraxot/base_fixcity_fila5/issues/1923) - PHPStan Type Safety
 - [Issue #1924](https://github.com/laraxot/base_fixcity_fila5/issues/1924) - Memory Optimization
+
+## 2026-10-28 — Regressione del rebase `d8c78ba7` (213 → 0)
+
+Storia: [`stories/phpstan-zero-errors-lang.story.md`](stories/phpstan-zero-errors-lang.story.md).
+
+- **Cosa**: `d8c78ba7` ha rigiocato `ceaed311` (settembre) sopra l'upstream di ottobre, committando i marcatori di conflitto. Effetti: 17 `tests/Fixtures/*` cancellate ma ancora importate dai test di copertura, `use` spariti (`Config`, `Log`, `TextColumn`, `SaveTransAction`, `Translator`), `ThemeComposer::buildAdminLanguageUrl()` tornato `private`.
+- **Perche' era sbagliato**: gli errori (~110 `class.notFound`) non erano 110 difetti ma uno solo; "correggere" i test avrebbe cancellato la specifica.
+- **Regola**: prima di toccare i test, `git log --all --diff-filter=D -- tests/Fixtures` e confronto con l'ultimo merge coerente (`7fb93059`). Fixture = parte della specifica; un metodo chiamato dai test e' API pubblica.
+- **Script `docs/*.php`**: usano `Safe\glob/file_get_contents/file_put_contents`, shape `array{...}` esplicite per le issue.
+- **Aperto**: seam di test morti (`finalizeFilteredCountries`, `findCallerFrame`, `titleForGuid`, `writeLangTempContents`), resto del replay su `AutoLabelAction`/`NationalFlagSelect`, Pest non eseguito.
 
 ## TODO
 

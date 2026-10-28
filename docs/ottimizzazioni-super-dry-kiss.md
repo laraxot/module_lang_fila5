@@ -340,7 +340,3 @@ class Language extends Model
 **Data:** 2025-01-XX
 **Stato:** In Analisi
 **Priorità:** ALTA
-**Priorità:** ALTA
-**Priorità:** ALTA
-**Priorità:** ALTA
-**Priorità:** ALTA

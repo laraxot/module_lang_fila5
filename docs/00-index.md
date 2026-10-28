@@ -12,4 +12,8 @@ tags: [docs, lang]
 
 # Alias — indice Lang
 
+<<<<<<< .merge_file_tnCgNw
 Canonico: [00-INDEX.md](./00-INDEX.md). Scopo: [scopo.md](./scopo.md). Gate PHPStan: [stories/phpstan-lang-zero.story.md](./stories/phpstan-lang-zero.story.md). Modules: [Xot phpstan-modules-zero-wave3](../../Xot/docs/stories/phpstan-modules-zero-wave3.story.md). Single neon: [phpstan-single-neon-config](../../Xot/docs/wiki/memories/phpstan-single-neon-config.md). Harness: `Modules\Lang\Tests\TestCase::makeLangServiceProvider()` (FQCN); Pest solo wrapper.
+=======
+Canonico: [00-INDEX.md](./00-INDEX.md). Scopo: [scopo.md](./scopo.md). Gate PHPStan: [stories/phpstan-lang-zero.story.md](./stories/phpstan-lang-zero.story.md). Modules: [Xot phpstan-modules-zero-wave3](../../Xot/docs/stories/phpstan-modules-zero-wave3.story.md). Single neon: [phpstan-single-neon-config](../../Xot/docs/wiki/memories/phpstan-single-neon-config.md). Harness: `Modules\Lang\Tests\TestCase::makeLangServiceProvider()` (FQCN); Pest solo wrapper.
+>>>>>>> .merge_file_L7VbZB

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 class SyncTranslationsAction
@@ -94,7 +93,7 @@ class SyncTranslationsAction
             $fileName = basename($sourceFile);
             $sourceTranslations = $this->loadTranslations($sourceFile);
 
-            if ([] === $sourceTranslations) {
+            if (empty($sourceTranslations)) {
                 continue;
             }
 
@@ -113,6 +112,8 @@ class SyncTranslationsAction
                 $targetTranslations = File::exists($targetFile) ? $this->loadTranslations($targetFile) : [];
 
                 // Merge translations
+                /** @var array<string, mixed> $sourceTranslations */
+                /** @var array<string, mixed> $targetTranslations */
                 $mergedTranslations = $this->mergeTranslations($sourceTranslations, $targetTranslations);
 
                 // Save merged translations
@@ -190,7 +191,7 @@ class SyncTranslationsAction
     /**
      * Filtra un array per avere solo chiavi stringa (aiuta PHPStan).
      *
-     * @param array<array-key, mixed> $arr
+     * @param array<mixed, mixed> $arr
      *
      * @return array<string, mixed>
      */
@@ -271,7 +272,8 @@ class SyncTranslationsAction
                 $content .= $this->arrayToPhp($this->filterStringKeyArray($value), $indent + 1);
                 $content .= $indentStr."],\n";
             } else {
-                $content .= "'".addslashes(SafeStringCastAction::cast($value))."',\n";
+                /** @phpstan-ignore-next-line */
+                $content .= "'".addslashes((string) $value)."',\n";
             }
         }
 

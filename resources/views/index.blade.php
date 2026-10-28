@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_xq37UL
+=======
+
+>>>>>>> .merge_file_faTJg2
 ?>
 @extends('lang::layouts.master')
 
