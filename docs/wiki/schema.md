@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 type: note
 updated: 2026-09-26
@@ -14,9 +13,6 @@ tags:
 created: 2026-04-15
 status: draft
 ---
-=======
-# Lang Module — Wiki Schema
->>>>>>> ceaed311 (.)
 
 ## Struttura wiki
 

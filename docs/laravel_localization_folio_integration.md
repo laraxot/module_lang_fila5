@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Integration of Mcamara Laravel Localization with Laravel Folio
 
 ## Overview

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,8 +13,6 @@ related:
 status: superseded
 superseded_by: ../integration/links.md
 ---
-=======
->>>>>>> ceaed311 (.)
 # links
 
 <!-- Contenuto migrato da _docs/links.txt -->

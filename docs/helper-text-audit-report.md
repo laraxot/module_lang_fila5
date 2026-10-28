@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Helper Text Audit Report
 
 **Data**: 2025-08-08 09:15:22

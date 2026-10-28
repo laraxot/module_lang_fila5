@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>
 
 ## Principi Fondamentali DRY + KISS
@@ -331,7 +328,6 @@ return [
 - [User Module Translation Rules](../Modules/User/docs/widget-translation-rules.md)
 - [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
-<<<<<<< HEAD
 - [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
 - [User Module Translation Rules](../../User/docs/widget-translation-rules.md)
@@ -339,8 +335,6 @@ return [
 - [User Module Translation Rules](../../User/docs/widget-translation-rules.md)
 - [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../../User/docs/widget-translation-rules.md)
-=======
->>>>>>> ceaed311 (.)
 - [Translation Syntax Fixes](translation_syntax_fixes.md)
 - [Windsurf Translation Rules](../.windsurf/rules/translation-complete-structure.mdc)
 

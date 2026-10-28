@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,8 +13,6 @@ related:
 status: superseded
 superseded_by: wiki/integrations/_da-riconciliare/translation-strategies.md
 ---
-=======
->>>>>>> ceaed311 (.)
 # Strategie di Gestione delle Traduzioni in Laravel
 
 ## Indice

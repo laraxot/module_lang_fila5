@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "CHANGELOG"
 type: note
@@ -99,8 +98,6 @@ discussions: []
 
 * **Lang:** PHPStan L10 after git sync ([f52ef6c](https://github.com/laraxot/module_lang_fila5/commit/f52ef6c00a1fa74406ca03177370a9827791e021))
 
-=======
->>>>>>> ceaed311 (.)
 # Changelog
 
 All notable changes to `:package_name` will be documented in this file.

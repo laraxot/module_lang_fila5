@@ -1,4 +1,3 @@
-<<<<<<< HEAD:docs/wiki/best-practices/documentation-link-conventions.md
 ---
 title: "Convenzioni per i Link nella Documentazione"
 module: "Lang"
@@ -13,8 +12,6 @@ related:
 status: superseded
 superseded_by: ../../best-practices/documentation-link-conventions.md
 ---
-=======
->>>>>>> ceaed311 (.):docs/documentation-link-conventions-1.md
 # Convenzioni per i Link nella Documentazione
 
 ## Regole Fondamentali per i Link Markdown
@@ -96,10 +93,7 @@ Prima di fare commit dei documenti:
 ### Da Modules/Lang/docs/ a Modules/Notify/docs/
 ```markdown
 [Convenzioni Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
-<<<<<<< HEAD:docs/wiki/best-practices/documentation-link-conventions.md
 [Convenzioni Notify](../../notify/docs/translation_conventions.md)
-=======
->>>>>>> ceaed311 (.):docs/documentation-link-conventions-1.md
 ```
 
 ### Da Modules/Lang/docs/ a docs/ nella root
@@ -111,10 +105,7 @@ Prima di fare commit dei documenti:
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella
 ```markdown
 [Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
-<<<<<<< HEAD:docs/wiki/best-practices/documentation-link-conventions.md
 [Best Practices](translation-keys-best-practices.md)
-=======
->>>>>>> ceaed311 (.):docs/documentation-link-conventions-1.md
 ```
 
 ## Vantaggi dei Percorsi Relativi

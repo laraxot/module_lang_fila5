@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,9 +13,6 @@ related:
 status: draft
 ---
 # Lang Module - Product Strategy
-=======
-# Lang - Product Strategy
->>>>>>> ceaed311 (.)
 
 > Strategia prodotto. Modulo.
 > Allineamento strategico stimato: 68%.

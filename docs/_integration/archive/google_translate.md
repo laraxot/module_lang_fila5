@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "google_translate"
 type: alias
@@ -7,8 +6,6 @@ canonical: "_integration/archive/google-translate.md"
 qmd: "google_translate alias superseded"
 ---
 
-=======
->>>>>>> ceaed311 (.)
 # google_translate
 
 Documento identico al canonico: [google-translate.md](google-translate.md).

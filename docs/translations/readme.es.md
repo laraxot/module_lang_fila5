@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -27,7 +26,5 @@ superseded_by: README.es.md
   <a href="../README.md"><img src="https://img.shields.io/badge/🇬🇧-Read%20in%20English-blue?style=flat-square" alt="English"/></a>
   <a href="README.it.md"><img src="https://img.shields.io/badge/🇮🇹-Leggi%20in%20Italiano-green?style=flat-square" alt="Italiano"/></a>
 </div>
-=======
->>>>>>> ceaed311 (.)
 
 

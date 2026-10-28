@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
@@ -25,7 +22,6 @@ status: draft
 - [Documentazione Lang](./readme.md)
 - [Documentazione centrale](./README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
-<<<<<<< HEAD
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
 - [Implementazione Auth Pages](../../User/docs/auth_pages_implementation.md)
@@ -40,10 +36,6 @@ status: draft
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
 - [Regole Traduzioni User](translation_keys_rules.md)
-=======
-- [Implementazione Auth Pages](../../User/docs/AUTH_PAGES_IMPLEMENTATION.md)
-- [Regole Traduzioni User](../../User/docs/TRANSLATION_KEYS_RULES.md)
->>>>>>> ceaed311 (.)
 - [Documentazione Lang](./README.md)
 
 ## Regole Fondamentali per le Traduzioni
@@ -257,7 +249,6 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../Notify/docs/TRANSLATION_KEYS_RULES.md) per dettagli, esempi e best practice specifiche.
-<<<<<<< HEAD
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
 ## [2024-07-07] Nota storica: correzione massiva Notify
 
@@ -273,8 +264,6 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
-=======
->>>>>>> ceaed311 (.)
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 # Regole per le Chiavi di Traduzione
 
@@ -283,7 +272,6 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-<<<<<<< HEAD
 - [Implementazione Auth Pages](../../User/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../User/docs/translation_keys_rules.md)
 - [Documentazione Lang](README.md)
@@ -516,13 +504,6 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
 - [Regole Traduzioni User](translation_keys_rules.md)
-=======
-- [Documentazione Lang](./readme.md)
-- [Documentazione centrale](./README.md)
-- [Collegamenti documentazione](./collegamenti-documentazione.md)
-- [Implementazione Auth Pages](../../User/docs/AUTH_PAGES_IMPLEMENTATION.md)
-- [Regole Traduzioni User](../../User/docs/TRANSLATION_KEYS_RULES.md)
->>>>>>> ceaed311 (.)
 - [Documentazione Lang](./README.md)
 
 ## Regole Fondamentali per le Traduzioni
@@ -950,7 +931,6 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../Notify/docs/TRANSLATION_KEYS_RULES.md) per dettagli, esempi e best practice specifiche.
-<<<<<<< HEAD
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 ## [[DATE]] Nota storica: correzione massiva Notify
@@ -968,6 +948,3 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
-=======
-- Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
->>>>>>> ceaed311 (.)

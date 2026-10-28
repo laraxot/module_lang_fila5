@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 https://github.com/statikbe/laravel-filament-chained-translation-manager
 
 https://filamentphp.com/plugins/34ml-translatable-field
@@ -29,7 +26,6 @@ https://filamentphp.com/plugins/34ml-translatable-field
 * [filament.md](../../../job/docs/filament.md)
 * [filament.md](../../../activity/docs/filament.md)
 * [filament.md](../../../cms/docs/filament.md)
-<<<<<<< HEAD
 * [filament.md](../../../Chart/docs/filament.md)
 * [filament.md](../../../Gdpr/docs/filament.md)
 * [filament.md](../../../Xot/docs/technical/filament.md)
@@ -53,8 +49,6 @@ https://filamentphp.com/plugins/34ml-translatable-field
 * [filament.md](../../Job/docs/filament.md)
 * [filament.md](../../Activity/docs/filament.md)
 * [filament.md](../../Cms/docs/filament.md)
-=======
->>>>>>> ceaed311 (.)
 
 ## Extra risorse da _docs
 

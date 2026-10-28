@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Correzioni Traduzioni Navigation - Modulo Lang
 
 ## Data Intervento
@@ -104,7 +101,6 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 - [Documentazione Modulo Lang](readme.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
-<<<<<<< HEAD
 - [Audit Generale Traduzioni Navigation](../../docs/navigation-translations-audit.md)
 - [Audit Generale Traduzioni Navigation](navigation-translations-audit.md)
 - [Documentazione Modulo Lang](README.md)
@@ -120,8 +116,6 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
-=======
->>>>>>> ceaed311 (.)
 
 ## Note Tecniche
 

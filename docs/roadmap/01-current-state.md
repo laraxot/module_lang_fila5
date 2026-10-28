@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -15,8 +14,6 @@ related:
 status: superseded
 superseded_by: current-state.md
 ---
-=======
->>>>>>> ceaed311 (.)
 # Current State - Lang
 
 ## Baseline

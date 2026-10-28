@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,9 +13,6 @@ related:
 status: draft
 ---
 # Lang Module - Product Roadmap
-=======
-# Lang - Product Roadmap
->>>>>>> ceaed311 (.)
 
 > Documento vivente. Modulo.
 > Maturita' stimata: 68% implementato, 32% gap residuo.

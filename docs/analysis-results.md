@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,9 +13,6 @@ related:
 status: draft
 ---
 # Risultati Analisi Modulo Lang
-=======
-# Risultati Analisi Modulo Lang - 2025-01-06
->>>>>>> ceaed311 (.)
 
 ## Data
 2025-01-06

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -19,8 +18,6 @@ status: draft
 # Aggiornamento File di Traduzione Lang Service - [DATE]
 # Aggiornamento File di Traduzione Lang Service - [DATE]
 # Aggiornamento File di Traduzione Lang Service - [DATE]
-=======
->>>>>>> ceaed311 (.)
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 

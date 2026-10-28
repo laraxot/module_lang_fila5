@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "quick reference"
 type: note
@@ -13,9 +12,6 @@ topic: QUICK_REFERENCE
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
 status: stub
 ---
-=======
-# Guida Rapida alle Traduzioni
->>>>>>> ceaed311 (.)
 
 ## Struttura Base
 

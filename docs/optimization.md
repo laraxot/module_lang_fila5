@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Analisi di Ottimizzazione - Modulo Lang
 
 ## 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot

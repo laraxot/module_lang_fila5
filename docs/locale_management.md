@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "locale management"
 type: note
@@ -14,9 +13,6 @@ canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
 status: superseded
 superseded_by: quick_reference.md
 ---
-=======
-# Gestione delle Lingue in Laravel
->>>>>>> ceaed311 (.)
 
 ## Indice
 1. [Configurazione Base](#configurazione-base)

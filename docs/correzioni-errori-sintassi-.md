@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,8 +13,6 @@ related:
 status: superseded
 superseded_by: correzioni-errori-sintassi.md
 ---
-=======
->>>>>>> ceaed311 (.)
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 
 ## Riepilogo Problemi Risolti

@@ -38,7 +38,7 @@ class WriteTranslationFileAction
         $this->validatePhpSyntax($phpContent);
 
         // Scrivi il file
-        $result = File::put($filePath, $phpContent);
+        $result = $this->putTranslationFile($filePath, $phpContent);
 
         if (false === $result) {
             throw new \Exception("Impossibile scrivere il file: {$filePath}");
@@ -48,6 +48,13 @@ class WriteTranslationFileAction
         $this->clearTranslationCache();
 
         return true;
+    }
+
+    protected function putTranslationFile(string $filePath, string $phpContent): int|false
+    {
+        $result = File::put($filePath, $phpContent);
+
+        return false === $result ? false : (int) $result;
     }
 
     /**

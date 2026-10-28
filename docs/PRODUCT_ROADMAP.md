@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,8 +13,6 @@ related:
 status: superseded
 superseded_by: product-roadmap.md
 ---
-=======
->>>>>>> ceaed311 (.)
 # Lang Module - Product Roadmap
 
 **Module:** Lang  

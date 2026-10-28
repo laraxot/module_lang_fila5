@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -22,11 +21,6 @@ status: draft
 > **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
 > **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
 > **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
-=======
-# Gestione Permessi e Errori Filesystem su File di Lingua (Lang)
-
-> **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
->>>>>>> ceaed311 (.)
 
 ## Problema
 
@@ -80,7 +74,6 @@ sudo chmod 664 Modules/Lang/lang/it/lang_service.php
 ## Collegamenti
 - [Indice e collegamenti root](../../../../docs/links.md)
 - [Documentazione MCP e gestione errori](../../../../docs/mcp_errors_and_lessons.md)
-<<<<<<< HEAD
 - [Indice e collegamenti root](../../../docs/links.md)
 - [Documentazione MCP e gestione errori](../../../docs/mcp_errors_and_lessons.md)
 - [Indice e collegamenti root](../../../docs/links.md)
@@ -92,8 +85,6 @@ sudo chmod 664 Modules/Lang/lang/it/lang_service.php
 - [Documentazione MCP e gestione errori](../../../docs/mcp_errors_and_lessons.md)
 - [Indice e collegamenti root](../../../../docs/links.md)
 - [Documentazione MCP e gestione errori](../../../docs/mcp_errors_and_lessons.md)
-=======
->>>>>>> ceaed311 (.)
 
 ---
 
@@ -102,15 +93,12 @@ La root `docs/` deve contenere solo il link a questo file, non la guida completa
 # Gestione Permessi e Errori Filesystem su File di Lingua (Lang)
 
 > **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
-<<<<<<< HEAD
 > **Backlink:** [Indice e collegamenti root](../../../docs/links.md)
 > **Backlink:** [Indice e collegamenti root](../../../docs/links.md)
 > **Backlink:** [Indice e collegamenti root](../../../docs/links.md)
 > **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
 > **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
 > **Backlink:** [Indice e collegamenti root](../../../../docs/links.md)
-=======
->>>>>>> ceaed311 (.)
 
 ## Problema
 
@@ -164,7 +152,6 @@ sudo chmod 664 Modules/Lang/lang/it/lang_service.php
 ## Collegamenti
 - [Indice e collegamenti root](../../../../docs/links.md)
 - [Documentazione MCP e gestione errori](../../../../docs/mcp_errors_and_lessons.md)
-<<<<<<< HEAD
 - [Indice e collegamenti root](../../../docs/links.md)
 - [Documentazione MCP e gestione errori](../../../docs/mcp_errors_and_lessons.md)
 - [Indice e collegamenti root](../../../docs/links.md)
@@ -176,8 +163,6 @@ sudo chmod 664 Modules/Lang/lang/it/lang_service.php
 - [Documentazione MCP e gestione errori](../../../docs/mcp_errors_and_lessons.md)
 - [Indice e collegamenti root](../../../../docs/links.md)
 - [Documentazione MCP e gestione errori](../../../docs/mcp_errors_and_lessons.md)
-=======
->>>>>>> ceaed311 (.)
 
 ---
 

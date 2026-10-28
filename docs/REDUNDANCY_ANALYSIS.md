@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,6 +13,4 @@ related:
 status: superseded
 superseded_by: redundancy-analysis.md
 ---
-=======
->>>>>>> ceaed311 (.)
 Redundancy analysis available: docs/analysis/redundancies/summary.md

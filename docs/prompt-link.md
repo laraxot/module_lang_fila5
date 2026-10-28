@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Regola prompt condivisi
 
 Per la regola universale sui prompt condivisi (bashscripts/prompts), vedi [Modules/Xot/docs/PROMPT_RULES.md](../../xot/docs/prompt_rules.md)

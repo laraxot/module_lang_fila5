@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -172,8 +171,6 @@ related:
   - ./coding-agent-manifests.md
 ---
 
-=======
->>>>>>> ceaed311 (.)
 # Lang {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Lang

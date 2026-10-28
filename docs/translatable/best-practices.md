@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,8 +13,6 @@ related:
   - "../italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Best Practices per Laravel Translatable
 
 Questo documento raccoglie le migliori pratiche per l'utilizzo del pacchetto `spatie/laravel-translatable` nel contesto del progetto.

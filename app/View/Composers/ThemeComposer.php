@@ -141,7 +141,7 @@ class ThemeComposer
      * @param  string  $locale  The locale code to build URL for
      * @return string The generated URL
      */
-    private function buildAdminLanguageUrl(string $locale): string
+    public function buildAdminLanguageUrl(string $locale): string
     {
         $routeName = Route::currentRouteName();
         if (! is_string($routeName)) {

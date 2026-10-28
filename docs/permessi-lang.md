@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Gestione Permessi e Proprietà per File di Lingua (`lang/it/`)
 
 ## Problema
@@ -57,13 +54,10 @@ Il file o la cartella di destinazione non è scrivibile dall’utente che esegue
 ## Collegamenti
 - [Documentazione ufficiale PHP file_put_contents](https://www.php.net/manual/en/function.file-put-contents.php)
 - [Documentazione Laraxot gestione permessi](../../../../../docs/links.md)
-<<<<<<< HEAD
 - [Documentazione Laraxot gestione permessi](../../../../docs/links.md)
 - [Documentazione Laraxot gestione permessi](../../../../docs/links.md)
 - [Documentazione Laraxot gestione permessi](../../../../docs/links.md)
 - [Documentazione Laraxot gestione permessi](../../../../docs/links.md)
-=======
->>>>>>> ceaed311 (.)
 
 ---
 

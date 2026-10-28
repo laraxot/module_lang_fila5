@@ -170,6 +170,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         Assert::assertNotEmpty($moduleRows);
         Assert::assertSame($moduleRows[0]['path'], $sample);
         Assert::assertNotEmpty($allRows);
+        Assert::assertIsString($allRows[0]['key']);
         Assert::assertStringContainsString('lang::', $allRows[0]['key']);
     });
 

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,8 +13,6 @@ related:
 status: superseded
 superseded_by: localizingates-currencies.md
 ---
-=======
->>>>>>> ceaed311 (.)
 # Localizzazione di Date e Valute
 
 ## Introduzione
