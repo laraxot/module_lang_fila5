@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Lang: README"
 type: note
 tags: [documentation, lang, translations, filament, autolabel]
@@ -21,6 +22,22 @@ Modulo Laraxot `Modules\Lang` (alias `lang`, priorita' 4 in `module.json`). Veri
 3. **Editor delle traduzioni nel pannello.** `Filament\Resources\TranslationFileResource` (modello Sushi `Models\TranslationFile`), campi `TranslationEditor` e `NationalFlagSelect`, widget `LanguageSwitcherWidget`, componenti Blade `Flag` e `LanguageSwitcher`, `View\Composers\ThemeComposer`.
 4. **Action di servizio sui file**: `ReadTranslationFileAction(string $filePath)`, `WriteTranslationFileAction(string $filePath, array $translations): bool` (fa un backup prima), `SyncTranslationsAction($sourceLang = 'it', $targetLangs = ['en','de'], $specificModule = null)`, `MergeTranslationsAction`, `PublishTranslationAction`, `GetAllTranslationAction`, `GetAllModuleTranslationAction`, `TransArrayAction`, `TransCollectionAction`. Sono `QueueableAction`: si istanziano con `app(...)->execute(...)`, non sono statiche.
 5. **Modelli**: `Translation`, `LanguageLine`, `Post` (con tabella `translations`), `TranslationFile` (Sushi, nessuna tabella). Migration: `language_lines`, `posts` e `translations` (le ultime due compaiono due volte, con date 2026-01-21 e 2026-08-06: da verificare prima di migrare).
+=======
+title: "Lang Module Documentation"
+type: documentation
+tags: [module, documentation, localization, translations]
+created: 2026-07-14
+updated: 2026-07-14
+---
+
+# Modulo Lang
+
+## Overview
+
+Il modulo **Lang** gestisce il sistema di localizzazione e traduzioni multi-lingua per la piattaforma Laraxot. Fornisce gestione file traduzioni, sincronizzazione linguaggi, Filament translation editor, e helper per traduzioni dinamiche.
+
+## Scopo
+>>>>>>> ceaed311 (.)
 
 ## Attenzione: chi scrive i file di lingua
 
@@ -49,13 +66,16 @@ Indice: [00-INDEX.md](./00-INDEX.md). Wiki: [wiki/index.md](./wiki/index.md). St
 
 ## Dipendenze / Moduli Correlati
 
-- [Xot - Framework Base](../../Xot/docs/README.md) — Always dependency
-- [User - Authentication](../../User/docs/README.md) — For user-facing strings
-- [Cms - Content](../../Cms/docs/README.md) — For content translations
-- [Notify - Notifications](../../Notify/docs/README.md) — For email translations
+- [Xot - Framework Base](../Xot/docs/README.md) — Always dependency
+- [User - Authentication](../User/docs/README.md) — For user-facing strings
+- [Cms - Content](../Cms/docs/README.md) — For content translations
+- [Notify - Notifications](../Notify/docs/README.md) — For email translations
 
 ## Documenti Correlati
 
+- [Translation Best Practices](../../../docs/wiki/standards/translations.md)
+- [Translation File Merge Pattern](../../../docs/wiki/standards/translation-merge-pattern.md)
+- [Module Translation Structure](../../../docs/wiki/standards/module-translations.md)
 - [PHPStan Configuration](../../../phpstan.neon)
 
 ## Regole Critiche
@@ -70,13 +90,20 @@ Indice: [00-INDEX.md](./00-INDEX.md). Wiki: [wiki/index.md](./wiki/index.md). St
 
 ## Standard Rules & Workflow
 
+<<<<<<< HEAD
 - [[BMAD Method](../../../../bashscripts/ai/wiki/concepts/bmad-method.md)]
 - [[Context Engineering](../../../../bashscripts/ai/wiki/concepts/context-engineering.md)]
 - [[LLM Wiki Governance](../../../../bashscripts/ai/wiki/concepts/llm-wiki-governance.md)]
+=======
+- [[BMAD Method](../../../docs/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../docs/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../docs/wiki/concepts/llm-wiki-governance.md)]
+>>>>>>> ceaed311 (.)
 
 ---
 **Status**: ✅ Production  
 **Last Updated**: 2026-07-14  
+<<<<<<< HEAD
 **Requirements**: PHP 8.3+, Laravel 13  
 **PHPStan Level**: 10 (Compliant)
 **Ultima verifica**: 2026-10-14 (Laravel 13.35.0, PHP 8.4.26). Il livello PHPStan non e' stato rimisurato in questa verifica.
@@ -86,3 +113,7 @@ Documentation should be:
 - Example-driven
 - Updated with code changes
 - Use Markdown format (.md)
+=======
+**Requirements**: PHP 8.3+, Laravel 12  
+**PHPStan Level**: 10 (Compliant)
+>>>>>>> ceaed311 (.)

@@ -7,14 +7,10 @@ namespace Modules\Lang\Tests;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
-use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\User\Models\User;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
-
-use function Safe\file_put_contents;
-use function Safe\mkdir;
 
 /**
  * Base test case for Lang module.
@@ -35,7 +31,7 @@ abstract class TestCase extends XotBaseTestCase
     {
         parent::setUp();
 
-        $database = database_path('database.sqlite');
+        $database = database_path('fixcity_data.sqlite');
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
@@ -81,6 +77,7 @@ abstract class TestCase extends XotBaseTestCase
             $this->expectThrowableMessage($message);
         }
     }
+<<<<<<< HEAD
 
     /**
      * Istanza tipizzata del provider Lang per i test unitari.
@@ -141,4 +138,6 @@ abstract class TestCase extends XotBaseTestCase
     {
         app()->forgetInstance(SaveTransAction::class);
     }
+=======
+>>>>>>> ceaed311 (.)
 }

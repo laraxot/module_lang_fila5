@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -22,6 +23,8 @@ status: draft
 # 🐄 DRY & KISS Analysis - Lang
 
 **Data:** [DATE] | **Status:** ✅
+=======
+>>>>>>> ceaed311 (.)
 **Data:** 2025-10-15 | **Status:** ✅
 
 ## 📊 Struttura
@@ -70,5 +73,4 @@ abstract class BaseModel extends XotBaseModel
 - 🔄 RouteServiceProvider: Auto-detect nome
 
 ---
-[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)

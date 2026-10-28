@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Laravel Folio + Volt - Best Practices and Patterns Analysis
 
 ## Overview
@@ -114,11 +117,5 @@ middleware(['auth', 'verified']);
 - Genesis Starter Kit: https://github.com/thedevdojo/genesis
 
 ## Date
-2025-11-29
-2025-11-29
-[DATE]
-[DATE]
-[DATE]
-[DATE]
 2025-11-29
 2025-11-29

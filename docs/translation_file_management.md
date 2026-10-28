@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Gestione File di Traduzione
 
 ## Panoramica
@@ -204,7 +207,7 @@ class TranslationFileResource extends XotBaseResource
 {
     protected static ?string $model = TranslationFile::class;
 
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             Components\TextInput::make('key')

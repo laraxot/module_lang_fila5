@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: optimization.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Analisi di Ottimizzazione - Modulo Lang
 
 ## 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot

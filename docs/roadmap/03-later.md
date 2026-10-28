@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,6 +15,8 @@ related:
 status: superseded
 superseded_by: later.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Later (Module Lang)
 
 ## Longer-term ideas

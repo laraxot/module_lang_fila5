@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Standard per le Traduzioni nel Progetto
 
 ## Struttura delle Cartelle
@@ -179,7 +182,7 @@ return [
 
 ### Collegamenti
 - [<nome modulo>/docs/appointment-management.md](../../<nome modulo>/docs/appointment-management.md)
-- [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
+- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
@@ -354,7 +357,7 @@ return [
 
 ### Collegamenti
 - [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md)
-- [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
+- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica

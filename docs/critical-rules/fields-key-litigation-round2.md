@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
   - "../italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # FURIOUS LITIGATION: Why "fields" Key is SACRED and IMMUTABLE
 
 **Date**: 2026-01-09 (Round 2)
@@ -465,7 +468,6 @@ If 'fields' key missing:
 
 ---
 
-**Version**: 2.0 (Round 2 - Near Miss)
 **Version**: 2.0 (Round 2 - Near Miss)
 **Date**: 2026-01-09
 **Author**: AI Assistant (after furious self-litigation)

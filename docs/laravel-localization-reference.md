@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Laravel Localization Reference
 
 ## Overview
@@ -192,4 +195,4 @@ Same issue - localize POST URLs to prevent redirects that change locale.
 ## References
 
 - [Official Documentation](https://github.com/mcamara/laravel-localization)
-- [Laravel 13 Compatibility](#laravel-compatibility)
+- [Laravel 12 Compatibility](#laravel-compatibility)

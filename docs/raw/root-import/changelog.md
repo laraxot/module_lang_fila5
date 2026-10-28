@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -11,6 +12,8 @@ qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Changelog
 
 All notable changes to `:package_name` will be documented in this file.

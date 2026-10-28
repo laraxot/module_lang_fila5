@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Lang Module - Testing Guidelines
 
 ## Testing Framework Requirements
@@ -387,19 +390,6 @@ describe('Lang Performance Tests', function () {
 
 ---
 
-**Last Updated**: 2025-08-28
-
-**Testing Framework**: Pest
-**Environment**: .env.testing
-
-**Testing Framework**: Pest
-**Environment**: .env.testing
-
-**Testing Framework**: Pest
-**Environment**: .env.testing
-
-**Testing Framework**: Pest
-**Environment**: .env.testing
 **Last Updated**: 2025-08-28
 
 **Testing Framework**: Pest

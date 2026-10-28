@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,13 +13,15 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Regole per le Chiavi di Traduzione 
 
 ## Collegamenti correlati
 - [Documentazione centrale](./README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Regole Traduzioni User](translation_keys_rules.md)
+- [Implementazione Auth Pages](../../User/docs/AUTH_PAGES_IMPLEMENTATION.md)
+- [Regole Traduzioni User](../../User/docs/TRANSLATION_KEYS_RULES.md)
 - [Documentazione Lang](./README.md)
 
 ## Regole Fondamentali per le Traduzioni

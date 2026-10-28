@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
   - "../italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Gestione Traduzioni Contenuti JSON
 
 Questo documento descrive come gestire le traduzioni per i contenuti JSON nel progetto healthcare_app, con particolare attenzione ai file di contenuto delle pagine.

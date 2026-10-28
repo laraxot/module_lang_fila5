@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: traduzioni-navigation.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Traduzioni con ".navigation" - Audit Completo 2025
 
 ## Riepilogo Problema

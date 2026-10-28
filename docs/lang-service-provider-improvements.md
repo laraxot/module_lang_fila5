@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Miglioramenti LangServiceProvider
 
 ## Analisi Attuale
@@ -198,7 +201,7 @@ class TranslationMissing
 
 ## Collegamenti
 - [Documentazione Traduzioni](../README.md)
-- [Documentazione Traduzioni](README.md)
+- [Documentazione Traduzioni](../readme.md)
 - [Guida Implementazione](./implementation-guide.md)
 - [Best Practices](./best-practices.md)
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Traduzioni con ".navigation" - Audit Completo 2025
 
 ## Riepilogo Problema
@@ -113,9 +116,6 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 - [Errori Comuni Traduzione](../errori_comuni_traduzione.md)
 - [Correzioni Errori Sintassi 2025](../correzioni_errori_sintassi_2025.md)
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
-
-*Ultimo aggiornamento: 6 Gennaio 2025*
-- [Best Practices Traduzioni](../../xot/docs/translation_rules.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
 - [Best Practices Traduzioni](../../xot/docs/translation_rules.md)

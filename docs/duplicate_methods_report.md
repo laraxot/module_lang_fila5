@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: duplicate-methods-report.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Report: Metodi con nome duplicato nei moduli e nei temi
 
 ## Introduzione
