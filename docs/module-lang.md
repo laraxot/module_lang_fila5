@@ -19,6 +19,10 @@ status: draft
 - **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
 - **Namespace**: `Modules\Lang`
 - **Repository**: https://github.com/laraxot/module_lang_fila5.git
+- **Nome**: `laraxot/module_lang_fila3`
+- **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
+- **Namespace**: `Modules\Lang`
+- **Repository**: https://github.com/laraxot/module_lang_fila3.git
 
 ### Versione HEAD
 
@@ -304,6 +308,8 @@ public function testTranslations()
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+- [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
+- [Regole Generali Traduzioni](../../Xot/docs/translations.md)
 
 ## Esempi
 
@@ -316,4 +322,8 @@ $translation = Lang::get('patient.registration.label');
 
 Le modifiche vengono tracciate nel repository GitHub.
 
+---
+---
+---
+---
 ---

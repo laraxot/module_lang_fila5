@@ -49,16 +49,13 @@ Indice: [00-INDEX.md](./00-INDEX.md). Wiki: [wiki/index.md](./wiki/index.md). St
 
 ## Dipendenze / Moduli Correlati
 
-- [Xot - Framework Base](../Xot/docs/README.md) — Always dependency
-- [User - Authentication](../User/docs/README.md) — For user-facing strings
-- [Cms - Content](../Cms/docs/README.md) — For content translations
-- [Notify - Notifications](../Notify/docs/README.md) — For email translations
+- [Xot - Framework Base](../../Xot/docs/README.md) — Always dependency
+- [User - Authentication](../../User/docs/README.md) — For user-facing strings
+- [Cms - Content](../../Cms/docs/README.md) — For content translations
+- [Notify - Notifications](../../Notify/docs/README.md) — For email translations
 
 ## Documenti Correlati
 
-- [Translation Best Practices](../../../docs/wiki/standards/translations.md)
-- [Translation File Merge Pattern](../../../docs/wiki/standards/translation-merge-pattern.md)
-- [Module Translation Structure](../../../docs/wiki/standards/module-translations.md)
 - [PHPStan Configuration](../../../phpstan.neon)
 
 ## Regole Critiche

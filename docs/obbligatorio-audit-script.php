@@ -9,8 +9,9 @@ use function Safe\glob;
 /**
  * Script specifico per identificare la parola "obbligatorio" e varianti
  * in file di traduzione non italiani.
+ *
+ * @return array<string, list<array{pattern: string, line: int<1, max>, content: string, language: string, suggested_translation: string}>>
  */
-/** @return array<string, list<array{pattern: string, line: int, content: string, language: string, suggested_translation: string}>> */
 function auditObbligatorioInNonItalianFiles(string $basePath): array
 {
     $issues = [];
@@ -18,15 +19,18 @@ function auditObbligatorioInNonItalianFiles(string $basePath): array
 
     // Trova tutti i file di traduzione non italiani
     $patterns = [
-        $basePath.'/*/lang/en/*.php',
-        $basePath.'/*/lang/de/*.php',
-        $basePath.'/*/lang/es/*.php',
-        $basePath.'/*/lang/fr/*.php',
+        $basePath.'/Modules/*/lang/en/*.php',
+        $basePath.'/Modules/*/lang/de/*.php',
+        $basePath.'/Modules/*/lang/es/*.php',
+        $basePath.'/Modules/*/lang/fr/*.php',
     ];
 
     foreach ($patterns as $pattern) {
-        $files = glob($pattern);
-        $nonItalianFiles = array_merge($nonItalianFiles, $files);
+        foreach (glob($pattern) as $file) {
+            if (is_string($file)) {
+                $nonItalianFiles[] = $file;
+            }
+        }
     }
 
     // Pattern specifici per "obbligatorio" e varianti
@@ -58,13 +62,7 @@ function auditObbligatorioInNonItalianFiles(string $basePath): array
     ];
 
     foreach ($nonItalianFiles as $file) {
-        if (! is_string($file)) {
-            continue;
-        }
         $content = file_get_contents($file);
-        if (! $content) {
-            continue;
-        }
 
         $fileIssues = [];
         $lines = explode("\n", $content);
@@ -172,7 +170,9 @@ function getSuggestedTranslation(string $italianText, string $targetLanguage): s
     }
 }
 
-/** @param array<string, list<array{pattern: string, line: int, content: string, language: string, suggested_translation: string}>> $issues */
+/**
+ * @param array<string, list<array{pattern: string, line: int<1, max>, content: string, language: string, suggested_translation: string}>> $issues
+ */
 function generateObbligatorioReport(array $issues): string
 {
     $report = "# Audit \"Obbligatorio\" in Non-Italian Translation Files\n\n";
@@ -232,7 +232,7 @@ function generateObbligatorioReport(array $issues): string
 }
 
 // Esegui audit specifico per "obbligatorio"
-$basePath = '/var/www/html/_bases/base_<nome progetto>/laravel';
+$basePath = dirname(__DIR__, 3);
 echo "Inizio audit specifico per \"obbligatorio\" in file non italiani...\n";
 
 $issues = auditObbligatorioInNonItalianFiles($basePath);

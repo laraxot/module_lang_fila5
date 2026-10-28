@@ -166,3 +166,4 @@ Per dettagli completi, vedere: `laravel/docs/composer-merge-plugin.md`
 
 ---
 **Ultimo aggiornamento:** Gennaio 2026
+**Ultimo aggiornamento:** Gennaio 2026

@@ -1,19 +1,16 @@
-<<<<<<< .merge_file_weZoJb
 # Prototype: laravel/Modules/* e laravel/Themes/*
 # Canon: bashscripts/ai/wiki/rules/no-git-lfs.md
 # Sync: bash bashscripts/templates/sync-gitattributes-modules.sh
 #
 # Git LFS VIETATO. Binari = blob git normali.
 
-=======
-# Git attributes for this module. Git LFS is intentionally not used.
->>>>>>> .merge_file_gMEUsm
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
-# Binary files remain regular Git blobs.
+# Binary files (regular git blobs — NO git-lfs)
+# `binary` + `!filter` azzera eventuali filtri LFS ereditati
 *.png binary !filter
 *.jpg binary !filter
 *.jpeg binary !filter
