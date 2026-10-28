@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Console Commands - Lang Module
 
 ## Panoramica
@@ -153,15 +150,12 @@ php artisan lang:find-missing it
 - [Translation System](./translation-system.md)
 - [Lang Module Architecture](./architecture.md)
 - [PHPStan Corrections](../../../../docs/phpstan-fixes.md)
-<<<<<<< HEAD
 - [PHPStan Corrections](../../../docs/phpstan-fixes.md)
 - [PHPStan Corrections](../../../docs/phpstan-fixes.md)
 - [PHPStan Corrections](../../../docs/phpstan-fixes.md)
 - [PHPStan Corrections](../../../../docs/phpstan-fixes.md)
 - [PHPStan Corrections](../../../../docs/phpstan-fixes.md)
 - [PHPStan Corrections](../../../../docs/phpstan-fixes.md)
-=======
->>>>>>> ceaed311 (.)
 
 ## Note di Sviluppo
 

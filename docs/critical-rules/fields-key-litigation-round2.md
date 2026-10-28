@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,8 +13,6 @@ related:
   - "../italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # FURIOUS LITIGATION: Why "fields" Key is SACRED and IMMUTABLE
 
 **Date**: 2026-01-09 (Round 2)

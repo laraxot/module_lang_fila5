@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,9 +13,6 @@ related:
 status: draft
 ---
 # Lang Module - User Research
-=======
-# User Research: Lang Module
->>>>>>> ceaed311 (.)
 
 ## 🔬 Research Goals
 Understand how developers manage translations and where they struggle.

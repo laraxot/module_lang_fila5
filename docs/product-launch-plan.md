@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,9 +13,6 @@ related:
 status: draft
 ---
 # Lang Module - Product Launch Plan
-=======
-# Lang - Product Launch Plan
->>>>>>> ceaed311 (.)
 
 > Piano di lancio. Modulo.
 > Launch readiness stimata: 68%.

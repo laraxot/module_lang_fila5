@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Audit Traduzioni Inglesi - <nome progetto>
 
 ## Panoramica
@@ -318,7 +315,6 @@ return array(
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Regole Traduzioni](../../docs/translation-standards.md)
@@ -327,8 +323,6 @@ return array(
 - [Regole Traduzioni](translation-standards.md)
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
-=======
->>>>>>> ceaed311 (.)
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 
@@ -343,7 +337,6 @@ return array(
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-<<<<<<< HEAD
 - [Regole Traduzioni](../../../docs/translation-standards.md)
 - [Regole Traduzioni](../../../../docs/translation-standards.md)
 - [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
@@ -355,8 +348,6 @@ return array(
 **Ultimo aggiornamento**: [DATE]
 **Ultimo aggiornamento**: [DATE]
 **Ultimo aggiornamento**: [DATE]
-=======
->>>>>>> ceaed311 (.)
 **Status**: In corso
 # Audit Traduzioni Inglesi - <nome progetto>
 
@@ -661,37 +652,12 @@ return array(
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Regole Traduzioni](translation-standards.md)
 - [Regole Traduzioni](translation-standards.md)
 - [Regole Traduzioni](translation-standards.md)
-=======
->>>>>>> ceaed311 (.)
-- [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
-
----
-
-**Ultimo aggiornamento**: 2025-01-06
-- [Regole Traduzioni](../../../docs/translation-standards.md)
-- [Regole Traduzioni](../../../../docs/translation-standards.md)
-- [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
-
----
-
-**Ultimo aggiornamento**: 2025-01-06
-<<<<<<< HEAD
-**Status**: In corso
-**Ultimo aggiornamento**: [DATE]
-**Status**: In corso
-**Ultimo aggiornamento**: [DATE]
-**Status**: In corso
-**Ultimo aggiornamento**: [DATE]
-**Status**: In corso
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 
@@ -707,6 +673,24 @@ return array(
 
 **Ultimo aggiornamento**: 2025-01-06
 **Status**: In corso
-=======
+**Ultimo aggiornamento**: [DATE]
 **Status**: In corso
->>>>>>> ceaed311 (.)
+**Ultimo aggiornamento**: [DATE]
+**Status**: In corso
+**Ultimo aggiornamento**: [DATE]
+**Status**: In corso
+- [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
+- [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
+
+---
+
+**Ultimo aggiornamento**: 2025-01-06
+- [Regole Traduzioni](../../../docs/translation-standards.md)
+- [Regole Traduzioni](../../../../docs/translation-standards.md)
+- [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
+- [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
+
+---
+
+**Ultimo aggiornamento**: 2025-01-06
+**Status**: In corso

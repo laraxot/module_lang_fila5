@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Case-Insensitive File Conflicts
 
 Nel modulo `Lang` sono presenti i seguenti duplicati con differenze solo di maiuscole/minuscole:

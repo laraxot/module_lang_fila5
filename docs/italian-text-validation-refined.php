@@ -2,10 +2,15 @@
 
 declare(strict_types=1);
 
+use function Safe\file_get_contents;
+use function Safe\file_put_contents;
+use function Safe\glob;
+
 /**
  * Script raffinato per identificare VERI testi italiani in file di traduzione non italiani
  * Esclude falsi positivi come "email", "password" che sono termini internazionali.
  */
+/** @return array<string, list<array{pattern: string, line: int, content: string, language: string}>> */
 function auditRealItalianText(string $basePath): array
 {
     $issues = [];
@@ -207,6 +212,9 @@ function auditRealItalianText(string $basePath): array
     ];
 
     foreach ($nonItalianFiles as $file) {
+        if (! is_string($file)) {
+            continue;
+        }
         $content = file_get_contents($file);
         if (! $content) {
             continue;
@@ -223,7 +231,7 @@ function auditRealItalianText(string $basePath): array
                     // Verifica che non sia un falso positivo
                     $isExcluded = false;
                     foreach ($excludePatterns as $exclude) {
-                        if (false !== stripos($line, $exclude) && false !== stripos($line, $pattern)) {
+                        if (false !== stripos($line, $exclude)) {
                             // Controlla se il pattern è parte del termine escluso
                             if (str_contains(strtolower($exclude), strtolower(trim($pattern)))) {
                                 $isExcluded = true;
@@ -270,6 +278,7 @@ function getLanguageFromPath(string $file): string
     return 'Unknown';
 }
 
+/** @param array<string, list<array{pattern: string, line: int, content: string, language: string}>> $issues */
 function generateRefinedReport(array $issues): string
 {
     $report = "# Refined Italian Text Audit Report\n\n";

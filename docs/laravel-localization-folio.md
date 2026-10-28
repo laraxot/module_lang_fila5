@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Integrazione tra mcamara/laravel-localization e Laravel Folio
 
 ## Obiettivo
@@ -160,7 +157,6 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
 - [FAQ e problemi comuni](Modules/Lang/project_docs/translations-faq.md)
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
-<<<<<<< HEAD
 - [FAQ e problemi comuni](Modules/Lang/project_docs/translations-faq.md)
 - [FAQ e problemi comuni](translations-faq.md)
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
@@ -168,8 +164,6 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
 - [FAQ e problemi comuni](translations-faq.md)
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
-=======
->>>>>>> ceaed311 (.)
 
 ---
 
@@ -325,7 +319,6 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 
 ---
 
-<<<<<<< HEAD
 **Se vuoi che aggiorni direttamente la documentazione o vuoi esempi pratici di override/mapping path Folio, chiedi pure!**
 
 ---
@@ -338,6 +331,3 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 ---
 
 **Se vuoi che aggiorni direttamente la documentazione o vuoi esempi pratici di override/mapping path Folio, chiedi pure!**
-=======
-**Se vuoi che aggiorni direttamente la documentazione o vuoi esempi pratici di override/mapping path Folio, chiedi pure!**
->>>>>>> ceaed311 (.)

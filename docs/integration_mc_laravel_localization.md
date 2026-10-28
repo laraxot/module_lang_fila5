@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Integrazione di mcamara/laravel-localization
 
 Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto <main module>.

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -16,8 +15,6 @@ status: stale
 
 > Nota 2026-10-14 (docs-audit): Descrive la registrazione automatica di comandi Artisan del modulo, ma Modules/Lang non ha app/Console ne' comandi (php artisan list 2026-10-14: solo lang:publish, del framework). Contenuto non riscritto, verificare prima di usarlo.
 
-=======
->>>>>>> ceaed311 (.)
 # Autoregistrazione dei Comandi da Console
 
 ## Introduzione

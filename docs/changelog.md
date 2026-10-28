@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,8 +13,6 @@ related:
 status: superseded
 superseded_by: CHANGELOG.md
 ---
-=======
->>>>>>> ceaed311 (.)
 # Changelog
 
 All notable changes to `:package_name` will be documented in this file.

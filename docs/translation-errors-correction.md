@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Correzione Errori Traduzioni - 2025
 
 ## Problema Identificato
@@ -202,12 +199,8 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali
-<<<<<<< HEAD
 - [Root Docs: Translation Standards](../../../docs/translation_standards.md)
 - [Root Docs: Translation Standards](../../../../docs/translation_standards.md)
-=======
-- [Root Docs: Translation Standards](../../docs/translation_standards.md)
->>>>>>> ceaed311 (.)
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
 - [<main module> Module: Translation Guidelines](../<main module>/docs/translation_guidelines.md)
 - [<nome progetto> Module: Translation Guidelines](../<nome progetto>/docs/translation_guidelines.md)
@@ -275,7 +268,6 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Autore**: Sistema di Correzione Automatica
-<<<<<<< HEAD
 **Versione**: 1.0
 # Correzione Errori Traduzioni - 2025
 
@@ -530,6 +522,3 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 **Ultimo aggiornamento**: Gennaio 2025
 **Autore**: Sistema di Correzione Automatica
 **Versione**: 1.0
-=======
-**Versione**: 1.0
->>>>>>> ceaed311 (.)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -15,8 +14,6 @@ related:
 status: superseded
 superseded_by: now.md
 ---
-=======
->>>>>>> ceaed311 (.)
 # Now (Module Lang)
 
 ## Stabilization

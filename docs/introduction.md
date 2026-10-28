@@ -42,7 +42,6 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 
 ### Versione Incoming
 
-<<<<<<< HEAD
 ---
 
 ### Versione Incoming
@@ -55,6 +54,3 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 ### Versione Incoming
 
 ---
-=======
----
->>>>>>> ceaed311 (.)

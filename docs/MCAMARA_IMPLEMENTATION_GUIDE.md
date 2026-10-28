@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,8 +13,6 @@ related:
 status: superseded
 superseded_by: wiki/integrations/_da-riconciliare/mcamara-implementation-guide.md
 ---
-=======
->>>>>>> ceaed311 (.)
 # Guida all'Implementazione di mcamara/laravel-localization
 
 ## Indice

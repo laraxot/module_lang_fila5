@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit\Actions;
 
+use Illuminate\Translation\Translator;
 use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;

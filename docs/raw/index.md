@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,8 +11,6 @@ qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
-=======
->>>>>>> ceaed311 (.)
 # Raw Sources — Lang
 
 Questo layer contiene le fonti grezze: documenti immutabili che l'LLM legge ma non modifica.

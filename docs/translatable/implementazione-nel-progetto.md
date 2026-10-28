@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -15,8 +14,6 @@ related:
 status: superseded
 superseded_by: implementation-nel-progetto.md
 ---
-=======
->>>>>>> ceaed311 (.)
 # Implementazione di Spatie Laravel Translatable nel Progetto
 
 Questo documento descrive come è implementato e configurato il pacchetto `spatie/laravel-translatable` nel nostro progetto, con particolare attenzione all'integrazione con i moduli esistenti e il plugin Filament.

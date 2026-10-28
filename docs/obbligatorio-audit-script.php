@@ -2,10 +2,15 @@
 
 declare(strict_types=1);
 
+use function Safe\file_get_contents;
+use function Safe\file_put_contents;
+use function Safe\glob;
+
 /**
  * Script specifico per identificare la parola "obbligatorio" e varianti
  * in file di traduzione non italiani.
  */
+/** @return array<string, list<array{pattern: string, line: int, content: string, language: string, suggested_translation: string}>> */
 function auditObbligatorioInNonItalianFiles(string $basePath): array
 {
     $issues = [];
@@ -53,6 +58,9 @@ function auditObbligatorioInNonItalianFiles(string $basePath): array
     ];
 
     foreach ($nonItalianFiles as $file) {
+        if (! is_string($file)) {
+            continue;
+        }
         $content = file_get_contents($file);
         if (! $content) {
             continue;
@@ -164,6 +172,7 @@ function getSuggestedTranslation(string $italianText, string $targetLanguage): s
     }
 }
 
+/** @param array<string, list<array{pattern: string, line: int, content: string, language: string, suggested_translation: string}>> $issues */
 function generateObbligatorioReport(array $issues): string
 {
     $report = "# Audit \"Obbligatorio\" in Non-Italian Translation Files\n\n";
