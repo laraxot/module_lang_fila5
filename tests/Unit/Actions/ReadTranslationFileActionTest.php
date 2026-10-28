@@ -13,36 +13,6 @@ use function Safe\unlink;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-=======
-/**
- * @return array<string, mixed>
- */
-function defaultReadTranslationTestData(): array
-{
-    return [
-        'auth' => [
-            'failed' => 'These credentials do not match our records.',
-            'password' => 'The provided password is incorrect.',
-        ],
-        'pagination' => [
-            'previous' => '&laquo; Previous',
-            'next' => 'Next &raquo;',
-        ],
-    ];
-}
-
-function readTranslationTestFilePath(): string
-{
-    return sys_get_temp_dir().'/test_translations.php';
-}
-
-function makeReadTranslationFileAction(): ReadTranslationFileAction
-{
-    return new ReadTranslationFileAction;
-}
-
->>>>>>> ceaed311 (.)
 afterEach(function (): void {
     $path = \readTranslationTestFilePath();
     if (file_exists($path)) {
