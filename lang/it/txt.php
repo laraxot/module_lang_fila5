@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-<<<<<<< HEAD
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci la tua email',
@@ -46,14 +45,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'email' => ['label' => 'Email', 'placeholder' => 'Inserisci la tua email', 'tooltip' => 'Usa un indirizzo email valido', 'icon' => 'heroicon-o-mail', 'description' => 'email', 'helper_text' => ''],
-        'password' => ['label' => 'Password', 'placeholder' => 'Inserisci la tua password', 'tooltip' => 'La password deve contenere almeno 8 caratteri', 'icon' => 'heroicon-o-lock-closed', 'description' => 'password', 'helper_text' => ''],
-        'remember' => ['label' => 'Ricordami', 'tooltip' => 'Mantieni l\'accesso attivo su questo dispositivo', 'description' => 'remember', 'helper_text' => '', 'placeholder' => 'remember'],
-        'applyFilters' => ['label' => 'applyFilters', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-        'toggleColumns' => ['label' => 'toggleColumns', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-        'reorderRecords' => ['label' => 'reorderRecords', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
->>>>>>> ceaed311 (.)
         'options' => [
             'prefix-icon-color' => [
                 'description' => 'options.prefix-icon-color',
@@ -800,7 +791,6 @@ return [
             'helper_text' => 'created_by',
             'description' => 'created_by',
         ],
-<<<<<<< HEAD
         'extra_attributes' => [
             'type' => [
                 'label' => 'extra_attributes.type',
@@ -1299,40 +1289,6 @@ return [
             'label' => 'Autore della segnalazione',
             'heading' => 'Autore della segnalazione',
         ],
-=======
-        'id' => ['label' => 'id'],
-        'created_at' => ['label' => 'created_at'],
-        'updated_at' => ['label' => 'updated_at'],
-        'appointment_date' => ['label' => 'appointment_date', 'placeholder' => 'appointment_date', 'helper_text' => 'appointment_date', 'description' => 'appointment_date'],
-        'contact' => ['label' => 'contact'],
-        'invoice' => ['label' => 'invoice', 'placeholder' => 'invoice', 'helper_text' => 'invoice', 'description' => 'invoice'],
-        'contract' => ['label' => 'contract', 'placeholder' => 'contract', 'helper_text' => 'contract', 'description' => 'contract'],
-        'receipt' => ['label' => 'receipt', 'placeholder' => 'receipt', 'helper_text' => 'receipt', 'description' => 'receipt'],
-    ],
-    'actions' => [
-        'authenticate' => ['label' => 'Autentica', 'tooltip' => 'Effettua il login nel sistema', 'icon' => 'ui-login', 'color' => 'primary'],
-        'login' => ['label' => 'Accedi', 'tooltip' => 'Accedi con le tue credenziali', 'icon' => 'heroicon-o-key', 'color' => 'success'],
-        'request' => ['label' => 'request', 'tooltip' => 'request', 'icon' => 'request'],
-        'cancel' => ['label' => 'cancel'],
-        'save' => ['label' => 'save'],
-        'activeLocale' => ['label' => 'activeLocale'],
-        'open' => ['label' => 'open'],
-        'create' => ['label' => 'create'],
-        'createAnother' => ['label' => 'createAnother'],
-        'hidePassword' => ['icon' => 'hidePassword', 'label' => 'hidePassword', 'tooltip' => 'hidePassword'],
-        'showPassword' => ['icon' => 'ui-showPassword', 'label' => 'showPassword', 'tooltip' => 'showPassword'],
-        'list_log_activities' => ['label' => 'list_log_activities', 'icon' => 'list_log_activities', 'tooltip' => 'list_log_activities'],
-        'table_layout_toggle' => ['label' => 'table_layout_toggle', 'icon' => 'table_layout_toggle', 'tooltip' => 'table_layout_toggle'],
-        'update_coordinates' => ['label' => 'update_coordinates', 'icon' => 'update_coordinates', 'tooltip' => 'update_coordinates'],
-        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
-        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'SendRecordsNotificationBulkAction' => ['label' => 'SendRecordsNotificationBulkAction', 'icon' => 'SendRecordsNotificationBulkAction', 'tooltip' => 'SendRecordsNotificationBulkAction'],
-        'changePassword' => ['label' => 'changePassword', 'icon' => 'changePassword', 'tooltip' => 'changePassword'],
-        'test' => ['label' => 'test', 'icon' => 'test', 'tooltip' => 'test'],
-    ],
-    'sections' => [
-        'address' => ['label' => 'address', 'heading' => 'address'],
->>>>>>> ceaed311 (.)
     ],
     'label' => 'Txt',
     'plural_label' => 'Txt (Plurale)',
@@ -1344,13 +1300,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Txt',
-<<<<<<< HEAD
         'sort' => '1',
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
->>>>>>> ceaed311 (.)
     ],
     'steps' => [
         'test' => [

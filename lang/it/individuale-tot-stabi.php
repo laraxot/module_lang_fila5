@@ -114,12 +114,7 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Individuale Tot Stabi',
-<<<<<<< HEAD
         'sort' => '1',
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
->>>>>>> ceaed311 (.)
     ],
 ];
