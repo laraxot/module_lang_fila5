@@ -6,7 +6,7 @@ return [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'tooltip' => 'Use a valid email address',
-            'icon' => 'heroicon-o-envelope',
+            'icon' => 'heroicon-o-mail',
             'description' => 'email',
             'helper_text' => '',
         ],

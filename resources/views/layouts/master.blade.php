@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_sEEABh
+=======
+
+>>>>>>> .merge_file_6ql6hs
 ?>
 <!DOCTYPE html>
 <html lang="en">

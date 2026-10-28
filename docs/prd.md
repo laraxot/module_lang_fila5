@@ -12,22 +12,30 @@ status: draft
 ---
 # Product Requirements Document (PRD) - Lang Module
 
-**Module**: Lang
-**Version**: 1.0
-**Status**: Draft
-**Author**: Product Team
+## 📋 Overview
+- **Author:** Gemini CLI
+- **Status:** Approved
+- **Target Release:** 1.0.0
 
----
+## ❓ Problem Statement
+Managing translations across 30+ modules leads to missing keys, hardcoded strings, and inconsistent language support.
 
-## Document Control
+## 🎯 Goals & Success Metrics
+- **Goal 1:** Zero Hardcoded Strings -> **Metric:** `translation-check` tool passes 100%.
+- **Goal 2:** Universal Support -> **Metric:** Italian and English provided for 100% of keys.
+- **Goal 3:** Dynamic Switching -> **Metric:** Support for 10+ languages with minimal overhead.
 
-| Version | Date | Author | Changes |
-|---------|------|--------|---------|
-| 1.0 | 2026-08-04 | Product Team | Initial draft |
+## 👤 User Stories
+- As a **User**, I want to see the application in my preferred language automatically.
+- As a **Developer**, I want to use `trans()` or `__()` and have the keys automatically created if they are missing.
 
----
+## 🛠️ Functional Requirements
+1. **Localization Engine:** mcamara/laravel-localization integration.
+2. **Translation Registry:** Discover and register all module-specific `lang/` files.
+3. **Admin UI:** Manage translation keys directly from the Filament panel.
 
-## 1. Executive Summary
+## 🎨 Design & User Experience
+Transparent language selection via URL prefix (e.g., `/it/admin`, `/en/admin`).
 
 ### 1.1 Problem Statement
 Translation and localization management module Without a dedicated module, this functionality requires manual processes and inconsistent data handling.
@@ -66,6 +74,8 @@ The Lang module provides a structured framework for managing lang operations wit
 ### 2.3 Non-Goals
 - External system integration (unless specified)
 - Real-time dashboards (future phase)
+- Domain-specific logic
+- Hardcoded translations in Blade files
 
 ### 2.4 Key Results (OKRs)
 | Objective | Key Result | Target | Status |

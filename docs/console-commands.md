@@ -170,7 +170,3 @@ php artisan lang:find-missing it
 - Utilizzo di assertions per validazione
 - Separazione delle responsabilità per ogni comando
 - Gestione appropriata degli errori
-- Gestione appropriata degli errori
-- Gestione appropriata degli errori
-- Gestione appropriata degli errori
-- Gestione appropriata degli errori

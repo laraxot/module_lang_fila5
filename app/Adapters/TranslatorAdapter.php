@@ -33,7 +33,7 @@ class TranslatorAdapter extends LaravelTranslator
      * @param string|null          $locale
      * @param bool                 $fallback
      *
-     * @return string|array<array-key, mixed>
+     * @return string|array<string, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
     {
@@ -47,11 +47,10 @@ class TranslatorAdapter extends LaravelTranslator
         }
 
         if (is_array($result)) {
-            return $result;
-        }
+            /** @var array<string, mixed> $arrayResult */
+            $arrayResult = $result;
 
-        if (! is_string($result)) {
-            return (string) $key;
+            return $arrayResult;
         }
 
         return $result;

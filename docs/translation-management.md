@@ -110,8 +110,3 @@ Prima di ogni commit, verificare:
 ## Ultimo Aggiornamento
 2025-01-27 - Regola critica per evitare ->label()
 [DATE] - Regola critica per evitare ->label()
-[DATE] - Regola critica per evitare ->label()
-[DATE] - Regola critica per evitare ->label()
-[DATE] - Regola critica per evitare ->label()
-2025-01-27 - Regola critica per evitare ->label()
-[DATE] - Regola critica per evitare ->label()

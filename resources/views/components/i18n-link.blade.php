@@ -1,7 +1,10 @@
+<<<<<<< .merge_file_hVYFBA
 <?php
 
 declare(strict_types=1);
 ?>
+=======
+>>>>>>> .merge_file_GLizAe
 @props([
     'url' => null,
     'locale' => null,

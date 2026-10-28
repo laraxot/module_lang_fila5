@@ -86,7 +86,7 @@ status: draft
 - [Indice del Progetto](../INDEX.md)
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
-- [Architettura](architecture.md)
+- [Architettura](../ARCHITECTURE.md)
 
 ---
 
@@ -176,7 +176,7 @@ Questo progetto è open-source e disponibile sotto la [Licenza MIT](../../LICENS
 - [Indice del Progetto](../INDEX.md)
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
-- [Architettura](architecture.md)
+- [Architettura](../ARCHITECTURE.md)
 
 ---
 

@@ -15,7 +15,6 @@ status: draft
 # Model/Factory/Seeder Audit
 
 Generated: 2025-08-22 16:29
-Generated: 2025-08-22 16:29
 Generated: [DATE] 16:29
 
 ## Coverage
@@ -35,8 +34,4 @@ Seeder: `database/seeders/LangDatabaseSeeder.php`
 - Traits/contracts are infra; exclude from factories/seeders.
 
 ## Likely non-business-critical
-- All trait/contract entries (infra-only).
-- All trait/contract entries (infra-only).
-- All trait/contract entries (infra-only).
-- All trait/contract entries (infra-only).
 - All trait/contract entries (infra-only).

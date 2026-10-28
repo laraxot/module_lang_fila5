@@ -13,6 +13,15 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListTranslationFiles extends XotBaseListRecords
 {
     protected static string $resource = TranslationFileResource::class;
+<<<<<<< .merge_file_xHJaHq
+=======
+
+    #[\Override]
+    public function getTableColumns(): array
+    {
+        return [TextColumn::make('key')->searchable(['key', 'content'])];
+    }
+>>>>>>> .merge_file_pSNDNg
 
     /**
      * @return array<string, Action|ActionGroup>

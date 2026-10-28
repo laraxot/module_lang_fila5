@@ -353,8 +353,3 @@ cd laravel && ./vendor/bin/phpstan analyze Modules/*/lang/ --level=9
 
 *Ultimo aggiornamento: 2025-08-08 - Struttura completa standardizzata*
 *Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*
-*Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*
-*Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*
-*Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*
-*Ultimo aggiornamento: 2025-08-08 - Struttura completa standardizzata*
-*Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*

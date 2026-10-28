@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     'name' => 'Lang',
     'description' => 'Modulo per la gestione delle traduzioni e localizzazioni',
-    'icon' => 'lang-icon',
+    'icon' => 'heroicon-o-language',
     'navigation' => [
         'enabled' => true,
         'sort' => 50,

@@ -82,7 +82,7 @@ status: draft
 - [Índice del Proyecto](../INDEX.md)
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panorama de los Módulos](../MODULES.md)
-- [Arquitectura](architecture.md)
+- [Arquitectura](../ARCHITECTURE.md)
 
 ---
 
