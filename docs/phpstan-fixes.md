@@ -35,10 +35,6 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/Lang
 - Issue [#332](https://github.com/laraxot/base_fixcity_fila5/issues/332) · base D[#333](https://github.com/laraxot/base_fixcity_fila5/discussions/333)
 
 ---
-<<<<<<< HEAD
-=======
-
->>>>>>> ceaed311 (.)
 ## Storico — Level 7 (Gennaio 2025)
 
 Il modulo Lang era a 0 errori Level 7.

@@ -43,7 +43,6 @@ php artisan module_lang:show-versions
 * [upgrade.md](../../../Cms/docs/upgrade.md)
 * [upgrade.md](../../../Lang/docs/upgrade.md)
 * [upgrade.md](../../../Cms/docs/upgrade.md)
-<<<<<<< HEAD
 * [upgrade.md](../../../Lang/docs/upgrade.md)
 * [upgrade.md](../../../Cms/docs/upgrade.md)
 * [upgrade.md](../../Cms/docs/upgrade.md)
@@ -51,8 +50,6 @@ php artisan module_lang:show-versions
 * [upgrade.md](../../Cms/docs/upgrade.md)
 * [upgrade.md](../../../Lang/docs/upgrade.md)
 * [upgrade.md](../../Cms/docs/upgrade.md)
-=======
->>>>>>> ceaed311 (.)
 
 ### Versione Incoming
 

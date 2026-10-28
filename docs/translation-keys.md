@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
@@ -22,13 +19,9 @@ status: draft
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-<<<<<<< HEAD
 - [Implementazione Auth Pages](../../User/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../User/docs/translation_keys_rules.md)
 - [Documentazione Lang](README.md)
-=======
-- [Documentazione Lang](./readme.md)
->>>>>>> ceaed311 (.)
 
 ## Regole Fondamentali per le Traduzioni
 
@@ -246,13 +239,9 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
-<<<<<<< HEAD
 - [Implementazione Auth Pages](../../User/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../User/docs/translation_keys_rules.md)
 - [Documentazione Lang](README.md)
-=======
-- [Documentazione Lang](./readme.md)
->>>>>>> ceaed311 (.)
 
 ## Regole Fondamentali per le Traduzioni
 

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,9 +13,6 @@ related:
 status: draft
 ---
 # Lang Module - Sprint Planning
-=======
-# Sprint Planning: Lang Stabilization
->>>>>>> ceaed311 (.)
 
 ## 🏁 Sprint Goal
 Reach 100% localization parity for all modules and finalize the documentation.

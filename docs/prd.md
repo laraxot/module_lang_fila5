@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 qmd: "prd"
 issues: []
@@ -12,9 +11,6 @@ updated: 2026-08-04
 status: draft
 ---
 # Product Requirements Document (PRD) - Lang Module
-=======
-# PRD: Lang Module
->>>>>>> ceaed311 (.)
 
 ## 📋 Overview
 - **Author:** Gemini CLI
@@ -41,7 +37,6 @@ Managing translations across 30+ modules leads to missing keys, hardcoded string
 ## 🎨 Design & User Experience
 Transparent language selection via URL prefix (e.g., `/it/admin`, `/en/admin`).
 
-<<<<<<< HEAD
 ### 1.1 Problem Statement
 Translation and localization management module Without a dedicated module, this functionality requires manual processes and inconsistent data handling.
 
@@ -269,8 +264,3 @@ The Lang module provides a structured framework for managing lang operations wit
 - [Architecture](ARCHITECTURE.md)
 - [Technical Specification](TECH_SPEC.md)
 - [User Stories](epics/lang-epics-and-stories.md)
-=======
-## 🚫 Out of Scope
-- Domain-specific logic.
-- Hardcoded translations in Blade files.
->>>>>>> ceaed311 (.)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,8 +13,6 @@ related:
 status: superseded
 superseded_by: translation-refactor.md
 ---
-=======
->>>>>>> ceaed311 (.)
 # Refactor Completo File di Traduzione - Riepilogo Finale
 
 ## Panoramica del Progetto

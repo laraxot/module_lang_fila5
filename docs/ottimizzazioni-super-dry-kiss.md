@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Ottimizzazioni Super DRY + KISS - Modulo Lang
 
 ## 🎯 Panoramica
@@ -327,7 +324,6 @@ class Language extends Model
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
-<<<<<<< HEAD
 - [Documentazione Core](../../../docs/core/)
 - [Documentazione Core](core)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
@@ -337,8 +333,6 @@ class Language extends Model
 - [Best Practices Filament](../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../docs/core/conventions.md)
 - [Template Modulo](../../../docs/templates/module-template.md)
-=======
->>>>>>> ceaed311 (.)
 
 ---
 

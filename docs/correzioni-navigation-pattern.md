@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Correzioni Pattern ".navigation" - Gennaio 2025
 
 ## Data Intervento
@@ -258,11 +255,8 @@ Ogni sezione `navigation` deve includere:
 - [NavigationLabelTrait Explained](../../Xot/docs/filament/navigation-label-trait-explained.md)
 - [Best Practices Traduzioni](../../Xot/docs/translation-standards.md)
 - [NavigationLabelTrait Explained](../../xot/docs/filament/navigation-label-trait-explained.md)
-<<<<<<< HEAD
 - [Best Practices Traduzioni](../../Xot/docs/translation-standards.md)
 - [NavigationLabelTrait Explained](../../xot/docs/filament/navigation-label-trait-explained.md)
-=======
->>>>>>> ceaed311 (.)
 
 ## Note Tecniche
 

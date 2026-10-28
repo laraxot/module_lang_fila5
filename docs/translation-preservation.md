@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Regole Critiche per la Preservazione delle Traduzioni
 
 ## ⚠️ REGOLA ASSOLUTA: MAI RIMUOVERE CONTENUTO

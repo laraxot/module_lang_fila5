@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # LangServiceProvider
 
 ## Panoramica
@@ -27,13 +24,10 @@ La documentazione completa del LangServiceProvider è disponibile nel modulo Lan
 
 - [Analisi e Proposte di Miglioramento](../laravel/Modules/Lang/docs/lang-service-provider.md)
 - [Analisi e Proposte di Miglioramento](../laravel/modules/lang/docs/lang-service-provider.md)
-<<<<<<< HEAD
 - [Analisi e Proposte di Miglioramento](../laravel/modules/lang/docs/lang-service-provider.md)
 - [Analisi e Proposte di Miglioramento](lang-service-provider.md)
 - [Analisi e Proposte di Miglioramento](lang-service-provider.md)
 - [Analisi e Proposte di Miglioramento](lang-service-provider.md)
-=======
->>>>>>> ceaed311 (.)
 
 ## Caratteristiche Principali
 

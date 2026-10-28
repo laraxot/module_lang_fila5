@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Guida Completa alla Validazione delle Traduzioni - <nome progetto>
 
 ## Panoramica
@@ -256,7 +253,6 @@ php docs/obbligatorio-audit-script.php
 - [User Module - City Field Refactor](../modules/user/docs/translation-city-field-refactor-[date].md)
 - [<nome progetto> Module - Refactor Summary](../modules/<nome progetto>/docs/translation-refactor-summary-[date].md)
 - [Geo Module - Helper Text Fix](../modules/geo/docs/helper-text-normalization-fix.md)
-<<<<<<< HEAD
 - [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-[DATE].md)
 - [<nome progetto> Module - Refactor Summary](../Modules/<nome progetto>/docs/translation-refactor-summary-[DATE].md)
 - [Geo Module - Helper Text Fix](../Modules/Geo/docs/helper-text-normalization-fix.md)
@@ -299,8 +295,6 @@ php docs/obbligatorio-audit-script.php
 - [User Module - City Field Refactor](../modules/user/docs/translation-city-field-refactor-[date].md)
 - [<nome progetto> Module - Refactor Summary](../modules/<nome progetto>/docs/translation-refactor-summary-[date].md)
 - [Geo Module - Helper Text Fix](../../Geo/docs/helper-text-normalization-fix.md)
-=======
->>>>>>> ceaed311 (.)
 
 ### Script e Tool
 - [Helper Text Audit Script](helper-text-audit-script.php)

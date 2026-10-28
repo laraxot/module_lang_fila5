@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,8 +12,6 @@ related:
   - "../italian-text-refined-audit-report.md"
 status: draft
 ---
-=======
->>>>>>> ceaed311 (.)
 # Modulo Lang
 
 Data: 2025-04-23 19:09:56
@@ -526,10 +523,5 @@ tests/Unit
 
 - Tutti i comandi console sono autoregistrati tramite la struttura di XotBaseServiceProvider.
 - Non aggiungere mai manualmente $this->commands([...]) nei provider.
-<<<<<<< HEAD
 - Perché? Vedi [lang-service-provider.md](../lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
 - Perché? Vedi [lang-service-provider.md](../lang-service-provider.md) e [PHILOSOPHY.md](./philosophy.md)
-=======
-- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
-- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./philosophy.md)
->>>>>>> ceaed311 (.)

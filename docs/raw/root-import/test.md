@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,5 +11,3 @@ qmd: "test"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
-=======
->>>>>>> ceaed311 (.)

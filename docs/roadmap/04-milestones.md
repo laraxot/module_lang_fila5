@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -15,8 +14,6 @@ related:
 status: superseded
 superseded_by: milestones.md
 ---
-=======
->>>>>>> ceaed311 (.)
 # Milestones - Lang
 
 ## M1 Documentation Baseline

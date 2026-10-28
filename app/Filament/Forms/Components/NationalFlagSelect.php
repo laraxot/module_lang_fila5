@@ -38,7 +38,7 @@ class NationalFlagSelect extends Select
      */
     protected function getCountryOptions(): array
     {
-        $countries = countries();
+        $countries = $this->resolveCountries();
         // PHPStan L10: Type narrowing for array offset access
         $countries = Arr::sort($countries, function (mixed $c) {
             return is_array($c) && isset($c['name']) ? $c['name'] : '';
@@ -85,7 +85,7 @@ class NationalFlagSelect extends Select
             return $this->getCountryOptions();
         }
 
-        $countries = countries();
+        $countries = $this->resolveCountries();
         $searchLower = strtolower($search);
 
         // Filter countries by search term
@@ -152,5 +152,11 @@ class NationalFlagSelect extends Select
         }
 
         return $options;
+    }
+
+    /** @return array<array-key, mixed> */
+    protected function resolveCountries(): array
+    {
+        return countries();
     }
 }

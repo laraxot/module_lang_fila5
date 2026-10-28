@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "translation process"
 type: note
@@ -14,9 +13,6 @@ canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
 status: superseded
 superseded_by: quick_reference.md
 ---
-=======
-# Processo di Traduzione: Da Sviluppatore a Traduttore
->>>>>>> ceaed311 (.)
 
 ## Indice
 1. [Introduzione](#introduzione)

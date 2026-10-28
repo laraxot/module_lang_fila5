@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -15,8 +14,6 @@ related:
 status: superseded
 superseded_by: workstreams.md
 ---
-=======
->>>>>>> ceaed311 (.)
 # Workstreams - Lang
 
 ## WS1 Architecture
