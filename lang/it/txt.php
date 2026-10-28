@@ -914,6 +914,9 @@ return [
         ],
         'allegato' => [
             'label' => 'allegato',
+            'placeholder' => 'allegato',
+            'helper_text' => 'allegato',
+            'description' => 'allegato',
         ],
         'fattura' => [
             'label' => 'fattura',
