@@ -15,7 +15,7 @@ status: draft
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
-- [Documentazione centrale](./readme.md)
+- [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
@@ -235,7 +235,7 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
-- [Documentazione centrale](./readme.md)
+- [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
@@ -451,8 +451,4 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 - Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
 - Vedi anche: [TRANSLATION_KEYS_RULES.md](../../Notify/docs/translation_keys_rules.md) per dettagli, esempi e best practice specifiche.
-<<<<<<< .merge_file_0t4ojK
 - Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
-=======
-- Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
->>>>>>> .merge_file_DyeYOD

@@ -57,3 +57,7 @@ TextInput::make('name')
 - **Azioni**: `modulo::risorsa.actions.nome_azione.label`
 - **Passi wizard**: `modulo::risorsa.steps.nome_passo.label`
 - **Altri attributi**: `.placeholder`, `.helperText`, `.description`
+- **Altri attributi**: `.placeholder`, `.helperText`, `.description`
+- **Altri attributi**: `.placeholder`, `.helperText`, `.description`
+- **Altri attributi**: `.placeholder`, `.helperText`, `.description`
+- **Altri attributi**: `.placeholder`, `.helperText`, `.description`

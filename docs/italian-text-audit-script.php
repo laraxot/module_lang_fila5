@@ -8,8 +8,9 @@ use function Safe\glob;
 
 /**
  * Script per identificare testi italiani residui in file di traduzione non italiani.
+ *
+ * @return array<string, list<array{pattern: string, line: int<1, max>, content: string, language: string}>>
  */
-/** @return array<string, list<array{pattern: string, line: int, content: string, language: string}>> */
 function auditItalianTextInNonItalianFiles(string $basePath): array
 {
     $issues = [];
@@ -17,15 +18,18 @@ function auditItalianTextInNonItalianFiles(string $basePath): array
 
     // Trova tutti i file di traduzione non italiani
     $patterns = [
-        $basePath.'/*/lang/en/*.php',
-        $basePath.'/*/lang/de/*.php',
-        $basePath.'/*/lang/es/*.php',
-        $basePath.'/*/lang/fr/*.php',
+        $basePath.'/Modules/*/lang/en/*.php',
+        $basePath.'/Modules/*/lang/de/*.php',
+        $basePath.'/Modules/*/lang/es/*.php',
+        $basePath.'/Modules/*/lang/fr/*.php',
     ];
 
     foreach ($patterns as $pattern) {
-        $files = glob($pattern);
-        $nonItalianFiles = array_merge($nonItalianFiles, $files);
+        foreach (glob($pattern) as $file) {
+            if (is_string($file)) {
+                $nonItalianFiles[] = $file;
+            }
+        }
     }
 
     // Pattern italiani comuni da cercare
@@ -121,13 +125,7 @@ function auditItalianTextInNonItalianFiles(string $basePath): array
     ];
 
     foreach ($nonItalianFiles as $file) {
-        if (! is_string($file)) {
-            continue;
-        }
         $content = file_get_contents($file);
-        if (! $content) {
-            continue;
-        }
 
         $fileIssues = [];
         $lines = explode("\n", $content);
@@ -173,7 +171,9 @@ function getLanguageFromPath(string $file): string
     return 'Unknown';
 }
 
-/** @param array<string, list<array{pattern: string, line: int, content: string, language: string}>> $issues */
+/**
+ * @param array<string, list<array{pattern: string, line: int<1, max>, content: string, language: string}>> $issues
+ */
 function generateItalianTextReport(array $issues): string
 {
     $report = "# Italian Text in Non-Italian Translation Files - Audit Report\n\n";
@@ -211,7 +211,7 @@ function generateItalianTextReport(array $issues): string
 }
 
 // Esegui audit
-$basePath = '/var/www/html/_bases/base_<nome progetto>/laravel';
+$basePath = dirname(__DIR__, 3);
 echo "Inizio audit per testi italiani in file non italiani...\n";
 
 $issues = auditItalianTextInNonItalianFiles($basePath);

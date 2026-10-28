@@ -32,7 +32,7 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 ## 🚀 **Inizio Rapido**
 
 ### **Per Sviluppatori**
-1. [README.md](readme.md) - Documentazione principale e panoramica
+1. [README.md](README.md) - Documentazione principale e panoramica
 2. [config/lang.php](../config/lang.php) - Configurazione centralizzata
 3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
 
@@ -51,7 +51,7 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 3. [BEST_PRACTICES.md](best-practices.md) - Pattern di implementazione
 1. [README.md](README.md) - Documentazione principale e panoramica
 2. [config/lang.php](../config/lang.php) - Configurazione centralizzata
-3. [EXAMPLES.md](EXAMPLES.md) - Esempi pratici e casi d'uso
+3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
 
 ### **Per Amministratori**
 1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices e linee guida
@@ -78,7 +78,7 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 
 ### **Per Integratori**
 1. [API_REFERENCE.md](API_REFERENCE.md) - Riferimento API completo
-2. [EXAMPLES.md](EXAMPLES.md) - Esempi di integrazione
+2. [EXAMPLES.md](examples.md) - Esempi di integrazione
 3. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Pattern di implementazione
 1. [API_REFERENCE.md](api-reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
@@ -99,19 +99,20 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Setup Iniziale**: [README.md](README.md#installazione)
 - **Configurazione**: [README.md](README.md#configurazione)
 - **Utilizzo Base**: [README.md](README.md#utilizzo)
-- **Esempi Pratici**: [EXAMPLES.md](EXAMPLES.md)
+- **Esempi Pratici**: [EXAMPLES.md](examples.md)
+- **Esempi Pratici**: [EXAMPLES.md](examples.md)
 - **Esempi Pratici**: [EXAMPLES.md](examples.md)
 
 ### **🎨 Integrazione Filament**
-- **Componenti Automatici**: [EXAMPLES.md](EXAMPLES.md#integrazione-filament)
-- **Actions Personalizzate**: [EXAMPLES.md](EXAMPLES.md#actions-personalizzate)
-- **Resources**: [EXAMPLES.md](EXAMPLES.md#resource-base)
+- **Componenti Automatici**: [EXAMPLES.md](examples.md#integrazione-filament)
+- **Actions Personalizzate**: [EXAMPLES.md](examples.md#actions-personalizzate)
+- **Resources**: [EXAMPLES.md](examples.md#resource-base)
 - **Best Practices**: [BEST_PRACTICES.md](BEST_PRACTICES.md#integrazione-filament)
 
 ### **📁 Struttura File Traduzioni**
 - **Organizzazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#struttura-file-traduzioni)
 - **Convenzioni**: [BEST_PRACTICES.md](BEST_PRACTICES.md#convenzioni-naming)
-- **Esempi Completi**: [EXAMPLES.md](EXAMPLES.md#struttura-file-traduzioni)
+- **Esempi Completi**: [EXAMPLES.md](examples.md#struttura-file-traduzioni)
 - **Validazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#validazione-e-controlli)
 
 ### **🔒 Sicurezza e Validazione**
@@ -139,8 +140,8 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Benchmark**: [TROUBLESHOOTING.md](troubleshooting.md#metriche-performance)
 
 ### **🧪 Testing e Qualità**
-- **Test Unitari**: [EXAMPLES.md](EXAMPLES.md#testing)
-- **Test Feature**: [EXAMPLES.md](EXAMPLES.md#test-feature)
+- **Test Unitari**: [EXAMPLES.md](examples.md#testing)
+- **Test Feature**: [EXAMPLES.md](examples.md#test-feature)
 - **PHPStan Compliance**: [BEST_PRACTICES.md](BEST_PRACTICES.md#testing-e-qualità)
 - **Validazione Automatica**: [BEST_PRACTICES.md](BEST_PRACTICES.md#validazione-automatica)
 
@@ -148,7 +149,9 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Versioning**: [BEST_PRACTICES.md](BEST_PRACTICES.md#versioning-traduzioni)
 - **Migrazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#migrazione-versioni)
 - **Rollback**: [BEST_PRACTICES.md](BEST_PRACTICES.md#rollback-e-recovery)
-- **Backup**: [TROUBLESHOOTING.md](TROUBLESHOOTING.md#emergenze-e-rollback)
+- **Backup**: [TROUBLESHOOTING.md](troubleshooting.md#emergenze-e-rollback)
+- **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
+- **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
 - **PHPStan Compliance**: [BEST_PRACTICES.md](best-practices.md)
@@ -176,8 +179,10 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 
 **Documenti da Leggere**
 1. [README.md](README.md) - Sezioni: Panoramica, Installazione, Utilizzo
-2. [EXAMPLES.md](EXAMPLES.md) - Sezioni: Struttura File Base
-1. [README.md](readme.md) - Sezioni: Panoramica, Installazione, Utilizzo
+2. [EXAMPLES.md](examples.md) - Sezioni: Struttura File Base
+1. [README.md](README.md) - Sezioni: Panoramica, Installazione, Utilizzo
+2. [EXAMPLES.md](examples.md) - Sezioni: Struttura File Base
+1. [README.md](README.md) - Sezioni: Panoramica, Installazione, Utilizzo
 2. [EXAMPLES.md](examples.md) - Sezioni: Struttura File Base
 3. [config/lang.php](../config/lang.php) - Configurazioni base
 
@@ -194,8 +199,11 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 
 **Documenti da Leggere**
 1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Tutte le sezioni
-2. [EXAMPLES.md](EXAMPLES.md) - Integrazione Filament e Testing
-3. [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Problemi comuni
+2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
+3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
+1. [BEST_PRACTICES.md](best_practices.md) - Tutte le sezioni
+2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
+3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
 1. [BEST_PRACTICES.md](best_practices.md) - Tutte le sezioni
 1. [BEST_PRACTICES.md](best-practices.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
@@ -203,16 +211,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 1. [BEST_PRACTICES.md](best-practices.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
-<<<<<<< .merge_file_h3nXP7
-1. [BEST_PRACTICES.md](best_practices.md) - Tutte le sezioni
-1. [BEST_PRACTICES.md](best-practices.md) - Tutte le sezioni
-2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
-3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
-1. [BEST_PRACTICES.md](best-practices.md) - Tutte le sezioni
-2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
-3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
-=======
->>>>>>> .merge_file_vBtwu1
 1. [BEST_PRACTICES.md](best-practices.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
@@ -231,20 +229,15 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 **Documenti da Leggere**
 1. [API_REFERENCE.md](API_REFERENCE.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Pattern avanzati
-3. [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Problemi complessi
+3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
+1. [API_REFERENCE.md](api_reference.md) - Tutte le sezioni
+2. [BEST_PRACTICES.md](best_practices.md) - Pattern avanzati
+3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
 1. [API_REFERENCE.md](api_reference.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](best_practices.md) - Pattern avanzati
 1. [API_REFERENCE.md](api-reference.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](best-practices.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
-<<<<<<< .merge_file_h3nXP7
-1. [API_REFERENCE.md](api_reference.md) - Tutte le sezioni
-2. [BEST_PRACTICES.md](best_practices.md) - Pattern avanzati
-1. [API_REFERENCE.md](api-reference.md) - Tutte le sezioni
-2. [BEST_PRACTICES.md](best-practices.md) - Pattern avanzati
-3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
-=======
->>>>>>> .merge_file_vBtwu1
 1. [API_REFERENCE.md](api-reference.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](best-practices.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
@@ -265,20 +258,20 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **File PHP**: [BEST_PRACTICES.md](BEST_PRACTICES.md#sintassi-file-php)
 - **File PHP**: [BEST_PRACTICES.md](best-practices.md)
 - **File JSON**: [README.md](README.md#file-php-vs-json)
-- **Fallback**: [TROUBLESHOOTING.md](TROUBLESHOOTING.md#fallback-traduzioni)
-- **Pluralizzazione**: [EXAMPLES.md](EXAMPLES.md#gestione-pluralizzazione)
+- **Fallback**: [TROUBLESHOOTING.md](troubleshooting.md#fallback-traduzioni)
+- **Pluralizzazione**: [EXAMPLES.md](examples.md#gestione-pluralizzazione)
 
 ### **Filament**
-- **Componenti**: [EXAMPLES.md](EXAMPLES.md#componenti-automatici)
-- **Actions**: [EXAMPLES.md](EXAMPLES.md#actions-personalizzate)
-- **Resources**: [EXAMPLES.md](EXAMPLES.md#resource-base)
+- **Componenti**: [EXAMPLES.md](examples.md#componenti-automatici)
+- **Actions**: [EXAMPLES.md](examples.md#actions-personalizzate)
+- **Resources**: [EXAMPLES.md](examples.md#resource-base)
 - **Integrazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#integrazione-filament)
 
 ### **Performance**
 - **Cache**: [BEST_PRACTICES.md](BEST_PRACTICES.md#cache-strategy)
 - **Lazy Loading**: [BEST_PRACTICES.md](BEST_PRACTICES.md#lazy-loading)
 - **Memory**: [BEST_PRACTICES.md](BEST_PRACTICES.md#memory-management)
-- **Benchmark**: [TROUBLESHOOTING.md](TROUBLESHOOTING.md#benchmark-completo)
+- **Benchmark**: [TROUBLESHOOTING.md](troubleshooting.md#benchmark-completo)
 
 ### **Validazione**
 - **Sintassi**: [BEST_PRACTICES.md](BEST_PRACTICES.md#sintassi-valida)
@@ -298,8 +291,8 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Report**: [TROUBLESHOOTING.md](troubleshooting.md#report-qualità)
 
 ### **Testing**
-- **Unit Test**: [EXAMPLES.md](EXAMPLES.md#test-unitari)
-- **Feature Test**: [EXAMPLES.md](EXAMPLES.md#test-feature)
+- **Unit Test**: [EXAMPLES.md](examples.md#test-unitari)
+- **Feature Test**: [EXAMPLES.md](examples.md#test-feature)
 - **PHPStan**: [BEST_PRACTICES.md](BEST_PRACTICES.md#phpstan-compliance)
 - **Validazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#validazione-automatica)
 - **PHPStan**: [BEST_PRACTICES.md](best-practices.md)
@@ -367,19 +360,19 @@ php artisan lang:debug [--log-missing] [--log-performance]
 
 ### **Traduzioni Non Caricate**
 - **Sintomi**: Chiavi visibili invece del testo
-- **Soluzione**: [TROUBLESHOOTING.md](TROUBLESHOOTING.md#traduzioni-non-caricate)
+- **Soluzione**: [TROUBLESHOOTING.md](troubleshooting.md#traduzioni-non-caricate)
 
 ### **Performance Lente**
 - **Sintomi**: Caricamento pagine lento
-- **Soluzione**: [TROUBLESHOOTING.md](TROUBLESHOOTING.md#performance-lente)
+- **Soluzione**: [TROUBLESHOOTING.md](troubleshooting.md#performance-lente)
 
 ### **Errori di Validazione**
 - **Sintomi**: Comandi `lang:validate` falliscono
-- **Soluzione**: [TROUBLESHOOTING.md](TROUBLESHOOTING.md#errori-di-validazione)
+- **Soluzione**: [TROUBLESHOOTING.md](troubleshooting.md#errori-di-validazione)
 
 ### **Integrazione Filament**
 - **Sintomi**: Componenti senza label
-- **Soluzione**: [TROUBLESHOOTING.md](TROUBLESHOOTING.md#integrazione-filament)
+- **Soluzione**: [TROUBLESHOOTING.md](troubleshooting.md#integrazione-filament)
 
 ---
 
@@ -421,5 +414,7 @@ php artisan lang:debug [--log-missing] [--log-performance]
 **Versione**: 2.0.0
 **Autore**: Team Laraxot
 **Mantenuto da**: Community Laraxot
+
+- [Conflict Resolution](conflict-resolution.md)
 
 - [Conflict Resolution](conflict-resolution.md)

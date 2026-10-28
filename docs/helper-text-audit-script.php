@@ -2,28 +2,27 @@
 
 declare(strict_types=1);
 
-use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\glob;
 
 /**
  * Script per audit e correzione automatica dei valori helper_text
  * che sono uguali alla chiave del campo padre.
+ *
+ * @return array<string, list<array{path: string, key: int|string, current_value: string, should_be: string, line_context: string}>>
  */
-/** @return array<string, array<int, array{path: string, key: int|string, current_value: string, should_be: string, line_context: string}>> */
 function auditHelperTextFiles(string $basePath): array
 {
     $issues = [];
-    $files = glob($basePath.'/*/lang/*/*.php');
-    $langFiles = array_values(array_filter($files, static fn (mixed $file): bool => is_string($file)));
+    $langFiles = glob($basePath.'/Modules/*/lang/*/*.php');
+
     foreach ($langFiles as $file) {
-        if (str_contains($file, '/it/')) {
-            continue; // Skip Italian files
+        if (! is_string($file)) {
+            continue;
         }
 
-        $content = file_get_contents($file);
-        if (! $content) {
-            continue;
+        if (str_contains($file, '/it/')) {
+            continue; // Skip Italian files
         }
 
         // Parse the PHP array
@@ -41,16 +40,20 @@ function auditHelperTextFiles(string $basePath): array
     return $issues;
 }
 
-/** @param array<string|int, mixed> $data
- * @return array<int, array{path: string, key: int|string, current_value: string, should_be: string, line_context: string}>
+/**
+ * $data e' l'albero di traduzione ottenuto con include: struttura ricorsiva a profondita' aperta
+ * (fino a 9 livelli oggi, foglie string|int), PHPStan non ha tipi ricorsivi, per questo mixed.
+ *
+ * @param array<array-key, mixed> $data
+ *
+ * @return list<array{path: string, key: int|string, current_value: string, should_be: string, line_context: string}>
  */
 function findHelperTextIssues(array $data, string $file, string $parentKey = ''): array
 {
     $issues = [];
 
     foreach ($data as $key => $value) {
-        $keyString = (string) $key;
-        $currentPath = $parentKey ? $parentKey.'.'.$keyString : $keyString;
+        $currentPath = $parentKey ? $parentKey.'.'.$key : (string) $key;
 
         if (is_array($value)) {
             // Check if this is a field definition with helper_text
@@ -76,7 +79,9 @@ function findHelperTextIssues(array $data, string $file, string $parentKey = '')
     return $issues;
 }
 
-/** @param array<string, array<int, array{path: string, key: int|string, current_value: string, should_be: string, line_context: string}>> $issues */
+/**
+ * @param array<string, list<array{path: string, key: int|string, current_value: string, should_be: string, line_context: string}>> $issues
+ */
 function generateReport(array $issues): string
 {
     $report = "# Helper Text Audit Report\n\n";
@@ -108,7 +113,7 @@ function generateReport(array $issues): string
 }
 
 // Esegui audit
-$basePath = '/var/www/html/_bases/base_<nome progetto>/laravel';
+$basePath = dirname(__DIR__, 3);
 $issues = auditHelperTextFiles($basePath);
 $report = generateReport($issues);
 

@@ -23,6 +23,9 @@ Consulta la documentazione delle traduzioni:
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
+- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+- [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 
 ## Collegamento Bidirezionale
 
@@ -56,6 +59,9 @@ Consulta la documentazione delle traduzioni:
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
+- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+- [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 
 ## Collegamento Bidirezionale
 
@@ -77,4 +83,8 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Tenant/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Activity/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Patient/docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)

@@ -67,8 +67,4 @@ grep -rl '^<<<<<<< \|^=======$\|^>>>>>>> ' docs/ --include='*.md'
 # (citazione intenzionale, non un conflitto reale)
 ```
 
-<<<<<<< .merge_file_HY3qat
 Commit: `7402d521`.
-=======
-Commit: `7402d521`.
->>>>>>> .merge_file_HZNPiK

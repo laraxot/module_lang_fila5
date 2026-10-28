@@ -14,13 +14,17 @@ final class NationalFlagSelectFinalStub extends NationalFlagSelect
     /** @var array<int, mixed> */
     public array $extraFilteredRows = [];
 
-    /** @return array<int, mixed> */
+    /**
+     * @return array<int, mixed>
+     */
     protected function resolveCountries(): array
     {
         return $this->forcedCountries;
     }
 
-    /** @param array<int, mixed> $filteredCountries
+    /**
+     * @param array<int, mixed> $filteredCountries
+     *
      * @return array<int, mixed>
      */
     protected function finalizeFilteredCountries(array $filteredCountries): array
