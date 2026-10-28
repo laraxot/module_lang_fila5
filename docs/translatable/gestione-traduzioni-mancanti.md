@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
   - "../italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Gestione delle Traduzioni Mancanti con Spatie Laravel Translatable
 
 Questo documento descrive come gestire i casi in cui un modello non ha una traduzione richiesta utilizzando il pacchetto `spatie/laravel-translatable`.

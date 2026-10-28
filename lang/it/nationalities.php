@@ -266,8 +266,13 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Nationalities',
+<<<<<<< HEAD
         'sort' => '1',
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> ceaed311 (.)
     ],
     'fields' => [
         'id' => [

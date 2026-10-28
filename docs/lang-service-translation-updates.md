@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -18,6 +19,8 @@ status: draft
 # Aggiornamento File di Traduzione Lang Service - [DATE]
 # Aggiornamento File di Traduzione Lang Service - [DATE]
 # Aggiornamento File di Traduzione Lang Service - [DATE]
+=======
+>>>>>>> ceaed311 (.)
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 
@@ -171,14 +174,6 @@ La gestione delle traduzioni deve essere:
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di gestione traduzioni Laraxot
 **Versione**: 1.0
-**Ultimo aggiornamento**: 2025-01-06  
-**Autore**: Sistema di gestione traduzioni Laraxot  
-**Versione**: 1.0  
-**Stato**: Implementato e testato
-**Ultimo aggiornamento**: [DATE]
-**Autore**: Sistema di gestione traduzioni Laraxot
-**Versione**: 1.0
-**Stato**: Implementato e testato
 **Ultimo aggiornamento**: 2025-01-06  
 **Autore**: Sistema di gestione traduzioni Laraxot  
 **Versione**: 1.0  

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Enum Translation Pattern - Regola Critica
 
 ## ⚠️ REGOLA CRITICA: SEMPRE USARE transClass() NEGLI ENUM ⚠️
@@ -241,9 +244,4 @@ Prima di ogni commit, verificare:
 - [TableLayoutEnum Guide](../../UI/docs/table-layout-enum-complete-guide.md)
 
 ## Ultimo Aggiornamento
-2025-01-27 - Regola critica per enum translation pattern
-[DATE] - Regola critica per enum translation pattern
-[DATE] - Regola critica per enum translation pattern
-[DATE] - Regola critica per enum translation pattern
-[DATE] - Regola critica per enum translation pattern
 2025-01-27 - Regola critica per enum translation pattern

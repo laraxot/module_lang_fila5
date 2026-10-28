@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,6 +15,8 @@ related:
 status: superseded
 superseded_by: readme.it.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>
   
@@ -83,7 +86,7 @@ superseded_by: readme.it.md
 - [Indice del Progetto](../index.md)
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
-- [Architettura](architecture.md)
+- [Architettura](../ARCHITECTURE.md)
 
 ---
 

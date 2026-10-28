@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Modules\Lang\Database\Factories\PostFactory;
 use Modules\Lang\Database\Factories\TranslationFactory;
 use Modules\Lang\Database\Factories\TranslationFileFactory;

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Models/Translation.php
  */
@@ -11,9 +12,9 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Log;
 use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Sushi\Sushi;
 
@@ -67,6 +68,7 @@ class TranslationFile extends BaseModel
      */
     public function getRows(): array
     {
+<<<<<<< HEAD
         if ($this->isRunningIdeHelper()) {
             return [];
         }
@@ -94,15 +96,63 @@ class TranslationFile extends BaseModel
      */
     private function loadTranslationDataWithErrorHandling(): array
     {
+=======
+>>>>>>> ceaed311 (.)
         $files = app(GetAllTranslationAction::class)->execute();
 
         $result = Arr::map($files, $this->enrichTranslationRow(...));
 
         /** @var array<int, array<string, mixed>> $result */
+<<<<<<< HEAD
+=======
+        $result = Arr::map($files, function (mixed $item) {
+            if (! is_array($item)) {
+                return [];
+            }
+
+            $key = $item['key'] ?? null;
+            $keyStr = SafeStringCastAction::cast($key);
+            $item['id'] = isset($item['key']) ? $keyStr : '';
+
+            $pathValue = $item['path'] ?? null;
+            $pathStr = SafeStringCastAction::cast($pathValue);
+            $item['name'] = isset($item['path']) ? basename($pathStr, '.php') : '';
+
+            if (isset($item['path'])) {
+                $path = $pathStr;
+                if (File::exists($path)) {
+                    try {
+                        $content = File::getRequire($path);
+                        $item['content'] = json_encode($content);
+                    } catch (\Exception $e) {
+                        $item['content'] = '';
+                    }
+                } else {
+                    $item['content'] = '';
+                }
+            } else {
+                $item['content'] = '';
+            }
+
+            /*
+             * // Carica il contenuto del file
+             * try {
+             * $readAction = app(ReadTranslationFileAction::class);
+             * $item['content'] = $readAction->execute($item['path']);
+             * } catch (\Exception $e) {
+             * $item['content'] = [];
+             * }
+             */
+            // dddx($item);
+            return $item;
+        });
+
+>>>>>>> ceaed311 (.)
         return $result;
     }
 
     /**
+<<<<<<< HEAD
      * Aggiunge id/name/content alla riga restituita da GetAllTranslationAction.
      *
      * @param  array{key: string, path: string}  $item
@@ -151,6 +201,8 @@ class TranslationFile extends BaseModel
     }
 
     /**
+=======
+>>>>>>> ceaed311 (.)
      * Get the attributes that should be cast.
      *
      * @return array<string, string>

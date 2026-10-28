@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,9 +13,10 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Lang Module: Philosophy, Purpose, and Design Principles
 
-**Date:** December 23, 2025
 **Date:** December 23, 2025
 
 ## 🎯 Purpose and Core Responsibilities

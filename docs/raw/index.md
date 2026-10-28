@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -11,6 +12,8 @@ qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Raw Sources — Lang
 
 Questo layer contiene le fonti grezze: documenti immutabili che l'LLM legge ma non modifica.
@@ -40,7 +43,7 @@ Il layer raw per questo modulo/tema è **l'intera cartella `docs/`** (esclusa `d
 
 ## Schema di riferimento
 
-→ `docs/.schema/wiki-schema.md` (root progetto)
+→ `docs/.schema/WIKI_SCHEMA.md` (root progetto)
 → `docs/project/llm-wiki-module-adoption.md` (guida per moduli/temi)
 
 ---

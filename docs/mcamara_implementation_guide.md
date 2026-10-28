@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Guida all'Implementazione di mcamara/laravel-localization"
 type: alias
@@ -6,6 +7,8 @@ canonical: "MCAMARA_IMPLEMENTATION_GUIDE.md"
 qmd: "mcamara_implementation_guide alias superseded"
 ---
 
+=======
+>>>>>>> ceaed311 (.)
 # Guida all'Implementazione di mcamara/laravel-localization
 
 Documento identico al canonico: [MCAMARA_IMPLEMENTATION_GUIDE.md](MCAMARA_IMPLEMENTATION_GUIDE.md).

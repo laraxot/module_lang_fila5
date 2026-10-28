@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: translation-audit-completion.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Audit Traduzioni Completato - 2025
 
 ## Riepilogo Lavoro Effettuato

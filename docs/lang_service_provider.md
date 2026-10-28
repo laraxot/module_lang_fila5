@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # LangServiceProvider: Analisi e Proposte di Miglioramento
 
 ## Analisi dell'Implementazione Attuale
@@ -192,7 +195,7 @@ class TranslationResource extends XotBaseResource
     
     protected static ?string $navigationIcon = 'heroicon-o-language';
     
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             'key' => TextInput::make('key')

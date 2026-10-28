@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: migration-corrections.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Correzioni Migrazione - Modulo Lang
 
 ## Problema Identificato

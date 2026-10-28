@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Filament\Actions;
 
+use Filament\Actions\Action;
 use Filament\Forms\Components\Select;
 use Illuminate\Support\Facades\App;
-use Modules\Xot\Filament\Actions\XotBaseAction;
 
-class LocaleSwitcherRefresh extends XotBaseAction
+class LocaleSwitcherRefresh extends Action
 {
     public string $fullUrl = '#';
 
@@ -38,7 +38,16 @@ class LocaleSwitcherRefresh extends XotBaseAction
                     ->required(),
             ])
             ->action(function (array $data) {
+<<<<<<< HEAD
                 $this->applyLocale(self::normalizeLocale($data['locale'] ?? null));
+=======
+                $locale = $data['locale'] ?? 'en';
+                $locale = is_string($locale) ? $locale : 'en';
+
+                session()->put('locale', $locale);
+                App::setLocale($locale);
+                // Filament::setLocale($locale);
+>>>>>>> ceaed311 (.)
 
                 return redirect(request()->header('Referer'));
             })
@@ -46,6 +55,7 @@ class LocaleSwitcherRefresh extends XotBaseAction
             // ->icon('heroicon-o-language')
             ->color('gray');
     }
+<<<<<<< HEAD
 
     /**
      * Coerce l'input form (mixed) a una locale stringa.
@@ -70,4 +80,6 @@ class LocaleSwitcherRefresh extends XotBaseAction
         session()->put('locale', $locale);
         App::setLocale($locale);
     }
+=======
+>>>>>>> ceaed311 (.)
 }

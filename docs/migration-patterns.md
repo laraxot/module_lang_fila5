@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,11 +13,13 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Migration Patterns for Lang Module
 
 ## Overview
 
-This document outlines the correct migration patterns to follow when creating database migrations for the Lang module and all other modules in the modulo operativo project.
+This document outlines the correct migration patterns to follow when creating database migrations for the Lang module and all other modules in the TechPlanner project.
 
 ## Critical Rule: Use XotBaseMigration
 
@@ -114,7 +117,7 @@ This migration pattern has been applied to:
 
 ## Overview
 
-This document outlines the correct migration patterns to follow when creating database migrations for the Lang module and all other modules in the modulo operativo project.
+This document outlines the correct migration patterns to follow when creating database migrations for the Lang module and all other modules in the TechPlanner project.
 
 ## Critical Rule: Use XotBaseMigration
 

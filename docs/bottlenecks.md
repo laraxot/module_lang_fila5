@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Analisi Bottlenecks Modulo Lang
 
 ## Performance
@@ -141,9 +144,8 @@ status: draft
 
 ### Collegamenti Interni
 - [Roadmap](roadmap.md)
-- [Best Practices](best-practices.md)
-- [Best Practices](best-practices.md)
-- [Best Practices](best-practices.md)
+- [Best Practices](BEST-PRACTICES.md)
+- [Best Practices](BEST-PRACTICES.md)
 - [Testing](testing.md)
 - [Testing](testing.md)
 ## Collegamenti tra versioni di bottlenecks.md
@@ -166,8 +168,4 @@ status: draft
 * [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Activity/docs/bottlenecks.md)
 * [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
-* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
-* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
-* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)

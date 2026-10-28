@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Correzioni PHPStan per Modulo Lang
 
 ## Errori Risolti
@@ -99,11 +102,5 @@ status: draft
 
 ## Backlinks
 - [Lang Module Overview](../README.md)
-- [Lang Module Overview](README.md)
-- [Translation System Documentation](./translation-system.md)
-- [Translation System Documentation](./translation-system.md)
-- [Translation System Documentation](./translation-system.md)
-- [Translation System Documentation](./translation-system.md)
-- [Translation System Documentation](./translation-system.md)
-- [Lang Module Overview](README.md)
+- [Lang Module Overview](../readme.md)
 - [Translation System Documentation](./translation-system.md)

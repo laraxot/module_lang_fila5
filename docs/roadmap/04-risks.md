@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,6 +15,8 @@ related:
 status: superseded
 superseded_by: risks.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Risks and dependencies (Module Lang)
 
 ## Risks

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: correzioni-navigation.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Correzioni Pattern ".navigation" - Gennaio 2025
 
 ## Data Intervento

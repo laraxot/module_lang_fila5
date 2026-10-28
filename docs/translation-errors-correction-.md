@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: translation-errors-correction.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Correzione Errori Traduzioni - 2025
 
 ## Problema Identificato

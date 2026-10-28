@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: ../integration/filament.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # filament
 
 <!-- Contenuto migrato da _docs/filament.txt -->

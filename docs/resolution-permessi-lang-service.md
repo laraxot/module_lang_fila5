@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Troubleshooting definitivo permessi file_put_contents su lang_service.php
 
 ## Sintesi della soluzione robusta
@@ -58,9 +61,6 @@ Questa guida risolve in modo definitivo ogni errore di permessi su file lingua g
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../docs/lang_service_permessi.md)
-**Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
-
-[Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)

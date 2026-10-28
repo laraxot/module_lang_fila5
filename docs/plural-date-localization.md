@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Gestione di Forme Plurali e Localizzazione di Date/Valute in Laravel
 
 ## Indice
@@ -120,12 +123,6 @@ $formatted = $date->translatedFormat('j F Y');
 
 ```php
 // Differenza in formato leggibile
-$postDate = Carbon::parse('2023-01-15');
-$postDate = Carbon::parse('2023-01-15');
-$postDate = Carbon::parse('[DATE]');
-$postDate = Carbon::parse('[DATE]');
-$postDate = Carbon::parse('[DATE]');
-$postDate = Carbon::parse('[DATE]');
 $postDate = Carbon::parse('2023-01-15');
 $postDate = Carbon::parse('2023-01-15');
 $diff = $postDate->diffForHumans();
@@ -437,12 +434,6 @@ $formatted = $date->translatedFormat('j F Y');
 // Differenza in formato leggibile
 $postDate = Carbon::parse('2023-01-15');
 $postDate = Carbon::parse('2023-01-15');
-$postDate = Carbon::parse('[DATE]');
-$postDate = Carbon::parse('[DATE]');
-$postDate = Carbon::parse('[DATE]');
-$postDate = Carbon::parse('[DATE]');
-$postDate = Carbon::parse('2023-01-15');
-$postDate = Carbon::parse('2023-01-15');
 $diff = $postDate->diffForHumans();
 // Output: "2 mesi fa"
 
@@ -641,8 +632,4 @@ if (!function_exists('trans_choice_with_count')) {
 ### Problemi con le valute
 - Verifica che il codice valuta sia valido (es: 'EUR', 'USD')
 - Controlla che la localizzazione supporti la valuta specificata
-- Assicurati che il server abbia i dati di localizzazione installati
-- Assicurati che il server abbia i dati di localizzazione installati
-- Assicurati che il server abbia i dati di localizzazione installati
-- Assicurati che il server abbia i dati di localizzazione installati
 - Assicurati che il server abbia i dati di localizzazione installati

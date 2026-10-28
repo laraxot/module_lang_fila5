@@ -1,10 +1,14 @@
 <?php
 
-declare(strict_types=1);
 /**
  * ---.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> ceaed311 (.)
 namespace Modules\Lang\Models\Traits;
 
 // use Illuminate\Support\Facades\URL;

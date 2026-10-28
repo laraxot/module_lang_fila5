@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: translation-files-update.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Aggiornamento File di Traduzione - Gennaio 2025
 
 ## Data Aggiornamento

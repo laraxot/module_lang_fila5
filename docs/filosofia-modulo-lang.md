@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,14 +13,10 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Analisi Approfondita del Modulo Lang
 
-> **Generato**: 2025-12-24
-> **Generato**: 2025-12-24
-> **Generato**: [DATE]
-> **Generato**: [DATE]
-> **Generato**: [DATE]
-> **Generato**: [DATE]
 > **Generato**: 2025-12-24
 > **Generato**: 2025-12-24
 > **Scopo**: Documentare la filosofia, logica e architettura del modulo Lang
@@ -161,14 +158,10 @@ $post->getTranslation('title', 'it')  // 'Titolo'
 - Form fields salvano JSON multilingua
 
 **Quando usare XotBase:**
-- Modulo NON ha contenuti multilingua (User, modulo operativo, UI)
+- Modulo NON ha contenuti multilingua (User, TechPlanner, UI)
 - Standard Laravel/Filament workflow
 - Traduzioni solo per UI, non per contenuti
 
 ---
 
-**CONCLUSIONE**: Il modulo Lang è il **cuore invisibile** del sistema multilingua, fornendo auto-discovery, Spatie integration e LangBase classes per moduli multilingua.
-**CONCLUSIONE**: Il modulo Lang è il **cuore invisibile** del sistema multilingua, fornendo auto-discovery, Spatie integration e LangBase classes per moduli multilingua.
-**CONCLUSIONE**: Il modulo Lang è il **cuore invisibile** del sistema multilingua, fornendo auto-discovery, Spatie integration e LangBase classes per moduli multilingua.
-**CONCLUSIONE**: Il modulo Lang è il **cuore invisibile** del sistema multilingua, fornendo auto-discovery, Spatie integration e LangBase classes per moduli multilingua.
 **CONCLUSIONE**: Il modulo Lang è il **cuore invisibile** del sistema multilingua, fornendo auto-discovery, Spatie integration e LangBase classes per moduli multilingua.

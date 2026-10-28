@@ -12,7 +12,19 @@ use PHPUnit\Framework\Assert;
 use function Safe\file_put_contents;
 use function Safe\unlink;
 
+<<<<<<< HEAD
 /** @param array<string, mixed> $attributes */
+=======
+/*
+ * Bootstrap Pest — modulo Lang.
+ * Ogni file test dichiara uses(\Modules\Lang\Tests\TestCase::class) se serve binding.
+ * Vietato pest()->extend() / expect()->extend() qui (PHPStan method.internalClass).
+ */
+
+/**
+ * @param array<string, mixed> $attributes
+ */
+>>>>>>> ceaed311 (.)
 function createTranslation(array $attributes = []): Translation
 {
     return TranslationFactory::new()->createOne($attributes);
@@ -41,7 +53,13 @@ function cleanupTranslationFile(string $filePath): void
     }
 }
 
+<<<<<<< HEAD
 /** @param array<string, mixed> $data */
+=======
+/**
+ * @param array<string, mixed> $data
+ */
+>>>>>>> ceaed311 (.)
 function langAssertDatabaseHasRow(string $table, array $data, ?string $connection = 'lang'): void
 {
     $query = DB::connection($connection)->table($table);

@@ -16,11 +16,6 @@ class LangDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        $this->call([
-            LanguageLineSeeder::class,
-            TranslationSeeder::class,
-            PostSeeder::class,
-            TranslationFileSeeder::class,
-        ]);
+        // $this->call("OthersTableSeeder");
     }
 }

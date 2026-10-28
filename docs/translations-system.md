@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,12 +13,13 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Sistema di Traduzioni
 
 ## Collegamenti Bidirezionali
 - [Modulo <nome progetto> - Regole Consolidate Traduzioni](../../<nome progetto>/docs/translation-rules-consolidated.md)
 - [Modulo <nome progetto> - Implementazione Appointment Report](../../<nome progetto>/docs/appointment_report_translations_implementation.md)
-- [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
 - [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
 - [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
 
@@ -215,13 +217,4 @@ return [
 *Ultimo aggiornamento: Gennaio 2025*
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 2.0*
-*Compatibilità: Laravel 13.x, Filament 4.x*
-*Versione: 2.0*
-*Compatibilità: Laravel 13.x, Filament 4.x*
-*Versione: 2.0*
-*Compatibilità: Laravel 13.x, Filament 4.x*
-*Versione: 2.0*
-*Compatibilità: Laravel 13.x, Filament 4.x*
-*Ultimo aggiornamento: Gennaio 2025*
-*Versione: 2.0*
-*Compatibilità: Laravel 13.x, Filament 4.x*
+*Compatibilità: Laravel 12.x, Filament 4.x*

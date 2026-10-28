@@ -6,7 +6,7 @@ return [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'tooltip' => 'Use a valid email address',
-            'icon' => 'heroicon-o-envelope',
+            'icon' => 'heroicon-o-mail',
             'description' => 'email',
             'helper_text' => '',
         ],
@@ -39,6 +39,7 @@ return [
             'description' => 'test_date',
             'tooltip' => '',
         ],
+<<<<<<< HEAD
         'applyFilters' => [
             'label' => 'applyFilters',
             'tooltip' => '',
@@ -1011,6 +1012,8 @@ return [
             'helper_text' => 'author',
             'description' => 'author',
         ],
+=======
+>>>>>>> ceaed311 (.)
     ],
     'actions' => [
         'authenticate' => [
@@ -1027,6 +1030,7 @@ return [
         ],
         'request' => [
             'label' => 'request',
+<<<<<<< HEAD
             'tooltip' => 'request',
             'icon' => 'request',
         ],
@@ -1177,6 +1181,8 @@ return [
             'label' => 'title',
             'icon' => 'title',
             'tooltip' => 'title',
+=======
+>>>>>>> ceaed311 (.)
         ],
         'export_pdf' => [
             'label' => 'export_pdf',
@@ -1212,17 +1218,13 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
+        'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => '100',
-        'name' => 'Txt',
-        'plural' => 'Txt',
+        'sort' => 100,
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
     'sections' => [
         'address' => [
             'label' => 'address',
@@ -1291,4 +1293,6 @@ return [
             'label' => 'Riepilogo',
         ],
     ],
+=======
+>>>>>>> ceaed311 (.)
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,10 +13,17 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 fff
 
 ## Collegamenti tra versioni di test.md
 * [test.md](../../Xot/docs/modules/test.md)
 * [test.md](../../../Lang/docs/test.md)
+<<<<<<< HEAD
 * [test.md](../../Xot/docs/modules/test.md)
 * [test.md](../../../lang/docs/test.md)
+=======
+* [test.md](../../../xot/docs/modules/test.md)
+* [test.md](../../../lang/docs/test.md)
+>>>>>>> ceaed311 (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,9 +14,10 @@ related:
   - "../italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Regola Critica: fields.php è OBBLIGATORIO
 
-**Data**: 2026-01-09
 **Data**: 2026-01-09
 **Severità**: 🔴 **CRITICAL**
 **Status**: ✅ **REGOLA ASSOLUTA**
@@ -333,7 +335,6 @@ Prima di considerare un modulo "completo":
 ---
 
 **Versione**: 1.0
-**Data**: 2026-01-09
 **Data**: 2026-01-09
 **Autore**: System Architect (dopo litigata interna)
 **Status**: ✅ **REGOLA DEFINITIVA**
