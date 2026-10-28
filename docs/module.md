@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,13 +13,15 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Lang Module - Comprehensive Analysis
 
 ## Module Overview
 **Module Name**: Lang  
 **Type**: Localization & Translation Module  
 **Status**: ✅ Active  
-**Framework**: Laravel 13.x + Filament 4.x  
+**Framework**: Laravel 12.x + Filament 4.x  
 **Translation System**: Laravel Localization + Advanced Features  
 **Language**: Multi-language (IT/EN/DE + 7 more)  
 

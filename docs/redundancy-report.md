@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 - Inventario [ridondanze cross-modulo](../docs/redundancy-report.md)
 - Concetti [ridondanze cross-cutting](../Xot/docs/wiki/concepts/ridondanze-cross-cutting-codebase.md)
 

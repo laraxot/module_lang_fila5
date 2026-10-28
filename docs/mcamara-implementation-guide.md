@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: mcaa-implementation.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Guida all'Implementazione di mcamara/laravel-localization
 
 ## Indice

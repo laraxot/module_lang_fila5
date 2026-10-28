@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,6 +15,8 @@ related:
 status: superseded
 superseded_by: 00-INDEX.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Lang Module - Roadmap
 
 > Gestione linguistica: traduzioni, multilingue, AI content generation.

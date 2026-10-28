@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,6 +15,8 @@ related:
 status: superseded
 superseded_by: goals.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Goals - Lang
 
 ## Short Term

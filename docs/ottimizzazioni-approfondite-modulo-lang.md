@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Ottimizzazioni Approfondite Modulo Lang - DRY + KISS
 
 ## Panoramica
@@ -174,7 +177,7 @@ if [ -d "_docs" ]; then
 fi
 
 # Eliminare file duplicati
-rm -f changelog.md
+rm -f CHANGELOG.md
 ```
 
 ### Fase 2: Standardizzazione Cartelle (Priorità ALTA)
@@ -302,6 +305,7 @@ php artisan test --testsuite=Lang
 - [**Filament Best Practices**](../../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../../docs/core/conventions.md)
 - [**Template Moduli**](../../../docs/templates/)
+<<<<<<< HEAD
 - [**Documentazione Core Sistema**](../../docs/core/)
 - [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
@@ -317,6 +321,8 @@ php artisan test --testsuite=Lang
 - [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../docs/core/conventions.md)
 - [**Template Moduli**](templates)
+=======
+>>>>>>> ceaed311 (.)
 
 ---
 
@@ -324,8 +330,4 @@ php artisan test --testsuite=Lang
 **Impatto:** Team Lang e sviluppatori correlati
 **Stato:** In attesa implementazione
 **Responsabile:** Team Lang
-**Data:** 2025-01-XX
-**Data:** 2025-01-XX
-**Data:** 2025-01-XX
-**Data:** 2025-01-XX
 **Data:** 2025-01-XX

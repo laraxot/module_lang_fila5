@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: confidence-guidelines.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Massimizzare il livello di confidenza
 
 1. **Test automatizzati**: copertura >90%, includi test unitari, integrazione, e fine‑to‑end.

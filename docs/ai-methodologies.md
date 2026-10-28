@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # AI Methodologies Handbook
 
 This file is a DRY local index for AI workflows in this module or theme.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Correzione Errori di Sintassi nei File di Traduzione
 
 ## Riepilogo Intervento
@@ -135,7 +138,6 @@ return [
 
 - [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 - [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
-- [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 - [Translation Best Practices](translation-best-practices.md)
 - [PHPStan Configuration](phpstan-configuration.md)
 
@@ -167,7 +169,6 @@ return [
 
 ## Collegamenti
 
-- [Chart Module Documentation](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 - [Chart Module Documentation](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 - [Chart Module Documentation](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 - [FormBuilder Module Documentation](../../laravel/Modules/FormBuilder/project_docs/)
@@ -179,12 +180,6 @@ return [
 ## Ultimo Aggiornamento
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
-[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
-[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
-[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
-[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
-2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
-2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 # Correzione Errori di Sintassi nei File di Traduzione
 
 ## Riepilogo Intervento
@@ -308,7 +303,6 @@ return [
 
 - [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 - [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
-- [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 - [Translation Best Practices](translation-best-practices.md)
 - [PHPStan Configuration](phpstan-configuration.md)
 
@@ -340,7 +334,6 @@ return [
 
 ## Collegamenti
 
-- [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 - [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 - [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 - [FormBuilder Module Documentation](../../laravel/Modules/FormBuilder/docs/)
@@ -354,11 +347,5 @@ return [
 - [UI Module Documentation](../../UI/docs)
 
 ## Ultimo Aggiornamento
-2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
-2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
-[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
-[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
-[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
-[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO

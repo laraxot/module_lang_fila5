@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Standard per helper_text nelle Traduzioni <nome progetto>
 
 ## Regola Critica: Gestione helper_text
@@ -188,9 +191,6 @@ Il file `Modules/<nome progetto>/lang/it/profile_widget.php` conteneva:
 - [Documentazione Modulo Lang](.)
 - [Best Practices Filament](../../Xot/docs/filament)
 - [Standard di Qualità <nome progetto>](../../laravel/Modules/<nome progetto>/docs/translation_quality_standards.md)
-
-*Ultimo aggiornamento: Gennaio 2025*
-- [Standard di Qualità <nome progetto>](../../laravel/modules/<nome progetto>/docs/translation_quality_standards.md)
 
 *Ultimo aggiornamento: Gennaio 2025*
 - [Standard di Qualità <nome progetto>](../../laravel/modules/<nome progetto>/docs/translation_quality_standards.md)

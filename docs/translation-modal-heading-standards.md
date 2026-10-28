@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Standard per Modal Heading e Description nelle Traduzioni <nome progetto>
 
 ## Regola: Stringhe Dirette per Modal Properties
@@ -126,11 +129,5 @@ Questa regola si applica a:
 - [Standard Helper Text](translation-helper-text-standards.md)
 - [Convenzioni Filament](filament-best-practices.md)
 
-*Ultimo aggiornamento: 2025-01-06*
-*Ultimo aggiornamento: 2025-01-06*
-*Ultimo aggiornamento: [DATE]*
-*Ultimo aggiornamento: [DATE]*
-*Ultimo aggiornamento: [DATE]*
-*Ultimo aggiornamento: [DATE]*
 *Ultimo aggiornamento: 2025-01-06*
 *Ultimo aggiornamento: 2025-01-06*

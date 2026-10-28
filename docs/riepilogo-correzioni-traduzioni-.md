@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: riepilogo-correzioni-traduzioni.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Riepilogo Correzioni Traduzioni - Gennaio 2025
 
 ## Problemi Risolti

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Regole di Naming per File
 
 ## 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive
@@ -50,7 +53,7 @@ Su filesystem case-insensitive (Windows, macOS default), file con nomi che diffe
 ✅ CORRETTO:
 - README.md (maiuscolo - convenzione universale)
 - ROADMAP.md (maiuscolo - convenzione universale)
-- changelog.md (maiuscolo - convenzione universale)
+- CHANGELOG.md (maiuscolo - convenzione universale)
 - LICENSE.md (maiuscolo - convenzione universale)
 - CONTRIBUTING.md (maiuscolo - convenzione universale)
 - SECURITY.md (maiuscolo - convenzione universale)

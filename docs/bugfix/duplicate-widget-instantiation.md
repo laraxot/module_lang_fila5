@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "../italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Bug Fix: Duplicate Widget Instantiation in LanguageSwitcher
 
 **File**: `app/View/Components/LanguageSwitcher.php`

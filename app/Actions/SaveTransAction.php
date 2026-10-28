@@ -6,7 +6,6 @@ namespace Modules\Lang\Actions;
 
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -20,6 +19,7 @@ class SaveTransAction
      */
     public function execute(string $key, int|string|array|Htmlable|null $data): void
     {
+<<<<<<< HEAD
         // Scrivere la chiave mancante aiuta chi sviluppa e rovina i test: la suite
         // passa su migliaia di etichette e riscriverebbe i file di lingua dell'albero
         // di lavoro, lasciando in `git status` modifiche che nessuno ha fatto a mano.
@@ -34,6 +34,8 @@ class SaveTransAction
             return;
         }
 
+=======
+>>>>>>> ceaed311 (.)
         $cont = [];
 
         $filename = app(GetTransPathAction::class)->execute($key);

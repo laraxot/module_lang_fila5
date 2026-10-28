@@ -6,28 +6,45 @@ namespace Modules\Lang\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
 use Illuminate\Support\Collection;
+<<<<<<< HEAD
 use Mcamara\LaravelLocalization\Exceptions\UnsupportedLocaleException;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Mcamara\LaravelLocalization\LaravelLocalization as LaravelLocalizationManager;
+=======
+>>>>>>> ceaed311 (.)
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
  * Widget per il cambio di lingua.
  *
  * Fornisce un selettore dropdown per cambiare la lingua dell'interfaccia.
+<<<<<<< HEAD
  * Sostituisce i vecchi componenti HTTP `Http\Livewire\Lang\{Switcher,Change}`:
  * stessa fonte lingue (`LaravelLocalization::getSupportedLocales()`) e stessa
  * strategia di URL localizzato (`LaravelLocalization::getLocalizedURL()`), non
  * più un fallback statico né un redirect sull'URL corrente non localizzato.
  *
  * @see https://github.com/mcamara/laravel-localization
+=======
+ * Utilizza il sistema di localizzazione di Laravel per gestire le traduzioni.
+>>>>>>> ceaed311 (.)
  */
 class LanguageSwitcherWidget extends XotBaseSchemaWidget
 {
     /** @var view-string */
-    protected string $view = 'lang::filament.widgets.language-switcher';
+    protected string $view;
+
+    public function __construct()
+    {
+        /** @var view-string $view */
+        $view = 'lang::filament.widgets.language-switcher';
+        $this->view = $view;
+
+        parent::__construct();
+    }
 
     /**
+<<<<<<< HEAD
      * Non è una dashboard card: si monta esplicitamente nel tema
      * (`@livewire(\Modules\Lang\Filament\Widgets\LanguageSwitcherWidget::class)`),
      * non va auto-scoperto nelle dashboard Filament.
@@ -35,6 +52,8 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     protected static bool $isDiscovered = false;
 
     /**
+=======
+>>>>>>> ceaed311 (.)
      * Determina se il widget può essere visualizzato.
      */
     public static function canView(): bool
@@ -63,13 +82,18 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     }
 
     /**
+<<<<<<< HEAD
      * Ottiene le lingue disponibili nel sistema da LaravelLocalization,
      * la stessa fonte usata dai vecchi `Switcher`/`Change`.
+=======
+     * Ottiene le lingue disponibili nel sistema.
+>>>>>>> ceaed311 (.)
      *
      * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
      */
     public function getAvailableLocales(): Collection
     {
+<<<<<<< HEAD
         /** @var array<string, array<string, mixed>> $supportedLocales */
         $supportedLocales = LaravelLocalization::getSupportedLocales();
 
@@ -126,11 +150,66 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
      * `$lang` (codice lingua corrente, per l'icona nel pulsante) e `$langs`
      * (mappa `codice => ['url' => ..., 'native' => ...]` per i link `<a href>`
      * del dropdown, con URL già localizzati via `getLanguageUrl()`).
+=======
+        // TODO: Implementare modello Language se necessario
+        // Per ora usa fallback con lingue configurate
+
+        // Fallback alle lingue configurate staticamente
+        return collect($this->getDefaultLanguages());
+    }
+
+    /**
+     * Cambia la lingua corrente.
+     *
+     * @param  string  $locale  Codice della lingua
+     * @param  string  $locale  Codice della lingua
+     * @return void *
+     */
+    public function changeLanguage(string $locale): void
+    {
+        if ($this->isValidLocale($locale)) {
+            session(['locale' => $locale]);
+            app()->setLocale($locale);
+
+            // Redirect per applicare la nuova lingua
+            $this->redirect(request()->url());
+        }
+    }
+
+    /**
+     * Genera l'URL per una specifica lingua.
+     *
+     * @param  string  $locale  Codice della lingua     *
+     * @param  string  $locale  Codice della lingua
+     * @return string URL con la lingua specificata
+     */
+    public function getLanguageUrl(string $locale): string
+    {
+        $currentUrl = request()->url();
+        $currentLocale = app()->getLocale();
+
+        // Se l'URL contiene già la lingua corrente, sostituiscila
+        if (str_contains($currentUrl, '/'.$currentLocale.'/')) {
+            return str_replace('/'.$currentLocale.'/', '/'.$locale.'/', $currentUrl);
+        }
+        if (str_ends_with($currentUrl, '/'.$currentLocale)) {
+            return str_replace('/'.$currentLocale, '/'.$locale, $currentUrl);
+        }
+        // Aggiunge la lingua all'URL
+        $path = request()->getPathInfo();
+
+        return url($locale.($path === '/' ? '' : $path));
+    }
+
+    /**
+     * Dati da passare alla vista.
+>>>>>>> ceaed311 (.)
      *
      * @return array<string, mixed>
      */
     protected function getViewData(): array
     {
+<<<<<<< HEAD
         $availableLocales = $this->getAvailableLocales();
 
         $langs = $availableLocales->mapWithKeys(fn (array $locale): array => [
@@ -144,14 +223,55 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
             'available_locales' => $availableLocales,
             'lang' => app()->getLocale(),
             'langs' => $langs,
+=======
+        return [
+            'current_locale' => app()->getLocale(),
+            'available_locales' => $this->getAvailableLocales(),
+            'widget_id' => 'language-switcher-'.uniqid(),
+>>>>>>> ceaed311 (.)
         ];
     }
 
     /**
+<<<<<<< HEAD
      * Verifica se il locale è valido (presente tra quelli supportati).
+=======
+     * Lingue di default se il modello Language non è disponibile.
+     *
+     * @return array<int, array{code: string, name: string, native_name: string, flag: string|null}>
+     */
+    protected function getDefaultLanguages(): array
+    {
+        return [
+            [
+                'code' => 'it',
+                'name' => 'Italian',
+                'native_name' => 'Italiano',
+                'flag' => '🇮🇹',
+            ],
+            [
+                'code' => 'en',
+                'name' => 'English',
+                'native_name' => 'English',
+                'flag' => '🇬🇧',
+            ],
+            [
+                'code' => 'de',
+                'name' => 'German',
+                'native_name' => 'Deutsch',
+                'flag' => '🇩🇪',
+            ],
+        ];
+    }
+
+    /**
+     * Verifica se il locale è valido.
+>>>>>>> ceaed311 (.)
      */
     protected function isValidLocale(string $locale): bool
     {
-        return $this->getAvailableLocales()->contains('code', $locale);
+        $availableLocales = $this->getAvailableLocales();
+
+        return $availableLocales->contains('code', $locale);
     }
 }

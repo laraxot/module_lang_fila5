@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Collegamenti al Modulo User
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo Lang e il modulo User.

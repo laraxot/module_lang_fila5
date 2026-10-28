@@ -1,3 +1,4 @@
+<<<<<<< HEAD:docs/wiki/00-index.md
 ---
 title: "📚 **Indice Documentazione Modulo Lang**"
 module: "Lang"
@@ -11,6 +12,8 @@ related:
   - "../italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.):docs/00-INDEX.md
 # 📚 **Indice Documentazione Modulo Lang**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -70,5 +73,9 @@ status: draft
 
 ## Dependency Intelligence
 
+<<<<<<< HEAD:docs/wiki/00-index.md
 - [Dependency intelligence](dependency-intelligence.md)
 - [Dependency intelligence](../dependency-intelligence.md)
+=======
+- [Dependency intelligence](dependency-intelligence.md)
+>>>>>>> ceaed311 (.):docs/00-INDEX.md

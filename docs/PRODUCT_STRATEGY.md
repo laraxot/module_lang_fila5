@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: product-strategy.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Lang Module - Product Strategy
 
 **Module:** Lang  

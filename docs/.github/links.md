@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,5 +14,7 @@ related:
 status: superseded
 superseded_by: ../github/links.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 https://gist.github.com/milon/5173255b58564a0e50548cfbe879181e
 

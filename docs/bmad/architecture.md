@@ -1,3 +1,4 @@
+<<<<<<< HEAD:docs/bmad/architecture.md
 ---
 title: "Architectural Rules & Guidelines"
 module: "Lang"
@@ -10,6 +11,8 @@ related:
   - "../italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.):docs/architecture.md
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.

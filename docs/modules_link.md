@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -12,6 +13,8 @@ related:
   - "./italian-text-refined-audit-report.md"
 status: draft
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Collegamenti ai Moduli che utilizzano le Traduzioni
 
 Questa pagina elenca, per ogni modulo, la presenza di un file di collegamento alle traduzioni centralizzate.

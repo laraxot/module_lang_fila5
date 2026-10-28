@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -13,6 +14,8 @@ related:
 status: superseded
 superseded_by: translation-preservation.md
 ---
+=======
+>>>>>>> ceaed311 (.)
 # Regole Critiche per la Preservazione delle Traduzioni
 
 ## ⚠️ REGOLA ASSOLUTA: MAI RIMUOVERE CONTENUTO

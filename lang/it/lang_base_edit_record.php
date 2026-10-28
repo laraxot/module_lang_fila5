@@ -18,8 +18,13 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Lang Base Edit Record',
+<<<<<<< HEAD
         'sort' => '1',
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> ceaed311 (.)
     ],
     'fields' => [
         'id' => [

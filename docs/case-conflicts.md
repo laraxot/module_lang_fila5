@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Case-Insensitive File Conflicts"
 type: alias
@@ -6,6 +7,8 @@ canonical: "cases.md"
 qmd: "case-conflicts alias superseded"
 ---
 
+=======
+>>>>>>> ceaed311 (.)
 # Case-Insensitive File Conflicts
 
 Documento identico al canonico: [cases.md](cases.md).
