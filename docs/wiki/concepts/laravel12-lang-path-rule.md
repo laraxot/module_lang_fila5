@@ -26,4 +26,8 @@ Per il modulo `Lang`, il riferimento valido e sempre `lang/` e non `resources/la
 
 ## Backlink
 
+<<<<<<< .merge_file_2V9OXj
 - [Regola globale Laravel 13 lang root](../../../../../../docs/wiki/concepts/laravel12-lang-root-rule.md)
+=======
+- [Regola globale Laravel 13 lang root](../../../../../../docs/wiki/concepts/laravel12-lang-root-rule.md)
+>>>>>>> .merge_file_XcG4gL

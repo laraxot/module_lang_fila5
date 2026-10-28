@@ -33,7 +33,7 @@ status: draft
   'label' => 'patient.navigation',
   ```
 - Consulta anche:
-  - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
+  - [translation_keys_best_practices.md](../translation_keys_best_practices.md)
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [docs Modulo Generico](../../<nome modulo>/docs/translations.md)
 
@@ -107,8 +107,6 @@ TextInput::make('title')
 - [Regole Generali](../../Xot/project_docs/README.md) - Best practice e linee guida generali
 - [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../Xot/project_docs/README.md) - Best practice e linee guida generali
-- [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
-- [Regole Generali](../../Xot/project_docs/README.md) - Best practice e linee guida generali
 
 ---
 
@@ -119,8 +117,6 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 
 - Tutte le label sono gestite tramite i file di traduzione del modulo.
 - Consulta anche:
-  - [docs Modulo Generico](../../<nome modulo>/docs/README.md)
-  - [docs Xot](../../Xot/docs/README.md)
   - [docs Modulo Generico](../../<nome modulo>/docs/README.md)
   - [docs Xot](../../Xot/docs/README.md)
   - [docs Modulo Generico](../../<nome modulo>/docs/README.md)
@@ -155,7 +151,7 @@ Tutte le label, placeholder, messaggi e azioni relativi a disponibilità e appun
   'label' => 'patient.navigation',
   ```
 - Consulta anche:
-  - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
+  - [translation_keys_best_practices.md](../translation_keys_best_practices.md)
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [docs <nome progetto>](../../<nome progetto>/docs/translations.md)
 
@@ -229,8 +225,6 @@ TextInput::make('title')
 - [Regole Generali](../../Xot/docs/README.md) - Best practice e linee guida generali
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../Xot/docs/README.md) - Best practice e linee guida generali
-- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
-- [Regole Generali](../../Xot/docs/README.md) - Best practice e linee guida generali
 
 ---
 
@@ -245,8 +239,6 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
   - [docs Xot](../../Xot/docs/README.md)
   - [docs <nome progetto>](../../<nome progetto>/docs/README.md)
   - [docs Xot](../../Xot/docs/README.md)
-  - [docs <nome progetto>](../../<nome progetto>/docs/README.md)
-  - [docs Xot](../../Xot/docs/README.md)
 
 ## Policy DRY sulle Traduzioni di Disponibilità/Appuntamenti
 
@@ -255,8 +247,4 @@ Tutte le label, placeholder, messaggi e azioni relativi a disponibilità e appun
 ### Motivazione filosofica, politica, zen
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
-- Refactoring sicuro, massima estendibilità
-- Refactoring sicuro, massima estendibilità
-- Refactoring sicuro, massima estendibilità
-- Refactoring sicuro, massima estendibilità
 - Refactoring sicuro, massima estendibilità

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit\Actions;
 
-use Illuminate\Contracts\Translation\Loader;
 use Illuminate\Translation\Translator;
 use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Lang\Tests\TestCase;
@@ -14,7 +13,7 @@ uses(TestCase::class);
 
 function makeTranslatorAdapter(): TranslatorAdapter
 {
-    /** @var Loader $loader */
+    /** @var \Illuminate\Contracts\Translation\Loader $loader */
     $loader = app('translation.loader');
 
     return new TranslatorAdapter($loader, app()->getLocale());

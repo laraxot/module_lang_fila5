@@ -72,7 +72,6 @@ class Translation extends BaseModel
     ];
 
     // protected $table = 'ltm_translations';
-    /** @var list<string> */
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
     /**

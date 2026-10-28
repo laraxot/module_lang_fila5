@@ -174,7 +174,7 @@ if [ -d "_docs" ]; then
 fi
 
 # Eliminare file duplicati
-rm -f changelog.md
+rm -f CHANGELOG.md
 ```
 
 ### Fase 2: Standardizzazione Cartelle (Priorità ALTA)
@@ -324,8 +324,4 @@ php artisan test --testsuite=Lang
 **Impatto:** Team Lang e sviluppatori correlati
 **Stato:** In attesa implementazione
 **Responsabile:** Team Lang
-**Data:** 2025-01-XX
-**Data:** 2025-01-XX
-**Data:** 2025-01-XX
-**Data:** 2025-01-XX
 **Data:** 2025-01-XX

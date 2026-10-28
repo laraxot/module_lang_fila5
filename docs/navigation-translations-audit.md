@@ -171,14 +171,3 @@ Questo file contiene molteplici occorrenze problematiche:
 *Audit creato il: 2025-08-07*
 *Ultimo aggiornamento: 2025-08-07*
 *Ultimo aggiornamento: [DATE]*
-- [Regole Traduzioni](../Modules/Xot/docs/translation-rules.md)
-- [Standard Qualità Traduzioni](../Modules/<nome progetto>/docs/translation-quality-standards.md)
-
-*Audit creato il: [DATE]*
-*Ultimo aggiornamento: [DATE]*
-- [Regole Traduzioni](../Modules/Xot/docs/translation-rules.md)
-- [Standard Qualità Traduzioni](../Modules/<nome progetto>/docs/translation-quality-standards.md)
-
-*Audit creato il: 2025-08-07*
-*Ultimo aggiornamento: 2025-08-07*
-*Ultimo aggiornamento: [DATE]*

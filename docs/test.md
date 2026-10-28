@@ -18,4 +18,8 @@ fff
 * [test.md](../../Xot/docs/modules/test.md)
 * [test.md](../../../Lang/docs/test.md)
 * [test.md](../../Xot/docs/modules/test.md)
+<<<<<<< .merge_file_DMqdw3
 * [test.md](../../../lang/docs/test.md)
+=======
+* [test.md](../../../lang/docs/test.md)
+>>>>>>> .merge_file_RSwuHv
