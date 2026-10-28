@@ -38,16 +38,7 @@ class LocaleSwitcherRefresh extends Action
                     ->required(),
             ])
             ->action(function (array $data) {
-<<<<<<< HEAD
                 $this->applyLocale(self::normalizeLocale($data['locale'] ?? null));
-=======
-                $locale = $data['locale'] ?? 'en';
-                $locale = is_string($locale) ? $locale : 'en';
-
-                session()->put('locale', $locale);
-                App::setLocale($locale);
-                // Filament::setLocale($locale);
->>>>>>> ceaed311 (.)
 
                 return redirect(request()->header('Referer'));
             })
@@ -55,7 +46,6 @@ class LocaleSwitcherRefresh extends Action
             // ->icon('heroicon-o-language')
             ->color('gray');
     }
-<<<<<<< HEAD
 
     /**
      * Coerce l'input form (mixed) a una locale stringa.
@@ -80,6 +70,4 @@ class LocaleSwitcherRefresh extends Action
         session()->put('locale', $locale);
         App::setLocale($locale);
     }
-=======
->>>>>>> ceaed311 (.)
 }

@@ -77,7 +77,6 @@ abstract class TestCase extends XotBaseTestCase
             $this->expectThrowableMessage($message);
         }
     }
-<<<<<<< HEAD
 
     /**
      * Istanza tipizzata del provider Lang per i test unitari.
@@ -138,6 +137,4 @@ abstract class TestCase extends XotBaseTestCase
     {
         app()->forgetInstance(SaveTransAction::class);
     }
-=======
->>>>>>> ceaed311 (.)
 }

@@ -39,7 +39,6 @@ return [
             'description' => 'test_date',
             'tooltip' => '',
         ],
-<<<<<<< HEAD
         'applyFilters' => [
             'label' => 'applyFilters',
             'tooltip' => '',
@@ -1012,8 +1011,6 @@ return [
             'helper_text' => 'author',
             'description' => 'author',
         ],
-=======
->>>>>>> ceaed311 (.)
     ],
     'actions' => [
         'authenticate' => [
@@ -1030,7 +1027,6 @@ return [
         ],
         'request' => [
             'label' => 'request',
-<<<<<<< HEAD
             'tooltip' => 'request',
             'icon' => 'request',
         ],
@@ -1181,8 +1177,6 @@ return [
             'label' => 'title',
             'icon' => 'title',
             'tooltip' => 'title',
-=======
->>>>>>> ceaed311 (.)
         ],
         'export_pdf' => [
             'label' => 'export_pdf',
@@ -1224,7 +1218,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
     'sections' => [
         'address' => [
             'label' => 'address',
@@ -1293,6 +1286,4 @@ return [
             'label' => 'Riepilogo',
         ],
     ],
-=======
->>>>>>> ceaed311 (.)
 ];

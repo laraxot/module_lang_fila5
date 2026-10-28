@@ -12,7 +12,6 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-<<<<<<< HEAD
         'group' => [
             'name' => 'General',
             'description' => 'General Settings',
@@ -21,11 +20,6 @@ return [
         'sort' => '100',
         'name' => 'Widgets',
         'plural' => 'Widgets',
-=======
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
->>>>>>> ceaed311 (.)
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
