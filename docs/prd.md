@@ -74,6 +74,8 @@ The Lang module provides a structured framework for managing lang operations wit
 ### 2.3 Non-Goals
 - External system integration (unless specified)
 - Real-time dashboards (future phase)
+- Domain-specific logic
+- Hardcoded translations in Blade files
 
 ### 2.4 Key Results (OKRs)
 | Objective | Key Result | Target | Status |
