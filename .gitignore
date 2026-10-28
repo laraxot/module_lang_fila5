@@ -170,3 +170,8 @@ graphify-out/
 .claude-audit/
 test-results/
 lang.code-workspace
+
+# module-root-hygiene (story module-root-hygiene)
+/.github/skills/
+docs/graphify
+resources/lang
