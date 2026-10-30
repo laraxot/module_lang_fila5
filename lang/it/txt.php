@@ -1235,6 +1235,11 @@ return [
             'icon' => 'billing',
             'tooltip' => 'billing',
         ],
+        'view' => [
+            'label' => 'view',
+            'icon' => 'view',
+            'tooltip' => 'view',
+        ],
     ],
     'sections' => [
         'address' => [
