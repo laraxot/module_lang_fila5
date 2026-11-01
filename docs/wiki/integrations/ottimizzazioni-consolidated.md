@@ -8,6 +8,7 @@ type: integration
 tags: [integrations, modules, lang]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
 ---
 
 # ottimizzazioni — Consolidated Documentation
@@ -328,6 +329,11 @@ php artisan test --testsuite=Lang
 - [**Filament Best Practices**](../../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../../docs/core/conventions.md)
 - [**Template Moduli**](../../../docs/templates/)
+- [**Documentazione Core Sistema**](../../docs/core/)
+- [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
+- [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
+- [**Convenzioni Sistema**](../../docs/core/conventions.md)
+- [**Template Moduli**](../../docs/templates/)
 - [**Documentazione Core Sistema**](../../core)
 - [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
@@ -944,6 +950,7 @@ class Language extends Model
 
 ## 🔗 Collegamenti
 
+- [Documentazione Core](../../../../docs/core/)
 - [Documentazione Core](../../core)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
@@ -1288,6 +1295,7 @@ class Language extends Model
 
 ## 🔗 Collegamenti
 
+- [Documentazione Core](../../../../docs/core/)
 - [Documentazione Core](../../core)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)

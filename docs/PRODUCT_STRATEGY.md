@@ -11,7 +11,7 @@ qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
 status: superseded
-superseded_by: product_strategy.md
+superseded_by: product-strategy.md
 ---
 # Lang Module - Product Strategy
 

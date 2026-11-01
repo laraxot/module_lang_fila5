@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 # Correzione Errori di Sintassi nei File di Traduzione
 
@@ -343,6 +344,10 @@ return [
 - [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 - [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 - [FormBuilder Module Documentation](../../laravel/Modules/FormBuilder/docs/)
+- [Job Module Documentation](../../laravel/Modules/Job/docs/)
+- [Lang Module Documentation](../../laravel/Modules/Lang/docs/)
+- [Notify Module Documentation](../../laravel/Modules/Notify/docs/)
+- [UI Module Documentation](../../laravel/Modules/UI/docs/)
 - [Job Module Documentation](../../Job/docs)
 - [Lang Module Documentation](.)
 - [Notify Module Documentation](../../Notify/docs)

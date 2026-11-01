@@ -75,6 +75,10 @@ Indice: [00-INDEX.md](./00-INDEX.md). Wiki: [wiki/index.md](./wiki/index.md). St
 - [[LLM Wiki Governance](../../../../bashscripts/ai/wiki/concepts/llm-wiki-governance.md)]
 
 ---
+**Status**: ✅ Production  
+**Last Updated**: 2026-07-14  
+**Requirements**: PHP 8.3+, Laravel 13  
+**PHPStan Level**: 10 (Compliant)
 **Ultima verifica**: 2026-10-14 (Laravel 13.35.0, PHP 8.4.26). Il livello PHPStan non e' stato rimisurato in questa verifica.
 ---
 Documentation should be:

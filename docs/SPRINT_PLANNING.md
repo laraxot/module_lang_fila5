@@ -11,7 +11,7 @@ qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
 status: superseded
-superseded_by: sprint_planning.md
+superseded_by: sprint-planning.md
 ---
 # Lang Module - Sprint Planning
 

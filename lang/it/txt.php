@@ -914,6 +914,9 @@ return [
         ],
         'allegato' => [
             'label' => 'allegato',
+            'placeholder' => 'allegato',
+            'helper_text' => 'allegato',
+            'description' => 'allegato',
         ],
         'fattura' => [
             'label' => 'fattura',
@@ -1028,6 +1031,12 @@ return [
             'placeholder' => 'author',
             'helper_text' => 'author',
             'description' => 'author',
+        ],
+        'images' => [
+            'label' => 'images',
+            'placeholder' => 'images',
+            'helper_text' => 'images',
+            'description' => 'images',
         ],
     ],
     'actions' => [
@@ -1159,6 +1168,7 @@ return [
         'logout' => [
             'tooltip' => 'logout',
             'icon' => 'logout',
+            'label' => 'logout',
         ],
         'profile' => [
             'label' => 'profile',
@@ -1219,6 +1229,11 @@ return [
             'label' => 'previous',
             'icon' => 'previous',
             'tooltip' => 'previous',
+        ],
+        'billing' => [
+            'label' => 'billing',
+            'icon' => 'billing',
+            'tooltip' => 'billing',
         ],
     ],
     'sections' => [

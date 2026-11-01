@@ -9,6 +9,7 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "git conflicts resolution summary"
 related:
+  - "./italian-text-refined-audit-report.md"
   - "../italian-text-refined-audit-report.md"
 status: superseded
 superseded_by: readme.it.md
@@ -79,7 +80,7 @@ superseded_by: readme.it.md
 
 ## 📚 Documentazione
 
-- [Indice del Progetto](../INDEX.md)
+- [Indice del Progetto](../index.md)
 - [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
 - [Panoramica dei Moduli](../MODULES.md)
 - [Architettura](architecture.md)

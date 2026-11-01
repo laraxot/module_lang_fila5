@@ -10,7 +10,8 @@ updated: 2026-07-14
 qmd: "migration filament"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
+status: superseded
+superseded_by: wiki/integrations/_da-riconciliare/translation-strategies.md
 ---
 # Strategie di Gestione delle Traduzioni in Laravel
 

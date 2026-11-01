@@ -2,35 +2,27 @@
 
 declare(strict_types=1);
 
-use Illuminate\Database\Eloquent\Model;
 use Modules\Lang\Models\BaseModel;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-test('base model extends eloquent model', function (): void {
-    $baseModel = makeLangBaseModel();
-    Assert::assertInstanceOf(Model::class, $baseModel);
+test('base model uses lang connection', function (): void {
+    Assert::assertSame('lang', makeLangBaseModel()->getConnectionName());
 });
+
 test('base model has correct table name', function (): void {
+    Assert::assertSame('test_lang_table', makeLangBaseModel()->getTable());
+});
+
+test('base model can be instantiated with anonymous subclass', function (): void {
     $baseModel = makeLangBaseModel();
+
     Assert::assertSame('test_lang_table', $baseModel->getTable());
-});
-
-test('base model can be instantiated', function (): void {
-    $baseModel = makeLangBaseModel();
-    Assert::assertInstanceOf(BaseModel::class, $baseModel);
-});
-
-test('base model has proper inheritance chain', function (): void {
-    $baseModel = makeLangBaseModel();
-    Assert::assertInstanceOf(BaseModel::class, $baseModel);
-    Assert::assertInstanceOf(Model::class, $baseModel);
+    Assert::assertNotSame(BaseModel::class, $baseModel::class);
 });
 
 test('base model has timestamps enabled', function (): void {
-    $baseModel = makeLangBaseModel();
-    Assert::assertTrue($baseModel->usesTimestamps());
+    Assert::assertTrue(makeLangBaseModel()->usesTimestamps());
 });
-

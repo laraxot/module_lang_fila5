@@ -10,7 +10,7 @@ updated: 2026-10-20
 tags: [scopo, confini, servizio-trasversale, traduzioni, i18n, autolabel, locale-switcher, dipendenze]
 qmd: "scopo lang traduzioni autolabel savetransaction locale switcher scrittura file lang confini dipendenze"
 related:
-  - ./00-INDEX.md
+  - ./00-index.md
   - ./README.md
   - ./advanced-language-switching.md
   - ./stories/phpstan-test-wave-lang.story.md
@@ -20,8 +20,7 @@ related:
 
 # Lang — scopo, confini e come servirlo meglio
 
-Ingresso docs: [00-INDEX.md](./00-INDEX.md) · panoramica: [README.md](./README.md).
-
+Ingresso docs: [00-INDEX.md](./00-index.md) · panoramica: [README.md](./README.md).
 ## Lo scopo, dedotto dal codice
 
 Lang è il modulo più piccolo dei tre servizi trasversali — 62 file PHP, 4.545 righe in
@@ -169,7 +168,7 @@ classe di produzione che esiste solo per far vedere del codice all'analizzatore 
 
 Gli unici chiamanti di `registerTranslator()` sono in
 `tests/Unit/LangHundredPercentCoverageTest.php` (righe 888 e 903). Lo stesso vale per
-`app/Services/TranslatorService.php`: nessun riferimento in `app/`, solo in tre file di
+Il precedente `app/Services/TranslatorService.php` è assente; eventuali riferimenti in documenti o test
 test. Il nome del file di test che li tiene in vita —
 `LangHundredPercentCoverageTest` — dice cosa è successo: la ricerca del 100% di
 copertura ha coperto codice morto invece di cancellarlo, e adesso quel codice ha dei
@@ -204,11 +203,10 @@ foglia non sostituibile. È lo stesso identico difetto già misurato in Sigma (2
 occorrenze) e la correzione è la stessa: `Modules\Xot\Contracts\ProfileContract`. Qui
 costa tre righe.
 
-### `app/Services/` esiste ancora
+### `app/Services/` non esiste
 
-Un file: `app/Services/TranslatorService.php`. Viola la policy no-services
-(`bashscripts/ai/wiki/rules/no-services-rule.md`) ed è morto in produzione (sopra). Non
-va convertito in Action: va cancellato.
+La directory è assente. Non va ricreata: la logica applicativa resta nelle Action e negli adapter
+con responsabilità esplicita.
 
 ### La documentazione è 32 volte il codice
 
@@ -364,7 +362,12 @@ find Modules/Lang/docs -name '*.md'  -print0 | xargs -0 cat | wc -l      # 14510
 
 ## Collegamenti
 
-- [00-INDEX.md](./00-INDEX.md) — ingresso operativo docs
+- [README.md](../README.md) — badge e stato misurato del modulo
+- [no-services-rule](../../../../bashscripts/ai/wiki/rules/no-services-rule.md) — perché `app/Services` non deve esistere
+- [sigma-ptv-dependency-direction](../../../../docs/wiki/rules/sigma-ptv-dependency-direction.md) — la direzione delle dipendenze e il `ProfileContract`
+- [data-sacred-no-destructive-db](../../../../docs/wiki/memories/data-sacred-no-destructive-db.md) — i file `lang/` tracciati sono dati, non artefatti
+- [Sigma/docs/scopo.md](../../Sigma/docs/scopo.md) — il modello di questo documento
+- [00-INDEX.md](./00-index.md) — ingresso operativo docs
 - [README.md](./README.md) — badge e stato misurato del modulo
 - [purpose.md](./purpose.md) — versione breve (stesso scopo)
 - [advanced-language-switching.md](./advanced-language-switching.md) — locale switcher FO

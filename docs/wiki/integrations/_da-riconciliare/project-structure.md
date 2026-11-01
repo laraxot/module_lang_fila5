@@ -7,6 +7,7 @@ type: documentation
 created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
+status: draft
 ---
 
 # Project Structure — Module **Lang**
@@ -97,6 +98,11 @@ graph TD
 
 ## Riferimenti Globali
 
+- [Project Wiki Root](../../docs/wiki/)
+- [Global Rules](../../docs/wiki/rules/)
+- [Global Skills](../../docs/wiki/skills/)
+- [Global Commands](../../docs/wiki/commands/)
+- [Global Memories](../../docs/wiki/memories/)
 - [Project Wiki Root](../..)
 - [Global Rules](../../rules)
 - [Global Skills](../../skills)

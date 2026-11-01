@@ -5,8 +5,9 @@ type: integration
 tags: [integrations, modules, lang]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
 qmd: "asset binari lang"
+status: superseded
+superseded_by: ../binary-assets.md
 ---
 
 # Asset binari

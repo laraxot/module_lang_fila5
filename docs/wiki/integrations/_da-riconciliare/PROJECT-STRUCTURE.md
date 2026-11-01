@@ -104,6 +104,11 @@ graph TD
 - [Global Skills](../../skills)
 - [Global Commands](../../commands)
 - [Global Memories](../../memories)
+- [Project Wiki Root](../..)
+- [Global Rules](../../rules)
+- [Global Skills](../../skills)
+- [Global Commands](../../commands)
+- [Global Memories](../../memories)
 
 ## Setup Iniziale (per nuovi moduli)
 
