@@ -2,7 +2,7 @@
 qmd: "PROJECT STRUCTURE"
 issues: []
 discussions: []
-title: "Project Structure — Module Lang"
+title: "Project Structure: Module Lang"
 type: documentation
 created: 2026-05-11
 updated: 2026-05-11
@@ -11,7 +11,7 @@ status: superseded
 superseded_by: project-structure.md
 ---
 
-# Project Structure — Module **Lang**
+# Project Structure: Module **Lang**
 
 ## Directory Structure
 
@@ -37,7 +37,7 @@ superseded_by: project-structure.md
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
-├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE — Pattern on-demand
+├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE: Pattern on-demand
 ├── QMD-SETUP.md                  # Configurazione QMD
 ├── PERFORMANCE-OPTIMIZATION.md    # Metriche e best practice
 ├── ARCHITECTURE.md               # (opzionale) Architettura modulo
@@ -52,7 +52,7 @@ superseded_by: project-structure.md
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
-| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
+| `ON-DEMAND-PATTERN.md` | **Leggi prima**: pattern da seguire |
 
 ## Convenzioni
 

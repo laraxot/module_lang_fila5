@@ -483,4 +483,4 @@ If 'fields' key missing:
 > Touch it, and the system breaks.
 > Respect it, and the system thrives."
 
-**— The Architect (Winner of the Litigation)**
+**- The Architect (Winner of the Litigation)**

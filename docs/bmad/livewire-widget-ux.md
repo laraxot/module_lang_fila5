@@ -5,7 +5,7 @@ updated: 2026-09-26
 qmd: "livewire widget ux"
 issues: []
 discussions: []
-title: "UX — language switcher"
+title: "UX: language switcher"
 type: ux-design
 module: Lang
 related:

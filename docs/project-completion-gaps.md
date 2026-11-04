@@ -1,5 +1,5 @@
 ---
-title: "Lacune di completamento — Lang"
+title: "Lacune di completamento: Lang"
 type: audit
 status: open
 created: 2026-10-28
@@ -10,7 +10,7 @@ related:
   - "../../Xot/docs/project-completion-readiness.md"
 ---
 
-# Lacune di completamento — Lang
+# Lacune di completamento: Lang
 
 ## Esito
 
@@ -69,13 +69,13 @@ Lettura read-only delle 37 story locali (`*.story.md`): 23 hanno uno stato diver
 
 ### Esempi prioritari da riconciliare
 
-- `in-progress` — [`7.1.phpstan-translation-contracts.story.md`](stories/7.1.phpstan-translation-contracts.story.md)
-- `in-progress` — [`8.10.phpstan-cluster2-lang-pdnd-ui.story.md`](stories/8.10.phpstan-cluster2-lang-pdnd-ui.story.md)
-- `in_progress` — [`lang-phpstan-l10.story.md`](bmad/stories/lang-phpstan-l10.story.md)
-- `open` — [`lang-docs-graphify-tracked.story.md`](stories/lang-docs-graphify-tracked.story.md)
-- `ready-for-dev` — [`12.1.retire-lang-http-switchers.story.md`](stories/12.1.retire-lang-http-switchers.story.md)
-- `ready-for-dev` — [`7.3.phpstan-paramtype-coverage.story.md`](stories/7.3.phpstan-paramtype-coverage.story.md)
-- `ready-for-dev` — [`lang-autolabelaction-hardening.story.md`](stories/lang-autolabelaction-hardening.story.md)
-- `ready-for-dev` — [`lang-translation-loading-fix.story.md`](stories/lang-translation-loading-fix.story.md)
+- `in-progress`: [`7.1.phpstan-translation-contracts.story.md`](stories/7.1.phpstan-translation-contracts.story.md)
+- `in-progress`: [`8.10.phpstan-cluster2-lang-pdnd-ui.story.md`](stories/8.10.phpstan-cluster2-lang-pdnd-ui.story.md)
+- `in_progress`: [`lang-phpstan-l10.story.md`](bmad/stories/lang-phpstan-l10.story.md)
+- `open`: [`lang-docs-graphify-tracked.story.md`](stories/lang-docs-graphify-tracked.story.md)
+- `ready-for-dev`: [`12.1.retire-lang-http-switchers.story.md`](stories/12.1.retire-lang-http-switchers.story.md)
+- `ready-for-dev`: [`7.3.phpstan-paramtype-coverage.story.md`](stories/7.3.phpstan-paramtype-coverage.story.md)
+- `ready-for-dev`: [`lang-autolabelaction-hardening.story.md`](stories/lang-autolabelaction-hardening.story.md)
+- `ready-for-dev`: [`lang-translation-loading-fix.story.md`](stories/lang-translation-loading-fix.story.md)
 
 Prima di lavorare su questi elementi, verificare lo stato canonico nello sprint status, claim/lock e dipendenze. Una story senza `status` non va considerata automaticamente completata.

@@ -1,5 +1,5 @@
 ---
-title: "Lang — brainstorming BMAD"
+title: "Lang: brainstorming BMAD"
 type: brainstorming
 status: active
 module: Lang
@@ -8,7 +8,7 @@ updated: 2026-09-28
 qmd: "Lang brainstorming rischi opportunità domande aperte"
 tags: [docs, lang, bmad]
 ---
-# Lang — brainstorming
+# Lang: brainstorming
 
 ## Punto di partenza
 

@@ -66,7 +66,7 @@ $content = $data['content'] ?? null;
 
 ### phpstan.neon
 
-> ⚠️ **OBSOLETO — aggiornato 2026-08-24**
+> ⚠️ **OBSOLETO: aggiornato 2026-08-24**
 >
 > Il blocco `ignoreErrors` sotto è **sbagliato**: ADR-001 e ADR-019 vietano agli agenti di
 > modificare `laravel/phpstan.neon` e di aggiungere qualsiasi `ignoreErrors` o baseline.
@@ -74,7 +74,7 @@ $content = $data['content'] ?? null;
 > [`docs/wiki/rules/phpstan-neon-immutable.md`](../../../rules/phpstan-neon-immutable.md).
 
 ```yaml
-# ESEMPIO DI COSA NON FARE — non copiare
+# ESEMPIO DI COSA NON FARE: non copiare
 # ignoreErrors:
 #     - '#Cannot cast mixed to (string|float|double|int|bool|boolean)#'
 ```

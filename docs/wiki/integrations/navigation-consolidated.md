@@ -2,7 +2,7 @@
 qmd: "navigation consolidated"
 issues: []
 discussions: []
-title: "navigation — Consolidated Documentation"
+title: "navigation: Consolidated Documentation"
 module: lang
 type: integration
 tags: [integrations, modules, lang]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# navigation — Consolidated Documentation
+# navigation: Consolidated Documentation
 
 Consolidated from **5** individual files.
 

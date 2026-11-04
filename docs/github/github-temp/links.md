@@ -2,7 +2,7 @@
 qmd: "links"
 issues: []
 discussions: []
-title: 'Links — risorse esterne'
+title: 'Links: risorse esterne'
 module: Lang
 type: reference
 slug: links
@@ -14,7 +14,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# Links — risorse esterne
+# Links: risorse esterne
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.

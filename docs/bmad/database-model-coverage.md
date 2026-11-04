@@ -1,7 +1,7 @@
 ---
 bmad: true
 module: Lang
-title: "Lang — Copertura Model / Migration / Seeder / Factory"
+title: "Lang: Copertura Model / Migration / Seeder / Factory"
 type: note
 updated: 2026-10-07
 tags: [docs, lang, bmad]
@@ -9,7 +9,7 @@ qmd: "lang   copertura model / migration / seeder / factory lang"
 status: superseded
 superseded_by: ../database-model-coverage.md
 ---
-# Lang — Copertura Model / Migration / Seeder / Factory
+# Lang: Copertura Model / Migration / Seeder / Factory
 
 Stato: colmato il gap su `LanguageLine` (mancavano factory e seeder). Documentati gli skip su
 `TranslationFile` (Sushi, no tabella) e sulle classi base astratte.

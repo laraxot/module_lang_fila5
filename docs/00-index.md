@@ -1,5 +1,5 @@
 ---
-title: "Lang — alias indice"
+title: "Lang: alias indice"
 type: alias
 module: Lang
 status: superseded
@@ -10,7 +10,7 @@ qmd: "alias 00-index lang verso 00-INDEX"
 tags: [docs, lang]
 ---
 
-# Alias — indice Lang
+# Alias: indice Lang
 
 Canonico: [00-INDEX.md](./00-INDEX.md). Scopo: [scopo.md](./scopo.md). Gate PHPStan: [stories/phpstan-lang-zero.story.md](./stories/phpstan-lang-zero.story.md). Modules: [Xot phpstan-modules-zero-wave3](../../Xot/docs/stories/phpstan-modules-zero-wave3.story.md). Single neon: [phpstan-single-neon-config](../../Xot/docs/wiki/memories/phpstan-single-neon-config.md). Harness: `Modules\Lang\Tests\TestCase::makeLangServiceProvider()` (FQCN); Pest solo wrapper.
 

@@ -12,13 +12,13 @@ status: superseded
 superseded_by: INDEX.md
 ---
 
-# Skills — Lang Module Wiki
+# Skills: Lang Module Wiki
 
 > Skill operative del modulo Lang. Load on-demand.
 
 ## Available Skills
 
-- [translation-key-audit](./translation-key-audit.md) — audit di chiavi, path e ownership delle traduzioni modulo/tema/Filament
+- [translation-key-audit](./translation-key-audit.md): audit di chiavi, path e ownership delle traduzioni modulo/tema/Filament
 
 ## Usage
 

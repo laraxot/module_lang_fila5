@@ -26,7 +26,7 @@ status: draft
 - Fix: `TranslationFactory` non valorizza piu' `id`; la migration usa `$table->id()` e l'id resta al database.
 - Nuova regola: [translation-factory-auto-increment-id](rules/translation-factory-auto-increment-id.md).
 
-## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
+## [2026-06-05] docs | HackerNoon harness: tips 001-022 in wiki locale
 
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-progetto corrente-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt) _(target mancante, verificato 2026-10-14)_
 - GitHub: [#272](https://github.com/laraxot/platform/issues/272) / [D#273](https://github.com/laraxot/platform/discussions/273)

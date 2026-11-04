@@ -2,7 +2,7 @@
 qmd: "release marketing standard"
 issues: []
 discussions: []
-title: "Release e README marketing — Lang"
+title: "Release e README marketing: Lang"
 type: reference
 tags: [release, semantic-versioning, changelog, readme, marketing]
 created: "2026-05-26"
@@ -12,7 +12,7 @@ status: superseded
 superseded_by: ../../../release-marketing-standard.md
 ---
 
-# Release e README marketing — Lang
+# Release e README marketing: Lang
 
 ## Scopo
 

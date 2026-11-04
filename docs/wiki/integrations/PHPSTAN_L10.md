@@ -4,7 +4,7 @@ updated: 2026-09-26
 qmd: "PHPSTAN L10"
 issues: []
 discussions: []
-title: PHPStan Level 10 Compliance — Lang Module
+title: PHPStan Level 10 Compliance: Lang Module
 module: Lang
 type: quality-gate
 created: 2026-08-02
@@ -12,7 +12,7 @@ status: superseded
 superseded_by: phpstan_l10.md
 ---
 
-# PHPStan Level 10 Compliance — Lang Module
+# PHPStan Level 10 Compliance: Lang Module
 
 ## Summary
 

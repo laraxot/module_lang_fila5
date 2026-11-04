@@ -1,5 +1,5 @@
 ---
-title: "Lang — alias TRANSLATION_STRATEGIES (UPPERCASE)"
+title: "Lang: alias TRANSLATION_STRATEGIES (UPPERCASE)"
 type: alias
 module: Lang
 status: superseded
@@ -12,6 +12,6 @@ tags: [docs, lang]
 
 <!-- gateguard: convert existing UPPERCASE twin to stub. Supersedes TRANSLATION_STRATEGIES.md body; canonical lowercase translation-strategies.md already has fuller content. Linked from wiki case-conflicts. Why stub: naming rule lowercase except README. User: "Fix UPPERCASE md except README in those trees if easy" -->
 
-# Alias — TRANSLATION_STRATEGIES
+# Alias: TRANSLATION_STRATEGIES
 
 Canonico: [translation-strategies.md](./translation-strategies.md). Indice: [00-INDEX.md](./00-INDEX.md).

@@ -137,8 +137,8 @@ docs/
 
 ## Documentation Created
 
-- `docs/README.md` — Full structure guide with quick-start paths
-- `docs/bmad/stories/docs-consolidation.story.md` — This story
+- `docs/README.md`: Full structure guide with quick-start paths
+- `docs/bmad/stories/docs-consolidation.story.md`: This story
 
 ## Next Steps
 
