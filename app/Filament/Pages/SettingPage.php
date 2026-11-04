@@ -6,18 +6,25 @@ namespace Modules\Lang\Filament\Pages;
 
 use Modules\Xot\Filament\Pages\BaseSettingPage;
 
+use Filament\Forms\Components\Toggle;
+use Modules\Lang\Datas\LangConfigData;
+
 /**
- * Impostazioni di Lang (`config/{tenant}/lang.php`), solo super-admin. Pagina senza campi: la
- * convenzione (Data, file del tenant, accesso) sta in BaseSettingPage e in
- * \Modules\Lang\Datas\LangConfigData.
+ * Impostazioni di Lang (`config/{tenant}/lang.php`), solo super-admin.
+ *
+ * Form configurato con i campi esposti da LangConfigData.
+ *
+ * @see LangConfigData
  */
 class SettingPage extends BaseSettingPage
 {
     /**
-     * @return array<string, never>
+     * @return array<string, Toggle>
      */
     protected function getFormSchema(): array
     {
-        return [];
+        return [
+            'enabled' => Toggle::make('enabled')->default(true)->required(),
+        ];
     }
 }
