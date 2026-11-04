@@ -34,7 +34,7 @@ class LocaleSwitcherRefresh extends XotBaseAction
                     ->label('Seleziona lingua')
                     ->options($languageOptions)
                     ->default($this->lang)
-                    ->reactive()
+                    ->live()
                     ->required(),
             ])
             ->action(function (array $data) {
