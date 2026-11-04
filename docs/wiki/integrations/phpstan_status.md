@@ -2,7 +2,7 @@
 qmd: "phpstan status"
 issues: []
 discussions: []
-title: "PHPStan Status — Lang Module"
+title: "PHPStan Status: Lang Module"
 module: lang
 type: integration
 tags: [integrations, modules, lang]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# PHPStan Status — Lang Module
+# PHPStan Status: Lang Module
 
 ## Latest Analysis
 

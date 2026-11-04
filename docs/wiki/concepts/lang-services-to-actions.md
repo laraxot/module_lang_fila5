@@ -14,7 +14,7 @@ related:
 status: draft
 ---
 
-# Lang — `Services` → `Actions` (translator missing-key logic)
+# Lang: `Services` → `Actions` (translator missing-key logic)
 
 ## Binding (non rotto)
 

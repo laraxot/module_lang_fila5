@@ -13,11 +13,11 @@ related:
 status: draft
 ---
 
-# Lang Module — PHPStan Type Compliance
+# Lang Module: PHPStan Type Compliance
 
 ## Status
 
-✅ **COMPLIANT** — 0 errors in PHPStan level: max
+✅ **COMPLIANT**: 0 errors in PHPStan level: max
 
 ```
 Module:   Lang

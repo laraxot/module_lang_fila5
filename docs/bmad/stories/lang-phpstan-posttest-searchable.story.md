@@ -1,5 +1,5 @@
 ---
-title: "Lang — PHPStan PostTest toSearchableArray"
+title: "Lang: PHPStan PostTest toSearchableArray"
 type: story
 module: Lang
 status: done
@@ -12,7 +12,7 @@ qmd: "lang phpstan posttest tosearchablearray searchable fields"
 updated: 2026-10-21
 ---
 
-# Lang — PHPStan PostTest toSearchableArray
+# Lang: PHPStan PostTest toSearchableArray
 
 ## Scopo funzionale
 
@@ -20,7 +20,7 @@ updated: 2026-10-21
 
 ## Problema PHPStan
 
-`PostTest.php:50` — `Assert::assertIsArray()` su valore già tipizzato `array` (`staticMethod.alreadyNarrowedType`).
+`PostTest.php:50`: `Assert::assertIsArray()` su valore già tipizzato `array` (`staticMethod.alreadyNarrowedType`).
 
 ## Fix
 

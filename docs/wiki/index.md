@@ -38,10 +38,10 @@ status: draft
 
 ## On-Demand Focus
 
-- [translation-key-governance](rules/translation-key-governance.md) — regola canonica su chiavi, path e ownership delle traduzioni
-- [translation-factory-auto-increment-id](rules/translation-factory-auto-increment-id.md) — `TranslationFactory` non imposta `id` quando la migration usa `$table->id()`
-- [translation-key-audit](skills/translation-key-audit.md) _(target mancante, verificato 2026-10-14)_ — skill operativa per audit rapido tra modulo, tema e Filament
-- [laravel12-lang-path-rule](concepts/laravel12-lang-path-rule.md) — promemoria locale sul path `lang/`
+- [translation-key-governance](rules/translation-key-governance.md): regola canonica su chiavi, path e ownership delle traduzioni
+- [translation-factory-auto-increment-id](rules/translation-factory-auto-increment-id.md): `TranslationFactory` non imposta `id` quando la migration usa `$table->id()`
+- [translation-key-audit](skills/translation-key-audit.md) _(target mancante, verificato 2026-10-14)_: skill operativa per audit rapido tra modulo, tema e Filament
+- [laravel12-lang-path-rule](concepts/laravel12-lang-path-rule.md): promemoria locale sul path `lang/`
 
 ## On-Demand Workflow
 

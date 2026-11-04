@@ -166,13 +166,13 @@ related:
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
-- 📁 **[Path canonico migrazioni](./wiki/concepts/migration-path-canonical.md)** — solo `database/migrations/`; mai `Migrations/` annidata.
+- 📁 **[Path canonico migrazioni](./wiki/concepts/migration-path-canonical.md)**: solo `database/migrations/`; mai `Migrations/` annidata.
 
 ## 🔗 **Moduli Correlati**
 - [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../ui/docs/readme.md) - Componenti Blade e Filament che consumano le traduzioni.
 - 🗑️ **[Cleanup Plan](../../../docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
-- 📁 **[Path canonico migrazioni](../../concepts/migration-path-canonical.md)** — solo `database/migrations/`; mai `Migrations/` annidata.
+- 📁 **[Path canonico migrazioni](../../concepts/migration-path-canonical.md)**: solo `database/migrations/`; mai `Migrations/` annidata.
 
 ## 🔗 **Moduli Correlati**
 - [Xot](../../../../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.

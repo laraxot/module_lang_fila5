@@ -1,5 +1,5 @@
 ---
-title: "Lang — swarm cluster3 PHPStan 2026-10-06"
+title: "Lang: swarm cluster3 PHPStan 2026-10-06"
 type: story
 module: Lang
 status: done
@@ -18,7 +18,7 @@ tags: [docs, lang, bmad]
 qmd: "lang   swarm cluster3 phpstan 2026-10-06 lang"
 ---
 
-# Lang — swarm cluster3 PHPStan 2026-10-06
+# Lang: swarm cluster3 PHPStan 2026-10-06
 
 ## Scopo modulo
 

@@ -5,7 +5,7 @@ updated: 2026-09-26
 qmd: "livewire widget project context"
 issues: []
 discussions: []
-title: "Project context — Lang widget"
+title: "Project context: Lang widget"
 type: constitution
 module: Lang
 related:
