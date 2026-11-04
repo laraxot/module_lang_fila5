@@ -12,12 +12,9 @@ class LangConfigData extends Data
 {
     use MakesFromTenantConfig;
 
-<<<<<<< HEAD
     public bool $enabled = true;
-=======
     public string $default_locale = 'it';
 
     /** @var list<string> */
     public array $supported_locales = ['it', 'en'];
->>>>>>> c70e004bbd61cf83bc18c3fc3895f6eca63a8c18
 }
