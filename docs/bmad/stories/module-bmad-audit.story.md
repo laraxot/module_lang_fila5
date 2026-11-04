@@ -1,6 +1,6 @@
 ---
 id: Lang/module-bmad-audit-20260928
-title: "Lang — baseline BMAD e analisi completa"
+title: "Lang: baseline BMAD e analisi completa"
 status: ready-for-dev
 module: Lang
 epic: module-governance
@@ -15,7 +15,7 @@ updated: 2026-10-07
 tags: [docs, lang, bmad]
 qmd: "story   lang: baseline bmad lang"
 ---
-# Story — Lang: baseline BMAD
+# Story: Lang: baseline BMAD
 
 Come manutentore del modulo Lang, voglio una baseline BMAD verificabile, così da poter pianificare lavoro senza confondere ipotesi, WIP e comportamento osservato.
 

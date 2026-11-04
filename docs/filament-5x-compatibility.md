@@ -20,7 +20,7 @@ Il modulo Lang è **compatibile** con Filament 5.x. Nessun breaking change funzi
 
 ## Note specifiche modulo
 
-- `LangServiceProvider` gestisce le traduzioni automatiche per tutte le labels Filament — non impattato dall'upgrade
+- `LangServiceProvider` gestisce le traduzioni automatiche per tutte le labels Filament: non impattato dall'upgrade
 - Le traduzioni in `Modules/{ModuleName}/lang/` restano compatibili
 
 ## Regole architetturali

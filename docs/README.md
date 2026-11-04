@@ -49,10 +49,10 @@ Indice: [00-INDEX.md](./00-INDEX.md). Wiki: [wiki/index.md](./wiki/index.md). St
 
 ## Dipendenze / Moduli Correlati
 
-- [Xot - Framework Base](../../Xot/docs/README.md) — Always dependency
-- [User - Authentication](../../User/docs/README.md) — For user-facing strings
-- [Cms - Content](../../Cms/docs/README.md) — For content translations
-- [Notify - Notifications](../../Notify/docs/README.md) — For email translations
+- [Xot - Framework Base](../../Xot/docs/README.md): Always dependency
+- [User - Authentication](../../User/docs/README.md): For user-facing strings
+- [Cms - Content](../../Cms/docs/README.md): For content translations
+- [Notify - Notifications](../../Notify/docs/README.md): For email translations
 
 ## Documenti Correlati
 
@@ -60,13 +60,13 @@ Indice: [00-INDEX.md](./00-INDEX.md). Wiki: [wiki/index.md](./wiki/index.md). St
 
 ## Regole Critiche
 
-1. **Always extend Xot base classes** — Never extend Laravel/Filament directly
-2. **Use namespace `Modules\Lang`** — Never `app\Lang`
-3. **Strict typing** — `declare(strict_types=1);` in all files
-4. **One source of truth** — Store translations centrally, not scattered
-5. **Cache translations** — Use Laravel cache for performance
-6. **Publish before deploy** — Publish translations to resources/lang/
-7. **No Log statements** — Let Laravel handle exceptions
+1. **Always extend Xot base classes**: Never extend Laravel/Filament directly
+2. **Use namespace `Modules\Lang`**: Never `app\Lang`
+3. **Strict typing**: `declare(strict_types=1);` in all files
+4. **One source of truth**: Store translations centrally, not scattered
+5. **Cache translations**: Use Laravel cache for performance
+6. **Publish before deploy**: Publish translations to resources/lang/
+7. **No Log statements**: Let Laravel handle exceptions
 
 ## Standard Rules & Workflow
 

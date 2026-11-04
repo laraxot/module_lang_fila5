@@ -2,7 +2,7 @@
 qmd: "fixes consolidated"
 issues: []
 discussions: []
-title: "fixes — Consolidated Documentation"
+title: "fixes: Consolidated Documentation"
 module: lang
 type: integration
 tags: [integrations, modules, lang]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# fixes — Consolidated Documentation
+# fixes: Consolidated Documentation
 
 Consolidated from **6** individual files.
 
