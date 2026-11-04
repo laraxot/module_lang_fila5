@@ -11,4 +11,9 @@ use Spatie\LaravelData\Data;
 class LangConfigData extends Data
 {
     use MakesFromTenantConfig;
+
+    public string $default_locale = 'it';
+
+    /** @var list<string> */
+    public array $supported_locales = ['it', 'en'];
 }

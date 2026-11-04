@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Filament\Pages;
 
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TagsInput;
 use Modules\Xot\Filament\Pages\BaseSettingPage;
 
 /**
@@ -14,10 +16,13 @@ use Modules\Xot\Filament\Pages\BaseSettingPage;
 class SettingPage extends BaseSettingPage
 {
     /**
-     * @return array<string, never>
+     * @return array<string, Select|TagsInput>
      */
     protected function getFormSchema(): array
     {
-        return [];
+        return [
+            'default_locale' => Select::make('default_locale')->options(['it' => 'Italiano', 'en' => 'English'])->required(),
+            'supported_locales' => TagsInput::make('supported_locales')->nestedRecursiveRules(['string', 'size:2'])->required(),
+        ];
     }
 }
