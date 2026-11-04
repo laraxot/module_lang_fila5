@@ -6,10 +6,8 @@ namespace Modules\Lang\Filament\Pages;
 
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TagsInput;
-use Modules\Xot\Filament\Pages\BaseSettingPage;
-
-use Filament\Forms\Components\Toggle;
 use Modules\Lang\Datas\LangConfigData;
+use Modules\Xot\Filament\Pages\BaseSettingPage;
 
 /**
  * Impostazioni di Lang (`config/{tenant}/lang.php`), solo super-admin.
