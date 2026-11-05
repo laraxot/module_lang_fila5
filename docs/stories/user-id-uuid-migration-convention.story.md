@@ -44,8 +44,13 @@ Se in un ambiente esistono righe con `user_id` numerico in `posts` o `translatio
 - I due file additive sono nominati dal modello owner, mantengono i timestamp e
   dichiarano `$model_class` perché non usano il pattern `create_*_table`.
 - `php -l` su entrambi i file: OK.
+- Pint `--test` sui due file: passed.
 - `Modules/Lang/tests/Unit/Models/TranslationTest.php`: 6 test passati, 14
   asserzioni, con `.env.testing` su `ptv_lara_test` (host `10.100.200.53`).
 - `phpstan analyse Modules`: in esecuzione; il primo tentativo è terminato con
   due fatal temporanei di collisione tra trait durante estrazioni Sigma
   concorrenti. Il retry verrà registrato dopo l'esito.
+
+## Verifica guardia tabella
+
+La migrazione controlla `tableExists()` prima di `tableUpdate()`, evitando la creazione accidentale di `translations` vuota quando il target non esiste. Verificati lint, Pint, `migrate --pretend` (solo introspezione, nessun `CREATE TABLE`) e Pest `TranslationTest` (6 test, 14 asserzioni).

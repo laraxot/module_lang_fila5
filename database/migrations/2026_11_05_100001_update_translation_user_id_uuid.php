@@ -22,6 +22,10 @@ return new class extends XotBaseMigration
 
     public function up(): void
     {
+        if (! $this->tableExists()) {
+            return;
+        }
+
         // Stessa correzione di posts.user_id: la colonna era bigint e non puo'
         // contenere gli UUID di Modules\User\Models\User. Convertita solo se
         // esistente e ancora bigint.
