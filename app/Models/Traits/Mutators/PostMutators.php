@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Lang\Models\Traits;
+namespace Modules\Lang\Models\Traits\Mutators;
 
 use Illuminate\Support\Str;
 
@@ -50,13 +50,18 @@ trait PostMutators
         return $value;
     }
 
-    public function getTxtAttribute(?string $value): ?string
+    public function getTxtAttribute(?string $value): string
     {
         return $this->getTxt($value);
     }
 
-    public function getTxt(?string $value): ?string
+    public function getTxt(?string $value = null): string
     {
+        if ($value === null) {
+            $rawValue = $this->attributes['txt'] ?? null;
+            $value = is_string($rawValue) ? $rawValue : null;
+        }
+
         return $value ?? '';
     }
 
@@ -65,7 +70,7 @@ trait PostMutators
      */
     public function getTitle(): string
     {
-        if (isset($this->attributes['post_type']) && '' !== $this->attributes['post_type'] && '0' !== $this->attributes['post_type']) {
+        if (isset($this->attributes['post_type']) && $this->attributes['post_type'] !== '' && $this->attributes['post_type'] !== '0') {
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
                 : '';
@@ -88,7 +93,7 @@ trait PostMutators
     public function getGuid(): string
     {
         $value = $this->title;
-        if ('' === $value) {
+        if ($value === '') {
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
                 : '';
@@ -97,7 +102,7 @@ trait PostMutators
                 : '';
             $value = $postType.' '.$postId;
         }
-        if (null === $value) {
+        if ($value === null) {
             $value = 'u-'.random_int(1, 1000);
         }
 
