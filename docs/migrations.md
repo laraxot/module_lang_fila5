@@ -64,23 +64,32 @@ Modello Sushi (in-memory, non-persistent) che carica dinamicamente file di tradu
 
 ## Migration Naming Convention
 
-Le creazioni seguono il formato Laravel `YYYY_MM_DD_HHMMSS_create_<table_plurale>_table.php`;
-`XotBaseMigration` singularizza la tabella e ricava il modello. Le migrazioni additive usano un
-verbo descrittivo e il nome singolare del modello owner; dichiarano `$model_class`
-perché il modello non è derivabile dal pattern `create_*_table`.
+Tutti i filename mantengono timestamp, azione, tabella owner plurale in
+`snake_case` e suffisso `_table.php`. Le creazioni seguono
+`YYYY_MM_DD_HHMMSS_create_<table_plurale>_table.php`; `XotBaseMigration`
+singularizza la tabella e ricava il modello. Le migrazioni additive usano un
+verbo descrittivo (per esempio `update_<table_plurale>_table`) e dichiarano
+`$model_class`, perché il modello non è derivabile dal pattern `create_*_table`.
 
 Esempi:
 
 - `2024_03_20_000001_create_language_lines_table.php`: creazione `LanguageLine`.
 - `2026_01_21_211814_create_posts_table.php`: creazione `Post`.
 - `2026_01_21_211815_create_translations_table.php`: creazione `Translation`.
-- `2026_11_05_100000_update_post_user_id_uuid.php`: aggiornamento `Post`.
-- `2026_11_05_100001_update_translation_user_id_uuid.php`: aggiornamento `Translation`.
+- `2026_11_05_100000_update_posts_table.php`: aggiornamento `Post`.
+- `2026_11_05_100001_update_translations_table.php`: aggiornamento `Translation`.
 
-Non rinominare migrazioni già rilasciate: se il nome va corretto, aggiungere
-una migrazione idempotente con nuovo nome. Laravel eseguirà il nome nuovo anche
-negli ambienti che hanno registrato quello precedente, quindi la modifica deve
-convergere senza perdita di dati.
+L'audit del naming sulle migrazioni dei moduli è documentato nella
+[story di convenzione](./stories/user-id-uuid-migration-convention.story.md);
+247 file su 252 nei percorsi canonici rispettano il formato. Le cinque
+eccezioni storiche non si rinominano senza verificare i ledger e l'idempotenza.
+
+Il ledger Laravel identifica una migrazione per filename: una rinomina può far
+considerare pendente lo stesso file. Queste due migrazioni additive mantengono il
+timestamp, dichiarano `$model_class` e delegano a un helper idempotente che salta
+una colonna già UUID e rifiuta dati legacy non mappati. Per gli altri file già
+distribuiti, verificare sempre il ledger e usare una correzione forward-only;
+non rinominare alla cieca una migrazione non idempotente.
 
 ## Timestamp & Audit Columns
 

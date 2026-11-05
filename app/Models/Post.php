@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 // --- traits ---
 // use Laravel\Scout\Searchable;
-use Modules\Lang\Models\Traits\PostMutators;
-use Modules\Lang\Models\Traits\PostRelations;
+use Modules\Lang\Models\Traits\Mutators\PostMutators;
+use Modules\Lang\Models\Traits\Relationships\PostRelations;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;

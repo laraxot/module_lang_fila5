@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Lang\Models\Traits;
+namespace Modules\Lang\Models\Traits\Mutators;
 
 use Illuminate\Support\Str;
 
@@ -50,13 +50,18 @@ trait PostMutators
         return $value;
     }
 
-    public function getTxtAttribute(?string $value): ?string
+    public function getTxtAttribute(?string $value): string
     {
         return $this->getTxt($value);
     }
 
-    public function getTxt(?string $value): ?string
+    public function getTxt(?string $value = null): string
     {
+        if ($value === null) {
+            $rawValue = $this->attributes['txt'] ?? null;
+            $value = is_string($rawValue) ? $rawValue : null;
+        }
+
         return $value ?? '';
     }
 

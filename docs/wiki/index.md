@@ -26,6 +26,7 @@ status: draft
 - [frontmatter + GitHub](../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
 - [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md) _(target mancante, verificato 2026-10-14)_
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) → canon Xot
+- [migration-path-canonical](./concepts/migration-path-canonical.md): path attivo, naming additive e inventario delle migrazioni Lang
 
 
 ## Indices
