@@ -80,9 +80,12 @@ Esempi:
 - `2026_11_05_100001_update_translations_table.php`: aggiornamento `Translation`.
 
 L'audit del naming sulle migrazioni dei moduli è documentato nella
-[story di convenzione](./stories/user-id-uuid-migration-convention.story.md);
-247 file su 252 nei percorsi canonici rispettano il formato. Le cinque
-eccezioni storiche non si rinominano senza verificare i ledger e l'idempotenza.
+[story BMAD di convenzione](./bmad/stories/user-id-uuid-migration-convention.story.md):
+245 file su 252 in `Modules/*/database/migrations/` rispettano il formato
+`timestamp_azione_modello-plurale_table.php`; `Themes/*/database/migrations/`
+non contiene migrazioni. Le sette eccezioni già pubblicate sono censite nella
+story BMAD Xot e non si rinominano retroattivamente: una variazione del filename
+cambia la chiave nel ledger Laravel.
 
 Il ledger Laravel identifica una migrazione per filename: una rinomina può far
 considerare pendente lo stesso file. Queste due migrazioni additive mantengono il
