@@ -16,7 +16,10 @@ updated: 2026-10-09
 - [Brainstorming](./brainstorming/)
 - [Epiche](./epics/)
 - [Stories](./stories/)
+<<<<<<< .merge_file_6HAL1G
   - [Migrazioni UUID e convenzione filename](./stories/user-id-uuid-migration-convention.story.md)
+=======
+>>>>>>> .merge_file_b7lUZD
 - [Wiki del modulo](../wiki/)
 
 ## Legacy da consultare, non da estendere

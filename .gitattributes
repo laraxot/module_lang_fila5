@@ -26,3 +26,10 @@ CHANGELOG.md export-ignore
 *.phar binary !filter
 *.db binary !filter
 *.sqlite binary !filter
+<<<<<<< .merge_file_IElYTk
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 825100c5d549b40abb81e80e1a91e12e7d24026d
+>>>>>>> .merge_file_HMftFO
