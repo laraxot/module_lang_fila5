@@ -5,11 +5,21 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 // --- traits ---
 // use Laravel\Scout\Searchable;
 use Illuminate\Support\Str;
+use Modules\Lang\Models\Traits\PostMutators;
+use Modules\Lang\Models\Traits\PostRelations;
+=======
+use Illuminate\Support\Carbon;
+// --- traits ---
+// use Laravel\Scout\Searchable;
+use Modules\Lang\Models\Traits\Mutators\PostMutators;
+use Modules\Lang\Models\Traits\Relationships\PostRelations;
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;
@@ -18,6 +28,7 @@ use Spatie\Sluggable\SlugOptions;
 /**
  * Colonne allineate a `2026_01_21_211814_create_posts_table`.
  *
+<<<<<<< HEAD
  * @property string                     $id
  * @property int|null                   $user_id
  * @property string|int|null            $post_id
@@ -60,6 +71,50 @@ use Spatie\Sluggable\SlugOptions;
  * @property ProfileContract|null       $deleter
  * @property Model|null                 $linkable
  * @property ProfileContract|null       $updater
+=======
+ * @property string $id
+ * @property int|null $user_id
+ * @property string|int|null $post_id
+ * @property string|null $lang
+ * @property string|null $guid
+ * @property string|null $title
+ * @property string|null $subtitle
+ * @property string|null $post_type
+ * @property string|null $txt
+ * @property string|null $content
+ * @property string|null $excerpt
+ * @property string|null $slug
+ * @property string|null $status
+ * @property Carbon|null $published_at
+ * @property string|null $locale
+ * @property string|null $category
+ * @property string|null $image_src
+ * @property string|null $image_alt
+ * @property string|null $image_title
+ * @property string|null $meta_title
+ * @property string|null $meta_description
+ * @property string|null $meta_keywords
+ * @property int|null $author_id
+ * @property string|null $url
+ * @property array<string, string>|null $url_lang
+ * @property string|null $image_resize_src
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property int|null $category_id
+ * @property string|null $image
+ * @property int|null $published
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property string|null $linked_count
+ * @property string|null $related_count
+ * @property string|null $relatedrev_count
+ * @property string|null $linkable_type
+ * @property int|null $views_count
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $deleter
+ * @property Model|null $linkable
+ * @property ProfileContract|null $updater
+>>>>>>> laraxot/dev
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newQuery()
@@ -108,6 +163,8 @@ use Spatie\Sluggable\SlugOptions;
 class Post extends BaseModel
 {
     use HasSlug;
+    use PostMutators;
+    use PostRelations;
 
     // use Cachable;
     use Updater;
@@ -186,14 +243,6 @@ class Post extends BaseModel
     }
 
     // -------- relationship ------
-    /**
-     * @return MorphTo<Model, $this>
-     */
-    public function linkable(): MorphTo
-    {
-        return $this->morphTo('post');
-    }
-
     /* deprecated
      * public function archive() {
      * $lang = $this->lang;
@@ -215,81 +264,6 @@ class Post extends BaseModel
 
     // end function
     // -------------- MUTATORS ------------------
-
-    public function setTitleAttribute(string $value): void
-    {
-        $this->attributes['title'] = $value;
-        $this->attributes['guid'] = Str::slug($value);
-    }
-
-    public function getTitleAttribute(?string $value): ?string
-    {
-        if (null !== $value) {
-            return $value;
-        }
-
-        if (isset($this->attributes['post_type']) && '' !== $this->attributes['post_type'] && '0' !== $this->attributes['post_type']) {
-            // Assicuriamoci che i valori siano stringhe prima della concatenazione
-            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
-                ? $this->attributes['post_type']
-                : '';
-            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
-                ? ((string) $this->attributes['post_id'])
-                : '';
-            $value = $postType.' '.$postId;
-        } else {
-            // Assicuriamoci che post_type e post_id siano stringhe
-            $postType = is_string($this->post_type) ? $this->post_type : '';
-            $postId = is_scalar($this->post_id) ? ((string) $this->post_id) : '';
-            $value = $postType.' '.$postId;
-        }
-
-        $this->title = $value;
-
-        if (null !== $this->getKey()) {
-            $this->update([
-                'title' => $value,
-            ]);
-        }
-
-        return $value;
-    }
-
-    public function getGuidAttribute(?string $value): ?string
-    {
-        if (\is_string($value) && '' !== $value && ! str_contains($value, ' ')) {
-            return $value;
-        }
-        $value = $this->title;
-        if ('' === $value) {
-            // Assicuriamoci che i valori siano stringhe prima della concatenazione
-            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
-                ? $this->attributes['post_type']
-                : '';
-            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
-                ? ((string) $this->attributes['post_id'])
-                : '';
-            $value = $postType.' '.$postId;
-        }
-        if (null === $value) {
-            $value = 'u-'.random_int(1, 1000);
-        }
-        $value = Str::slug($value);
-        $this->guid = $value;
-
-        if (null !== $this->getKey()) {
-            $this->update([
-                'guid' => $value,
-            ]);
-        }
-
-        return $value;
-    }
-
-    public function getTxtAttribute(?string $value): ?string
-    {
-        return $value ?? '';
-    }
 
     /**
      * @return array<string, mixed>

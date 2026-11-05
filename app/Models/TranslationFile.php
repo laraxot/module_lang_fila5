@@ -9,15 +9,11 @@ namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
-use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
+use Modules\Lang\Models\Traits\TranslationFileRowLoader;
 use Modules\Xot\Contracts\ProfileContract;
 use Sushi\Sushi;
-
-use function Safe\json_encode;
 
 /**
  * @property string|null $key
@@ -45,6 +41,7 @@ use function Safe\json_encode;
 class TranslationFile extends BaseModel
 {
     use Sushi;
+    use TranslationFileRowLoader;
 
     protected $fillable = [
         'id',
@@ -82,72 +79,6 @@ class TranslationFile extends BaseModel
 
             return [];
         }
-    }
-
-    /**
-     * Carica i dati di traduzione con error handling robusto.
-     *
-     *
-     * @return array<int, array<string, mixed>>
-     *
-     * @throws \Throwable
-     */
-    private function loadTranslationDataWithErrorHandling(): array
-    {
-        $files = app(GetAllTranslationAction::class)->execute();
-
-        $result = Arr::map($files, $this->enrichTranslationRow(...));
-
-        /** @var array<int, array<string, mixed>> $result */
-        return $result;
-    }
-
-    /**
-     * Aggiunge id/name/content alla riga restituita da GetAllTranslationAction.
-     *
-     * @param  array{key: string, path: string}  $item
-     * @return array<string, mixed>
-     */
-    private function enrichTranslationRow(array $item): array
-    {
-        $path = $item['path'];
-
-        return [
-            ...$item,
-            'id' => $item['key'],
-            'name' => basename($path, '.php'),
-            'content' => File::exists($path) ? $this->loadFileContent($path) : '',
-        ];
-    }
-
-    /**
-     * Carica il contenuto di un file di traduzione con fallback.
-     */
-    private function loadFileContent(string $path): string
-    {
-        try {
-            $content = File::getRequire($path);
-
-            return json_encode($content) ?: '';
-        } catch (\Throwable $e) {
-            Log::debug('Failed to load translation file', [
-                'path' => $path,
-                'error' => $e->getMessage(),
-            ]);
-
-            return '';
-        }
-    }
-
-    private function isRunningIdeHelper(): bool
-    {
-        if (defined('PHPSTAN_RUNNING')) {
-            return true;
-        }
-
-        $argv = $_SERVER['argv'] ?? [];
-
-        return is_array($argv) && in_array('ide-helper:models', $argv, true);
     }
 
     /**
