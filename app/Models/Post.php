@@ -228,21 +228,7 @@ class Post extends BaseModel
             return $value;
         }
 
-        if (isset($this->attributes['post_type']) && '' !== $this->attributes['post_type'] && '0' !== $this->attributes['post_type']) {
-            // Assicuriamoci che i valori siano stringhe prima della concatenazione
-            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
-                ? $this->attributes['post_type']
-                : '';
-            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
-                ? ((string) $this->attributes['post_id'])
-                : '';
-            $value = $postType.' '.$postId;
-        } else {
-            // Assicuriamoci che post_type e post_id siano stringhe
-            $postType = is_string($this->post_type) ? $this->post_type : '';
-            $postId = is_scalar($this->post_id) ? ((string) $this->post_id) : '';
-            $value = $postType.' '.$postId;
-        }
+        $value = $this->getTitle();
 
         $this->title = $value;
 
@@ -260,6 +246,57 @@ class Post extends BaseModel
         if (\is_string($value) && '' !== $value && ! str_contains($value, ' ')) {
             return $value;
         }
+        $value = $this->getGuid();
+        $this->guid = $value;
+
+        if (null !== $this->getKey()) {
+            $this->update([
+                'guid' => $value,
+            ]);
+        }
+
+        return $value;
+    }
+
+    public function getTxtAttribute(?string $value): ?string
+    {
+        return $this->getTxt($value);
+    }
+
+    public function getTxt(?string $value): ?string
+    {
+        return $value ?? '';
+    }
+
+    /**
+     * Titolo calcolato da post_type e post_id. Calcolo puro: nessuna scrittura.
+     */
+    public function getTitle(): string
+    {
+        if (isset($this->attributes['post_type']) && '' !== $this->attributes['post_type'] && '0' !== $this->attributes['post_type']) {
+            // Assicuriamoci che i valori siano stringhe prima della concatenazione
+            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
+                ? $this->attributes['post_type']
+                : '';
+            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
+                ? ((string) $this->attributes['post_id'])
+                : '';
+
+            return $postType.' '.$postId;
+        }
+
+        // Assicuriamoci che post_type e post_id siano stringhe
+        $postType = is_string($this->post_type) ? $this->post_type : '';
+        $postId = is_scalar($this->post_id) ? ((string) $this->post_id) : '';
+
+        return $postType.' '.$postId;
+    }
+
+    /**
+     * Slug del guid a partire dal titolo. Calcolo puro: nessuna scrittura.
+     */
+    public function getGuid(): string
+    {
         $value = $this->title;
         if ('' === $value) {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
@@ -274,21 +311,8 @@ class Post extends BaseModel
         if (null === $value) {
             $value = 'u-'.random_int(1, 1000);
         }
-        $value = Str::slug($value);
-        $this->guid = $value;
 
-        if (null !== $this->getKey()) {
-            $this->update([
-                'guid' => $value,
-            ]);
-        }
-
-        return $value;
-    }
-
-    public function getTxtAttribute(?string $value): ?string
-    {
-        return $value ?? '';
+        return Str::slug($value);
     }
 
     /**
