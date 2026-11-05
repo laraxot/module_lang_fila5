@@ -43,12 +43,15 @@ trait TranslationFileRowLoader
     /**
      * Aggiunge id/name/content alla riga restituita da GetAllTranslationAction.
      *
-     * @param  array{key: string, path: string}  $item
+     * `path` e' opzionale: una riga senza path produce `content` vuoto
+     * invece di far fallire l'intero caricamento.
+     *
+     * @param  array{key: string, path?: string}  $item
      * @return array<string, mixed>
      */
     private function enrichTranslationRow(array $item): array
     {
-        $path = $item['path'];
+        $path = $item['path'] ?? '';
 
         return [
             ...$item,
@@ -79,7 +82,7 @@ trait TranslationFileRowLoader
 
     private function isRunningIdeHelper(): bool
     {
-        if (defined('PHPSTAN_RUNNING')) {
+        if (defined('PHPSTAN_RUNNING') || config('app.phpstan_running') === true) {
             return true;
         }
 
