@@ -65,7 +65,7 @@ trait PostMutators
      */
     public function getTitle(): string
     {
-        if (isset($this->attributes['post_type']) && '' !== $this->attributes['post_type'] && '0' !== $this->attributes['post_type']) {
+        if (isset($this->attributes['post_type']) && $this->attributes['post_type'] !== '' && $this->attributes['post_type'] !== '0') {
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
                 : '';
@@ -88,7 +88,7 @@ trait PostMutators
     public function getGuid(): string
     {
         $value = $this->title;
-        if ('' === $value) {
+        if ($value === '') {
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']
                 : '';
@@ -97,7 +97,7 @@ trait PostMutators
                 : '';
             $value = $postType.' '.$postId;
         }
-        if (null === $value) {
+        if ($value === null) {
             $value = 'u-'.random_int(1, 1000);
         }
 

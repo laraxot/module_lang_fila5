@@ -12,7 +12,8 @@ status: draft
 
 # Migrations: Lang Module
 
-Questo documento descrive le migrazioni nel modulo Lang e come mantengono la conformità con il pattern XotBaseMigration.
+Questo documento descrive le migrazioni nel modulo Lang e il loro contratto con
+`XotBaseMigration`.
 
 ## Philosophy
 
@@ -21,11 +22,11 @@ Nel modulo Lang, ogni modello database-backed ha esattamente una migrazione corr
 | Model | Migration | Status |
 |-------|-----------|--------|
 | `LanguageLine` | `2024_03_20_000001_create_language_lines_table.php` | ✅ DB-backed |
-| `Post` | `2026_01_21_211814_create_posts_table.php` | ✅ DB-backed |
-| `Translation` | `2026_01_21_211815_create_translations_table.php` | ✅ DB-backed |
+| `Post` | `2026_01_21_211814_create_posts_table.php` + update UUID | ✅ DB-backed |
+| `Translation` | `2026_01_21_211815_create_translations_table.php` + update UUID | ✅ DB-backed |
 | `TranslationFile` | *none* (uses Sushi trait) | ✅ In-memory |
 
-**Parity Rule**: `TranslationFile` estende `BaseModel` con il trait `Sushi` (in-memory model), quindi non richiede una migrazione. Le 3 migrazioni coprono interamente i 3 modelli database-backed.
+**Parity Rule**: `TranslationFile` estende `BaseModel` con il trait `Sushi` (in-memory model), quindi non richiede una migrazione di creazione. Le migrazioni additive di aggiornamento sono distinte dalle migrazioni di creazione e non violano la parità modello/tabella.
 
 ## Key Models Explained
 
@@ -63,22 +64,23 @@ Modello Sushi (in-memory, non-persistent) che carica dinamicamente file di tradu
 
 ## Migration Naming Convention
 
-Tutte le migrazioni nel modulo Lang seguono il standard:
+Le creazioni seguono il formato Laravel `YYYY_MM_DD_HHMMSS_create_<table_plurale>_table.php`;
+`XotBaseMigration` singularizza la tabella e ricava il modello. Le migrazioni additive usano un
+verbo descrittivo e il nome singolare del modello owner; dichiarano `$model_class`
+perché il modello non è derivabile dal pattern `create_*_table`.
 
-```
-YYYY_MM_DD_HHMMSS_create_<table>_table.php
-```
+Esempi:
 
-**Examples**:
-- `2024_03_20_000001_create_language_lines_table.php`: LanguageLine model
-- `2026_01_21_211814_create_posts_table.php`: Post model  
-- `2026_01_21_211815_create_translations_table.php`: Translation model
+- `2024_03_20_000001_create_language_lines_table.php`: creazione `LanguageLine`.
+- `2026_01_21_211814_create_posts_table.php`: creazione `Post`.
+- `2026_01_21_211815_create_translations_table.php`: creazione `Translation`.
+- `2026_11_05_100000_update_post_user_id_uuid.php`: aggiornamento `Post`.
+- `2026_11_05_100001_update_translation_user_id_uuid.php`: aggiornamento `Translation`.
 
-**Rules**:
-- ✅ Prefix: `create_` (not `add_`, `update_`, `modify_`)
-- ✅ Format: lowercase snake_case table name
-- ✅ Suffix: `_table.php`
-- ✅ Timestamp: YYYY_MM_DD_HHMMSS ensures chronological ordering
+Non rinominare migrazioni già rilasciate: se il nome va corretto, aggiungere
+una migrazione idempotente con nuovo nome. Laravel eseguirà il nome nuovo anche
+negli ambienti che hanno registrato quello precedente, quindi la modifica deve
+convergere senza perdita di dati.
 
 ## Timestamp & Audit Columns
 

@@ -52,3 +52,7 @@ qmd search "Lang <topic>" --limit 5
 ---
 
 Updated: 2026-06-12
+
+## Model architecture
+
+- [model-trait-inventory](./architecture/model-trait-inventory.md): accessor gemelli, mutator e relazione del modello `Post` collocati nei trait owner.
