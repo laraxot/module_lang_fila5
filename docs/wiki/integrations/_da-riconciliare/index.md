@@ -2,7 +2,7 @@
 qmd: "index"
 issues: []
 discussions: []
-title: "lang — integrations"
+title: "lang: integrations"
 module: lang
 type: integration
 tags: [integrations, modules, lang]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# lang — integrations
+# lang: integrations
 
 Documentation for `lang` module categorized as **integrations**.
 

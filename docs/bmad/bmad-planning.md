@@ -1,5 +1,5 @@
 ---
-title: "BMAD Planning — Lang"
+title: "BMAD Planning: Lang"
 type: bmad-planning
 status: active
 module: Lang

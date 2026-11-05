@@ -2,7 +2,7 @@
 qmd: "lang consolidated"
 issues: []
 discussions: []
-title: "lang — Consolidated Documentation"
+title: "lang: Consolidated Documentation"
 module: lang
 type: integration
 tags: [integrations, modules, lang]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# lang — Consolidated Documentation
+# lang: Consolidated Documentation
 
 Consolidated from **13** individual files.
 

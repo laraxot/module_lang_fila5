@@ -2,7 +2,7 @@
 qmd: "PHPSTAN STATUS"
 issues: []
 discussions: []
-title: "PHPStan Status — Lang Module"
+title: "PHPStan Status: Lang Module"
 module: lang
 type: integration
 tags: [integrations, modules, lang]
@@ -12,7 +12,7 @@ status: superseded
 superseded_by: phpstan_status.md
 ---
 
-# PHPStan Status — Lang Module
+# PHPStan Status: Lang Module
 
 ## Latest Analysis
 

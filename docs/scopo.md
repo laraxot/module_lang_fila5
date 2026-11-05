@@ -1,7 +1,7 @@
 ---
 issues: []
 discussions: []
-title: "Lang — scopo, confini e come servirlo meglio"
+title: "Lang: scopo, confini e come servirlo meglio"
 type: concept
 module: Lang
 status: active
@@ -18,21 +18,21 @@ related:
   - ./stories/12.1.retire-lang-http-switchers.story.md
 ---
 
-# Lang — scopo, confini e come servirlo meglio
+# Lang: scopo, confini e come servirlo meglio
 
 Ingresso docs: [00-INDEX.md](./00-index.md) · panoramica: [README.md](./README.md).
 ## Lo scopo, dedotto dal codice
 
-Lang è il modulo più piccolo dei tre servizi trasversali — 62 file PHP, 4.545 righe in
-`app/` — e ha l'effetto più esteso di tutti: governa **2.920 file `lang/*.php`**
+Lang è il modulo più piccolo dei tre servizi trasversali: 62 file PHP, 4.545 righe in
+`app/`: e ha l'effetto più esteso di tutti: governa **2.920 file `lang/*.php`**
 distribuiti su tutti i moduli e i temi del repo
 (`find Modules Themes -path '*/lang/*' -name '*.php' | wc -l`). Quarantasette righe di
 codice per ogni file di traduzione che tiene in piedi.
 
 Il meccanismo che gli dà quel potere sta in un solo metodo:
 `LangServiceProvider::registerFilamentLabel()`. Al boot registra otto `configureUsing()`
-sui tipi base di Filament — `Field`, `Select`, `Entry`, `Section`, `BaseFilter`,
-`Column`, `Step`, `Action` — e per ognuno chiama `AutoLabelAction`, che deriva la chiave
+sui tipi base di Filament: `Field`, `Select`, `Entry`, `Section`, `BaseFilter`,
+`Column`, `Step`, `Action`: e per ognuno chiama `AutoLabelAction`, che deriva la chiave
 di traduzione dal nome del componente e dal modulo chiamante
 (`grep -oP '^\s+\K\w+(?=::configureUsing)' app/Providers/LangServiceProvider.php | sort -u`).
 È per questo che nel resto
@@ -56,7 +56,7 @@ suo scopo e il suo rischio.
 Da qui la formulazione in una riga:
 
 > **Lang è la convenzione che rende inutile scrivere `->label()`: deriva la chiave di
-> traduzione dal componente e dal modulo, la risolve dai file `lang/` e — quando manca —
+> traduzione dal componente e dal modulo, la risolve dai file `lang/` e: quando manca -
 > la scrive lui. La fonte di verità sono i file PHP versionati, non il database.**
 
 ### Secondo mestiere: cambiare lingua senza toccare il dominio
@@ -111,12 +111,12 @@ La guardia ha due punti deboli, entrambi verificabili:
 
 1. **La chiave di config non esiste.** `config/lang.php` dichiara `default_locale`,
    `cache`, `validation`, `auto_translate`, `filament`, `structure`, `debug`,
-   `performance`, `security`, `business`, `laraxot` — **non** `persist_trans_in_tests`.
+   `performance`, `security`, `business`, `laraxot`: **non** `persist_trans_in_tests`.
    La `config()` cade sempre sul default, quindi il comportamento dipende interamente da
    `$_ENV`, cioè da una variabile che i `TestCase` impostano a mano con `putenv()`.
 2. **`runningUnitTests()` non è una proprietà del processo, è una lettura di
    `config('app.env')`.** Se la config è in cache con un `env` diverso da `testing`, la
-   guardia non scatta e la scrittura procede — sotto Pest come in produzione.
+   guardia non scatta e la scrittura procede: sotto Pest come in produzione.
 
 La prova che il progetto non si fida di quella guardia è nel codice: **quattro moduli
 diversi ridefiniscono a mano lo stesso stub no-op**, ognuno con il proprio nome, per
@@ -149,7 +149,7 @@ tre resource di `Performance`, `Lang\Filament\...\EditTranslationFile:120` e
 Non invalida le chiavi di traduzione: **svuota l'intero store di cache**. Ogni salvataggio
 di un file `lang/` azzera sessioni cachate, query cachate, permessi cachati e qualunque
 altra cosa il progetto tenga in cache. Il metodo poi tenta anche il `flush()` mirato sul
-`translation.loader`, che è la cosa giusta — ma arriva dopo, quando il danno è già fatto.
+`translation.loader`, che è la cosa giusta: ma arriva dopo, quando il danno è già fatto.
 
 ### Il TranslatorAdapter è morto in produzione e vivo solo nei test
 
@@ -157,7 +157,7 @@ altra cosa il progetto tenga in cache. Il metodo poi tenta anche il `flush()` mi
 le chiavi mancanti. Esistono **due** modi per registrarlo:
 
 - `LangServiceProvider::registerTranslator()` (riga 144), che però **non è chiamato**:
-  in `boot()`, riga 43, la chiamata è commentata — `// $this->registerTranslator();`
+  in `boot()`, riga 43, la chiamata è commentata: `// $this->registerTranslator();`
 - `Providers\Traits\TranslatorTrait::registerTranslator()`, una seconda implementazione
   dello stesso override, composta da nessun provider reale.
 
@@ -169,8 +169,8 @@ classe di produzione che esiste solo per far vedere del codice all'analizzatore 
 Gli unici chiamanti di `registerTranslator()` sono in
 `tests/Unit/LangHundredPercentCoverageTest.php` (righe 888 e 903). Lo stesso vale per
 Il precedente `app/Services/TranslatorService.php` è assente; eventuali riferimenti in documenti o test
-test. Il nome del file di test che li tiene in vita —
-`LangHundredPercentCoverageTest` — dice cosa è successo: la ricerca del 100% di
+test. Il nome del file di test che li tiene in vita -
+`LangHundredPercentCoverageTest`: dice cosa è successo: la ricerca del 100% di
 copertura ha coperto codice morto invece di cancellarlo, e adesso quel codice ha dei
 test, quindi sembra vivo.
 
@@ -179,7 +179,7 @@ test, quindi sembra vivo.
 | File | Righe | Chiamanti |
 |---|---:|---|
 | `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` | 159 | `LangServiceProvider` (8 `configureUsing()`) |
-| `Modules/Xot/app/Actions/Filament/AutoLabelAction.php` | 118 | **nessuno** — solo un `@see` in `XotBaseWizardWidget:52` |
+| `Modules/Xot/app/Actions/Filament/AutoLabelAction.php` | 118 | **nessuno**: solo un `@see` in `XotBaseWizardWidget:52` |
 
 La copia in Xot è marcata `-WIP` nel docblock di testa, importa
 `Modules\Lang\Actions\SaveTransAction` e non viene istanziata da nessuna parte. Oltre a
@@ -226,7 +226,7 @@ File: `app/Actions/SaveTransAction.php`, `config/lang.php`,
 `Modules/{Lang,Performance,Incentivi,IndennitaResponsabilita}/tests/TestCase.php`.
 
 Due passi, nell'ordine. Primo: dichiarare davvero `'persist_trans_in_tests' => false` in
-`config/lang.php`, così la chiave letta esiste. Secondo — quello che chiude il problema —
+`config/lang.php`, così la chiave letta esiste. Secondo: quello che chiude il problema -
 smettere di chiedere a runtime "sono in un test?" e decidere **al binding**: il
 `TestCase` base di Xot registra l'implementazione no-op nel container una volta sola, e
 i quattro stub duplicati nei moduli spariscono. Una guardia che sta nel container non
@@ -261,7 +261,7 @@ Due esiti possibili, nessun terzo. Se l'intercettazione delle chiavi mancanti se
 decommenta la riga 43, si cancella `TranslatorTrait` (duplicato) e con esso il probe
 PHPStan che esiste solo per ospitarlo. Se non serve, si cancellano `TranslatorAdapter`,
 `TranslatorTrait`, il probe, `TranslatorService` e i test che li tengono in vita. Lo
-stato attuale — codice morto con copertura al 100% — è l'unico esito da non conservare.
+stato attuale: codice morto con copertura al 100%: è l'unico esito da non conservare.
 
 ```bash
 cd laravel
@@ -301,8 +301,8 @@ grep -rl 'Modules\\Ptv\\' Modules/Lang/app | wc -l   # obiettivo: 0
 Lang e' piccolo in `app/` ma tocca migliaia di file `lang/*.php` e il boot Filament
 (`LangServiceProvider`, `SaveTransAction`, lettura file, switcher). Il gate
 `./vendor/bin/phpstan analyse Modules/Lang` (e il full-tree `Modules`) a **zero errori**
-non e' un badge: e' la garanzia che i tipi di quel percorso — inclusi i bootstrap dei
-test — coincidono con i chiamanti reali.
+non e' un badge: e' la garanzia che i tipi di quel percorso: inclusi i bootstrap dei
+test: coincidono con i chiamanti reali.
 
 Nei test, gli helper condivisi stanno in `tests/Pest.php`; `makeLangServiceProvider`
 ha SSoT su `TestCase::makeLangServiceProvider()`. Ridefinirli dentro un file test
@@ -316,7 +316,7 @@ propaga `mixed` su action e provider. Evidenza e misure: [stories/phpstan-lang-z
   nessun consumatore. Lang sincronizza chiavi fra locale (`SyncTranslationsAction`), non
   ne inventa il contenuto.
 - **Non** è la fonte di verità delle traduzioni. Lo sono i file `lang/*.php` versionati.
-  `TranslationFile` è un modello `Sushi` — legge i file, non li possiede — e
+  `TranslationFile` è un modello `Sushi`: legge i file, non li possiede: e
   `LanguageLine` è un complemento, non un sostituto.
 - **Non** conosce i moduli foglia. Non deve sapere cos'è una scheda, una progressione o
   un profilo Ptv: il profilo si tipizza su `Xot\Contracts\ProfileContract`.
@@ -362,18 +362,18 @@ find Modules/Lang/docs -name '*.md'  -print0 | xargs -0 cat | wc -l      # 14510
 
 ## Collegamenti
 
-- [README.md](../README.md) — badge e stato misurato del modulo
-- [no-services-rule](../../../../bashscripts/ai/wiki/rules/no-services-rule.md) — perché `app/Services` non deve esistere
-- [sigma-ptv-dependency-direction](../../../../docs/wiki/rules/sigma-ptv-dependency-direction.md) — la direzione delle dipendenze e il `ProfileContract`
-- [data-sacred-no-destructive-db](../../../../docs/wiki/memories/data-sacred-no-destructive-db.md) — i file `lang/` tracciati sono dati, non artefatti
-- [Sigma/docs/scopo.md](../../Sigma/docs/scopo.md) — il modello di questo documento
-- [00-INDEX.md](./00-index.md) — ingresso operativo docs
-- [README.md](./README.md) — badge e stato misurato del modulo
-- [purpose.md](./purpose.md) — versione breve (stesso scopo)
-- [advanced-language-switching.md](./advanced-language-switching.md) — locale switcher FO
-- [stories/phpstan-test-wave-lang.story.md](./stories/phpstan-test-wave-lang.story.md) — ondata qualità test (scopo prima dell'errore)
-- [stories/phpstan-lang-zero.story.md](./stories/phpstan-lang-zero.story.md) — chiusura gate Lang (203 → 0) e harness test
-- [no-services-rule](../../../../bashscripts/ai/wiki/rules/no-services-rule.md) — perché `app/Services` non deve esistere
-- [sigma-ptv-dependency-direction](../../../../docs/wiki/rules/sigma-ptv-dependency-direction.md) — la direzione delle dipendenze e il `ProfileContract`
-- [data-sacred-no-destructive-db](../../../../docs/wiki/memories/data-sacred-no-destructive-db.md) — i file `lang/` tracciati sono dati, non artefatti
-- [Cms — page resolution](../../Cms/docs/actions/page-resolution-pipeline.md) — URL localizzati nei blocchi CMS
+- [README.md](../README.md): badge e stato misurato del modulo
+- [no-services-rule](../../../../bashscripts/ai/wiki/rules/no-services-rule.md): perché `app/Services` non deve esistere
+- [sigma-ptv-dependency-direction](../../../../docs/wiki/rules/sigma-ptv-dependency-direction.md): la direzione delle dipendenze e il `ProfileContract`
+- [data-sacred-no-destructive-db](../../../../docs/wiki/memories/data-sacred-no-destructive-db.md): i file `lang/` tracciati sono dati, non artefatti
+- [Sigma/docs/scopo.md](../../Sigma/docs/scopo.md): il modello di questo documento
+- [00-INDEX.md](./00-index.md): ingresso operativo docs
+- [README.md](./README.md): badge e stato misurato del modulo
+- [purpose.md](./purpose.md): versione breve (stesso scopo)
+- [advanced-language-switching.md](./advanced-language-switching.md): locale switcher FO
+- [stories/phpstan-test-wave-lang.story.md](./stories/phpstan-test-wave-lang.story.md): ondata qualità test (scopo prima dell'errore)
+- [stories/phpstan-lang-zero.story.md](./stories/phpstan-lang-zero.story.md): chiusura gate Lang (203 → 0) e harness test
+- [no-services-rule](../../../../bashscripts/ai/wiki/rules/no-services-rule.md): perché `app/Services` non deve esistere
+- [sigma-ptv-dependency-direction](../../../../docs/wiki/rules/sigma-ptv-dependency-direction.md): la direzione delle dipendenze e il `ProfileContract`
+- [data-sacred-no-destructive-db](../../../../docs/wiki/memories/data-sacred-no-destructive-db.md): i file `lang/` tracciati sono dati, non artefatti
+- [Cms: page resolution](../../Cms/docs/actions/page-resolution-pipeline.md): URL localizzati nei blocchi CMS

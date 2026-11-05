@@ -2,7 +2,7 @@
 qmd: "conflict consolidated"
 issues: []
 discussions: []
-title: "conflict — Consolidated Documentation"
+title: "conflict: Consolidated Documentation"
 module: lang
 type: integration
 tags: [integrations, modules, lang]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# conflict — Consolidated Documentation
+# conflict: Consolidated Documentation
 
 Consolidated from **17** individual files.
 
@@ -2377,7 +2377,7 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 
 *Consolidated from: `conflict-resolution.md`*
 
-title: "Conflict Resolution — Module Lang"
+title: "Conflict Resolution: Module Lang"
 module: "Lang"
 type: concept
 tags: [ottimizzazioni, correzioni]
@@ -2387,7 +2387,7 @@ qmd: "ottimizzazioni correzioni"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
-# Conflict Resolution — Module Lang
+# Conflict Resolution: Module Lang
 
 ## Summary
 - **Files resolved**: 14

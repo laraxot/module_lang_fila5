@@ -7,6 +7,7 @@ namespace Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
 use Illuminate\Contracts\Support\Htmlable;
+use Modules\Lang\Actions\ResolveTranslatableLocalesAction;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Resources\TranslationFileResource;
@@ -21,7 +22,7 @@ class EditTranslationFile extends XotBaseEditRecord
      */
     public function getTranslatableLocales(): array
     {
-        return ['it', 'en'];
+        return app(ResolveTranslatableLocalesAction::class)->execute();
     }
 
     /**
@@ -53,7 +54,7 @@ class EditTranslationFile extends XotBaseEditRecord
      */
     public function schemaFromRecord(?object $record): array
     {
-        if (null === $record || ! isset($record->content) || ! \is_array($record->content)) {
+        if ($record === null || ! isset($record->content) || ! \is_array($record->content)) {
             return [];
         }
 
@@ -64,8 +65,7 @@ class EditTranslationFile extends XotBaseEditRecord
     }
 
     /**
-     * @param array<string, mixed> $array
-     *
+     * @param  array<string, mixed>  $array
      * @return array<int, Section|TextInput>
      */
     public function makeFromArray(array $array, string $prefix = ''): array
@@ -74,7 +74,7 @@ class EditTranslationFile extends XotBaseEditRecord
 
         foreach ($array as $key => $value) {
             $keyStr = (string) $key;
-            $fullKey = '' === $prefix ? $keyStr : ($prefix.'.'.$keyStr);
+            $fullKey = $prefix === '' ? $keyStr : ($prefix.'.'.$keyStr);
 
             if (is_array($value)) {
                 /** @var array<string, mixed> $childArray */

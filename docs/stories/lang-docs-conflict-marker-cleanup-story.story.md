@@ -9,7 +9,7 @@ issues: []
 discussions: []
 ---
 
-# Story: Lang — pulizia marker di conflitto residui in docs/
+# Story: Lang: pulizia marker di conflitto residui in docs/
 
 ## Status
 Done.
@@ -27,7 +27,7 @@ Il grep ha trovato 9 file. Uno, `docs/stories/changelog-case-duplicate-and-
 merge-conflict.story.md`, e' stato **escluso di proposito** dopo aver letto
 il contesto: i marker al suo interno sono dentro un fence di codice, citati
 come esempio documentale del conflitto gia' risolto in `CHANGELOG.md` (root
-del modulo, non `docs/`) — non un conflitto reale. Trattarlo come tale
+del modulo, non `docs/`): non un conflitto reale. Trattarlo come tale
 avrebbe distrutto la documentazione di un fix gia' fatto. Questo pattern
 (citazione intenzionale) e' stato poi verificato assente nei file di
 Activity prima di applicare la risoluzione di massa la'.

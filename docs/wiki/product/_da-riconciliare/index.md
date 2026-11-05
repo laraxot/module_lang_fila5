@@ -2,7 +2,7 @@
 qmd: "index"
 issues: []
 discussions: []
-title: "lang — product"
+title: "lang: product"
 module: lang
 type: product
 tags: [product, modules, lang]
@@ -12,7 +12,7 @@ status: superseded
 superseded_by: INDEX.md
 ---
 
-# lang — product
+# lang: product
 
 Documentation for `lang` module categorized as **product**.
 

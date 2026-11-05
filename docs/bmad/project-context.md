@@ -1,5 +1,5 @@
 ---
-title: "Project context — Lang"
+title: "Project context: Lang"
 type: constitution
 module: Lang
 track: quick-flow
@@ -14,7 +14,7 @@ related:
   - ./filament-blueprint.md
 ---
 
-# Costituzione — Lang
+# Costituzione: Lang
 
 Garantire risoluzione locale e ownership delle traduzioni coerenti tra moduli e temi.
 

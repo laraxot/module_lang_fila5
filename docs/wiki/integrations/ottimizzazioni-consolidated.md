@@ -2,7 +2,7 @@
 qmd: "ottimizzazioni consolidated"
 issues: []
 discussions: []
-title: "ottimizzazioni — Consolidated Documentation"
+title: "ottimizzazioni: Consolidated Documentation"
 module: lang
 type: integration
 tags: [integrations, modules, lang]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# ottimizzazioni — Consolidated Documentation
+# ottimizzazioni: Consolidated Documentation
 
 Consolidated from **5** individual files.
 

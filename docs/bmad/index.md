@@ -1,5 +1,5 @@
 ---
-title: Lang — indice BMAD
+title: Lang: indice BMAD
 type: index
 tags: [docs, bmad, lang]
 qmd: "Lang indice BMAD documentazione"
@@ -7,7 +7,7 @@ status: draft
 updated: 2026-10-09
 ---
 
-# Lang — indice BMAD
+# Lang: indice BMAD
 
 ## Canonico
 
