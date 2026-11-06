@@ -5,13 +5,6 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< .merge_file_waP3bF
-use Illuminate\Support\Carbon;
-// --- traits ---
-// use Laravel\Scout\Searchable;
-use Modules\Lang\Models\Traits\Mutators\PostMutators;
-use Modules\Lang\Models\Traits\Relationships\PostRelations;
-=======
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 // --- traits ---
@@ -19,7 +12,6 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 use Modules\Lang\Models\Traits\PostMutators;
 use Modules\Lang\Models\Traits\PostRelations;
->>>>>>> .merge_file_KJSLVX
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;

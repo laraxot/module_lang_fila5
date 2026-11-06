@@ -4,7 +4,6 @@ type: filament-blueprint
 status: active
 module: Lang
 created: 2026-10-16
-<<<<<<< .merge_file_c9ZkXA
 updated: 2026-11-05
 tags: [bmad, filament, blueprint, lang]
 qmd: "filament blueprint lang xotbase resource widget migrations schema ownership table name user interface"
@@ -13,14 +12,6 @@ related:
   - ./brainstorming.md
   - ../migrations.md
   - ../../../Xot/docs/wiki/rules/migration-filename-from-model-name.md
-=======
-updated: 2026-10-16
-tags: [bmad, filament, blueprint, lang]
-qmd: "filament blueprint lang xotbase resource widget"
-related:
-  - ../bmad-planning.md
-  - ../bmad-brainstorming.md
->>>>>>> .merge_file_CLW4Gw
 ---
 
 # Scopo
@@ -28,7 +19,6 @@ related:
 Contratto Filament del modulo **Lang**: chrome BO e/o widget FO senza violare
 i confini di dominio.
 
-<<<<<<< .merge_file_c9ZkXA
 ## Persistenza e confine con le migrazioni
 
 Il Blueprint descrive il contratto dell'interfaccia Filament; non è owner dello
@@ -43,8 +33,6 @@ Il formato per nuove migrazioni è
 campi Filament nuovi: questo Blueprint registra il confine e collega alla fonte
 owner.
 
-=======
->>>>>>> .merge_file_CLW4Gw
 ## Regole non negoziabili
 
 1. Estendere solo `XotBaseResource` / `XotBaseWidget` / basi Xot: mai classi Filament dirette.
@@ -68,10 +56,5 @@ cross-tenant per comodita admin.
 
 ## Related
 
-<<<<<<< .merge_file_c9ZkXA
 - Planning: [bmad-planning.md](./bmad-planning.md)
 - Brainstorming: [brainstorming.md](./brainstorming.md)
-=======
-- Planning: [bmad-planning.md](../bmad-planning.md)
-- Brainstorming: [bmad-brainstorming.md](../bmad-brainstorming.md)
->>>>>>> .merge_file_CLW4Gw
