@@ -4,12 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Str;
 // --- traits ---
 // use Laravel\Scout\Searchable;
-use Modules\Lang\Models\Traits\Mutators\PostMutators;
-use Modules\Lang\Models\Traits\Relationships\PostRelations;
+use Modules\Lang\Database\Factories\PostFactory;
+use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;
@@ -108,8 +111,7 @@ use Spatie\Sluggable\SlugOptions;
 class Post extends BaseModel
 {
     use HasSlug;
-    use PostMutators;
-    use PostRelations;
+    use HasXotFactory;
 
     // use Cachable;
     use Updater;
@@ -188,6 +190,14 @@ class Post extends BaseModel
     }
 
     // -------- relationship ------
+    /**
+     * @return MorphTo<Model, $this>
+     */
+    public function linkable(): MorphTo
+    {
+        return $this->morphTo('post');
+    }
+
     /* deprecated
      * public function archive() {
      * $lang = $this->lang;
@@ -210,11 +220,73 @@ class Post extends BaseModel
     // end function
     // -------------- MUTATORS ------------------
 
+    public function setTitleAttribute(string $value): void
+    {
+        $this->attributes['title'] = $value;
+        $this->attributes['guid'] = Str::slug($value);
+    }
+
+    public function getTitleAttribute(?string $value): ?string
+    {
+        if (null !== $value) {
+            return $value;
+        }
+
+        $postType = is_string($this->attributes['post_type'] ?? null) ? $this->attributes['post_type'] : '';
+        $postId = is_scalar($this->attributes['post_id'] ?? null) ? $this->attributes['post_id'] : '';
+        $value = $postType.' '.$postId;
+        $this->title = $value;
+
+        if (null !== $this->getKey()) {
+            $this->update(['title' => $value]);
+        }
+
+        return $value;
+    }
+
+    public function getGuidAttribute(?string $value): ?string
+    {
+        if (is_string($value) && '' !== $value && ! str_contains($value, ' ')) {
+            return $value;
+        }
+
+        $value = Str::slug($this->title ?? '');
+        $this->guid = $value;
+
+        if (null !== $this->getKey()) {
+            $this->update(['guid' => $value]);
+        }
+
+        return $value;
+    }
+
+    public function getTxtAttribute(?string $value): ?string
+    {
+        return $value ?? '';
+    }
+
     /**
      * @return array<string, mixed>
      */
     public function toSearchableArray(): array
     {
         return $this->only(self::SEARCHABLE_FIELDS);
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'id' => 'string',
+            'uuid' => 'string',
+            'image_resize_src' => 'array',
+            'url_lang' => 'array',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+            'published_at' => 'datetime',
+        ];
     }
 }
