@@ -1,7 +1,4 @@
 ---
-title: "Quality Report — Lang"
-title: "Quality Report: Lang"
-title: "Quality Report: Lang"
 title: "Quality Report: Lang"
 type: alias
 status: superseded
