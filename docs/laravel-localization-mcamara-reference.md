@@ -58,11 +58,7 @@ Questo documento riassume come il package [mcamara/laravel-localization](https:/
 ### Language selector
 
 - Per mantenere la pagina corrente e solo cambiare lingua: **`LaravelLocalization::getLocalizedURL($localeCode, null, [], true)`** (il quarto parametro `true` forza il locale in URL anche se `hideDefaultLocaleInURL` è true).
-<<<<<<< .merge_file_gTZTP6
-- **Firma critica (D37):** `localizeURL($url, $locale = null)` vs `getLocalizedURL($locale, $url, ...)`. Mai passare un path (`/`, `/it`, `route(...)`) come primo argomento di `getLocalizedURL` — diventa “locale” e lancia `UnsupportedLocaleException`. Per localizzare un path usare `localizeURL($url)`.
-=======
 - **Firma critica (D37):** `localizeURL($url, $locale = null)` vs `getLocalizedURL($locale, $url, ...)`. Mai passare un path (`/`, `/it`, `route(...)`) come primo argomento di `getLocalizedURL`: diventa “locale” e lancia `UnsupportedLocaleException`. Per localizzare un path usare `localizeURL($url)`.
->>>>>>> .merge_file_bNtrd4
 - Locale corrente: **`LaravelLocalization::getCurrentLocale()`**.
 - Elenco lingue: **`LaravelLocalization::getSupportedLocales()`** o **`getLocalesOrder()`**.
 

@@ -1,9 +1,5 @@
 ---
-<<<<<<< .merge_file_DmxTO5
-title: "Quality Report — Lang"
-=======
 title: "Quality Report: Lang"
->>>>>>> .merge_file_5GtLRp
 type: alias
 status: superseded
 canonical: "QUALITY_REPORT.md"

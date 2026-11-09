@@ -11,11 +11,7 @@ uses(TestCase::class);
 
 describe('LangServiceProvider Basic Functionality', function () {
     it('can be instantiated', function () {
-<<<<<<< .merge_file_gm7xP3
-        Assert::assertSame('Lang', makeLangServiceProvider()->name);
-=======
         Assert::assertSame('Lang', TestCase::makeLangServiceProvider()->name);
->>>>>>> .merge_file_8FM0xF
     });
 
     it('has correct module name', function () {

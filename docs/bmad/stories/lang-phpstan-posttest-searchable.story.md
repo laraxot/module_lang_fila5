@@ -1,9 +1,5 @@
 ---
-<<<<<<< .merge_file_1kTQgE
-title: "Lang — PHPStan PostTest toSearchableArray"
-=======
 title: "Lang: PHPStan PostTest toSearchableArray"
->>>>>>> .merge_file_QbYlIr
 type: story
 module: Lang
 status: done
@@ -16,11 +12,7 @@ qmd: "lang phpstan posttest tosearchablearray searchable fields"
 updated: 2026-10-21
 ---
 
-<<<<<<< .merge_file_1kTQgE
-# Lang — PHPStan PostTest toSearchableArray
-=======
 # Lang: PHPStan PostTest toSearchableArray
->>>>>>> .merge_file_QbYlIr
 
 ## Scopo funzionale
 
@@ -28,11 +20,7 @@ updated: 2026-10-21
 
 ## Problema PHPStan
 
-<<<<<<< .merge_file_1kTQgE
-`PostTest.php:50` — `Assert::assertIsArray()` su valore già tipizzato `array` (`staticMethod.alreadyNarrowedType`).
-=======
 `PostTest.php:50`: `Assert::assertIsArray()` su valore già tipizzato `array` (`staticMethod.alreadyNarrowedType`).
->>>>>>> .merge_file_QbYlIr
 
 ## Fix
 

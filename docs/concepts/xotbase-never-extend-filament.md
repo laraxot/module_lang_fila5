@@ -1,11 +1,7 @@
 ---
 issues: []
 discussions: []
-<<<<<<< .merge_file_yDwVkn
-title: "Lang — mai Filament*, sempre XotBase*"
-=======
 title: "Lang: mai Filament*, sempre XotBase*"
->>>>>>> .merge_file_fM1UV4
 type: concept
 module: Lang
 tags: [lang, filament, xotbase, architecture]

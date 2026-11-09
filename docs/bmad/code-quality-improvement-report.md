@@ -98,13 +98,8 @@ Rilevazione del 17 luglio 2026 sul working tree locale; esclusi vendor e dipende
 ## Gate PHPStan (2026-07-27)
 
 - `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` → **0 errori**.
-<<<<<<< .merge_file_AYSPed
-- Themes: solo insieme a Modules — [phpstan-stale-ignore-pattern](../../../../docs/wiki/troubleshooting/phpstan-stale-ignore-pattern.md).
-- Themes: solo insieme a Modules — [phpstan-stale-ignore-pattern](../../../../../docs/wiki/troubleshooting/phpstan-stale-ignore-pattern.md).
-=======
 - Themes: solo insieme a Modules: [phpstan-stale-ignore-pattern](../../../../docs/wiki/troubleshooting/phpstan-stale-ignore-pattern.md).
 - Themes: solo insieme a Modules: [phpstan-stale-ignore-pattern](../../../../../docs/wiki/troubleshooting/phpstan-stale-ignore-pattern.md).
->>>>>>> .merge_file_s5mCWa
 
 ## Verifica
 

@@ -1,9 +1,5 @@
 ---
-<<<<<<< .merge_file_nqA788
-title: "BMAD Brainstorming — Lang"
-=======
 title: "BMAD Brainstorming: Lang"
->>>>>>> .merge_file_wTIO7i
 type: bmad-brainstorming
 status: synthesized
 module: Lang
@@ -51,11 +47,7 @@ Come impedire chiavi grezze in FO senza centralizzare tutte le stringhe in un un
 | Eliminate | Duplicazioni di verita (second store, Livewire legacy, Controllers) | H | H |
 | Reverse | Progettare dai failure mode privacy/authz prima delle feature | H | H |
 
-<<<<<<< .merge_file_nqA788
-## Reverse brainstorming — come romperlo
-=======
 ## Reverse brainstorming: come romperlo
->>>>>>> .merge_file_wTIO7i
 
 - Copiare planning Ticket in questo owner (gia successo: stub da correggere).
 - Mettere business rules nel tema o Controllers.
@@ -72,8 +64,4 @@ Come impedire chiavi grezze in FO senza centralizzare tutte le stringhe in un un
 
 ## Prossimo step BMAD
 
-<<<<<<< .merge_file_nqA788
-Vedi [bmad-planning.md](./bmad-planning.md) — eseguire la Wave 1 e aggiornare il decision-log owner.
-=======
 Vedi [bmad-planning.md](./bmad-planning.md): eseguire la Wave 1 e aggiornare il decision-log owner.
->>>>>>> .merge_file_wTIO7i

@@ -36,11 +36,7 @@ E' il replay del vecchio commit `ceaed311` (2026-09-24) sopra `b3d8baa2`, commit
 
 ## Result
 - Prima: **213** (elenco swarm). All'ingresso dell'agent, dopo edit paralleli gia' presenti nel working tree (15:58), `phpstan analyse Modules/Lang` dava **188**.
-<<<<<<< .merge_file_zF0NOg
-- Dopo: **0** — `cd laravel && ./vendor/bin/phpstan analyse Modules/Lang --memory-limit=-1 --no-progress` → exit 0 (2026-10-28 16:1x).
-=======
 - Dopo: **0**: `cd laravel && ./vendor/bin/phpstan analyse Modules/Lang --memory-limit=-1 --no-progress` → exit 0 (2026-10-28 16:1x).
->>>>>>> .merge_file_SWq7Jd
 - `php -l` pulito sui file toccati. Nessun file cancellato (`git status` senza ` D`).
 - **Pest NON eseguito**: `.env.testing` punta a MySQL; i test Lang non sono unit puri (`TestCase` con `DatabaseTransactions`).
 

@@ -1,9 +1,5 @@
 ---
-<<<<<<< .merge_file_egiQX6
-title: "Sostenibilità e inbound marketing — Lang"
-=======
 title: "Sostenibilità e inbound marketing: Lang"
->>>>>>> .merge_file_iyi6gw
 type: bmad-pointer
 status: decision-input
 updated: 2026-10-15

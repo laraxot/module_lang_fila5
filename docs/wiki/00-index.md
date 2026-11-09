@@ -53,11 +53,7 @@ status: draft
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
-<<<<<<< .merge_file_2qWv86
-- 📁 **[Path canonico migrazioni](./wiki/concepts/migration-path-canonical.md)** — solo `database/migrations/`; mai `Migrations/` annidata.
-=======
 - 📁 **[Path canonico migrazioni](./wiki/concepts/migration-path-canonical.md)**: solo `database/migrations/`; mai `Migrations/` annidata.
->>>>>>> .merge_file_gweHad
 
 ## 🔗 **Moduli Correlati**
 - [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.

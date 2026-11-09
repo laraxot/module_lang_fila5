@@ -1014,15 +1014,12 @@ return [
             'helper_text' => 'author',
             'description' => 'author',
         ],
-<<<<<<< .merge_file_5P2X2N
-=======
         'images' => [
             'label' => 'images',
             'placeholder' => 'images',
             'helper_text' => 'images',
             'description' => 'images',
         ],
->>>>>>> .merge_file_aqKqxI
     ],
     'actions' => [
         'authenticate' => [
@@ -1220,14 +1217,11 @@ return [
             'icon' => 'billing',
             'tooltip' => 'billing',
         ],
-<<<<<<< .merge_file_5P2X2N
-=======
         'view' => [
             'label' => 'view',
             'icon' => 'view',
             'tooltip' => 'view',
         ],
->>>>>>> .merge_file_aqKqxI
     ],
     'navigation' => [
         'label' => 'Missing Navigation Label',

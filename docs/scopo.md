@@ -169,13 +169,8 @@ classe di produzione che esiste solo per far vedere del codice all'analizzatore 
 Gli unici chiamanti di `registerTranslator()` sono in
 `tests/Unit/LangHundredPercentCoverageTest.php` (righe 888 e 903). Lo stesso vale per
 Il precedente `app/Services/TranslatorService.php` è assente; eventuali riferimenti in documenti o test
-<<<<<<< .merge_file_W9G9WD
-test. Il nome del file di test che li tiene in vita —
-`LangHundredPercentCoverageTest` — dice cosa è successo: la ricerca del 100% di
-=======
 test. Il nome del file di test che li tiene in vita -
 `LangHundredPercentCoverageTest`: dice cosa è successo: la ricerca del 100% di
->>>>>>> .merge_file_mfupRD
 copertura ha coperto codice morto invece di cancellarlo, e adesso quel codice ha dei
 test, quindi sembra vivo.
 
@@ -306,13 +301,8 @@ grep -rl 'Modules\\Ptv\\' Modules/Lang/app | wc -l   # obiettivo: 0
 Lang e' piccolo in `app/` ma tocca migliaia di file `lang/*.php` e il boot Filament
 (`LangServiceProvider`, `SaveTransAction`, lettura file, switcher). Il gate
 `./vendor/bin/phpstan analyse Modules/Lang` (e il full-tree `Modules`) a **zero errori**
-<<<<<<< .merge_file_W9G9WD
-non e' un badge: e' la garanzia che i tipi di quel percorso — inclusi i bootstrap dei
-test — coincidono con i chiamanti reali.
-=======
 non e' un badge: e' la garanzia che i tipi di quel percorso: inclusi i bootstrap dei
 test: coincidono con i chiamanti reali.
->>>>>>> .merge_file_mfupRD
 
 Nei test, gli helper condivisi stanno in `tests/Pest.php`; `makeLangServiceProvider`
 ha SSoT su `TestCase::makeLangServiceProvider()`. Ridefinirli dentro un file test
@@ -372,23 +362,6 @@ find Modules/Lang/docs -name '*.md'  -print0 | xargs -0 cat | wc -l      # 14510
 
 ## Collegamenti
 
-<<<<<<< .merge_file_W9G9WD
-- [README.md](../README.md) — badge e stato misurato del modulo
-- [no-services-rule](../../../../bashscripts/ai/wiki/rules/no-services-rule.md) — perché `app/Services` non deve esistere
-- [sigma-ptv-dependency-direction](../../../../docs/wiki/rules/sigma-ptv-dependency-direction.md) — la direzione delle dipendenze e il `ProfileContract`
-- [data-sacred-no-destructive-db](../../../../docs/wiki/memories/data-sacred-no-destructive-db.md) — i file `lang/` tracciati sono dati, non artefatti
-- [Sigma/docs/scopo.md](../../Sigma/docs/scopo.md) — il modello di questo documento
-- [00-INDEX.md](./00-index.md) — ingresso operativo docs
-- [README.md](./README.md) — badge e stato misurato del modulo
-- [purpose.md](./purpose.md) — versione breve (stesso scopo)
-- [advanced-language-switching.md](./advanced-language-switching.md) — locale switcher FO
-- [stories/phpstan-test-wave-lang.story.md](./stories/phpstan-test-wave-lang.story.md) — ondata qualità test (scopo prima dell'errore)
-- [stories/phpstan-lang-zero.story.md](./stories/phpstan-lang-zero.story.md) — chiusura gate Lang (203 → 0) e harness test
-- [no-services-rule](../../../../bashscripts/ai/wiki/rules/no-services-rule.md) — perché `app/Services` non deve esistere
-- [sigma-ptv-dependency-direction](../../../../docs/wiki/rules/sigma-ptv-dependency-direction.md) — la direzione delle dipendenze e il `ProfileContract`
-- [data-sacred-no-destructive-db](../../../../docs/wiki/memories/data-sacred-no-destructive-db.md) — i file `lang/` tracciati sono dati, non artefatti
-- [Cms — page resolution](../../Cms/docs/actions/page-resolution-pipeline.md) — URL localizzati nei blocchi CMS
-=======
 - [README.md](../README.md): badge e stato misurato del modulo
 - [no-services-rule](../../../../bashscripts/ai/wiki/rules/no-services-rule.md): perché `app/Services` non deve esistere
 - [sigma-ptv-dependency-direction](../../../../docs/wiki/rules/sigma-ptv-dependency-direction.md): la direzione delle dipendenze e il `ProfileContract`
@@ -404,4 +377,3 @@ find Modules/Lang/docs -name '*.md'  -print0 | xargs -0 cat | wc -l      # 14510
 - [sigma-ptv-dependency-direction](../../../../docs/wiki/rules/sigma-ptv-dependency-direction.md): la direzione delle dipendenze e il `ProfileContract`
 - [data-sacred-no-destructive-db](../../../../docs/wiki/memories/data-sacred-no-destructive-db.md): i file `lang/` tracciati sono dati, non artefatti
 - [Cms: page resolution](../../Cms/docs/actions/page-resolution-pipeline.md): URL localizzati nei blocchi CMS
->>>>>>> .merge_file_mfupRD
