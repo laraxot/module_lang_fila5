@@ -10,9 +10,13 @@ discussions: []
 status: draft
 ---
 
-# Lang Module — PHPStan
+# Lang Module: PHPStan
 
+<<<<<<< .merge_file_bn2mc1
 ## 2026-10-20 — wave r3 · gate modulo
+=======
+## 2026-10-20: wave r3 · gate modulo
+>>>>>>> .merge_file_qcXqQ8
 
 ```bash
 cd laravel && php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules/Lang
@@ -21,7 +25,11 @@ cd laravel && php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules/Lan
 
 Test: reflection parent con `assertInstanceOf(ReflectionClass::class, $parent)` prima di `getName()`; provider senza `method_exists`/`assertInstanceOf` tautologici.
 
+<<<<<<< .merge_file_bn2mc1
 ## 2026-06-10 — STORY-305 · Level 10 · 0 errori
+=======
+## 2026-06-10: STORY-305 · Level 10 · 0 errori
+>>>>>>> .merge_file_qcXqQ8
 
 ```bash
 cd laravel && ./vendor/bin/phpstan analyse Modules/Lang
@@ -35,7 +43,7 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/Lang
 - Issue [#332](https://github.com/laraxot/base_fixcity_fila5/issues/332) · base D[#333](https://github.com/laraxot/base_fixcity_fila5/discussions/333)
 
 ---
-## Storico — Level 7 (Gennaio 2025)
+## Storico: Level 7 (Gennaio 2025)
 
 Il modulo Lang era a 0 errori Level 7.
 

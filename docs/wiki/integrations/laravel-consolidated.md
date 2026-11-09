@@ -2,7 +2,7 @@
 qmd: "laravel consolidated"
 issues: []
 discussions: []
-title: "laravel — Consolidated Documentation"
+title: "laravel: Consolidated Documentation"
 module: lang
 type: integration
 tags: [integrations, modules, lang]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# laravel — Consolidated Documentation
+# laravel: Consolidated Documentation
 
 Consolidated from **23** individual files.
 
@@ -1067,7 +1067,7 @@ Il pacchetto `mcamara/laravel-localization` offre un controllo versatile sulla l
 
 *Consolidated from: `laravel-localization-consolidated.md`*
 
-title: "Laravel Localization (mcamara) — Consolidated Reference"
+title: "Laravel Localization (mcamara): Consolidated Reference"
 module: "Lang"
 type: concept
 tags: [filament4, migration]
@@ -1077,7 +1077,7 @@ qmd: "filament4 migration"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
-# Laravel Localization (mcamara) — Consolidated Reference
+# Laravel Localization (mcamara): Consolidated Reference
 
 ## Overview
 
@@ -1198,9 +1198,9 @@ php artisan route:trans:list it # List routes for locale
 
 ## Laraxot Rules
 
-1. **Module `Lang` owns localization** — other modules must not duplicate this logic
-2. **Always use redirect middleware** — prevents SEO duplicate content
-3. **Never hardcode locale strings** — use `LaravelLocalization::getCurrentLocale()`
+1. **Module `Lang` owns localization**: other modules must not duplicate this logic
+2. **Always use redirect middleware**: prevents SEO duplicate content
+3. **Never hardcode locale strings**: use `LaravelLocalization::getCurrentLocale()`
 4. **Short array syntax `[]`** only in all PHP code
 5. **Filament panels** integrate via `XotBasePanelProvider`
 
@@ -2902,7 +2902,7 @@ Vedi file `.cursor/rules/laravel-localization-livewire-volt.mdc` e `.windsurf/ru
 
 *Consolidated from: `laravel-localization-mcaa-reference.md`*
 
-title: "mcamara/laravel-localization — Riferimento per moduli e temi"
+title: "mcamara/laravel-localization: Riferimento per moduli e temi"
 module: "Lang"
 type: concept
 tags: [migrazione, filament, 4]
@@ -2912,7 +2912,7 @@ qmd: "migrazione filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
-# mcamara/laravel-localization — Riferimento per moduli e temi
+# mcamara/laravel-localization: Riferimento per moduli e temi
 
 ## Scopo
 
@@ -3007,7 +3007,7 @@ Vedi README del package per PHPUnit e Pest.
 
 *Consolidated from: `laravel-localization-mcamara-reference.md`*
 
-title: "mcamara/laravel-localization — Riferimento per moduli e temi"
+title: "mcamara/laravel-localization: Riferimento per moduli e temi"
 module: "Lang"
 type: concept
 tags: [migration, filament, 4]
@@ -3017,7 +3017,7 @@ qmd: "migration filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
-# mcamara/laravel-localization — Riferimento per moduli e temi
+# mcamara/laravel-localization: Riferimento per moduli e temi
 
 ## Scopo
 

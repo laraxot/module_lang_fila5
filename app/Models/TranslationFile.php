@@ -9,15 +9,11 @@ namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
-use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
+use Modules\Lang\Models\Traits\TranslationFileRowLoader;
 use Modules\Xot\Contracts\ProfileContract;
 use Sushi\Sushi;
-
-use function Safe\json_encode;
 
 /**
  * @property string|null $key
@@ -45,6 +41,7 @@ use function Safe\json_encode;
 class TranslationFile extends BaseModel
 {
     use Sushi;
+    use TranslationFileRowLoader;
 
     protected $fillable = [
         'id',
@@ -85,6 +82,7 @@ class TranslationFile extends BaseModel
     }
 
     /**
+<<<<<<< .merge_file_iomP5I
      * Carica i dati di traduzione con error handling robusto.
      *
      *
@@ -151,6 +149,8 @@ class TranslationFile extends BaseModel
     }
 
     /**
+=======
+>>>>>>> .merge_file_UdVXMh
      * Get the attributes that should be cast.
      *
      * @return array<string, string>

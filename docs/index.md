@@ -387,8 +387,13 @@ php artisan lang:debug [--log-missing] [--log-performance]
 ### **Strumenti e Risorse**
 - [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper) - Autocompletamento IDE
 - [ide-helper-sushi-pattern](./ide-helper-sushi-pattern.md) - TranslationFile + analisi statica (wave 2026-07-15)
+<<<<<<< .merge_file_Hpzvck
 - [Xot — ide-helper-philosophy](../Xot/docs/ide-helper-philosophy.md) - Filosofia globale PHPDoc model
 - [Xot — ide-helper-philosophy](../Xot/docs/ide-helper-philosophy.md) _(target mancante, verificato 2026-10-14)_ - Filosofia globale PHPDoc model
+=======
+- [Xot: ide-helper-philosophy](../Xot/docs/ide-helper-philosophy.md) - Filosofia globale PHPDoc model
+- [Xot: ide-helper-philosophy](../Xot/docs/ide-helper-philosophy.md) _(target mancante, verificato 2026-10-14)_ - Filosofia globale PHPDoc model
+>>>>>>> .merge_file_YHMfkY
 - [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) - Debug e profiling
 - [Laravel Telescope](https://laravel.com/project_docs/telescope) - Monitoring applicazione
 

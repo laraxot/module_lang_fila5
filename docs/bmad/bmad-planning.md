@@ -1,5 +1,9 @@
 ---
+<<<<<<< .merge_file_VxzoUx
 title: "BMAD Planning — Lang"
+=======
+title: "BMAD Planning: Lang"
+>>>>>>> .merge_file_5sszga
 type: bmad-planning
 status: active
 module: Lang

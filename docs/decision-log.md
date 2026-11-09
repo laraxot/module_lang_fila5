@@ -1,13 +1,17 @@
 ---
 type: decision-log
+<<<<<<< .merge_file_S6qhpU
 title: "Decision Log — Lang"
+=======
+title: "Decision Log: Lang"
+>>>>>>> .merge_file_VWkAcY
 links: {github_issue: "#XXX", discussion: "#XXX"}
 status: draft
 updated: 2026-10-08
 tags: [docs, lang]
 qmd: "decision log   lang lang"
 ---
-# Decision Log — Lang
+# Decision Log: Lang
 
 ## Decisions
 

@@ -8,7 +8,6 @@ use Filament\Schemas\Components\Component;
 use Illuminate\Support\Collection;
 use Mcamara\LaravelLocalization\Exceptions\UnsupportedLocaleException;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-use Mcamara\LaravelLocalization\LaravelLocalization as LaravelLocalizationManager;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -113,7 +112,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     public function getLanguageUrl(string $locale): string
     {
         try {
-            $url = app(LaravelLocalizationManager::class)->getLocalizedURL($locale, null, [], true);
+            $url = LaravelLocalization::getLocalizedURL($locale, null, [], true);
         } catch (UnsupportedLocaleException) {
             return '/'.$locale;
         }

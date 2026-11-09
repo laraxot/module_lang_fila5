@@ -14,18 +14,30 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 afterEach(function (): void {
+<<<<<<< .merge_file_HYO8xr
     $path = \readTranslationTestFilePath();
+=======
+    $path = TestCase::readTranslationTestFilePath();
+>>>>>>> .merge_file_6dc9d9
     if (file_exists($path)) {
         unlink($path);
     }
 });
 describe('Read Translation File Action', function (): void {
     test('can read valid translation file', function (): void {
+<<<<<<< .merge_file_HYO8xr
         $filePath = \readTranslationTestFilePath();
         $translations = \defaultReadTranslationTestData();
         \createTranslationFile($filePath, $translations);
 
         $result = \makeReadTranslationFileAction()->execute($filePath);
+=======
+        $filePath = TestCase::readTranslationTestFilePath();
+        $translations = TestCase::defaultReadTranslationTestData();
+        TestCase::createTranslationFile($filePath, $translations);
+
+        $result = TestCase::makeReadTranslationFileAction()->execute($filePath);
+>>>>>>> .merge_file_6dc9d9
 
         Assert::assertArrayHasKey('auth', $result);
         Assert::assertArrayHasKey('pagination', $result);
@@ -36,30 +48,55 @@ describe('Read Translation File Action', function (): void {
     test('throws exception for non existent file', function (): void {
         $this->expectApplicationException(\Exception::class, 'File di traduzione non trovato:');
 
+<<<<<<< .merge_file_HYO8xr
         \makeReadTranslationFileAction()->execute(storage_path('non_existent.php'));
     });
 
     test('throws exception for unreadable file', function (): void {
         $filePath = \readTranslationTestFilePath();
         \createTranslationFile($filePath, \defaultReadTranslationTestData());
+=======
+        TestCase::makeReadTranslationFileAction()->execute(storage_path('non_existent.php'));
+    });
+
+    test('throws exception for unreadable file', function (): void {
+        $filePath = TestCase::readTranslationTestFilePath();
+        TestCase::createTranslationFile($filePath, TestCase::defaultReadTranslationTestData());
+>>>>>>> .merge_file_6dc9d9
         chmod($filePath, 0o000);
 
         $this->expectApplicationException(\Exception::class, 'File di traduzione non leggibile:');
 
+<<<<<<< .merge_file_HYO8xr
         \makeReadTranslationFileAction()->execute($filePath);
     });
 
     test('throws exception for invalid file content', function (): void {
         $filePath = \readTranslationTestFilePath();
+=======
+        TestCase::makeReadTranslationFileAction()->execute($filePath);
+    });
+
+    test('throws exception for invalid file content', function (): void {
+        $filePath = TestCase::readTranslationTestFilePath();
+>>>>>>> .merge_file_6dc9d9
         file_put_contents($filePath, ' return "invalid content";');
 
         $this->expectApplicationException(\Exception::class, 'File di traduzione non valido:');
 
+<<<<<<< .merge_file_HYO8xr
         \makeReadTranslationFileAction()->execute($filePath);
     });
 
     test('converts array to php format correctly', function (): void {
         $action = \makeReadTranslationFileAction();
+=======
+        TestCase::makeReadTranslationFileAction()->execute($filePath);
+    });
+
+    test('converts array to php format correctly', function (): void {
+        $action = TestCase::makeReadTranslationFileAction();
+>>>>>>> .merge_file_6dc9d9
         $translations = [
             'simple_key' => 'Simple value',
             'nested' => [
@@ -78,7 +115,11 @@ describe('Read Translation File Action', function (): void {
     });
 
     test('handles special characters in translations', function (): void {
+<<<<<<< .merge_file_HYO8xr
         $action = \makeReadTranslationFileAction();
+=======
+        $action = TestCase::makeReadTranslationFileAction();
+>>>>>>> .merge_file_6dc9d9
         $translations = [
             'quotes' => "Text with 'single' and \"double\" quotes",
             'backslashes' => 'Text with \\ backslashes',
@@ -93,7 +134,11 @@ describe('Read Translation File Action', function (): void {
     });
 
     test('handles deeply nested arrays', function (): void {
+<<<<<<< .merge_file_HYO8xr
         $action = \makeReadTranslationFileAction();
+=======
+        $action = TestCase::makeReadTranslationFileAction();
+>>>>>>> .merge_file_6dc9d9
         $translations = [
             'level1' => [
                 'level2' => [
@@ -113,7 +158,11 @@ describe('Read Translation File Action', function (): void {
     });
 
     test('generates proper indentation for nested arrays', function (): void {
+<<<<<<< .merge_file_HYO8xr
         $action = \makeReadTranslationFileAction();
+=======
+        $action = TestCase::makeReadTranslationFileAction();
+>>>>>>> .merge_file_6dc9d9
         $translations = [
             'parent' => [
                 'child' => 'value',
@@ -131,7 +180,11 @@ describe('Read Translation File Action', function (): void {
     });
 
     test('handles empty arrays', function (): void {
+<<<<<<< .merge_file_HYO8xr
         $action = \makeReadTranslationFileAction();
+=======
+        $action = TestCase::makeReadTranslationFileAction();
+>>>>>>> .merge_file_6dc9d9
         $translations = [
             'empty_array' => [],
             'normal_key' => 'normal_value',
@@ -144,7 +197,11 @@ describe('Read Translation File Action', function (): void {
     });
 
     test('handles numeric values in translations', function (): void {
+<<<<<<< .merge_file_HYO8xr
         $action = \makeReadTranslationFileAction();
+=======
+        $action = TestCase::makeReadTranslationFileAction();
+>>>>>>> .merge_file_6dc9d9
         $translations = [
             'number' => 123,
             'float' => 45.67,
@@ -161,7 +218,11 @@ describe('Read Translation File Action', function (): void {
     });
 
     test('preserves key order in output', function (): void {
+<<<<<<< .merge_file_HYO8xr
         $action = \makeReadTranslationFileAction();
+=======
+        $action = TestCase::makeReadTranslationFileAction();
+>>>>>>> .merge_file_6dc9d9
         $translations = [
             'z_last' => 'Last value',
             'a_first' => 'First value',

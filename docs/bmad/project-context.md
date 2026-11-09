@@ -1,5 +1,9 @@
 ---
+<<<<<<< .merge_file_7l2QeF
 title: "Project context — Lang"
+=======
+title: "Project context: Lang"
+>>>>>>> .merge_file_5YIAK6
 type: constitution
 module: Lang
 track: quick-flow
@@ -14,7 +18,11 @@ related:
   - ./filament-blueprint.md
 ---
 
+<<<<<<< .merge_file_7l2QeF
 # Costituzione — Lang
+=======
+# Costituzione: Lang
+>>>>>>> .merge_file_5YIAK6
 
 Garantire risoluzione locale e ownership delle traduzioni coerenti tra moduli e temi.
 

@@ -2,7 +2,7 @@
 qmd: "translation consolidated"
 issues: []
 discussions: []
-title: "translation — Consolidated Documentation"
+title: "translation: Consolidated Documentation"
 module: lang
 type: integration
 tags: [integrations, modules, lang]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# translation — Consolidated Documentation
+# translation: Consolidated Documentation
 
 Consolidated from **65** individual files.
 

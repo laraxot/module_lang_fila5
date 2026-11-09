@@ -10,6 +10,8 @@ use Illuminate\Support\Carbon;
 // --- traits ---
 // use Laravel\Scout\Searchable;
 use Illuminate\Support\Str;
+use Modules\Lang\Models\Traits\PostMutators;
+use Modules\Lang\Models\Traits\PostRelations;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;
@@ -108,6 +110,8 @@ use Spatie\Sluggable\SlugOptions;
 class Post extends BaseModel
 {
     use HasSlug;
+    use PostMutators;
+    use PostRelations;
 
     // use Cachable;
     use Updater;
@@ -186,14 +190,6 @@ class Post extends BaseModel
     }
 
     // -------- relationship ------
-    /**
-     * @return MorphTo<Model, $this>
-     */
-    public function linkable(): MorphTo
-    {
-        return $this->morphTo('post');
-    }
-
     /* deprecated
      * public function archive() {
      * $lang = $this->lang;
@@ -216,6 +212,7 @@ class Post extends BaseModel
     // end function
     // -------------- MUTATORS ------------------
 
+<<<<<<< .merge_file_K5jcAv
     public function setTitleAttribute(string $value): void
     {
         $this->attributes['title'] = $value;
@@ -291,6 +288,8 @@ class Post extends BaseModel
         return $value ?? '';
     }
 
+=======
+>>>>>>> .merge_file_ZDZC4U
     /**
      * @return array<string, mixed>
      */

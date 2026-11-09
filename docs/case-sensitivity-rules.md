@@ -26,7 +26,7 @@ I seguenti file/directory sono stati eliminati perché violavano le regole:
 
 ```
 ✗ Removed: database/Migrations/ (entire directory)
-✗ Removed: database/migrations/Migrations/ (nested anti-pattern — 2026-07-01)
+✗ Removed: database/migrations/Migrations/ (nested anti-pattern: 2026-07-01)
 ✓ Kept:    database/migrations/ (flat, solo file .php)
 ```
 

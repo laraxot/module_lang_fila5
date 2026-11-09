@@ -1,7 +1,7 @@
 ---
 issues: []
 discussions: []
-title: "Quality Report — Lang"
+title: "Quality Report: Lang"
 type: report
 tags: [quality, phpstan, pest, coverage]
 module: Lang
@@ -12,7 +12,7 @@ status: superseded
 superseded_by: quality-report.md
 ---
 
-# Quality Report — Lang
+# Quality Report: Lang
 
 Aggiornato: 2026-08-24. Rigenera con: `bashscripts/tools/quality-report.sh Lang`
 
