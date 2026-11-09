@@ -34,6 +34,16 @@ class SaveTransAction
             return;
         }
 
+        $this->persist($key, $data);
+    }
+
+    /**
+     * Scrive davvero nel file di lingua, senza il filtro sulle chiavi mancanti.
+     * Lo usa il pannello Lang quando il traduttore preme "Salva": li' la scrittura e'
+     * voluta anche in produzione (prima il salvataggio era ignorato fuori da `local`).
+     */
+    public function persist(string $key, int|string|array|Htmlable|null $data): void
+    {
         $cont = [];
 
         $filename = app(GetTransPathAction::class)->execute($key);
