@@ -57,10 +57,10 @@ status: draft
 
 ## 📚 Estructura del Proyecto
 
-- `laravel/Modules/`: Toda la lógica de negocio, agrupada por módulo
-- `laravel/Themes/`: Assets frontend tematizables
-- `laravel/project_docs/`: Documentación core y de los módulos
-- `docs/`: Documentación de proyecto, workflows y traducciones
+- `laravel/Modules/` — Toda la lógica de negocio, agrupada por módulo
+- `laravel/Themes/` — Assets frontend tematizables
+- `laravel/project_docs/` — Documentación core y de los módulos
+- `docs/` — Documentación de proyecto, workflows y traducciones
 
 ---
 

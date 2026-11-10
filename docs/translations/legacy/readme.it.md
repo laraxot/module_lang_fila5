@@ -55,10 +55,10 @@ superseded_by: README.it.md
 
 ## 📚 Struttura del Progetto
 
-- `laravel/Modules/`: Tutta la logica di business, raggruppata per modulo
-- `laravel/Themes/`: Asset frontend tematizzabili
-- `laravel/project_docs/`: Documentazione core e dei moduli
-- `docs/`: Documentazione di progetto, workflow e traduzioni
+- `laravel/Modules/` — Tutta la logica di business, raggruppata per modulo
+- `laravel/Themes/` — Asset frontend tematizzabili
+- `laravel/project_docs/` — Documentazione core e dei moduli
+- `docs/` — Documentazione di progetto, workflow e traduzioni
 
 ---
 
