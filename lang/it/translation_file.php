@@ -68,10 +68,8 @@ return [
         'cancel' => [
             'tooltip' => '',
             'icon' => 'cancel',
-            'label' => 'cancel',
         ],
         'save' => [
-            'tooltip' => 'save',
             'icon' => 'save',
         ],
     ],
