@@ -157,7 +157,7 @@ describe('Lang coverage boost — UI and data', function (): void {
 
         Assert::assertArrayHasKey('name', $formSchema);
         Assert::assertArrayHasKey('id', $infolistSchema);
-        Assert::assertArrayHasKey('created_at', $tableColumns);
+        Assert::assertArrayHasKey('path', $tableColumns);
 
         $listPage = new ListTranslationFiles;
         $editPage = new EditTranslationFile;

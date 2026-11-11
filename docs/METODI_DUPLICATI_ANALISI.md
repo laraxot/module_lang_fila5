@@ -14,7 +14,7 @@ status: superseded
 superseded_by: metodi_duplicati_analisi.md
 ---
 
-# Metodi Duplicati — Analisi Lang
+# Metodi Duplicati: Analisi Lang
 
 Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modulo **Lang**, estratti dal report globale generato da `/tmp/metodi_duplicati_domain_report.md`.
 
@@ -26,7 +26,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Models/Policies/LangBasePolicy.php`
 
-[Riflessione: Presente in 13 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 13 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -39,7 +39,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Lang/app/Casts/LangField.php`
 - `./laravel/Modules/Lang/app/Services/TranslatorService.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -51,7 +51,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Models/TranslationFile.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -64,7 +64,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Lang/app/Actions/TransArrayAction.php`
 - `./laravel/Modules/Lang/app/Actions/TransCollectionAction.php`
 
-[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 4 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -76,7 +76,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Datas/TranslationData.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -88,7 +88,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Filament/Widgets/LanguageSwitcherWidget.php`
 
-[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 5 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -100,7 +100,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Datas/LangData.php`
 
-[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 4 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -112,7 +112,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditTranslationFile.php`
 
-[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 5 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -124,7 +124,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditTranslationFile.php`
 
-[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 3 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -136,7 +136,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Models/Post.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -148,7 +148,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Actions/SyncTranslationsAction.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -160,7 +160,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Casts/LangField.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -172,7 +172,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Actions/SyncTranslationsAction.php`
 
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -184,7 +184,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Actions/SyncTranslationsAction.php`
 
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -196,7 +196,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Models/Post.php`
 
-[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 3 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -210,7 +210,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Lang/app/Filament/Resources/TranslationFileResource.php`
 - `./laravel/Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditTranslationFile.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -224,7 +224,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Lang/resources/views/components/language-switcher.blade.php`
 - `./laravel/Modules/Lang/resources/views/filament/widgets/language-switcher.blade.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -238,7 +238,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Lang/docs/italian-text-validation-refined.php`
 - `./laravel/Modules/Lang/docs/obbligatorio-audit-script.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -252,7 +252,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Lang/resources/views/components/language-switcher.blade.php`
 - `./laravel/Modules/Lang/resources/views/filament/widgets/language-switcher.blade.php`
 
-[Riflessione: Duplicato interno al modulo Lang — valutare estrazione in trait di modulo o classe base]
+[Riflessione: Duplicato interno al modulo Lang: valutare estrazione in trait di modulo o classe base]
 
 ---
 
@@ -265,7 +265,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Lang/app/Actions/ReadTranslationFileAction.php`
 - `./laravel/Modules/Lang/app/Actions/SyncTranslationsAction.php`
 
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -277,7 +277,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Providers/LangServiceProvider.php`
 
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -290,7 +290,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Lang/app/Providers/LangServiceProvider.php`
 - `./laravel/Modules/Lang/app/Providers/Traits/TranslatorTrait.php`
 
-[Riflessione: Duplicato interno al modulo Lang — valutare estrazione in trait di modulo o classe base]
+[Riflessione: Duplicato interno al modulo Lang: valutare estrazione in trait di modulo o classe base]
 
 ---
 
@@ -302,7 +302,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Providers/RouteServiceProvider.php`
 
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -314,7 +314,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Actions/SyncTranslationsAction.php`
 
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -327,7 +327,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Lang/app/Models/Contracts/HasTranslationsContract.php`
 - `./laravel/Modules/Lang/app/Models/Traits/HasStrictTranslations.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -339,7 +339,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Datas/TranslationData.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -352,7 +352,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Lang/app/Filament/Resources/LangBaseResource.php`
 - `./laravel/Modules/Lang/app/Filament/Resources/TranslationFileResource.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -364,7 +364,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/app/Filament/Forms/Components/TranslationEditor.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -376,7 +376,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Lang/docs/helper-text-audit-script.php`
 
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -405,4 +405,4 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - **Incentivi:** 3 metodi in comune
 
 ---
-_Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
+_Report generato automaticamente: fonte: `/tmp/metodi_duplicati_domain_report.md`_

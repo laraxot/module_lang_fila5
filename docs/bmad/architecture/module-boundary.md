@@ -1,5 +1,5 @@
 ---
-title: "Lang — architettura BMAD"
+title: "Lang: architettura BMAD"
 type: architecture
 status: active
 module: Lang
@@ -8,7 +8,7 @@ updated: 2026-09-28
 qmd: "Lang architettura confini componenti PHP Laravel Filament"
 tags: [docs, lang, bmad]
 ---
-# Lang — architettura
+# Lang: architettura
 
 ## Scopo osservato
 

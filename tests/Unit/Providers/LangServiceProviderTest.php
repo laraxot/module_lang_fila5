@@ -11,11 +11,11 @@ uses(TestCase::class);
 
 describe('LangServiceProvider Basic Functionality', function () {
     it('can be instantiated', function () {
-        Assert::assertSame('Lang', makeLangServiceProvider()->name);
+        Assert::assertSame('Lang', TestCase::makeLangServiceProvider()->name);
     });
 
     it('has correct module name', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $reflection = new ReflectionClass($provider);
         $property = $reflection->getProperty('name');
         $property->setAccessible(true);
@@ -25,14 +25,14 @@ describe('LangServiceProvider Basic Functionality', function () {
 });
 describe('LangServiceProvider Registration', function () {
     it('can register services', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->register();
 
         Assert::assertSame('Lang', $provider->name);
     });
 
     it('can boot services', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         Assert::assertTrue(Lang::has('lang::auth.failed'));
@@ -41,14 +41,14 @@ describe('LangServiceProvider Registration', function () {
 
 describe('LangServiceProvider Translation Loading', function () {
     it('loads translations from correct path', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         Assert::assertTrue(Lang::has('lang::auth.failed'));
     });
 
     it('loads translations with correct namespace', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $translation = __('lang::auth.failed');
@@ -57,7 +57,7 @@ describe('LangServiceProvider Translation Loading', function () {
     });
 
     it('handles missing translation keys gracefully', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $missingTranslation = __('lang::nonexistent.key');
@@ -67,7 +67,7 @@ describe('LangServiceProvider Translation Loading', function () {
 
 describe('LangServiceProvider Translation Structure', function () {
     it('provides auth translations', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $authKeys = [
@@ -87,7 +87,7 @@ describe('LangServiceProvider Translation Structure', function () {
     });
 
     it('provides nested login translations', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $loginKeys = ['title', 'email', 'password', 'submit', 'forgot_password'];
@@ -100,7 +100,7 @@ describe('LangServiceProvider Translation Structure', function () {
     });
 
     it('provides translation module strings', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $translation = __('lang::translation.navigation.name');
@@ -111,7 +111,7 @@ describe('LangServiceProvider Translation Structure', function () {
 
 describe('LangServiceProvider Language Support', function () {
     it('supports Italian language', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         app()->setLocale('it');
@@ -122,7 +122,7 @@ describe('LangServiceProvider Language Support', function () {
     });
 
     it('supports English language', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         app()->setLocale('en');
@@ -133,7 +133,7 @@ describe('LangServiceProvider Language Support', function () {
     });
 
     it('supports German language', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         app()->setLocale('de');
@@ -144,7 +144,7 @@ describe('LangServiceProvider Language Support', function () {
     });
 
     it('falls back to default language when translation missing', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         app()->setLocale('fr');
@@ -157,7 +157,7 @@ describe('LangServiceProvider Language Support', function () {
 
 describe('LangServiceProvider Translation Files', function () {
     it('loads auth translation file', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $authPath = module_path('Lang', 'lang/it/auth.php');
@@ -168,7 +168,7 @@ describe('LangServiceProvider Translation Files', function () {
     });
 
     it('loads translation module file', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $translationPath = module_path('Lang', 'lang/it/translation.php');
@@ -179,7 +179,7 @@ describe('LangServiceProvider Translation Files', function () {
     });
 
     it('loads auth translation file for english', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $authPath = module_path('Lang', 'lang/en/auth.php');
@@ -190,7 +190,7 @@ describe('LangServiceProvider Translation Files', function () {
     });
 
     it('loads all required translation files', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $requiredFiles = ['auth', 'translation', 'header'];
@@ -208,7 +208,7 @@ describe('LangServiceProvider Translation Files', function () {
 
 describe('LangServiceProvider Translation Quality', function () {
     it('provides complete auth translation coverage', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $authKeys = [
@@ -231,7 +231,7 @@ describe('LangServiceProvider Translation Quality', function () {
     });
 
     it('provides consistent translation style', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $translations = [
@@ -247,7 +247,7 @@ describe('LangServiceProvider Translation Quality', function () {
     });
 
     it('provides contextually appropriate italian translations', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         app()->setLocale('it');
@@ -269,7 +269,7 @@ describe('LangServiceProvider Performance', function () {
     it('loads translations efficiently', function () {
         $startTime = microtime(true);
 
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $executionTime = microtime(true) - $startTime;
@@ -278,7 +278,7 @@ describe('LangServiceProvider Performance', function () {
     });
 
     it('caches translations for performance', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $startTime = microtime(true);
@@ -294,7 +294,7 @@ describe('LangServiceProvider Performance', function () {
     });
 
     it('handles multiple language switches efficiently', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $languages = ['it', 'en', 'de', 'it'];
@@ -315,21 +315,21 @@ describe('LangServiceProvider Performance', function () {
 
 describe('LangServiceProvider Error Handling', function () {
     it('handles missing translation files gracefully', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         Assert::assertTrue(Lang::has('lang::auth.failed'));
     });
 
     it('handles malformed translation files gracefully', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         Assert::assertTrue(Lang::has('lang::auth.failed'));
     });
 
     it('handles empty translation files gracefully', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         Assert::assertTrue(Lang::has('lang::auth.failed'));
@@ -338,7 +338,7 @@ describe('LangServiceProvider Error Handling', function () {
 
 describe('LangServiceProvider Integration', function () {
     it('works with Laravel translation system', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         Assert::assertTrue(Lang::has('lang::auth.failed'));
@@ -346,7 +346,7 @@ describe('LangServiceProvider Integration', function () {
     });
 
     it('works with Filament components', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $translation = __('lang::auth.login.submit');
@@ -355,7 +355,7 @@ describe('LangServiceProvider Integration', function () {
     });
 
     it('works with Blade templates', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $translation = __('lang::auth.failed');
@@ -366,7 +366,7 @@ describe('LangServiceProvider Integration', function () {
 
 describe('LangServiceProvider Configuration', function () {
     it('respects Laravel configuration', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $defaultLocale = config('app.locale');
@@ -375,14 +375,14 @@ describe('LangServiceProvider Configuration', function () {
     });
 
     it('can be configured via config files', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         Assert::assertIsString(config('app.fallback_locale'));
     });
 
     it('integrates with other service providers', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         Assert::assertInstanceOf(Application::class, app());
@@ -391,14 +391,14 @@ describe('LangServiceProvider Configuration', function () {
 
 describe('LangServiceProvider Maintenance', function () {
     it('can be refreshed without errors', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
         $provider->boot();
 
     });
 
     it('maintains state consistency', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->boot();
 
         $translation1 = __('lang::auth.failed');
@@ -411,11 +411,11 @@ describe('LangServiceProvider Maintenance', function () {
     });
 
     it('can be unregistered and re-registered', function () {
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->register();
         $provider->boot();
 
-        $provider = makeLangServiceProvider();
+        $provider = TestCase::makeLangServiceProvider();
         $provider->register();
         $provider->boot();
 
