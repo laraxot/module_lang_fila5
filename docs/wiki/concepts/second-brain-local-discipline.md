@@ -18,7 +18,7 @@ related:
 status: draft
 ---
 
-# Contratto wiki locale — stub Lang
+# Contratto wiki locale: stub Lang
 
 | Risorsa | Link |
 |---------|------|

@@ -1,5 +1,5 @@
 ---
-title: "Translation factory — auto-increment id"
+title: "Translation factory: auto-increment id"
 type: rule
 module: Lang
 tags: [lang, pest, factory, sqlite, auto-increment]
@@ -18,7 +18,7 @@ related:
 status: draft
 ---
 
-# Translation factory — auto-increment id
+# Translation factory: auto-increment id
 
 ## Regola
 

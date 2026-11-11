@@ -1,12 +1,11 @@
 ---
 tags: [documentation]
 created: 2026-09-26
-updated: 2026-09-26
 updated: 2026-10-20
 qmd: "livewire inventory"
 issues: []
 discussions: []
-title: "Inventario Lang — Livewire HTTP → widget"
+title: "Inventario Lang: Livewire HTTP → widget"
 type: inventory
 module: Lang
 status: approved
@@ -47,11 +46,11 @@ grep -rn "renderHook\|RenderHook" Modules/*/app/Providers/Filament/*.php
 
 ## Le classi in gioco
 
-### 1. `Http\Livewire\Lang\Switcher` — ritirato
+### 1. `Http\Livewire\Lang\Switcher`: ritirato
 
 File assente. Alias `lang.switcher` assente da `_components.json` (`[]`).
 
-### 2. `Http\Livewire\Lang\Change` — ritirato
+### 2. `Http\Livewire\Lang\Change`: ritirato
 
 File assente. Vista HTTP `lang::livewire.lang.change` assente.
 
@@ -63,7 +62,7 @@ Montaggio FO: `Modules/UI/resources/views/components/headernav/simple.blade.php`
 
 I due tag Cms headernav restano senza `lang.change` (commenti morti rimossi). Nessun render hook Lang nei PanelProvider.
 
-### 3. `Filament\Widgets\LanguageSwitcherWidget` — unico switcher vivo
+### 3. `Filament\Widgets\LanguageSwitcherWidget`: unico switcher vivo
 
 `$isDiscovered = false`. Lingue da `LaravelLocalization::getSupportedLocales()`. URL e redirect 303 da `getLocalizedURL()`. Vista `lang::filament.widgets.language-switcher`.
 
@@ -71,14 +70,14 @@ I due tag Cms headernav restano senza `lang.change` (commenti morti rimossi). Ne
 
 - `$isDiscovered = false` (riga 24): chrome tema, non card dashboard.
 - `canView()` (righe 32-35) → `config('lang.language_switcher.enabled', true)`.
-- `getAvailableLocales()` (righe 70-96) usa `LaravelLocalization::getSupportedLocales()` (riga 73) — il vecchio fallback fisso it/en/de non c'è più.
+- `getAvailableLocales()` (righe 70-96) usa `LaravelLocalization::getSupportedLocales()` (riga 73): il vecchio fallback fisso it/en/de non c'è più.
 - `getLanguageUrl()` (righe 113-128) usa `LaravelLocalization::getLocalizedURL()` (riga 118) con fallback `'/'.$locale` (righe 119-125).
-- `changeLanguage()` (righe 101-108) fa `redirect($url, 303)` — parità di comportamento con il vecchio `Change::mount()` raggiunta **nel codice**.
+- `changeLanguage()` (righe 101-108) fa `redirect($url, 303)`: parità di comportamento con il vecchio `Change::mount()` raggiunta **nel codice**.
 - Vista `lang::filament.widgets.language-switcher` (riga 27) → `Modules/Lang/resources/views/filament/widgets/language-switcher.blade.php`.
 
 Ma il gap di **collegamento** è chiuso: headernav UI monta il FQCN.
 
-### 4. `View\Components\LanguageSwitcher` — wrapper inerte
+### 4. `View\Components\LanguageSwitcher`: wrapper inerte
 
 `Modules/Lang/app/View/Components/LanguageSwitcher.php` istanzia il widget nel costruttore (riga 28), ma la registrazione Blade resta commentata (`Modules/Lang/app/Providers/LangServiceProvider.php:42`) e `_components.json` dei View Components elenca solo `flag`. Non raggiungibile come `<x-lang::language-switcher>`.
 
@@ -109,7 +108,7 @@ Campagna Lang **chiusa** (story 12.1 `done`): un solo switcher, il widget Filame
 
 ## Riferimenti correlati (non SSoT, coerenti col verdetto)
 
-- [livewire-widget-conversion.md](./livewire-widget-conversion.md) — puntatore al canone
+- [livewire-widget-conversion.md](./livewire-widget-conversion.md): puntatore al canone
 - [livewire-widget-architecture.md](./livewire-widget-architecture.md)
 - [livewire-widget-brainstorming.md](./livewire-widget-brainstorming.md)
 - [livewire-widget-decision-log.md](./livewire-widget-decision-log.md)

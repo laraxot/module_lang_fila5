@@ -9,20 +9,20 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('base model uses lang connection', function (): void {
-    Assert::assertSame('lang', makeLangBaseModel()->getConnectionName());
+    Assert::assertSame('lang', TestCase::makeLangBaseModel()->getConnectionName());
 });
 
 test('base model has correct table name', function (): void {
-    Assert::assertSame('test_lang_table', makeLangBaseModel()->getTable());
+    Assert::assertSame('test_lang_table', TestCase::makeLangBaseModel()->getTable());
 });
 
 test('base model can be instantiated with anonymous subclass', function (): void {
-    $baseModel = makeLangBaseModel();
+    $baseModel = TestCase::makeLangBaseModel();
 
     Assert::assertSame('test_lang_table', $baseModel->getTable());
     Assert::assertNotSame(BaseModel::class, $baseModel::class);
 });
 
 test('base model has timestamps enabled', function (): void {
-    Assert::assertTrue(makeLangBaseModel()->usesTimestamps());
+    Assert::assertTrue(TestCase::makeLangBaseModel()->usesTimestamps());
 });
