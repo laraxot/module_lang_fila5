@@ -496,9 +496,11 @@ return [
         ],
         'hidePassword' => [
             'icon' => 'hidePassword',
+            'label' => 'hidePassword',
         ],
         'showPassword' => [
             'icon' => 'ui-showPassword',
+            'label' => 'showPassword',
         ],
         'list_log_activities' => [
             'icon' => 'list_log_activities',
@@ -553,6 +555,7 @@ return [
         ],
         'profile' => [
             'icon' => 'profile',
+            'label' => 'profile',
         ],
         'convert' => [
             'icon' => 'convert',
