@@ -9,10 +9,17 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 // --- traits ---
 // use Laravel\Scout\Searchable;
+<<<<<<< .merge_file_nMh06h
+=======
 use Illuminate\Support\Str;
 use Modules\Lang\Models\Traits\PostMutators;
 use Modules\Lang\Models\Traits\PostRelations;
+<<<<<<< .merge_file_qSpGp0
+=======
+>>>>>>> .merge_file_mZHXKu
+>>>>>>> .merge_file_V78D33
 use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
@@ -212,6 +219,57 @@ class Post extends BaseModel
     // end function
     // -------------- MUTATORS ------------------
 
+<<<<<<< .merge_file_qSpGp0
+=======
+<<<<<<< .merge_file_nMh06h
+    public function setTitleAttribute(string $value): void
+    {
+        $this->attributes['title'] = $value;
+        $this->attributes['guid'] = Str::slug($value);
+    }
+
+    public function getTitleAttribute(?string $value): ?string
+    {
+        if ($value !== null) {
+            return $value;
+        }
+
+        $postType = is_string($this->attributes['post_type'] ?? null) ? $this->attributes['post_type'] : '';
+        $postId = is_scalar($this->attributes['post_id'] ?? null) ? $this->attributes['post_id'] : '';
+        $value = $postType.' '.$postId;
+        $this->title = $value;
+
+        if ($this->getKey() !== null) {
+            $this->update(['title' => $value]);
+        }
+
+        return $value;
+    }
+
+    public function getGuidAttribute(?string $value): ?string
+    {
+        if (is_string($value) && $value !== '' && ! str_contains($value, ' ')) {
+            return $value;
+        }
+
+        $value = Str::slug($this->title ?? '');
+        $this->guid = $value;
+
+        if ($this->getKey() !== null) {
+            $this->update(['guid' => $value]);
+        }
+
+        return $value;
+    }
+
+    public function getTxtAttribute(?string $value): ?string
+    {
+        return $value ?? '';
+    }
+
+=======
+>>>>>>> .merge_file_mZHXKu
+>>>>>>> .merge_file_V78D33
     /**
      * @return array<string, mixed>
      */
