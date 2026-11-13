@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
+use function Safe\file_get_contents;
 use Illuminate\Support\Str;
 use Illuminate\Translation\ArrayLoader;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -132,6 +133,7 @@ describe('Lang coverage gaps closeout', function (): void {
 
     test('SaveTransAction catch and non-array require paths', function (): void {
         TestCase::bindRealSaveTransAction();
+        config(['lang.save_missing_translations' => true]);
         $file = sys_get_temp_dir().'/save_trans_'.uniqid().'.php';
         file_put_contents($file, '<?php throw new Exception("x");');
 
@@ -139,8 +141,10 @@ describe('Lang coverage gaps closeout', function (): void {
             $mock->allows(['execute' => $file]);
         });
 
-        expect(fn () => app(SaveTransAction::class)->execute('lang::x.y', 'v'))
-            ->toThrow(\RuntimeException::class);
+        // File illeggibile (throw a runtime): l'action riporta ed esce senza
+        // riscrivere, per non sostituire il file con la sola chiave nuova.
+        app(SaveTransAction::class)->execute('lang::x.y', 'v');
+        Assert::assertSame('<?php throw new Exception("x");', file_get_contents($file));
 
         file_put_contents($file, "<?php\nreturn 'scalar';\n");
         app(SaveTransAction::class)->execute('lang::x.y', 'v');
