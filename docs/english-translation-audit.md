@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "migrazione filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 # Audit Traduzioni Inglesi - <nome progetto>
 
@@ -371,6 +372,9 @@ return array(
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Regole Traduzioni](../../docs/translation-standards.md)
+- [Regole Traduzioni](translation-standards.md)
+- [Regole Traduzioni](translation-standards.md)
+- [Regole Traduzioni](translation-standards.md)
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
@@ -380,6 +384,7 @@ return array(
 
 **Ultimo aggiornamento**: 2025-01-06
 - [Regole Traduzioni](../../../docs/translation-standards.md)
+- [Regole Traduzioni](../../../../docs/translation-standards.md)
 - [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 
@@ -387,6 +392,7 @@ return array(
 
 **Ultimo aggiornamento**: 2025-01-06
 - [Regole Traduzioni](../../../docs/translation-standards.md)
+- [Regole Traduzioni](../../../../docs/translation-standards.md)
 - [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 
@@ -757,6 +763,9 @@ return array(
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Regole Traduzioni](../../docs/translation-standards.md)
+- [Regole Traduzioni](translation-standards.md)
+- [Regole Traduzioni](translation-standards.md)
+- [Regole Traduzioni](translation-standards.md)
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 
@@ -764,6 +773,7 @@ return array(
 
 **Ultimo aggiornamento**: 2025-01-06
 - [Regole Traduzioni](../../../docs/translation-standards.md)
+- [Regole Traduzioni](../../../../docs/translation-standards.md)
 - [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 
@@ -784,6 +794,7 @@ return array(
 
 **Ultimo aggiornamento**: 2025-01-06
 - [Regole Traduzioni](../../../docs/translation-standards.md)
+- [Regole Traduzioni](../../../../docs/translation-standards.md)
 - [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 

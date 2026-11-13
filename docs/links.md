@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "migration filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 # Gestione delle Traduzioni in Laravel
 
@@ -101,6 +102,17 @@ public function handle(Request $request, Closure $next): Response
   > Sistema di notifiche multilingua.
 
 - [Modulo CMS](../../../Cms/docs/links.md)
+- [Modulo GDPR](../../Gdpr/docs/links.md)
+  > Documentazione sulla gestione delle traduzioni per il modulo GDPR.
+
+- [Modulo User](../../User/docs/links.md)
+  > Gestione delle traduzioni per l'interfaccia utente e le notifiche.
+
+### Moduli di Supporto
+- [Modulo Notify](../../Notify/docs/links.md)
+  > Sistema di notifiche multilingua.
+
+- [Modulo CMS](../../Cms/docs/links.md)
   > Gestione dei contenuti multilingua.
 
 ### Moduli Tematici
@@ -238,6 +250,17 @@ public function handle(Request $request, Closure $next): Response
   > Sistema di notifiche multilingua.
 
 - [Modulo CMS](../../../Cms/docs/links.md)
+- [Modulo GDPR](../../Gdpr/docs/links.md)
+  > Documentazione sulla gestione delle traduzioni per il modulo GDPR.
+
+- [Modulo User](../../User/docs/links.md)
+  > Gestione delle traduzioni per l'interfaccia utente e le notifiche.
+
+### Moduli di Supporto
+- [Modulo Notify](../../Notify/docs/links.md)
+  > Sistema di notifiche multilingua.
+
+- [Modulo CMS](../../Cms/docs/links.md)
   > Gestione dei contenuti multilingua.
 
 ### Moduli Tematici

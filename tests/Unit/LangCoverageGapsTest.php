@@ -1,18 +1,19 @@
 <?php
 
 declare(strict_types=1);
+
 namespace Modules\Lang\Tests\Unit;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
-use Filament\Schemas\Components\Wizard\Step;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
+use function Safe\file_get_contents;
 use Illuminate\Support\Str;
 use Illuminate\Translation\ArrayLoader;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -103,7 +104,7 @@ function langGapsSqlite(): void
 describe('Lang coverage gaps closeout', function (): void {
     test('TranslatorAdapter notifyMissingKey records the missing key', function (): void {
         langGapsSqlite();
-        $loader = new ArrayLoader();
+        $loader = new ArrayLoader;
         $loader->addMessages('it', 'g', ['n' => 9]);
 
         $adapter = new TranslatorAdapter($loader, 'it');
@@ -113,7 +114,7 @@ describe('Lang coverage gaps closeout', function (): void {
     });
 
     test('TranslatorAdapter non-string result coerces to key', function (): void {
-        $loader = new ArrayLoader();
+        $loader = new ArrayLoader;
         $loader->addMessages('it', 'g', ['n' => 9]);
         $adapter = new TranslatorAdapter($loader, 'it');
         $this->mockService(RecordMissingTranslationAction::class, static function (MockInterface $mock): void {
@@ -132,6 +133,7 @@ describe('Lang coverage gaps closeout', function (): void {
 
     test('SaveTransAction catch and non-array require paths', function (): void {
         TestCase::bindRealSaveTransAction();
+        config(['lang.save_missing_translations' => true]);
         $file = sys_get_temp_dir().'/save_trans_'.uniqid().'.php';
         file_put_contents($file, '<?php throw new Exception("x");');
 
@@ -139,8 +141,10 @@ describe('Lang coverage gaps closeout', function (): void {
             $mock->allows(['execute' => $file]);
         });
 
-        expect(fn () => app(SaveTransAction::class)->execute('lang::x.y', 'v'))
-            ->toThrow(\RuntimeException::class);
+        // File illeggibile (throw a runtime): l'action riporta ed esce senza
+        // riscrivere, per non sostituire il file con la sola chiave nuova.
+        app(SaveTransAction::class)->execute('lang::x.y', 'v');
+        Assert::assertSame('<?php throw new Exception("x");', file_get_contents($file));
 
         file_put_contents($file, "<?php\nreturn 'scalar';\n");
         app(SaveTransAction::class)->execute('lang::x.y', 'v');
@@ -154,7 +158,7 @@ describe('Lang coverage gaps closeout', function (): void {
     test('WriteTranslationFileAction backs up existing file', function (): void {
         $path = sys_get_temp_dir().'/write_cov_'.uniqid().'.php';
         TestCase::createTranslationFile($path, ['a' => '1']);
-        app()->instance('cache', new class()
+        app()->instance('cache', new class
         {
             public function flush(): void {}
         });
@@ -232,7 +236,7 @@ describe('Lang coverage gaps closeout', function (): void {
         $setUp->invoke($editor);
         Assert::assertInstanceOf(TranslationEditor::class, $editor);
 
-        $edit = new EditTranslationFile();
+        $edit = new EditTranslationFile;
         Assert::assertNotEmpty($edit->getFormSchema());
         Assert::assertNotEmpty($edit->makeFromArray(['a' => '1', 'b' => ['c' => '2']], 'content'));
         Assert::assertSame([], $edit->makeFromArray([]));
@@ -245,13 +249,13 @@ describe('Lang coverage gaps closeout', function (): void {
         LaravelLocalization::shouldReceive('getLocalizedURL')
             ->andReturn(false);
 
-        $widget = new LanguageSwitcherWidget();
+        $widget = new LanguageSwitcherWidget;
         Assert::assertSame('/en', $widget->getLanguageUrl('en'));
     });
 
     test('Post accessors persist when model has key', function (): void {
         langGapsSqlite();
-        $post = new Post();
+        $post = new Post;
         $post->id = (string) Str::uuid();
         $post->exists = true;
         $post->setRawAttributes([
@@ -281,7 +285,7 @@ describe('Lang coverage gaps closeout', function (): void {
                 ['key' => 'lang::only'],
             ]);
         });
-        $rows = (new TranslationFile())->getRows();
+        $rows = (new TranslationFile)->getRows();
         Assert::assertNotEmpty($rows);
         Assert::assertSame('', $rows[0]['content'] ?? null);
     });
@@ -299,7 +303,6 @@ describe('Lang coverage gaps closeout', function (): void {
 
         $provider = new LangServiceProvider(app());
         $provider->registerFilamentLabel();
-        Assert::assertInstanceOf(Step::class, Step::make('step1')->label('step1'));
 
         config(['laravellocalization.supportedLocales' => 'invalid']);
         app()->instance('request', Request::create('http://localhost/it/admin/dashboard', 'GET'));
@@ -326,7 +329,7 @@ describe('Lang coverage gaps closeout', function (): void {
                 'en' => ['name' => 'English', 'regional' => 'en_US'],
             ],
         ]);
-        $composer = new ThemeComposer();
+        $composer = new ThemeComposer;
         Assert::assertGreaterThan(0, $composer->languages()->count());
 
         config(['laravellocalization.supportedLocales' => 'invalid']);

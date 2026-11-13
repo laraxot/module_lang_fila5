@@ -9,15 +9,11 @@ namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
-use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
+use Modules\Lang\Models\Traits\TranslationFileRowLoader;
 use Modules\Xot\Contracts\ProfileContract;
 use Sushi\Sushi;
-
-use function Safe\json_encode;
 
 /**
  * @property string|null $key
@@ -45,6 +41,15 @@ use function Safe\json_encode;
 class TranslationFile extends BaseModel
 {
     use Sushi;
+    use TranslationFileRowLoader;
+
+    /**
+     * La chiave è il nome del file (`xot::yes_no_enum`): senza keyType string ogni id
+     * diventava 0, l'elenco ripeteva la stessa riga e "Modifica" apriva `/translation-files/0` (404).
+     */
+    protected $keyType = 'string';
+
+    public $incrementing = false;
 
     protected $fillable = [
         'id',
@@ -82,79 +87,6 @@ class TranslationFile extends BaseModel
 
             return [];
         }
-    }
-
-    /**
-     * Carica i dati di traduzione con error handling robusto.
-     *
-     *
-     * @return array<int, array<string, mixed>>
-     *
-     * @throws \Throwable
-     */
-    private function loadTranslationDataWithErrorHandling(): array
-    {
-        $files = app(GetAllTranslationAction::class)->execute();
-
-        /** @var array<int, array<string, mixed>> $result */
-        $result = Arr::map($files, function (array $item) {
-            $key = $item['key'] ?? null;
-            /** @var string|int|float|bool|null $keyNarrowed */
-            $keyNarrowed = $key;
-            $keyStr = is_string($keyNarrowed) ? $keyNarrowed : (string) $keyNarrowed;
-            $item['id'] = isset($item['key']) ? $keyStr : '';
-
-            $pathValue = $item['path'] ?? null;
-            /** @var string|int|float|bool|null $pathValueNarrowed */
-            $pathValueNarrowed = $pathValue;
-            $pathStr = is_string($pathValueNarrowed) ? $pathValueNarrowed : (string) $pathValueNarrowed;
-            $item['name'] = isset($item['path']) ? basename($pathStr, '.php') : '';
-
-            if (isset($item['path'])) {
-                $path = $pathStr;
-                if (File::exists($path)) {
-                    $item['content'] = $this->loadFileContent($path);
-                } else {
-                    $item['content'] = '';
-                }
-            } else {
-                $item['content'] = '';
-            }
-
-            return $item;
-        });
-
-        return $result;
-    }
-
-    /**
-     * Carica il contenuto di un file di traduzione con fallback.
-     */
-    private function loadFileContent(string $path): string
-    {
-        try {
-            $content = File::getRequire($path);
-
-            return json_encode($content) ?: '';
-        } catch (\Throwable $e) {
-            Log::debug('Failed to load translation file', [
-                'path' => $path,
-                'error' => $e->getMessage(),
-            ]);
-
-            return '';
-        }
-    }
-
-    private function isRunningIdeHelper(): bool
-    {
-        if (defined('PHPSTAN_RUNNING')) {
-            return true;
-        }
-
-        $argv = $_SERVER['argv'] ?? [];
-
-        return is_array($argv) && in_array('ide-helper:models', $argv, true);
     }
 
     /**

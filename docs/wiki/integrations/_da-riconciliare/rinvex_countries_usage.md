@@ -10,6 +10,8 @@ updated: 2026-07-14
 qmd: "test 1"
 related:
   - "./italian-text-refined-audit-report.md"
+  - "../../../italian-text-refined-audit-report.md"
+status: draft
 ---
 # Rinvex Countries Usage in Lang Module
 
@@ -252,6 +254,10 @@ if ($country) {
 - [Filament Components](filament.md)
 - [Localization System](laravel-localization.md)
 - [Static Text Translation](static-text-translation.md)
+- [Translation File Management](../../../translation-file-management.md)
+- [Filament Components](filament.md)
+- [Localization System](laravel-localization.md)
+- [Static Text Translation](../../../static-text-translation.md)
 
 ## External Resources
 

@@ -13,9 +13,10 @@ metadata:
   type: procedure
   source: prompts/01.txt (migrated 2026-07-30)
   related_docs: []
+status: draft
 ---
 
-# Translation Study Guide — Laravel Lang Module
+# Translation Study Guide: Laravel Lang Module
 
 ## Context
 This module handles Laravel application translations. Translation errors have occurred in past development cycles, requiring deeper understanding of spatie/laravel-translatable.

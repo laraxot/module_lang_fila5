@@ -1,6 +1,12 @@
 ---
 bmad: true
 module: Lang
+title: "Decision Log - Modulo Lang"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, lang, bmad]
+qmd: "decision log - modulo lang lang"
 ---
 # Decision Log - Modulo Lang
 

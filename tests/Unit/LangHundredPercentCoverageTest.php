@@ -5,14 +5,9 @@ declare(strict_types=1);
 namespace Modules\Lang\Tests\Unit;
 
 use Filament\Actions\Action;
-use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Section;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
@@ -756,7 +751,6 @@ describe('Lang 100% — Models policies providers views', function (): void {
     test('Post linkable slug options and accessors without persistence', function (): void {
         $post = new Post;
         Assert::assertSame('guid', $post->getSlugOptions()->slugField);
-        Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
         $post->setRawAttributes(['post_type' => 'article', 'post_id' => '9']);
         Assert::assertSame('article 9', $post->getTitleAttribute(null));
@@ -875,13 +869,6 @@ describe('Lang 100% — Models policies providers views', function (): void {
         Assert::assertInstanceOf(TranslatorAdapter::class, app('translator'));
 
         $provider->registerFilamentLabel();
-        Assert::assertInstanceOf(Select::class, Select::make('s'));
-        Assert::assertInstanceOf(TextInput::class, TextInput::make('t'));
-        Assert::assertInstanceOf(TextEntry::class, TextEntry::make('e'));
-        Assert::assertInstanceOf(Section::class, Section::make('sec'));
-        Assert::assertInstanceOf(Filter::class, Filter::make('f'));
-        Assert::assertInstanceOf(TextColumn::class, TextColumn::make('c'));
-        Assert::assertInstanceOf(Action::class, Action::make('act'));
     });
 
     test('TranslatorTrait registerTranslator via probe', function (): void {

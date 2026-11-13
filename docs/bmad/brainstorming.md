@@ -1,5 +1,5 @@
 ---
-title: "Lang — brainstorming"
+title: "Lang: brainstorming"
 type: brainstorming
 tags: [lang, brainstorming, risks, open-questions, decisions, translations]
 created: 2026-09-28
@@ -16,7 +16,7 @@ module: Lang
 status: active
 ---
 
-# Lang — brainstorming
+# Lang: brainstorming
 
 > **SUMMARY**: indice dei contenuti di brainstorming per `Modules\Lang`.
 > Le domande ad alto valore, ipotesi, rischi e output attesi sono nei **shard**
@@ -61,7 +61,7 @@ status: active
 | Drift docs / codice / stories | `docs/bmad/stories/` multipli |
 | WIP concorrente e marker merge | `stories/git-status-fleet-merge-markers-lang.story.md` |
 | Migrazioni duplicate | `database/migrations/` vs `database/Migrations/` |
-| Lingue sparse | `lang/de/`, `lang/en/`, `resources/lang/it/` — 3 source distinti |
+| Lingue sparse | `lang/de/`, `lang/en/`, `resources/lang/it/`: 3 source distinti |
 | Adapter estende Laravel core | `app/Adapters/TranslatorAdapter.php:22` può rompersi al upgrade |
 
 ## Elementi non approvati (scartati o fuori scope)

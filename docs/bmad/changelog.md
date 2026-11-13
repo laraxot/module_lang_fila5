@@ -8,6 +8,9 @@ updated: 2026-07-14
 qmd: "migration filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
+  - "../italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: ../CHANGELOG.md
 ---
 # Changelog
 

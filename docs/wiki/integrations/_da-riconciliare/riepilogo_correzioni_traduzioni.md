@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "riepilogo correzioni traduzioni"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Riepilogo Correzioni Traduzioni - Gennaio 2025
@@ -134,6 +135,7 @@ php artisan tinker
 
 ### Documentazione Modulo Lang:
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
+- [Errori Comuni Traduzione](../../../errori_comuni_traduzione.md)
 - [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
 - [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
 

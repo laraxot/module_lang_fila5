@@ -10,6 +10,8 @@ updated: 2026-07-14
 qmd: "google translate"
 related:
   - "./italian-text-refined-audit-report.md"
+  - "../../../italian-text-refined-audit-report.md"
+status: draft
 ---
 # Plurale/Singolare e Localizzazione Date/Valute
 
@@ -196,6 +198,11 @@ related:
 ---
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [translations-storage.md](./translations-storage.md)
+- [translations-faq.md](../../../translations-faq.md)
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../../translation-keys-best-practices.md)
+---
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../../translation_keys_best_practices.md)
+- [translations-storage.md](../../../translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)
 # Plurale/Singolare e Localizzazione Date/Valute
@@ -381,6 +388,9 @@ related:
 - [translations-faq.md](./translations-faq.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
 - [translations-storage.md](./translations-storage.md)
+- [translations-faq.md](../../../translations-faq.md)
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../../translation-keys-best-practices.md)
+- [translations-storage.md](../../../translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)
 - [README.md](./README.md)
@@ -390,5 +400,7 @@ related:
 ---
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [translations-storage.md](./translations-storage.md)
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../../translation_keys_best_practices.md)
+- [translations-storage.md](../../../translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)

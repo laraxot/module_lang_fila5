@@ -1,6 +1,13 @@
 ---
 bmad: true
 module: Lang
+title: "readme"
+type: index
+updated: 2026-10-08
+tags: [docs, lang, wiki]
+qmd: "readme lang"
+status: superseded
+superseded_by: ../../integration/README.md
 ---
 # readme
 

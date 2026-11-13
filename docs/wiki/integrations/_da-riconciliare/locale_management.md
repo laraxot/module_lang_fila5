@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "locale management"
 issues: []
 discussions: []
+status: superseded
+superseded_by: locale-management.md
 ---
 
 # Gestione delle Lingue in Laravel

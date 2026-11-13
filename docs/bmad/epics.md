@@ -1,6 +1,12 @@
 ---
 bmad: true
 module: Lang
+title: "Epics e User Stories - Modulo Lang"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, lang, bmad]
+qmd: "epics e user stories - modulo lang lang"
 ---
 # Epics e User Stories - Modulo Lang
 

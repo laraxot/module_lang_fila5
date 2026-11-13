@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
+status: draft
 ---
 # Gestione Traduzioni - Regole Critiche
 
@@ -100,9 +101,9 @@ Prima di ogni commit, verificare:
 
 ## Collegamenti
 
-- [Regole Traduzioni](../../laravel/Modules/Xot/docs/translation-standards.md)
-- [Regole Traduzioni](../../laravel/modules/xot/docs/translation-standards.md)
-- [Regole Traduzioni](../../laravel/modules/xot/docs/translation-standards.md)
+- [Regole Traduzioni](../../Xot/docs/translation-standards.md)
+- [Regole Traduzioni](../../Xot/docs/translation-standards.md)
+- [Regole Traduzioni](../../Xot/docs/translation-standards.md)
 - [Best Practices Filament](filament-widget-best-practices.md)
 - [Enum Standards](enum_standards.md)
 

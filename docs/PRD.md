@@ -8,6 +8,8 @@ type: concept
 tags: [PRD, lang]
 created: 2026-08-04
 updated: 2026-08-04
+status: superseded
+superseded_by: prd.md
 ---
 # Product Requirements Document (PRD) - Lang Module
 
@@ -254,9 +256,9 @@ The Lang module provides a structured framework for managing lang operations wit
 | Module | Self-contained Laravel module following Laraxot conventions |
 
 ### Related Documents
-- [Architecture](architecture.md)
+- [Architecture](ARCHITECTURE.md)
 ---
-- [Architecture](architecture.md)
+- [Architecture](ARCHITECTURE.md)
 ---
 - [Architecture](ARCHITECTURE.md)
 - [Technical Specification](TECH_SPEC.md)
