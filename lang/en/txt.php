@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'fields' => [
         'email' => [
@@ -7,7 +9,6 @@ return [
             'placeholder' => 'Enter your email',
             'tooltip' => 'Use a valid email address',
             'icon' => 'heroicon-o-envelope',
-            'description' => 'email',
             'helper_text' => '',
         ],
         'password' => [
@@ -15,44 +16,30 @@ return [
             'placeholder' => 'Enter your password',
             'tooltip' => 'Password must contain at least 8 characters',
             'icon' => 'heroicon-o-lock-closed',
-            'description' => 'password',
             'helper_text' => '',
         ],
         'remember' => [
             'label' => 'Remember me',
             'tooltip' => 'Keep me signed in on this device',
-            'description' => 'remember',
             'helper_text' => '',
-            'placeholder' => 'remember',
         ],
         'test' => [
-            'label' => 'test',
-            'placeholder' => 'test',
-            'helper_text' => 'test',
-            'description' => 'test',
             'tooltip' => '',
         ],
         'test_date' => [
-            'label' => 'test_date',
-            'placeholder' => 'test_date',
-            'helper_text' => 'test_date',
-            'description' => 'test_date',
             'tooltip' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -248,232 +235,144 @@ return [
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'value' => [
-            'description' => 'value',
             'helper_text' => '',
-            'placeholder' => 'value',
-            'label' => 'value',
             'tooltip' => '',
         ],
         'values-list' => [
-            'description' => 'values-list',
             'helper_text' => '',
-            'placeholder' => 'values-list',
-            'label' => 'values-list',
             'tooltip' => '',
         ],
         'user_id' => [
-            'label' => 'user_id',
-            'placeholder' => 'user_id',
             'helper_text' => '',
-            'description' => 'user_id',
             'tooltip' => '',
         ],
         'name' => [
-            'label' => 'name',
-            'placeholder' => 'name',
             'helper_text' => '',
-            'description' => 'name',
             'tooltip' => '',
         ],
         'slug' => [
-            'label' => 'slug',
-            'placeholder' => 'slug',
             'helper_text' => '',
-            'description' => 'slug',
             'tooltip' => '',
         ],
         'category_id' => [
-            'label' => 'category_id',
-            'placeholder' => 'category_id',
             'helper_text' => '',
-            'description' => 'category_id',
             'tooltip' => '',
         ],
         'description' => [
-            'label' => 'description',
-            'placeholder' => 'description',
             'helper_text' => '',
-            'description' => 'description',
             'tooltip' => '',
         ],
         'details' => [
-            'label' => 'details',
-            'placeholder' => 'details',
             'helper_text' => '',
-            'description' => 'details',
             'tooltip' => '',
         ],
         'is_active' => [
-            'label' => 'is_active',
-            'placeholder' => 'is_active',
             'helper_text' => '',
-            'description' => 'is_active',
             'tooltip' => '',
         ],
         'ordering' => [
-            'label' => 'ordering',
-            'placeholder' => 'ordering',
             'helper_text' => '',
-            'description' => 'ordering',
             'tooltip' => '',
         ],
         'start_date' => [
-            'label' => 'start_date',
-            'placeholder' => 'start_date',
             'helper_text' => '',
-            'description' => 'start_date',
             'tooltip' => '',
         ],
         'end_date' => [
-            'label' => 'end_date',
-            'placeholder' => 'end_date',
             'helper_text' => '',
-            'description' => 'end_date',
             'tooltip' => '',
         ],
         'extensions' => [
-            'label' => 'extensions',
-            'placeholder' => 'extensions',
             'helper_text' => '',
-            'description' => 'extensions',
             'tooltip' => '',
         ],
         'sections' => [
-            'label' => 'sections',
-            'placeholder' => 'sections',
             'helper_text' => '',
-            'description' => 'sections',
             'tooltip' => '',
         ],
         'fields' => [
-            'label' => 'fields',
-            'placeholder' => 'fields',
             'helper_text' => '',
-            'description' => 'fields',
             'tooltip' => '',
         ],
         'type' => [
-            'label' => 'type',
-            'placeholder' => 'type',
             'helper_text' => '',
-            'description' => 'type',
             'tooltip' => '',
         ],
         'compact' => [
-            'label' => 'compact',
-            'placeholder' => 'compact',
             'helper_text' => '',
-            'description' => 'compact',
             'tooltip' => '',
         ],
         'aside' => [
-            'label' => 'aside',
-            'placeholder' => 'aside',
             'helper_text' => '',
-            'description' => 'aside',
             'tooltip' => '',
         ],
         'borderless' => [
-            'label' => 'borderless',
-            'placeholder' => 'borderless',
             'helper_text' => '',
-            'description' => 'borderless',
             'tooltip' => '',
         ],
         'icon' => [
-            'label' => 'icon',
-            'placeholder' => 'icon',
             'helper_text' => '',
-            'description' => 'icon',
             'tooltip' => '',
         ],
         'columns' => [
-            'label' => 'columns',
-            'placeholder' => 'columns',
             'helper_text' => '',
-            'description' => 'columns',
             'tooltip' => '',
         ],
         'itemIsDefault' => [
-            'description' => 'itemIsDefault',
             'helper_text' => '',
-            'placeholder' => 'itemIsDefault',
-            'label' => 'itemIsDefault',
             'tooltip' => '',
         ],
         'delete' => [
-            'label' => 'delete',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'edit' => [
-            'label' => 'edit',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'isActive' => [
-            'description' => 'isActive',
             'helper_text' => '',
-            'placeholder' => 'isActive',
-            'label' => 'isActive',
             'tooltip' => '',
         ],
         'status' => [
-            'label' => 'status',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'notes' => [
-            'description' => 'notes',
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
         ],
         'responses_count' => [
-            'description' => 'responses_count',
             'helper_text' => '',
-            'placeholder' => 'responses_count',
-            'label' => 'responses_count',
             'tooltip' => '',
         ],
         'itemKey' => [
-            'description' => 'itemKey',
             'helper_text' => '',
-            'placeholder' => 'itemKey',
-            'label' => 'itemKey',
             'tooltip' => '',
         ],
         'forms_count' => [
-            'description' => 'forms_count',
             'helper_text' => '',
-            'placeholder' => 'forms_count',
-            'label' => 'forms_count',
             'tooltip' => '',
         ],
         'responses_exists' => [
-            'description' => 'responses_exists',
             'helper_text' => '',
-            'placeholder' => 'responses_exists',
-            'label' => 'responses_exists',
             'tooltip' => '',
         ],
         'logo' => [
-            'description' => 'logo',
             'helper_text' => '',
             'label' => '',
             'tooltip' => '',
@@ -489,39 +388,19 @@ return [
             'description' => '',
         ],
         'view' => [
-            'label' => 'view',
-            'placeholder' => 'view',
-            'helper_text' => 'view',
-            'description' => 'view',
             'tooltip' => '',
         ],
         'address' => [
             'label' => 'address2',
-            'placeholder' => 'address',
-            'helper_text' => 'address',
-            'description' => 'address',
             'tooltip' => '',
         ],
-        'display_name' => [
-            'label' => 'display_name',
-        ],
         'location' => [
-            'label' => 'location',
-            'placeholder' => 'location',
-            'helper_text' => 'location',
-            'description' => 'location',
             'address' => [
                 'label' => 'location.address',
                 'placeholder' => 'location.address',
                 'helper_text' => 'location.address',
                 'description' => 'location.address',
             ],
-        ],
-        'coordinates' => [
-            'label' => 'coordinates',
-            'placeholder' => 'coordinates',
-            'helper_text' => 'coordinates',
-            'description' => 'coordinates',
         ],
         'file1' => [
             'jpg' => [
@@ -531,6 +410,7 @@ return [
                 'description' => 'file1.jpg',
             ],
         ],
+<<<<<<< .merge_file_SLLoHz
         'id' => [
             'label' => 'id',
             'placeholder' => 'id',
@@ -698,48 +578,22 @@ return [
             'placeholder' => 'hh_assenza_dalal',
             'helper_text' => 'hh_assenza_dalal',
             'description' => 'hh_assenza_dalal',
+=======
+        'dal' => [
+            'helper_text' => '',
+        ],
+        'al' => [
+            'helper_text' => '',
+        ],
+        'anno' => [
+            'helper_text' => '',
+>>>>>>> .merge_file_mnMhn2
         ],
         'valutatore_id' => [
-            'label' => 'valutatore_id',
-            'placeholder' => 'valutatore_id',
             'helper_text' => '',
-            'description' => 'valutatore_id',
-        ],
-        'nome_stabi' => [
-            'label' => 'nome_stabi',
-            'placeholder' => 'nome_stabi',
-            'helper_text' => 'nome_stabi',
-            'description' => 'nome_stabi',
         ],
         'nome_diri' => [
-            'label' => 'nome_diri',
-            'placeholder' => 'nome_diri',
             'helper_text' => '',
-            'description' => 'nome_diri',
-        ],
-        'nome_diri_plus' => [
-            'label' => 'nome_diri_plus',
-            'placeholder' => 'nome_diri_plus',
-            'helper_text' => 'nome_diri_plus',
-            'description' => 'nome_diri_plus',
-        ],
-        'parent_id' => [
-            'label' => 'parent_id',
-            'placeholder' => 'parent_id',
-            'helper_text' => 'parent_id',
-            'description' => 'parent_id',
-        ],
-        'new_type' => [
-            'label' => 'new_type',
-            'placeholder' => 'new_type',
-            'helper_text' => 'new_type',
-            'description' => 'new_type',
-        ],
-        'title' => [
-            'label' => 'title',
-            'placeholder' => 'title',
-            'helper_text' => 'title',
-            'description' => 'title',
         ],
         'txt' => [
             'label' => 'Text',
@@ -747,34 +601,9 @@ return [
             'helper_text' => 'Text',
             'description' => 'Text',
         ],
-        'id_tbl' => [
-            'label' => 'id_tbl',
-            'placeholder' => 'id_tbl',
-            'helper_text' => 'id_tbl',
-            'description' => 'id_tbl',
-        ],
-        'tbl' => [
-            'label' => 'tbl',
-            'placeholder' => 'tbl',
-            'helper_text' => 'tbl',
-            'description' => 'tbl',
-        ],
-        'obj' => [
-            'label' => 'obj',
-            'placeholder' => 'obj',
-            'helper_text' => 'obj',
-            'description' => 'obj',
-        ],
-        'act' => [
-            'label' => 'act',
-            'placeholder' => 'act',
-            'helper_text' => 'act',
-            'description' => 'act',
-        ],
         'note' => [
-            'label' => 'note',
-            'placeholder' => 'note',
             'helper_text' => '',
+<<<<<<< .merge_file_SLLoHz
             'description' => 'note',
         ],
         'data' => [
@@ -788,6 +617,8 @@ return [
             'placeholder' => 'created_by',
             'helper_text' => 'created_by',
             'description' => 'created_by',
+=======
+>>>>>>> .merge_file_mnMhn2
         ],
         'extra_attributes' => [
             'type' => [
@@ -803,72 +634,6 @@ return [
                 'description' => 'extra_attributes.anno',
             ],
         ],
-        'color' => [
-            'label' => 'color',
-            'placeholder' => 'color',
-            'helper_text' => 'color',
-            'description' => 'color',
-        ],
-        'rule' => [
-            'label' => 'rule',
-            'placeholder' => 'rule',
-            'helper_text' => 'rule',
-            'description' => 'rule',
-        ],
-        'is_disabled' => [
-            'label' => 'is_disabled',
-            'placeholder' => 'is_disabled',
-            'helper_text' => 'is_disabled',
-            'description' => 'is_disabled',
-        ],
-        'is_readonly' => [
-            'label' => 'is_readonly',
-            'placeholder' => 'is_readonly',
-            'helper_text' => 'is_readonly',
-            'description' => 'is_readonly',
-        ],
-        'field_name' => [
-            'label' => 'field_name',
-            'placeholder' => 'field_name',
-            'helper_text' => 'field_name',
-            'description' => 'field_name',
-        ],
-        'op' => [
-            'label' => 'op',
-            'placeholder' => 'op',
-            'helper_text' => 'op',
-            'description' => 'op',
-        ],
-        'option_type' => [
-            'label' => 'option_type',
-            'placeholder' => 'option_type',
-            'helper_text' => 'option_type',
-            'description' => 'option_type',
-        ],
-        'option_id' => [
-            'label' => 'option_id',
-            'placeholder' => 'option_id',
-            'helper_text' => 'option_id',
-            'description' => 'option_id',
-        ],
-        'pos' => [
-            'label' => 'pos',
-            'placeholder' => 'pos',
-            'helper_text' => 'pos',
-            'description' => 'pos',
-        ],
-        'txt1' => [
-            'label' => 'txt1',
-            'placeholder' => 'txt1',
-            'helper_text' => 'txt1',
-            'description' => 'txt1',
-        ],
-        'year' => [
-            'label' => 'year',
-            'placeholder' => 'year',
-            'helper_text' => 'year',
-            'description' => 'year',
-        ],
         'user' => [
             'name' => [
                 'label' => 'user.name',
@@ -877,148 +642,8 @@ return [
                 'description' => 'user.name',
             ],
         ],
-        'first_name' => [
-            'label' => 'first_name',
-            'placeholder' => 'first_name',
-            'helper_text' => 'first_name',
-            'description' => 'first_name',
-        ],
-        'last_name' => [
-            'label' => 'last_name',
-            'placeholder' => 'last_name',
-            'helper_text' => 'last_name',
-            'description' => 'last_name',
-        ],
-        'photo_profile' => [
-            'label' => 'photo_profile',
-            'placeholder' => 'photo_profile',
-            'helper_text' => 'photo_profile',
-            'description' => 'photo_profile',
-        ],
         'quadrimestre' => [
-            'label' => 'quadrimestre',
-            'placeholder' => 'quadrimestre',
             'helper_text' => '',
-            'description' => 'quadrimestre',
-        ],
-        'video' => [
-            'label' => 'video',
-        ],
-        'field' => [
-            'label' => 'field',
-            'placeholder' => 'field',
-            'helper_text' => 'field',
-            'description' => 'field',
-        ],
-        'allegato' => [
-            'label' => 'allegato',
-            'placeholder' => 'allegato',
-            'helper_text' => 'allegato',
-            'description' => 'allegato',
-        ],
-        'fattura' => [
-            'label' => 'fattura',
-        ],
-        'arguments' => [
-            'label' => 'arguments',
-        ],
-        'card' => [
-            'label' => 'card',
-            'placeholder' => 'card',
-            'helper_text' => 'card',
-            'description' => 'card',
-        ],
-        'c' => [
-            'label' => 'c',
-            'placeholder' => 'c',
-            'helper_text' => 'c',
-            'description' => 'c',
-        ],
-        'state' => [
-            'label' => 'state',
-            'placeholder' => 'state',
-            'helper_text' => 'state',
-            'description' => 'state',
-        ],
-        'hours' => [
-            'label' => 'hours',
-            'placeholder' => 'hours',
-            'helper_text' => 'hours',
-            'description' => 'hours',
-        ],
-        'collection' => [
-            'label' => 'collection',
-            'placeholder' => 'collection',
-            'helper_text' => 'collection',
-            'description' => 'collection',
-        ],
-        'select_state' => [
-            'label' => 'select_state',
-            'placeholder' => 'select_state',
-            'helper_text' => 'select_state',
-            'description' => 'select_state',
-        ],
-        'corner' => [
-            'label' => 'corner',
-            'placeholder' => 'corner',
-            'helper_text' => 'corner',
-            'description' => 'corner',
-        ],
-        'a' => [
-            'label' => 'a',
-        ],
-        'b' => [
-            'label' => 'b',
-        ],
-        'badge' => [
-            'label' => 'badge',
-            'placeholder' => 'badge',
-            'helper_text' => 'badge',
-            'description' => 'badge',
-        ],
-        'date' => [
-            'label' => 'date',
-            'placeholder' => 'date',
-            'helper_text' => 'date',
-            'description' => 'date',
-        ],
-        'order_column' => [
-            'label' => 'order_column',
-        ],
-        'map_picker' => [
-            'label' => 'map_picker',
-            'placeholder' => 'map_picker',
-            'helper_text' => 'map_picker',
-            'description' => 'map_picker',
-        ],
-        'extra' => [
-            'label' => 'extra',
-        ],
-        'anno_valutatore' => [
-            'label' => 'anno_valutatore',
-        ],
-        'x' => [
-            'label' => 'x',
-            'placeholder' => 'x',
-            'helper_text' => 'x',
-            'description' => 'x',
-        ],
-        'ratings' => [
-        ],
-        'indennitaTipoDettaglio' => [
-            'label' => 'indennitaTipoDettaglio',
-        ],
-        'author' => [
-            'label' => 'author',
-            'placeholder' => 'author',
-            'helper_text' => 'author',
-            'description' => 'author',
-        ],
-        'images' => [
-            'label' => 'images',
-            'placeholder' => 'images',
-            'helper_text' => 'images',
-            'description' => 'images',
         ],
     ],
     'actions' => [
@@ -1035,192 +660,106 @@ return [
             'color' => 'success',
         ],
         'request' => [
-            'label' => 'request',
-            'tooltip' => 'request',
             'icon' => 'request',
-        ],
-        'cancel' => [
-            'label' => 'cancel',
-        ],
-        'save' => [
-            'label' => 'save',
-        ],
-        'activeLocale' => [
-            'label' => 'activeLocale',
-        ],
-        'open' => [
-            'label' => 'open',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'createAnother' => [
-            'label' => 'createAnother',
         ],
         'hidePassword' => [
             'icon' => 'hidePassword',
-            'label' => 'hidePassword',
-            'tooltip' => 'hidePassword',
         ],
         'showPassword' => [
             'icon' => 'ui-showPassword',
-            'label' => 'showPassword',
-            'tooltip' => 'showPassword',
         ],
         'list_log_activities' => [
-            'label' => 'list_log_activities',
             'icon' => 'list_log_activities',
-            'tooltip' => 'list_log_activities',
         ],
         'table_layout_toggle' => [
-            'label' => 'table_layout_toggle',
             'icon' => 'table_layout_toggle',
-            'tooltip' => 'table_layout_toggle',
         ],
         'update_coordinates' => [
-            'label' => 'update_coordinates',
             'icon' => 'update_coordinates',
-            'tooltip' => 'update_coordinates',
         ],
         'edit' => [
-            'label' => 'edit',
             'icon' => 'edit',
-            'tooltip' => 'edit',
         ],
         'delete' => [
-            'label' => 'delete',
             'icon' => 'delete',
-            'tooltip' => 'delete',
         ],
         'SendRecordsNotificationBulkAction' => [
-            'label' => 'SendRecordsNotificationBulkAction',
             'icon' => 'SendRecordsNotificationBulkAction',
-            'tooltip' => 'SendRecordsNotificationBulkAction',
         ],
         'changePassword' => [
-            'label' => 'changePassword',
             'icon' => 'changePassword',
-            'tooltip' => 'changePassword',
         ],
         'test' => [
-            'label' => 'test',
             'icon' => 'test',
-            'tooltip' => 'test',
         ],
         'register' => [
-            'tooltip' => 'register',
             'icon' => 'register',
-            'label' => 'register',
         ],
         'refresh' => [
-            'label' => 'refresh',
             'icon' => 'refresh',
-            'tooltip' => 'refresh',
         ],
         'gg_presenza_dalal' => [
-            'label' => 'gg_presenza_dalal',
             'icon' => 'gg_presenza_dalal',
-            'tooltip' => 'gg_presenza_dalal',
         ],
         'gg_assenza_dalal' => [
-            'label' => 'gg_assenza_dalal',
             'icon' => 'gg_assenza_dalal',
-            'tooltip' => 'gg_assenza_dalal',
         ],
         'hh_assenza_dalal' => [
-            'label' => 'hh_assenza_dalal',
             'icon' => 'hh_assenza_dalal',
-            'tooltip' => 'hh_assenza_dalal',
         ],
         'stabi' => [
-            'label' => 'stabi',
             'icon' => 'stabi',
-            'tooltip' => 'stabi',
         ],
         'repar' => [
-            'label' => 'repar',
             'icon' => 'repar',
-            'tooltip' => 'repar',
         ],
         'nome_stabi' => [
-            'label' => 'nome_stabi',
             'icon' => 'nome_stabi',
-            'tooltip' => 'nome_stabi',
         ],
         'logout' => [
-            'tooltip' => 'logout',
             'icon' => 'logout',
-            'label' => 'logout',
         ],
         'profile' => [
-            'label' => 'profile',
             'icon' => 'profile',
-            'tooltip' => 'profile',
         ],
         'convert' => [
-            'label' => 'convert',
             'icon' => 'convert',
-            'tooltip' => 'convert',
         ],
         'field' => [
-            'label' => 'field',
             'icon' => 'field',
-            'tooltip' => 'field',
         ],
         'bet_action' => [
-            'label' => 'bet_action',
             'icon' => 'bet_action',
-            'tooltip' => 'bet_action',
         ],
         'export_xls_lazy_cov' => [
-            'label' => 'export_xls_lazy_cov',
             'icon' => 'export_xls_lazy_cov',
-            'tooltip' => 'export_xls_lazy_cov',
         ],
         'export_xls_cov' => [
-            'label' => 'export_xls_cov',
             'icon' => 'export_xls_cov',
-            'tooltip' => 'export_xls_cov',
         ],
         'title' => [
-            'label' => 'title',
             'icon' => 'title',
-            'tooltip' => 'title',
         ],
         'export_pdf' => [
-            'label' => 'export_pdf',
             'icon' => 'export_pdf',
-            'tooltip' => 'export_pdf',
         ],
         'export_flusso' => [
-            'label' => 'export_flusso',
             'icon' => 'export_flusso',
-            'tooltip' => 'export_flusso',
         ],
         'ImportAction' => [
-            'label' => 'ImportAction',
             'icon' => 'ImportAction',
-            'tooltip' => 'ImportAction',
         ],
         'next' => [
-            'label' => 'next',
             'icon' => 'next',
-            'tooltip' => 'next',
         ],
         'previous' => [
-            'label' => 'previous',
             'icon' => 'previous',
-            'tooltip' => 'previous',
         ],
         'billing' => [
-            'label' => 'billing',
             'icon' => 'billing',
-            'tooltip' => 'billing',
         ],
         'view' => [
-            'label' => 'view',
             'icon' => 'view',
-            'tooltip' => 'view',
         ],
     ],
     'navigation' => [
@@ -1238,6 +777,7 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'sections' => [
+<<<<<<< .merge_file_SLLoHz
         'address' => [
             'label' => 'address',
             'heading' => 'address',
@@ -1270,10 +810,13 @@ return [
             'label' => 'Log Details',
             'heading' => 'Log Details',
         ],
+=======
+>>>>>>> .merge_file_mnMhn2
         'empty' => [
             'label' => '',
             'heading' => '',
         ],
+<<<<<<< .merge_file_SLLoHz
         'field' => [
             'label' => 'field',
             'heading' => 'field',
@@ -1304,5 +847,7 @@ return [
         'Riepilogo' => [
             'label' => 'Riepilogo',
         ],
+=======
+>>>>>>> .merge_file_mnMhn2
     ],
 ];

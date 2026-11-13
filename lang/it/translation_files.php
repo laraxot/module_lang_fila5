@@ -37,14 +37,10 @@ return [
             'label' => 'Vista',
         ],
         'lang' => [
-            'tooltip' => 'lang',
             'icon' => 'lang',
-            'label' => 'lang',
         ],
         'layout' => [
-            'tooltip' => 'layout',
             'icon' => 'layout',
-            'label' => 'layout',
         ],
     ],
 ];

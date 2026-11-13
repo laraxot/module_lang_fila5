@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'model' => [
         'label' => 'translation file.model',
@@ -14,38 +16,30 @@ return [
     ],
     'fields' => [
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'edit' => [
-            'label' => 'edit',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'content' => [
-            'description' => 'content',
-            'helper_text' => 'content',
-            'placeholder' => 'content',
             'label' => '',
             'tooltip' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -73,13 +67,11 @@ return [
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'key' => [
-            'label' => 'key',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -87,7 +79,6 @@ return [
             'help' => 'Translation identifier key',
         ],
         'delete' => [
-            'label' => 'delete',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -95,6 +86,7 @@ return [
     ],
     'actions' => [
         'create' => [
+<<<<<<< .merge_file_K67odE
             'label' => 'create',
             'tooltip' => 'Create new translation file',
             'success' => 'Translation file created successfully',
@@ -102,6 +94,13 @@ return [
         'lang' => [
             'label' => 'lang',
             'tooltip' => 'Select language',
+=======
+            'tooltip' => 'Crea nuovo file di traduzione',
+            'success' => 'File di traduzione creato con successo',
+        ],
+        'lang' => [
+            'tooltip' => 'Seleziona lingua',
+>>>>>>> .merge_file_kbwPmm
         ],
     ],
     'label' => 'Missing Label',
