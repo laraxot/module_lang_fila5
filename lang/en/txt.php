@@ -592,16 +592,16 @@ return [
             'description' => 'matr',
         ],
         'cognome' => [
-            'label' => 'cognome',
-            'placeholder' => 'cognome',
-            'helper_text' => 'cognome',
-            'description' => 'cognome',
+            'label' => 'last name',
+            'placeholder' => 'last name',
+            'helper_text' => 'last name',
+            'description' => 'last name',
         ],
         'nome' => [
-            'label' => 'nome',
-            'placeholder' => 'nome',
-            'helper_text' => 'nome',
-            'description' => 'nome',
+            'label' => 'first name',
+            'placeholder' => 'first name',
+            'helper_text' => 'first name',
+            'description' => 'first name',
         ],
         'propro' => [
             'label' => 'propro',
@@ -664,22 +664,22 @@ return [
             'description' => 'repar_txt',
         ],
         'dal' => [
-            'label' => 'dal',
-            'placeholder' => 'dal',
+            'label' => 'from',
+            'placeholder' => 'from',
             'helper_text' => '',
-            'description' => 'dal',
+            'description' => 'from',
         ],
         'al' => [
-            'label' => 'al',
-            'placeholder' => 'al',
+            'label' => 'to',
+            'placeholder' => 'to',
             'helper_text' => '',
-            'description' => 'al',
+            'description' => 'to',
         ],
         'anno' => [
-            'label' => 'anno',
-            'placeholder' => 'anno',
+            'label' => 'year',
+            'placeholder' => 'year',
             'helper_text' => '',
-            'description' => 'anno',
+            'description' => 'year',
         ],
         'gg_presenza_dalal' => [
             'label' => 'gg_presenza_dalal',
@@ -778,10 +778,10 @@ return [
             'description' => 'note',
         ],
         'data' => [
-            'label' => 'data',
-            'placeholder' => 'data',
-            'helper_text' => 'data',
-            'description' => 'data',
+            'label' => 'date',
+            'placeholder' => 'date',
+            'helper_text' => 'date',
+            'description' => 'date',
         ],
         'created_by' => [
             'label' => 'created_by',
@@ -1267,8 +1267,8 @@ return [
             'heading' => 'assenze',
         ],
         'Dettagli Log' => [
-            'label' => 'Dettagli Log',
-            'heading' => 'Dettagli Log',
+            'label' => 'Log Details',
+            'heading' => 'Log Details',
         ],
         'empty' => [
             'label' => '',
@@ -1287,8 +1287,8 @@ return [
             'heading' => 'Disservizio',
         ],
         'Autore della segnalazione' => [
-            'label' => 'Autore della segnalazione',
-            'heading' => 'Autore della segnalazione',
+            'label' => 'Report author',
+            'heading' => 'Report author',
         ],
     ],
     'steps' => [
@@ -1296,10 +1296,10 @@ return [
             'label' => 'test',
         ],
         'Informativa sulla privacy' => [
-            'label' => 'Informativa sulla privacy',
+            'label' => 'Privacy notice',
         ],
         'Dati di segnalazione' => [
-            'label' => 'Dati di segnalazione',
+            'label' => 'Report data',
         ],
         'Riepilogo' => [
             'label' => 'Riepilogo',

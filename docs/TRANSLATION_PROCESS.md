@@ -10,8 +10,6 @@ discussions: []
 module: theme
 topic: TRANSLATION_PROCESS
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
-status: superseded
-superseded_by: quick_reference.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules

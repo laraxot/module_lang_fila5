@@ -8,17 +8,15 @@ type: "index"
 tags: [skills, lang, translations, localization]
 module: "Lang"
 updated: 2026-05-12
-status: superseded
-superseded_by: INDEX.md
 ---
 
-# Skills: Lang Module Wiki
+# Skills — Lang Module Wiki
 
 > Skill operative del modulo Lang. Load on-demand.
 
 ## Available Skills
 
-- [translation-key-audit](./translation-key-audit.md): audit di chiavi, path e ownership delle traduzioni modulo/tema/Filament
+- [translation-key-audit](./translation-key-audit.md) — audit di chiavi, path e ownership delle traduzioni modulo/tema/Filament
 
 ## Usage
 
@@ -28,4 +26,4 @@ qmd search "Lang module skill translation audit" --limit 5
 
 ---
 
-**Upstream:** [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+**Upstream:** [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)

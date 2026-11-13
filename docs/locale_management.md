@@ -10,8 +10,6 @@ discussions: []
 module: theme
 topic: LOCALE_MANAGEMENT
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
-status: superseded
-superseded_by: quick_reference.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules

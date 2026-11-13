@@ -3,8 +3,8 @@
 return [
     'model' => [
         'label' => 'translation file.model',
-        'placeholder' => 'Seleziona file traduzione',
-        'helper_text' => 'File di traduzione per la gestione delle lingue',
+        'placeholder' => 'Select translation file',
+        'helper_text' => 'Translation file for language management',
     ],
     'navigation' => [
         'label' => 'Navigation Label',
@@ -63,7 +63,7 @@ return [
                         'description' => 'snapshots.fields.updated_at.label',
                         'helper_text' => 'snapshots.fields.updated_at.label',
                         'placeholder' => 'snapshots.fields.updated_at.label',
-                        'label' => 'Etichetta Data',
+                        'label' => 'Date Label',
                     ],
                 ],
             ],
@@ -83,8 +83,8 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-            'placeholder' => 'Inserisci chiave traduzione',
-            'help' => 'Chiave identificativa della traduzione',
+            'placeholder' => 'Enter translation key',
+            'help' => 'Translation identifier key',
         ],
         'delete' => [
             'label' => 'delete',
@@ -96,12 +96,12 @@ return [
     'actions' => [
         'create' => [
             'label' => 'create',
-            'tooltip' => 'Crea nuovo file di traduzione',
-            'success' => 'File di traduzione creato con successo',
+            'tooltip' => 'Create new translation file',
+            'success' => 'Translation file created successfully',
         ],
         'lang' => [
             'label' => 'lang',
-            'tooltip' => 'Seleziona lingua',
+            'tooltip' => 'Select language',
         ],
     ],
     'label' => 'Missing Label',
