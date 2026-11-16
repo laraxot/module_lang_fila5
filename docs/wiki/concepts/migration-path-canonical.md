@@ -54,6 +54,17 @@ La sottocartella **`migrations/Migrations/`** è un anti-pattern peggiore del so
 | `TranslationFile` | Sushi: nessuna tabella DB |
 | `language_lines` | `2024_03_20_000001_create_language_lines_table.php`: tabella Spatie translation-loader (modello vendor, non modulo) |
 
+<<<<<<< .merge_file_01fUEo
+Migrazioni additive per `Post` e `Translation`:
+
+| Modello | File migrazione |
+|---------|-----------------|
+| `Post` | `2026_11_05_100000_update_posts_table.php` |
+| `Translation` | `2026_11_05_100001_update_translations_table.php` |
+
+Anche gli aggiornamenti usano la tabella plurale nel filename; l'azione è
+esplicita e `$model_class` identifica il modello owner.
+=======
 Le modifiche sono state consolidate nelle migrazioni owner (non esistono più
 migrazioni additive separate per questi modelli):
 
@@ -64,7 +75,11 @@ migrazioni additive separate per questi modelli):
 
 Il filename usa sempre la tabella plurale e `$model_class` identifica il modello
 owner; il corpo resta idempotente per gli schemi già esistenti.
+<<<<<<< .merge_file_7a27h3
 >>>>>>> .merge_file_uQgj1r
+=======
+>>>>>>> .merge_file_D3Pvtw
+>>>>>>> .merge_file_dKnpZe
 
 ## Verifica
 
