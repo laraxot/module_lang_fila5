@@ -1,10 +1,10 @@
 ---
-title: "locale management"
+title: "LOCALE MANAGEMENT"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "locale management"
+qmd: "LOCALE MANAGEMENT"
 issues: []
 discussions: []
 module: theme

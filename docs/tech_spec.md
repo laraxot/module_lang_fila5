@@ -1,5 +1,5 @@
 ---
-qmd: "tech spec"
+qmd: "TECH SPEC"
 issues: []
 discussions: []
 title: "Technical Specification - Lang Module"
