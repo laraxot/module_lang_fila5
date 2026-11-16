@@ -410,175 +410,6 @@ return [
                 'description' => 'file1.jpg',
             ],
         ],
-<<<<<<< .merge_file_SLLoHz
-        'id' => [
-            'label' => 'id',
-            'placeholder' => 'id',
-            'helper_text' => 'id',
-            'description' => 'id',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-            'placeholder' => 'created_at',
-            'helper_text' => 'created_at',
-            'description' => 'created_at',
-        ],
-        'updated_at' => [
-            'label' => 'updated_at',
-        ],
-        'appointment_date' => [
-            'label' => 'appointment_date',
-            'placeholder' => 'appointment_date',
-            'helper_text' => 'appointment_date',
-            'description' => 'appointment_date',
-        ],
-        'contact' => [
-            'label' => 'contact',
-        ],
-        'invoice' => [
-            'label' => 'invoice',
-            'placeholder' => 'invoice',
-            'helper_text' => 'invoice',
-            'description' => 'invoice',
-        ],
-        'contract' => [
-            'label' => 'contract',
-            'placeholder' => 'contract',
-            'helper_text' => 'contract',
-            'description' => 'contract',
-        ],
-        'receipt' => [
-            'label' => 'receipt',
-            'placeholder' => 'receipt',
-            'helper_text' => 'receipt',
-            'description' => 'receipt',
-        ],
-        'ha_diritto' => [
-            'label' => 'ha_diritto',
-            'placeholder' => 'ha_diritto',
-            'helper_text' => 'ha_diritto',
-            'description' => 'ha_diritto',
-        ],
-        'motivo' => [
-            'label' => 'motivo',
-            'placeholder' => 'motivo',
-            'helper_text' => 'motivo',
-            'description' => 'motivo',
-        ],
-        'matr' => [
-            'label' => 'matr',
-            'placeholder' => 'matr',
-            'helper_text' => 'matr',
-            'description' => 'matr',
-        ],
-        'cognome' => [
-            'label' => 'last name',
-            'placeholder' => 'last name',
-            'helper_text' => 'last name',
-            'description' => 'last name',
-        ],
-        'nome' => [
-            'label' => 'first name',
-            'placeholder' => 'first name',
-            'helper_text' => 'first name',
-            'description' => 'first name',
-        ],
-        'propro' => [
-            'label' => 'propro',
-            'placeholder' => 'propro',
-            'helper_text' => 'propro',
-            'description' => 'propro',
-        ],
-        'posfun' => [
-            'label' => 'posfun',
-            'placeholder' => 'posfun',
-            'helper_text' => 'posfun',
-            'description' => 'posfun',
-        ],
-        'posiz' => [
-            'label' => 'posiz',
-            'placeholder' => 'posiz',
-            'helper_text' => 'posiz',
-            'description' => 'posiz',
-        ],
-        'posiz_txt' => [
-            'label' => 'posiz_txt',
-            'placeholder' => 'posiz_txt',
-            'helper_text' => 'posiz_txt',
-            'description' => 'posiz_txt',
-        ],
-        'disci1' => [
-            'label' => 'disci1',
-            'placeholder' => 'disci1',
-            'helper_text' => 'disci1',
-            'description' => 'disci1',
-        ],
-        'disci1_txt' => [
-            'label' => 'disci1_txt',
-            'placeholder' => 'disci1_txt',
-            'helper_text' => 'disci1_txt',
-            'description' => 'disci1_txt',
-        ],
-        'stabi' => [
-            'label' => 'stabi',
-            'placeholder' => 'stabi',
-            'helper_text' => 'stabi',
-            'description' => 'stabi',
-        ],
-        'stabi_txt' => [
-            'label' => 'stabi_txt',
-            'placeholder' => 'stabi_txt',
-            'helper_text' => 'stabi_txt',
-            'description' => 'stabi_txt',
-        ],
-        'repar' => [
-            'label' => 'repar',
-            'placeholder' => 'repar',
-            'helper_text' => 'repar',
-            'description' => 'repar',
-        ],
-        'repar_txt' => [
-            'label' => 'repar_txt',
-            'placeholder' => 'repar_txt',
-            'helper_text' => 'repar_txt',
-            'description' => 'repar_txt',
-        ],
-        'dal' => [
-            'label' => 'from',
-            'placeholder' => 'from',
-            'helper_text' => '',
-            'description' => 'from',
-        ],
-        'al' => [
-            'label' => 'to',
-            'placeholder' => 'to',
-            'helper_text' => '',
-            'description' => 'to',
-        ],
-        'anno' => [
-            'label' => 'year',
-            'placeholder' => 'year',
-            'helper_text' => '',
-            'description' => 'year',
-        ],
-        'gg_presenza_dalal' => [
-            'label' => 'gg_presenza_dalal',
-            'placeholder' => 'gg_presenza_dalal',
-            'helper_text' => 'gg_presenza_dalal',
-            'description' => 'gg_presenza_dalal',
-        ],
-        'gg_assenza_dalal' => [
-            'label' => 'gg_assenza_dalal',
-            'placeholder' => 'gg_assenza_dalal',
-            'helper_text' => 'gg_assenza_dalal',
-            'description' => 'gg_assenza_dalal',
-        ],
-        'hh_assenza_dalal' => [
-            'label' => 'hh_assenza_dalal',
-            'placeholder' => 'hh_assenza_dalal',
-            'helper_text' => 'hh_assenza_dalal',
-            'description' => 'hh_assenza_dalal',
-=======
         'dal' => [
             'helper_text' => '',
         ],
@@ -587,7 +418,6 @@ return [
         ],
         'anno' => [
             'helper_text' => '',
->>>>>>> .merge_file_mnMhn2
         ],
         'valutatore_id' => [
             'helper_text' => '',
@@ -603,22 +433,6 @@ return [
         ],
         'note' => [
             'helper_text' => '',
-<<<<<<< .merge_file_SLLoHz
-            'description' => 'note',
-        ],
-        'data' => [
-            'label' => 'date',
-            'placeholder' => 'date',
-            'helper_text' => 'date',
-            'description' => 'date',
-        ],
-        'created_by' => [
-            'label' => 'created_by',
-            'placeholder' => 'created_by',
-            'helper_text' => 'created_by',
-            'description' => 'created_by',
-=======
->>>>>>> .merge_file_mnMhn2
         ],
         'extra_attributes' => [
             'type' => [
@@ -777,77 +591,9 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'sections' => [
-<<<<<<< .merge_file_SLLoHz
-        'address' => [
-            'label' => 'address',
-            'heading' => 'address',
-        ],
-        'diritto' => [
-            'label' => 'diritto',
-            'heading' => 'diritto',
-        ],
-        'lavoratore' => [
-            'label' => 'lavoratore',
-            'heading' => 'lavoratore',
-        ],
-        'qua' => [
-            'label' => 'qua',
-            'heading' => 'qua',
-        ],
-        'rep' => [
-            'label' => 'rep',
-            'heading' => 'rep',
-        ],
-        'periodo' => [
-            'label' => 'periodo',
-            'heading' => 'periodo',
-        ],
-        'assenze' => [
-            'label' => 'assenze',
-            'heading' => 'assenze',
-        ],
-        'Dettagli Log' => [
-            'label' => 'Log Details',
-            'heading' => 'Log Details',
-        ],
-=======
->>>>>>> .merge_file_mnMhn2
         'empty' => [
             'label' => '',
             'heading' => '',
         ],
-<<<<<<< .merge_file_SLLoHz
-        'field' => [
-            'label' => 'field',
-            'heading' => 'field',
-        ],
-        'Luogo' => [
-            'label' => 'Luogo',
-            'heading' => 'Luogo',
-        ],
-        'Disservizio' => [
-            'label' => 'Disservizio',
-            'heading' => 'Disservizio',
-        ],
-        'Autore della segnalazione' => [
-            'label' => 'Report author',
-            'heading' => 'Report author',
-        ],
-    ],
-    'steps' => [
-        'test' => [
-            'label' => 'test',
-        ],
-        'Informativa sulla privacy' => [
-            'label' => 'Privacy notice',
-        ],
-        'Dati di segnalazione' => [
-            'label' => 'Report data',
-        ],
-        'Riepilogo' => [
-            'label' => 'Riepilogo',
-        ],
-=======
->>>>>>> .merge_file_mnMhn2
     ],
 ];

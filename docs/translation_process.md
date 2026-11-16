@@ -1,10 +1,10 @@
 ---
-title: "translation process"
+title: "TRANSLATION PROCESS"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "translation process"
+qmd: "TRANSLATION PROCESS"
 issues: []
 discussions: []
 module: theme

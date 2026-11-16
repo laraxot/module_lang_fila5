@@ -5,8 +5,8 @@ declare(strict_types=1);
 return [
     'model' => [
         'label' => 'translation file.model',
-        'placeholder' => 'Select translation file',
-        'helper_text' => 'Translation file for language management',
+        'placeholder' => 'Seleziona file traduzione',
+        'helper_text' => 'File di traduzione per la gestione delle lingue',
     ],
     'navigation' => [
         'label' => 'Navigation Label',
@@ -57,7 +57,7 @@ return [
                         'description' => 'snapshots.fields.updated_at.label',
                         'helper_text' => 'snapshots.fields.updated_at.label',
                         'placeholder' => 'snapshots.fields.updated_at.label',
-                        'label' => 'Date Label',
+                        'label' => 'Etichetta Data',
                     ],
                 ],
             ],
@@ -75,8 +75,8 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-            'placeholder' => 'Enter translation key',
-            'help' => 'Translation identifier key',
+            'placeholder' => 'Inserisci chiave traduzione',
+            'help' => 'Chiave identificativa della traduzione',
         ],
         'delete' => [
             'tooltip' => '',
@@ -86,21 +86,11 @@ return [
     ],
     'actions' => [
         'create' => [
-<<<<<<< .merge_file_K67odE
-            'label' => 'create',
-            'tooltip' => 'Create new translation file',
-            'success' => 'Translation file created successfully',
-        ],
-        'lang' => [
-            'label' => 'lang',
-            'tooltip' => 'Select language',
-=======
             'tooltip' => 'Crea nuovo file di traduzione',
             'success' => 'File di traduzione creato con successo',
         ],
         'lang' => [
             'tooltip' => 'Seleziona lingua',
->>>>>>> .merge_file_kbwPmm
         ],
     ],
     'label' => 'Missing Label',
