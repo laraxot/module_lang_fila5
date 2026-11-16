@@ -99,3 +99,8 @@ fuori controllo.
 
 - `docs/wiki/rules/no-filament-labels.md` — il divieto e il perche'
 - `docs/wiki/rules/filament-table-columns-array-keys.md` — chiavi associative
+
+## Documentazione correlata
+
+- [Audit BMAD](./bmad/audit.md)
+- [ECC](./ecc/lang-ecc-audit.md)
