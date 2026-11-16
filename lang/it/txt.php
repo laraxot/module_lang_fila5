@@ -493,6 +493,7 @@ return [
         ],
         'request' => [
             'icon' => 'request',
+            'label' => 'request',
         ],
         'hidePassword' => [
             'icon' => 'hidePassword',

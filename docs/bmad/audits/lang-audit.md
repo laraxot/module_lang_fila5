@@ -30,6 +30,24 @@ PHPStan/Pest proporzionati.
 | Marker di conflitto | 0 |
 | Label/tooltip letterali Filament | 2 |
 
+
+## Analisi Funzionale e Scopo di Dominio
+
+### Perché Esiste (Scopo Fondamentale)
+Internazionalizzazione dinamica e centralizzata per tutti i moduli e temi del sistema.
+
+### Valore di Business e Utilità
+Elimina qualsiasi testo o label hardcoded nelle viste Blade e nei pannelli Filament, garantendo dizionari strutturati e localizzazione automatica.
+
+### Architettura e Pattern Laraxot
+Dizionari strutturati su navigation, label, plural_label, fields, actions. LangServiceProvider auto-risolve le chiavi secondo convenzione modulare.
+
+### Standard di Qualità e Conformità
+- **PHPStan**: Confermato a Level Max con 0 errori.
+- **Filament**: Conformità Filament 5 con estensione delle classi XotBase*.
+- **Naming**: Convenzione kebab-case rigorosa per tutti i documenti e classi PSR-4.
+- **Trans**: Traduzioni dinamiche via Lang, nessun testo hardcoded.
+
 ## Audit per dimensione
 
 ### Architettura e confini
