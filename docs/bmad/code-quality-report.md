@@ -1,4 +1,5 @@
 ---
+qmd: "lang bmad code quality report md"
 bmad: true
 module: Lang
 ---

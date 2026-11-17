@@ -1,4 +1,5 @@
 ---
+qmd: "lang bmad code redundancy audit md"
 title: "Code redundancy audit — Lang"
 type: source
 status: draft

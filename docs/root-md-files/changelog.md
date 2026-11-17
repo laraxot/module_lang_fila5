@@ -1,3 +1,10 @@
+---
+title: "Changelog"
+qmd: "lang root md files changelog md"
+type: note
+tags: [documentation]
+---
+
 # Changelog
 
 All notable changes to `:package_name` will be documented in this file.

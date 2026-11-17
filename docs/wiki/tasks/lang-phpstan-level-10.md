@@ -1,4 +1,5 @@
 ---
+qmd: "lang wiki tasks lang phpstan level 10 md"
 bmad: true
 module: Lang
 ---

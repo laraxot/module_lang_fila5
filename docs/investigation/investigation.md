@@ -1,4 +1,5 @@
 ---
+qmd: "lang investigation investigation md"
 type: investigation
 title: "Investigation Translation Pipeline"
 links: {github_issue: #XXX}
