@@ -1,12 +1,6 @@
 ---
 bmad: true
 module: Lang
-title: "Task: Lang PHPStan Level 10"
-type: note
-status: draft
-updated: 2026-10-15
-tags: [docs, lang, wiki]
-qmd: "task: lang phpstan level 10 lang"
 ---
 # Task: Lang PHPStan Level 10
 
@@ -26,5 +20,5 @@ Portare il modulo Lang dal Livello 9 al Livello 10 di PHPStan, eliminando ogni i
 - [ ] Verificare conformità totale senza l'uso di `mixed`.
 
 ## 🔗 Riferimenti
-- [Roadmap Lang](../../roadmap.md)
+- [Roadmap Lang](../roadmap.md)
 - [PHPStan Journey](../../../../docs/phpstan_journey.md)
