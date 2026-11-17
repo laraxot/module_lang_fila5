@@ -7,8 +7,6 @@ type: technical_spec
 tags: [tech spec, lang, implementation]
 created: 2026-08-04
 updated: 2026-08-04
-status: superseded
-superseded_by: tech-spec.md
 ---
 # Technical Specification - Lang Module
 
