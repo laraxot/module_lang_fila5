@@ -1,11 +1,7 @@
 ---
 type: investigation
 title: "Investigation Translation Pipeline"
-links: {github_issue: "#XXX"}
-status: draft
-updated: 2026-10-08
-tags: [docs, lang, investigation]
-qmd: "investigation: translation pipeline lang"
+links: {github_issue: #XXX}
 ---
 # Investigation: Translation Pipeline
 

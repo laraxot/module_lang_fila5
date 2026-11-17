@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "translation files update"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Aggiornamento File di Traduzione - Gennaio 2025
@@ -133,7 +132,6 @@ return [
 
 - [Translation Rules](../Xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
-- [Translation Standards](../../../translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 
 ## Prossimi Passi

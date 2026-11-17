@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'fields' => [
         'fields' => [
@@ -24,13 +22,13 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
         'create' => [
-            'label' => 'Crea Translation Editor',
+            'label' => 'Create Translation Editor',
         ],
         'edit' => [
-            'label' => 'Modifica Translation Editor',
+            'label' => 'Edit Translation Editor',
         ],
         'delete' => [
-            'label' => 'Elimina Translation Editor',
+            'label' => 'Delete Translation Editor',
         ],
     ],
 ];

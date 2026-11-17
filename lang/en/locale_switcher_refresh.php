@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'fields' => [
         'locale' => [
@@ -24,13 +22,13 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
         'create' => [
-            'label' => 'Crea Locale Switcher Refresh',
+            'label' => 'Create Locale Switcher Refresh',
         ],
         'edit' => [
-            'label' => 'Modifica Locale Switcher Refresh',
+            'label' => 'Edit Locale Switcher Refresh',
         ],
         'delete' => [
-            'label' => 'Elimina Locale Switcher Refresh',
+            'label' => 'Delete Locale Switcher Refresh',
         ],
     ],
 ];
