@@ -10,7 +10,6 @@ updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
 ---
 # Regole per le Traduzioni in Filament
 
@@ -33,7 +32,7 @@ status: draft
   'label' => 'patient.navigation',
   ```
 - Consulta anche:
-  - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
+  - [translation-keys-best-practices.md](translation-keys-best-practices.md)
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [docs Modulo Generico](../../<nome modulo>/docs/translations.md)
 
@@ -155,7 +154,7 @@ Tutte le label, placeholder, messaggi e azioni relativi a disponibilità e appun
   'label' => 'patient.navigation',
   ```
 - Consulta anche:
-  - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
+  - [translation-keys-best-practices.md](translation-keys-best-practices.md)
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [docs <nome progetto>](../../<nome progetto>/docs/translations.md)
 

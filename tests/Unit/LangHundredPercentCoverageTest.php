@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+
 namespace Modules\Lang\Tests\Unit;
+
+use Modules\Lang\Tests\Support\Ensure;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
@@ -80,7 +83,6 @@ use function Safe\rmdir;
 use function Safe\touch;
 use function Safe\unlink;
 
-uses(TestCase::class);
 
 /**
  * @param  list<string>  $permissions
@@ -257,8 +259,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         });
 
         try {
-            expect(fn () => app(SaveTransAction::class)->execute('lang::tmproot', 'not-array'))
-                ->toThrow(\Exception::class);
+            Ensure::throws(fn () => app(SaveTransAction::class)->execute('lang::tmproot', 'not-array'), \Exception::class);
         } finally {
             if (file_exists($file)) {
                 unlink($file);
@@ -340,7 +341,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $read->shouldReceive('toPhp')->andReturn('<?php return [;');
         app()->instance(ReadTranslationFileAction::class, $read);
 
-        expect(fn () => $action->execute($path, ['x' => 'y']))->toThrow(\Exception::class);
+        Ensure::throws(fn () => $action->execute($path, ['x' => 'y']), \Exception::class);
     });
 
     test('SyncTranslationsAction covers skip paths nested merge and getModules', function (): void {
@@ -820,7 +821,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
             'group' => 'g',
             'item' => 'i',
         ]);
-        expect(fn () => $data->getFilename())->toThrow(\Exception::class);
+        Ensure::throws(fn () => $data->getFilename(), \Exception::class);
 
         $file = sys_get_temp_dir().'/td_'.uniqid().'.php';
         file_put_contents($file, "<?php\nreturn 'nope';\n");
@@ -831,7 +832,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
             'item' => 'i',
             'filename' => $file,
         ]);
-        expect(fn () => $data2->getData())->toThrow(\Exception::class);
+        Ensure::throws(fn () => $data2->getData(), \Exception::class);
         unlink($file);
     });
 
@@ -895,21 +896,21 @@ describe('Lang 100% — Models policies providers views', function (): void {
 
     test('ThemeComposer covers invalid config admin url and missing current lang', function (): void {
         config(['laravellocalization.supportedLocales' => 'bad']);
-        expect(fn () => (new ThemeComposer)->languages())->toThrow(\Exception::class);
+        Ensure::throws(fn () => (new ThemeComposer)->languages(), \Exception::class);
 
         config([
             'laravellocalization.supportedLocales' => [
                 'it' => 'nope',
             ],
         ]);
-        expect(fn () => (new ThemeComposer)->languages())->toThrow(\InvalidArgumentException::class);
+        Ensure::throws(fn () => (new ThemeComposer)->languages(), \InvalidArgumentException::class);
 
         config([
             'laravellocalization.supportedLocales' => [
                 'it' => ['name' => 'Italiano'],
             ],
         ]);
-        expect(fn () => (new ThemeComposer)->languages())->toThrow(\InvalidArgumentException::class);
+        Ensure::throws(fn () => (new ThemeComposer)->languages(), \InvalidArgumentException::class);
 
         config([
             'laravellocalization.supportedLocales' => [
@@ -930,6 +931,6 @@ describe('Lang 100% — Models policies providers views', function (): void {
         Assert::assertIsString($firstLanguage->url);
 
         app()->setLocale('zz');
-        expect(fn () => $composer->currentLang('name'))->toThrow(\Exception::class);
+        Ensure::throws(fn () => $composer->currentLang('name'), \Exception::class);
     });
 });

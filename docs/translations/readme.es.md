@@ -10,16 +10,13 @@ updated: 2026-07-14
 qmd: "readme.es"
 related:
   - "./italian-text-refined-audit-report.md"
-  - "../italian-text-refined-audit-report.md"
-status: superseded
-superseded_by: README.es.md
 ---
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>
-  
+
   <h1>Laraxot PTVX</h1>
   <p><b>Plataforma Laravel Modular, Type-Safe y Multi-Tenant</b></p>
-  
+
   <a href="https://laravel.com"><img src="https://img.shields.io/badge/Laravel-11.x-red?style=flat-square&logo=laravel" alt="Laravel Version"/></a>
   <a href="https://phpstan.org/"><img src="https://img.shields.io/badge/PHPStan-Level%209-blue?style=flat-square&logo=php" alt="PHPStan Level"/></a>
   <a href="https://filamentphp.com/"><img src="https://img.shields.io/badge/Filament-Admin-green?style=flat-square&logo=laravel" alt="Filament"/></a>
@@ -59,10 +56,10 @@ superseded_by: README.es.md
 
 ## 📚 Estructura del Proyecto
 
-- `laravel/Modules/`: Toda la lógica de negocio, agrupada por módulo
-- `laravel/Themes/`: Assets frontend tematizables
-- `laravel/project_docs/`: Documentación core y de los módulos
-- `docs/`: Documentación de proyecto, workflows y traducciones
+- `laravel/Modules/` — Toda la lógica de negocio, agrupada por módulo
+- `laravel/Themes/` — Assets frontend tematizables
+- `laravel/project_docs/` — Documentación core y de los módulos
+- `docs/` — Documentación de proyecto, workflows y traducciones
 
 ---
 
@@ -98,5 +95,5 @@ Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](..
 ---
 
 <div align="center">
-  <sub>Construido con ❤️ por el equipo Base forecast Fila3 Mono</sub>
+  <sub>Construido con ❤️ por el equipo Base forecast fila5</sub>
 </div>

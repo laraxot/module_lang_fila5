@@ -27,7 +27,7 @@ The Lang module enshrines five immutable principles:
 Translations live in **native PHP arrays**, not databases, not JSON. Why?
 
 - **Immutability by revision control**: Changes to translations are Git-tracked, audited, versioned.
-- **Structure scales**: Nested keys allow context: `patient.profile.name.label` is unambiguous across modules.
+- **Structure scales**: Nested keys allow context — `patient.profile.name.label` is unambiguous across modules.
 - **Performance**: No database round-trips. Artisan can validate file syntax before deploy.
 - **Simplicity**: A translator receives `/lang/en/patient.php`, edits values, returns it. No UI needed.
 
@@ -77,7 +77,7 @@ When a key is requested but not found, the **TranslatorAdapter** catches it, log
 
 In a 20-module Laravel platform:
 
-- **FixCity**: admin, geo, survey, communication, analytics, reports, settings: each with their own UI.
+- **FixCity**: admin, geo, survey, communication, analytics, reports, settings — each with their own UI.
 - **Without Lang**: Each module hardcodes labels in Blade/Filament. Translators receive Blade files. Nightmarish.
 - **With Lang**: Each module contributes `/lang/it/module.php`. Translators work with PHP arrays. Sync ensures consistency.
 
@@ -162,7 +162,7 @@ The Lang module exists to serve a **20+ module healthcare platform** where:
 
 **Specific FixCity responsibilities**:
 
-1. **Quaeris integration**: Survey titles, chart labels, question translations.
+1. **<nome progetto> integration**: Survey titles, chart labels, question translations.
 2. **CMS integration**: Page content, menu titles, rich text descriptions.
 3. **Email/Notification templates**: Multi-language messages, dynamic placeholders.
 4. **Form validation**: 50+ validation rules, each translated to 3 languages.
@@ -263,8 +263,8 @@ Current: Keys are logged when requested but not found.
 
 Planned:
 
-- Artisan command: `php artisan lang:audit --module=Quaeris --threshold=90`
-- Report: "Module Quaeris has 87% translation coverage. Missing: 15 keys in German."
+- Artisan command: `php artisan lang:audit --module=<nome progetto> --threshold=90`
+- Report: "Module <nome progetto> has 87% translation coverage. Missing: 15 keys in German."
 - Dashboard widget in Filament showing coverage per module per language.
 
 **Timeline**: Q3 2026.
@@ -323,7 +323,7 @@ Workspace::find(1)->setSetting('language', 'de');
 
 **What it does**: File-based translations, centralized in the app, simple and proven.
 
-**Why Lang extends it**: 
+**Why Lang extends it**:
 
 - Laravel localization is monolithic. Lang is modular (each module owns `/lang/`).
 - Laravel doesn't audit missing keys. Lang does (via database logging).
@@ -424,7 +424,7 @@ Write tests for untranslated keys:
 test('patient module has all keys in german', function () {
     $de = include base_path('Modules/Patient/lang/de/patient.php');
     $it = include base_path('Modules/Patient/lang/it/patient.php');
-    
+
     expect(count($de))->toBe(count($it));
 });
 ```
@@ -697,7 +697,7 @@ class PatientController
     public function show(Patient $patient)
     {
         $title = __('patient::patient.profile.title');
-        
+
         return view('patient.show', [
             'title' => $title,
             'patient' => $patient,
@@ -722,10 +722,10 @@ class PatientForm
                 Forms\Components\TextInput::make('name'),
                   // Automatically resolves it/patient::field.name.label
                   // No ->label('Nome') needed
-                
+
                 Forms\Components\TextInput::make('email'),
                   // Automatically resolves it/patient::field.email.label
-                
+
                 Forms\Components\Textarea::make('notes'),
                   // Automatically resolves it/patient::field.notes.label
             ]);
@@ -743,7 +743,7 @@ use Spatie\Translatable\HasTranslations;
 class Survey extends BaseModel
 {
     use HasTranslations;
-    
+
     public array $translatable = ['title', 'description'];
 }
 
@@ -768,7 +768,7 @@ php artisan lang:sync --module=Patient --source=it --target=en,de
 php artisan lang:sync
 
 # Sync with specific target language
-php artisan lang:sync --module=Quaeris --target=de
+php artisan lang:sync --module=<nome progetto> --target=de
 ```
 
 ### F. Validating Translation Completeness
@@ -837,9 +837,9 @@ php artisan migrate
 
 Creates tables:
 
-- `translations`: Record of all translation keys/values
-- `translation_files`: File sync metadata
-- `language_lines`: Missing key audit trail (optional)
+- `translations` — Record of all translation keys/values
+- `translation_files` — File sync metadata
+- `language_lines` — Missing key audit trail (optional)
 
 ### Step 3: Publish Config (Optional)
 
@@ -1004,6 +1004,6 @@ php artisan lang:auto-translate --module=YourModule
 
 ---
 
-**Last Updated**: 2026-09-06  
-**Module Status**: Stable, production-ready  
+**Last Updated**: 2026-09-06
+**Module Status**: Stable, production-ready
 **Next Review**: Q4 2026 (post auto-translation release)

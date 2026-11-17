@@ -10,7 +10,6 @@ updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
 ---
 # Risoluzione Conflitto WriteTranslationFileAction
 
@@ -101,9 +100,9 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 ## Collegamenti Correlati
 
 - [Translation File Management](../translation-file-management.md)
-- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [PHPStan Level 10 Fixes](archive/historical/phpstan-level10-fixes.md)
 - [Translation Standards](../translation-standards.md)
-- [Best Practices](../translation-keys-best-practices.md)
+- [Best Practices](translation-keys-best-practices.md)
 
 ## Note per Sviluppatori Futuri
 
@@ -208,9 +207,9 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 ## Collegamenti Correlati
 
 - [Translation File Management](../translation-file-management.md)
-- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [PHPStan Level 10 Fixes](archive/historical/phpstan-level10-fixes.md)
 - [Translation Standards](../translation-standards.md)
-- [Best Practices](../translation-keys-best-practices.md)
+- [Best Practices](translation-keys-best-practices.md)
 
 ## Note per Sviluppatori Futuri
 

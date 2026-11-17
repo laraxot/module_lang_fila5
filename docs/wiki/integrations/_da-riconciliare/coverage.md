@@ -10,8 +10,6 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
-  - "../../../italian-text-refined-audit-report.md"
-status: draft
 ---
 # Code Coverage: Lang
 
@@ -22,8 +20,8 @@ status: draft
 ## Output
 
 ```text
-──────────────────────────────────────────────────  
-   FAILED  Modules\Lang\tests\Feature\LangBusinessLogicTest > `Lang Business Lo…  Error   
+──────────────────────────────────────────────────
+   FAILED  Modules\Lang\tests\Feature\LangBusinessLogicTest > `Lang Business Lo…  Error
   Call to a member function connection() on null
 
   at vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1980
@@ -33,15 +31,15 @@ status: draft
     1979▕     {
   ➜ 1980▕         return static::$resolver->connection($connection);
     1981▕     }
-    1982▕ 
+    1982▕
     1983▕     /**
     1984▕      * Get the connection resolver instance.
 
       [2m+9 vendor frames [22m
   10  Modules/Lang/tests/Feature/LangBusinessLogicTest.php:329
 
-  ──────────────────────────────────────────────────────────────────────────────────────  
-   FAILED  Modules\Lang\tests\Feature\LangBusinessLogicTest > `Lang Business Lo…  Error   
+  ──────────────────────────────────────────────────────────────────────────────────────
+   FAILED  Modules\Lang\tests\Feature\LangBusinessLogicTest > `Lang Business Lo…  Error
   Call to a member function connection() on null
 
   at vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1980
@@ -51,26 +49,26 @@ status: draft
     1979▕     {
   ➜ 1980▕         return static::$resolver->connection($connection);
     1981▕     }
-    1982▕ 
+    1982▕
     1983▕     /**
     1984▕      * Get the connection resolver instance.
 
       [2m+9 vendor frames [22m
   10  Modules/Lang/tests/Feature/LangBusinessLogicTest.php:349
 
-  ──────────────────────────────────────────────────────────────────────────────────────  
-   FAILED  Modules\Lang\tests\Unit\Actions\ReadTranslationFileActionTest > `ReadTransl…   
+  ──────────────────────────────────────────────────────────────────────────────────────
+   FAILED  Modules\Lang\tests\Unit\Actions\ReadTranslationFileActionTest > `ReadTransl…
   Failed asserting that exception of type "Error" matches expected exception "Exception". Message was: "Call to undefined method Illuminate\Container\Container::storagePath()" at
 . progetto>_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
 . progetto>_fila5_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
-/var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
-/var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
-/var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
-/var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
-/var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
-/var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
-/var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
-/var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
+/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
+/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
+/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
+/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
+/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
+/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
+/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
+/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
 /var/www/_bases/base_modulo questionari_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
 /var/www/_bases/base_modulo questionari_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
 /var/www/_bases/base_modulo questionari_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
@@ -82,12 +80,12 @@ status: draft
 . progetto>_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
 . progetto>_fila5_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
 ---
-/var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
-/var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
+/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
+/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
 .
 
-  ──────────────────────────────────────────────────────────────────────────────────────  
-   FAILED  Modules\Lang\tests\Unit\Actions\ReadTranslationFileActionTest > `ReadTransl…   
+  ──────────────────────────────────────────────────────────────────────────────────────
+   FAILED  Modules\Lang\tests\Unit\Actions\ReadTranslationFileActionTest > `ReadTransl…
   Expected: <?php\n
   \n
   return [\n
@@ -97,12 +95,12 @@ status: draft
 
   at Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:105
     101▕         $phpContent = $this->action->toPhp($translations);
-    102▕ 
+    102▕
     103▕         expect($phpContent)->toContain("Text with \\'single\\' and \\\"double\\\" quotes");
     104▕         expect($phpContent)->toContain('Text with \\\\ backslashes');
   ➜ 105▕         expect($phpContent)->toContain('Text with\\nnewlines');
     106▕     });
-    107▕ 
+    107▕
     108▕     test('handles deeply nested arrays', function () {
     109▕         $translations = [
 

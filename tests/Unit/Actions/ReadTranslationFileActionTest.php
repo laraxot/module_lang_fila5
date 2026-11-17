@@ -11,7 +11,6 @@ use function Safe\chmod;
 use function Safe\file_put_contents;
 use function Safe\unlink;
 
-uses(TestCase::class);
 
 afterEach(function (): void {
     $path = TestCase::readTranslationTestFilePath();

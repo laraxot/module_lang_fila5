@@ -10,7 +10,6 @@ updated: 2026-07-14
 qmd: "lang service helper text fix"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
 ---
 # Laravel Localization
 
@@ -114,7 +113,7 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
   ],
   ```
 - Consulta anche:
-  - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
+  - [translation-keys-best-practices.md](translation-keys-best-practices.md)
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [filament-translations.md](../filament-translations.md)
   - [docs <nome progetto>](../../../<nome progetto>/docs/translations.md)

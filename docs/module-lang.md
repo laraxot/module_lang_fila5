@@ -10,7 +10,6 @@ updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
 ---
 # Modulo Lang
 
@@ -19,10 +18,10 @@ status: draft
 - **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
 - **Namespace**: `Modules\Lang`
 - **Repository**: https://github.com/laraxot/module_lang_fila5.git
-- **Nome**: `laraxot/module_lang_fila3`
+- **Nome**: `laraxot/module_lang_fila5`
 - **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
 - **Namespace**: `Modules\Lang`
-- **Repository**: https://github.com/laraxot/module_lang_fila3.git
+- **Repository**: https://github.com/laraxot/module_lang_fila5.git
 
 ### Versione HEAD
 

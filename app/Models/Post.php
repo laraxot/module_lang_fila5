@@ -9,15 +9,9 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 // --- traits ---
 // use Laravel\Scout\Searchable;
-<<<<<<< .merge_file_nMh06h
-=======
 use Illuminate\Support\Str;
 use Modules\Lang\Models\Traits\PostMutators;
 use Modules\Lang\Models\Traits\PostRelations;
-<<<<<<< .merge_file_qSpGp0
-=======
->>>>>>> .merge_file_mZHXKu
->>>>>>> .merge_file_V78D33
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
@@ -70,47 +64,47 @@ use Spatie\Sluggable\SlugOptions;
  * @property Model|null                 $linkable
  * @property ProfileContract|null       $updater
  *
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post query()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereAuthorId($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereCategory($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereCategoryId($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereContent($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereCreatedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereExcerpt($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereGuid($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereImage($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereImageAlt($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereImageResizeSrc($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereImageSrc($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereImageTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereLang($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereLinkableType($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereLinkedCount($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereLocale($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereMetaDescription($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereMetaKeywords($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereMetaTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post wherePostId($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post wherePostType($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post wherePublished($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post wherePublishedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereRelatedCount($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereRelatedrevCount($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereSlug($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereStatus($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereSubtitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereTxt($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUpdatedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUrl($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUrlLang($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUserId($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereViewsCount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static> newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static> query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereAuthorId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereCategory($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereCategoryId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereContent($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereCreatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereExcerpt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereGuid($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereImage($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereImageAlt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereImageResizeSrc($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereImageSrc($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereImageTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereLang($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereLinkableType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereLinkedCount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereLocale($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereMetaDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereMetaKeywords($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereMetaTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> wherePostId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> wherePostType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> wherePublished($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> wherePublishedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereRelatedCount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereRelatedrevCount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereSubtitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereTxt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereUpdatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereUrl($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereUrlLang($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> whereViewsCount($value)
  *
  * @mixin Model
  */
@@ -219,57 +213,6 @@ class Post extends BaseModel
     // end function
     // -------------- MUTATORS ------------------
 
-<<<<<<< .merge_file_qSpGp0
-=======
-<<<<<<< .merge_file_nMh06h
-    public function setTitleAttribute(string $value): void
-    {
-        $this->attributes['title'] = $value;
-        $this->attributes['guid'] = Str::slug($value);
-    }
-
-    public function getTitleAttribute(?string $value): ?string
-    {
-        if ($value !== null) {
-            return $value;
-        }
-
-        $postType = is_string($this->attributes['post_type'] ?? null) ? $this->attributes['post_type'] : '';
-        $postId = is_scalar($this->attributes['post_id'] ?? null) ? $this->attributes['post_id'] : '';
-        $value = $postType.' '.$postId;
-        $this->title = $value;
-
-        if ($this->getKey() !== null) {
-            $this->update(['title' => $value]);
-        }
-
-        return $value;
-    }
-
-    public function getGuidAttribute(?string $value): ?string
-    {
-        if (is_string($value) && $value !== '' && ! str_contains($value, ' ')) {
-            return $value;
-        }
-
-        $value = Str::slug($this->title ?? '');
-        $this->guid = $value;
-
-        if ($this->getKey() !== null) {
-            $this->update(['guid' => $value]);
-        }
-
-        return $value;
-    }
-
-    public function getTxtAttribute(?string $value): ?string
-    {
-        return $value ?? '';
-    }
-
-=======
->>>>>>> .merge_file_mZHXKu
->>>>>>> .merge_file_V78D33
     /**
      * @return array<string, mixed>
      */

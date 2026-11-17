@@ -12,7 +12,6 @@ use ReflectionClass;
 
 use function Safe\class_uses;
 
-uses(TestCase::class);
 
 describe('Post Model', function () {
     test('extends BaseModel', function () {

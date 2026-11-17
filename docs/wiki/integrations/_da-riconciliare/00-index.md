@@ -10,8 +10,6 @@ updated: 2026-07-14
 qmd: "lang service helper text"
 related:
   - "./italian-text-refined-audit-report.md"
-  - "../../../italian-text-refined-audit-report.md"
-status: draft
 ---
 # 📚 **Indice Documentazione Modulo Lang**
 
@@ -25,12 +23,6 @@ status: draft
 
 ## 🏗️ **Configurazione e Setup**
 - 🌍 **[Locale Management](./locale-management.md)** - Gestione delle lingue attive e default.
-- 🛣️ **[Route Localization](./laravel-localization-folio-integration.md)** - Integrazione con Folio e Volt per URL localizzati.
-- ⚙️ **[Service Provider](./lang-service-provider-improvements.md)** - Architettura del caricamento dinamico delle traduzioni.
-
-## 🏷️ **Naming & Standards**
-- 🚫 **[No Hardcoded Labels](./filament-label.md)** - Perché non usiamo mai `->label()` o `->placeholder()`.
-- 🗂️ **[Translation Keys](./translation-keys-best-practices.md)** - Convenzioni per la struttura delle chiavi (module::file.key).
 - 🛣️ **[Route Localization](../../../laravel-localization-folio-integration.md)** - Integrazione con Folio e Volt per URL localizzati.
 - ⚙️ **[Service Provider](../../../lang-service-provider-improvements.md)** - Architettura del caricamento dinamico delle traduzioni.
 
@@ -42,14 +34,10 @@ status: draft
 ## 🚀 **Funzionalità Avanzate**
 - ⚡ **[Auto-Registration](./autoregistration-commands.md)** - Comandi Artisan per scoprire e registrare nuove chiavi.
 - 🤖 **[Automatic Translations](./automatic-translations.md)** - (DAB) Integrazione con motori di traduzione esterna.
-- 📝 **[Translation File Editor](./translation-file-editor.md)** - UI per la modifica dei file `.php` di lingua.
-
-## 🧪 **Qualità e Testing**
-- ✅ **[PHPStan Analysis](./phpstan-analysis-lang.md)** - Report di conformità Level 10.
 - 📝 **[Translation File Editor](../../../translation-file-editor.md)** - UI per la modifica dei file `.php` di lingua.
 
 ## 🧪 **Qualità e Testing**
-- ✅ **[PHPStan Analysis](../../../phpstan-analysis-lang.md)** - Report di conformità Level 10.
+- ✅ **[PHPStan Analysis](./phpstan-analysis-lang.md)** - Report di conformità Level 10.
 - 🔬 **[Testing Guidelines](./testing.md)** - Verifica della presenza delle chiavi di traduzione.
 - 🐒 **[Chaos Monkey Translation Fallbacks](./chaos-monkey-translation-fallbacks.md)** - Protocollo di recovery su regressioni i18n.
 
@@ -59,11 +47,6 @@ status: draft
 ## 🔗 **Moduli Correlati**
 - [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../ui/docs/readme.md) - Componenti Blade e Filament che consumano le traduzioni.
-- 🗑️ **[Cleanup Plan](../../../docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
-
-## 🔗 **Moduli Correlati**
-- [Xot](../../../../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
-- [UI](../../../../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -87,8 +70,6 @@ status: draft
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
-- [Package Dependency Chaos Map](./package-dependency-chaos-map.md)
-- [Riferimento composer packages](../../../../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
 - [Package Dependency Chaos Map](../../../package-dependency-chaos-map.md)
 - `mcamara/laravel-localization` - URL localizzati
 - `lara-zeus/spatie-translatable` - Campi Filament tradotti
@@ -98,8 +79,6 @@ status: draft
 ## 🔗 **Moduli Correlati**
 - [Xot](../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
-- [Xot](../../../../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
-- [UI](../../../../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
 - [agents.md](../../../../agents.md) - Project guidelines
 
 ---
@@ -107,7 +86,6 @@ status: draft
 
 ## Dependency Intelligence
 
-- [Dependency intelligence](dependency-intelligence.md)
 - [Dependency intelligence](../../../dependency-intelligence.md)
 
 ---
@@ -115,6 +93,7 @@ status: draft
 <!-- Merged from 00-INDEX.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
+title: "📚 **Indice Documentazione Modulo Lang**"
 module: "Lang"
 type: concept
 tags: [filament4, migration]
@@ -136,12 +115,6 @@ related:
 
 ## 🏗️ **Configurazione e Setup**
 - 🌍 **[Locale Management](./locale-management.md)** - Gestione delle lingue attive e default.
-- 🛣️ **[Route Localization](./laravel-localization-folio-integration.md)** - Integrazione con Folio e Volt per URL localizzati.
-- ⚙️ **[Service Provider](./lang-service-provider-improvements.md)** - Architettura del caricamento dinamico delle traduzioni.
-
-## 🏷️ **Naming & Standards**
-- 🚫 **[No Hardcoded Labels](./filament-label.md)** - Perché non usiamo mai `->label()` o `->placeholder()`.
-- 🗂️ **[Translation Keys](./translation-keys-best-practices.md)** - Convenzioni per la struttura delle chiavi (module::file.key).
 - 🛣️ **[Route Localization](../../../laravel-localization-folio-integration.md)** - Integrazione con Folio e Volt per URL localizzati.
 - ⚙️ **[Service Provider](../../../lang-service-provider-improvements.md)** - Architettura del caricamento dinamico delle traduzioni.
 
@@ -153,35 +126,24 @@ related:
 ## 🚀 **Funzionalità Avanzate**
 - ⚡ **[Auto-Registration](./autoregistration-commands.md)** - Comandi Artisan per scoprire e registrare nuove chiavi.
 - 🤖 **[Automatic Translations](./automatic-translations.md)** - (DAB) Integrazione con motori di traduzione esterna.
-- 📝 **[Translation File Editor](./translation-file-editor.md)** - UI per la modifica dei file `.php` di lingua.
-
-## 🧪 **Qualità e Testing**
-- ✅ **[PHPStan Analysis](./phpstan-analysis-lang.md)** - Report di conformità Level 10.
 - 📝 **[Translation File Editor](../../../translation-file-editor.md)** - UI per la modifica dei file `.php` di lingua.
 
 ## 🧪 **Qualità e Testing**
-- ✅ **[PHPStan Analysis](../../../phpstan-analysis-lang.md)** - Report di conformità Level 10.
+- ✅ **[PHPStan Analysis](./phpstan-analysis-lang.md)** - Report di conformità Level 10.
 - 🔬 **[Testing Guidelines](./testing.md)** - Verifica della presenza delle chiavi di traduzione.
 - 🐒 **[Chaos Monkey Translation Fallbacks](./chaos-monkey-translation-fallbacks.md)** - Protocollo di recovery su regressioni i18n.
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
-- 📁 **[Path canonico migrazioni](./wiki/concepts/migration-path-canonical.md)**: solo `database/migrations/`; mai `Migrations/` annidata.
+- 📁 **[Path canonico migrazioni](../../concepts/migration-path-canonical.md)** — solo `database/migrations/`; mai `Migrations/` annidata.
 
 ## 🔗 **Moduli Correlati**
 - [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../ui/docs/readme.md) - Componenti Blade e Filament che consumano le traduzioni.
-- 🗑️ **[Cleanup Plan](../../../docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
-- 📁 **[Path canonico migrazioni](../../concepts/migration-path-canonical.md)**: solo `database/migrations/`; mai `Migrations/` annidata.
-
-## 🔗 **Moduli Correlati**
-- [Xot](../../../../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
-- [UI](../../../../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 
 ## Dependency Intelligence
 
-- [Dependency intelligence](dependency-intelligence.md)
 - [Dependency intelligence](../../../dependency-intelligence.md)

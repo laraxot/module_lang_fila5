@@ -10,18 +10,16 @@ updated: 2026-07-14
 qmd: "links"
 related:
   - "./italian-text-refined-audit-report.md"
-  - "../../../italian-text-refined-audit-report.md"
-status: draft
 ---
 # Lang Module - Comprehensive Analysis
 
 ## Module Overview
-**Module Name**: Lang  
-**Type**: Localization & Translation Module  
-**Status**: ✅ Active  
-**Framework**: Laravel 13.x + Filament 4.x  
-**Translation System**: Laravel Localization + Advanced Features  
-**Language**: Multi-language (IT/EN/DE + 7 more)  
+**Module Name**: Lang
+**Type**: Localization & Translation Module
+**Status**: ✅ Active
+**Framework**: Laravel 13.x + Filament 4.x
+**Translation System**: Laravel Localization + Advanced Features
+**Language**: Multi-language (IT/EN/DE + 7 more)
 
 ## Purpose
 The Lang module provides comprehensive localization and translation management:
@@ -74,7 +72,7 @@ The Lang module provides comprehensive localization and translation management:
 ## Integration with Other Modules
 - **User**: User language preferences
 - **Cms**: Multi-language content
-- **Quaeris**: Survey translation
+- **<nome progetto>**: Survey translation
 - **modulo questionari**: Survey translation
 ---
 - **Limesurvey**: Question translation

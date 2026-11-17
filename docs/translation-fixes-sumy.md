@@ -10,8 +10,6 @@ updated: 2026-07-14
 qmd: "migration filament 4"
 related:
   - "./italian-text-refined-audit-report.md"
-status: superseded
-superseded_by: translationes.md
 ---
 # Riepilogo Correzioni Traduzioni - Gennaio 2025
 
@@ -138,8 +136,8 @@ php artisan tinker
 
 ### Documentazione Modulo Lang:
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-- [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
-- [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
+- [Correzioni Errori Sintassi 2025](archive/correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation 2025](archive/traduzioni_navigation_2025.md)
 
 ### Documentazione Tema:
 - [Traduzioni Mancanti Appointment 2025](../../../themes/one/docs/traduzioni_mancanti_appointment_2025.md)

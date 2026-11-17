@@ -10,7 +10,6 @@ use Modules\Lang\Models\Translation;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 
 describe('Translation Model', function () {
     test('has correct fillable attributes', function () {

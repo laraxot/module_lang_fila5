@@ -10,7 +10,6 @@ updated: 2026-07-14
 qmd: "readme.es 1"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
 ---
 # Modulo Lang
 
@@ -29,9 +28,9 @@ Data: 2025-04-23 19:09:56
 Modules\\Lang\\Database\\Factories
 Modules\\Lang\\Database\\Seeders
 - **Pacchetto Composer**: laraxot/module_lang_fila5
-- **Pacchetto Composer**: laraxot/module_lang_fila3
-- **Pacchetto Composer**: laraxot/module_lang_fila3
-- **Pacchetto Composer**: laraxot/module_lang_fila3
+- **Pacchetto Composer**: laraxot/module_lang_fila5
+- **Pacchetto Composer**: laraxot/module_lang_fila5
+- **Pacchetto Composer**: laraxot/module_lang_fila5
 Marco Sottana
 - **Dipendenze**: mcamara/laravel-localization ^2.2 spatie/laravel-sluggable * repositories type path url ../Xot type path url ../Tenant type path url ../UI autoload psr-4
 - **Totale file PHP**: 103

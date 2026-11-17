@@ -10,8 +10,6 @@ updated: 2026-07-14
 qmd: "redundancy analysis"
 related:
   - "./italian-text-refined-audit-report.md"
-  - "../../../italian-text-refined-audit-report.md"
-status: draft
 ---
 # Convenzioni per i Link nella Documentazione
 
@@ -94,7 +92,7 @@ Prima di fare commit dei documenti:
 
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella
 ```markdown
-[Best Practices](translation-keys-best-practices.md)
+[Best Practices](../../../translation-keys-best-practices.md)
 ```
 
 ## Vantaggi dei Percorsi Relativi

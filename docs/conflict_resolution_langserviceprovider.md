@@ -10,7 +10,6 @@ updated: 2026-07-14
 qmd: "phpstan level10 fixes 1"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
 ---
 # Risoluzione Conflitto LangServiceProvider
 
@@ -106,7 +105,7 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 - [Lang Service Provider](../lang-service-provider.md)
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
-- [Best Practices](../translation-keys-best-practices.md)
+- [Best Practices](translation-keys-best-practices.md)
 
 ## Note per Sviluppatori Futuri
 

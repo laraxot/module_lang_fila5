@@ -46,14 +46,12 @@ use Modules\Xot\Actions\GetTransKeyAction;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 
-use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\getmypid;
 use function Safe\mkdir;
 use function Safe\touch;
 use function Safe\unlink;
 
-uses(TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();
@@ -334,7 +332,13 @@ describe('Lang coverage gaps closeout', function (): void {
         Assert::assertGreaterThan(0, $composer->languages()->count());
 
         config(['laravellocalization.supportedLocales' => 'invalid']);
-        expect(fn () => $composer->languages())->toThrow(\Exception::class);
+        $__thrown = null;
+try {
+    (fn () => $composer->languages())();
+} catch (\Throwable $__e) {
+    $__thrown = $__e;
+}
+Assert::assertInstanceOf(\Exception::class, $__thrown);;
 
         config([
             'laravellocalization.supportedLocales' => [

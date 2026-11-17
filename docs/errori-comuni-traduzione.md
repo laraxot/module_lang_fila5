@@ -10,7 +10,6 @@ updated: 2026-07-14
 qmd: "guida migrazione step by step"
 related:
   - "./italian-text-refined-audit-report.md"
-status: draft
 ---
 # Errori comuni nei file di traduzione
 
@@ -147,8 +146,8 @@ Tutti i campi devono seguire la struttura espansa:
 
 ## Documentazione Correlata
 
-- [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
-- [Traduzioni Navigation Audit](traduzioni_navigation_2025.md)
+- [Correzioni Errori Sintassi 2025](archive/correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation Audit](archive/traduzioni_navigation_2025.md)
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
@@ -293,8 +292,8 @@ Tutti i campi devono seguire la struttura espansa:
 
 ## Documentazione Correlata
 
-- [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
-- [Traduzioni Navigation Audit](traduzioni_navigation_2025.md)
+- [Correzioni Errori Sintassi 2025](archive/correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation Audit](archive/traduzioni_navigation_2025.md)
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
