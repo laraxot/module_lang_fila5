@@ -4,11 +4,27 @@ type: plan
 status: review
 updated: 2026-11-16
 module: Lang
+<<<<<<< .merge_file_wYbFdA
 qmd: "piano miglioramento Lang P0 P1 P2 BMAD"
+=======
+<<<<<<< .merge_file_pACYRb
+qmd: "piano miglioramento Lang P0 P1 P2 BMAD"
+=======
+qmd: "piano miglioramento Lang P1 P2 tracker chiavi mancanti test coverage config morta Post hardcoded sequenza criteri"
+related:
+  - ./audits/lang-audit.md
+  - ./epics.md
+  - ./decision-log.md
+>>>>>>> .merge_file_H9qXua
+>>>>>>> .merge_file_StW91b
 ---
 
 # Piano di miglioramento — Lang
 
+<<<<<<< .merge_file_wYbFdA
+=======
+<<<<<<< .merge_file_pACYRb
+>>>>>>> .merge_file_StW91b
 Derivato dall'[audit](./audits/lang-audit.md).
 
 ## P0
@@ -43,3 +59,40 @@ Derivato dall'[audit](./audits/lang-audit.md).
 - [ ] PHPStan `Modules/Lang` = 0
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
+<<<<<<< .merge_file_wYbFdA
+=======
+=======
+Derivato dall'[audit profondo](./audits/lang-audit.md). Epic e AC: [epics.md](./epics.md). Nessun P0.
+
+## P1
+
+1. **E1** — D-2: cablare o ritirare il tracker DB delle chiavi mancanti.
+2. **E2** — applicare le migration `user_id` UUID sul DB sorgente (additive) e riportare `tests/Feature` a verde.
+3. **E3** — sostituire i 4 test «coverage» con test di comportamento (D-4).
+4. Docs: gap-fill fatto (purpose, architecture, decision-log, epics); resta `docs/business-logic-overview.md` e 111 `.md` con nome non conforme.
+
+## P2
+
+1. **E4** — togliere le 2 stringhe letterali di `LocaleSwitcherRefresh`.
+2. D-1 — `config/lang.php` mai letto.
+3. D-3 — `Post` dentro Lang.
+4. Codice morto: `WriteTranslationFileAction`, `ReadTranslationFileAction`.
+5. `GetTransPathAction`: allowlist di namespace e locale (difesa in profondità).
+6. Migration `create_*` in 3 generazioni: ridurre con una story additiva.
+
+## Sequenza e gate
+
+1. Story disgiunte + lock (`bashscripts/lock/`).
+2. PHPStan `Modules/Lang` = 0.
+3. Pest mirato su scratch DB: nessun `migrate:fresh`/`RefreshDatabase`/`--force`.
+4. Aggiornare [ECC](../ecc/00-index.md) e `qmd update`.
+
+## Criteri di completamento
+
+- [ ] D-2 decisa e attuata
+- [ ] `tests/Feature` verde su scratch DB
+- [ ] 0 file `*CoverageTest`/`FinalGaps`
+- [ ] `rg "->label\('[A-Za-z]" app` = 0 fuori eccezioni dichiarate
+- [ ] PHPStan `Modules/Lang` = 0
+>>>>>>> .merge_file_H9qXua
+>>>>>>> .merge_file_StW91b
