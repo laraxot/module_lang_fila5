@@ -180,9 +180,9 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 ## Collegamenti Correlati
 
 - [Translation Standards](../translation-standards.md)
-- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [PHPStan Level 10 Fixes](archive/historical/phpstan-level10-fixes.md)
 - [Translation File Management](../translation-file-management.md)
-- [Best Practices](../translation-keys-best-practices.md)
+- [Best Practices](translation-keys-best-practices.md)
 
 ## Note per Sviluppatori Futuri
 

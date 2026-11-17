@@ -22,7 +22,7 @@ class RecordMissingTranslationAction
     {
         [$namespace, $group, $item] = $this->parseKey($key);
 
-        Translation::firstOrCreate([
+        Translation::query()->firstOrCreate([
             'lang' => $locale,
             'namespace' => $namespace,
             'group' => $group,

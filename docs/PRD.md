@@ -259,5 +259,5 @@ The Lang module provides a structured framework for managing lang operations wit
 - [Architecture](architecture.md)
 ---
 - [Architecture](ARCHITECTURE.md)
-- [Technical Specification](TECH_SPEC.md)
+- [Technical Specification](tech_spec.md)
 - [User Stories](epics/lang-epics-and-stories.md)

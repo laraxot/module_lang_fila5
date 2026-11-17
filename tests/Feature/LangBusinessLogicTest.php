@@ -11,7 +11,6 @@ use Modules\Lang\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 
 describe('Lang Business Logic', function () {
     it('can create and manage posts', function () {

@@ -118,9 +118,9 @@ Prima di fare commit dei documenti:
 
 ### Da Modules/Lang/project_docs/ a un altro file nella stessa cartella
 ```markdown
-[Best Practices](translation-keys-best-practices.md)
-[Best Practices](translation-keys-best-practices.md)
-[Best Practices](translation-keys-best-practices.md)
+[Best Practices](../../../translation-keys-best-practices.md)
+[Best Practices](../../../translation-keys-best-practices.md)
+[Best Practices](../../../translation-keys-best-practices.md)
 ---
 [Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
 ```
@@ -237,9 +237,9 @@ Prima di fare commit dei documenti:
 
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella
 ```markdown
-[Best Practices](translation-keys-best-practices.md)
-[Best Practices](translation-keys-best-practices.md)
-[Best Practices](translation-keys-best-practices.md)
+[Best Practices](../../../translation-keys-best-practices.md)
+[Best Practices](../../../translation-keys-best-practices.md)
+[Best Practices](../../../translation-keys-best-practices.md)
 ---
 [Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
 ```

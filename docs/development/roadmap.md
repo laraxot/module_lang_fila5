@@ -56,7 +56,7 @@ related:
 ## Analisi di Sistema
 
 ### Performance
-- [Analisi Performance](roadmap/performance.md)
+- [Analisi Performance](../packages/performance.md)
   - Translation speed
   - Cache efficiency
   - API response

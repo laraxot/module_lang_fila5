@@ -6,7 +6,6 @@ use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Composers\ThemeComposer;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 
 test('ThemeComposer languages usa fallback quando manca config', function (): void {
     config(['laravellocalization' => []]);

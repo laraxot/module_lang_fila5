@@ -7,16 +7,21 @@ use Modules\Lang\Actions\ReadTranslationFileAction;
 use Modules\Lang\Database\Factories\TranslationFactory;
 use Modules\Lang\Models\BaseModel;
 use Modules\Lang\Models\Translation;
+use Modules\Lang\Tests\Support\Ensure;
+use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_put_contents;
 use function Safe\unlink;
+
+uses(TestCase::class)->in('Feature', 'Unit');
 
 /** @param array<string, mixed> $attributes */
 function createTranslation(array $attributes = []): Translation
 {
     return TranslationFactory::new()->createOne($attributes);
 }
+
 /** @param array<string, mixed> $attributes */
 function makeTranslation(array $attributes = []): Translation
 {
@@ -91,3 +96,8 @@ function makeReadTranslationFileAction(): ReadTranslationFileAction
     return new ReadTranslationFileAction;
 }
 
+
+function ensure(mixed $value): Ensure
+{
+    return new Ensure($value);
+}

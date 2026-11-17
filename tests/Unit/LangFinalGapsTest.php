@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+
 namespace Modules\Lang\Tests\Unit;
+
+use Modules\Lang\Tests\Support\Ensure;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
@@ -54,7 +57,6 @@ use function Safe\rename;
 use function Safe\rmdir;
 use function Safe\unlink;
 
-uses(TestCase::class);
 
 /**
  * Locale dell'app dopo normalizeLocale()+applyLocale(), partendo ogni volta da 'it':
@@ -262,7 +264,7 @@ test('WriteTranslationFileAction throws when put fails', function (): void {
         public function flush(): void {}
     });
     $action = new WriteTranslationFileActionFailStub;
-    expect(fn () => $action->execute($path, ['a' => '2']))->toThrow(\Exception::class);
+    Ensure::throws(fn () => $action->execute($path, ['a' => '2']), \Exception::class);
     unlink($path);
 });
 
@@ -571,8 +573,7 @@ test('WriteTranslationFileAction putTranslationFile edge paths', function (): vo
 
     $path3 = sys_get_temp_dir().'/lang_wfa_wf_'.uniqid().'.php';
     TestCase::createTranslationFile($path3, ['c' => '1']);
-    expect(fn () => (new WriteTranslationFileActionWriteFailStub)->execute($path3, ['c' => '2']))
-        ->toThrow(\Exception::class);
+    Ensure::throws(fn () => (new WriteTranslationFileActionWriteFailStub)->execute($path3, ['c' => '2']), \Exception::class);
 
     foreach ([$path, $path3] as $f) {
         if (is_file($f)) {

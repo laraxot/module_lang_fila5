@@ -2111,7 +2111,7 @@ php artisan lang:sync
 
 - [Translation Standards](./translation-standards.md)
 - [Translation System](./translation-system.md)
-- [Best Practices](./translation-keys-best-practices.md)
+- [Best Practices](../../translation-keys-best-practices.md)
 - [File Management](./translation-file-management.md)
 
 ## Note per lo Sviluppo
@@ -2289,7 +2289,7 @@ php artisan lang:sync
 
 - [Translation Standards](./translation-standards.md)
 - [Translation System](./translation-system.md)
-- [Best Practices](./translation-keys-best-practices.md)
+- [Best Practices](../../translation-keys-best-practices.md)
 - [File Management](./translation-file-management.md)
 
 ## Note per lo Sviluppo
@@ -2559,7 +2559,7 @@ php artisan lang:export
 
 - [Translation Standards](./translation-standards.md)
 - [Translation System](./translation-system.md)
-- [Best Practices](./translation-keys-best-practices.md)
+- [Best Practices](../../translation-keys-best-practices.md)
 - [Laravel Localization](https://laravel.com/project_docs/localization)
 
 ## Note per lo Sviluppo
@@ -2810,7 +2810,7 @@ php artisan lang:export
 
 - [Translation Standards](./translation-standards.md)
 - [Translation System](./translation-system.md)
-- [Best Practices](./translation-keys-best-practices.md)
+- [Best Practices](../../translation-keys-best-practices.md)
 - [Laravel Localization](https://laravel.com/docs/localization)
 
 ## Note per lo Sviluppo
@@ -3864,8 +3864,8 @@ php artisan tinker
 
 ### Documentazione Modulo Lang:
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-- [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
-- [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
+- [Correzioni Errori Sintassi 2025](../../archive/correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation 2025](../../archive/traduzioni_navigation_2025.md)
 
 ### Documentazione Tema:
 - [Traduzioni Mancanti Appointment 2025](../../../Themes/One/docs/traduzioni_mancanti_appointment_2025.md)
@@ -4014,8 +4014,8 @@ php artisan tinker
 
 ### Documentazione Modulo Lang:
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-- [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
-- [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
+- [Correzioni Errori Sintassi 2025](../../archive/correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation 2025](../../archive/traduzioni_navigation_2025.md)
 
 ### Documentazione Tema:
 - [Traduzioni Mancanti Appointment 2025](../../../themes/one/docs/traduzioni_mancanti_appointment_2025.md)
@@ -7104,13 +7104,13 @@ La corretta implementazione degli standard di traduzione garantisce:
 ## Collegamenti alla Documentazione
 
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
-- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
-- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
-- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 # Standardizzazione Traduzioni Modulo Notify
 
@@ -7221,13 +7221,13 @@ La corretta implementazione degli standard di traduzione garantisce:
 ## Collegamenti alla Documentazione
 
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
-- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
-- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
-- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 
 ---
@@ -8333,7 +8333,7 @@ Stiamo standardizzando i file di traduzione nel modulo Notify che presentano pro
 ## Documentazione nel Modulo Lang
 
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
-- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
 - [Standardizzazione Traduzioni Modulo Notify](translation_notify_conversion.md)
 
 ## Riepilogo dei Problemi
@@ -8547,7 +8547,7 @@ return [
 
 ### Collegamenti
 - [<nome modulo>/docs/appointment-management.md](../../<nome modulo>/docs/appointment-management.md)
-- [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
+- [Lang/translation-keys-best-practices.md](../../translation-keys-best-practices.md)
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
@@ -8722,7 +8722,7 @@ return [
 
 ### Collegamenti
 - [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md)
-- [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
+- [Lang/translation-keys-best-practices.md](../../translation-keys-best-practices.md)
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
@@ -10641,9 +10641,9 @@ php docs/obbligatorio-audit-script.php
 - [Geo Module - Helper Text Fix](../modules/geo/docs/helper-text-normalization-fix.md)
 
 ### Script e Tool
-- [Helper Text Audit Script](helper-text-audit-script.php)
-- [Italian Text Validation Script](italian-text-validation-refined.php)
-- [Obbligatorio Audit Script](obbligatorio-audit-script.php)
+- [Helper Text Audit Script](../../helper-text-audit-script.php)
+- [Italian Text Validation Script](../../italian-text-validation-refined.php)
+- [Obbligatorio Audit Script](../../obbligatorio-audit-script.php)
 
 ---
 
@@ -10907,9 +10907,9 @@ php docs/obbligatorio-audit-script.php
 - [Geo Module - Helper Text Fix](../modules/geo/docs/helper-text-normalization-fix.md)
 
 ### Script e Tool
-- [Helper Text Audit Script](helper-text-audit-script.php)
-- [Italian Text Validation Script](italian-text-validation-refined.php)
-- [Obbligatorio Audit Script](obbligatorio-audit-script.php)
+- [Helper Text Audit Script](../../helper-text-audit-script.php)
+- [Italian Text Validation Script](../../italian-text-validation-refined.php)
+- [Obbligatorio Audit Script](../../obbligatorio-audit-script.php)
 
 ---
 
@@ -11372,7 +11372,7 @@ php artisan lang:sync
 
 - [Translation Standards](./translation-standards.md)
 - [Translation System](./translation-system.md)
-- [Best Practices](./translation-keys-best-practices.md)
+- [Best Practices](../../translation-keys-best-practices.md)
 - [File Management](./translation-file-management.md)
 
 ## Note per lo Sviluppo
@@ -11641,7 +11641,7 @@ php artisan lang:export
 
 - [Translation Standards](./translation-standards.md)
 - [Translation System](./translation-system.md)
-- [Best Practices](./translation-keys-best-practices.md)
+- [Best Practices](../../translation-keys-best-practices.md)
 - [Laravel Localization](https://laravel.com/docs/localization)
 
 ## Note per lo Sviluppo
@@ -12676,7 +12676,7 @@ La corretta implementazione degli standard di traduzione garantisce:
 ## Collegamenti alla Documentazione
 
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
-- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 
 ---
@@ -12863,7 +12863,7 @@ return [
 ### Collegamenti
 - [SaluteOra/docs/appointment-management.md](../../SaluteOra/docs/appointment-management.md)
 - [<nome progetto>corrente/docs/appointment-management.md<nome progetto>rogetto corrente/docs/appointment-management.md)
-- [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
+- [Lang/translation-keys-best-practices.md](../../translation-keys-best-practices.md)
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
@@ -12905,7 +12905,7 @@ Stiamo standardizzando i file di traduzione nel modulo Notify che presentano pro
 ## Documentazione nel Modulo Lang
 
 - [Regole Generali per le Traduzioni](translation_keys_rules.md)
-- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Best Practices per le Traduzioni](../../translation-keys-best-practices.md)
 - [Standardizzazione Traduzioni Modulo Notify](translation_notify_conversion.md)
 
 ## Riepilogo dei Problemi
@@ -13618,8 +13618,8 @@ php artisan tinker
 
 ### Documentazione Modulo Lang:
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-- [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
-- [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
+- [Correzioni Errori Sintassi 2025](../../archive/correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation 2025](../../archive/traduzioni_navigation_2025.md)
 
 ### Documentazione Tema:
 - [Traduzioni Mancanti Appointment 2025](../../../themes/one/docs/traduzioni_mancanti_appointment_2025.md)
@@ -14635,8 +14635,8 @@ php artisan tinker
 
 ### Documentazione Modulo Lang:
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-- [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
-- [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
+- [Correzioni Errori Sintassi 2025](../../archive/correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation 2025](../../archive/traduzioni_navigation_2025.md)
 
 ### Documentazione Tema:
 - [Traduzioni Mancanti Appointment 2025](../../../Themes/One/docs/traduzioni_mancanti_appointment_2025.md)
@@ -14785,8 +14785,8 @@ php artisan tinker
 
 ### Documentazione Modulo Lang:
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-- [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
-- [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
+- [Correzioni Errori Sintassi 2025](../../archive/correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation 2025](../../archive/traduzioni_navigation_2025.md)
 
 ### Documentazione Tema:
 - [Traduzioni Mancanti Appointment 2025](../../../themes/one/docs/traduzioni_mancanti_appointment_2025.md)
@@ -14934,8 +14934,8 @@ php artisan tinker
 
 ### Documentazione Modulo Lang:
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-- [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
-- [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
+- [Correzioni Errori Sintassi 2025](../../archive/correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation 2025](../../archive/traduzioni_navigation_2025.md)
 
 ### Documentazione Tema:
 - [Traduzioni Mancanti Appointment 2025](../../../themes/one/docs/traduzioni_mancanti_appointment_2025.md)

@@ -42,7 +42,6 @@ use function Safe\mkdir;
 use function Safe\rmdir;
 use function Safe\unlink;
 
-uses(TestCase::class);
 
 /**
  * @param  list<string>  $permissions

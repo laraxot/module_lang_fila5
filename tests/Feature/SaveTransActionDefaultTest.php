@@ -2,13 +2,14 @@
 
 declare(strict_types=1);
 
+use PHPUnit\Framework\Assert;
+
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
 use Modules\Lang\Actions\GetTransPathAction;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Tests\TestCase;
 
-uses(TestCase::class);
 
 /*
  * C-05 (DCP-282): l'auto-writer delle chiavi mancanti scriveva nei file di lingua a runtime anche in produzione, perche' il default era
@@ -39,7 +40,7 @@ beforeEach(function (): void {
     $lang = (array) Config::get('lang', []);
     unset($lang['save_missing_translations']);
     Config::set('lang', $lang);
-    expect(Config::has('lang.save_missing_translations'))->toBeFalse();
+    Assert::assertFalse(Config::has('lang.save_missing_translations'));
 });
 
 afterEach(function (): void {
@@ -57,7 +58,7 @@ it('does not write in production when nothing is configured', function (): void 
 
     trySavingMissingKey();
 
-    expect(file_exists($this->target))->toBeFalse();
+    Assert::assertFalse(file_exists($this->target));
 });
 
 it('does not write in staging either', function (): void {
@@ -65,7 +66,7 @@ it('does not write in staging either', function (): void {
 
     trySavingMissingKey();
 
-    expect(file_exists($this->target))->toBeFalse();
+    Assert::assertFalse(file_exists($this->target));
 });
 
 it('writes in the local environment when nothing is configured', function (): void {
@@ -73,16 +74,16 @@ it('writes in the local environment when nothing is configured', function (): vo
 
     trySavingMissingKey();
 
-    expect(file_exists($this->target))->toBeTrue();
-    expect(File::getRequire($this->target))->toBe(['chiave_di_prova' => ['label' => 'valore']]);
+    Assert::assertTrue(file_exists($this->target));
+    Assert::assertSame(['chiave_di_prova' => ['label' => 'valore']], File::getRequire($this->target));
 });
 
 it('does not write under the test environment by default', function (): void {
-    expect($this->app['env'])->toBe('testing');
+    Assert::assertSame('testing', $this->app['env']);
 
     trySavingMissingKey();
 
-    expect(file_exists($this->target))->toBeFalse();
+    Assert::assertFalse(file_exists($this->target));
 });
 
 it('lets the configuration switch it on in production', function (): void {
@@ -91,7 +92,7 @@ it('lets the configuration switch it on in production', function (): void {
 
     trySavingMissingKey();
 
-    expect(file_exists($this->target))->toBeTrue();
+    Assert::assertTrue(file_exists($this->target));
 });
 
 it('lets the configuration switch it off in the local environment', function (): void {
@@ -100,5 +101,5 @@ it('lets the configuration switch it off in the local environment', function ():
 
     trySavingMissingKey();
 
-    expect(file_exists($this->target))->toBeFalse();
+    Assert::assertFalse(file_exists($this->target));
 });
