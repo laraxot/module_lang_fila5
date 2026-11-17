@@ -5,11 +5,14 @@ status: active
 updated: 2026-11-16
 bmad: true
 module: Lang
+<<<<<<< .merge_file_d5TLRe
+=======
 qmd: "decision log Lang tracker chiavi mancanti DB registerTranslator Post fuori scope config lang.php morta SaveTransAction solo local test coverage"
 related:
   - ./audits/lang-audit.md
   - ./architecture.md
   - ./epics.md
+>>>>>>> .merge_file_CsT83w
 ---
 
 # Decision log — Lang

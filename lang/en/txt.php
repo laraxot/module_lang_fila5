@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'fields' => [
         'email' => [
@@ -457,8 +459,11 @@ return [
         'quadrimestre' => [
             'helper_text' => '',
         ],
+<<<<<<< .merge_file_JjCzIa
+=======
         'ratings' => [
         ],
+>>>>>>> .merge_file_QrpQfB
     ],
     'actions' => [
         'authenticate' => [
@@ -475,6 +480,14 @@ return [
         ],
         'request' => [
             'icon' => 'request',
+<<<<<<< .merge_file_JjCzIa
+        ],
+        'hidePassword' => [
+            'icon' => 'hidePassword',
+        ],
+        'showPassword' => [
+            'icon' => 'ui-showPassword',
+=======
             'label' => 'request',
         ],
         'hidePassword' => [
@@ -484,6 +497,7 @@ return [
         'showPassword' => [
             'icon' => 'ui-showPassword',
             'label' => 'showPassword',
+>>>>>>> .merge_file_QrpQfB
         ],
         'list_log_activities' => [
             'icon' => 'list_log_activities',
@@ -538,7 +552,10 @@ return [
         ],
         'profile' => [
             'icon' => 'profile',
+<<<<<<< .merge_file_JjCzIa
+=======
             'label' => 'profile',
+>>>>>>> .merge_file_QrpQfB
         ],
         'convert' => [
             'icon' => 'convert',

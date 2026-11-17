@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< .merge_file_bv5Xhl
+declare(strict_types=1);
+
+return [];
+=======
 return [
     'fields' => [
         'id' => [
@@ -42,3 +47,4 @@ return [
         ],
     ],
 ];
+>>>>>>> .merge_file_9ZiGnL

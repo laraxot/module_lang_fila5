@@ -4,16 +4,25 @@ type: concept
 status: active
 updated: 2026-11-16
 module: Lang
+<<<<<<< .merge_file_1hZY3F
+qmd: "purpose bmad Lang"
+=======
 qmd: "purpose bmad Lang scopo traduzioni etichette fuori dal codice file di lingua chiavi mancanti stato del codice"
 related:
   - ../purpose.md
   - ./audits/lang-audit.md
   - ./architecture.md
   - ./epics.md
+>>>>>>> .merge_file_4aNdKa
 ---
 
 # Scopo BMAD — Lang
 
+<<<<<<< .merge_file_1hZY3F
+## Lo scopo in una frase **Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua.**
+
+SSoT estesa: [../purpose.md](../purpose.md) se presente.
+=======
 ## Lo scopo in una frase
 
 **Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua.**
@@ -43,3 +52,4 @@ I testi di un'applicazione pubblica li rivede chi non programma. Se l'etichetta 
 ## Riferimenti
 
 [Audit](./audit.md) · [Architettura](./architecture.md) · [Decision log](./decision-log.md) · [Epics](./epics.md)
+>>>>>>> .merge_file_4aNdKa
