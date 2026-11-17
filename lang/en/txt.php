@@ -459,15 +459,9 @@ return [
         'quadrimestre' => [
             'helper_text' => '',
         ],
-<<<<<<< .merge_file_JjCzIa
-=======
         'ratings' => [
         ],
->>>>>>> .merge_file_QrpQfB
     ],
-    'actions' => [
-        'authenticate' => [
-            'label' => 'Authenticate',
             'tooltip' => 'Sign in to the system',
             'icon' => 'ui-login',
             'color' => 'primary',
@@ -480,14 +474,9 @@ return [
         ],
         'request' => [
             'icon' => 'request',
-<<<<<<< .merge_file_JjCzIa
-        ],
-        'hidePassword' => [
-            'icon' => 'hidePassword',
-        ],
-        'showPassword' => [
-            'icon' => 'ui-showPassword',
-=======
+            'label' => 'request',
+        'request' => [
+            'icon' => 'request',
             'label' => 'request',
         ],
         'hidePassword' => [
@@ -497,19 +486,6 @@ return [
         'showPassword' => [
             'icon' => 'ui-showPassword',
             'label' => 'showPassword',
->>>>>>> .merge_file_QrpQfB
-        ],
-        'list_log_activities' => [
-            'icon' => 'list_log_activities',
-        ],
-        'table_layout_toggle' => [
-            'icon' => 'table_layout_toggle',
-        ],
-        'update_coordinates' => [
-            'icon' => 'update_coordinates',
-        ],
-        'edit' => [
-            'icon' => 'edit',
         ],
         'delete' => [
             'icon' => 'delete',
@@ -552,10 +528,7 @@ return [
         ],
         'profile' => [
             'icon' => 'profile',
-<<<<<<< .merge_file_JjCzIa
-=======
             'label' => 'profile',
->>>>>>> .merge_file_QrpQfB
         ],
         'convert' => [
             'icon' => 'convert',
@@ -565,12 +538,9 @@ return [
         ],
         'bet_action' => [
             'icon' => 'bet_action',
-        ],
-        'export_xls_lazy_cov' => [
-            'icon' => 'export_xls_lazy_cov',
-        ],
-        'export_xls_cov' => [
-            'icon' => 'export_xls_cov',
+        'profile' => [
+            'icon' => 'profile',
+            'label' => 'profile',
         ],
         'title' => [
             'icon' => 'title',

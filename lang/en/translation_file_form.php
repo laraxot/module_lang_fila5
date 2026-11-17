@@ -1,10 +1,5 @@
 <?php
 
-<<<<<<< .merge_file_Tr8tOG
-declare(strict_types=1);
-
-return [];
-=======
 return [
     'fields' => [
         'name' => [
@@ -31,4 +26,3 @@ return [
         ],
     ],
 ];
->>>>>>> .merge_file_pUrrr4
