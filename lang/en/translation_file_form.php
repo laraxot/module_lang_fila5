@@ -1,15 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'fields' => [
         'name' => [
-            'label' => 'Nome del file',
+            'label' => 'File name',
             'placeholder' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'key' => [
-            'label' => 'Chiave',
+            'label' => 'Key',
             'placeholder' => '',
             'helper_text' => '',
             'description' => '',
@@ -21,8 +23,8 @@ return [
             'heading' => '',
         ],
         'content' => [
-            'label' => 'Testi',
-            'heading' => 'Testi',
+            'label' => 'Texts',
+            'heading' => 'Texts',
         ],
     ],
 ];
