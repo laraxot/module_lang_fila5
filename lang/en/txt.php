@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'fields' => [
         'email' => [
@@ -462,6 +460,9 @@ return [
         'ratings' => [
         ],
     ],
+    'actions' => [
+        'authenticate' => [
+            'label' => 'Authenticate',
             'tooltip' => 'Sign in to the system',
             'icon' => 'ui-login',
             'color' => 'primary',
@@ -475,9 +476,6 @@ return [
         'request' => [
             'icon' => 'request',
             'label' => 'request',
-        'request' => [
-            'icon' => 'request',
-            'label' => 'request',
         ],
         'hidePassword' => [
             'icon' => 'hidePassword',
@@ -486,6 +484,18 @@ return [
         'showPassword' => [
             'icon' => 'ui-showPassword',
             'label' => 'showPassword',
+        ],
+        'list_log_activities' => [
+            'icon' => 'list_log_activities',
+        ],
+        'table_layout_toggle' => [
+            'icon' => 'table_layout_toggle',
+        ],
+        'update_coordinates' => [
+            'icon' => 'update_coordinates',
+        ],
+        'edit' => [
+            'icon' => 'edit',
         ],
         'delete' => [
             'icon' => 'delete',
@@ -538,9 +548,12 @@ return [
         ],
         'bet_action' => [
             'icon' => 'bet_action',
-        'profile' => [
-            'icon' => 'profile',
-            'label' => 'profile',
+        ],
+        'export_xls_lazy_cov' => [
+            'icon' => 'export_xls_lazy_cov',
+        ],
+        'export_xls_cov' => [
+            'icon' => 'export_xls_cov',
         ],
         'title' => [
             'icon' => 'title',
