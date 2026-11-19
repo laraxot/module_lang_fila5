@@ -328,6 +328,7 @@ describe('Lang coverage boost — Sync and routes', function (): void {
         } finally {
             // Copia, non moveDirectory(): rename() fallisce in silenzio fra filesystem diversi (/tmp in tmpfs) e il
             // 2026-11-19 ha lasciato Modules/Lang/lang/en cancellata con il backup rimasto in /tmp.
+            // @see Modules/Lang/docs/testing.md#test-che-riscrivono-lang
             File::deleteDirectory($enDir);
             if (! File::copyDirectory($backup, $enDir)) {
                 throw new RuntimeException('Ripristino di '.$enDir.' fallito: il backup e\' in '.$backup);
