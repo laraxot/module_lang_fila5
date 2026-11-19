@@ -38,6 +38,7 @@ use Modules\Lang\View\Composers\ThemeComposer;
 use Modules\Xot\Actions\GetViewAction;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+use RuntimeException;
 
 use function Safe\mkdir;
 use function Safe\rmdir;
@@ -325,8 +326,13 @@ describe('Lang coverage boost — Sync and routes', function (): void {
         try {
             $result = app(SyncTranslationsAction::class)->execute('it', ['en'], 'Lang');
         } finally {
+            // Copia, non moveDirectory(): rename() fallisce in silenzio fra filesystem diversi (/tmp in tmpfs) e il
+            // 2026-11-19 ha lasciato Modules/Lang/lang/en cancellata con il backup rimasto in /tmp.
             File::deleteDirectory($enDir);
-            File::moveDirectory($backup, $enDir);
+            if (! File::copyDirectory($backup, $enDir)) {
+                throw new RuntimeException('Ripristino di '.$enDir.' fallito: il backup e\' in '.$backup);
+            }
+            File::deleteDirectory($backup);
         }
 
         Assert::assertIsArray($result);
