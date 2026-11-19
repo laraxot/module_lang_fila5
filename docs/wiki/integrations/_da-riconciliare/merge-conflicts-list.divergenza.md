@@ -1,8 +1,8 @@
 ---
-qmd: "merge conflicts list.divergenza"
+qmd: "Merge Conflicts List.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: merge-conflicts-list.md"
+title: "Merge Conflicts List.divergenza"
 module: Lang
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
