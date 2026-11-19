@@ -4,84 +4,28 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Lang
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_PTl4qL
-qmd: "audit BMAD Lang source-first qualità"
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_Qa13KT
-qmd: "audit BMAD Lang source-first qualità"
-=======
 qmd: "audit BMAD Lang sintesi gate tracker chiavi mancanti non cablato test coverage schema user_id Post fuori scope config morta"
 related:
   - ./audits/lang-audit.md
   - ./piano-miglioramento.md
   - ../ecc/lang-ecc-audit.md
->>>>>>> .merge_file_Zs06e1
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_pxXJkA
->>>>>>> laraxot/dev
 ---
 
 # Audit BMAD — Lang
 
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_PTl4qL
-SSoT dettagliata: [audits/lang-audit.md](./audits/lang-audit.md)
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_Qa13KT
-SSoT dettagliata: [audits/lang-audit.md](./audits/lang-audit.md)
-=======
 SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/lang-audit.md](./audits/lang-audit.md).
 
-**Scopo in una frase:** Lang tiene fuori dal codice ogni parola che un utente legge ([purpose.md](./purpose.md)).
->>>>>>> .merge_file_Zs06e1
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_pxXJkA
->>>>>>> laraxot/dev
+**Scopo in una frase:** Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua ([purpose.md](./purpose.md)).
 
 ## Sintesi (2026-11-16)
 
 | Metrica | Valore |
 |---|---:|
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qa13KT
-=======
-<<<<<<< .merge_file_PTl4qL
-=======
-<<<<<<< .merge_file_Qa13KT
->>>>>>> .merge_file_pxXJkA
->>>>>>> laraxot/dev
-| PHP `app/` | 72 |
-| Test | 51 |
-| Resources | 2 |
-| Actions | 17 |
-| Services | 0 |
-| Policy `return true` | 2 |
-| Marker | 0 |
-
-## Lo scopo in una frase **Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua.**
-
-## Gate
-
-- PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
-- Pest: da eseguire in ambiente testing non produttivo.
-- Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_PTl4qL
-=======
->>>>>>> laraxot/dev
-=======
-| PHP `app/` / test PHP / `*Test.php` | 72 / 51 / 29 |
+| PHP `app/` / test PHP / `*Test.php` | 72 / 51 / 29 (ricontato 2026-11-19: 72 / 53 / 29) |
 | Models / Policy / Resource / Widget | 7 / 4 / 2 / 1 |
 | Actions / Services / Migration / Lang IT | 17 / 0 / 11 / 33 |
 | Marker conflitto / `RefreshDatabase` / `dd()` | 0 / 0 / 0 |
+| Policy `return true` | 2, solo in `LangBasePolicy::before()` (bypass `super-admin` / `lang::admin`) |
 | `.md` in `docs/` | 955 (1 senza frontmatter, 111 nome non conforme) |
 
 ## Finding principali
@@ -105,8 +49,3 @@ Nessun P0: policy corrette (`LangBasePolicy::before()` con bypass `super-admin`/
 ## Riferimenti
 
 [Piano](./piano-miglioramento.md) · [Epics](./epics.md) · [Decision log](./decision-log.md) · [ECC](../ecc/lang-ecc-audit.md) · [Story](./stories/module-bmad-audit.story.md)
->>>>>>> .merge_file_Zs06e1
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_pxXJkA
->>>>>>> laraxot/dev

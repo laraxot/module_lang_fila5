@@ -4,15 +4,6 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Lang
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_lxe4xc
-qmd: "audit approfondito Lang inventario PHPStan Pest policy Filament Actions"
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ZOSZBx
-qmd: "audit approfondito Lang inventario PHPStan Pest policy Filament Actions"
-=======
 qmd: "audit approfondito Lang traduzioni AutoLabelAction SaveTransAction TranslatorAdapter registerTranslator non cablato Post fuori scope config lang.php non caricata test coverage schema user_id PHPStan Pest"
 related:
   - ../audit.md
@@ -22,86 +13,12 @@ related:
   - ../epics.md
   - ../../ecc/lang-ecc-audit.md
   - ../stories/module-bmad-audit.story.md
->>>>>>> .merge_file_2Vz5YG
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_25UnnI
->>>>>>> laraxot/dev
 ---
 
 # Audit approfondito — Lang
 
 ## Metodo
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_ZOSZBx
-=======
-<<<<<<< .merge_file_lxe4xc
-=======
-<<<<<<< .merge_file_ZOSZBx
->>>>>>> .merge_file_25UnnI
->>>>>>> laraxot/dev
-Source-first (2026-11-16): inventario filesystem, `rg` su policy/marker/label,
-lettura purpose esistente, PHPStan globale Modules già a 0 errori. Nessuna UI
-inventata. Pest dichiarato solo se eseguito.
-
-## Inventario misurato
-
-| Area | Conteggio |
-|---|---:|
-| PHP in `app/` | 72 |
-| Test PHP | 51 |
-| Models (`app/Models/*.php`) | 7 |
-| Policy files (approx) | 8 |
-| Resource Filament | 2 |
-| Actions | 17 |
-| Services | 0 |
-| Migration | 11 |
-| Lang IT files | 66 |
-| Marker conflitto | 0 |
-| Occorrenze `return true` in Policy | 2 |
-| Ratio test/app | 0.71 |
-
-## Scopo (da docs esistenti / codice)
-
-## Lo scopo in una frase **Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua.**
-
-## Finding preliminari (da inventario)
-
-- Nessun finding automatico critico dall'inventario; completare review sicurezza/runtime con story dedicate.
-
-## Finding approfonditi (codice)
-
-- **P1** Label hardcoded in `LocaleSwitcherRefresh` (`Select language` / `Cambia lingua`).
-- **P2** Fallback UI `FIX:` in `AutoLabelAction`.
-- Policy su `LangBasePolicy` + permission (ok relativo).
-
-## Gate
-
-```bash
-cd laravel
-php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Lang
-# Pest solo fuori da 10.100.200.15 e con DB testing raggiungibile
-./vendor/bin/pest Modules/Lang/tests --no-coverage
-```
-
-PHPStan `Modules` (2026-11-16): **0 errori** sul tree completo.
-
-## Piano
-
-Vedi [piano-miglioramento.md](../piano-miglioramento.md).
-
-## Riferimenti
-
-- [audit.md](../audit.md)
-- [ECC](../../ecc/lang-ecc-audit.md)
-- [Story](../stories/module-bmad-audit.story.md)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_lxe4xc
-=======
->>>>>>> laraxot/dev
-=======
 Source-first, 2026-11-16: inventario filesystem, `rg -n` con `path:line`, lettura di `LangServiceProvider`, `AutoLabelAction`, `SaveTransAction`, `WriteTranslationFileAction`, `TranslationFile`, `LocaleSwitcherRefresh`, `config/`; `php artisan tinker` (sola lettura di config); PHPStan sul modulo; Pest sullo scratch DB del repo. La documentazione è stata trattata come ipotesi: **dove codice e docs divergono vince il codice.** Nessuna UI o screenshot inventati; nessun comportamento a runtime del pannello è stato provato in un browser.
 
 ## Scopo (perché esiste)
@@ -193,7 +110,9 @@ Consumatori fuori modulo (file con `use Modules\Lang\`, esclusi i test): Xot 7, 
 | PHPStan `Modules/Lang` (`php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Lang --no-progress`) | **0 errori** (exit 0) |
 | Pest `Modules/Lang/tests/Feature` (scratch DB, host 127.0.0.1) | **parziale: 10 pass, 13 fail** per schema `user_id` (P1-3); `tests/Unit` non eseguito per carico macchina (load ≈ 50) |
 
-Nessun `migrate:fresh`, nessun `--force`, nessun `RefreshDatabase` lanciati dall'audit.
+Nessun `migrate:fresh`, nessun `--force`, nessun `RefreshDatabase` lanciati dall'audit. Pest si esegue solo fuori dalla produzione e con DB di test raggiungibile.
+
+Una revisione precedente di questo audit (inventario automatico) riportava 8 policy e 66 file di lingua IT: conteggi approssimati, non confermati dal filesystem (ricontrollo 2026-11-19: 4 policy, 33 file in `lang/it`).
 
 ## Piano
 
@@ -202,8 +121,3 @@ Nessun `migrate:fresh`, nessun `--force`, nessun `RefreshDatabase` lanciati dall
 ## Riferimenti
 
 [Sintesi](../audit.md) · [ECC](../../ecc/lang-ecc-audit.md) · [Story](../stories/module-bmad-audit.story.md) · [Brainstorming](../brainstorming.md)
->>>>>>> .merge_file_2Vz5YG
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_25UnnI
->>>>>>> laraxot/dev

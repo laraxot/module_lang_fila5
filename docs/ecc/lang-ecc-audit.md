@@ -4,59 +4,17 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: Lang
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_lwYRCt
-qmd: "ECC audit Lang verification security testing laravel"
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_aTf3Jr
-qmd: "ECC audit Lang verification security testing laravel"
-=======
 qmd: "ECC audit Lang checklist security-review clean-code verification-loop inventario misurato finding tracker chiavi mancanti test coverage"
 related:
   - ./00-index.md
   - ../bmad/audits/lang-audit.md
   - ../bmad/audit.md
->>>>>>> .merge_file_AuCMkO
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_Ef5eEQ
->>>>>>> laraxot/dev
 ---
 
 # ECC audit operativo — Lang
 
 ## Contratto PTVX
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_aTf3Jr
-=======
-<<<<<<< .merge_file_lwYRCt
-=======
-<<<<<<< .merge_file_aTf3Jr
->>>>>>> .merge_file_Ef5eEQ
->>>>>>> laraxot/dev
-ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
-PHPStan + Pest, aggiornamento docs/QMD.
-
-## Checklist
-
-- [ ] `clean-code`: DRY/KISS, Actions su Services, niente wrapper inutili
-- [ ] `security-review`: policy, mass assignment, export, log, privacy, tenant
-- [ ] `laravel-verification`: route, config, migration additive, container
-- [ ] `verification-loop`: PHPStan level max + Pest mirato
-- [ ] `tdd-workflow`: regressione sui finding P0
-- [ ] `documentation-sync`: story + indici + qmd
-- [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
-
-## Input misurato (2026-11-16)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_lwYRCt
-=======
->>>>>>> laraxot/dev
-=======
 ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audits/lang-audit.md).
 
 ## Checklist (stato misurato 2026-11-16)
@@ -71,47 +29,10 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 | `documentation-sync` | **fatto in questo giro** | architecture riscritta, decision-log/epics/purpose gap-fill; 111/955 `.md` con nome non conforme |
 
 ## Inventario misurato
->>>>>>> .merge_file_AuCMkO
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_Ef5eEQ
->>>>>>> laraxot/dev
 
 | Voce | N |
 |---|---:|
 | app PHP | 72 |
-<<<<<<< HEAD
-<<<<<<< .merge_file_aTf3Jr
-=======
-<<<<<<< .merge_file_lwYRCt
-=======
-<<<<<<< .merge_file_aTf3Jr
->>>>>>> .merge_file_Ef5eEQ
->>>>>>> laraxot/dev
-| test | 51 |
-| resources | 2 |
-| actions | 17 |
-| services | 0 |
-| policies (files approx) | 8 |
-
-## Gate osservati
-
-- PHPStan `Modules` (2026-11-16): 0 errori
-- Pest: pending (ambiente testing)
-
-## Anti-pattern vietati
-
-- baseline/`@phpstan-ignore` senza motivazione
-- test svuotati per silenziare errori
-- migrate:fresh / RefreshDatabase / --force
-- docs con date nel nome file
-- comportamento o screenshot inventati
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_lwYRCt
-=======
->>>>>>> laraxot/dev
-=======
 | test PHP / `*Test.php` | 51 / 29 |
 | Models / Policy / Resource | 7 / 4 / 2 |
 | Pagine Resource / Widget | 9 / 1 |
@@ -126,14 +47,17 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 - PHPStan `Modules/Lang` (`--no-progress`): **0 errori**.
 - Pest `Modules/Lang/tests/Feature` su scratch DB: **10 pass, 13 fail** (errore `user_id` UUID in colonna bigint, vedi [P1-3](../bmad/audits/lang-audit.md#p1-3--test-copertura-inseguita-e-suite-non-verde-su-scratch-db)).
 
-## Anti-pattern vietati (stato)
+## Anti-pattern vietati
+
+- baseline/`@phpstan-ignore` senza motivazione
+- test svuotati per silenziare errori
+- `migrate:fresh` / `RefreshDatabase` / `--force`
+- docs con date nel nome file
+- comportamento o screenshot inventati
+
+### Stato misurato
 
 `migrate:fresh`: 0; `RefreshDatabase`: 0; `@phpstan-ignore`: 0; `dd()`: 0; `->label()` letterali: 2 (`LocaleSwitcherRefresh.php:34,45`).
->>>>>>> .merge_file_AuCMkO
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_Ef5eEQ
->>>>>>> laraxot/dev
 
 ## Riferimenti
 
