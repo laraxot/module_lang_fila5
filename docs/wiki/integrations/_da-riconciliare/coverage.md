@@ -20,13 +20,8 @@ related:
 ## Output
 
 ```text
-<<<<<<< HEAD
 ──────────────────────────────────────────────────  
    FAILED  Modules\Lang\tests\Feature\LangBusinessLogicTest > `Lang Business Lo…  Error   
-=======
-──────────────────────────────────────────────────
-   FAILED  Modules\Lang\tests\Feature\LangBusinessLogicTest > `Lang Business Lo…  Error
->>>>>>> laraxot/dev
   Call to a member function connection() on null
 
   at vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1980
@@ -36,24 +31,15 @@ related:
     1979▕     {
   ➜ 1980▕         return static::$resolver->connection($connection);
     1981▕     }
-<<<<<<< HEAD
     1982▕ 
-=======
-    1982▕
->>>>>>> laraxot/dev
     1983▕     /**
     1984▕      * Get the connection resolver instance.
 
       [2m+9 vendor frames [22m
   10  Modules/Lang/tests/Feature/LangBusinessLogicTest.php:329
 
-<<<<<<< HEAD
   ──────────────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\Lang\tests\Feature\LangBusinessLogicTest > `Lang Business Lo…  Error   
-=======
-  ──────────────────────────────────────────────────────────────────────────────────────
-   FAILED  Modules\Lang\tests\Feature\LangBusinessLogicTest > `Lang Business Lo…  Error
->>>>>>> laraxot/dev
   Call to a member function connection() on null
 
   at vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1980
@@ -63,18 +49,13 @@ related:
     1979▕     {
   ➜ 1980▕         return static::$resolver->connection($connection);
     1981▕     }
-<<<<<<< HEAD
     1982▕ 
-=======
-    1982▕
->>>>>>> laraxot/dev
     1983▕     /**
     1984▕      * Get the connection resolver instance.
 
       [2m+9 vendor frames [22m
   10  Modules/Lang/tests/Feature/LangBusinessLogicTest.php:349
 
-<<<<<<< HEAD
   ──────────────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\Lang\tests\Unit\Actions\ReadTranslationFileActionTest > `ReadTransl…   
   Failed asserting that exception of type "Error" matches expected exception "Exception". Message was: "Call to undefined method Illuminate\Container\Container::storagePath()" at
@@ -88,21 +69,6 @@ related:
 /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
 /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
-=======
-  ──────────────────────────────────────────────────────────────────────────────────────
-   FAILED  Modules\Lang\tests\Unit\Actions\ReadTranslationFileActionTest > `ReadTransl…
-  Failed asserting that exception of type "Error" matches expected exception "Exception". Message was: "Call to undefined method Illuminate\Container\Container::storagePath()" at
-. progetto>_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
-. progetto>_fila5_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
-/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
-/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
-/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
-/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
-/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
-/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
-/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
-/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
->>>>>>> laraxot/dev
 /var/www/_bases/base_modulo questionari_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
 /var/www/_bases/base_modulo questionari_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
 /var/www/_bases/base_modulo questionari_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
@@ -114,21 +80,12 @@ related:
 . progetto>_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
 . progetto>_fila5_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
 ---
-<<<<<<< HEAD
 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
 /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
 .
 
   ──────────────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\Lang\tests\Unit\Actions\ReadTranslationFileActionTest > `ReadTransl…   
-=======
-/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:933
-/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:58
-.
-
-  ──────────────────────────────────────────────────────────────────────────────────────
-   FAILED  Modules\Lang\tests\Unit\Actions\ReadTranslationFileActionTest > `ReadTransl…
->>>>>>> laraxot/dev
   Expected: <?php\n
   \n
   return [\n
@@ -138,20 +95,12 @@ related:
 
   at Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php:105
     101▕         $phpContent = $this->action->toPhp($translations);
-<<<<<<< HEAD
     102▕ 
-=======
-    102▕
->>>>>>> laraxot/dev
     103▕         expect($phpContent)->toContain("Text with \\'single\\' and \\\"double\\\" quotes");
     104▕         expect($phpContent)->toContain('Text with \\\\ backslashes');
   ➜ 105▕         expect($phpContent)->toContain('Text with\\nnewlines');
     106▕     });
-<<<<<<< HEAD
     107▕ 
-=======
-    107▕
->>>>>>> laraxot/dev
     108▕     test('handles deeply nested arrays', function () {
     109▕         $translations = [
 

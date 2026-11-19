@@ -294,13 +294,8 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
-<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
-=======
-- [Best Practices](../../translation-keys-best-practices.md)
-- [PHPStan Level 10 Fixes](../../archive/historical/phpstan-level10-fixes.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -560,13 +555,8 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
-<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
-=======
-- [Best Practices](../../translation-keys-best-practices.md)
-- [PHPStan Level 10 Fixes](../../archive/historical/phpstan-level10-fixes.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -674,11 +664,7 @@ return [
 - [Translation Standards](../translation-standards.md)
 - [PHP Strict Types](../php-strict-types.md)
 - [Translation File Management](../translation-file-management.md)
-<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -769,11 +755,7 @@ return [
 - [Translation Standards](../translation-standards.md)
 - [PHP Strict Types](../php-strict-types.md)
 - [Translation File Management](../translation-file-management.md)
-<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -1119,11 +1101,7 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 - [Lang Service Provider](../lang-service-provider.md)
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
-<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -1231,11 +1209,7 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 - [Lang Service Provider](../lang-service-provider.md)
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
-<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -1436,15 +1410,9 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 ## Collegamenti Correlati
 
 - [Translation Standards](../translation-standards.md)
-<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [PHPStan Level 10 Fixes](../../archive/historical/phpstan-level10-fixes.md)
-- [Translation File Management](../translation-file-management.md)
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -1629,15 +1597,9 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 ## Collegamenti Correlati
 
 - [Translation Standards](../translation-standards.md)
-<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [PHPStan Level 10 Fixes](../../archive/historical/phpstan-level10-fixes.md)
-- [Translation File Management](../translation-file-management.md)
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -1867,11 +1829,7 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 - [Translation Standards](../translation-standards.md)
 - [Translation File Management](../translation-file-management.md)
-<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
@@ -2087,11 +2045,7 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 - [Translation Standards](../translation-standards.md)
 - [Translation File Management](../translation-file-management.md)
-<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
@@ -2219,15 +2173,9 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 ## Collegamenti Correlati
 
 - [Translation File Management](../translation-file-management.md)
-<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation Standards](../translation-standards.md)
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [PHPStan Level 10 Fixes](../../archive/historical/phpstan-level10-fixes.md)
-- [Translation Standards](../translation-standards.md)
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -2332,15 +2280,9 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 ## Collegamenti Correlati
 
 - [Translation File Management](../translation-file-management.md)
-<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation Standards](../translation-standards.md)
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [PHPStan Level 10 Fixes](../../archive/historical/phpstan-level10-fixes.md)
-- [Translation Standards](../translation-standards.md)
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -2661,13 +2603,8 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
-<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
-=======
-- [Best Practices](../../translation-keys-best-practices.md)
-- [PHPStan Level 10 Fixes](../../archive/historical/phpstan-level10-fixes.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -2775,11 +2712,7 @@ return [
 - [Translation Standards](../translation-standards.md)
 - [PHP Strict Types](../php-strict-types.md)
 - [Translation File Management](../translation-file-management.md)
-<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -3015,11 +2948,7 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 - [Lang Service Provider](../lang-service-provider.md)
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
-<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -3220,15 +3149,9 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 ## Collegamenti Correlati
 
 - [Translation Standards](../translation-standards.md)
-<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [PHPStan Level 10 Fixes](../../archive/historical/phpstan-level10-fixes.md)
-- [Translation File Management](../translation-file-management.md)
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -3458,11 +3381,7 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 - [Translation Standards](../translation-standards.md)
 - [Translation File Management](../translation-file-management.md)
-<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 
 ## Note per Sviluppatori Futuri
@@ -3584,15 +3503,9 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 ## Collegamenti Correlati
 
 - [Translation File Management](../translation-file-management.md)
-<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation Standards](../translation-standards.md)
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [PHPStan Level 10 Fixes](../../archive/historical/phpstan-level10-fixes.md)
-- [Translation Standards](../translation-standards.md)
-- [Best Practices](../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 

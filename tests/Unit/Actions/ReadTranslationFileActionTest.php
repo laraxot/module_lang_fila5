@@ -11,10 +11,7 @@ use function Safe\chmod;
 use function Safe\file_put_contents;
 use function Safe\unlink;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
->>>>>>> laraxot/dev
 
 afterEach(function (): void {
     $path = TestCase::readTranslationTestFilePath();

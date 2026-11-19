@@ -14,21 +14,12 @@ related:
 # Lang Module - Comprehensive Analysis
 
 ## Module Overview
-<<<<<<< HEAD
 **Module Name**: Lang  
 **Type**: Localization & Translation Module  
 **Status**: ✅ Active  
 **Framework**: Laravel 13.x + Filament 4.x  
 **Translation System**: Laravel Localization + Advanced Features  
 **Language**: Multi-language (IT/EN/DE + 7 more)  
-=======
-**Module Name**: Lang
-**Type**: Localization & Translation Module
-**Status**: ✅ Active
-**Framework**: Laravel 13.x + Filament 4.x
-**Translation System**: Laravel Localization + Advanced Features
-**Language**: Multi-language (IT/EN/DE + 7 more)
->>>>>>> laraxot/dev
 
 ## Purpose
 The Lang module provides comprehensive localization and translation management:
@@ -81,11 +72,7 @@ The Lang module provides comprehensive localization and translation management:
 ## Integration with Other Modules
 - **User**: User language preferences
 - **Cms**: Multi-language content
-<<<<<<< HEAD
 - **Quaeris**: Survey translation
-=======
-- **<nome progetto>**: Survey translation
->>>>>>> laraxot/dev
 - **modulo questionari**: Survey translation
 ---
 - **Limesurvey**: Question translation

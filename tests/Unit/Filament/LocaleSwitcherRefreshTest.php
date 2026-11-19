@@ -5,10 +5,7 @@ use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
->>>>>>> laraxot/dev
 
 test('LocaleSwitcherRefresh applyLocale imposta sessione e locale', function (): void {
     session()->forget('locale');

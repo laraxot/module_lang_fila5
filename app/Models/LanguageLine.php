@@ -22,7 +22,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *
-<<<<<<< HEAD
  * @method static EloquentBuilder<static>|LanguageLine newModelQuery()
  * @method static EloquentBuilder<static>|LanguageLine newQuery()
  * @method static EloquentBuilder<static>|LanguageLine query()
@@ -35,20 +34,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedAt($value)
  * @method static EloquentBuilder<static>|LanguageLine whereCreatedBy($value)
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedBy($value)
-=======
- * @method static EloquentBuilder<static> newModelQuery()
- * @method static EloquentBuilder<static> newQuery()
- * @method static EloquentBuilder<static> query()
- * @method static EloquentBuilder<static> whereId($value)
- * @method static EloquentBuilder<static> whereGroup($value)
- * @method static EloquentBuilder<static> whereKey($value)
- * @method static EloquentBuilder<static> whereText($value)
- * @method static EloquentBuilder<static> whereLocale($value)
- * @method static EloquentBuilder<static> whereCreatedAt($value)
- * @method static EloquentBuilder<static> whereUpdatedAt($value)
- * @method static EloquentBuilder<static> whereCreatedBy($value)
- * @method static EloquentBuilder<static> whereUpdatedBy($value)
->>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter

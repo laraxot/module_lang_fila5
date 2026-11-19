@@ -6,10 +6,7 @@ use Modules\Lang\Models\BaseModel;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
->>>>>>> laraxot/dev
 
 test('base model uses lang connection', function (): void {
     Assert::assertSame('lang', TestCase::makeLangBaseModel()->getConnectionName());

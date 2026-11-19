@@ -7,30 +7,16 @@ use Modules\Lang\Actions\ReadTranslationFileAction;
 use Modules\Lang\Database\Factories\TranslationFactory;
 use Modules\Lang\Models\BaseModel;
 use Modules\Lang\Models\Translation;
-<<<<<<< HEAD
-=======
-use Modules\Lang\Tests\Support\Ensure;
-use Modules\Lang\Tests\TestCase;
->>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_put_contents;
 use function Safe\unlink;
 
-<<<<<<< HEAD
-=======
-uses(TestCase::class)->in('Feature', 'Unit');
-
->>>>>>> laraxot/dev
 /** @param array<string, mixed> $attributes */
 function createTranslation(array $attributes = []): Translation
 {
     return TranslationFactory::new()->createOne($attributes);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 /** @param array<string, mixed> $attributes */
 function makeTranslation(array $attributes = []): Translation
 {
@@ -105,11 +91,3 @@ function makeReadTranslationFileAction(): ReadTranslationFileAction
     return new ReadTranslationFileAction;
 }
 
-<<<<<<< HEAD
-=======
-
-function ensure(mixed $value): Ensure
-{
-    return new Ensure($value);
-}
->>>>>>> laraxot/dev

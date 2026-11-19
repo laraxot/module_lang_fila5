@@ -10,10 +10,7 @@ use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\mkdir;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
->>>>>>> laraxot/dev
 
 test('toglie i segnaposto uguali al nome del campo e lascia le traduzioni vere', function (): void {
     $dir = sys_get_temp_dir().'/lang_clean_'.bin2hex(random_bytes(4));

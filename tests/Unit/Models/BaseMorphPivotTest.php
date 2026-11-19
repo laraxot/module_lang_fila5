@@ -10,10 +10,7 @@ use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
->>>>>>> laraxot/dev
 
 describe('BaseMorphPivot Model', function () {
     test('extends MorphPivot', function () {

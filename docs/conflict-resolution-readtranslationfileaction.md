@@ -180,15 +180,9 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 ## Collegamenti Correlati
 
 - [Translation Standards](../translation-standards.md)
-<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [PHPStan Level 10 Fixes](archive/historical/phpstan-level10-fixes.md)
-- [Translation File Management](../translation-file-management.md)
-- [Best Practices](translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -373,15 +367,9 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 ## Collegamenti Correlati
 
 - [Translation Standards](../translation-standards.md)
-<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation File Management](../translation-file-management.md)
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [PHPStan Level 10 Fixes](archive/historical/phpstan-level10-fixes.md)
-- [Translation File Management](../translation-file-management.md)
-- [Best Practices](translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 

@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests\Unit;
 
-<<<<<<< HEAD
-=======
-use Illuminate\Support\Facades\File;
->>>>>>> laraxot/dev
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -46,11 +42,8 @@ use function Safe\mkdir;
 use function Safe\rmdir;
 use function Safe\unlink;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
-=======
->>>>>>> laraxot/dev
 /**
  * @param  list<string>  $permissions
  * @return MockInterface&UserContract
@@ -323,21 +316,7 @@ describe('Lang coverage boost — Post accessors', function (): void {
 
 describe('Lang coverage boost — Sync and routes', function (): void {
     test('SyncTranslationsAction processes Lang module lang files', function (): void {
-<<<<<<< HEAD
         $result = app(SyncTranslationsAction::class)->execute('it', ['en'], 'Lang');
-=======
-        // L'azione riscrive davvero Modules/Lang/lang/en: si salva la cartella e la si rimette com'era, altrimenti
-        // ogni giro dei test lasciava in git decine di file riscritti (senza declare(strict_types=1)).
-        $enDir = base_path('Modules/Lang/lang/en');
-        $backup = sys_get_temp_dir().'/lang-en-backup-'.uniqid('', true);
-        File::copyDirectory($enDir, $backup);
-        try {
-            $result = app(SyncTranslationsAction::class)->execute('it', ['en'], 'Lang');
-        } finally {
-            File::deleteDirectory($enDir);
-            File::moveDirectory($backup, $enDir);
-        }
->>>>>>> laraxot/dev
 
         Assert::assertIsArray($result);
         Assert::assertSame(1, $result['total_modules']);

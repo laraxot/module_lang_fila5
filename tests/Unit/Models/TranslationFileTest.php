@@ -10,10 +10,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\class_uses;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
->>>>>>> laraxot/dev
 
 describe('TranslationFile Model', function () {
     test('uses Sushi trait', function () {

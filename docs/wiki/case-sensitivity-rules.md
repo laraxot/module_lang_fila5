@@ -27,11 +27,7 @@ I seguenti file/directory sono stati eliminati perché violavano le regole:
 ✓ Kept:    database/migrations/ (flat, solo file .php)
 ```
 
-<<<<<<< HEAD
 Dettaglio incidente e verifica: [wiki/concepts/migration-path-canonical.md](wiki/concepts/migration-path-canonical.md).
-=======
-Dettaglio incidente e verifica: [wiki/concepts/migration-path-canonical.md](concepts/migration-path-canonical.md).
->>>>>>> laraxot/dev
 
 ## Convenzioni
 

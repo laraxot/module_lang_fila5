@@ -2,16 +2,8 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\Lang\Tests\Unit;
 
-=======
-
-namespace Modules\Lang\Tests\Unit;
-
-use Modules\Lang\Tests\Support\Ensure;
-
->>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
@@ -88,10 +80,7 @@ use function Safe\rmdir;
 use function Safe\touch;
 use function Safe\unlink;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
->>>>>>> laraxot/dev
 
 /**
  * @param  list<string>  $permissions
@@ -268,12 +257,8 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         });
 
         try {
-<<<<<<< HEAD
             expect(fn () => app(SaveTransAction::class)->execute('lang::tmproot', 'not-array'))
                 ->toThrow(\Exception::class);
-=======
-            Ensure::throws(fn () => app(SaveTransAction::class)->execute('lang::tmproot', 'not-array'), \Exception::class);
->>>>>>> laraxot/dev
         } finally {
             if (file_exists($file)) {
                 unlink($file);
@@ -355,11 +340,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $read->shouldReceive('toPhp')->andReturn('<?php return [;');
         app()->instance(ReadTranslationFileAction::class, $read);
 
-<<<<<<< HEAD
         expect(fn () => $action->execute($path, ['x' => 'y']))->toThrow(\Exception::class);
-=======
-        Ensure::throws(fn () => $action->execute($path, ['x' => 'y']), \Exception::class);
->>>>>>> laraxot/dev
     });
 
     test('SyncTranslationsAction covers skip paths nested merge and getModules', function (): void {
@@ -839,11 +820,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
             'group' => 'g',
             'item' => 'i',
         ]);
-<<<<<<< HEAD
         expect(fn () => $data->getFilename())->toThrow(\Exception::class);
-=======
-        Ensure::throws(fn () => $data->getFilename(), \Exception::class);
->>>>>>> laraxot/dev
 
         $file = sys_get_temp_dir().'/td_'.uniqid().'.php';
         file_put_contents($file, "<?php\nreturn 'nope';\n");
@@ -854,11 +831,7 @@ describe('Lang 100% — Models policies providers views', function (): void {
             'item' => 'i',
             'filename' => $file,
         ]);
-<<<<<<< HEAD
         expect(fn () => $data2->getData())->toThrow(\Exception::class);
-=======
-        Ensure::throws(fn () => $data2->getData(), \Exception::class);
->>>>>>> laraxot/dev
         unlink($file);
     });
 
@@ -922,33 +895,21 @@ describe('Lang 100% — Models policies providers views', function (): void {
 
     test('ThemeComposer covers invalid config admin url and missing current lang', function (): void {
         config(['laravellocalization.supportedLocales' => 'bad']);
-<<<<<<< HEAD
         expect(fn () => (new ThemeComposer)->languages())->toThrow(\Exception::class);
-=======
-        Ensure::throws(fn () => (new ThemeComposer)->languages(), \Exception::class);
->>>>>>> laraxot/dev
 
         config([
             'laravellocalization.supportedLocales' => [
                 'it' => 'nope',
             ],
         ]);
-<<<<<<< HEAD
         expect(fn () => (new ThemeComposer)->languages())->toThrow(\InvalidArgumentException::class);
-=======
-        Ensure::throws(fn () => (new ThemeComposer)->languages(), \InvalidArgumentException::class);
->>>>>>> laraxot/dev
 
         config([
             'laravellocalization.supportedLocales' => [
                 'it' => ['name' => 'Italiano'],
             ],
         ]);
-<<<<<<< HEAD
         expect(fn () => (new ThemeComposer)->languages())->toThrow(\InvalidArgumentException::class);
-=======
-        Ensure::throws(fn () => (new ThemeComposer)->languages(), \InvalidArgumentException::class);
->>>>>>> laraxot/dev
 
         config([
             'laravellocalization.supportedLocales' => [
@@ -969,10 +930,6 @@ describe('Lang 100% — Models policies providers views', function (): void {
         Assert::assertIsString($firstLanguage->url);
 
         app()->setLocale('zz');
-<<<<<<< HEAD
         expect(fn () => $composer->currentLang('name'))->toThrow(\Exception::class);
-=======
-        Ensure::throws(fn () => $composer->currentLang('name'), \Exception::class);
->>>>>>> laraxot/dev
     });
 });

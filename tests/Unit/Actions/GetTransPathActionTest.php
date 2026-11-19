@@ -8,10 +8,7 @@ use Modules\Lang\Actions\GetTransPathAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
->>>>>>> laraxot/dev
 
 function makeGetTransPathAction(): GetTransPathAction
 {

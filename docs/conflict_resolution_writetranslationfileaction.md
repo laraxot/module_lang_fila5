@@ -100,15 +100,9 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 ## Collegamenti Correlati
 
 - [Translation File Management](../translation-file-management.md)
-<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 - [Translation Standards](../translation-standards.md)
 - [Best Practices](../translation-keys-best-practices.md)
-=======
-- [PHPStan Level 10 Fixes](archive/historical/phpstan-level10-fixes.md)
-- [Translation Standards](../translation-standards.md)
-- [Best Practices](translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 

@@ -7,10 +7,7 @@ use Illuminate\Support\Facades\Lang;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
->>>>>>> laraxot/dev
 
 describe('LangServiceProvider Basic Functionality', function () {
     it('can be instantiated', function () {

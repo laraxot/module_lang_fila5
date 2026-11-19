@@ -33,7 +33,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $updater
  *
  * @method static TranslationFactory factory($count = null, $state = [])
-<<<<<<< HEAD
  * @method static EloquentBuilder<static>|Translation newModelQuery()
  * @method static EloquentBuilder<static>|Translation newQuery()
  * @method static EloquentBuilder<static>|Translation ofTranslatedGroup(string $group)
@@ -51,39 +50,13 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static EloquentBuilder<static>|Translation whereUpdatedAt($value)
  * @method static EloquentBuilder<static>|Translation whereUpdatedBy($value)
  * @method static EloquentBuilder<static>|Translation whereValue($value)
-=======
- * @method static EloquentBuilder<static> newModelQuery()
- * @method static EloquentBuilder<static> newQuery()
- * @method static EloquentBuilder<static> ofTranslatedGroup(string $group)
- * @method static EloquentBuilder<static> orderByGroupKeys(bool $ordered)
- * @method static EloquentBuilder<static> query()
- * @method static Translation create(array<string, mixed> $attributes = [])
- * @method static Translation firstOrCreate(array<string, mixed> $attributes = [], array<string, mixed> $values = [])
- * @method static EloquentBuilder<static> selectDistinctGroup()
- * @method static EloquentBuilder<static> whereCreatedAt($value)
- * @method static EloquentBuilder<static> whereCreatedBy($value)
- * @method static EloquentBuilder<static> whereGroup($value)
- * @method static EloquentBuilder<static> whereId($value)
- * @method static EloquentBuilder<static> whereItem($value)
- * @method static EloquentBuilder<static> whereKey($value)
- * @method static EloquentBuilder<static> whereLang($value)
- * @method static EloquentBuilder<static> whereNamespace($value)
- * @method static EloquentBuilder<static> whereUpdatedAt($value)
- * @method static EloquentBuilder<static> whereUpdatedBy($value)
- * @method static EloquentBuilder<static> whereValue($value)
->>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $deleter
  * @property string|null $locale
  * @property int|null $user_id
  *
-<<<<<<< HEAD
  * @method static EloquentBuilder<static>|Translation whereLocale($value)
  * @method static EloquentBuilder<static>|Translation whereUserId($value)
-=======
- * @method static EloquentBuilder<static> whereLocale($value)
- * @method static EloquentBuilder<static> whereUserId($value)
->>>>>>> laraxot/dev
  *
  * @mixin Model
  */

@@ -5,11 +5,6 @@ declare(strict_types=1);
 namespace Modules\Lang\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
-<<<<<<< HEAD
-=======
-use Illuminate\Contracts\View\View;
-use Illuminate\Support\Facades\View as ViewFacade;
->>>>>>> laraxot/dev
 use Illuminate\Support\Collection;
 use Mcamara\LaravelLocalization\Exceptions\UnsupportedLocaleException;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -28,12 +23,9 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class LanguageSwitcherWidget extends XotBaseSchemaWidget
 {
-<<<<<<< HEAD
     /** @var view-string */
     protected string $view = 'lang::filament.widgets.language-switcher';
 
-=======
->>>>>>> laraxot/dev
     /**
      * Non è una dashboard card: si monta esplicitamente nel tema
      * (`@livewire(\Modules\Lang\Filament\Widgets\LanguageSwitcherWidget::class)`),
@@ -50,20 +42,6 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     }
 
     /**
-<<<<<<< HEAD
-=======
-     * Vista FO dedicata: evita default `view-string` Filament non verificabile per `lang::`.
-     */
-    public function render(): View
-    {
-        /** @var view-string $view */
-        $view = 'lang::filament.widgets.language-switcher';
-
-        return ViewFacade::make($view, $this->getViewData());
-    }
-
-    /**
->>>>>>> laraxot/dev
      * Schema del form: il widget non espone campi editabili, solo azioni.
      *
      * @return array<int, Component>
@@ -133,19 +111,8 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
      */
     public function getLanguageUrl(string $locale): string
     {
-<<<<<<< HEAD
         try {
             $url = LaravelLocalization::getLocalizedURL($locale, null, [], true);
-=======
-        // Usa la classe concreta: la Facade PHPDoc non dichiara @throws UnsupportedLocaleException.
-        $localization = app('laravellocalization');
-        if (! $localization instanceof \Mcamara\LaravelLocalization\LaravelLocalization) {
-            return '/'.$locale;
-        }
-
-        try {
-            $url = $localization->getLocalizedURL($locale, null, [], true);
->>>>>>> laraxot/dev
         } catch (UnsupportedLocaleException) {
             return '/'.$locale;
         }

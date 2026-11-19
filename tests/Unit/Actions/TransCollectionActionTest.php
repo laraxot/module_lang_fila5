@@ -9,10 +9,7 @@ use Modules\Lang\Actions\TransCollectionAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
->>>>>>> laraxot/dev
 
 function makeTransCollectionAction(): TransCollectionAction
 {

@@ -62,10 +62,6 @@ class NationalFlagSelect extends XotBaseSelect
 
             $flagName = strtolower($code);
             $localizedLabel = __('lang::countries.'.$flagName);
-<<<<<<< HEAD
-=======
-            $localizedLabel = is_string($localizedLabel) ? $localizedLabel : $flagName;
->>>>>>> laraxot/dev
 
             $flagSrc = app(AssetAction::class)->execute('lang::svg/flag/'.$flagName.'.svg');
             $flag = '<img src="'.$flagSrc.'" class="h-4 w-6 mr-2" inline-block />';
@@ -148,10 +144,6 @@ class NationalFlagSelect extends XotBaseSelect
 
             $flagName = strtolower($code);
             $localizedLabel = __('lang::countries.'.$flagName);
-<<<<<<< HEAD
-=======
-            $localizedLabel = is_string($localizedLabel) ? $localizedLabel : $flagName;
->>>>>>> laraxot/dev
 
             $flagSrc = app(AssetAction::class)->execute('lang::svg/flag/'.$flagName.'.svg');
             $flag = '<img src="'.$flagSrc.'" class="h-4 w-6 mr-2" inline-block />';

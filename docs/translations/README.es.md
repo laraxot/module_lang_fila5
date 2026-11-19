@@ -13,17 +13,10 @@ related:
 ---
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup.png" alt="Laraxot PTVX" width="350"/>
-<<<<<<< HEAD
   
   <h1>Laraxot PTVX</h1>
   <p><b>Plataforma Laravel Modular, Type-Safe y Multi-Tenant</b></p>
   
-=======
-
-  <h1>Laraxot PTVX</h1>
-  <p><b>Plataforma Laravel Modular, Type-Safe y Multi-Tenant</b></p>
-
->>>>>>> laraxot/dev
   <a href="https://laravel.com"><img src="https://img.shields.io/badge/Laravel-11.x-red?style=flat-square&logo=laravel" alt="Laravel Version"/></a>
   <a href="https://phpstan.org/"><img src="https://img.shields.io/badge/PHPStan-Level%209-blue?style=flat-square&logo=php" alt="PHPStan Level"/></a>
   <a href="https://filamentphp.com/"><img src="https://img.shields.io/badge/Filament-Admin-green?style=flat-square&logo=laravel" alt="Filament"/></a>
@@ -102,9 +95,5 @@ Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](..
 ---
 
 <div align="center">
-<<<<<<< HEAD
   <sub>Construido con ❤️ por el equipo Base Predict Fila3 Mono</sub>
-=======
-  <sub>Construido con ❤️ por el equipo Base Predict fila5</sub>
->>>>>>> laraxot/dev
 </div>

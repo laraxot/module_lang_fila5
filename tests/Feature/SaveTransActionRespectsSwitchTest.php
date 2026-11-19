@@ -1,21 +1,13 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
-use PHPUnit\Framework\Assert;
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Config;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Tests\TestCase;
 
 use function Safe\file_get_contents;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
->>>>>>> laraxot/dev
 
 /*
  * `AutoLabelAction` chiama `SaveTransAction` ogni volta che una chiave manca, e la
@@ -35,32 +27,18 @@ it('non scrive niente quando la scrittura delle chiavi mancanti e spenta', funct
 
     $after = is_file($target) ? file_get_contents($target) : null;
 
-<<<<<<< HEAD
     expect($after)->toBe($before);
-=======
-    Assert::assertSame($before, $after);
->>>>>>> laraxot/dev
 });
 
 it('sotto test non scrive nemmeno senza configurazione esplicita', function (): void {
     // Il caso che conta: nessuno ha impostato niente, e la suite non deve comunque
     // toccare l'albero. E' lo scenario in cui il difetto e' gia' tornato due volte.
-<<<<<<< HEAD
     Config::offsetUnset('lang.save_missing_translations');
-=======
-    $lang = (array) Config::get('lang', []);
-    unset($lang['save_missing_translations']);
-    Config::set('lang', $lang);
->>>>>>> laraxot/dev
 
     $target = base_path('Modules/Lang/lang/it/lang.php');
     $before = is_file($target) ? file_get_contents($target) : null;
 
     app(SaveTransAction::class)->execute('lang::lang.altra_chiave_assente.label', 'valore');
 
-<<<<<<< HEAD
     expect(is_file($target) ? file_get_contents($target) : null)->toBe($before);
-=======
-    Assert::assertSame($before, is_file($target) ? file_get_contents($target) : null);
->>>>>>> laraxot/dev
 });

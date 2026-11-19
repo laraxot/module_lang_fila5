@@ -92,11 +92,7 @@ Prima di fare commit dei documenti:
 
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella
 ```markdown
-<<<<<<< HEAD
 [Best Practices](translation-keys-best-practices.md)
-=======
-[Best Practices](../../../translation-keys-best-practices.md)
->>>>>>> laraxot/dev
 ```
 
 ## Vantaggi dei Percorsi Relativi
