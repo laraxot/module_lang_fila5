@@ -41,4 +41,4 @@ Audit source-first del modulo che deve tenere fuori dal codice ogni parola che l
 
 ## Esito
 
-Baseline consegnata: 0 P0, 3 P1, P2 elencati. PHPStan sul tree `Modules` a 0; Pest e chiusura dei P1 aperti. Nota: esiste anche `module-bmad-audit-20260928.story.md` (storica, nome datato: da migrare a una story senza data).
+Baseline consegnata: 0 P0, 3 P1, P2 elencati. PHPStan sul tree `Modules` a 0; Pest e chiusura dei P1 aperti. Nota: esiste anche `module-bmad-audit-lang-baseline-analisi-completa.story.md` (storica, nome datato: da migrare a una story senza data).
