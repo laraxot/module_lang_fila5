@@ -4,6 +4,12 @@ type: concept
 status: active
 updated: 2026-11-16
 module: Lang
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_25fuqc
+qmd: "purpose bmad Lang"
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_1hZY3F
 qmd: "purpose bmad Lang"
 =======
@@ -14,10 +20,22 @@ related:
   - ./architecture.md
   - ./epics.md
 >>>>>>> .merge_file_4aNdKa
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_etoFtB
+>>>>>>> laraxot/dev
 ---
 
 # Scopo BMAD — Lang
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_25fuqc
+## Lo scopo in una frase **Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua.**
+
+SSoT estesa: [../purpose.md](../purpose.md) se presente.
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_1hZY3F
 ## Lo scopo in una frase **Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua.**
 
@@ -53,3 +71,7 @@ I testi di un'applicazione pubblica li rivede chi non programma. Se l'etichetta 
 
 [Audit](./audit.md) · [Architettura](./architecture.md) · [Decision log](./decision-log.md) · [Epics](./epics.md)
 >>>>>>> .merge_file_4aNdKa
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_etoFtB
+>>>>>>> laraxot/dev

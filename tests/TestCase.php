@@ -37,6 +37,19 @@ abstract class TestCase extends XotBaseTestCase
     /** @var list<string> */
     protected $connectionsToTransact = ['sqlite', 'lang', 'user'];
 
+<<<<<<< HEAD
+=======
+    /** Fixture path for SaveTransAction feature tests. */
+    public string $targetDir = '';
+
+    /** Fixture translation file path. */
+    public string $target = '';
+
+    /** Previous app env restored in afterEach. */
+    public string $originalEnvironment = '';
+
+
+>>>>>>> laraxot/dev
     protected function setUp(): void
     {
         // Prima di parent::setUp(): DatabaseTransactions apre le transazioni subito; senza questo la

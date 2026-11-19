@@ -6,7 +6,10 @@ use Modules\Lang\Tests\TestCase;
 use Modules\Lang\View\Composers\ThemeComposer;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+>>>>>>> laraxot/dev
 
 test('ThemeComposer languages usa fallback quando manca config', function (): void {
     config(['laravellocalization' => []]);

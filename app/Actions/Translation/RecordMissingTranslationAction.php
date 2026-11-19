@@ -22,7 +22,11 @@ class RecordMissingTranslationAction
     {
         [$namespace, $group, $item] = $this->parseKey($key);
 
+<<<<<<< HEAD
         Translation::firstOrCreate([
+=======
+        Translation::query()->firstOrCreate([
+>>>>>>> laraxot/dev
             'lang' => $locale,
             'namespace' => $namespace,
             'group' => $group,

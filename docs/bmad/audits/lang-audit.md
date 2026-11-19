@@ -4,6 +4,12 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Lang
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_lxe4xc
+qmd: "audit approfondito Lang inventario PHPStan Pest policy Filament Actions"
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_ZOSZBx
 qmd: "audit approfondito Lang inventario PHPStan Pest policy Filament Actions"
 =======
@@ -17,13 +23,24 @@ related:
   - ../../ecc/lang-ecc-audit.md
   - ../stories/module-bmad-audit.story.md
 >>>>>>> .merge_file_2Vz5YG
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_25UnnI
+>>>>>>> laraxot/dev
 ---
 
 # Audit approfondito — Lang
 
 ## Metodo
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_ZOSZBx
+=======
+<<<<<<< .merge_file_lxe4xc
+=======
+<<<<<<< .merge_file_ZOSZBx
+>>>>>>> .merge_file_25UnnI
+>>>>>>> laraxot/dev
 Source-first (2026-11-16): inventario filesystem, `rg` su policy/marker/label,
 lettura purpose esistente, PHPStan globale Modules già a 0 errori. Nessuna UI
 inventata. Pest dichiarato solo se eseguito.
@@ -79,6 +96,11 @@ Vedi [piano-miglioramento.md](../piano-miglioramento.md).
 - [audit.md](../audit.md)
 - [ECC](../../ecc/lang-ecc-audit.md)
 - [Story](../stories/module-bmad-audit.story.md)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_lxe4xc
+=======
+>>>>>>> laraxot/dev
 =======
 Source-first, 2026-11-16: inventario filesystem, `rg -n` con `path:line`, lettura di `LangServiceProvider`, `AutoLabelAction`, `SaveTransAction`, `WriteTranslationFileAction`, `TranslationFile`, `LocaleSwitcherRefresh`, `config/`; `php artisan tinker` (sola lettura di config); PHPStan sul modulo; Pest sullo scratch DB del repo. La documentazione è stata trattata come ipotesi: **dove codice e docs divergono vince il codice.** Nessuna UI o screenshot inventati; nessun comportamento a runtime del pannello è stato provato in un browser.
 
@@ -181,3 +203,7 @@ Nessun `migrate:fresh`, nessun `--force`, nessun `RefreshDatabase` lanciati dall
 
 [Sintesi](../audit.md) · [ECC](../../ecc/lang-ecc-audit.md) · [Story](../stories/module-bmad-audit.story.md) · [Brainstorming](../brainstorming.md)
 >>>>>>> .merge_file_2Vz5YG
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_25UnnI
+>>>>>>> laraxot/dev

@@ -34,7 +34,14 @@ class LanguageSwitcher extends Component
     public function render(): View
     {
         if (! LanguageSwitcherWidget::canView()) {
+<<<<<<< HEAD
             return view('lang::components.empty');
+=======
+            /** @var view-string $emptyView */
+            $emptyView = 'lang::components.empty';
+
+            return view($emptyView);
+>>>>>>> laraxot/dev
         }
 
         // Ottiene i dati pubblici dal widget
@@ -44,6 +51,13 @@ class LanguageSwitcher extends Component
             'widget_id' => 'language-switcher-'.uniqid(),
         ];
 
+<<<<<<< HEAD
         return view('lang::components.language-switcher', $viewData);
+=======
+        /** @var view-string $switcherView */
+        $switcherView = 'lang::components.language-switcher';
+
+        return view($switcherView, $viewData);
+>>>>>>> laraxot/dev
     }
 }

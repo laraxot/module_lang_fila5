@@ -9,7 +9,10 @@ use Modules\Lang\Actions\SyncTranslationsAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+>>>>>>> laraxot/dev
 
 describe('Lang Actions Coverage', function (): void {
     test('PublishTranslationAction is accessible', function (): void {

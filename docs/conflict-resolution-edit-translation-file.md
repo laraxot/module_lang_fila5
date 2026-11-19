@@ -86,7 +86,11 @@ return [
 - [Translation Standards](../translation-standards.md)
 - [PHP Strict Types](../php-strict-types.md)
 - [Translation File Management](../translation-file-management.md)
+<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Best Practices](translation-keys-best-practices.md)
+>>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 
@@ -177,7 +181,11 @@ return [
 - [Translation Standards](../translation-standards.md)
 - [PHP Strict Types](../php-strict-types.md)
 - [Translation File Management](../translation-file-management.md)
+<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Best Practices](translation-keys-best-practices.md)
+>>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 

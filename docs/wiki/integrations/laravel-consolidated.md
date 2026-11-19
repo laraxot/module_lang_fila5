@@ -3313,6 +3313,7 @@ related:
 
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
+<<<<<<< HEAD
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo Lang](./README.md)
@@ -3320,6 +3321,15 @@ related:
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
+=======
+- [Best Practices Chiavi di Traduzione](../../translation-keys-best-practices.md)
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+- [README modulo Lang](./README.md)
+- [Best Practices Chiavi di Traduzione](../../translation-keys-best-practices.md)
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+- [README modulo Lang](./README.md)
+- [Best Practices Chiavi di Traduzione](../../translation-keys-best-practices.md)
+>>>>>>> laraxot/dev
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -3553,6 +3563,7 @@ Questi middleware sono già configurati  e non è necessario modificarli.
 
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
+<<<<<<< HEAD
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo Lang](./README.md)
@@ -3560,6 +3571,15 @@ Questi middleware sono già configurati  e non è necessario modificarli.
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
+=======
+- [Best Practices Chiavi di Traduzione](../../translation-keys-best-practices.md)
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+- [README modulo Lang](./README.md)
+- [Best Practices Chiavi di Traduzione](../../translation-keys-best-practices.md)
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+- [README modulo Lang](./README.md)
+- [Best Practices Chiavi di Traduzione](../../translation-keys-best-practices.md)
+>>>>>>> laraxot/dev
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -3912,7 +3932,11 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
   ],
   ```
 - Consulta anche:
+<<<<<<< HEAD
   - [translation-keys-best-practices.md](../translation-keys-best-practices.md)
+=======
+  - [translation-keys-best-practices.md](../../translation-keys-best-practices.md)
+>>>>>>> laraxot/dev
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [filament-translations.md](../filament-translations.md)
   - [docs <nome progetto>](../../../<nome progetto>/docs/translations.md)
@@ -5117,7 +5141,11 @@ related:
 
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
+<<<<<<< HEAD
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
+=======
+- [Best Practices Chiavi di Traduzione](../../translation-keys-best-practices.md)
+>>>>>>> laraxot/dev
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 

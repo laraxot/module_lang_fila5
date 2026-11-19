@@ -56,7 +56,11 @@ related:
 ## Analisi di Sistema
 
 ### Performance
+<<<<<<< HEAD
 - [Analisi Performance](roadmap/performance.md)
+=======
+- [Analisi Performance](../packages/performance.md)
+>>>>>>> laraxot/dev
   - Translation speed
   - Cache efficiency
   - API response

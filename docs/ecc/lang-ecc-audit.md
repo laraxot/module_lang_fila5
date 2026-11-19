@@ -4,6 +4,12 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: Lang
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_lwYRCt
+qmd: "ECC audit Lang verification security testing laravel"
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_aTf3Jr
 qmd: "ECC audit Lang verification security testing laravel"
 =======
@@ -13,13 +19,24 @@ related:
   - ../bmad/audits/lang-audit.md
   - ../bmad/audit.md
 >>>>>>> .merge_file_AuCMkO
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_Ef5eEQ
+>>>>>>> laraxot/dev
 ---
 
 # ECC audit operativo — Lang
 
 ## Contratto PTVX
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_aTf3Jr
+=======
+<<<<<<< .merge_file_lwYRCt
+=======
+<<<<<<< .merge_file_aTf3Jr
+>>>>>>> .merge_file_Ef5eEQ
+>>>>>>> laraxot/dev
 ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
 PHPStan + Pest, aggiornamento docs/QMD.
 
@@ -34,6 +51,11 @@ PHPStan + Pest, aggiornamento docs/QMD.
 - [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
 
 ## Input misurato (2026-11-16)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_lwYRCt
+=======
+>>>>>>> laraxot/dev
 =======
 ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audits/lang-audit.md).
 
@@ -50,11 +72,22 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 
 ## Inventario misurato
 >>>>>>> .merge_file_AuCMkO
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_Ef5eEQ
+>>>>>>> laraxot/dev
 
 | Voce | N |
 |---|---:|
 | app PHP | 72 |
+<<<<<<< HEAD
 <<<<<<< .merge_file_aTf3Jr
+=======
+<<<<<<< .merge_file_lwYRCt
+=======
+<<<<<<< .merge_file_aTf3Jr
+>>>>>>> .merge_file_Ef5eEQ
+>>>>>>> laraxot/dev
 | test | 51 |
 | resources | 2 |
 | actions | 17 |
@@ -73,6 +106,11 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 - migrate:fresh / RefreshDatabase / --force
 - docs con date nel nome file
 - comportamento o screenshot inventati
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_lwYRCt
+=======
+>>>>>>> laraxot/dev
 =======
 | test PHP / `*Test.php` | 51 / 29 |
 | Models / Policy / Resource | 7 / 4 / 2 |
@@ -92,6 +130,10 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 
 `migrate:fresh`: 0; `RefreshDatabase`: 0; `@phpstan-ignore`: 0; `dd()`: 0; `->label()` letterali: 2 (`LocaleSwitcherRefresh.php:34,45`).
 >>>>>>> .merge_file_AuCMkO
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_Ef5eEQ
+>>>>>>> laraxot/dev
 
 ## Riferimenti
 

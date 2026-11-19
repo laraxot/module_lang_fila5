@@ -8,7 +8,10 @@ use Modules\Lang\Actions\TransArrayAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+>>>>>>> laraxot/dev
 
 function makeTransArrayAction(): TransArrayAction
 {

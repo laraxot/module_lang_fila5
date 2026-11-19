@@ -208,7 +208,11 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 - [Translation Standards](../translation-standards.md)
 - [Translation File Management](../translation-file-management.md)
+<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Best Practices](translation-keys-best-practices.md)
+>>>>>>> laraxot/dev
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
@@ -424,7 +428,11 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 - [Translation Standards](../translation-standards.md)
 - [Translation File Management](../translation-file-management.md)
+<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Best Practices](translation-keys-best-practices.md)
+>>>>>>> laraxot/dev
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)
 - [PHP Array Configuration Best Practices](../../Xot/docs/php_array_configuration_best_practices.md)

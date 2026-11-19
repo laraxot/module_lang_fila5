@@ -162,7 +162,11 @@ The Lang module exists to serve a **20+ module healthcare platform** where:
 
 **Specific FixCity responsibilities**:
 
+<<<<<<< HEAD
 1. **Quaeris integration**: Survey titles, chart labels, question translations.
+=======
+1. **<nome progetto> integration**: Survey titles, chart labels, question translations.
+>>>>>>> laraxot/dev
 2. **CMS integration**: Page content, menu titles, rich text descriptions.
 3. **Email/Notification templates**: Multi-language messages, dynamic placeholders.
 4. **Form validation**: 50+ validation rules, each translated to 3 languages.
@@ -263,8 +267,13 @@ Current: Keys are logged when requested but not found.
 
 Planned:
 
+<<<<<<< HEAD
 - Artisan command: `php artisan lang:audit --module=Quaeris --threshold=90`
 - Report: "Module Quaeris has 87% translation coverage. Missing: 15 keys in German."
+=======
+- Artisan command: `php artisan lang:audit --module=<nome progetto> --threshold=90`
+- Report: "Module <nome progetto> has 87% translation coverage. Missing: 15 keys in German."
+>>>>>>> laraxot/dev
 - Dashboard widget in Filament showing coverage per module per language.
 
 **Timeline**: Q3 2026.
@@ -323,7 +332,11 @@ Workspace::find(1)->setSetting('language', 'de');
 
 **What it does**: File-based translations, centralized in the app, simple and proven.
 
+<<<<<<< HEAD
 **Why Lang extends it**: 
+=======
+**Why Lang extends it**:
+>>>>>>> laraxot/dev
 
 - Laravel localization is monolithic. Lang is modular (each module owns `/lang/`).
 - Laravel doesn't audit missing keys. Lang does (via database logging).
@@ -424,7 +437,11 @@ Write tests for untranslated keys:
 test('patient module has all keys in german', function () {
     $de = include base_path('Modules/Patient/lang/de/patient.php');
     $it = include base_path('Modules/Patient/lang/it/patient.php');
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
     expect(count($de))->toBe(count($it));
 });
 ```
@@ -697,7 +714,11 @@ class PatientController
     public function show(Patient $patient)
     {
         $title = __('patient::patient.profile.title');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> laraxot/dev
         return view('patient.show', [
             'title' => $title,
             'patient' => $patient,
@@ -722,10 +743,17 @@ class PatientForm
                 Forms\Components\TextInput::make('name'),
                   // Automatically resolves it/patient::field.name.label
                   // No ->label('Nome') needed
+<<<<<<< HEAD
                 
                 Forms\Components\TextInput::make('email'),
                   // Automatically resolves it/patient::field.email.label
                 
+=======
+
+                Forms\Components\TextInput::make('email'),
+                  // Automatically resolves it/patient::field.email.label
+
+>>>>>>> laraxot/dev
                 Forms\Components\Textarea::make('notes'),
                   // Automatically resolves it/patient::field.notes.label
             ]);
@@ -743,7 +771,11 @@ use Spatie\Translatable\HasTranslations;
 class Survey extends BaseModel
 {
     use HasTranslations;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
     public array $translatable = ['title', 'description'];
 }
 
@@ -768,7 +800,11 @@ php artisan lang:sync --module=Patient --source=it --target=en,de
 php artisan lang:sync
 
 # Sync with specific target language
+<<<<<<< HEAD
 php artisan lang:sync --module=Quaeris --target=de
+=======
+php artisan lang:sync --module=<nome progetto> --target=de
+>>>>>>> laraxot/dev
 ```
 
 ### F. Validating Translation Completeness
@@ -1004,6 +1040,11 @@ php artisan lang:auto-translate --module=YourModule
 
 ---
 
+<<<<<<< HEAD
 **Last Updated**: 2026-09-06  
 **Module Status**: Stable, production-ready  
+=======
+**Last Updated**: 2026-09-06
+**Module Status**: Stable, production-ready
+>>>>>>> laraxot/dev
 **Next Review**: Q4 2026 (post auto-translation release)

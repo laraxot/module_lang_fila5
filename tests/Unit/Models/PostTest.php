@@ -12,7 +12,10 @@ use ReflectionClass;
 
 use function Safe\class_uses;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+>>>>>>> laraxot/dev
 
 describe('Post Model', function () {
     test('extends BaseModel', function () {

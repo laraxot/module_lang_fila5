@@ -105,7 +105,11 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 - [Lang Service Provider](../lang-service-provider.md)
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
+<<<<<<< HEAD
 - [Best Practices](../translation-keys-best-practices.md)
+=======
+- [Best Practices](translation-keys-best-practices.md)
+>>>>>>> laraxot/dev
 
 ## Note per Sviluppatori Futuri
 

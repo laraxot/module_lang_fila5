@@ -102,7 +102,11 @@ Route::middleware([
 ### Versione HEAD
 
 ## Collegamenti tra versioni di performance.md
+<<<<<<< HEAD
 * [performance.md](laravel/vendor/spatie/laravel-data/docs/advanced-usage/performance.md)
+=======
+* [performance.md](performance.md)
+>>>>>>> laraxot/dev
 * [performance.md](../../../xot/docs/features/performance.md)
 * [performance.md](../../../xot/docs/packages/performance.md)
 * [performance.md](../../../xot/docs/roadmap/architecture/performance.md)

@@ -7,7 +7,10 @@ use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+>>>>>>> laraxot/dev
 
 afterEach(function (): void {
     Mockery::close();

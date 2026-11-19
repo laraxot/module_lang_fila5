@@ -8,7 +8,10 @@ use Modules\Lang\Models\BaseModelLang;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+>>>>>>> laraxot/dev
 
 describe('BaseModelLang', function () {
     test('has correct connection', function () {

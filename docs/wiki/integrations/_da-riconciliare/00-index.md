@@ -23,18 +23,31 @@ related:
 
 ## 🏗️ **Configurazione e Setup**
 - 🌍 **[Locale Management](./locale-management.md)** - Gestione delle lingue attive e default.
+<<<<<<< HEAD
 - 🛣️ **[Route Localization](./laravel-localization-folio-integration.md)** - Integrazione con Folio e Volt per URL localizzati.
 - ⚙️ **[Service Provider](./lang-service-provider-improvements.md)** - Architettura del caricamento dinamico delle traduzioni.
 
 ## 🏷️ **Naming & Standards**
 - 🚫 **[No Hardcoded Labels](./filament-label.md)** - Perché non usiamo mai `->label()` o `->placeholder()`.
 - 🗂️ **[Translation Keys](./translation-keys-best-practices.md)** - Convenzioni per la struttura delle chiavi (module::file.key).
+=======
+- 🛣️ **[Route Localization](../../../laravel-localization-folio-integration.md)** - Integrazione con Folio e Volt per URL localizzati.
+- ⚙️ **[Service Provider](../../../lang-service-provider-improvements.md)** - Architettura del caricamento dinamico delle traduzioni.
+
+## 🏷️ **Naming & Standards**
+- 🚫 **[No Hardcoded Labels](../../../filament-label.md)** - Perché non usiamo mai `->label()` o `->placeholder()`.
+- 🗂️ **[Translation Keys](../../../translation-keys-best-practices.md)** - Convenzioni per la struttura delle chiavi (module::file.key).
+>>>>>>> laraxot/dev
 - 📜 **[Enum Translation](./enum-translation-pattern-implementation.md)** - Pattern per la traduzione automatica degli Enum.
 
 ## 🚀 **Funzionalità Avanzate**
 - ⚡ **[Auto-Registration](./autoregistration-commands.md)** - Comandi Artisan per scoprire e registrare nuove chiavi.
 - 🤖 **[Automatic Translations](./automatic-translations.md)** - (DAB) Integrazione con motori di traduzione esterna.
+<<<<<<< HEAD
 - 📝 **[Translation File Editor](./translation-file-editor.md)** - UI per la modifica dei file `.php` di lingua.
+=======
+- 📝 **[Translation File Editor](../../../translation-file-editor.md)** - UI per la modifica dei file `.php` di lingua.
+>>>>>>> laraxot/dev
 
 ## 🧪 **Qualità e Testing**
 - ✅ **[PHPStan Analysis](./phpstan-analysis-lang.md)** - Report di conformità Level 10.
@@ -70,7 +83,11 @@ related:
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
+<<<<<<< HEAD
 - [Package Dependency Chaos Map](./package-dependency-chaos-map.md)
+=======
+- [Package Dependency Chaos Map](../../../package-dependency-chaos-map.md)
+>>>>>>> laraxot/dev
 - `mcamara/laravel-localization` - URL localizzati
 - `lara-zeus/spatie-translatable` - Campi Filament tradotti
 - `rinvex/countries` - Dati paesi
@@ -86,7 +103,11 @@ related:
 
 ## Dependency Intelligence
 
+<<<<<<< HEAD
 - [Dependency intelligence](dependency-intelligence.md)
+=======
+- [Dependency intelligence](../../../dependency-intelligence.md)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -115,18 +136,31 @@ related:
 
 ## 🏗️ **Configurazione e Setup**
 - 🌍 **[Locale Management](./locale-management.md)** - Gestione delle lingue attive e default.
+<<<<<<< HEAD
 - 🛣️ **[Route Localization](./laravel-localization-folio-integration.md)** - Integrazione con Folio e Volt per URL localizzati.
 - ⚙️ **[Service Provider](./lang-service-provider-improvements.md)** - Architettura del caricamento dinamico delle traduzioni.
 
 ## 🏷️ **Naming & Standards**
 - 🚫 **[No Hardcoded Labels](./filament-label.md)** - Perché non usiamo mai `->label()` o `->placeholder()`.
 - 🗂️ **[Translation Keys](./translation-keys-best-practices.md)** - Convenzioni per la struttura delle chiavi (module::file.key).
+=======
+- 🛣️ **[Route Localization](../../../laravel-localization-folio-integration.md)** - Integrazione con Folio e Volt per URL localizzati.
+- ⚙️ **[Service Provider](../../../lang-service-provider-improvements.md)** - Architettura del caricamento dinamico delle traduzioni.
+
+## 🏷️ **Naming & Standards**
+- 🚫 **[No Hardcoded Labels](../../../filament-label.md)** - Perché non usiamo mai `->label()` o `->placeholder()`.
+- 🗂️ **[Translation Keys](../../../translation-keys-best-practices.md)** - Convenzioni per la struttura delle chiavi (module::file.key).
+>>>>>>> laraxot/dev
 - 📜 **[Enum Translation](./enum-translation-pattern-implementation.md)** - Pattern per la traduzione automatica degli Enum.
 
 ## 🚀 **Funzionalità Avanzate**
 - ⚡ **[Auto-Registration](./autoregistration-commands.md)** - Comandi Artisan per scoprire e registrare nuove chiavi.
 - 🤖 **[Automatic Translations](./automatic-translations.md)** - (DAB) Integrazione con motori di traduzione esterna.
+<<<<<<< HEAD
 - 📝 **[Translation File Editor](./translation-file-editor.md)** - UI per la modifica dei file `.php` di lingua.
+=======
+- 📝 **[Translation File Editor](../../../translation-file-editor.md)** - UI per la modifica dei file `.php` di lingua.
+>>>>>>> laraxot/dev
 
 ## 🧪 **Qualità e Testing**
 - ✅ **[PHPStan Analysis](./phpstan-analysis-lang.md)** - Report di conformità Level 10.
@@ -135,7 +169,11 @@ related:
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
+<<<<<<< HEAD
 - 📁 **[Path canonico migrazioni](./wiki/concepts/migration-path-canonical.md)** — solo `database/migrations/`; mai `Migrations/` annidata.
+=======
+- 📁 **[Path canonico migrazioni](../../concepts/migration-path-canonical.md)** — solo `database/migrations/`; mai `Migrations/` annidata.
+>>>>>>> laraxot/dev
 
 ## 🔗 **Moduli Correlati**
 - [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
@@ -146,4 +184,8 @@ related:
 
 ## Dependency Intelligence
 
+<<<<<<< HEAD
 - [Dependency intelligence](dependency-intelligence.md)
+=======
+- [Dependency intelligence](../../../dependency-intelligence.md)
+>>>>>>> laraxot/dev

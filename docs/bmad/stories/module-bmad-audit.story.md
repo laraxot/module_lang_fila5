@@ -1,13 +1,49 @@
 ---
 title: "Module BMAD audit — Lang"
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JBM4iv
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_FKqAiu
 =======
 type: story
 >>>>>>> .merge_file_pXMICI
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_NotKeU
+>>>>>>> laraxot/dev
 status: review
 updated: 2026-11-16
 module: Lang
 bmad: true
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JBM4iv
+qmd: "story BMAD audit modulo Lang inventario gate"
+---
+
+# Story: audit BMAD del modulo Lang
+
+## Acceptance
+
+- [x] Inventario source-first (2026-11-16).
+- [x] Audit + piano in `docs/bmad/`.
+- [x] Pack ECC in `docs/ecc/`.
+- [ ] Pest modulo eseguito in ambiente testing stabile.
+- [ ] Finding P0/P1 chiusi con regressione.
+
+## Riferimenti
+
+- [audit](../audit.md)
+- [piano](../piano-miglioramento.md)
+- [ECC](../../ecc/lang-ecc-audit.md)
+
+## Esito
+
+Baseline audit aggiornata. PHPStan tree `Modules` a 0. Pest e chiusura P0/P1 aperti.
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_FKqAiu
 qmd: "story BMAD audit modulo Lang inventario gate"
 ---
@@ -64,3 +100,7 @@ Baseline audit aggiornata. PHPStan tree `Modules` a 0. Pest e chiusura P0/P1 ape
 
 Baseline consegnata: 0 P0, 3 P1, P2 elencati. Nota: esiste anche `module-bmad-audit-20260928.story.md` (storica, nome datato: da migrare a una story senza data).
 >>>>>>> .merge_file_pXMICI
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_NotKeU
+>>>>>>> laraxot/dev

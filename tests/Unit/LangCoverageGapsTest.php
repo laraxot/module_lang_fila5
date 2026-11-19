@@ -52,7 +52,10 @@ use function Safe\mkdir;
 use function Safe\touch;
 use function Safe\unlink;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+>>>>>>> laraxot/dev
 
 afterEach(function (): void {
     Mockery::close();
@@ -333,7 +336,17 @@ describe('Lang coverage gaps closeout', function (): void {
         Assert::assertGreaterThan(0, $composer->languages()->count());
 
         config(['laravellocalization.supportedLocales' => 'invalid']);
+<<<<<<< HEAD
         expect(fn () => $composer->languages())->toThrow(\Exception::class);
+=======
+        $__thrown = null;
+try {
+    (fn () => $composer->languages())();
+} catch (\Throwable $__e) {
+    $__thrown = $__e;
+}
+Assert::assertInstanceOf(\Exception::class, $__thrown);;
+>>>>>>> laraxot/dev
 
         config([
             'laravellocalization.supportedLocales' => [

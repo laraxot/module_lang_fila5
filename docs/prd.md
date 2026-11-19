@@ -261,5 +261,9 @@ The Lang module provides a structured framework for managing lang operations wit
 - [Architecture](ARCHITECTURE.md)
 ---
 - [Architecture](ARCHITECTURE.md)
+<<<<<<< HEAD
 - [Technical Specification](TECH_SPEC.md)
+=======
+- [Technical Specification](tech_spec.md)
+>>>>>>> laraxot/dev
 - [User Stories](epics/lang-epics-and-stories.md)

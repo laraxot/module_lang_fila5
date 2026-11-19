@@ -6,6 +6,12 @@ updated: 2026-11-16
 module: Lang
 qmd: "architettura Lang AutoLabelAction configureUsing SaveTransAction TranslationFile Sushi TranslatorAdapter LangBasePolicy flussi autorizzazione verificata sul codice"
 related:
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_8YwWVu
+  - "./italian-text-refined-audit-report.md"
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_XjToax
   - "./italian-text-refined-audit-report.md"
 =======
@@ -14,6 +20,10 @@ related:
   - ./decision-log.md
   - ../purpose.md
 >>>>>>> .merge_file_nL0PrI
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_c2ucnx
+>>>>>>> laraxot/dev
 ---
 
 # Architettura — Lang
@@ -44,6 +54,18 @@ Verificata sul codice il 2026-11-16 (72 PHP in `app/`, 0 Services). Sostituisce 
 **Filament Resources:** `LangResource` — main admin resource.
 
 **Database Schema:** `lang_table` — tabella primaria con colonne standard Laravel (id, timestamps).
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_8YwWVu
+
+## Confini e dipendenze
+
+- Dipende da Xot. Usato (file con `use Modules\Lang\`, no test) da Xot 7, Notify 5, Performance 3, IndennitaResponsabilita 1, UI 1. **Non da Activity.**
+- Config: `config/config.php` è letta; `config/lang.php` è caricata come `lang.lang.*` e non letta da nessuno ([P2](./audits/lang-audit.md#p2)).
+
+**Quality Gates:** PHPStan L10 / PHPMD / Pest — vedi report qualità nel modulo.
+=======
+>>>>>>> laraxot/dev
 =======
 ## Autorizzazione
 
@@ -66,3 +88,7 @@ Logica in Spatie Queueable Action (16 + `AutoLabelAction`), nessun Service, este
 
 [decision-log.md](./decision-log.md): D-1 (config morta), D-2 (tracker DB), D-3 (`Post`).
 >>>>>>> .merge_file_nL0PrI
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_c2ucnx
+>>>>>>> laraxot/dev

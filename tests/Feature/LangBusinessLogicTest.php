@@ -11,7 +11,10 @@ use Modules\Lang\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+>>>>>>> laraxot/dev
 
 describe('Lang Business Logic', function () {
     it('can create and manage posts', function () {

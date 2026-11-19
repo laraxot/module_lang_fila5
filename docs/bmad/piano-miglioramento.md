@@ -4,6 +4,12 @@ type: plan
 status: review
 updated: 2026-11-16
 module: Lang
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_wYbFdA
+qmd: "piano miglioramento Lang P0 P1 P2 BMAD"
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_pACYRb
 qmd: "piano miglioramento Lang P0 P1 P2 BMAD"
 =======
@@ -13,11 +19,22 @@ related:
   - ./epics.md
   - ./decision-log.md
 >>>>>>> .merge_file_H9qXua
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_StW91b
+>>>>>>> laraxot/dev
 ---
 
 # Piano di miglioramento — Lang
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_pACYRb
+=======
+<<<<<<< .merge_file_wYbFdA
+=======
+<<<<<<< .merge_file_pACYRb
+>>>>>>> .merge_file_StW91b
+>>>>>>> laraxot/dev
 Derivato dall'[audit](./audits/lang-audit.md).
 
 ## P0
@@ -52,6 +69,11 @@ Derivato dall'[audit](./audits/lang-audit.md).
 - [ ] PHPStan `Modules/Lang` = 0
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_wYbFdA
+=======
+>>>>>>> laraxot/dev
 =======
 Derivato dall'[audit profondo](./audits/lang-audit.md). Epic e AC: [epics.md](./epics.md). Nessun P0.
 
@@ -86,3 +108,7 @@ Derivato dall'[audit profondo](./audits/lang-audit.md). Epic e AC: [epics.md](./
 - [ ] `rg "->label\('[A-Za-z]" app` = 0 fuori eccezioni dichiarate
 - [ ] PHPStan `Modules/Lang` = 0
 >>>>>>> .merge_file_H9qXua
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_StW91b
+>>>>>>> laraxot/dev

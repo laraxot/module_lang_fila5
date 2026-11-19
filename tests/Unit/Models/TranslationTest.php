@@ -10,7 +10,10 @@ use Modules\Lang\Models\Translation;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+>>>>>>> laraxot/dev
 
 describe('Translation Model', function () {
     test('has correct fillable attributes', function () {

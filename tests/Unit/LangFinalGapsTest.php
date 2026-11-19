@@ -2,8 +2,16 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Lang\Tests\Unit;
 
+=======
+
+namespace Modules\Lang\Tests\Unit;
+
+use Modules\Lang\Tests\Support\Ensure;
+
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
@@ -54,7 +62,10 @@ use function Safe\rename;
 use function Safe\rmdir;
 use function Safe\unlink;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Locale dell'app dopo normalizeLocale()+applyLocale(), partendo ogni volta da 'it':
@@ -262,7 +273,11 @@ test('WriteTranslationFileAction throws when put fails', function (): void {
         public function flush(): void {}
     });
     $action = new WriteTranslationFileActionFailStub;
+<<<<<<< HEAD
     expect(fn () => $action->execute($path, ['a' => '2']))->toThrow(\Exception::class);
+=======
+    Ensure::throws(fn () => $action->execute($path, ['a' => '2']), \Exception::class);
+>>>>>>> laraxot/dev
     unlink($path);
 });
 
@@ -571,8 +586,12 @@ test('WriteTranslationFileAction putTranslationFile edge paths', function (): vo
 
     $path3 = sys_get_temp_dir().'/lang_wfa_wf_'.uniqid().'.php';
     TestCase::createTranslationFile($path3, ['c' => '1']);
+<<<<<<< HEAD
     expect(fn () => (new WriteTranslationFileActionWriteFailStub)->execute($path3, ['c' => '2']))
         ->toThrow(\Exception::class);
+=======
+    Ensure::throws(fn () => (new WriteTranslationFileActionWriteFailStub)->execute($path3, ['c' => '2']), \Exception::class);
+>>>>>>> laraxot/dev
 
     foreach ([$path, $path3] as $f) {
         if (is_file($f)) {

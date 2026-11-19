@@ -4,7 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Datas;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\File;
+=======
+use Illuminate\Contracts\Translation\Translator as TranslatorContract;
+use Illuminate\Support\Facades\File;
+use Illuminate\Translation\Translator;
+>>>>>>> laraxot/dev
 use Modules\Xot\Actions\File\FixPathAction;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
@@ -30,7 +36,17 @@ class TranslationData extends Data
         if ($this->filename !== null) {
             return $this->filename;
         }
+<<<<<<< HEAD
         $hints = app('translator')->getLoader()->namespaces();
+=======
+
+        $translator = app('translator');
+        Assert::isInstanceOf($translator, TranslatorContract::class);
+        Assert::isInstanceOf($translator, Translator::class);
+
+        /** @var array<string, string> $hints */
+        $hints = $translator->getLoader()->namespaces();
+>>>>>>> laraxot/dev
         $path = collect($hints)->get($this->namespace);
         if ($path === null) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');

@@ -192,7 +192,11 @@ related:
 ## 4. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
+<<<<<<< HEAD
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
+=======
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../../translation-keys-best-practices.md)
+>>>>>>> laraxot/dev
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md) 
