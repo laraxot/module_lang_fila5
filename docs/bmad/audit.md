@@ -15,16 +15,17 @@ related:
 
 SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/lang-audit.md](./audits/lang-audit.md).
 
-**Scopo in una frase:** Lang tiene fuori dal codice ogni parola che un utente legge ([purpose.md](./purpose.md)).
+**Scopo in una frase:** Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua ([purpose.md](./purpose.md)).
 
 ## Sintesi (2026-11-16)
 
 | Metrica | Valore |
 |---|---:|
-| PHP `app/` / test PHP / `*Test.php` | 72 / 51 / 29 |
+| PHP `app/` / test PHP / `*Test.php` | 72 / 51 / 29 (ricontato 2026-11-19: 72 / 53 / 29) |
 | Models / Policy / Resource / Widget | 7 / 4 / 2 / 1 |
 | Actions / Services / Migration / Lang IT | 17 / 0 / 11 / 33 |
 | Marker conflitto / `RefreshDatabase` / `dd()` | 0 / 0 / 0 |
+| Policy `return true` | 2, solo in `LangBasePolicy::before()` (bypass `super-admin` / `lang::admin`) |
 | `.md` in `docs/` | 955 (1 senza frontmatter, 111 nome non conforme) |
 
 ## Finding principali

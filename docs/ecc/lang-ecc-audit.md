@@ -47,7 +47,15 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 - PHPStan `Modules/Lang` (`--no-progress`): **0 errori**.
 - Pest `Modules/Lang/tests/Feature` su scratch DB: **10 pass, 13 fail** (errore `user_id` UUID in colonna bigint, vedi [P1-3](../bmad/audits/lang-audit.md#p1-3--test-copertura-inseguita-e-suite-non-verde-su-scratch-db)).
 
-## Anti-pattern vietati (stato)
+## Anti-pattern vietati
+
+- baseline/`@phpstan-ignore` senza motivazione
+- test svuotati per silenziare errori
+- `migrate:fresh` / `RefreshDatabase` / `--force`
+- docs con date nel nome file
+- comportamento o screenshot inventati
+
+### Stato misurato
 
 `migrate:fresh`: 0; `RefreshDatabase`: 0; `@phpstan-ignore`: 0; `dd()`: 0; `->label()` letterali: 2 (`LocaleSwitcherRefresh.php:34,45`).
 

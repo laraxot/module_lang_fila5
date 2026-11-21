@@ -110,7 +110,9 @@ Consumatori fuori modulo (file con `use Modules\Lang\`, esclusi i test): Xot 7, 
 | PHPStan `Modules/Lang` (`php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Lang --no-progress`) | **0 errori** (exit 0) |
 | Pest `Modules/Lang/tests/Feature` (scratch DB, host 127.0.0.1) | **parziale: 10 pass, 13 fail** per schema `user_id` (P1-3); `tests/Unit` non eseguito per carico macchina (load ≈ 50) |
 
-Nessun `migrate:fresh`, nessun `--force`, nessun `RefreshDatabase` lanciati dall'audit.
+Nessun `migrate:fresh`, nessun `--force`, nessun `RefreshDatabase` lanciati dall'audit. Pest si esegue solo fuori dalla produzione e con DB di test raggiungibile.
+
+Una revisione precedente di questo audit (inventario automatico) riportava 8 policy e 66 file di lingua IT: conteggi approssimati, non confermati dal filesystem (ricontrollo 2026-11-19: 4 policy, 33 file in `lang/it`).
 
 ## Piano
 

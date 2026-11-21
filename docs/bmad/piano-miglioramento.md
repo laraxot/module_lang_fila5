@@ -30,6 +30,8 @@ Derivato dall'[audit profondo](./audits/lang-audit.md). Epic e AC: [epics.md](./
 4. Codice morto: `WriteTranslationFileAction`, `ReadTranslationFileAction`.
 5. `GetTransPathAction`: allowlist di namespace e locale (difesa in profondità).
 6. Migration `create_*` in 3 generazioni: ridurre con una story additiva.
+7. Dipendenze inverse verso moduli verticali: verificare con `rg` (oggi Lang dipende solo da Xot).
+8. Profiling N+1 sulle pagine del pannello.
 
 ## Sequenza e gate
 

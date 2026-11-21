@@ -1,8 +1,8 @@
 ---
-qmd: "module analysis.divergenza"
+qmd: "Module Analysis.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: module-analysis.md"
+title: "Module Analysis.divergenza"
 module: Lang
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

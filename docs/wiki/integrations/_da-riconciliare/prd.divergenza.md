@@ -1,8 +1,8 @@
 ---
-qmd: "prd.divergenza"
+qmd: "Prd.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: prd.md"
+title: "Prd.divergenza"
 module: Lang
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

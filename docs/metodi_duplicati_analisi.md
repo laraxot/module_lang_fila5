@@ -9,7 +9,7 @@ discussions: []
 module: Lang
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
-canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+canonical: ../../../Themes/One/docs/shared-components/metodi_duplicati_analisi.md
 status: superseded
 superseded_by: metodi_duplicati_analisi.md
 ---

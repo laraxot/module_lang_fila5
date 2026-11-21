@@ -10,6 +10,7 @@ related:
   - ./audits/lang-audit.md
   - ./decision-log.md
   - ../purpose.md
+  - ../italian-text-refined-audit-report.md
 ---
 
 # Architettura — Lang

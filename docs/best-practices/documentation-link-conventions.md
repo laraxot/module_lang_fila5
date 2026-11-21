@@ -98,7 +98,7 @@ Prima di fare commit dei documenti:
 ### Da Modules/Lang/docs/ a docs/ nella root
 ```markdown
 [Documentazione Principale](../../../docs/README.md)
-[Documentazione Principale](../../../../docs/readme.md)
+[Documentazione Principale](../../../../docs/README.md)
 ```
 
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella

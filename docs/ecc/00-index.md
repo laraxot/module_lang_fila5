@@ -14,7 +14,7 @@ Collega le verifiche ECC al workflow PTVX (BMAD → lock → fix → PHPStan/Pes
 | Controllo | Stato | Evidenza |
 |---|---|---|
 | Inventario statico | verificato (2026-11-16) | [audit profondo](../bmad/audits/lang-audit.md) |
-| PHPStan `Modules/Lang` | **0 errori** | comando in audit |
+| PHPStan `Modules/Lang` | **0 errori**; 0 anche sul tree `Modules` (2026-11-16) | comando in audit |
 | Pest | parziale: `tests/Feature` 10 pass / 13 fail | [audit § Gate](../bmad/audits/lang-audit.md#gate) |
 | Security review | nessun P0/P1; P2 su `GetTransPathAction` | [finding](../bmad/audits/lang-audit.md#finding) |
 | Docs pack | aggiornato (gap-fill) | [audit](../bmad/audit.md), [epics](../bmad/epics.md), [architecture](../bmad/architecture.md) |

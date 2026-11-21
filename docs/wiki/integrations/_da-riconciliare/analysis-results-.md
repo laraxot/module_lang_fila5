@@ -102,7 +102,11 @@ discussions: []
 
 - [Quality Improvements](./quality-improvements-2025-01-06.md)
 - [Index Documentation](./index.md)
+<<<<<<< .merge_file_TYTwlA
 - [Best Practices](./BEST_PRACTICES.md)
+=======
+- [Best Practices](./best_practices.md)
+>>>>>>> .merge_file_x5HukI
 
 *Ultimo aggiornamento: 2025-01-06*
 

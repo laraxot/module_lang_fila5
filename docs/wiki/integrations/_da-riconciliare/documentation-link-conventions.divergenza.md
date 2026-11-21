@@ -1,8 +1,8 @@
 ---
-qmd: "documentation link conventions.divergenza"
+qmd: "Documentation Link Conventions.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: documentation-link-conventions.md"
+title: "Documentation Link Conventions.divergenza"
 module: Lang
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
