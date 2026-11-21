@@ -6,18 +6,10 @@ updated: 2026-11-16
 module: Lang
 qmd: "architettura Lang AutoLabelAction configureUsing SaveTransAction TranslationFile Sushi TranslatorAdapter LangBasePolicy flussi autorizzazione verificata sul codice"
 related:
-<<<<<<< .merge_file_8YwWVu
-  - "./italian-text-refined-audit-report.md"
-=======
-<<<<<<< .merge_file_XjToax
-  - "./italian-text-refined-audit-report.md"
-=======
   - ./purpose.md
   - ./audits/lang-audit.md
   - ./decision-log.md
   - ../purpose.md
->>>>>>> .merge_file_nL0PrI
->>>>>>> .merge_file_c2ucnx
 ---
 
 # Architettura — Lang
@@ -42,35 +34,20 @@ Verificata sul codice il 2026-11-16 (72 PHP in `app/`, 0 Services). Sostituisce 
 2. **Modifica da pannello.** `EditTranslationFile::mutateFormDataBeforeSave` → `SaveTransAction::persist($key, $content)` → `GetTransPathAction` (`<lang-path>/<locale>/<file>.php`, locale da `app()->getLocale()`) → `SaveArrayAction`. Scrittura voluta anche in produzione.
 3. **Cambio lingua.** `LocaleSwitcherRefresh` → `applyLocale()`: `session('locale')` + `App::setLocale`.
 
-<<<<<<< .merge_file_XjToax
 **Models:** `BaseModelLang`, `LanguageLine`, `Translation`.
 **Actions:** `SyncTranslationsAction`, `ValidateTranslationsAction`.
 **Filament Resources:** `LangResource` — main admin resource.
 
 **Database Schema:** `lang_table` — tabella primaria con colonne standard Laravel (id, timestamps).
-<<<<<<< .merge_file_8YwWVu
-
-## Confini e dipendenze
-
-- Dipende da Xot. Usato (file con `use Modules\Lang\`, no test) da Xot 7, Notify 5, Performance 3, IndennitaResponsabilita 1, UI 1. **Non da Activity.**
-- Config: `config/config.php` è letta; `config/lang.php` è caricata come `lang.lang.*` e non letta da nessuno ([P2](./audits/lang-audit.md#p2)).
-
-**Quality Gates:** PHPStan L10 / PHPMD / Pest — vedi report qualità nel modulo.
-=======
-=======
 ## Autorizzazione
 
 `LangBasePolicy::before()` → `true` per `super-admin` e `lang::admin` (bypass voluto, ADR Xot module-admin-role-policy-bypass); `TranslationFilePolicy`, `TranslationPolicy`, `PostPolicy` ereditano e decidono per permesso (es. `translation_file.viewAny` in `TranslationFilePolicy`; deny-by-default). Nessun `return true` fuori da `before()`.
->>>>>>> .merge_file_nL0PrI
 
 ## Confini e dipendenze
 
 - Dipende da Xot. Usato (file con `use Modules\Lang\`, no test) da Xot 7, Notify 5, Performance 3, IndennitaResponsabilita 1, UI 1. **Non da Activity.**
 - Config: `config/config.php` è letta; `config/lang.php` è caricata come `lang.lang.*` e non letta da nessuno ([P2](./audits/lang-audit.md#p2)).
 
-<<<<<<< .merge_file_XjToax
-**Quality Gates:** PHPStan L10 / PHPMD / Pest — vedi report qualità nel modulo.
-=======
 ## Pattern
 
 Logica in Spatie Queueable Action (16 + `AutoLabelAction`), nessun Service, estensione di `XotBaseResource`, `strict_types` ovunque.
@@ -78,5 +55,3 @@ Logica in Spatie Queueable Action (16 + `AutoLabelAction`), nessun Service, este
 ## Decisioni collegate
 
 [decision-log.md](./decision-log.md): D-1 (config morta), D-2 (tracker DB), D-3 (`Post`).
->>>>>>> .merge_file_nL0PrI
->>>>>>> .merge_file_c2ucnx

@@ -4,12 +4,6 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Lang
-<<<<<<< .merge_file_lxe4xc
-qmd: "audit approfondito Lang inventario PHPStan Pest policy Filament Actions"
-=======
-<<<<<<< .merge_file_ZOSZBx
-qmd: "audit approfondito Lang inventario PHPStan Pest policy Filament Actions"
-=======
 qmd: "audit approfondito Lang traduzioni AutoLabelAction SaveTransAction TranslatorAdapter registerTranslator non cablato Post fuori scope config lang.php non caricata test coverage schema user_id PHPStan Pest"
 related:
   - ../audit.md
@@ -19,18 +13,12 @@ related:
   - ../epics.md
   - ../../ecc/lang-ecc-audit.md
   - ../stories/module-bmad-audit.story.md
->>>>>>> .merge_file_2Vz5YG
->>>>>>> .merge_file_25UnnI
 ---
 
 # Audit approfondito — Lang
 
 ## Metodo
 
-<<<<<<< .merge_file_lxe4xc
-=======
-<<<<<<< .merge_file_ZOSZBx
->>>>>>> .merge_file_25UnnI
 Source-first (2026-11-16): inventario filesystem, `rg` su policy/marker/label,
 lettura purpose esistente, PHPStan globale Modules già a 0 errori. Nessuna UI
 inventata. Pest dichiarato solo se eseguito.
@@ -86,9 +74,6 @@ Vedi [piano-miglioramento.md](../piano-miglioramento.md).
 - [audit.md](../audit.md)
 - [ECC](../../ecc/lang-ecc-audit.md)
 - [Story](../stories/module-bmad-audit.story.md)
-<<<<<<< .merge_file_lxe4xc
-=======
-=======
 Source-first, 2026-11-16: inventario filesystem, `rg -n` con `path:line`, lettura di `LangServiceProvider`, `AutoLabelAction`, `SaveTransAction`, `WriteTranslationFileAction`, `TranslationFile`, `LocaleSwitcherRefresh`, `config/`; `php artisan tinker` (sola lettura di config); PHPStan sul modulo; Pest sullo scratch DB del repo. La documentazione è stata trattata come ipotesi: **dove codice e docs divergono vince il codice.** Nessuna UI o screenshot inventati; nessun comportamento a runtime del pannello è stato provato in un browser.
 
 ## Scopo (perché esiste)
@@ -189,5 +174,3 @@ Nessun `migrate:fresh`, nessun `--force`, nessun `RefreshDatabase` lanciati dall
 ## Riferimenti
 
 [Sintesi](../audit.md) · [ECC](../../ecc/lang-ecc-audit.md) · [Story](../stories/module-bmad-audit.story.md) · [Brainstorming](../brainstorming.md)
->>>>>>> .merge_file_2Vz5YG
->>>>>>> .merge_file_25UnnI
