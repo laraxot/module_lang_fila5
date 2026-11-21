@@ -1,4 +1,5 @@
 ---
+qmd: "lang bmad database model coverage md"
 bmad: true
 module: Lang
 ---

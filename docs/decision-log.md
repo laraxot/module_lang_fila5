@@ -1,4 +1,5 @@
 ---
+qmd: "lang decision log md"
 type: decision-log
 title: "Decision Log — Lang"
 links: {github_issue: #XXX, discussion: #XXX}

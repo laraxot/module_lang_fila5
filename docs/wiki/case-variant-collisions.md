@@ -1,4 +1,5 @@
 ---
+qmd: "lang wiki case variant collisions md"
 bmad: true
 module: Lang
 ---

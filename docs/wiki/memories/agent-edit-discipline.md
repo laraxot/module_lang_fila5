@@ -1,4 +1,5 @@
 ---
+qmd: "lang wiki memories agent edit discipline md"
 title: agent edit discipline — puntatore
 type: reference
 updated: 2026-05-21

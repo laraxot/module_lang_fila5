@@ -1,4 +1,5 @@
 ---
+qmd: "lang bmad stories continuazione domani story md"
 status: backlog
 ---
 

@@ -1,4 +1,5 @@
 ---
+qmd: "lang bmad status md"
 bmad: true
 module: Lang
 ---
