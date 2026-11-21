@@ -27,7 +27,7 @@ Audit source-first del modulo che deve tenere fuori dal codice ogni parola che l
 - [ ] Pest `Modules/Lang`: `tests/Feature` 10 pass / 13 fail (schema `user_id`, E2); `tests/Unit` non eseguito.
 - [ ] E1–E5 chiuse con test di comportamento.
 
-## Task
+## Riferimenti
 
 1. Lock dei file di `docs/` del modulo (`bashscripts/lock/`), unlock a fine lavoro.
 2. Audit codice → docs; nessun PHP toccato.

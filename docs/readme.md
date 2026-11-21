@@ -1,4 +1,5 @@
 ---
+qmd: "lang readme md"
 bmad: true
 module: Lang
 ---

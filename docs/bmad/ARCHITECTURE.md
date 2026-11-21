@@ -1,4 +1,5 @@
 ---
+qmd: "lang bmad architecture md"
 title: "Lang Module Architecture"
 type: architecture
 tags: [module, architecture, lang]

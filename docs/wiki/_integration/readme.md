@@ -1,4 +1,5 @@
 ---
+qmd: "lang wiki integration readme md"
 bmad: true
 module: Lang
 ---

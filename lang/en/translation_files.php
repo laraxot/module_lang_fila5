@@ -1,38 +1,40 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'fields' => [
         'id' => [
             'label' => 'ID',
         ],
         'name' => [
-            'label' => 'Nome',
+            'label' => 'Name',
         ],
         'created_at' => [
-            'label' => 'Creato il',
+            'label' => 'Created at',
         ],
         'key' => [
-            'label' => 'Chiave',
+            'label' => 'Key',
         ],
         'path' => [
-            'label' => 'Percorso',
+            'label' => 'Path',
         ],
     ],
     'actions' => [
         'delete' => [
             'tooltip' => '',
             'icon' => 'delete',
-            'label' => 'Elimina',
+            'label' => 'Delete',
         ],
         'edit' => [
             'tooltip' => '',
             'icon' => 'edit',
-            'label' => 'Modifica',
+            'label' => 'Edit',
         ],
         'view' => [
             'tooltip' => '',
             'icon' => 'view',
-            'label' => 'Vista',
+            'label' => 'View',
         ],
         'lang' => [
             'icon' => 'lang',

@@ -1,4 +1,5 @@
 ---
+qmd: "lang wiki reference binary assets md"
 title: "Asset binari"
 module: lang
 type: integration
