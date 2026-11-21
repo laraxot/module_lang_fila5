@@ -220,4 +220,33 @@ class Post extends BaseModel
     {
         return $this->only(self::SEARCHABLE_FIELDS);
     }
+
+    /**
+     * Le conversioni proprie di questo modello, in aggiunta a quelle di BaseModel.
+     *
+     * `url_lang` e' una colonna `json` e la `@property` qui sopra la dichiara
+     * `array<string, string>|null`, ma senza cast Eloquent restituiva il JSON
+     * grezzo: `$post->url_lang['it']` leggeva il carattere in posizione 'it' di
+     * una stringa. PHPStan non poteva accorgersene, perche' legge la
+     * `@property` — la promessa — e non lo schema. Il cast la rende vera
+     * (base_quaeris_fila5#234).
+     *
+     * `array_merge(parent::casts(), ...)` e non un array nuovo: questo metodo
+     * **sostituisce** quello di `BaseModel`, dove stanno `id`, `uuid`,
+     * `published_at`, `created_at` e `updated_at`. Dichiararne uno proprio
+     * senza unirli li faceva sparire tutti, e il test dei cast sulle date se
+     * n'e' accorto subito.
+     *
+     * Non ci sono: `image_resize_src`, che la migration dichiara `string` come
+     * la sua `@property`; e `deleted_at`, perche' la tabella `posts` non ha
+     * quella colonna e questo modello non usa `SoftDeletes`.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return array_merge(parent::casts(), [
+            'url_lang' => 'array',
+        ]);
+    }
 }
