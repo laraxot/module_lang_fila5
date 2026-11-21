@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'model' => [
         'label' => 'translation file.model',
@@ -14,41 +16,41 @@ return [
     ],
     'fields' => [
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Mostra/Nascondi Colonne',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Riordina Record',
         ],
         'edit' => [
-            'label' => 'edit',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Modifica',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Reset Filtri',
         ],
         'content' => [
-            'description' => 'content',
-            'helper_text' => 'content',
-            'placeholder' => 'content',
             'label' => '',
             'tooltip' => '',
+            'description' => 'Contenuto del file di traduzione',
+            'helper_text' => '',
+            'placeholder' => 'Inserisci contenuto traduzione',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Applica Filtri',
         ],
         'snapshots' => [
             'fields' => [
@@ -73,35 +75,94 @@ return [
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Apri Filtri',
         ],
         'key' => [
-            'label' => 'key',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
             'placeholder' => 'Inserisci chiave traduzione',
             'help' => 'Chiave identificativa della traduzione',
+            'label' => 'Chiave',
         ],
         'delete' => [
-            'label' => 'delete',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Elimina',
         ],
     ],
     'actions' => [
         'create' => [
-            'label' => 'create',
             'tooltip' => 'Crea nuovo file di traduzione',
             'success' => 'File di traduzione creato con successo',
+            'label' => 'Crea',
+            'icon' => 'create',
         ],
         'lang' => [
-            'label' => 'lang',
             'tooltip' => 'Seleziona lingua',
+            'label' => 'Lingua',
+            'icon' => 'lang',
+        ],
+        'logout' => [
+            'tooltip' => '',
+            'icon' => 'logout',
+            'label' => 'Esci',
+        ],
+        'applyFilters' => [
+            'label' => 'Applica filtri',
+            'icon' => 'applyFilters',
+            'tooltip' => '',
+        ],
+        'openFilters' => [
+            'label' => 'Filtri',
+            'icon' => 'openFilters',
+            'tooltip' => '',
+        ],
+        'resetFilters' => [
+            'label' => 'Azzera filtri',
+            'icon' => 'resetFilters',
+            'tooltip' => '',
+        ],
+        'applyTableColumnManager' => [
+            'label' => 'Applica colonne',
+            'icon' => 'applyTableColumnManager',
+            'tooltip' => '',
+        ],
+        'openColumnManager' => [
+            'label' => 'Scegli colonne',
+            'icon' => 'openColumnManager',
+            'tooltip' => '',
+        ],
+        'resetColumnManager' => [
+            'label' => 'Ripristina colonne',
+            'icon' => 'resetColumnManager',
+            'tooltip' => '',
+        ],
+        'reorderRecords' => [
+            'label' => 'Riordina',
+            'icon' => 'reorderRecords',
+            'tooltip' => '',
+        ],
+        'removeAllFilters' => [
+            'label' => 'Rimuovi tutti i filtri',
+            'icon' => 'removeAllFilters',
+            'tooltip' => '',
+        ],
+        'profile' => [
+            'tooltip' => '',
+            'icon' => 'profile',
+            'label' => 'Profile',
+        ],
+        'cancel' => [
+            'tooltip' => '',
+            'icon' => 'cancel',
+        ],
+        'save' => [
+            'icon' => 'save',
         ],
     ],
     'label' => 'Missing Label',
