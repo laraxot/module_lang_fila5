@@ -28,12 +28,15 @@ Audit source-first del modulo che deve tenere fuori dal codice ogni parola che l
 - [ ] E1–E5 chiuse con test di comportamento.
 
 ## Riferimenti
+<<<<<<< .merge_file_HqW7h5
+=======
 
 - [audit](../audit.md)
 - [piano](../piano-miglioramento.md)
 - [ECC](../../ecc/lang-ecc-audit.md)
 
 ## Task
+>>>>>>> .merge_file_5Iq8g2
 
 1. Lock dei file di `docs/` del modulo (`bashscripts/lock/`), unlock a fine lavoro.
 2. Audit codice → docs; nessun PHP toccato.
