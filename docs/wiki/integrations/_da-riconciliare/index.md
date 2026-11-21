@@ -1,8 +1,12 @@
 ---
-qmd: "index"
+qmd: "Index"
 issues: []
 discussions: []
+<<<<<<< .merge_file_dbwX5i
 title: "lang — integrations"
+=======
+title: "Index"
+>>>>>>> .merge_file_wHnYSC
 module: lang
 type: integration
 tags: [integrations, modules, lang]
@@ -16,28 +20,28 @@ Documentation for `lang` module categorized as **integrations**.
 
 ## Files
 
-- [`00-INDEX.md`](./00-index.md)
 - [`00-index.md`](./00-index.md)
-- [`INDEX.md`](./index.md)
-- [`LOCALE_MANAGEMENT.md`](./LOCALE_MANAGEMENT.md)
-- [`MCAMARA_IMPLEMENTATION_GUIDE.md`](./MCAMARA_IMPLEMENTATION_GUIDE.md)
-- [`METODI_DUPLICATI_ANALISI.md`](./METODI_DUPLICATI_ANALISI.md)
+- [`00-index.md`](./00-index.md)
+- [`index.md`](./index.md)
+- [`LOCALE_MANAGEMENT.md`](./locale_management.md)
+- [`MCAMARA_IMPLEMENTATION_GUIDE.md`](./mcamara_implementation_guide.md)
+- [`metodi_duplicati_analisi.md`](./metodi_duplicati_analisi.md)
 - [`MIGRATIONS.md`](./MIGRATIONS.md)
-- [`ON-DEMAND-PATTERN.md`](./ON-DEMAND-PATTERN.md)
-- [`PERFORMANCE-OPTIMIZATION.md`](./PERFORMANCE-OPTIMIZATION.md)
+- [`on-demand-pattern.md`](./on-demand-pattern.md)
+- [`performance-optimization.md`](./performance-optimization.md)
 - [`PHPSTAN-FIXES.md`](./PHPSTAN-FIXES.md)
 - [`PHPSTAN_L10.md`](./PHPSTAN_L10.md)
 - [`PHPSTAN_STATUS.md`](./PHPSTAN_STATUS.md)
-- [`PRODUCT_LAUNCH_PLAN.md`](./PRODUCT_LAUNCH_PLAN.md)
-- [`PRODUCT_STRATEGY.md`](./PRODUCT_STRATEGY.md)
-- [`PROJECT-STRUCTURE.md`](./PROJECT-STRUCTURE.md)
-- [`QMD-SETUP.md`](./QMD-SETUP.md)
-- [`QUICK_REFERENCE.md`](./QUICK_REFERENCE.md)
-- [`REDUNDANCY_ANALYSIS.md`](./REDUNDANCY_ANALYSIS.md)
-- [`SPRINT_PLANNING.md`](./SPRINT_PLANNING.md)
-- [`TRANSLATION_PROCESS.md`](./TRANSLATION_PROCESS.md)
-- [`TRANSLATION_STRATEGIES.md`](./TRANSLATION_STRATEGIES.md)
-- [`USER_RESEARCH.md`](./USER_RESEARCH.md)
+- [`product_launch_plan.md`](./product_launch_plan.md)
+- [`product_strategy.md`](./product_strategy.md)
+- [`project-structure.md`](./project-structure.md)
+- [`qmd-setup.md`](./qmd-setup.md)
+- [`QUICK_REFERENCE.md`](./quick_reference.md)
+- [`redundancy_analysis.md`](./redundancy_analysis.md)
+- [`sprint_planning.md`](./sprint_planning.md)
+- [`TRANSLATION_PROCESS.md`](./translation_process.md)
+- [`TRANSLATION_STRATEGIES.md`](./translation_strategies.md)
+- [`user_research.md`](./user_research.md)
 - [`advanced-language-switching.md`](./advanced-language-switching.md)
 - [`advanced_language_switching.md`](./advanced_language_switching.md)
 - [`agent-confidence-discipline.md`](./agent-confidence-discipline.md)

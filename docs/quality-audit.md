@@ -69,11 +69,11 @@ nemmeno raccolto: due file con lo stesso basename generano la stessa classe.
 Percorsi coinvolti:
 
 - `.github/SECURITY.md`
-- `.github/contributing.md`
+- `.github/CONTRIBUTING.md`
 
 ### 25 collisioni di case nei docs
 
-Coppie tipo `INDEX.md` e `index.md`. Sono documenti che divergono in silenzio:
+Coppie tipo `index.md` e `index.md`. Sono documenti che divergono in silenzio:
 nessun linter le segnala e chi legge non sa quale delle due e la buona.
 
 ## Coverage

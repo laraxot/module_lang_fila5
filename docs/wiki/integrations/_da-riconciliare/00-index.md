@@ -45,8 +45,13 @@ related:
 - 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
 
 ## 🔗 **Moduli Correlati**
+<<<<<<< .merge_file_jjtyeo
 - [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../ui/docs/readme.md) - Componenti Blade e Filament che consumano le traduzioni.
+=======
+- [Xot](../../xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
+- [UI](../../ui/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
+>>>>>>> .merge_file_N4KHHQ
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -57,16 +62,16 @@ related:
 | File | Scopo |
 |------|-------|
 | PRD.md | Product Requirements |
-| PRODUCT_ROADMAP.md | Roadmap |
-| PRODUCT_STRATEGY.md | Strategy |
-| PRODUCT_LAUNCH_PLAN.md | Launch Plan |
+| product_roadmap.md | Roadmap |
+| product_strategy.md | Strategy |
+| product_launch_plan.md | Launch Plan |
 
 ### Development
 | File | Scopo |
 |------|-------|
-| GSD_WORKFLOW.md | GSD Workflow |
-| SPRINT_PLANNING.md | Sprint Planning |
-| USER_RESEARCH.md | User Research |
+| gsd_workflow.md | GSD Workflow |
+| sprint_planning.md | Sprint Planning |
+| user_research.md | User Research |
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
@@ -79,7 +84,11 @@ related:
 ## 🔗 **Moduli Correlati**
 - [Xot](../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
+<<<<<<< .merge_file_jjtyeo
 - [agents.md](../../../../agents.md) - Project guidelines
+=======
+- [AGENTS.md](../../../../AGENTS.md) - Project guidelines
+>>>>>>> .merge_file_N4KHHQ
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -90,7 +99,7 @@ related:
 
 ---
 
-<!-- Merged from 00-INDEX.md, which collided with this file on case-insensitive filesystems. -->
+<!-- Merged from 00-index.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
 title: "📚 **Indice Documentazione Modulo Lang**"
@@ -138,8 +147,13 @@ related:
 - 📁 **[Path canonico migrazioni](./wiki/concepts/migration-path-canonical.md)** — solo `database/migrations/`; mai `Migrations/` annidata.
 
 ## 🔗 **Moduli Correlati**
+<<<<<<< .merge_file_jjtyeo
 - [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../ui/docs/readme.md) - Componenti Blade e Filament che consumano le traduzioni.
+=======
+- [Xot](../../xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
+- [UI](../../ui/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
+>>>>>>> .merge_file_N4KHHQ
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

@@ -1,7 +1,7 @@
 ---
 type: note
 updated: 2026-09-26
-qmd: "schema"
+qmd: "Schema"
 issues: []
 discussions: []
 title: Wiki Schema
