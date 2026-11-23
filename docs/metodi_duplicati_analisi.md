@@ -9,11 +9,19 @@ discussions: []
 module: Lang
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
+<<<<<<< .merge_file_nXeUqZ
 <<<<<<< .merge_file_7g6Kz4
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
 =======
 canonical: ../../../Themes/One/docs/shared-components/metodi_duplicati_analisi.md
 >>>>>>> .merge_file_UcLKxv
+=======
+<<<<<<< .merge_file_3ozTwC
+canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+=======
+canonical: ../../../Themes/One/docs/shared-components/metodi_duplicati_analisi.md
+>>>>>>> .merge_file_lXvA4b
+>>>>>>> .merge_file_dggJVn
 status: superseded
 superseded_by: metodi_duplicati_analisi.md
 ---

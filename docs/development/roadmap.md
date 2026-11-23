@@ -353,7 +353,11 @@ Secondo le "Regole Windsurf per base_<nome progetto>_fila5_mono", gli obiettivi 
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/docs/roadmap.md)
 * [roadmap.md](docs/roadmap.md)
+<<<<<<< .merge_file_dUkltC
 <<<<<<< .merge_file_n3teyV
+=======
+<<<<<<< .merge_file_ygMefC
+>>>>>>> .merge_file_nFi1Q8
 * [roadmap.md](../../../gdpr/docs/roadmap.md)
 * [roadmap.md](../../../notify/docs/roadmap.md)
 * [roadmap.md](../../../xot/docs/roadmap.md)
@@ -381,7 +385,11 @@ Secondo le "Regole Windsurf per base_<nome progetto>_fila5_mono", gli obiettivi 
 * [roadmap.md](../../../Activity/docs/roadmap.md)
 * [roadmap.md](../../../patient/docs/roadmap.md)
 * [roadmap.md](../../../Cms/docs/roadmap.md)
+<<<<<<< .merge_file_dUkltC
 >>>>>>> .merge_file_9i7fFa
+=======
+>>>>>>> .merge_file_TTV4vb
+>>>>>>> .merge_file_nFi1Q8
 * [roadmap.md](../../../../themes/one/docs/roadmap.md)
 * [roadmap.md](../../../Gdpr/docs/roadmap.md)
 * [roadmap.md](../../../Notify/docs/roadmap.md)

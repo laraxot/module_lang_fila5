@@ -200,13 +200,21 @@ LogicException: Plugin [spatie-translatable] is not registered for panel [xxx::a
 **Fix**: Registrare plugin nel panel provider
 
 **Documentazione**: [Notify - Plugin Not Registered](../../Notify/docs/errori/plugin-spatie-translatable-not-registered.md)
+<<<<<<< .merge_file_9H4rTb
 <<<<<<< .merge_file_UF5KId
+=======
+<<<<<<< .merge_file_q8O5qw
+>>>>>>> .merge_file_NtMDVt
 **Documentazione**: [Notify - Plugin Not Registered](../../notify/docs/errori/plugin-spatie-translatable-not-registered.md)
 **Documentazione**: [Notify - Plugin Not Registered](../../notify/docs/errori/plugin-spatie-translatable-not-registered.md)
 =======
 **Documentazione**: [Notify - Plugin Not Registered](../../Notify/docs/errori/plugin-spatie-translatable-not-registered.md)
 **Documentazione**: [Notify - Plugin Not Registered](../../Notify/docs/errori/plugin-spatie-translatable-not-registered.md)
+<<<<<<< .merge_file_9H4rTb
 >>>>>>> .merge_file_GU7MCM
+=======
+>>>>>>> .merge_file_Bji9sT
+>>>>>>> .merge_file_NtMDVt
 
 ### Errore: Undefined Method getTranslation()
 
@@ -342,7 +350,11 @@ $value = $model->field;  // Ritorna traduzione 'en' se esiste, altrimenti fallba
 ### Documentazione Interna
 - [Notify Integration](../../Notify/docs/spatie-translatable-integration.md)
 - [Xot Filament Best Practices](../../Xot/docs/filament-best-practices.md)
+<<<<<<< .merge_file_9H4rTb
 <<<<<<< .merge_file_UF5KId
+=======
+<<<<<<< .merge_file_q8O5qw
+>>>>>>> .merge_file_NtMDVt
 - [Notify Integration](../../notify/docs/spatie-translatable-integration.md)
 - [Xot Filament Best Practices](../../xot/docs/filament-best-practices.md)
 - [Notify Integration](../../notify/docs/spatie-translatable-integration.md)
@@ -350,7 +362,11 @@ $value = $model->field;  // Ritorna traduzione 'en' se esiste, altrimenti fallba
 - [Notify Integration](../../Notify/docs/spatie-translatable-integration.md)
 - [Xot Filament Best Practices](../../xot/docs/filament-best-practices.md)
 - [Notify Integration](../../Notify/docs/spatie-translatable-integration.md)
+<<<<<<< .merge_file_9H4rTb
 >>>>>>> .merge_file_GU7MCM
+=======
+>>>>>>> .merge_file_Bji9sT
+>>>>>>> .merge_file_NtMDVt
 - [Xot Filament Best Practices](../../xot/docs/filament-best-practices.md)
 
 ---

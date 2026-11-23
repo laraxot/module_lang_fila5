@@ -91,13 +91,25 @@ cyclomatic-complexity.md
 dependency-intelligence.md
 docs-health.md
 coverage.md
+<<<<<<< .merge_file_en8EoM
 <<<<<<< .merge_file_zXLPWH
+=======
+<<<<<<< .merge_file_CypAUh
+=======
+<<<<<<< .merge_file_rWmD5D
+>>>>>>> .merge_file_mJjNLk
+>>>>>>> .merge_file_fvBs5a
 REDUNDANCY_ANALYSIS.md
 
 # Index duplicates (consolidate into README.md)
 00-INDEX.md
 00-index.md
 INDEX.md
+<<<<<<< .merge_file_en8EoM
+=======
+<<<<<<< .merge_file_CypAUh
+=======
+>>>>>>> .merge_file_fvBs5a
 =======
 redundancy_analysis.md
 
@@ -105,7 +117,12 @@ redundancy_analysis.md
 00-index.md
 00-index.md
 index.md
+<<<<<<< .merge_file_en8EoM
 >>>>>>> .merge_file_HFtQHw
+=======
+>>>>>>> .merge_file_ZpKFBY
+>>>>>>> .merge_file_mJjNLk
+>>>>>>> .merge_file_fvBs5a
 ```
 
 ### 3. CONSOLIDATE TRANSLATION FILES (65 → 4)
@@ -150,7 +167,14 @@ Create subdirs and move strategy/research content (not essential to module root)
 mkdir -p wiki/strategies wiki/how-to wiki/overviews wiki/rules
 
 # Move strategy/research
+<<<<<<< .merge_file_en8EoM
 <<<<<<< .merge_file_zXLPWH
+=======
+<<<<<<< .merge_file_CypAUh
+=======
+<<<<<<< .merge_file_rWmD5D
+>>>>>>> .merge_file_mJjNLk
+>>>>>>> .merge_file_fvBs5a
 mv PRODUCT_LAUNCH_PLAN.md wiki/strategies/
 mv TRANSLATION_STRATEGIES.md wiki/strategies/
 mv USER_RESEARCH.md wiki/strategies/
@@ -159,6 +183,11 @@ mv SPRINT_PLANNING.md wiki/strategies/
 
 # Move how-to guides
 mv QMD-SETUP.md wiki/how-to/
+<<<<<<< .merge_file_en8EoM
+=======
+<<<<<<< .merge_file_CypAUh
+=======
+>>>>>>> .merge_file_fvBs5a
 =======
 mv product_launch_plan.md wiki/strategies/
 mv TRANSLATION_STRATEGIES.md wiki/strategies/
@@ -168,7 +197,12 @@ mv sprint_planning.md wiki/strategies/
 
 # Move how-to guides
 mv qmd-setup.md wiki/how-to/
+<<<<<<< .merge_file_en8EoM
 >>>>>>> .merge_file_HFtQHw
+=======
+>>>>>>> .merge_file_ZpKFBY
+>>>>>>> .merge_file_mJjNLk
+>>>>>>> .merge_file_fvBs5a
 mv QUICK_REFERENCE.md wiki/how-to/
 mv best-practices.md wiki/how-to/
 mv laravel-localization-reference.md wiki/how-to/
@@ -185,11 +219,23 @@ mv database-model-coverage.md wiki/overviews/
 mv schema.md wiki/overviews/
 
 # Move rules/patterns
+<<<<<<< .merge_file_en8EoM
 <<<<<<< .merge_file_zXLPWH
 mv ON-DEMAND-PATTERN.md wiki/rules/
 =======
 mv on-demand-pattern.md wiki/rules/
 >>>>>>> .merge_file_HFtQHw
+=======
+<<<<<<< .merge_file_CypAUh
+mv ON-DEMAND-PATTERN.md wiki/rules/
+=======
+<<<<<<< .merge_file_rWmD5D
+mv ON-DEMAND-PATTERN.md wiki/rules/
+=======
+mv on-demand-pattern.md wiki/rules/
+>>>>>>> .merge_file_ZpKFBY
+>>>>>>> .merge_file_mJjNLk
+>>>>>>> .merge_file_fvBs5a
 mv MCAMARA_IMPLEMENTATION_GUIDE.md wiki/overviews/
 ```
 
@@ -202,11 +248,23 @@ laravel/Modules/Lang/docs/
 ├── README.md                         # Entry point (anchor for all docs)
 ├── PHPSTAN_L10.md                   # Technical status & fixes
 ├── MIGRATIONS.md                    # Schema/migrations
+<<<<<<< .merge_file_en8EoM
 <<<<<<< .merge_file_zXLPWH
 ├── PRODUCT_STRATEGY.md              # Product vision (optional: move to wiki/)
 =======
 ├── product_strategy.md              # Product vision (optional: move to wiki/)
 >>>>>>> .merge_file_HFtQHw
+=======
+<<<<<<< .merge_file_CypAUh
+├── PRODUCT_STRATEGY.md              # Product vision (optional: move to wiki/)
+=======
+<<<<<<< .merge_file_rWmD5D
+├── PRODUCT_STRATEGY.md              # Product vision (optional: move to wiki/)
+=======
+├── product_strategy.md              # Product vision (optional: move to wiki/)
+>>>>>>> .merge_file_ZpKFBY
+>>>>>>> .merge_file_mJjNLk
+>>>>>>> .merge_file_fvBs5a
 ├── LOCALE_MANAGEMENT.md             # Locale management basics
 │
 ├── translation-system.md            # Core: system arch + syntax
@@ -286,11 +344,23 @@ rm -f \
   dependency-intelligence.md \
   docs-health.md \
   coverage.md \
+<<<<<<< .merge_file_en8EoM
 <<<<<<< .merge_file_zXLPWH
   REDUNDANCY_ANALYSIS.md \
 =======
   redundancy_analysis.md \
 >>>>>>> .merge_file_HFtQHw
+=======
+<<<<<<< .merge_file_CypAUh
+  REDUNDANCY_ANALYSIS.md \
+=======
+<<<<<<< .merge_file_rWmD5D
+  REDUNDANCY_ANALYSIS.md \
+=======
+  redundancy_analysis.md \
+>>>>>>> .merge_file_ZpKFBY
+>>>>>>> .merge_file_mJjNLk
+>>>>>>> .merge_file_fvBs5a
   00-index.md \
   index.md
 ---
@@ -298,7 +368,16 @@ rm -f \
   00-index.md \
   index.md
 ---
+<<<<<<< .merge_file_en8EoM
 <<<<<<< .merge_file_zXLPWH
+=======
+<<<<<<< .merge_file_CypAUh
+  00-INDEX.md \
+  00-index.md \
+  INDEX.md
+=======
+<<<<<<< .merge_file_rWmD5D
+>>>>>>> .merge_file_fvBs5a
   00-INDEX.md \
   00-index.md \
   INDEX.md
@@ -306,7 +385,12 @@ rm -f \
   00-index.md \
   00-index.md \
   index.md
+<<<<<<< .merge_file_en8EoM
 >>>>>>> .merge_file_HFtQHw
+=======
+>>>>>>> .merge_file_ZpKFBY
+>>>>>>> .merge_file_mJjNLk
+>>>>>>> .merge_file_fvBs5a
 
 # 3. Delete conflict-resolution snake_case variants
 rm -f conflict_resolution_*.md
@@ -318,7 +402,14 @@ rm -f lang_service_provider.md lang_service_provider_improvements.md
 mkdir -p wiki/strategies wiki/how-to wiki/overviews wiki/rules
 
 # 6. Move strategy/research files
+<<<<<<< .merge_file_en8EoM
 <<<<<<< .merge_file_zXLPWH
+=======
+<<<<<<< .merge_file_CypAUh
+=======
+<<<<<<< .merge_file_rWmD5D
+>>>>>>> .merge_file_mJjNLk
+>>>>>>> .merge_file_fvBs5a
 mv PRODUCT_LAUNCH_PLAN.md wiki/strategies/ 2>/dev/null || true
 mv TRANSLATION_STRATEGIES.md wiki/strategies/ 2>/dev/null || true
 mv USER_RESEARCH.md wiki/strategies/ 2>/dev/null || true
@@ -327,6 +418,11 @@ mv SPRINT_PLANNING.md wiki/strategies/ 2>/dev/null || true
 
 # 7. Move how-to guides
 mv QMD-SETUP.md wiki/how-to/ 2>/dev/null || true
+<<<<<<< .merge_file_en8EoM
+=======
+<<<<<<< .merge_file_CypAUh
+=======
+>>>>>>> .merge_file_fvBs5a
 =======
 mv product_launch_plan.md wiki/strategies/ 2>/dev/null || true
 mv TRANSLATION_STRATEGIES.md wiki/strategies/ 2>/dev/null || true
@@ -336,7 +432,12 @@ mv sprint_planning.md wiki/strategies/ 2>/dev/null || true
 
 # 7. Move how-to guides
 mv qmd-setup.md wiki/how-to/ 2>/dev/null || true
+<<<<<<< .merge_file_en8EoM
 >>>>>>> .merge_file_HFtQHw
+=======
+>>>>>>> .merge_file_ZpKFBY
+>>>>>>> .merge_file_mJjNLk
+>>>>>>> .merge_file_fvBs5a
 mv QUICK_REFERENCE.md wiki/how-to/ 2>/dev/null || true
 mv best-practices.md wiki/how-to/ 2>/dev/null || true
 mv laravel-localization-reference.md wiki/how-to/ 2>/dev/null || true
@@ -354,11 +455,23 @@ mv schema.md wiki/overviews/ 2>/dev/null || true
 mv MCAMARA_IMPLEMENTATION_GUIDE.md wiki/overviews/ 2>/dev/null || true
 
 # 9. Move rules
+<<<<<<< .merge_file_en8EoM
 <<<<<<< .merge_file_zXLPWH
 mv ON-DEMAND-PATTERN.md wiki/rules/ 2>/dev/null || true
 =======
 mv on-demand-pattern.md wiki/rules/ 2>/dev/null || true
 >>>>>>> .merge_file_HFtQHw
+=======
+<<<<<<< .merge_file_CypAUh
+mv ON-DEMAND-PATTERN.md wiki/rules/ 2>/dev/null || true
+=======
+<<<<<<< .merge_file_rWmD5D
+mv ON-DEMAND-PATTERN.md wiki/rules/ 2>/dev/null || true
+=======
+mv on-demand-pattern.md wiki/rules/ 2>/dev/null || true
+>>>>>>> .merge_file_ZpKFBY
+>>>>>>> .merge_file_mJjNLk
+>>>>>>> .merge_file_fvBs5a
 
 # 10. Merge PHPSTAN files (manual step — see section below)
 # (Requires reading PHPSTAN-FIXES.md + PHPSTAN_STATUS.md into PHPSTAN_L10.md)

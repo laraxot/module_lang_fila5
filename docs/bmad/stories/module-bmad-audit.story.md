@@ -28,17 +28,30 @@ Audit source-first del modulo che deve tenere fuori dal codice ogni parola che l
 - [ ] E1–E5 chiuse con test di comportamento.
 
 ## Riferimenti
+<<<<<<< .merge_file_ATAC76
+=======
+<<<<<<< .merge_file_HqW7h5
+=======
+>>>>>>> .merge_file_fRgFKy
 
 - [audit](../audit.md)
 - [piano](../piano-miglioramento.md)
 - [ECC](../../ecc/lang-ecc-audit.md)
 
 ## Task
+>>>>>>> .merge_file_5Iq8g2
 
 1. Lock dei file di `docs/` del modulo (`bashscripts/lock/`), unlock a fine lavoro.
 2. Audit codice → docs; nessun PHP toccato.
 3. Pack ECC e indici aggiornati; `qmd update`.
 
+<<<<<<< .merge_file_ATAC76
+1. Lock dei file di `docs/` del modulo (`bashscripts/lock/`), unlock a fine lavoro.
+2. Audit codice → docs; nessun PHP toccato.
+3. Pack ECC e indici aggiornati; `qmd update`.
+
+=======
+>>>>>>> .merge_file_fRgFKy
 ## Esito
 
 Baseline consegnata: 0 P0, 3 P1, P2 elencati. PHPStan sul tree `Modules` a 0; Pest e chiusura dei P1 aperti. Nota: esiste anche `module-bmad-audit-lang-baseline-analisi-completa.story.md` (storica, nome datato: da migrare a una story senza data).

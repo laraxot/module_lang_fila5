@@ -21,11 +21,19 @@ Findings:
 - `docs/archive` and `docs/translations/archive` duplicate active translation docs.
 - Migration directory case-only duplicate: `database/Migrations` vs `database/migrations` — **risolto 2026-07-01**; vedi [wiki/concepts/migration-path-canonical.md](wiki/concepts/migration-path-canonical.md).
 - Anti-pattern annidato `database/migrations/Migrations/` — reintrodotto per errore in `f840e0cc0`, rimosso; guard in `audit-database-folder-lowercase.sh`.
+<<<<<<< .merge_file_Rq90tx
 <<<<<<< .merge_file_iBcgKF
 - Docs index variants include `INDEX.md`/`index.md` and `00-INDEX.md`/`00-index.md`.
 =======
 - Docs index variants include `index.md`/`index.md` and `00-index.md`/`00-index.md`.
 >>>>>>> .merge_file_c4NCfz
+=======
+<<<<<<< .merge_file_Ry0JLU
+- Docs index variants include `INDEX.md`/`index.md` and `00-INDEX.md`/`00-index.md`.
+=======
+- Docs index variants include `index.md`/`index.md` and `00-index.md`/`00-index.md`.
+>>>>>>> .merge_file_9wmSk2
+>>>>>>> .merge_file_fyeZJi
 
 Risk:
 - Lang is foundational; stale translation rules can propagate wrong patterns across modules.

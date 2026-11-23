@@ -2,11 +2,19 @@
 qmd: "Performance Optimization"
 issues: []
 discussions: []
+<<<<<<< .merge_file_MsLaEl
 <<<<<<< .merge_file_OzIU9L
 title: "Performance Optimization — Module Lang"
 =======
 title: "Performance Optimization"
 >>>>>>> .merge_file_eB20wQ
+=======
+<<<<<<< .merge_file_nwpdo2
+title: "Performance Optimization — Module Lang"
+=======
+title: "Performance Optimization"
+>>>>>>> .merge_file_A2bpGl
+>>>>>>> .merge_file_EaChk7
 type: documentation
 created: 2026-05-11
 updated: 2026-05-11
@@ -25,11 +33,19 @@ related:
 **Dopo**: Carico solo what's needed (~2K startup)
 
 \`\`\`diff
+<<<<<<< .merge_file_MsLaEl
 <<<<<<< .merge_file_OzIU9L
 - 150+ rules embeddate in agents.md
 =======
 - 150+ rules embeddate in AGENTS.md
 >>>>>>> .merge_file_eB20wQ
+=======
+<<<<<<< .merge_file_nwpdo2
+- 150+ rules embeddate in agents.md
+=======
+- 150+ rules embeddate in AGENTS.md
+>>>>>>> .merge_file_A2bpGl
+>>>>>>> .merge_file_EaChk7
 + 0 rules embeddate — tutte on-demand
 \`\`\`
 

@@ -256,7 +256,11 @@ The Lang module provides a structured framework for managing lang operations wit
 | Module | Self-contained Laravel module following Laraxot conventions |
 
 ### Related Documents
+<<<<<<< .merge_file_tmeOEK
 <<<<<<< .merge_file_3EwMWB
+=======
+<<<<<<< .merge_file_GWj32G
+>>>>>>> .merge_file_QrTBxR
 - [Architecture](ARCHITECTURE.md)
 ---
 - [Architecture](ARCHITECTURE.md)
@@ -270,5 +274,9 @@ The Lang module provides a structured framework for managing lang operations wit
 ---
 - [Architecture](architecture.md)
 - [Technical Specification](tech_spec.md)
+<<<<<<< .merge_file_tmeOEK
 >>>>>>> .merge_file_KZeqen
+=======
+>>>>>>> .merge_file_DbNVe4
+>>>>>>> .merge_file_QrTBxR
 - [User Stories](epics/lang-epics-and-stories.md)

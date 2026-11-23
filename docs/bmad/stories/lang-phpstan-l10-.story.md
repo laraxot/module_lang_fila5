@@ -8,7 +8,15 @@ updated: 2026-10-06
 phase: quality-gates
 priority: P1
 related:
+<<<<<<< .merge_file_Dkg5xH
   - cluster3-phpstan-swarm.story.md
+=======
+<<<<<<< .merge_file_cfGmRP
+  - cluster3-phpstan-swarm-20261006.story.md
+=======
+  - cluster3-phpstan-swarm.story.md
+>>>>>>> .merge_file_MgtXk5
+>>>>>>> .merge_file_JzTQRb
 ---
 
 # Lang — PHPStan Level 10 fixes (2026-10-06)

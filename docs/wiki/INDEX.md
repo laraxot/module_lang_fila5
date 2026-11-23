@@ -37,7 +37,11 @@ related:
 
 ## Indices
 
+<<<<<<< .merge_file_j6V8Jd
 <<<<<<< .merge_file_Um9IvY
+=======
+<<<<<<< .merge_file_ajeIP6
+>>>>>>> .merge_file_mLvw7L
 - [Rules](rules/INDEX.md)
 - [Skills](skills/INDEX.md)
 - [Commands](commands/INDEX.md)
@@ -49,7 +53,11 @@ related:
 - [Commands](commands/index.md)
 - [Memories](memories/index.md)
 - [Concepts](concepts/index.md)
+<<<<<<< .merge_file_j6V8Jd
 >>>>>>> .merge_file_rNxPV9
+=======
+>>>>>>> .merge_file_e82F0g
+>>>>>>> .merge_file_mLvw7L
 
 ## On-Demand Focus
 
