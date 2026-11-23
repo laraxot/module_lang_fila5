@@ -10,7 +10,7 @@ declare(strict_types=1);
  * Fornisce un dropdown con le lingue disponibili e le relative bandiere.
  * 
  * @var string $current_locale Lingua corrente
- * @var \Illuminate\Support\Collection $available_locales Lingue disponibili
+ * @var \Illuminate\Support\Collection $available_locales Lingue disponibili con URL risolti
  * @var string $widget_id ID univoco del widget
  */
 --}}
