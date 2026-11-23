@@ -1,8 +1,12 @@
 ---
-qmd: "performance optimization"
+qmd: "Performance Optimization"
 issues: []
 discussions: []
+<<<<<<< .merge_file_OzIU9L
 title: "Performance Optimization — Module Lang"
+=======
+title: "Performance Optimization"
+>>>>>>> .merge_file_eB20wQ
 type: documentation
 created: 2026-05-11
 updated: 2026-05-11
@@ -21,7 +25,11 @@ related:
 **Dopo**: Carico solo what's needed (~2K startup)
 
 \`\`\`diff
+<<<<<<< .merge_file_OzIU9L
 - 150+ rules embeddate in agents.md
+=======
+- 150+ rules embeddate in AGENTS.md
+>>>>>>> .merge_file_eB20wQ
 + 0 rules embeddate — tutte on-demand
 \`\`\`
 
@@ -117,8 +125,8 @@ context-mode ctx-stats
 ## Riferimenti
 
 - [Global Performance Guide](../../docs/wiki/concepts/performance-optimization.md)
-- [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
-- [QMD Setup](./QMD-SETUP.md)
+- [On-Demand Pattern](./on-demand-pattern.md)
+- [QMD Setup](./qmd-setup.md)
 
 ---
 *Status: Ottimizzato | Token risparmiati: ~48K per session*

@@ -1,8 +1,12 @@
 ---
-qmd: "index"
+qmd: "Index"
 issues: []
 discussions: []
+<<<<<<< .merge_file_TqXMNb
 title: "lang — product"
+=======
+title: "Index"
+>>>>>>> .merge_file_HVjYtL
 module: lang
 type: product
 tags: [product, modules, lang]
@@ -16,7 +20,11 @@ Documentation for `lang` module categorized as **product**.
 
 ## Files
 
+<<<<<<< .merge_file_TqXMNb
 - [`INDEX.md`](./index.md)
+=======
+- [`index.md`](./index.md)
+>>>>>>> .merge_file_HVjYtL
 - [`product-strategy.md`](./product-strategy.md)
 - [`strategy.md`](./strategy.md)
 

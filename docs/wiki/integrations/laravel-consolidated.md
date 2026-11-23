@@ -1953,7 +1953,7 @@ related:
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni Lang](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_RULES.md)
+- [Regole Traduzioni Lang](/laravel/Modules/Lang/docs/translation_keys_rules.md)
 - [Componenti SVG Bandiere](/laravel/Modules/UI/docs/FLAGS_COMPONENTS.md)
 - [Implementazione Header](/laravel/Themes/One/docs/sections/HEADER_LANGUAGE_USER_DROPDOWN.md)
 
@@ -2112,7 +2112,7 @@ Seguendo queste linee guida, è possibile implementare correttamente la localizz
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni Lang](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_RULES.md)
+- [Regole Traduzioni Lang](/laravel/Modules/Lang/docs/translation_keys_rules.md)
 - [Componenti SVG Bandiere](/laravel/Modules/UI/docs/FLAGS_COMPONENTS.md)
 - [Implementazione Header](/laravel/Themes/One/docs/sections/HEADER_LANGUAGE_USER_DROPDOWN.md)
 
@@ -3314,13 +3314,17 @@ related:
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
+<<<<<<< .merge_file_gE9rwK
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+=======
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
+>>>>>>> .merge_file_2fIOfJ
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -3554,13 +3558,17 @@ Questi middleware sono già configurati  e non è necessario modificarli.
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
+<<<<<<< .merge_file_gE9rwK
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+=======
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
+>>>>>>> .merge_file_2fIOfJ
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -4618,7 +4626,7 @@ related:
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni Lang](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_RULES.md)
+- [Regole Traduzioni Lang](/laravel/Modules/Lang/docs/translation_keys_rules.md)
 - [Componenti SVG Bandiere](/laravel/Modules/UI/docs/FLAGS_COMPONENTS.md)
 - [Implementazione Header](/laravel/Themes/One/docs/sections/HEADER_LANGUAGE_USER_DROPDOWN.md)
 
@@ -5118,7 +5126,11 @@ related:
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
+<<<<<<< .merge_file_gE9rwK
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+=======
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
+>>>>>>> .merge_file_2fIOfJ
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

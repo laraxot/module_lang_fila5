@@ -9,7 +9,11 @@ discussions: []
 module: Lang
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
+<<<<<<< .merge_file_QzTT2A
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+=======
+canonical: ../../../Themes/One/docs/shared-components/metodi_duplicati_analisi.md
+>>>>>>> .merge_file_hWmo16
 ---
 
 # Metodi Duplicati — Analisi Lang

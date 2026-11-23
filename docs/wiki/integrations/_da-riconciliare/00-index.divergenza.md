@@ -1,8 +1,8 @@
 ---
-qmd: "00 index.divergenza"
+qmd: "00 Index.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: 00-index.md"
+title: "00 Index.divergenza"
 module: Lang
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

@@ -1,8 +1,8 @@
 ---
-qmd: "quality improvements.divergenza"
+qmd: "Quality Improvements.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: quality-improvements.md"
+title: "Quality Improvements.divergenza"
 module: Lang
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

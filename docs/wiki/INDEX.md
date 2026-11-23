@@ -37,11 +37,19 @@ related:
 
 ## Indices
 
+<<<<<<< .merge_file_Um9IvY
 - [Rules](rules/INDEX.md)
 - [Skills](skills/INDEX.md)
 - [Commands](commands/INDEX.md)
 - [Memories](memories/INDEX.md)
 - [Concepts](concepts/INDEX.md)
+=======
+- [Rules](rules/index.md)
+- [Skills](skills/index.md)
+- [Commands](commands/index.md)
+- [Memories](memories/index.md)
+- [Concepts](concepts/index.md)
+>>>>>>> .merge_file_rNxPV9
 
 ## On-Demand Focus
 

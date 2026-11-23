@@ -1,8 +1,8 @@
 ---
-qmd: "docs naming convention fix.divergenza"
+qmd: "Docs Naming Convention Fix.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: docs_naming_convention_fix.md"
+title: "Docs Naming Convention Fix.divergenza"
 module: Lang
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

@@ -1,8 +1,8 @@
 ---
-qmd: "agent edit discipline.divergenza"
+qmd: "Agent Edit Discipline.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: agent-edit-discipline.md"
+title: "Agent Edit Discipline.divergenza"
 module: Lang
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
