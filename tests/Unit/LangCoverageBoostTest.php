@@ -213,6 +213,11 @@ describe('Lang coverage boost — UI and data', function (): void {
 
         Assert::assertInstanceOf(View::class, $rendered);
         Assert::assertSame('lang::components.language-switcher', $rendered->name());
+        $viewData = $rendered->getData();
+        Assert::assertArrayHasKey('available_locales', $viewData);
+        $html = $rendered->render();
+        Assert::assertStringNotContainsString('$this', $html);
+        Assert::assertStringContainsString('href=', $html);
     });
 
     test('flag component, theme composer and data objects resolve language metadata', function (): void {

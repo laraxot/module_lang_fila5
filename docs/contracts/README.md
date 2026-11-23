@@ -30,3 +30,6 @@ Chi cambia il comportamento aggiorna il contratto nello stesso commit.
 
 ## Contratti
 
+- [LanguageSwitcher component](language-switcher-component.md) — view Blade
+  stateless con URL preparati dal widget.
+
