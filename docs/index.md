@@ -27,64 +27,112 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
 
 ### **Per Amministratori**
+<<<<<<< .merge_file_yhMSfv
+<<<<<<< .merge_file_onRBBY
+1. [BEST_PRACTICES.md](best_practices.md) - Best practices e linee guida
+=======
+1. [best_practices.md](best_practices.md) - Best practices e linee guida
+>>>>>>> .merge_file_BRgOKY
+=======
 <<<<<<< .merge_file_lQrTMh
 1. [BEST_PRACTICES.md](best_practices.md) - Best practices e linee guida
 =======
 1. [best_practices.md](best_practices.md) - Best practices e linee guida
 >>>>>>> .merge_file_3IjyQ6
+>>>>>>> .merge_file_JFCtOm
 2. [TROUBLESHOOTING.md](troubleshooting.md) - Guida troubleshooting
 3. [config/lang.php](../config/lang.php) - Configurazione e ottimizzazioni
 
 ### **Per Integratori**
 1. [API_REFERENCE.md](api_reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
+<<<<<<< .merge_file_yhMSfv
+<<<<<<< .merge_file_onRBBY
+3. [BEST_PRACTICES.md](best_practices.md) - Pattern di implementazione
+=======
+3. [best_practices.md](best_practices.md) - Pattern di implementazione
+>>>>>>> .merge_file_BRgOKY
+=======
 <<<<<<< .merge_file_lQrTMh
 3. [BEST_PRACTICES.md](best_practices.md) - Pattern di implementazione
 =======
 3. [best_practices.md](best_practices.md) - Pattern di implementazione
 >>>>>>> .merge_file_3IjyQ6
+>>>>>>> .merge_file_JFCtOm
 1. [README.md](README.md) - Documentazione principale e panoramica
 2. [config/lang.php](../config/lang.php) - Configurazione centralizzata
 3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
 
 ### **Per Amministratori**
+<<<<<<< .merge_file_yhMSfv
+<<<<<<< .merge_file_onRBBY
+1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices e linee guida
+=======
+1. [best_practices.md](best_practices.md) - Best practices e linee guida
+>>>>>>> .merge_file_BRgOKY
+=======
 <<<<<<< .merge_file_lQrTMh
 1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices e linee guida
 =======
 1. [best_practices.md](best_practices.md) - Best practices e linee guida
 >>>>>>> .merge_file_3IjyQ6
+>>>>>>> .merge_file_JFCtOm
 2. [TROUBLESHOOTING.md](troubleshooting.md) - Guida troubleshooting
 3. [config/lang.php](../config/lang.php) - Configurazione e ottimizzazioni
 
 ### **Per Integratori**
 1. [API_REFERENCE.md](api_reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
+<<<<<<< .merge_file_yhMSfv
+<<<<<<< .merge_file_onRBBY
+3. [BEST_PRACTICES.md](best_practices.md) - Pattern di implementazione
+=======
+3. [best_practices.md](best_practices.md) - Pattern di implementazione
+>>>>>>> .merge_file_BRgOKY
+=======
 <<<<<<< .merge_file_lQrTMh
 3. [BEST_PRACTICES.md](best_practices.md) - Pattern di implementazione
 =======
 3. [best_practices.md](best_practices.md) - Pattern di implementazione
 >>>>>>> .merge_file_3IjyQ6
+>>>>>>> .merge_file_JFCtOm
 1. [README.md](README.md) - Documentazione principale e panoramica
 2. [config/lang.php](../config/lang.php) - Configurazione centralizzata
 3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
 
 ### **Per Amministratori**
+<<<<<<< .merge_file_yhMSfv
+<<<<<<< .merge_file_onRBBY
+1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices e linee guida
+=======
+1. [best_practices.md](best_practices.md) - Best practices e linee guida
+>>>>>>> .merge_file_BRgOKY
+=======
 <<<<<<< .merge_file_lQrTMh
 1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices e linee guida
 =======
 1. [best_practices.md](best_practices.md) - Best practices e linee guida
 >>>>>>> .merge_file_3IjyQ6
+>>>>>>> .merge_file_JFCtOm
 2. [TROUBLESHOOTING.md](troubleshooting.md) - Guida troubleshooting
 3. [config/lang.php](../config/lang.php) - Configurazione e ottimizzazioni
 
 ### **Per Integratori**
 1. [API_REFERENCE.md](API_REFERENCE.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
+<<<<<<< .merge_file_yhMSfv
+<<<<<<< .merge_file_onRBBY
+3. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Pattern di implementazione
+=======
+3. [best_practices.md](best_practices.md) - Pattern di implementazione
+>>>>>>> .merge_file_BRgOKY
+=======
 <<<<<<< .merge_file_lQrTMh
 3. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Pattern di implementazione
 =======
 3. [best_practices.md](best_practices.md) - Pattern di implementazione
 >>>>>>> .merge_file_3IjyQ6
+>>>>>>> .merge_file_JFCtOm
 
 ---
 
@@ -116,16 +164,28 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Validazione**: [best_practices.md](best_practices.md#validazione-e-controlli)
 
 ### **🔒 Sicurezza e Validazione**
+<<<<<<< .merge_file_yhMSfv
+<<<<<<< .merge_file_onRBBY
+- **Validazione File**: [BEST_PRACTICES.md](BEST_PRACTICES.md#sicurezza-e-validazione)
+=======
+- **Validazione File**: [best_practices.md](best_practices.md#sicurezza-e-validazione)
+>>>>>>> .merge_file_BRgOKY
+=======
 <<<<<<< .merge_file_lQrTMh
 - **Validazione File**: [BEST_PRACTICES.md](BEST_PRACTICES.md#sicurezza-e-validazione)
 =======
 - **Validazione File**: [best_practices.md](best_practices.md#sicurezza-e-validazione)
 >>>>>>> .merge_file_3IjyQ6
+>>>>>>> .merge_file_JFCtOm
 - **Controlli Integrità**: [TROUBLESHOOTING.md](troubleshooting.md#problemi-di-sicurezza)
 - **Rate Limiting**: [TROUBLESHOOTING.md](troubleshooting.md#rate-limiting)
 
 ### **🚀 Performance e Ottimizzazione**
+<<<<<<< .merge_file_yhMSfv
+<<<<<<< .merge_file_onRBBY
+=======
 <<<<<<< .merge_file_lQrTMh
+>>>>>>> .merge_file_JFCtOm
 - **Cache Strategy**: [BEST_PRACTICES.md](BEST_PRACTICES.md#performance-e-ottimizzazione)
 - **Lazy Loading**: [BEST_PRACTICES.md](BEST_PRACTICES.md#lazy-loading)
 - **Memory Management**: [BEST_PRACTICES.md](BEST_PRACTICES.md#memory-management)
@@ -133,7 +193,11 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Cache Strategy**: [best_practices.md](best_practices.md#performance-e-ottimizzazione)
 - **Lazy Loading**: [best_practices.md](best_practices.md#lazy-loading)
 - **Memory Management**: [best_practices.md](best_practices.md#memory-management)
+<<<<<<< .merge_file_yhMSfv
+>>>>>>> .merge_file_BRgOKY
+=======
 >>>>>>> .merge_file_3IjyQ6
+>>>>>>> .merge_file_JFCtOm
 - **Benchmark**: [TROUBLESHOOTING.md](troubleshooting.md#metriche-performance)
 
 ### **🧪 Testing e Qualità**
@@ -186,14 +250,22 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 1. [best_practices.md](best_practices.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
+<<<<<<< .merge_file_yhMSfv
+<<<<<<< .merge_file_onRBBY
+=======
 <<<<<<< .merge_file_lQrTMh
+>>>>>>> .merge_file_JFCtOm
 1. [BEST_PRACTICES.md](best_practices.md) - Tutte le sezioni
 =======
 1. [best_practices.md](best_practices.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
 1. [best_practices.md](best_practices.md) - Tutte le sezioni
+<<<<<<< .merge_file_yhMSfv
+>>>>>>> .merge_file_BRgOKY
+=======
 >>>>>>> .merge_file_3IjyQ6
+>>>>>>> .merge_file_JFCtOm
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
 
@@ -216,11 +288,19 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 2. [best_practices.md](best_practices.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
 1. [API_REFERENCE.md](api_reference.md) - Tutte le sezioni
+<<<<<<< .merge_file_yhMSfv
+<<<<<<< .merge_file_onRBBY
+2. [BEST_PRACTICES.md](best_practices.md) - Pattern avanzati
+=======
+2. [best_practices.md](best_practices.md) - Pattern avanzati
+>>>>>>> .merge_file_BRgOKY
+=======
 <<<<<<< .merge_file_lQrTMh
 2. [BEST_PRACTICES.md](best_practices.md) - Pattern avanzati
 =======
 2. [best_practices.md](best_practices.md) - Pattern avanzati
 >>>>>>> .merge_file_3IjyQ6
+>>>>>>> .merge_file_JFCtOm
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
 
 **Obiettivi**
@@ -233,11 +313,19 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 ## 🔍 **Ricerca per Parole Chiave**
 
 ### **Localizzazione**
+<<<<<<< .merge_file_yhMSfv
+<<<<<<< .merge_file_onRBBY
+- **File PHP**: [BEST_PRACTICES.md](BEST_PRACTICES.md#sintassi-file-php)
+=======
+- **File PHP**: [best_practices.md](best_practices.md#sintassi-file-php)
+>>>>>>> .merge_file_BRgOKY
+=======
 <<<<<<< .merge_file_lQrTMh
 - **File PHP**: [BEST_PRACTICES.md](BEST_PRACTICES.md#sintassi-file-php)
 =======
 - **File PHP**: [best_practices.md](best_practices.md#sintassi-file-php)
 >>>>>>> .merge_file_3IjyQ6
+>>>>>>> .merge_file_JFCtOm
 - **File JSON**: [README.md](README.md#file-php-vs-json)
 - **Fallback**: [TROUBLESHOOTING.md](troubleshooting.md#fallback-traduzioni)
 - **Pluralizzazione**: [EXAMPLES.md](examples.md#gestione-pluralizzazione)
@@ -246,7 +334,11 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Componenti**: [EXAMPLES.md](examples.md#componenti-automatici)
 - **Actions**: [EXAMPLES.md](examples.md#actions-personalizzate)
 - **Resources**: [EXAMPLES.md](examples.md#resource-base)
+<<<<<<< .merge_file_yhMSfv
+<<<<<<< .merge_file_onRBBY
+=======
 <<<<<<< .merge_file_lQrTMh
+>>>>>>> .merge_file_JFCtOm
 - **Integrazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#integrazione-filament)
 
 ### **Performance**
@@ -270,20 +362,32 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 ### **Validazione**
 - **Sintassi**: [best_practices.md](best_practices.md#sintassi-valida)
 - **Struttura**: [best_practices.md](best_practices.md#struttura-gerarchica)
+<<<<<<< .merge_file_yhMSfv
+>>>>>>> .merge_file_BRgOKY
+=======
 >>>>>>> .merge_file_3IjyQ6
+>>>>>>> .merge_file_JFCtOm
 - **Auto-fix**: [TROUBLESHOOTING.md](troubleshooting.md#fix-automatici)
 - **Report**: [TROUBLESHOOTING.md](troubleshooting.md#report-qualità)
 
 ### **Testing**
 - **Unit Test**: [EXAMPLES.md](examples.md#test-unitari)
 - **Feature Test**: [EXAMPLES.md](examples.md#test-feature)
+<<<<<<< .merge_file_yhMSfv
+<<<<<<< .merge_file_onRBBY
+=======
 <<<<<<< .merge_file_lQrTMh
+>>>>>>> .merge_file_JFCtOm
 - **PHPStan**: [BEST_PRACTICES.md](BEST_PRACTICES.md#phpstan-compliance)
 - **Validazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#validazione-automatica)
 =======
 - **PHPStan**: [best_practices.md](best_practices.md#phpstan-compliance)
 - **Validazione**: [best_practices.md](best_practices.md#validazione-automatica)
+<<<<<<< .merge_file_yhMSfv
+>>>>>>> .merge_file_BRgOKY
+=======
 >>>>>>> .merge_file_3IjyQ6
+>>>>>>> .merge_file_JFCtOm
 
 ---
 

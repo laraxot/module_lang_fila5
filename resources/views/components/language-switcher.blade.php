@@ -7,8 +7,7 @@ declare(strict_types=1);
     @var \Illuminate\Support\Collection $available_locales
     Each locale contains its URL resolved by LanguageSwitcherWidget.
 --}}
-<div>
-    <li class="language-switcher-container">
+<li class="language-switcher-container">
         <details class="dropdown">
             <summary
                 class="btn btn-ghost btn-sm m-1 hover:bg-emerald-50 hover:bg-opacity-20 focus:outline-none focus:ring-2 focus:ring-emerald-300 focus:ring-opacity-50"
@@ -62,5 +61,4 @@ declare(strict_types=1);
                 @endforeach
             </ul>
         </details>
-    </li>
-</div>
+</li>

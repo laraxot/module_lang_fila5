@@ -74,11 +74,19 @@ public function execute(
 ## Collegamenti
 
 - [TransArrayAction.php](../../app/Actions/TransArrayAction.php)
+<<<<<<< .merge_file_TlwTjZ
+<<<<<<< .merge_file_hRyUB2
+- [PHPStan Fixes](./phpstan-fixes.md)
+=======
+- [PHPStan Fixes](./PHPSTAN-FIXES.md)
+>>>>>>> .merge_file_jcuy5P
+=======
 <<<<<<< .merge_file_3gp0E0
 - [PHPStan Fixes](./phpstan-fixes.md)
 =======
 - [PHPStan Fixes](./PHPSTAN-FIXES.md)
 >>>>>>> .merge_file_6vtAjE
+>>>>>>> .merge_file_VDOJxI
 - [Translation Actions](./translation-actions.md)
 
 ## Note per il Futuro

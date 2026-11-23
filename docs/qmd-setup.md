@@ -69,10 +69,17 @@ qmd search "form" -c lang  # Solo questo modulo
 ## Riferimenti
 
 - [Global QMD Config](../qmd.md) (root docs)
+<<<<<<< .merge_file_X09Az1
+<<<<<<< .merge_file_XMKAh8
+- [Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
+=======
+>>>>>>> .merge_file_ywXOHR
+=======
 <<<<<<< .merge_file_7Itccc
 - [Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
 =======
 >>>>>>> .merge_file_Ea7hIK
+>>>>>>> .merge_file_MHBjaw
 - [Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
 - [Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
 - [On-Demand Pattern](./on-demand-pattern.md)

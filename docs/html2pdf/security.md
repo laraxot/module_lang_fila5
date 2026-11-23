@@ -8,11 +8,19 @@ title: "html2pdf security — puntatore"
 type: reference
 updated: 2026-05-21
 related:
+<<<<<<< .merge_file_ZPJHf0
+<<<<<<< .merge_file_hP9hnb
+  - "../../../Media/docs/html2pdf/security.md"
+=======
+  - "../../../Media/docs/html2pdf/SECURITY.md"
+>>>>>>> .merge_file_1HfT5E
+=======
 <<<<<<< .merge_file_LiFr02
   - "../../../Media/docs/html2pdf/security.md"
 =======
   - "../../../Media/docs/html2pdf/SECURITY.md"
 >>>>>>> .merge_file_8oYR2J
+>>>>>>> .merge_file_8FZzsq
 ---
 
 # Html2Pdf — security

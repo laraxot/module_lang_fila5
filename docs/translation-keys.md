@@ -16,13 +16,21 @@ related:
 ## Collegamenti correlati
 - [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
+<<<<<<< .merge_file_s7hdbr
+<<<<<<< .merge_file_I3nmjm
+=======
 <<<<<<< .merge_file_ACgsuq
+>>>>>>> .merge_file_44nYkY
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
 =======
 - [Implementazione Auth Pages](../../User/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../User/docs/translation_keys_rules.md)
+<<<<<<< .merge_file_s7hdbr
+>>>>>>> .merge_file_DDz04t
+=======
 >>>>>>> .merge_file_yEJ68Q
+>>>>>>> .merge_file_44nYkY
 - [Documentazione Lang](README.md)
 
 ## Regole Fondamentali per le Traduzioni
@@ -238,13 +246,21 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 ## Collegamenti correlati
 - [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
+<<<<<<< .merge_file_s7hdbr
+<<<<<<< .merge_file_I3nmjm
+=======
 <<<<<<< .merge_file_ACgsuq
+>>>>>>> .merge_file_44nYkY
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
 =======
 - [Implementazione Auth Pages](../../User/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../User/docs/translation_keys_rules.md)
+<<<<<<< .merge_file_s7hdbr
+>>>>>>> .merge_file_DDz04t
+=======
 >>>>>>> .merge_file_yEJ68Q
+>>>>>>> .merge_file_44nYkY
 - [Documentazione Lang](README.md)
 
 ## Regole Fondamentali per le Traduzioni

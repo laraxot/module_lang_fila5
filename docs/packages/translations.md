@@ -108,7 +108,11 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 ## Collegamenti tra versioni di translations.md
 * [translations.md](../../../chart/docs/translations.md)
 * [translations.md](../../../reporting/docs/translations.md)
+<<<<<<< .merge_file_MY2Ad8
+<<<<<<< .merge_file_Bp3BWl
+=======
 <<<<<<< .merge_file_ERrr2i
+>>>>>>> .merge_file_MVyYQO
 * [translations.md](../../../gdpr/docs/translations.md)
 * [translations.md](../../../notify/docs/translations.md)
 * [translations.md](../../../xot/docs/roadmap/lang/translations.md)
@@ -136,7 +140,11 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 * [translations.md](../../../Media/docs/translations.md)
 * [translations.md](../../../Tenant/docs/translations.md)
 * [translations.md](../../../Activity/docs/translations.md)
+<<<<<<< .merge_file_MY2Ad8
+>>>>>>> .merge_file_cEVaDu
+=======
 >>>>>>> .merge_file_tmUQL9
+>>>>>>> .merge_file_MVyYQO
 * [translations.md](../../../patient/docs/translations.md)
 * [translations.md](../../../cms/docs/translations.md)
 * [translations.md](../../../Chart/docs/translations.md)

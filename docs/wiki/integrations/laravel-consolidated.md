@@ -3320,11 +3320,19 @@ related:
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
+<<<<<<< .merge_file_3jowvt
+<<<<<<< .merge_file_gE9rwK
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+=======
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
+>>>>>>> .merge_file_2fIOfJ
+=======
 <<<<<<< .merge_file_4rtZSh
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 =======
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
 >>>>>>> .merge_file_GSaOsR
+>>>>>>> .merge_file_wRgro7
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -3564,11 +3572,19 @@ Questi middleware sono già configurati  e non è necessario modificarli.
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
+<<<<<<< .merge_file_3jowvt
+<<<<<<< .merge_file_gE9rwK
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+=======
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
+>>>>>>> .merge_file_2fIOfJ
+=======
 <<<<<<< .merge_file_4rtZSh
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 =======
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
 >>>>>>> .merge_file_GSaOsR
+>>>>>>> .merge_file_wRgro7
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -5126,11 +5142,19 @@ related:
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](translation-keys-best-practices.md)
+<<<<<<< .merge_file_3jowvt
+<<<<<<< .merge_file_gE9rwK
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+=======
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
+>>>>>>> .merge_file_2fIOfJ
+=======
 <<<<<<< .merge_file_4rtZSh
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 =======
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
 >>>>>>> .merge_file_GSaOsR
+>>>>>>> .merge_file_wRgro7
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

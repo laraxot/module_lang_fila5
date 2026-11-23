@@ -529,7 +529,6 @@ return [
         ],
         'register' => [
             'icon' => 'register',
-            'label' => 'register',
         ],
         'refresh' => [
             'icon' => 'refresh',
