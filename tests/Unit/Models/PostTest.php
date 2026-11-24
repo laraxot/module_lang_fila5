@@ -1,0 +1,142 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Lang\Tests\Unit\Models;
+
+use Modules\Lang\Models\BaseModel;
+use Modules\Lang\Models\Post;
+use Modules\Lang\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use ReflectionClass;
+
+use function Safe\class_uses;
+
+uses(TestCase::class);
+
+describe('Post Model', function () {
+    test('extends BaseModel', function () {
+        $parent = (new ReflectionClass(Post::class))->getParentClass();
+
+        Assert::assertInstanceOf(ReflectionClass::class, $parent);
+        Assert::assertSame(BaseModel::class, $parent->getName());
+    });
+
+    test('uses HasSlug trait', function () {
+        $model = new Post;
+
+        Assert::assertArrayHasKey('Spatie\Sluggable\HasSlug', class_uses($model));
+    });
+
+    test('uses HasXotFactory trait', function () {
+        $model = new Post;
+
+        // `class_uses()` elenca solo i trait usati **direttamente**: HasXotFactory
+        // arriva da Modules\Lang\Models\BaseModel, quindi li' non compariva e il
+        // test accusava il modello di non averlo. `Post::factory()` restituisce
+        // PostFactory, cioe' il trait c'era e funzionava (base_quaeris_fila5#234).
+        Assert::assertArrayHasKey('Modules\Xot\Models\Traits\HasXotFactory', class_uses_recursive($model));
+    });
+
+    test('uses Updater trait', function () {
+        $model = new Post;
+
+        Assert::assertArrayHasKey('Modules\Xot\Traits\Updater', class_uses($model));
+    });
+
+    test('has correct connection', function () {
+        $model = new Post;
+
+        Assert::assertSame('lang', $model->getConnectionName());
+    });
+
+    test('has correct searchable fields', function () {
+        $post = new Post([
+            'title' => 'Search title',
+            'guid' => 'search-guid',
+            'txt' => 'Search body',
+        ]);
+
+        Assert::assertSame(
+            [
+                'title' => 'Search title',
+                'guid' => 'search-guid',
+                'txt' => 'Search body',
+            ],
+            $post->toSearchableArray(),
+        );
+        Assert::assertSame(Post::SEARCHABLE_FIELDS, array_keys($post->toSearchableArray()));
+    });
+
+    test('has snake attributes enabled', function () {
+        Assert::assertTrue(Post::$snakeAttributes);
+    });
+
+    test('uses string primary key without auto increment', function () {
+        $model = new Post;
+
+        Assert::assertFalse($model->incrementing);
+        Assert::assertSame('string', $model->getKeyType());
+    });
+
+    test('has default perPage', function () {
+        $model = new Post;
+
+        Assert::assertSame(30, $model->getPerPage());
+    });
+
+    test('has correct fillable attributes', function () {
+        $model = new Post;
+        $fillable = $model->getFillable();
+
+        Assert::assertContains('id', $fillable);
+        Assert::assertContains('user_id', $fillable);
+        Assert::assertContains('post_id', $fillable);
+        Assert::assertContains('lang', $fillable);
+        Assert::assertContains('title', $fillable);
+    });
+
+    test('has getSlugOptions method', function () {
+        $model = new Post;
+
+        Assert::assertTrue(is_callable([$model, 'getSlugOptions']));
+    });
+
+    test('has linkable relationship', function () {
+        $model = new Post;
+
+        Assert::assertTrue(is_callable([$model, 'linkable']));
+    });
+
+    test('has toSearchableArray method', function () {
+        $model = new Post;
+
+        Assert::assertTrue(is_callable([$model, 'toSearchableArray']));
+    });
+
+    test('casts datetime fields', function () {
+        $model = new Post;
+        $casts = $model->getCasts();
+
+        Assert::assertSame('datetime', $casts['created_at']);
+        Assert::assertSame('datetime', $casts['updated_at']);
+        Assert::assertSame('datetime', $casts['published_at']);
+
+        // `deleted_at` non e' asserita: la tabella `posts` non ha quella colonna
+        // e il modello non usa SoftDeletes. Il test la pretendeva, quindi
+        // chiedeva un cast per un campo inesistente (base_quaeris_fila5#234).
+        Assert::assertArrayNotHasKey('deleted_at', $casts);
+    });
+
+    test('casts array fields', function () {
+        $model = new Post;
+        $casts = $model->getCasts();
+
+        Assert::assertSame('array', $casts['url_lang']);
+
+        // `image_resize_src` e' una colonna `string` nella migration e una
+        // `@property string|null` nel modello: il cast `array` che questo test
+        // pretendeva contraddiceva entrambe (base_quaeris_fila5#234).
+        Assert::assertArrayNotHasKey('image_resize_src', $casts);
+    });
+});
