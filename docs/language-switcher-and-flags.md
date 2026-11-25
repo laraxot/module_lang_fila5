@@ -63,6 +63,6 @@ una voce non-array o senza `regional`/`name` lancia `InvalidArgumentException` c
 
 `Modules\Lang\Filament\Forms\Components\NationalFlagSelect` (`XotBaseSelect`): select ricercabile, `native(false)`, `allowHtml()`, limite 300 opzioni.
 I paesi vengono dalla funzione globale `countries()` del pacchetto `rinvex/countries` (dipendenza di Lang); l'opzione e' `codice ISO alpha-2 => <span>bandiera + nome</span>`.
-Il nome e' localizzato con le traduzioni `lang::countries` (file `lang/<locale>/countries.php`, `nationalities.php`); righe senza `iso_3166_1_alpha2`
-valido sono scartate. La ricerca confronta il testo con il nome del paese; i punti di sostituzione per i test sono `resolveCountries()` e
-`finalizeFilteredCountries()`.
+Il nome e' `__('lang::countries.<iso2 minuscolo>')` (file `lang/<locale>/countries.php`); se la chiave non e' una traduzione (stringa) si ripiega sul nome
+inglese di rinvex e poi sul codice. Righe senza `iso_3166_1_alpha2` valido sono scartate; sono ordinate per nome. La ricerca confronta il testo con nome
+inglese, codice e nome tradotto. I punti di sostituzione per i test sono `resolveCountries()` e `finalizeFilteredCountries()`.
