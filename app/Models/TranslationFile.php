@@ -1,0 +1,118 @@
+<?php
+
+declare(strict_types=1);
+/**
+ * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Models/Translation.php
+ */
+
+namespace Modules\Lang\Models;
+
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Log;
+use Modules\Lang\Database\Factories\TranslationFileFactory;
+use Modules\Lang\Models\Traits\TranslationFileRowLoader;
+use Modules\Xot\Contracts\ProfileContract;
+use Sushi\Sushi;
+
+/**
+ * @property string|null $key
+ * @property string|null $path
+ * @property string|null $id
+ * @property string|null $name
+ * @property array<array-key, mixed>|null $content
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ *
+ * @method static TranslationFileFactory factory($count = null, $state = [])
+ * @method static Builder<static> newModelQuery()
+ * @method static Builder<static> newQuery()
+ * @method static Builder<static> query()
+ * @method static Builder<static> whereContent($value)
+ * @method static Builder<static> whereId($value)
+ * @method static Builder<static> whereKey($value)
+ * @method static Builder<static> whereName($value)
+ * @method static Builder<static> wherePath($value)
+ *
+ * @property ProfileContract|null $deleter
+ *
+ * @mixin Model
+ */
+class TranslationFile extends BaseModel
+{
+    use Sushi;
+    use TranslationFileRowLoader;
+
+    /**
+     * La chiave è il nome del file (`xot::yes_no_enum`): senza keyType string ogni id
+     * diventava 0, l'elenco ripeteva la stessa riga e "Modifica" apriva `/translation-files/0` (404).
+     */
+    protected $keyType = 'string';
+
+    public $incrementing = false;
+
+    protected $fillable = [
+        'id',
+        'name',
+        'path',
+        'content',
+    ];
+
+    /**
+     * Colonne della tabella Sushi quando getRows() e' vuoto (nessun file o lettura fallita): senza schema
+     * Sushi crea `create table "translation_files" ()` e l'elenco va in errore SQL invece di mostrarsi vuoto.
+     *
+     * @var array<string, string>
+     */
+    protected $schema = [
+        'id' => 'string',
+        'key' => 'string',
+        'name' => 'string',
+        'path' => 'string',
+        'content' => 'text',
+    ];
+
+    /** @var array<string, string> */
+    protected array $form = [
+        'key' => 'string',
+        'path' => 'string',
+        'id' => 'string',
+        'name' => 'string',
+        'content' => 'json',
+    ];
+
+    /**
+     * @return array<int, array<string, mixed>>
+     */
+    public function getRows(): array
+    {
+        if ($this->isRunningIdeHelper()) {
+            return [];
+        }
+
+        try {
+            return $this->loadTranslationDataWithErrorHandling();
+        } catch (\Throwable $e) {
+            Log::warning('TranslationFile::getRows failed', [
+                'error' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+            ]);
+
+            return [];
+        }
+    }
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    #[\Override]
+    protected function casts(): array
+    {
+        return [
+            'content' => 'array',
+        ];
+    }
+}
