@@ -9,6 +9,54 @@ qmd: "digest ceiling 100 quick-reference"
 
 Sintesi automatica di 3 documenti (chiave `quick-reference`).
 
+## quick-reference-2
+
+_Fonte: `quick-reference-2.md`_
+
+See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
+
+## Guida Rapida alle Traduzioni
+
+_Fonte: `wiki/integrations/_da-riconciliare/quick-reference-2.md`_
+
+# Guida Rapida alle Traduzioni
+
+## Struttura Base
+
+```
+lang/
+├── it/                 # Traduzioni in italiano
+│   ├── auth.php        # Testi di autenticazione
+│   ├── validation.php  # Messaggi di validazione
+│   └── modules/        # Moduli personalizzati
+│       ├── patient.php
+│       └── doctor.php
+└── en/                 # Traduzioni in inglese
+    └── ...
+```
+
+## Utilizzo Base
+
+### Nei File Blade
+```blade
+{{ __('Benvenuto, :name', ['name' => $user->name]) }}
+
+{{ __('patient.profile.title') }}
+```
+
+### Nei Controller/Classi PHP
+```php
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Lang;
+
+## Topic quick-reference
+
+_Fonte: `wiki/topics/quick-reference.md`_
+
+# Topic quick-reference
+
+Sintesi automatica di 3 documenti (chiave `quick-reference`).
+
 ## Lang — quick reference
 
 _Fonte: `bmad/quick-reference.md`_
@@ -34,79 +82,3 @@ _Fonte: `bmad/quick-reference.md`_
 | `TranslationFile` | `app/Models/TranslationFile.php` | `BaseModel` | — |
 | `Post` | `app/Models/Post.php` | `BaseModel` | `posts` |
 | `BaseModel` | `app/Models/BaseModel.php` | `XotBaseModel` | — |
-| `BaseModelLang` | `app/Models/BaseModelLang.php` | `BaseModel` | — |
-| `BaseMorphPivot` | `app/Models/BaseMorphPivot.php` | — | — |
-
-## Traits modello
-
-| Trait | File |
-|---|---|
-| `HasStrictTranslations` | `app/Models/Traits/HasStrictTranslations.php` |
-
-## Guida Rapida alle Traduzioni
-
-_Fonte: `quick-reference.md`_
-
-# Guida Rapida alle Traduzioni
-
-## Struttura Base
-
-```
-lang/
-├── it/                 # Traduzioni in italiano
-│   ├── auth.php        # Testi di autenticazione
-│   ├── validation.php  # Messaggi di validazione
-│   └── modules/        # Moduli personalizzati
-│       ├── patient.php
-│       └── doctor.php
-└── en/                 # Traduzioni in inglese
-    └── ...
-```
-
-## Utilizzo Base
-
-### Nei File Blade
-```blade
-{{ __('Benvenuto, :name', ['name' => $user->name]) }}
-
-{{ __('patient.profile.title') }}
-```
-
-### Nei Controller/Classi PHP
-```php
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Lang;
-
-## Guida Rapida alle Traduzioni
-
-_Fonte: `wiki/integrations/_da-riconciliare/quick-reference.md`_
-
-# Guida Rapida alle Traduzioni
-
-## Struttura Base
-
-```
-lang/
-├── it/                 # Traduzioni in italiano
-│   ├── auth.php        # Testi di autenticazione
-│   ├── validation.php  # Messaggi di validazione
-│   └── modules/        # Moduli personalizzati
-│       ├── patient.php
-│       └── doctor.php
-└── en/                 # Traduzioni in inglese
-    └── ...
-```
-
-## Utilizzo Base
-
-### Nei File Blade
-```blade
-{{ __('Benvenuto, :name', ['name' => $user->name]) }}
-
-{{ __('patient.profile.title') }}
-```
-
-### Nei Controller/Classi PHP
-```php
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Lang;
