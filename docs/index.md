@@ -328,3 +328,9 @@ php artisan lang:debug [--log-missing] [--log-performance]
 **Mantenuto da**: Community Laraxot
 
 - [Conflict Resolution](conflict-resolution.md)
+
+## Pack qualità (2026-11-16)
+
+- [BMAD](./bmad/00-index.md)
+- [ECC](./ecc/00-index.md)
+- [Audit](./bmad/audit.md)

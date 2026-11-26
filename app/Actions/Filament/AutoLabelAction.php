@@ -21,6 +21,14 @@ use Modules\Xot\Actions\GetTransKeyAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * Etichette, intestazioni, segnaposto e testi d'aiuto dei componenti Filament presi dai file di lingua del modulo che
+ * li usa; applicata a tutti i componenti con `configureUsing()` in LangServiceProvider.
+ *
+ * @see Modules/Lang/docs/filament-auto-labels.md
+ *
+ * @contract docs/contracts/auto-label-action.md
+ */
 class AutoLabelAction
 {
     use QueueableAction;
@@ -56,7 +64,9 @@ class AutoLabelAction
      * («il primo frame fuori da questa classe») e' una modifica a se', da fare
      * sapendo che si riscrivono delle chiavi.
      *
-     * @return array<string, mixed>  il frame trovato, o `[]` se nessuno corrisponde
+     * @see Modules/Lang/docs/filament-auto-labels.md
+     *
+     * @return array<string, mixed> il frame trovato, o `[]` se nessuno corrisponde
      */
     protected function findCallerFrame(Field|Entry|BaseFilter|Column|Step|Action|Section $component): array
     {
@@ -89,6 +99,12 @@ class AutoLabelAction
         return is_array($frame) ? $frame : [];
     }
 
+    /**
+     * Applica al componente il testo di tipo `$type` preso dal file di lingua del modulo del chiamante;
+     * se la traduzione manca, chiede di salvare solo l'etichetta (SaveTransAction, solo in locale).
+     *
+     * @see Modules/Lang/docs/filament-auto-labels.md
+     */
     public function execute(Field|Entry|BaseFilter|Column|Step|Action|Section $component, string $type = 'label'): Field|Entry|BaseFilter|Column|Step|Action|Section
     {
         $class = $this->findCallerFrame($component);
@@ -197,7 +213,7 @@ class AutoLabelAction
         // Se la traduzione manca si salva (solo in locale, vedi SaveTransAction) ma solo per l'etichetta:
         // per helper_text, placeholder, description e tooltip il "valore di comodo" era il nome del campo,
         // che poi compariva sotto e dentro i campi ("route", "postal_code"). Meglio nessun testo d'aiuto.
-        if (is_string($label) && $label_key === $label && 'label' === $type) {
+        if (is_string($label) && $label_key === $label && $type === 'label') {
             app(SaveTransAction::class)->execute($label_key, $default_val ?? $val);
         }
         if ($isAuxiliaryText && is_string($label) && ($label === '' || $label === $val)) {

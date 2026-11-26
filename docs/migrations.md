@@ -1,179 +1,137 @@
 ---
-title: "migrations"
-type: note
+title: "Migrazioni del modulo Lang"
+type: reference
+module: Lang
 tags: [documentation]
 created: 2026-09-26
-updated: 2026-09-26
-qmd: "migrations"
+updated: 2026-11-25
+status: draft
+qmd: "migrazioni lang XotBaseMigration language_lines posts translations user_id uuid convertUserIdToUuidIfLegacyBigint tableCreate tableUpdate ledger forward-only pattern connessione verifica quality gates"
 issues: []
 discussions: []
-status: draft
+related:
+  - ./bmad/stories/0030-user-id-uuid-migration-convention.story.md
+  - ./bmad/stories/user-id-uuid-migration-convention.story.md
+  - ./model-translations.md
 ---
+# Migrazioni del modulo Lang
 
-# Migrations: Lang Module
+`Modules/Lang/database/migrations/`: undici file su tre tabelle, tutti su `XotBaseMigration` con `$model_class` esplicito.
 
-Questo documento descrive le migrazioni nel modulo Lang e il loro contratto con
-`XotBaseMigration`.
+## Tabelle
 
-## Philosophy
+| Tabella | Modello | Colonne principali |
+|---|---|---|
+| `language_lines` | `LanguageLine` | `id`, `group` (indice), `key`, `text` (json), `locale` (indice); unica su `(group, key, locale)`; timestamp e audit |
+| `posts` | `Post` | `id` stringa (primaria), `user_id`, `post_id`, `lang`, `guid` (unica), `title`, `subtitle`, `post_type`, `txt`, `content`, `excerpt`, `slug`, `status`, `published_at`, `locale`, `category`, `image_*`, `meta_*`, `author_id`, `url`, `url_lang` (json); timestamp e audit |
+| `translations` | `Translation` | `id`, `lang`, `value`, `namespace`, `group`, `item`, `key`, `locale`, `user_id`; indici su lang, namespace, group, key, locale; timestamp e audit |
 
-Nel modulo Lang, ogni modello database-backed ha esattamente una migrazione corrispondente:
+`TranslationFile` non ha migrazione: e' un modello Sushi in memoria.
 
-| Model | Migration | Status |
-|-------|-----------|--------|
-| `LanguageLine` | `2024_03_20_000001_create_language_lines_table.php` | ✅ DB-backed |
-| `Post` | `2026_01_21_211814_create_posts_table.php` + update UUID | ✅ DB-backed |
-| `Translation` | `2026_01_21_211815_create_translations_table.php` + update UUID | ✅ DB-backed |
-| `Post` | `2026_01_21_211814_create_posts_table.php` + `2026_11_05_100000_create_posts_table.php` | ✅ DB-backed |
-| `Translation` | `2026_01_21_211815_create_translations_table.php` + `2026_11_05_100001_create_translations_table.php` | ✅ DB-backed |
-| `TranslationFile` | *none* (uses Sushi trait) | ✅ In-memory |
+## File, nell'ordine di esecuzione
 
-**Parity Rule**: `TranslationFile` estende `BaseModel` con il trait `Sushi` (in-memory model), quindi non richiede una migrazione di creazione. Le migrazioni additive di aggiornamento sono distinte dalle migrazioni di creazione e non violano la parità modello/tabella.
+| File | Effetto |
+|---|---|
+| `2024_03_20_000001_create_language_lines_table` | crea `language_lines` |
+| `2026_01_21_211814_create_posts_table` | crea `posts` |
+| `2026_01_21_211815_create_translations_table` | crea `translations` |
+| `2026_08_06_190000_create_posts_table` | seconda "create": `tableCreate()` non fa niente se la tabella esiste; `tableUpdate()` aggiunge solo le colonne mancanti (`excerpt`, `slug`, `status`, `published_at`...) |
+| `2026_08_06_190100_create_translations_table` | come sopra per `translations` (`key`, `locale`, `user_id`) |
+| `2026_11_05_100000_create_posts_table` | "owner canonico": se la tabella esiste converte `user_id` da bigint a UUID **conservando** i valori legacy come stringhe (`preserveLegacyValues: true`) |
+| `2026_11_05_100000_update_posts_table` | `convertUserIdToUuidIfLegacyBigint()` senza conservazione: si ferma con eccezione se trova righe con `user_id` bigint |
+| `2026_11_05_100000_update_user_id_uuid_on_posts_table` | `change()` a `uuid` se la colonna e' ancora bigint |
+| `2026_11_05_100001_{create,update,update_user_id_uuid_on}_translations_table` | le stesse tre per `translations` |
 
-## Key Models Explained
+Le tre di novembre sono ridondanti per costruzione: la prima che trova la colonna ancora bigint la converte, le altre trovano gia' una colonna non bigint e non fanno niente
+(il helper e' idempotente). Il piano `create_*` + `update_*` per lo stesso modello non rispetta "una tabella, una migrazione": le duplicate **non si cancellano ne' si rinominano**
+(il nome file e' parte della chiave del ledger degli ambienti gia' migrati); un eventuale consolidamento e' solo in avanti e dopo aver confrontato i ledger di tutti gli ambienti
+(story [0030](bmad/stories/0030-user-id-uuid-migration-convention.story.md)).
 
-### LanguageLine
+## Perche' `user_id` e' UUID
 
-Memorizza singole linee di traduzione organizzate per gruppo, chiave e locale.
+Gli id di `Modules\User\Models\User` sono UUID; `user_id` nasceva `bigint` e ogni insert con un utente reale falliva con `Incorrect integer value`.
+`XotBaseMigration::convertUserIdToUuidIfLegacyBigint($table, $nullable = true, $preserveLegacyValues = false)`:
 
-- **Columns**: `id`, `group`, `key`, `text` (JSON), `locale`
-- **Purpose**: Gestione granulare di stringhe traducibili
-- **Unique constraint**: `(group, key, locale)`: una sola traduzione per combo
+1. non fa niente se la colonna non esiste o non e' bigint;
+2. con righe `user_id` non nulle e senza `preserveLegacyValues` lancia `RuntimeException` (serve un mapping esplicito verso gli UUID);
+3. con `preserveLegacyValues` converte in `char(36)` mantenendo i numeri come stringhe, risolvibili in seguito con un mapping verificato.
 
-### Post
+Ogni migrazione di novembre controlla `tableExists()` prima di `tableUpdate()`, cosi' non crea una tabella vuota quando manca il bersaglio.
 
-Modello versatile per post, pagine, e contenuti editoriali con metadati SEO.
+## Regole
 
-- **Columns**: `id` (string primary key), `user_id`, `title`, `content`, `slug`, `status`, `published_at`, `image_*`, `meta_*`, `url_lang` (JSON)
-- **Purpose**: Gestione articoli, pagine blog, contenuti multilingue
-- **Key features**: Sluggable, Updater trait, supports parent posts via `post_id`
+- Mai `migrate:fresh`, `migrate:refresh` o `--force` decisi da un agente; mai `down()` con drop; mai rimuovere colonne: solo aggiunte idempotenti (`hasColumn()` in `tableUpdate()`).
+- Nome file: `{timestamp}_{azione}_{modello_plurale}_table.php`. `XotBaseMigration::getModelClass()` risolve il modello dal nome file solo per `create_*_table`: per `update_*` il
+  `protected ?string $model_class` e' obbligatorio.
+- Timestamp e audit con `$this->updateTimestamps($table, false)` (nessun modello Lang usa soft delete): aggiunge `created_at`, `updated_at`, `created_by`, `updated_by` se mancano.
+- Una nuova modifica di schema e' un nuovo file `add_<colonna>_to_<tabella>` o `update_<tabella>`, mai la modifica di un file gia' applicato.
+- I test usano un database gia' migrato (`php artisan migrate --env=testing` una volta): [testing.md](testing.md).
 
-### Translation
+## Modelli: scopo e caratteristiche
 
-Traduzione di chiavi namespace/group gestita da Laravel Translation Manager.
+- **`LanguageLine`**: righe di traduzione granulari per gruppo, chiave e locale. Una sola traduzione per combinazione `(group, key, locale)`.
+- **`Post`**: modello versatile per post, pagine ed editoriali con metadati SEO. Sluggable, trait `Updater`, post padre via `post_id`.
+- **`Translation`**: traduzione di chiavi namespace/group, sul modello di [barryvdh/laravel-translation-manager](https://github.com/barryvdh/laravel-translation-manager); archivia e sincronizza traduzioni da file a database.
+- **`TranslationFile`**: modello Sushi in memoria, non persistente; carica i file di traduzione dal filesystem con `GetAllTranslationAction`. Non richiede migrazione, quindi la parita' modello/tabella vale per i soli tre modelli su database.
 
-- **Columns**: `id`, `lang`, `key`, `value`, `namespace`, `group`, `item`, `locale`, `user_id`
-- **Purpose**: Archiviazione e sincronizzazione traduzioni da file a database
-- **Modeled after**: [barryvdh/laravel-translation-manager](https://github.com/barryvdh/laravel-translation-manager)
+## Convenzione di nome file
 
-### TranslationFile
+Le creazioni seguono `YYYY_MM_DD_HHMMSS_create_<tabella_plurale>_table.php`: `XotBaseMigration` singolarizza la tabella e ricava il modello. Le migrazioni additive usano un verbo descrittivo (`update_<tabella_plurale>_table`) e dichiarano `$model_class`, perche' il modello non e' derivabile dal pattern `create_*_table`.
 
-Modello Sushi (in-memory, non-persistent) che carica dinamicamente file di traduzione dal filesystem.
+La regola del progetto e' una migrazione owner `create_*_table` per modello, con i cambi colonna dentro il suo `tableUpdate()`; le eccezioni `add_*` / `update_*` / `fix_*` gia' pubblicate restano finche' non sono consolidate (Lang ne ha, elencate nella tabella dei file sopra).
 
-- **Type**: Sushi (no DB table)
-- **Data source**: File system translations via `GetAllTranslationAction`
-- **Why Sushi**: Riflessione sulle strutture file senza persistenza: perfetto per strumenti admin
+L'audit del naming sulle migrazioni dei moduli e' nella [story BMAD di convenzione](./bmad/stories/user-id-uuid-migration-convention.story.md): 245 file su 252 in `Modules/*/database/migrations/` rispettano `timestamp_azione_modello-plurale_table.php`; `Themes/*/database/migrations/` non contiene migrazioni. Le sette eccezioni gia' pubblicate sono censite nella story BMAD Xot e non si rinominano retroattivamente: cambiare il filename cambia la chiave nel ledger Laravel e fa risultare pendente lo stesso file. Per i file gia' distribuiti si verifica sempre il ledger e si corregge solo in avanti; non si rinomina alla cieca una migrazione non idempotente.
 
-## Migration Naming Convention
+## Pattern `XotBaseMigration`
 
-Tutti i filename mantengono timestamp, azione, tabella owner plurale in
-`snake_case` e suffisso `_table.php`. Le creazioni seguono
-`YYYY_MM_DD_HHMMSS_create_<table_plurale>_table.php`; `XotBaseMigration`
-singularizza la tabella e ricava il modello. Le migrazioni additive usano un
-verbo descrittivo (per esempio `update_<table_plurale>_table`) e dichiarano
-`$model_class`, perché il modello non è derivabile dal pattern `create_*_table`.
-singularizza la tabella e ricava il modello. Una tabella ha una sola migrazione
-owner `create_*_table`: i cambi colonna si applicano dentro il suo `tableUpdate()`
-e si cambia il timestamp (one-migration-per-model). Le eccezioni `add_*` /
-`update_*` / `fix_*` già pubblicate restano finché non sono consolidate.
+Ogni migrazione estende `XotBaseMigration`. La classe modello e' opzionale per `create_*_table` (la deriva dal nome file) e obbligatoria per `update_*`:
 
-Esempi:
+**Minimale (raccomandato):**
 
-- `2024_03_20_000001_create_language_lines_table.php`: creazione `LanguageLine`.
-- `2026_01_21_211814_create_posts_table.php`: creazione `Post`.
-- `2026_01_21_211815_create_translations_table.php`: creazione `Translation`.
-- `2026_11_05_100000_update_posts_table.php`: aggiornamento `Post`.
-- `2026_11_05_100001_update_translations_table.php`: aggiornamento `Translation`.
-- `2026_11_05_100000_create_posts_table.php`: migrazione owner `Post`, inclusa la compatibilità UUID.
-- `2026_11_05_100001_create_translations_table.php`: migrazione owner `Translation`, inclusa la compatibilità UUID.
-
-L'audit del naming sulle migrazioni dei moduli è documentato nella
-[story BMAD di convenzione](./bmad/stories/user-id-uuid-migration-convention.story.md):
-245 file su 252 in `Modules/*/database/migrations/` rispettano il formato
-`timestamp_azione_modello-plurale_table.php`; `Themes/*/database/migrations/`
-non contiene migrazioni. Le sette eccezioni già pubblicate sono censite nella
-story BMAD Xot e non si rinominano retroattivamente: una variazione del filename
-cambia la chiave nel ledger Laravel.
-
-Il ledger Laravel identifica una migrazione per filename: una rinomina può far
-considerare pendente lo stesso file. Queste due migrazioni additive mantengono il
-timestamp, dichiarano `$model_class` e delegano a un helper idempotente che salta
-una colonna già UUID e rifiuta dati legacy non mappati. Per gli altri file già
-distribuiti, verificare sempre il ledger e usare una correzione forward-only;
-non rinominare alla cieca una migrazione non idempotente.
-
-## Timestamp & Audit Columns
-
-Tutte le migrazioni del Lang utilizzano `$this->updateTimestamps()` per aggiungere colonne di audit:
-
-```php
-$this->tableUpdate(function (Blueprint $table): void {
-    $this->updateTimestamps($table, false);  // false = no soft deletes
-});
-```
-
-**Columns added**:
-- `created_at`: Timestamp creazione record
-- `updated_at`: Timestamp ultimo aggiornamento
-- `created_by`: User ID creatore
-- `updated_by`: User ID last updater
-- `deleted_at`: (optional, if soft deletes enabled)
-- `deleted_by`: (optional, if soft deletes enabled)
-
-Nessun modello Lang usa soft deletes, quindi `deleted_at` e `deleted_by` NON vengono aggiunti.
-
-## XotBaseMigration Pattern
-
-Ogni migrazione estende `XotBaseMigration`. La classe modello è **opzionale**: XotBaseMigration la deriva dal nome file:
-
-**Template (Minimale - Raccomandato):**
 ```php
 <?php
+
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
-    // Il modello è derivato dal filename: 2026_01_21_211814_create_posts_table.php → Post
-    // Aggiungi $model_class solo se serve esplicitazione
+return new class extends XotBaseMigration
+{
+    // Il modello e' derivato dal filename: 2026_01_21_211814_create_posts_table.php -> Post.
+    // Aggiungi $model_class solo se serve esplicitarlo.
 
     public function up(): void
     {
-        // CREATE: Table structure
         $this->tableCreate(function (Blueprint $table): void {
             $table->id();
             $table->string('column_name');
         });
 
-        // UPDATE: Audit columns
         $this->tableUpdate(function (Blueprint $table): void {
-            $this->updateTimestamps($table, false);  // false = no soft deletes
+            $this->updateTimestamps($table, false);  // false = senza soft delete
         });
     }
 };
 ```
 
-**Template (Esplicito - Opzionale):**
+**Esplicito (obbligatorio per `update_*`):**
+
 ```php
 <?php
+
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Lang\Models\Post;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
-    // Specifica il modello se vuoi esplicitazione nella migrazione
+return new class extends XotBaseMigration
+{
     protected ?string $model_class = Post::class;
 
     public function up(): void
     {
-        $this->tableCreate(function (Blueprint $table): void {
-            $table->id();
-            $table->string('column_name');
-        });
-
         $this->tableUpdate(function (Blueprint $table): void {
             $this->updateTimestamps($table, false);
         });
@@ -181,180 +139,91 @@ return new class extends XotBaseMigration {
 };
 ```
 
-### Key Methods
+### Metodi principali
 
-| Method | Purpose |
-|--------|---------|
+| Metodo | Scopo |
+|--------|-------|
 | `$this->tableCreate($closure)` | Crea la tabella (idempotente) |
 | `$this->tableUpdate($closure)` | Modifica la tabella (idempotente) |
-| `$this->hasColumn($name)` | Verifica se colonna esiste |
-| `$this->updateTimestamps($table, $softDeletes)` | Aggiunge colonne di audit |
-| `$this->getTable()` | Ottiene nome tabella dal modello |
-| `$this->getConn()` | Ottiene connessione dal modello |
+| `$this->hasColumn($name)` | Verifica se la colonna esiste |
+| `$this->updateTimestamps($table, $softDeletes)` | Aggiunge le colonne di audit (`deleted_at` e `deleted_by` solo con soft delete: nessun modello Lang lo usa) |
+| `$this->getTable()` | Nome tabella dal modello |
+| `$this->getConn()` | Connessione dal modello |
 
-### Why XotBaseMigration
+### Perche' `XotBaseMigration`
 
-- **Single source of truth**: Nome tabella e connessione derivano dal modello, mai hardcoded
-- **Idempotent**: `tableCreate()` e `tableUpdate()` sono safe da re-run
-- **Audit built-in**: Colonne di audit aggiunte automaticamente
-- **Error prevention**: Fallisce fast se il modello non esiste
-- **Connection safety**: Connessioni custom derivano dal modello, non ripetute
+- **Fonte unica**: nome tabella e connessione derivano dal modello, mai scritti a mano.
+- **Idempotente**: `tableCreate()` e `tableUpdate()` si possono rilanciare senza danni.
+- **Audit integrato**: le colonne di audit si aggiungono con un solo helper.
+- **Errore subito**: fallisce se il modello non esiste.
 
-## Automatic Connection Resolution
+## Connessione: niente `$connection` nelle migrazioni
 
-### 7. Connessione Automatica: Niente `$connection` nelle Migrazioni
-
-**Regola fondamentale**: Le migrazioni che estendono `XotBaseMigration` **NON devono dichiarare** la proprietà `$connection`.
+Le migrazioni che estendono `XotBaseMigration` **non dichiarano** la proprieta' `$connection`: la connessione e' definita una sola volta nel modello (`protected $connection = 'tenant_db';`) e `getConn()` la legge dal modello indicato in `$model_class`. Senza `$connection` nel modello vale la connessione di default.
 
 ```php
-// ❌ VIETATO: Non serve e crea duplicazione
+// Vietato: duplica una informazione che sta gia' nel modello
 return new class extends XotBaseMigration {
     protected ?string $model_class = Project::class;
-    protected string $connection = 'tenant_db'; // RIMOVI QUESTO
-    // ...
+    protected string $connection = 'tenant_db';
 };
 
-// ✅ CORRETTO: La connessione deriva automaticamente dal modello
+// Corretto: la connessione deriva dal modello
 return new class extends XotBaseMigration {
     protected ?string $model_class = Project::class; // Project ha $connection = 'tenant_db'
-    // ...
 };
 ```
 
-**Perché**:
-1. **Single source of truth**: La connessione è definita **una sola volta** nel Model (`protected $connection = 'tenant_db';`)
-2. **XotBaseMigration la calcola**: Il metodo `$this->getConn()` legge la proprietà `$connection` dal modello specificato in `$model_class`
-3. **Zero duplicazione**: Evita errori di sincronizzazione se la connessione cambia nel modello
-4. **Fail fast**: Se il modello non ha `$connection` definito, usa la default (`mysql`): comportamento esplicito e prevedibile
+Verifica (deve restituire 0 risultati):
 
-**Come funziona internamente** (in `XotBaseMigration`):
-```php
-protected function getConn(): string
-{
-    if ($this->model_class) {
-        $model = new $this->model_class();
-        return $model->getConnectionName(); // Legge $model->connection
-    }
-    return config('database.default');
-}
-```
-
-**Verifica**: Grep per confermare assenza di `$connection` nelle migrazioni:
 ```bash
 grep -r "protected.*\$connection" laravel/Modules/*/database/migrations/*.php
-# Deve restituire 0 risultati
 ```
 
-## Verification Checklist
+## Lista di controllo
 
-Prima di considerare una migrazione completa:
+Prima di considerare completa una migrazione:
 
-- [ ] Estende `XotBaseMigration` (non `Migration`)
-- [ ] Ha `protected ?string $model_class = ModelClass::class;`
-- [ ] Usa `$this->tableCreate()` per la struttura iniziale
-- [ ] Usa `$this->tableUpdate()` per colonne di audit
-- [ ] Chiama `$this->updateTimestamps($table, false)` (o `true` per soft deletes)
-- [ ] Non ha hardcoded table names (usa `$this->getTable()`)
-- [ ] Non ha hardcoded connections (deriva dal modello)
-- [ ] Nome file segue formato: `YYYY_MM_DD_HHMMSS_create_<table>_table.php`
-- [ ] File è in `database/migrations/` (non in sottocartelle)
-- [ ] PHPStan L10 non segnala errori
+- [ ] Estende `XotBaseMigration` (non `Migration`).
+- [ ] Ha `protected ?string $model_class = ModelClass::class;` (obbligatorio per `update_*`).
+- [ ] Usa `$this->tableCreate()` per la struttura iniziale e `$this->tableUpdate()` per le colonne aggiunte e quelle di audit.
+- [ ] Chiama `$this->updateTimestamps($table, false)` (o `true` per soft delete).
+- [ ] Nessun nome tabella o connessione scritti a mano (`$this->getTable()`, connessione dal modello).
+- [ ] Nome file `YYYY_MM_DD_HHMMSS_create_<tabella>_table.php` per la creazione canonica, `update_<tabella>_table` per le aggiunte.
+- [ ] File in `database/migrations/`, non in sottocartelle.
+- [ ] Nessun `down()` con drop, nessuna colonna rimossa (dati sacri).
+- [ ] PHPStan a zero.
 
-## Discovery Commands
+## Comandi di verifica
 
-### Count models vs migrations (verify parity)
+Da `laravel/`:
 
 ```bash
-# Count concrete models (not base, trait, policy, contract)
-MODELS=$(grep -l "^class.*extends.*Model" Modules/Lang/app/Models/*.php | wc -l)
+# Modelli su database (esclusi base, trait, policy, contract) e file di migrazione
+grep -l "^class.*extends.*Model" Modules/Lang/app/Models/*.php | wc -l   # TranslationFile (Sushi) non ha tabella
+ls Modules/Lang/database/migrations/*.php | wc -l                         # 11 file per 3 tabelle (vedi sopra)
 
-# Count migrations
-MIGRATIONS=$(ls Modules/Lang/database/migrations/*.php 2>/dev/null | wc -l)
-
-echo "Models with DB: $(( MODELS - 1 ))"  # -1 for TranslationFile (Sushi)
-echo "Migrations: $MIGRATIONS"
-```
-
-**Expected**:
-```
-Models with DB: 3
-Migrations: 3
-```
-
-### List migrations with their models
-
-```bash
-for file in Modules/Lang/database/migrations/*.php; do
-    grep -o "class.*extends XotBaseMigration" "$file" >/dev/null && \
-    MODEL=$(grep -o "protected ?string \$model_class = [^;]*" "$file") && \
-    echo "$(basename "$file") → $MODEL"
-done
-```
-
-**Expected output**:
-```
-2024_03_20_000001_create_language_lines_table.php → protected ?string $model_class = LanguageLine::class;
-2026_01_21_211814_create_posts_table.php → protected ?string $model_class = Post::class;
-2026_01_21_211815_create_translations_table.php → protected ?string $model_class = Translation::class;
-```
-
-### Check migration naming compliance
-
-```bash
-# All should start with YYYY_MM_DD_HHMMSS_create_
-ls -1 Modules/Lang/database/migrations/*.php | \
-  grep -v "^[0-9]\{4\}_[0-9]\{2\}_[0-9]\{2\}_[0-9]\{6\}_create_"
-# Should output nothing
-```
-
-### Validate XotBaseMigration inheritance
-
-```bash
-# All migrations must extend XotBaseMigration
+# Ogni migrazione estende XotBaseMigration (non deve stampare nulla)
 grep -L "extends XotBaseMigration" Modules/Lang/database/migrations/*.php
-# Should output nothing
+
+# File che non seguono create_/update_ (non deve stampare nulla)
+ls -1 Modules/Lang/database/migrations/*.php | grep -v -E "/[0-9]{4}_[0-9]{2}_[0-9]{2}_[0-9]{6}_(create|update)_"
 ```
 
-## Quality Gates
+## Controlli di qualita'
 
-Quando si modifica una migrazione o se ne aggiunge una nuova:
+Quando si modifica o si aggiunge una migrazione (da `laravel/`):
 
 ```bash
-# 1. Syntax check
-php -l Modules/Lang/database/migrations/YYYY_MM_DD_HHMMSS_create_name_table.php
-
-# 2. PHPStan (L10)
-php vendor/bin/phpstan analyse \
-  Modules/Lang/database/migrations/YYYY_MM_DD_HHMMSS_create_name_table.php \
-  --level=10
-
-# 3. PHPMD
-php vendor/bin/phpmd Modules/Lang/database/migrations \
-  text codesize,naming,unusedcode
-
-# 4. Run migrations
-php artisan migrate --path=Modules/Lang/database/migrations
-
-# 5. Rollback test
-php artisan migrate:rollback --path=Modules/Lang/database/migrations
-php artisan migrate --path=Modules/Lang/database/migrations
+php -l Modules/Lang/database/migrations/<file>.php
+./vendor/bin/phpstan analyse Modules/Lang/database/migrations
+php vendor/bin/phpmd Modules/Lang/database/migrations text codesize,naming,unusedcode
 ```
 
-## Related Documentation
+L'esecuzione (`php artisan migrate --path=Modules/Lang/database/migrations`) e il test di `rollback` si fanno solo sul database di test (`laravel/.env.testing`, suffisso `_test`), mai su quello con dati reali: regola dati sacri.
 
-- **XotBaseMigration source**: `Modules/Xot/app/Database/Migrations/XotBaseMigration.php`
-- **XotBaseMigration docs**: `Modules/Xot/docs/migrations.md`
-- **Migration naming standard**: `docs/wiki/rules/migration-naming-standard.md`
-- **Migration parity pattern**: `docs/wiki/patterns/migration-naming-and-parity-convention.md`
-- **BaseModel traits**: `Modules/Lang/app/Models/BaseModel.php`
+## Documentazione collegata
 
-## Audit Status
-
-**Date**: 2026-07-15  
-**Status**: ✅ COMPLIANT: 100% parity (3 DB models = 3 migrations)  
-**XotBaseMigration compliance**: ✅ All 3 migrations conform  
-**Naming compliance**: ✅ All follow `create_` prefix convention  
-**Soft deletes**: ❌ None use soft deletes (correct for Lang domain)
-
----
-*Last updated: 2026-07-15*
+- Sorgente di `XotBaseMigration`: `Modules/Xot/app/Database/Migrations/XotBaseMigration.php`
+- Regola canonica delle migrazioni: `bashscripts/ai/wiki/rules/migrations.md`
+- Traits e base dei modelli: `Modules/Lang/app/Models/BaseModel.php`

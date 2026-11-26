@@ -14,6 +14,11 @@ use function Safe\file_put_contents;
 use function Safe\tempnam;
 use function Safe\unlink;
 
+/**
+ * @see Modules/Lang/docs/translation-files.md
+ *
+ * @contract docs/contracts/write-translation-file-action.md
+ */
 class WriteTranslationFileAction
 {
     use QueueableAction;
