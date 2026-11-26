@@ -4,20 +4,27 @@ type: concept
 status: active
 updated: 2026-11-16
 module: Lang
+<<<<<<< .merge_file_Qdiwr2
 <<<<<<< .merge_file_1hZY3F
 qmd: "purpose bmad Lang"
 =======
+=======
+>>>>>>> .merge_file_1XrgTt
 qmd: "purpose bmad Lang scopo traduzioni etichette fuori dal codice file di lingua chiavi mancanti stato del codice"
 related:
   - ../purpose.md
   - ./audits/lang-audit.md
   - ./architecture.md
   - ./epics.md
+<<<<<<< .merge_file_Qdiwr2
 >>>>>>> .merge_file_4aNdKa
+=======
+>>>>>>> .merge_file_1XrgTt
 ---
 
 # Scopo BMAD — Lang
 
+<<<<<<< .merge_file_Qdiwr2
 <<<<<<< .merge_file_1hZY3F
 ## Lo scopo in una frase **Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua.**
 
@@ -25,6 +32,10 @@ SSoT estesa: [../purpose.md](../purpose.md) se presente.
 =======
 ## Lo scopo in una frase
 
+=======
+## Lo scopo in una frase
+
+>>>>>>> .merge_file_1XrgTt
 **Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua.**
 
 Il perché esteso (regola «niente `->label()`», chiave come ponte, direzioni di miglioramento) è nella SSoT del modulo: [../purpose.md](../purpose.md). Qui solo la sintesi BMAD e il confronto con il codice.
@@ -52,4 +63,7 @@ I testi di un'applicazione pubblica li rivede chi non programma. Se l'etichetta 
 ## Riferimenti
 
 [Audit](./audit.md) · [Architettura](./architecture.md) · [Decision log](./decision-log.md) · [Epics](./epics.md)
+<<<<<<< .merge_file_Qdiwr2
 >>>>>>> .merge_file_4aNdKa
+=======
+>>>>>>> .merge_file_1XrgTt

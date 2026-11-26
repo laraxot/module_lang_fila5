@@ -136,8 +136,13 @@ php artisan tinker
 ### Documentazione Modulo Lang:
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
 - [Errori Comuni Traduzione](../../../errori_comuni_traduzione.md)
+<<<<<<< .merge_file_mx7BaR
 - [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
 - [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
+=======
+- [Correzioni Errori Sintassi 2025](../../../archive/correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation 2025](../../../archive/traduzioni_navigation_2025.md)
+>>>>>>> .merge_file_21GTtD
 
 ### Documentazione Tema:
 - [Traduzioni Mancanti Appointment 2025](../../../Themes/One/docs/traduzioni_mancanti_appointment_2025.md)

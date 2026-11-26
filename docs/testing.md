@@ -60,6 +60,28 @@ Ogni modulo può avere il proprio `Pest.php` con:
 - Helper functions
 - Custom expectations
 
+## Binding del TestCase
+
+Ogni file di test che usa l'applicazione o i metodi di `Modules\Lang\Tests\TestCase` lo lega da solo:
+
+```php
+use Modules\Lang\Tests\TestCase;
+
+uses(TestCase::class);
+```
+
+Mai `uses(...)->in(...)` in `tests/Pest.php`: il runner di root non lo esegue (i test restano senza
+applicazione) e con `--test-directory` raddoppia il binding (`TestCaseAlreadyInUse`). Decisione e guardia:
+[ADR pest-testcase-binding-per-file](../../Xot/docs/adr/pest-testcase-binding-per-file.md).
+
+## Test che riscrivono lang/
+
+Alcune Action (es. `SyncTranslationsAction`) scrivono davvero in `Modules/Lang/lang/<locale>`. Il test salva
+la cartella e la rimette con una **copia** (`File::copyDirectory`), mai con `File::moveDirectory()` da
+`sys_get_temp_dir()`: `rename()` fallisce in silenzio fra filesystem diversi (qui `/tmp` è tmpfs) e il
+2026-11-19 ha lasciato `lang/en` cancellata (33 file). Se la copia fallisce il test lancia un errore con il
+percorso del backup. Prima e dopo una suite che tocca le traduzioni, confronta la checksum di `lang/`.
+
 ## Comandi Importanti
 
 ### PHPStan

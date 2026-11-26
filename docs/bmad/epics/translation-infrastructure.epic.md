@@ -10,7 +10,7 @@ related:
   - ../architecture/module-boundary.md
   - ../brainstorming.md
   - ./module-roadmap.md
-  - ../stories/module-bmad-audit-20260928.story.md
+  - ../stories/module-bmad-audit-lang-baseline-analisi-completa.story.md
 ---
 
 # Epic 5.252 — infrastruttura traduzioni e file di localizzazione

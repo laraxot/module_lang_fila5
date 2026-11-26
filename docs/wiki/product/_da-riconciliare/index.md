@@ -1,8 +1,8 @@
 ---
-qmd: "index"
+qmd: "Index"
 issues: []
 discussions: []
-title: "lang — product"
+title: "Index"
 module: lang
 type: product
 tags: [product, modules, lang]
@@ -16,7 +16,7 @@ Documentation for `lang` module categorized as **product**.
 
 ## Files
 
-- [`INDEX.md`](./index.md)
+- [`index.md`](./index.md)
 - [`product-strategy.md`](./product-strategy.md)
 - [`strategy.md`](./strategy.md)
 

@@ -1,10 +1,10 @@
 ---
-title: "quick reference"
+title: "Quick Reference"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "quick reference"
+qmd: "Quick Reference"
 issues: []
 discussions: []
 ---

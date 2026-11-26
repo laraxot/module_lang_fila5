@@ -1,8 +1,8 @@
 ---
-qmd: "advanced language switching.divergenza"
+qmd: "Advanced Language Switching.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: advanced_language_switching.md"
+title: "Advanced Language Switching.divergenza"
 module: Lang
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

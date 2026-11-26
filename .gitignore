@@ -175,3 +175,7 @@ lang.code-workspace
 /.github/skills/
 docs/graphify
 resources/lang
+
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/

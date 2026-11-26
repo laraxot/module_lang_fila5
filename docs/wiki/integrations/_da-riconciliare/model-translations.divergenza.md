@@ -1,8 +1,8 @@
 ---
-qmd: "model translations.divergenza"
+qmd: "Model Translations.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: model_translations.md"
+title: "Model Translations.divergenza"
 module: Lang
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
