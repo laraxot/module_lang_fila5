@@ -509,7 +509,7 @@ tests/Unit
 * [structure.md](../../../Xot/docs/config/structure.md)
 * [structure.md](../../../User/docs/structure.md)
 * [structure.md](../../../UI/docs/structure.md)
-* [structure.md](../../../Lang/docs/structure.md)
+* [structure.md](../../archive/docs-legacy/root/structure.md)
 * [structure.md](../../../Job/docs/structure.md)
 * [structure.md](../../../Media/docs/structure.md)
 * [structure.md](../../../Tenant/docs/structure.md)

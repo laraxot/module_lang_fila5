@@ -46,4 +46,4 @@ Scelta: **`configureUsing` globale dei componenti Filament in `LangServiceProvid
 - `cd laravel && vendor/bin/pest Modules/Lang/tests/Feature/AutoLabelActionContractTest.php`: etichetta presa dal file del modulo chiamante (`LANG-AUTOLABEL-INV-1`), salvataggio solo delle etichette mancanti (`-INV-2`), testo ausiliario uguale al nome non applicato (`-INV-3`). Contratto: [auto-label-action](../contracts/auto-label-action.md).
 - `cd laravel && vendor/bin/pest Modules/Lang/tests/Feature/SaveTransActionRespectsSwitchTest.php`: il salvataggio rispetta l'interruttore.
 - Non confermati da un test: il ramo «chiamante non identificabile» e le invarianti `LANG-AUTOLABEL-INV-4`, `-5` e `-6` del contratto. I test che esercitano quei rami (`tests/Unit/LangFinalGapsTest.php:321` e `:357`, `LangCoverageGapsTest.php:359`) asseriscono solo che `execute()` restituisca lo stesso componente, cosa vera in ogni ramo. Proposta: asserire l'etichetta `FIX:<chiave>` e l'assenza di `SaveTransAction::execute` nei due casi.
-- Documento descrittivo: [filament-label](../filament-label.md).
+- Documento descrittivo: [filament-label](../../archive/docs-legacy/root/filament-label.md).

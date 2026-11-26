@@ -236,7 +236,7 @@ Prima di ogni commit, verificare:
 ## Collegamenti
 
 - [Enum Standards](enum_standards.md)
-- [Translation Management](translation-management.md)
+- [Translation Management](../archive/docs-legacy/root/translation-management.md)
 - [TableLayoutEnum Guide](../laravel/modules/ui/docs/table-layout-enum-complete-guide.md)
 
 ## Ultimo Aggiornamento

@@ -37,7 +37,7 @@ in testata, poi si apre il file.
 
 ## Lingue dell'editor
 
-Sono le lingue in cui si **modificano** le traduzioni, distinte dalle lingue del sito ([laravel-localization-mcamara-reference.md](laravel-localization-mcamara-reference.md)).
+Sono le lingue in cui si **modificano** le traduzioni, distinte dalle lingue del sito ([laravel-localization-mcamara-reference.md](../archive/docs-legacy/root/laravel-localization-mcamara-reference.md)).
 
 - `Datas\LangConfigData` legge `config/{tenant}/lang.php` (trait `MakesFromTenantConfig`, file letto direttamente, non `config()`, per restare valido con `config:cache`):
   `supported_locales` (default `['it', 'en']`) e `default_locale` (default `null`, cioe' `app.locale`).
@@ -51,7 +51,7 @@ Sono le lingue in cui si **modificano** le traduzioni, distinte dalle lingue del
 
 ## Sicurezza e limiti
 
-- Il salvataggio da pannello non fa backup: scrive con `SaveTransAction::persist()` (serializzazione di `SaveArrayAction`). Backup e controllo `php -l` sono di `WriteTranslationFileAction`, oggi non collegata al pannello ([translation-files.md](translation-files.md)). Prima di modifiche massive conviene un commit o una copia dei file.
+- Il salvataggio da pannello non fa backup: scrive con `SaveTransAction::persist()` (serializzazione di `SaveArrayAction`). Backup e controllo `php -l` sono di `WriteTranslationFileAction`, oggi non collegata al pannello ([translation-files.md](../archive/docs-legacy/root/translation-files.md)). Prima di modifiche massive conviene un commit o una copia dei file.
 - Un file che non e' "dati puri" (chiama funzioni, usa variabili) si puo' leggere ma la sua riscrittura perde quelle espressioni: non salvarlo dal pannello.
 
 ## Il form e perche' ha due sezioni
