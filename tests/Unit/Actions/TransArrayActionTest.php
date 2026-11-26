@@ -29,7 +29,7 @@ describe('TransArrayAction Business Logic', function () {
 
         Assert::assertSame('value1', $result['a']);
         Assert::assertSame('value2', $result['b']);
-    });
+    })->group('LANG-TRANSARR-INV-3');
 
     test('handles empty array', function () {
         $input = [];

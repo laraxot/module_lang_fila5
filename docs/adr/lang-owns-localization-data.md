@@ -1,38 +1,46 @@
 ---
-status: accepted
+title: "Stub — Lang possiede i dati di localizzazione (superseded)"
+type: decision
+status: superseded
+created: 2026-11-23
+updated: 2026-11-26
 module: Lang
+decision-makers: [Lang module owner]
+superseded_by: ./0005-lang-owns-localization-data.md
+qmd: "stub superseded ADR Lang lang-owns-localization-data → 0005-lang-owns-localization-data"
 ---
 
-# Lang possiede i dati di localizzazione
+# Stub — Lang possiede i dati di localizzazione (superseded)
+
+STUB → [0005-lang-owns-localization-data.md](0005-lang-owns-localization-data.md)
 
 ## Contesto
 
-Le lingue supportate attraversano routing, contenuti CMS, notifiche e interfacce.
-
-## Decisione
-
-Lang governa selezione e dati di traduzione; i moduli owner forniscono le chiavi e il tema non duplica traduzioni di dominio.
-
-La forma delle chiavi segue il protocollo architetturale di Xot in
-[`translation-key-protocol`](../../Xot/docs/adr/translation-key-protocol.md):
-`<namespace>::<file>.<collection>.<key>.<type>`. Perciò una forma come
-`trade::widgets.signal.none_value` è incompleta; il tipo finale va scelto dopo
-aver letto il catalogo owner, ad esempio
-`trade::widgets.signal.none_value.label` quando la foglia è un'etichetta.
+Esisteva un path kebab non numerato per la decisione «Lang possiede i dati di
+localizzazione». Il canone del modulo usa basename `NNNN-slug.md`.
 
 ## Driver della decisione
 
-- Mantenere fallback e routing coerenti.
+- Un solo ADR vivo per la stessa decisione (DRY).
+- Path legacy non devono rimanere due ADR completi sullo stesso tema.
+- I link storici al kebab devono puntare al canone numerato.
+
+## Decisione
+
+Questo file è **superseded**. Canonico:
+[0005-lang-owns-localization-data.md](0005-lang-owns-localization-data.md).
 
 ## Alternative scartate
 
-- Hardcodare le stringhe nelle view.
-- Gestire una configurazione lingua indipendente per ogni tema.
+- Tenere due ADR vivi sulla stessa decisione: doppia fonte di verità.
+- Cancellare il file senza nota: rompe i link legacy al path kebab.
 
 ## Conseguenze
 
-Le lingue restano coerenti tra superfici; una nuova chiave deve avere una sorgente owner e fallback verificabile.
+- Pro: un solo ADR da aggiornare (`0005-…`); il kebab resta un puntatore.
+- Contro: chi apre il kebab deve seguire il link al canone.
 
 ## Conferma
 
-Verificare risoluzione locale, fallback e cataloghi del modulo Lang.
+- Contenuto decisionale solo in `0005-lang-owns-localization-data.md`.
+- Frontmatter `status: superseded` e link relativo al canone presenti.

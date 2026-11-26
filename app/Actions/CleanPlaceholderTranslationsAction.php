@@ -22,7 +22,7 @@ use function Safe\unlink;
  * resterebbe "congelato" al valore calcolato qui, quindi non si tocca.
  *
  * @see Modules/Lang/docs/filament-auto-labels.md
- *
+ * @see docs/contracts/clean-placeholder-translations-action.md
  * @contract docs/contracts/clean-placeholder-translations-action.md
  */
 class CleanPlaceholderTranslationsAction

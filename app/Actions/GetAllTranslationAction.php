@@ -14,7 +14,7 @@ use function Safe\glob;
  * ciascuno con chiave `modulo::file`. Corpo identico a GetAllModuleTranslationAction: il contratto spiega perche'.
  *
  * @see Modules/Lang/docs/translation-files.md
- *
+ * @see docs/contracts/get-all-translation-action.md
  * @contract docs/contracts/get-all-translation-action.md
  */
 class GetAllTranslationAction

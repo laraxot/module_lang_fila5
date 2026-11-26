@@ -216,7 +216,7 @@ test('LanguageSwitcherWidget falls back when getLocalizedURL returns non-string 
 
     $widget = new LanguageSwitcherWidget;
     Assert::assertSame('/en', $widget->getLanguageUrl('en'));
-});
+})->group('LANG-SWITCHWIDGET-INV-2');
 
 test('Post linkable and accessor edge branches', function (): void {
     $post = new Post;
@@ -264,7 +264,7 @@ test('WriteTranslationFileAction throws when put fails', function (): void {
     $action = new WriteTranslationFileActionFailStub;
     expect(fn () => $action->execute($path, ['a' => '2']))->toThrow(\Exception::class);
     unlink($path);
-});
+})->group('LANG-WRITE-INV-3');
 
 test('Post guid null title uses random fallback', function (): void {
     $post = new Post;
@@ -586,4 +586,4 @@ test('WriteTranslationFileAction putTranslationFile edge paths', function (): vo
     if (is_dir($missingDir)) {
         rmdir($missingDir);
     }
-});
+})->group('LANG-WRITE-INV-3');

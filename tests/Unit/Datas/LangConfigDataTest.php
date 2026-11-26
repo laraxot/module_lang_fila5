@@ -53,7 +53,7 @@ test('every editor takes its languages from the settings', function (): void {
         ->and((new EditTranslationFile)->getTranslatableLocales())->toBe(['it', 'en', 'es'])
         ->and(TranslationFileResource::getDefaultTranslatableLocale())->toBe('es')
         ->and(LangBaseResourceStub::getDefaultTranslatableLocale())->toBe('es');
-});
+})->group('LANG-DEFLOC-INV-3', 'LANG-TRANSLOC-INV-3');
 
 test('until someone saves, the resources answer exactly as before', function (): void {
     FakeTenantLangConfig::bind([]);
@@ -61,7 +61,7 @@ test('until someone saves, the resources answer exactly as before', function ():
 
     expect(TranslationFileResource::getTranslatableLocales())->toBe(['it', 'en'])
         ->and(TranslationFileResource::getDefaultTranslatableLocale())->toBe('en');
-});
+})->group('LANG-DEFLOC-INV-2');
 
 test('a default language outside the chosen ones is ignored', function (): void {
     FakeTenantLangConfig::bind([
@@ -70,13 +70,13 @@ test('a default language outside the chosen ones is ignored', function (): void 
     ]);
 
     expect(app(GetDefaultTranslatableLocaleAction::class)->execute('it'))->toBe('it');
-});
+})->group('LANG-DEFLOC-INV-1');
 
 test('an empty list of languages never reaches the editors', function (): void {
     FakeTenantLangConfig::bind(['supported_locales' => []]);
 
     expect(app(GetTranslatableLocalesAction::class)->execute())->toBe(['it', 'en']);
-});
+})->group('LANG-TRANSLOC-INV-1');
 
 test('the language switcher offers the chosen languages and starts from the saved default', function (): void {
     FakeTenantLangConfig::bind([
@@ -112,7 +112,7 @@ test('locale options show flag and native name, in the order asked', function ()
     ])
         ->and(array_keys($action->execute()))->toBe(['it', 'en'])
         ->and($action->execute(['xx']))->toBe(['xx' => 'xx']);
-});
+})->group('LANG-LOCOPT-INV-1', 'LANG-LOCOPT-INV-2');
 
 test('the setting page exposes exactly the properties of the config data', function (): void {
     $properties = array_map(

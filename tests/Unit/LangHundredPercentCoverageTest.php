@@ -171,7 +171,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         Assert::assertSame($moduleRows[0]['path'], $sample);
         Assert::assertNotEmpty($allRows);
         Assert::assertStringContainsString('lang::', $allRows[0]['key']);
-    });
+    })->group('LANG-ALLMOD-INV-1', 'LANG-ALLTRANS-INV-1');
 
     test('PublishTranslationAction writes when item value changes', function (): void {
         $dir = sys_get_temp_dir().'/lang_pub_'.uniqid();
@@ -197,7 +197,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         unlink($file);
         rmdir($dir.'/it');
         rmdir($dir);
-    });
+    })->group('LANG-PUB-INV-1', 'LANG-PUB-INV-2');
 
     test('PublishTranslationAction skips write when data unchanged', function (): void {
         $dir = sys_get_temp_dir().'/lang_pub2_'.uniqid();
@@ -223,7 +223,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         unlink($file);
         rmdir($dir.'/it');
         rmdir($dir);
-    });
+    })->group('LANG-PUB-INV-1');
 
     test('SaveTransAction creates missing file and sets nested key', function (): void {
         TestCase::bindRealSaveTransAction();
@@ -254,7 +254,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             }
             TestCase::forgetSaveTransActionOverride();
         }
-    });
+    })->group('LANG-SAVETRANS-INV-9');
 
     test('SaveTransAction replaces whole content when piece empty', function (): void {
         TestCase::bindRealSaveTransAction();
@@ -274,7 +274,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             }
             TestCase::forgetSaveTransActionOverride();
         }
-    });
+    })->group('LANG-SAVETRANS-INV-8');
 
     test('RecordMissingTranslationAction parses namespace and plain keys', function (): void {
         langForceSqliteTranslations();
@@ -287,7 +287,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         Assert::assertTrue(Translation::query()->where('namespace', 'lang')->where('group', 'group')->where('item', 'item')->exists());
         Assert::assertTrue(Translation::query()->where('namespace', '*')->where('group', 'plain')->where('item', 'key')->exists());
         Assert::assertTrue(Translation::query()->where('namespace', '*')->where('group', 'lonely')->whereNull('item')->exists());
-    });
+    })->group('LANG-MISS-INV-2');
 
     test('TranslatorAdapter covers missing keys and array results', function (): void {
         langForceSqliteTranslations();
@@ -345,7 +345,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
                 unlink($path);
             }
         }
-    });
+    })->group('LANG-WRITE-INV-4');
 
     test('WriteTranslationFileAction rejects invalid php syntax', function (): void {
         $path = sys_get_temp_dir().'/lang_bad_'.uniqid().'.php';
@@ -356,7 +356,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         app()->instance(ReadTranslationFileAction::class, $read);
 
         expect(fn () => $action->execute($path, ['x' => 'y']))->toThrow(\Exception::class);
-    });
+    })->group('LANG-WRITE-INV-2');
 
     test('SyncTranslationsAction covers skip paths nested merge and getModules', function (): void {
         $action = app(SyncTranslationsAction::class);
@@ -409,7 +409,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         file_put_contents($nonArray, "<?php\nreturn 'x';\n");
         Assert::assertSame([], $load->invoke($action, $nonArray));
         unlink($nonArray);
-    });
+    })->group('LANG-SYNC-INV-2');
 
     test('TransArrayAction and TransCollectionAction hit label and underscore branches', function (): void {
         app('translator')->addLines([
@@ -433,7 +433,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         Assert::assertSame(['Ciao'], $colAction->execute(langMixedCollection('hello'), 'col')->all());
         Assert::assertSame(['XY'], $colAction->execute(langMixedCollection('x.y'), 'col')->all());
         Assert::assertSame(['z'], $colAction->execute(langMixedCollection('z'), 'col')->all());
-    });
+    })->group('LANG-TRANSARR-INV-1', 'LANG-TRANSARR-INV-2', 'LANG-TRANSCOL-INV-1', 'LANG-TRANSCOL-INV-2');
 
     test('AutoLabelAction covers section step action icon and helperText branches', function (): void {
         $this->mockService(GetTransKeyAction::class, static function (MockInterface $mock): void {
@@ -644,7 +644,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
 
         Livewire::test(LanguageSwitcherWidget::class)
             ->call('changeLanguage', 'xx');
-    });
+    })->group('LANG-SWITCHWIDGET-INV-4', 'LANG-SWITCHWIDGET-INV-6');
 
     test('LanguageSwitcher blade component empty branch when disabled', function (): void {
         config(['lang.language_switcher.enabled' => false]);

@@ -1,36 +1,39 @@
 ---
 title: "Contratto — TransCollectionAction"
 type: contract
-owner: Lang
-status: accepted
-updated: 2026-11-24
 action: "Modules\\Lang\\Actions\\TransCollectionAction"
-qmd: "TransCollectionAction traduzione collection transKey underscore export Xot LANG-TRANSCOL"
+module: Lang
+status: accepted
+updated: 2026-11-26
+qmd: "TransCollectionAction traduce collection elementi chiave base underscore ripiego originale export intestazioni LANG-TRANSCOL"
 ---
 
 # TransCollectionAction
 
-Versione su `Collection` di `trans-array-action`. Codice: `app/Actions/TransCollectionAction.php:14-76`.
+Versione su `Collection` di [trans-array-action](trans-array-action.md). Sorgente: `app/Actions/TransCollectionAction.php:18-80`.
+
+Test: `cd laravel && vendor/bin/pest Modules/Lang/tests/Unit/Actions/TransCollectionActionTest.php` (oppure `--group=LANG-TRANSCOL-INV-1`).
 
 ## Input
 
 - `Collection $collection`.
-- `?string $transKey`: `null` gestito come in `trans-array-action`.
+- `?string $transKey`: `null` = solo cast a stringa (`:32-34`).
 
 ## Output
 
-- `Collection<int|string, string>`, chiavi conservate (`map`).
+- `Collection<int|string, string>`, chiavi conservate (`map`, `:38`).
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `LANG-TRANSCOL-INV-1` | Prova in ordine `<transKey>.<item>` (senza `.label`), poi la forma con `_`, altrimenti l'originale (righe 54-74). | `tests/Unit/Actions/TransCollectionActionTest.php:44` (traduce se esiste), `:52` (originale se manca). |
-| `LANG-TRANSCOL-INV-2` | Elemento vuoto o `'0'` resta invariato. | Test: nessuno. |
+| LANG-TRANSCOL-INV-1 | Prova in ordine `<transKey>.<item>` (senza `.label`, `:59`), poi la forma con `_` (`:68-69`), altrimenti l'originale (`:78`). Se cade, le intestazioni degli export compaiono in forma grezza. | `LANG-TRANSCOL-INV-1` |
+| LANG-TRANSCOL-INV-2 | Un elemento vuoto o `'0'` resta invariato (`:54`). | `LANG-TRANSCOL-INV-2` (provato solo con `''`; `'0'` non ha un test) |
 
 ## Effetti collaterali
 
-- Imposta `$this->transKey` ad ogni chiamata, come la versione array.
+- Imposta `$this->transKey` a ogni chiamata (`:36`), come la versione array.
+- Lettura delle traduzioni caricate, nessuna scrittura.
 
 ## Errori
 
@@ -38,5 +41,12 @@ Versione su `Collection` di `trans-array-action`. Codice: `app/Actions/TransColl
 
 ## Non fa
 
-- Non filtra i non-stringa come fa la versione array: il cast a stringa avviene per elemento.
-- Chiamanti verificati: `Xot/app/Exports/QueryExport.php`, `Xot/app/Exports/LazyCollectionExport.php`.
+- Non scrive le chiavi mancanti.
+- Non cerca il suffisso `.label`.
+- Chiamanti verificati (produzione): `Modules/Xot/app/Exports/QueryExport.php:96` e `Modules/Xot/app/Exports/LazyCollectionExport.php:93`.
+
+## Limiti noti
+
+- Esiste una seconda classe con lo stesso nome corto, `Modules/Xot/app/Actions/Collection/TransCollectionAction.php:18`: chi la importa sbagliata ottiene un comportamento diverso senza
+  errore. Non verificato quale delle due sia attesa dai chiamanti elencati: tutti importano `Modules\Lang\Actions\TransCollectionAction` (`QueryExport.php:19`, `LazyCollectionExport.php:15`).
+- Il test di INV-1/INV-2 è condiviso con la versione array: `tests/Unit/LangHundredPercentCoverageTest.php:414`.

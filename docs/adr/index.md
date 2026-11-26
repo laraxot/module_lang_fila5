@@ -13,26 +13,16 @@ An ADR records a difficult-to-reverse or surprising choice with a real trade-off
 ## Decisions
 
 - [0001-cambio-lingua-con-url-localizzato](0001-cambio-lingua-con-url-localizzato.md)
-- [lang-owns-localization-data](0005-lang-owns-localization-data.md)
+- [0002-translation-key-shape](0002-translation-key-shape.md)
+- [0003-filament-labels-are-autoconfigured-by-lang-provider](0003-filament-labels-are-autoconfigured-by-lang-provider.md)
+- [0004-filament-labels-from-module-translation-files](0004-filament-labels-from-module-translation-files.md)
+- [0005-lang-owns-localization-data](0005-lang-owns-localization-data.md)
+- [0006-language-switcher-standalone-view](0006-language-switcher-standalone-view.md)
+- [0007-missing-translations-written-only-in-local](0007-missing-translations-written-only-in-local.md)
+
+Stub superseded (puntano al canonico numerato): [lang-owns-localization-data](lang-owns-localization-data.md),
+[language-switcher-standalone-view](language-switcher-standalone-view.md).
 
 ## Authoring
 
 Use the shared template and rules in [Xot ADR standards](../../../Xot/docs/adr/README.md). Do not create an ADR for a local implementation detail or an unverified hypothesis.
----
-title: "INDEX ADR — Lang"
-type: index
-owner: Lang
-updated: 2026-11-24
-qmd: "Lang ADR INDEX stato decisioni"
----
-
-# INDEX ADR — Lang
-
-| ADR | Stato | Sintesi |
-|---|---|---|
-| [0001-cambio-lingua-con-url-localizzato](0001-cambio-lingua-con-url-localizzato.md) | accepted | Cambio lingua con URL localizzato |
-| [lang-owns-localization-data](0005-lang-owns-localization-data.md) | accepted | Lang possiede i dati di localizzazione |
-| [language-switcher-standalone-view](0006-language-switcher-standalone-view.md) | accepted | Vista language switcher standalone |
-| [filament-labels-are-autoconfigured-by-lang-provider](0003-filament-labels-are-autoconfigured-by-lang-provider.md) | accepted | Le etichette Filament si configurano da LangServiceProvider |
-
-Formato e regole: [README](README.md).

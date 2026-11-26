@@ -26,7 +26,7 @@ use Webmozart\Assert\Assert;
  * li usa; applicata a tutti i componenti con `configureUsing()` in LangServiceProvider.
  *
  * @see Modules/Lang/docs/filament-auto-labels.md
- *
+ * @see docs/contracts/auto-label-action.md
  * @contract docs/contracts/auto-label-action.md
  */
 class AutoLabelAction

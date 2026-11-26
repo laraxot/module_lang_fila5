@@ -37,7 +37,7 @@ describe('Read Translation File Action', function (): void {
         $this->expectApplicationException(\Exception::class, 'File di traduzione non trovato:');
 
         TestCase::makeReadTranslationFileAction()->execute(storage_path('non_existent.php'));
-    });
+    })->group('LANG-READ-INV-1');
 
     test('throws exception for unreadable file', function (): void {
         $filePath = TestCase::readTranslationTestFilePath();
@@ -51,7 +51,7 @@ describe('Read Translation File Action', function (): void {
         // Non `static`: Pest lega la closure di skip all'istanza del test case.
         fn (): bool => ! TestCase::permissionBitsEnforced(),
         'Richiede un utente per cui il filesystem applica i bit di permesso: root li ignora.',
-    );
+    )->group('LANG-READ-INV-2');
 
     test('throws exception for invalid file content', function (): void {
         $filePath = TestCase::readTranslationTestFilePath();
@@ -60,7 +60,7 @@ describe('Read Translation File Action', function (): void {
         $this->expectApplicationException(\Exception::class, 'File di traduzione non valido:');
 
         TestCase::makeReadTranslationFileAction()->execute($filePath);
-    });
+    })->group('LANG-READ-INV-3');
 
     test('converts array to php format correctly', function (): void {
         $action = TestCase::makeReadTranslationFileAction();
@@ -79,7 +79,7 @@ describe('Read Translation File Action', function (): void {
         Assert::assertStringContainsString("'nested' => [", $phpContent);
         Assert::assertStringContainsString("'key1' => 'Value 1'", $phpContent);
         Assert::assertStringContainsString("];\n", $phpContent);
-    });
+    })->group('LANG-READ-INV-4');
 
     test('handles special characters in translations', function (): void {
         $action = TestCase::makeReadTranslationFileAction();
@@ -94,7 +94,7 @@ describe('Read Translation File Action', function (): void {
         Assert::assertStringContainsString("Text with \\'single\\' and \\\"double\\\" quotes", $phpContent);
         Assert::assertStringContainsString('Text with \\\\ backslashes', $phpContent);
         Assert::assertStringContainsString("Text with\nnewlines", $phpContent);
-    });
+    })->group('LANG-READ-INV-4');
 
     test('handles deeply nested arrays', function (): void {
         $action = TestCase::makeReadTranslationFileAction();
@@ -162,7 +162,7 @@ describe('Read Translation File Action', function (): void {
         Assert::assertStringContainsString("'float' => '45.67'", $phpContent);
         Assert::assertStringContainsString("'boolean_true' => '1'", $phpContent);
         Assert::assertStringContainsString("'boolean_false' => '0'", $phpContent);
-    });
+    })->group('LANG-READ-INV-4');
 
     test('preserves key order in output', function (): void {
         $action = TestCase::makeReadTranslationFileAction();

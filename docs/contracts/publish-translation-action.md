@@ -1,20 +1,22 @@
 ---
 title: "Contratto — PublishTranslationAction"
 type: contract
-owner: Lang
-status: accepted
-updated: 2026-11-24
 action: "Modules\\Lang\\Actions\\PublishTranslationAction"
+module: Lang
+status: accepted
+updated: 2026-11-26
 qmd: "PublishTranslationAction pubblica traduzione singola voce item value SaveArrayAction file lingua LANG-PUB"
 ---
 
 # PublishTranslationAction
 
-Imposta una singola voce di un file di traduzione e riscrive il file se il contenuto cambia. Codice: `app/Actions/PublishTranslationAction.php:12-48`.
+Imposta una singola voce di un file di traduzione e riscrive il file se il contenuto cambia. Sorgente: `app/Actions/PublishTranslationAction.php:17-54`.
+
+Test: `cd laravel && vendor/bin/pest --group=LANG-PUB-INV-1`.
 
 ## Input
 
-- `TranslationData $translationData`: fornisce `getFilename()`, `getData()`, `item` e `value`.
+- `TranslationData $translationData`: fornisce `getFilename()`, `getData()`, `item` e `value` (`:34`, `:41`, `:43`).
 
 ## Output
 
@@ -22,22 +24,27 @@ Imposta una singola voce di un file di traduzione e riscrive il file se il conte
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `LANG-PUB-INV-1` | Il file viene riscritto solo se l'array dopo `Arr::set` e' diverso da quello letto (riga 39). Se la voce ha gia' quel valore, nessuna scrittura. | Test: nessuno comportamentale. `tests/Unit/Actions/LangActionsCoverageTest.php:15` verifica solo che la classe sia accessibile. |
-| `LANG-PUB-INV-2` | La scrittura passa per `Modules\Xot\Actions\Arr\SaveArrayAction` sul percorso dato da `getFilename()`. | Test: nessuno. |
+| LANG-PUB-INV-1 | Il file viene riscritto solo se l'array dopo `Arr::set` è diverso da quello letto (`:44`). Se la voce ha già quel valore, nessuna scrittura. Se cade, ogni pubblicazione riscrive il file anche a vuoto. | `LANG-PUB-INV-1` |
+| LANG-PUB-INV-2 | Quando il valore cambia, la scrittura va al percorso `getFilename()` con l'array aggiornato (`:46-51`). | `LANG-PUB-INV-2` |
 
 ## Effetti collaterali
 
-- Scrittura del file di lingua via `SaveArrayAction`. Nessun backup, nessuna pulizia della cache.
-- Righe 21-35: blocco di codice commentato (vecchia lettura del file): non attivo.
+In ordine: lettura dei dati correnti (`getData()`), `Arr::set` su una copia, confronto, poi (solo se diverso) scrittura del file di lingua con
+`Modules\Xot\Actions\Arr\SaveArrayAction`. Nessun backup, nessuna pulizia della cache.
 
 ## Errori
 
-- Eccezioni di `SaveArrayAction` si propagano.
+- Le eccezioni di `SaveArrayAction` si propagano.
 
 ## Non fa
 
-- Non valida `item` ne' `value`.
-- Non crea backup (a differenza di `write-translation-file-action`).
-- Chiamanti non trovati fuori da test.
+- Non valida `item` né `value`.
+- Non crea backup (a differenza di [write-translation-file-action](write-translation-file-action.md)).
+- Non ha chiamanti nel codice di produzione: `rg PublishTranslationAction` fuori da `tests/` e `docs/` non trova altro che il file stesso. Candidata alla rimozione (decisione del proprietario).
+
+## Limiti noti
+
+- Restano due blocchi di codice commentato (`:26-40`, vecchia lettura del file): non attivi.
+- INV-2 è provata sul percorso e sul valore scritti, non sull'identità della classe che scrive (nel test `writes when item value changes` gira la `SaveArrayAction` reale).

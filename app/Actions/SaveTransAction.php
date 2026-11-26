@@ -17,7 +17,7 @@ use Spatie\QueueableAction\QueueableAction;
  * permette), `persist()` per il salvataggio voluto dal pannello di traduzione.
  *
  * @see Modules/Lang/docs/translation-files.md
- *
+ * @see docs/contracts/save-trans-action.md
  * @contract docs/contracts/save-trans-action.md
  */
 class SaveTransAction

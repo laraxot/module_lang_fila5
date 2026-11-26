@@ -14,6 +14,11 @@ use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
  * Wrappa il LanguageSwitcherWidget per l'uso nei temi tramite sintassi Blade.
  *
  * @see Modules/Lang/docs/language-switcher-and-flags.md
+ * @see docs/contracts/language-switcher.md
+ * @see docs/contracts/language-switcher-component.md
+ *
+ * @contract docs/contracts/language-switcher.md
+ * @contract docs/contracts/language-switcher-component.md
  */
 class LanguageSwitcher extends Component
 {

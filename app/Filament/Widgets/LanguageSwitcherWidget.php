@@ -20,6 +20,9 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  * più un fallback statico né un redirect sull'URL corrente non localizzato.
  *
  * @see https://github.com/mcamara/laravel-localization
+ * @see docs/contracts/language-switcher-view-data.md
+ *
+ * @contract docs/contracts/language-switcher-view-data.md
  */
 class LanguageSwitcherWidget extends XotBaseSchemaWidget
 {

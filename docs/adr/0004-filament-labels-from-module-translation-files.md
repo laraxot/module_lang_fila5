@@ -2,10 +2,11 @@
 title: "ADR — Le etichette Filament vengono dai file di lingua del modulo, applicate globalmente con configureUsing"
 type: decision
 status: accepted
-module: Lang
-tags: [adr, lang, filament, labels, translations, configure-using]
 created: 2026-11-24
-updated: 2026-11-24
+updated: 2026-11-26
+module: Lang
+decision-makers: [Lang module owner]
+tags: [adr, lang, filament, labels, translations, configure-using]
 related:
   - ../../app/Actions/Filament/AutoLabelAction.php
   - ../../app/Providers/LangServiceProvider.php
@@ -23,10 +24,27 @@ qmd: "filament labels from translation files etichette"
 - Filament permette di configurare ogni componente alla creazione con `Component::configureUsing()`.
 - Ogni classe di un modulo ha già una chiave di traduzione derivabile dal nome (Xot `GetTransKeyAction`: modulo +
   classe, es. `blog::article`), e i file di lingua sono organizzati per quella chiave (`fields`, `actions`, `sections`, `steps`).
-- Misura (2026-11-24): `grep -rn -- "->label(" Modules/*/app/Filament` trova 546 righe in 155 file: la regola sotto non
-  è rispettata ovunque.
+- Misura (2026-11-24): `grep -rn -- "->label(" Modules/*/app/Filament` trovava 546 righe in 155 file: la regola sotto non
+  è rispettata ovunque (rimisurato il 2026-11-26: vedi «Stato attuale»).
 
 Domanda: dove vive il testo che l'utente vede su campi, colonne, azioni e sezioni del pannello?
+
+Questo ADR e [0003](0003-filament-labels-are-autoconfigured-by-lang-provider.md) descrivono la stessa scelta da due lati
+(0004 l'origine dei testi, 0003 il punto di aggancio): se vadano fusi è una decisione aperta del proprietario del modulo.
+
+## Driver della decisione
+
+- Il testo dell'interfaccia deve seguire la lingua e il modulo, non il codice PHP.
+- La chiave deve derivarsi da sola (classe chiamante), senza che ogni sviluppatore la ripeta a mano.
+- La regola deve valere per **tutti** i componenti Filament senza sostituire le classi di Filament.
+
+## Alternative scartate
+
+- `->label(__('modulo::file.fields.x.label'))` in ogni componente: funziona, ma ripete la chiave a mano e ogni rinomina
+  del campo la rompe in silenzio.
+- `->translateLabel()` di Filament: traduce la stringa passata, non ricava la chiave dalla classe, e lascia il testo nel codice.
+- Una classe base per ogni componente: impossibile senza sostituire tutti i componenti di Filament; `configureUsing` è
+  il punto di estensione previsto.
 
 ## Decisione
 
@@ -39,25 +57,26 @@ Domanda: dove vive il testo che l'utente vede su campi, colonne, azioni e sezion
 - Le sezioni ricevono solo `heading` (in Filament 5 la `label` di una Section si disegna sopra il riquadro: il titolo
   compariva due volte).
 
-## Alternative scartate
-
-- `->label(__('modulo::file.fields.x.label'))` in ogni componente: funziona, ma ripete la chiave a mano e ogni rinomina
-  del campo la rompe in silenzio.
-- `->translateLabel()` di Filament: traduce la stringa passata, non ricava la chiave dalla classe, e lascia il testo nel codice.
-- Una classe base per ogni componente: impossibile senza sostituire tutti i componenti di Filament; `configureUsing` è
-  il punto di estensione previsto.
-
 ## Conseguenze
 
 - Pro: un campo nuovo ha l'etichetta nelle lingue del modulo senza codice; in locale la chiave mancante viene creata
   (vedi [ADR chiavi mancanti solo in locale](0007-missing-translations-written-only-in-local.md)).
 - Contro: `debug_backtrace()` a ogni componente creato; la chiave dipende da quale classe chiama (spostare un form in
   un'altra classe cambia la chiave); un'etichetta mancante in produzione mostra il nome del campo.
-- Debito: esistono due `AutoLabelAction` (Lang, registrata; Xot, con file `.to_lang` accanto) e 546 `->label(` nel
-  codice Filament dei moduli da migrare ai file di lingua.
+- Debito: esistono due `AutoLabelAction` (Lang, registrata; Xot, con file `.to_lang` accanto) e i `->label(` nel
+  codice Filament dei moduli sono da migrare ai file di lingua.
 
-## Verifica
+## Conferma
 
 - `cd laravel && vendor/bin/pest Modules/Lang/tests/Feature/AutoLabelActionContractTest.php`: etichetta presa dal file
-  del modulo chiamante, salvataggio solo delle etichette mancanti, testo ausiliario uguale al nome non applicato.
-- Solo revisione: nessun test vieta `->label()` nelle Resource dei moduli (misura nel Contesto).
+  del modulo chiamante (`LANG-AUTOLABEL-INV-1`), salvataggio solo delle etichette mancanti (`-INV-2`), testo ausiliario
+  uguale al nome non applicato (`-INV-3`). Contratto: [auto-label-action](../contracts/auto-label-action.md).
+- Regola di revisione: nessun test vieta `->label()` nelle Resource dei moduli. Proposta: un test d'architettura in
+  `Modules/Xot/tests/Arch/` (vedi `AGENTS.md`, sezione Commands) che fallisca su un nuovo `->label(` fuori da una lista
+  di debito.
+
+## Stato attuale
+
+Il codice contraddice la regola della Decisione. Misura del 2026-11-26, da `laravel/`:
+`grep -rn -- "->label(" Modules/*/app/Filament | wc -l` dà 573 righe (`grep -rln` ne dà 162 file), contro 546 righe in
+155 file del 2026-11-24: il debito cresce. Nessuna migrazione è nello scope di questa revisione.
