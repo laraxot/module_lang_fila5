@@ -44,21 +44,10 @@ related:
 - 📁 **[Path canonico migrazioni](./wiki/concepts/migration-path-canonical.md)** — solo `database/migrations/`; mai `Migrations/` annidata.
 
 ## 🔗 **Moduli Correlati**
-<<<<<<< .merge_file_4Y61SC
-<<<<<<< .merge_file_ChTu2E
-=======
-<<<<<<< .merge_file_ZIoWTY
->>>>>>> .merge_file_5UjSsf
 - [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../ui/docs/readme.md) - Componenti Blade e Filament che consumano le traduzioni.
-=======
 - [Xot](../../xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../ui/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
-<<<<<<< .merge_file_4Y61SC
->>>>>>> .merge_file_OWUr1E
-=======
->>>>>>> .merge_file_QW5Z1Y
->>>>>>> .merge_file_5UjSsf
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

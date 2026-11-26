@@ -227,11 +227,6 @@ Implementare:
 ### Versione HEAD
 
 ## Collegamenti tra versioni di bottlenecks.md
-<<<<<<< .merge_file_BThtCg
-<<<<<<< .merge_file_tQjpkN
-=======
-<<<<<<< .merge_file_STDxPz
->>>>>>> .merge_file_C2j1rC
 * [bottlenecks.md](../../../gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/performance/bottlenecks.md)
@@ -241,31 +236,17 @@ Implementare:
 * [bottlenecks.md](../../../lang/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../media/docs/performance/bottlenecks.md)
-=======
 * [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../xot/docs/bottlenecks.md)
-* [bottlenecks.md](../../../xot/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../xot/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../User/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../ui/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](bottlenecks.md)
 * [bottlenecks.md](../../../Job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Media/docs/performance/bottlenecks.md)
-<<<<<<< .merge_file_BThtCg
->>>>>>> .merge_file_XE4gY8
-=======
->>>>>>> .merge_file_4u2Mmf
->>>>>>> .merge_file_C2j1rC
 * [bottlenecks.md](../../../patient/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../Xot/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Xot/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../User/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../UI/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../Lang/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../Job/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../Media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Patient/docs/roadmap/bottlenecks.md)
 
 ### Versione Incoming

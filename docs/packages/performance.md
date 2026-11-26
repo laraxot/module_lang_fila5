@@ -107,30 +107,16 @@ Route::middleware([
 * [performance.md](../../../xot/docs/packages/performance.md)
 * [performance.md](../../../xot/docs/roadmap/architecture/performance.md)
 * [performance.md](../../../ui/docs/standards/performance.md)
-<<<<<<< .merge_file_Y9rGsb
-<<<<<<< .merge_file_8M8GVT
-=======
-<<<<<<< .merge_file_cWDk3a
->>>>>>> .merge_file_9sZIhA
 * [performance.md](../../../lang/docs/packages/performance.md)
 * [performance.md](../../../job/docs/packages/performance.md)
 * [performance.md](../../../cms/docs/frontoffice/performance.md)
-=======
-* [performance.md](performance.md)
 * [performance.md](../../../Job/docs/packages/performance.md)
 * [performance.md](../../../Cms/docs/frontoffice/performance.md)
-<<<<<<< .merge_file_Y9rGsb
->>>>>>> .merge_file_7Wb1uI
-=======
->>>>>>> .merge_file_L4jYJ9
->>>>>>> .merge_file_9sZIhA
 * [performance.md](../../../Xot/docs/features/performance.md)
 * [performance.md](../../../Xot/docs/packages/performance.md)
 * [performance.md](../../../Xot/docs/roadmap/architecture/performance.md)
 * [performance.md](../../../UI/docs/standards/performance.md)
 * [performance.md](../../../Lang/docs/packages/performance.md)
-* [performance.md](../../../Job/docs/packages/performance.md)
-* [performance.md](../../../Cms/docs/frontoffice/performance.md)
 
 ### Versione Incoming
 

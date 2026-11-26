@@ -36,10 +36,7 @@ Chi cambia il comportamento aggiorna il contratto nello stesso commit.
 
 ## Contratti
 
-<<<<<<< .merge_file_ksq3C8
 - [LanguageSwitcher component](language-switcher-component.md) — view Blade
   stateless con URL preparati dal widget.
-=======
 - [Language switcher view data](language-switcher-view-data.md)
->>>>>>> .merge_file_BPzYUt
 

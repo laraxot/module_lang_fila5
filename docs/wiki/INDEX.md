@@ -34,30 +34,18 @@ related:
 - [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) → canon Xot
 
-
 ## Indices
 
-<<<<<<< .merge_file_j6V8Jd
-<<<<<<< .merge_file_Um9IvY
-=======
-<<<<<<< .merge_file_ajeIP6
->>>>>>> .merge_file_mLvw7L
 - [Rules](rules/INDEX.md)
 - [Skills](skills/INDEX.md)
 - [Commands](commands/INDEX.md)
 - [Memories](memories/INDEX.md)
 - [Concepts](concepts/INDEX.md)
-=======
 - [Rules](rules/index.md)
 - [Skills](skills/index.md)
 - [Commands](commands/index.md)
 - [Memories](memories/index.md)
 - [Concepts](concepts/index.md)
-<<<<<<< .merge_file_j6V8Jd
->>>>>>> .merge_file_rNxPV9
-=======
->>>>>>> .merge_file_e82F0g
->>>>>>> .merge_file_mLvw7L
 
 ## On-Demand Focus
 

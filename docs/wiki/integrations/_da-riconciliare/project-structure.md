@@ -1,20 +1,8 @@
 ---
-qmd: "Project Structure"
+qmd: "project structure"
 issues: []
 discussions: []
-<<<<<<< .merge_file_6dvKhe
-<<<<<<< .merge_file_kmFcsd
 title: "Project Structure — Module Lang"
-=======
-title: "Project Structure"
->>>>>>> .merge_file_WjojGM
-=======
-<<<<<<< .merge_file_1Tqxcb
-title: "Project Structure — Module Lang"
-=======
-title: "Project Structure"
->>>>>>> .merge_file_Jm1GM6
->>>>>>> .merge_file_bZ175L
 type: documentation
 created: 2026-05-11
 updated: 2026-05-11
@@ -47,25 +35,14 @@ tags: [structure, architecture, module]
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
-<<<<<<< .merge_file_6dvKhe
-<<<<<<< .merge_file_kmFcsd
-=======
-<<<<<<< .merge_file_1Tqxcb
->>>>>>> .merge_file_bZ175L
 ├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── QMD-SETUP.md                  # Configurazione QMD
 ├── PERFORMANCE-OPTIMIZATION.md    # Metriche e best practice
 ├── ARCHITECTURE.md               # (opzionale) Architettura modulo
-=======
 ├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── qmd-setup.md                  # Configurazione QMD
 ├── performance-optimization.md    # Metriche e best practice
 ├── architecture.md               # (opzionale) Architettura modulo
-<<<<<<< .merge_file_6dvKhe
->>>>>>> .merge_file_WjojGM
-=======
->>>>>>> .merge_file_Jm1GM6
->>>>>>> .merge_file_bZ175L
 └── README.md                     # (opzionale) Overview modulo
 \`\`\`
 
@@ -77,19 +54,8 @@ tags: [structure, architecture, module]
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
-<<<<<<< .merge_file_6dvKhe
-<<<<<<< .merge_file_kmFcsd
 | `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
-=======
 | `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
->>>>>>> .merge_file_WjojGM
-=======
-<<<<<<< .merge_file_1Tqxcb
-| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
-=======
-| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
->>>>>>> .merge_file_Jm1GM6
->>>>>>> .merge_file_bZ175L
 
 ## Convenzioni
 

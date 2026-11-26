@@ -7,6 +7,8 @@ An ADR records a difficult-to-reverse or surprising choice with a real trade-off
 ## Decisions
 
 - [0001-cambio-lingua-con-url-localizzato](0001-cambio-lingua-con-url-localizzato.md)
+- [0002-translation-key-shape](0002-translation-key-shape.md) — forma esplicita
+  della chiave e ownership del catalogo
 - [lang-owns-localization-data](lang-owns-localization-data.md)
 
 ## Authoring

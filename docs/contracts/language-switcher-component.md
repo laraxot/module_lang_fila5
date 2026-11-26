@@ -9,7 +9,6 @@ contract: Modules\\Lang\\View\\Components\\LanguageSwitcher
 
 # Contratto del componente language switcher
 
-<<<<<<< .merge_file_k0DUCX
 ## Input
 
 - locale corrente fornito dall'applicazione;
@@ -50,9 +49,10 @@ stringa; la view non deve duplicarlo.
   generazione degli URL;
 - la pagina localizzata verifica che la view sia renderizzabile senza contesto
   Livewire.
+<<<<<<< .merge_file_R1yxZg
 =======
 La view Blade riceve lingue con URL già calcolati da
 `LanguageSwitcherWidget::getLanguageUrl()`. Non usa `$this`, non definisce
 funzioni globali e non invoca metodi Livewire: il cambio lingua è una
 navigazione HTML ordinaria.
->>>>>>> .merge_file_fyoYqL
+>>>>>>> .merge_file_QS0qde

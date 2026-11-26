@@ -1,20 +1,8 @@
 ---
-qmd: "Index"
+qmd: "index"
 issues: []
 discussions: []
-<<<<<<< .merge_file_nrKaIH
-<<<<<<< .merge_file_ECxdAV
 title: "lang — integrations"
-=======
-title: "Index"
->>>>>>> .merge_file_Vna7pZ
-=======
-<<<<<<< .merge_file_dbwX5i
-title: "lang — integrations"
-=======
-title: "Index"
->>>>>>> .merge_file_wHnYSC
->>>>>>> .merge_file_0HCse3
 module: lang
 type: integration
 tags: [integrations, modules, lang]
@@ -28,7 +16,6 @@ Documentation for `lang` module categorized as **integrations**.
 
 ## Files
 
-- [`00-index.md`](./00-index.md)
 - [`00-index.md`](./00-index.md)
 - [`index.md`](./index.md)
 - [`LOCALE_MANAGEMENT.md`](./locale_management.md)

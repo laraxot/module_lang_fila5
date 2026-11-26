@@ -1,20 +1,8 @@
 ---
-qmd: "Index"
+qmd: "index"
 issues: []
 discussions: []
-<<<<<<< .merge_file_EYRU25
-<<<<<<< .merge_file_TqXMNb
 title: "lang — product"
-=======
-title: "Index"
->>>>>>> .merge_file_HVjYtL
-=======
-<<<<<<< .merge_file_mdXnfw
-title: "lang — product"
-=======
-title: "Index"
->>>>>>> .merge_file_UCwlek
->>>>>>> .merge_file_x15rmO
 module: lang
 type: product
 tags: [product, modules, lang]
@@ -28,19 +16,8 @@ Documentation for `lang` module categorized as **product**.
 
 ## Files
 
-<<<<<<< .merge_file_EYRU25
-<<<<<<< .merge_file_TqXMNb
 - [`INDEX.md`](./index.md)
-=======
 - [`index.md`](./index.md)
->>>>>>> .merge_file_HVjYtL
-=======
-<<<<<<< .merge_file_mdXnfw
-- [`INDEX.md`](./index.md)
-=======
-- [`index.md`](./index.md)
->>>>>>> .merge_file_UCwlek
->>>>>>> .merge_file_x15rmO
 - [`product-strategy.md`](./product-strategy.md)
 - [`strategy.md`](./strategy.md)
 
