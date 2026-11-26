@@ -6,6 +6,7 @@ use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Tests\TestCase;
 
 use function Safe\file_get_contents;
+use function Safe\unlink;
 
 uses(TestCase::class);
 

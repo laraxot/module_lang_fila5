@@ -17,7 +17,7 @@ An ADR records a difficult-to-reverse or surprising choice with a real trade-off
 
 ## Authoring
 
-Use the shared template and rules in [Xot ADR standards](../../Xot/docs/adr/README.md). Do not create an ADR for a local implementation detail or an unverified hypothesis.
+Use the shared template and rules in [Xot ADR standards](../../../Xot/docs/adr/README.md). Do not create an ADR for a local implementation detail or an unverified hypothesis.
 ---
 title: "INDEX ADR — Lang"
 type: index
