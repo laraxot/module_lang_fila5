@@ -6,6 +6,7 @@ namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
 use Spatie\QueueableAction\QueueableAction;
+use Throwable;
 
 use function Safe\date;
 use function Safe\exec;
@@ -13,6 +14,11 @@ use function Safe\file_put_contents;
 use function Safe\tempnam;
 use function Safe\unlink;
 
+/**
+ * @see Modules/Lang/docs/translation-files.md
+ * @see docs/contracts/write-translation-file-action.md
+ * @contract docs/contracts/write-translation-file-action.md
+ */
 class WriteTranslationFileAction
 {
     use QueueableAction;
@@ -36,10 +42,14 @@ class WriteTranslationFileAction
         // Verifica la sintassi PHP prima di scrivere
         $this->validatePhpSyntax($phpContent);
 
-        // Scrivi il file
-        $result = File::put($filePath, $phpContent);
+        // Una lingua nuova e' una cartella nuova: `lang/de/` non esiste finche'
+        // nessuno ha scritto la prima traduzione tedesca. Senza questa riga il
+        // primo file di ogni locale nuovo falliva con
+        // «Failed to open stream: No such file or directory»
+        // (base_quaeris_fila5#234).
+        File::ensureDirectoryExists(dirname($filePath));
 
-        if ($result === false) {
+        if (! $this->putTranslationFile($filePath, $phpContent)) {
             throw new \Exception("Impossibile scrivere il file: {$filePath}");
         }
 
@@ -47,6 +57,64 @@ class WriteTranslationFileAction
         $this->clearTranslationCache();
 
         return true;
+    }
+
+    /**
+     * Scrive il file di traduzione, riportando l'esito come booleano.
+     *
+     * ## Perche' e' un metodo a parte, e protected
+     *
+     * E' l'unico punto in cui questa action tocca il file di destinazione.
+     * Isolarlo rende verificabile il ramo «la scrittura non riesce» —
+     * `execute()` deve lanciare — senza sostituire la facade File per l'intero
+     * test, cioe' senza spegnere la scrittura anche al resto del framework.
+     *
+     * Non e' un'astrazione inventata per i test: le fixture del modulo la
+     * sovrascrivevano **gia'**
+     * (`Modules\Lang\Tests\Fixtures\WriteTranslationFileActionFailStub`), ma qui
+     * non esisteva. L'override era inerte, `execute()` riusciva, e il test che
+     * attendeva l'eccezione falliva con «Exception not thrown» — che sembra un
+     * difetto del codice e invece era una fixture morta
+     * (base_quaeris_fila5#234).
+     *
+     * ## Perche' non lascia passare l'errore
+     *
+     * Il contratto e' «ha scritto, si'/no», e un chiamante che riceve `false`
+     * sa cosa fare: `execute()` lancia con il percorso dentro il messaggio.
+     * Una cartella mancante e' quindi `false`, non un'eccezione: la cartella la
+     * crea `execute()`, un passo prima. In ambiente di test gli warning di PHP
+     * diventano `ErrorException`, quindi un `File::put()` che fuori dai test
+     * restituirebbe `false` qui lancerebbe: il `catch` serve a rendere lo
+     * stesso esito nei due ambienti.
+     */
+    protected function putTranslationFile(string $filePath, string $phpContent): bool
+    {
+        if (! File::isDirectory(dirname($filePath))) {
+            return false;
+        }
+
+        try {
+            return File::put($filePath, $phpContent) !== false;
+        } catch (Throwable) {
+            return false;
+        }
+    }
+
+    /**
+     * Scrive il contenuto nel file temporaneo usato per il controllo sintattico.
+     *
+     * Separato per la stessa ragione di {@see putTranslationFile()}: e' l'altra
+     * scrittura su disco di questa action, e
+     * `WriteTranslationFileActionWriteFailStub` la sovrascrive per verificare
+     * che `execute()` lanci quando il file temporaneo non si scrive.
+     *
+     * Il tipo di ritorno comprende `false` perche' e' quello che la fixture
+     * restituisce; la versione reale usa `Safe\file_put_contents`, che in caso
+     * di errore lancia invece di restituire `false`.
+     */
+    protected function writeLangTempContents(string $tempFile, string $phpContent): int|false
+    {
+        return file_put_contents($tempFile, $phpContent);
     }
 
     /**
@@ -83,7 +151,12 @@ class WriteTranslationFileAction
     {
         // Crea un file temporaneo per la validazione
         $tempFile = tempnam(storage_path('framework/cache'), 'translation_');
-        file_put_contents($tempFile, $phpContent);
+
+        if ($this->writeLangTempContents($tempFile, $phpContent) === false) {
+            unlink($tempFile);
+
+            throw new \Exception("Impossibile scrivere il file temporaneo di validazione: {$tempFile}");
+        }
 
         // Esegue php -l per validare la sintassi
         $rawOutput = [];

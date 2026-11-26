@@ -6,6 +6,7 @@ use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Tests\TestCase;
 
 use function Safe\file_get_contents;
+use function Safe\unlink;
 
 uses(TestCase::class);
 
@@ -28,7 +29,7 @@ it('non scrive niente quando la scrittura delle chiavi mancanti e spenta', funct
     $after = is_file($target) ? file_get_contents($target) : null;
 
     expect($after)->toBe($before);
-});
+})->group('LANG-SAVETRANS-INV-3');
 
 it('sotto test non scrive nemmeno senza configurazione esplicita', function (): void {
     // Il caso che conta: nessuno ha impostato niente, e la suite non deve comunque
@@ -41,4 +42,20 @@ it('sotto test non scrive nemmeno senza configurazione esplicita', function (): 
     app(SaveTransAction::class)->execute('lang::lang.altra_chiave_assente.label', 'valore');
 
     expect(is_file($target) ? file_get_contents($target) : null)->toBe($before);
-});
+})->group('LANG-SAVETRANS-INV-1');
+
+it('rifiuta una chiave senza nome file invece di creare lang/it/.php', function (): void {
+    // Caso reale: le azioni del menu utente risalivano alla pagina Dashboard e la chiave
+    // diventava `modulo::`; `persist()` scriveva un file chiamato `.php` in 14 moduli.
+    $target = base_path('Modules/Lang/lang/'.app()->getLocale().'/.php');
+    $existedBefore = is_file($target);
+
+    app(SaveTransAction::class)->persist('lang::.actions.profile.label', 'profile');
+
+    $created = ! $existedBefore && is_file($target);
+    if ($created) {
+        unlink($target);
+    }
+
+    expect($created)->toBeFalse();
+})->group('LANG-SAVETRANS-INV-6');

@@ -15,7 +15,7 @@ afterEach(function (): void {
 
 test('LanguageSwitcherWidget is not auto-discovered as dashboard card', function (): void {
     Assert::assertFalse(LanguageSwitcherWidget::isDiscovered());
-});
+})->group('LANG-SWITCHWIDGET-INV-7');
 
 test('LanguageSwitcherWidget getAvailableLocales riflette LaravelLocalization non it/en/de hardcoded', function (): void {
     $previous = LaravelLocalization::getSupportedLocales();
@@ -52,7 +52,7 @@ test('LanguageSwitcherWidget getAvailableLocales riflette LaravelLocalization no
     } finally {
         LaravelLocalization::setSupportedLocales($previous);
     }
-});
+})->group('LANG-SWITCHWIDGET-INV-1');
 
 test('LanguageSwitcher HTTP Switcher and Change non esistono più', function (): void {
     $httpLangDir = dirname(__DIR__, 3).'/app/Http/Livewire/Lang';
@@ -64,7 +64,7 @@ test('LanguageSwitcherWidget changeLanguage redirect 303 su URL localizzato', fu
     Livewire::test(LanguageSwitcherWidget::class)
         ->call('changeLanguage', 'en')
         ->assertRedirect();
-});
+})->group('LANG-SWITCHWIDGET-INV-4');
 
 test('LanguageSwitcherWidget getLanguageUrl usa LaravelLocalization con fallback stringa', function (): void {
     LaravelLocalization::shouldReceive('getLocalizedURL')
@@ -73,4 +73,4 @@ test('LanguageSwitcherWidget getLanguageUrl usa LaravelLocalization con fallback
 
     $widget = new LanguageSwitcherWidget;
     Assert::assertSame('/fr', $widget->getLanguageUrl('fr'));
-});
+})->group('LANG-SWITCHWIDGET-INV-2');

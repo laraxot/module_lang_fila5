@@ -33,11 +33,7 @@ related:
 - `laravel/Modules/Lang/app/Enums/TranslationStatusEnum.php` (nuovo, `enum ...: int`)
 - `laravel/Modules/Lang/app/Models/Post.php`, `database/seeders/LanguageLineSeeder.php`,
   `database/seeders/TranslationSeeder.php` (costanti tipizzate `const array`, come in `HEAD`)
-<<<<<<< .merge_file_1WBqOX
 - Docs: `docs/README.md`, `docs/wiki/INDEX.md`, questa coppia di story.
-=======
-- Docs: `docs/README.md`, `docs/wiki/index.md`, questa coppia di story.
->>>>>>> .merge_file_vXc7LS
 
 ## Implementation Steps
 

@@ -10,6 +10,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Action per la traduzione di elementi di una collezione.
+ *
+ * @see docs/contracts/trans-array-action.md
+ *
+ * @contract docs/contracts/trans-array-action.md
  */
 class TransArrayAction
 {

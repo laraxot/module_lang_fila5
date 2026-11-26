@@ -20,6 +20,10 @@ use function Safe\unlink;
  * committate, comparivano in produzione sotto e dentro i campi ("route", "postal_code"). Elimina anche i
  * file `.php` senza nome. Riscrive solo i file di soli dati: un file che chiama funzioni o usa variabili
  * resterebbe "congelato" al valore calcolato qui, quindi non si tocca.
+ *
+ * @see Modules/Lang/docs/filament-auto-labels.md
+ * @see docs/contracts/clean-placeholder-translations-action.md
+ * @contract docs/contracts/clean-placeholder-translations-action.md
  */
 class CleanPlaceholderTranslationsAction
 {

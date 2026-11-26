@@ -8,11 +8,7 @@ updated: 2026-10-06
 phase: quality-gates
 priority: P1
 related:
-<<<<<<< .merge_file_xm8hz1
   - cluster3-phpstan-swarm-20261006.story.md
-=======
-  - cluster3-phpstan-swarm.story.md
->>>>>>> .merge_file_ik4DSi
 ---
 
 # Lang — PHPStan Level 10 fixes (2026-10-06)
@@ -138,7 +134,6 @@ Questo fix segue il pattern di altre correzioni PHPStan Level 10:
 - Rating module (2026-10-06): 10 errori fixati con builder generics
 - Incentivi module: auth type narrowing
 - Ptv module: query builder type assertions
-
 
 ## Swarm swarm-lang-tenant (run 4 PHPStan, 2026-10-06): correzione
 

@@ -24,7 +24,7 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 [Regole Generali](../../Xot/docs/translations.md)
 [Best Practices](translation-keys-best-practices.md)
 [Regole Generali](../../xot/docs/translations.md)
-[Best Practices](../translation-keys-best-practices.md)
+[Best Practices](../../archive/docs-legacy/root/translation-keys-best-practices.md)
 ```
 
 ❌ **ERRATO**:

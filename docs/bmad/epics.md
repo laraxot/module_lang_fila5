@@ -5,20 +5,11 @@ status: active
 updated: 2026-11-16
 bmad: true
 module: Lang
-<<<<<<< .merge_file_H7kdmZ
-<<<<<<< .merge_file_zYxvAx
-=======
-=======
->>>>>>> .merge_file_WYPDGY
 qmd: "epics Lang tracker chiavi mancanti test comportamento config morta Post docs LocaleSwitcherRefresh hardcoded story acceptance"
 related:
   - ./audits/lang-audit.md
   - ./decision-log.md
   - ./piano-miglioramento.md
-<<<<<<< .merge_file_H7kdmZ
->>>>>>> .merge_file_4czZ60
-=======
->>>>>>> .merge_file_WYPDGY
 ---
 
 # Epics — Lang
