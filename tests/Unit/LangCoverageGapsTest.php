@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
-use function Safe\file_get_contents;
 use Illuminate\Support\Str;
 use Illuminate\Translation\ArrayLoader;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -46,6 +45,7 @@ use Modules\Xot\Actions\GetTransKeyAction;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 
+use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\getmypid;
 use function Safe\mkdir;
@@ -129,7 +129,7 @@ describe('Lang coverage gaps closeout', function (): void {
         Assert::assertTrue(
             Translation::query()->where('namespace', 'mod')->where('group', 'onlygroup')->whereNull('item')->exists(),
         );
-    });
+    })->group('LANG-MISS-INV-2');
 
     test('SaveTransAction catch and non-array require paths', function (): void {
         TestCase::bindRealSaveTransAction();
@@ -153,7 +153,7 @@ describe('Lang coverage gaps closeout', function (): void {
         Assert::assertSame('v', $loaded['y']);
         unlink($file);
         TestCase::forgetSaveTransActionOverride();
-    });
+    })->group('LANG-SAVETRANS-INV-7');
 
     test('WriteTranslationFileAction backs up existing file', function (): void {
         $path = sys_get_temp_dir().'/write_cov_'.uniqid().'.php';
@@ -251,7 +251,7 @@ describe('Lang coverage gaps closeout', function (): void {
 
         $widget = new LanguageSwitcherWidget;
         Assert::assertSame('/en', $widget->getLanguageUrl('en'));
-    });
+    })->group('LANG-SWITCHWIDGET-INV-2');
 
     test('Post accessors persist when model has key', function (): void {
         langGapsSqlite();

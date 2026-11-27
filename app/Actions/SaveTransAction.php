@@ -8,6 +8,7 @@ use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -15,6 +16,11 @@ use Spatie\QueueableAction\QueueableAction;
  * Scrive una chiave nel file di lingua del modulo: `execute()` per le chiavi mancanti (solo dove l'interruttore lo
  * permette), `persist()` per il salvataggio voluto dal pannello di traduzione.
  *
+<<<<<<< .merge_file_B1vnfe
+=======
+ * @see Modules/Lang/docs/translation-files.md
+ * @see docs/contracts/save-trans-action.md
+>>>>>>> .merge_file_k4s3sw
  * @contract docs/contracts/save-trans-action.md
  */
 class SaveTransAction
@@ -52,6 +58,14 @@ class SaveTransAction
      */
     public function persist(string $key, int|string|array|Htmlable|null $data): void
     {
+        // Chiave senza nome file (`modulo::` o `modulo::.x`): GetTransPathAction darebbe `lang/it/.php`,
+        // un file che nessun `trans()` legge. Segnalarlo e non scrivere (era successo in 14 moduli).
+        if (Str::of($key)->after('::')->before('.')->toString() === '') {
+            report(new \InvalidArgumentException('Chiave di lingua senza nome file: '.$key));
+
+            return;
+        }
+
         $cont = [];
 
         $filename = app(GetTransPathAction::class)->execute($key);

@@ -4,7 +4,7 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: Lang
-qmd: "ECC audit Lang checklist security-review clean-code verification-loop inventario misurato finding tracker chiavi mancanti test coverage"
+qmd: "ECC audit Lang verification security testing laravel checklist security-review clean-code verification-loop inventario misurato finding tracker chiavi mancanti test coverage"
 related:
   - ./00-index.md
   - ../bmad/audits/lang-audit.md
@@ -45,6 +45,21 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 | `tdd-workflow` | **aperto** | 4 test «coverage» (2.248 r.); due alberi `tests/Unit` e `tests/unit` |
 | `documentation-sync` | **fatto in questo giro** | architecture riscritta, decision-log/epics/purpose gap-fill; 111/955 `.md` con nome non conforme |
 
+## Input misurato (2026-11-16)
+
+ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audits/lang-audit.md).
+
+## Checklist (stato misurato 2026-11-16)
+
+| Skill ECC | Stato | Evidenza |
+|---|---|---|
+| `clean-code` | **aperto** | `Write/ReadTranslationFileAction` morte; `config/lang.php` mai letto; `TranslatorTraitPhpstanProbe` in `app/`; 3 generazioni di migration |
+| `security-review` | **nessun P0/P1** | policy su `LangBasePolicy` senza `return true` fuori da `before()`; difesa in profondità mancante su `GetTransPathAction` (P2) |
+| `laravel-verification` | **aperto** | `registerTranslator()` non chiamato (`LangServiceProvider.php:43`) |
+| `verification-loop` | PHPStan: 0 errori — Pest: parziale (10 pass / 13 fail su `tests/Feature`) | |
+| `tdd-workflow` | **aperto** | 4 test «coverage» (2.248 r.); due alberi `tests/Unit` e `tests/unit` |
+| `documentation-sync` | **fatto in questo giro** | architecture riscritta, decision-log/epics/purpose gap-fill; 111/955 `.md` con nome non conforme |
+
 ## Inventario misurato
 
 | Voce | N |
@@ -72,9 +87,13 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 =======
 >>>>>>> .merge_file_u0bqOk
 | test PHP / `*Test.php` | 51 / 29 |
+| resources | 2 |
+| Actions / Services | 17 / 0 |
+| services | 0 |
+| policies (files approx) | 8 |
+
 | Models / Policy / Resource | 7 / 4 / 2 |
 | Pagine Resource / Widget | 9 / 1 |
-| Actions / Services | 17 / 0 |
 | Migration | 11 |
 | Lang IT | 33 |
 | `return true` in Policy | 2 (`before()`) |

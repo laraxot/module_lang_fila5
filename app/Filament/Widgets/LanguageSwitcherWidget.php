@@ -20,6 +20,9 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  * più un fallback statico né un redirect sull'URL corrente non localizzato.
  *
  * @see https://github.com/mcamara/laravel-localization
+ * @see docs/contracts/language-switcher-view-data.md
+ *
+ * @contract docs/contracts/language-switcher-view-data.md
  */
 class LanguageSwitcherWidget extends XotBaseSchemaWidget
 {
@@ -65,7 +68,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
      * Ottiene le lingue disponibili nel sistema da LaravelLocalization,
      * la stessa fonte usata dai vecchi `Switcher`/`Change`.
      *
-     * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
+     * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null, url: string}>
      */
     public function getAvailableLocales(): Collection
     {
@@ -83,6 +86,7 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
                         ? $properties['native']
                         : (is_string($name) ? $name : $code),
                     'flag' => is_string($properties['flag'] ?? null) ? $properties['flag'] : null,
+                    'url' => $this->getLanguageUrl($code),
                 ];
             })
             ->values();

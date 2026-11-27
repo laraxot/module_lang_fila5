@@ -23,7 +23,7 @@ describe('GetTransPathAction Business Logic', function () {
         Assert::assertStringContainsString('meetup', strtolower($result));
         Assert::assertStringContainsString('lang', $result);
         Assert::assertStringContainsString('messages.php', $result);
-    });
+    })->group('LANG-PATH-INV-1');
 
     test('extracts namespace and file from key', function () {
         $key = 'cms::validation.required';
@@ -31,7 +31,7 @@ describe('GetTransPathAction Business Logic', function () {
 
         Assert::assertStringContainsString('cms', strtolower($result));
         Assert::assertStringContainsString('validation.php', $result);
-    });
+    })->group('LANG-PATH-INV-1');
 
     test('handles simple key without namespace', function () {
         $result = makeGetTransPathAction()->execute('test');
@@ -50,5 +50,5 @@ describe('GetTransPathAction Business Logic', function () {
         $result = makeGetTransPathAction()->execute($key);
 
         Assert::assertStringContainsString('file.php', $result);
-    });
+    })->group('LANG-PATH-INV-1');
 });

@@ -4,7 +4,7 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Lang
-qmd: "audit BMAD Lang sintesi gate tracker chiavi mancanti non cablato test coverage schema user_id Post fuori scope config morta"
+qmd: "audit BMAD Lang source-first qualità sintesi gate tracker chiavi mancanti non cablato test coverage schema user_id Post fuori scope config morta"
 related:
   - ./audits/lang-audit.md
   - ./piano-miglioramento.md
@@ -44,11 +44,42 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/lang-a
 | PHP `app/` / test PHP / `*Test.php` | 72 / 51 / 29 |
 =======
 | PHP `app/` / test PHP / `*Test.php` | 72 / 51 / 29 (ricontato 2026-11-19: 72 / 53 / 29) |
+<<<<<<< .merge_file_ciasLk
 >>>>>>> .merge_file_mrLFNn
+=======
+| Test | 51 |
+| Resources | 2 |
+| Actions / Services / Migration / Lang IT | 17 / 0 / 11 / 33 |
+| Services | 0 |
+| Policy `return true` | 2, solo in `LangBasePolicy::before()` (bypass `super-admin` / `lang::admin`) |
+| Marker conflitto / `RefreshDatabase` / `dd()` | 0 / 0 / 0 |
+
+| Models / Policy / Resource / Widget | 7 / 4 / 2 / 1 |
+| `.md` in `docs/` | 955 (1 senza frontmatter, 111 nome non conforme) |
+
+## Finding principali
+
+| # | Sev | Finding |
+|---|---|---|
+| 1 | P1 | Tracker DB «chiavi mancanti» non cablato: `registerTranslator()` commentato (`LangServiceProvider.php:43`), trait usato solo da una sonda PHPStan; `translations` senza scrittore in produzione |
+| 2 | P1 | Docs contraddicono il codice: architettura con `ValidateTranslationsAction`, `LangResource`, `lang_table` inesistenti; decision-log fittizio (gap-fill fatto) |
+| 3 | P1 | Test: 4 file «coverage» da 2.248 righe; `tests/Feature` 10 pass / 13 fail su scratch DB (`user_id` bigint vs UUID) |
+| 4 | P2 | `LocaleSwitcherRefresh.php:34,45` con stringhe letterali in un modulo che le vieta |
+| 5 | P2 | `config/lang.php` mai letto; `Post` (CMS) senza consumatori fuori da Lang; `Write/ReadTranslationFileAction` morte |
+
+Nessun P0: policy corrette (`LangBasePolicy::before()` con bypass `super-admin`/`lang::admin`, deny-by-default sul resto).
+
+## Gate
+
+- PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
+- Pest: da eseguire in ambiente testing non produttivo.
+- Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
+
+| PHP `app/` / test PHP / `*Test.php` | 72 / 51 / 29 |
+>>>>>>> .merge_file_ok3mpW
 | Models / Policy / Resource / Widget | 7 / 4 / 2 / 1 |
 | Actions / Services / Migration / Lang IT | 17 / 0 / 11 / 33 |
 | Marker conflitto / `RefreshDatabase` / `dd()` | 0 / 0 / 0 |
-| Policy `return true` | 2, solo in `LangBasePolicy::before()` (bypass `super-admin` / `lang::admin`) |
 | `.md` in `docs/` | 955 (1 senza frontmatter, 111 nome non conforme) |
 
 ## Finding principali

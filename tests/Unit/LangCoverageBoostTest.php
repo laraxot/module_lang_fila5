@@ -80,7 +80,7 @@ describe('Lang coverage boost — Actions', function (): void {
 
         Assert::assertSame('Ciao', $merged['welcome']);
         Assert::assertSame('Goodbye', $merged['bye']);
-    });
+    })->group('LANG-MERGE-INV-1');
 
     test('WriteTranslationFileAction writes valid php translation file', function (): void {
         $path = sys_get_temp_dir().'/lang_write_test_'.uniqid().'.php';
@@ -213,7 +213,12 @@ describe('Lang coverage boost — UI and data', function (): void {
 
         Assert::assertInstanceOf(View::class, $rendered);
         Assert::assertSame('lang::components.language-switcher', $rendered->name());
-    });
+        $viewData = $rendered->getData();
+        Assert::assertArrayHasKey('available_locales', $viewData);
+        $html = $rendered->render();
+        Assert::assertStringNotContainsString('$this', $html);
+        Assert::assertStringContainsString('href=', $html);
+    })->group('LANG-SWITCHER-INV-1', 'LANG-SWITCHVIEW-INV-1', 'LANG-SWITCHVIEW-INV-2', 'LANG-SWITCHWIDGET-INV-1');
 
     test('flag component, theme composer and data objects resolve language metadata', function (): void {
         $this->mockService(GetViewAction::class, static function (MockInterface $mock): void {

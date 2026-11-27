@@ -6,12 +6,17 @@ updated: 2026-11-16
 module: Lang
 qmd: "architettura Lang AutoLabelAction configureUsing SaveTransAction TranslationFile Sushi TranslatorAdapter LangBasePolicy flussi autorizzazione verificata sul codice"
 related:
+  - "./italian-text-refined-audit-report.md"
   - ./purpose.md
   - ./audits/lang-audit.md
   - ./decision-log.md
   - ../purpose.md
+<<<<<<< .merge_file_ZLDd7y
 <<<<<<< .merge_file_DANC9m
 =======
+=======
+
+>>>>>>> .merge_file_Q7kLxN
   - ../italian-text-refined-audit-report.md
 >>>>>>> .merge_file_cU7Cza
 ---
@@ -38,14 +43,32 @@ Verificata sul codice il 2026-11-16 (72 PHP in `app/`, 0 Services). Sostituisce 
 2. **Modifica da pannello.** `EditTranslationFile::mutateFormDataBeforeSave` → `SaveTransAction::persist($key, $content)` → `GetTransPathAction` (`<lang-path>/<locale>/<file>.php`, locale da `app()->getLocale()`) → `SaveArrayAction`. Scrittura voluta anche in produzione.
 3. **Cambio lingua.** `LocaleSwitcherRefresh` → `applyLocale()`: `session('locale')` + `App::setLocale`.
 
+<<<<<<< .merge_file_ZLDd7y
 <<<<<<< .merge_file_DANC9m
+=======
+>>>>>>> .merge_file_Q7kLxN
 **Models:** `BaseModelLang`, `LanguageLine`, `Translation`.
 **Actions:** `SyncTranslationsAction`, `ValidateTranslationsAction`.
 **Filament Resources:** `LangResource` — main admin resource.
 
 **Database Schema:** `lang_table` — tabella primaria con colonne standard Laravel (id, timestamps).
+<<<<<<< .merge_file_ZLDd7y
 =======
 >>>>>>> .merge_file_cU7Cza
+=======
+
+## Autorizzazione
+
+`LangBasePolicy::before()` → `true` per `super-admin` e `lang::admin` (bypass voluto, ADR Xot module-admin-role-policy-bypass); `TranslationFilePolicy`, `TranslationPolicy`, `PostPolicy` ereditano e decidono per permesso (es. `translation_file.viewAny` in `TranslationFilePolicy`; deny-by-default). Nessun `return true` fuori da `before()`.
+
+## Confini e dipendenze
+
+- Dipende da Xot. Usato (file con `use Modules\Lang\`, no test) da Xot 7, Notify 5, Performance 3, IndennitaResponsabilita 1, UI 1. **Non da Activity.**
+- Config: `config/config.php` è letta; `config/lang.php` è caricata come `lang.lang.*` e non letta da nessuno ([P2](./audits/lang-audit.md#p2)).
+
+**Quality Gates:** PHPStan L10 / PHPMD / Pest — vedi report qualità nel modulo.
+
+>>>>>>> .merge_file_Q7kLxN
 ## Autorizzazione
 
 `LangBasePolicy::before()` → `true` per `super-admin` e `lang::admin` (bypass voluto, ADR Xot module-admin-role-policy-bypass); `TranslationFilePolicy`, `TranslationPolicy`, `PostPolicy` ereditano e decidono per permesso (es. `translation_file.viewAny` in `TranslationFilePolicy`; deny-by-default). Nessun `return true` fuori da `before()`.

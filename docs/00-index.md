@@ -1,93 +1,83 @@
 ---
 issues: []
 discussions: []
-title: "📚 **Indice Documentazione Modulo Lang**"
+title: "Indice Documentazione Modulo Lang"
 module: "Lang"
 type: concept
-tags: [lang, service, helper, text]
+tags: [lang, i18n, translations]
 created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang service helper text"
-related:
-  - "./italian-text-refined-audit-report.md"
+updated: 2026-11-05
+qmd: "lang module documentation index"
 ---
+<<<<<<< .merge_file_jGc1KX
 > **Indice canonico del modulo: [index.md](./index.md).** Questo file e' un indice storico tenuto per i link esistenti; i nuovi documenti vanno registrati solo in `index.md` (audit qualita', issue #64).
 
 # 📚 **Indice Documentazione Modulo Lang**
+=======
+>>>>>>> .merge_file_Uas7RY
 
-**Status**: ✅ PHPStan Level 10 Compliant
-**Module Version**: 1.5.0
+# Indice Documentazione Modulo Lang
 
-## 🎯 **Lettura Essenziale**
-1. [README.md](./README.md) - Panoramica del sistema di internazionalizzazione.
-2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Traduzioni AI e centralizzazione.
-3. [philosophy.md](./philosophy.md) - La lingua come infrastruttura: filosofia Laraxot.
+Modulo Lang: internazionalizzazione e traduzioni per Laravel 13 / Filament 5 (locale `it/en/de/es`).
+Documentazione ridotta a <=100 file: solo canonica e corrente. Il materiale storico e' in
+[`archive/docs-legacy/`](../archive/docs-legacy/README.md).
 
-## 🏗️ **Configurazione e Setup**
-- 🌍 **[Locale Management](./locale-management.md)** - Gestione delle lingue attive e default.
-- 🛣️ **[Route Localization](./laravel-localization-folio-integration.md)** - Integrazione con Folio e Volt per URL localizzati.
-- ⚙️ **[Service Provider](./lang-service-provider-improvements.md)** - Architettura del caricamento dinamico delle traduzioni.
+## Architettura e contratti
 
-## 🏷️ **Naming & Standards**
-- 🚫 **[No Hardcoded Labels](./filament-label.md)** - Perché non usiamo mai `->label()` o `->placeholder()`.
-- 🗂️ **[Translation Keys](./translation-keys-best-practices.md)** - Convenzioni per la struttura delle chiavi (module::file.key).
-- 📜 **[Enum Translation](./enum-translation-pattern-implementation.md)** - Pattern per la traduzione automatica degli Enum.
+| Documento | Contenuto |
+|---|---|
+| [ARCHITECTURE.md](./ARCHITECTURE.md) | Architettura del modulo |
+| [architecture/](./architecture/) | Flusso AutoLabel, struttura traduzioni |
+| [adr/](./adr/) | Decisioni architetturali (ADR 0001-0007 + indice) |
+| [contracts/](./contracts/) | Contratti delle Action e dei componenti (SSoT comportamentale) |
+| [best-practices/](./best-practices/) | Convenzioni link documentazione |
+| [critical-rules/](./critical-rules/) | Regole critiche (campo `fields` obbligatorio) |
+| [concepts/](./concepts/) | Concetti (mai estendere classi Filament direttamente) |
+| [lessons-learned/](./lessons-learned/) | lezioni durevoli (namespace widget, array PHP) |
+| [translatable/](./translatable/) | Traduzione contenuti: best practice e implementazione |
 
-## 🚀 **Funzionalità Avanzate**
-- ⚡ **[Auto-Registration](./autoregistration-commands.md)** - Comandi Artisan per scoprire e registrare nuove chiavi.
-- 🤖 **[Automatic Translations](./automatic-translations.md)** - (DAB) Integrazione con motori di traduzione esterna.
-- 📝 **[Translation File Editor](./translation-file-editor.md)** - UI per la modifica dei file `.php` di lingua.
+## Guide
 
-## 🧪 **Qualità e Testing**
-- ✅ **[PHPStan Analysis](./phpstan-analysis-lang.md)** - Report di conformità Level 10.
-- 🔬 **[Testing Guidelines](./testing.md)** - Verifica della presenza delle chiavi di traduzione.
-- 🐒 **[Chaos Monkey Translation Fallbacks](./chaos-monkey-translation-fallbacks.md)** - Protocollo di recovery su regressioni i18n.
+| Documento | Contenuto |
+|---|---|
+| [README.md](./README.md) | Panoramica del sistema di traduzioni |
+| [QUICK-REFERENCE.md](./QUICK-REFERENCE.md) | Riferimento rapido |
+| [TRANSLATION-PROCESS.md](./TRANSLATION-PROCESS.md) | Processo di traduzione |
+| [TRANSLATION-STRATEGIES.md](./TRANSLATION-STRATEGIES.md) | Strategie di traduzione |
+| [translations-system.md](./translations-system.md) | Architettura sistema traduzioni |
+| [LOCALE-MANAGEMENT.md](./LOCALE-MANAGEMENT.md) | Gestione lingue attive/default |
+| [MIGRATIONS.md](./MIGRATIONS.md) | Migrazioni del modulo |
+| [MCAMARA-IMPLEMENTATION-GUIDE.md](./MCAMARA-IMPLEMENTATION-GUIDE.md) | Integrazione mcamara/laravel-localization |
+| [PERFORMANCE-OPTIMIZATION.md](./PERFORMANCE-OPTIMIZATION.md) | Ottimizzazione prestazioni |
+| [filament-integration.md](./filament-integration.md) | Integrazione Filament |
+| [livewire-integration.md](./livewire-integration.md) | Integrazione Livewire/Volt |
+| [laravel-localization.md](./laravel-localization.md) | URL e routing localizzati |
+| [language-switcher-and-flags.md](./language-switcher-and-flags.md) | Language switcher e bandiere |
+| [api-reference.md](./api-reference.md) | Riferimento API |
+| [console-commands.md](./console-commands.md) | Comandi Artisan |
+| [testing.md](./testing.md) | Testing del modulo |
+| [translation-file-editor.md](./translation-file-editor.md) | Editor file traduzioni |
+| [troubleshooting.md](./troubleshooting.md) | Risoluzione problemi |
 
-## 🧹 **Manutenzione**
-- 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
+## Guide per dominio
 
-## 🔗 **Moduli Correlati**
-- [Xot](../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
-- [UI](../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
+| Documento | Contenuto |
+|---|---|
+| [enum-translation.md](./enum-translation.md) | Traduzione Enum |
+| [translation-keys.md](./translation-keys.md) | Convenzioni chiavi di traduzione |
+| [translation-preservation.md](./translation-preservation.md) | Preservazione traduzioni esistenti |
+| [pluralization-and-localization.md](./pluralization-and-localization.md) | Plurali e localizzazione |
+| [localizing-dates-and-currencies.md](./localizing-dates-and-currencies.md) | Date e valute localizzate |
 
----
-*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-# Documentation Index
-## 📋 **Documenti Prodotto & Sviluppo**
+## Lavoro in corso
 
-### Product
-| File | Scopo |
-|------|-------|
-| PRD.md | Product Requirements |
-| product_roadmap.md | Roadmap |
-| product_strategy.md | Strategy |
-| product_launch_plan.md | Launch Plan |
+- [stories/](./stories/) — solo story attive (proposed/in-progress/review/ready-for-dev).
+  Le story completate sono in `archive/docs-legacy/stories/`.
 
-### Development
-| File | Scopo |
-|------|-------|
-| gsd_workflow.md | GSD Workflow |
-| sprint_planning.md | Sprint Planning |
-| user_research.md | User Research |
+## Moduli correlati
 
-## 📦 **Pacchetti Composer**
-- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
-- [Package Dependency Chaos Map](./package-dependency-chaos-map.md)
-- `mcamara/laravel-localization` - URL localizzati
-- `lara-zeus/spatie-translatable` - Campi Filament tradotti
-- `rinvex/countries` - Dati paesi
-- `spatie/laravel-sluggable` - Slug multilingua
-
-## 🔗 **Moduli Correlati**
-- [Xot](../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
-- [UI](../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
-- [AGENTS.md](../../../../AGENTS.md) - Project guidelines
----
-- [AGENTS.md](../../../../AGENTS.md) - Project guidelines
+- `Modules/Xot` — classi base `XotBase*`, convenzioni comuni.
+- `Modules/User`, `Modules/Cms`, `Modules/Notify`, `Modules/UI` — consumatori delle traduzioni.
 
 ---
-*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-
-## Dependency Intelligence
-
-- [Dependency intelligence](dependency-intelligence.md)
+*Documentazione conforme agli standard Laraxot — DRY + KISS + SOLID.*

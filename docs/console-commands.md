@@ -146,8 +146,8 @@ php artisan lang:find-missing it
 
 ## Collegamenti Correlati
 
-- [Translation System](./translation-system.md)
-- [Lang Module Architecture](./architecture.md)
+- [Translation System](../archive/docs-legacy/root/translation-system.md)
+- [Lang Module Architecture](../archive/docs-legacy/root/architecture.md)
 - [PHPStan Corrections](../../../../docs/phpstan-fixes.md)
 - [PHPStan Corrections](../../../docs/phpstan-fixes.md)
 - [PHPStan Corrections](../../../docs/phpstan-fixes.md)

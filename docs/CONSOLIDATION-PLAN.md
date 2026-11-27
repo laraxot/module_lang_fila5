@@ -16,16 +16,6 @@ discussions: []
 **Target:** ≤30 files at root  
 **Strategy:** Delete duplicates → Consolidate by topic → Move research to wiki/
 
----
-
-title: "CONSOLIDATION PLAN"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "CONSOLIDATION PLAN"
-issues: []
-discussions: []
 ## Quick Stats
 
 | Category | Current | Target | Action |
@@ -91,12 +81,12 @@ cyclomatic-complexity.md
 dependency-intelligence.md
 docs-health.md
 coverage.md
-redundancy_analysis.md
+REDUNDANCY_ANALYSIS.md
 
 # Index duplicates (consolidate into README.md)
+00-INDEX.md
 00-index.md
-00-index.md
-index.md
+INDEX.md
 ```
 
 ### 3. CONSOLIDATE TRANSLATION FILES (65 → 4)
@@ -141,6 +131,15 @@ Create subdirs and move strategy/research content (not essential to module root)
 mkdir -p wiki/strategies wiki/how-to wiki/overviews wiki/rules
 
 # Move strategy/research
+mv PRODUCT_LAUNCH_PLAN.md wiki/strategies/
+mv TRANSLATION_STRATEGIES.md wiki/strategies/
+mv USER_RESEARCH.md wiki/strategies/
+mv PERFORMANCE-OPTIMIZATION.md wiki/overviews/
+mv SPRINT_PLANNING.md wiki/strategies/
+
+# Move how-to guides
+mv QMD-SETUP.md wiki/how-to/
+
 mv product_launch_plan.md wiki/strategies/
 mv TRANSLATION_STRATEGIES.md wiki/strategies/
 mv user_research.md wiki/strategies/
@@ -165,6 +164,8 @@ mv database-model-coverage.md wiki/overviews/
 mv schema.md wiki/overviews/
 
 # Move rules/patterns
+mv ON-DEMAND-PATTERN.md wiki/rules/
+
 mv on-demand-pattern.md wiki/rules/
 mv MCAMARA_IMPLEMENTATION_GUIDE.md wiki/overviews/
 ```
@@ -178,7 +179,7 @@ laravel/Modules/Lang/docs/
 ├── README.md                         # Entry point (anchor for all docs)
 ├── PHPSTAN_L10.md                   # Technical status & fixes
 ├── MIGRATIONS.md                    # Schema/migrations
-├── product_strategy.md              # Product vision (optional: move to wiki/)
+├── PRODUCT_STRATEGY.md              # Product vision (optional: move to wiki/)
 ├── LOCALE_MANAGEMENT.md             # Locale management basics
 │
 ├── translation-system.md            # Core: system arch + syntax
@@ -258,6 +259,8 @@ rm -f \
   dependency-intelligence.md \
   docs-health.md \
   coverage.md \
+  REDUNDANCY_ANALYSIS.md \
+
   redundancy_analysis.md \
   00-index.md \
   index.md
@@ -266,9 +269,9 @@ rm -f \
   00-index.md \
   index.md
 ---
+  00-INDEX.md \
   00-index.md \
-  00-index.md \
-  index.md
+  INDEX.md
 
 # 3. Delete conflict-resolution snake_case variants
 rm -f conflict_resolution_*.md
@@ -280,6 +283,15 @@ rm -f lang_service_provider.md lang_service_provider_improvements.md
 mkdir -p wiki/strategies wiki/how-to wiki/overviews wiki/rules
 
 # 6. Move strategy/research files
+mv PRODUCT_LAUNCH_PLAN.md wiki/strategies/ 2>/dev/null || true
+mv TRANSLATION_STRATEGIES.md wiki/strategies/ 2>/dev/null || true
+mv USER_RESEARCH.md wiki/strategies/ 2>/dev/null || true
+mv PERFORMANCE-OPTIMIZATION.md wiki/overviews/ 2>/dev/null || true
+mv SPRINT_PLANNING.md wiki/strategies/ 2>/dev/null || true
+
+# 7. Move how-to guides
+mv QMD-SETUP.md wiki/how-to/ 2>/dev/null || true
+
 mv product_launch_plan.md wiki/strategies/ 2>/dev/null || true
 mv TRANSLATION_STRATEGIES.md wiki/strategies/ 2>/dev/null || true
 mv user_research.md wiki/strategies/ 2>/dev/null || true
@@ -305,7 +317,7 @@ mv schema.md wiki/overviews/ 2>/dev/null || true
 mv MCAMARA_IMPLEMENTATION_GUIDE.md wiki/overviews/ 2>/dev/null || true
 
 # 9. Move rules
-mv on-demand-pattern.md wiki/rules/ 2>/dev/null || true
+mv ON-DEMAND-PATTERN.md wiki/rules/ 2>/dev/null || true
 
 # 10. Merge PHPSTAN files (manual step — see section below)
 # (Requires reading PHPSTAN-FIXES.md + PHPSTAN_STATUS.md into PHPSTAN_L10.md)

@@ -4,7 +4,7 @@ type: concept
 status: active
 updated: 2026-11-16
 module: Lang
-qmd: "purpose bmad Lang scopo traduzioni etichette fuori dal codice file di lingua chiavi mancanti stato del codice"
+qmd: "purpose bmad Lang scopo traduzioni etichette fuori dal codice file di lingua chiavi mancanti stato del"
 related:
   - ../purpose.md
   - ./audits/lang-audit.md
@@ -13,6 +13,12 @@ related:
 ---
 
 # Scopo BMAD — Lang
+
+## Lo scopo in una frase **Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua.**
+
+SSoT estesa: [../purpose.md](../purpose.md) se presente.
+
+## Lo scopo in una frase
 
 ## Lo scopo in una frase
 

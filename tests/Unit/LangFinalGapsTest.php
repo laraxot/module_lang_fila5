@@ -216,7 +216,7 @@ test('LanguageSwitcherWidget falls back when getLocalizedURL returns non-string 
 
     $widget = new LanguageSwitcherWidget;
     Assert::assertSame('/en', $widget->getLanguageUrl('en'));
-});
+})->group('LANG-SWITCHWIDGET-INV-2');
 
 test('Post linkable and accessor edge branches', function (): void {
     $post = new Post;
@@ -264,7 +264,7 @@ test('WriteTranslationFileAction throws when put fails', function (): void {
     $action = new WriteTranslationFileActionFailStub;
     expect(fn () => $action->execute($path, ['a' => '2']))->toThrow(\Exception::class);
     unlink($path);
-});
+})->group('LANG-WRITE-INV-3');
 
 test('Post guid null title uses random fallback', function (): void {
     $post = new Post;
@@ -448,7 +448,11 @@ test('NationalFlagSelect finalizeFilteredCountries defensive continue', function
 });
 
 test('SaveTransAction early return when persist disabled in unit tests', function (): void {
-    config(['lang.persist_trans_in_tests' => false]);
+    // La chiave vera e' questa. Il test impostava `lang.persist_trans_in_tests`,
+    // che in produzione non esiste: la guardia non la legge, quindi il test
+    // passava o falliva per ragioni che non c'entravano con quello che dice.
+    // Vedi il commento in SaveTransAction::execute() (base_quaeris_fila5#234).
+    config(['lang.save_missing_translations' => false]);
     app()->instance(SaveTransAction::class, new SaveTransAction);
     app(SaveTransAction::class)->execute('lang::should_not_write.nested', 'x');
     Assert::assertFileDoesNotExist(base_path('Modules/Lang/lang/'.app()->getLocale().'/should_not_write.php'));
@@ -582,4 +586,4 @@ test('WriteTranslationFileAction putTranslationFile edge paths', function (): vo
     if (is_dir($missingDir)) {
         rmdir($missingDir);
     }
-});
+})->group('LANG-WRITE-INV-3');
