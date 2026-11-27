@@ -3,22 +3,13 @@ title: "Contratti del modulo Lang"
 type: index
 tags: [contracts, actions, lang, translations]
 created: 2026-11-18
-<<<<<<< .merge_file_eIq0UJ
-updated: 2026-11-24
-=======
 updated: 2026-11-26
 module: Lang
 qmd: "contratti lang metodo harness contratto comportamento action input output invarianti effetti collaterali stato copertura backlog"
->>>>>>> .merge_file_wsdbUn
 ---
 
 # Contratti del modulo Lang
 
-<<<<<<< .merge_file_eIq0UJ
-Cosa promettono le Action di Lang che **scrivono file di lingua** o decidono il testo di ogni componente Filament: sono
-le uniche del modulo che possono rompere la produzione (un file di lingua con errore di sintassi = 500 su ogni pagina che
-lo carica) o sporcare l'albero dei sorgenti.
-=======
 ## Metodo Harness
 
 Un contratto descrive una singola operazione pubblica con effetti collaterali, chiamate esterne o invarianti di dominio. Documenta il comportamento osservabile, inclusi errori e non-goals, senza trasformare ogni metodo interno in un contratto. Documenta il comportamento di oggi, anche dove è discutibile: i difetti stanno in «Limiti noti», non nascosti.
@@ -27,21 +18,10 @@ Ogni invariante ha un ID stabile nel formato `LANG-<AREA>-INV-N` (es. `LANG-SAVE
 
 Cosa promette la superficie pubblica di questo pacchetto: le Action che scrivono dati, chiamano servizi esterni o hanno
 effetti collaterali, e le interfacce (`app/Contracts`). Regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`.
->>>>>>> .merge_file_wsdbUn
 
 Leggili prima di chiamare o modificare una di queste Action. Le invarianti con group si verificano con
 `cd laravel && vendor/bin/pest Modules/Lang/tests --group=<ID>`; `—` è debito dichiarato.
 
-<<<<<<< .merge_file_eIq0UJ
-Formato (sei sezioni, tabella invarianti con ID, `@contract` nel docblock):
-[action-behavioral-contract](../../../Xot/docs/rules/action-behavioral-contract.md).
-
-## Indice
-
-- [AutoLabelAction](auto-label-action.md) — etichette e testi di ogni componente Filament dal file di lingua del modulo chiamante; salva solo le etichette mancanti.
-- [SaveTransAction](save-trans-action.md) — scrive una chiave nel file di lingua: `execute()` solo dove l'interruttore lo permette, `persist()` sempre (pannello).
-- [CleanPlaceholderTranslationsAction](clean-placeholder-translations-action.md) — toglie dai file «solo dati» i segnaposto uguali al nome del campo; cancella i file `.php` senza nome.
-=======
 Un file per Action, nome in kebab-case della classe (`save-trans-action.md`), frontmatter `type: contract`, `action: <FQCN>`, `module`, `status`, `updated`, e queste sei sezioni nell'ordine:
 
 ```markdown
@@ -145,4 +125,11 @@ Test deboli da rafforzare (hanno group ma asseriscono poco): `GetAllTranslationA
 
 - [INDEX.md](INDEX.md) / [index.md](index.md) — inventario machine-readable (due file identici, che differiscono solo per le maiuscole: su filesystem insensibili alle maiuscole collidono; l'unificazione è una decisione aperta).
 - [_template.md](_template.md) — template `type: contract` con `action: <FQCN>` e le sei sezioni.
->>>>>>> .merge_file_wsdbUn
+
+## Harness minimo: ownership, evidenza e recupero (2026-11-27)
+
+I contratti di **module_lang_fila5** restano accanto alle Action, interfacce o superfici di questo package; root e Xot definiscono lo standard, non copiano le promesse. Un contratto comportamentale esplicita **Input, Output, Invarianti, Effetti collaterali, Errori, Non fa**; ogni ID di invariante punta a un group Pest effettivo oppure segnala `non dimostrata`. Se esiste la classe, il docblock deve rimandare al file con `@contract` e `@see`; per temi senza classi PHP non inventare Action/contratti.
+
+- [Standard Xot](https://github.com/laraxot/module_xot_fila5/blob/dev/docs/contracts/contract-authoring-standard.md) · [ownership root](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/adr/0001-harness-minimo-e-ownership.md) · [runbook ECC/Second Brain](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/harness/README.md).
+- **BMAD**: prima di cambiare una promessa, fissa nella story owner scope, esclusioni, evidenza e approvazioni richieste.
+- **ECC**: i marker di merge rendono invalido l'indice; citare una suite non significa averla eseguita. Distingui `pass`, `fail`, `non eseguito` e registra il debito in [rollout #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
