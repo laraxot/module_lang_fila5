@@ -1,29 +1,4 @@
 ---
-<<<<<<< .merge_file_wrcdWZ
-title: "ADR del modulo Lang"
-type: index
-tags: [adr, decisioni, lang, translations]
-created: 2026-11-18
-updated: 2026-11-24
----
-
-# ADR del modulo Lang
-
-Il **perché** di come Lang porta i testi nel pannello Filament: le etichette nascono dai file di lingua del modulo che
-usa il componente (non da `->label()` nel codice), e le chiavi mancanti diventano scritture su file solo in ambiente
-locale, perché un file di lingua riscritto a runtime può mandare in 500 la produzione e sporcare l'albero sotto test.
-
-Leggili prima di: scrivere etichette in una Resource, toccare `AutoLabelAction`, `SaveTransAction` o
-`LangServiceProvider::registerFilamentLabel()`, o cambiare la configurazione `lang.save_missing_translations`.
-
-Formato (cinque sezioni, `type: decision`, nome file senza date né numeri) e regole:
-[action-behavioral-contract](../../../Xot/docs/rules/action-behavioral-contract.md).
-
-## Indice
-
-- [Le etichette Filament vengono dai file di lingua del modulo](filament-labels-from-module-translation-files.md) — `configureUsing` + `AutoLabelAction` su ogni componente; niente `->label()` nelle Resource.
-- [Le chiavi mancanti si scrivono nei file solo in locale](missing-translations-written-only-in-local.md) — `execute()` dietro l'interruttore (default `isLocal()`), `persist()` per il pannello; mai segnaposto ausiliari.
-=======
 title: "ADR — Lang"
 type: index
 status: active
@@ -75,4 +50,19 @@ Misura del 2026-11-26, su 7 ADR vivi e 2 stub.
 - `0002` ripete in forma locale Xot ADR [0037](../../../Xot/docs/adr/0037-translation-key-protocol.md) (stessa forma di chiave, `decision-makers: [Xot, Lang]`): tenerlo o marcarlo `superseded`?
 - `0003` e `0004` descrivono la stessa scelta (le etichette Filament si configurano con `configureUsing` dai file di lingua del modulo): fonderli?
 - `INDEX.md` e `index.md` in questa cartella sono due file quasi identici che differiscono solo per le maiuscole: su filesystem insensibili alle maiuscole collidono.
->>>>>>> .merge_file_JcjN1o
+
+## Harness minimo: ownership, evidenza e recupero (2026-11-27)
+
+Questo indice appartiene a **module_lang_fila5**: ogni decisione su codice, dominio o tema va nell'ADR del package owner; il root registra soltanto i vincoli di composizione. Un ADR richiede una scelta reale con alternative e conseguenze, più una **Conferma** ripetibile (oppure la dichiarazione esplicita che manca). Non creare ADR fittizi per riempire un indice.
+
+- [Confine LaravelDay/harness Xot](https://github.com/laraxot/module_xot_fila5/blob/dev/docs/adr/0042-laravel-day-harness-adoption-boundary.md); [ownership root](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/adr/0001-harness-minimo-e-ownership.md).
+- **BMAD**: la story owner-local conserva `scope`, `must_not_change`, `evidence`, `approval_required` nei cambi rischiosi.
+- **ECC**: nessun marker di merge; distinguere la prova eseguita dal semplice riferimento a un test; se la conferma non è disponibile segnare `non eseguita`.
+- **Second Brain**: QMD/Graphify e `.harness/memory/{facts,lessons}.md` sono puntatori a evidenza datata, non copie degli ADR. [Runbook](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/harness/README.md) · [Rollout #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
+
+## Documenti del package da riconciliare nell'indice
+
+I seguenti file **esistono nel repository su `dev`** e non erano tutti collegati nel ramo d'indice più recente. Sono preservati come puntatori documentali; il loro stato di approvazione, la copertura e l'eventuale sostituzione con ADR numerati devono essere verificati nell'owner. Nessuna prova di esecuzione è implicita.
+
+- [Le etichette Filament vengono dai file di lingua del modulo](./filament-labels-from-module-translation-files.md)
+- [Le chiavi mancanti si scrivono nei file solo in locale](./missing-translations-written-only-in-local.md)
