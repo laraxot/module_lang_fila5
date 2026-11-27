@@ -10,6 +10,7 @@ use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\mkdir;
 
+uses(TestCase::class);
 
 test('toglie i segnaposto uguali al nome del campo e lascia le traduzioni vere', function (): void {
     $dir = sys_get_temp_dir().'/lang_clean_'.bin2hex(random_bytes(4));
@@ -26,4 +27,4 @@ test('toglie i segnaposto uguali al nome del campo e lascia le traduzioni vere',
     Assert::assertSame(['fields' => ['route' => ['label' => 'Via']]], $form);
     Assert::assertStringContainsString("base_path('x')", file_get_contents($dir.'/it/dynamic.php'));
     Assert::assertFileDoesNotExist($dir.'/it/.php');
-});
+})->group('LANG-CLEAN-INV-1', 'LANG-CLEAN-INV-2', 'LANG-CLEAN-INV-3');

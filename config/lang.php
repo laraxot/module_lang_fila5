@@ -203,8 +203,8 @@ return [
      * | Solo default: niente env() nei config di modulo (Larastan lo vieta fuori
      * | dal config/ di root). Lo spegnimento reale sotto test non passa da qui:
      * | SaveTransAction legge Config::get('lang.save_missing_translations',
-     * | ! app()->runningUnitTests()), e la config di modulo non e' comunque
-     * | caricata nell'app dei test.
+     * | app()->isLocal()), quindi sotto test (APP_ENV=testing) resta spento, e la
+     * | config di modulo non e' comunque caricata nell'app dei test.
      * |
      */
 

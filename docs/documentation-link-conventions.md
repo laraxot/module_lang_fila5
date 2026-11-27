@@ -134,21 +134,21 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 
 ✅ **CORRETTO**:
 ```markdown
-[Regole Generali](../../Xot/docs/translations.md)
+[Regole Generali](../../Xot/docs/translations/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
-[Regole Generali](../../Xot/docs/translations.md)
+[Regole Generali](../../Xot/docs/translations/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
-[Regole Generali](../../Xot/docs/translations.md)
+[Regole Generali](../../Xot/docs/translations/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
 ```
 
 ❌ **ERRATO**:
 ```markdown
-[Regole Generali](Modules/Xot/docs/translations.md)
+[Regole Generali](../../Xot/docs/translations/translations.md)
 [Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
-[Regole Generali](Modules/Xot/docs/translations.md)
+[Regole Generali](../../Xot/docs/translations/translations.md)
 [Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
-[Regole Generali](Modules/Xot/docs/translations.md)
+[Regole Generali](../../Xot/docs/translations/translations.md)
 [Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 ```
 

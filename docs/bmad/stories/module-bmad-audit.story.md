@@ -29,10 +29,23 @@ Audit source-first del modulo che deve tenere fuori dal codice ogni parola che l
 
 ## Riferimenti
 
+<<<<<<< .merge_file_ZG2VAu
+=======
+- [audit](../audit.md)
+- [piano](../piano-miglioramento.md)
+- [ECC](../../ecc/lang-ecc-audit.md)
+
+## Task
+
+>>>>>>> .merge_file_MdEVdA
 1. Lock dei file di `docs/` del modulo (`bashscripts/lock/`), unlock a fine lavoro.
 2. Audit codice → docs; nessun PHP toccato.
 3. Pack ECC e indici aggiornati; `qmd update`.
 
 ## Esito
 
+<<<<<<< .merge_file_ZG2VAu
 Baseline consegnata: 0 P0, 3 P1, P2 elencati. Nota: esiste anche `module-bmad-audit-20260928.story.md` (storica, nome datato: da migrare a una story senza data).
+=======
+Baseline consegnata: 0 P0, 3 P1, P2 elencati. PHPStan sul tree `Modules` a 0; Pest e chiusura dei P1 aperti. Nota: esiste anche `module-bmad-audit-lang-baseline-analisi-completa.story.md` (storica, nome datato: da migrare a una story senza data).
+>>>>>>> .merge_file_MdEVdA

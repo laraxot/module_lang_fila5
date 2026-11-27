@@ -8,6 +8,7 @@ use Modules\Lang\Actions\GetTransPathAction;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class);
 
 function makeGetTransPathAction(): GetTransPathAction
 {

@@ -22,7 +22,7 @@ related:
 - [Modulo User - Traduzioni](laravel/Modules/User/docs/translations.md)
 - [Modulo Performance - Traduzioni](laravel/Modules/Performance/docs/translation_guidelines.md)
 - [Modulo UI - Componenti](laravel/Modules/UI/docs/components.md)
-- [Modulo Xot - Regole Base](laravel/Modules/Xot/docs/translation_rules.md)
+- [Modulo Xot - Regole Base](../../Xot/docs/translations/translation-rules.md)
 
 ## Esempi e Fix
 - [Fix Traduzioni Performance](laravel/Modules/Performance/docs/organizzativa-migration-errors.md)

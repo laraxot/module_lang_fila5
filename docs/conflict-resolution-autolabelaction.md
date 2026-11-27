@@ -255,8 +255,8 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
-- [Best Practices](translation-keys-best-practices.md)
-- [PHPStan Level 10 Fixes](archive/historical/phpstan-level10-fixes.md)
+- [Best Practices](../translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 
 ## Note per Sviluppatori Futuri
 
@@ -516,8 +516,8 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
-- [Best Practices](translation-keys-best-practices.md)
-- [PHPStan Level 10 Fixes](archive/historical/phpstan-level10-fixes.md)
+- [Best Practices](../translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
 
 ## Note per Sviluppatori Futuri
 

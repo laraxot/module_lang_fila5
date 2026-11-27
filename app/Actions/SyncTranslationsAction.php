@@ -113,8 +113,11 @@ class SyncTranslationsAction
                 // Merge translations
                 $mergedTranslations = $this->mergeTranslations($sourceTranslations, $targetTranslations);
 
-                // Save merged translations
-                $this->saveTranslations($targetFile, $mergedTranslations);
+                // Riscrivere un file gia' allineato non aggiunge nulla e ne cambia la forma
+                // (formattazione, commenti persi): si scrive solo quando manca qualche chiave.
+                if (! File::exists($targetFile) || $mergedTranslations !== $targetTranslations) {
+                    $this->saveTranslations($targetFile, $mergedTranslations);
+                }
 
                 $newKeys = count($mergedTranslations) - count($targetTranslations);
                 $translationsAdded += (int) $newKeys;
@@ -237,7 +240,8 @@ class SyncTranslationsAction
      */
     private function saveTranslations(string $filePath, array $translations): void
     {
-        $content = "<?php\n\nreturn [\n";
+        // Stessa intestazione dei file di lingua versionati (`declare(strict_types=1);`).
+        $content = "<?php\n\ndeclare(strict_types=1);\n\nreturn [\n";
         $content .= $this->arrayToPhp($this->filterStringKeyArray($translations), 1);
         $content .= "];\n";
 

@@ -232,7 +232,7 @@ done
 
 ## Collegamenti
 
-- [Implementazione nel Progetto](./implementazione-nel-progetto.md)
+- [Implementazione nel Progetto](implementation-nel-progetto.md)
 - [Best Practices](./best-practices.md)
 - [Gestione Traduzioni Mancanti](./gestione-traduzioni-mancanti.md)
 - [Documentazione Plugin Filament](https://filamentphp.com/plugins/filament-spatie-translatable)

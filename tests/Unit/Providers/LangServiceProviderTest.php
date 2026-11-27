@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Lang;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class);
 
 describe('LangServiceProvider Basic Functionality', function () {
     it('can be instantiated', function () {

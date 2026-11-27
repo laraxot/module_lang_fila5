@@ -131,7 +131,7 @@ return [
 
 ## Collegamenti
 
-- [Translation Rules](../Xot/docs/translation_rules.md)
+- [Translation Rules](../../Xot/docs/translations/translation-rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../xot/docs/translation_rules.md)

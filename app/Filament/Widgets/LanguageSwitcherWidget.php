@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace Modules\Lang\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
-use Illuminate\Contracts\View\View;
-use Illuminate\Support\Facades\View as ViewFacade;
 use Illuminate\Support\Collection;
 use Mcamara\LaravelLocalization\Exceptions\UnsupportedLocaleException;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -25,6 +23,9 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class LanguageSwitcherWidget extends XotBaseSchemaWidget
 {
+    /** @var view-string */
+    protected string $view = 'lang::filament.widgets.language-switcher';
+
     /**
      * Non è una dashboard card: si monta esplicitamente nel tema
      * (`@livewire(\Modules\Lang\Filament\Widgets\LanguageSwitcherWidget::class)`),
@@ -38,17 +39,6 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
     public static function canView(): bool
     {
         return true;
-    }
-
-    /**
-     * Vista FO dedicata: evita default `view-string` Filament non verificabile per `lang::`.
-     */
-    public function render(): View
-    {
-        /** @var view-string $view */
-        $view = 'lang::filament.widgets.language-switcher';
-
-        return ViewFacade::make($view, $this->getViewData());
     }
 
     /**
@@ -121,14 +111,8 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
      */
     public function getLanguageUrl(string $locale): string
     {
-        // Usa la classe concreta: la Facade PHPDoc non dichiara @throws UnsupportedLocaleException.
-        $localization = app('laravellocalization');
-        if (! $localization instanceof \Mcamara\LaravelLocalization\LaravelLocalization) {
-            return '/'.$locale;
-        }
-
         try {
-            $url = $localization->getLocalizedURL($locale, null, [], true);
+            $url = LaravelLocalization::getLocalizedURL($locale, null, [], true);
         } catch (UnsupportedLocaleException) {
             return '/'.$locale;
         }

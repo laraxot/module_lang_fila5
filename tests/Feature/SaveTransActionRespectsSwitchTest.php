@@ -1,14 +1,13 @@
 <?php
 
 declare(strict_types=1);
-
-use PHPUnit\Framework\Assert;
 use Illuminate\Support\Facades\Config;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Tests\TestCase;
 
 use function Safe\file_get_contents;
 
+uses(TestCase::class);
 
 /*
  * `AutoLabelAction` chiama `SaveTransAction` ogni volta che una chiave manca, e la
@@ -28,20 +27,18 @@ it('non scrive niente quando la scrittura delle chiavi mancanti e spenta', funct
 
     $after = is_file($target) ? file_get_contents($target) : null;
 
-    Assert::assertSame($before, $after);
-});
+    expect($after)->toBe($before);
+})->group('LANG-SAVETRANS-INV-3');
 
 it('sotto test non scrive nemmeno senza configurazione esplicita', function (): void {
     // Il caso che conta: nessuno ha impostato niente, e la suite non deve comunque
     // toccare l'albero. E' lo scenario in cui il difetto e' gia' tornato due volte.
-    $lang = (array) Config::get('lang', []);
-    unset($lang['save_missing_translations']);
-    Config::set('lang', $lang);
+    Config::offsetUnset('lang.save_missing_translations');
 
     $target = base_path('Modules/Lang/lang/it/lang.php');
     $before = is_file($target) ? file_get_contents($target) : null;
 
     app(SaveTransAction::class)->execute('lang::lang.altra_chiave_assente.label', 'valore');
 
-    Assert::assertSame($before, is_file($target) ? file_get_contents($target) : null);
-});
+    expect(is_file($target) ? file_get_contents($target) : null)->toBe($before);
+})->group('LANG-SAVETRANS-INV-1');

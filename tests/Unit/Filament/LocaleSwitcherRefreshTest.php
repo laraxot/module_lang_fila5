@@ -5,6 +5,7 @@ use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class);
 
 test('LocaleSwitcherRefresh applyLocale imposta sessione e locale', function (): void {
     session()->forget('locale');

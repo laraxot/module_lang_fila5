@@ -17,11 +17,11 @@ related:
 - [README modulo Lang](README.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Header](/laravel/modules/user/docs/header_language_avatar_implementation.md)
+- [Implementazione Header](/laravel/Modules/User/docs/header_language_avatar_implementation.md)
 - [README modulo Lang](./README.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Header](/laravel/Modules/User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
+- [Implementazione Header](/laravel/Modules/User/docs/header_language_avatar_implementation.md)
 
 ## Panoramica
 
@@ -330,7 +330,7 @@ Seguire queste best practices per le chiavi di traduzione garantirà un'applicaz
 - [README modulo Lang](./README.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Header](/laravel/Modules/User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
+- [Implementazione Header](/laravel/Modules/User/docs/header_language_avatar_implementation.md)
 
 ## Panoramica
 
@@ -639,7 +639,7 @@ Seguire queste best practices per le chiavi di traduzione garantirà un'applicaz
 - [README modulo Lang](./README.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Header](/laravel/Modules/User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
+- [Implementazione Header](/laravel/Modules/User/docs/header_language_avatar_implementation.md)
 
 ## Panoramica
 

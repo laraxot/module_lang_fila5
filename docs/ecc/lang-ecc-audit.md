@@ -15,6 +15,7 @@ related:
 
 ## Contratto PTVX
 
+<<<<<<< .merge_file_Csg2cc
 ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
 PHPStan + Pest, aggiornamento docs/QMD.
 
@@ -29,6 +30,8 @@ PHPStan + Pest, aggiornamento docs/QMD.
 - [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
 
 ## Input misurato (2026-11-16)
+=======
+>>>>>>> .merge_file_u0bqOk
 ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audits/lang-audit.md).
 
 ## Checklist (stato misurato 2026-11-16)
@@ -47,6 +50,7 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 | Voce | N |
 |---|---:|
 | app PHP | 72 |
+<<<<<<< .merge_file_Csg2cc
 | test | 51 |
 | resources | 2 |
 | actions | 17 |
@@ -65,6 +69,8 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 - migrate:fresh / RefreshDatabase / --force
 - docs con date nel nome file
 - comportamento o screenshot inventati
+=======
+>>>>>>> .merge_file_u0bqOk
 | test PHP / `*Test.php` | 51 / 29 |
 | Models / Policy / Resource | 7 / 4 / 2 |
 | Pagine Resource / Widget | 9 / 1 |
@@ -79,7 +85,15 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 - PHPStan `Modules/Lang` (`--no-progress`): **0 errori**.
 - Pest `Modules/Lang/tests/Feature` su scratch DB: **10 pass, 13 fail** (errore `user_id` UUID in colonna bigint, vedi [P1-3](../bmad/audits/lang-audit.md#p1-3--test-copertura-inseguita-e-suite-non-verde-su-scratch-db)).
 
-## Anti-pattern vietati (stato)
+## Anti-pattern vietati
+
+- baseline/`@phpstan-ignore` senza motivazione
+- test svuotati per silenziare errori
+- `migrate:fresh` / `RefreshDatabase` / `--force`
+- docs con date nel nome file
+- comportamento o screenshot inventati
+
+### Stato misurato
 
 `migrate:fresh`: 0; `RefreshDatabase`: 0; `@phpstan-ignore`: 0; `dd()`: 0; `->label()` letterali: 2 (`LocaleSwitcherRefresh.php:34,45`).
 

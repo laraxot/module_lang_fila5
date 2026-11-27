@@ -7,7 +7,7 @@ module: Lang
 
 **Misurato**: 2026-08-31
 **Regola violata**: `no-case-variations`, `case_sensitive_naming_critical`
-**Quadro generale**: [Modules/Xot/docs/stato-qualita-progetto-2026-08-31.md](../../Xot/docs/stato-qualita-progetto-2026-08-31.md)
+**Quadro generale**: [Modules/Xot/docs/stato-qualita-progetto-2026-08-31.md](../../../../Xot/docs/stato-qualita-progetto.md)
 
 ## Il problema
 

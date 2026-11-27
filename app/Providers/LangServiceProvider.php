@@ -48,9 +48,7 @@ class LangServiceProvider extends XotBaseServiceProvider
     public function registerFilamentLabel(): void
     {
         Select::configureUsing(function (Select $component) {
-            // __() puo' restituire array|string; placeholder Filament vuole string|Closure|null.
-            $placeholder = __('filament-forms::components.select.placeholder');
-            $component->placeholder(is_string($placeholder) ? $placeholder : null);
+            $component->placeholder(__('filament-forms::components.select.placeholder'));
 
             return $component;
         });
@@ -149,19 +147,13 @@ class LangServiceProvider extends XotBaseServiceProvider
     public function registerTranslator(): void
     {
         $this->app->singleton('translator', function (Container $app): TranslatorAdapter {
-            $loader = $app->make('translation.loader');
-            Assert::isInstanceOf($loader, \Illuminate\Contracts\Translation\Loader::class);
+            $loader = $app['translation.loader'];
 
             // When registering the translator component, we'll need to set the default
             // locale as well as the fallback locale. So, we'll grab the application
             // configuration so we can easily get both of these values from there.
-            $config = $app->make('config');
-            Assert::isInstanceOf($config, \Illuminate\Contracts\Config\Repository::class);
-
-            $locale = $config->get('app.locale');
-            $fallback_locale = $config->get('app.fallback_locale');
-            Assert::string($locale, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
-            Assert::string($fallback_locale, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
+            Assert::string($locale = $app['config']['app.locale'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
+            Assert::string($fallback_locale = $app['config']['app.fallback_locale'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
             $translatorService = new TranslatorAdapter($loader, $locale);
 

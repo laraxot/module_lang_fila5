@@ -10,6 +10,7 @@ use Modules\Lang\Actions\GetTransPathAction;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Tests\TestCase;
 
+uses(TestCase::class);
 
 /*
  * C-05 (DCP-282): l'auto-writer delle chiavi mancanti scriveva nei file di lingua a runtime anche in produzione, perche' il default era
@@ -59,7 +60,7 @@ it('does not write in production when nothing is configured', function (): void 
     trySavingMissingKey();
 
     Assert::assertFalse(file_exists($this->target));
-});
+})->group('LANG-SAVETRANS-INV-1');
 
 it('does not write in staging either', function (): void {
     $this->app['env'] = 'staging';
@@ -67,7 +68,7 @@ it('does not write in staging either', function (): void {
     trySavingMissingKey();
 
     Assert::assertFalse(file_exists($this->target));
-});
+})->group('LANG-SAVETRANS-INV-1');
 
 it('writes in the local environment when nothing is configured', function (): void {
     $this->app['env'] = 'local';
@@ -76,7 +77,7 @@ it('writes in the local environment when nothing is configured', function (): vo
 
     Assert::assertTrue(file_exists($this->target));
     Assert::assertSame(['chiave_di_prova' => ['label' => 'valore']], File::getRequire($this->target));
-});
+})->group('LANG-SAVETRANS-INV-2');
 
 it('does not write under the test environment by default', function (): void {
     Assert::assertSame('testing', $this->app['env']);
@@ -84,7 +85,7 @@ it('does not write under the test environment by default', function (): void {
     trySavingMissingKey();
 
     Assert::assertFalse(file_exists($this->target));
-});
+})->group('LANG-SAVETRANS-INV-1');
 
 it('lets the configuration switch it on in production', function (): void {
     $this->app['env'] = 'production';
@@ -93,7 +94,7 @@ it('lets the configuration switch it on in production', function (): void {
     trySavingMissingKey();
 
     Assert::assertTrue(file_exists($this->target));
-});
+})->group('LANG-SAVETRANS-INV-3');
 
 it('lets the configuration switch it off in the local environment', function (): void {
     $this->app['env'] = 'local';
@@ -102,4 +103,22 @@ it('lets the configuration switch it off in the local environment', function ():
     trySavingMissingKey();
 
     Assert::assertFalse(file_exists($this->target));
-});
+})->group('LANG-SAVETRANS-INV-3');
+
+it('writes from the translation panel through persist() even when the switch is off', function (): void {
+    // Il pannello Lang (EditTranslationFile) salva con persist(): il traduttore ha premuto "Salva", anche in produzione.
+    $this->app['env'] = 'production';
+    Config::set('lang.save_missing_translations', false);
+
+    app(SaveTransAction::class)->persist('lang::lang.chiave_di_prova.label', 'Etichetta');
+
+    Assert::assertSame(['chiave_di_prova' => ['label' => 'Etichetta']], File::getRequire($this->target));
+})->group('LANG-SAVETRANS-INV-4');
+
+it('keeps the keys already in the file when it adds a new one', function (): void {
+    File::put($this->target, "<?php\n\nreturn ['esistente' => ['label' => 'Gia qui']];\n");
+
+    app(SaveTransAction::class)->persist('lang::lang.nuova.label', 'Nuova');
+
+    Assert::assertSame(['esistente' => ['label' => 'Gia qui'], 'nuova' => ['label' => 'Nuova']], File::getRequire($this->target));
+})->group('LANG-SAVETRANS-INV-5');

@@ -18,40 +18,22 @@ class TransArrayAction
     public ?string $transKey;
 
     /**
-     * Esegue la traduzione di una collezione.
+     * Traduce ogni elemento di un array, conservandone le chiavi.
      *
      * @param  array<int|string, mixed>  $array
      * @return array<int|string, string>
      */
     public function execute(array $array, ?string $transKey): array
     {
+        // Arr::map conserva le chiavi e sia cast() sia trans() restituiscono gia' string:
+        // nessun filtro a valle serve.
         if ($transKey === null) {
-            $result = Arr::map($array, SafeStringCastAction::cast(...));
-            if (is_array($result)) {
-                $stringResult = [];
-                foreach ($result as $key => $value) {
-                    $stringResult[$key] = is_string($value) ? $value : '';
-                }
-
-                return $stringResult;
-            }
-
-            return [];
+            return Arr::map($array, SafeStringCastAction::cast(...));
         }
 
         $this->transKey = $transKey;
 
-        $result = Arr::map($array, $this->trans(...));
-        if (is_array($result)) {
-            $stringResult = [];
-            foreach ($result as $key => $value) {
-                $stringResult[$key] = is_string($value) ? $value : '';
-            }
-
-            return $stringResult;
-        }
-
-        return [];
+        return Arr::map($array, $this->trans(...));
     }
 
     /**

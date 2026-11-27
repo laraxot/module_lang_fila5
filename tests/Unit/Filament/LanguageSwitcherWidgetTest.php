@@ -7,6 +7,7 @@ use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();

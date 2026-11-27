@@ -33,32 +33,30 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $updater
  *
  * @method static TranslationFactory factory($count = null, $state = [])
- * @method static EloquentBuilder<static> newModelQuery()
- * @method static EloquentBuilder<static> newQuery()
- * @method static EloquentBuilder<static> ofTranslatedGroup(string $group)
- * @method static EloquentBuilder<static> orderByGroupKeys(bool $ordered)
- * @method static EloquentBuilder<static> query()
- * @method static Translation create(array<string, mixed> $attributes = [])
- * @method static Translation firstOrCreate(array<string, mixed> $attributes = [], array<string, mixed> $values = [])
- * @method static EloquentBuilder<static> selectDistinctGroup()
- * @method static EloquentBuilder<static> whereCreatedAt($value)
- * @method static EloquentBuilder<static> whereCreatedBy($value)
- * @method static EloquentBuilder<static> whereGroup($value)
- * @method static EloquentBuilder<static> whereId($value)
- * @method static EloquentBuilder<static> whereItem($value)
- * @method static EloquentBuilder<static> whereKey($value)
- * @method static EloquentBuilder<static> whereLang($value)
- * @method static EloquentBuilder<static> whereNamespace($value)
- * @method static EloquentBuilder<static> whereUpdatedAt($value)
- * @method static EloquentBuilder<static> whereUpdatedBy($value)
- * @method static EloquentBuilder<static> whereValue($value)
+ * @method static EloquentBuilder<static>|Translation newModelQuery()
+ * @method static EloquentBuilder<static>|Translation newQuery()
+ * @method static EloquentBuilder<static>|Translation ofTranslatedGroup(string $group)
+ * @method static EloquentBuilder<static>|Translation orderByGroupKeys(bool $ordered)
+ * @method static EloquentBuilder<static>|Translation query()
+ * @method static EloquentBuilder<static>|Translation selectDistinctGroup()
+ * @method static EloquentBuilder<static>|Translation whereCreatedAt($value)
+ * @method static EloquentBuilder<static>|Translation whereCreatedBy($value)
+ * @method static EloquentBuilder<static>|Translation whereGroup($value)
+ * @method static EloquentBuilder<static>|Translation whereId($value)
+ * @method static EloquentBuilder<static>|Translation whereItem($value)
+ * @method static EloquentBuilder<static>|Translation whereKey($value)
+ * @method static EloquentBuilder<static>|Translation whereLang($value)
+ * @method static EloquentBuilder<static>|Translation whereNamespace($value)
+ * @method static EloquentBuilder<static>|Translation whereUpdatedAt($value)
+ * @method static EloquentBuilder<static>|Translation whereUpdatedBy($value)
+ * @method static EloquentBuilder<static>|Translation whereValue($value)
  *
  * @property ProfileContract|null $deleter
  * @property string|null $locale
  * @property int|null $user_id
  *
- * @method static EloquentBuilder<static> whereLocale($value)
- * @method static EloquentBuilder<static> whereUserId($value)
+ * @method static EloquentBuilder<static>|Translation whereLocale($value)
+ * @method static EloquentBuilder<static>|Translation whereUserId($value)
  *
  * @mixin Model
  */

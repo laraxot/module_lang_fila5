@@ -8,6 +8,7 @@ use Modules\Lang\Models\BaseModelLang;
 use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class);
 
 describe('BaseModelLang', function () {
     test('has correct connection', function () {

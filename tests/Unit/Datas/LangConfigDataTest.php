@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-use Modules\Lang\Tests\Support\Ensure;
-
 use Modules\Lang\Actions\ListLocaleOptionsAction;
 use Modules\Lang\Actions\ResolveDefaultTranslatableLocaleAction;
 use Modules\Lang\Actions\ResolveTranslatableLocalesAction;
@@ -17,9 +15,10 @@ use Modules\Lang\Tests\Support\FakeTenantLangConfig;
 use Modules\Lang\Tests\TestCase;
 use Webmozart\Assert\Assert;
 
+uses(TestCase::class)->group('no-lang-db');
 
 test('setting page resolves config name and data class by convention', function (): void {
-    ensure(SettingPage::getConfigName())->toBe('lang')
+    expect(SettingPage::getConfigName())->toBe('lang')
         ->and(SettingPage::getConfigDataClass())->toBe(LangConfigData::class)
         ->and(LangConfigData::tenantConfigName())->toBe('lang');
 });
@@ -27,7 +26,7 @@ test('setting page resolves config name and data class by convention', function 
 test('without a saved value the editors keep the languages they had hard coded', function (): void {
     $data = LangConfigData::from([]);
 
-    ensure($data->default_locale)->toBeNull()
+    expect($data->default_locale)->toBeNull()
         ->and($data->supported_locales)->toBe(['it', 'en']);
 });
 
@@ -39,7 +38,7 @@ test('values from the tenant file override the defaults', function (): void {
 
     $data = LangConfigData::make();
 
-    ensure($data->default_locale)->toBe('en')
+    expect($data->default_locale)->toBe('en')
         ->and($data->supported_locales)->toBe(['en', 'es']);
 });
 
@@ -49,7 +48,7 @@ test('every editor takes its languages from the settings', function (): void {
         'supported_locales' => ['it', 'en', 'es'],
     ]);
 
-    ensure(TranslationFileResource::getTranslatableLocales())->toBe(['it', 'en', 'es'])
+    expect(TranslationFileResource::getTranslatableLocales())->toBe(['it', 'en', 'es'])
         ->and(LangBaseResourceStub::getTranslatableLocales())->toBe(['it', 'en', 'es'])
         ->and((new EditTranslationFile)->getTranslatableLocales())->toBe(['it', 'en', 'es'])
         ->and(TranslationFileResource::getDefaultTranslatableLocale())->toBe('es')
@@ -60,7 +59,7 @@ test('until someone saves, the resources answer exactly as before', function ():
     FakeTenantLangConfig::bind([]);
     config(['app.locale' => 'en']);
 
-    ensure(TranslationFileResource::getTranslatableLocales())->toBe(['it', 'en'])
+    expect(TranslationFileResource::getTranslatableLocales())->toBe(['it', 'en'])
         ->and(TranslationFileResource::getDefaultTranslatableLocale())->toBe('en');
 });
 
@@ -70,13 +69,13 @@ test('a default language outside the chosen ones is ignored', function (): void 
         'supported_locales' => ['it', 'en'],
     ]);
 
-    ensure(app(ResolveDefaultTranslatableLocaleAction::class)->execute('it'))->toBe('it');
+    expect(app(ResolveDefaultTranslatableLocaleAction::class)->execute('it'))->toBe('it');
 });
 
 test('an empty list of languages never reaches the editors', function (): void {
     FakeTenantLangConfig::bind(['supported_locales' => []]);
 
-    ensure(app(ResolveTranslatableLocalesAction::class)->execute())->toBe(['it', 'en']);
+    expect(app(ResolveTranslatableLocalesAction::class)->execute())->toBe(['it', 'en']);
 });
 
 test('the language switcher offers the chosen languages and starts from the saved default', function (): void {
@@ -88,7 +87,7 @@ test('the language switcher offers the chosen languages and starts from the save
 
     $action = LocaleSwitcherRefresh::make('locale_switch_settings');
 
-    ensure($action->lang)->toBe('en');
+    expect($action->lang)->toBe('en');
 });
 
 test('locale options show flag and native name, in the order asked', function (): void {
@@ -107,7 +106,7 @@ test('locale options show flag and native name, in the order asked', function ()
 
     $action = app(ListLocaleOptionsAction::class);
 
-    ensure($action->execute(['en', 'it']))->toBe([
+    expect($action->execute(['en', 'it']))->toBe([
         'en' => '🇬🇧 English',
         'it' => '🇮🇹 Italiano',
     ])
@@ -125,5 +124,5 @@ test('the setting page exposes exactly the properties of the config data', funct
         ->invoke(app(SettingPage::class));
     Assert::isArray($schema);
 
-    ensure(array_keys($schema))->toEqualCanonicalizing($properties);
+    expect(array_keys($schema))->toEqualCanonicalizing($properties);
 });

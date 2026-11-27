@@ -1161,7 +1161,7 @@ Il `
 
 ## lang-service-translation-updates-
 
-*Consolidated from: `lang-service-translation-updates-.md`*
+*Consolidated from: `lang-service-translation-updates.md`*
 
 title: "Aggiornamento File di Traduzione Lang Service - 2025-01-06"
 module: "Lang"

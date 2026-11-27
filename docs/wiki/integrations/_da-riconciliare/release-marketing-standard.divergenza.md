@@ -1,8 +1,8 @@
 ---
-qmd: "release marketing standard.divergenza"
+qmd: "Release Marketing Standard.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: release-marketing-standard.md"
+title: "Release Marketing Standard.divergenza"
 module: Lang
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

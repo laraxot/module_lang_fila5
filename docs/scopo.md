@@ -66,6 +66,13 @@ violazione (sotto).
 
 ### La scrittura sui file `lang/` è protetta da una guardia in cui nessuno crede
 
+> **Aggiornamento (audit qualità, issue #64):** la guardia descritta sotto non esiste più.
+> Oggi `SaveTransAction::execute()` scrive solo se
+> `Config::get('lang.save_missing_translations', app()->isLocal())` è `true`: spenta sotto
+> test e in produzione, accesa in locale, l'override di config vince sempre. La chiave
+> `persist_trans_in_tests` non è più letta da nessuna parte. Il testo che segue resta come
+> storia della decisione.
+
 `SaveTransAction::execute()` (righe 25-33) apre così:
 
 ```php

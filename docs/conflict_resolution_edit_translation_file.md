@@ -86,7 +86,7 @@ return [
 - [Translation Standards](../translation-standards.md)
 - [PHP Strict Types](../php-strict-types.md)
 - [Translation File Management](../translation-file-management.md)
-- [Best Practices](translation-keys-best-practices.md)
+- [Best Practices](../translation-keys-best-practices.md)
 
 ## Note per Sviluppatori Futuri
 

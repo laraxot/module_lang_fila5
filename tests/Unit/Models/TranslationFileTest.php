@@ -10,6 +10,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\class_uses;
 
+uses(TestCase::class);
 
 describe('TranslationFile Model', function () {
     test('uses Sushi trait', function () {

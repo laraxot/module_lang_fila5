@@ -13,6 +13,7 @@ related:
 
 # Piano di miglioramento — Lang
 
+<<<<<<< .merge_file_oSXWcx
 Derivato dall'[audit](./audits/lang-audit.md).
 
 ## P0
@@ -47,6 +48,8 @@ Derivato dall'[audit](./audits/lang-audit.md).
 - [ ] PHPStan `Modules/Lang` = 0
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
+=======
+>>>>>>> .merge_file_36WNOd
 Derivato dall'[audit profondo](./audits/lang-audit.md). Epic e AC: [epics.md](./epics.md). Nessun P0.
 
 ## P1
@@ -64,6 +67,8 @@ Derivato dall'[audit profondo](./audits/lang-audit.md). Epic e AC: [epics.md](./
 4. Codice morto: `WriteTranslationFileAction`, `ReadTranslationFileAction`.
 5. `GetTransPathAction`: allowlist di namespace e locale (difesa in profondità).
 6. Migration `create_*` in 3 generazioni: ridurre con una story additiva.
+7. Dipendenze inverse verso moduli verticali: verificare con `rg` (oggi Lang dipende solo da Xot).
+8. Profiling N+1 sulle pagine del pannello.
 
 ## Sequenza e gate
 

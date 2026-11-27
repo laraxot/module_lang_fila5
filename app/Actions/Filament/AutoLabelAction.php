@@ -21,6 +21,12 @@ use Modules\Xot\Actions\GetTransKeyAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * Etichette, intestazioni, segnaposto e testi d'aiuto dei componenti Filament presi dai file di lingua del modulo che
+ * li usa; applicata a tutti i componenti con `configureUsing()` in LangServiceProvider.
+ *
+ * @contract docs/contracts/auto-label-action.md
+ */
 class AutoLabelAction
 {
     use QueueableAction;

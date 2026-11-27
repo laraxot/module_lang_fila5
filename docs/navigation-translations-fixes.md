@@ -96,7 +96,7 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
-- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
+- [Regole Traduzioni Laraxot](../../Xot/docs/translations/translation-rules.md)
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
@@ -105,11 +105,11 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 - [Documentazione Modulo Lang](README.md)
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
-- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
+- [Regole Traduzioni Laraxot](../../Xot/docs/translations/translation-rules.md)
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
-- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
+- [Regole Traduzioni Laraxot](../../Xot/docs/translations/translation-rules.md)
 
 ## Note Tecniche
 

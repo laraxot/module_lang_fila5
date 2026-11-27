@@ -40,9 +40,7 @@ class LocaleSwitcherRefresh extends XotBaseAction
             ->action(function (array $data) {
                 $this->applyLocale(self::normalizeLocale($data['locale'] ?? null));
 
-                $referer = request()->header('Referer');
-
-                return redirect(is_string($referer) ? $referer : null);
+                return redirect(request()->header('Referer'));
             })
             ->modalHeading('Cambia lingua')
             // ->icon('heroicon-o-language')

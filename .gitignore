@@ -175,11 +175,12 @@ lang.code-workspace
 /.github/skills/
 docs/graphify
 resources/lang
+<<<<<<< .merge_file_7RnApj
 
-# Tooling/configurazione locale (module-theme-root-hygiene)
-.agents/
-.codex/
-.opencode/
-.qwen/
-.php-cs-fixer.php
-.php-cs-fixer.dist.php
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/
+=======
+tests/coverage-*.*
+docs/screenshots/
+>>>>>>> .merge_file_VCOhaL

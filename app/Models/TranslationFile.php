@@ -58,6 +58,20 @@ class TranslationFile extends BaseModel
         'content',
     ];
 
+    /**
+     * Colonne della tabella Sushi quando getRows() e' vuoto (nessun file o lettura fallita): senza schema
+     * Sushi crea `create table "translation_files" ()` e l'elenco va in errore SQL invece di mostrarsi vuoto.
+     *
+     * @var array<string, string>
+     */
+    protected $schema = [
+        'id' => 'string',
+        'key' => 'string',
+        'name' => 'string',
+        'path' => 'string',
+        'content' => 'text',
+    ];
+
     /** @var array<string, string> */
     protected array $form = [
         'key' => 'string',

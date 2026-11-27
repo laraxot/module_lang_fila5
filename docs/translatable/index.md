@@ -16,7 +16,7 @@ related:
 Questa documentazione descrive l'implementazione e l'utilizzo del pacchetto `spatie/laravel-translatable` nel progetto, un potente strumento per la gestione di contenuti multilingua nei modelli Eloquent.
 ## Indice
 1. [Gestione delle traduzioni mancanti](./gestione-traduzioni-mancanti.md)
-2. [Implementazione nel progetto](./implementazione-nel-progetto.md)
+2. [Implementazione nel progetto](implementation-nel-progetto.md)
 3. [Best Practices](./best-practices.md)
 4. [Gestione Traduzioni Contenuti JSON](./json-content-translation.md)
 5. [API e utilizzo comune](#api-e-utilizzo-comune)

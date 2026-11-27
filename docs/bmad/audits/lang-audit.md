@@ -19,6 +19,7 @@ related:
 
 ## Metodo
 
+<<<<<<< .merge_file_ng3muP
 Source-first (2026-11-16): inventario filesystem, `rg` su policy/marker/label,
 lettura purpose esistente, PHPStan globale Modules già a 0 errori. Nessuna UI
 inventata. Pest dichiarato solo se eseguito.
@@ -74,6 +75,8 @@ Vedi [piano-miglioramento.md](../piano-miglioramento.md).
 - [audit.md](../audit.md)
 - [ECC](../../ecc/lang-ecc-audit.md)
 - [Story](../stories/module-bmad-audit.story.md)
+=======
+>>>>>>> .merge_file_JsV0G2
 Source-first, 2026-11-16: inventario filesystem, `rg -n` con `path:line`, lettura di `LangServiceProvider`, `AutoLabelAction`, `SaveTransAction`, `WriteTranslationFileAction`, `TranslationFile`, `LocaleSwitcherRefresh`, `config/`; `php artisan tinker` (sola lettura di config); PHPStan sul modulo; Pest sullo scratch DB del repo. La documentazione è stata trattata come ipotesi: **dove codice e docs divergono vince il codice.** Nessuna UI o screenshot inventati; nessun comportamento a runtime del pannello è stato provato in un browser.
 
 ## Scopo (perché esiste)
@@ -165,7 +168,9 @@ Consumatori fuori modulo (file con `use Modules\Lang\`, esclusi i test): Xot 7, 
 | PHPStan `Modules/Lang` (`php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Lang --no-progress`) | **0 errori** (exit 0) |
 | Pest `Modules/Lang/tests/Feature` (scratch DB, host 127.0.0.1) | **parziale: 10 pass, 13 fail** per schema `user_id` (P1-3); `tests/Unit` non eseguito per carico macchina (load ≈ 50) |
 
-Nessun `migrate:fresh`, nessun `--force`, nessun `RefreshDatabase` lanciati dall'audit.
+Nessun `migrate:fresh`, nessun `--force`, nessun `RefreshDatabase` lanciati dall'audit. Pest si esegue solo fuori dalla produzione e con DB di test raggiungibile.
+
+Una revisione precedente di questo audit (inventario automatico) riportava 8 policy e 66 file di lingua IT: conteggi approssimati, non confermati dal filesystem (ricontrollo 2026-11-19: 4 policy, 33 file in `lang/it`).
 
 ## Piano
 
