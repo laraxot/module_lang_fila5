@@ -9,12 +9,9 @@ created: 2026-07-14
 updated: 2026-11-05
 qmd: "lang module documentation index"
 ---
-<<<<<<< .merge_file_jGc1KX
 > **Indice canonico del modulo: [index.md](./index.md).** Questo file e' un indice storico tenuto per i link esistenti; i nuovi documenti vanno registrati solo in `index.md` (audit qualita', issue #64).
 
 # 📚 **Indice Documentazione Modulo Lang**
-=======
->>>>>>> .merge_file_Uas7RY
 
 # Indice Documentazione Modulo Lang
 

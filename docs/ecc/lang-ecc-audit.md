@@ -15,7 +15,6 @@ related:
 
 ## Contratto PTVX
 
-<<<<<<< .merge_file_Csg2cc
 ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
 PHPStan + Pest, aggiornamento docs/QMD.
 
@@ -30,8 +29,6 @@ PHPStan + Pest, aggiornamento docs/QMD.
 - [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
 
 ## Input misurato (2026-11-16)
-=======
->>>>>>> .merge_file_u0bqOk
 ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audits/lang-audit.md).
 
 ## Checklist (stato misurato 2026-11-16)
@@ -65,7 +62,6 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 | Voce | N |
 |---|---:|
 | app PHP | 72 |
-<<<<<<< .merge_file_Csg2cc
 | test | 51 |
 | resources | 2 |
 | actions | 17 |
@@ -84,8 +80,6 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 - migrate:fresh / RefreshDatabase / --force
 - docs con date nel nome file
 - comportamento o screenshot inventati
-=======
->>>>>>> .merge_file_u0bqOk
 | test PHP / `*Test.php` | 51 / 29 |
 | resources | 2 |
 | Actions / Services | 17 / 0 |

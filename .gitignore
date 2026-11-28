@@ -170,20 +170,12 @@ yarn.lock
 # graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
 
 # module-root-hygiene (story module-root-hygiene)
-<<<<<<< .merge_file_UzgeU5
 /.github/skills/
 docs/graphify
 resources/lang
-<<<<<<< .merge_file_7RnApj
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
-=======
 tests/coverage-*.*
 docs/screenshots/
->>>>>>> .merge_file_VCOhaL
-=======
-
-# screenshot di comparazione visiva (artefatti locali)
->>>>>>> .merge_file_86UDD4

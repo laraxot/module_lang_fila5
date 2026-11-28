@@ -43,8 +43,6 @@ it('sotto test non scrive nemmeno senza configurazione esplicita', function (): 
 
     expect(is_file($target) ? file_get_contents($target) : null)->toBe($before);
 })->group('LANG-SAVETRANS-INV-1');
-<<<<<<< .merge_file_iPlyrf
-=======
 
 it('rifiuta una chiave senza nome file invece di creare lang/it/.php', function (): void {
     // Caso reale: le azioni del menu utente risalivano alla pagina Dashboard e la chiave
@@ -61,4 +59,3 @@ it('rifiuta una chiave senza nome file invece di creare lang/it/.php', function 
 
     expect($created)->toBeFalse();
 })->group('LANG-SAVETRANS-INV-6');
->>>>>>> .merge_file_XOw5Qc

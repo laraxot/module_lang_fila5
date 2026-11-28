@@ -13,10 +13,6 @@ related:
 
 # Piano di miglioramento — Lang
 
-<<<<<<< .merge_file_xWlFNY
-<<<<<<< .merge_file_oSXWcx
-=======
->>>>>>> .merge_file_gQdclA
 Derivato dall'[audit](./audits/lang-audit.md).
 
 ## P0
@@ -25,7 +21,6 @@ Derivato dall'[audit](./audits/lang-audit.md).
 2. Chiudere policy troppo permissive (`return true` ≈ 2) con matrice ruolo×ability.
 3. Blocchi sicurezza runtime (auth panel, mass assignment, export) con test negativi.
 
-<<<<<<< .merge_file_xWlFNY
 ## P1
 
 1. Portare Services (0) ad Actions Queueable dove applicabile.
@@ -52,10 +47,6 @@ Derivato dall'[audit](./audits/lang-audit.md).
 - [ ] PHPStan `Modules/Lang` = 0
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
-=======
->>>>>>> .merge_file_36WNOd
-=======
->>>>>>> .merge_file_gQdclA
 Derivato dall'[audit profondo](./audits/lang-audit.md). Epic e AC: [epics.md](./epics.md). Nessun P0.
 
 ## P1

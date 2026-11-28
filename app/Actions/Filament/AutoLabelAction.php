@@ -25,11 +25,8 @@ use Webmozart\Assert\Assert;
  * Etichette, intestazioni, segnaposto e testi d'aiuto dei componenti Filament presi dai file di lingua del modulo che
  * li usa; applicata a tutti i componenti con `configureUsing()` in LangServiceProvider.
  *
-<<<<<<< .merge_file_artiOC
-=======
  * @see Modules/Lang/docs/filament-auto-labels.md
  * @see docs/contracts/auto-label-action.md
->>>>>>> .merge_file_6TThrc
  * @contract docs/contracts/auto-label-action.md
  */
 class AutoLabelAction
